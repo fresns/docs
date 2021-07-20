@@ -1,0 +1,487 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="author" content="Fresns" />
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="generator" content="Bootstrap 5">
+    <title>Fresns Website Engine</title>
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../assets/css/bootstrap-icons.css">
+    <link rel="stylesheet" href="../assets/css/backend.css">
+</head>
+
+<body>
+
+    <main>
+        <div class="container-lg p-0 p-lg-3">
+            <div class="bg-body shadow-sm mt-4 mt-lg-2 p-3 p-lg-5">
+                <div class="row mb-2">
+                    <div class="col-7">
+                        <h3>Fresns Website Engine <span class="badge bg-secondary fs-9">v1.0.0</span></h3>
+                        <p class="text-secondary">Fresns officially developed website engine, integrated to run in the main application.</p>
+                    </div>
+                    <div class="col-5 text-end"></div>
+                </div>
+                <div class="mb-3">
+                    <ul class="nav nav-tabs" id="myTab" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link active" id="operating-tab" data-bs-toggle="tab" data-bs-target="#operating" type="button" role="tab" aria-controls="operating" aria-selected="true">Site Setup</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="menu-tab" data-bs-toggle="tab" data-bs-target="#menu" type="button" role="tab" aria-controls="menu" aria-selected="false">Menu Settings</button>
+                        </li>
+                    </ul>
+                </div>
+                <div class="tab-content" id="myTabContent">
+                    <!--operating-->
+                    <div class="tab-pane fade show active" id="operating" role="tabpanel" aria-labelledby="operating-tab">
+                        <form class="mt-4">
+                            <div class="row mb-4">
+                                <label class="col-lg-2 col-form-label text-lg-end">Key Settings:</label>
+                                <div class="col-lg-10 form-text pt-1"><i class="bi bi-info-circle"></i> The key does not support background configuration, please check the engine introduction document to set the key.</div>
+                            </div>
+                            <div class="row mb-4">
+                                <label class="col-lg-2 col-form-label text-lg-end">Web Analytics Code:</label>
+                                <div class="col-lg-5"><textarea class="form-control" rows="3"></textarea></div>
+                                <div class="col-lg-5 form-text pt-1"><i class="bi bi-info-circle"></i> Analysis code that does not support the use of statistical code containing "document.write".</div>
+                            </div>
+                            <div class="row mb-4">
+                                <label class="col-lg-2 col-form-label text-lg-end">Code Placement:</label>
+                                <div class="col-lg-5 pt-2">
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="web_stat_position" id="web_stat_position_head" value="head" checked>
+                                        <label class="form-check-label" for="web_stat_position_head">&lt;head&gt;</label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="web_stat_position" id="web_stat_position_body" value="body">
+                                        <label class="form-check-label" for="web_stat_position_body">&lt;body&gt;</label>
+                                    </div>
+                                </div>
+                                <div class="col-lg-5 form-text pt-1"><i class="bi bi-info-circle"></i> Analyze where the code is loaded into the HTML.</div>
+                            </div>
+                            <div class="row mb-4">
+                                <label class="col-lg-2 col-form-label text-lg-end">Website interactive features:</label>
+                                <div class="col-lg-5 pt-2">
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="web_status" id="web_status_false" value="false" data-bs-toggle="collapse" data-bs-target="#web_status_setting.show" aria-expanded="false" aria-controls="web_status_setting" checked>
+                                        <label class="form-check-label" for="web_status_false">Open</label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="web_status" id="web_status_true" value="true" data-bs-toggle="collapse" data-bs-target="#web_status_setting:not(.show)" aria-expanded="false" aria-controls="web_status_setting">
+                                        <label class="form-check-label" for="web_status_true">Close</label>
+                                    </div>
+                                    <!--features-->
+                                    <div class="collapse" id="web_status_setting">
+                                        <div class="card mt-2">
+                                            <div class="card-header text-success">Display configuration after closing</div>
+                                            <div class="card-body">
+                                                <div class="input-group mb-3">
+                                                    <label class="input-group-text" for="web_number">Display Number</label>
+                                                    <input type="number" class="form-control" id="web_number" value="5">
+                                                    <span class="input-group-text">Article</span>
+                                                </div>
+                                                <div class="input-group">
+                                                    <label class="input-group-text" for="web_proportion">Display Scale</label>
+                                                    <input type="number" class="form-control" id="web_proportion" value="30">
+                                                    <span class="input-group-text">%</span>
+                                                </div>
+                                                <div class="form-text"><i class="bi bi-info-circle"></i> How much content to display on the list page and the percentage of content to display on the detail page.</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--features end-->
+                                </div>
+                                <div class="col-lg-5 form-text pt-1"><i class="bi bi-info-circle"></i> When the web-side interactive function is turned off, you can specify the amount and proportion of content to be displayed when visiting the site.</div>
+                            </div>
+                            <div class="row mb-4">
+                                <label for="site_copyright" class="col-lg-2 col-form-label text-lg-end">China Model:</label>
+                                <div class="col-lg-5 pt-2">
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="china_server" id="china_server_false" value="false" data-bs-toggle="collapse" data-bs-target="#china_server_setting.show" aria-expanded="false" aria-controls="china_server_setting" checked>
+                                        <label class="form-check-label" for="china_server_false">false</label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="china_server" id="china_server_true" value="true" data-bs-toggle="collapse" data-bs-target="#china_server_setting:not(.show)" aria-expanded="false" aria-controls="china_server_setting">
+                                        <label class="form-check-label" for="china_server_true">true</label>
+                                    </div>
+                                    <!--China server config-->
+                                    <div class="collapse" id="china_server_setting">
+                                        <div class="card mt-2">
+                                            <div class="card-header">China server config (non-required field)</div>
+                                            <div class="card-body">
+                                                <div class="input-group mb-3">
+                                                    <label class="input-group-text" for="site_miit_beian">ICP Number</label>
+                                                    <input type="text" class="form-control" id="site_miit_beian">
+                                                </div>
+                                                <div class="input-group mb-3">
+                                                    <label class="input-group-text" for="site_miit_tsm">ICP License</label>
+                                                    <input type="text" class="form-control" id="site_miit_tsm">
+                                                </div>
+                                                <div class="input-group mb-1">
+                                                    <label class="input-group-text" for="site_miit_gongan">Ministry of Public Security</label>
+                                                    <input type="text" class="form-control" id="site_miit_gongan">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--China server config end-->
+                                </div>
+                                <div class="col-lg-5 form-text pt-1"><i class="bi bi-info-circle"></i> Information required when the site server is deployed in mainland China.</div>
+                            </div>
+                            <div class="row mb-4">
+                                <div class="col-lg-2"></div>
+                                <div class="col-lg-10"><button type="submit" class="btn btn-primary">Save</button></div>
+                            </div>
+                        </form>
+                    </div>
+                    <!--Menu Settings-->
+                    <div class="tab-pane fade" id="menu" role="tabpanel" aria-labelledby="menu-tab">
+                        <div class="table-responsive">
+                            <table class="table table-hover align-middle text-nowrap">
+                                <thead>
+                                    <tr class="table-info">
+                                        <th scope="col">Home</th>
+                                        <th scope="col">Menu</th>
+                                        <th scope="col">Path</th>
+                                        <th scope="col">Navigation Name</th>
+                                        <th scope="col">SEO Title</th>
+                                        <th scope="col">SEO Description</th>
+                                        <th scope="col">SEO Keywords</th>
+                                        <th scope="col">Enable Status</th>
+                                        <th scope="col">Operation</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td><input class="form-check-input" type="radio" name="default_homepage" id="portal" value="portal"></td>
+                                        <td>Portal</td>
+                                        <td>/portal</td>
+                                        <td>Home</td>
+                                        <td>SEO Title</td>
+                                        <td>SEO Description</td>
+                                        <td>SEO Keywords</td>
+                                        <td><i class="bi bi-check-lg text-success"></i></td>
+                                        <td><button type="button" class="btn btn-outline-primary btn-sm" data-bs-toggle="modal" data-bs-target="#menuEdit" data-bs-whatever="Portal">Edit</button></td>
+                                    </tr>
+                                    <tr>
+                                        <td><input class="form-check-input" type="radio" name="default_homepage" id="members" value="members"></td>
+                                        <td>Members</td>
+                                        <td>/members</td>
+                                        <td>User</td>
+                                        <td>SEO Title</td>
+                                        <td>SEO Description</td>
+                                        <td>SEO Keywords</td>
+                                        <td><i class="bi bi-dash-lg text-secondary"></i></td>
+                                        <td><button type="button" class="btn btn-outline-primary btn-sm" data-bs-toggle="modal" data-bs-target="#menuEdit" data-bs-whatever="Members">Edit</button></td>
+                                    </tr>
+                                    <tr>
+                                        <td><input class="form-check-input" type="radio" name="default_homepage" id="groups" value="groups" checked></td>
+                                        <td>Groups</td>
+                                        <td>/groups</td>
+                                        <td>Forums</td>
+                                        <td>SEO Title</td>
+                                        <td>SEO Description</td>
+                                        <td>SEO Keywords</td>
+                                        <td><i class="bi bi-check-lg text-success"></i></td>
+                                        <td><button type="button" class="btn btn-outline-primary btn-sm" data-bs-toggle="modal" data-bs-target="#menuEdit" data-bs-whatever="Groups">Edit</button></td>
+                                    </tr>
+                                    <tr>
+                                        <td><input class="form-check-input" type="radio" name="default_homepage" id="hashtags" value="hashtags"></td>
+                                        <td>Hashtags</td>
+                                        <td>/hashtags</td>
+                                        <td>Tag</td>
+                                        <td>SEO Title</td>
+                                        <td>SEO Description</td>
+                                        <td>SEO Keywords</td>
+                                        <td><i class="bi bi-check-lg text-success"></i></td>
+                                        <td><button type="button" class="btn btn-outline-primary btn-sm" data-bs-toggle="modal" data-bs-target="#menuEdit" data-bs-whatever="Hashtags">Edit</button></td>
+                                    </tr>
+                                    <tr>
+                                        <td><input class="form-check-input" type="radio" name="default_homepage" id="posts" value="posts"></td>
+                                        <td>Posts</td>
+                                        <td>/posts</td>
+                                        <td>Interaction</td>
+                                        <td>SEO Title</td>
+                                        <td>SEO Description</td>
+                                        <td>SEO Keywords</td>
+                                        <td><i class="bi bi-check-lg text-success"></i></td>
+                                        <td><button type="button" class="btn btn-outline-primary btn-sm" data-bs-toggle="modal" data-bs-target="#menuEdit" data-bs-whatever="Posts">Edit</button></td>
+                                    </tr>
+                                    <tr>
+                                        <td><input class="form-check-input" type="radio" name="default_homepage" id="comments" value="comments"></td>
+                                        <td>Comments</td>
+                                        <td>/comments</td>
+                                        <td>Dynamic</td>
+                                        <td>SEO Title</td>
+                                        <td>SEO Description</td>
+                                        <td>SEO Keywords</td>
+                                        <td><i class="bi bi-check-lg text-success"></i></td>
+                                        <td><button type="button" class="btn btn-outline-primary btn-sm" data-bs-toggle="modal" data-bs-target="#menuEdit" data-bs-whatever="Comments">Edit</button></td>
+                                    </tr>
+                                    <tr>
+                                        <td></td>
+                                        <td>Member List</td>
+                                        <td>/members/list</td>
+                                        <td>Ranking</td>
+                                        <td>SEO Title</td>
+                                        <td>SEO Description</td>
+                                        <td>SEO Keywords</td>
+                                        <td><i class="bi bi-dash-lg text-secondary"></i></td>
+                                        <td><button type="button" class="btn btn-outline-primary btn-sm" data-bs-toggle="modal" data-bs-target="#menuEdit" data-bs-whatever="Members">Edit</button></td>
+                                    </tr>
+                                    <tr>
+                                        <td></td>
+                                        <td>Group List</td>
+                                        <td>/groups/list</td>
+                                        <td>All Topic</td>
+                                        <td>SEO Title</td>
+                                        <td>SEO Description</td>
+                                        <td>SEO Keywords</td>
+                                        <td><i class="bi bi-check-lg text-success"></i></td>
+                                        <td><button type="button" class="btn btn-outline-primary btn-sm" data-bs-toggle="modal" data-bs-target="#menuEdit" data-bs-whatever="Groups">Edit</button></td>
+                                    </tr>
+                                    <tr>
+                                        <td></td>
+                                        <td>Hashtag List</td>
+                                        <td>/hashtags/list</td>
+                                        <td>All Tag</td>
+                                        <td>SEO Title</td>
+                                        <td>SEO Description</td>
+                                        <td>SEO Keywords</td>
+                                        <td><i class="bi bi-check-lg text-success"></i></td>
+                                        <td><button type="button" class="btn btn-outline-primary btn-sm" data-bs-toggle="modal" data-bs-target="#menuEdit" data-bs-whatever="Hashtags">Edit</button></td>
+                                    </tr>
+                                    <tr>
+                                        <td></td>
+                                        <td>Post List</td>
+                                        <td>/posts/list</td>
+                                        <td>All Post</td>
+                                        <td>SEO Title</td>
+                                        <td>SEO Description</td>
+                                        <td>SEO Keywords</td>
+                                        <td><i class="bi bi-check-lg text-success"></i></td>
+                                        <td><button type="button" class="btn btn-outline-primary btn-sm" data-bs-toggle="modal" data-bs-target="#menuEdit" data-bs-whatever="Posts">Edit</button></td>
+                                    </tr>
+                                    <tr>
+                                        <td></td>
+                                        <td>Comment List</td>
+                                        <td>/comments/list</td>
+                                        <td>All Comment</td>
+                                        <td>SEO Title</td>
+                                        <td>SEO Description</td>
+                                        <td>SEO Keywords</td>
+                                        <td><i class="bi bi-check-lg text-success"></i></td>
+                                        <td><button type="button" class="btn btn-outline-primary btn-sm" data-bs-toggle="modal" data-bs-target="#menuEdit" data-bs-whatever="Comments">Edit</button></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <!--Menu Settings End-->
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="copyright text-center">
+            <p class="mt-5 mb-5 text-muted">&copy; 2021 Fresns</p>
+        </div>
+    </footer>
+
+    <!-- Modal -->
+    <div class="modal fade" id="menuEdit" tabindex="-1" aria-labelledby="menuEdit" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Menu Settings</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3 row">
+                            <label class="col-sm-3 col-form-label">Navigation Name</label>
+                            <div class="col-sm-9">
+                                <button type="button" class="btn btn-outline-secondary btn-modal w-100 text-start" data-bs-toggle="modal" data-bs-target="#langModal">Nav Name</button>
+                            </div>
+                        </div>
+                        <div class="mb-3 row">
+                            <label class="col-sm-3 col-form-label">SEO Title</label>
+                            <div class="col-sm-9">
+                                <button type="button" class="btn btn-outline-secondary btn-modal w-100 text-start" data-bs-toggle="modal" data-bs-target="#langModal">SEO Title</button>
+                            </div>
+                        </div>
+                        <div class="mb-3 row">
+                            <label class="col-sm-3 col-form-label">SEO Description</label>
+                            <div class="col-sm-9">
+                                <button type="button" class="btn btn-outline-secondary btn-modal w-100 text-start" data-bs-toggle="modal" data-bs-target="#langDescModal">SEO Description</button>
+                            </div>
+                        </div>
+                        <div class="mb-3 row">
+                            <label class="col-sm-3 col-form-label">SEO Keywords</label>
+                            <div class="col-sm-9">
+                                <button type="button" class="btn btn-outline-secondary btn-modal w-100 text-start" data-bs-toggle="modal" data-bs-target="#langDescModal">SEO Keywords</button>
+                            </div>
+                        </div>
+                        <div class="mb-3 row">
+                            <label class="col-sm-3 col-form-label">Default Parameters</label>
+                            <div class="col-sm-9">
+                                <textarea class="form-control" rows="3"></textarea>
+                            </div>
+                        </div>
+                        <div class="mb-3 row">
+                            <label class="col-sm-3 col-form-label">Enable Status</label>
+                            <div class="col-sm-9 pt-2">
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="status" id="status_true" value="true" checked>
+                                    <label class="form-check-label" for="status_true">true</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="status" id="status_false" value="false">
+                                    <label class="form-check-label" for="status_false">false</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mb-3 row">
+                            <label class="col-sm-3 col-form-label"></label>
+                            <div class="col-sm-9"><button type="submit" class="btn btn-primary">Submit</button></div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Language Modal -->
+    <div class="modal fade" id="langModal" tabindex="-1" aria-labelledby="langModal" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Multi-language settings</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="table-responsive">
+                            <table class="table table-hover align-middle text-nowrap">
+                                <thead>
+                                    <tr class="table-info">
+                                        <th scope="col" class="w-25">Language Tag</th>
+                                        <th scope="col" class="w-25">Language Name</th>
+                                        <th scope="col" class="w-50">Content</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>en-US <i class="bi bi-info-circle text-primary" data-bs-toggle="tooltip" data-bs-placement="top" title="Default Language"></i></td>
+                                        <td>English(United States)</td>
+                                        <td><input type="text" class="form-control" value="name"></td>
+                                    </tr>
+                                    <tr>
+                                        <td>ja</td>
+                                        <td>日本語</td>
+                                        <td><input type="text" class="form-control" value="名"></td>
+                                    </tr>
+                                    <tr>
+                                        <td>ko-KR</td>
+                                        <td>한국어(대한민국)</td>
+                                        <td><input type="text" class="form-control" value="이름"></td>
+                                    </tr>
+                                    <tr>
+                                        <td>zh-Hans-CN</td>
+                                        <td>简体中文(内地)</td>
+                                        <td><input type="text" class="form-control" value="名称"></td>
+                                    </tr>
+                                    <tr>
+                                        <td>zh-Hans-SG</td>
+                                        <td>简体中文(新加坡)</td>
+                                        <td><input type="text" class="form-control" value="名称"></td>
+                                    </tr>
+                                    <tr>
+                                        <td>zh-Hans-HK</td>
+                                        <td>繁體中文(香港)</td>
+                                        <td><input type="text" class="form-control" value="名稱"></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="text-center">
+                            <button type="button" class="btn btn-success" data-bs-dismiss="modal" aria-label="Close">Confirm</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Language Modal -->
+    <div class="modal fade" id="langDescModal" tabindex="-1" aria-labelledby="langDescModal" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Multi-language settings</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="table-responsive">
+                            <table class="table table-hover align-middle text-nowrap">
+                                <thead>
+                                    <tr class="table-info">
+                                        <th scope="col" class="w-25">Language Tag</th>
+                                        <th scope="col" class="w-25">Language Name</th>
+                                        <th scope="col" class="w-50">Content</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>en-US <i class="bi bi-info-circle text-primary" data-bs-toggle="tooltip" data-bs-placement="top" title="Default Language"></i></td>
+                                        <td>English(United States)</td>
+                                        <td><textarea class="form-control" rows="3"></textarea></td>
+                                    </tr>
+                                    <tr>
+                                        <td>ja</td>
+                                        <td>日本語</td>
+                                        <td><textarea class="form-control" rows="3"></textarea></td>
+                                    </tr>
+                                    <tr>
+                                        <td>ko-KR</td>
+                                        <td>한국어(대한민국)</td>
+                                        <td><textarea class="form-control" rows="3"></textarea></td>
+                                    </tr>
+                                    <tr>
+                                        <td>zh-Hans-CN</td>
+                                        <td>简体中文(内地)</td>
+                                        <td><textarea class="form-control" rows="3"></textarea></td>
+                                    </tr>
+                                    <tr>
+                                        <td>zh-Hans-SG</td>
+                                        <td>简体中文(新加坡)</td>
+                                        <td><textarea class="form-control" rows="3"></textarea></td>
+                                    </tr>
+                                    <tr>
+                                        <td>zh-Hans-HK</td>
+                                        <td>繁體中文(香港)</td>
+                                        <td><textarea class="form-control" rows="3"></textarea></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="text-center">
+                            <button type="button" class="btn btn-success" data-bs-dismiss="modal" aria-label="Close">Confirm</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="../assets/javascript/bootstrap.bundle.min.js"></script>
+    <script src="../assets/javascript/backend.js"></script>
+</body>
+
+</html>
