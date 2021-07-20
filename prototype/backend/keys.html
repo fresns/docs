@@ -1,0 +1,236 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="author" content="Fresns" />
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="generator" content="Bootstrap 5">
+    <title>Fresns Console</title>
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../assets/css/bootstrap-icons.css">
+    <link rel="stylesheet" href="../assets/css/backend.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark" style="background-color:#7952b3;">
+            <div class="container-lg">
+                <a class="navbar-brand" href="dashboard.html"><img src="../assets/images/fresns-logo-white.png" height="40"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarContent">
+                    <div class="dropdown">
+                        <button class="btn btn-outline-light btn-sm dropdown-toggle" type="button" id="language" data-bs-toggle="dropdown" aria-expanded="false"><i class="bi bi-translate"></i> English</button>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">English</a></li>
+                            <li><a class="dropdown-item" href="#">Español - Spanish</a></li>
+                            <li><a class="dropdown-item" href="#">Français - French</a></li>
+                            <li><a class="dropdown-item" href="#">日本語 - Japanese</a></li>
+                            <li><a class="dropdown-item" href="#">한국어 - Korean</a></li>
+                            <li><a class="dropdown-item" href="#">Русский - Russian</a></li>
+                            <li><a class="dropdown-item" href="#">Português - Portuguese</a></li>
+                            <li><a class="dropdown-item" href="#">Bahasa Indonesia - Indonesian</a></li>
+                            <li><a class="dropdown-item" href="#">简体中文 - Chinese (Simplified)</a></li>
+                            <li><a class="dropdown-item" href="#">繁體中文 - Chinese (Traditional)</a></li>
+                        </ul>
+                        <a class="btn btn-warning btn-sm ms-1" href="index.html" role="button" data-bs-toggle="tooltip" data-bs-placement="right" title="Log out"><i class="bi bi-power"></i></a>
+                    </div>
+                    <ul class="navbar-nav d-flex flex-row ms-auto">
+                        <li class="px-2">
+                            <a href="dashboard.html" class="nav-link d-flex flex-column align-items-center">
+                                <i class="bi bi-speedometer2 fresns-nav-icon"></i>
+                                <span class="fresns-nav-name">Dashboard</span>
+                            </a>
+                        </li>
+                        <li class="px-2">
+                            <a href="settings.html" class="nav-link d-flex flex-column align-items-center">
+                                <i class="bi bi-gear fresns-nav-icon"></i>
+                                <span class="fresns-nav-name">Settings</span>
+                            </a>
+                        </li>
+                        <li class="px-2">
+                            <a href="keys.html" class="nav-link d-flex flex-column align-items-center active">
+                                <i class="bi bi-key fresns-nav-icon"></i>
+                                <span class="fresns-nav-name">Keys</span>
+                            </a>
+                        </li>
+                        <li class="px-2">
+                            <a href="admins.html" class="nav-link d-flex flex-column align-items-center">
+                                <i class="bi bi-sliders fresns-nav-icon"></i>
+                                <span class="fresns-nav-name">Admins</span>
+                            </a>
+                        </li>
+                        <li class="px-2">
+                            <a href="websites.html" class="nav-link d-flex flex-column align-items-center">
+                                <i class="bi bi-laptop fresns-nav-icon"></i>
+                                <span class="fresns-nav-name">Websites</span>
+                            </a>
+                        </li>
+                        <li class="px-2">
+                            <a href="apps.html" class="nav-link d-flex flex-column align-items-center">
+                                <i class="bi bi-phone fresns-nav-icon"></i>
+                                <span class="fresns-nav-name">Apps</span>
+                            </a>
+                        </li>
+                        <li class="px-2">
+                            <a href="plugins.html" class="nav-link d-flex flex-column align-items-center">
+                                <i class="bi bi-journal-code fresns-nav-icon"></i>
+                                <span class="fresns-nav-name">Plugins</span>
+                            </a>
+                        </li>
+                        <li class="px-2">
+                            <a href="https://apps.fresns.org" target="_blank" class="nav-link d-flex flex-column align-items-center">
+                                <i class="bi bi-shop-window fresns-nav-icon"></i>
+                                <span class="fresns-nav-name">App Store</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="container-lg p-0 p-lg-3">
+            <div class="bg-body shadow-sm mt-4 mt-lg-2 p-3 p-lg-5">
+                <div class="row mb-2">
+                    <div class="col-7">
+                        <h3>API Key</h3>
+                        <p class="text-secondary">Key credentials are important, please do not disclose them to others easily.</p>
+                    </div>
+                    <div class="col-5 text-end">
+                        <button class="btn btn-primary mt-2" type="button" data-bs-toggle="modal" data-bs-target="#createKey"><i class="bi bi-plus-circle-dotted"></i> Add Key</button>
+                    </div>
+                </div>
+                <!--Key List-->
+                <div class="table-responsive">
+                    <table class="table table-hover align-middle text-nowrap">
+                        <thead>
+                            <tr class="table-info">
+                                <th scope="col">Platform</th>
+                                <th scope="col">Name</th>
+                                <th scope="col">App ID</th>
+                                <th scope="col">App Secret</th>
+                                <th scope="col">Type</th>
+                                <th scope="col">Enable Status</th>
+                                <th scope="col">Options</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row" class="py-3">PC Web</th>
+                                <td>Websites</td>
+                                <td>twvhl69n2uqygnox</td>
+                                <td>5rmahjlqpe9q69mljrcvd6xr2upidmdb</td>
+                                <td>Fresns API</td>
+                                <td><i class="bi bi-check-lg text-success"></i></td>
+                                <td>
+                                    <button type="button" class="btn btn-outline-success btn-sm">Edit</button>
+                                    <button type="button" class="btn btn-outline-primary btn-sm">Reset Key</button>
+                                    <button type="button" class="btn btn-link btn-sm text-danger fresns-link">Delete</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row" class="py-3">PC Web</th>
+                                <td>Control Panel</td>
+                                <td>twvhl69n2uqygnox</td>
+                                <td>5rmahjlqpe9q69mljrcvd6xr2upidmdb</td>
+                                <td>Plugin API <span class="badge bg-light text-dark">Fresns CP API</span></td>
+                                <td><i class="bi bi-dash-lg text-secondary"></i></td>
+                                <td>
+                                    <button type="button" class="btn btn-outline-success btn-sm">Edit</button>
+                                    <button type="button" class="btn btn-outline-primary btn-sm">Reset Key</button>
+                                    <button type="button" class="btn btn-link btn-sm text-danger fresns-link">Delete</button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <!--Key List end-->
+                <nav aria-label="Page navigation example">
+                    <ul class="pagination">
+                        <li class="page-item disabled"><a class="page-link" href="#" aria-label="Previous"><span aria-hidden="true">&laquo;</span></a></li>
+                        <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                        <li class="page-item"><a class="page-link" href="#">2</a></li>
+                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                        <li class="page-item"><a class="page-link" href="#" aria-label="Next"><span aria-hidden="true">&raquo;</span></a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="copyright text-center">
+            <p class="mt-5 mb-5 text-muted">&copy; 2021 Fresns</p>
+        </div>
+    </footer>
+
+    <!-- Modal -->
+    <div class="modal fade" id="createKey" tabindex="-1" aria-labelledby="createKeyLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="createKeyLabel">Create new key</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <!--Create new key-->
+                    <form>
+                        <div class="input-group mb-3">
+                            <span class="input-group-text">Platform</span>
+                            <select class="form-select" id="key_platform">
+                                <option selected disabled>Select a key application platform</option>
+                                <option value="1">Other</option>
+                                <option value="2">PC Web</option>
+                                <option value="3">Mobile Web</option>
+                                <option value="4">Responsive Web</option>
+                                <option value="5">iOS App</option>
+                                <option value="6">Android App</option>
+                            </select>
+                        </div>
+                        <div class="input-group mb-3">
+                            <span class="input-group-text">Name</span>
+                            <input type="text" class="form-control" id="key_name">
+                        </div>
+                        <div class="input-group mb-3">
+                            <span class="input-group-text">Type</span>
+                            <div class="form-control bg-body">
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="key_type" id="fresns_key" value="false" data-bs-toggle="collapse" data-bs-target="#key_plugin_setting.show" aria-expanded="false" aria-controls="key_plugin_setting" checked>
+                                    <label class="form-check-label" for="fresns_key">Fresns API</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="key_type" id="plugin_key" value="true" data-bs-toggle="collapse" data-bs-target="#key_plugin_setting:not(.show)" aria-expanded="false" aria-controls="key_plugin_setting">
+                                    <label class="form-check-label" for="plugin_key">Plugin API</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="input-group mb-3 collapse" id="key_plugin_setting">
+                            <span class="input-group-text">Assigned Plugin<i class="bi bi-info-circle ms-2" data-bs-toggle="tooltip" data-bs-placement="top" title="This key does not allow to request the main program API"></i></span>
+                            <select class="form-select" id="key_plugin">
+                                <option selected disabled>Select which plugin to use the key for</option>
+                                <option value="1">xx Plugin</option>
+                                <option value="2">zz Plugin</option>
+                            </select>
+                        </div>
+
+                        <div class="text-center">
+                            <button type="submit" class="btn btn-primary">Submit</button>
+                        </div>
+                    </form>
+                    <!--Create new key End-->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="../assets/javascript/bootstrap.bundle.min.js"></script>
+    <script src="../assets/javascript/backend.js"></script>
+</body>
+
+</html>

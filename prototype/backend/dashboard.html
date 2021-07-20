@@ -1,0 +1,264 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="author" content="Fresns" />
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="generator" content="Bootstrap 5">
+    <title>Fresns Console</title>
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../assets/css/bootstrap-icons.css">
+    <link rel="stylesheet" href="../assets/css/backend.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark" style="background-color:#7952b3;">
+            <div class="container-lg">
+                <a class="navbar-brand" href="dashboard.html"><img src="../assets/images/fresns-logo-white.png" height="40"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarContent">
+                    <div class="dropdown">
+                        <button class="btn btn-outline-light btn-sm dropdown-toggle" type="button" id="language" data-bs-toggle="dropdown" aria-expanded="false"><i class="bi bi-translate"></i> English</button>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">English</a></li>
+                            <li><a class="dropdown-item" href="#">Español - Spanish</a></li>
+                            <li><a class="dropdown-item" href="#">Français - French</a></li>
+                            <li><a class="dropdown-item" href="#">日本語 - Japanese</a></li>
+                            <li><a class="dropdown-item" href="#">한국어 - Korean</a></li>
+                            <li><a class="dropdown-item" href="#">Русский - Russian</a></li>
+                            <li><a class="dropdown-item" href="#">Português - Portuguese</a></li>
+                            <li><a class="dropdown-item" href="#">Bahasa Indonesia - Indonesian</a></li>
+                            <li><a class="dropdown-item" href="#">简体中文 - Chinese (Simplified)</a></li>
+                            <li><a class="dropdown-item" href="#">繁體中文 - Chinese (Traditional)</a></li>
+                        </ul>
+                        <a class="btn btn-warning btn-sm ms-1" href="index.html" role="button" data-bs-toggle="tooltip" data-bs-placement="right" title="Log out"><i class="bi bi-power"></i></a>
+                    </div>
+                    <ul class="navbar-nav d-flex flex-row ms-auto">
+                        <li class="px-2">
+                            <a href="dashboard.html" class="nav-link d-flex flex-column align-items-center active">
+                                <i class="bi bi-speedometer2 fresns-nav-icon"></i>
+                                <span class="fresns-nav-name">Dashboard</span>
+                            </a>
+                        </li>
+                        <li class="px-2">
+                            <a href="settings.html" class="nav-link d-flex flex-column align-items-center">
+                                <i class="bi bi-gear fresns-nav-icon"></i>
+                                <span class="fresns-nav-name">Settings</span>
+                            </a>
+                        </li>
+                        <li class="px-2">
+                            <a href="keys.html" class="nav-link d-flex flex-column align-items-center">
+                                <i class="bi bi-key fresns-nav-icon"></i>
+                                <span class="fresns-nav-name">Keys</span>
+                            </a>
+                        </li>
+                        <li class="px-2">
+                            <a href="admins.html" class="nav-link d-flex flex-column align-items-center">
+                                <i class="bi bi-sliders fresns-nav-icon"></i>
+                                <span class="fresns-nav-name">Admins</span>
+                            </a>
+                        </li>
+                        <li class="px-2">
+                            <a href="websites.html" class="nav-link d-flex flex-column align-items-center">
+                                <i class="bi bi-laptop fresns-nav-icon"></i>
+                                <span class="fresns-nav-name">Websites</span>
+                            </a>
+                        </li>
+                        <li class="px-2">
+                            <a href="apps.html" class="nav-link d-flex flex-column align-items-center">
+                                <i class="bi bi-phone fresns-nav-icon"></i>
+                                <span class="fresns-nav-name">Apps</span>
+                            </a>
+                        </li>
+                        <li class="px-2">
+                            <a href="plugins.html" class="nav-link d-flex flex-column align-items-center">
+                                <i class="bi bi-journal-code fresns-nav-icon"></i>
+                                <span class="fresns-nav-name">Plugins</span>
+                            </a>
+                        </li>
+                        <li class="px-2">
+                            <a href="https://apps.fresns.org" target="_blank" class="nav-link d-flex flex-column align-items-center">
+                                <i class="bi bi-shop-window fresns-nav-icon"></i>
+                                <span class="fresns-nav-name">App Store</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="container-lg">
+            <!--Welcome-->
+            <div class="card mt-4 mb-4 p-2 p-lg-4">
+                <div class="card-body">
+                    <h1 class="fs-3 fw-normal">Welcome to Fresns</h1>
+                    <p class="text-secondary pb-4">The current version in use is v1.0.0</p>
+                    <div class="row">
+                        <div class="col-md mb-4 pe-lg-5">
+                            <h3 class="h6">At a Glance</h3>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item"><i class="bi bi-person-fill"></i> Account counts <span class="badge bg-success">100</span></li>
+                                <li class="list-group-item"><i class="bi bi-person"></i> User counts <span class="badge bg-success">100</span></li>
+                                <li class="list-group-item"><i class="bi bi-collection"></i> Group counts <span class="badge bg-success">100</span></li>
+                                <li class="list-group-item"><i class="bi bi-hash"></i> Hashtag counts <span class="badge bg-success">100</span></li>
+                                <li class="list-group-item"><i class="bi bi-file-post-fill"></i> Post counts <span class="badge bg-success">100</span></li>
+                                <li class="list-group-item"><i class="bi bi-chat-right-dots"></i> Comment counts <span class="badge bg-success">100</span></li>
+                            </ul>
+                        </div>
+                        <div class="col-md mb-4 pe-lg-5">
+                            <h3 class="h6">Extensions</h3>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item"><i class="bi bi-key"></i> Keys <span class="badge bg-info">2</span></li>
+                                <li class="list-group-item"><i class="bi bi-sliders"></i> Control Panel <span class="badge bg-info">4</span></li>
+                                <li class="list-group-item"><i class="bi bi-laptop"></i> Engines <span class="badge bg-info">3</span></li>
+                                <li class="list-group-item"><i class="bi bi-brush"></i> Themes <span class="badge bg-info">6</span></li>
+                                <li class="list-group-item"><i class="bi bi-phone"></i> Apps <span class="badge bg-info">2</span></li>
+                                <li class="list-group-item"><i class="bi bi-journal-code"></i> Plugins <span class="badge bg-info">24</span></li>
+                            </ul>
+                        </div>
+                        <div class="col-md mb-4 pe-lg-5">
+                            <h3 class="h6">Ecosystem</h3>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item"><a class="fresns-link" href="https://fresns.org" target="_blank">Fresns Website</a></li>
+                                <li class="list-group-item"><a class="fresns-link" href="https://fresns.org/community/team.html" target="_blank">Team</a></li>
+                                <li class="list-group-item"><a class="fresns-link" href="https://fresns.org/community/partners.html" target="_blank">Partners</a></li>
+                                <li class="list-group-item"><a class="fresns-link" href="https://fresns.org/community/join.html" target="_blank">Join</a></li>
+                                <li class="list-group-item"><a class="fresns-link" href="https://discuss.fresns.org" target="_blank">Community</a></li>
+                                <li class="list-group-item"><a class="fresns-link" href="https://apps.fresns.org" target="_blank">App Store</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--Info-->
+            <div class="row">
+                <!--News-->
+                <div class="col-md mb-4">
+                    <div class="card">
+                        <div class="card-header">Fresns Events and News</div>
+                        <div class="card-body">
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item"><span class="badge bg-warning text-dark">2021-05-01</span> <a class="fresns-link" href="#">Official notice 1</a></li>
+                                <li class="list-group-item"><span class="badge bg-warning text-dark">2021-05-01</span> <a class="fresns-link" href="#">Official notice 2</a></li>
+                                <li class="list-group-item"><span class="badge bg-warning text-dark">2021-05-01</span> <a class="fresns-link" href="#">Official notice 3</a></li>
+                                <li class="list-group-item"><span class="badge bg-warning text-dark">2021-05-01</span> <a class="fresns-link" href="#">Official notice 4</a></li>
+                                <li class="list-group-item"><span class="badge bg-warning text-dark">2021-05-01</span> <a class="fresns-link" href="#">Official notice 5</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!--Installs and Updates-->
+                <div class="col-md">
+                    <!--Installs-->
+                    <div class="card mb-4">
+                        <div class="card-header">Installs</div>
+                        <div class="card-body">
+                            <p class="card-text">If the application files have been placed in the specified directory, select Local installation. Use remote installation if purchased from the Fresns app store and obtained an installation code.</p>
+                            <button type="button" class="btn btn-success btn-sm" data-bs-toggle="modal" data-bs-target="#localInstall">Local Install</button>
+                            <button type="button" class="btn btn-success btn-sm ms-2" data-bs-toggle="modal" data-bs-target="#codeInstall">Code Install</button>
+                        </div>
+                    </div>
+                    <!--Updates-->
+                    <div class="card">
+                        <div class="card-header">Updates</div>
+                        <div class="card-body">
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item d-flex justify-content-between align-items-center">
+                                    <div><i class="bi bi-laptop"></i> BBS <span class="badge bg-secondary">Beta</span> to <span class="badge bg-danger">1.0.0</span></div>
+                                    <div><button type="button" class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#upgrade">Update</button></div>
+                                </li>
+                                <li class="list-group-item d-flex justify-content-between align-items-center">
+                                    <div><i class="bi bi-phone"></i> Fresns for iOS <span class="badge bg-secondary">1.0.9</span> to <span class="badge bg-danger">1.1.0</span></div>
+                                    <div><button type="button" class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#upgrade">Update</button></div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="copyright text-center">
+            <p class="mt-5 mb-5 text-muted">&copy; 2021 Fresns</p>
+        </div>
+    </footer>
+    
+    <!-- Local Install Modal -->
+    <div class="modal fade" id="localInstall" tabindex="-1" aria-labelledby="localInstall" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Local Install</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form class="mb-3">
+                        <div class="input-group">
+                            <span class="input-group-text">Folder name</span>
+                            <input type="text" class="form-control" placeholder="Folder Name">
+                            <button class="btn btn-outline-secondary" type="submit" id="folderInstall-button">Confirm</button>
+                        </div>
+                        <div class="form-text"><i class="bi bi-info-circle"></i> Application files have been placed in the specified directory, enter the folder name to install.</div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Code Install Modal -->
+    <div class="modal fade" id="codeInstall" tabindex="-1" aria-labelledby="codeInstall" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Code Install</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form class="mb-3">
+                        <div class="input-group">
+                            <span class="input-group-text">Fresns code</span>
+                            <input type="text" class="form-control" placeholder="Install Code">
+                            <button class="btn btn-outline-secondary" type="submit" id="codeInstall-button">Submit</button>
+                        </div>
+                        <div class="form-text"><i class="bi bi-info-circle"></i> For apps purchased in the Fresns app store, enter the install code to install.</div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Update Modal -->
+    <div class="modal fade" id="upgrade" tabindex="-1" aria-labelledby="upgrade" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title"><i class="bi bi-laptop"></i> BBS <span class="badge bg-secondary">Beta</span> to <span class="badge bg-danger">1.0.0</span></h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body ps-5">
+                    <p><i class="bi bi-check-lg text-success me-2"></i>Initialization Verification</p>
+                    <p><i class="bi bi-check-lg text-success me-2"></i>Download Extension Package</p>
+                    <p><i class="bi bi-check-lg text-success me-2"></i>Unzip the Extension Package</p>
+                    <p><i class="spinner-border spinner-border-sm me-2" role="status"></i>Upgrade Extension</p>
+                    <p><i class="bi bi-hourglass text-secondary me-2"></i>Emptying the cache</p>
+                    <p><i class="bi bi-hourglass text-secondary me-2"></i>Done</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="../assets/javascript/bootstrap.bundle.min.js"></script>
+    <script src="../assets/javascript/backend.js"></script>
+</body>
+
+</html>
