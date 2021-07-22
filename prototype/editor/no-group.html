@@ -1,0 +1,358 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="author" content="Fresns" />
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="generator" content="Bootstrap 5">
+    <title>Editor SDK</title>
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../assets/css/bootstrap-icons.css">
+    <link rel="stylesheet" href="../assets/css/fresns.css">
+</head>
+
+<body>
+    <!--Header-->
+    <header>
+        <div class="text-center mt-5"><img src="../assets/images/fresns-icon.png" height="80"></div>
+    </header>
+    
+    <div class="container-fluid my-5">
+        <ul class="nav nav-tabs justify-content-center">
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle active" data-bs-toggle="dropdown" href="index.html" role="button" aria-expanded="false">Null Editor</a>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="index.html">Full Display</a></li>
+                    <li><a class="dropdown-item" href="no-group.html">No Group</a></li>
+                    <li><a class="dropdown-item" href="hide-title.html">Title Implicit Display</a></li>
+                </ul>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="limit.html" role="button" aria-expanded="false">Limit Reminder</a>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="limit.html">Full publication limit</a></li>
+                    <li><a class="dropdown-item" href="role-limit.html">Role Limit</a></li>
+                    <li><a class="dropdown-item" href="edit-time.html">Edit Countdown</a></li>
+                </ul>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="edit.html">With Content</a></li>
+            <li class="nav-item"><a class="nav-link" href="upload-image.html">Images</a></li>
+            <li class="nav-item"><a class="nav-link" href="upload-video.html">Videos</a></li>
+            <li class="nav-item"><a class="nav-link" href="upload-audio.html">Audios</a></li>
+            <li class="nav-item"><a class="nav-link" href="upload-doc.html">Docs</a></li>
+            <li class="nav-item"><a class="nav-link" href="allow.html">Permissions</a></li>
+            <li class="nav-item"><a class="nav-link" href="extend-frame-text.html">Text Box Extend</a></li>
+            <li class="nav-item"><a class="nav-link" href="extend-frame-info.html">Info Box Extend</a></li>
+        </ul>
+    </div>
+    
+    <!--Editor Start-->
+    <div class="fresns-editor">
+        <form>
+            <div class="fresns-group visually-hidden">
+                <div class="d-grid">
+                    <button class="rounded-0 border-0 list-group-item list-group-item-action d-flex justify-content-between align-items-center" type="button" data-bs-toggle="modal" data-bs-target="#fresns-group">
+                        <span class="py-2 ms-1" id="group"><i class="bi bi-archive-fill me-2"></i>Choose Group</span>
+                        <span class="py-2"><i class="bi bi-chevron-right"></i></span>
+                    </button>
+                </div>
+            </div>
+            <div class="editor-toolbar sticky-top shadow-sm bg-light">
+                <button type="button" class="btn btn-outline-secondary rounded-0 border-0" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">
+                    <div class="d-flex flex-column">
+                        <i class="bi bi-emoji-smile"></i><span>Emoji</span>
+                    </div>
+                </button>
+                <!--Emoji List Start-->
+                <div class="dropdown-menu w-75 rounded-0 pt-0" aria-labelledby="emoji">
+                    <ul class="nav nav-tabs" id="myTab" role="tablist">
+                        <li class="nav-item" role="presentation"><button class="nav-link active" id="emoji-1-tab" data-bs-toggle="tab" data-bs-target="#emoji-1" type="button" role="tab" aria-controls="emoji-1" aria-selected="true">Default</button></li>
+                        <li class="nav-item" role="presentation"><button class="nav-link" id="emoji-1-tab" data-bs-toggle="tab" data-bs-target="#emoji-2" type="button" role="tab" aria-controls="emoji-2" aria-selected="false">Tuzki</button></li>
+                        <li class="nav-item" role="presentation"><button class="nav-link" id="emoji-1-tab" data-bs-toggle="tab" data-bs-target="#emoji-3" type="button" role="tab" aria-controls="emoji-3" aria-selected="false">Cool Monkey</button></li>
+                        <li class="nav-item" role="presentation"><button class="nav-link" id="emoji-1-tab" data-bs-toggle="tab" data-bs-target="#emoji-4" type="button" role="tab" aria-controls="emoji-4" aria-selected="false">Grape Man</button></li>
+                    </ul>
+                    <div class="tab-content p-2" id="emoji">
+                        <div class="tab-pane fade show active" id="emoji-1" role="tabpanel" aria-labelledby="emoji-1-tab">
+                            <img src="../assets/images/emoji/default/smile.gif" width="28" height="28">
+                            <img src="../assets/images/emoji/default/sad.gif" width="28" height="28">
+                            <img src="../assets/images/emoji/default/biggrin.gif" width="28" height="28">
+                            <img src="../assets/images/emoji/default/cry.gif" width="28" height="28">
+                            <img src="../assets/images/emoji/default/huffy.gif" width="28" height="28">
+                            <img src="../assets/images/emoji/default/shocked.gif" width="28" height="28">
+                            <img src="../assets/images/emoji/default/tongue.gif" width="28" height="28">
+                            <img src="../assets/images/emoji/default/shy.gif" width="28" height="28">
+                            <img src="../assets/images/emoji/default/titter.gif" width="28" height="28">
+                            <img src="../assets/images/emoji/default/sweat.gif" width="28" height="28">
+                            <img src="../assets/images/emoji/default/mad.gif" width="28" height="28">
+                            <img src="../assets/images/emoji/default/lol.gif" width="28" height="28">
+                            <img src="../assets/images/emoji/default/loveliness.gif" width="28" height="28">
+                            <img src="../assets/images/emoji/default/funk.gif" width="28" height="28">
+                            <img src="../assets/images/emoji/default/curse.gif" width="28" height="28">
+                            <img src="../assets/images/emoji/default/dizzy.gif" width="28" height="28">
+                            <img src="../assets/images/emoji/default/shutup.gif" width="28" height="28">
+                            <img src="../assets/images/emoji/default/sleepy.gif" width="28" height="28">
+                            <img src="../assets/images/emoji/default/hug.gif" width="28" height="28">
+                            <img src="../assets/images/emoji/default/victory.gif" width="28" height="28">
+                            <img src="../assets/images/emoji/default/time.gif" width="28" height="28">
+                            <img src="../assets/images/emoji/default/kiss.gif" width="28" height="28">
+                            <img src="../assets/images/emoji/default/handshake.gif" width="28" height="28">
+                            <img src="../assets/images/emoji/default/call.gif" width="28" height="28">
+                        </div>
+                        <div class="tab-pane fade" id="emoji-2" role="tabpanel" aria-labelledby="emoji-2-tab">
+                            <img src="../assets/images/emoji/tuzki/1.gif" width="50" height="50">
+                            <img src="../assets/images/emoji/tuzki/2.gif" width="50" height="50">
+                            <img src="../assets/images/emoji/tuzki/3.gif" width="50" height="50">
+                            <img src="../assets/images/emoji/tuzki/4.gif" width="50" height="50">
+                            <img src="../assets/images/emoji/tuzki/5.gif" width="50" height="50">
+                            <img src="../assets/images/emoji/tuzki/6.gif" width="50" height="50">
+                            <img src="../assets/images/emoji/tuzki/7.gif" width="50" height="50">
+                            <img src="../assets/images/emoji/tuzki/8.gif" width="50" height="50">
+                            <img src="../assets/images/emoji/tuzki/9.gif" width="50" height="50">
+                            <img src="../assets/images/emoji/tuzki/10.gif" width="50" height="50">
+                            <img src="../assets/images/emoji/tuzki/11.gif" width="50" height="50">
+                            <img src="../assets/images/emoji/tuzki/12.gif" width="50" height="50">
+                            <img src="../assets/images/emoji/tuzki/13.gif" width="50" height="50">
+                            <img src="../assets/images/emoji/tuzki/14.gif" width="50" height="50">
+                            <img src="../assets/images/emoji/tuzki/15.gif" width="50" height="50">
+                            <img src="../assets/images/emoji/tuzki/16.gif" width="50" height="50">
+                            <img src="../assets/images/emoji/tuzki/17.gif" width="50" height="50">
+                            <img src="../assets/images/emoji/tuzki/18.gif" width="50" height="50">
+                            <img src="../assets/images/emoji/tuzki/19.gif" width="50" height="50">
+                            <img src="../assets/images/emoji/tuzki/20.gif" width="50" height="50">
+                            <img src="../assets/images/emoji/tuzki/21.gif" width="50" height="50">
+                            <img src="../assets/images/emoji/tuzki/22.gif" width="50" height="50">
+                            <img src="../assets/images/emoji/tuzki/23.gif" width="50" height="50">
+                            <img src="../assets/images/emoji/tuzki/24.gif" width="50" height="50">
+                        </div>
+                        <div class="tab-pane fade" id="emoji-3" role="tabpanel" aria-labelledby="emoji-3-tab">
+                            <img src="../assets/images/emoji/coolmonkey/01.gif" width="48" height="48">
+                            <img src="../assets/images/emoji/coolmonkey/02.gif" width="48" height="48">
+                            <img src="../assets/images/emoji/coolmonkey/03.gif" width="48" height="48">
+                            <img src="../assets/images/emoji/coolmonkey/04.gif" width="48" height="48">
+                            <img src="../assets/images/emoji/coolmonkey/05.gif" width="48" height="48">
+                            <img src="../assets/images/emoji/coolmonkey/06.gif" width="48" height="48">
+                            <img src="../assets/images/emoji/coolmonkey/07.gif" width="48" height="48">
+                            <img src="../assets/images/emoji/coolmonkey/08.gif" width="48" height="48">
+                            <img src="../assets/images/emoji/coolmonkey/09.gif" width="48" height="48">
+                            <img src="../assets/images/emoji/coolmonkey/10.gif" width="48" height="48">
+                            <img src="../assets/images/emoji/coolmonkey/11.gif" width="48" height="48">
+                            <img src="../assets/images/emoji/coolmonkey/12.gif" width="48" height="48">
+                            <img src="../assets/images/emoji/coolmonkey/13.gif" width="48" height="48">
+                            <img src="../assets/images/emoji/coolmonkey/14.gif" width="48" height="48">
+                            <img src="../assets/images/emoji/coolmonkey/15.gif" width="48" height="48">
+                            <img src="../assets/images/emoji/coolmonkey/16.gif" width="48" height="48">
+                        </div>
+                        <div class="tab-pane fade" id="emoji-4" role="tabpanel" aria-labelledby="emoji-4-tab">
+                            <img src="../assets/images/emoji/grapeman/01.gif" width="48" height="48">
+                            <img src="../assets/images/emoji/grapeman/02.gif" width="48" height="48">
+                            <img src="../assets/images/emoji/grapeman/03.gif" width="48" height="48">
+                            <img src="../assets/images/emoji/grapeman/04.gif" width="48" height="48">
+                            <img src="../assets/images/emoji/grapeman/05.gif" width="48" height="48">
+                            <img src="../assets/images/emoji/grapeman/06.gif" width="48" height="48">
+                            <img src="../assets/images/emoji/grapeman/07.gif" width="48" height="48">
+                            <img src="../assets/images/emoji/grapeman/08.gif" width="48" height="48">
+                            <img src="../assets/images/emoji/grapeman/09.gif" width="48" height="48">
+                            <img src="../assets/images/emoji/grapeman/10.gif" width="48" height="48">
+                            <img src="../assets/images/emoji/grapeman/11.gif" width="48" height="48">
+                            <img src="../assets/images/emoji/grapeman/12.gif" width="48" height="48">
+                            <img src="../assets/images/emoji/grapeman/13.gif" width="48" height="48">
+                            <img src="../assets/images/emoji/grapeman/14.gif" width="48" height="48">
+                            <img src="../assets/images/emoji/grapeman/15.gif" width="48" height="48">
+                            <img src="../assets/images/emoji/grapeman/16.gif" width="48" height="48">
+                            <img src="../assets/images/emoji/grapeman/17.gif" width="48" height="48">
+                            <img src="../assets/images/emoji/grapeman/18.gif" width="48" height="48">
+                            <img src="../assets/images/emoji/grapeman/19.gif" width="48" height="48">
+                            <img src="../assets/images/emoji/grapeman/20.gif" width="48" height="48">
+                            <img src="../assets/images/emoji/grapeman/21.gif" width="48" height="48">
+                            <img src="../assets/images/emoji/grapeman/22.gif" width="48" height="48">
+                            <img src="../assets/images/emoji/grapeman/23.gif" width="48" height="48">
+                            <img src="../assets/images/emoji/grapeman/24.gif" width="48" height="48">
+                        </div>
+                    </div>
+                </div>
+                <!--Emoji List End-->
+                <button type="button" class="btn btn-outline-secondary rounded-0 border-0" data-bs-toggle="modal" data-bs-target="#fresns-upload">
+                    <div class="d-flex flex-column">
+                        <i class="bi bi-image"></i><span>Image</span>
+                    </div>
+                </button>
+                <button type="button" class="btn btn-outline-secondary rounded-0 border-0" data-bs-toggle="modal" data-bs-target="#fresns-upload">
+                    <div class="d-flex flex-column">
+                        <i class="bi bi-film"></i><span>Video</span>
+                    </div>
+                </button>
+                <button type="button" class="btn btn-outline-secondary rounded-0 border-0" data-bs-toggle="modal" data-bs-target="#fresns-upload">
+                    <div class="d-flex flex-column">
+                        <i class="bi bi-music-note-beamed"></i><span>Audio</span>
+                    </div>
+                </button>
+                <button type="button" class="btn btn-outline-secondary rounded-0 border-0" data-bs-toggle="modal" data-bs-target="#fresns-upload">
+                    <div class="d-flex flex-column">
+                        <i class="bi bi-file-earmark-text"></i><span>Docs</span>
+                    </div>
+                </button>
+                <button type="button" class="btn btn-outline-secondary rounded-0 border-0" data-bs-toggle="modal" data-bs-target="#fresns-mention">
+                    <div class="d-flex flex-column">
+                        <i class="bi bi-at"></i><span>Mention</span>
+                    </div>
+                </button>
+                <button type="button" class="btn btn-outline-secondary rounded-0 border-0" data-bs-toggle="modal" data-bs-target="#fresns-hashtag">
+                    <div class="d-flex flex-column">
+                        <i class="bi bi-hash"></i><span>Hashtag</span>
+                    </div>
+                </button>
+                <button type="button" class="btn btn-outline-secondary rounded-0 border-0" data-bs-toggle="dropdown" aria-expanded="false">
+                    <div class="d-flex flex-column">
+                        <i class="bi bi-menu-up"></i><span>Extend</span>
+                    </div>
+                </button>
+                <!--Extend Start-->
+                <ul class="dropdown-menu rounded-0" aria-labelledby="expands">
+                    <li><a class="dropdown-item" data-bs-toggle="collapse" href="#titleCollapse" role="button" aria-expanded="false" aria-controls="titleCollapse"><img src="../assets/images/temp/title.png" width="20" height="20"> Add Title</a></li>
+                    <li><a class="dropdown-item" href="#"><img src="../assets/images/temp/rich-text-editor.png" width="20" height="20"> Rich Text Editor</a></li>
+                    <li><a class="dropdown-item" href="#">Add Voting</a></li>
+                    <li><a class="dropdown-item" href="#">Set Permissions</a></li>
+                </ul>
+                <!--Extend End-->
+            </div>
+            <!--Content Start-->
+            <div class="editor-content p-3">
+                <!--Title-->
+                <div class="collapse show" id="titleCollapse">
+                    <input type="text" class="form-control form-control-lg rounded-0 border-0 ps-2" id="title" placeholder="Title (not required)">
+                    <hr>
+                </div>
+                <!--Text-->
+                <textarea class="form-control rounded-0 border-0" id="content" rows="10" placeholder="Text"></textarea>
+                <hr>
+                <!--Editor Secondary Start-->
+                <div class="d-flex bd-highlight align-items-center">
+                    <div class="bd-highlight me-auto">
+                        <button type="button" class="btn btn-outline-dark btn-sm" id="lbs"><i class="bi bi-geo-alt-fill"></i> Add Location</button>
+                    </div>
+                    <div class="bd-highlight">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="1" id="anonymous">
+                            <label class="form-check-label" for="anonymous">
+                                Anonymous
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <!--Editor Secondary End-->
+            </div>
+            <!--Content End-->
+            <div class="editor-submit d-grid">
+                <button type="submit" class="btn btn-success btn-lg my-5 mx-3">Publish</button>
+            </div>
+        </form>
+    </div>
+    <!--Editor End-->
+
+    <!-- Group Modal -->
+    <div class="modal fade" id="fresns-group" tabindex="-1" aria-labelledby="fresns-group" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Choose Group</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <!--group list -->
+                    <div class="d-flex align-items-start">
+                        <div class="nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                            <button type="button" class="btn btn-outline-secondary btn-sm mb-2" data-bs-dismiss="modal" aria-label="Close">Not sent to any group</button>
+                            <button class="nav-link active" id="v-pills-home-tab" data-bs-toggle="pill" data-bs-target="#v-pills-home" type="button" role="tab" aria-controls="v-pills-home" aria-selected="true">I follow the group</button>
+                            <hr class="dropdown-divider">
+                            <button class="nav-link" id="v-pills-profile-tab" data-bs-toggle="pill" data-bs-target="#v-pills-profile" type="button" role="tab" aria-controls="v-pills-profile" aria-selected="false">Group Categories 1</button>
+                            <button class="nav-link" id="v-pills-messages-tab" data-bs-toggle="pill" data-bs-target="#v-pills-messages" type="button" role="tab" aria-controls="v-pills-messages" aria-selected="false">Group Categories 2</button>
+                            <button class="nav-link" id="v-pills-settings-tab" data-bs-toggle="pill" data-bs-target="#v-pills-settings" type="button" role="tab" aria-controls="v-pills-settings" aria-selected="false">Group Categories 3</button>
+                        </div>
+                        <div class="tab-content" id="v-pills-tabContent">
+                            <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">I follow the group list</div>
+                            <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">group list 1</div>
+                            <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab">group list 2</div>
+                            <div class="tab-pane fade" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab">group list 3</div>
+                        </div>
+                    </div>
+                    <!--group list -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Upload Modal -->
+    <div class="modal fade" id="fresns-upload" tabindex="-1" aria-labelledby="fresns-upload" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Upload</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <!--Upload control-->
+                    <div class="ratio ratio-21x9">
+                        <iframe src="plugin.html" title="Upload files"></iframe>
+                    </div>
+                    <!--Upload control-->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Mention Modal -->
+    <div class="modal fade" id="fresns-mention" tabindex="-1" aria-labelledby="fresns-mention" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div class="input-group">
+                        <span class="input-group-text" id="basic-addon1">@</span>
+                        <input type="text" list="memberLists" class="form-control" placeholder="Name or Nickname">
+                        <button class="btn btn-outline-secondary" type="button" id="button-addon2">✓</button>
+                    </div>
+                    <datalist id="memberLists">
+                        <option value="Jarvis">
+                        <option value="Jarvis Tang">
+                        <option value="Jen">
+                        <option value="Moss">
+                        <option value="Roy">
+                    </datalist>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Hashtag Modal -->
+    <div class="modal fade" id="fresns-hashtag" tabindex="-1" aria-labelledby="fresns-hashtag" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div class="input-group">
+                        <span class="input-group-text" id="basic-addon1">#</span>
+                        <input type="text" list="hashtagLists" class="form-control" placeholder="Hashtag Name">
+                        <button class="btn btn-outline-secondary" type="button" id="button-addon2">✓</button>
+                    </div>
+                    <datalist id="hashtagLists">
+                        <option value="PHP">
+                        <option value="PHPLanguage">
+                        <option value="Fresns">
+                        <option value="OpenSource">
+                        <option value="Social network service">
+                    </datalist>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="text-center" style="margin-top:100px;">
+        <div class="mb-5"><img src="../assets/images/fresns-logo.png" height="30"></div>
+    </footer>
+    <script src="../assets/javascript/bootstrap.bundle.min.js"></script>
+    <script src="../assets/javascript/fresns.js"></script>
+    <script src="../assets/javascript/editor.js"></script>
+</body>
+
+</html>
