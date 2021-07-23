@@ -1,0 +1,324 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="author" content="Fresns" />
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="generator" content="Bootstrap 5">
+    <title>Fresns Control Panel</title>
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../assets/css/bootstrap-icons.css">
+    <link rel="stylesheet" href="../assets/css/admin.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="workplace.html"><i class="bi bi-gear"></i> Control Panel <span class="badge bg-secondary fs-9">Prototype</span></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#headerNavbar" aria-controls="headerNavbar" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="headerNavbar">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item"><a class="nav-link" href="workplace.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="settings.html">Settings</a></li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle active" href="basis-language.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Basic</a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="basis-language.html">Languages</a></li>
+                                <li><a class="dropdown-item" href="basis-policies.html">Policies</a></li>
+                                <li><a class="dropdown-item" href="basis-delete.html">Delete Account</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="system-site.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">System</a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="system-site.html">General</a></li>
+                                <li><a class="dropdown-item" href="system-send.html">Send</a></li>
+                                <li><a class="dropdown-item" href="system-user.html">User</a></li>
+                                <li><a class="dropdown-item" href="system-wallet.html">Wallet</a></li>
+                                <li><a class="dropdown-item" href="system-storage-image.html">Storage</a></li>
+                                <li><a class="dropdown-item" href="system-map.html">Map</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="operating-rename.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Operating</a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="operating-rename.html">Rename</a></li>
+                                <li><a class="dropdown-item" href="operating-interactive.html">Interactive</a></li>
+                                <li><a class="dropdown-item" href="operating-emoji.html">Emoji</a></li>
+                                <li><a class="dropdown-item" href="operating-publish-post.html">Publish</a></li>
+                                <li><a class="dropdown-item" href="operating-filter.html">Filter</a></li>
+                                <li><a class="dropdown-item" href="operating-role.html">User Role</a></li>
+                                <li><a class="dropdown-item" href="operating-group.html">Group</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="expand-editor.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Expand</a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="expand-editor.html">Editor</a></li>
+                                <li><a class="dropdown-item" href="expand-type.html">Content Type</a></li>
+                                <li><a class="dropdown-item" href="expand-manage.html">Manage</a></li>
+                                <li><a class="dropdown-item" href="expand-group.html">Group</a></li>
+                                <li><a class="dropdown-item" href="expand-userfeature.html">Feature</a></li>
+                                <li><a class="dropdown-item" href="expand-userprofile.html">Profile</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <div class="navbar-nav">
+                        <div class="btn-group d-flex flex-column">
+                            <button type="button" class="btn btn-outline-light btn-sm dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"><i class="bi bi-translate"></i> English</button>
+                            <ul class="dropdown-menu dropdown-menu-end">
+                                <li><a class="dropdown-item" href="#">English</a></li>
+                                <li><a class="dropdown-item" href="#">Español - Spanish</a></li>
+                                <li><a class="dropdown-item" href="#">Français - French</a></li>
+                                <li><a class="dropdown-item" href="#">日本語 - Japanese</a></li>
+                                <li><a class="dropdown-item" href="#">한국어 - Korean</a></li>
+                                <li><a class="dropdown-item" href="#">Русский - Russian</a></li>
+                                <li><a class="dropdown-item" href="#">Português - Portuguese</a></li>
+                                <li><a class="dropdown-item" href="#">Bahasa Indonesia - Indonesian</a></li>
+                                <li><a class="dropdown-item" href="#">简体中文 - Chinese (Simplified)</a></li>
+                                <li><a class="dropdown-item" href="#">繁體中文 - Chinese (Traditional)</a></li>
+                            </ul>
+                        </div>
+                        <div class="ms-3"><a class="btn btn-outline-warning btn-sm" href="index.html" role="button">Log out</a></div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+
+    <main>
+        <div class="container-fluid">
+            <div class="row">
+                <!--Sidebar Start-->
+                <div class="col-lg-2 fresns-sidebar mt-3 mt-lg-0">
+                    <nav class="navbar navbar-expand-lg navbar-light flex-lg-column shadow" style="background-color:#e3f2fd;">
+                        <div class="container-fluid d-lg-flex flex-lg-column">
+                            <span class="navbar-brand">Basic</span>
+                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                <ul class="navbar-nav d-flex flex-column">
+                                    <li class="nav-item"><a class="nav-link active" href="basis-language.html">Languages</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="basis-policies.html">Policies</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="basis-delete.html">Delete Account</a></li>
+                                    <li class="nav-item d-block d-lg-none my-3 text-secondary">Powered by Fresns</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="fresns-copyright d-none d-lg-block">Powered by Fresns</div>
+                    </nav>
+                </div>
+                <!--Sidebar End-->
+                <!--Set Area Start-->
+
+                <div class="col-lg-10 fresns-setting mt-3 mt-lg-0 p-lg-3">
+                    <div class="bg-body mb-2 p-3 p-lg-5">
+                        <div class="row mb-5 border-bottom">
+                            <nav aria-label="breadcrumb">
+                                <ol class="breadcrumb">
+                                    <li class="breadcrumb-item"><a href="workplace.html">Home</a></li>
+                                    <li class="breadcrumb-item"><a href="basis-language.html">Basic</a></li>
+                                    <li class="breadcrumb-item"><a href="basis-language.html">Languages</a></li>
+                                    <li class="breadcrumb-item active" aria-current="page">Language Pack Config<span class="badge bg-secondary ms-2">en-US</span></li>
+                                </ol>
+                            </nav>
+                        </div>
+                        <!--form Start-->
+                        <form>
+                            <div class="table-responsive">
+                                <table class="table table-hover align-middle text-nowrap">
+                                    <thead>
+                                        <tr class="table-info">
+                                            <th scope="col">Marking Name</th>
+                                            <th scope="col">Default Content <i class="bi bi-info-circle" data-bs-toggle="tooltip" data-bs-placement="top" title="Content of the default language config"></i></th>
+                                            <th scope="col">Current Language Content</th>
+                                            <th scope="col" style="width:6rem;">Options</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td><input type="text" class="form-control" value="userLogin" readonly></td>
+                                            <td><input type="text" class="form-control" value="Log in" readonly></td>
+                                            <td><input type="text" class="form-control" value="Sign In"></td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td><input type="text" class="form-control" value="userRegister" readonly></td>
+                                            <td><input type="text" class="form-control" value="Sign Up" readonly></td>
+                                            <td><input type="text" class="form-control" value="Sign Up"></td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td><input type="text" class="form-control" value="author" readonly></td>
+                                            <td><input type="text" class="form-control" value="Jarvis Tang" readonly></td>
+                                            <td><input type="text" class="form-control" value="Jarvis"></td>
+                                            <td><button type="button" class="btn btn-link link-danger ms-1 fresns-link fs-7">Delete</button></td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="4" class="text-center"><button class="btn btn-outline-success btn-sm px-3" type="button"><i class="bi bi-plus-circle-dotted"></i> Add</button></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <!--Save Btn-->
+                            <div>
+                                <button type="submit" class="btn btn-primary">Save</button>
+                            </div>
+                        </form>
+                        <!--form End-->
+                    </div>
+                    
+                    <footer>
+                        <div class="copyright text-center">
+                            <p class="mt-5 mb-5 text-muted">&copy; 2021 Fresns</p>
+                        </div>
+                    </footer>
+                </div>
+                <!--Set Area End-->
+            </div>
+        </div>
+    </main>
+
+    <!-- Modal -->
+    <div class="modal fade" id="createModal" tabindex="-1" aria-labelledby="createModal" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">语言设置</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3 row">
+                            <label class="col-sm-3 col-form-label">Order</label>
+                            <div class="col-sm-9">
+                                <input type="number" class="form-control input-number">
+                            </div>
+                        </div>
+                        <div class="mb-3 row">
+                            <label class="col-sm-3 col-form-label">Language Code</label>
+                            <div class="col-sm-9">
+                                <select class="form-select">
+                                    <option selected>Please selectLanguage Code</option>
+                                    <option value="zh-Hans">Chinese (Simplified) - 简体中文 > zh-Hans</option>
+                                    <option value="zh-Hant">Chinese (Traditional) - 繁體中文 > zh-Hant</option>
+                                    <option value="en">English > en</option>
+                                    <option value="en">Japanese - 日本語 > ja</option>
+                                    <option value="en">Korean - 한국어 > ko</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="mb-3 row">
+                            <label class="col-sm-3 col-form-label">语言地区</label>
+                            <div class="col-sm-9 pt-2">
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="area_status" id="area_status_false" value="false" data-bs-toggle="collapse" data-bs-target="#area_setting.show" aria-expanded="false" aria-controls="area_setting" checked>
+                                    <label class="form-check-label" for="area_status_false">Not enabled</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="area_status" id="area_status_true" value="true" data-bs-toggle="collapse" data-bs-target="#area_setting:not(.show)" aria-expanded="false" aria-controls="area_setting">
+                                    <label class="form-check-label" for="area_status_true">Enable</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="collapse" id="area_setting">
+                            <div class="mb-3 row">
+                                <label class="col-sm-3 col-form-label">Area Code</label>
+                                <div class="col-sm-9">
+                                    <div class="input-group">
+                                        <select class="form-select">
+                                            <option selected disabled>Choose...</option>
+                                            <option value="1">Asia</option>
+                                            <option value="2">Africa</option>
+                                            <option value="3">North America</option>
+                                            <option value="4">South America</option>
+                                            <option value="5">Antarctica</option>
+                                            <option value="6">Europe</option>
+                                            <option value="7">Oceania</option>
+                                        </select>
+                                        <select class="form-select">
+                                            <option selected disabled>Choose...</option>
+                                            <option value="CN">China - 中国大陆 > CN</option>
+                                            <option value="HK">Hong Kong - 香港 > HK</option>
+                                            <option value="MO">Macao - 澳門 > MO</option>
+                                            <option value="TW">Taiwan - 台灣 > CN</option>
+                                            <option value="SG">Singapore - 新加坡 > SG</option>
+                                            <option value="JP">Japanese - 日本 > JP</option>
+                                            <option value="KR">Korea, Republic Of - 대한민국 > KR</option>
+                                            <option value="KP">Korea, Democratic People's Republic Of - 북한 > KP</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mb-3 row">
+                            <label class="col-sm-3 col-form-label">Unit of length</label>
+                            <div class="col-sm-9">
+                                <select class="form-select">
+                                    <option value="km" selected>公里 km</option>
+                                    <option value="mi">英里 mi</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="mb-3 row">
+                            <label class="col-sm-3 col-form-label">日期格式</label>
+                            <div class="col-sm-9">
+                                <select class="form-select">
+                                    <option value="yyyy-mm-dd" selected>yyyy-mm-dd</option>
+                                    <option value="yyyy/mm/dd">yyyy/mm/dd</option>
+                                    <option value="yyyy.mm.dd">yyyy.mm.dd</option>
+                                    <option value="mm-dd-yyyy">mm-dd-yyyy</option>
+                                    <option value="mm/dd/yyyy">mm/dd/yyyy</option>
+                                    <option value="mm.dd.yyyy">mm.dd.yyyy</option>
+                                    <option value="dd-mm-yyyy">dd-mm-yyyy</option>
+                                    <option value="dd/mm/yyyy">dd/mm/yyyy</option>
+                                    <option value="dd.mm.yyyy">dd.mm.yyyy</option>
+                                </select>
+                                <div class="form-text">yyyy 表示年，mm 表示月，dd 表示天。</div>
+                            </div>
+                        </div>
+                        <div class="mb-3 row">
+                            <label class="col-sm-3 col-form-label">人性化时间</label>
+                            <div class="col-sm-9">
+                                <div class="input-group mb-1">
+                                    <span class="input-group-text">{n} minute ago</span>
+                                    <input type="text" class="form-control">
+                                </div>
+                                <div class="input-group mb-1">
+                                    <span class="input-group-text">{n} hour ago</span>
+                                    <input type="text" class="form-control">
+                                </div>
+                                <div class="input-group mb-1">
+                                    <span class="input-group-text">{n} day ago</span>
+                                    <input type="text" class="form-control">
+                                </div>
+                                <div class="input-group mb-1">
+                                    <span class="input-group-text">{n} month ago</span>
+                                    <input type="text" class="form-control">
+                                </div>
+                                <div class="form-text">时间变量名 {n}</div>
+                            </div>
+                        </div>
+                        <div class="mb-3 row">
+                            <label class="col-sm-3 col-form-label"></label>
+                            <div class="col-sm-9"><button type="submit" class="btn btn-primary">Submit</button></div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="../assets/javascript/bootstrap.bundle.min.js"></script>
+    <script src="../assets/javascript/admin.js"></script>
+</body>
+
+</html>

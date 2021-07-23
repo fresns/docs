@@ -1,0 +1,531 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="author" content="Fresns" />
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="generator" content="Bootstrap 5">
+    <title>Fresns Control Panel</title>
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../assets/css/bootstrap-icons.css">
+    <link rel="stylesheet" href="../assets/css/admin.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="workplace.html"><i class="bi bi-gear"></i> Control Panel <span class="badge bg-secondary fs-9">Prototype</span></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#headerNavbar" aria-controls="headerNavbar" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="headerNavbar">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item"><a class="nav-link" href="workplace.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="settings.html">Settings</a></li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="basis-language.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Basic</a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="basis-language.html">Languages</a></li>
+                                <li><a class="dropdown-item" href="basis-policies.html">Policies</a></li>
+                                <li><a class="dropdown-item" href="basis-delete.html">Delete Account</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="system-site.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">System</a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="system-site.html">General</a></li>
+                                <li><a class="dropdown-item" href="system-send.html">Send</a></li>
+                                <li><a class="dropdown-item" href="system-user.html">User</a></li>
+                                <li><a class="dropdown-item" href="system-wallet.html">Wallet</a></li>
+                                <li><a class="dropdown-item" href="system-storage-image.html">Storage</a></li>
+                                <li><a class="dropdown-item" href="system-map.html">Map</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle active" href="operating-rename.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Operating</a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="operating-rename.html">Rename</a></li>
+                                <li><a class="dropdown-item" href="operating-interactive.html">Interactive</a></li>
+                                <li><a class="dropdown-item" href="operating-emoji.html">Emoji</a></li>
+                                <li><a class="dropdown-item" href="operating-publish-post.html">Publish</a></li>
+                                <li><a class="dropdown-item" href="operating-filter.html">Filter</a></li>
+                                <li><a class="dropdown-item" href="operating-role.html">User Role</a></li>
+                                <li><a class="dropdown-item" href="operating-group.html">Group</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="expand-editor.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Expand</a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="expand-editor.html">Editor</a></li>
+                                <li><a class="dropdown-item" href="expand-type.html">Content Type</a></li>
+                                <li><a class="dropdown-item" href="expand-manage.html">Manage</a></li>
+                                <li><a class="dropdown-item" href="expand-group.html">Group</a></li>
+                                <li><a class="dropdown-item" href="expand-userfeature.html">Feature</a></li>
+                                <li><a class="dropdown-item" href="expand-userprofile.html">Profile</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <div class="navbar-nav">
+                        <div class="btn-group d-flex flex-column">
+                            <button type="button" class="btn btn-outline-light btn-sm dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"><i class="bi bi-translate"></i> English</button>
+                            <ul class="dropdown-menu dropdown-menu-end">
+                                <li><a class="dropdown-item" href="#">English</a></li>
+                                <li><a class="dropdown-item" href="#">Español - Spanish</a></li>
+                                <li><a class="dropdown-item" href="#">Français - French</a></li>
+                                <li><a class="dropdown-item" href="#">日本語 - Japanese</a></li>
+                                <li><a class="dropdown-item" href="#">한국어 - Korean</a></li>
+                                <li><a class="dropdown-item" href="#">Русский - Russian</a></li>
+                                <li><a class="dropdown-item" href="#">Português - Portuguese</a></li>
+                                <li><a class="dropdown-item" href="#">Bahasa Indonesia - Indonesian</a></li>
+                                <li><a class="dropdown-item" href="#">简体中文 - Chinese (Simplified)</a></li>
+                                <li><a class="dropdown-item" href="#">繁體中文 - Chinese (Traditional)</a></li>
+                            </ul>
+                        </div>
+                        <div class="ms-lg-3 my-3 my-lg-0"><a class="btn btn-outline-warning btn-sm" href="index.html" role="button">Log out</a></div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="container-fluid">
+            <div class="row">
+                <!--Sidebar Start-->
+                <div class="col-lg-2 fresns-sidebar mt-3 mt-lg-0">
+                    <nav class="navbar navbar-expand-lg navbar-light flex-lg-column shadow" style="background-color:#e3f2fd;">
+                        <div class="container-fluid d-lg-flex flex-lg-column">
+                            <span class="navbar-brand">Operating</span>
+                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                <ul class="navbar-nav d-flex flex-column">
+                                    <li class="nav-item"><a class="nav-link" href="operating-rename.html">Rename</a></li>
+                                    <li class="nav-item"><a class="nav-link active" href="operating-interactive.html">Interactive</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="operating-emoji.html">Emoji</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="operating-publish-post.html">Publish</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="operating-filter.html">Filter</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="operating-role.html">User Role</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="operating-group.html">Group</a></li>
+                                    <li class="nav-item d-block d-lg-none my-3 text-secondary">Powered by Fresns</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="fresns-copyright d-none d-lg-block">Powered by Fresns</div>
+                    </nav>
+                </div>
+                <!--Sidebar End-->
+                <!--Set Area Start-->
+                <div class="col-lg-10 fresns-setting mt-3 mt-lg-0 p-lg-3">
+                    <div class="bg-body mb-2 p-3 p-lg-5">
+                        <div class="row mb-5 border-bottom">
+                            <div class="col-lg-7">
+                                <h3>Interactive</h3>
+                                <p class="text-secondary">Basic interactive Function Config, for more Function Config please see the website engine or mobile app settings page.</p>
+                            </div>
+                            <div class="col-lg-5">
+                                <div class="input-group mt-2 mb-4 justify-content-lg-end">
+                                    <a class="btn btn-outline-secondary" href="#" role="button">Help</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!--Options List-->
+                        <form>
+                            <!--Content-->
+                            <div class="row mb-3">
+                              <label class="col-lg-2 col-form-label text-lg-end">Contents:</label>
+                              <div class="col-lg-6">
+                                  <div class="input-group">
+                                      <label class="input-group-text">Hashtag Style</label>
+                                      <div class="form-control bg-body">
+                                          <div class="form-check form-check-inline">
+                                              <input class="form-check-input" type="radio" name="hashtag_show" id="hashtag_show_1" value="1" checked>
+                                              <label class="form-check-label" for="hashtag_show_1">Single #</label>
+                                          </div>
+                                          <div class="form-check form-check-inline">
+                                              <input class="form-check-input" type="radio" name="hashtag_show" id="hashtag_show_2" value="2">
+                                              <label class="form-check-label" for="hashtag_show_2">Double #</label>
+                                          </div>
+                                      </div>
+                                  </div>
+                              </div>
+                              <div class="col-lg-4 form-text pt-1"><i class="bi bi-info-circle"></i> The difference between <a href="#">#Hashtag</a> and <a href="#">#Hashtag#</a></div>
+                          </div>
+                            <div class="row mb-3">
+                              <label class="col-lg-2 col-form-label text-lg-end"></label>
+                                <div class="col-lg-6">
+                                    <div class="input-group">
+                                        <label class="input-group-text">Post Hot Rating Conditions</label>
+                                        <input type="number" class="form-control input-number" value="0">
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 form-text pt-1"><i class="bi bi-info-circle"></i> The total number of comments and likes reached how much to open the hot comment function, 0 means not enabled</div>
+                            </div>
+                            <div class="row mb-3">
+                                <label class="col-lg-2 col-form-label text-lg-end"></label>
+                                <div class="col-lg-6">
+                                    <div class="input-group">
+                                        <label class="input-group-text">Number of comment previews</label>
+                                        <input type="number" class="form-control input-number" value="2">
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 form-text pt-1"><i class="bi bi-info-circle"></i> Comment list sub-level comment preview, 0 means not enabled, maximum number 3</div>
+                            </div>
+                            <div class="row mb-5">
+                                <label class="col-lg-2 col-form-label text-lg-end"></label>
+                                <div class="col-lg-6">
+                                    <div class="input-group">
+                                        <label class="input-group-text">Default range of nearby posts</label>
+                                        <input type="number" class="form-control input-number" value="50">
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 form-text pt-1"><i class="bi bi-info-circle"></i> Range unit is based on multilingual configuration, default is km</div>
+                            </div>
+                            <!--Dialogs-->
+                            <div class="row mb-3">
+                                <label class="col-lg-2 col-form-label text-lg-end">Dialogs:</label>
+                                <div class="col-lg-6">
+                                    <div class="input-group">
+                                        <label class="input-group-text">Status</label>
+                                        <div class="form-control bg-body">
+                                            <div class="form-check form-check-inline">
+                                                <input class="form-check-input" type="radio" name="dialog_status" id="dialog_status_true" value="true" data-bs-toggle="collapse" data-bs-target="#dialog_setting:not(.show)" aria-expanded="false" aria-controls="dialog_setting" checked>
+                                                <label class="form-check-label" for="dialog_status_true">Open</label>
+                                            </div>
+                                            <div class="form-check form-check-inline">
+                                                <input class="form-check-input" type="radio" name="dialog_status" id="dialog_status_false" value="false" data-bs-toggle="collapse" data-bs-target="#dialog_setting.show" aria-expanded="false" aria-controls="dialog_setting">
+                                                <label class="form-check-label" for="dialog_status_false">Close</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 form-text pt-1"><i class="bi bi-info-circle"></i> Close is valid for all staff, open is subject to user role permissions</div>
+                            </div>
+                            <div class="collapse show" id="dialog_setting">
+                                <div class="row">
+                                    <label class="col-lg-2 col-form-label text-lg-end"></label>
+                                    <div class="col-lg-6">
+                                        <div class="input-group">
+                                            <label class="input-group-text">Message File</label>
+                                            <div class="form-control bg-body">
+                                                <div class="form-check form-check-inline">
+                                                    <input class="form-check-input" type="checkbox" name="dialog_file_image" id="dialog_file_image" value="image" checked>
+                                                    <label class="form-check-label" for="dialog_file_image">Image</label>
+                                                </div>
+                                                <div class="form-check form-check-inline">
+                                                    <input class="form-check-input" type="checkbox" name="dialog_file_video" id="dialog_file_video" value="video">
+                                                    <label class="form-check-label" for="dialog_file_video">Video</label>
+                                                </div>
+                                                <div class="form-check form-check-inline">
+                                                    <input class="form-check-input" type="checkbox" name="dialog_file_audio" id="dialog_file_audio" value="audio">
+                                                    <label class="form-check-label" for="dialog_file_audio">Audio</label>
+                                                </div>
+                                                <div class="form-check form-check-inline">
+                                                    <input class="form-check-input" type="checkbox" name="dialog_file_doc" id="dialog_file_doc" value="doc">
+                                                    <label class="form-check-label" for="dialog_file_doc">Doc</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 form-text pt-1"><i class="bi bi-info-circle"></i> If all are unchecked, it means that only text-only conversations are supported.</div>
+                                </div>
+                            </div>
+                            <!--Interactives-->
+                            <div class="row mt-5">
+                                <label class="col-lg-2 col-form-label text-lg-end">Interactives:</label>
+                                <div class="col-lg-10">
+                                    <ul class="list-group">
+                                        <li class="list-group-item">
+                                          <div class="form-check form-check-inline">
+                                            <input type="checkbox" id="like_member" name="interactive_status" value="false" class="form-check-input">
+                                            <label class="form-check-label" for="like_member">Like User</label>
+                                          </div>
+                                          <div class="form-check form-check-inline">
+                                            <input type="checkbox" id="like_group" name="interactive_status" value="false" class="form-check-input">
+                                            <label class="form-check-label" for="like_group">Like Group</label>
+                                          </div>
+                                          <div class="form-check form-check-inline">
+                                            <input type="checkbox" id="like_hashtag" name="interactive_status" value="false" class="form-check-input">
+                                            <label class="form-check-label" for="like_hashtag">Like Hashtag</label>
+                                          </div>
+                                          <div class="form-check form-check-inline">
+                                            <input type="checkbox" id="like_post" name="interactive_status" value="false" class="form-check-input" checked>
+                                            <label class="form-check-label" for="like_post">Like Post</label>
+                                          </div>
+                                          <div class="form-check form-check-inline">
+                                            <input type="checkbox" id="like_comment" name="interactive_status" value="false" class="form-check-input" checked>
+                                            <label class="form-check-label" for="like_comment">Like Comment</label>
+                                          </div>                    
+                                        </li>
+                                        <li class="list-group-item">
+                                          <div class="form-check form-check-inline">
+                                            <input type="checkbox" id="follow_member" name="interactive_status" value="false" class="form-check-input" checked>
+                                            <label class="form-check-label" for="follow_member">Follow User</label>
+                                          </div>
+                                          <div class="form-check form-check-inline">
+                                            <input type="checkbox" id="follow_group" name="interactive_status" value="false" class="form-check-input" checked>
+                                            <label class="form-check-label" for="follow_group">Follow Group</label>
+                                          </div>
+                                          <div class="form-check form-check-inline">
+                                            <input type="checkbox" id="follow_hashtag" name="interactive_status" value="false" class="form-check-input" checked>
+                                            <label class="form-check-label" for="follow_hashtag">Follow Hashtag</label>
+                                          </div>
+                                          <div class="form-check form-check-inline">
+                                            <input type="checkbox" id="follow_post" name="interactive_status" value="false" class="form-check-input" checked>
+                                            <label class="form-check-label" for="follow_post">Follow Post</label>
+                                          </div>
+                                          <div class="form-check form-check-inline">
+                                            <input type="checkbox" id="follow_comment" name="interactive_status" value="false" class="form-check-input" checked>
+                                            <label class="form-check-label" for="follow_comment">Follow Comment</label>
+                                          </div> 
+                                        </li>
+                                        <li class="list-group-item">
+                                          <div class="form-check form-check-inline">
+                                            <input type="checkbox" id="shield_member" name="interactive_status" value="false" class="form-check-input" checked>
+                                            <label class="form-check-label" for="shield_member">Block User</label>
+                                          </div>
+                                          <div class="form-check form-check-inline">
+                                            <input type="checkbox" id="shield_group" name="interactive_status" value="false" class="form-check-input">
+                                            <label class="form-check-label" for="shield_group">Block Group</label>
+                                          </div>
+                                          <div class="form-check form-check-inline">
+                                            <input type="checkbox" id="shield_hashtag" name="interactive_status" value="false" class="form-check-input">
+                                            <label class="form-check-label" for="shield_hashtag">Block Hashtag</label>
+                                          </div>
+                                          <div class="form-check form-check-inline">
+                                            <input type="checkbox" id="shield_post" name="interactive_status" value="false" class="form-check-input">
+                                            <label class="form-check-label" for="shield_post">Block Post</label>
+                                          </div>
+                                          <div class="form-check form-check-inline">
+                                            <input type="checkbox" id="shield_comment" name="interactive_status" value="false" class="form-check-input">
+                                            <label class="form-check-label" for="shield_comment">Block Comment</label>
+                                          </div> 
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="col-lg-2"></div>
+                                <div class="col-lg-10 form-text pt-1"><i class="bi bi-info-circle"></i> Check the box to enable the corresponding interactive function</div>
+                            </div>
+                            <!--View user content-->
+                            <div class="row mt-5">
+                                <label class="col-lg-2 col-form-label text-lg-end">View user content:</label>
+                                <div class="col-lg-10 mb-3">
+                                    <ul class="list-group">
+                                      <li class="list-group-item list-group-item-secondary">What content can be viewed by others?</li>
+                                      <li class="list-group-item">
+                                        <div class="form-check form-check-inline">
+                                          <input type="checkbox" id="tac-1" name="ta_status" value="true" class="form-check-input" checked>
+                                          <label class="form-check-label" for="tac-1">Posts by it</label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                          <input type="checkbox" id="tac-2" name="ta_status" value="false" class="form-check-input" checked>
+                                          <label class="form-check-label" for="tac-2">Comments by it</label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                          <input type="checkbox" id="tac-111" name="ta_status" value="false" class="form-check-input">
+                                          <label class="form-check-label" for="tac-111">Users who like it</label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                          <input type="checkbox" id="tac-112" name="ta_status" value="false" class="form-check-input" checked>
+                                          <label class="form-check-label" for="tac-112">Users who follow it</label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                          <input type="checkbox" id="tac-113" name="ta_status" value="false" class="form-check-input">
+                                          <label class="form-check-label" for="tac-113">Users who block it</label>
+                                        </div>
+                                      </li>
+                                      <li class="list-group-item">
+                                        <div class="form-check form-check-inline">
+                                          <input type="checkbox" id="tac-3" name="ta_status" value="false" class="form-check-input">
+                                          <label class="form-check-label" for="tac-3">It Liked User</label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                          <input type="checkbox" id="tac-4" name="ta_status" value="false" class="form-check-input">
+                                          <label class="form-check-label" for="tac-4">It Liked Group</label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                          <input type="checkbox" id="tac-5" name="ta_status" value="false" class="form-check-input">
+                                          <label class="form-check-label" for="tac-5">It Liked Hashtag</label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                          <input type="checkbox" id="tac-6" name="ta_status" value="false" class="form-check-input" checked>
+                                          <label class="form-check-label" for="tac-6">It Liked Post</label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                          <input type="checkbox" id="tac-7" name="ta_status" value="false" class="form-check-input">
+                                          <label class="form-check-label" for="tac-7">It Liked Comment</label>
+                                        </div>                    
+                                      </li>
+                                      <li class="list-group-item">
+                                        <div class="form-check form-check-inline">
+                                          <input type="checkbox" id="tac-8" name="ta_status" value="false" class="form-check-input" checked>
+                                          <label class="form-check-label" for="tac-8">It Followed User</label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                          <input type="checkbox" id="tac-9" name="ta_status" value="false" class="form-check-input" checked>
+                                          <label class="form-check-label" for="tac-9">It Followed Group</label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                          <input type="checkbox" id="tac-10" name="ta_status" value="false" class="form-check-input" checked>
+                                          <label class="form-check-label" for="tac-10">It Followed Hashtag</label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                          <input type="checkbox" id="tac-11" name="ta_status" value="false" class="form-check-input">
+                                          <label class="form-check-label" for="tac-11">It Followed Post</label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                          <input type="checkbox" id="tac-12" name="ta_status" value="false" class="form-check-input">
+                                          <label class="form-check-label" for="tac-12">It Followed Comment</label>
+                                        </div> 
+                                      </li>
+                                      <li class="list-group-item">
+                                        <div class="form-check form-check-inline">
+                                          <input type="checkbox" id="tac-13" name="ta_status" value="false" class="form-check-input">
+                                          <label class="form-check-label" for="tac-13">It Blocked User</label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                          <input type="checkbox" id="tac-14" name="ta_status" value="false" class="form-check-input">
+                                          <label class="form-check-label" for="tac-14">It Blocked Group</label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                          <input type="checkbox" id="tac-15" name="ta_status" value="false" class="form-check-input">
+                                          <label class="form-check-label" for="tac-15">It Blocked Hashtag</label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                          <input type="checkbox" id="tac-16" name="ta_status" value="false" class="form-check-input">
+                                          <label class="form-check-label" for="tac-16">It Blocked Post</label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                          <input type="checkbox" id="tac-17" name="ta_status" value="false" class="form-check-input">
+                                          <label class="form-check-label" for="tac-17">It Blocked Comment</label>
+                                        </div> 
+                                      </li>
+                                    </ul>
+                                </div>
+                                <label class="col-lg-2"></label>
+                                <div class="col-lg-10 mb-3">
+                                    <ul class="list-group">
+                                      <li class="list-group-item list-group-item-secondary">The default content list when visiting its homepage</li>
+                                      <li class="list-group-item">
+                                        <div class="form-check form-check-inline">
+                                          <input type="radio" id="ta-1" name="ta_status" value="true" class="form-check-input" checked>
+                                          <label class="form-check-label" for="ta-1">Posts by it</label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                          <input type="radio" id="ta-2" name="ta_status" value="false" class="form-check-input">
+                                          <label class="form-check-label" for="ta-2">Comments by it</label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                          <input type="radio" id="ta-111" name="ta_status" value="false" class="form-check-input">
+                                          <label class="form-check-label" for="ta-111">Users who like it</label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                          <input type="radio" id="ta-112" name="ta_status" value="false" class="form-check-input">
+                                          <label class="form-check-label" for="ta-112">Users who follow it</label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                          <input type="radio" id="ta-113" name="ta_status" value="false" class="form-check-input">
+                                          <label class="form-check-label" for="ta-113">Users who block it</label>
+                                        </div>
+                                      </li>
+                                      <li class="list-group-item">
+                                        <div class="form-check form-check-inline">
+                                          <input type="radio" id="ta-3" name="ta_status" value="false" class="form-check-input">
+                                          <label class="form-check-label" for="ta-3">It Liked User</label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                          <input type="radio" id="ta-4" name="ta_status" value="false" class="form-check-input">
+                                          <label class="form-check-label" for="ta-4">It Liked Group</label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                          <input type="radio" id="ta-5" name="ta_status" value="false" class="form-check-input">
+                                          <label class="form-check-label" for="ta-5">It Liked Hashtag</label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                          <input type="radio" id="ta-6" name="ta_status" value="false" class="form-check-input">
+                                          <label class="form-check-label" for="ta-6">It Liked Post</label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                          <input type="radio" id="ta-7" name="ta_status" value="false" class="form-check-input">
+                                          <label class="form-check-label" for="ta-7">It Liked Comment</label>
+                                        </div>                    
+                                      </li>
+                                      <li class="list-group-item">
+                                        <div class="form-check form-check-inline">
+                                          <input type="radio" id="ta-8" name="ta_status" value="false" class="form-check-input">
+                                          <label class="form-check-label" for="ta-8">It Followed User</label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                          <input type="radio" id="ta-9" name="ta_status" value="false" class="form-check-input">
+                                          <label class="form-check-label" for="ta-9">It Followed Group</label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                          <input type="radio" id="ta-10" name="ta_status" value="false" class="form-check-input">
+                                          <label class="form-check-label" for="ta-10">It Followed Hashtag</label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                          <input type="radio" id="ta-11" name="ta_status" value="false" class="form-check-input">
+                                          <label class="form-check-label" for="ta-11">It Followed Post</label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                          <input type="radio" id="ta-12" name="ta_status" value="false" class="form-check-input">
+                                          <label class="form-check-label" for="ta-12">It Followed Comment</label>
+                                        </div> 
+                                      </li>
+                                      <li class="list-group-item">
+                                        <div class="form-check form-check-inline">
+                                          <input type="radio" id="ta-13" name="ta_status" value="false" class="form-check-input">
+                                          <label class="form-check-label" for="ta-13">It Blocked User</label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                          <input type="radio" id="ta-14" name="ta_status" value="false" class="form-check-input">
+                                          <label class="form-check-label" for="ta-14">It Blocked Group</label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                          <input type="radio" id="ta-15" name="ta_status" value="false" class="form-check-input">
+                                          <label class="form-check-label" for="ta-15">It Blocked Hashtag</label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                          <input type="radio" id="ta-16" name="ta_status" value="false" class="form-check-input">
+                                          <label class="form-check-label" for="ta-16">It Blocked Post</label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                          <input type="radio" id="ta-17" name="ta_status" value="false" class="form-check-input">
+                                          <label class="form-check-label" for="ta-17">It Blocked Comment</label>
+                                        </div> 
+                                      </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <!--Save Btn-->
+                            <div class="row mt-5">
+                                <div class="col-lg-2"></div>
+                                <div class="col-lg-8">
+                                    <button type="submit" class="btn btn-primary">Save</button>
+                                </div>
+                            </div>
+                        </form>
+                        <!--Options List End-->
+                    </div>
+                    
+                    <footer>
+                        <div class="copyright text-center">
+                            <p class="mt-5 mb-5 text-muted">&copy; 2021 Fresns</p>
+                        </div>
+                    </footer>
+                </div>
+                <!--Set Area End-->
+            </div>
+        </div>
+    </main>
+
+    <script src="../assets/javascript/bootstrap.bundle.min.js"></script>
+    <script src="../assets/javascript/admin.js"></script>
+</body>
+
+</html>

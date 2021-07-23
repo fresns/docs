@@ -1,0 +1,815 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="author" content="Fresns" />
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="generator" content="Bootstrap 5">
+    <title>Fresns Control Panel</title>
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../assets/css/bootstrap-icons.css">
+    <link rel="stylesheet" href="../assets/css/admin.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="workplace.html"><i class="bi bi-gear"></i> Control Panel <span class="badge bg-secondary fs-9">Prototype</span></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#headerNavbar" aria-controls="headerNavbar" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="headerNavbar">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item"><a class="nav-link" href="workplace.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="settings.html">Settings</a></li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle active" href="basis-language.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Basic</a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="basis-language.html">Languages</a></li>
+                                <li><a class="dropdown-item" href="basis-policies.html">Policies</a></li>
+                                <li><a class="dropdown-item" href="basis-delete.html">Delete Account</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="system-site.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">System</a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="system-site.html">General</a></li>
+                                <li><a class="dropdown-item" href="system-send.html">Send</a></li>
+                                <li><a class="dropdown-item" href="system-user.html">User</a></li>
+                                <li><a class="dropdown-item" href="system-wallet.html">Wallet</a></li>
+                                <li><a class="dropdown-item" href="system-storage-image.html">Storage</a></li>
+                                <li><a class="dropdown-item" href="system-map.html">Map</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="operating-rename.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Operating</a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="operating-rename.html">Rename</a></li>
+                                <li><a class="dropdown-item" href="operating-interactive.html">Interactive</a></li>
+                                <li><a class="dropdown-item" href="operating-emoji.html">Emoji</a></li>
+                                <li><a class="dropdown-item" href="operating-publish-post.html">Publish</a></li>
+                                <li><a class="dropdown-item" href="operating-filter.html">Filter</a></li>
+                                <li><a class="dropdown-item" href="operating-role.html">User Role</a></li>
+                                <li><a class="dropdown-item" href="operating-group.html">Group</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="expand-editor.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Expand</a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="expand-editor.html">Editor</a></li>
+                                <li><a class="dropdown-item" href="expand-type.html">Content Type</a></li>
+                                <li><a class="dropdown-item" href="expand-manage.html">Manage</a></li>
+                                <li><a class="dropdown-item" href="expand-group.html">Group</a></li>
+                                <li><a class="dropdown-item" href="expand-userfeature.html">Feature</a></li>
+                                <li><a class="dropdown-item" href="expand-userprofile.html">Profile</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <div class="navbar-nav">
+                        <div class="btn-group d-flex flex-column">
+                            <button type="button" class="btn btn-outline-light btn-sm dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"><i class="bi bi-translate"></i> English</button>
+                            <ul class="dropdown-menu dropdown-menu-end">
+                                <li><a class="dropdown-item" href="#">English</a></li>
+                                <li><a class="dropdown-item" href="#">Español - Spanish</a></li>
+                                <li><a class="dropdown-item" href="#">Français - French</a></li>
+                                <li><a class="dropdown-item" href="#">日本語 - Japanese</a></li>
+                                <li><a class="dropdown-item" href="#">한국어 - Korean</a></li>
+                                <li><a class="dropdown-item" href="#">Русский - Russian</a></li>
+                                <li><a class="dropdown-item" href="#">Português - Portuguese</a></li>
+                                <li><a class="dropdown-item" href="#">Bahasa Indonesia - Indonesian</a></li>
+                                <li><a class="dropdown-item" href="#">简体中文 - Chinese (Simplified)</a></li>
+                                <li><a class="dropdown-item" href="#">繁體中文 - Chinese (Traditional)</a></li>
+                            </ul>
+                        </div>
+                        <div class="ms-3"><a class="btn btn-outline-warning btn-sm" href="index.html" role="button">Log out</a></div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+
+    <main>
+        <div class="container-fluid">
+            <div class="row">
+                <!--Sidebar Start-->
+                <div class="col-lg-2 fresns-sidebar mt-3 mt-lg-0">
+                    <nav class="navbar navbar-expand-lg navbar-light flex-lg-column shadow" style="background-color:#e3f2fd;">
+                        <div class="container-fluid d-lg-flex flex-lg-column">
+                            <span class="navbar-brand">Basic</span>
+                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                <ul class="navbar-nav d-flex flex-column">
+                                    <li class="nav-item"><a class="nav-link active" href="basis-language.html">Languages</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="basis-policies.html">Policies</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="basis-delete.html">Delete Account</a></li>
+                                    <li class="nav-item d-block d-lg-none my-3 text-secondary">Powered by Fresns</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="fresns-copyright d-none d-lg-block">Powered by Fresns</div>
+                    </nav>
+                </div>
+                <!--Sidebar End-->
+                <!--Set Area Start-->
+                <div class="col-lg-10 fresns-setting mt-3 mt-lg-0 p-lg-3">
+                    <div class="bg-body mb-2 p-3 p-lg-5">
+                        <div class="row mb-5 border-bottom">
+                            <div class="col-lg-7">
+                                <h3>Languages</h3>
+                                <p class="text-secondary">You need to configure the language options here before you can enter multilingual content in the corresponding configuration items.</p>
+                            </div>
+                            <div class="col-lg-5">
+                                <div class="input-group mt-2 mb-4 justify-content-lg-end">
+                                    <span class="input-group-text" data-bs-toggle="tooltip" data-bs-placement="top" title="Language Status"><i class="bi bi-translate me-1"></i>Activate</span>
+                                    <button class="btn btn-warning" type="button" data-bs-toggle="tooltip" data-bs-placement="top" title="Click to Deactivate">Deactivate</button>
+                                    <button class="btn btn-primary" type="button" data-bs-toggle="modal" data-bs-target="#createModal"><i class="bi bi-plus-circle-dotted"></i> Add Lang</button>
+                                    <a class="btn btn-outline-secondary" href="#" role="button">Help</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!--Options List-->
+                        <div class="table-responsive">
+                            <table class="table table-hover align-middle text-nowrap">
+                                <thead>
+                                    <tr class="table-info">
+                                        <th scope="col" style="width:6rem;">Order</th>
+                                        <th scope="col">Default</th>
+                                        <th scope="col">Language Code</th>
+                                        <th scope="col">Area Code</th>
+                                        <th scope="col">Language name</th>
+                                        <th scope="col">Area name</th>
+                                        <th scope="col">Unit of length</th>
+                                        <th scope="col">Writing Direction</th>
+                                        <th scope="col">Enable Status</th>
+                                        <th scope="col" style="width:13rem;">Options</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td><input type="number" class="form-control input-number" value="1"></td>
+                                        <td><input class="form-check-input" type="radio" name="default_language" id="en-US" value="en-US" checked></td>
+                                        <td>en</td>
+                                        <td>US</td>
+                                        <td>English</td>
+                                        <td>United States</td>
+                                        <td>mi</td>
+                                        <td>ltr</td>
+                                        <td><i class="bi bi-check-lg text-success"></i></td>
+                                        <td>
+                                            <button type="button" class="btn btn-outline-primary btn-sm" data-bs-toggle="modal" data-bs-target="#createModal">Edit</button>
+                                            <a class="btn btn-outline-info btn-sm text-decoration-none ms-1" href="basis-language-pack.html" role="button">Config lang packs</a>
+                                            <button type="button" class="btn btn-link link-danger ms-1 fresns-link fs-7">Delete</button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td><input type="number" class="form-control input-number" value="2"></td>
+                                        <td><input class="form-check-input" type="radio" name="default_language" id="ja" value="ja"></td>
+                                        <td>ja</td>
+                                        <td></td>
+                                        <td>日本語</td>
+                                        <td></td>
+                                        <td>mi</td>
+                                        <td>ltr</td>
+                                        <td><i class="bi bi-check-lg text-success"></i></td>
+                                        <td>
+                                            <button type="button" class="btn btn-outline-primary btn-sm" data-bs-toggle="modal" data-bs-target="#createModal">Edit</button>
+                                            <a class="btn btn-outline-info btn-sm text-decoration-none ms-1" href="basis-language-pack.html" role="button">Config lang packs</a>
+                                            <button type="button" class="btn btn-link link-danger ms-1 fresns-link fs-7">Delete</button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td><input type="number" class="form-control input-number" value="3"></td>
+                                        <td><input class="form-check-input" type="radio" name="default_language" id="ko-KR" value="ko-KR"></td>
+                                        <td>ko</td>
+                                        <td>KR</td>
+                                        <td>한국어</td>
+                                        <td>대한민국</td>
+                                        <td>km</td>
+                                        <td>ltr</td>
+                                        <td><i class="bi bi-dash-lg text-secondary"></i></td>
+                                        <td>
+                                            <button type="button" class="btn btn-outline-primary btn-sm" data-bs-toggle="modal" data-bs-target="#createModal">Edit</button>
+                                            <a class="btn btn-outline-info btn-sm text-decoration-none ms-1" href="basis-language-pack.html" role="button">Config lang packs</a>
+                                            <button type="button" class="btn btn-link link-danger ms-1 fresns-link fs-7">Delete</button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td><input type="number" class="form-control input-number" value="4"></td>
+                                        <td><input class="form-check-input" type="radio" name="default_language" id="zh-Hans-CN" value="zh-Hans-CN"></td>
+                                        <td>zh-Hans</td>
+                                        <td>CN</td>
+                                        <td>简体中文</td>
+                                        <td>内地</td>
+                                        <td>km</td>
+                                        <td>ltr</td>
+                                        <td><i class="bi bi-check-lg text-success"></i></td>
+                                        <td>
+                                            <button type="button" class="btn btn-outline-primary btn-sm" data-bs-toggle="modal" data-bs-target="#createModal">Edit</button>
+                                            <a class="btn btn-outline-info btn-sm text-decoration-none ms-1" href="basis-language-pack.html" role="button">Config lang packs</a>
+                                            <button type="button" class="btn btn-link link-danger ms-1 fresns-link fs-7">Delete</button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td><input type="number" class="form-control input-number" value="5"></td>
+                                        <td><input class="form-check-input" type="radio" name="default_language" id="zh-Hans-SG" value="zh-Hans-SG"></td>
+                                        <td>zh-Hans</td>
+                                        <td>SG</td>
+                                        <td>简体中文</td>
+                                        <td>新加坡</td>
+                                        <td>km</td>
+                                        <td>ltr</td>
+                                        <td><i class="bi bi-dash-lg text-secondary"></i></td>
+                                        <td>
+                                            <button type="button" class="btn btn-outline-primary btn-sm" data-bs-toggle="modal" data-bs-target="#createModal">Edit</button>
+                                            <a class="btn btn-outline-info btn-sm text-decoration-none ms-1" href="basis-language-pack.html" role="button">Config lang packs</a>
+                                            <button type="button" class="btn btn-link link-danger ms-1 fresns-link fs-7">Delete</button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td><input type="number" class="form-control input-number" value="6"></td>
+                                        <td><input class="form-check-input" type="radio" name="default_language" id="zh-Hant-HK" value="zh-Hant-HK"></td>
+                                        <td>zh-Hant</td>
+                                        <td>HK</td>
+                                        <td>繁體中文</td>
+                                        <td>香港</td>
+                                        <td>km</td>
+                                        <td>ltr</td>
+                                        <td><i class="bi bi-check-lg text-success"></i></td>
+                                        <td>
+                                            <button type="button" class="btn btn-outline-primary btn-sm" data-bs-toggle="modal" data-bs-target="#createModal">Edit</button>
+                                            <a class="btn btn-outline-info btn-sm text-decoration-none ms-1" href="basis-language-pack.html" role="button">Config lang packs</a>
+                                            <button type="button" class="btn btn-link link-danger ms-1 fresns-link fs-7">Delete</button>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <!--Options List End-->
+                    </div>
+                    
+                    <footer>
+                        <div class="copyright text-center">
+                            <p class="mt-5 mb-5 text-muted">&copy; 2021 Fresns</p>
+                        </div>
+                    </footer>
+                </div>
+                <!--Set Area End-->
+            </div>
+        </div>
+    </main>
+
+    <!-- Modal -->
+    <div class="modal fade" id="createModal" tabindex="-1" aria-labelledby="createModal" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Language Settings</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3 row">
+                            <label class="col-sm-3 col-form-label">Order</label>
+                            <div class="col-sm-9">
+                                <input type="number" class="form-control input-number">
+                            </div>
+                        </div>
+                        <div class="mb-3 row">
+                            <label class="col-sm-3 col-form-label">Language Code</label>
+                            <div class="col-sm-9">
+                                <select class="form-select">
+                                    <option selected>Choose Language Code</option>
+                                    <option value="ab">Abkhazian - Аҧсуа > ab</option>
+                                    <option value="aa">Afar - Qafár af > aa</option>
+                                    <option value="af">Afrikaans - Afrikaans > af</option>
+                                    <option value="ak">Akan - Akan > ak</option>
+                                    <option value="sq">Albanian - Shqip > sq</option>
+                                    <option value="am">Amharic - አማርኛ > am</option>
+                                    <option value="ar">Arabic - العربية > ar</option>
+                                    <option value="an">Aragonese - Aragonés > an</option>
+                                    <option value="hy">Armenian - Հայերեն > hy</option>
+                                    <option value="as">Assamese - অসমীয়া > as</option>
+                                    <option value="av">Avaric - Авар > av</option>
+                                    <option value="ae">Avestan - 𐬎𐬞𐬀𐬯𐬙𐬀𐬎𐬎𐬀𐬐𐬀𐬉𐬥𐬀 > ae</option>
+                                    <option value="ay">Aymara - Aymar > ay</option>
+                                    <option value="az">Azerbaijani - Azərbaycanca > az</option>
+                                    <option value="bm">Bambara - Bamanankan > bm</option>
+                                    <option value="ba">Bashkir - Башҡорт > ba</option>
+                                    <option value="eu">Basque - Euskara > eu</option>
+                                    <option value="be">Belarusian - Беларуская > be</option>
+                                    <option value="bn">Bengali (Bangla) - বাংলা > bn</option>
+                                    <option value="bh">Bihari - भोजपुरी > bh</option>
+                                    <option value="bi">Bislama - Bislama > bi</option>
+                                    <option value="bs">Bosnian - Bosanski > bs</option>
+                                    <option value="br">Breton - Brezhoneg > br</option>
+                                    <option value="bg">Bulgarian - Български > bg</option>
+                                    <option value="my">Burmese - Myanmasa > my</option>
+                                    <option value="ca">Catalan - Català > ca</option>
+                                    <option value="ch">Chamorro - Chamoru > ch</option>
+                                    <option value="ce">Chechen - Нохчийн > ce</option>
+                                    <option value="ny">Chichewa, Chewa, Nyanja - Chicheŵa/Chi-Chewa/Nyanja > ny</option>
+                                    <option value="zh-Hans">Chinese (Simplified) - 简体中文 > zh-Hans</option>
+                                    <option value="zh-Hant">Chinese (Traditional) - 繁體中文 > zh-Hant</option>
+                                    <option value="cu">Church Slavic - Словѣ́ньскъ/ⰔⰎⰑⰂⰡⰐⰠⰔⰍⰟ > cu</option>
+                                    <option value="cv">Chuvash - Чăвашла > cv</option>
+                                    <option value="kw">Cornish - Kernewek > kw</option>
+                                    <option value="co">Corsican - Corsu > co</option>
+                                    <option value="cr">Cree - Nēhiyawēwin/ᓀᐦᐃᔭᐍᐏᐣ > cr</option>
+                                    <option value="hr">Croatian - Hrvatski > hr</option>
+                                    <option value="cs">Czech - Česky > cs</option>
+                                    <option value="da">Danish - Dansk > da</option>
+                                    <option value="dv">Divehi, Dhivehi, Maldivian - ދިވެހިބަސް > dv</option>
+                                    <option value="nl">Dutch - Nederlands > nl</option>
+                                    <option value="dz">Dzongkha - ཇོང་ཁ > dz</option>
+                                    <option value="en">English > en</option>
+                                    <option value="eo">Esperanto - Esperanto > eo</option>
+                                    <option value="et">Estonian - Eesti > et</option>
+                                    <option value="ee">Ewe - Eʋegbe > ee</option>
+                                    <option value="fo">Faroese - Føroyskt > fo</option>
+                                    <option value="fj">Fijian - Na Vosa Vakaviti > fj</option>
+                                    <option value="fi">Finnish - Suomi > fi</option>
+                                    <option value="fr">French - Français > fr</option>
+                                    <option value="ff">Fula, Fulah, Pulaar, Pular - Fulfulde > ff</option>
+                                    <option value="gl">Galician - Galego > gl</option>
+                                    <option value="gd">Gaelic (Scottish) - Gàidhlig > gd</option>
+                                    <option value="gv">Gaelic (Manx) - Gaelg > gv</option>
+                                    <option value="ka">Georgian - ქართული > ka</option>
+                                    <option value="de">German - Deutsch > de</option>
+                                    <option value="el">Greek - Ελληνικά > el</option>
+                                    <option value="gn">Guarani - Avañe'ẽ > gn</option>
+                                    <option value="gu">Gujarati - ગુજરાતી > gu</option>
+                                    <option value="ht">Haitian Creole - Kreyòl ayisyen > ht</option>
+                                    <option value="ha">Hausa - هَوُسَ > ha</option>
+                                    <option value="he">Hebrew - עברית > he</option>
+                                    <option value="hz">Herero - Otsiherero > hz</option>
+                                    <option value="hi">Hindi - हिन्दी > hi</option>
+                                    <option value="ho">Hiri Motu - Hiri Motu > ho</option>
+                                    <option value="hu">Hungarian - Magyar > hu</option>
+                                    <option value="is">Icelandic - Íslenska > is</option>
+                                    <option value="io">Ido - Ido > io</option>
+                                    <option value="ig">Igbo - Igbo > ig</option>
+                                    <option value="id">Indonesian - Bahasa Indonesia > id</option>
+                                    <option value="ia">Interlingua - Interlingua > ia</option>
+                                    <option value="ie">Interlingue - Interlingue > ie</option>
+                                    <option value="iu">Inuktitut - ᐃᓄᒃᑎᑐᑦ > iu</option>
+                                    <option value="ik">Inupiaq - Iñupiak > ik</option>
+                                    <option value="ga">Irish - Gaeilge > ga</option>
+                                    <option value="it">Italian - Italiano > it</option>
+                                    <option value="ja">Japanese - 日本語 > ja</option>
+                                    <option value="jv">Javanese - Basa Jawa > jv</option>
+                                    <option value="kl">Kalaallisut, Greenlandic - Kalaallisut > kl</option>
+                                    <option value="kn">Kannada - ಕನ್ನಡ > kn</option>
+                                    <option value="kr">Kanuri - Kanuri > kr</option>
+                                    <option value="ks">Kashmiri - कश्मीरी - (كشميري) > ks</option>
+                                    <option value="kk">Kazakh - Қазақша > kk</option>
+                                    <option value="km">Khmer - ភាសាខ្មែរ > km</option>
+                                    <option value="ki">Kikuyu - Gĩkũyũ > ki</option>
+                                    <option value="rw">Kinyarwanda (Rwanda) - Kinyarwanda > rw</option>
+                                    <option value="ky">Kirghiz - Кыргызча > ky</option>
+                                    <option value="kv">Komi - Коми > kv</option>
+                                    <option value="kg">Kongo - Kongo > kg</option>
+                                    <option value="ko">Korean - 한국어 > ko</option>
+                                    <option value="ku">Kurdish - Kurdî/كوردی > ku</option>
+                                    <option value="kj">Kwanyama - Kuanyama > kj</option>
+                                    <option value="lo">Lao - ລາວ > lo</option>
+                                    <option value="la">Latin - Latina > la</option>
+                                    <option value="lv">Latvian (Lettish) - Latviešu > lv</option>
+                                    <option value="li">Limburgish, Limburger, Limburgan - Limburgs > li</option>
+                                    <option value="ln">Lingala - Lingála > ln</option>
+                                    <option value="lt">Lithuanian - Lietuvių > lt</option>
+                                    <option value="lu">Luga-Katanga - Luga-Katanga > lu</option>
+                                    <option value="lg">Luganda, Ganda - Luganda > lg</option>
+                                    <option value="lb">Luxembourgish - Lëtzebuergesch > lb</option>
+                                    <option value="gv">Manx - Gaelg > gv</option>
+                                    <option value="mk">Macedonian - Македонски > mk</option>
+                                    <option value="mg">Malagasy - Malagasy > mg</option>
+                                    <option value="ms">Malay - Bahasa Melayu > ms</option>
+                                    <option value="ml">Malayalam - മലയാളം > ml</option>
+                                    <option value="mt">Maltese - Malti > mt</option>
+                                    <option value="mi">Maori - Māori > mi</option>
+                                    <option value="mr">Marathi - मराठी > mr</option>
+                                    <option value="mh">Marshallese - Ebon > mh</option>
+                                    <option value="mo">Moldovan - Молдовеняскэ > mo</option>
+                                    <option value="mn">Mongolian - Монгол > mn</option>
+                                    <option value="na">Nauru - Ekakairũ Naoero > na</option>
+                                    <option value="nv">Navajo - Diné bizaad > nv</option>
+                                    <option value="ng">Ndonga - Oshiwambo > ng</option>
+                                    <option value="nd">Northern Ndebele - siNdebele saseNyakatho > nd</option>
+                                    <option value="ne">Nepali - नेपाली > ne</option>
+                                    <option value="no">Norwegian - Norsk > no</option>
+                                    <option value="nb">Norwegian bokmål - Norsk (bokmål) > nb</option>
+                                    <option value="nn">Norwegian Nynorsk - Norsk (nynorsk) > nn</option>
+                                    <option value="oc">Occitan - Occitan > oc</option>
+                                    <option value="oj">Ojibwe - ᐊᓂᔑᓈᐯᒧᐎᓐ > oj</option>
+                                    <option value="or">Oriya - ଓଡ଼ିଆ > or</option>
+                                    <option value="om">Oromo (Afaan Oromo) - Oromoo > om</option>
+                                    <option value="os">Ossetian - Иронау > os</option>
+                                    <option value="pi">Pali - पािऴ > pi</option>
+                                    <option value="ps">Pashto, Pushto - پښتو > ps</option>
+                                    <option value="fa">Persian (Farsi) - فارسی > fa</option>
+                                    <option value="pl">Polish - Polski > pl</option>
+                                    <option value="pt">Portuguese - Português > pt</option>
+                                    <option value="pa">Punjabi (Eastern) - ਪੰਜਾਬੀ > pa</option>
+                                    <option value="qu">Quechua - Runa Simi > qu</option>
+                                    <option value="rm">Romansh - Rumantsch > rm</option>
+                                    <option value="ro">Romanian - Română > ro</option>
+                                    <option value="ru">Russian - Русский > ru</option>
+                                    <option value="rn">Rundi - Kirundi > rn</option>
+                                    <option value="se">Sami - Davvisámegiella > se</option>
+                                    <option value="sm">Samoan - Gagana Samoa > sm</option>
+                                    <option value="sg">Sango - Sängö > sg</option>
+                                    <option value="sa">Sanskrit - संस्कृत > sa</option>
+                                    <option value="sr">Serbian - Српски/Srpski > sr</option>
+                                    <option value="sh">Serbo-Croatian - Srpskohrvatski/Српскохрватски > sh</option>
+                                    <option value="sn">Shona - chiShona > sn</option>
+                                    <option value="ii">Sichuan Yi - ꆇꉙ > ii</option>
+                                    <option value="sd">Sindhi - سنڌي > sd</option>
+                                    <option value="si">Sinhalese (Sinhala) - සිංහල > si</option>
+                                    <option value="ss">Siswati (Swati) - SiSwati > ss</option>
+                                    <option value="sk">Slovak - Slovenčina > sk</option>
+                                    <option value="sl">Slovenian - Slovenščina > sl</option>
+                                    <option value="so">Somali - Soomaaliga > so</option>
+                                    <option value="nr">Southern Ndebele - Southern Ndebele > nr</option>
+                                    <option value="st">Southern Sotho - Sesotho > st</option>
+                                    <option value="es">Spanish - Español > es</option>
+                                    <option value="su">Sundanese - Basa Sunda > su</option>
+                                    <option value="sw">Swahili - Kiswahili > sw</option>
+                                    <option value="sv">Swedish - Svenska > sv</option>
+                                    <option value="tl">Tagalog - Tagalog > tl</option>
+                                    <option value="ty">Tahitian - Reo Mā`ohi > ty</option>
+                                    <option value="tg">Tajik - Тоҷикӣ/tojikī > tg</option>
+                                    <option value="ta">Tamil - தமிழ் > ta</option>
+                                    <option value="tt">Tatar - Tatarça/Татарча > tt</option>
+                                    <option value="te">Telugu - తెలుగు > te</option>
+                                    <option value="th">Thai - ไทย > th</option>
+                                    <option value="bo">Tibetan - བོད་ཡིག > bo</option>
+                                    <option value="ti">Tigrinya - ትግርኛ > ti</option>
+                                    <option value="to">Tonga - faka-Tonga > to</option>
+                                    <option value="ts">Tsonga - Xitsonga > ts</option>
+                                    <option value="tn">Tswana - Setswana > tn</option>
+                                    <option value="tr">Turkish - Türkçe > tr</option>
+                                    <option value="tk">Turkmen - Türkmen > tk</option>
+                                    <option value="tw">Twi - Twi > tw</option>
+                                    <option value="ug">Uyghur - ئۇيغۇرچە > ug</option>
+                                    <option value="uk">Ukrainian - Українська > uk</option>
+                                    <option value="ur">Urdu - اردو > ur</option>
+                                    <option value="uz">Uzbek - O'zbek > uz</option>
+                                    <option value="ve">Venda - Tshivenda > ve</option>
+                                    <option value="vi">Vietnamese - Tiếng Việt > vi</option>
+                                    <option value="vo">Volapük - Volapük > vo</option>
+                                    <option value="wa">Wallon - Walon > wa</option>
+                                    <option value="cy">Welsh - Cymraeg > cy</option>
+                                    <option value="wo">Wolof - Wolof > wo</option>
+                                    <option value="fy">Western Frisian - Frysk > fy</option>
+                                    <option value="xh">Xhosa - isiXhosa > xh</option>
+                                    <option value="yi">Yiddish - ייִדיש > yi</option>
+                                    <option value="yo">Yoruba - Yorùbá > yo</option>
+                                    <option value="za">Zhuang, Chuang - Cuengh > za</option>
+                                    <option value="zu">Zulu - isiZulu > zu</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="mb-3 row">
+                            <label class="col-sm-3 col-form-label">Language Area</label>
+                            <div class="col-sm-9 pt-2">
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="area_status" id="area_status_false" value="false" data-bs-toggle="collapse" data-bs-target="#area_setting.show" aria-expanded="false" aria-controls="area_setting" checked>
+                                    <label class="form-check-label" for="area_status_false">No</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="area_status" id="area_status_true" value="true" data-bs-toggle="collapse" data-bs-target="#area_setting:not(.show)" aria-expanded="false" aria-controls="area_setting">
+                                    <label class="form-check-label" for="area_status_true">Yes</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="collapse" id="area_setting">
+                            <div class="mb-3 row">
+                                <label class="col-sm-3 col-form-label">Area Code</label>
+                                <div class="col-sm-9">
+                                    <div class="input-group">
+                                        <select class="form-select">
+                                            <option selected disabled>Choose...</option>
+                                            <option value="1">Asia</option>
+                                            <option value="2">Africa</option>
+                                            <option value="3">North America</option>
+                                            <option value="4">South America</option>
+                                            <option value="5">Antarctica</option>
+                                            <option value="6">Europe</option>
+                                            <option value="7">Oceania</option>
+                                        </select>
+                                        <select class="form-select">
+                                            <option selected disabled>Choose...</option>
+                                            <option value="AF">Afghanistan - افغانستان‎ > AF</option>
+                                            <option value="AL">Albania - Shqipërisë > AL</option>
+                                            <option value="DZ">Algeria - الدزاير‎‎ al-dzāyīr > DZ</option>
+                                            <option value="AS">American Samoa - Amerika Sāmoa > AS</option>
+                                            <option value="AD">Andorra - Principat d'Andorra > AD</option>
+                                            <option value="AO">Angola - Angola > AO</option>
+                                            <option value="AQ">Antarctica - Antarctica > AQ</option>
+                                            <option value="AG">Antigua and Barbuda - Antigua and Barbuda > AG</option>
+                                            <option value="AR">Argentina - Argentina > AR</option>
+                                            <option value="AM">Armenia - Հայաստանի Հանրապետություն > AM</option>
+                                            <option value="AW">Aruba - Aruba > AW</option>
+                                            <option value="AU">Australia - Australia > AU</option>
+                                            <option value="AT">Austria - Österreich > AT</option>
+                                            <option value="AZ">Azerbaijan - Azərbaycan > AZ</option>
+                                            <option value="BS">Bahamas - Bahamas > BS</option>
+                                            <option value="BH">Bahrain - مملكة البحرين > BH</option>
+                                            <option value="BD">Bangladesh - গণপ্রজাতন্ত্রী বাংলাদেশ > BD</option>
+                                            <option value="BB">Barbados - Barbados > BB</option>
+                                            <option value="BY">Belarus - Беларусь > BY</option>
+                                            <option value="BE">Belgium - België > BE</option>
+                                            <option value="BZ">Belize - Belize > BZ</option>
+                                            <option value="BJ">Benin - Bénin > BJ</option>
+                                            <option value="BM">Bermuda - Bermuda > BM</option>
+                                            <option value="BT">Bhutan - འབྲུག་ཡུལ་ > BT</option>
+                                            <option value="BO">Bolivia - Bolivia > BO</option>
+                                            <option value="BA">Bosnia and Herzegovina - Босна и Херцеговина > BA</option>
+                                            <option value="BW">Botswana - Botswana > BW</option>
+                                            <option value="BV">Bouvet Island - Bouvetøya > BV</option>
+                                            <option value="BR">Brazil - Brasil > BR</option>
+                                            <option value="IO">British Indian Ocean Territory - British Indian Ocean Territory > IO</option>
+                                            <option value="BN">Brunei Darussalam - نڬارا بروني دارالسلام > BN</option>
+                                            <option value="BG">Bulgaria - България > BG</option>
+                                            <option value="BF">Burkina Faso - Burkina Faso > BF</option>
+                                            <option value="BI">Burundi - y'Uburundi > BI</option>
+                                            <option value="KH">Cambodia - ព្រះរាជាណាចក្រកម្ពុជា > KH</option>
+                                            <option value="CM">Cameroon - Cameroun > CM</option>
+                                            <option value="CA">Canada - Canada > CA</option>
+                                            <option value="CV">Cape Verde - Cabo Verde > CV</option>
+                                            <option value="KY">Cayman Islands - Cayman Islands > KY</option>
+                                            <option value="CF">Central African epublic - Centrafricaine > CF</option>
+                                            <option value="TD">Chad - تشاد‎ > TD</option>
+                                            <option value="CL">Chile - Chile > CL</option>
+                                            <option value="CN">China - 内地 > CN</option>
+                                            <option value="CX">Christmas Island - Christmas Island > CX</option>
+                                            <option value="CC">Cocos (keeling) Islands - Cocos (Keeling) Islands > CC</option>
+                                            <option value="CO">Colombia - Colombia > CO</option>
+                                            <option value="KM">Comoros - جزر القمر‎ > KM</option>
+                                            <option value="CG">Congo - Congo > CG</option>
+                                            <option value="CD">Congo, The Democratic Republic of The - DR Congo > CD</option>
+                                            <option value="CK">Cook Islands - Kūki 'Āirani > CK</option>
+                                            <option value="CR">Costa Rica - Costa Rica > CR</option>
+                                            <option value="CI">Cote d'Ivoire - CÔte d'ivoire > CI</option>
+                                            <option value="HR">Croatia - Hrvatska > HR</option>
+                                            <option value="CU">Cuba - Cuba > CU</option>
+                                            <option value="CY">Cyprus - Κύπρος > CY</option>
+                                            <option value="CZ">Czech Republic - Česko > CZ</option>
+                                            <option value="DK">Denmark - Danmark > DK</option>
+                                            <option value="DJ">Djibouti - جمهوريه جيبوتي‎ > DJ</option>
+                                            <option value="DM">Dominica - Dominica > DM</option>
+                                            <option value="DO">Dominican Republic - Dominicana > DO</option>
+                                            <option value="EC">Ecuador - Ecuador > EC</option>
+                                            <option value="EG">Egypt - جمهوريّة مصرالعربيّة‎ > EG</option>
+                                            <option value="SV">El Salvador - El Salvador > SV</option>
+                                            <option value="GQ">Equatorial Guinea - Guinée équatoriale > GQ</option>
+                                            <option value="ER">Eritrea - دولة إرتريا‎ > ER</option>
+                                            <option value="EE">Estonia - Eesti > EE</option>
+                                            <option value="ET">Ethiopia - ኢትዮጵያ > ET</option>
+                                            <option value="FK">Falkland Islands (malvinas) - Falkland Islands > FK</option>
+                                            <option value="FO">Faroe Islands - Føroyar > FO</option>
+                                            <option value="FJ">Fiji - Matanitu Tugalala o Viti > FJ</option>
+                                            <option value="FI">Finland - Suomen tasavalta > FI</option>
+                                            <option value="FR">France - française > FR</option>
+                                            <option value="GF">French Guiana - Guyane française > GF</option>
+                                            <option value="PF">French Polynesia - Polynésie française > PF</option>
+                                            <option value="TF">French Southern Territories - Terres australes et antarctiques françaises > TF</option>
+                                            <option value="GA">Gabon - gabonaise > GA</option>
+                                            <option value="GM">Gambia - The Gambia > GM</option>
+                                            <option value="GE">Georgia - საქართველო > GE</option>
+                                            <option value="DE">Germany - Deutschland > DE</option>
+                                            <option value="GH">Ghana - Ghana > GH</option>
+                                            <option value="GI">Gibraltar - Gibraltar > GI</option>
+                                            <option value="GR">Greece - Ελλάς > GR</option>
+                                            <option value="GL">Greenland - Kalaallit Nunaat > GL</option>
+                                            <option value="GD">Grenada - Grenada > GD</option>
+                                            <option value="GP">Guadeloupe - Guadeloupe > GP</option>
+                                            <option value="GU">Guam - Guåhån > GU</option>
+                                            <option value="GT">Guatemala - Guatemala > GT</option>
+                                            <option value="GN">Guinea - Guinée > GN</option>
+                                            <option value="GW">Guinea-bissau - Guiné-Bissau > GW</option>
+                                            <option value="GY">Guyana - Guyana > GY</option>
+                                            <option value="HT">Haiti - Haïti > HT</option>
+                                            <option value="HM">Heard Island and Mcdonald Islands - HIMI > HM</option>
+                                            <option value="HN">Honduras - Honduras > HN</option>
+                                            <option value="HK">Hong Kong - 香港 > HK</option>
+                                            <option value="HU">Hungary - Magyarország > HU</option>
+                                            <option value="IS">Iceland - Ísland > IS</option>
+                                            <option value="IN">India - भारत > IN</option>
+                                            <option value="ID">Indonesia - Indonesia > ID</option>
+                                            <option value="IR">Iran - ایران‎ > IR</option>
+                                            <option value="IQ">Iraq - العراق‎ > IQ</option>
+                                            <option value="IE">Ireland - Éire > IE</option>
+                                            <option value="IL">Israel - יִשְׂרָאֵל‬ > IL</option>
+                                            <option value="IT">Italy - Italia > IT</option>
+                                            <option value="JM">Jamaica - Jamaica > JM</option>
+                                            <option value="JP">Japan - 日本 > JP</option>
+                                            <option value="JO">Jordan - الأردنّ‎ > JO</option>
+                                            <option value="KZ">Kazakhstan - Қазақстан > KZ</option>
+                                            <option value="KE">Kenya - Kenya > KE</option>
+                                            <option value="KI">Kiribati - Kiribati > KI</option>
+                                            <option value="KP">Korea, Democratic People's Republic Of - 북한 > KP</option>
+                                            <option value="KR">Korea, Republic Of - 대한민국 > KR</option>
+                                            <option value="KW">Kuwait - الكويت‎ > KW</option>
+                                            <option value="KG">Kyrgyzstan - Кыргызстан > KG</option>
+                                            <option value="LA">Laos - ລາວ Lāo > LA</option>
+                                            <option value="LV">Latvia - Latvija > LV</option>
+                                            <option value="LB">Lebanon - لبنان‎ > LB</option>
+                                            <option value="LS">Lesotho - Lesotho > LS</option>
+                                            <option value="LR">Liberia - Liberia > LR</option>
+                                            <option value="LY">Libya, State Of - دولة ليبيا‎ > LY</option>
+                                            <option value="LI">Liechtenstein - Fürstentum Liechtenstein > LI</option>
+                                            <option value="LT">Lithuania - Lietuva > LT</option>
+                                            <option value="LU">Luxembourg - Lëtzebuerg > LU</option>
+                                            <option value="MO">Macao - 澳門 > MO</option>
+                                            <option value="MK">Macedonia - Северна Македонија > MK</option>
+                                            <option value="MG">Madagascar - Madagasikara > MG</option>
+                                            <option value="MW">Malawi - Malaŵi > MW</option>
+                                            <option value="MY">Malaysia - Malaysia > MY</option>
+                                            <option value="MV">Maldives - ދިވެހިރާއްޖެ‎ > MV</option>
+                                            <option value="ML">Mali - Mali > ML</option>
+                                            <option value="MT">Malta - Malta > MT</option>
+                                            <option value="MH">Marshall Islands - Aolepān Aorōkin M̧ajeļ > MH</option>
+                                            <option value="MQ">Martinique - Martinique > MQ</option>
+                                            <option value="MR">Mauritania - موريتانيا‎ > MR</option>
+                                            <option value="MU">Mauritius - Moris > MU</option>
+                                            <option value="YT">Mayotte - Maore > YT</option>
+                                            <option value="MX">Mexico - México > MX</option>
+                                            <option value="FM">Micronesia - Micronesia > FM</option>
+                                            <option value="MD">Moldova - Moldova > MD</option>
+                                            <option value="MC">Monaco - Principatu de Múnegu > MC</option>
+                                            <option value="MN">Mongolia - Монгол улс > MN</option>
+                                            <option value="ME">Montenegro - Црна Гора > ME</option>
+                                            <option value="MS">Montserrat - Montserrat > MS</option>
+                                            <option value="MA">Morocco - المغرب‎ > MA</option>
+                                            <option value="MZ">Mozambique - Moçambique > MZ</option>
+                                            <option value="MM">Myanmar - မြန်မာ > MM</option>
+                                            <option value="NA">Namibia - Namibië > NA</option>
+                                            <option value="NR">Nauru - Naoero > NR</option>
+                                            <option value="NP">Nepal - नेपाल > NP</option>
+                                            <option value="NL">Netherlands - Nederland > NL</option>
+                                            <option value="AN">Netherlands Antilles - Antias Hulandes > AN</option>
+                                            <option value="NC">New Caledonia - Nouvelle-Calédonie > NC</option>
+                                            <option value="NZ">New Zealand - New Zealand > NZ</option>
+                                            <option value="NI">Nicaragua - Nicaragua > NI</option>
+                                            <option value="NE">Niger - Niger > NE</option>
+                                            <option value="NG">Nigeria - Nigeria > NG</option>
+                                            <option value="NU">Niue - Niuē > NU</option>
+                                            <option value="NF">Norfolk Island - Teratri of Norf'k Ailen > NF</option>
+                                            <option value="MP">Northern Mariana Islands - Sankattan Siha Na Islas Mariånas > MP</option>
+                                            <option value="NO">Norway - Norge > NO</option>
+                                            <option value="OM">Oman - عُمان‎ > OM</option>
+                                            <option value="PK">Pakistan - اسلامی جمہوریہ پاکستان > PK</option>
+                                            <option value="PW">Palau - Belau > PW</option>
+                                            <option value="PS">Palestine, State Of - دولة فلسطين > PS</option>
+                                            <option value="PA">Panama - Panamá > PA</option>
+                                            <option value="PG">Papua New Guinea - Papua Niugini > PG</option>
+                                            <option value="PY">Paraguay - Tetã Paraguái > PY</option>
+                                            <option value="PE">Peru - Perú > PE</option>
+                                            <option value="PH">Philippines - Pilipinas > PH</option>
+                                            <option value="PN">Pitcairn - Pitkern Ailen > PN</option>
+                                            <option value="PL">Poland - Polska > PL</option>
+                                            <option value="PT">Portugal - Portuguesa > PT</option>
+                                            <option value="PR">Puerto Rico - Puerto Rico > PR</option>
+                                            <option value="QA">Qatar - قطر‎ > QA</option>
+                                            <option value="RE">Reunion - La Réunion > RE</option>
+                                            <option value="RO">Romania - România > RO</option>
+                                            <option value="RU">Russian Federation - Россия > RU</option>
+                                            <option value="RW">Rwanda - Rwanda > RW</option>
+                                            <option value="SH">Saint Helena - Saint Helena > SH</option>
+                                            <option value="KN">Saint Kitts and Nevis - Saint Kitts and Nevis > KN</option>
+                                            <option value="LC">Saint Lucia - Saint Lucia > LC</option>
+                                            <option value="PM">Saint Pierre and Miquelon - Saint-Pierre-et-Miquelon > PM</option>
+                                            <option value="VC">Saint Vincent and The Grenadines - Saint Vincent and the Grenadines > VC</option>
+                                            <option value="WS">Samoa - Malo Sa'oloto Tuto'atasi o Samoa > WS</option>
+                                            <option value="SM">San Marino - San Marino > SM</option>
+                                            <option value="ST">Sao Tome and Principe - São Tomé e Príncipe > ST</option>
+                                            <option value="SA">Saudi Arabia - العربية السعودية‎ > SA</option>
+                                            <option value="SN">Senegal - Sénégal > SN</option>
+                                            <option value="RS">Serbia - Србија > RS</option>
+                                            <option value="SC">Seychelles - Repiblik Sesel > SC</option>
+                                            <option value="SL">Sierra Leone - Sierra Leone > SL</option>
+                                            <option value="SG">Singapore - 新加坡 > SG</option>
+                                            <option value="SK">Slovakia - Slovenská > SK</option>
+                                            <option value="SI">Slovenia - Slovenija > SI</option>
+                                            <option value="SB">Solomon Islands - Solomon Islands > SB</option>
+                                            <option value="SO">Somalia - الصومال > SO</option>
+                                            <option value="ZA">South Africa - Suid-Afrika > ZA</option>
+                                            <option value="GS">South Georgia and The South Sandwich Islands - SGSSI > GS</option>
+                                            <option value="SS">South Sudan - South Sudan > SS</option>
+                                            <option value="ES">Spain - España > ES</option>
+                                            <option value="LK">Sri Lanka - ශ්‍රී ලංකාව > LK</option>
+                                            <option value="SD">Sudan - جمهورية السودان‎ > SD</option>
+                                            <option value="SR">Suriname - Suriname > SR</option>
+                                            <option value="SJ">Svalbard and Jan Mayen - Svalbard og Jan Mayen > SJ</option>
+                                            <option value="SZ">Swaziland - eSwatini > SZ</option>
+                                            <option value="SE">Sweden - Sverige > SE</option>
+                                            <option value="CH">Switzerland - Schweiz > CH</option>
+                                            <option value="SY">Syrian Arab - ‎سوريا‎‎ > SY</option>
+                                            <option value="TW">Taiwan - 台灣 > TW</option>
+                                            <option value="TJ">Tajikistan - Ҷумҳурии Тоҷикистон > TJ</option>
+                                            <option value="TZ">Tanzania - Jamhuri ya Muungano wa Tanzania > TZ</option>
+                                            <option value="TH">Thailand - ประเทศไทย > TH</option>
+                                            <option value="TL">Timor-leste - Timor Lorosa'e > TL</option>
+                                            <option value="TG">Togo - Togo > TG</option>
+                                            <option value="TK">Tokelau - Tokelau > TK</option>
+                                            <option value="TO">Tonga - Pule'anga Fakatu'i 'o Tonga > TO</option>
+                                            <option value="TT">Trinidad and Tobago - Trinidad and Tobago > TT</option>
+                                            <option value="TN">Tunisia - الجمهورية التونسية‎ > TN</option>
+                                            <option value="TR">Turkey - Türkiye > TR</option>
+                                            <option value="TM">Turkmenistan - Türkmenistan > TM</option>
+                                            <option value="TC">Turks and Caicos Islands - Turks and Caicos Islands > TC</option>
+                                            <option value="TV">Tuvalu - Tuvalu > TV</option>
+                                            <option value="UG">Uganda - Uganda > UG</option>
+                                            <option value="UA">Ukraine - Україна > UA</option>
+                                            <option value="AE">United Arab Emirates - الإمارات‎ > AE</option>
+                                            <option value="GB">United Kingdom - United Kingdom > GB</option>
+                                            <option value="US">United States - United States > US</option>
+                                            <option value="UM">United States Minor Outlying Islands - United States Minor Outlying Islands > UM</option>
+                                            <option value="UY">Uruguay - Uruguay > UY</option>
+                                            <option value="UZ">Uzbekistan - O'zbekiston > UZ</option>
+                                            <option value="VU">Vanuatu - Vanuatu > VU</option>
+                                            <option value="VE">Venezuela - Venezuela > VE</option>
+                                            <option value="VN">Viet Nam - Việt Nam > VN</option>
+                                            <option value="VG">Virgin Islands, British - British Virgin Islands > VG</option>
+                                            <option value="VI">Virgin Islands, U.S. - United States Virgin Islands > VI</option>
+                                            <option value="WF">Wallis and Futuna - Wallis et Futuna > WF</option>
+                                            <option value="EH">Western Sahara - الصحراء الغربية‎ > EH</option>
+                                            <option value="YE">Yemen - اليمن‎ > YE</option>
+                                            <option value="ZM">Zambia - Zambia > ZM</option>
+                                            <option value="ZW">Zimbabwe - Zimbabwe > ZW</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mb-3 row">
+                            <label class="col-sm-3 col-form-label">Unit of length</label>
+                            <div class="col-sm-9">
+                                <select class="form-select">
+                                    <option value="km" selected>km</option>
+                                    <option value="mi">mi</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="mb-3 row">
+                            <label class="col-sm-3 col-form-label">Date Format</label>
+                            <div class="col-sm-9">
+                                <select class="form-select">
+                                    <option value="yyyy-mm-dd" selected>yyyy-mm-dd</option>
+                                    <option value="yyyy/mm/dd">yyyy/mm/dd</option>
+                                    <option value="yyyy.mm.dd">yyyy.mm.dd</option>
+                                    <option value="mm-dd-yyyy">mm-dd-yyyy</option>
+                                    <option value="mm/dd/yyyy">mm/dd/yyyy</option>
+                                    <option value="mm.dd.yyyy">mm.dd.yyyy</option>
+                                    <option value="dd-mm-yyyy">dd-mm-yyyy</option>
+                                    <option value="dd/mm/yyyy">dd/mm/yyyy</option>
+                                    <option value="dd.mm.yyyy">dd.mm.yyyy</option>
+                                </select>
+                                <div class="form-text">yyyy denotes year, mm denotes month, dd denotes day</div>
+                            </div>
+                        </div>
+                        <div class="mb-3 row">
+                            <label class="col-sm-3 col-form-label">Humanization time</label>
+                            <div class="col-sm-9">
+                                <div class="input-group mb-1">
+                                    <span class="input-group-text">{n} minute ago</span>
+                                    <input type="text" class="form-control">
+                                </div>
+                                <div class="input-group mb-1">
+                                    <span class="input-group-text">{n} hour ago</span>
+                                    <input type="text" class="form-control">
+                                </div>
+                                <div class="input-group mb-1">
+                                    <span class="input-group-text">{n} day ago</span>
+                                    <input type="text" class="form-control">
+                                </div>
+                                <div class="input-group mb-1">
+                                    <span class="input-group-text">{n} month ago</span>
+                                    <input type="text" class="form-control">
+                                </div>
+                                <div class="form-text">Time variable name: {n}</div>
+                            </div>
+                        </div>
+                        <div class="mb-3 row">
+                            <label class="col-sm-3 col-form-label"></label>
+                            <div class="col-sm-9"><button type="submit" class="btn btn-primary">Submit</button></div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="../assets/javascript/bootstrap.bundle.min.js"></script>
+    <script src="../assets/javascript/admin.js"></script>
+</body>
+
+</html>
