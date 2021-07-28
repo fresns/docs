@@ -1,0 +1,275 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="author" content="Fresns" />
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="generator" content="Bootstrap 5">
+    <title>Fresns functions.php</title>
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../assets/css/bootstrap-icons.css">
+    <link rel="stylesheet" href="../assets/css/backend.css">
+</head>
+
+<body>
+
+    <main>
+        <div class="container-lg p-0 p-lg-3">
+            <div class="bg-body shadow-sm mt-4 mt-lg-2 p-3 p-lg-5">
+                <div class="row mb-2">
+                    <div class="col-7">
+                        <h3>functions.php <span class="badge bg-secondary fs-9">Components Demo</span></h3>
+                        <p class="text-secondary">Theme template settings file</p>
+                    </div>
+                    <div class="col-5 text-end"></div>
+                </div>
+                <!--settings start-->
+                <form class="mt-4">
+                    <!--General form input-->
+                    <div class="row mb-4">
+                        <label class="col-lg-2 col-form-label text-lg-end">General form input：</label>
+                        <div class="col-lg-6">
+                            <div class="input-group mb-3">
+                                <div class="input-group-text"><input class="form-check-input mt-0" type="checkbox" value=""></div>
+                                <input type="text" class="form-control">
+                            </div>
+                        </div>
+                    </div>
+                    <!--General form textarea-->
+                    <div class="row mb-4">
+                        <label class="col-lg-2 col-form-label text-lg-end">General form textarea：</label>
+                        <div class="col-lg-6">
+                            <div class="input-group mb-3">
+                                <div class="input-group-text"><input class="form-check-input mt-0" type="checkbox" value=""></div>
+                                <textarea class="form-control" rows="3"></textarea>
+                            </div>
+                        </div>
+                    </div>
+                    <!--General form select-->
+                    <div class="row mb-4">
+                        <label class="col-lg-2 col-form-label text-lg-end">General form select：</label>
+                        <div class="col-lg-6">
+                            <div class="input-group mb-3">
+                                <div class="input-group-text"><input class="form-check-input mt-0" type="checkbox" value=""></div>
+                                <select class="form-select">
+                                    <option selected>Choose...</option>
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Upload file input type="file"-->
+                    <div class="row mb-4">
+                        <label class="col-lg-2 col-form-label text-lg-end">Upload file：</label>
+                        <div class="col-lg-6">
+                            <div class="input-group mb-3">
+                                <div class="input-group-text"><input class="form-check-input mt-0" type="checkbox" value=""></div>
+                                <button class="btn btn-outline-secondary" type="button">View</button>
+                                <button class="btn btn-outline-secondary" type="button">Delete</button>
+                                <label class="input-group-text">Upload a new</label>
+                                <input type="file" class="form-control">
+                            </div>
+                        </div>
+                    </div>
+                    <!--Multilingual input-->
+                    <div class="row mb-4">
+                        <label class="col-lg-2 col-form-label text-lg-end">Multilingual input：</label>
+                        <div class="col-lg-6">
+                            <div class="input-group mb-3">
+                                <div class="input-group-text"><input class="form-check-input mt-0" type="checkbox" value=""></div>
+                                <input type="text" class="form-control" data-bs-toggle="modal" data-bs-target="#langModal">
+                            </div>
+                        </div>
+                    </div>
+                    <!--Multilingual textarea-->
+                    <div class="row mb-4">
+                        <label class="col-lg-2 col-form-label text-lg-end">Multilingual textarea：</label>
+                        <div class="col-lg-6">
+                            <div class="input-group mb-3">
+                                <div class="input-group-text"><input class="form-check-input mt-0" type="checkbox" value=""></div>
+                                <textarea class="form-control" rows="3" data-bs-toggle="modal" data-bs-target="#langDescModal"></textarea>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Affiliate plugin select-->
+                    <div class="row mb-4">
+                        <label class="col-lg-2 col-form-label text-lg-end">Affiliate plugin select：</label>
+                        <div class="col-lg-6">
+                            <div class="input-group mb-3">
+                                <div class="input-group-text"><input class="form-check-input mt-0" type="checkbox" value=""></div>
+                                <select class="form-select">
+                                    <option selected>Choose...</option>
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Affiliate plugin select multiple-->
+                    <div class="row mb-4">
+                        <label class="col-lg-2 col-form-label text-lg-end">Affiliate plugin select multiple：</label>
+                        <div class="col-lg-6">
+                            <div class="input-group mb-3">
+                                <div class="input-group-text"><input class="form-check-input mt-0" type="checkbox" value=""></div>
+                                <select class="form-select" multiple>
+                                    <option selected>Choose...</option>
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mb-4">
+                        <div class="col-lg-2"></div>
+                        <div class="col-lg-10"><button type="submit" class="btn btn-primary">Save</button></div>
+                    </div>
+                </form>
+                <!--settings end-->
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="copyright text-center">
+            <p class="mt-5 mb-5 text-muted">&copy; 2021 Fresns</p>
+        </div>
+    </footer>
+
+    <!-- Language Modal -->
+    <div class="modal fade" id="langModal" tabindex="-1" aria-labelledby="langModal" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Multi-language settings</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="table-responsive">
+                            <table class="table table-hover align-middle text-nowrap">
+                                <thead>
+                                    <tr class="table-info">
+                                        <th scope="col" class="w-25">Language Tag</th>
+                                        <th scope="col" class="w-25">Language Name</th>
+                                        <th scope="col" class="w-50">Content</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>en-US <i class="bi bi-info-circle text-primary" data-bs-toggle="tooltip" data-bs-placement="top" title="默认语言"></i></td>
+                                        <td>English(United States)</td>
+                                        <td><input type="text" class="form-control" value="name"></td>
+                                    </tr>
+                                    <tr>
+                                        <td>ja</td>
+                                        <td>日本語</td>
+                                        <td><input type="text" class="form-control" value="名"></td>
+                                    </tr>
+                                    <tr>
+                                        <td>ko-KR</td>
+                                        <td>한국어(대한민국)</td>
+                                        <td><input type="text" class="form-control" value="이름"></td>
+                                    </tr>
+                                    <tr>
+                                        <td>zh-Hans-CN</td>
+                                        <td>简体中文(内地)</td>
+                                        <td><input type="text" class="form-control" value="名称"></td>
+                                    </tr>
+                                    <tr>
+                                        <td>zh-Hans-SG</td>
+                                        <td>简体中文(新加坡)</td>
+                                        <td><input type="text" class="form-control" value="名称"></td>
+                                    </tr>
+                                    <tr>
+                                        <td>zh-Hans-HK</td>
+                                        <td>繁體中文(香港)</td>
+                                        <td><input type="text" class="form-control" value="名稱"></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <!--保存按钮-->
+                        <div class="text-center">
+                            <button type="button" class="btn btn-success" data-bs-dismiss="modal" aria-label="Close">Confirm</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Language Modal -->
+    <div class="modal fade" id="langDescModal" tabindex="-1" aria-labelledby="langDescModal" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Multi-language settings</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="table-responsive">
+                            <table class="table table-hover align-middle text-nowrap">
+                                <thead>
+                                    <tr class="table-info">
+                                        <th scope="col" class="w-25">Language Tag</th>
+                                        <th scope="col" class="w-25">Language Name</th>
+                                        <th scope="col" class="w-50">Content</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>en-US <i class="bi bi-info-circle text-primary" data-bs-toggle="tooltip" data-bs-placement="top" title="默认语言"></i></td>
+                                        <td>English(United States)</td>
+                                        <td><textarea class="form-control" rows="3"></textarea></td>
+                                    </tr>
+                                    <tr>
+                                        <td>ja</td>
+                                        <td>日本語</td>
+                                        <td><textarea class="form-control" rows="3"></textarea></td>
+                                    </tr>
+                                    <tr>
+                                        <td>ko-KR</td>
+                                        <td>한국어(대한민국)</td>
+                                        <td><textarea class="form-control" rows="3"></textarea></td>
+                                    </tr>
+                                    <tr>
+                                        <td>zh-Hans-CN</td>
+                                        <td>简体中文(内地)</td>
+                                        <td><textarea class="form-control" rows="3"></textarea></td>
+                                    </tr>
+                                    <tr>
+                                        <td>zh-Hans-SG</td>
+                                        <td>简体中文(新加坡)</td>
+                                        <td><textarea class="form-control" rows="3"></textarea></td>
+                                    </tr>
+                                    <tr>
+                                        <td>zh-Hans-HK</td>
+                                        <td>繁體中文(香港)</td>
+                                        <td><textarea class="form-control" rows="3"></textarea></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <!--保存按钮-->
+                        <div class="text-center">
+                            <button type="button" class="btn btn-success" data-bs-dismiss="modal" aria-label="Close">Confirm</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="../assets/javascript/bootstrap.bundle.min.js"></script>
+    <script src="../assets/javascript/backend.js"></script>
+</body>
+
+</html>
