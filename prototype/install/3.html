@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="author" content="Fresns" />
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover">
+    <title>Fresns Installation</title>
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../assets/css/fresns.css">
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img src="../assets/images/fresns-logo.png" alt="Fresns" height="30" class="d-inline-block align-text-top">
+                    <span class="ms-2">Installation Guide</span>
+                </a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container">
+        <div class="card mx-auto my-5" style="max-width:800px;">
+            <div class="card-body p-5">
+                <h3 class="card-title">Database Information</h3>
+                <p class="mt-2">Database version requirement MySQL 8.0.0 or above. Below you should enter your database connection details. If you’re not sure about these, contact your host.</p>
+                <form class="my-4">
+                    <div class="row mb-3">
+                        <label class="col-sm-3 col-form-label">Database Name</label>
+                        <div class="col-sm-5"><input type="text" class="form-control" placeholder="fresns"></div>
+                        <div class="col-sm-4 form-text">The name of the database you want to use with Fresns.</div>
+                    </div>
+                    <div class="row mb-3">
+                        <label class="col-sm-3 col-form-label">Username</label>
+                        <div class="col-sm-5"><input type="text" class="form-control" placeholder="username"></div>
+                        <div class="col-sm-4 form-text pt-1">Your database username.</div>
+                    </div>
+                    <div class="row mb-3">
+                        <label class="col-sm-3 col-form-label">Password</label>
+                        <div class="col-sm-5"><input type="text" class="form-control" placeholder="password"></div>
+                        <div class="col-sm-4 form-text pt-1">Your database password.</div>
+                    </div>
+                    <div class="row mb-3">
+                        <label class="col-sm-3 col-form-label">Database Host</label>
+                        <div class="col-sm-5"><input type="text" class="form-control" placeholder="localhost"></div>
+                        <div class="col-sm-4 form-text">You should be able to get this info from your web host, if localhost doesn’t work.</div>
+                    </div>
+                    <div class="row mb-3">
+                        <label class="col-sm-3 col-form-label">Table Prefix</label>
+                        <div class="col-sm-5"><input type="text" class="form-control" placeholder="fs_"></div>
+                        <div class="col-sm-4 form-text">If you want to run multiple WordPress installations in a single database, change this.</div>
+                    </div>
+                    <div class="row mt-4">
+                        <label class="col-sm-3 col-form-label"></label>
+                        <div class="col-sm-9"><a href="4.html" class="btn btn-outline-primary">Submit</a></div>
+                        <!-- submit button code
+                        <div class="col-sm-9"><button type="submit" class="btn btn-outline-primary">Submit</button></div>
+                        -->
+                    </div>
+                </form>
+            </div>
+        </div>
+    </main>
+    
+    <script src="../assets/javascript/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
