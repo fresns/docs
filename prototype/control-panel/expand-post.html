@@ -27,7 +27,7 @@
                         <li class="nav-item"><a class="nav-link" href="workplace.html">Home</a></li>
                         <li class="nav-item"><a class="nav-link" href="settings.html">Settings</a></li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle active" href="basis-language.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Basic</a>
+                            <a class="nav-link dropdown-toggle" href="basis-language.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Basic</a>
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                                 <li><a class="dropdown-item" href="basis-language.html">Languages</a></li>
                                 <li><a class="dropdown-item" href="basis-policies.html">Policies</a></li>
@@ -58,7 +58,7 @@
                             </ul>
                         </li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="expand-editor.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Expand</a>
+                            <a class="nav-link dropdown-toggle active" href="expand-editor.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Expand</a>
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                                 <li><a class="dropdown-item" href="expand-editor.html">Editor</a></li>
                                 <li><a class="dropdown-item" href="expand-type.html">Content Type</a></li>
@@ -86,7 +86,7 @@
                                 <li><a class="dropdown-item" href="#">繁體中文 - Chinese (Traditional)</a></li>
                             </ul>
                         </div>
-                        <div class="ms-3"><a class="btn btn-outline-warning btn-sm" href="index.html" role="button">Log out</a></div>
+                        <div class="ms-lg-3 my-3 my-lg-0"><a class="btn btn-outline-warning btn-sm" href="index.html" role="button">Log out</a></div>
                     </div>
                 </div>
             </div>
@@ -100,15 +100,19 @@
                 <div class="col-lg-2 fresns-sidebar mt-3 mt-lg-0">
                     <nav class="navbar navbar-expand-lg navbar-light flex-lg-column shadow" style="background-color:#e3f2fd;">
                         <div class="container-fluid d-lg-flex flex-lg-column">
-                            <span class="navbar-brand">Basic</span>
+                            <span class="navbar-brand">Expand</span>
                             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                                 <span class="navbar-toggler-icon"></span>
                             </button>
                             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                                 <ul class="navbar-nav d-flex flex-column">
-                                    <li class="nav-item"><a class="nav-link" href="basis-language.html">Languages</a></li>
-                                    <li class="nav-item"><a class="nav-link active" href="basis-policies.html">Policies</a></li>
-                                    <li class="nav-item"><a class="nav-link" href="basis-delete.html">Delete Account</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="expand-editor.html">Editor</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="expand-type.html">Content Type</a></li>
+                                    <li class="nav-item"><a class="nav-link active" href="expand-post.html">Post Detail</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="expand-manage.html">Manage</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="expand-group.html">Group</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="expand-userfeature.html">Feature</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="expand-userprofile.html">Profile</a></li>
                                     <li class="nav-item d-block d-lg-none my-3 text-secondary">Powered by Fresns</li>
                                 </ul>
                             </div>
@@ -121,47 +125,35 @@
                 <div class="col-lg-10 fresns-setting mt-3 mt-lg-0 p-lg-3">
                     <div class="bg-white mb-2 p-3 p-lg-5">
                         <div class="row mb-5 border-bottom">
-                            <div class="col-lg-7">
-                                <h3>Policies</h3>
-                                <p class="text-secondary">The content supports Markdown syntax, but the input box does not support preview, please save it and go to the front-end to see the effect.</p>
+                            <div class="col-lg-9">
+                                <h3>Post Detail</h3>
+                                <p class="text-secondary">The function is the same as the "Content Type" data source function, whether the request is distributed to the plug-in for processing is up to the plug-in to determine the data logic.</p>
                             </div>
-                            <div class="col-lg-5">
+                            <div class="col-lg-3">
+                                <div class="input-group mt-2 mb-4 justify-content-lg-end">
+                                    <a class="btn btn-outline-secondary" href="#" role="button">Help</a>
+                                </div>
                             </div>
                         </div>
                         <!--Options List-->
-                        <div class="table-responsive">
-                            <table class="table table-hover align-middle text-nowrap">
-                                <thead>
-                                    <tr class="table-info">
-                                        <th scope="col">Agreement</th>
-                                        <th scope="col">Enable Status</th>
-                                        <th scope="col" style="width:6rem;">Options</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td>Terms of Service</td>
-                                        <td><i class="bi bi-check-lg text-success"></i></td>
-                                        <td><button type="button" class="btn btn-outline-primary btn-sm" data-bs-toggle="modal" data-bs-target="#createModal">Edit</button></td>
-                                    </tr>
-                                    <tr>
-                                        <td>Privacy Policy</td>
-                                        <td><i class="bi bi-check-lg text-success"></i></td>
-                                        <td><button type="button" class="btn btn-outline-primary btn-sm" data-bs-toggle="modal" data-bs-target="#createModal">Edit</button></td>
-                                    </tr>
-                                    <tr>
-                                        <td>Cookie Policy</td>
-                                        <td><i class="bi bi-check-lg text-success"></i></td>
-                                        <td><button type="button" class="btn btn-outline-primary btn-sm" data-bs-toggle="modal" data-bs-target="#createModal">Edit</button></td>
-                                    </tr>
-                                    <tr>
-                                        <td>Delete Account Description</td>
-                                        <td><i class="bi bi-dash-lg text-secondary"></i></td>
-                                        <td><button type="button" class="btn btn-outline-primary btn-sm" data-bs-toggle="modal" data-bs-target="#createModal">Edit</button></td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
+                        <form>
+                            <div class="row mb-5">
+                                <label class="col-lg-2 col-form-label text-lg-end">Affiliate Plugin:</label>
+                                <div class="col-lg-6">
+                                    <select class="form-select" id="post_editor">
+                                        <option value="1" selected>Default</option>
+                                        <option value="2">zz Plugin</option>
+                                        <option value="3">xx Plugin</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="row my-5">
+                                <div class="col-lg-2"></div>
+                                <div class="col-lg-6">
+                                    <button type="submit" class="btn btn-primary">Save</button>
+                                </div>
+                            </div>
+                        </form>
                         <!--Options List End-->
                     </div>
                     
@@ -176,54 +168,6 @@
         </div>
     </main>
 
-    <footer>
-        <div class="copyright text-center">
-            <p class="mt-5 mb-5 text-muted">&copy; 2021 Fresns</p>
-        </div>
-    </footer>
-
-    <!-- Modal -->
-    <div class="modal fade" id="createModal" tabindex="-1" aria-labelledby="createModal" aria-hidden="true">
-        <div class="modal-dialog modal-lg">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title">Terms of Service</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <form>
-                        <div class="input-group mb-3">
-                            <span class="input-group-text">Enabled or not</span>
-                            <div class="form-control">
-                                <div class="form-check form-check-inline">
-                                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
-                                    <label class="form-check-label" for="inlineRadio1">Close</label>
-                                </div>
-                                <div class="form-check form-check-inline">
-                                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2" checked>
-                                    <label class="form-check-label" for="inlineRadio2">Enable</label>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="form-floating mb-3">
-                            <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 150px"></textarea>
-                            <label for="floatingTextarea2">en-US English(United States)</label>
-                        </div>
-                        <div class="form-floating mb-3">
-                            <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 150px"></textarea>
-                            <label for="floatingTextarea2">ja 日本語</label>
-                        </div>
-                        <div class="form-floating mb-3">
-                            <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 150px"></textarea>
-                            <label for="floatingTextarea2">ko-KR 한국어(대한민국)</label>
-                        </div>
-                        <button type="submit" class="btn btn-primary">Save</button>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </div>
-    
     <script src="../assets/javascript/bootstrap.bundle.min.js"></script>
     <script src="../assets/javascript/admin.js"></script>
 </body>
