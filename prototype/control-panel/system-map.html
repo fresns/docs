@@ -141,8 +141,10 @@
                             <table class="table table-hover align-middle text-nowrap">
                                 <thead>
                                     <tr class="table-info">
-                                        <th scope="col" style="width:10rem;">Service Provider</th>
+                                        <th scope="col" style="width:6rem;">Order</th>
                                         <th scope="col">Affiliate Plugin</th>
+                                        <th scope="col">Display Name</th>
+                                        <th scope="col">Service Provider</th>
                                         <th scope="col">App ID</th>
                                         <th scope="col">App Key</th>
                                         <th scope="col">Enable Status</th>
@@ -151,35 +153,28 @@
                                 </thead>
                                 <tbody>
                                     <tr>
+                                        <td><input type="number" class="form-control input-number" value="1"></td>
+                                        <td>Plugin A</td>
+                                        <td><img src="../assets/images/temp/placeholder_icon.png" width="24" height="24"> Google Map</td>
                                         <td>Google</td>
-                                        <td>Plugin Name</td>
                                         <td>1234</td>
                                         <td>123**********789</td>
                                         <td><i class="bi bi-check-lg text-success"></i></td>
                                         <td>
-                                            <button type="button" class="btn btn-outline-primary btn-sm" data-bs-toggle="modal" data-bs-target="#editModal">Edit</button>
+                                            <button type="button" class="btn btn-outline-primary btn-sm" data-bs-toggle="modal" data-bs-target="#createModal">Edit</button>
                                             <button type="button" class="btn btn-link link-danger ms-1 fresns-link fs-7">Delete</button>
                                         </td>
                                     </tr>
                                     <tr>
+                                        <td><input type="number" class="form-control input-number" value="2"></td>
+                                        <td>Plugin A</td>
+                                        <td><img src="../assets/images/temp/placeholder_icon.png" width="24" height="24"> Apple Map</td>
                                         <td>Apple</td>
-                                        <td>Plugin Name</td>
-                                        <td></td>
+                                        <td>1234</td>
                                         <td>123**********789</td>
-                                        <td><i class="bi bi-dash-lg text-secondary"></i></td>
+                                        <td><i class="bi bi-check-lg text-success"></i></td>
                                         <td>
-                                            <button type="button" class="btn btn-outline-primary btn-sm" data-bs-toggle="modal" data-bs-target="#editModal">Edit</button>
-                                            <button type="button" class="btn btn-link link-danger ms-1 fresns-link fs-7">Delete</button>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>Tencent</td>
-                                        <td>Plugin Name</td>
-                                        <td></td>
-                                        <td>123**********789</td>
-                                        <td><i class="bi bi-dash-lg text-secondary"></i></td>
-                                        <td>
-                                            <button type="button" class="btn btn-outline-primary btn-sm" data-bs-toggle="modal" data-bs-target="#editModal">Edit</button>
+                                            <button type="button" class="btn btn-outline-primary btn-sm" data-bs-toggle="modal" data-bs-target="#createModal">Edit</button>
                                             <button type="button" class="btn btn-link link-danger ms-1 fresns-link fs-7">Delete</button>
                                         </td>
                                     </tr>
@@ -211,6 +206,35 @@
                 <div class="modal-body">
                     <form>
                         <div class="mb-3 row">
+                            <label class="col-sm-3 col-form-label">Order</label>
+                            <div class="col-sm-9">
+                                <input type="number" class="form-control input-number">
+                            </div>
+                        </div>
+                        <div class="mb-3 row">
+                            <label class="col-sm-3 col-form-label">Affiliate Plugin</label>
+                            <div class="col-sm-9">
+                                <select class="form-select">
+                                    <option selected disabled>Please select the plugin</option>
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="mb-3 row">
+                            <label class="col-sm-3 col-form-label">Display Icon</label>
+                            <div class="col-sm-9">
+                                <input type="file" class="form-control" id="inputGroupFile01">
+                            </div>
+                        </div>
+                        <div class="mb-3 row">
+                            <label class="col-sm-3 col-form-label">Display Name</label>
+                            <div class="col-sm-9">
+                                <button type="button" class="btn btn-outline-secondary btn-modal w-100 text-start" data-bs-toggle="modal" data-bs-target="#langModal">Display Name</button>
+                            </div>
+                        </div>
+                        <div class="mb-3 row">
                             <label class="col-sm-3 col-form-label">Map Service Provider</label>
                             <div class="col-sm-9">
                                 <select class="form-select">
@@ -224,17 +248,6 @@
                                     <option value="7">Mapbox</option>
                                     <option value="8">Here</option>
                                     <option value="9">OpenStreetMap</option>
-                                </select>
-                            </div>
-                        </div>
-                        <div class="mb-3 row">
-                            <label class="col-sm-3 col-form-label">Affiliate Plugin</label>
-                            <div class="col-sm-9">
-                                <select class="form-select">
-                                    <option selected disabled>Please select the plugin</option>
-                                    <option value="1">One</option>
-                                    <option value="2">Two</option>
-                                    <option value="3">Three</option>
                                 </select>
                             </div>
                         </div>
@@ -273,72 +286,62 @@
         </div>
     </div>
     
-    <!-- Modal -->
-    <div class="modal fade" id="editModal" tabindex="-1" aria-labelledby="editModal" aria-hidden="true">
-        <div class="modal-dialog">
+    <!-- Language Modal -->
+    <div class="modal fade" id="langModal" tabindex="-1" aria-labelledby="langModal" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title">EditService Provider</h5>
+                    <h5 class="modal-title">Language Set</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
                     <form>
-                        <div class="mb-3 row">
-                            <label class="col-sm-3 col-form-label">Map Service Provider</label>
-                            <div class="col-sm-9">
-                                <select class="form-select" disabled>
-                                    <option disabled>Please select</option>
-                                    <option value="1" selected>Google</option>
-                                    <option value="2">Apple</option>
-                                    <option value="3">Amap</option>
-                                    <option value="4">Tencent</option>
-                                    <option value="5">Baidu</option>
-                                    <option value="6">Bing</option>
-                                    <option value="7">Mapbox</option>
-                                    <option value="8">Here</option>
-                                    <option value="9">OpenStreetMap</option>
-                                </select>
-                            </div>
+                        <div class="table-responsive">
+                            <table class="table table-hover align-middle text-nowrap">
+                                <thead>
+                                    <tr class="table-info">
+                                        <th scope="col" class="w-25">Language Tag</th>
+                                        <th scope="col" class="w-25">Language name</th>
+                                        <th scope="col" class="w-50">Content</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>en-US <i class="bi bi-info-circle text-primary" data-bs-toggle="tooltip" data-bs-placement="top" title="Default"></i></td>
+                                        <td>English(United States)</td>
+                                        <td><input type="text" class="form-control" value="display name"></td>
+                                    </tr>
+                                    <tr>
+                                        <td>ja</td>
+                                        <td>日本語</td>
+                                        <td><input type="text" class="form-control" value="表示名"></td>
+                                    </tr>
+                                    <tr>
+                                        <td>ko-KR</td>
+                                        <td>한국어(대한민국)</td>
+                                        <td><input type="text" class="form-control" value="이름 표시하기"></td>
+                                    </tr>
+                                    <tr>
+                                        <td>zh-Hans-CN</td>
+                                        <td>简体中文(内地)</td>
+                                        <td><input type="text" class="form-control" value="Display Name"></td>
+                                    </tr>
+                                    <tr>
+                                        <td>zh-Hans-SG</td>
+                                        <td>简体中文(新加坡)</td>
+                                        <td><input type="text" class="form-control" value="Display Name"></td>
+                                    </tr>
+                                    <tr>
+                                        <td>zh-Hans-HK</td>
+                                        <td>繁體中文(香港)</td>
+                                        <td><input type="text" class="form-control" value="顯示名稱"></td>
+                                    </tr>
+                                </tbody>
+                            </table>
                         </div>
-                        <div class="mb-3 row">
-                            <label class="col-sm-3 col-form-label">Affiliate Plugin</label>
-                            <div class="col-sm-9">
-                                <select class="form-select">
-                                    <option selected disabled>Please select the plugin</option>
-                                    <option value="1">One</option>
-                                    <option value="2">Two</option>
-                                    <option value="3">Three</option>
-                                </select>
-                            </div>
-                        </div>
-                        <div class="mb-3 row">
-                            <label class="col-sm-3 col-form-label">API ID</label>
-                            <div class="col-sm-9">
-                                <input type="text" class="form-control">
-                            </div>
-                        </div>
-                        <div class="mb-3 row">
-                            <label class="col-sm-3 col-form-label">API Key</label>
-                            <div class="col-sm-9">
-                                <input type="text" class="form-control">
-                            </div>
-                        </div>
-                        <div class="mb-3 row">
-                            <label class="col-sm-3 col-form-label">Enable Status</label>
-                            <div class="col-sm-9 pt-2">
-                                <div class="form-check form-check-inline">
-                                    <input class="form-check-input" type="radio" name="editStatus" id="editStatus_true" value="true" checked>
-                                    <label class="form-check-label" for="editStatus_true">Enable</label>
-                                </div>
-                                <div class="form-check form-check-inline">
-                                    <input class="form-check-input" type="radio" name="editStatus" id="editStatus_false" value="false">
-                                    <label class="form-check-label" for="editStatus_false">Not enabled</label>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="mb-3 row">
-                            <label class="col-sm-3 col-form-label"></label>
-                            <div class="col-sm-9"><button type="submit" class="btn btn-primary">Submit</button></div>
+                        <!--Save Btn-->
+                        <div class="text-center">
+                            <button type="button" class="btn btn-success" data-bs-dismiss="modal" aria-label="Close">Confirm</button>
                         </div>
                     </form>
                 </div>
