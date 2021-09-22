@@ -384,12 +384,17 @@
 
                             <div class="row mb-4">
                                 <label class="col-lg-2 col-form-label text-lg-end">Upload Settings:</label>
-                                <div class="col-lg-6">
+                                <div class="col-lg-10">
                                     <!--Upload Image-->
                                     <div class="input-group mb-3">
                                         <label class="input-group-text">Upload Image</label>
                                         <div class="input-group-text">
-                                            <input class="form-check-input mt-0" type="checkbox" value="0" checked>
+                                            <input class="form-check-input mt-0" type="checkbox" id="post_editor_image" value="0" checked>
+                                            <label class="form-check-label ms-1" for="post_editor_image">Post</label>
+                                        </div>
+                                        <div class="input-group-text">
+                                            <input class="form-check-input mt-0" type="checkbox" id="comment_editor_image" value="0" checked>
+                                            <label class="form-check-label ms-1" for="comment_editor_image">Comment</label>
                                         </div>
                                         <input type="number" class="form-control input-number" value="" placeholder="Max size supported">
                                         <span class="input-group-text">MB</span>
@@ -398,7 +403,12 @@
                                     <div class="input-group mb-3">
                                         <label class="input-group-text">Upload Video</label>
                                         <div class="input-group-text">
-                                            <input class="form-check-input mt-0" type="checkbox" value="0" checked>
+                                            <input class="form-check-input mt-0" type="checkbox" id="post_editor_video" value="0" checked>
+                                            <label class="form-check-label ms-1" for="post_editor_video">Post</label>
+                                        </div>
+                                        <div class="input-group-text">
+                                            <input class="form-check-input mt-0" type="checkbox" id="comment_editor_video" value="0" checked>
+                                            <label class="form-check-label ms-1" for="comment_editor_video">Comment</label>
                                         </div>
                                         <input type="number" class="form-control input-number" value="" placeholder="Max size supported">
                                         <span class="input-group-text">MB</span>
@@ -409,7 +419,12 @@
                                     <div class="input-group mb-3">
                                         <label class="input-group-text">Upload Audio</label>
                                         <div class="input-group-text">
-                                            <input class="form-check-input mt-0" type="checkbox" value="0" checked>
+                                            <input class="form-check-input mt-0" type="checkbox" id="post_editor_audio" value="0" checked>
+                                            <label class="form-check-label ms-1" for="post_editor_audio">Post</label>
+                                        </div>
+                                        <div class="input-group-text">
+                                            <input class="form-check-input mt-0" type="checkbox" id="comment_editor_audio" value="0" checked>
+                                            <label class="form-check-label ms-1" for="comment_editor_audio">Comment</label>
                                         </div>
                                         <input type="number" class="form-control input-number" value="" placeholder="Max size supported">
                                         <span class="input-group-text">MB</span>
@@ -420,7 +435,12 @@
                                     <div class="input-group mb-3">
                                         <label class="input-group-text">Upload Doc</label>
                                         <div class="input-group-text">
-                                            <input class="form-check-input mt-0" type="checkbox" value="0" checked>
+                                            <input class="form-check-input mt-0" type="checkbox" id="post_editor_doc" value="0" checked>
+                                            <label class="form-check-label ms-1" for="post_editor_doc">Post</label>
+                                        </div>
+                                        <div class="input-group-text">
+                                            <input class="form-check-input mt-0" type="checkbox" id="comment_editor_doc" value="0" checked>
+                                            <label class="form-check-label ms-1" for="comment_editor_doc">Comment</label>
                                         </div>
                                         <input type="number" class="form-control input-number" value="" placeholder="Max size supported">
                                         <span class="input-group-text">MB</span>

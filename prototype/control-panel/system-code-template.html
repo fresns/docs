@@ -212,9 +212,9 @@
                                         <tr class="table-info">
                                             <th scope="col">Language Tag</th>
                                             <th scope="col">Language name</th>
-                                            <th scope="col" class="w-25">Template Parameters <i class="bi bi-info-circle" data-bs-toggle="tooltip" data-bs-placement="top" title="The template ID can be configured, please refer to the description of the associated plugin for details."></i></th>
-                                            <th scope="col" class="w-25">code variable name</th>
-                                            <th scope="col" class="w-25">time variable name</th>
+                                            <th scope="col" class="w-25">SMS Sign Name</th>
+                                            <th scope="col" class="w-25">Template Code <i class="bi bi-info-circle" data-bs-toggle="tooltip" data-bs-placement="top" title="The template ID can be configured, please refer to the description of the associated plugin for details."></i></th>
+                                            <th scope="col" class="w-25">Template Param</th>
                                         </tr>
                                     </thead>
                                     <tbody>
@@ -281,152 +281,6 @@
             </div>
         </div>
     </main>
-
-    <!-- Settings Modal -->
-    <div class="modal fade" id="settingsModal" tabindex="-1" aria-labelledby="settingsModal" aria-hidden="true">
-        <div class="modal-dialog modal-xl">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title">验证码模板</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <form>
-                        <div class="input-group mb-3">
-                            <span class="input-group-text">支持方式</span>
-                            <div class="form-control">
-                                <div class="form-check form-check-inline">
-                                    <input class="form-check-input" type="checkbox" id="email" value="email" data-bs-toggle="collapse" data-bs-target="#email_settings" aria-expanded="false" aria-controls="email_settings" checked>
-                                    <label class="form-check-label" for="email">邮件</label>
-                                </div>
-                                <div class="form-check form-check-inline">
-                                    <input class="form-check-input" type="checkbox" id="sms" value="sms" data-bs-toggle="collapse" data-bs-target="#sms_settings" aria-expanded="false" aria-controls="sms_settings">
-                                    <label class="form-check-label" for="sms">短信</label>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="table-responsive collapse show" id="email_settings">
-                            <table class="table table-hover align-middle text-nowrap">
-                                <thead>
-                                    <tr class="table-primary">
-                                        <th scope="col" colspan="4" class="text-center">邮件模板Config</th>
-                                    </tr>
-                                    <tr class="table-info">
-                                        <th scope="col">Language Tag</th>
-                                        <th scope="col">Language name</th>
-                                        <th scope="col" class="w-50">标题 <i class="bi bi-info-circle" data-bs-toggle="tooltip" data-bs-placement="top" title="支持 HTML 格式"></i></th>
-                                        <th scope="col" class="w-50">Content <i class="bi bi-info-circle" data-bs-toggle="tooltip" data-bs-placement="top" title="支持 HTML 格式"></i></th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td>zh-Hans-CN</td>
-                                        <td>简体中文(内地)</td>
-                                        <td><input type="text" class="form-control"></td>
-                                        <td><textarea class="form-control" rows="3"></textarea></td>
-                                    </tr>
-                                    <tr>
-                                        <td>zh-Hans-SG</td>
-                                        <td>简体中文(新加坡)</td>
-                                        <td><input type="text" class="form-control"></td>
-                                        <td><textarea class="form-control" rows="3"></textarea></td>
-                                    </tr>
-                                    <tr>
-                                        <td>zh-Hans-HK</td>
-                                        <td>繁體中文(香港)</td>
-                                        <td><input type="text" class="form-control"></td>
-                                        <td><textarea class="form-control" rows="3"></textarea></td>
-                                    </tr>
-                                    <tr>
-                                        <td>en-US <i class="bi bi-info-circle text-primary" data-bs-toggle="tooltip" data-bs-placement="top" title="Default"></i></td>
-                                        <td>English(United States)</td>
-                                        <td><input type="text" class="form-control"></td>
-                                        <td><textarea class="form-control" rows="3"></textarea></td>
-                                    </tr>
-                                    <tr>
-                                        <td>ja</td>
-                                        <td>日本語</td>
-                                        <td><input type="text" class="form-control"></td>
-                                        <td><textarea class="form-control" rows="3"></textarea></td>
-                                    </tr>
-                                    <tr>
-                                        <td>ko-KR</td>
-                                        <td>한국어(대한민국)</td>
-                                        <td><input type="text" class="form-control"></td>
-                                        <td><textarea class="form-control" rows="3"></textarea></td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
-                        <div class="table-responsive collapse" id="sms_settings">
-                            <table class="table table-hover align-middle text-nowrap">
-                                <thead>
-                                    <tr class="table-primary">
-                                        <th scope="col" colspan="5" class="text-center">短信模板Config</th>
-                                    </tr>
-                                    <tr class="table-info">
-                                        <th scope="col">Language Tag</th>
-                                        <th scope="col">Language name</th>
-                                        <th scope="col" class="w-25">模板参数 <i class="bi bi-info-circle" data-bs-toggle="tooltip" data-bs-placement="top" title="Template IDs can be configured, please refer to the Affiliate Plugin instructions for details."></i></th>
-                                        <th scope="col" class="w-25">验证码变量名</th>
-                                        <th scope="col" class="w-25">有效时间变量名</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td>zh-Hans-CN</td>
-                                        <td>简体中文(内地)</td>
-                                        <td><input type="text" class="form-control"></td>
-                                        <td><input type="text" class="form-control"></td>
-                                        <td><input type="text" class="form-control"></td>
-                                    </tr>
-                                    <tr>
-                                        <td>zh-Hans-SG</td>
-                                        <td>简体中文(新加坡)</td>
-                                        <td><input type="text" class="form-control"></td>
-                                        <td><input type="text" class="form-control"></td>
-                                        <td><input type="text" class="form-control"></td>
-                                    </tr>
-                                    <tr>
-                                        <td>zh-Hans-HK</td>
-                                        <td>繁體中文(香港)</td>
-                                        <td><input type="text" class="form-control"></td>
-                                        <td><input type="text" class="form-control"></td>
-                                        <td><input type="text" class="form-control"></td>
-                                    </tr>
-                                    <tr>
-                                        <td>en-US <i class="bi bi-info-circle text-primary" data-bs-toggle="tooltip" data-bs-placement="top" title="Default"></i></td>
-                                        <td>English(United States)</td>
-                                        <td><input type="text" class="form-control"></td>
-                                        <td><input type="text" class="form-control"></td>
-                                        <td><input type="text" class="form-control"></td>
-                                    </tr>
-                                    <tr>
-                                        <td>ja</td>
-                                        <td>日本語</td>
-                                        <td><input type="text" class="form-control"></td>
-                                        <td><input type="text" class="form-control"></td>
-                                        <td><input type="text" class="form-control"></td>
-                                    </tr>
-                                    <tr>
-                                        <td>ko-KR</td>
-                                        <td>한국어(대한민국)</td>
-                                        <td><input type="text" class="form-control"></td>
-                                        <td><input type="text" class="form-control"></td>
-                                        <td><input type="text" class="form-control"></td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
-                        <!--Save Btn-->
-                        <div class="text-center">
-                            <button type="button" class="btn btn-success" data-bs-dismiss="modal" aria-label="Close">Confirm</button>
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </div>
 
     <script src="../assets/javascript/bootstrap.bundle.min.js"></script>
     <script src="../assets/javascript/admin.js"></script>
