@@ -174,6 +174,7 @@ Language tag: `zh-Hans`
     {"name":"editorAllowMemberName","content":"指定用户可访问"},
     {"name":"editorAllowProportionName","content":"可试读前内容比例"},
     {"name":"editorAllowBtnName","content":"获取阅读权限按钮文字"},
+    {"name":"contentLoginError","content":"需要登录后才能查看"},
     {"name":"contentNewList","content":"最新"},
     {"name":"contentHotList","content":"热门"},
     {"name":"contentBrowse","content":"浏览"},

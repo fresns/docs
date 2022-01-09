@@ -174,6 +174,7 @@ Language tag: `zh-Hant`
     {"name":"editorAllowMemberName","content":"指定用戶可訪問"},
     {"name":"editorAllowProportionName","content":"可試讀前內容比例"},
     {"name":"editorAllowBtnName","content":"獲取閱讀權限按鈕文字"},
+    {"name":"contentLoginError","content":"需要登錄後才能查看"},
     {"name":"contentNewList","content":"最新"},
     {"name":"contentHotList","content":"熱門"},
     {"name":"contentBrowse","content":"瀏覽"},

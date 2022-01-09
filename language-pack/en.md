@@ -174,6 +174,7 @@ Language tag: `en`
     {"name":"editorAllowMemberName","content":"Specified users can access"},
     {"name":"editorAllowProportionName","content":"Proportion of content before trial reading"},
     {"name":"editorAllowBtnName","content":"Get read permission button text"},
+    {"name":"contentLoginError","content":"Login is required to view"},
     {"name":"contentNewList","content":"New"},
     {"name":"contentHotList","content":"Hot"},
     {"name":"contentBrowse","content":"Browse"},
