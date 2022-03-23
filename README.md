@@ -28,4 +28,4 @@ If you discover a security vulnerability within Fresns, please send an e-mail to
 
 ## License
 
-Fresns is open-sourced software licensed under the [Apache license](https://opensource.org/licenses/Apache-2.0).
+Fresns is open-sourced software licensed under the [Apache-2.0 license](https://opensource.org/licenses/Apache-2.0).
