@@ -186,7 +186,7 @@
     {"name":"contentNewList","content":"New"},
     {"name":"contentHotList","content":"Hot"},
     {"name":"contentBrowse","content":"Browse"},
-    {"name":"contentEssence","content":"Essence"},
+    {"name":"contentDigest","content":"Essence"},
     {"name":"contentSticky","content":"Sticky"},
     {"name":"contentFull","content":"Full"},
     {"name":"contentAuthor","content":"Author"},

@@ -186,7 +186,7 @@
     {"name":"contentNewList","content":"最新"},
     {"name":"contentHotList","content":"熱門"},
     {"name":"contentBrowse","content":"瀏覽"},
-    {"name":"contentEssence","content":"精華"},
+    {"name":"contentDigest","content":"精華"},
     {"name":"contentSticky","content":"置頂"},
     {"name":"contentFull","content":"全文"},
     {"name":"contentAuthor","content":"作者"},
