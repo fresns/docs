@@ -95,6 +95,7 @@
     "passwordCurrent": "Current password",
     "passwordNew": "New password",
     "passwordAgain": "Enter the password again",
+    "passwordAgainError": "The new password entered twice does not match",
     "passwordError": "Password error",
     "passwordForgot": "Forgot your password",
     "passwordInfo": "Password must contain",

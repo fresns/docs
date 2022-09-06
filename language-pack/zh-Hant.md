@@ -95,6 +95,7 @@
     "passwordCurrent": "當前密碼",
     "passwordNew": "新密碼",
     "passwordAgain": "再輸一次密碼",
+    "passwordAgainError": "兩次輸入的新密碼不一致",
     "passwordError": "密碼錯誤",
     "passwordForgot": "忘記密碼",
     "passwordInfo": "密碼必須包含",
