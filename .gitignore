@@ -1,0 +1,9 @@
+node_modules
+.temp
+.cache
+yarn.lock
+dist
+.settings/
+.idea
+.vscode
+.DS_Store
