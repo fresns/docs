@@ -13,7 +13,7 @@ export default defineConfig({
         ['meta', { property: 'og:type', content: 'website' }],
         ['meta', { property: 'og:title', content: 'Fresns' }],
         ['meta', { property: 'og:description', content: '一款免费开源的社交网络服务软件' }],
-        ['meta', { property: 'og:image', content: 'https://cdn.fresns.cn/images/og-image.jpg' }],
+        ['meta', { property: 'og:image', content: 'https://cdn.fresns.cn/wiki/images/og-image.jpg' }],
         ['meta', { property: 'og:url', content: 'https://fresns.cn' }],
     ],
 
