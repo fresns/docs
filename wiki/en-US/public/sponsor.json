@@ -1,0 +1,66 @@
+{
+  "platinum": [
+    {
+      "name": "StackBlitz",
+      "url": "https://stackblitz.com/",
+      "img": "stackblitz.svg"
+    },
+    {
+      "name": "Shopify",
+      "url": "https://shopify.com/",
+      "img": "shopify.svg"
+    },
+    {
+      "name": "Storyblok",
+      "url": "https://www.storyblok.com",
+      "img": "storyblok.png"
+    },
+    {
+      "name": "vuejs.de Conf",
+      "url": "https://conf.vuejs.de/?utm_source=vuejs-vite&utm_medium=referral&utm_campaign=sponsoring",
+      "img": "vuejs_de_conf.svg"
+    }
+  ],
+  "gold": [
+    {
+      "name": "Tailwind Labs",
+      "url": "https://tailwindcss.com",
+      "img": "tailwind_labs.svg"
+    },
+    {
+      "name": "Repl.it",
+      "url": "https://replit.com/",
+      "img": "repl_it.svg"
+    },
+    {
+      "name": "Vue Jobs",
+      "url": "https://vuejobs.com/?ref=vuejs",
+      "img": "vue_jobs.png"
+    },
+    {
+      "name": "PLAID, Inc.",
+      "url": "https://plaid.co.jp/",
+      "img": "plaid__inc_.svg"
+    },
+    {
+      "name": "divriots",
+      "url": "https://divriots.com/",
+      "img": "divriots.png"
+    },
+    {
+      "name": "Cypress.io",
+      "url": "https://cypress.io",
+      "img": "cypress_io.svg"
+    },
+    {
+      "name": "Prefect.io",
+      "url": "https://www.prefect.io/",
+      "img": "prefect_io.svg"
+    },
+    {
+      "name": "JetBrains",
+      "url": "https://www.jetbrains.com/",
+      "img": "jetbrains.png"
+    }
+  ]
+}
