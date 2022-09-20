@@ -9,7 +9,7 @@ export default defineConfig({
     lastUpdated: true,
 
     head: [
-        ['link', { rel: 'icon', type: 'image/png', href: '/assets/icons/fresns.png' }],
+        ['link', { rel: 'icon', type: 'image/png', href: 'https://cdn.fresns.cn/wiki/icons/fresns.png' }],
         ['meta', { property: 'og:type', content: 'website' }],
         ['meta', { property: 'og:title', content: 'Fresns' }],
         ['meta', { property: 'og:description', content: '一款免费开源的社交网络服务软件' }],
@@ -18,7 +18,7 @@ export default defineConfig({
     ],
 
     themeConfig:{
-        logo: '/assets/icons/fresns.png',
+        logo: 'https://cdn.fresns.cn/wiki/icons/fresns.png',
         nav: navbar(),
 
         localeLinks: {

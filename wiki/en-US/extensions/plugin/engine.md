@@ -62,10 +62,10 @@ The key name of the routing path configuration is attributed to the `websites` k
 
 The engine of Fresns official website is the logic for reference.
 
-![Advice on access logic](/assets/flowchart/access.jpg)
+![Advice on access logic](https://files.fresns.org/wiki/flowchart/access.jpg)
 
 ### Advice on account logic
 
 The engine of Fresns official website is the logic for reference.
 
-![Advice on account logic](/assets/flowchart/account.jpg)
+![Advice on account logic](https://files.fresns.org/wiki/flowchart/account.jpg)

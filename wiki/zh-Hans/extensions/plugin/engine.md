@@ -63,10 +63,10 @@
 
 Fresns 官方网站引擎就是该逻辑，供参考。
 
-![Fresns 访问逻辑流程图](/assets/flowchart/access.jpg)
+![Fresns 访问逻辑流程图](https://cdn.fresns.cn/wiki/flowchart/access.jpg)
 
 ### 账号逻辑建议
 
 Fresns 官方网站引擎就是该逻辑，供参考。
 
-![Fresns 账号逻辑流程图](/assets/flowchart/account.jpg)
+![Fresns 账号逻辑流程图](https://cdn.fresns.cn/wiki/flowchart/account.jpg)

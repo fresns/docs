@@ -1,6 +1,6 @@
 # Introduction
 
-<p align="center"><img src="/assets/images/logo.png" width="300"></p>
+<p align="center"><img src="https://files.fresns.org/wiki/images/logo.png" width="300"></p>
 
 <p align="center">
 <img src="https://img.shields.io/badge/PHP-%5E8.0-green" alt="PHP" style="display:inline">

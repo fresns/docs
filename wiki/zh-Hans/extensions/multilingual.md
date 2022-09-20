@@ -34,7 +34,7 @@ ConfigHelper::fresnsConfigByItemKey('键名');
 
 > 控制面板 > 系统设置 > 语言设置
 
-![Fresns 多语言唯一性逻辑](/assets/flowchart/languages.jpg)
+![Fresns 多语言唯一性逻辑](https://cdn.fresns.cn/wiki/flowchart/languages.jpg)
 
 以下所列内容不存储在多语言表，也未在流程图当中，如果多语言标签发生变化，建议一并修改。
 

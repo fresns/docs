@@ -9,16 +9,16 @@ export default defineConfig({
     lastUpdated: true,
 
     head: [
-        ['link', { rel: 'icon', type: 'image/png', href: '/assets/icons/fresns.png' }],
+        ['link', { rel: 'icon', type: 'image/png', href: 'https://files.fresns.org/wiki/icons/fresns.png' }],
         ['meta', { property: 'og:type', content: 'website' }],
         ['meta', { property: 'og:title', content: 'Fresns' }],
         ['meta', { property: 'og:description', content: 'Cross-platform general-purpose multiple content forms social network service software' }],
-        ['meta', { property: 'og:image', content: 'https://fresns.org/assets/images/og-image.jpg' }],
+        ['meta', { property: 'og:image', content: 'https://files.fresns.org/wiki/images/og-image.jpg' }],
         ['meta', { property: 'og:url', content: 'https://fresns.org' }],
     ],
 
     themeConfig:{
-        logo: '/assets/icons/fresns.png',
+        logo: 'https://files.fresns.org/wiki/icons/fresns.png',
         nav: navbar(),
 
         localeLinks: {

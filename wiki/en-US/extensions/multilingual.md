@@ -34,7 +34,7 @@ The logic flow is the control panel language setup logic.
 
 > Panel > Systems > Languages
 
-![Fresns Multi-language](/assets/flowchart/languages.jpg)
+![Fresns Multi-language](https://files.fresns.org/wiki/flowchart/languages.jpg)
 
 The contents listed below are not stored in the multilingual table or in the flow chart. If the multilingual labels change, it is recommended to modify them together.
 

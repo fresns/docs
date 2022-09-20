@@ -1,6 +1,6 @@
 # 介绍
 
-<p align="center"><img src="/assets/images/logo.png" width="300"></p>
+<p align="center"><img src="https://cdn.fresns.cn/wiki/images/logo.png" width="300"></p>
 
 <p align="center">
 <img src="https://img.shields.io/badge/PHP-%5E8.0-green" alt="PHP" style="display:inline">
@@ -54,8 +54,8 @@ Fresns 遵循 [Apache-2.0](https://github.com/fresns/fresns/blob/main/LICENSE) �
 - QQ 群：[5980111](https://qm.qq.com/cgi-bin/qm/qr?k=R2pfcPUd4Nyc87AKdkuHP9yJ0MhddUaz&jump_from=webapi)
 - 微信群：*扫描下方二维码加唐杰微信，告之你要加「使用交流群」，稍后唐杰会拉你进群。*
 
-<img src="/assets/images/wechat.jpg" width="200">
+<img src="https://cdn.fresns.cn/wiki/images/wechat.jpg" width="200">
 
 ## 关注我们
 
-<img src="/assets/images/wechat-mp.png" width="400">
+<img src="https://cdn.fresns.cn/wiki/images/wechat-mp.png" width="400">

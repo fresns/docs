@@ -4,7 +4,7 @@
 
 The design concept of Fresns product structure comes from the formula “**Algorithms + Data Structures = Programs**”. Based on the software idea of this formula, we divide Fresns into the product structure as shown in the following figure.
 
-![Fresns Structure](/assets/images/idea.png)
+![Fresns Structure](https://files.fresns.org/wiki/images/idea.png)
 
 Users’ interactive behavior produces results on the content, and the results can be archived by some sort of form; the algorithm outputs the archived results under specific conditions, and finally the client product parses and renders the interface for users to browse and interact again.
 

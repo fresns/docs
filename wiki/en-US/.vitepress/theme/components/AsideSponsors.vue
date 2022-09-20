@@ -19,7 +19,7 @@ const sponsors = computed(() => {
 
 <template>
   <!-- <a class="fresnsAside" href="/community/sponsor.html" target="_blank">
-    <img width="22" height="22" src="/assets/icons/fresns.png" />
+    <img width="22" height="22" src="https://files.fresns.org/wiki/icons/fresns.png" />
     <span>
       <p class="extra-info">助力生态可持续发展</p>
       <p class="heading">赞助 Fresns 发展</p>

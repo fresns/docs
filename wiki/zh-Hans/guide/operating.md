@@ -6,7 +6,7 @@
 
 分享范本：《[垂直方向的创业机会和成功案例分享](https://mp.weixin.qq.com/s/WdmxuFqACNY493PLqnQGEQ)》
 
-<img src="/assets/images/wechat-mp.png" width="400">
+<img src="https://cdn.fresns.cn/wiki/images/wechat-mp.png" width="400">
 
 ## 区域社区
 
