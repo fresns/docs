@@ -1,19 +1,23 @@
 {
   "name": "Fresns",
-  "version": "1.0.0",
-  "description": "Fresns is a free and open source social network service software, a general-purpose community product designed for cross-platform, and supports flexible and diverse content forms. It conforms to the trend of the times, satisfies a variety of operating scenarios, is more open and easier to re-development.",
+  "version": "2.x",
+  "description": "Cross-platform general-purpose multiple content forms social network service software",
   "main": "index.js",
-  "repository": "git@github.com:fresns/docs.git",
+  "private": true,
+  "homepage": "https://fresns.org/",
+  "repository": "https://github.com/fresns/docs",
   "author": "Jarvis Tang",
   "license": "Apache-2.0",
   "devDependencies": {
-    "@vuepress/plugin-google-analytics": "^2.0.0-beta.26",
-    "vuepress": "^2.0.0-beta.26"
+    "vitepress": "^1.0.0-alpha.15",
+    "vue": "^3.2.39"
   },
   "scripts": {
-    "en-US:dev": "vuepress dev en-US",
-    "en-US:build": "vuepress build en-US",
-    "zh-Hans:dev": "vuepress dev zh-Hans",
-    "zh-Hans:build": "vuepress build zh-Hans"
+    "zh-Hans:dev": "vitepress dev zh-Hans",
+    "zh-Hans:build": "vitepress build zh-Hans",
+    "zh-Hans:serve": "vitepress serve zh-Hans",
+    "en-US:dev": "vitepress dev en-US",
+    "en-US:build": "vitepress build en-US",
+    "en-US:serve": "vitepress serve en-US"
   }
 }
