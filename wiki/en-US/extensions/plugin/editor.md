@@ -69,7 +69,10 @@ ConfigUtility::getPublishConfigByType($userId, $type, $langTag, $timezone);
     - 3.10 When “specific member list configuration” is obtained in the parameter returned by the call-back interface (or specific member list configuration is deleted from the editor), trigger update;
     - 3.11 When “location” (or the location is deleted from the editor)is obtained in the parameter returned by the call-back interface, trigger update;
     - 3.12 Inputting the title and content would not trigger the update. The editor would update the title and content once every 10 seconds.
-- 4. Detect whether there are any “block words”(`contentMode=3`) when clicking the `publish` button. If yes, prompt the user to modify the words. Otherwise, click to publish directly.
+- 4. Click to publish
+    - 4.1 If the content triggers a [block word](../../database/contents/block-words.md) that prohibits publication, the API will return a block message.
+    - 4.2 If the content triggers a [block word](../../database/contents/block-words.md) that needs to be reviewed, the user will be prompted that the content has been submitted for review (API return `code=38200`) and will be published successfully after the review is passed.
+    - 4.3 Everything is normal, then the publication is successful.
 
 ## Content Rules
 
