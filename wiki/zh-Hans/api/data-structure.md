@@ -931,7 +931,7 @@
             "description": "String / 描述",
             "imageUrl": "String / 图片",
             "imageActiveUrl": "String / 二态图片",
-            "displayType": "String / 展示类型 1.基础 2.功能（插件）",
+            "displayType": "Number / 展示类型 1.基础 2.功能（插件）",
             "pluginUrl": "String / 展示类型 2 专用，插件访问地址",
         }
     ],

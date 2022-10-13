@@ -111,9 +111,6 @@
 | isAnonymous | Boolean | *optional* | 默认配置：是否匿名 |  |
 | mapJson | Object | *optional* | 默认配置：位置信息 |  |
 | eid | String | *optional* | 默认配置：扩展内容 |  |
-| file | File | *optional* | 默认配置：文件 |  |
-
-- 可选附带一个图片文件。
 
 ::: details 结果示例
 ```json
