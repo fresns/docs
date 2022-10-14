@@ -1,6 +1,6 @@
 # 撤销删除申请
 
-- 接口地址：`/api/v2/account/revoke-delete`
+- 接口地址：`/api/v2/account/recall-delete`
 - 请求方式：`POST`
 - 传参方式：`application/json`
 

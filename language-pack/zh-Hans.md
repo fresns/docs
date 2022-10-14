@@ -44,7 +44,7 @@
     "list": "列表",
     "choose": "选择",
     "update": "更新",
-    "withdraw": "撤回",
+    "recall": "撤回",
     "submit": "提交",
     "save": "保存",
     "saveChanges": "保存更改",

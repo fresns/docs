@@ -63,6 +63,12 @@ export default defineConfig({
             prev: '上一项',
             next: '下一项',
         },
+
+        algolia: {
+            appId: 'IWES74ZEKI',
+            apiKey: 'be9776b7fd35520c1f3ff6ef7be97703',
+            indexName: 'fresns_cn'
+        }
     }
 })
 
@@ -240,7 +246,7 @@ function sidebarApi() {
                 { text: '修改账号资料', link: '/api/account/edit.md' },
                 { text: '退出登录', link: '/api/account/logout.md' },
                 { text: '申请删除账号', link: '/api/account/apply-delete.md' },
-                { text: '撤销删除申请', link: '/api/account/revoke-delete.md' },
+                { text: '撤销删除申请', link: '/api/account/recall-delete.md' },
             ]
         },
         {
@@ -332,7 +338,7 @@ function sidebarApi() {
                 { text: '获取草稿详情', link: '/api/editor/detail.md' },
                 { text: '更新草稿内容', link: '/api/editor/update.md' },
                 { text: '提交发表（或审核）', link: '/api/editor/publish.md' },
-                { text: '撤回审核中草稿', link: '/api/editor/revoke.md' },
+                { text: '撤回审核中草稿', link: '/api/editor/recall.md' },
                 { text: '删除草稿', link: '/api/editor/delete.md' },
             ]
         },

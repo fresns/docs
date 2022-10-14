@@ -37,7 +37,7 @@
 | `PUT` | /api/v2/account/edit | Edit |
 | `DELETE` | /api/v2/account/logout | Logout |
 | `POST` | /api/v2/account/apply-delete | Apply Delete |
-| `POST` | /api/v2/account/revoke-delete | Revoke Delete |
+| `POST` | /api/v2/account/recall-delete | Recall Delete |
 
 ## User
 
@@ -124,7 +124,7 @@
 | `GET` | /api/v2/editor/`{type}`/`{draftId}` | Draft Detail |
 | `PUT` | /api/v2/editor/`{type}`/`{draftId}` | Update Draft |
 | `POST` | /api/v2/editor/`{type}`/`{draftId}` | Publish |
-| `PATCH` | /api/v2/editor/`{type}`/`{draftId}` | Revoke |
+| `PATCH` | /api/v2/editor/`{type}`/`{draftId}` | Recall |
 | `DELETE` | /api/v2/editor/`{type}`/`{draftId}` | Delete |
 
 ## Search

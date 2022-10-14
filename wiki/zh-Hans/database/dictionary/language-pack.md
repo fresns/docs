@@ -45,7 +45,7 @@
     {"name":"list","canDelete":false},
     {"name":"choose","canDelete":false},
     {"name":"update","canDelete":false},
-    {"name":"withdraw","canDelete":false},
+    {"name":"recall","canDelete":false},
     {"name":"submit","canDelete":false},
     {"name":"save","canDelete":false},
     {"name":"saveChanges","canDelete":false},

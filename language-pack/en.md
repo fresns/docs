@@ -44,7 +44,7 @@
     "list": "List",
     "choose": "Choose",
     "update": "Update",
-    "withdraw": "Withdraw",
+    "recall": "Recall",
     "submit": "Submit",
     "save": "Save",
     "saveChanges": "Save changes",

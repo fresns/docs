@@ -1,6 +1,6 @@
-# Revoke Delete
+# Recall Delete
 
-- Endpoint Path: `/api/v2/account/revoke-delete`
+- Endpoint Path: `/api/v2/account/recall-delete`
 - Method: `POST`
 - Request: `application/json`
 

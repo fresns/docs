@@ -52,6 +52,12 @@ export default defineConfig({
 
         editLink: {
             pattern: 'https://github.com/fresns/docs/tree/main/wiki/en-US/:path'
+        },
+
+        algolia: {
+            appId: 'IWES74ZEKI',
+            apiKey: 'be9776b7fd35520c1f3ff6ef7be97703',
+            indexName: 'fresns'
         }
     }
 })
@@ -229,7 +235,7 @@ function sidebarApi() {
                 { text: 'Edit', link: '/api/account/edit.md' },
                 { text: 'Logout', link: '/api/account/logout.md' },
                 { text: 'Apply Delete', link: '/api/account/apply-delete.md' },
-                { text: 'Revoke Delete', link: '/api/account/revoke-delete.md' },
+                { text: 'Recall Delete', link: '/api/account/recall-delete.md' },
             ]
         },
         {
@@ -321,7 +327,7 @@ function sidebarApi() {
                 { text: 'Draft Detail', link: '/api/editor/detail.md' },
                 { text: 'Update Draft', link: '/api/editor/update.md' },
                 { text: 'Publish', link: '/api/editor/publish.md' },
-                { text: 'Revoke', link: '/api/editor/revoke.md' },
+                { text: 'Recall', link: '/api/editor/recall.md' },
                 { text: 'Delete', link: '/api/editor/delete.md' },
             ]
         },

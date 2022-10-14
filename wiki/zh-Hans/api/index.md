@@ -37,7 +37,7 @@
 | `PUT` | /api/v2/account/edit | 修改账号资料 |
 | `DELETE` | /api/v2/account/logout | 退出登录 |
 | `POST` | /api/v2/account/apply-delete | 申请删除账号 |
-| `POST` | /api/v2/account/revoke-delete | 撤销删除申请 |
+| `POST` | /api/v2/account/recall-delete | 撤销删除申请 |
 
 ## 用户
 
