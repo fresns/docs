@@ -16,8 +16,8 @@
 
 | Parameter Name | Type | Required | Description |
 | --- | --- | --- | --- |
-| key | String | **required** | 搜索词 |
-| ... |  | *optional* | 可选[用户列表](../user/list.md#query-参数)接口所有参数 |
+| searchKey | String | **required** | Search Keywords |
+| ... |  | *optional* | Optional [user list](../user/list.md#query-params) api all parameters |
 
 ## Return
 

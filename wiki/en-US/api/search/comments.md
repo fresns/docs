@@ -16,8 +16,8 @@
 
 | Parameter Name | Type | Required | Description |
 | --- | --- | --- | --- |
-| key | String | **required** | 搜索词 |
-| ... |  | *optional* | 可选[评论列表](../comment/list.md#query-参数)接口所有参数 |
+| searchKey | String | **required** | Search Keywords |
+| ... |  | *optional* | Optional [comment list](../comment/list.md#query-params) api all parameters |
 
 ## Return
 

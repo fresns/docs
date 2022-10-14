@@ -16,7 +16,7 @@
 
 | 参数名 | 类型 | 是否必传 | 说明 |
 | --- | --- | --- | --- |
-| key | String | YES | 搜索词 |
+| searchKey | String | YES | 搜索词 |
 | ... |  | NO | 可选[小组列表](../group/list.md#query-参数)接口所有参数 |
 
 ## 返回结果
