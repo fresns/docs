@@ -87,7 +87,8 @@ function navbar() {
                 { text: 'Join', link: '/community/join.md' },
                 { text: 'Sponsor', link: '/community/sponsor.md' },
                 { text: 'Contributing', link: '/contributing/' },
-                { text: 'Community', link: 'https://discuss.fresns.org' },
+                { text: 'Community', link: 'https://discuss.fresns.com' },
+                { text: 'Marketplace', link: 'https://marketplace.fresns.com/open-source' },
             ],
             activeMatch: `^/(community|contributing)/`,
         }
@@ -630,7 +631,8 @@ function sidebarCommunity() {
             text: 'Interactive',
             collapsible: true,
             items: [
-                { text: 'Community', link: 'https://discuss.fresns.org' },
+                { text: 'Community', link: 'https://discuss.fresns.com' },
+                { text: 'Marketplace', link: 'https://marketplace.fresns.com/open-source' },
             ]
         },
     ]

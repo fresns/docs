@@ -20,8 +20,22 @@ Before you install Fresns, it's important to check that your server meets the re
 
 ### 1. Get the package
 
-::: tip
-- Waiting for release (Expected in early October)
+::: tip Option 1: Download the full package manually
+- [Click to download](https://files.fresns.org/latest.zip)
+:::
+
+::: tip Option 2: Download via Composer
+- Download the program
+```bash
+composer create-project fresns/fresns
+```
+
+- Configuration Manager
+```bash
+php artisan vendor:publish --provider="Fresns\PluginManager\Providers\PluginServiceProvider"
+php artisan vendor:publish --provider="Fresns\ThemeManager\Providers\ThemeServiceProvider"
+php artisan vendor:publish --provider="Fresns\MarketManager\Providers\MarketServiceProvider"
+```
 :::
 
 ### 2. Config the Web Server

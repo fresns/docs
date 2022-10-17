@@ -67,7 +67,7 @@ export default defineConfig({
         algolia: {
             appId: 'IWES74ZEKI',
             apiKey: 'be9776b7fd35520c1f3ff6ef7be97703',
-            indexName: 'fresns_cn'
+            indexName: 'fresns'
         }
     }
 })
@@ -98,7 +98,7 @@ function navbar() {
                 { text: '赞助我们', link: '/community/sponsor.md' },
                 { text: '贡献指南', link: '/contributing/' },
                 { text: '互动交流', link: 'https://discuss.fresns.cn' },
-                { text: '应用市场', link: 'https://market.fresns.cn' },
+                { text: '应用市场', link: 'https://marketplace.fresns.com/open-source' },
             ],
             activeMatch: `^/(community|contributing)/`,
         }
@@ -642,7 +642,7 @@ function sidebarCommunity() {
             collapsible: true,
             items: [
                 { text: '互动交流', link: 'https://discuss.fresns.cn' },
-                { text: '应用市场', link: 'https://market.fresns.cn' },
+                { text: '应用市场', link: 'https://marketplace.fresns.com/open-source' },
             ]
         },
     ]
