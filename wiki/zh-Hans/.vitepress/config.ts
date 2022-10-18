@@ -66,7 +66,7 @@ export default defineConfig({
 
         algolia: {
             appId: 'IWES74ZEKI',
-            apiKey: 'be9776b7fd35520c1f3ff6ef7be97703',
+            apiKey: 'ca90647551baab10e88397dc8b58506c',
             indexName: 'fresns_cn'
         }
     }
