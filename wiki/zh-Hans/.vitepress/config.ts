@@ -230,7 +230,7 @@ function sidebarApi() {
                 { text: '发送验证码', link: '/api/common/send-verify-code.md' },
                 { text: '上传日志', link: '/api/common/upload-log.md' },
                 { text: '上传文件', link: '/api/common/upload-file.md' },
-                { text: '文件下载链接', link: '/api/common/file-download-link.md' },
+                { text: '文件下载链接', link: '/api/common/file-link.md' },
                 { text: '下载过文件的用户', link: '/api/common/file-users.md' },
             ]
         },

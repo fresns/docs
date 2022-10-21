@@ -1,6 +1,6 @@
 # File Download Link
 
-- Endpoint Path: `/api/v2/common/file/{fid}/download-link`
+- Endpoint Path: `/api/v2/common/file/{fid}/link`
 - Method: `GET`
 - Request: `Rest` + `Query`
 

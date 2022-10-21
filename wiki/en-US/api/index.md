@@ -22,7 +22,7 @@
 | `POST` | /api/v2/common/send-verify-code | Send Verify Code |
 | `POST` | /api/v2/common/upload-log | Upload Log |
 | `POST` | /api/v2/common/upload-file | Upload File |
-| `GET` | /api/v2/common/file/`{fid}`/download-link | File Download Link |
+| `GET` | /api/v2/common/file/`{fid}`/link | File Download Link |
 | `GET` | /api/v2/common/file/`{fid}`/users | File Download Users |
 
 ## Account

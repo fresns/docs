@@ -22,7 +22,7 @@
 | `POST` | /api/v2/common/send-verify-code | 发送验证码 |
 | `POST` | /api/v2/common/upload-log | 上传日志 |
 | `POST` | /api/v2/common/upload-file | 上传文件 |
-| `GET` | /api/v2/common/file/`{fid}`/download-link | 文件下载链接 |
+| `GET` | /api/v2/common/file/`{fid}`/link | 文件下载链接 |
 | `GET` | /api/v2/common/file/`{fid}`/users | 下载过文件的用户 |
 
 ## 账号

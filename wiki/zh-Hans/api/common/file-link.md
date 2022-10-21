@@ -1,6 +1,6 @@
 # 文件下载链接
 
-- 接口地址：`/api/v2/common/file/{fid}/download-link`
+- 接口地址：`/api/v2/common/file/{fid}/link`
 - 请求方式：`GET`
 - 传参方式：`Rest` + `Query`
 

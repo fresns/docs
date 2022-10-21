@@ -220,7 +220,7 @@ function sidebarApi() {
                 { text: 'Send Verify Code', link: '/api/common/send-verify-code.md' },
                 { text: 'Upload Log', link: '/api/common/upload-log.md' },
                 { text: 'Upload File', link: '/api/common/upload-file.md' },
-                { text: 'File Download Link', link: '/api/common/file-download-link.md' },
+                { text: 'File Download Link', link: '/api/common/file-link.md' },
                 { text: 'File Download Users', link: '/api/common/file-users.md' },
             ]
         },
