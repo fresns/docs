@@ -225,6 +225,7 @@
     {"name":"contentEditedOn","canDelete":false},
     {"name":"contentFileUploader","canDelete":false},
     {"name":"contentFileDownloader","canDelete":false},
+    {"name":"contentFileDownloaderDesc","canDelete":false},
     {"name":"contentFileDownload","canDelete":false},
     {"name":"contentImageLong","canDelete":false},
     {"name":"contentVideoPlay","canDelete":false},

@@ -224,6 +224,7 @@
     "contentEditedOn": "Edited on",
     "contentFileUploader": "Uploader",
     "contentFileDownloader": "Downloader",
+    "contentFileDownloaderDesc": "Only 30 user avatars are displayed",
     "contentFileDownload": "Download",
     "contentImageLong": "Long",
     "contentVideoPlay": "Play",

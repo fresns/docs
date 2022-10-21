@@ -224,6 +224,7 @@
     "contentEditedOn": "編輯於",
     "contentFileUploader": "上傳者",
     "contentFileDownloader": "用戶下載記錄",
+    "contentFileDownloaderDesc": "僅展示 30 名用戶頭像",
     "contentFileDownload": "下載",
     "contentImageLong": "長圖",
     "contentVideoPlay": "播放",
