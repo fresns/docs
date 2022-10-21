@@ -18,6 +18,7 @@
 | --- | --- | --- | --- |
 | keys | String | NO | 键名，获取指定键名的配置项，多个以英文逗号隔开 |
 | tags | String | NO | 键标签，获取指定键标签的配置项，多个以英文逗号隔开 |
+| isAll | Boolean | NO | 是否输出全部结果（不分页） |
 | pageSize | Number | NO | 每页显示条数（默认 50 条） |
 | page | Number | NO | 页码（默认 1） |
 

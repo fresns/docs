@@ -20,6 +20,7 @@
 | Table Name | Description |
 | --- | --- |
 | **plugins** | Plugin main table |
+| **plugin_callbacks** | Plugin: callback usage table |
 | **plugin_usages** | Plugin: associated usage table |
 | **plugin_badges** | Plugin: badge data table |
 

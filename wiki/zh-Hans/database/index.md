@@ -20,6 +20,7 @@
 | 表名 | 描述 |
 | --- | --- |
 | **plugins** | 插件表 |
+| **plugin_callbacks** | 插件回调使用表 |
 | **plugin_usages** | 插件关联使用表 |
 | **plugin_badges** | 插件徽标数据表 |
 

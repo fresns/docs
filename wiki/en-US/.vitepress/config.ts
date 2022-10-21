@@ -216,6 +216,7 @@ function sidebarApi() {
             collapsible: true,
             items: [
                 { text: 'Input Tips', link: '/api/common/input-tips.md' },
+                { text: 'Plugin Callback', link: '/api/common/callback.md' },
                 { text: 'Send Verify Code', link: '/api/common/send-verify-code.md' },
                 { text: 'Upload Log', link: '/api/common/upload-log.md' },
                 { text: 'Upload File', link: '/api/common/upload-file.md' },
@@ -382,6 +383,7 @@ function sidebarDatabase() {
                     collapsible: true,
                     items: [
                         { text: 'plugins', link: '/database/plugins/plugins.md' },
+                        { text: 'plugin_callbacks', link: '/database/plugins/plugin-callbacks.md' },
                         { text: 'plugin_usages', link: '/database/plugins/plugin-usages.md' },
                         { text: 'plugin_badges', link: '/database/plugins/plugin-badges.md' },
                     ]

@@ -226,6 +226,7 @@ function sidebarApi() {
             collapsible: true,
             items: [
                 { text: '输入提示信息', link: '/api/common/input-tips.md' },
+                { text: '回调返参查询', link: '/api/common/callback.md' },
                 { text: '发送验证码', link: '/api/common/send-verify-code.md' },
                 { text: '上传日志', link: '/api/common/upload-log.md' },
                 { text: '上传文件', link: '/api/common/upload-file.md' },
@@ -392,6 +393,7 @@ function sidebarDatabase() {
                     collapsible: true,
                     items: [
                         { text: 'plugins 插件表', link: '/database/plugins/plugins.md' },
+                        { text: 'plugin_callbacks 插件回调表', link: '/database/plugins/plugin-callbacks.md' },
                         { text: 'plugin_usages 插件关联使用表', link: '/database/plugins/plugin-usages.md' },
                         { text: 'plugin_badges 插件徽标数据表', link: '/database/plugins/plugin-badges.md' },
                     ]
