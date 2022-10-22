@@ -23,28 +23,28 @@
 
 **Request Description**
 
-- `type` 留空输出全部，传参支持多个，以英文逗号隔开。
+- `types` 留空输出全部，传参支持多个，以英文逗号隔开。
 - 按时间倒序排列，最新的在前面。
 - **系统消息解读：**
-    - `type=1` 代表系统给全员发了一条 `content` 消息内容（用户不可删除）
+    - `types=1` 代表系统给全员发了一条 `content` 消息内容（用户不可删除）
         - `isAccessPlugin` 是否访问插件页
         - `actionType + actionInfo` 是否有附带内容
-    - `type=2` 代表系统给你发了一条 `content` 消息内容
+    - `types=2` 代表系统给你发了一条 `content` 消息内容
         - `isAccessPlugin` 是否访问插件页
         - `actionUser` 是否有触发用户
         - `actionType + actionInfo` 是否有附带内容
 - **推荐消息解读：**
-    - `type=3` 代表系统给你推荐了内容
+    - `types=3` 代表系统给你推荐了内容
         - `content` 推荐语
         - `isAccessPlugin` 是否访问插件页
         - `actionUser` 是否有触发用户
         - `actionType + actionInfo` 推荐的内容
 - **互动消息解读：**
-    - `type=4` 代表 `actionUser` 关注了你
-    - `type=5` 代表 `actionUser` 点赞了你的 `actionType + actionInfo`
-    - `type=6` 代表 `actionUser` 在 `actionType + actionInfo` 中提及了你
+    - `types=4` 代表 `actionUser` 关注了你
+    - `types=5` 代表 `actionUser` 点赞了你的 `actionType + actionInfo`
+    - `types=6` 代表 `actionUser` 在 `actionType + actionInfo` 中提及了你
         - `content` 提及内容的摘要
-    - `type=7` 代表 `actionUser` 发表 `actionType + actionInfo` 评论了你
+    - `types=7` 代表 `actionUser` 发表 `actionType + actionInfo` 评论了你
         - `content` 评论内容的摘要
 
 
