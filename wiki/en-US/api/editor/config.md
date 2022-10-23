@@ -35,7 +35,9 @@
                     "extensions": "String / 支持的扩展名，示例 png,gif,jpg,jpeg,bmp,heic",
                     "inputAccept": "String / 支持的扩展名，示例 .png,.gif,.jpg,.jpeg,.bmp,.heic",
                     "maxSize": "Number / 最大文件尺寸，单位 MB",
-                    "uploadNumber": "Number / 允许上传个数"
+                    "uploadNumber": "Number / 允许上传个数",
+                    "uploadType": "String / 上传类型 Fresns 或 Plugin",
+                    "uploadUrl": "String / Plugin 上传类型的地址"
                 },
                 "video": {
                     "status": "Boolean / 是否启用视频",
@@ -43,7 +45,9 @@
                     "inputAccept": "String / 支持的扩展名，示例 .wmv,.rm,.mov,.mpeg,.mp4,.3gp,.flv,.avi,.rmvb",
                     "maxSize": "Number / 最大文件尺寸，单位 MB",
                     "maxTime": "Number / 最大文件时长，单位 秒",
-                    "uploadNumber": "Number / 允许上传个数"
+                    "uploadNumber": "Number / 允许上传个数",
+                    "uploadType": "String / 上传类型 Fresns 或 Plugin",
+                    "uploadUrl": "String / Plugin 上传类型的地址"
                 },
                 "audio": {
                     "status": "Boolean / 是否启用音频",
@@ -51,14 +55,18 @@
                     "inputAccept": "String / 支持的扩展名，示例 .mp3,.wav,.m4a",
                     "maxSize": "Number / 最大文件尺寸，单位 MB",
                     "maxTime": "Number / 最大文件时长，单位 秒",
-                    "uploadNumber": "Number / 允许上传个数"
+                    "uploadNumber": "Number / 允许上传个数",
+                    "uploadType": "String / 上传类型 Fresns 或 Plugin",
+                    "uploadUrl": "String / Plugin 上传类型的地址"
                 },
                 "document": {
                     "status": "Boolean / 是否启用文档",
                     "extensions": "String / 支持的扩展名，示例 doc,docx,xls,xlsx,csv,ppt,pptx,pps,ppts,pdf,txt,md,markdown,rar,zip,7z,epub,mobi",
                     "inputAccept": "String / 支持的扩展名，示例 .doc,.docx,.xls,.xlsx,.csv,.ppt,.pptx,.pps,.ppts,.pdf,.txt,.md,.markdown,.rar,.zip,.7z,.epub,.mobi",
                     "maxSize": "Number / 最大文件尺寸，单位 MB",
-                    "uploadNumber": "Number / 允许上传个数"
+                    "uploadNumber": "Number / 允许上传个数",
+                    "uploadType": "String / 上传类型 Fresns 或 Plugin",
+                    "uploadUrl": "String / Plugin 上传类型的地址"
                 },
                 "title": {
                     "status": "Boolean / 是否启用标题",

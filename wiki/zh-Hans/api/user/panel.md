@@ -35,6 +35,7 @@
             "message": "Number / 未读会话消息数量"
         },
         "notifyUnread":{
+            "all": "Number / 全部未读总数（不包括系统公告）",
             "bulletin": "Number / 未读对全员的系统公告",
             "system": "Number / 未读系统通知",
             "recommend": "Number / 未读推荐",
