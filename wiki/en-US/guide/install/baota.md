@@ -115,10 +115,10 @@ DB_COLLATION=utf8mb4_0900_ai_ci
 
 ```sh
 # 任务配置
-cd /你的项目路径 && php artisan schedule:run >> /dev/null 2>&1
+su -c "cd /你的项目路径 && php artisan schedule:run >> /dev/null 2>&1" -s /bin/sh www
 
 # 示例
-cd /www/wwwroot/fresns && php artisan schedule:run >> /dev/null 2>&1
+su -c "cd /www/wwwroot/fresns && php artisan schedule:run >> /dev/null 2>&1" -s /bin/sh www
 ```
 
 ## 队列

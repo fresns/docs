@@ -62,9 +62,15 @@ When running Fresns, you need a way to keep “scheduled tasks” running normal
 ```bash
 # Task Config
 * * * * * cd /your-project-path && php artisan schedule:run >> /dev/null 2>&1
+# or
+su -c "cd /你的项目路径 && php artisan schedule:run >> /dev/null 2>&1" -s /bin/sh www
+
+
 
 # Example
 * * * * * cd /www/wwwroot/fresns && php artisan schedule:run >> /dev/null 2>&1
+# or
+su -c "cd /www/wwwroot/fresns && php artisan schedule:run >> /dev/null 2>&1" -s /bin/sh www
 ```
 
 ### .env Config File
