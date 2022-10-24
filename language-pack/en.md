@@ -184,6 +184,7 @@
     "editorUploadInfo": "Please select upload resources",
     "editorUploadExtensions": "Extensions",
     "editorUploadSize": "Max size",
+    "editorUploadNumber": "Max number",
     "editorUploadBtn": "Confirm",
     "editorLimitTitle": "Post restriction reminder",
     "editorLimitTypeName": "Restriction type",

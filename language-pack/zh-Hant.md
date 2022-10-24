@@ -184,6 +184,7 @@
     "editorUploadInfo": "請選擇上傳資源",
     "editorUploadExtensions": "支持的擴展名",
     "editorUploadSize": "支持的最大尺寸",
+    "editorUploadNumber": "支持上傳的數量",
     "editorUploadBtn": "確認上傳",
     "editorLimitTitle": "發表限制提醒",
     "editorLimitTypeName": "限制類型",

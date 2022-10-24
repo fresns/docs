@@ -185,6 +185,7 @@
     {"name":"editorUploadInfo","canDelete":false},
     {"name":"editorUploadExtensions","canDelete":false},
     {"name":"editorUploadSize","canDelete":false},
+    {"name":"editorUploadNumber","canDelete":false},
     {"name":"editorUploadBtn","canDelete":false},
     {"name":"editorLimitTitle","canDelete":false},
     {"name":"editorLimitTypeName","canDelete":false},
