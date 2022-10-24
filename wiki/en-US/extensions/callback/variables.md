@@ -26,6 +26,7 @@ Whether it is website or mobile application, the use of plug-ins is embedded in 
 | `{eid}` | Content Expand ID | extends->eid |
 | `{plid}` | Post Log ID | post_logs->id |
 | `{clid}` | Comment Log ID | comment_logs->id |
+| `{uploadInfo}` | Upload Parameters | [See Upload File API](../../api/common/upload-file.md) |
 
 ## {type} Access source type
 
@@ -43,7 +44,6 @@ Whether it is website or mobile application, the use of plug-ins is embedded in 
 | `account` |  |
 | `message` |  |
 | `editor` |  |
-
 
 ## {scene} Entrance Scene
 
@@ -69,3 +69,22 @@ Whether it is website or mobile application, the use of plug-ins is embedded in 
 | `commentBtn` | Comment Function Button | Comment with button, post author can operate comment |
 | `postEditor` | Post Editor |  |
 | `commentEditor` | Comment Editor |  |
+
+## {uploadInfo} Upload parameters
+
+- Same as signature:
+    - Compressing json data
+    - Encode the compressed data in Base64
+    - Base64-encoded data is then encoded as a URL
+- Parameters
+
+```json
+{
+    "usageType": "Number / Type of file usage",
+    "tableName": "String / Source Table Name",
+    "tableColumn": "String / Source Field Name",
+    "tableId": "Number / Source table primary key id",
+    "tableKey": "String / Source table key name",
+    "type": "String / File Type: image,video,audio,document"
+}
+```

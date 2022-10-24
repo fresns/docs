@@ -26,8 +26,9 @@
 | `{eid}` | 内容扩展 ID | extends->eid |
 | `{plid}` | 帖子日志 ID | post_logs->id |
 | `{clid}` | 评论日志 ID | comment_logs->id |
+| `{uploadInfo}` | 上传参数 | [同上传接口](../../api/common/upload-file.md) |
 
-## type 访问来源类型
+## {type} 访问来源类型
 
 `{type}` 变量名介绍
 
@@ -44,8 +45,7 @@
 | `message` | 消息 |
 | `editor` | 编辑器 |
 
-
-## scene 入口场景
+## {scene} 入口场景
 
 `{scene}` 变量名介绍
 
@@ -69,3 +69,19 @@
 | `commentBtn` | 评论功能按钮 | 评论附带按钮，帖子作者可操作评论 |
 | `postEditor` | 帖子编辑器 |  |
 | `commentEditor` | 评论编辑器 |  |
+
+## {uploadInfo} 上传参数
+
+- 同签名一样，先压缩，再以 Base64 编码，然后转为 URL 编码
+- 参数如下
+
+```json
+{
+    "usageType": "Number / 文件用途类型",
+    "tableName": "String / 来源表名",
+    "tableColumn": "String / 来源字段名",
+    "tableId": "Number / 来源表主键 ID",
+    "tableKey": "String / 来源表键名",
+    "type": "String / 四选一文件类型: image,video,audio,document"
+}
+```

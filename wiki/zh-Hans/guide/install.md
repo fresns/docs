@@ -65,7 +65,7 @@ php artisan vendor:publish --provider="Fresns\MarketManager\Providers\MarketServ
 # 任务配置
 * * * * * cd /你的项目路径 && php artisan schedule:run >> /dev/null 2>&1
 # 或
-su -c "cd /你的项目路径 && php artisan schedule:run >> /dev/null 2>&1" -s /bin/sh www
+su -c "cd /你的项目路径 && php artisan schedule:run >> /dev/null 2>&1" -s /bin/sh 所有者
 
 
 
