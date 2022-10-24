@@ -35,7 +35,7 @@
                     "extensions": "String / 支持的扩展名，示例 png,gif,jpg,jpeg,bmp,heic",
                     "inputAccept": "String / 支持的扩展名，示例 .png,.gif,.jpg,.jpeg,.bmp,.heic",
                     "maxSize": "Number / 最大文件尺寸，单位 MB",
-                    "uploadForm": "String / 上传方式 Fresns 或 Plugin",
+                    "uploadForm": "String / 上传方式 fresns 或 plugin",
                     "uploadUrl": "String / Plugin 上传方式的地址",
                     "uploadNumber": "Number / 允许上传个数"
                 },
@@ -45,7 +45,7 @@
                     "inputAccept": "String / 支持的扩展名，示例 .wmv,.rm,.mov,.mpeg,.mp4,.3gp,.flv,.avi,.rmvb",
                     "maxSize": "Number / 最大文件尺寸，单位 MB",
                     "maxTime": "Number / 最大文件时长，单位 秒",
-                    "uploadForm": "String / 上传方式 Fresns 或 Plugin",
+                    "uploadForm": "String / 上传方式 fresns 或 plugin",
                     "uploadUrl": "String / Plugin 上传方式的地址",
                     "uploadNumber": "Number / 允许上传个数"
                 },
@@ -55,7 +55,7 @@
                     "inputAccept": "String / 支持的扩展名，示例 .mp3,.wav,.m4a",
                     "maxSize": "Number / 最大文件尺寸，单位 MB",
                     "maxTime": "Number / 最大文件时长，单位 秒",
-                    "uploadForm": "String / 上传方式 Fresns 或 Plugin",
+                    "uploadForm": "String / 上传方式 fresns 或 plugin",
                     "uploadUrl": "String / Plugin 上传方式的地址",
                     "uploadNumber": "Number / 允许上传个数"
                 },
@@ -64,7 +64,7 @@
                     "extensions": "String / 支持的扩展名，示例 doc,docx,xls,xlsx,csv,ppt,pptx,pps,ppts,pdf,txt,md,markdown,rar,zip,7z,epub,mobi",
                     "inputAccept": "String / 支持的扩展名，示例 .doc,.docx,.xls,.xlsx,.csv,.ppt,.pptx,.pps,.ppts,.pdf,.txt,.md,.markdown,.rar,.zip,.7z,.epub,.mobi",
                     "maxSize": "Number / 最大文件尺寸，单位 MB",
-                    "uploadForm": "String / 上传方式 Fresns 或 Plugin",
+                    "uploadForm": "String / 上传方式 fresns 或 plugin",
                     "uploadUrl": "String / Plugin 上传方式的地址",
                     "uploadNumber": "Number / 允许上传个数"
                 },
