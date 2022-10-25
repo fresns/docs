@@ -6,7 +6,6 @@
 | pid | varchar(32) | 对外公开 ID |  | NO | **唯一值** |
 | user_id | bigint *UNSIGNED* | 发布者 ID |  | NO | 关联字段 [users->id](../users/users.md) |
 | group_id | int *UNSIGNED* | 小组 ID |  | YES | 关联字段 [groups->id](groups.md) |
-| types | varchar(128) | 内容搜索类型 |  | NO | 多个以英文逗号隔开<br>例如 `image,video` 代表帖子带图片和视频 |
 | title | varchar(255) | 标题 |  | YES |  |
 | content | longtext | 内容 |  | YES |  |
 | lang_tag | char(16) | Language Tag |  | YES |  |
@@ -34,17 +33,6 @@
 | created_at | timestamp | Create Time | CURRENT_TIMESTAMP | NO | 发表时间 |
 | updated_at | timestamp | Update Time |  | YES |  |
 | deleted_at | timestamp | Delete Time |  | YES |  |
-
-## 类型说明
-
-| 类型 | 说明 |
-| --- | --- |
-| text | 帖子是纯文本内容，不附带文件，不附带扩展内容 |
-| image | 帖子带图片文件（图片附件） |
-| video | 帖子带视频文件（视频附件） |
-| audio | 帖子带音频文件（音频附件） |
-| document | 帖子带文档文件（文档附件） |
-| {unikey} | 插件 unikey 值，代表帖子附带该插件增加的扩展内容 |
 
 ## 精华说明
 

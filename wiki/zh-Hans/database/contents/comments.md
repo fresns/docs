@@ -8,7 +8,6 @@
 | top_parent_id | bigint *UNSIGNED* | 顶级评论 ID |  | YES | 所属哪个评论，为空代表不属于任何评论 |
 | parent_id | bigint *UNSIGNED* | 父级评论 ID |  | YES | 为空代表一级评论 |
 | user_id | bigint *UNSIGNED* | 发表者 ID |  | NO | 关联字段 [users->id](../users/users.md) |
-| types | varchar(128) | 内容搜索类型 |  | NO | 多个以英文逗号隔开<br>例如 `image,video` 代表评论带图片和视频 |
 | content | longtext | 内容 |  | YES |  |
 | lang_tag | char(16) | 语言标签 |  | YES |  |
 | writing_direction | char(3) | 语言写作方向 |  | YES |   |
@@ -35,14 +34,3 @@
 | created_at | timestamp | 创建时间 | CURRENT_TIMESTAMP | NO | 发表时间 |
 | updated_at | timestamp | 更新时间 |  | YES |  |
 | deleted_at | timestamp | 删除时间 |  | YES |  |
-
-## 类型说明
-
-| 类型 | 说明 |
-| --- | --- |
-| text | 帖子是纯文本内容，不附带文件，不附带扩展内容 |
-| image | 帖子带图片文件（图片附件） |
-| video | 帖子带视频文件（视频附件） |
-| audio | 帖子带音频文件（音频附件） |
-| document | 帖子带文档文件（文档附件） |
-| {unikey} | 插件 unikey 值，代表帖子附带该插件增加的扩展内容 |
