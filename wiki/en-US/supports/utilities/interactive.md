@@ -64,17 +64,6 @@ InteractiveUtility::checkInteractiveStatus($markType, $markId, $userId);
 - 输出是否点赞、点踩、关注、屏蔽。
 - 参数名 `likeStatus`,`dislikeStatus`,`followStatus`,`blockStatus`
 
-## 检查是否关注了我
-```php
-InteractiveUtility::checkUserFollowMe($userId, $myUserId);
-```
-| Parameter Name | Type | Required | Description |
-| --- | --- | --- | --- |
-| userId | Number | **required** | `users > id` |
-| myUserId | Number | **required** | `users > id` |
-
-- 检查用户 `userId` 是否关注了我 `myUserId`
-
 ## 操作点赞
 ```php
 InteractiveUtility::markUserLike($userId, $likeType, $likeId);
@@ -146,3 +135,26 @@ InteractiveUtility::digestStats($type, $id, $actionType);
 | type | Number | **required** | `post` 或 `comment` |
 | id | Number | **required** | 对应类型的主键 ID |
 | actionType | String | **required** | `increment` 或 `decrement` |
+
+## 获取关注对象 ID 数组
+```php
+InteractiveUtility::getFollowIdArr($type, $userId);
+```
+| Parameter Name | Type | Required | Description |
+| --- | --- | --- | --- |
+| type | Number | **required** | 1.用户 / 2.小组 / 3.话题 / 4.帖子 / 5.评论 |
+| userId | Number | **required** | `users > id` |
+
+## 获取屏蔽对象 ID 数组
+```php
+InteractiveUtility::getBlockIdArr($type, $userId);
+```
+| Parameter Name | Type | Required | Description |
+| --- | --- | --- | --- |
+| type | Number | **required** | 1.用户 / 2.小组 / 3.话题 / 4.帖子 / 5.评论 |
+| userId | Number | **required** | `users > id` |
+
+## 获取私有小组 ID 数组
+```php
+InteractiveUtility::getPrivateGroupIdArr();
+```

@@ -226,6 +226,7 @@
         "followMeStatus": "Boolean / 他是否关注了我",
         "followNote": "String / 我对他的关注备注",
         "blockStatus": "Boolean / 是否可以操作屏蔽",
+        "blockMeStatus": "Boolean / 他是否屏蔽了我",
         "blockNote": "String / 我对他的屏蔽备注"
     },
     "dialog": {
