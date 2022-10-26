@@ -372,9 +372,6 @@
 {
     "pid": "String / 帖子 ID",
     "url": "String / 帖子详情页地址",
-    "types": [
-        // 帖子附带内容类型
-    ],
     "title": "String / 帖子标题",
     "content": "String / 帖子内容或简述",
     "contentLength": "Number / 内容总长度",
@@ -518,9 +515,6 @@
 {
     "cid": "String / 评论 ID",
     "url": "String / 评论详情页地址",
-    "types": [
-        // 评论附带内容类型
-    ],
     "content": "String / 评论内容或简述",
     "contentLength": "Number / 内容总长度",
     "langTag": "String / 内容语言标签",
