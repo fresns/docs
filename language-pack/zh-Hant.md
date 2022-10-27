@@ -62,6 +62,8 @@
     "document": "文檔",
     "learnMore": "瞭解詳情",
     "pleaseEnter": "請輸入",
+    "copyLink": "複製鏈接",
+    "copySuccess": "複製成功",
     "modifierCount": "共",
     "modifierOr": "或",
     "modifierYear": "年",

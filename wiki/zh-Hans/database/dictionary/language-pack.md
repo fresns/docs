@@ -62,6 +62,8 @@
     {"name":"document","canDelete":false},
     {"name":"learnMore","canDelete":false},
     {"name":"pleaseEnter","canDelete":false},
+    {"name":"copyLink","canDelete":false},
+    {"name":"copySuccess","canDelete":false},
     {"name":"modifierCount","canDelete":false},
     {"name":"modifierOr","canDelete":false},
     {"name":"modifierYear","canDelete":false},

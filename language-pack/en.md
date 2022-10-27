@@ -62,6 +62,8 @@
     "document": "Document",
     "learnMore": "Learn more",
     "pleaseEnter": "Please enter",
+    "copyLink": "Copy Link",
+    "copySuccess": "Copy Success",
     "modifierCount": "Total",
     "modifierOr": "or",
     "modifierYear": "Year",

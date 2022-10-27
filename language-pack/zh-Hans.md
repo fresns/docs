@@ -62,6 +62,8 @@
     "document": "文档",
     "learnMore": "了解详情",
     "pleaseEnter": "请输入",
+    "copyLink": "复制链接",
+    "copySuccess": "复制成功",
     "modifierCount": "共",
     "modifierOr": "或",
     "modifierYear": "年",
