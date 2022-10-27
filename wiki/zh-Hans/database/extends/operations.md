@@ -73,7 +73,7 @@
                 "name": "operations->name",
                 "description": "operations->description",
                 "imageUrl": "operations->image_file_id 或 image_file_url",
-                "imageActiveUrl": "operations->image_active_file_id 或 image_active_file_id",
+                "imageActiveUrl": "operations->image_active_file_id 或 image_active_file_url",
                 "displayType": "operations->display_type",
                 "pluginUrl": "operations->plugin_unikey",
             }
@@ -85,7 +85,7 @@
                 "name": "operations->name",
                 "description": "operations->description",
                 "imageUrl": "operations->image_file_id 或 image_file_url",
-                "imageActiveUrl": "operations->image_active_file_id 或 image_active_file_id",
+                "imageActiveUrl": "operations->image_active_file_id 或 image_active_file_url",
                 "displayType": "operations->display_type",
                 "pluginUrl": "operations->plugin_unikey",
             }
@@ -97,7 +97,7 @@
                 "name": "operations->name",
                 "description": "operations->description",
                 "imageUrl": "operations->image_file_id 或 image_file_url",
-                "imageActiveUrl": "operations->image_active_file_id 或 image_active_file_id",
+                "imageActiveUrl": "operations->image_active_file_id 或 image_active_file_url",
                 "displayType": "operations->display_type",
                 "pluginUrl": "operations->plugin_unikey",
             }
@@ -109,7 +109,7 @@
                 "name": "operations->name",
                 "description": "operations->description",
                 "imageUrl": "operations->image_file_id 或 image_file_url",
-                "imageActiveUrl": "operations->image_active_file_id 或 image_active_file_id",
+                "imageActiveUrl": "operations->image_active_file_id 或 image_active_file_url",
                 "displayType": "operations->display_type",
                 "pluginUrl": "operations->plugin_unikey",
             }

@@ -72,8 +72,8 @@
                 "style": "operations->style",
                 "name": "operations->name",
                 "description": "operations->description",
-                "imageUrl": "operations->image_file_id 或 image_file_url",
-                "imageActiveUrl": "operations->image_active_file_id 或 image_active_file_id",
+                "imageUrl": "operations->image_file_id or image_file_url",
+                "imageActiveUrl": "operations->image_active_file_id or image_active_file_url",
                 "displayType": "operations->display_type",
                 "pluginUrl": "operations->plugin_unikey",
             }
@@ -84,8 +84,8 @@
                 "style": "operations->style",
                 "name": "operations->name",
                 "description": "operations->description",
-                "imageUrl": "operations->image_file_id 或 image_file_url",
-                "imageActiveUrl": "operations->image_active_file_id 或 image_active_file_id",
+                "imageUrl": "operations->image_file_id or image_file_url",
+                "imageActiveUrl": "operations->image_active_file_id or image_active_file_url",
                 "displayType": "operations->display_type",
                 "pluginUrl": "operations->plugin_unikey",
             }
@@ -96,8 +96,8 @@
                 "style": "operations->style",
                 "name": "operations->name",
                 "description": "operations->description",
-                "imageUrl": "operations->image_file_id 或 image_file_url",
-                "imageActiveUrl": "operations->image_active_file_id 或 image_active_file_id",
+                "imageUrl": "operations->image_file_id or image_file_url",
+                "imageActiveUrl": "operations->image_active_file_id or image_active_file_url",
                 "displayType": "operations->display_type",
                 "pluginUrl": "operations->plugin_unikey",
             }
@@ -108,8 +108,8 @@
                 "style": "operations->style",
                 "name": "operations->name",
                 "description": "operations->description",
-                "imageUrl": "operations->image_file_id 或 image_file_url",
-                "imageActiveUrl": "operations->image_active_file_id 或 image_active_file_id",
+                "imageUrl": "operations->image_file_id or image_file_url",
+                "imageActiveUrl": "operations->image_active_file_id or image_active_file_url",
                 "displayType": "operations->display_type",
                 "pluginUrl": "operations->plugin_unikey",
             }

@@ -5,8 +5,8 @@
 | id | bigint *UNSIGNED* | Primary Key ID | | NO | 自动递增 |
 | cid | varchar(32) | 对外公开 ID |  | NO | **唯一值** |
 | post_id | bigint *UNSIGNED* | 帖子 ID |  | NO | 关联字段 [posts->id](posts.md) |
-| top_parent_id | bigint *UNSIGNED* | 顶级评论 ID |  | YES | 所属哪个评论，为空代表不属于任何评论 |
-| parent_id | bigint *UNSIGNED* | 父级评论 ID |  | YES | 为空代表一级评论 |
+| top_parent_id | bigint *UNSIGNED* | 顶级评论 ID | 0 | NO | 所属哪个评论，0 代表不属于任何评论 |
+| parent_id | bigint *UNSIGNED* | 父级评论 ID | 0 | NO | 0 代表一级评论 |
 | user_id | bigint *UNSIGNED* | 发表者 ID |  | NO | 关联字段 [users->id](../users/users.md) |
 | content | longtext | 内容 |  | YES |  |
 | lang_tag | char(16) | Language Tag |  | YES |  |
