@@ -6,129 +6,130 @@
 
 | Menu Title | Key Name | Default Key Value | Value Type | Description |
 | --- | --- | --- | --- | --- |
-| 点赞的用户 | menu_like_users | 我的喜欢 | string | 多语言 |
-| 点踩的用户 | menu_dislike_users | 我的喜欢 | string | 多语言 |
-| 关注的用户 | menu_follow_users | 我的关注 | string | 多语言 |
-| 屏蔽的用户 | menu_block_users | 黑名单 | string | 多语言 |
+| Like Users | menu_like_users | My Like | string | Multilingual |
+| Dislike Users | menu_dislike_users | My Dislike | string | Multilingual |
+| Follow Users | menu_follow_users | My Follow | string | Multilingual |
+| Block Users | menu_block_users | Blacklist | string | Multilingual |
 
 ## Group
 
 | Menu Title | Key Name | Default Key Value | Value Type | Description |
 | --- | --- | --- | --- | --- |
-| 点赞的小组 | menu_like_groups | 我点赞的小组 | string | 多语言 |
-| 点踩的小组 | menu_dislike_groups | 我点赞的小组 | string | 多语言 |
-| 关注的小组 | menu_follow_groups | 我的小组 | string | 多语言 |
-| 屏蔽的小组 | menu_block_groups | 我屏蔽的 | string | 多语言 |
+| Like Groups | menu_like_groups | My Like | string | Multilingual |
+| Dislike Groups | menu_dislike_groups | My Dislike | string | Multilingual |
+| Follow Groups | menu_follow_groups | My Join | string | Multilingual |
+| Block Groups | menu_block_groups | Blacklist | string | Multilingual |
 
 ## Hashtag
 
 | Menu Title | Key Name | Default Key Value | Value Type | Description |
 | --- | --- | --- | --- | --- |
-| 点赞的话题 | menu_like_hashtags | 我点赞的话题 | string | 多语言 |
-| 点踩的话题 | menu_dislike_hashtags | 我点赞的话题 | string | 多语言 |
-| 关注的话题 | menu_follow_hashtags | 我的订阅 | string | 多语言 |
-| 屏蔽的话题 | menu_block_hashtags | 我不感兴趣的 | string | 多语言 |
+| Like Groups | menu_like_hashtags | My Like | string | Multilingual |
+| Dislike Groups | menu_dislike_hashtags | My Dislike | string | Multilingual |
+| Follow Groups | menu_follow_hashtags | My Watching | string | Multilingual |
+| Block Groups | menu_block_hashtags | Blacklist | string | Multilingual |
 
 ## Post
 
 | Menu Title | Key Name | Default Key Value | Value Type | Description |
 | --- | --- | --- | --- | --- |
-| 附近范围的帖子 | menu_nearby_posts | 附近 | string | 多语言 |
-| 指定位置的周边帖子 | menu_location_posts | 周边 | string | 多语言 |
-| 点赞的帖子 | menu_like_posts | 我点赞的帖子 | string | 多语言 |
-| 点踩的帖子 | menu_dislike_posts | 我点赞的帖子 | string | 多语言 |
-| 关注的帖子 | menu_follow_posts | 帖子收藏夹 | string | 多语言 |
-| 屏蔽的帖子 | menu_block_posts | 我不喜欢的 | string | 多语言 |
+| Posts by Nearby | menu_nearby_posts | Nearby | string | Multilingual |
+| Posts around the specified location | menu_location_posts | Location | string | Multilingual |
+| Like Posts | menu_like_posts | My Like | string | Multilingual |
+| Dislike Posts | menu_dislike_posts | My Dislike | string | Multilingual |
+| Follow Posts | menu_follow_posts | Favorites | string | Multilingual |
+| Block Posts | menu_block_posts | Blacklist | string | Multilingual |
 
 ## Comment
 
 | Menu Title | Key Name | Default Key Value | Value Type | Description |
 | --- | --- | --- | --- | --- |
-| 附近范围的评论 | menu_nearby_comments | 附近 | string | 多语言 |
-| 指定位置的周边评论 | menu_location_comments | 周边 | string | 多语言 |
-| 点赞的评论 | menu_like_comments | 我点赞的评论 | string | 多语言 |
-| 点踩的评论 | menu_dislike_comments | 我点赞的评论 | string | 多语言 |
-| 关注的评论 | menu_follow_comments | 评论收藏夹 | string | 多语言 |
-| 屏蔽的评论 | menu_block_comments | 我不喜欢的 | string | 多语言 |
+| Comments by Nearby | menu_nearby_comments | Nearby | string | Multilingual |
+| Comments around the specified location | menu_location_comments | Location | string | Multilingual |
+| Like Comments | menu_like_comments | My Like | string | Multilingual |
+| Dislike Comments | menu_dislike_comments | My Dislike | string | Multilingual |
+| Follow Comments | menu_follow_comments | Favorites | string | Multilingual |
+| Block Comments | menu_block_comments | Blacklist | string | Multilingual |
 
 ## Follow
 
 | Menu Title | Key Name | Default Key Value | Value Type | Description |
 | --- | --- | --- | --- | --- |
-| 全部关注的帖子 | menu_follow_all_posts | 我的关注 | string | 多语言 |
-| 关注用户的帖子 | menu_follow_user_posts | 关注用户的帖子 | string | 多语言 |
-| 关注小组的帖子 | menu_follow_group_posts | 关注小组的帖子 | string | 多语言 |
-| 关注话题的帖子 | menu_follow_hashtag_posts | 关注话题的帖子 | string | 多语言 |
-| 全部关注的评论 | menu_follow_all_comments | 我的关注 | string | 多语言 |
-| 关注用户的评论 | menu_follow_user_comments | 关注用户的评论 | string | 多语言 |
-| 关注小组的评论 | menu_follow_group_comments | 关注小组的评论 | string | 多语言 |
-| 关注话题的评论 | menu_follow_hashtag_comments | 关注话题的评论 | string | 多语言 |
+| All posts followed | menu_follow_all_posts | Follow | string | Multilingual |
+| Follow users posts | menu_follow_user_posts | Follow users posts | string | Multilingual |
+| Follow groups posts | menu_follow_group_posts | Follow groups posts | string | Multilingual |
+| Follow hashtags posts | menu_follow_hashtag_posts | Follow hashtags posts | string | Multilingual |
+| All comments followed | menu_follow_all_comments | Follow | string | Multilingual |
+| Follow users comments | menu_follow_user_comments | Follow users comments | string | Multilingual |
+| Follow groups comments | menu_follow_group_comments | Follow groups comments | string | Multilingual |
+| Follow hashtags comments | menu_follow_hashtag_comments | Follow hashtags comments | string | Multilingual |
 
 ## Account
 
 | Menu Title | Key Name | Default Key Value | Value Type | Description |
 | --- | --- | --- | --- | --- |
-| 个人中心 | menu_account | 我 | string | 多语言 |
-| 注册 | menu_account_register | 注册 | string | 多语言 |
-| 登录 | menu_account_login | 登录 | string | 多语言 |
-| 找回密码 | menu_account_reset_password | 找回密码 | string | 多语言 |
-| 用户 | menu_account_users | 用户 | string | 多语言 |
-| 钱包 | menu_account_wallet | 钱包 | string | 多语言 |
-| 设置 | menu_account_settings | 设置 | string | 多语言 |
+| Account Home | menu_account | Me | string | Multilingual |
+| Register | menu_account_register | Register | string | Multilingual |
+| Login | menu_account_login | Login | string | Multilingual |
+| Reset Password | menu_account_reset_password | Forgot your password? | string | Multilingual |
+| Users | menu_account_users | Users | string | Multilingual |
+| Wallet | menu_account_wallet | Wallet | string | Multilingual |
+| Settings | menu_account_settings | Settings | string | Multilingual |
 
 ## Message
 
 | Menu Title | Key Name | Default Key Value | Value Type | Description |
 | --- | --- | --- | --- | --- |
-| 会话 | menu_dialogs | 私信 | string | 多语言 |
-| 消息 | menu_messages | 消息 | string | 多语言 |
-| 通知 | menu_notifies | 通知 | string | 多语言 |
-| 通知-系统公告 | menu_notify_bulletins | 系统公告 | string | 多语言 |
-| 通知-系统通知 | menu_notify_systems | 系统通知 | string | 多语言 |
-| 通知-推荐 | menu_notify_recommends | 推荐 | string | 多语言 |
-| 通知-关注 | menu_notify_follows | 关注 | string | 多语言 |
-| 通知-点赞 | menu_notify_likes | 点赞 | string | 多语言 |
-| 通知-提及 | menu_notify_mentions | 提及 | string | 多语言 |
-| 通知-评论 | menu_notify_comments | 评论 | string | 多语言 |
+| Dialogs | menu_dialogs | Dialogs | string | Multilingual |
+| Messages | menu_messages | Messages | string | Multilingual |
+| Notifies | menu_notifies | Notifies | string | Multilingual |
+| Notify-Bulletins | menu_notify_bulletins | Bulletins | string | Multilingual |
+| Notify-Systems | menu_notify_systems | Systems | string | Multilingual |
+| Notify-Recommends | menu_notify_recommends | Recommends | string | Multilingual |
+| Notify-Likes | menu_notify_likes | Likes | string | Multilingual |
+| Notify-Follows | menu_notify_follows | Follows | string | Multilingual |
+| Notify-Mentions | menu_notify_mentions | Mentions | string | Multilingual |
+| Notify-Comments | menu_notify_comments | Comments | string | Multilingual |
 
 ## Search
 
 | Menu Title | Key Name | Default Key Value | Value Type | Description |
 | --- | --- | --- | --- | --- |
-| 搜索 | menu_search | 搜索 | string | 多语言 |
+| Search | menu_search | Search | string | Multilingual |
 
 ## Editor
 
 | Menu Title | Key Name | Default Key Value | Value Type | Description |
 | --- | --- | --- | --- | --- |
-| 编辑器 | menu_editor_functions | 编辑器 | string | 多语言 |
-| 草稿箱 | menu_editor_drafts | 草稿箱 | string | 多语言 |
+| Editor | menu_editor_functions | Editor | string | Multilingual |
+| Drafts | menu_editor_drafts | Draft Box | string | Multilingual |
 
 ## Profile
 
 | Menu Title | Key Name | Default Key Value | Value Type | Description |
 | --- | --- | --- | --- | --- |
-| 点赞 TA 的用户 | menu_profile_likes | 被喜欢 | string | 多语言 |
-| 点踩 TA 的用户 | menu_profile_dislikes | 被喜欢 | string | 多语言 |
-| 关注 TA 的用户 | menu_profile_followers | 粉丝 | string | 多语言 |
-| 屏蔽 TA 的用户 | menu_profile_blockers | 被拉黑 | string | 多语言 |
-| TA 点赞的用户 | menu_profile_like_users | TA 点赞的用户 | string | 多语言 |
-| TA 点赞的小组 | menu_profile_like_groups | TA 点赞的小组 | string | 多语言 |
-| TA 点赞的话题 | menu_profile_like_hashtags | TA 点赞的话题 | string | 多语言 |
-| TA 点赞的帖子 | menu_profile_like_posts | TA 点赞的帖子 | string | 多语言 |
-| TA 点赞的评论 | menu_profile_like_comments | TA 点赞的评论 | string | 多语言 |
-| TA 点踩的用户 | menu_profile_dislike_users | TA 点踩的用户 | string | 多语言 |
-| TA 点踩的小组 | menu_profile_dislike_groups | TA 点踩的小组 | string | 多语言 |
-| TA 点踩的话题 | menu_profile_dislike_hashtags | TA 点踩的话题 | string | 多语言 |
-| TA 点踩的帖子 | menu_profile_dislike_posts | TA 点踩的帖子 | string | 多语言 |
-| TA 点踩的评论 | menu_profile_dislike_comments | TA 点踩的评论 | string | 多语言 |
-| TA 关注的用户 | menu_profile_follow_users | 正在关注 | string | 多语言 |
-| TA 关注的小组 | menu_profile_follow_groups | 正在其中 | string | 多语言 |
-| TA 关注的话题 | menu_profile_follow_hashtags | 正在订阅 | string | 多语言 |
-| TA 关注的帖子 | menu_profile_follow_posts | 收藏夹 | string | 多语言 |
-| TA 关注的评论 | menu_profile_follow_comments | 收藏夹 | string | 多语言 |
-| TA 屏蔽的用户 | menu_profile_block_users | TA 的黑名单 | string | 多语言 |
-| TA 屏蔽的小组 | menu_profile_block_groups | TA 屏蔽的小组 | string | 多语言 |
-| TA 屏蔽的话题 | menu_profile_block_hashtags | TA 屏蔽的话题 | string | 多语言 |
-| TA 屏蔽的帖子 | menu_profile_block_posts | TA 屏蔽的帖子 | string | 多语言 |
-| TA 屏蔽的评论 | menu_profile_block_comments | TA 屏蔽的评论 | string | 多语言 |
+| Like it users | menu_profile_likes | Likes | string | Multilingual |
+| Dislike it users | menu_profile_dislikes | Dislikes | string | Multilingual |
+| Follow it users | menu_profile_followers | Followers | string | Multilingual |
+| Block it users | menu_profile_blockers | Blockers | string | Multilingual |
+| Followers You Follow | menu_profile_followers_you_follow | Followers You Know | string | Multilingual |
+| It like users | menu_profile_like_users | It like users | string | Multilingual |
+| It like groups | menu_profile_like_groups | It like groups | string | Multilingual |
+| It like hashtags | menu_profile_like_hashtags | It like hashtags | string | Multilingual |
+| It like posts | menu_profile_like_posts | It like posts | string | Multilingual |
+| It like comments | menu_profile_like_comments | It like comments | string | Multilingual |
+| It dislike users | menu_profile_dislike_users | It dislike users | string | Multilingual |
+| It dislike groups | menu_profile_dislike_groups | It dislike groups | string | Multilingual |
+| It dislike hashtags | menu_profile_dislike_hashtags | It dislike hashtags | string | Multilingual |
+| It dislike posts | menu_profile_dislike_posts | It dislike posts | string | Multilingual |
+| It dislike comments | menu_profile_dislike_comments | It dislike comments | string | Multilingual |
+| It follow users | menu_profile_follow_users | Following | string | Multilingual |
+| It follow groups | menu_profile_follow_groups | Being in it | string | Multilingual |
+| It follow hashtags | menu_profile_follow_hashtags | Subscribing now | string | Multilingual |
+| It follow posts | menu_profile_follow_posts | Favorites | string | Multilingual |
+| It follow comments | menu_profile_follow_comments | Favorites | string | Multilingual |
+| It block users | menu_profile_block_users | It Blacklist | string | Multilingual |
+| It block groups | menu_profile_block_groups | It block groups | string | Multilingual |
+| It block hashtags | menu_profile_block_hashtags | It block hashtags | string | Multilingual |
+| It block posts | menu_profile_block_posts | It block posts | string | Multilingual |
+| It block comments | menu_profile_block_comments | It block comments | string | Multilingual |

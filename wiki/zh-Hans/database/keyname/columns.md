@@ -7,7 +7,7 @@
 | 栏目标题 | 键名 | 默认键值 | 键值类型 | 说明 |
 | --- | --- | --- | --- | --- |
 | 点赞的用户 | menu_like_users | 我的喜欢 | string | 多语言 |
-| 点踩的用户 | menu_dislike_users | 我的喜欢 | string | 多语言 |
+| 点踩的用户 | menu_dislike_users | 我不喜欢的 | string | 多语言 |
 | 关注的用户 | menu_follow_users | 我的关注 | string | 多语言 |
 | 屏蔽的用户 | menu_block_users | 黑名单 | string | 多语言 |
 
@@ -16,7 +16,7 @@
 | 栏目标题 | 键名 | 默认键值 | 键值类型 | 说明 |
 | --- | --- | --- | --- | --- |
 | 点赞的小组 | menu_like_groups | 我点赞的小组 | string | 多语言 |
-| 点踩的小组 | menu_dislike_groups | 我点赞的小组 | string | 多语言 |
+| 点踩的小组 | menu_dislike_groups | 我不喜欢的小组 | string | 多语言 |
 | 关注的小组 | menu_follow_groups | 我的小组 | string | 多语言 |
 | 屏蔽的小组 | menu_block_groups | 我屏蔽的 | string | 多语言 |
 
@@ -25,7 +25,7 @@
 | 栏目标题 | 键名 | 默认键值 | 键值类型 | 说明 |
 | --- | --- | --- | --- | --- |
 | 点赞的话题 | menu_like_hashtags | 我点赞的话题 | string | 多语言 |
-| 点踩的话题 | menu_dislike_hashtags | 我点赞的话题 | string | 多语言 |
+| 点踩的话题 | menu_dislike_hashtags | 我不喜欢的话题 | string | 多语言 |
 | 关注的话题 | menu_follow_hashtags | 我的订阅 | string | 多语言 |
 | 屏蔽的话题 | menu_block_hashtags | 我不感兴趣的 | string | 多语言 |
 
@@ -36,7 +36,7 @@
 | 附近范围的帖子 | menu_nearby_posts | 附近 | string | 多语言 |
 | 指定位置的周边帖子 | menu_location_posts | 周边 | string | 多语言 |
 | 点赞的帖子 | menu_like_posts | 我点赞的帖子 | string | 多语言 |
-| 点踩的帖子 | menu_dislike_posts | 我点赞的帖子 | string | 多语言 |
+| 点踩的帖子 | menu_dislike_posts | 我不喜欢的帖子 | string | 多语言 |
 | 关注的帖子 | menu_follow_posts | 帖子收藏夹 | string | 多语言 |
 | 屏蔽的帖子 | menu_block_posts | 我不喜欢的 | string | 多语言 |
 
@@ -47,7 +47,7 @@
 | 附近范围的评论 | menu_nearby_comments | 附近 | string | 多语言 |
 | 指定位置的周边评论 | menu_location_comments | 周边 | string | 多语言 |
 | 点赞的评论 | menu_like_comments | 我点赞的评论 | string | 多语言 |
-| 点踩的评论 | menu_dislike_comments | 我点赞的评论 | string | 多语言 |
+| 点踩的评论 | menu_dislike_comments | 我不喜欢的评论 | string | 多语言 |
 | 关注的评论 | menu_follow_comments | 评论收藏夹 | string | 多语言 |
 | 屏蔽的评论 | menu_block_comments | 我不喜欢的 | string | 多语言 |
 
@@ -86,8 +86,8 @@
 | 通知-系统公告 | menu_notify_bulletins | 系统公告 | string | 多语言 |
 | 通知-系统通知 | menu_notify_systems | 系统通知 | string | 多语言 |
 | 通知-推荐 | menu_notify_recommends | 推荐 | string | 多语言 |
-| 通知-关注 | menu_notify_follows | 关注 | string | 多语言 |
 | 通知-点赞 | menu_notify_likes | 点赞 | string | 多语言 |
+| 通知-关注 | menu_notify_follows | 关注 | string | 多语言 |
 | 通知-提及 | menu_notify_mentions | 提及 | string | 多语言 |
 | 通知-评论 | menu_notify_comments | 评论 | string | 多语言 |
 
@@ -109,9 +109,10 @@
 | 栏目标题 | 键名 | 默认键值 | 键值类型 | 说明 |
 | --- | --- | --- | --- | --- |
 | 点赞 TA 的用户 | menu_profile_likes | 被喜欢 | string | 多语言 |
-| 点踩 TA 的用户 | menu_profile_dislikes | 被喜欢 | string | 多语言 |
+| 点踩 TA 的用户 | menu_profile_dislikes | 被不喜欢 | string | 多语言 |
 | 关注 TA 的用户 | menu_profile_followers | 粉丝 | string | 多语言 |
 | 屏蔽 TA 的用户 | menu_profile_blockers | 被拉黑 | string | 多语言 |
+| 你认识的关注者 | menu_profile_followers_you_follow | 你认识的关注者 | string | 多语言 |
 | TA 点赞的用户 | menu_profile_like_users | TA 点赞的用户 | string | 多语言 |
 | TA 点赞的小组 | menu_profile_like_groups | TA 点赞的小组 | string | 多语言 |
 | TA 点赞的话题 | menu_profile_like_hashtags | TA 点赞的话题 | string | 多语言 |

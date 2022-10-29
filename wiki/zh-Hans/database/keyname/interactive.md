@@ -59,11 +59,12 @@
 | 栏目标题 | 键名 | 默认键值 | 键值类型 | 说明 |
 | --- | --- | --- | --- | --- |
 | TA 发表的帖子 | it_posts | true | boolean | 帖子 |
-| TA 发表的评论 | it_comments | false | boolean | 评论 |
+| TA 发表的评论 | it_comments | true | boolean | 评论 |
+| 你认识的关注者 | it_followers_you_follow | true | boolean | 你关注的用户也关注了他 |
 | TA 点赞的用户 | it_like_users | false | boolean | 喜欢 |
 | TA 点赞的小组 | it_like_groups | false | boolean | 点赞 |
 | TA 点赞的话题 | it_like_hashtags | false | boolean | 点赞 |
-| TA 点赞的帖子 | it_like_posts | true | boolean | 点赞 |
+| TA 点赞的帖子 | it_like_posts | false | boolean | 点赞 |
 | TA 点赞的评论 | it_like_comments | false | boolean | 点赞 |
 | TA 踩的用户 | it_dislike_users | false | boolean |  |
 | TA 踩的小组 | it_dislike_groups | false | boolean |  |
@@ -117,25 +118,20 @@
 
 ## 查看互动记录设置
 
-**用户可以查看自己的哪些互动**
-
-| 栏目标题 | 键名 | 默认键值 | 键值类型 | 说明 |
-| --- | --- | --- | --- | --- |
-| 点赞我的用户 | my_likers | false | boolean |  |
-| 踩我的用户 | my_dislikers | false | boolean |  |
-| 关注我的用户 | my_followers | true | boolean |  |
-| 屏蔽我的用户 | my_blockers | false | boolean |  |
-
 **哪些互动记录可以被查看**
 
 **用户**
 
 | 栏目标题 | 键名 | 默认键值 | 键值类型 | 说明 |
 | --- | --- | --- | --- | --- |
-| 点赞了 TA 的用户 | user_likers | true | boolean |  |
+| 点赞了 TA 的用户 | user_likers | false | boolean |  |
 | 踩了 TA 的用户 | user_dislikers | false | boolean |  |
 | 关注了 TA 的用户 | user_followers | true | boolean |  |
 | 屏蔽了 TA 的用户 | user_blockers | false | boolean |  |
+| 点赞了 TA 的用户总数 | user_liker_count | true | boolean |  |
+| 踩了 TA 的用户总数 | user_disliker_count | false | boolean |  |
+| 关注了 TA 的用户总数 | user_follower_count | true | boolean |  |
+| 屏蔽了 TA 的用户总数 | user_blocker_count | false | boolean |  |
 
 **小组**
 
@@ -145,6 +141,10 @@
 | 踩了 TA 的用户 | group_dislikers | false | boolean |  |
 | 关注了 TA 的用户 | group_followers | true | boolean |  |
 | 屏蔽了 TA 的用户 | group_blockers | false | boolean |  |
+| 点赞了 TA 的用户总数 | group_liker_count | true | boolean |  |
+| 踩了 TA 的用户总数 | group_disliker_count | false | boolean |  |
+| 关注了 TA 的用户总数 | group_follower_count | true | boolean |  |
+| 屏蔽了 TA 的用户总数 | group_blocker_count | false | boolean |  |
 
 **话题**
 
@@ -152,17 +152,25 @@
 | --- | --- | --- | --- | --- |
 | 点赞了 TA 的用户 | hashtag_likers | true | boolean |  |
 | 踩了 TA 的用户 | hashtag_dislikers | false | boolean |  |
-| 关注了 TA 的用户 | hashtag_followers | false | boolean |  |
+| 关注了 TA 的用户 | hashtag_followers | true | boolean |  |
 | 屏蔽了 TA 的用户 | hashtag_blockers | false | boolean |  |
+| 点赞了 TA 的用户总数 | hashtag_liker_count | true | boolean |  |
+| 踩了 TA 的用户总数 | hashtag_disliker_count | false | boolean |  |
+| 关注了 TA 的用户总数 | hashtag_follower_count | true | boolean |  |
+| 屏蔽了 TA 的用户总数 | hashtag_blocker_count | false | boolean |  |
 
 **帖子**
 
 | 栏目标题 | 键名 | 默认键值 | 键值类型 | 说明 |
 | --- | --- | --- | --- | --- |
-| 点赞了 TA 的用户 | post_likers | false | boolean |  |
+| 点赞了 TA 的用户 | post_likers | true | boolean |  |
 | 踩了 TA 的用户 | post_dislikers | false | boolean |  |
 | 关注了 TA 的用户 | post_followers | true | boolean |  |
 | 屏蔽了 TA 的用户 | post_blockers | false | boolean |  |
+| 点赞了 TA 的用户总数 | post_liker_count | true | boolean |  |
+| 踩了 TA 的用户总数 | post_disliker_count | false | boolean |  |
+| 关注了 TA 的用户总数 | post_follower_count | true | boolean |  |
+| 屏蔽了 TA 的用户总数 | post_blocker_count | false | boolean |  |
 
 **评论**
 
@@ -170,5 +178,22 @@
 | --- | --- | --- | --- | --- |
 | 点赞了 TA 的用户 | comment_likers | true | boolean |  |
 | 踩了 TA 的用户 | comment_dislikers | false | boolean |  |
-| 关注了 TA 的用户 | comment_followers | false | boolean |  |
+| 关注了 TA 的用户 | comment_followers | true | boolean |  |
 | 屏蔽了 TA 的用户 | comment_blockers | false | boolean |  |
+| 点赞了 TA 的用户总数 | comment_liker_count | true | boolean |  |
+| 踩了 TA 的用户总数 | comment_disliker_count | false | boolean |  |
+| 关注了 TA 的用户总数 | comment_follower_count | true | boolean |  |
+| 屏蔽了 TA 的用户总数 | comment_blocker_count | false | boolean |  |
+
+**用户可以查看自己的哪些互动**
+
+| 栏目标题 | 键名 | 默认键值 | 键值类型 | 说明 |
+| --- | --- | --- | --- | --- |
+| 点赞我的用户 | my_likers | false | boolean | 当 `user_likers` 配置为开启时，此配置将无效 |
+| 踩我的用户 | my_dislikers | false | boolean | 当 `user_dislikers` 配置为开启时，此配置将无效 |
+| 关注我的用户 | my_followers | true | boolean | 当 `user_followers` 配置为开启时，此配置将无效 |
+| 屏蔽我的用户 | my_blockers | false | boolean | 当 `user_blockers` 配置为开启时，此配置将无效 |
+| 点赞我的用户总数 | my_liker_count | true | boolean | 当 `user_liker_count` 配置为开启时，此配置将无效 |
+| 踩我的用户总数 | my_disliker_count | false | boolean | 当 `user_disliker_count` 配置为开启时，此配置将无效 |
+| 关注我的用户总数 | my_follower_count | true | boolean | 当 `user_follower_count` 配置为开启时，此配置将无效 |
+| 屏蔽我的用户总数 | my_blocker_count | false | boolean | 当 `user_blocker_count` 配置为开启时，此配置将无效 |
