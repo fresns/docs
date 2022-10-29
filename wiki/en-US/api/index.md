@@ -9,7 +9,7 @@
 | `GET` | /api/v2/global/upload-token | Get Upload Token |
 | `GET` | /api/v2/global/roles | User Roles |
 | `GET` | /api/v2/global/maps | Map Services |
-| `GET` | /api/v2/global/content-type | Content Type |
+| `GET` | /api/v2/global/`{type}`/content-type | Content Type |
 | `GET` | /api/v2/global/stickers | Stickers |
 | `GET` | /api/v2/global/block-words | Block Words |
 
@@ -46,6 +46,7 @@
 | --- | --- | --- |
 | `GET` | /api/v2/user/list | User List |
 | `GET` | /api/v2/user/`{uidOrUsername}`/detail | User Detail |
+| `GET` | /api/v2/user/`{uidOrUsername}`/followers-you-follow | Followers You Know |
 | `GET` | /api/v2/user/`{uidOrUsername}`/interactive/`{type}` | User Interactive Users |
 | `GET` | /api/v2/user/`{uidOrUsername}`/mark/`{markType}`/`{listType}` | User Mark List |
 | `POST` | /api/v2/user/auth | Auth |

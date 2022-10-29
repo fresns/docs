@@ -9,7 +9,7 @@
 | `GET` | /api/v2/global/upload-token | 上传用的令牌 |
 | `GET` | /api/v2/global/roles | 用户角色 |
 | `GET` | /api/v2/global/maps | 地图服务商 |
-| `GET` | /api/v2/global/content-type | 内容类型 |
+| `GET` | /api/v2/global/`{type}`/content-type | 内容类型 |
 | `GET` | /api/v2/global/stickers | 表情图 |
 | `GET` | /api/v2/global/block-words | 阻止词 |
 
@@ -46,6 +46,7 @@
 | --- | --- | --- |
 | `GET` | /api/v2/user/list | 获取用户列表 |
 | `GET` | /api/v2/user/`{uidOrUsername}`/detail | 获取用户详情 |
+| `GET` | /api/v2/user/`{uidOrUsername}`/followers-you-follow | 获取用户认识的关注者 |
 | `GET` | /api/v2/user/`{uidOrUsername}`/interactive/`{type}` | 获取用户互动的用户列表 |
 | `GET` | /api/v2/user/`{uidOrUsername}`/mark/`{markType}`/`{listType}` | 获取用户标记的内容列表 |
 | `POST` | /api/v2/user/auth | 用户登录 |
@@ -106,6 +107,7 @@
 | --- | --- | --- |
 | `GET` | /api/v2/comment/list | 获取评论列表 |
 | `GET` | /api/v2/comment/follow/`{type}` | 获取关注对象的评论列表 |
+| `GET` | /api/v2/comment/nearby | 获取位置附近的评论列表 |
 | `GET` | /api/v2/comment/`{cid}`/detail | 获取评论详情 |
 | `GET` | /api/v2/comment/`{cid}`/interactive/`{type}` | 获取评论互动的用户列表 |
 | `GET` | /api/v2/comment/`{cid}`/logs | 获取评论的日志列表 |

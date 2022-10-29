@@ -1,7 +1,8 @@
 # Content Type
 
-- Endpoint Path: `/api/v2/global/content-type`
+- Endpoint Path: `/api/v2/global/{type}/content-type`
 - Method: `GET`
+- Request: `Rest`
 
 ## Headers Optional Parameter
 
@@ -10,6 +11,12 @@
 | aid | *optional* | **required** |
 | uid | *optional* | **required** |
 | token | *optional* | **required** |
+
+## Rest Params
+
+| Parameter Name | Type | Required | Description |
+| --- | --- | --- | --- |
+| type | String | **required** | `post`,`comment` |
 
 ## Return
 
@@ -28,24 +35,25 @@
             "pluginRating": {
                 "postByAll": [
                     {
-                        "id": "Number / 用于帖子列表接口 pluginRatingId 参数",
+                        "id": "Number / 用于列表接口 pluginRatingId 参数",
                         "title":"String / 标题",
                         "description":"String / 描述"
                     }
                 ],
                 "postByFollow": [
-                    {
-                        "id": "Number / 用于帖子列表接口 pluginRatingId 参数",
-                        "title":"String / 标题",
-                        "description":"String / 描述"
-                    }
+                    // ditto
                 ],
                 "postByNearby": [
-                    {
-                        "id": "Number / 用于帖子列表接口 pluginRatingId 参数",
-                        "title":"String / 标题",
-                        "description":"String / 描述"
-                    }
+                    // ditto
+                ],
+                "commentByAll": [
+                    // ditto
+                ],
+                "commentByFollow": [
+                    // ditto
+                ],
+                "commentByNearby": [
+                    // ditto
                 ]
             }
         }
