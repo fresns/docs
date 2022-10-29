@@ -256,6 +256,7 @@ function sidebarApi() {
             items: [
                 { text: '获取用户[列表]', link: '/api/user/list.md' },
                 { text: '获取用户[详情]', link: '/api/user/detail.md' },
+                { text: '获取用户认识的关注者', link: '/api/user/followers-you-follow.md' },
                 { text: '获取用户[详情] 互动列表', link: '/api/user/interactive.md' },
                 { text: '获取用户[详情] 标记列表', link: '/api/user/mark-list.md' },
                 { text: '用户登录', link: '/api/user/auth.md' },
@@ -320,6 +321,8 @@ function sidebarApi() {
             collapsible: true,
             items: [
                 { text: '获取评论[列表]', link: '/api/comment/list.md' },
+                { text: '获取评论[列表] 关注对象的', link: '/api/comment/follow.md' },
+                { text: '获取评论[列表] 位置附近的', link: '/api/comment/nearby.md' },
                 { text: '获取评论[详情]', link: '/api/comment/detail.md' },
                 { text: '获取评论[详情] 互动列表', link: '/api/comment/interactive.md' },
                 { text: '获取评论[详情] 日志列表', link: '/api/comment/logs.md' },

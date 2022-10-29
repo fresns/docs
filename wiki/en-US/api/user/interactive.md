@@ -16,8 +16,8 @@
 
 | Parameter Name | Type | Required | Description |
 | --- | --- | --- | --- |
-| uidOrUsername | String | **required** | 用户 `uid` 或者 `username` |
-| type | String | **required** | 查看类型 `like`,`dislike`,`follow`,`block` |
+| uidOrUsername | String | **required** | User `uid` or `username` |
+| type | String | **required** | Return type `like`,`dislike`,`follow`,`block` |
 
 ## Query Params
 

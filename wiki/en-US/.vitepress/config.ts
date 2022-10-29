@@ -246,6 +246,7 @@ function sidebarApi() {
             items: [
                 { text: 'User List', link: '/api/user/list.md' },
                 { text: 'User Detail', link: '/api/user/detail.md' },
+                { text: 'Followers You Know', link: '/api/user/followers-you-follow.md' },
                 { text: 'User Interactive Users', link: '/api/user/interactive.md' },
                 { text: 'User Mark List', link: '/api/user/mark-list.md' },
                 { text: 'Auth', link: '/api/user/auth.md' },
@@ -310,6 +311,8 @@ function sidebarApi() {
             collapsible: true,
             items: [
                 { text: 'Comment List', link: '/api/comment/list.md' },
+                { text: 'Comment List by Follow', link: '/api/comment/follow.md' },
+                { text: 'Comment List by Nearby', link: '/api/comment/nearby.md' },
                 { text: 'Comment Detail', link: '/api/comment/detail.md' },
                 { text: 'Comment Interactive Users', link: '/api/comment/interactive.md' },
                 { text: 'Comment Logs', link: '/api/comment/logs.md' },
