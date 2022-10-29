@@ -34,6 +34,18 @@
 ```
 :::
 
+## sendNotify
+
+```php
+\FresnsCmdWord::plugin('Fresns')->sendNotify($wordBody)
+```
+| Parameter Name | Type | Required | Description |
+| --- | --- | --- | --- |
+| actionUid | Number | **required** | 触发的用户（用户主表 `users > uid` 字段） |
+| actionType | Number | **required** | 触发行为类型 1.点赞 2.点踩 3.关注 4.屏蔽 5.发表 6.编辑 7.删除 8.置顶 9.设精 10.管理 |
+| actionObject | Number | **required** | 触发目标 1.用户 2.小组 3.话题 4.帖子 5.评论 6.帖子日志 7.评论日志 8.扩展内容 |
+| actionFsid | Number | **required** | 触发目标 FsID |
+
 ## sendAppNotification
 
 ```php

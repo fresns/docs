@@ -10,8 +10,9 @@
 | plugin_unikey | varchar(64) | 关联插件名称 |  | YES | 关联字段 [plugins->unikey](../plugins/plugins.md)<br>由哪个插件生成的通知消息 |
 | is_access_plugin | varchar(64) | 是否访问插件页 | 0 | NO | 将输出 plugin_unikey 的访问地址 |
 | action_user_id | bigint *UNSIGNED* | 触发的用户 ID |  | YES | 关联字段 [users->id](../users/users.md) |
-| action_type | tinyint *UNSIGNED* | 触发内容种类 |  | YES | 1.用户 / 2.小组 / 3.话题 / 4.帖子 / 5.评论 |
-| action_id | bigint *UNSIGNED* | 帖子或评论 ID |  | YES | 这条通知来源由哪个内容<br>1.关联字段 [users->id](../users/users.md)<br>2.关联字段 groups > id<br>3.关联字段 hashtags > id<br>4.关联字段 posts > id<br>5.关联字段 comments > id |
+| action_type | smallint *UNSIGNED* | 触发行为类型 |  | YES | 1.点赞 2.点踩 3.关注 4.屏蔽 5.发表 6.编辑 7.删除 8.置顶 9.设精 10.管理 |
+| action_object | tinyint *UNSIGNED* | 触发目标 |  | YES | 1.用户 / 2.小组 / 3.话题 / 4.帖子 / 5.评论 |
+| action_id | bigint *UNSIGNED* | 触发目标 ID |  | YES | 这条通知来源由哪个内容<br>1.关联字段 [users->id](../users/users.md)<br>2.关联字段 groups > id<br>3.关联字段 hashtags > id<br>4.关联字段 posts > id<br>5.关联字段 comments > id |
 | is_read | tinyint *UNSIGNED* | 阅读状态 | 0 | NO | 0.未读 / 1.已读 |
 | created_at | timestamp | Create Time | CURRENT_TIMESTAMP | NO |  |
 | updated_at | timestamp | Update Time |  | YES |  |
@@ -22,11 +23,11 @@
 - `type=1` 代表系统给全员发了一条 `content` 消息内容（用户不可删除）
     - `user_id` 为 `0`
     - `is_access_plugin` 是否访问插件页
-    - `action_type + action_id` 是否有附带内容
+    - `action_object + action_id` 是否有附带内容
 - `type=2` 代表系统给你发了一条 `content` 消息内容
     - `is_access_plugin` 是否访问插件页
     - `action_user_id` 是否有触发用户
-    - `action_type + action_id` 是否有附带内容
+    - `action_object + action_id` 是否有附带内容
 
 ## 推荐消息解读
 
@@ -34,13 +35,13 @@
     - `content` 推荐语
     - `is_access_plugin` 是否访问插件页
     - `action_user_id` 是否有触发用户
-    - `action_type + action_id` 推荐的内容
+    - `action_object + action_id` 推荐的内容
 
 ## 互动消息解读
 
 - `type=4` 代表 `action_user_id` 关注了你
-- `type=5` 代表 `action_user_id` 点赞了你的 `action_type + action_id`
-- `type=6` 代表 `action_user_id` 在 `action_type + action_id` 中提及了你
+- `type=5` 代表 `action_user_id` 点赞了你的 `action_object + action_id`
+- `type=6` 代表 `action_user_id` 在 `action_object + action_id` 中提及了你
     - `content` 提及内容的摘要
-- `type=7` 代表 `action_user_id` 发表 `action_type + action_id` 评论了你
+- `type=7` 代表 `action_user_id` 发表 `action_object + action_id` 评论了你
     - `content` 评论内容的摘要

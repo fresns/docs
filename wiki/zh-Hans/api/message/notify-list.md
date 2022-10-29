@@ -28,23 +28,23 @@
 - **系统消息解读：**
     - `types=1` 代表系统给全员发了一条 `content` 消息内容（用户不可删除）
         - `isAccessPlugin` 是否访问插件页
-        - `actionType + actionInfo` 是否有附带内容
+        - `actionObject + actionInfo` 是否有附带内容
     - `types=2` 代表系统给你发了一条 `content` 消息内容
         - `isAccessPlugin` 是否访问插件页
         - `actionUser` 是否有触发用户
-        - `actionType + actionInfo` 是否有附带内容
+        - `actionObject + actionInfo` 是否有附带内容
 - **推荐消息解读：**
     - `types=3` 代表系统给你推荐了内容
         - `content` 推荐语
         - `isAccessPlugin` 是否访问插件页
         - `actionUser` 是否有触发用户
-        - `actionType + actionInfo` 推荐的内容
+        - `actionObject + actionInfo` 推荐的内容
 - **互动消息解读：**
     - `types=4` 代表 `actionUser` 关注了你
-    - `types=5` 代表 `actionUser` 点赞了你的 `actionType + actionInfo`
-    - `types=6` 代表 `actionUser` 在 `actionType + actionInfo` 中提及了你
+    - `types=5` 代表 `actionUser` 点赞了你的 `actionObject + actionInfo`
+    - `types=6` 代表 `actionUser` 在 `actionObject + actionInfo` 中提及了你
         - `content` 提及内容的摘要
-    - `types=7` 代表 `actionUser` 发表 `actionType + actionInfo` 评论了你
+    - `types=7` 代表 `actionUser` 发表 `actionObject + actionInfo` 评论了你
         - `content` 评论内容的摘要
 
 
@@ -73,14 +73,15 @@
                     // 触发消息的用户信息
                     // 通用数据结构->用户信息 Profile
                 },
-                "actionType": "Number / 触发内容类型",
+                "actionType": "Number / 触发行为类型",
+                "actionObject": "Number / 触发目标",
                 "actionInfo": {
                     // 触发关联内容（通用数据结构）
-                    // actionType=1  用户信息
-                    // actionType=2  小组信息
-                    // actionType=3  话题信息
-                    // actionType=4  帖子信息
-                    // actionType=5  评论信息
+                    // actionObject=1  用户信息
+                    // actionObject=2  小组信息
+                    // actionObject=3  话题信息
+                    // actionObject=4  帖子信息
+                    // actionObject=5  评论信息
                 },
                 "notifyTime": "String / 通知时间",
                 "notifyTimeFormat": "String / 通知时间格式化",
