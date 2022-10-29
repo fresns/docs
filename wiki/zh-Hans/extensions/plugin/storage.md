@@ -29,6 +29,15 @@ FileHelper::fresnsFileStoragePath($fileType, $usageType);
 
 文件相关命令字功能和参数说明，[参见开发支持](../../supports/cmd-word/file.md)。
 
+## 上传页面
+
+插件上传页面的访问路径配置在 `plugin.json` 文件的 `accessPath` 参数，配置后供运营者和用户使用插件页面上传文件。
+
+> 由于 Fresns API 和编辑器采用的是基础表单上传模式，对于大文件会产生超时中断的风险，存储插件可以提供上传页面，在插件页集成 JS-SDK 实现大文件的分片和断点上传。
+
+- 路径参考 `/qiniu/upload?sign={sign}&config={uploadInfo}&postMessageKey={postMessageKey}`
+- [路径中变量名介绍](../callback/variables.md)
+
 ## 音视频被动功能
 
 - 被动触发的转码命令字。

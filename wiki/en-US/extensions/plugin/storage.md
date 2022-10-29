@@ -29,6 +29,15 @@ The main program interacts with the storage plug-in through command words, so th
 
 As for the function of file-related command words and parameter instructions, please refer to [development support](../../supports/cmd-word/file.md).
 
+## Upload Page
+
+The access path to the plugin upload page is configured in the `accessPath` parameter of the `plugin.json` file for operators and users to upload files using the plugin page after configuration.
+
+> Since the Fresns API and editor use the basic form upload mode, there is a risk of timeout interruptions for large files. The storage plugin can provide an upload page that integrates JS-SDK on the plugin page to implement slicing and breakpoint uploads for large files.
+
+- Path Reference `/qiniu/upload?sign={sign}&config={uploadInfo}&postMessageKey={postMessageKey}`
+- [Introduction of variable names in paths](../callback/variables.md)
+
 ## Audio and video functions
 
 - Transcoding command word triggered reactively.
