@@ -270,6 +270,8 @@
     "blockCount": "Number / 被屏蔽总数",
     "postCount": "Number / 帖子总数",
     "postDigestCount": "Number / 精华帖子总数",
+    "commentCount": "Number / 评论总数",
+    "commentDigestCount": "Number / 精华评论总数",
     "permissions": {
         // Object 角色权限
         // 数据表 groups->permissions
@@ -286,7 +288,7 @@
     },
     "creator": {
         // 小组创建者
-        // 用户 Profile 信息
+        // Common Data Structure -> User Info
     },
     "publishRule": {
         "allowPost": "Boolean / 是否有权发帖子",
@@ -297,7 +299,7 @@
     "admins": [
         {
             // 小组管理员列表
-            // 用户 Profile 信息
+            // Common Data Structure -> User Info
         }
     ],
     "interactive": {
@@ -337,6 +339,8 @@
     "blockCount": "Number / 被屏蔽总数",
     "postCount": "Number / 帖子总数",
     "postDigestCount": "Number / 精华帖子总数",
+    "commentCount": "Number / 评论总数",
+    "commentDigestCount": "Number / 精华评论总数",
     "createDate": "String / 小组创建日期",
     "archives": {
         "String / 扩展参数 Code": "String / 扩展参数内容"
@@ -471,7 +475,7 @@
     ],
     "creator": {
         // 帖子作者
-        // 用户 Profile 信息
+        // Common Data Structure -> User Info
     },
     "topComment": {
         // 帖子热门评论，可为 null
@@ -603,12 +607,12 @@
     ],
     "creator": {
         // 评论作者
-        // 用户 Profile 信息
+        // Common Data Structure -> User Info
         "isPostCreator": "Boolean / 是否为帖子作者"
     },
     "replyToUser": {
         // 是否回复某个用户
-        // 用户 Profile 信息
+        // Common Data Structure -> User Info
     },
     "commentPreviews": [
         {
@@ -714,7 +718,7 @@
             "users": [
                 {
                     // 预授权用户
-                    // 用户 Profile 信息
+                    // Common Data Structure -> User Info
                 }
             ],
             "roles": [
@@ -754,7 +758,7 @@
     "reason": "String / 审核拒绝原因",
     "creator": {
         // 创建者
-        // 用户 Profile 信息
+        // Common Data Structure -> User Info
     },
     "archives": {
         "String / 扩展参数 Code": "String / 扩展参数内容"
@@ -833,7 +837,7 @@
     "reason": "String / 审核拒绝原因",
     "creator": {
         // 创建者
-        // 用户 Profile 信息
+        // Common Data Structure -> User Info
     },
     "archives": {
         "String / 扩展参数 Code": "String / 扩展参数内容"
