@@ -15,11 +15,11 @@
 | 网站互动功能 | website_status | true | boolean | 网页端互动功能关闭后，可指定访问网站时输出的内容数量<br>比如专注移动应用运营的项目，网站只为分享导流使用，不希望用户使用完整功能。 |
 | 显示内容数量 | website_number | 5 | number | 网页端互动功能关闭后，用户访问只显示多少条内容<br>比如设置为 5，则用户无论访问帖子列表还是查看评论，只显示 5 条。 |
 | 内容显示比例 | website_proportion | 30 | number | 网页端互动功能关闭后，帖子内容显示比例，单位：百分比<br>比如设置为 30%，则访问帖子详情页只显示帖子 30% 的内容，其余内容引荐打开 App 浏览。 |
-| 中国大陆模式 | site_china_mode | false | boolean | `false` 或 `true`<br>是否显示备案信息，如果网站服务器不在中国大陆，则关闭 |
-| ICP 备案号 | china_icp_beian |  | string | [https://beian.miit.gov.cn](https://beian.miit.gov.cn/) |
-| ICP 许可证号 | china_icp_license |  | string | [https://dxzhgl.miit.gov.cn](https://dxzhgl.miit.gov.cn/) |
-| 公安备案号 | china_gongan_beian |  | string | [http://www.beian.gov.cn](http://www.beian.gov.cn/) |
-| 广播电视节目制作经营许可证 | china_broadcasting_license |  | string | [https://zw.nrta.gov.cn](https://zw.nrta.gov.cn/) |
+| China Mode | site_china_mode | false | boolean | `false` 或 `true`<br>是否显示备案信息，如果网站服务器不在中国大陆，则关闭 |
+| Internet Content Provider Filing | china_icp_filing |  | string | [https://beian.miit.gov.cn](https://beian.miit.gov.cn/) |
+| Internet Content Provider License | china_icp_license |  | string | [https://dxzhgl.miit.gov.cn](https://dxzhgl.miit.gov.cn/) |
+| Public Security Bureau Filing | china_psb_filing |  | string | [http://www.beian.gov.cn](http://www.beian.gov.cn/) |
+| Broadcasting License | china_broadcasting_license |  | string | [https://zw.nrta.gov.cn](https://zw.nrta.gov.cn/) |
 
 ## Theme Configuration
 
