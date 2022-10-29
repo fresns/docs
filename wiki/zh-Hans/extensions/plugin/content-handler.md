@@ -9,9 +9,12 @@
 
 | 接口路径 | 描述 | 命令字 |
 | --- | --- | --- |
-| /api/v2/post/list | 获取帖子列表 | `getPostByAll` |
-| /api/v2/post/follow | 获取关注对象的帖子列表 | `getPostByFollow` |
-| /api/v2/post/nearby | 获取位置附近的帖子列表 | `getPostByNearby` |
+| [/api/v2/post/list](../../api/post/list.md) | 获取帖子列表 | `getPostByAll` |
+| [/api/v2/post/follow](../../api/post/follow.md) | 获取关注对象的帖子列表 | `getPostByFollow` |
+| [/api/v2/post/nearby](../../api/post/nearby.md) | 获取位置附近的帖子列表 | `getPostByNearby` |
+| [/api/v2/comment/list](../../api/comment/list.md) | 获取评论列表 | `getCommentByAll` |
+| [/api/v2/comment/follow](../../api/comment/follow.md) | 获取关注对象的评论列表 | `getCommentByFollow` |
+| [/api/v2/comment/nearby](../../api/comment/nearby.md) | 获取位置附近的评论列表 | `getCommentByNearby` |
 
 - 根据插件关联使用表 [plugin_usages->data_sources](../../database/plugins/plugin-usages.md) 的配置，主程序会将请求通过命令字传输给插件，由插件处理客户端请求并返回结果。
 
@@ -19,7 +22,8 @@
 
 | 接口路径 | 描述 | 命令字 |
 | --- | --- | --- |
-| /api/v2/post/detail | 获取帖子详情 | `getPostDetail` |
+| [/api/v2/post/detail](../../api/post/detail.md) | 获取帖子详情 | `getPostDetail` |
+| [/api/v2/comment/detail](../../api/comment/detail.md) | 获取评论详情 | `getCommentDetail` |
 
 ### 搜索
 

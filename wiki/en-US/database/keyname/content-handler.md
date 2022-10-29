@@ -13,15 +13,15 @@
 
 | 栏目标题 | 键名 | 键值类型 | Command Word | 说明 |
 | --- | --- | --- | --- | --- |
-| 帖子列表 | post_list_service | **plugin** | `getPostByAll` | 插件应用场景参数 `extendData` |
-| 帖子列表 | post_follow_service | **plugin** | `getPostByFollow` | 插件应用场景参数 `extendData` |
-| 帖子列表 | post_nearby_service | **plugin** | `getPostByNearby` | 插件应用场景参数 `extendData` |
+| 帖子和评论列表 | content_list_service | **plugin** | `getPostByAll`<br>`getCommentByAll` | 插件应用场景参数 `extendData` |
+| 帖子和评论列表 | content_follow_service | **plugin** | `getPostByFollow`<br>`getCommentByFollow` | 插件应用场景参数 `extendData` |
+| 帖子和评论列表 | content_nearby_service | **plugin** | `getPostByNearby`<br>`getCommentByNearby` | 插件应用场景参数 `extendData` |
 
 ## Content Details
 
 | 栏目标题 | 键名 | 键值类型 | Command Word | 说明 |
 | --- | --- | --- | --- | --- |
-| 帖子详情页 | post_detail_service | **plugin** | `getPostDetail` | 插件应用场景参数 `extendData` |
+| 帖子和评论详情页 | content_detail_service | **plugin** | `getPostDetail`<br>`getCommentDetail` | 插件应用场景参数 `extendData` |
 
 ## Content Search
 

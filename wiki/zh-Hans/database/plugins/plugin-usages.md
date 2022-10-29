@@ -63,11 +63,31 @@
     "postByFollow": {
         "pluginUnikey": "",
         "pluginRating": [
+            // 同上
         ]
     },
     "postByNearby": {
         "pluginUnikey": "",
         "pluginRating": [
+            // 同上
+        ]
+    },
+    "commentByAll": {
+        "pluginUnikey": "",
+        "pluginRating": [
+            // 同上
+        ]
+    },
+    "commentByFollow": {
+        "pluginUnikey": "",
+        "pluginRating": [
+            // 同上
+        ]
+    },
+    "commentByNearby": {
+        "pluginUnikey": "",
+        "pluginRating": [
+            // 同上
         ]
     }
 }

@@ -9,9 +9,12 @@
 
 | Endpoint Path | Description | Command Word |
 | --- | --- | --- |
-| /api/v2/post/list | Get all list | `getPostByAll` |
-| /api/v2/post/follow | Get post list by follow | `getPostByFollow` |
-| /api/v2/post/nearby | Get post list by nearby | `getPostByNearby` |
+| [/api/v2/post/list](../../api/post/list.md) | Get post all list | `getPostByAll` |
+| [/api/v2/post/follow](../../api/post/follow.md) | Get post list by follow | `getPostByFollow` |
+| [/api/v2/post/nearby](../../api/post/nearby.md) | Get post list by nearby | `getPostByNearby` |
+| [/api/v2/comment/list](../../api/comment/list.md) | Get comment all list | `getCommentByAll` |
+| [/api/v2/comment/follow](../../api/comment/follow.md) | Get comment list by follow | `getCommentByFollow` |
+| [/api/v2/comment/nearby](../../api/comment/nearby.md) | Get comment list by nearby | `getCommentByNearby` |
 
 - According to the configuration of [plugin_usages->data_sources](../../database/plugins/plugin-usages.md) in the plug-in associated usage table, the main program would send the request to the plug-in through command word, after which the plug-in would process the request from the client-end and return the results.
 
@@ -19,7 +22,8 @@
 
 | Endpoint Path | Description | Command Word |
 | --- | --- | --- |
-| /api/v2/post/detail | Get post detail | `getPostDetail` |
+| [/api/v2/post/detail](../../api/post/detail.md) | Get post detail | `getPostDetail` |
+| [/api/v2/comment/detail](../../api/comment/detail.md) | Get comment detail | `getCommentDetail` |
 
 ### Search
 

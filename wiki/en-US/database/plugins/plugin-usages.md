@@ -63,11 +63,31 @@
     "postByFollow": {
         "pluginUnikey": "",
         "pluginRating": [
+            // ditto
         ]
     },
     "postByNearby": {
         "pluginUnikey": "",
         "pluginRating": [
+            // ditto
+        ]
+    },
+    "commentByAll": {
+        "pluginUnikey": "",
+        "pluginRating": [
+            // ditto
+        ]
+    },
+    "commentByFollow": {
+        "pluginUnikey": "",
+        "pluginRating": [
+            // ditto
+        ]
+    },
+    "commentByNearby": {
+        "pluginUnikey": "",
+        "pluginRating": [
+            // ditto
         ]
     }
 }
