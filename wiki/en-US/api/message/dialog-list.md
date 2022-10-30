@@ -37,7 +37,7 @@
                 "dialogId": "Number / 会话 ID",
                 "dialogUser": {
                     // 与我会话的用户信息
-                    // Common Data Structure -> User Info Profile
+                    // Common Data Structure -> User Info
                 },
                 "latestMessage": {
                     "messageId": "Number / 最新一条消息 ID",

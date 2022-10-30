@@ -43,7 +43,7 @@
                 "downloadTime": "String / 下载时间",
                 "downloadTimeFormat": "String / 下载时间",
                 "downloadUser": {
-                    // 通用数据结构->用户信息 Profile 部分
+                    // 通用数据结构->用户信息
                 }
             }
         ]

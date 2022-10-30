@@ -27,7 +27,7 @@
     "data": {
         "user": {
             // 与我会话的用户信息
-            // Common Data Structure -> User Info Profile
+            // Common Data Structure -> User Info
         }
     }
 }

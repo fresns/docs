@@ -41,7 +41,7 @@
         "messageId": "Number / 消息 ID",
         "sendUser": {
             // 发信用户信息
-            // Common Data Structure -> User Info Profile
+            // Common Data Structure -> User Info
         },
         "sendUserIsMe": "Boolean / 是否为自己发的",
         "sendTime": "String / 发送时间",

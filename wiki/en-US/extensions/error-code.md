@@ -16,6 +16,14 @@ To avoid confusion and potential conflict risks, Fresns status codes prohibit th
 - `2****` Command Word Usage
     - `21***` Cmd Word Manager
     - `22***` Official Business Command Word
+        - `221**` Basic
+        - `222**` Send
+        - `223**` Account
+        - `224**` User
+        - `225**` Wallet
+        - `226**` File
+        - `227**` Content
+        - `229**` Crontab
     - `23***` Command Word Business Functions
 
 ## API

@@ -43,7 +43,7 @@
                 "downloadTime": "String / 下载时间",
                 "downloadTimeFormat": "String / 下载时间",
                 "downloadUser": {
-                    // Common Data Structure -> User Info Profile 部分
+                    // Common Data Structure -> User Info
                 }
             }
         ]

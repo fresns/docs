@@ -48,7 +48,7 @@ Fresns 主程序内置了 [iFrame Resizer](https://github.com/davidjbradshaw/ifr
         "uploadInfo": "",
     },
     // 以下逻辑同 API 一致
-    "code": 0, // 处理状态，0 表示，其余为失败状态码
+    "code": 0, // 处理状态，0 表示成功，其余为失败状态码
     "message": "ok", // 失败时的提示信息
     "data": {
         // 如果功能同 API 一样，则返回与 API 一致的数据格式
