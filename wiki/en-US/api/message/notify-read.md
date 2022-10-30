@@ -17,7 +17,7 @@
 | Parameter Name | Type | Required | Description |
 | --- | --- | --- | --- |
 | type | String | **required** | `all` 或 `choose` |
-| notifyType | Number | *optional* | 2.系统通知 / 3.推荐 / 4.关注 / 5.点赞 / 6.提及（艾特） / 7.评论 |
+| notifyType | Number | *optional* | `1` 系统通知 `2` 推荐内容 `3` 点赞 `4` 踩 `5` 关注 `6` 屏蔽 `7` 提及 `8` 评论 |
 | notifyIds | String | *optional* | 消息 notifyId，多个以英文逗号隔开 |
 
 **Request Description**

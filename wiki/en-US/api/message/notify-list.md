@@ -16,8 +16,8 @@
 
 | Parameter Name | Type | Required | Description |
 | --- | --- | --- | --- |
-| types | String | *optional* | 1.对全员的系统通知 / 2.系统通知 / 3.推荐 / 4.关注<br>5.点赞 / 6.提及（艾特） / 7.评论 |
-| status | Boolean | *optional* | `0` 未读<br>`1` 已读<br>留空输出未读 |
+| types | String | *optional* | `1` 系统通知 `2` 推荐内容 `3` 点赞 `4` 踩 `5` 关注 `6` 屏蔽 `7` 提及 `8` 评论 |
+| status | Boolean | *optional* | `0` 未读<br>`1` 已读<br>留空输出全部 |
 | pageSize | Number | *optional* | 每页显示条数（默认 15 条） |
 | page | Number | *optional* | 页码（默认 1） |
 
@@ -26,27 +26,26 @@
 - `types` 留空输出全部，传参支持多个，以英文逗号隔开。
 - 按时间倒序排列，最新的在前面。
 - **系统消息解读：**
-    - `types=1` 代表系统给全员发了一条 `content` 消息内容（用户不可删除）
-        - `isAccessPlugin` 是否访问插件页
-        - `actionObject + actionInfo` 是否有附带内容
-    - `types=2` 代表系统给你发了一条 `content` 消息内容
+    - `types=1` 代表系统给你发了一条 `content` 消息内容
         - `isAccessPlugin` 是否访问插件页
         - `actionUser` 是否有触发用户
         - `actionObject + actionInfo` 是否有附带内容
 - **推荐消息解读：**
-    - `types=3` 代表系统给你推荐了内容
+    - `types=2` 代表系统给你推荐了内容
         - `content` 推荐语
         - `isAccessPlugin` 是否访问插件页
         - `actionUser` 是否有触发用户
         - `actionObject + actionInfo` 推荐的内容
 - **互动消息解读：**
-    - `types=4` 代表 `actionUser` 关注了你
-    - `types=5` 代表 `actionUser` 点赞了你的 `actionObject + actionInfo`
-    - `types=6` 代表 `actionUser` 在 `actionObject + actionInfo` 中提及了你
+    - `types=3` 代表 `actionUser` 点赞了你的 `actionObject + actionInfo`
+    - `types=4` 代表 `actionUser` 踩了你的 `actionObject + actionInfo`
+    - `types=5` 代表 `actionUser` 关注了你的 `actionObject + actionInfo`
+    - `types=6` 代表 `actionUser` 屏蔽了你的 `actionObject + actionInfo`
+    - `types=7` 代表 `actionUser` 在 `actionObject + actionInfo` 中提及了你
         - `content` 提及内容的摘要
-    - `types=7` 代表 `actionUser` 发表 `actionObject + actionInfo` 评论了你
+    - `types=8` 代表 `actionUser` 评论了你的 `actionObject + actionInfo`
         - `content` 评论内容的摘要
-
+        - `actionCid` 他的评论 cid
 
 ## Return
 
@@ -71,7 +70,7 @@
                 "pluginUrl": "String / 插件页地址",
                 "actionUser": {
                     // 触发消息的用户信息
-                    // Common Data Structure -> User Info Profile
+                    // Common Data Structure -> User Info
                 },
                 "actionType": "Number / 触发行为类型",
                 "actionObject": "Number / 触发目标",
@@ -83,6 +82,7 @@
                     // actionObject=4  帖子信息
                     // actionObject=5  评论信息
                 },
+                "actionCid": "String / 评论事件的 cid",
                 "notifyTime": "String / 通知时间",
                 "notifyTimeFormat": "String / 通知时间格式化",
                 "readStatus": "Boolean / 阅读状态"
