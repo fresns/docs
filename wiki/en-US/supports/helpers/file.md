@@ -54,15 +54,13 @@ FileHelper::fresnsFileInfoById($fileIdOrFid);
 ## 根据文件 ID 或 FID 获取多个信息
 
 ```php
-# 原始信息
 FileHelper::fresnsFileInfoListByIds($fileIdsOrFids);
-
-# 判断并处理防盗链配置后信息
-FileHelper::fresnsAntiLinkFileInfoListByIds($fileIdsOrFids);
 ```
 | Parameter Name | Type | Required | Description |
 | --- | --- | --- | --- |
 | fileIdsOrFids | Array | **required** | `files > id` 或者 `files > fid` |
+
+- 输出结果会判断防盗链配置，如果开启则输出防盗链文件信息。
 
 ::: details 查看列表输出示例
 ```json
@@ -94,11 +92,7 @@ FileHelper::fresnsAntiLinkFileInfoListByIds($fileIdsOrFids);
 ## 根据表字段获取文件信息列表
 
 ```php
-# 原始信息
 FileHelper::fresnsFileInfoListByTableColumn($tableName, $tableColumn, $tableId, $tableKey);
-
-# 判断并处理防盗链配置后信息
-FileHelper::fresnsAntiLinkFileInfoListByTableColumn($tableName, $tableColumn, $tableId, $tableKey);
 ```
 | Parameter Name | Type | Required | Description |
 | --- | --- | --- | --- |
@@ -108,6 +102,7 @@ FileHelper::fresnsAntiLinkFileInfoListByTableColumn($tableName, $tableColumn, $t
 | tableKey | String | *optional* | 主键名 |
 
 - `tableId` 或 `tableKey` 二选一传参
+- 输出结果会判断防盗链配置，如果开启则输出防盗链文件信息。
 
 ::: details 查看列表输出示例
 ```json
