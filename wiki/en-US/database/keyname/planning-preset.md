@@ -63,3 +63,26 @@
 | users | extcredits5_name | 扩展 5 名称 | 1 |
 | users | extcredits5_unit | 扩展 5 单位 | 1 |
 | users | extcredits5_status | 扩展 5 状态（1.不启用 2.私有 3.公开） | 1 |
+
+## Operation Notice
+
+| Key Tag | Key Name | Description | is API |
+| --- | --- | --- | --- |
+| systems | system_bulletin_name | System bulletin name, multi-language | 1 |
+| systems | system_bulletin_contents | System bulletin content, arrays, multiple languages | 1 |
+
+### system_bulletin_contents Example
+
+```json
+[
+    {
+        "date": "10/18/2022",
+        "title": "[Must Read] Guide to give feedback to Fresns official questions",
+        "titleColor": "#f40",
+        "description": "Guide to give feedback to Fresns official questions",
+        "descriptionColor": null,
+        "buttonName": "Learn more",
+        "buttonLink": "https://fresns.org/guide/feedback.html",
+    }
+]
+```

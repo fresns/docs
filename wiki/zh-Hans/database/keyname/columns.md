@@ -83,11 +83,12 @@
 | 会话 | menu_dialogs | 私信 | string | 多语言 |
 | 消息 | menu_messages | 消息 | string | 多语言 |
 | 通知 | menu_notifies | 通知 | string | 多语言 |
-| 通知-系统公告 | menu_notify_bulletins | 系统公告 | string | 多语言 |
-| 通知-系统通知 | menu_notify_systems | 系统通知 | string | 多语言 |
+| 通知-系统 | menu_notify_systems | 系统 | string | 多语言 |
 | 通知-推荐 | menu_notify_recommends | 推荐 | string | 多语言 |
 | 通知-点赞 | menu_notify_likes | 点赞 | string | 多语言 |
+| 通知-点踩 | menu_notify_dislikes | 点踩 | string | 多语言 |
 | 通知-关注 | menu_notify_follows | 关注 | string | 多语言 |
+| 通知-屏蔽 | menu_notify_blocks | 屏蔽 | string | 多语言 |
 | 通知-提及 | menu_notify_mentions | 提及 | string | 多语言 |
 | 通知-评论 | menu_notify_comments | 评论 | string | 多语言 |
 

@@ -83,11 +83,12 @@
 | Dialogs | menu_dialogs | Dialogs | string | Multilingual |
 | Messages | menu_messages | Messages | string | Multilingual |
 | Notifies | menu_notifies | Notifies | string | Multilingual |
-| Notify-Bulletins | menu_notify_bulletins | Bulletins | string | Multilingual |
 | Notify-Systems | menu_notify_systems | Systems | string | Multilingual |
 | Notify-Recommends | menu_notify_recommends | Recommends | string | Multilingual |
 | Notify-Likes | menu_notify_likes | Likes | string | Multilingual |
+| Notify-Dislikes | menu_notify_dislikes | Dislike | string | Multilingual |
 | Notify-Follows | menu_notify_follows | Follows | string | Multilingual |
+| Notify-Blocks | menu_notify_blocks | Blocks | string | Multilingual |
 | Notify-Mentions | menu_notify_mentions | Mentions | string | Multilingual |
 | Notify-Comments | menu_notify_comments | Comments | string | Multilingual |
 

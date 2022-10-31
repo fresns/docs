@@ -46,7 +46,7 @@
 
 数据表 *user_stats*
 
-| 键标签 | 键名 | 备注 | 禁止接口输出 |
+| 键标签 | 键名 | 备注 | 是否接口输出 |
 | --- | --- | --- | --- |
 | users | extcredits1_name | 扩展 1 名称 | 1 |
 | users | extcredits1_unit | 扩展 1 单位 | 1 |
@@ -63,3 +63,26 @@
 | users | extcredits5_name | 扩展 5 名称 | 1 |
 | users | extcredits5_unit | 扩展 5 单位 | 1 |
 | users | extcredits5_status | 扩展 5 状态（1.不启用 2.私有 3.公开） | 1 |
+
+## 运营通知
+
+| 键标签 | 键名 | 备注 | 是否接口输出 |
+| --- | --- | --- | --- |
+| systems | system_bulletin_name | 系统公告名称，多语言 | 1 |
+| systems | system_bulletin_contents | 系统公告内容，数组，多语言 | 1 |
+
+### system_bulletin_contents 示例
+
+```json
+[
+    {
+        "date": "10/18/2022",
+        "title": "[Must Read] Guide to give feedback to Fresns official questions",
+        "titleColor": "#f40",
+        "description": "Guide to give feedback to Fresns official questions",
+        "descriptionColor": null,
+        "buttonName": "Learn more",
+        "buttonLink": "https://fresns.org/guide/feedback.html",
+    }
+]
+```

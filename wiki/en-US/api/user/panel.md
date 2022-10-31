@@ -31,18 +31,18 @@
             }
         ],
         "dialogUnread": {
-            "dialog": "Number / 未读会话框数量",
-            "message": "Number / 未读会话消息数量"
+            "dialogs": "Number / 未读会话框数量",
+            "messages": "Number / 未读会话消息数量"
         },
         "notifyUnread":{
-            "all": "Number / 全部未读总数（不包括系统公告）",
-            "bulletin": "Number / 未读对全员的系统公告",
-            "system": "Number / 未读系统通知",
-            "recommend": "Number / 未读推荐",
-            "follow": "Number / 未读关注",
-            "like": "Number / 未读点赞",
-            "mention": "Number / 未读提及（艾特）",
-            "comment": "Number / 未读评论"
+            "systems": "Number / 未读系统通知",
+            "recommends": "Number / 未读推荐",
+            "likes": "Number / 未读点赞",
+            "dislikes": "Number / 未读点踩",
+            "follows": "Number / 未读关注",
+            "blocks": "Number / 未读屏蔽",
+            "mentions": "Number / 未读提及（艾特）",
+            "comments": "Number / 未读评论（回复）"
         },
         "draftCount": {
             "posts": "Number / 帖子草稿数",
