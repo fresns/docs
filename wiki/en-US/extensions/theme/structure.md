@@ -83,6 +83,7 @@
 | fresns.profile.likers | /profile/likers.blade.php | Like it users |
 | fresns.profile.dislikers | /profile/dislikers.blade.php | Dislike it users |
 | fresns.profile.followers | /profile/followers.blade.php | Follow it users |
+| fresns.profile.followers.you.follow | /profile/followers-you-follow.blade.php | Followers you know |
 | fresns.profile.blockers | /profile/blockers.blade.php | Block it users |
 | fresns.profile.likes.users | /profile/likes/users.blade.php | It like users |
 | fresns.profile.likes.groups | /profile/likes/groups.blade.php | It like groups |

@@ -83,6 +83,7 @@
 | fresns.profile.likers | /profile/likers.blade.php | 点赞 TA 的用户 |
 | fresns.profile.dislikers | /profile/dislikers.blade.php | 点踩 TA 的用户 |
 | fresns.profile.followers | /profile/followers.blade.php | 关注 TA 的用户 |
+| fresns.profile.followers.you.follow | /profile/followers-you-follow.blade.php | 你认识的关注者 |
 | fresns.profile.blockers | /profile/blockers.blade.php | 屏蔽 TA 的用户 |
 | fresns.profile.likes.users | /profile/likes/users.blade.php | TA 点赞的用户 |
 | fresns.profile.likes.groups | /profile/likes/groups.blade.php | TA 点赞的小组 |
