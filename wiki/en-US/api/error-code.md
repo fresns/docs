@@ -142,6 +142,7 @@
 | 35303 | User has expired and is not entitled to view current content |
 | 35304 | The content belongs to the new content after the expiration date, the current user has expired and does not have the right to view |
 | 35305 | You cannot specify a user to view the content |
+| 35306 | The system has been opened in private mode, the current user has no authorization information |
 
 ## Interactions
 
@@ -164,6 +165,7 @@
 | 36113 | File size exceeded the limit for current role |
 | 36114 | Current role has no dialog message permission |
 | 36115 | The current role has reached the upper limit of today download, please download again tomorrow. |
+| 36116 | The current number of characters has reached the maximum number and cannot be added |
 | **Mark** |  |
 | 36200 | This feature is not open and cannot be operated |
 | 36201 | The content is not open and cannot be viewed |
@@ -219,6 +221,8 @@
 | 37102 | Only members can view this group. |
 | 37103 | Only members can see who's in the group and what they post. |
 | 37104 | The current user has been banned from viewing the content of this group |
+| 37105 | The service has expired and cannot be viewed and interacted with in this group |
+| 37106 | Service has expired, can't view new content |
 | **Hashtag** |  |
 | 37200 | Wrong hashtag or record not exist |
 | 37201 | Hashtag has been banned |
@@ -232,6 +236,7 @@
 | 37401 | Comment has been banned |
 | 37402 | Wrong comment log or record not exist |
 | 37403 | Comments are only visible to the author of the post |
+| 37404 | The post has timed out and no longer shows comments |
 | **File** |  |
 | 37500 | Wrong file or record not exist |
 | 37501 | File has been banned |
