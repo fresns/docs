@@ -108,7 +108,7 @@
     "accountLogin": "登錄",
     "accountLoginByPassword": "密碼登錄",
     "accountLoginByCode": "驗證碼登錄",
-    "accountLoginByConnects": "快捷登錄",
+    "accountLoginByConnects": "快速登錄",
     "accountLogout": "登出",
     "accountDelete": "註銷",
     "accountRestore": "撤銷註銷",

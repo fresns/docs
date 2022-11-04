@@ -108,7 +108,7 @@
     "accountLogin": "登录",
     "accountLoginByPassword": "密码登录",
     "accountLoginByCode": "验证码登录",
-    "accountLoginByConnects": "一键快捷登录",
+    "accountLoginByConnects": "快速登录",
     "accountLogout": "退出",
     "accountDelete": "注销",
     "accountRestore": "撤销注销",
