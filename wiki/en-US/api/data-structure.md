@@ -102,6 +102,7 @@
     "verifiedIcon": "String / 自定义认证图标",
     "verifiedDesc": "String / 认证介绍",
     "verifiedDateTime": "String / 认证时间",
+    "isExpiry": "Boolean / 用户是否过期，公开模式始终为 false",
     "expiryDateTime": "String / 用户过期时间",
     "lastPublishPost": "String / 最后发帖时间",
     "lastPublishComment": "String / 最后评论时间",
@@ -253,6 +254,7 @@
     "banner": "String / 小组条幅图",
     "recommend": "Boolean / 是否为推荐小组",
     "mode": "Number / 小组模式 1.公开 2.非公开",
+    "modeEndAfter": "Number / 非公开模式到期后 1.不限制 2.小组内容全部不可见 3.到期前内容可见，新内容不可见",
     "find": "Number / 是否可发现（是否显示） 1.可发现 2.不可发现",
     "followType": "Number / 关注方式 1.原生方式 2.插件方式",
     "followUrl": "String / 关注方式 2 专用，操作关注插件页地址",
@@ -318,6 +320,8 @@
         "dislikeStatus": "Boolean / 是否可以操作点踩",
         "followStatus": "Boolean / 是否可以操作关注",
         "followNote": "String / 我对该小组的关注备注",
+        "followIsExpiry": "Boolean / 是否过期，公开小组模式始终为 false",
+        "followEndDateTime": "String / 过期时间",
         "blockStatus": "Boolean / 是否可以操作屏蔽",
         "blockNote": "String / 我对该小组的屏蔽备注"
     }

@@ -2,24 +2,6 @@
 
 `App\Utilities\PermissionUtility`
 
-## 获取用户内容查看权限
-
-```php
-PermissionUtility::getUserContentViewPerm($userId);
-```
-| 参数名 | 类型 | 是否必传 | 说明 |
-| --- | --- | --- | --- |
-| userId | Number | YES | `users > id` |
-
-::: details 查看结果
-```json
-{
-    "type": 1,  // 1.不限制 2.输出限制日期前的内容 3.不输出
-    "dateLimit": "2022-06-18 10:00:00",  // 限制日期前
-}
-```
-:::
-
 ## 获取用户主角色权限
 
 ```php
@@ -60,26 +42,6 @@ PermissionUtility::checkUserAffiliation($userId, $accountId);
 | --- | --- | --- | --- |
 | userId | Number | YES | `users > id` |
 | accountId | Number | YES | `accounts > id` |
-
-## 基于模式判断用户状态
-
-```php
-PermissionUtility::checkUserStatusOfSiteMode($userId);
-```
-| 参数名 | 类型 | 是否必传 | 说明 |
-| --- | --- | --- | --- |
-| userId | Number | YES | `users > id` |
-
-::: details 查看结果
-```json
-{
-    "siteMode": "public", // 站点模型
-    "userStatus": true,  // 基于站点模式的用户状态
-    "expireTime": "2022-06-18 10:00:00",  // 过期时间（用户表字段）
-    "expireAfter": 1,
-}
-```
-:::
 
 ## 判断用户权限
 
