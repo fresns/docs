@@ -61,7 +61,7 @@ PHP 函数启用了 `putenv` `symlink` `readlink` `proc_open` `passthru`
 
 ### Composer 版本
 
-- 不低于 Composer 2.3
+- 不低于 Composer 2.4
 
 ![Composer](https://cdn.fresns.cn/guide/baota-composer-version.png)
 

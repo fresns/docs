@@ -166,6 +166,7 @@
 | 36114 | Current role has no dialog message permission |
 | 36115 | The current role has reached the upper limit of today download, please download again tomorrow. |
 | 36116 | The current number of characters has reached the maximum number and cannot be added |
+| 36117 | Publish too fast, please post again at intervals. Please check the current role settings for details |
 | **Mark** |  |
 | 36200 | This feature is not open and cannot be operated |
 | 36201 | The content is not open and cannot be viewed |

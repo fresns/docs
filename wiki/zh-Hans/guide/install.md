@@ -7,7 +7,7 @@ Fresns 是一款基于 PHP 和 MySQL 开发的社交社区网络服务软件。
 | 环境 | 服务 |
 | --- | --- |
 | Web 服务器 | Nginx 或 Apache 或 IIS 或 Caddy |
-| 软件包管理器 | Composer 2.3 以上 |
+| 软件包管理器 | Composer 2.4 以上 |
 | 程序语言 | PHP 8.x |
 | 数据库 | MySQL 5.7 或 8.x |
 

@@ -48,7 +48,7 @@
             "posts": "Number / 帖子草稿数",
             "comments": "Number / 评论草稿数"
         },
-        "publish": {
+        "publishConfig": {
             // 发表帖子权限配置
             "post": {
                 "perm": {
