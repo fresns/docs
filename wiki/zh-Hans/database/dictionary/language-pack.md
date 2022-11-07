@@ -86,6 +86,7 @@
     {"name":"unitWordCount","canDelete":false},
     {"name":"unitKm","canDelete":false},
     {"name":"unitMi","canDelete":false},
+    {"name":"ipLocation","canDelete":false},
     {"name":"optionLanguage","canDelete":false},
     {"name":"optionUser","canDelete":false},
     {"name":"private","canDelete":false},

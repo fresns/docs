@@ -85,6 +85,7 @@
     "unitWordCount": "字数",
     "unitKm": "公里",
     "unitMi": "英里",
+    "ipLocation": "IP 属地",
     "optionLanguage": "切换语言",
     "optionUser": "切换用户",
     "private": "私有模式介绍",
