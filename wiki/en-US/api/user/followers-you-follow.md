@@ -8,9 +8,9 @@
 
 | Parameter Name | Public Mode (Required) | Private Mode (Required) |
 | --- | --- | --- |
-| aid | **required** | **required** |
-| uid | **required** | **required** |
-| token | **required** | **required** |
+| aid | *optional* | **required** |
+| uid | *optional* | **required** |
+| token | *optional* | **required** |
 
 ## Rest Params
 
@@ -30,6 +30,7 @@
 - 接口会根据配置表设置 `运营 > 互动配置 > 查看用户内容设置 > 用户的哪些内容可以被别人查看` 决定是否输出数据。
     - 你认识的关注者
     - 配置 key `it_followers_you_follow`
+- 未登录也可以请求，将输出为空列表。
 
 ## Return
 
