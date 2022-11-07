@@ -28,6 +28,8 @@
     "setting": "Setting",
     "config": "Configuration",
     "reset": "Reset",
+    "refresh": "Refresh",
+    "reload": "Reload",
     "modify": "Modify",
     "edit": "Edit",
     "delete": "Delete",
@@ -265,6 +267,8 @@
     "contentTopComment": "Top Comment",
     "contentCommentCountDesc": "comments",
     "contentCommentNotPublic": "Comments are only visible to the creator of the post",
-    "contentCommentVisibilityRuleTip": "Comments are beyond the visible period, No longer displayed."
+    "contentCommentVisibilityRuleTip": "Comments are beyond the visible period, No longer displayed.",
+    "getLocation": "Get Location",
+    "getLocationError": "Your device does not support location or refuses authorization"
 }
 ```

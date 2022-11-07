@@ -29,6 +29,8 @@
     {"name":"setting","canDelete":false},
     {"name":"config","canDelete":false},
     {"name":"reset","canDelete":false},
+    {"name":"refresh","canDelete":false},
+    {"name":"reload","canDelete":false},
     {"name":"modify","canDelete":false},
     {"name":"edit","canDelete":false},
     {"name":"delete","canDelete":false},
@@ -265,6 +267,8 @@
     {"name":"contentTopComment","canDelete":false},
     {"name":"contentCommentCountDesc","canDelete":false},
     {"name":"contentCommentNotPublic","canDelete":false},
-    {"name":"contentCommentVisibilityRuleTip","canDelete":false}
+    {"name":"contentCommentVisibilityRuleTip","canDelete":false},
+    {"name":"getLocation","canDelete":false},
+    {"name":"getLocationError","canDelete":false}
 ]
 ```

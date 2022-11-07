@@ -28,6 +28,8 @@
     "setting": "設定",
     "config": "配置",
     "reset": "重置",
+    "refresh": "刷新",
+    "reload": "重新載入",
     "modify": "修改",
     "edit": "編輯",
     "delete": "刪除",
@@ -265,6 +267,8 @@
     "contentTopComment": "熱評",
     "contentCommentCountDesc": "條留言",
     "contentCommentNotPublic": "留言僅貼文作者可見",
-    "contentCommentVisibilityRuleTip": "留言已超出可見期限，不再顯示"
+    "contentCommentVisibilityRuleTip": "留言已超出可見期限，不再顯示",
+    "getLocation": "獲取定位",
+    "getLocationError": "您的設備不支持定位或者拒絕授權"
 }
 ```

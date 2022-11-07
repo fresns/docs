@@ -28,6 +28,8 @@
     "setting": "设置",
     "config": "配置",
     "reset": "重置",
+    "refresh": "刷新",
+    "reload": "重新载入",
     "modify": "修改",
     "edit": "编辑",
     "delete": "删除",
@@ -265,6 +267,8 @@
     "contentTopComment": "热评",
     "contentCommentCountDesc": "条回复",
     "contentCommentNotPublic": "评论仅帖子作者可见",
-    "contentCommentVisibilityRuleTip": "评论已超出可见期限，不再显示"
+    "contentCommentVisibilityRuleTip": "评论已超出可见期限，不再显示",
+    "getLocation": "获取定位",
+    "getLocationError": "您的设备不支持定位或者拒绝授权"
 }
 ```
