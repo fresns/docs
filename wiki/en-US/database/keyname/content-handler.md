@@ -7,8 +7,8 @@
 | 栏目标题 | 键名 | 键值类型 | Command Word | 说明 |
 | --- | --- | --- | --- | --- |
 | IP 服务商 | ip_service | **plugin** | `ipInfo` | 插件应用场景参数 `extendIp` |
-| 通知服务商 | notify_service | **plugin** | `sendNotify` | 插件应用场景参数 `extendData` |
-| 内容审核服务商 | content_review_service | **plugin** | `reviewNotice` | 插件应用场景参数 `extendData` |
+| 通知服务商 | notifications_service | **plugin** | `sendNotification` | 插件应用场景参数 `extendNotification` |
+| 内容审核服务商 | content_review_service | **plugin** | `reviewNotice` | 插件应用场景参数 `extendReview` |
 
 ## Content List
 

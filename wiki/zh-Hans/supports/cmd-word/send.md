@@ -37,7 +37,7 @@
 ## 发信-系统通知
 
 ```php
-\FresnsCmdWord::plugin('Fresns')->sendNotify($wordBody)
+\FresnsCmdWord::plugin('Fresns')->sendNotification($wordBody)
 ```
 | 参数名 | 类型 | 是否必传 | 说明 |
 | --- | --- | --- | --- |

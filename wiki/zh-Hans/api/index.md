@@ -59,15 +59,16 @@
 
 | 请求方式 | 接口路径 | 描述 |
 | --- | --- | --- |
-| `GET` | /api/v2/notify/list | [通知]获取消息列表 |
-| `PUT` | /api/v2/notify/mark-as-read | [通知]更新阅读状态 |
-| `DELETE` | /api/v2/notify/delete | [通知]删除消息 |
-| `GET` | /api/v2/dialog/list | [会话]获取会话列表 |
-| `GET` | /api/v2/dialog/`{dialogId}`/detail | [会话]获取会话详情 |
-| `GET` | /api/v2/dialog/`{dialogId}`/messages | [会话]获取消息列表 |
-| `PUT` | /api/v2/dialog/mark-as-read | [会话]更新阅读状态 |
-| `POST` | /api/v2/dialog/send-message | [会话]发送消息 |
-| `DELETE` | /api/v2/dialog/delete | [会话]删除会话或会话的消息 |
+| `GET` | /api/v2/notification/list | [通知]获取消息列表 |
+| `PUT` | /api/v2/notification/mark-as-read | [通知]更新阅读状态 |
+| `DELETE` | /api/v2/notification/delete | [通知]删除消息 |
+| `GET` | /api/v2/conversation/list | [对话]获取对话列表 |
+| `GET` | /api/v2/conversation/`{uidOrUsername}`/detail | [对话]获取对话详情 |
+| `GET` | /api/v2/conversation/`{uidOrUsername}`/messages | [对话]获取消息列表 |
+| `PUT` | /api/v2/conversation/mark-as-read | [对话]更新阅读状态 |
+| `PUT` | /api/v2/conversation/pin | [对话]置顶对话 |
+| `POST` | /api/v2/conversation/send-message | [对话]发送消息 |
+| `DELETE` | /api/v2/conversation/delete | [对话]删除对话或对话的消息 |
 
 ## 小组
 

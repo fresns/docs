@@ -95,7 +95,7 @@
     "birthday": "String / 生日",
     "bio": "String / 简介",
     "location": "String / 位置",
-    "dialogLimit": "Number / 对话设置，1.允许所有用户 2.仅允许我关注的用户 3.我关注的用户和已认证的用户 4.不允许所有用户",
+    "conversationLimit": "Number / 对话设置，1.允许所有用户 2.仅允许我关注的用户 3.我关注的用户和已认证的用户 4.不允许所有用户",
     "commentLimit": "Number / 评论设置，1.允许所有用户 2.仅允许我关注的用户 3.我关注的用户和已认证的用户 4.不允许所有用户",
     "timezone": "String / 自定义 UTC 时区",
     "verifiedStatus": "Boolean / 是否认证",
@@ -235,7 +235,7 @@
         "blockMeStatus": "Boolean / 他是否屏蔽了我",
         "blockNote": "String / 我对他的屏蔽备注"
     },
-    "dialog": {
+    "conversation": {
         "status": "Boolean / 是否可以给他发私信",
         "code": "Number / 不能发时的错误码",
         "message": "String / 不能发时的错误描述"

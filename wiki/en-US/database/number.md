@@ -31,7 +31,7 @@
 | 3 | Operation Configuration | file_usages->usage_type | Pictures configured in operation<br>Decorate, icons, copywriting |
 | 4 | Stickers | file_usages->usage_type |  |
 | 5 | User Profile | file_usages->usage_type | User avatar, banner, decorate |
-| 6 | Dialogs | file_usages->usage_type | Files sent in dialog messages |
+| 6 | Conversations | file_usages->usage_type | Files sent in conversation messages |
 | 7 | Posts | file_usages->usage_type |  |
 | 8 | Comments | file_usages->usage_type |  |
 | 9 | Extend Content | file_usages->usage_type |  |

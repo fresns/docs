@@ -1,6 +1,6 @@
 # [对话]获取对话列表
 
-- 接口地址：`/api/v2/dialog/list`
+- 接口地址：`/api/v2/conversation/list`
 - 请求方式：`GET`
 - 传参方式：`Query`
 
@@ -34,8 +34,8 @@
         },
         "list": [
             {
-                "dialogId": "Number / 对话 ID",
-                "dialogUser": {
+                "id": "Number / 对话 ID",
+                "user": {
                     // 与我对话的用户信息
                     // 通用数据结构->用户信息
                 },

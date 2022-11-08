@@ -1,6 +1,6 @@
-# [Dialog] Messages
+# [Conversation] Messages
 
-- Endpoint Path: `/api/v2/dialog/{dialogId}/messages`
+- Endpoint Path: `/api/v2/conversation/{uidOrUsername}/messages`
 - Method: `GET`
 - Request: `Rest` + `Query`
 
@@ -16,7 +16,7 @@
 
 | Parameter Name | Type | Required | Description |
 | --- | --- | --- | --- |
-| dialogId | Number | **required** | 对话 ID |
+| uidOrUsername | String | **required** | 用户 `uid` 或者 `username` |
 
 ## Query Params
 

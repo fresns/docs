@@ -41,7 +41,7 @@ FileHelper::fresnsFileStoragePath($fileType, $usageType);
 ## 音视频被动功能
 
 - 被动触发的转码命令字。
-- 插件安装时，[订阅](functions.md) `posts`、`comments`、`dialog_messages` 三张表，当有新增内容时，触发转码命令字，扫描是否有音视频文件。
+- 插件安装时，[订阅](functions.md) `posts`、`comments`、`conversation_messages` 三张表，当有新增内容时，触发转码命令字，扫描是否有音视频文件。
 - 如果有音视频，并且没有转码 `transcoding_state = 1`，则执行转码。
 
 **转码配置**

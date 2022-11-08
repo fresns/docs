@@ -1,6 +1,6 @@
-# [Dialog] Send Message
+# [Conversation] Send Message
 
-- Endpoint Path: `/api/v2/dialog/send-message`
+- Endpoint Path: `/api/v2/conversation/send-message`
 - Method: `POST`
 - Request: `application/json`
 
@@ -26,7 +26,7 @@
 - 发送文件，先使用[文件上传接口](../common/upload-file.md)，上传后获得 `fid` 传参。
 - 上传参数例子：
     - `usageType` = `6`
-    - `tableName` = `dialog_messages`
+    - `tableName` = `conversation_messages`
     - `tableColumn` = `message_file_id`
     - `tableId` = `null`
     - `tableKey` = 对方的 uid 或 username

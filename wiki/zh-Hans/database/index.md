@@ -49,10 +49,10 @@
 
 | 表名 | 描述 |
 | --- | --- |
-| **dialogs** | 对话表 |
-| **dialog_messages** | 对话消息表 |
-| **notifies** | 通知信息表 |
 | **mentions** | 艾特记录表 |
+| **notifications** | 通知信息表 |
+| **conversations** | 对话表 |
+| **conversation_messages** | 对话消息表 |
 
 ## 扩展
 

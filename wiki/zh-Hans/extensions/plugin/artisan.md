@@ -198,7 +198,7 @@ fresns make:mail SendWeeklyPostsEmail
 Generate the given notification class name for the specified plugin.
 
 ```php
-fresns make:notification NotifyAdminOfNewComment
+fresns make:notification NotificationAdminOfNewComment
 ```
 
 ### 生成插件 Listener
@@ -206,11 +206,11 @@ fresns make:notification NotifyAdminOfNewComment
 Generate the given listener for the specified plugin. Optionally you can specify which event class it should listen to. It also accepts a `--queued` flag allowed queued event listeners.
 
 ```php
-fresns make:listener NotifyUsersOfANewPost
+fresns make:listener NotificationUsersOfANewPost
 
-fresns make:listener NotifyUsersOfANewPost --event=PostWasCreated
+fresns make:listener NotificationUsersOfANewPost --event=PostWasCreated
 
-fresns make:listener NotifyUsersOfANewPost --event=PostWasCreated --queued
+fresns make:listener NotificationUsersOfANewPost --event=PostWasCreated --queued
 ```
 
 ### 生成插件 Request

@@ -49,10 +49,10 @@
 
 | Table Name | Description |
 | --- | --- |
-| **dialogs** | User: dialog table |
-| **dialog_messages** | User: dialog message table |
-| **notifies** | User: notify table |
 | **mentions** | mention(at) record table |
+| **notifications** | User: notifications table |
+| **conversations** | User: conversation table |
+| **conversation_messages** | User: conversation messages table |
 
 ## Extends
 

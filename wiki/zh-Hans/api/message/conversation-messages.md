@@ -1,6 +1,6 @@
 # [对话]获取消息列表
 
-- 接口地址：`/api/v2/dialog/{dialogId}/messages`
+- 接口地址：`/api/v2/conversation/{uidOrUsername}/messages`
 - 请求方式：`GET`
 - 传参方式：`Rest` + `Query`
 
@@ -16,7 +16,7 @@
 
 | 参数名 | 类型 | 是否必传 | 说明 |
 | --- | --- | --- | --- |
-| dialogId | Number | YES | 对话 ID |
+| uidOrUsername | String | YES | 用户 `uid` 或者 `username` |
 
 ## Query 参数
 

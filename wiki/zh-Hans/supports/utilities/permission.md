@@ -70,7 +70,7 @@ PermissionUtility::checkUserRolePerm($userId, $permRoleIds);
 ## 判断用户对话权限
 
 ```php
-PermissionUtility::checkUserDialogPerm($receiveUserId, $authUserId, $langTag);
+PermissionUtility::checkUserConversationPerm($receiveUserId, $authUserId, $langTag);
 ```
 | 参数名 | 类型 | 是否必传 | 说明 |
 | --- | --- | --- | --- |

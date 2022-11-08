@@ -13,12 +13,12 @@
 | 附近帖子默认范围（公里） | nearby_length_km | 50 | number |  |
 | 附近帖子默认范围（英里） | nearby_length_mi | 30 | number |  |
 
-## Dialog Function
+## Conversation Function
 
 | Menu Title | Key Name | Default Key Value | Value Type | Description |
 | --- | --- | --- | --- | --- |
-| 私信对话功能 | dialog_status | false | boolean |  |
-| 私信对话附件 | dialog_files | ["image"] | array | image,video,audio,document<br>数组 |
+| 私信对话功能 | conversation_status | false | boolean |  |
+| 私信对话附件 | conversation_files | ["image"] | array | image,video,audio,document<br>数组 |
 
 ## Follow Function
 

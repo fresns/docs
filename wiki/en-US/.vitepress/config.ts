@@ -260,15 +260,15 @@ function sidebarApi() {
             text: 'Message',
             collapsible: true,
             items: [
-                { text: '[Notify] List', link: '/api/message/notify-list.md' },
-                { text: '[Notify] Mark As Read', link: '/api/message/notify-read.md' },
-                { text: '[Notify] Delete', link: '/api/message/notify-delete.md' },
-                { text: '[Dialog] List', link: '/api/message/dialog-list.md' },
-                { text: '[Dialog] Detail', link: '/api/message/dialog-detail.md' },
-                { text: '[Dialog] Messages', link: '/api/message/dialog-messages.md' },
-                { text: '[Dialog] Mark As Read', link: '/api/message/dialog-read.md' },
-                { text: '[Dialog] Send Message', link: '/api/message/dialog-send.md' },
-                { text: '[Dialog] Delete', link: '/api/message/dialog-delete.md' },
+                { text: '[Notification] List', link: '/api/message/notification-list.md' },
+                { text: '[Notification] Mark As Read', link: '/api/message/notification-read.md' },
+                { text: '[Notification] Delete', link: '/api/message/notification-delete.md' },
+                { text: '[Conversation] List', link: '/api/message/conversation-list.md' },
+                { text: '[Conversation] Detail', link: '/api/message/conversation-detail.md' },
+                { text: '[Conversation] Messages', link: '/api/message/conversation-messages.md' },
+                { text: '[Conversation] Mark As Read', link: '/api/message/conversation-read.md' },
+                { text: '[Conversation] Send Message', link: '/api/message/conversation-send.md' },
+                { text: '[Conversation] Delete', link: '/api/message/conversation-delete.md' },
             ]
         },
         {
@@ -419,9 +419,9 @@ function sidebarDatabase() {
                     collapsible: true,
                     items: [
                         { text: 'mentions', link: '/database/interactives/mentions.md' },
-                        { text: 'notifies', link: '/database/interactives/notifies.md' },
-                        { text: 'dialogs', link: '/database/interactives/dialogs.md' },
-                        { text: 'dialog_messages', link: '/database/interactives/dialog-messages.md' },
+                        { text: 'notifications', link: '/database/interactives/notifications.md' },
+                        { text: 'conversations', link: '/database/interactives/conversations.md' },
+                        { text: 'conversation_messages', link: '/database/interactives/conversation-messages.md' },
                     ]
                 },
                 {

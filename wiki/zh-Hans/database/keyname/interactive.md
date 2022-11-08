@@ -17,8 +17,8 @@
 
 | 栏目标题 | 键名 | 默认键值 | 键值类型 | 说明 |
 | --- | --- | --- | --- | --- |
-| 私信对话功能 | dialog_status | false | boolean |  |
-| 私信对话附件 | dialog_files | ["image"] | array | image,video,audio,document<br>数组 |
+| 私信对话功能 | conversation_status | false | boolean |  |
+| 私信对话附件 | conversation_files | ["image"] | array | image,video,audio,document<br>数组 |
 
 ## 关注功能设置
 

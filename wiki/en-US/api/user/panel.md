@@ -30,11 +30,11 @@
                 // Common Data Structure -> Extend Function Info
             }
         ],
-        "dialogUnread": {
-            "dialogs": "Number / 未读对话框数量",
+        "conversationUnread": {
+            "conversations": "Number / 未读对话框数量",
             "messages": "Number / 未读对话消息数量"
         },
-        "notifyUnread":{
+        "notificationUnread":{
             "systems": "Number / 未读系统通知",
             "recommends": "Number / 未读推荐",
             "likes": "Number / 未读点赞",

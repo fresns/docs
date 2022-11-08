@@ -77,6 +77,7 @@ fresns/             //主程序根目录
 | extendEditor | 编辑器扩展 | 扩展管理 > 编辑器扩展 |
 | extendContentType | 内容类型扩展 | 扩展管理 > 内容类型扩展 |
 | extendIp | IP 服务商 | 扩展管理 > 内容处理扩展（IP） |
+| extendNotification | 数据服务商 | 扩展管理 > 内容处理扩展（消息通知） |
 | extendReview | 审核服务商 | 扩展管理 > 内容处理扩展（审核） |
 | extendData | 数据服务商 | 扩展管理 > 内容处理扩展（数据源） |
 | extendSearch | 搜索服务商 | 扩展管理 > 内容处理扩展（搜索） |
@@ -84,7 +85,7 @@ fresns/             //主程序根目录
 | extendGroup | 小组扩展 | 扩展管理 > 小组扩展 |
 | extendUser | 用户功能扩展 | 扩展管理 > 用户功能扩展<br>扩展管理 > 用户资料扩展 |
 | engine | 网页引擎 | 客户端 > 网站网页 |
-| appNotify | 移动通知服务商 | 客户端 > 移动应用 |
+| appNotification | 移动通知服务商 | 客户端 > 移动应用 |
 
 ## composer.json 配置信息
 

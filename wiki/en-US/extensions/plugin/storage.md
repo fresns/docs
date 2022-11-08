@@ -41,7 +41,7 @@ The access path to the plugin upload page is configured in the `accessPath` para
 ## Audio and video functions
 
 - Transcoding command word triggered reactively.
-- Such three tables as `posts`, `comments`, and `dialog_messages` shall be [subscribed](functions.md) to when installing the plug-in. When there are any newly-added contents, trigger the transcoding command word and scan whether there are any audio/video files.
+- Such three tables as `posts`, `comments`, and `conversation_messages` shall be [subscribed](functions.md) to when installing the plug-in. When there are any newly-added contents, trigger the transcoding command word and scan whether there are any audio/video files.
 - If there are any audios/videos and transcoding is not performed (`transcoding_state = 1`), execute transcoding.
 
 **Transcoding Configuration**
@@ -51,11 +51,11 @@ The access path to the plugin upload page is configured in the `accessPath` para
 
 **Transcoding Process**
 
-- 1. Wait for the [subscription function](functions.md) of the main program to trigger you (notify your command word of the table state you subscribed)
+- 1. Wait for the [subscription function](functions.md) of the main program to trigger you (notification your command word of the table state you subscribed)
 - 2. Your command word is triggered. Inquire file content attachment with `primaryId`. 
     - `file_usages->file_type` = `2` video, `3` audio
     - `file_usages->table_name` = table name
-    - `file_usages->table_column` = column name, post, comment, dialog message, is ID
+    - `file_usages->table_column` = column name, post, comment, conversation message, is ID
     - `file_usages->table_id` = `primaryId`
     - The procedure should suspend if there is no attachment.
 - 3. Inquire the transcoding state `files->transcoding_state`

@@ -26,7 +26,7 @@
 | birthday | String | NO | 生日（留空代表不修改，格式为 Y-m-d H:i:s） |
 | bio | String | NO | 简介（留空代表不修改） |
 | location | String | NO | 位置（留空代表不修改） |
-| dialogLimit | Number | NO | 对话设置（留空代表不修改） |
+| conversationLimit | Number | NO | 对话设置（留空代表不修改） |
 | commentLimit | Number | NO | 评论设置（留空代表不修改） |
 | timezone | String | NO | 偏好时区（留空代表不修改） |
 | archives | Array | NO | 扩展资料（留空代表不修改） |

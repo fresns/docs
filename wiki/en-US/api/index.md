@@ -59,15 +59,16 @@
 
 | Method | Endpoint Path | Description |
 | --- | --- | --- |
-| `GET` | /api/v2/notify/list | [Notify] List |
-| `PUT` | /api/v2/notify/mark-as-read | [Notify] Mark As Read |
-| `DELETE` | /api/v2/notify/delete | [Notify] Delete |
-| `GET` | /api/v2/dialog/list | [Dialog] List |
-| `GET` | /api/v2/dialog/`{dialogId}`/detail | [Dialog] Detail |
-| `GET` | /api/v2/dialog/`{dialogId}`/messages | [Dialog] Messages |
-| `PUT` | /api/v2/dialog/mark-as-read | [Dialog] Mark As Read |
-| `POST` | /api/v2/dialog/send-message | [Dialog] Send Message |
-| `DELETE` | /api/v2/dialog/delete | [Dialog] Delete Dialog or Messages |
+| `GET` | /api/v2/notification/list | [Notification] List |
+| `PUT` | /api/v2/notification/mark-as-read | [Notification] Mark As Read |
+| `DELETE` | /api/v2/notification/delete | [Notification] Delete |
+| `GET` | /api/v2/conversation/list | [Conversation] List |
+| `GET` | /api/v2/conversation/`{uidOrUsername}`/detail | [Conversation] Detail |
+| `GET` | /api/v2/conversation/`{uidOrUsername}`/messages | [Conversation] Messages |
+| `PUT` | /api/v2/conversation/mark-as-read | [Conversation] Mark As Read |
+| `PUT` | /api/v2/conversation/pin | [Conversation] Pin Conversation |
+| `POST` | /api/v2/conversation/send-message | [Conversation] Send Message |
+| `DELETE` | /api/v2/conversation/delete | [Conversation] Delete Conversation or Messages |
 
 ## Group
 

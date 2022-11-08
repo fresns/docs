@@ -123,7 +123,7 @@
 | --- | --- | --- |
 | fresns.account.register | /account/register.blade.php | Register |
 | fresns.account.login | /account/login.blade.php | Login |
-| fresns.account.resetPassword | /account/reset-password.blade.php | Reset Password |
+| fresns.account.reset.password | /account/reset-password.blade.php | Reset Password |
 | fresns.account.index | /account/index.blade.php | Account Home |
 | fresns.account.wallet | /account/wallet.blade.php | Wallet |
 | fresns.account.users | /account/users.blade.php | Users under the account |
@@ -147,8 +147,8 @@
 | Route Name | View File | Description |
 | --- | --- | --- |
 | fresns.message.index | /messages/index.blade.php | Message Home |
-| fresns.message.dialog | /messages/dialog.blade.php | Dialog |
-| fresns.message.notify | /messages/notify.blade.php | Notify |
+| fresns.message.conversation | /messages/conversation.blade.php | Conversation |
+| fresns.message.notifications | /messages/notifications.blade.php | Notifications |
 
 ## Editor
 

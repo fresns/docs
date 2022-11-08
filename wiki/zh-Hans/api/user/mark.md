@@ -44,6 +44,6 @@
 - 小组关注专用：
     - 接口 `followType` 参数来自 `groups > type_follow` 字段。
     - 判断 `type_follow = 2` 时，不能通过该接口建立关注。
-- `type = like 或 follow` 点赞和关注用户、帖子、评论，会给对方录入一条通知（数据表 notifies）。
+- `type = like 或 follow` 点赞和关注用户、帖子、评论，会给对方录入一条通知（数据表 notifications）。
 - 对同一个对象（点赞某人或关注某人），一天内只生产一次通知，避免频繁建立和取消的操作。
 :::

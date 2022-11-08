@@ -1,6 +1,6 @@
-# [Dialog] List
+# [Conversation] List
 
-- Endpoint Path: `/api/v2/dialog/list`
+- Endpoint Path: `/api/v2/conversation/list`
 - Method: `GET`
 - Request: `Query`
 
@@ -34,8 +34,8 @@
         },
         "list": [
             {
-                "dialogId": "Number / 对话 ID",
-                "dialogUser": {
+                "id": "Number / 对话 ID",
+                "user": {
                     // 与我对话的用户信息
                     // Common Data Structure -> User Info
                 },

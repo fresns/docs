@@ -1,6 +1,6 @@
-# [Dialog] Detail
+# [Conversation] Detail
 
-- Endpoint Path: `/api/v2/dialog/{dialogId}/detail`
+- Endpoint Path: `/api/v2/conversation/{uidOrUsername}/detail`
 - Method: `GET`
 - Request: `Rest`
 
@@ -16,7 +16,7 @@
 
 | Parameter Name | Type | Required | Description |
 | --- | --- | --- | --- |
-| dialogId | Number | **required** | 对话 ID |
+| uidOrUsername | String | **required** | 用户 `uid` 或者 `username` |
 
 ## Return
 
@@ -25,10 +25,12 @@
     "code": 0,
     "message": "ok",
     "data": {
+        "id": "Number / 对话 ID",
         "user": {
             // 与我对话的用户信息
             // Common Data Structure -> User Info
-        }
+        },
+        "unreadCount": "Number / 对话框未读消息数"
     }
 }
 ```

@@ -123,7 +123,7 @@
 | --- | --- | --- |
 | fresns.account.register | /account/register.blade.php | 注册 |
 | fresns.account.login | /account/login.blade.php | 登录 |
-| fresns.account.resetPassword | /account/reset-password.blade.php | 重置密码 |
+| fresns.account.reset.password | /account/reset-password.blade.php | 重置密码 |
 | fresns.account.index | /account/index.blade.php | 账号中心 |
 | fresns.account.wallet | /account/wallet.blade.php | 账号钱包 |
 | fresns.account.users | /account/users.blade.php | 账号名下用户 |
@@ -147,8 +147,8 @@
 | 路由名 | 模板文件 | 介绍 |
 | --- | --- | --- |
 | fresns.message.index | /messages/index.blade.php | 消息主页 |
-| fresns.message.dialog | /messages/dialog.blade.php | 对话 |
-| fresns.message.notify | /messages/notify.blade.php | 通知 |
+| fresns.message.conversation | /messages/conversation.blade.php | 对话 |
+| fresns.message.notifications | /messages/notifications.blade.php | 通知 |
 
 ## 编辑器
 

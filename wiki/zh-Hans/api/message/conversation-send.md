@@ -1,6 +1,6 @@
 # [对话]发送消息
 
-- 接口地址：`/api/v2/dialog/send-message`
+- 接口地址：`/api/v2/conversation/send-message`
 - 请求方式：`POST`
 - 传参方式：`application/json`
 
@@ -26,7 +26,7 @@
 - 发送文件，先使用[文件上传接口](../common/upload-file.md)，上传后获得 `fid` 传参。
 - 上传参数例子：
     - `usageType` = `6`
-    - `tableName` = `dialog_messages`
+    - `tableName` = `conversation_messages`
     - `tableColumn` = `message_file_id`
     - `tableId` = `null`
     - `tableKey` = 对方的 uid 或 username
@@ -58,14 +58,14 @@
 ```
 
 ::: details 开发说明
-- 先判断全局是否开启了私信功能，配置表 `dialog_status` 键名。
-- 再判断用户主角色是否有权发送私信 `user_roles > permission > dialog=true`，如果主角色有过期时间，并且已经过期，则以继承角色权限为主；如果无继承角色（或者该继承 ID 找不到角色），则以配置表 `default_role` 键名键值的角色权限为准；如果配置表键值为空（或找不到角色），则当无权处理。
+- 先判断全局是否开启了私信功能，配置表 `conversation_status` 键名。
+- 再判断用户主角色是否有权发送私信 `user_roles > permission > conversation=true`，如果主角色有过期时间，并且已经过期，则以继承角色权限为主；如果无继承角色（或者该继承 ID 找不到角色），则以配置表 `default_role` 键名键值的角色权限为准；如果配置表键值为空（或找不到角色），则当无权处理。
 - 如果是**私有模式**，当过期后 `users > expired_at` ，不允许发送消息。
 - 如果对方已经注销 `users > deleted_at`，不可以发送。
-- 符合对方的私信设置 `users > dialog_limit`
+- 符合对方的私信设置 `users > conversation_limit`
 - 发送前需要判断过滤词规则，触发了过滤词则按选项处理，参见 `block_words` 数据表。
-- 每次发送消息都需要查询 `dialogs` 表 `a_user_id` 和 `b_user_id` 字段，确定对话消息表 `dialog_id` 的值，对话 ID 由系统查询录入，没有就新建。
-- 发送消息后，需要更新的 `dialogs` 表字段有 `latest_message_id`、`latest_message_time`、`latest_message_brief`、`a_status 或 b_status`、`a_is_display 或 b_is_display` 五个字段。如果发送的消息是文件，则以文件类型英文名（带括号）存储到 `latest_message_brief` 字段，四种文件的格式如下。
+- 每次发送消息都需要查询 `conversations` 表 `a_user_id` 和 `b_user_id` 字段，确定对话消息表 `conversation_id` 的值，对话 ID 由系统查询录入，没有就新建。
+- 发送消息后，需要更新的 `conversations` 表字段有 `latest_message_id`、`latest_message_time`、`latest_message_brief`、`a_status 或 b_status`、`a_is_display 或 b_is_display` 五个字段。如果发送的消息是文件，则以文件类型英文名（带括号）存储到 `latest_message_brief` 字段，四种文件的格式如下。
     - [image]
     - [video]
     - [audio]

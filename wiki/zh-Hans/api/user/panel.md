@@ -30,11 +30,11 @@
                 // 通用数据结构->扩展功能信息
             }
         ],
-        "dialogUnread": {
-            "dialogs": "Number / 未读对话框数量",
+        "conversationUnread": {
+            "conversations": "Number / 未读对话框数量",
             "messages": "Number / 未读对话消息数量"
         },
-        "notifyUnread":{
+        "notificationUnread":{
             "systems": "Number / 未读系统通知",
             "recommends": "Number / 未读推荐",
             "likes": "Number / 未读点赞",
@@ -112,6 +112,6 @@
 
 ::: details 开发说明
 - features 和 profiles，来自 `plugin_usages` 表。
-- 对话消息未读数，查询 `dialogs` 和 `dialog_messages` 表内容。
-- 通知消息未读数，查询 `notifies` 表内容。
+- 对话消息未读数，查询 `conversations` 和 `conversation_messages` 表内容。
+- 通知消息未读数，查询 `notifications` 表内容。
 :::

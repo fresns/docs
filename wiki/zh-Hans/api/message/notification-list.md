@@ -1,27 +1,27 @@
-# [Notify] List
+# [通知]获取消息列表
 
-- Endpoint Path: `/api/v2/notify/list`
-- Method: `GET`
-- Request: `Query`
+- 接口地址：`/api/v2/notification/list`
+- 请求方式：`GET`
+- 传参方式：`Query`
 
-## Headers Optional Parameter
+## Headers 可选参数
 
-| Parameter Name | Public Mode (Required) | Private Mode (Required) |
+| 参数名 | 公开模式（是否必传） | 私有模式（是否必传） |
 | --- | --- | --- |
-| aid | **required** | **required** |
-| uid | **required** | **required** |
-| token | **required** | **required** |
+| aid | YES | YES |
+| uid | YES | YES |
+| token | YES | YES |
 
-## Query Params
+## Query 参数
 
-| Parameter Name | Type | Required | Description |
+| 参数名 | 类型 | 是否必传 | 说明 |
 | --- | --- | --- | --- |
-| types | String | *optional* | `1` 系统通知 `2` 推荐内容 `3` 点赞 `4` 踩 `5` 关注 `6` 屏蔽 `7` 提及 `8` 评论 |
-| status | Boolean | *optional* | `0` 未读<br>`1` 已读<br>留空输出全部 |
-| pageSize | Number | *optional* | 每页显示条数（默认 15 条） |
-| page | Number | *optional* | 页码（默认 1） |
+| types | String | NO | `1` 系统通知 `2` 推荐内容 `3` 点赞 `4` 踩 `5` 关注 `6` 屏蔽 `7` 提及（艾特） `8` 评论（回复） |
+| status | Boolean | NO | `0` 未读<br>`1` 已读<br>留空输出全部 |
+| pageSize | Number | NO | 每页显示条数（默认 15 条） |
+| page | Number | NO | 页码（默认 1） |
 
-**Request Description**
+**接口使用说明**
 
 - `types` 留空输出全部，传参支持多个，以英文逗号隔开。
 - 按时间倒序排列，最新的在前面。
@@ -47,7 +47,7 @@
         - `content` 评论内容的摘要
         - `actionCid` 他的评论 cid
 
-## Return
+## 返回结果
 
 ```json
 {
@@ -55,14 +55,14 @@
     "message": "ok",
     "data": {
         "pagination": {
-            "total": "Number / How much data in total",
-            "pageSize": "Number / How much data on each page",
-            "currentPage": "Number / Current page number",
-            "lastPage": "Number / Last page number"
+            "total": "Number / 一共有多少条数据",
+            "pageSize": "Number / 每页有多少条数据",
+            "currentPage": "Number / 当前页码",
+            "lastPage": "Number / 最后一页页码"
         },
         "list": [
             {
-                "notifyId": "Number / 通知 ID",
+                "id": "Number / 通知 ID",
                 "type": "Number / 通知类型",
                 "content": "String / 通知内容",
                 "isMarkdown": "Boolean / 内容是否为 Markdown 格式",
@@ -70,12 +70,12 @@
                 "pluginUrl": "String / 插件页地址",
                 "actionUser": {
                     // 触发消息的用户信息
-                    // Common Data Structure -> User Info
+                    // 通用数据结构->用户信息
                 },
                 "actionType": "Number / 触发行为类型",
                 "actionObject": "Number / 触发目标",
                 "actionInfo": {
-                    // 触发关联内容（公共数据结构）
+                    // 触发关联内容（通用数据结构）
                     // actionObject=1  用户信息
                     // actionObject=2  小组信息
                     // actionObject=3  话题信息
@@ -83,8 +83,8 @@
                     // actionObject=5  评论信息
                 },
                 "actionCid": "String / 评论事件的 cid",
-                "notifyTime": "String / 通知时间",
-                "notifyTimeFormat": "String / 通知时间格式化",
+                "time": "String / 通知时间",
+                "timeFormat": "String / 通知时间格式化",
                 "readStatus": "Boolean / 阅读状态"
             }
         ]

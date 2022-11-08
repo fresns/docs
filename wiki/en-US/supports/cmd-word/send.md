@@ -34,10 +34,10 @@
 ```
 :::
 
-## sendNotify
+## sendNotification
 
 ```php
-\FresnsCmdWord::plugin('Fresns')->sendNotify($wordBody)
+\FresnsCmdWord::plugin('Fresns')->sendNotification($wordBody)
 ```
 | Parameter Name | Type | Required | Description |
 | --- | --- | --- | --- |

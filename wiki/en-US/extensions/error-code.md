@@ -59,8 +59,8 @@ To avoid confusion and potential conflict risks, Fresns status codes prohibit th
         - `353**` Publish
         - `364**` Delete
         - `365**` Reset
-        - `366**` Dialog
-        - `367**` Notify
+        - `366**` Conversation
+        - `367**` Notification
     - `37***` Contents
         - `371**` Group
         - `372**` Hashtag

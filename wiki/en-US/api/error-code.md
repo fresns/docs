@@ -163,7 +163,7 @@
 | 36111 | Current role has no right to upload audios |
 | 36112 | Current role has no right to upload files |
 | 36113 | File size exceeded the limit for current role |
-| 36114 | Current role has no dialog message permission |
+| 36114 | Current role has no conversation message permission |
 | 36115 | The current role has reached the upper limit of today download, please download again tomorrow. |
 | 36116 | The current number of characters has reached the maximum number and cannot be added |
 | 36117 | Publish too fast, please post again at intervals. Please check the current role settings for details |
@@ -196,21 +196,21 @@
 | **Reset** |  |
 | 36500 | Operation failed. Please confirm that you are the author |
 | 36501 | There is no need to withdraw the content, for it is not being reviewed |
-| **Dialog** |  |
-| 36600 | Dialog function is not enabled and cannot be used |
-| 36601 | Dialog exception or non-existent |
-| 36602 | The dialog does not belong to the current user |
+| **Conversation** |  |
+| 36600 | Conversation function is not enabled and cannot be used |
+| 36601 | Conversation exception or non-existent |
+| 36602 | The conversation does not belong to the current user |
 | 36603 | You can not send messages to yourself |
 | 36604 | Each message should be either [file] or [text] |
 | 36605 | The message could not be sent for the block words it contains |
 | 36606 | The counterparty only allow members it follows to send message to it |
 | 36607 | The counterparty only allow members it follows and verified members to send message to it |
-| 36608 | The other party has set the dialog off function |
-| 36609 | Only your own dialog messages could be deleted. |
-| **Notify** |  |
-| 36700 | Notify exception or non-existent |
-| 36701 | The notify does not belong to the current user |
-| 36702 | Only your own notify messages could be deleted. |
+| 36608 | The other party has set the conversation off function |
+| 36609 | Only your own conversation messages could be deleted. |
+| **Notification** |  |
+| 36700 | Notification exception or non-existent |
+| 36701 | The notification does not belong to the current user |
+| 36702 | Only your own notification messages could be deleted. |
 
 ## Contents
 

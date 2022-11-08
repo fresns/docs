@@ -26,7 +26,7 @@
 | birthday | String | *optional* | 生日（留空代表不修改，格式为 Y-m-d H:i:s） |
 | bio | String | *optional* | 简介（留空代表不修改） |
 | location | String | *optional* | 位置（留空代表不修改） |
-| dialogLimit | Number | *optional* | 对话设置（留空代表不修改） |
+| conversationLimit | Number | *optional* | 对话设置（留空代表不修改） |
 | commentLimit | Number | *optional* | 评论设置（留空代表不修改） |
 | timezone | String | *optional* | 偏好时区（留空代表不修改） |
 | archives | Array | *optional* | 扩展资料（留空代表不修改） |

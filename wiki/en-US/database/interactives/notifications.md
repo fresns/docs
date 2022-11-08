@@ -1,6 +1,6 @@
-# notifies *通知表*
+# notifications
 
-| 字段名 | 字段类型 | 字段注释 | 默认值 | 可空 | 备注 |
+| Column Name | Type | Comment | Default | Null | Remark |
 | --- | --- | --- | --- | --- | --- |
 | id | bigint *UNSIGNED* | 主键 ID |  | NO | 自动递赠 |
 | type | tinyint *UNSIGNED* | 通知类型 |  | NO |  |

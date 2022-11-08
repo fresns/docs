@@ -80,17 +80,17 @@
 
 | Menu Title | Key Name | Default Key Value | Value Type | Description |
 | --- | --- | --- | --- | --- |
-| Dialogs | menu_dialogs | Dialogs | string | Multilingual |
-| Messages | menu_messages | Messages | string | Multilingual |
-| Notifies | menu_notifies | Notifies | string | Multilingual |
-| Notify-Systems | menu_notify_systems | Systems | string | Multilingual |
-| Notify-Recommends | menu_notify_recommends | Recommends | string | Multilingual |
-| Notify-Likes | menu_notify_likes | Likes | string | Multilingual |
-| Notify-Dislikes | menu_notify_dislikes | Dislike | string | Multilingual |
-| Notify-Follows | menu_notify_follows | Follows | string | Multilingual |
-| Notify-Blocks | menu_notify_blocks | Blocks | string | Multilingual |
-| Notify-Mentions | menu_notify_mentions | Mentions | string | Multilingual |
-| Notify-Comments | menu_notify_comments | Comments | string | Multilingual |
+| Conversations | menu_conversations | Messages | string | Multilingual |
+| Notifications | menu_notifications | Notifications | string | Multilingual |
+| Notifications-All | menu_notifications_all | All | string | Multilingual |
+| Notifications-Systems | menu_notifications_systems | Systems | string | Multilingual |
+| Notifications-Recommends | menu_notifications_recommends | Recommends | string | Multilingual |
+| Notifications-Likes | menu_notifications_likes | Likes | string | Multilingual |
+| Notifications-Dislikes | menu_notifications_dislikes | Dislike | string | Multilingual |
+| Notifications-Follows | menu_notifications_follows | Follows | string | Multilingual |
+| Notifications-Blocks | menu_notifications_blocks | Blocks | string | Multilingual |
+| Notifications-Mentions | menu_notifications_mentions | Mentions | string | Multilingual |
+| Notifications-Comments | menu_notifications_comments | Comments | string | Multilingual |
 
 ## Search
 

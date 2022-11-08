@@ -77,6 +77,7 @@ When the plugin is installed and published, static resources are distributed to 
 | extendEditor | Editor Extensions | Panel > Expands > Editor |
 | extendContentType | Content Type Extensions | Panel > Expands > Content Type |
 | extendIp | IP Service Providers | Panel > Expands > Content Handler |
+| extendNotification | Notification Provider | Panel > Expands > Content Handler |
 | extendReview | Review Service Provider | Panel > Expands > Content Handler |
 | extendData | Data Service Provider | Panel > Expands > Content Handler |
 | extendSearch | Search Service Providers | Panel > Expands > Content Handler |
@@ -84,7 +85,7 @@ When the plugin is installed and published, static resources are distributed to 
 | extendGroup | Group Extensions | Panel > Expands > Group |
 | extendUser | User Function Extensions | Panel > Expands > User Feature<br>Panel > Expands > User Profile |
 | engine | Web Engine | Panel > Clients > Website |
-| appNotify | Mobile Notification Service Provider | Panel > Clients > App |
+| appNotification | Mobile Notification Service Provider | Panel > Clients > App |
 
 ## composer.json Config File
 
