@@ -9,14 +9,14 @@
 | title | varchar(255) | 标题 |  | YES |  |
 | content | longtext | 内容 |  | YES |  |
 | lang_tag | char(16) | Language Tag |  | YES |  |
-| writing_direction | char(3) | 语言写作方向 |  | YES |   |
+| writing_direction | char(3) | 语言写作方向 |  | YES |  |
 | is_markdown | tinyint *UNSIGNED* | 内容是否为 MD 格式 | 0 | NO | 0.否 / 1.是 |
-| is_anonymous | tinyint *UNSIGNED* | 是否匿名 | 0 | NO |  0.否 / 1.是 |
+| is_anonymous | tinyint *UNSIGNED* | 是否匿名 | 0 | NO | 0.否 / 1.是 |
 | map_id | tinyint *UNSIGNED* | 地图-服务商编号 |  | YES | 来源地图服务商键值字典 |
 | map_longitude | decimal(12,8) | 地图-经度 |  | YES | 浮点数，范围为-180~180，负数表示西经 |
 | map_latitude | decimal(12,8) | 地图-纬度 |  | YES | 浮点数，范围为-90~90，负数表示南纬 |
-| sticky_state | tinyint *UNSIGNED* | 置顶状态 | 1 | NO |  1.否 / 2.小组页置顶 / 3.全局置顶 |
-| digest_state | tinyint *UNSIGNED* | 精华状态 | 1 | NO |  1.否 / 2.普通精华 / 3.高级精华 |
+| sticky_state | tinyint *UNSIGNED* | 置顶状态 | 1 | NO | 1.否 / 2.小组页置顶 / 3.全局置顶 |
+| digest_state | tinyint *UNSIGNED* | 精华状态 | 1 | NO | 1.否 / 2.普通精华 / 3.高级精华 |
 | like_count | int *UNSIGNED* | 点赞数 | 0 | NO | 有多少用户点赞了该帖子 |
 | dislike_count | int *UNSIGNED* | 点踩数 | 0 | NO | 有多少用户点踩了该帖子 |
 | follow_count | int *UNSIGNED* | 关注数 | 0 | NO | 有多少用户关注了（收藏）该帖子 |
@@ -29,6 +29,7 @@
 | comment_block_count | int *UNSIGNED* | 评论屏蔽数 | 0 | NO | 所有评论被屏蔽总数 |
 | latest_edit_at | timestamp | 编辑时间 |  | YES | 如果发表后可以编辑，此处记录编辑时间 |
 | latest_comment_at | timestamp | 评论时间 |  | YES | 最新一条评论的时间 |
+| rank_state | tinyint *UNSIGNED* | 等级状态 | 1 | NO | 1.未设置 |
 | is_enable | tinyint *UNSIGNED* | 是否有效 | 1 | NO | 0.无效（仅自己可见） / 1.有效 |
 | created_at | timestamp | Create Time | CURRENT_TIMESTAMP | NO | 发表时间 |
 | updated_at | timestamp | Update Time |  | YES |  |

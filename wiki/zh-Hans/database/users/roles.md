@@ -7,10 +7,11 @@
 | name | varchar(128) | 角色名 |  | NO | **多语言** |
 | icon_file_id | bigint *UNSIGNED* | 图标文件 ID |  | YES | 关联字段 [files->id](../systems/files.md) |
 | icon_file_url | varchar(255) | 图标文件 URL |  | YES |  |
-| is_display_name | tinyint *UNSIGNED* | 是否显示文字标识 | 0 | NO |  0.不显示 / 1.显示  |
-| is_display_icon | tinyint *UNSIGNED* | 是否显示图标标识 | 0 | NO |  0.不显示 / 1.显示  |
+| is_display_name | tinyint *UNSIGNED* | 是否显示文字标识 | 0 | NO | 0.不显示 / 1.显示  |
+| is_display_icon | tinyint *UNSIGNED* | 是否显示图标标识 | 0 | NO | 0.不显示 / 1.显示  |
 | nickname_color | char(7) | 用户昵称颜色值 |  |  YES  |  |
 | permissions | json | 权限参数 |  | NO |  |
+| rank_state | tinyint *UNSIGNED* | 等级状态 | 1 | NO | 1.未设置 |
 | rating | smallint *UNSIGNED* | 排列顺序 | 9 | NO | 升序排序 |
 | is_enable | tinyint *UNSIGNED* | 是否启用 | 1 | NO | 0.停用 / 1.启用 |
 | created_at | timestamp | 创建时间 | CURRENT_TIMESTAMP | NO |  |
