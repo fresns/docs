@@ -110,6 +110,7 @@
     "lastEditNickname": "String / 最后修改昵称时间",
     "registerDate": "String / 注册日期",
     "hasPassword": "Boolean / 是否有密码",
+    "rankState": "Number / 等级状态",
     "status": "Boolean / 用户状态",
     "waitDelete": "Boolean / 是否待删除",
     "waitDeleteDateTime": "String / 准备删除时间",
@@ -122,6 +123,7 @@
     "roleIcon": "String / 主角色-角色图标地址",
     "roleIconDisplay": "Boolean / 主角色-是否显示角色图标",
     "roleExpiryDateTime": "String / 主角色-角色过期日期",
+    "roleRankState": "Number / 等级状态",
     "rolePermissions": {
         // Object 角色权限
         // 数据表 roles->permissions
@@ -408,6 +410,7 @@
     "editTime": "String / 帖子最后编辑时间",
     "editTimeFormat": "String / 帖子最后编辑人性化时间",
     "editCount": "Number / 编辑次数",
+    "rankState": "Number / 等级状态",
     "isAllow": "Boolean / 是否需要授权",
     "allowProportion": "Number / 无权时内容显示百分比",
     "allowBtnName": "String / 无权时按钮文字",
@@ -550,6 +553,7 @@
     "editTime": "String / 评论最后编辑时间",
     "editTimeFormat": "String / 评论最后编辑人性化时间",
     "editCount": "Number / 编辑次数",
+    "rankState": "Number / 等级状态",
     "isCommentBtn": "Boolean / 评论是否有扩展按钮",
     "commentBtnName": "String / 按钮文字",
     "commentBtnStyle": "String / 按钮风格",
