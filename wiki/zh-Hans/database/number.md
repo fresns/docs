@@ -31,7 +31,7 @@
 | 3 | 运营配置 | file_usages->usage_type | 运营中配置的图<br>用户挂件、图标、文案 |
 | 4 | 表情图 | file_usages->usage_type |  |
 | 5 | 用户资料图 | file_usages->usage_type | 头像、背景条幅、挂件等图 |
-| 6 | 会话 | file_usages->usage_type | 私信会话中发送的文件 |
+| 6 | 对话 | file_usages->usage_type | 私信对话中发送的文件 |
 | 7 | 帖子 | file_usages->usage_type |  |
 | 8 | 评论 | file_usages->usage_type |  |
 | 9 | 扩展内容 | file_usages->usage_type |  |

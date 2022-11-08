@@ -16,7 +16,7 @@
 
 | Parameter Name | Type | Required | Description |
 | --- | --- | --- | --- |
-| dialogId | Number | **required** | 会话 ID |
+| dialogId | Number | **required** | 对话 ID |
 
 ## Query Params
 

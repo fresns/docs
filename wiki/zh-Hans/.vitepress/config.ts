@@ -273,12 +273,12 @@ function sidebarApi() {
                 { text: '[通知]获取消息列表', link: '/api/message/notify-list.md' },
                 { text: '[通知]更新阅读状态', link: '/api/message/notify-read.md' },
                 { text: '[通知]删除消息', link: '/api/message/notify-delete.md' },
-                { text: '[会话]获取会话列表', link: '/api/message/dialog-list.md' },
-                { text: '[会话]获取会话详情', link: '/api/message/dialog-detail.md' },
-                { text: '[会话]获取消息列表', link: '/api/message/dialog-messages.md' },
-                { text: '[会话]更新阅读状态', link: '/api/message/dialog-read.md' },
-                { text: '[会话]发送消息', link: '/api/message/dialog-send.md' },
-                { text: '[会话]删除会话或会话的消息', link: '/api/message/dialog-delete.md' },
+                { text: '[对话]获取对话列表', link: '/api/message/dialog-list.md' },
+                { text: '[对话]获取对话详情', link: '/api/message/dialog-detail.md' },
+                { text: '[对话]获取消息列表', link: '/api/message/dialog-messages.md' },
+                { text: '[对话]更新阅读状态', link: '/api/message/dialog-read.md' },
+                { text: '[对话]发送消息', link: '/api/message/dialog-send.md' },
+                { text: '[对话]删除对话或对话的消息', link: '/api/message/dialog-delete.md' },
             ]
         },
         {
@@ -429,9 +429,9 @@ function sidebarDatabase() {
                     collapsible: true,
                     items: [
                         { text: 'mentions 艾特记录表', link: '/database/interactives/mentions.md' },
-                        { text: 'notifies 通知表', link: '/database/interactives/notifies.md' },
-                        { text: 'dialogs 会话表', link: '/database/interactives/dialogs.md' },
-                        { text: 'dialog_messages 会话内容表', link: '/database/interactives/dialog-messages.md' },
+                        { text: 'notifications 通知表', link: '/database/interactives/notifies.md' },
+                        { text: 'conversations 对话表', link: '/database/interactives/dialogs.md' },
+                        { text: 'conversation_messages 对话内容表', link: '/database/interactives/dialog-messages.md' },
                     ]
                 },
                 {

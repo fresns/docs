@@ -31,8 +31,8 @@
             }
         ],
         "dialogUnread": {
-            "dialogs": "Number / 未读会话框数量",
-            "messages": "Number / 未读会话消息数量"
+            "dialogs": "Number / 未读对话框数量",
+            "messages": "Number / 未读对话消息数量"
         },
         "notifyUnread":{
             "systems": "Number / 未读系统通知",

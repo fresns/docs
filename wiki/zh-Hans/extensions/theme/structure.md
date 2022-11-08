@@ -147,7 +147,7 @@
 | 路由名 | 模板文件 | 介绍 |
 | --- | --- | --- |
 | fresns.message.index | /messages/index.blade.php | 消息主页 |
-| fresns.message.dialog | /messages/dialog.blade.php | 会话 |
+| fresns.message.dialog | /messages/dialog.blade.php | 对话 |
 | fresns.message.notify | /messages/notify.blade.php | 通知 |
 
 ## 编辑器

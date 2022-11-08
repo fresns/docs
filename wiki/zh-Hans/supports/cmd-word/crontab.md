@@ -27,7 +27,7 @@
 
 - 在 `accounts` 表 `phone 和 email` 字段现有内容前加上 `deleted#YmdHis#` 前缀，`YmdHis` 为当前执行任务时的时间；
 - 物理删除 `account_connects` 表关联信息；
-- 会话表 `dialogs` 如果存在记录，则标注已停用，字段为 `a_is_deactivate 或 b_is_deactivate`
+- 对话表 `dialogs` 如果存在记录，则标注已停用，字段为 `a_is_deactivate 或 b_is_deactivate`
 - 为避免遗漏，定时任务每次都检测库里所有 `accounts > deleted_at` 有值的用户，如果 `phone 和 email` 前缀有 `deleted#` 则代表执行过任务，则跳过，如果没有则执行任务。
 - 配置表 `delete_account_todo` 键值规定时间内的不处理；比如当前执行任务时，配置的是 7 天，则查询所有记录时，7 天内的不查（不处理）。
 
@@ -55,7 +55,7 @@
     - `post_logs`
     - `comments`
     - `comment_logs`
-- 会话表 `dialogs` 如果存在记录，则标注已停用，字段为 `a_is_deactivate 或 b_is_deactivate`
+- 对话表 `dialogs` 如果存在记录，则标注已停用，字段为 `a_is_deactivate 或 b_is_deactivate`
 - 为避免遗漏，定时任务每次都检测库里所有 `accounts > deleted_at` 有值的用户，如果存在则执行物理删除。
 - 配置表 `delete_account_todo` 键值规定时间内的不处理；比如当前执行任务时，配置的是 7 天，则查询所有记录时，7 天内的不查（不处理）。
 

@@ -34,9 +34,9 @@
         },
         "list": [
             {
-                "dialogId": "Number / 会话 ID",
+                "dialogId": "Number / 对话 ID",
                 "dialogUser": {
-                    // 与我会话的用户信息
+                    // 与我对话的用户信息
                     // Common Data Structure -> User Info
                 },
                 "latestMessage": {
@@ -45,7 +45,7 @@
                     "timeFormat": "String / 最新一条消息的时间格式化",
                     "message": "String / 最新一条消息内容",
                 },
-                "unreadCount": "Number / 会话框未读消息数"
+                "unreadCount": "Number / 对话框未读消息数"
             }
         ]
     }

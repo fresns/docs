@@ -31,8 +31,8 @@
             }
         ],
         "dialogUnread": {
-            "dialogs": "Number / 未读会话框数量",
-            "messages": "Number / 未读会话消息数量"
+            "dialogs": "Number / 未读对话框数量",
+            "messages": "Number / 未读对话消息数量"
         },
         "notifyUnread":{
             "systems": "Number / 未读系统通知",
@@ -112,6 +112,6 @@
 
 ::: details 开发说明
 - features 和 profiles，来自 `plugin_usages` 表。
-- 会话消息未读数，查询 `dialogs` 和 `dialog_messages` 表内容。
+- 对话消息未读数，查询 `dialogs` 和 `dialog_messages` 表内容。
 - 通知消息未读数，查询 `notifies` 表内容。
 :::

@@ -55,7 +55,7 @@ FileHelper::fresnsFileStoragePath($fileType, $usageType);
 - 2、你的命令字被触发，凭主键 ID `primaryId` 查询文件内容附件。
     - `file_usages->file_type` = `2` 视频，`3` 音频
     - `file_usages->table_name` = 表名
-    - `file_usages->table_column` = 字段名，帖子、评论、会话消息，则是 `id`
+    - `file_usages->table_column` = 字段名，帖子、评论、对话消息，则是 `id`
     - `file_usages->table_id` = `primaryId`
     - 无附件则流程中止。
 - 3、查询转码状态 `files->transcoding_state`

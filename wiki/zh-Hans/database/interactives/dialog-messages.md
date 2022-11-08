@@ -1,9 +1,9 @@
-# dialog_messages *会话内容表*
+# dialog_messages *对话内容表*
 
 | 字段名 | 字段类型 | 字段注释 | 默认值 | 可空 | 备注 |
 | --- | --- | --- | --- | --- | --- |
 | id | bigint *UNSIGNED* | 主键 ID |  | NO | 自动递赠 |
-| dialog_id | bigint *UNSIGNED* | 会话 ID |  | NO | 关联字段 dialogs > id |
+| dialog_id | bigint *UNSIGNED* | 对话 ID |  | NO | 关联字段 dialogs > id |
 | send_user_id | bigint *UNSIGNED* | 发信者 ID |  | NO | 关联字段 [users->id](../users/users.md) |
 | send_deleted_at | timestamp | 发信者-删除时间 |  | YES | 为空代表没有删除 |
 | message_type | tinyint *UNSIGNED* | 信息类型  | 1 | NO | 1.文本 / 2.文件 |

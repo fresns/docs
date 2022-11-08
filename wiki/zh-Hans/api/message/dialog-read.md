@@ -1,4 +1,4 @@
-# [会话]更新阅读状态
+# [对话]更新阅读状态
 
 - 接口地址：`/api/v2/dialog/mark-as-read`
 - 请求方式：`PUT`
@@ -23,7 +23,7 @@
 **接口使用说明**
 
 - `dialogId` 和 `messageIds` 二选一传参，不可同时传参。
-- `type = dialog` 使用 `dialogId` 参数，将当前会话框设置为已读，不包括会话下的消息。
+- `type = dialog` 使用 `dialogId` 参数，将当前对话框设置为已读，不包括对话下的消息。
 - `type = message` 使用 `messageIds` 参数，批量设置指定 ID 的消息为已读。
 
 ## 返回结果

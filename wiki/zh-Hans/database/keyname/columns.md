@@ -80,7 +80,7 @@
 
 | 栏目标题 | 键名 | 默认键值 | 键值类型 | 说明 |
 | --- | --- | --- | --- | --- |
-| 会话 | menu_dialogs | 私信 | string | 多语言 |
+| 对话 | menu_dialogs | 私信 | string | 多语言 |
 | 消息 | menu_messages | 消息 | string | 多语言 |
 | 通知 | menu_notifies | 通知 | string | 多语言 |
 | 通知-系统 | menu_notify_systems | 系统 | string | 多语言 |

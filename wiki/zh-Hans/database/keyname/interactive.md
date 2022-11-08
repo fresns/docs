@@ -13,12 +13,12 @@
 | 附近帖子默认范围（公里） | nearby_length_km | 50 | number |  |
 | 附近帖子默认范围（英里） | nearby_length_mi | 30 | number |  |
 
-## 会话功能设置
+## 对话功能设置
 
 | 栏目标题 | 键名 | 默认键值 | 键值类型 | 说明 |
 | --- | --- | --- | --- | --- |
-| 私信会话功能 | dialog_status | false | boolean |  |
-| 私信会话附件 | dialog_files | ["image"] | array | image,video,audio,document<br>数组 |
+| 私信对话功能 | dialog_status | false | boolean |  |
+| 私信对话附件 | dialog_files | ["image"] | array | image,video,audio,document<br>数组 |
 
 ## 关注功能设置
 

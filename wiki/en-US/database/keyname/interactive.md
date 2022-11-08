@@ -17,8 +17,8 @@
 
 | Menu Title | Key Name | Default Key Value | Value Type | Description |
 | --- | --- | --- | --- | --- |
-| 私信会话功能 | dialog_status | false | boolean |  |
-| 私信会话附件 | dialog_files | ["image"] | array | image,video,audio,document<br>数组 |
+| 私信对话功能 | dialog_status | false | boolean |  |
+| 私信对话附件 | dialog_files | ["image"] | array | image,video,audio,document<br>数组 |
 
 ## Follow Function
 

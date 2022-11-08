@@ -95,7 +95,7 @@
     "birthday": "String / 生日",
     "bio": "String / 简介",
     "location": "String / 位置",
-    "dialogLimit": "Number / 会话设置，1.允许所有用户 2.仅允许我关注的用户 3.我关注的用户和已认证的用户 4.不允许所有用户",
+    "dialogLimit": "Number / 对话设置，1.允许所有用户 2.仅允许我关注的用户 3.我关注的用户和已认证的用户 4.不允许所有用户",
     "commentLimit": "Number / 评论设置，1.允许所有用户 2.仅允许我关注的用户 3.我关注的用户和已认证的用户 4.不允许所有用户",
     "timezone": "String / 自定义 UTC 时区",
     "verifiedStatus": "Boolean / 是否认证",

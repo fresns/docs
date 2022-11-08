@@ -16,7 +16,7 @@
 
 | Parameter Name | Type | Required | Description |
 | --- | --- | --- | --- |
-| dialogId | Number | **required** | 会话 ID |
+| dialogId | Number | **required** | 对话 ID |
 
 ## Return
 
@@ -26,7 +26,7 @@
     "message": "ok",
     "data": {
         "user": {
-            // 与我会话的用户信息
+            // 与我对话的用户信息
             // Common Data Structure -> User Info
         }
     }

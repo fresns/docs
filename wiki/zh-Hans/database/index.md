@@ -49,8 +49,8 @@
 
 | 表名 | 描述 |
 | --- | --- |
-| **dialogs** | 会话表 |
-| **dialog_messages** | 会话消息表 |
+| **dialogs** | 对话表 |
+| **dialog_messages** | 对话消息表 |
 | **notifies** | 通知信息表 |
 | **mentions** | 艾特记录表 |
 

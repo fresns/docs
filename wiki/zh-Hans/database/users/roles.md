@@ -35,7 +35,7 @@
         "isCustom": false //false=固定；true=自定义
     },
     {
-        "permKey": "dialog", //会话权限
+        "permKey": "dialog", //对话权限
         "permValue": true, //false=无权；true=有权
         "isCustom": false
     },

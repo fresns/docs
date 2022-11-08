@@ -3,7 +3,7 @@
 | Column Name | Type | Comment | Default | Null | Remark |
 | --- | --- | --- | --- | --- | --- |
 | id | bigint *UNSIGNED* | Primary Key ID |  | NO | 自动递赠 |
-| dialog_id | bigint *UNSIGNED* | 会话 ID |  | NO | 关联字段 dialogs > id |
+| dialog_id | bigint *UNSIGNED* | 对话 ID |  | NO | 关联字段 dialogs > id |
 | send_user_id | bigint *UNSIGNED* | 发信者 ID |  | NO | 关联字段 [users->id](../users/users.md) |
 | send_deleted_at | timestamp | 发信者-Delete Time |  | YES | 为空代表没有删除 |
 | message_type | tinyint *UNSIGNED* | 信息类型  | 1 | NO | 1.文本 / 2.文件 |

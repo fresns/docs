@@ -1,4 +1,4 @@
-# [会话]删除会话
+# [对话]删除对话
 
 - 接口地址：`/api/v2/dialog/delete`
 - 请求方式：`DELETE`
@@ -23,7 +23,7 @@
 **接口使用说明**
 
 - `dialogId` 和 `messageIds` 二选一传参，不可同时传参。
-- `type = dialog` 使用 `dialogId` 参数，将当前会话框设置为删除，并将会话下属于当前用户的消息全部删除。
+- `type = dialog` 使用 `dialogId` 参数，将当前对话框设置为删除，并将对话下属于当前用户的消息全部删除。
 - `type = message` 使用 `messageIds` 参数，批量删除指定 ID 的消息。
 
 ## 返回结果

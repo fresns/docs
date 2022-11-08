@@ -67,7 +67,7 @@ PermissionUtility::checkUserRolePerm($userId, $permRoleIds);
 
 *将拥有权限的角色 ID 和需要确认的用户 ID 传参，该功能会判断用户名下所有角色是否拥有授权角色。*
 
-## 判断用户会话权限
+## 判断用户对话权限
 
 ```php
 PermissionUtility::checkUserDialogPerm($receiveUserId, $authUserId, $langTag);
