@@ -63,6 +63,7 @@
     "view": "View",
     "share": "Share",
     "more": "More",
+    "file": "File",
     "image": "Image",
     "video": "Video",
     "audio": "Audio",

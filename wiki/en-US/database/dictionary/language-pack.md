@@ -64,6 +64,7 @@
     {"name":"view","canDelete":false},
     {"name":"share","canDelete":false},
     {"name":"more","canDelete":false},
+    {"name":"file","canDelete":false},
     {"name":"image","canDelete":false},
     {"name":"video","canDelete":false},
     {"name":"audio","canDelete":false},

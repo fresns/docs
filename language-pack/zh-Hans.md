@@ -63,6 +63,7 @@
     "view": "查看",
     "share": "分享",
     "more": "更多",
+    "file": "文件",
     "image": "图片",
     "video": "视频",
     "audio": "音频",
