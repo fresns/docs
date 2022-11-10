@@ -202,6 +202,7 @@ function sidebarApi() {
             collapsible: true,
             items: [
                 { text: 'Global Configs', link: '/api/global/configs.md' },
+                { text: 'Code Messages', link: '/api/global/code-messages.md' },
                 { text: 'Extend Archives', link: '/api/global/archives.md' },
                 { text: 'Get Upload Token', link: '/api/global/upload-token.md' },
                 { text: 'User Roles', link: '/api/global/roles.md' },

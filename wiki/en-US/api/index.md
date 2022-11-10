@@ -5,6 +5,7 @@
 | Method | Endpoint Path | Description |
 | --- | --- | --- |
 | `GET` | /api/v2/global/configs | Global Configs |
+| `GET` | /api/v2/global/code-messages | Code Messages |
 | `GET` | /api/v2/global/`{type}`/archives | Extend Archives |
 | `GET` | /api/v2/global/upload-token | Get Upload Token |
 | `GET` | /api/v2/global/roles | User Roles |
@@ -63,8 +64,8 @@
 | `PUT` | /api/v2/notification/mark-as-read | [Notification] Mark As Read |
 | `DELETE` | /api/v2/notification/delete | [Notification] Delete |
 | `GET` | /api/v2/conversation/list | [Conversation] List |
-| `GET` | /api/v2/conversation/`{uidOrUsername}`/detail | [Conversation] Detail |
-| `GET` | /api/v2/conversation/`{uidOrUsername}`/messages | [Conversation] Messages |
+| `GET` | /api/v2/conversation/`{conversationId}`/detail | [Conversation] Detail |
+| `GET` | /api/v2/conversation/`{conversationId}`/messages | [Conversation] Messages |
 | `PUT` | /api/v2/conversation/mark-as-read | [Conversation] Mark As Read |
 | `PUT` | /api/v2/conversation/pin | [Conversation] Pin Conversation |
 | `POST` | /api/v2/conversation/send-message | [Conversation] Send Message |
