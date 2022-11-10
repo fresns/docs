@@ -1,6 +1,6 @@
 # [Conversation] Messages
 
-- Endpoint Path: `/api/v2/conversation/{uidOrUsername}/messages`
+- Endpoint Path: `/api/v2/conversation/{conversationId}/messages`
 - Method: `GET`
 - Request: `Rest` + `Query`
 
@@ -16,7 +16,7 @@
 
 | Parameter Name | Type | Required | Description |
 | --- | --- | --- | --- |
-| uidOrUsername | String | **required** | 用户 `uid` 或者 `username` |
+| conversationId | Number | **required** | Conversation ID |
 
 ## Query Params
 
@@ -40,20 +40,21 @@
         },
         "list": [
             {
-                "messageId": "Number / 消息 ID",
-                "sendUser": {
+                "id": "Number / Message ID",
+                "user": {
                     // 发信用户信息
                     // Common Data Structure -> User Info
                 },
-                "sendUserIsMe": "Boolean / 是否为自己发的",
-                "sendTime": "String / 发送时间",
-                "sendTimeFormat": "String / 格式化的发送时间",
+                "userIsDeactivate": "Boolean / 用户是否停用",
+                "isMe": "Boolean / 是否为自己发的",
                 "type": "Number / 1.文本消息 2.文件消息",
                 "content": "String / 消息内容",
                 "file": {
                     // 文件消息专用
                     // Common Data Structure -> File Info
                 },
+                "datetime": "String / 发送时间",
+                "datetimeFormat": "String / 格式化的发送时间",
                 "readStatus": "Boolean / 阅读状态"
             }
         ]

@@ -1,6 +1,6 @@
 # [对话]获取消息列表
 
-- 接口地址：`/api/v2/conversation/{uidOrUsername}/messages`
+- 接口地址：`/api/v2/conversation/{conversationId}/messages`
 - 请求方式：`GET`
 - 传参方式：`Rest` + `Query`
 
@@ -16,7 +16,7 @@
 
 | 参数名 | 类型 | 是否必传 | 说明 |
 | --- | --- | --- | --- |
-| uidOrUsername | String | YES | 用户 `uid` 或者 `username` |
+| conversationId | Number | YES | 对话 ID |
 
 ## Query 参数
 
@@ -40,20 +40,21 @@
         },
         "list": [
             {
-                "messageId": "Number / 消息 ID",
-                "sendUser": {
+                "id": "Number / 消息 ID",
+                "user": {
                     // 发信用户信息
                     // 通用数据结构->用户信息
                 },
-                "sendUserIsMe": "Boolean / 是否为自己发的",
-                "sendTime": "String / 发送时间",
-                "sendTimeFormat": "String / 格式化的发送时间",
+                "userIsDeactivate": "Boolean / 用户是否停用",
+                "isMe": "Boolean / 是否为自己发的",
                 "type": "Number / 1.文本消息 2.文件消息",
                 "content": "String / 消息内容",
                 "file": {
                     // 文件消息专用
                     // 通用数据结构->文件信息
                 },
+                "datetime": "String / 发送时间",
+                "datetimeFormat": "String / 格式化的发送时间",
                 "readStatus": "Boolean / 阅读状态"
             }
         ]

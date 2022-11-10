@@ -83,8 +83,8 @@
                     // actionObject=5  评论信息
                 },
                 "actionCid": "String / 评论事件的 cid",
-                "time": "String / 通知时间",
-                "timeFormat": "String / 通知时间格式化",
+                "datetime": "String / 通知时间",
+                "datetimeFormat": "String / 通知时间格式化",
                 "readStatus": "Boolean / 阅读状态"
             }
         ]

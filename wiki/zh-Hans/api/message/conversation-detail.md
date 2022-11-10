@@ -1,6 +1,6 @@
 # [对话]获取对话详情
 
-- 接口地址：`/api/v2/conversation/{uidOrUsername}/detail`
+- 接口地址：`/api/v2/conversation/{conversationId}/detail`
 - 请求方式：`GET`
 - 传参方式：`Rest`
 
@@ -16,7 +16,7 @@
 
 | 参数名 | 类型 | 是否必传 | 说明 |
 | --- | --- | --- | --- |
-| uidOrUsername | String | YES | 用户 `uid` 或者 `username` |
+| conversationId | Number | YES | 对话 ID |
 
 ## 返回结果
 
@@ -26,10 +26,12 @@
     "message": "ok",
     "data": {
         "id": "Number / 对话 ID",
+        "userIsDeactivate": "Boolean / 用户是否停用",
         "user": {
             // 与我对话的用户信息
             // 通用数据结构->用户信息
         },
+        "messageCount": "Number / 全部消息数",
         "unreadCount": "Number / 对话框未读消息数"
     }
 }

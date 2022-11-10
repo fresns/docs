@@ -16,6 +16,7 @@
 
 | Parameter Name | Type | Required | Description |
 | --- | --- | --- | --- |
+| isPin | Boolean | *optional* | 是否 Pin （留空输出全部） |
 | pageSize | Number | *optional* | 每页显示条数（默认 15 条） |
 | page | Number | *optional* | 页码（默认 1） |
 
@@ -34,17 +35,19 @@
         },
         "list": [
             {
-                "id": "Number / 对话 ID",
+                "id": "Number / Conversation ID",
+                "userIsDeactivate": "Boolean / User is deactivate",
                 "user": {
                     // 与我对话的用户信息
                     // Common Data Structure -> User Info
                 },
                 "latestMessage": {
-                    "messageId": "Number / 最新一条消息 ID",
-                    "time": "String / 最新一条消息的时间",
-                    "timeFormat": "String / 最新一条消息的时间格式化",
+                    "id": "Number / 最新一条消息 ID",
                     "message": "String / 最新一条消息内容",
+                    "datetime": "String / 最新一条消息的时间",
+                    "datetimeFormat": "String / 最新一条消息的时间格式化",
                 },
+                "messageCount": "Number / 全部消息数",
                 "unreadCount": "Number / 对话框未读消息数"
             }
         ]

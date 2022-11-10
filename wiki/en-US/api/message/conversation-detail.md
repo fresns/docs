@@ -1,6 +1,6 @@
 # [Conversation] Detail
 
-- Endpoint Path: `/api/v2/conversation/{uidOrUsername}/detail`
+- Endpoint Path: `/api/v2/conversation/{conversationId}/detail`
 - Method: `GET`
 - Request: `Rest`
 
@@ -16,7 +16,7 @@
 
 | Parameter Name | Type | Required | Description |
 | --- | --- | --- | --- |
-| uidOrUsername | String | **required** | 用户 `uid` 或者 `username` |
+| conversationId | Number | **required** | Conversation ID |
 
 ## Return
 
@@ -25,11 +25,13 @@
     "code": 0,
     "message": "ok",
     "data": {
-        "id": "Number / 对话 ID",
+        "id": "Number / Conversation ID",
+        "userIsDeactivate": "Boolean / User is deactivate",
         "user": {
             // 与我对话的用户信息
             // Common Data Structure -> User Info
         },
+        "messageCount": "Number / 全部消息数",
         "unreadCount": "Number / 对话框未读消息数"
     }
 }
