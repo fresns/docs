@@ -38,6 +38,13 @@ Get configuration values from the database [configs](../../database/systems/conf
 {{ fs_lang('KeyName') }}
 ```
 
+- [Code Message](../../api/error-code.md)
+- Configuration Path `Panel > Clients > Code Messages`
+
+```php
+{{ fs_code_message('code') }}
+```
+
 ## Account and User
 
 ```php
