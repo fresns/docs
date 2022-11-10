@@ -203,8 +203,8 @@
 | 36603 | You can not send messages to yourself |
 | 36604 | Each message should be either [file] or [text] |
 | 36605 | The message could not be sent for the block words it contains |
-| 36606 | The counterparty only allow members it follows to send message to it |
-| 36607 | The counterparty only allow members it follows and verified members to send message to it |
+| 36606 | The user has set that only the users he follows can send messages |
+| 36607 | The user has set that only the users he follows and the verified users can send messages |
 | 36608 | The other party has set the conversation off function |
 | 36609 | Only your own conversation messages could be deleted. |
 | **Notification** |  |
@@ -269,3 +269,6 @@
 | 38206 | There are banned words in the title, please modify it before publishing |
 | 38207 | There are banned words in the content, please revise before publishing |
 | 38208 | Group cannot be empty, please select group |
+| 38209 | The author has set only the users he follows to comment |
+| 38210 | The author has set only the users he follows and the verified users can comment |
+| 38211 | The author has turned off the comment function |
