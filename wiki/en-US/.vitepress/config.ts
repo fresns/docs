@@ -267,6 +267,7 @@ function sidebarApi() {
                 { text: '[Conversation] List', link: '/api/message/conversation-list.md' },
                 { text: '[Conversation] Detail', link: '/api/message/conversation-detail.md' },
                 { text: '[Conversation] Messages', link: '/api/message/conversation-messages.md' },
+                { text: '[Conversation] Pin', link: '/api/message/conversation-pin.md' },
                 { text: '[Conversation] Mark As Read', link: '/api/message/conversation-read.md' },
                 { text: '[Conversation] Send Message', link: '/api/message/conversation-send.md' },
                 { text: '[Conversation] Delete', link: '/api/message/conversation-delete.md' },

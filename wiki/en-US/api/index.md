@@ -66,8 +66,8 @@
 | `GET` | /api/v2/conversation/list | [Conversation] List |
 | `GET` | /api/v2/conversation/`{conversationId}`/detail | [Conversation] Detail |
 | `GET` | /api/v2/conversation/`{conversationId}`/messages | [Conversation] Messages |
-| `PUT` | /api/v2/conversation/mark-as-read | [Conversation] Mark As Read |
 | `PUT` | /api/v2/conversation/pin | [Conversation] Pin Conversation |
+| `PUT` | /api/v2/conversation/mark-as-read | [Conversation] Mark As Read |
 | `POST` | /api/v2/conversation/send-message | [Conversation] Send Message |
 | `DELETE` | /api/v2/conversation/delete | [Conversation] Delete Conversation or Messages |
 

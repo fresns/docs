@@ -43,10 +43,12 @@
                 },
                 "latestMessage": {
                     "id": "Number / 最新一条消息 ID",
+                    "type": "Number / 1.文本消息 2.文件消息",
                     "message": "String / 最新一条消息内容",
                     "datetime": "String / 最新一条消息的时间",
                     "datetimeFormat": "String / 最新一条消息的时间格式化",
                 },
+                "isPin": "Boolean / 是否置顶",
                 "messageCount": "Number / 全部消息数",
                 "unreadCount": "Number / 对话框未读消息数"
             }

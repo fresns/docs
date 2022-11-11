@@ -277,6 +277,7 @@ function sidebarApi() {
                 { text: '[对话]获取对话列表', link: '/api/message/conversation-list.md' },
                 { text: '[对话]获取对话详情', link: '/api/message/conversation-detail.md' },
                 { text: '[对话]获取消息列表', link: '/api/message/conversation-messages.md' },
+                { text: '[对话]置顶对话', link: '/api/message/conversation-pin.md' },
                 { text: '[对话]更新阅读状态', link: '/api/message/conversation-read.md' },
                 { text: '[对话]发送消息', link: '/api/message/conversation-send.md' },
                 { text: '[对话]删除对话或对话的消息', link: '/api/message/conversation-delete.md' },

@@ -66,8 +66,8 @@
 | `GET` | /api/v2/conversation/list | [对话]获取对话列表 |
 | `GET` | /api/v2/conversation/`{conversationId}`/detail | [对话]获取对话详情 |
 | `GET` | /api/v2/conversation/`{conversationId}`/messages | [对话]获取消息列表 |
-| `PUT` | /api/v2/conversation/mark-as-read | [对话]更新阅读状态 |
 | `PUT` | /api/v2/conversation/pin | [对话]置顶对话 |
+| `PUT` | /api/v2/conversation/mark-as-read | [对话]更新阅读状态 |
 | `POST` | /api/v2/conversation/send-message | [对话]发送消息 |
 | `DELETE` | /api/v2/conversation/delete | [对话]删除对话或对话的消息 |
 

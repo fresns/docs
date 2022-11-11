@@ -22,8 +22,8 @@
 
 | Parameter Name | Type | Required | Description |
 | --- | --- | --- | --- |
-| type | String | **required** | 三选一 `post`,`comment`,`extend` |
-| fsid | String | **required** | type 参数对应的数据表简写 ID（pid/cid/eid） |
+| type | String | **required** | 三选一 `post`,`comment`,`extend`,`conversation` |
+| fsid | String | **required** | type 参数对应的数据表简写 ID（pid/cid/eid/conversationId） |
 
 ## Return
 
