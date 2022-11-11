@@ -1,6 +1,6 @@
-# 直接发表
+# 快速发表
 
-- 接口地址：`/api/v2/editor/direct-publish`
+- 接口地址：`/api/v2/editor/{type}/quick-publish`
 - 请求方式：`POST`
 - 传参方式：`multipart/form-data`
 
@@ -12,11 +12,16 @@
 | uid | YES | YES |
 | token | YES | YES |
 
+## Rest 参数
+
+| 参数名 | 类型 | 是否必传 | 说明 |
+| --- | --- | --- | --- |
+| type | String | YES | `post` 或 `comment` |
+
 ## Body 参数
 
 | 参数名 | 类型 | 是否必传 | **帖子**说明 | **评论**说明 |
 | --- | --- | --- | --- | --- |
-| type | String | YES | `post` | `comment` |
 | postGid | String | NO | 小组<br>[post_editor_group_required](../../database/keyname/publish.md)<br>如果配置必填，则此处传参也必填 | *帖子专用* |
 | postTitle | String | NO | 标题<br>[post_editor_title_required](../../database/keyname/publish.md)<br>如果配置必填，则此处传参也必填 | *帖子专用* |
 | postIsComment | Boolean | NO | 是否可以评论帖子 | *帖子专用* |
@@ -28,7 +33,7 @@
 | isAnonymous | Boolean | NO | 是否匿名 |  |
 | mapJson | Object | NO | 位置信息 |  |
 | eid | String | NO | 扩展内容 |  |
-| file | File | NO | 文件 |  |
+| file | File | NO | 图片文件 | 图片文件 |
 
 **接口使用说明**
 

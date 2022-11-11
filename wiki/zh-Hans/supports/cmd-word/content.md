@@ -91,10 +91,10 @@
 ```
 :::
 
-## 直接发表内容
+## 快速发表内容
 
 ```php
-\FresnsCmdWord::plugin('Fresns')->contentDirectPublish($wordBody)
+\FresnsCmdWord::plugin('Fresns')->contentQuickPublish($wordBody)
 ```
 | 参数名 | 类型 | 是否必传 | **帖子**说明 | **评论**说明 |
 | --- | --- | --- | --- | --- |

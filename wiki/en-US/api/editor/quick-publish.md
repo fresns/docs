@@ -1,6 +1,6 @@
-# Direct Publish
+# Quick Publish
 
-- Endpoint Path: `/api/v2/editor/direct-publish`
+- Endpoint Path: `/api/v2/editor/{type}/quick-publish`
 - Method: `POST`
 - Request: `multipart/form-data`
 
@@ -12,11 +12,16 @@
 | uid | **required** | **required** |
 | token | **required** | **required** |
 
+## Rest Params
+
+| Parameter Name | Type | Required | Description |
+| --- | --- | --- | --- |
+| type | String | **required** | `post` 或 `comment` |
+
 ## Body Params
 
 | 参数名 | 类型 | 是否必传 | **帖子**说明 | **评论**说明 |
 | --- | --- | --- | --- | --- |
-| type | String | **required** | `post` | `comment` |
 | postGid | String | *optional* | 小组<br>[post_editor_group_required](../../database/keyname/publish.md)<br>如果配置必填，则此处传参也必填 | *帖子专用* |
 | postTitle | String | *optional* | 标题<br>[post_editor_title_required](../../database/keyname/publish.md)<br>如果配置必填，则此处传参也必填 | *帖子专用* |
 | postIsComment | Boolean | *optional* | 是否可以评论帖子 | *帖子专用* |
@@ -28,7 +33,7 @@
 | isAnonymous | Boolean | *optional* | 是否匿名 |  |
 | mapJson | Object | *optional* | 位置信息 |  |
 | eid | String | *optional* | 扩展内容 |  |
-| file | File | *optional* | 文件 |  |
+| file | File | *optional* | 图片文件 | 图片文件 |
 
 **Request Description**
 

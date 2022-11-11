@@ -120,7 +120,7 @@
 
 | 请求方式 | 接口路径 | 描述 |
 | --- | --- | --- |
-| `POST` | /api/v2/editor/direct-publish | 直接发表 |
+| `POST` | /api/v2/editor/`{type}`/quick-publish | 快速发表 |
 | `GET` | /api/v2/editor/`{type}`/config | 编辑器配置信息 |
 | `GET` | /api/v2/editor/`{type}`/drafts | 获取草稿列表 |
 | `POST` | /api/v2/editor/`{type}`/create | 创建草稿 |

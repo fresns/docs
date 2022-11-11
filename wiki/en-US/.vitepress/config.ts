@@ -326,7 +326,7 @@ function sidebarApi() {
             text: 'Editor',
             collapsible: true,
             items: [
-                { text: 'Direct Publish', link: '/api/editor/direct-publish.md' },
+                { text: 'Quick Publish', link: '/api/editor/quick-publish.md' },
                 { text: 'Editor Config', link: '/api/editor/config.md' },
                 { text: 'Draft List', link: '/api/editor/drafts.md' },
                 { text: 'Create Draft', link: '/api/editor/create.md' },

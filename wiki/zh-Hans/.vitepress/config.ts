@@ -336,7 +336,7 @@ function sidebarApi() {
             text: '编辑器',
             collapsible: true,
             items: [
-                { text: '直接发表', link: '/api/editor/direct-publish.md' },
+                { text: '快速发表', link: '/api/editor/quick-publish.md' },
                 { text: '编辑器配置信息', link: '/api/editor/config.md' },
                 { text: '获取草稿列表', link: '/api/editor/drafts.md' },
                 { text: '创建草稿', link: '/api/editor/create.md' },

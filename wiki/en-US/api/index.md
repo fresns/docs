@@ -120,7 +120,7 @@
 
 | Method | Endpoint Path | Description |
 | --- | --- | --- |
-| `POST` | /api/v2/editor/direct-publish | Direct Publish |
+| `POST` | /api/v2/editor/`{type}`/quick-publish | Quick Publish |
 | `GET` | /api/v2/editor/`{type}`/config | Editor Config |
 | `GET` | /api/v2/editor/`{type}`/drafts | Draft List |
 | `POST` | /api/v2/editor/`{type}`/create | Create Draft |
