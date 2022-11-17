@@ -94,6 +94,7 @@
     "gender": "Number / 性别 0.未知 1.男 2.女",
     "birthday": "String / 生日",
     "bio": "String / 简介",
+    "bioHtml": "String / 简介 HTML 格式",
     "location": "String / 位置",
     "conversationLimit": "Number / 对话设置，1.允许所有用户 2.仅允许我关注的用户 3.我关注的用户和已认证的用户 4.不允许所有用户",
     "commentLimit": "Number / 评论设置，1.允许所有用户 2.仅允许我关注的用户 3.我关注的用户和已认证的用户 4.不允许所有用户",
