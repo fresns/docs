@@ -112,7 +112,7 @@
     "accountLoginByPassword": "密码登录",
     "accountLoginByCode": "验证码登录",
     "accountLoginByConnects": "快速登录",
-    "accountLogout": "退出",
+    "accountLogout": "退出登录",
     "accountDelete": "注销",
     "accountRestore": "撤销注销",
     "accountReset": "重置密码",

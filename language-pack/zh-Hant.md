@@ -112,7 +112,7 @@
     "accountLoginByPassword": "密碼登錄",
     "accountLoginByCode": "驗證碼登錄",
     "accountLoginByConnects": "快速登錄",
-    "accountLogout": "登出",
+    "accountLogout": "登出賬號",
     "accountDelete": "註銷",
     "accountRestore": "撤銷註銷",
     "accountReset": "重置密碼",

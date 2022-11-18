@@ -112,7 +112,7 @@
     "accountLoginByPassword": "Password Login",
     "accountLoginByCode": "Code Login",
     "accountLoginByConnects": "Quick Login",
-    "accountLogout": "Logout",
+    "accountLogout": "Logout Account",
     "accountDelete": "Delete Account",
     "accountRestore": "Revocation Delete Account",
     "accountReset": "Reset Password",
