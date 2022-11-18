@@ -33,7 +33,7 @@
 | 31501 | Account not logged in, Unable to use `(AID is empty)` |
 | 31502 | Wrong account or record not exist |
 | 31503 | Lost login token, Please login again `(Token is empty)` |
-| 31504 | Login token are disabled `(Token not enabled)` |
+| 31504 | Login token is no longer valid, please login again `(Token not enabled or expired)` |
 | 31505 | Account login token are incorrect or do not exist `(Account Token is incorrect)` |
 | 31601 | User not logged in, Unable to use `(UID is empty)` |
 | 31602 | Wrong user or record not exist |
