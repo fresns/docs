@@ -23,11 +23,12 @@ Fresns 是一款基于 PHP 和 MySQL 开发的社交社区网络服务软件。
 ### 1、获取安装包
 
 ::: tip 方式 1: 手动下载完整包
-- [下载 Fresns 安装包](https://fresns.cn/latest.zip)
+- [下载 Fresns 安装包（中国版）](https://fresns.cn/latest.zip)
+- [下载 Fresns 安装包（国际版）](https://fresns.org/latest.zip)
 :::
 
 ::: tip 方式 2: 基于 Composer 下载
-- 下载程序
+- 下载程序（国际版）
 ```bash
 composer create-project fresns/fresns
 ```
@@ -39,6 +40,8 @@ php artisan vendor:publish --provider="Fresns\ThemeManager\Providers\ThemeServic
 php artisan vendor:publish --provider="Fresns\MarketManager\Providers\MarketServiceProvider"
 ```
 :::
+
+> 说明：中国版与国际版的功能一致无区别，但是彼此使用的应用市场不同，中国版应用市场部署在中国境内服务器，并且数据与国际版互不相通。
 
 ### 2、配置 Web 服务器
 

@@ -21,7 +21,7 @@ Before you install Fresns, it's important to check that your server meets the re
 ### 1. Get the package
 
 ::: tip Option 1: Download the full package manually
-- [Click to download](https://files.fresns.org/latest.zip)
+- [Click to download](https://fresns.org/latest.zip)
 :::
 
 ::: tip Option 2: Download via Composer
