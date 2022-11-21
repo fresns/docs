@@ -49,10 +49,18 @@ fresns/             //主程序根目录
     "version": "1.0.0", // 语义化版本号
     "scene": [
         // 插件用途场景
-        // 参见开发者文档「数据库」插件表介绍 plugins > scene
     ],
     "accessPath": "/mall", // 前端访客路由
     "settingPath": "/mall/admin", // 后端设置页路由
+    "providers": [
+        "Plugins\\FresnsEmail\\Providers\\FresnsEmailServiceProvider",
+        "Plugins\\FresnsEmail\\Providers\\CmdWordServiceProvider",
+        "Plugins\\FresnsEmail\\Providers\\EventServiceProvider"
+    ],
+    "autoloadFiles": [
+        // autoload files
+    ],
+    "aliases": {}
 }
 ```
 
@@ -99,16 +107,6 @@ fresns/             //主程序根目录
     "autoload": {
         "psr-4": {
             "Plugins\\FresnsEmail\\": "./"
-        }
-    },
-    "extra": {
-        "laravel": {
-            "providers": [
-                "Plugins\\FresnsEmail\\Providers\\FresnsEmailServiceProvider",
-                "Plugins\\FresnsEmail\\Providers\\CmdWordServiceProvider",
-                "Plugins\\FresnsEmail\\Providers\\RouteServiceProvider"
-            ],
-            "aliases": {}
         }
     }
 }

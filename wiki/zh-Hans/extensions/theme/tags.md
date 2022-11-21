@@ -50,30 +50,72 @@
 ```php
 # 是否登录账号
 fs_account()->check()
+fs_account()->guest()
 
 # 是否登录用户
 fs_user()->check()
+fs_user()->guest()
 ```
 
 ```php
 # 账号参数
-fs_account()->get('参数名')
+fs_account('参数名')
 
 # 用户参数
-fs_user()->get('参数名')
+fs_user('参数名')
 ```
 
 - 参数名来自 API `data` 参数。
 - [账号 API](../../api/account/detail.md)
 - [用户 API](../../api/user/detail.md)
 
-## 用户面板数据
+## 全局数据
+
+### 用户面板
 
 ```php
-$userPanel['参数名']['参数名']
+fs_user_panel('key')
+// 或者
+fs_user_panel('key.key')
 ```
 
 - 参数来自[用户面板](../../api/user/panel.md)接口 `data`
+
+### 小组
+
+```php
+fs_groups() // 全部
+fs_groups('categories') // 小组分类
+fs_groups('tree') // 树结构全部小组
+```
+
+### 首页列表
+
+```php
+fs_index_list() // 全部
+fs_index_list('users') // 用户首页列表
+fs_index_list('groups') // 小组首页列表
+fs_index_list('hashtags') // 话题首页列表
+fs_index_list('posts') // 帖子首页列表
+fs_index_list('comments') // 评论首页列表
+```
+
+### 列表
+
+```php
+fs_list() // 全部
+fs_list('users') // 用户列表
+fs_list('groups') // 小组列表
+fs_list('hashtags') // 话题列表
+fs_list('posts') // 帖子列表
+fs_list('comments') // 评论列表
+```
+
+### 置顶帖子
+
+```php
+fs_stickies()
+```
 
 ## 客户端判断
 

@@ -49,10 +49,18 @@ When the plugin is installed and published, static resources are distributed to 
     "version": "1.0.0",
     "scene": [
         // Plugin usage scenarios
-        // See the developer documentation "Database" plugins table introduction plugins > scene
     ],
     "accessPath": "/mall", // Front-end visitor page path
     "settingPath": "/mall/admin", // Back-end settings page path
+    "providers": [
+        "Plugins\\FresnsEmail\\Providers\\FresnsEmailServiceProvider",
+        "Plugins\\FresnsEmail\\Providers\\CmdWordServiceProvider",
+        "Plugins\\FresnsEmail\\Providers\\EventServiceProvider"
+    ],
+    "autoloadFiles": [
+        // autoload files
+    ],
+    "aliases": {}
 }
 ```
 
@@ -99,16 +107,6 @@ When the plugin is installed and published, static resources are distributed to 
     "autoload": {
         "psr-4": {
             "Plugins\\FresnsEmail\\": "./"
-        }
-    },
-    "extra": {
-        "laravel": {
-            "providers": [
-                "Plugins\\FresnsEmail\\Providers\\FresnsEmailServiceProvider",
-                "Plugins\\FresnsEmail\\Providers\\CmdWordServiceProvider",
-                "Plugins\\FresnsEmail\\Providers\\RouteServiceProvider"
-            ],
-            "aliases": {}
         }
     }
 }

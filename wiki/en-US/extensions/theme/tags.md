@@ -50,30 +50,72 @@ Get configuration values from the database [configs](../../database/systems/conf
 ```php
 # Is the account logged in
 fs_account()->check()
+fs_account()->guest()
 
 # Is the user logged in
 fs_user()->check()
+fs_user()->guest()
 ```
 
 ```php
 # Account Parameter
-fs_account()->get('key')
+fs_account('key')
 
 # User Parameter
-fs_user()->get('key')
+fs_user('key')
 ```
 
 - The parameter key comes from the API `data` parameter.
 - [Account Detail API](../../api/account/detail.md)
 - [User Detail API](../../api/user/detail.md)
 
-## User Panel
+## Global Data
+
+### User Panel
 
 ```php
-$userPanel['key']['key']
+fs_user_panel('key')
+// or
+fs_user_panel('key.key')
 ```
 
 From [the user panel](../../api/user/panel.md) interface `data` parameters
+
+### Groups
+
+```php
+fs_groups() // All
+fs_groups('categories') // Group categories
+fs_groups('tree') // Tree all group
+```
+
+### Home List
+
+```php
+fs_index_list() // All
+fs_index_list('users') // User home list
+fs_index_list('groups') // Group home list
+fs_index_list('hashtags') // Hashtag home list
+fs_index_list('posts') // Post home list
+fs_index_list('comments') // Comment home list
+```
+
+### List
+
+```php
+fs_list() // All
+fs_list('users') // User list
+fs_list('groups') // Group list
+fs_list('hashtags') // Hashtag list
+fs_list('posts') // Post list
+fs_list('comments') // Comment list
+```
+
+### Sticky Post List
+
+```php
+fs_stickies()
+```
 
 ## Client Options
 
