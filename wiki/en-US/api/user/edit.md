@@ -30,6 +30,7 @@
 | commentLimit | Number | *optional* | 评论设置（留空代表不修改） |
 | timezone | String | *optional* | 偏好时区（留空代表不修改） |
 | archives | Array | *optional* | 扩展资料（留空代表不修改） |
+| deviceToken | String | *optional* | iOS 或 Android 设备 Token（留空代表不修改） |
 
 **Request Description**
 

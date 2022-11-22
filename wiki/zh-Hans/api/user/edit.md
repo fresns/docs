@@ -30,6 +30,7 @@
 | commentLimit | Number | NO | 评论设置（留空代表不修改） |
 | timezone | String | NO | 偏好时区（留空代表不修改） |
 | archives | Array | NO | 扩展资料（留空代表不修改） |
+| deviceToken | String | NO | iOS 或 Android 设备 Token（留空代表不修改） |
 
 **接口使用说明**
 

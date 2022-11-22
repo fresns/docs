@@ -29,6 +29,7 @@
 | editWalletPassword | String | NO | 修改钱包密码（留空代表不修改，以 Base64 传参） |
 | editWalletPasswordConfirm | String | NO | 再传一次新钱包密码（留空代表不修改，以 Base64 传参） |
 | editLastLoginTime | Boolean | NO | 最后一次登录时间（留空代表不修改）<br>`1` 更新 |
+| deviceToken | String | NO | iOS 或 Android 设备 Token（留空代表不修改） |
 
 **接口使用说明**
 
