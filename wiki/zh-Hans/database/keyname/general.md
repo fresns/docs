@@ -21,3 +21,4 @@
 | 私有模式：开放状态 | site_private_status | false | boolean |  |
 | 私有模式：支持插件 | site_private_service |  | **plugin** | 插件应用场景参数 `join` |
 | 私有模式：到期后的状态 | site_private_end_after | 1 | number | `1` 站点内容全部不可见<br>`2` 到期前内容可见，新内容不可见 |
+| 管理员邮箱 | site_email |  | string | 当运行出错时，展示给用户，便于用户反馈问题。 |
