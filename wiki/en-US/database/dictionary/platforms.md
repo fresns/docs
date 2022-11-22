@@ -7,7 +7,7 @@
 ```json
 [
     {"id":"1","name":"Other"},
-    {"id":"2","name":"PC Web"},
+    {"id":"2","name":"Desktop Web"},
     {"id":"3","name":"Mobile Web"},
     {"id":"4","name":"Responsive Web"},
     {"id":"5","name":"iOS App"},

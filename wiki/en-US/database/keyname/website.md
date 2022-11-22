@@ -25,6 +25,5 @@
 
 | Menu Title | Key Name | Default Key Value | Value Type | Description |
 | --- | --- | --- | --- | --- |
-| 启用状态 | FresnsEngine | true | boolean | 官方引擎启停用状态 |
-| 电脑主题 | FresnsEngine_Pc |  | string | 官方引擎电脑主题配置 |
+| 电脑主题 | FresnsEngine_Desktop |  | string | 官方引擎电脑主题配置 |
 | 手机主题 | FresnsEngine_Mobile |  | string | 官方引擎手机主题配置 |

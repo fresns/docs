@@ -11,12 +11,12 @@
 
 ### 前台说明
 
-- 前台界面的视图文件（模板文件）存储在项目根目录 `/extensions/themes/` 文件夹下，路径指引存储在配置表中，配置键名以引擎 `unikey` 加 `_Pc` 或 `_Mobile` 为命名格式。
+- 前台界面的视图文件（模板文件）存储在项目根目录 `/extensions/themes/` 文件夹下，路径指引存储在配置表中，配置键名以引擎 `unikey` 加 `_Desktop` 或 `_Mobile` 为命名格式。
 - 引擎根据系统提供的指引，找到主题模板文件夹，读取 Blade 模板文件，渲染界面。
 
 | 键名 | 例如引擎 unikey 为 `FresnsEngine` |
 | --- | --- |
-| {unikey}_Pc | FresnsEngine_Pc |
+| {unikey}_Desktop | FresnsEngine_Desktop |
 | {unikey}_Mobile | FresnsEngine_Mobile |
 
 ### 后台说明
