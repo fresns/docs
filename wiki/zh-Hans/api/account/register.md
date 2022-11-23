@@ -33,7 +33,9 @@
     "data": {
         "sessionToken": {
             "token": "String / 账号登录凭证",
-            "expiredTime": "String / 凭证有效时间，null 代表永久有效，格式为 Y-m-d H:i:s",
+            "expiredHours": "Number / 有效期小时数，null 代表永久有效",
+            "expiredDays": "Number / 有效期天数，null 代表永久有效",
+            "expiredDateTime": "String / 凭证有效时间，null 代表永久有效，格式为 Y-m-d H:i:s"
         },
         "items": {
             "walletRecharges": [

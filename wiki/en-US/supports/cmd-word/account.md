@@ -108,8 +108,11 @@
     "data": {
         "aid": "accounts > aid",
         "uid": "users > uid", //没有则输出 null
+        "tokenId": "session_tokens > id",
         "token": "session_tokens > token",
-        "expiredTime": "session_tokens > expired_at 留空代表永久有效，格式为 Y-m-d H:i:s" //没有则输出 null
+        "expiredHours": "有效期小时数", // 没有则输出 null
+        "expiredDays": "有效期天数", // 没有则输出 null
+        "expiredDateTime": "session_tokens > expired_at 留空代表永久有效，格式为 Y-m-d H:i:s", // 没有则输出 null
     }
 }
 ```

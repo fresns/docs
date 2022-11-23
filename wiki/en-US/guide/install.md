@@ -22,6 +22,7 @@ Before you install Fresns, it's important to check that your server meets the re
 
 ::: tip Option 1: Download the full package manually
 - [Click to download](https://fresns.org/latest.zip)
+- *Website engine and theme templates already built in*
 :::
 
 ::: tip Option 2: Download via Composer
@@ -36,6 +37,8 @@ php artisan vendor:publish --provider="Fresns\PluginManager\Providers\PluginServ
 php artisan vendor:publish --provider="Fresns\ThemeManager\Providers\ThemeServiceProvider"
 php artisan vendor:publish --provider="Fresns\MarketManager\Providers\MarketServiceProvider"
 ```
+
+- If you need a website, please go to the application market to select a website engine and theme template
 :::
 
 ### 2. Config the Web Server

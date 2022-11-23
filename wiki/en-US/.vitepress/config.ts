@@ -88,7 +88,7 @@ function navbar() {
                 { text: 'Sponsor', link: '/community/sponsor.md' },
                 { text: 'Contributing', link: '/contributing/' },
                 { text: 'Community', link: 'https://discuss.fresns.com' },
-                { text: 'Marketplace', link: 'https://marketplace.fresns.com/open-source' },
+                { text: 'Marketplace', link: 'https://market.fresns.com/open-source' },
             ],
             activeMatch: `^/(community|contributing)/`,
         }
@@ -639,7 +639,7 @@ function sidebarCommunity() {
             collapsible: true,
             items: [
                 { text: 'Community', link: 'https://discuss.fresns.com' },
-                { text: 'Marketplace', link: 'https://marketplace.fresns.com/open-source' },
+                { text: 'Marketplace', link: 'https://market.fresns.com/open-source' },
             ]
         },
     ]
