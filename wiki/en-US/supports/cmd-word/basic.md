@@ -116,3 +116,16 @@
 | account | String | **required** | 账号（邮箱或手机号） |
 | countryCode | Number | *optional* | 国际区号（手机号专用） |
 | verifyCode | String | **required** | 验证码 |
+
+## ipInfo
+
+```php
+\FresnsCmdWord::plugin('Fresns')->ipInfo($wordBody)
+```
+| Parameter Name | Type | Required | Description |
+| --- | --- | --- | --- |
+| ipv4 | String | *optional* |  |
+| ipv6 | String | *optional* |  |
+
+- 二选一传参
+- 输出结果同 [session_logs->device_info](../../database/systems/session-logs.md#设备信息-json)
