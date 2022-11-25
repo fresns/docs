@@ -4,7 +4,7 @@
 
 | 栏目标题 | 键名 | 默认键值 | 键值类型 | 说明 |
 | --- | --- | --- | --- | --- |
-| 引擎服务商 | engine_service | FresnsEngine | plugin |  |
+| 引擎 Cookie 前缀 | engine_cookie_prefix | fresns_ | string |  |
 | 引擎 API 类型 | engine_api_type | local | string | `local` 或 `remote` |
 | Key 关联 | engine_key_id |  | number | 关联字段 [session_keys->id](../systems/session-keys.md) |
 | API Host | engine_api_host |  | string |  |

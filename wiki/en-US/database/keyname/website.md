@@ -4,8 +4,8 @@
 
 | Menu Title | Key Name | Default Key Value | Value Type | Description |
 | --- | --- | --- | --- | --- |
-| 引擎服务商 | engine_service | FresnsEngine | plugin |  |
-| 引擎 API 类型 | engine_api_type | local | string | `local` 或 `remote` |
+| Engine Cookie Prefix | engine_cookie_prefix | fresns_ | string |  |
+| Engine API Type | engine_api_type | local | string | `local` 或 `remote` |
 | Key 关联 | engine_key_id |  | number | 关联字段 [session_keys->id](../systems/session-keys.md) |
 | API Host | engine_api_host |  | string |  |
 | API App ID | engine_api_app_id |  | string |  |

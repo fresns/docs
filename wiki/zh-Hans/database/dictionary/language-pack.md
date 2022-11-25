@@ -121,7 +121,7 @@
     {"name":"accountInfo","canDelete":false},
     {"name":"accountPoliciesTerms","canDelete":false},
     {"name":"accountPoliciesPrivacy","canDelete":false},
-    {"name":"accountPoliciesCookie","canDelete":false},
+    {"name":"accountPoliciesCookies","canDelete":false},
     {"name":"accountPoliciesDelete","canDelete":false},
     {"name":"password","canDelete":false},
     {"name":"passwordCurrent","canDelete":false},

@@ -37,7 +37,7 @@
 |  ---  |  ---  |  ---  |
 |  account_terms  |  服务条款  |  控制面板 > 基础设置 > 政策条款  |
 |  account_privacy  |  隐私权政策  |  控制面板 > 基础设置 > 政策条款  |
-|  account_cookie  |  Cookie 政策  |  控制面板 > 基础设置 > 政策条款  |
+|  account_cookies  |  Cookies 政策  |  控制面板 > 基础设置 > 政策条款  |
 |  account_delete  |  注销说明  |  控制面板 > 基础设置 > 政策条款  |
 |  site_name  |  站点名称  |  控制面板 > 系统设置 > 站点设置  |
 |  site_desc  |  站点介绍  |  控制面板 > 系统设置 > 站点设置  |

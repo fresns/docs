@@ -76,7 +76,7 @@
 | 站点介绍 | Systems > General |
 | 服务条款 | Systems > Policy > Content |
 | 隐私权政策 | Systems > Policy > Content |
-| Cookie 政策 | Systems > Policy > Content |
+| Cookies 政策 | Systems > Policy > Content |
 | 注销说明 | Systems > Policy > Content |
 | 验证码模板 | Systems > Send > Template > Config Template |
 | 钱包支付扩展名称 | Systems > Wallet > Recharge Services > Name |

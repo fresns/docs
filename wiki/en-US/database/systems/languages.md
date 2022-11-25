@@ -37,7 +37,7 @@
 |  ---  |  ---  |  ---  |
 |  account_terms  |  服务条款  |  Panel > 基础设置 > 政策条款  |
 |  account_privacy  |  隐私权政策  |  Panel > 基础设置 > 政策条款  |
-|  account_cookie  |  Cookie 政策  |  Panel > 基础设置 > 政策条款  |
+|  account_cookies |  Cookies 政策  |  Panel > 基础设置 > 政策条款  |
 |  account_delete  |  注销说明  |  Panel > 基础设置 > 政策条款  |
 |  site_name  |  站点名称  |  Panel > Systems > 站点设置  |
 |  site_desc  |  站点介绍  |  Panel > Systems > 站点设置  |
