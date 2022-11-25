@@ -22,6 +22,7 @@
 | 重置登录密码 | verifycode_template5 | 5 | 键值 JSON 格式见下方 |
 | 重置支付密码 | verifycode_template6 | 6 | 键值 JSON 格式见下方 |
 | 使用验证码登录 | verifycode_template7 | 7 | 键值 JSON 格式见下方 |
+| 使用验证码注销账号 | verifycode_template8 | 8 | 键值 JSON 格式见下方 |
 
 
 ```json

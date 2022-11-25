@@ -53,3 +53,4 @@ ConfigHelper::fresnsConfigByItemKey('键名');
 | configs | verifycode_template5 |
 | configs | verifycode_template6 |
 | configs | verifycode_template7 |
+| configs | verifycode_template8 |

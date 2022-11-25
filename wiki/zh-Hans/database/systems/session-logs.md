@@ -61,6 +61,7 @@
 ```json
 {
     "type": "Desktop", // Desktop, Mobile, Tablet, Bot
+    "mac": "2c:89:dc:71:b6:12",
     "brand": "Apple",
     "model": "Mac",
     "platformName": "Mac",
@@ -82,6 +83,11 @@
     "networkMobile": true,
     "networkProxy": false,
     "networkHosting": false,
+    "appImei": "",
+    "appAndroidId": "",
+    "appOaid": "",
+    "appIdfa": "",
+    "simImsi": "",
     "mapId": 1, // 字典数据: 地图服务商编号
     "latitude": 113.324520,
     "longitude": 23.099994,

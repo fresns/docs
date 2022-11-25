@@ -53,3 +53,4 @@ The contents listed below are not stored in the multilingual table or in the flo
 | configs | verifycode_template5 |
 | configs | verifycode_template6 |
 | configs | verifycode_template7 |
+| configs | verifycode_template8 |
