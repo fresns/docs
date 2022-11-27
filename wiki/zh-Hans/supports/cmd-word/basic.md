@@ -68,6 +68,7 @@
 | type | Number | YES | [记录类型](../../database/systems/session-logs.md#日志类型-type) |
 | platformId | Number | YES | 平台编号（配置表 [platforms](../../database/dictionary/platforms.md) 键名的键值） |
 | version | String | YES | 语义化版本号，例如: `2.0.0` |
+| appId | String | NO | 密钥 App ID |
 | langTag | String | NO | 语言标签 |
 | pluginUnikey | String | NO | 插件 Unikey |
 | aid | String | NO | 账号 |

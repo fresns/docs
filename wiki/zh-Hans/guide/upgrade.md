@@ -34,13 +34,13 @@ fresns/         // 主程序根目录
 └── install.lock    // 安装锁定文件（有该文件后，禁止再执行安装）
 ```
 
-- 2、覆盖后，将 `fresns.json` 文件中 `plugins` 括号里所有插件停用（`true` 修改为 `false`），其余配置项不动（物理升级后，系统会自动修正为最新版信息和恢复之前启用的插件）。
+- 2、覆盖后，将 `fresns.json` 文件中 `plugins` 括号里所有插件停用（`true` 修改为 `false`，或者删除插件状态），其余配置项不动（物理升级后，系统会自动修正为最新版信息和恢复之前启用的插件）。
 
 ```json
 {
     "name": "Fresns",
     "version": "2.0.0",
-    "versionInt": 1,
+    "versionInt": 1, // 升级前请勿修改
     "plugins": {
         "FresnsEmail": false, // true 表示为开启，false 表示为停用
         "EasySms": false,
@@ -49,8 +49,22 @@ fresns/         // 主程序根目录
         "Placeholder": false
     }
 }
+
+// 或者删除插件状态
+
+{
+    "name": "Fresns",
+    "version": "2.0.0",
+    "versionInt": 1, // 升级前请勿修改
+    "plugins": {}
+}
 ```
 
-- 3、登录后台（控制面板），在「仪表盘->更新」页面点击「物理升级」按钮确认升级。
-    - 系统将自动执行插件和主题的迁移安装；
-    - 完成后会更新 `fresns.json` 文件中的版本信息和恢复之前为启用状态的插件。
+- 3、执行物理升级
+    - 方式 1: 登录后台（控制面板），在「仪表盘->更新」页面点击「物理升级」按钮确认升级。
+    - 方式 2: 在主程序根目录，使用「终端」命令行执行指令 `php artisan fresns:physical-upgrade`
+
+::: tip
+- 系统将自动执行插件和主题的迁移安装；
+- 完成后会自动更新 `fresns.json` 文件中的版本信息和恢复之前为启用状态的插件。
+:::

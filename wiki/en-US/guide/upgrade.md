@@ -40,7 +40,7 @@ fresns/         // Main Program Root Directory
 {
     "name": "Fresns",
     "version": "2.0.0",
-    "versionInt": 1,
+    "versionInt": 1, // Please do not modify before upgrading
     "plugins": {
         "FresnsEmail": false, // true means activate, false means deactivate
         "EasySms": false,
@@ -49,8 +49,22 @@ fresns/         // Main Program Root Directory
         "Placeholder": false
     }
 }
+
+// Or remove the plugin status
+
+{
+    "name": "Fresns",
+    "version": "2.0.0",
+    "versionInt": 1, // Please do not modify before upgrading
+    "plugins": {}
+}
 ```
 
-- 3. Log in to the background (control panel) and click the “Physical Upgrade” button on the “Dashboard -> Update” page to confirm the upgrade.
-    - The system will automatically perform migration and installation of plug-ins and themes.
-    - Upon completion, the version information in `fresns.json` file will be updated and the plug-in that was enabled before will be restored.
+- 3. Run physical upgrade
+    - Method 1: Log in to the background (control panel) and click the “Physical Upgrade” button on the “Dashboard -> Updates” page to confirm the upgrade.
+    - Method 2: In the root directory of the main program, use the “terminal” command line to execute the upgrade command `php artisan fresns:physical-upgrade`.
+
+::: tip
+- The system will automatically perform migration and installation of plug-ins and themes.
+- Upon completion, the version information in `fresns.json` file will be updated and the plug-in that was enabled before will be restored.
+:::
