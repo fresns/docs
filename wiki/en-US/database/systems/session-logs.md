@@ -7,6 +7,7 @@
 | type | tinyint *UNSIGNED* | 日志类型 | 1 | NO | 见下方描述 |
 | platform_id | tinyint *UNSIGNED* | 平台编号 |  | NO | 关联键名 [configs->item_key = platforms](../dictionary/platforms.md) |
 | version | varchar(16) | 版本号 |  | NO | 语义化版本号 |
+| app_id | char(8) | App ID |  | YES | [session_keys->app_id](session-keys.md) |
 | lang_tag | char(16) | 客户端语言 |  | YES | 产生日志的语言，未开启多语言则留空 |
 | object_name | varchar(128) | 记录目标名称 |  | NO | 功能模型名或者接口路径<br>例如模型名 App\Models\Post<br>例如接口路径：/api/v2/account/login |
 | object_action | varchar(128) | 记录目标行为 |  | YES | 行为描述，自定义输入内容 |
