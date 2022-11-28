@@ -18,7 +18,7 @@
 | 防盗链功能 | image_url_status | false | boolean | 使用状态 |
 | 防盗链 Key | image_url_key |  | string |  |
 | 防盗链签名有效期 | image_url_expire | 10 | number | 单位：分钟 |
-| 图片处理位置 | image_handle_position | end | string | `start` or `end` |
+| 图片处理位置 | image_handle_position | end | string | `start` 路径开始位置<br>`middle` 文件名开头位置<br>`end` 路径结尾位置 |
 | 配置图参数 | image_thumb_config |  | string | 配置图专用 |
 | 头像图参数 | image_thumb_avatar |  | string | 头像图专用 |
 | 等比例缩略图参数 | image_thumb_ratio |  | string | 等比例缩小或者压缩图片 |
