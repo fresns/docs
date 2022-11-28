@@ -94,18 +94,6 @@
 | templateId | Number | YES | [验证码模板 ID](../../database/keyname/send.md#验证码模板设置) |
 | langTag | String | YES | 语言标签 |
 
-::: details 验证码模板 ID
-| 栏目标题 | 发信编号 |
-| --- | --- |
-| 通用验证码 | 1 |
-| 注册新账号 | 2 |
-| 修改账号资料 | 3 |
-| 更换新绑定 | 4 |
-| 重置登录密码 | 5 |
-| 重置支付密码 | 6 |
-| 使用验证码登录 | 7 |
-:::
-
 ## 核对验证码
 
 ```php
@@ -117,6 +105,7 @@
 | account | String | YES | 账号（邮箱或手机号） |
 | countryCode | Number | NO | 国际区号（手机号专用） |
 | verifyCode | String | YES | 验证码 |
+| templateId | Number | YES | [验证码模板 ID](../../database/keyname/send.md#验证码模板设置) |
 
 ## 获取 IP 信息
 
