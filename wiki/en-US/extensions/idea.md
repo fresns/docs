@@ -6,7 +6,7 @@ The design concept of Fresns product structure comes from the formula “**Algor
 
 ![Fresns Structure](https://files.fresns.org/wiki/images/idea.png)
 
-Users’ interactive behavior produces results on the content, and the results can be archived by some sort of form; the algorithm outputs the archived results under specific conditions, and finally the client product parses and renders the interface for users to browse and interact again.
+Users’ interaction behavior produces results on the content, and the results can be archived by some sort of form; the algorithm outputs the archived results under specific conditions, and finally the client product parses and renders the interface for users to browse and interact again.
 
 All this is attributed to data, so users, interactions, content, and categories have their own primary keys, and then they are extended and attached. The core focus is to define the data structure and API interface, and other functional modules can be delivered to the extension plug-in. Therefore, our plug-in mechanism is embedded in the process of data transfer, which also guarantees the real-time, unified, universal and standard integrated use across platforms.
 

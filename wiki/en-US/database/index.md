@@ -45,7 +45,7 @@
 | **user_follows** | User: follow record table |
 | **user_blocks** | User: block record table |
 
-## Interactives
+## Interactions
 
 | Table Name | Description |
 | --- | --- |

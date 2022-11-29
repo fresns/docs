@@ -26,7 +26,7 @@ The user’s perception of a product’s function (sense of space) does not depe
 
 ## Back-end naming control
 
-The user’s perception of a product’s service (sense of experience) does not depend on the technical logic, but on the naming of function points. Therefore, any function point of a product can be customized with a name in the background. Any function point and description point from the content of user data to interactive behaviors can be named in a customized manner (supporting multiple languages). By naming, users’ cognition of products can be shaped (without modifying main programs, themes, plug-ins, clients), and various operation scenarios can be realized.
+The user’s perception of a product’s service (sense of experience) does not depend on the technical logic, but on the naming of function points. Therefore, any function point of a product can be customized with a name in the background. Any function point and description point from the content of user data to interaction behaviors can be named in a customized manner (supporting multiple languages). By naming, users’ cognition of products can be shaped (without modifying main programs, themes, plug-ins, clients), and various operation scenarios can be realized.
 
 ## Public and private modes
 
@@ -38,11 +38,11 @@ The product supports the features of any known social products in terms of struc
 
 ## Extensible user functionality
 
-It supports extensible user functions such as multi-user, multi-role, multi-icon, multi-color, multi-score, anonymity, avatar pendant, and wallet. After opening, it can be used by all members or designated roles. Multi-user and multi-role can be used in vest, sub-brand, assistant and other user scenarios; multi-icon can be used in exhibition icon scenes such as medals, badges, status, interactive achievements, and user status. Moreover, multi-icon also supports binding functions, and can be used in functional icon scenes such as “shop window”, “secret tree hole”, “ask me a question”.
+It supports extensible user functions such as multi-user, multi-role, multi-icon, multi-color, multi-score, anonymity, avatar pendant, and wallet. After opening, it can be used by all members or designated roles. Multi-user and multi-role can be used in vest, sub-brand, assistant and other user scenarios; multi-icon can be used in exhibition icon scenes such as medals, badges, status, interaction achievements, and user status. Moreover, multi-icon also supports binding functions, and can be used in functional icon scenes such as “shop window”, “secret tree hole”, “ask me a question”.
 
 ## Flexibly extensible content forms
 
-Thanks to the mechanism of data stream plug-in, you can realize a variety of content forms by installing editor plug-ins, such as voting, Q&A, voice, merchandise, reward, debate, activity, live broadcast, book audio and video, interactive game (example: You Draw I Guess), paid reading, password reading, designated user or user role reading and so on.
+Thanks to the mechanism of data stream plug-in, you can realize a variety of content forms by installing editor plug-ins, such as voting, Q&A, voice, merchandise, reward, debate, activity, live broadcast, book audio and video, interaction game (example: You Draw I Guess), paid reading, password reading, designated user or user role reading and so on.
 
 ## Highly componentized
 

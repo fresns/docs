@@ -16,7 +16,7 @@
 
 | 参数名 | 类型 | 是否必传 | 说明 |
 | --- | --- | --- | --- |
-| interactiveType | String | YES | 标记行为 `follow`,`block` |
+| interactionType | String | YES | 标记行为 `follow`,`block` |
 | markType | String | YES | 标记类型 `user`,`group`,`hashtag`,`post`,`comment` |
 | fsid | String | YES | 目标 `FsID`<br>user 传参 uid 或 username<br>group 传参 gid<br>hashtag 传参 hid<br>post 传参 pid<br>comment 传参 cid |
 | note | String | NO | 备注内容，留空表示清空备注 |

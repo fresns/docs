@@ -1,10 +1,10 @@
-# 互动工具 InteractiveUtility
+# 互动工具 InteractionUtility
 
-`App\Utilities\InteractiveUtility`
+`App\Utilities\InteractionUtility`
 
 ## 检查是否点赞
 ```php
-InteractiveUtility::checkUserLike($likeType, $likeId, $userId);
+InteractionUtility::checkUserLike($likeType, $likeId, $userId);
 ```
 | 参数名 | 类型 | 是否必传 | 说明 |
 | --- | --- | --- | --- |
@@ -16,7 +16,7 @@ InteractiveUtility::checkUserLike($likeType, $likeId, $userId);
 
 ## 检查是否点踩
 ```php
-InteractiveUtility::checkUserDislike($dislikeType, $dislikeId, $userId);
+InteractionUtility::checkUserDislike($dislikeType, $dislikeId, $userId);
 ```
 | 参数名 | 类型 | 是否必传 | 说明 |
 | --- | --- | --- | --- |
@@ -28,7 +28,7 @@ InteractiveUtility::checkUserDislike($dislikeType, $dislikeId, $userId);
 
 ## 检查是否关注
 ```php
-InteractiveUtility::checkUserFollow($followType, $followId, $userId);
+InteractionUtility::checkUserFollow($followType, $followId, $userId);
 ```
 | 参数名 | 类型 | 是否必传 | 说明 |
 | --- | --- | --- | --- |
@@ -40,7 +40,7 @@ InteractiveUtility::checkUserFollow($followType, $followId, $userId);
 
 ## 检查是否屏蔽
 ```php
-InteractiveUtility::checkUserBlock($blockType, $blockId, $userId);
+InteractionUtility::checkUserBlock($blockType, $blockId, $userId);
 ```
 | 参数名 | 类型 | 是否必传 | 说明 |
 | --- | --- | --- | --- |
@@ -52,7 +52,7 @@ InteractiveUtility::checkUserBlock($blockType, $blockId, $userId);
 
 ## 检查全部状态
 ```php
-InteractiveUtility::checkInteractiveStatus($markType, $markId, $userId);
+InteractionUtility::checkInteractionStatus($markType, $markId, $userId);
 ```
 | 参数名 | 类型 | 是否必传 | 说明 |
 | --- | --- | --- | --- |
@@ -66,27 +66,27 @@ InteractiveUtility::checkInteractiveStatus($markType, $markId, $userId);
 
 ## 操作点赞
 ```php
-InteractiveUtility::markUserLike($userId, $likeType, $likeId);
+InteractionUtility::markUserLike($userId, $likeType, $likeId);
 ```
 
 ## 操作点踩
 ```php
-InteractiveUtility::markUserDislike($userId, $dislikeType, $dislikeId);
+InteractionUtility::markUserDislike($userId, $dislikeType, $dislikeId);
 ```
 
 ## 操作关注
 ```php
-InteractiveUtility::markUserFollow($userId, $followType, $followId);
+InteractionUtility::markUserFollow($userId, $followType, $followId);
 ```
 
 ## 操作屏蔽
 ```php
-InteractiveUtility::markUserBlock($userId, $blockType, $blockId);
+InteractionUtility::markUserBlock($userId, $blockType, $blockId);
 ```
 
 ## 操作内容置顶
 ```php
-InteractiveUtility::markContentSticky($type, $id, $stickyState);
+InteractionUtility::markContentSticky($type, $id, $stickyState);
 ```
 | 参数名 | 类型 | 是否必传 | 说明 |
 | --- | --- | --- | --- |
@@ -96,7 +96,7 @@ InteractiveUtility::markContentSticky($type, $id, $stickyState);
 
 ## 操作内容精华
 ```php
-InteractiveUtility::markContentDigest($type, $id, $digestState);
+InteractionUtility::markContentDigest($type, $id, $digestState);
 ```
 | 参数名 | 类型 | 是否必传 | 说明 |
 | --- | --- | --- | --- |
@@ -106,19 +106,19 @@ InteractiveUtility::markContentDigest($type, $id, $digestState);
 
 ## 操作行为统计记数
 ```php
-InteractiveUtility::markStats($userId, $interactiveType, $markType, $markId, $actionType);
+InteractionUtility::markStats($userId, $interactionType, $markType, $markId, $actionType);
 ```
 | 参数名 | 类型 | 是否必传 | 说明 |
 | --- | --- | --- | --- |
 | userId | Number | YES | `users > id` |
-| interactiveType | String | YES | `like`, `dislike`, `follow`, `block` |
+| interactionType | String | YES | `like`, `dislike`, `follow`, `block` |
 | markType | Number | YES | 1.用户 / 2.小组 / 3.话题 / 4.帖子 / 5.评论 |
 | markId | Number | YES | 对应类型的主键 ID |
 | actionType | String | YES | `increment` 或 `decrement` |
 
 ## 发表行为统计记数
 ```php
-InteractiveUtility::publishStats($type, $id, $actionType);
+InteractionUtility::publishStats($type, $id, $actionType);
 ```
 | 参数名 | 类型 | 是否必传 | 说明 |
 | --- | --- | --- | --- |
@@ -128,7 +128,7 @@ InteractiveUtility::publishStats($type, $id, $actionType);
 
 ## 精华行为统计记数
 ```php
-InteractiveUtility::digestStats($type, $id, $actionType);
+InteractionUtility::digestStats($type, $id, $actionType);
 ```
 | 参数名 | 类型 | 是否必传 | 说明 |
 | --- | --- | --- | --- |
@@ -138,7 +138,7 @@ InteractiveUtility::digestStats($type, $id, $actionType);
 
 ## 获取关注对象 ID 数组
 ```php
-InteractiveUtility::getFollowIdArr($type, $userId);
+InteractionUtility::getFollowIdArr($type, $userId);
 ```
 | 参数名 | 类型 | 是否必传 | 说明 |
 | --- | --- | --- | --- |
@@ -147,7 +147,7 @@ InteractiveUtility::getFollowIdArr($type, $userId);
 
 ## 获取屏蔽对象 ID 数组
 ```php
-InteractiveUtility::getBlockIdArr($type, $userId);
+InteractionUtility::getBlockIdArr($type, $userId);
 ```
 | 参数名 | 类型 | 是否必传 | 说明 |
 | --- | --- | --- | --- |
@@ -156,5 +156,5 @@ InteractiveUtility::getBlockIdArr($type, $userId);
 
 ## 获取私有小组 ID 数组
 ```php
-InteractiveUtility::getPrivateGroupIdArr();
+InteractionUtility::getPrivateGroupIdArr();
 ```

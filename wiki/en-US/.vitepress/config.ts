@@ -248,7 +248,7 @@ function sidebarApi() {
                 { text: 'User List', link: '/api/user/list.md' },
                 { text: 'User Detail', link: '/api/user/detail.md' },
                 { text: 'Followers You Know', link: '/api/user/followers-you-follow.md' },
-                { text: 'User Interactive Users', link: '/api/user/interactive.md' },
+                { text: 'User Interaction Users', link: '/api/user/interaction.md' },
                 { text: 'User Mark List', link: '/api/user/mark-list.md' },
                 { text: 'Auth', link: '/api/user/auth.md' },
                 { text: 'Panel', link: '/api/user/panel.md' },
@@ -281,7 +281,7 @@ function sidebarApi() {
                 { text: 'Group Categories', link: '/api/group/categories.md' },
                 { text: 'Group List', link: '/api/group/list.md' },
                 { text: 'Group Detail', link: '/api/group/detail.md' },
-                { text: 'Group Interactive Users', link: '/api/group/interactive.md' },
+                { text: 'Group Interaction Users', link: '/api/group/interaction.md' },
             ]
         },
         {
@@ -290,7 +290,7 @@ function sidebarApi() {
             items: [
                 { text: 'Hashtag List', link: '/api/hashtag/list.md' },
                 { text: 'Hashtag Detail', link: '/api/hashtag/detail.md' },
-                { text: 'Hashtag Interactive Users', link: '/api/hashtag/interactive.md' },
+                { text: 'Hashtag Interaction Users', link: '/api/hashtag/interaction.md' },
             ]
         },
         {
@@ -301,7 +301,7 @@ function sidebarApi() {
                 { text: 'Post List by Follow', link: '/api/post/follow.md' },
                 { text: 'Post List by Nearby', link: '/api/post/nearby.md' },
                 { text: 'Post Detail', link: '/api/post/detail.md' },
-                { text: 'Post Interactive Users', link: '/api/post/interactive.md' },
+                { text: 'Post Interaction Users', link: '/api/post/interaction.md' },
                 { text: 'Post Affiliate User List', link: '/api/post/user-list.md' },
                 { text: 'Post Logs', link: '/api/post/logs.md' },
                 { text: 'Post Log Detail', link: '/api/post/log-detail.md' },
@@ -316,7 +316,7 @@ function sidebarApi() {
                 { text: 'Comment List by Follow', link: '/api/comment/follow.md' },
                 { text: 'Comment List by Nearby', link: '/api/comment/nearby.md' },
                 { text: 'Comment Detail', link: '/api/comment/detail.md' },
-                { text: 'Comment Interactive Users', link: '/api/comment/interactive.md' },
+                { text: 'Comment Interaction Users', link: '/api/comment/interaction.md' },
                 { text: 'Comment Logs', link: '/api/comment/logs.md' },
                 { text: 'Comment Log Detail', link: '/api/comment/log-detail.md' },
                 { text: 'Delete', link: '/api/comment/delete.md' },
@@ -417,13 +417,13 @@ function sidebarDatabase() {
                     ]
                 },
                 {
-                    text: 'Interactives',
+                    text: 'Interactions',
                     collapsible: true,
                     items: [
-                        { text: 'mentions', link: '/database/interactives/mentions.md' },
-                        { text: 'notifications', link: '/database/interactives/notifications.md' },
-                        { text: 'conversations', link: '/database/interactives/conversations.md' },
-                        { text: 'conversation_messages', link: '/database/interactives/conversation-messages.md' },
+                        { text: 'mentions', link: '/database/interactions/mentions.md' },
+                        { text: 'notifications', link: '/database/interactions/notifications.md' },
+                        { text: 'conversations', link: '/database/interactions/conversations.md' },
+                        { text: 'conversation_messages', link: '/database/interactions/conversation-messages.md' },
                     ]
                 },
                 {
@@ -525,7 +525,7 @@ function sidebarDatabase() {
                     collapsible: true,
                     items: [
                         { text: 'Rename', link: '/database/keyname/rename.md' },
-                        { text: 'Interaction', link: '/database/keyname/interactive.md' },
+                        { text: 'Interaction', link: '/database/keyname/interaction.md' },
                         { text: 'Publish', link: '/database/keyname/publish.md' },
                     ]
                 },
@@ -589,7 +589,7 @@ function sidebarSupports() {
                 { text: 'Date', link: '/supports/helpers/date.md' },
                 { text: 'Str', link: '/supports/helpers/str.md' },
                 { text: 'Primary', link: '/supports/helpers/primary.md' },
-                { text: 'Interactive', link: '/supports/helpers/interactive.md' },
+                { text: 'Interaction', link: '/supports/helpers/interaction.md' },
             ]
         },
         {
@@ -599,7 +599,7 @@ function sidebarSupports() {
                 { text: 'Config', link: '/supports/utilities/config.md' },
                 { text: 'Extend', link: '/supports/utilities/extend.md' },
                 { text: 'File', link: '/supports/utilities/file.md' },
-                { text: 'Interactive', link: '/supports/utilities/interactive.md' },
+                { text: 'Interaction', link: '/supports/utilities/interaction.md' },
                 { text: 'Permission', link: '/supports/utilities/permission.md' },
                 { text: 'Validation', link: '/supports/utilities/validation.md' },
             ]
@@ -635,7 +635,7 @@ function sidebarCommunity() {
             ]
         },
         {
-            text: 'Interactive',
+            text: 'Interaction',
             collapsible: true,
             items: [
                 { text: 'Community', link: 'https://discuss.fresns.com' },

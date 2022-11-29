@@ -258,7 +258,7 @@ function sidebarApi() {
                 { text: '获取用户[列表]', link: '/api/user/list.md' },
                 { text: '获取用户[详情]', link: '/api/user/detail.md' },
                 { text: '获取用户认识的关注者', link: '/api/user/followers-you-follow.md' },
-                { text: '获取用户[详情] 互动列表', link: '/api/user/interactive.md' },
+                { text: '获取用户[详情] 互动列表', link: '/api/user/interaction.md' },
                 { text: '获取用户[详情] 标记列表', link: '/api/user/mark-list.md' },
                 { text: '用户登录', link: '/api/user/auth.md' },
                 { text: '用户面板', link: '/api/user/panel.md' },
@@ -291,7 +291,7 @@ function sidebarApi() {
                 { text: '获取小组[列表] 分类', link: '/api/group/categories.md' },
                 { text: '获取小组[列表] 小组', link: '/api/group/list.md' },
                 { text: '获取小组[详情]', link: '/api/group/detail.md' },
-                { text: '获取小组[详情] 互动列表', link: '/api/group/interactive.md' },
+                { text: '获取小组[详情] 互动列表', link: '/api/group/interaction.md' },
             ]
         },
         {
@@ -300,7 +300,7 @@ function sidebarApi() {
             items: [
                 { text: '获取话题[列表]', link: '/api/hashtag/list.md' },
                 { text: '获取话题[详情]', link: '/api/hashtag/detail.md' },
-                { text: '获取话题[详情] 互动列表', link: '/api/hashtag/interactive.md' },
+                { text: '获取话题[详情] 互动列表', link: '/api/hashtag/interaction.md' },
             ]
         },
         {
@@ -311,7 +311,7 @@ function sidebarApi() {
                 { text: '获取帖子[列表] 关注对象的', link: '/api/post/follow.md' },
                 { text: '获取帖子[列表] 位置附近的', link: '/api/post/nearby.md' },
                 { text: '获取帖子[详情]', link: '/api/post/detail.md' },
-                { text: '获取帖子[详情] 互动列表', link: '/api/post/interactive.md' },
+                { text: '获取帖子[详情] 互动列表', link: '/api/post/interaction.md' },
                 { text: '获取帖子[详情] 附属用户列表', link: '/api/post/user-list.md' },
                 { text: '获取帖子[详情] 日志列表', link: '/api/post/logs.md' },
                 { text: '获取帖子[详情] 日志详情', link: '/api/post/log-detail.md' },
@@ -326,7 +326,7 @@ function sidebarApi() {
                 { text: '获取评论[列表] 关注对象的', link: '/api/comment/follow.md' },
                 { text: '获取评论[列表] 位置附近的', link: '/api/comment/nearby.md' },
                 { text: '获取评论[详情]', link: '/api/comment/detail.md' },
-                { text: '获取评论[详情] 互动列表', link: '/api/comment/interactive.md' },
+                { text: '获取评论[详情] 互动列表', link: '/api/comment/interaction.md' },
                 { text: '获取评论[详情] 日志列表', link: '/api/comment/logs.md' },
                 { text: '获取评论[详情] 日志详情', link: '/api/comment/log-detail.md' },
                 { text: '删除评论', link: '/api/comment/delete.md' },
@@ -430,10 +430,10 @@ function sidebarDatabase() {
                     text: '互动',
                     collapsible: true,
                     items: [
-                        { text: 'mentions 艾特记录表', link: '/database/interactives/mentions.md' },
-                        { text: 'notifications 通知表', link: '/database/interactives/notifications.md' },
-                        { text: 'conversations 对话表', link: '/database/interactives/conversations.md' },
-                        { text: 'conversation_messages 对话内容表', link: '/database/interactives/conversation-messages.md' },
+                        { text: 'mentions 艾特记录表', link: '/database/interactions/mentions.md' },
+                        { text: 'notifications 通知表', link: '/database/interactions/notifications.md' },
+                        { text: 'conversations 对话表', link: '/database/interactions/conversations.md' },
+                        { text: 'conversation_messages 对话内容表', link: '/database/interactions/conversation-messages.md' },
                     ]
                 },
                 {
@@ -535,7 +535,7 @@ function sidebarDatabase() {
                     collapsible: true,
                     items: [
                         { text: '命名配置', link: '/database/keyname/rename.md' },
-                        { text: '互动配置', link: '/database/keyname/interactive.md' },
+                        { text: '互动配置', link: '/database/keyname/interaction.md' },
                         { text: '发表配置', link: '/database/keyname/publish.md' },
                     ]
                 },
@@ -599,7 +599,7 @@ function sidebarSupports() {
                 { text: '时间 DateHelper', link: '/supports/helpers/date.md' },
                 { text: '数据处理 StrHelper', link: '/supports/helpers/str.md' },
                 { text: '主键转换 PrimaryHelper', link: '/supports/helpers/primary.md' },
-                { text: '互动配置 InteractiveHelper', link: '/supports/helpers/interactive.md' },
+                { text: '互动配置 InteractionHelper', link: '/supports/helpers/interaction.md' },
             ]
         },
         {
@@ -609,7 +609,7 @@ function sidebarSupports() {
                 { text: '配置项目 ConfigUtility', link: '/supports/utilities/config.md' },
                 { text: '扩展工具 ExtendUtility', link: '/supports/utilities/extend.md' },
                 { text: '文件工具 FileUtility', link: '/supports/utilities/file.md' },
-                { text: '互动工具 InteractiveUtility', link: '/supports/utilities/interactive.md' },
+                { text: '互动工具 InteractionUtility', link: '/supports/utilities/interaction.md' },
                 { text: '鉴权工具 PermissionUtility', link: '/supports/utilities/permission.md' },
                 { text: '验证工具 ValidationUtility', link: '/supports/utilities/validation.md' },
             ]

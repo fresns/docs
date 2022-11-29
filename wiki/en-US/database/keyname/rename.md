@@ -29,7 +29,7 @@
 | 发表帖子行为名称 | publish_post_name | 发表 | string | 多语言 |
 | 发表评论行为名称 | publish_comment_name | 回复 | string | 多语言 |
 
-## Like Interactive Naming
+## Like Interaction Naming
 
 | Menu Title | Key Name | Default Key Value | Value Type | Description |
 | --- | --- | --- | --- | --- |
@@ -39,7 +39,7 @@
 | 点赞帖子行为 | like_post_name | 点赞 | string | 多语言 |
 | 点赞评论行为 | like_comment_name | 点赞 | string | 多语言 |
 
-## Dislike Interactive Naming
+## Dislike Interaction Naming
 
 | Menu Title | Key Name | Default Key Value | Value Type | Description |
 | --- | --- | --- | --- | --- |
@@ -49,7 +49,7 @@
 | 踩帖子行为 | dislike_post_name | 点赞 | string | 多语言 |
 | 踩评论行为 | dislike_comment_name | 点赞 | string | 多语言 |
 
-## Follow Interactive Naming
+## Follow Interaction Naming
 
 | Menu Title | Key Name | Default Key Value | Value Type | Description |
 | --- | --- | --- | --- | --- |
@@ -59,7 +59,7 @@
 | 关注帖子行为 | follow_post_name | 收藏 | string | 多语言 |
 | 关注评论行为 | follow_comment_name | 收藏 | string | 多语言 |
 
-## Block Interactive Naming
+## Block Interaction Naming
 
 | Menu Title | Key Name | Default Key Value | Value Type | Description |
 | --- | --- | --- | --- | --- |

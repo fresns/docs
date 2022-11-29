@@ -23,7 +23,7 @@
 | storages | 无效状态补位图 | Panel > Systems > Storage > Substitution |
 | maps | 地图设置 | Panel > Systems > Maps |
 | renames | 自定义命名配置 | Panel > Operations > Rename |
-| interactives | 互动配置 | Panel > Operations > Interaction |
+| interactions | 互动配置 | Panel > Operations > Interaction |
 | postEditor | 帖子编辑器配置 | Panel > Operations > Publish > Post |
 | commentEditor | 评论编辑器配置 | Panel > Operations > Publish > Comment |
 | extends | 扩展配置 | Panel > Expands |

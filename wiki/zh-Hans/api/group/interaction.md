@@ -1,6 +1,6 @@
 # 获取小组[详情] 互动列表
 
-- 接口地址：`/api/v2/group/{gid}/interactive/{type}`
+- 接口地址：`/api/v2/group/{gid}/interaction/{type}`
 - 请求方式：`GET`
 - 传参方式：`Rest` + `Query`
 

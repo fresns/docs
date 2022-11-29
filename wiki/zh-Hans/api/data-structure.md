@@ -58,7 +58,7 @@
             // 通用数据结构->用户信息
         }
     ],
-    "interactive": {
+    "interaction": {
         "userName": "String / 用户身份自定义名称",
         "userUidName": "String / 用户 ID 自定义名称",
         "userUsernameName": "String / 用户名自定义名称",
@@ -201,7 +201,6 @@
         {
             "rid": "Number / 角色 ID",
             "isMain": "Boolean / 是否为主角色",
-            "expiryDateTime": "String / 角色过期日期",
             "nicknameColor": "String / 昵称颜色",
             "name": "String / 角色名",
             "nameDisplay": "Boolean / 是否显示角色名",
@@ -210,7 +209,7 @@
             "status": "Boolean / 是否有效"
         }
     ],
-    "interactive": {
+    "interaction": {
         "userName": "String / 用户身份自定义名称",
         "userUidName": "String / 用户 ID 自定义名称",
         "userUsernameName": "String / 用户名自定义名称",
@@ -307,7 +306,7 @@
             // 通用数据结构->用户信息
         }
     ],
-    "interactive": {
+    "interaction": {
         "groupName": "String / 小组自定义名称",
         "likeSetting": "Boolean / 是否允许 like",
         "likeName": "String / like 行为自定义名称",
@@ -358,7 +357,7 @@
     "extends": {
         // 通用数据结构->扩展内容信息
     },
-    "interactive": {
+    "interaction": {
         "hashtagName": "String / 话题自定义名称",
         "likeSetting": "Boolean / 是否允许 like",
         "likeName": "String / like 行为自定义名称",
@@ -501,7 +500,7 @@
         "isPluginEditor": "Boolean / 是否插件编辑器",
         "editorUrl": "String / 插件编辑器访问地址"
     },
-    "interactive": {
+    "interaction": {
         "postName": "String / 帖子自定义名称",
         "likeSetting": "Boolean / 是否允许 like",
         "likeName": "String / like 行为自定义名称",
@@ -625,7 +624,7 @@
         // 是否回复某个用户
         // 通用数据结构->用户信息
     },
-    "commentPreviews": [
+    "subComments": [
         {
             // 子评论预览
             // 通用数据结构->评论信息
@@ -648,7 +647,7 @@
         "isPluginEditor": "Boolean / 是否插件编辑器",
         "editorUrl": "String / 插件编辑器访问地址"
     },
-    "interactive": {
+    "interaction": {
         "commentName": "String / 评论自定义名称",
         "likeSetting": "Boolean / 是否允许 like",
         "likeName": "String / like 行为自定义名称",
@@ -1004,7 +1003,7 @@
             // 同上
         }
     ],
-    "interactiveBox": [
+    "interactionBox": [
         {
             // 同上
         }

@@ -1,11 +1,11 @@
-# InteractiveHelper
+# InteractionHelper
 
-`App\Helpers\InteractiveHelper`
+`App\Helpers\InteractionHelper`
 
 ## 获取用户交互配置
 
 ```php
-InteractiveHelper::fresnsUserInteractive($langTag);
+InteractionHelper::fresnsUserInteraction($langTag);
 ```
 | Parameter Name | Type | Required | Description |
 | --- | --- | --- | --- |
@@ -14,7 +14,7 @@ InteractiveHelper::fresnsUserInteractive($langTag);
 ## 获取小组交互配置
 
 ```php
-InteractiveHelper::fresnsGroupInteractive($langTag);
+InteractionHelper::fresnsGroupInteraction($langTag);
 ```
 | Parameter Name | Type | Required | Description |
 | --- | --- | --- | --- |
@@ -23,7 +23,7 @@ InteractiveHelper::fresnsGroupInteractive($langTag);
 ## 获取话题交互配置
 
 ```php
-InteractiveHelper::fresnsHashtagInteractive($langTag);
+InteractionHelper::fresnsHashtagInteraction($langTag);
 ```
 | Parameter Name | Type | Required | Description |
 | --- | --- | --- | --- |
@@ -32,7 +32,7 @@ InteractiveHelper::fresnsHashtagInteractive($langTag);
 ## 获取帖子交互配置
 
 ```php
-InteractiveHelper::fresnsPostInteractive($langTag);
+InteractionHelper::fresnsPostInteraction($langTag);
 ```
 | Parameter Name | Type | Required | Description |
 | --- | --- | --- | --- |
@@ -41,7 +41,7 @@ InteractiveHelper::fresnsPostInteractive($langTag);
 ## 获取评论交互配置
 
 ```php
-InteractiveHelper::fresnsCommentInteractive($langTag);
+InteractionHelper::fresnsCommentInteraction($langTag);
 ```
 | Parameter Name | Type | Required | Description |
 | --- | --- | --- | --- |

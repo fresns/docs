@@ -1,6 +1,6 @@
-# Comment Interactive Users
+# Post Interaction Users
 
-- Endpoint Path: `/api/v2/comment/{cid}/interactive/{type}`
+- Endpoint Path: `/api/v2/post/{pid}/interaction/{type}`
 - Method: `GET`
 - Request: `Rest` + `Query`
 
@@ -16,7 +16,7 @@
 
 | Parameter Name | Type | Required | Description |
 | --- | --- | --- | --- |
-| cid | String | **required** | 评论 CID |
+| pid | String | **required** | 帖子 PID |
 | type | String | **required** | 查看类型 `like`,`dislike`,`follow`,`block` |
 
 ## Query Params
@@ -29,15 +29,16 @@
 
 **Request Description**
 
-- `type=like` 获得点赞了 `cid` 的用户列表。
-- `type=dislike` 获得点踩了 `cid` 的用户列表。
-- `type=follow` 获得关注了 `cid` 的用户列表。
-- `type=block` 获得屏蔽了 `cid` 的用户列表。
+- `type=like` 获得点赞了 `pid` 的用户列表。
+- `type=dislike` 获得点踩了 `pid` 的用户列表。
+- `type=follow` 获得关注了 `pid` 的用户列表。
+- `type=block` 获得屏蔽了 `pid` 的用户列表。
 - 接口会根据配置表设置 `运营 > 互动配置 > 查看互动记录设置` 决定是否输出数据。
-    - `comment_likers` 配置，是否输出点赞 TA 的用户
-    - `comment_dislikers` 配置，是否输出点踩 TA 的用户
-    - `comment_followers` 配置，是否输出关注 TA 的用户
-    - `comment_blockers` 配置，是否输出屏蔽 TA 的用户
+    - `post_likers` 配置，是否输出点赞 TA 的用户
+    - `post_dislikers` 配置，是否输出点踩 TA 的用户
+    - `post_followers` 配置，是否输出关注 TA 的用户
+    - `post_blockers` 配置，是否输出屏蔽 TA 的用户
+- `orderDirection` 排序方式以创建时间排序。
 
 ## Return
 

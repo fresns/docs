@@ -48,7 +48,7 @@
 | `GET` | /api/v2/user/list | 获取用户列表 |
 | `GET` | /api/v2/user/`{uidOrUsername}`/detail | 获取用户详情 |
 | `GET` | /api/v2/user/`{uidOrUsername}`/followers-you-follow | 获取用户认识的关注者 |
-| `GET` | /api/v2/user/`{uidOrUsername}`/interactive/`{type}` | 获取用户互动的用户列表 |
+| `GET` | /api/v2/user/`{uidOrUsername}`/interaction/`{type}` | 获取用户互动的用户列表 |
 | `GET` | /api/v2/user/`{uidOrUsername}`/mark/`{markType}`/`{listType}` | 获取用户标记的内容列表 |
 | `POST` | /api/v2/user/auth | 用户登录 |
 | `GET` | /api/v2/user/panel | 用户面板 |
@@ -79,7 +79,7 @@
 | `GET` | /api/v2/group/categories | 获取小组分类 |
 | `GET` | /api/v2/group/list | 获取小组列表 |
 | `GET` | /api/v2/group/`{gid}`/detail | 获取小组详情 |
-| `GET` | /api/v2/group/`{gid}`/interactive/`{type}` | 获取小组互动的用户列表 |
+| `GET` | /api/v2/group/`{gid}`/interaction/`{type}` | 获取小组互动的用户列表 |
 
 ## 话题
 
@@ -87,7 +87,7 @@
 | --- | --- | --- |
 | `GET` | /api/v2/hashtag/list | 获取话题列表 |
 | `GET` | /api/v2/hashtag/`{hid}`/detail | 获取话题详情 |
-| `GET` | /api/v2/hashtag/`{hid}`/interactive/`{type}` | 获取话题互动的用户列表 |
+| `GET` | /api/v2/hashtag/`{hid}`/interaction/`{type}` | 获取话题互动的用户列表 |
 
 ## 帖子
 
@@ -97,7 +97,7 @@
 | `GET` | /api/v2/post/follow/`{type}` | 获取关注对象的帖子列表 |
 | `GET` | /api/v2/post/nearby | 获取位置附近的帖子列表 |
 | `GET` | /api/v2/post/`{pid}`/detail | 获取帖子详情 |
-| `GET` | /api/v2/post/`{pid}`/interactive/`{type}` | 获取帖子互动的用户列表 |
+| `GET` | /api/v2/post/`{pid}`/interaction/`{type}` | 获取帖子互动的用户列表 |
 | `GET` | /api/v2/post/`{pid}`/user-list | 获取帖子的附属用户列表 |
 | `GET` | /api/v2/post/`{pid}`/logs | 获取帖子的日志列表 |
 | `GET` | /api/v2/post/`{pid}`/log/`{logId}` | 获取帖子日志详情 |
@@ -111,7 +111,7 @@
 | `GET` | /api/v2/comment/follow/`{type}` | 获取关注对象的评论列表 |
 | `GET` | /api/v2/comment/nearby | 获取位置附近的评论列表 |
 | `GET` | /api/v2/comment/`{cid}`/detail | 获取评论详情 |
-| `GET` | /api/v2/comment/`{cid}`/interactive/`{type}` | 获取评论互动的用户列表 |
+| `GET` | /api/v2/comment/`{cid}`/interaction/`{type}` | 获取评论互动的用户列表 |
 | `GET` | /api/v2/comment/`{cid}`/logs | 获取评论的日志列表 |
 | `GET` | /api/v2/comment/`{cid}`/log/`{logId}` | 获取评论日志详情 |
 | `DELETE` | /api/v2/comment/`{pid}` | 删除评论 |

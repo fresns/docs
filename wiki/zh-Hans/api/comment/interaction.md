@@ -1,6 +1,6 @@
-# 获取话题[详情] 互动列表
+# 获取评论[详情] 互动列表
 
-- 接口地址：`/api/v2/hashtag/{hid}/interactive/{type}`
+- 接口地址：`/api/v2/comment/{cid}/interaction/{type}`
 - 请求方式：`GET`
 - 传参方式：`Rest` + `Query`
 
@@ -16,7 +16,7 @@
 
 | 参数名 | 类型 | 是否必传 | 说明 |
 | --- | --- | --- | --- |
-| hid | String | YES | 话题 slug |
+| cid | String | YES | 评论 CID |
 | type | String | YES | 查看类型 `like`,`dislike`,`follow`,`block` |
 
 ## Query 参数
@@ -29,16 +29,15 @@
 
 **接口使用说明**
 
-- `type=like` 获得点赞了 `hid` 的用户列表。
-- `type=dislike` 获得点踩了 `hid` 的用户列表。
-- `type=follow` 获得关注了 `hid` 的用户列表。
-- `type=block` 获得屏蔽了 `hid` 的用户列表。
+- `type=like` 获得点赞了 `cid` 的用户列表。
+- `type=dislike` 获得点踩了 `cid` 的用户列表。
+- `type=follow` 获得关注了 `cid` 的用户列表。
+- `type=block` 获得屏蔽了 `cid` 的用户列表。
 - 接口会根据配置表设置 `运营 > 互动配置 > 查看互动记录设置` 决定是否输出数据。
-    - `hashtag_likers` 配置，是否输出点赞 TA 的用户
-    - `hashtag_dislikers` 配置，是否输出点踩 TA 的用户
-    - `hashtag_followers` 配置，是否输出关注 TA 的用户
-    - `hashtag_blockers` 配置，是否输出屏蔽 TA 的用户
-- `orderDirection` 排序方式以创建时间排序。
+    - `comment_likers` 配置，是否输出点赞 TA 的用户
+    - `comment_dislikers` 配置，是否输出点踩 TA 的用户
+    - `comment_followers` 配置，是否输出关注 TA 的用户
+    - `comment_blockers` 配置，是否输出屏蔽 TA 的用户
 
 ## 返回结果
 

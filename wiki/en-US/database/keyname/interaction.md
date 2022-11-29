@@ -27,7 +27,7 @@
 | 查看关注对象的帖子 | view_posts_by_follow_object | true | boolean |  |
 | 查看关注对象的评论 | view_comments_by_follow_object | false | boolean |  |
 
-## Interactive Function
+## Interaction Function
 
 | Menu Title | Key Name | Default Key Value | Value Type | Description |
 | --- | --- | --- | --- | --- |

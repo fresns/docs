@@ -1,6 +1,6 @@
 # 获取帖子[详情] 互动列表
 
-- 接口地址：`/api/v2/post/{pid}/interactive/{type}`
+- 接口地址：`/api/v2/post/{pid}/interaction/{type}`
 - 请求方式：`GET`
 - 传参方式：`Rest` + `Query`
 

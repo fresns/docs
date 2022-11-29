@@ -48,7 +48,7 @@
 | `GET` | /api/v2/user/list | User List |
 | `GET` | /api/v2/user/`{uidOrUsername}`/detail | User Detail |
 | `GET` | /api/v2/user/`{uidOrUsername}`/followers-you-follow | Followers You Know |
-| `GET` | /api/v2/user/`{uidOrUsername}`/interactive/`{type}` | User Interactive Users |
+| `GET` | /api/v2/user/`{uidOrUsername}`/interaction/`{type}` | User Interaction Users |
 | `GET` | /api/v2/user/`{uidOrUsername}`/mark/`{markType}`/`{listType}` | User Mark List |
 | `POST` | /api/v2/user/auth | Auth |
 | `GET` | /api/v2/user/panel | Panel |
@@ -79,7 +79,7 @@
 | `GET` | /api/v2/group/categories | Group Categories |
 | `GET` | /api/v2/group/list | Group List |
 | `GET` | /api/v2/group/`{gid}`/detail | Group Detail |
-| `GET` | /api/v2/group/`{gid}`/interactive/`{type}` | Group Interactive Users |
+| `GET` | /api/v2/group/`{gid}`/interaction/`{type}` | Group Interaction Users |
 
 ## Hashtag
 
@@ -87,7 +87,7 @@
 | --- | --- | --- |
 | `GET` | /api/v2/hashtag/list | Hashtag List |
 | `GET` | /api/v2/hashtag/`{hid}`/detail | Hashtag Detail |
-| `GET` | /api/v2/hashtag/`{hid}`/interactive/`{type}` | Hashtag Interactive Users |
+| `GET` | /api/v2/hashtag/`{hid}`/interaction/`{type}` | Hashtag Interaction Users |
 
 ## Post
 
@@ -97,7 +97,7 @@
 | `GET` | /api/v2/post/follow/`{type}` | Post List by Follow |
 | `GET` | /api/v2/post/nearby | Post List by Nearby |
 | `GET` | /api/v2/post/`{pid}`/detail | Post Detail |
-| `GET` | /api/v2/post/`{pid}`/interactive/`{type}` | Post Interactive Users |
+| `GET` | /api/v2/post/`{pid}`/interaction/`{type}` | Post Interaction Users |
 | `GET` | /api/v2/post/`{pid}`/user-list | Post Affiliate User List |
 | `GET` | /api/v2/post/`{pid}`/logs | Post Logs |
 | `GET` | /api/v2/post/`{pid}`/log/`{logId}` | Post Log Detail |
@@ -111,7 +111,7 @@
 | `GET` | /api/v2/comment/follow/`{type}` | Comment List by Follow |
 | `GET` | /api/v2/comment/nearby | Comment List by Nearby |
 | `GET` | /api/v2/comment/`{cid}`/detail | Comment Detail |
-| `GET` | /api/v2/comment/`{cid}`/interactive/`{type}` | Comment Interactive Users |
+| `GET` | /api/v2/comment/`{cid}`/interaction/`{type}` | Comment Interaction Users |
 | `GET` | /api/v2/comment/`{cid}`/logs | Comment Logs |
 | `GET` | /api/v2/comment/`{cid}`/log/`{logId}` | Comment Log Detail |
 | `DELETE` | /api/v2/comment/`{pid}` | Delete |
