@@ -114,7 +114,17 @@ fs_list('comments') // Comment list
 ### Sticky Post List
 
 ```php
-fs_stickies()
+# Global Sticky
+fs_sticky_posts()
+
+# Sticky of the group
+fs_sticky_posts($gid)
+```
+
+### Sticky Comment List
+
+```php
+fs_sticky_comments($pid)
 ```
 
 ## Client Options

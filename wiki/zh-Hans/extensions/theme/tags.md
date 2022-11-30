@@ -114,7 +114,17 @@ fs_list('comments') // 评论列表
 ### 置顶帖子
 
 ```php
-fs_stickies()
+# 全局置顶
+fs_sticky_posts()
+
+# 指定小组的置顶
+fs_sticky_posts($gid)
+```
+
+### 置顶评论
+
+```php
+fs_sticky_comments($pid)
 ```
 
 ## 客户端判断
