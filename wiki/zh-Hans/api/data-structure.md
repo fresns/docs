@@ -556,10 +556,6 @@
     "editCount": "Number / 编辑次数",
     "rankState": "Number / 等级状态",
     "status": "Boolean / 评论状态",
-    "isCommentBtn": "Boolean / 评论是否有扩展按钮",
-    "commentBtnName": "String / 按钮文字",
-    "commentBtnStyle": "String / 按钮风格",
-    "commentBtnUrl": "String / 按钮访问地址",
     "ipLocation": "String / 发表 IP 位置",
     "location": {
         "isLbs": "Boolean / 是否有位置信息",
@@ -630,11 +626,19 @@
             // 通用数据结构->评论信息
         }
     ],
-    "commentBtn": {
-        "status": "Boolean / 是否显示按钮",
-        "name": "String / 按钮名称",
-        "url": "String / 按钮访问地址",
-        "style": "String / 按钮风格 primary secondary success danger warning info"
+    "extendBtn": {
+        "status": "Boolean / 是否显示扩展按钮",
+        "type": "String / 使用 default 或 active 按钮",
+        "default": {
+            "name": "String / 按钮名称",
+            "style": "String / 按钮风格 primary secondary success danger warning info",
+            "url": "String / 按钮访问地址"
+        },
+        "active": {
+            "name": "String / 按钮名称",
+            "style": "String / 按钮风格 primary secondary success danger warning info",
+            "url": "String / 按钮访问地址"
+        },
     },
     "manages": [
         // 评论管理扩展

@@ -7,8 +7,8 @@
 | is_plugin_editor | tinyint *UNSIGNED* | 是否仅在插件中编辑 | 0 | NO | 0.否 / 1.是 |
 | editor_unikey | varchar(64) | 内容编辑插件 |  | YES | 关联字段 [plugins->unikey](../plugins/plugins.md) |
 | can_delete | tinyint *UNSIGNED* | 作者是否有权删除 | 1 | NO | 0.否 / 1.是 |
-| is_close_btn | tinyint *UNSIGNED* | 是否关闭评论按钮 | 0 | NO | 0.否 / 1.是<br>对应字段 [post_appends->is_comment_btn](post-appends.md) |
-| is_change_btn | tinyint *UNSIGNED* | 是否更换评论按钮 | 0 | NO | 0.否 / 1.是 |
+| is_close_btn | tinyint *UNSIGNED* | 是否关闭评论扩展按钮 | 0 | NO | 0.否 / 1.是<br>对应字段 [post_appends->is_comment_btn](post-appends.md) |
+| is_change_btn | tinyint *UNSIGNED* | 是否更换评论扩展按钮 | 0 | NO | 0.否 / 1.是 |
 | btn_name_key | varchar(64) | 更换按钮的名称键名 |  | YES | 关联字段 configs > item_key |
 | btn_style | varchar(64) | 按钮风格 |  | YES | primary / secondary / success / danger / warning / info |
 | ip_location | varchar(64) | IP 地区名 |  | YES |  |
