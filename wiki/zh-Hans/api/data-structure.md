@@ -568,6 +568,7 @@
         "distance": "Number / 帖子发表位置与我的距离",
         "unit": "String / 与我距离的单位 km 或 mi",
     },
+    "isCommentPublic": "Boolean / 是否公开评论（不公开则仅帖子作者可见）",
     "archives": {
         "String / 扩展参数 Code": "String / 扩展参数内容"
     },
