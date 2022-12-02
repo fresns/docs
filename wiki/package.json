@@ -15,9 +15,9 @@
   "scripts": {
     "zh-Hans:dev": "vitepress dev zh-Hans",
     "zh-Hans:build": "vitepress build zh-Hans",
-    "zh-Hans:serve": "vitepress serve zh-Hans",
+    "zh-Hans:preview": "vitepress preview zh-Hans",
     "en-US:dev": "vitepress dev en-US",
     "en-US:build": "vitepress build en-US",
-    "en-US:serve": "vitepress serve en-US"
+    "en-US:preview": "vitepress preview en-US"
   }
 }
