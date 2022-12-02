@@ -138,4 +138,6 @@ aid=wIfu6jaF&appId=TDh15qYay3x0sARo&platformId=1&timestamp=1656653400000&token=u
     - `fs_user_panel('key')` 调用 [/api/v2/user/panel](user/panel.md) 接口的 `data` 参数
     - 其他...
 - 由于全局数据每页都可能用到，为了避免频繁请求接口影响加载速度，所以我们在客户端采用了缓存。
-- 我们使用 `/api/v2/global/configs?keys=cache_datetime` 检测缓存有效期，过期将自动重新缓存。
+- 我们使用 `/api/v2/global/configs?keys=cache_datetime,cache_minutes` 检测缓存有效期，过期将自动重新缓存。
+    - `cache_datetime` 服务端最后一次配置的时间
+    - `cache_minutes` 建议客户端缓存保存最长分钟数，为空表示不限制

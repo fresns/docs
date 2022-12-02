@@ -138,4 +138,6 @@ aid=wIfu6jaF&appId=TDh15qYay3x0sARo&platformId=1&timestamp=1656653400000&token=u
     - `fs_user_panel('key')` Call the `data` parameter of the [/api/v2/user/panel](user/panel.md) interface
     - Other...
 - Since global data may be used on every page, we use caching on the client side in order to avoid frequent requests to the interface affecting the loading speed.
-- We use `/api/v2/global/configs?keys=cache_datetime` to detect cache expiration, so that cache expiration will be automatically re-cached.
+- We use `/api/v2/global/configs?keys=cache_datetime,cache_minutes` to detect cache expiration, so that cache expiration will be automatically re-cached.
+    - `cache_datetime` Datetime of last server-side configuration
+    - `cache_minutes` Recommended maximum number of minutes for client-side cache storage, null means no limit

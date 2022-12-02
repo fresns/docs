@@ -59,6 +59,8 @@
 
 ## Device Information JSON
 
+> `networkIpv4` 和 `networkIpv6` 必填一项，或者两项都填写。其余项可留空。
+
 ```json
 {
     "type": "Desktop", // Desktop, Mobile, Tablet, Bot
