@@ -100,6 +100,24 @@ fs_index_list('posts') // 帖子首页列表
 fs_index_list('comments') // 评论首页列表
 ```
 
+以上封装函数仅获取第一页内容，如需翻页，则使用以下接口。
+
+```php
+// 1.路由方式
+route('fresns.api.index.list', [$type => 'users', 'page' => 2]) // 用户首页列表
+route('fresns.api.index.list', [$type => 'groups', 'page' => 2]) // 小组首页列表
+route('fresns.api.index.list', [$type => 'hashtags', 'page' => 2]) // 话题首页列表
+route('fresns.api.index.list', [$type => 'posts', 'page' => 2]) // 帖子首页列表
+route('fresns.api.index.list', [$type => 'comments', 'page' => 2]) // 评论首页列表
+
+// 2.路径方式
+/api/engine/index-list/users?page=2
+/api/engine/index-list/groups?page=2
+/api/engine/index-list/hashtags?page=2
+/api/engine/index-list/posts?page=2
+/api/engine/index-list/comments?page=2
+```
+
 ### 列表
 
 ```php
@@ -109,6 +127,24 @@ fs_list('groups') // 小组列表
 fs_list('hashtags') // 话题列表
 fs_list('posts') // 帖子列表
 fs_list('comments') // 评论列表
+```
+
+以上封装函数仅获取第一页内容，如需翻页，则使用以下接口。
+
+```php
+// 1.路由方式
+route('fresns.api.list', [$type => 'users', 'page' => 2]) // 用户首页列表
+route('fresns.api.list', [$type => 'groups', 'page' => 2]) // 小组首页列表
+route('fresns.api.list', [$type => 'hashtags', 'page' => 2]) // 话题首页列表
+route('fresns.api.list', [$type => 'posts', 'page' => 2]) // 帖子首页列表
+route('fresns.api.list', [$type => 'comments', 'page' => 2]) // 评论首页列表
+
+// 2.路径方式
+/api/engine/list/users?page=2
+/api/engine/list/groups?page=2
+/api/engine/list/hashtags?page=2
+/api/engine/list/posts?page=2
+/api/engine/list/comments?page=2
 ```
 
 ### 置顶帖子
