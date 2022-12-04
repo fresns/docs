@@ -51,6 +51,7 @@
     {"name":"done","canDelete":false},
     {"name":"search","canDelete":false},
     {"name":"location","canDelete":false},
+    {"name":"home","canDelete":false},
     {"name":"list","canDelete":false},
     {"name":"choose","canDelete":false},
     {"name":"update","canDelete":false},

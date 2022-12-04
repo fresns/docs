@@ -50,6 +50,7 @@
     "done": "Done",
     "search": "Search",
     "location": "Location",
+    "home": "Home",
     "list": "List",
     "choose": "Choose",
     "update": "Update",

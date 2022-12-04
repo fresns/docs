@@ -50,6 +50,7 @@
     "done": "完成",
     "search": "搜索",
     "location": "位置",
+    "home": "首页",
     "list": "列表",
     "choose": "选择",
     "update": "更新",
