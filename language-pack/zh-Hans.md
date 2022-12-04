@@ -149,6 +149,8 @@
     "userBirthday": "生日",
     "userTimeZone": "时区",
     "userLanguage": "语言",
+    "userFollowing": "正在关注",
+    "userUnfollow": "取消关注",
     "userFollowMutual": "互相关注",
     "userFollowMe": "关注了你",
     "userBlockMe": "拉黑了你",

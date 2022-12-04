@@ -149,6 +149,8 @@
     "userBirthday": "生日",
     "userTimeZone": "時區",
     "userLanguage": "語言",
+    "userFollowing": "正在跟隨",
+    "userUnfollow": "取消跟隨",
     "userFollowMutual": "互相跟隨",
     "userFollowMe": "跟隨了你",
     "userBlockMe": "封鎖了你",

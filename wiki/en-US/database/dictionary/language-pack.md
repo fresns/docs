@@ -150,6 +150,8 @@
     {"name":"userBirthday","canDelete":false},
     {"name":"userTimeZone","canDelete":false},
     {"name":"userLanguage","canDelete":false},
+    {"name":"userFollowing","canDelete":false},
+    {"name":"userUnfollow","canDelete":false},
     {"name":"userFollowMutual","canDelete":false},
     {"name":"userFollowMe","canDelete":false},
     {"name":"userBlockMe","canDelete":false},

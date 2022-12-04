@@ -149,6 +149,8 @@
     "userBirthday": "Birthday",
     "userTimeZone": "TimeZone",
     "userLanguage": "Language",
+    "userFollowing": "Following",
+    "userUnfollow": "Unfollow",
     "userFollowMutual": "Mutual follow",
     "userFollowMe": "Followed you",
     "userBlockMe": "Blocked you",
