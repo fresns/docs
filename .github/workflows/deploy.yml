@@ -38,7 +38,7 @@ jobs:
           cache: 'pnpm'
           cache-dependency-path: ./wiki/pnpm-lock.yaml
 
-      - run: mkdir -p ./en-US/public && cp ../docs/CNAME ./en-US/public
+      - run: mkdir -p ./en-US/public && cp ../wiki/CNAME ./en-US/public
       - run: pnpm install
       - run: pnpm en-US:build
 
