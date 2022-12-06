@@ -11,6 +11,8 @@
 | Route Name | View File | Description |
 | --- | --- | --- |
 | fresns.portal | /portal/index.blade.php | Portal Home |
+| fresns.policies | /portal/policies.blade.php | Policies Info Page |
+|  | /portal/private.blade.php | Private Mode Tip Page |
 
 ## User
 

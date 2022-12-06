@@ -25,7 +25,6 @@ ThemeDemo/          // Theme template folder (named after uniKey)
 ├── messages/           // Message view folder
 ├── editor/             // Editor view folder
 ├── functions.blade.php // Theme Functions
-├── private.blade.php   // Private Mode Tip Page
 ├── error.blade.php     // Error Message Page
 └── theme.json          // Theme configuration file, responsible for defining the base properties of the theme
 ```

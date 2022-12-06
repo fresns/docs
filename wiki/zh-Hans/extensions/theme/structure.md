@@ -11,6 +11,8 @@
 | 路由名 | 模板文件 | 介绍 |
 | --- | --- | --- |
 | fresns.portal | /portal/index.blade.php | 门户主页 |
+| fresns.policies | /portal/policies.blade.php | 隐私权和条款信息页 |
+|  | /portal/private.blade.php | 私有模式提示页 |
 
 ## 用户页
 

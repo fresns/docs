@@ -25,7 +25,6 @@ ThemeDemo/          // 主题模板文件夹（以 uniKey 命名）
 ├── messages/           // 消息视图文件夹
 ├── editor/             // 编辑器视图文件夹
 ├── functions.blade.php // 主题设置页
-├── private.blade.php   // 私有模式提示页
 ├── error.blade.php     // 错误提示页
 └── theme.json          // 主题配置文件，负责定义主题的基础属性
 ```
