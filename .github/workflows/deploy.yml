@@ -18,8 +18,9 @@ jobs:
           fetch-depth: 0
       - uses: actions/setup-node@v3
         with:
-          node-version: 16
+          node-version: 18
           cache: yarn
+          cache-dependency-path: wiki/yarn.lock
       - run: yarn install --frozen-lockfile
 
       - name: Build
