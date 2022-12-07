@@ -63,6 +63,7 @@
 
 ```json
 {
+    "agent": "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/535.1 (KHTML, like Gecko) Chrome/14.0.835.202 Safari/535.1",
     "type": "Desktop", // Desktop, Mobile, Tablet, Bot
     "mac": "2c:89:dc:71:b6:12",
     "brand": "Apple",

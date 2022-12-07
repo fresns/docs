@@ -12,8 +12,9 @@
 | langTag | String | NO | 客户端的语言标签（留空则输出默认语言）<br>配置位置：`控制面板->系统->语言设置` |
 | timezone | String | NO | UTC 时区（留空则使用默认时区）<br>配置位置：`控制面板->系统->站点设置`<br>用户登录后，如果留空，则服务端自动以用户配置的时区处理时间格式 |
 | aid | String | YES/NO | 账号参数（留空则视为未登录账号） |
+| aidToken | String | YES/NO | 账号身份凭证（传参 `aid` 时必传） |
 | uid | Number | YES/NO | 用户参数（留空则视为未登录用户） |
-| token | String | YES/NO | 身份凭证（传参 `aid` 或 `uid` 时必传） |
+| uidToken | String | YES/NO | 用户身份凭证（传参 `uid` 时必传） |
 | deviceInfo | String | YES | [交互设备信息](../database/systems/session-logs.md#设备信息-json) `session_logs > device_info`<br>压缩 Object 信息为字符串传参 |
 
 ## 注册和登录流程
@@ -54,8 +55,9 @@ const SIGN_PARAM_ARR = [
     'appId',
     'timestamp',
     'aid',
+    'aidToken',
     'uid',
-    'token'
+    'uidToken',
 ];
 ```
 
@@ -69,7 +71,7 @@ const SIGN_PARAM_ARR = [
 {
 	"platformId": 1,
     "version": "2.0.0",
-    "appId": "TDh15qYay3x0sARo",
+    "appId": "yh1OJ7WL",
     "timestamp": 1656653400000,
 }
 
@@ -77,21 +79,22 @@ const SIGN_PARAM_ARR = [
 {
 	"platformId": 1,
     "version": "2.0.0",
-    "appId": "TDh15qYay3x0sARo",
+    "appId": "yh1OJ7WL",
     "timestamp": 1656653400000,
     "aid": "wIfu6jaF",
-    "token": "uoX1hk6SHUgB2MFGJwNx38dem9DA7Vsz"
+    "aidToken": "uoX1hk6SHUgB2MFGJwNx38dem9DA7Vsz"
 }
 
 // 已登录用户
 {
 	"platformId": 1,
     "version": "2.0.0",
-    "appId": "TDh15qYay3x0sARo",
+    "appId": "yh1OJ7WL",
     "timestamp": 1656653400000,
     "aid": "wIfu6jaF",
+    "aidToken": "uoX1hk6SHUgB2MFGJwNx38dem9DA7Vsz",
     "uid": 782622,
-    "token": "uoX1hk6SHUgB2MFGJwNx38dem9DA7Vsz"
+    "uidToken": "PqBpwPLJgfd1sH0X5JffYFGxTSc8RW7c"
 }
 ```
 
@@ -100,11 +103,12 @@ const SIGN_PARAM_ARR = [
 ```json
 {
     "aid": "wIfu6jaF",
-    "appId": "TDh15qYay3x0sARo",
+    "aidToken": "uoX1hk6SHUgB2MFGJwNx38dem9DA7Vsz",
+    "appId": "yh1OJ7WL",
 	"platformId": 1,
     "timestamp": 1656653400000,
-    "token": "uoX1hk6SHUgB2MFGJwNx38dem9DA7Vsz",
     "uid": 782622,
+    "uidToken": "PqBpwPLJgfd1sH0X5JffYFGxTSc8RW7c",
     "version": "2.0.0",
 }
 ```
@@ -112,19 +116,19 @@ const SIGN_PARAM_ARR = [
 **3、对排序后的新参数使用 URL 键值对的格式拼接成字符串。**
 
 ```
-aid=wIfu6jaF&appId=TDh15qYay3x0sARo&platformId=1&timestamp=1656653400000&token=uoX1hk6SHUgB2MFGJwNx38dem9DA7Vsz&uid=782622&version=2.0.0
+aid=wIfu6jaF&aidToken=uoX1hk6SHUgB2MFGJwNx38dem9DA7Vsz&appId=yh1OJ7WL&platformId=1&timestamp=1656653400000&uid=782622&uidToken=PqBpwPLJgfd1sH0X5JffYFGxTSc8RW7c$version=2.0.0
 ```
 
 **4、再拼接上** `&appSecret={app_secret}` **得到待签名字符串。**
 
 ```
-aid=wIfu6jaF&appId=TDh15qYay3x0sARo&platformId=1&timestamp=1656653400000&token=uoX1hk6SHUgB2MFGJwNx38dem9DA7Vsz&uid=782622&version=2.0.0&appSecret=qUiEaDNQh2IpvGHOKlTMx7ujn8t1CZWX
+aid=wIfu6jaF&aidToken=uoX1hk6SHUgB2MFGJwNx38dem9DA7Vsz&appId=yh1OJ7WL&platformId=1&timestamp=1656653400000&uid=782622&uidToken=PqBpwPLJgfd1sH0X5JffYFGxTSc8RW7c$version=2.0.0&appSecret=qUiEaDNQh2IpvGHOKlTMx7ujn8t1CZWX
 ```
 
 **5、对签名字符串进行 MD5 运算（32 位小写），得到签名值**
 
 ```
-3443b2e74710a1293e4250c930e18c8f
+0361bfb7592982cf5b1a5d41b6d2234d
 ```
 
 ## 缓存介绍

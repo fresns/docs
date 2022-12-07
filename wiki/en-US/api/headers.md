@@ -12,8 +12,9 @@
 | langTag | String | *optional* | Language Tag (output default language if left empty)<br>Path: `Panel->Systems->Languages` |
 | timezone | String | *optional* | UTC time zone (use default time zone if left empty)<br>Path: `Panel->Systems->General`<br>After the user logs in, if left blank, the server automatically processes the time format in the time zone configured by the user |
 | aid | String |  | Account parameter (regarded as unlogged in account if left empty) |
+| aidToken | String |  | Account identity credential (If `aid` exists, it cannot be empty) |
 | uid | Number |  | User parameter (regarded as unlogged in user if left empty) |
-| token | String |  | Identity credential (If `aid` or `uid` exists, it cannot be empty) |
+| uidToken | String |  | User identity credential (If `uid` exists, it cannot be empty) |
 | deviceInfo | String | **required** | [Interaction Device Information](../database/systems/session-logs.md#device-information-json) `session_logs > device_info`<br>Compress Object information as character string parameter transfer |
 
 ## Register and Login Process
@@ -69,7 +70,7 @@ const SIGN_PARAM_ARR = [
 {
 	"platformId": 1,
     "version": "2.0.0",
-    "appId": "TDh15qYay3x0sARo",
+    "appId": "yh1OJ7WL",
     "timestamp": 1656653400000,
 }
 
@@ -77,21 +78,22 @@ const SIGN_PARAM_ARR = [
 {
 	"platformId": 1,
     "version": "2.0.0",
-    "appId": "TDh15qYay3x0sARo",
+    "appId": "yh1OJ7WL",
     "timestamp": 1656653400000,
     "aid": "wIfu6jaF",
-    "token": "uoX1hk6SHUgB2MFGJwNx38dem9DA7Vsz"
+    "aidToken": "uoX1hk6SHUgB2MFGJwNx38dem9DA7Vsz"
 }
 
 // Logged in user
 {
 	"platformId": 1,
     "version": "2.0.0",
-    "appId": "TDh15qYay3x0sARo",
+    "appId": "yh1OJ7WL",
     "timestamp": 1656653400000,
     "aid": "wIfu6jaF",
+    "aidToken": "uoX1hk6SHUgB2MFGJwNx38dem9DA7Vsz",
     "uid": 782622,
-    "token": "uoX1hk6SHUgB2MFGJwNx38dem9DA7Vsz"
+    "uidToken": "PqBpwPLJgfd1sH0X5JffYFGxTSc8RW7c"
 }
 ```
 
@@ -100,11 +102,12 @@ const SIGN_PARAM_ARR = [
 ```json
 {
     "aid": "wIfu6jaF",
-    "appId": "TDh15qYay3x0sARo",
+    "aidToken": "uoX1hk6SHUgB2MFGJwNx38dem9DA7Vsz",
+    "appId": "yh1OJ7WL",
 	"platformId": 1,
     "timestamp": 1656653400000,
-    "token": "uoX1hk6SHUgB2MFGJwNx38dem9DA7Vsz",
     "uid": 782622,
+    "uidToken": "PqBpwPLJgfd1sH0X5JffYFGxTSc8RW7c",
     "version": "2.0.0",
 }
 ```
@@ -112,19 +115,19 @@ const SIGN_PARAM_ARR = [
 **3. Splice new parameters sorted into character strings with the right format of URL key value.**
 
 ```
-aid=wIfu6jaF&appId=TDh15qYay3x0sARo&platformId=1&timestamp=1656653400000&token=uoX1hk6SHUgB2MFGJwNx38dem9DA7Vsz&uid=782622&version=2.0.0
+aid=wIfu6jaF&aidToken=uoX1hk6SHUgB2MFGJwNx38dem9DA7Vsz&appId=yh1OJ7WL&platformId=1&timestamp=1656653400000&uid=782622&uidToken=PqBpwPLJgfd1sH0X5JffYFGxTSc8RW7c$version=2.0.0
 ```
 
 **4. Splice `&appSecret={app_secret}` to obtain the character string to be signed.**
 
 ```
-aid=wIfu6jaF&appId=TDh15qYay3x0sARo&platformId=1&timestamp=1656653400000&token=uoX1hk6SHUgB2MFGJwNx38dem9DA7Vsz&uid=782622&version=2.0.0&appSecret=qUiEaDNQh2IpvGHOKlTMx7ujn8t1CZWX
+aid=wIfu6jaF&aidToken=uoX1hk6SHUgB2MFGJwNx38dem9DA7Vsz&appId=yh1OJ7WL&platformId=1&timestamp=1656653400000&uid=782622&uidToken=PqBpwPLJgfd1sH0X5JffYFGxTSc8RW7c$version=2.0.0&appSecret=qUiEaDNQh2IpvGHOKlTMx7ujn8t1CZWX
 ```
 
 **5. Perform MD5 operation (32-digit lowercase) against the signed character signature to obtain the signature value.**
 
 ```
-3443b2e74710a1293e4250c930e18c8f
+0361bfb7592982cf5b1a5d41b6d2234d
 ```
 
 ## Cache Introduction
