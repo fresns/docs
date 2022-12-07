@@ -1,48 +1,33 @@
-name: Publish en-US Docs
-
-permissions:
-  contents: write
+name: Deploy en-US Wiki
 
 on:
   push:
-    branches: [ "main" ]
-  pull_request:
-    branches: [ "main" ]
+    branches:
+      - main
 
 defaults:
   run:
-    working-directory: ./wiki
+    working-directory: wiki
 
 jobs:
-  build-and-deploy:
-
+  deploy:
     runs-on: ubuntu-latest
-
-    strategy:
-      matrix:
-        node-version: [16]
-
     steps:
       - uses: actions/checkout@v3
         with:
           fetch-depth: 0
-
-      - uses: pnpm/action-setup@v2
+      - uses: actions/setup-node@v3
         with:
-          version: 7
+          node-version: 16
+          cache: yarn
+      - run: yarn install --frozen-lockfile
 
-      - name: Use Node.js ${{ matrix.node-version }}
-        uses: actions/setup-node@v3
+      - name: Build
+        run: yarn en-US:build
+
+      - name: Deploy
+        uses: peaceiris/actions-gh-pages@v3
         with:
-          node-version: ${{ matrix.node-version }}
-          cache: 'pnpm'
-          cache-dependency-path: ./wiki/pnpm-lock.yaml
-
-      - run: mkdir -p ./en-US/public && cp ../wiki/CNAME ./en-US/public
-      - run: pnpm install
-      - run: pnpm en-US:build
-
-      - name: Deploy to GitHub Pages
-        uses: JamesIves/github-pages-deploy-action@v4.4.1
-        with:
-          folder: wiki/en-US/.vitepress/dist
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: wiki/en-US/.vitepress/dist
+          cname: fresns.org
