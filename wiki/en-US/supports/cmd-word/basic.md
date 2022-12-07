@@ -13,8 +13,9 @@
 | timestamp | Number | **required** | 签名生成时间（当前 Unix 时间戳，精确到秒或毫秒都支持） |
 | sign | String | **required** | 请求签名 |
 | aid | String | **optional** | 账号参数（账号主表 `accounts > aid` 字段） |
+| aidToken | String | **optional** | 账号身份凭证 |
 | uid | Number | **optional** | 用户参数（用户主表 `users > uid` 字段） |
-| token | String | **optional** | 身份凭证（传参时，联动 aid 或 uid 也需传参） |
+| uidToken | String | **optional** | 用户身份凭证 |
 
 ## verifyUrlSign
 
@@ -50,8 +51,9 @@
         "langTag": "zh-Hans",
         "timezone": "+8",
         "aid": "6a3bb3bc",
+        "aidToken": "uoX1hk6SHUgB2MFGJwNx38dem9DA7Vsz",
         "uid": 782622,
-        "token": "6a3bb3bcdd4b75b1f852a0ef",
+        "uidToken": "PqBpwPLJgfd1sH0X5JffYFGxTSc8RW7c",
         "deviceInfo": ""
     }
 }

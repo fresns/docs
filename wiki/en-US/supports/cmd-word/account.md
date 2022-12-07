@@ -84,22 +84,19 @@
 ```
 :::
 
-## createSessionToken
+## createAccountToken
 
 ```php
-\FresnsCmdWord::plugin('Fresns')->createSessionToken($wordBody)
+\FresnsCmdWord::plugin('Fresns')->createAccountToken($wordBody)
 ```
 | Parameter Name | Type | Required | Description |
 | --- | --- | --- | --- |
 | platformId | Number | **required** | 平台编号（配置表 [platforms](../../database/dictionary/platforms.md) 键名的键值） |
+| version | String | **required** | 语义化版本号 |
+| appId | String | **required** | App ID |
 | aid | String | **required** | 账号参数 `session_tokens > account_id`<br>存储时由 `aid` 转换成 `accounts > id` |
-| uid | Number | *optional* | 用户参数 `session_tokens > user_id`<br>存储时由 `uid` 转换成 `users > id` |
 | expiredTime | Number | *optional* | 过期时间，单位：小时（为空代表永久有效） |
 
-::: details 创建逻辑
-- 账号（aid）或者账号+用户（aid+uid），同一个平台编号（platformId）仅能存在一个 token
-- 创建时如果存在则更新 token 或删除旧的，生成新的
-:::
 ::: details 结果示例
 ```json
 {
@@ -107,9 +104,8 @@
     "message": "ok",
     "data": {
         "aid": "accounts > aid",
-        "uid": "users > uid", //没有则输出 null
-        "tokenId": "session_tokens > id",
-        "token": "session_tokens > token",
+        "aidToken": "session_tokens > token",
+        "aidTokenId": "session_tokens > id",
         "expiredHours": "有效期小时数", // 没有则输出 null
         "expiredDays": "有效期天数", // 没有则输出 null
         "expiredDateTime": "session_tokens > expired_at 留空代表永久有效，格式为 Y-m-d H:i:s", // 没有则输出 null
@@ -118,17 +114,18 @@
 ```
 :::
 
-## verifySessionToken
+## verifyAccountToken
 
 ```php
-\FresnsCmdWord::plugin('Fresns')->verifySessionToken($wordBody)
+\FresnsCmdWord::plugin('Fresns')->verifyAccountToken($wordBody)
 ```
 | Parameter Name | Type | Required | Description |
 | --- | --- | --- | --- |
 | platformId | Number | **required** | 平台编号（配置表 [platforms](../../database/dictionary/platforms.md) 键名的键值） |
+| version | String | **required** | 语义化版本号 |
+| appId | String | **required** | App ID |
 | aid | String | **required** | 账号参数 `session_tokens > account_id`<br>查验时由 `aid` 转换成 `accounts > id` |
-| uid | Number | *optional* | 用户参数 `session_tokens > user_id`<br>查验时由 `uid` 转换成 `users > id` |
-| token | String | **required** | 身份凭证（凭证表 `session_tokens > token` 字段） |
+| aidToken | String | **required** | 身份凭证（凭证表 `session_tokens > token` 字段） |
 
 ## logicalDeletionAccount
 
