@@ -26,12 +26,8 @@ jobs:
       - name: Build
         run: yarn zh-Hans:build
 
-      - name: Commit changes
-        run: |
-          git add .
-          git config --global user.email "you@example.com"
-          git config --global user.name "Your Name"
-          git commit -m "VitePress build"
-
-      - name: Push changes
-        run: git push origin zh-hans-pages
+      - name: GitHub Push
+        uses: ad-m/github-push-action@v0.6.0
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          branch: zh-hans-pages
