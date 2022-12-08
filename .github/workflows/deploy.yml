@@ -31,5 +31,5 @@ jobs:
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: wiki/en-US/.vitepress/dist
-          enable_jekyll: false
+          publish_branch: gh-pages
           cname: fresns.org
