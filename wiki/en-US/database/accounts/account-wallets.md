@@ -2,7 +2,7 @@
 
 | Column Name | Type | Comment | Default | Null | Remark |
 | --- | --- | --- | --- | --- | --- |
-| id | bigint *UNSIGNED* | Primary Key ID |  | NO | 自动递赠 |
+| id | bigint *UNSIGNED* | Primary Key ID |  | NO | Auto Increment |
 | account_id | bigint *UNSIGNED* | Account ID |  | NO | 关联字段 [accounts->id](accounts.md) |
 | balance | decimal(10,2) | 钱包金额 | 0.00 | NO | 单位：元 |
 | freeze_amount | decimal(10,2) | 不可用金额 | 0.00 | NO | 例如正在提现或者冻结<br>单位：元 |

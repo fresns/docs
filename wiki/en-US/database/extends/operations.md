@@ -2,7 +2,7 @@
 
 | Column Name | Type | Comment | Default | Null | Remark |
 | --- | --- | --- | --- | --- | --- |
-| id | int *UNSIGNED* | Primary Key ID |  | NO | 自动递赠 |
+| id | int *UNSIGNED* | Primary Key ID |  | NO | Auto Increment |
 | type | tinyint *UNSIGNED* | 类型 | 1 | NO | 1.自定义 / 2.互动按钮图 / 3.勋章图标 / 4.提示文案 |
 | code | varchar(32) | 代码 |  | NO | 纯小写英文 |
 | style | varchar(32) | 风格 |  | NO | primary / secondary / success / danger / warning / info |

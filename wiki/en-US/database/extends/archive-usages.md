@@ -2,7 +2,7 @@
 
 | Column Name | Type | Comment | Default | Null | Remark |
 | --- | --- | --- | --- | --- | --- |
-| id | bigint *UNSIGNED* | Primary Key ID |  | NO | 自动递赠 |
+| id | bigint *UNSIGNED* | Primary Key ID |  | NO | Auto Increment |
 | usage_type | tinyint *UNSIGNED* | 目标类型 |  | NO |  |
 | usage_id | bigint *UNSIGNED* | 目标主键 ID |  | NO |  |
 | archive_id | int *UNSIGNED* | 参数 ID |  | NO | 关联字段 archives > id |

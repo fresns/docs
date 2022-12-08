@@ -2,7 +2,7 @@
 
 | Column Name | Type | Comment | Default | Null | Remark |
 | --- | --- | --- | --- | --- | --- |
-| id | int *UNSIGNED* | Primary Key ID |  | NO | 自动递赠 |
+| id | int *UNSIGNED* | Primary Key ID |  | NO | Auto Increment |
 | code | varchar(32) | 表情符号 |  | NO | **唯一值** 不区分中英文或符号 |
 | name | varchar(64) | 名称 |  | NO | **多语言** |
 | image_file_id | bigint *UNSIGNED* | 表情图 ID |  | YES | 关联字段 [files->id](../systems/files.md) |

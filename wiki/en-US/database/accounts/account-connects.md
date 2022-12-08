@@ -2,7 +2,7 @@
 
 | Column Name | Type | Comment | Default | Null | Remark |
 | --- | --- | --- | --- | --- | --- |
-| id | bigint *UNSIGNED* | Primary Key ID |  | NO | 自动递赠 |
+| id | bigint *UNSIGNED* | Primary Key ID |  | NO | Auto Increment |
 | account_id | bigint *UNSIGNED* | Account ID |  | NO | 关联字段 [accounts->id](accounts.md) |
 | connect_id | tinyint *UNSIGNED* | 互联平台编号 |  | NO | 关联配置表 [connects](../../database/dictionary/connects.md) 键值 |
 | connect_token | varchar(128) | 关联凭证 Token |  | NO | **唯一值**<br>例如：微信 openid 或 GitHub Token |

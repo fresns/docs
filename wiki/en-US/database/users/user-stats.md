@@ -2,7 +2,7 @@
 
 | Column Name | Type | Comment | Default | Null | Remark |
 | --- | --- | --- | --- | --- | --- |
-| id | bigint *UNSIGNED* | Primary Key ID |  | NO | 自动递赠 |
+| id | bigint *UNSIGNED* | Primary Key ID |  | NO | Auto Increment |
 | user_id | bigint *UNSIGNED* | 用户主键 ID |  | NO | 关联字段 [users->id](users.md) |
 | like_user_count | int *UNSIGNED* | 用户点赞数 | 0 | NO | 我点赞的用户总数 |
 | like_group_count | int *UNSIGNED* | 小组点赞数 | 0 | NO | 我点赞的小组总数 |

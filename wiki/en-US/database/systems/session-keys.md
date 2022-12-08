@@ -2,7 +2,7 @@
 
 | Column Name | Type | Comment | Default | Null | Remark |
 | --- | --- | --- | --- | --- | --- |
-| id | int *UNSIGNED* | Primary Key ID |  | NO | 自动递赠 |
+| id | int *UNSIGNED* | Primary Key ID |  | NO | Auto Increment |
 | platform_id | tinyint *UNSIGNED* | 平台编号 |  | NO | 关联键名 [configs->item_key = platforms](../dictionary/platforms.md) |
 | name | varchar(64) | 用途名称 |  | NO |  |
 | type | tinyint *UNSIGNED* | 密钥权限类型 |  | NO | 1.主程 API / 2.管理 API / 3.插件 API |

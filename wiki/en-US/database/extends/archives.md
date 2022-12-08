@@ -2,7 +2,7 @@
 
 | Column Name | Type | Comment | Default | Null | Remark |
 | --- | --- | --- | --- | --- | --- |
-| id | int *UNSIGNED* | Primary Key ID |  | NO | 自动递赠 |
+| id | int *UNSIGNED* | Primary Key ID |  | NO | Auto Increment |
 | plugin_unikey | varchar(64) | 关联插件 |  | NO | 关联字段 [plugins->unikey](../plugins/plugins.md)<br>哪个插件创建的 |
 | name | varchar(64) | 名称 |  | YES | **多语言**  |
 | description | text | 介绍 |  | YES | **多语言** |

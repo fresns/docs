@@ -2,7 +2,7 @@
 
 | Column Name | Type | Comment | Default | Null | Remark |
 | --- | --- | --- | --- | --- | --- |
-| id | bigint *UNSIGNED* | Primary Key ID |  | NO | 自动递赠 |
+| id | bigint *UNSIGNED* | Primary Key ID |  | NO | Auto Increment |
 | template_id | tinyint *UNSIGNED* | 模板编号 |  | NO |  |
 | type | tinyint *UNSIGNED* | 类型 | 1 | NO | 1.邮件 / 2.短信 |
 | account | varchar(128) | 账号 |  | NO | 邮箱或手机，手机号带国际区号，区号无加号 |

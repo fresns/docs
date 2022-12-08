@@ -2,7 +2,7 @@
 
 | Column Name | Type | Comment | Default | Null | Remark |
 | --- | --- | --- | --- | --- | --- |
-| id | int *UNSIGNED* | Primary Key ID |  | NO | 自动递赠 |
+| id | int *UNSIGNED* | Primary Key ID |  | NO | Auto Increment |
 | usage_type | tinyint *UNSIGNED* | 类型 |  | NO | 1.钱包充值<br>2.钱包提现<br>3.编辑器扩展<br>4.内容类型扩展<br>5.管理扩展<br>6.小组扩展<br>7.用户功能扩展<br>8.用户资料扩展<br>9.地图 |
 | plugin_unikey | varchar(64) | 关联插件名称 |  | NO | 关联字段 [plugins->unikey](../plugins/plugins.md) |
 | name | varchar(128) | 名称 |  | NO | **多语言** |

@@ -2,7 +2,7 @@
 
 | Column Name | Type | Comment | Default | Null | Remark |
 | --- | --- | --- | --- | --- | --- |
-| id | bigint *UNSIGNED* | Primary Key ID |  | NO | 自动递赠 |
+| id | bigint *UNSIGNED* | Primary Key ID |  | NO | Auto Increment |
 | table_name | varchar(64) | 表名 |  | NO | 哪个表 |
 | table_column | varchar(64) | 字段名 |  | NO | 哪个字段是多语言 |
 | table_id | bigint *UNSIGNED* | 数据记录的主键 ID |  | YES | 哪条数据记录是多语言，该条记录的`主键 ID` |

@@ -2,7 +2,7 @@
 
 | Column Name | Type | Comment | Default | Null | Remark |
 | --- | --- | --- | --- | --- | --- |
-| id | int *UNSIGNED* | Primary Key ID | | NO | 自动递赠 |
+| id | int *UNSIGNED* | Primary Key ID | | NO | Auto Increment |
 | item_key | varchar(64) | 键名 | | NO | **唯一值** |
 | item_value | longtext | 键值 | | YES |  |
 | item_type | varchar(16) | 键类型 | string | NO |  |

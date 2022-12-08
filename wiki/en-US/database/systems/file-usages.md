@@ -2,7 +2,7 @@
 
 | Column Name | Type | Comment | Default | Null | Remark |
 | --- | --- | --- | --- | --- | --- |
-| id | bigint *UNSIGNED* | Primary Key ID |  | NO | 自动递赠 |
+| id | bigint *UNSIGNED* | Primary Key ID |  | NO | Auto Increment |
 | file_id | bigint *UNSIGNED* | 文件 ID |  | NO | 关联字段 [files->id](../systems/files.md)<br>不是唯一值，一个文件支持关联多个附属信息 |
 | file_type | tinyint *UNSIGNED* | 文件类型 | 1 | NO | 1.图片 / 2.视频 / 3.音频 / 4.文档 |
 | usage_type | tinyint *UNSIGNED* | 用途类型 | 1 | NO | [见编号说明](../number.md#文件用途类型) |

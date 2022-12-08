@@ -2,7 +2,7 @@
 
 | Column Name | Type | Comment | Default | Null | Remark |
 | --- | --- | --- | --- | --- | --- |
-| id | bigint *UNSIGNED* | Primary Key ID |  | NO | 自动递赠 |
+| id | bigint *UNSIGNED* | Primary Key ID |  | NO | Auto Increment |
 | account_id | bigint *UNSIGNED* | 账号 ID |  | NO | 这笔交易记录属于谁，关联字段 [accounts->id](accounts.md) |
 | user_id | bigint *UNSIGNED* | 用户 ID |  | YES | 这笔交易记录属于谁，关联字段 [users->id](../users/users.md) |
 | type | tinyint *UNSIGNED* | 交易类型 | 1 | NO | 1.收入(充值) / 2.收入(解冻) / 3.收入(交易) <br> 4.支出(提现) / 5.支出(冻结) / 6.支出(交易) |

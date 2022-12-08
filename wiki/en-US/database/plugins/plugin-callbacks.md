@@ -2,7 +2,7 @@
 
 | Column Name | Type | Comment | Default | Null | Remark |
 | --- | --- | --- | --- | --- | --- |
-| id | bigint *UNSIGNED* | 主键 ID |  | NO | 自动递赠 |
+| id | bigint *UNSIGNED* | 主键 ID |  | NO | Auto Increment |
 | plugin_unikey | varchar(64) | 生成数据的插件名称 |  | NO | 关联字段 [plugins->unikey](../plugins/plugins.md) |
 | account_id | bigint *UNSIGNED* | 生成数据的账号 |  | YES | 关联字段 [accounts->id](../accounts/accounts.md) |
 | user_id | bigint *UNSIGNED* | 生成数据的用户 |  | YES | 关联字段 [users->id](../users/users.md) |

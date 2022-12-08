@@ -2,7 +2,7 @@
 
 | Column Name | Type | Comment | Default | Null | Remark |
 | --- | --- | --- | --- | --- | --- |
-| id | bigint *UNSIGNED* | Primary Key ID |  | NO | 自动递赠 |
+| id | bigint *UNSIGNED* | Primary Key ID |  | NO | Auto Increment |
 | file_id | bigint *UNSIGNED* | 文件 ID |  | NO | 关联字段 [files->id](files.md) |
 | file_type | tinyint *UNSIGNED* | 文件类型 | 1 | NO | 1.图片 / 2.视频 / 3.音频 / 4.文档 |
 | account_id | bigint *UNSIGNED* | 下载者账号 ID |  | NO | 关联字段 [accounts->id](../accounts/accounts.md) |
