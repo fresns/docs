@@ -1,4 +1,4 @@
-name: Deploy en-US Pages
+name: Deploy zh-Hans Pages
 
 on:
   push:
@@ -24,11 +24,11 @@ jobs:
       - run: yarn install --frozen-lockfile
 
       - name: Build
-        run: yarn en-US:build
+        run: yarn zh-Hans:build
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: wiki/en-US/.vitepress/dist
-          cname: fresns.org
+          publish_branch: zh-hans-pages
