@@ -14,7 +14,7 @@ LanguageHelper::fresnsLanguageByTableId($tableName, $tableColumn, $tableId, $lan
 | tableId | Number | **required** | 主键 ID |
 | langTag | String | *optional* | 语言标签，可不传<br>如果传参，则输出指定语言标签内容。<br>如果不传，则输出全部语言值，格式见下方。 |
 
-::: details 查看输出示例
+::: details Return Example
 ```json
 [
     {

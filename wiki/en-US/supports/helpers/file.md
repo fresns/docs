@@ -11,7 +11,7 @@ FileHelper::fresnsFileStorageConfigByType($type);
 | --- | --- | --- | --- |
 | type | Number | **required** | 类型 ID |
 
-::: details 查看输出示例
+::: details Return Example
 ```json
 {
     "service": "", // plugin unikey

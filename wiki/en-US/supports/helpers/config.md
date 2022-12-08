@@ -22,7 +22,7 @@ ConfigHelper::fresnsConfigByItemKeys($itemKeys, $langTag);
 | itemKeys | Array | **required** | [configs > item_key](../../database/systems/configs.md) |
 | langTag | String | *optional* | 语言标签，可不传，仅对多语言配置有效。<br>如果是多语言配置，不传则输出默认语言值。 |
 
-::: details 查看输出示例
+::: details Return Example
 ```json
 {
     "site_name": "Fresns",
@@ -42,7 +42,7 @@ ConfigHelper::fresnsConfigByItemTag($itemTag, $langTag);
 | itemTag | String | **required** | [configs > item_tag](../../database/systems/configs.md) |
 | langTag | String | *optional* | 语言标签，可不传，仅对多语言配置有效。<br>如果是多语言配置，不传则输出默认语言值。 |
 
-::: details 查看输出示例
+::: details Return Example
 ```json
 {
     "site_name": "Fresns",
