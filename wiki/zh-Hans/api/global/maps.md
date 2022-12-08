@@ -20,7 +20,7 @@
     "message": "ok",
     "data": [
         {
-            "plugin": "String / 插件 Unikey",
+            "unikey": "String / 插件 Unikey",
             "name": "String / 名称",
             "icon": "String / 服务商图标 URL",
             "url": "String / 服务商访问 URL",

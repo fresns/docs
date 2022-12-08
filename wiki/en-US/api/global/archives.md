@@ -33,7 +33,7 @@
     "message": "ok",
     "data": [
         {
-            "plugin": "String / 插件 Unikey",
+            "unikey": "String / 插件 Unikey",
             "name": "String / 名称",
             "code": "String / Code",
             "formElement": "String / HTML 表单元素",

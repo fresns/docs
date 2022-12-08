@@ -1020,7 +1020,7 @@
 
 ```json
 {
-    "plugin": "String / 插件 Unikey",
+    "unikey": "String / 插件 Unikey",
     "name": "String / 扩展名称",
     "icon": "String / 扩展图标地址",
     "url": "String / 扩展访问地址",
