@@ -1,4 +1,4 @@
-name: Deploy en-US Wiki
+name: Deploy en-US Pages
 
 on:
   push:

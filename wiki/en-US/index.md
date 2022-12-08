@@ -2,7 +2,7 @@
 layout: home
 
 title: Fresns
-titleTemplate: Cross-platform general-purpose multiple content forms social network service software
+titleTemplate: Cross-platform general-purpose multiple content forms social network service software.
 
 hero:
   name: Fresns
