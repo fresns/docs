@@ -1,7 +1,7 @@
 {
   "name": "Fresns",
   "version": "2.x",
-  "description": "Cross-platform general-purpose multiple content forms social network service software",
+  "description": "Cross-platform general-purpose multiple content forms social network service software.",
   "main": "index.js",
   "private": true,
   "homepage": "https://fresns.org/",
