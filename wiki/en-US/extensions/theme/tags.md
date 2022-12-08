@@ -163,6 +163,12 @@ fs_sticky_posts($gid)
 fs_sticky_comments($pid)
 ```
 
+### Content Types
+
+```php
+fs_content_types($type) // post or comment
+```
+
 ## Client Options
 
 ```html

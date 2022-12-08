@@ -163,6 +163,12 @@ fs_sticky_posts($gid)
 fs_sticky_comments($pid)
 ```
 
+### 内容类型
+
+```php
+fs_content_types($type) // post or comment
+```
+
 ## 客户端判断
 
 ```html
