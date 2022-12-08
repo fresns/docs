@@ -13,7 +13,7 @@ hero:
       alt: Fresns
   actions:
     - theme: brand
-      text: Get Started
+      text: Get Started TestDeploy
       link: /guide/
     - theme: alt
       text: Join Fresns
