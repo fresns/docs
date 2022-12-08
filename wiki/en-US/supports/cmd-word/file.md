@@ -87,7 +87,7 @@
 
 - `tableId` 和 `tableKey` 二选一必传一个。
 
-::: details fileInfo 数组示例
+::: details fileInfo Example
 ```json
 [
     {

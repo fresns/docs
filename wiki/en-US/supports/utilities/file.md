@@ -8,7 +8,7 @@
 FileUtility::uploadFile($bodyInfo, $file);
 ```
 
-::: details 查看示例
+::: details Example
 ```php
 $bodyInfo = [
     'usageType' => $dtoWordBody->usageType,
@@ -36,7 +36,7 @@ $uploadFile = FileUtility::uploadFile($bodyInfo, $dtoWordBody->file);
 FileUtility::uploadFileInfo($bodyInfo);
 ```
 
-::: details 查看示例
+::: details Example
 ```php
 $bodyInfo = [
     'usageType' => $dtoWordBody->usageType,
@@ -90,7 +90,7 @@ $uploadFileInfo = FileUtility::uploadFileInfo($bodyInfo);
 FileUtility::saveFileInfoToDatabase($bodyInfo, $diskPath, $file);
 ```
 
-::: details 查看示例
+::: details Example
 ```php
 $bodyInfo = [
     'usageType' => $dtoWordBody->usageType,

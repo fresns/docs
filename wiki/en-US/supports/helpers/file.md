@@ -62,7 +62,7 @@ FileHelper::fresnsFileInfoListByIds($fileIdsOrFids);
 
 - 输出结果会判断防盗链配置，如果开启则输出防盗链文件信息。
 
-::: details 查看列表输出示例
+::: details Example
 ```json
 {
     "images": [
@@ -104,7 +104,7 @@ FileHelper::fresnsFileInfoListByTableColumn($tableName, $tableColumn, $tableId, 
 - `tableId` 或 `tableKey` 二选一传参
 - 输出结果会判断防盗链配置，如果开启则输出防盗链文件信息。
 
-::: details 查看列表输出示例
+::: details Example
 ```json
 {
     "images": [
