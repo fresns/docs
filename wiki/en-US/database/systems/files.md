@@ -3,7 +3,7 @@
 | Column Name | Type | Comment | Default | Null | Remark |
 | --- | --- | --- | --- | --- | --- |
 | id | bigint *UNSIGNED* | Primary Key ID |  | NO | Auto Increment |
-| fid | varchar(32) | 对外公开 ID |  | NO | **唯一值** |
+| fid | varchar(32) | 对外公开 ID |  | NO | **Unique** |
 | type | tinyint *UNSIGNED* | 文件类型 | 1 | NO | 1.图片 / 2.视频 / 3.音频 / 4.文档 |
 | name | varchar(128) | 文件名称 |  | NO | 完整原始名称，上传时的文件名，包含后缀名 |
 | mime | varchar(255) | 文件扩展名 |  | YES | 比如：image/jpeg 或 video/mp4 |

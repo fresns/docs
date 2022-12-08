@@ -3,7 +3,7 @@
 | Column Name | Type | Comment | Default | Null | Remark |
 | --- | --- | --- | --- | --- | --- |
 | id | int *UNSIGNED* | 小组 ID | | NO | 自动递增 |
-| gid | varchar(32) | 对外公开 ID |  | NO | **唯一值** |
+| gid | varchar(32) | 对外公开 ID |  | NO | **Unique** |
 | parent_id | int *UNSIGNED* | 父级小组 ID |  | YES | type=2 时使用 |
 | user_id | bigint *UNSIGNED* | 创建者 ID |  | YES | 关联字段 [users->id](../users/users.md) |
 | name | varchar(64) | 小组名称 |  | NO | **多语言**  |

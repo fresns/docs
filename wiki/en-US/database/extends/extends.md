@@ -3,7 +3,7 @@
 | Column Name | Type | Comment | Default | Null | Remark |
 | --- | --- | --- | --- | --- | --- |
 | id | bigint *UNSIGNED* | Primary Key ID | | NO | 自动递增 |
-| eid | varchar(32) | 对外公开 ID |  | NO | **唯一值** |
+| eid | varchar(32) | 对外公开 ID |  | NO | **Unique** |
 | user_id | bigint *UNSIGNED* | 创建者 ID |  | NO | 关联字段 [users->id](../users/users.md) |
 | plugin_unikey | varchar(64) | 创建者插件 |  | NO | 关联字段 [plugins->unikey](../plugins/plugins.md) |
 | type | tinyint *UNSIGNED* | 类型 | 1 |  NO| 1.文本框 / 2.信息框 / 3.交互框 |

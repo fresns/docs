@@ -3,8 +3,8 @@
 | Column Name | Type | Comment | Default | Null | Remark |
 | --- | --- | --- | --- | --- | --- |
 | id | bigint *UNSIGNED* | Primary Key ID | | NO | 自动递增 |
-| name | varchar(64) | 话题名 |  | NO | **唯一值**<br>不带 # 号存储 |
-| slug | varchar(255) | 话题名 URL Encode 转码 |  | NO | **唯一值** |
+| name | varchar(64) | 话题名 |  | NO | **Unique**<br>不带 # 号存储 |
+| slug | varchar(255) | 话题名 URL Encode 转码 |  | NO | **Unique** |
 | description | varchar(255) | 描述 |  | YES | **多语言**  |
 | cover_file_id | bigint *UNSIGNED* | 封面图 ID |  | YES | 关联字段 [files->id](../systems/files.md) |
 | cover_file_url | varchar(255) | 封面图 URL |  | YES |  |

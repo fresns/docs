@@ -3,7 +3,7 @@
 | Column Name | Type | Comment | Default | Null | Remark |
 | --- | --- | --- | --- | --- | --- |
 | id | bigint *UNSIGNED* | Primary Key ID | | NO | 自动递增 |
-| cid | varchar(32) | 对外公开 ID |  | NO | **唯一值** |
+| cid | varchar(32) | 对外公开 ID |  | NO | **Unique** |
 | post_id | bigint *UNSIGNED* | 帖子 ID |  | NO | 关联字段 [posts->id](posts.md) |
 | top_parent_id | bigint *UNSIGNED* | 顶级评论 ID | 0 | NO | 所属哪个评论，0 代表不属于任何评论 |
 | parent_id | bigint *UNSIGNED* | 父级评论 ID | 0 | NO | 0 代表一级评论 |

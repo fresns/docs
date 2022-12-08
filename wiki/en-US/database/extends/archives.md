@@ -6,7 +6,7 @@
 | plugin_unikey | varchar(64) | 关联插件 |  | NO | 关联字段 [plugins->unikey](../plugins/plugins.md)<br>哪个插件创建的 |
 | name | varchar(64) | 名称 |  | YES | **多语言**  |
 | description | text | 介绍 |  | YES | **多语言** |
-| code | varchar(32) | 代码 |  | NO | **唯一值**，纯英文字母，不支持任何符号或空格 |
+| code | varchar(32) | 代码 |  | NO | **Unique**，纯英文字母，不支持任何符号或空格 |
 | usage_type | tinyint *UNSIGNED* | 用途类型 |  | NO | 1.用户 / 2.小组 / 3.话题 / 4.帖子 / 5.评论 |
 | form_element | varchar(16) | 表单元素 |  | NO | HTML form 元素 |
 | element_type | varchar(16) | 表单元素类型 |  | YES | 与 form_element 对应的类型 |

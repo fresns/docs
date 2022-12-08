@@ -3,12 +3,12 @@
 | Column Name | Type | Comment | Default | Null | Remark |
 | --- | --- | --- | --- | --- | --- |
 | id | bigint *UNSIGNED* | Account ID |  | NO | Auto Increment |
-| aid | varchar(32) | 账号 ID |  | NO | **唯一值** |
+| aid | varchar(32) | 账号 ID |  | NO | **Unique** |
 | type | tinyint *UNSIGNED* | 类型 | 3 | NO | 1.超级管理员<br>2.普通管理员<br>3.普通用户 |
 | country_code | varchar(8) | 国际区号 |  | YES | 格式无加号，例如中国是 86，美国是 1 |
 | pure_phone | varchar(128) | 没有区号的手机号 |  | YES | 不带国际区号 |
-| phone | varchar(128) | 带区号的手机号 |  | YES | **唯一值** 带国际区号（区号无加号） |
-| email | varchar(128) | 邮箱 |  | YES | **唯一值** |
+| phone | varchar(128) | 带区号的手机号 |  | YES | **Unique** 带国际区号（区号无加号） |
+| email | varchar(128) | 邮箱 |  | YES | **Unique** |
 | password | char(64) | 密码 |  | YES | 加密存储 |
 | last_login_at | timestamp | 最后一次登录时间 |  | NO |  |
 | is_verify | tinyint *UNSIGNED* | 实名认证状态 | 0 | NO | 0.未认证 / 1.已认证 |

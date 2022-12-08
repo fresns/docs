@@ -4,7 +4,7 @@
 | --- | --- | --- | --- | --- | --- |
 | id | int *UNSIGNED* | Primary Key ID | | NO | 自动递增 |
 | domain | varchar(64) | 域名 |  | NO | 顶级域名 |
-| host | varchar(128) | 网址 Host |  | NO | **唯一值** |
+| host | varchar(128) | 网址 Host |  | NO | **Unique** |
 | post_count | int *UNSIGNED* | 帖子数 | 0 | NO | 有多少帖子内容包含了该域名 |
 | comment_count | int *UNSIGNED* | 评论数 | 0 | NO | 有多少评论内容包含了该域名 |
 | is_enable | tinyint *UNSIGNED* | 是否启用 | 1 | NO | 0.禁用 / 1.启用<br>禁用则该域名 URL 不能解析成超链接，仅作为纯文本显示 |

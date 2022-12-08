@@ -3,7 +3,7 @@
 | Column Name | Type | Comment | Default | Null | Remark |
 | --- | --- | --- | --- | --- | --- |
 | id | bigint *UNSIGNED* | 帖子 ID | | NO | 自动递增 |
-| pid | varchar(32) | 对外公开 ID |  | NO | **唯一值** |
+| pid | varchar(32) | 对外公开 ID |  | NO | **Unique** |
 | user_id | bigint *UNSIGNED* | 发布者 ID |  | NO | 关联字段 [users->id](../users/users.md) |
 | group_id | int *UNSIGNED* | 小组 ID | 0 | NO | 关联字段 [groups->id](groups.md) |
 | title | varchar(255) | 标题 |  | YES |  |

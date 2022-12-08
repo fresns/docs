@@ -6,7 +6,7 @@
 | plugin_unikey | varchar(64) | 生成数据的插件名称 |  | NO | 关联字段 [plugins->unikey](../plugins/plugins.md) |
 | account_id | bigint *UNSIGNED* | 生成数据的账号 |  | YES | 关联字段 [accounts->id](../accounts/accounts.md) |
 | user_id | bigint *UNSIGNED* | 生成数据的用户 |  | YES | 关联字段 [users->id](../users/users.md) |
-| uuid | varchar(64) | 标准 UUID<br>Universally unique identifier |  | NO | **唯一值**<br>32 位数的 16 进制<br>示例 550e8400-e29b-41d4-a716-446655440000 |
+| uuid | varchar(64) | 标准 UUID<br>Universally unique identifier |  | NO | **Unique**<br>32 位数的 16 进制<br>示例 550e8400-e29b-41d4-a716-446655440000 |
 | type | smallint *UNSIGNED* | 类型 | 1 | NO | 见下方描述，支持多个，以英文逗号隔开 |
 | content | json | 返参内容 |  | NO | 见下方描述，支持多种类型一起存储 |
 | is_use | tinyint *UNSIGNED* | 状态 | 0 | NO | 0.未调<br>1.已调（已使用） |
