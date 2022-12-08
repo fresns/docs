@@ -22,7 +22,7 @@
 | timezone | String | *optional* | 偏好时区，关联字段 `users > timezone` |
 | language | String | *optional* | 偏好语言，关联字段 `users > language` |
 
-::: details 结果示例
+::: details Return Example
 ```json
 {
     "code": 0,
@@ -62,7 +62,7 @@
 | uid | Number | **required** | 用户 UID `users > uid` |
 | password | String | *optional* | 密码 `users > password` |
 
-::: details 结果示例
+::: details Return Example
 ```json
 {
     "code": 0,
@@ -91,7 +91,7 @@
 | uid | Number | **required** | 用户参数 `session_tokens > user_id`<br>存储时由 `uid` 转换成 `users > id` |
 | expiredTime | Number | *optional* | 过期时间，单位：小时（为空代表永久有效） |
 
-::: details 结果示例
+::: details Return Example
 ```json
 {
     "code": 0,

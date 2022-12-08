@@ -13,7 +13,7 @@
 | connectInfo | Array | **optional** | 互联平台专用：平台信息（`type=3` 时必填） |
 | password | String | *optional* | 登录密码 |
 
-::: details 结果示例
+::: details Return Example
 ```json
 {
     "code": 0,
@@ -71,7 +71,7 @@
 | password | String | *optional* | 以密码校验专用 |
 | verifyCode | String | *optional* | 以验证码校验专用（命令字 [checkCode](#校验验证码) 查验） |
 
-::: details 结果示例
+::: details Return Example
 ```json
 {
     "code": 0,
@@ -97,7 +97,7 @@
 | aid | String | **required** | 账号参数 `session_tokens > account_id`<br>存储时由 `aid` 转换成 `accounts > id` |
 | expiredTime | Number | *optional* | 过期时间，单位：小时（为空代表永久有效） |
 
-::: details 结果示例
+::: details Return Example
 ```json
 {
     "code": 0,

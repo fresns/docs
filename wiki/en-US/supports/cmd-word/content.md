@@ -24,7 +24,7 @@
 | mapJson | Object | *optional* | 默认配置：位置信息 |  |
 | eid | String | *optional* | 默认配置：扩展内容 |  |
 
-::: details 结果示例
+::: details Return Example
 ```json
 {
     "code": 0,
@@ -51,7 +51,7 @@
 - 将已发表的正式内容，还原生成编辑草稿。
 - 评论不支持子孙级评论，仅限一级评论可生成草稿。
 
-::: details 结果示例
+::: details Return Example
 ```json
 {
     "code": 0,
@@ -77,7 +77,7 @@
 | type | Number | **required** | 类型 1.帖子 2.评论 |
 | logId | Number | **required** | 帖子 `post_logs > id`<br>评论 `comment_logs > id` |
 
-::: details 结果示例
+::: details Return Example
 ```json
 {
     "code": 0,
@@ -112,7 +112,7 @@
 | mapJson | Object | *optional* | 默认配置：位置信息 |  |
 | eid | String | *optional* | 默认配置：扩展内容 |  |
 
-::: details 结果示例
+::: details Return Example
 ```json
 {
     "code": 0,

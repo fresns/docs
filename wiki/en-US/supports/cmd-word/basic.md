@@ -34,10 +34,10 @@
     - 可以留空或不传的参数：`langTag`、`timezone`、`uid`、`deviceInfo`
     - uid 不传，则表示为账号身份登录。
 - 3、获取 headers 中生成签名的信息，校验签名是否正确，正确则 code 为 0
-- 4、无论是否正确，都输出 headers 信息，格式见下方结果示例。
+- 4、无论是否正确，都输出 headers 信息，格式见下方Return Example。
 :::
 
-::: details 结果示例
+::: details Return Example
 ```json
 {
     "code": 0,

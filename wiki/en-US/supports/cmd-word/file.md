@@ -14,7 +14,7 @@
 - 客户端凭 Token 可以通过 SDK 直接上传到云服务商。
 - [存储服务商编号](../../database/dictionary/storages.md)
 
-::: details 结果示例
+::: details Return Example
 ```json
 {
     "code": 0,
@@ -49,7 +49,7 @@
 
 - `tableId` 和 `tableKey` 二选一必传一个。
 
-::: details 结果示例
+::: details Return Example
 ```json
 {
     "code": 0,
@@ -116,7 +116,7 @@
 ```
 :::
 
-::: details 结果示例
+::: details Return Example
 ```json
 {
     "code": 0,
@@ -149,7 +149,7 @@
 | type | Number | **required** | 1.图片 / 2.视频 / 3.音频 / 4.文档 |
 | fileIdOrFid | String | *optional* | `files > id` 或者 `files > fid` |
 
-::: details 结果示例
+::: details Return Example
 ```json
 {
     "code": 0,
@@ -176,7 +176,7 @@
 | type | Number | **required** | 1.图片 / 2.视频 / 3.音频 / 4.文档 |
 | fileIdsOrFids | Array | *optional* | `files > id` 或者 `files > fid` |
 
-::: details 结果示例
+::: details Return Example
 ```json
 {
     "code": 0,
@@ -208,7 +208,7 @@
 | type | Number | **required** | 1.图片 / 2.视频 / 3.音频 / 4.文档 |
 | fileIdOrFid | String | *optional* | `files > id` 或者 `files > fid` |
 
-::: details 结果示例
+::: details Return Example
 ```json
 {
     "code": 0,
