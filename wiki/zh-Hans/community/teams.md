@@ -14,8 +14,7 @@ const members = [
                 link: 'https://tangjie.me'
             },
             { icon: 'github', link: 'https://github.com/jarvis-tang' },
-            { icon: 'twitter', link: 'https://twitter.com/Jarvis_Tweet' },
-            { icon: 'linkedin', link: 'https://www.linkedin.com/in/jarvis-tang' },
+            { icon: 'twitter', link: 'https://twitter.com/JarvisTang' },
         ]
     },
     {
