@@ -10,7 +10,7 @@
 | `GET` | /api/v2/global/upload-token | 上传用的令牌 |
 | `GET` | /api/v2/global/roles | 用户角色 |
 | `GET` | /api/v2/global/maps | 地图服务商 |
-| `GET` | /api/v2/global/`{type}`/content-type | 内容类型 |
+| `GET` | /api/v2/global/`{type}`/content-types | 内容类型 |
 | `GET` | /api/v2/global/stickers | 表情图 |
 | `GET` | /api/v2/global/block-words | 阻止词 |
 

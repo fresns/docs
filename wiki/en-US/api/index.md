@@ -10,7 +10,7 @@
 | `GET` | /api/v2/global/upload-token | Get Upload Token |
 | `GET` | /api/v2/global/roles | User Roles |
 | `GET` | /api/v2/global/maps | Map Services |
-| `GET` | /api/v2/global/`{type}`/content-type | Content Type |
+| `GET` | /api/v2/global/`{type}`/content-types | Content Types |
 | `GET` | /api/v2/global/stickers | Stickers |
 | `GET` | /api/v2/global/block-words | Block Words |
 

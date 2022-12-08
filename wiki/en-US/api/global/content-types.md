@@ -1,24 +1,24 @@
-# 内容类型
+# Content Types
 
-- 接口地址：`/api/v2/global/{type}/content-type`
-- 请求方式：`GET`
-- 传参方式：`Rest`
+- Endpoint Path: `/api/v2/global/{type}/content-types`
+- Method: `GET`
+- Request: `Rest`
 
-## Headers 可选参数
+## Headers Optional Parameter
 
-| 参数名 | 公开模式（是否必传） | 私有模式（是否必传） |
+| Parameter Name | Public Mode (Required) | Private Mode (Required) |
 | --- | --- | --- |
-| aid | NO | YES |
-| uid | NO | YES |
-| token | NO | YES |
+| aid | *optional* | **required** |
+| uid | *optional* | **required** |
+| token | *optional* | **required** |
 
-## Rest 参数
+## Rest Params
 
-| 参数名 | 类型 | 是否必传 | 说明 |
+| Parameter Name | Type | Required | Description |
 | --- | --- | --- | --- |
-| type | String | YES | `post`, `comment` |
+| type | String | **required** | `post`,`comment` |
 
-## 返回结果
+## Return
 
 ```json
 {
@@ -41,19 +41,19 @@
                     }
                 ],
                 "postByFollow": [
-                    // 同上
+                    // ditto
                 ],
                 "postByNearby": [
-                    // 同上
+                    // ditto
                 ],
                 "commentByAll": [
-                    // 同上
+                    // ditto
                 ],
                 "commentByFollow": [
-                    // 同上
+                    // ditto
                 ],
                 "commentByNearby": [
-                    // 同上
+                    // ditto
                 ]
             }
         }

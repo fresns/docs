@@ -217,7 +217,7 @@ function sidebarApi() {
                 { text: '获取上传凭证', link: '/api/global/upload-token.md' },
                 { text: '用户角色', link: '/api/global/roles.md' },
                 { text: '地图服务商', link: '/api/global/maps.md' },
-                { text: '内容类型', link: '/api/global/content-type.md' },
+                { text: '内容类型', link: '/api/global/content-types.md' },
                 { text: '表情图', link: '/api/global/stickers.md' },
                 { text: '阻止词', link: '/api/global/block-words.md' },
             ]
