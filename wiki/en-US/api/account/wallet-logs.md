@@ -9,8 +9,9 @@
 | Parameter Name | Public Mode (Required) | Private Mode (Required) |
 | --- | --- | --- |
 | aid | **required** | **required** |
+| aidToken | **required** | **required** |
 | uid | *optional* | *optional* |
-| token | **required** | **required** |
+| uidToken | *optional* | *optional* |
 
 ## Query Params
 

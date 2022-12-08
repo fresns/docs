@@ -9,8 +9,9 @@
 | 参数名 | 公开模式（是否必传） | 私有模式：接口不可请求 |
 | --- | --- | --- |
 | aid | *optional* |  |
-| uid | *optional* |  |
-| token | *optional* |  |
+| aidToken | *optional* | *optional* |
+| uid | *optional* | *optional* |
+| uidToken | *optional* | *optional* |
 
 ## Body Params
 

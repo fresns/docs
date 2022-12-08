@@ -8,8 +8,9 @@
 | Parameter Name | Public Mode (Required) | Private Mode (Required) |
 | --- | --- | --- |
 | aid | *optional* | **required** |
+| aidToken | *optional* | **required** |
 | uid | *optional* | **required** |
-| token | *optional* | **required** |
+| uidToken | *optional* | **required** |
 
 ## Return
 

@@ -9,8 +9,9 @@
 | 参数名 | 公开模式（是否必传） | 私有模式（是否必传） |
 | --- | --- | --- |
 | aid | YES | YES |
+| aidToken | YES | YES |
 | uid | NO | NO |
-| token | YES | YES |
+| uidToken | NO | NO |
 
 ## Query 参数
 

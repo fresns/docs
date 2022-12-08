@@ -9,8 +9,9 @@
 | 参数名 | 公开模式（是否必传） | 私有模式（是否必传） |
 | --- | --- | --- |
 | aid | YES | YES |
+| aidToken | YES | YES |
 | uid | YES | YES |
-| token | YES | YES |
+| uidToken | YES | YES |
 
 ## Rest 参数
 

@@ -9,8 +9,9 @@
 | 参数名 | 公开模式（是否必传） | 私有模式（是否必传） |
 | --- | --- | --- |
 | aid | NO | NO |
+| aidToken | NO | NO |
 | uid | NO | NO |
-| token | NO | NO |
+| uidToken | NO | NO |
 
 ## Body 参数
 
