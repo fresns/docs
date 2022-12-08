@@ -26,9 +26,12 @@ jobs:
       - name: Build
         run: yarn zh-Hans:build
 
-      - name: Deploy
-        uses: peaceiris/actions-gh-pages@v3
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: wiki/zh-Hans/.vitepress/dist
-          publish_branch: zh-hans-pages
+      - name: Commit changes
+        run: |
+          git add .
+          git config --global user.email "you@example.com"
+          git config --global user.name "Your Name"
+          git commit -m "VitePress build"
+
+      - name: Push changes
+        run: git push origin zh-hans-pages
