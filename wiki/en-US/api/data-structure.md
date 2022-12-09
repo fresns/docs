@@ -410,6 +410,8 @@
     "editTime": "String / 帖子最后编辑时间",
     "editTimeFormat": "String / 帖子最后编辑人性化时间",
     "editCount": "Number / 编辑次数",
+    "latestCommentTime": "String / 最新评论的时间",
+    "latestCommentTimeFormat": "String / 最新评论的人性化时间",
     "rankState": "Number / 等级状态",
     "status": "Boolean / 帖子状态",
     "isAllow": "Boolean / 是否需要授权",

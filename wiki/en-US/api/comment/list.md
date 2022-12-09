@@ -27,6 +27,7 @@
 | hid | String | *optional* | 指定范围：话题 |
 | sticky | Boolean | *optional* | 是否置顶（留空输出全部） |
 | digestState | Number | *optional* | 指定范围：精华（留空输出全部）<br>digest_state 字段 1.否 2.一级精华 3.二级精华 |
+| allDigest | Boolean | *optional* | 指定范围：全部精华，一级精华和二级精华<br>传参后，将忽略 `digestState` 参数 |
 | contentType | String | *optional* | 内容类型（内容类型扩展配置的参数） |
 | createDateGt | String | *optional* | 发表时间大于 `Y-m-d` |
 | createDateLt | String | *optional* | 发表时间小于 `Y-m-d` |
