@@ -32,3 +32,10 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: wiki/zh-Hans/.vitepress/dist
           publish_branch: zh-hans-pages
+
+      - name: Trigger a webhook
+        uses: adieuadieu/action-webhook@v3
+        with:
+          url: ${{ secrets.WEBHOOK_URL }}
+          payload: '{"hello": "world"}'
+          content_type: 'application/json'
