@@ -17,7 +17,7 @@
 | --- | --- | --- | --- |
 | 通用验证码 | verifycode_template1 | 1 | 键值 JSON 格式见下方 |
 | 注册新账号 | verifycode_template2 | 2 | 键值 JSON 格式见下方 |
-| 修改账号资料 | verifycode_template3 | 3 | 键值 JSON 格式见下方 |
+| 修改资料验证 | verifycode_template3 | 3 | 键值 JSON 格式见下方 |
 | 更换新绑定 | verifycode_template4 | 4 | 键值 JSON 格式见下方 |
 | 重置登录密码 | verifycode_template5 | 5 | 键值 JSON 格式见下方 |
 | 重置支付密码 | verifycode_template6 | 6 | 键值 JSON 格式见下方 |
