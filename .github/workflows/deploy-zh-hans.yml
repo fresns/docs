@@ -34,8 +34,6 @@ jobs:
           publish_branch: zh-hans-pages
 
       - name: Trigger a webhook
-        uses: adieuadieu/action-webhook@v3
+        uses: joelwmale/webhook-action@master
         with:
           url: ${{ secrets.WEBHOOK_URL }}
-          payload: '{"hello": "world"}'
-          content_type: 'application/json'
