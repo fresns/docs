@@ -34,7 +34,7 @@
                 "image": {
                     "status": "Boolean / 是否启用图片",
                     "extensions": "String / 支持的扩展名，示例 png,gif,jpg,jpeg,bmp,heic",
-                    "inputAccept": "String / 支持的扩展名，示例 .png,.gif,.jpg,.jpeg,.bmp,.heic",
+                    "inputAccept": "String / 支持的扩展名，示例 image/png,image/gif,image/jpeg,image/jpeg,image/bmp",
                     "maxSize": "Number / 最大文件尺寸，单位 MB",
                     "uploadForm": "String / 上传方式 fresns 或 plugin",
                     "uploadUrl": "String / Plugin 上传方式的地址",
@@ -43,7 +43,7 @@
                 "video": {
                     "status": "Boolean / 是否启用视频",
                     "extensions": "String / 支持的扩展名，示例 wmv,rm,mov,mpeg,mp4,3gp,flv,avi,rmvb",
-                    "inputAccept": "String / 支持的扩展名，示例 .wmv,.rm,.mov,.mpeg,.mp4,.3gp,.flv,.avi,.rmvb",
+                    "inputAccept": "String / 支持的扩展名，示例 video/x-ms-wmv,application/vnd.rn-realmedia,video/quicktime,video/mpeg,video/mp4,video/3gpp,video/x-flv,video/x-msvideo,application/vnd.rn-realmedia-vbr",
                     "maxSize": "Number / 最大文件尺寸，单位 MB",
                     "maxTime": "Number / 最大文件时长，单位 秒",
                     "uploadForm": "String / 上传方式 fresns 或 plugin",
@@ -53,7 +53,7 @@
                 "audio": {
                     "status": "Boolean / 是否启用音频",
                     "extensions": "String / 支持的扩展名，示例 mp3,wav,m4a",
-                    "inputAccept": "String / 支持的扩展名，示例 .mp3,.wav,.m4a",
+                    "inputAccept": "String / 支持的扩展名，示例 audio/mpeg,audio/x-wav,audio/mp4",
                     "maxSize": "Number / 最大文件尺寸，单位 MB",
                     "maxTime": "Number / 最大文件时长，单位 秒",
                     "uploadForm": "String / 上传方式 fresns 或 plugin",
@@ -63,7 +63,7 @@
                 "document": {
                     "status": "Boolean / 是否启用文档",
                     "extensions": "String / 支持的扩展名，示例 doc,docx,xls,xlsx,csv,ppt,pptx,pps,ppts,pdf,txt,md,markdown,rar,zip,7z,epub,mobi",
-                    "inputAccept": "String / 支持的扩展名，示例 .doc,.docx,.xls,.xlsx,.csv,.ppt,.pptx,.pps,.ppts,.pdf,.txt,.md,.markdown,.rar,.zip,.7z,.epub,.mobi",
+                    "inputAccept": "String / 支持的扩展名，示例 application/msword,application/vnd.openxmlformats-officedocument.wordprocessingml.document,application/vnd.ms-excel",
                     "maxSize": "Number / 最大文件尺寸，单位 MB",
                     "uploadForm": "String / 上传方式 fresns 或 plugin",
                     "uploadUrl": "String / Plugin 上传方式的地址",
