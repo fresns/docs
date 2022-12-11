@@ -33,7 +33,7 @@ jobs:
           publish_dir: wiki/zh-Hans/.vitepress/dist
           publish_branch: zh-hans-pages
 
-      - name: Trigger a webhook
+      - name: Webhook
         uses: joelwmale/webhook-action@master
         with:
           url: ${{ secrets.WEBHOOK_URL }}
