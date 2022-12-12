@@ -22,7 +22,9 @@
 1. Start
     - Register [/api/v2/account/register](account/register.md)
     - Login [/api/v2/account/login](account/login.md)
-    - > After successful registration or login, obtain the account voucher` data.detail.aid` and `data.sessionToken.token`
+    - After successful registration or login, obtain the account voucher.
+        - **aid**: `data.detail.aid`
+        - **aidToken**: `data.sessionToken.token`
 2. Judge the number of users of the account `data.detail.users`
     - `1`
     - `2 or more` `Presenting the "Select User" view`
@@ -31,7 +33,9 @@
     - With password `Presenting the "Password Entry Box" view`
 4. Login User
     - [/api/v2/user/auth](user/auth.md)
-    - > After the user login successfully, obtain the user credential `data.detail.uid` and `data.sessionToken.token`
+    - After the user login successfully, obtain the user credential.
+        - **uid**: `data.detail.uid`
+        - **uidToken**: `data.sessionToken.token`
 5. End
     - > When the account has only 1 user and no password, it is recommended to let the user login directly without perception.
 

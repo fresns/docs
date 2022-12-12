@@ -22,7 +22,9 @@
 1. 开始
     - 注册 [/api/v2/account/register](account/register.md)
     - 登录 [/api/v2/account/login](account/login.md)
-    - > 注册或登录成功后，获取账号凭证 `data.detail.aid` 和 `data.sessionToken.token`
+    - 注册或登录成功后，获取账号凭证
+        - **aid**: `data.detail.aid`
+        - **aidToken**: `data.sessionToken.token`
 2. 判断账号名下用户数 `data.detail.users`
     - `1` 个
     - `2` 个及以上 `呈现「选择用户」视图`
@@ -31,7 +33,9 @@
     - 有密码 `呈现「密码输入框」视图`
 4. 登录用户
     - [/api/v2/user/auth](user/auth.md)
-    - > 用户登录成功后，获取用户凭证 `data.detail.uid` 和 `data.sessionToken.token`
+    - 用户登录成功后，获取用户凭证
+        - **uid**: `data.detail.uid`
+        - **uidToken**: `data.sessionToken.token`
 5. 结束
     - > 当账号名下只有 1 个用户，并且无密码，建议直接让用户无感知的登录成功。
 
