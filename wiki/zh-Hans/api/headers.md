@@ -120,19 +120,19 @@ const SIGN_PARAM_ARR = [
 **3、对排序后的新参数使用 URL 键值对的格式拼接成字符串。**
 
 ```
-aid=wIfu6jaF&aidToken=uoX1hk6SHUgB2MFGJwNx38dem9DA7Vsz&appId=yh1OJ7WL&platformId=1&timestamp=1656653400000&uid=782622&uidToken=PqBpwPLJgfd1sH0X5JffYFGxTSc8RW7c$version=2.0.0
+aid=wIfu6jaF&aidToken=uoX1hk6SHUgB2MFGJwNx38dem9DA7Vsz&appId=yh1OJ7WL&platformId=1&timestamp=1656653400000&uid=782622&uidToken=PqBpwPLJgfd1sH0X5JffYFGxTSc8RW7c&version=2.0.0
 ```
 
 **4、再拼接上** `&appSecret={app_secret}` **得到待签名字符串。**
 
 ```
-aid=wIfu6jaF&aidToken=uoX1hk6SHUgB2MFGJwNx38dem9DA7Vsz&appId=yh1OJ7WL&platformId=1&timestamp=1656653400000&uid=782622&uidToken=PqBpwPLJgfd1sH0X5JffYFGxTSc8RW7c$version=2.0.0&appSecret=qUiEaDNQh2IpvGHOKlTMx7ujn8t1CZWX
+aid=wIfu6jaF&aidToken=uoX1hk6SHUgB2MFGJwNx38dem9DA7Vsz&appId=yh1OJ7WL&platformId=1&timestamp=1656653400000&uid=782622&uidToken=PqBpwPLJgfd1sH0X5JffYFGxTSc8RW7c&version=2.0.0&appSecret=qUiEaDNQh2IpvGHOKlTMx7ujn8t1CZWX
 ```
 
 **5、对签名字符串进行 MD5 运算（32 位小写），得到签名值**
 
 ```
-0361bfb7592982cf5b1a5d41b6d2234d
+3f8e0d30b325f32e35aec475f38f85b5
 ```
 
 ## 缓存介绍

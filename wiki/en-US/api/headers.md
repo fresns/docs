@@ -119,19 +119,19 @@ const SIGN_PARAM_ARR = [
 **3. Splice new parameters sorted into character strings with the right format of URL key value.**
 
 ```
-aid=wIfu6jaF&aidToken=uoX1hk6SHUgB2MFGJwNx38dem9DA7Vsz&appId=yh1OJ7WL&platformId=1&timestamp=1656653400000&uid=782622&uidToken=PqBpwPLJgfd1sH0X5JffYFGxTSc8RW7c$version=2.0.0
+aid=wIfu6jaF&aidToken=uoX1hk6SHUgB2MFGJwNx38dem9DA7Vsz&appId=yh1OJ7WL&platformId=1&timestamp=1656653400000&uid=782622&uidToken=PqBpwPLJgfd1sH0X5JffYFGxTSc8RW7c&version=2.0.0
 ```
 
 **4. Splice `&appSecret={app_secret}` to obtain the character string to be signed.**
 
 ```
-aid=wIfu6jaF&aidToken=uoX1hk6SHUgB2MFGJwNx38dem9DA7Vsz&appId=yh1OJ7WL&platformId=1&timestamp=1656653400000&uid=782622&uidToken=PqBpwPLJgfd1sH0X5JffYFGxTSc8RW7c$version=2.0.0&appSecret=qUiEaDNQh2IpvGHOKlTMx7ujn8t1CZWX
+aid=wIfu6jaF&aidToken=uoX1hk6SHUgB2MFGJwNx38dem9DA7Vsz&appId=yh1OJ7WL&platformId=1&timestamp=1656653400000&uid=782622&uidToken=PqBpwPLJgfd1sH0X5JffYFGxTSc8RW7c&version=2.0.0&appSecret=qUiEaDNQh2IpvGHOKlTMx7ujn8t1CZWX
 ```
 
 **5. Perform MD5 operation (32-digit lowercase) against the signed character signature to obtain the signature value.**
 
 ```
-0361bfb7592982cf5b1a5d41b6d2234d
+3f8e0d30b325f32e35aec475f38f85b5
 ```
 
 ## Cache Introduction
