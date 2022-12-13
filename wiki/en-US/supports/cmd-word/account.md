@@ -122,8 +122,6 @@
 | Parameter Name | Type | Required | Description |
 | --- | --- | --- | --- |
 | platformId | Number | **required** | 平台编号（配置表 [platforms](../../database/dictionary/platforms.md) 键名的键值） |
-| version | String | **required** | 语义化版本号 |
-| appId | String | **required** | App ID |
 | aid | String | **required** | 账号参数 `session_tokens > account_id`<br>查验时由 `aid` 转换成 `accounts > id` |
 | aidToken | String | **required** | 身份凭证（凭证表 `session_tokens > token` 字段） |
 
