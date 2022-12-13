@@ -200,6 +200,8 @@
     {"name":"settingGenderFemale","canDelete":false},
     {"name":"settingConnectAdd","canDelete":false},
     {"name":"settingConnectRemove","canDelete":false},
+    {"name":"admin","canDelete":false},
+    {"name":"groupAdmin","canDelete":false},
     {"name":"editorFullFunctions","canDelete":false},
     {"name":"editorRequired","canDelete":false},
     {"name":"editorOptional","canDelete":false},
