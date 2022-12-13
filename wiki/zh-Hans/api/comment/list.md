@@ -51,16 +51,18 @@
     - `it_comments` 配置，是否输出点赞我的用户
 - 如果 `uidOrUsername` 为登录用户自己时，上方配置无效，直接输出数据，表示查看自己的内容时无视开关。
 
-| contentType | 说明 |
+| contentType 参数（大驼峰格式） | 说明 |
 | --- | --- |
 | {空} | 输出全部内容 |
-| all | 输出全部内容 |
-| text | 输出纯文本评论 |
-| image | 输出带图片的评论 |
-| video | 输出带视频的评论 |
-| audio | 输出带音频的评论 |
-| document | 输出带文档的评论 |
-| {abc} | 输出插件 abc 扩展内容的评论 |
+| All | 输出全部内容 |
+| Text | 输出纯文本评论 |
+| Image | 输出带图片的评论 |
+| Video | 输出带视频的评论 |
+| Audio | 输出带音频的评论 |
+| Document | 输出带文档的评论 |
+| {AbcName} | 输出含有插件 unikey 为 AbcName 扩展内容的评论 |
+
+- 内容类型列表参考 [/api/v2/global/{type}/content-types](../global/content-types.md)
 
 ## 返回结果
 

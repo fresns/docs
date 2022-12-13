@@ -54,16 +54,18 @@
 - 如果是非公开小组的帖子，不是小组内成员（未关注小组），不输出。
 - 屏蔽对象的帖子（用户、小组、话题、帖子）不输出。
 
-| contentType 参数 | 说明 |
+| contentType 参数（大驼峰格式） | 说明 |
 | --- | --- |
 | {空} | 输出全部内容 |
-| all | 输出全部内容 |
-| text | 输出纯文本帖子 |
-| image | 输出带图片的帖子 |
-| video | 输出带视频的帖子 |
-| audio | 输出带音频的帖子 |
-| document | 输出带文档的帖子 |
-| {abc} | 输出插件 abc 扩展内容的帖子 |
+| All | 输出全部内容 |
+| Text | 输出纯文本帖子 |
+| Image | 输出带图片的帖子 |
+| Video | 输出带视频的帖子 |
+| Audio | 输出带音频的帖子 |
+| Document | 输出带文档的帖子 |
+| {AbcName} | 输出含有插件 unikey 为 AbcName 扩展内容的帖子 |
+
+- 内容类型列表参考 [/api/v2/global/{type}/content-types](../global/content-types.md)
 
 ## Return
 

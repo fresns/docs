@@ -22,7 +22,7 @@
 | mapLat | String | YES | 地图纬度（用于查询附近评论） |
 | unit | String | NO | 范围单位 km / mi |
 | length | Number | NO | 范围 |
-| contentType | String | NO | 指定类型：内容类型扩展配置的参数，为空或者为 all，则输出全部内容 |
+| contentType | String | NO | 指定类型：内容类型扩展配置的参数，为空或者为 All，则输出全部内容 |
 | pluginRatingId | Number | NO | 排序编号（插件专用） |
 | pageSize | Number | NO | 每页显示条数（默认 30 条） |
 | page | Number | NO | 页码（默认 1） |
