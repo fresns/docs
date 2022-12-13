@@ -556,6 +556,8 @@
     "editTime": "String / 评论最后编辑时间",
     "editTimeFormat": "String / 评论最后编辑人性化时间",
     "editCount": "Number / 编辑次数",
+    "latestCommentTime": "String / 最新子级评论的时间",
+    "latestCommentTimeFormat": "String / 最新子级评论的人性化时间",
     "rankState": "Number / 等级状态",
     "status": "Boolean / 评论状态",
     "ipLocation": "String / 发表 IP 位置",
