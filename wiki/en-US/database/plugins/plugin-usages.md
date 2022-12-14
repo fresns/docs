@@ -12,7 +12,7 @@
 | editor_toolbar | tinyint *UNSIGNED* | type=3 专用：是否为工具栏显示 | 0 | NO | 0.否 / 1.是 |
 | editor_number | tinyint *UNSIGNED* | type=3 专用：使用数量 |  | YES | 最大值 10 |
 | data_sources | json |  type=4 专用：数据来源参数 |  | YES |  |
-| is_group_admin | tinyint *UNSIGNED* | type=5 专用：小组管理员专用 | 0 | NO | 0.否 / 1.是<br>当值为 1 时，roles 字段无效 |
+| is_group_admin | tinyint *UNSIGNED* | type=5,6 专用：小组管理员专用 | 0 | NO | 0.否 / 1.是<br>当值为 1 时，roles 字段无效 |
 | group_id | int *UNSIGNED* | type=6 专用：小组 ID |  | YES | 关联字段 [groups->id](../contents/groups.md)<br>关联插件所属小组 |
 | roles | varchar(128) | 有权使用的角色 |  | YES | 有权角色 ID，多个以英文逗号隔开 |
 | parameter | varchar(128) | 自定义参数 |  | YES |  |
@@ -95,4 +95,4 @@
 
 ## 地址拼接说明和自定义参数说明
 
-- 查看 plugins 表「地址拼接说明」第 2 条。
+- 查看 plugins 表[地址拼接说明](plugins.md#地址拼接说明)
