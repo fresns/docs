@@ -597,6 +597,7 @@ function sidebarSupports() {
             collapsible: true,
             items: [
                 { text: 'Config', link: '/supports/utilities/config.md' },
+                { text: 'Array', link: '/supports/utilities/arr.md' },
                 { text: 'Extend', link: '/supports/utilities/extend.md' },
                 { text: 'File', link: '/supports/utilities/file.md' },
                 { text: 'Interaction', link: '/supports/utilities/interaction.md' },

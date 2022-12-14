@@ -607,6 +607,7 @@ function sidebarSupports() {
             collapsible: true,
             items: [
                 { text: '配置项目 ConfigUtility', link: '/supports/utilities/config.md' },
+                { text: '数组工具 ArrUtility', link: '/supports/utilities/arr.md' },
                 { text: '扩展工具 ExtendUtility', link: '/supports/utilities/extend.md' },
                 { text: '文件工具 FileUtility', link: '/supports/utilities/file.md' },
                 { text: '互动工具 InteractionUtility', link: '/supports/utilities/interaction.md' },
