@@ -7,7 +7,7 @@
 | is_plugin_editor | tinyint *UNSIGNED* | 是否仅在插件中编辑 | 0 | NO | 0.否 / 1.是 |
 | editor_unikey | varchar(64) | 内容编辑插件 |  | YES | 关联字段 [plugins->unikey](../plugins/plugins.md) |
 | can_delete | tinyint *UNSIGNED* | 作者是否有权删除 | 1 | NO | 0.否 / 1.是 |
-| is_allow | tinyint *UNSIGNED* | 是否有权限 | 0 | NO | 0.否 / 1.是 |
+| is_allow | tinyint *UNSIGNED* | 是否全员允许阅读 | 1 | NO | 0.否 / 1.是 |
 | allow_proportion | tinyint *UNSIGNED* | 阅读权限-无权时内容显示比例 |  | YES | 百分比<br>30 代表显示 30% 的内容 |
 | allow_btn_name | varchar(64) | 阅读权限-无权时按钮文字 |  | YES | **多语言** |
 | allow_plugin_unikey | varchar(64) | 阅读权限-处理插件 |  | YES | 关联字段 [plugins->unikey](../plugins/plugins.md) |
