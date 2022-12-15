@@ -5,7 +5,7 @@
 ## 获取用户主角色权限
 
 ```php
-PermissionUtility::getUserMainRolePerm($userId);
+PermissionUtility::getUserMainRolePerms($userId);
 ```
 | Parameter Name | Type | Required | Description |
 | --- | --- | --- | --- |
