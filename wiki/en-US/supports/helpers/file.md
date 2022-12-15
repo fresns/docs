@@ -39,6 +39,18 @@ FileHelper::fresnsFileStoragePath($fileType, $usageType);
 | fileType | Number | **required** | 1.图片 / 2.视频 / 3.音频 / 4.文档 |
 | usageType | Number | **required** | [见编号说明](../../database/number.md#文件用途类型) |
 
+## 获取文件支持的格式
+
+```php
+FileHelper::fresnsFileAcceptByType($type);
+```
+| 参数名 | 类型 | 是否必传 | 说明 |
+| --- | --- | --- | --- |
+| type | Number | No | 1.图片 / 2.视频 / 3.音频 / 4.文档 |
+
+- Mime 格式，多个以英文逗号隔开
+- 不传 type 则输出全部
+
 ## 根据文件 ID 或 FID 获取单个信息
 
 ```php
