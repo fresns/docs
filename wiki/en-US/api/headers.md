@@ -11,6 +11,7 @@
 | sign | String | **required** | [Signature generation rules](#signature-generation-rules) |
 | langTag | String | *optional* | Language Tag (output default language if left empty)<br>Path: `Panel->Systems->Languages` |
 | timezone | String | *optional* | UTC time zone (use default time zone if left empty)<br>Path: `Panel->Systems->General`<br>After the user logs in, if left blank, the server automatically processes the time format in the time zone configured by the user |
+| contentFormat | String | NO | Content format (list and detail of posts and comments), leave blank then output as is.<br>Pass the `html` reference to convert content to html format (`\n` for text content to `<br>`, Markdown content to `HTML`) |
 | aid | String |  | Account parameter (regarded as unlogged in account if left empty) |
 | aidToken | String |  | Account identity credential (If `aid` exists, it cannot be empty) |
 | uid | Number |  | User parameter (regarded as unlogged in user if left empty) |

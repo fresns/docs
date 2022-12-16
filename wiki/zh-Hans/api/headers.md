@@ -11,6 +11,7 @@
 | sign | String | YES | [查看签名生成规则](#签名生成规则) |
 | langTag | String | NO | 客户端的语言标签（留空则输出默认语言）<br>配置位置：`控制面板->系统->语言设置` |
 | timezone | String | NO | UTC 时区（留空则使用默认时区）<br>配置位置：`控制面板->系统->站点设置`<br>用户登录后，如果留空，则服务端自动以用户配置的时区处理时间格式 |
+| contentFormat | String | NO | 内容格式（帖子和评论的列表与详情），留空则原样输出。<br>传参 `html` 将内容转换为 html 格式（文本内容的 `\n` 转换为 `<br>`，Markdown 内容转换为 `HTML`） |
 | aid | String | YES/NO | 账号参数（留空则视为未登录账号） |
 | aidToken | String | YES/NO | 账号身份凭证（传参 `aid` 时必传） |
 | uid | Number | YES/NO | 用户参数（留空则视为未登录用户） |
