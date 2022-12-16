@@ -2,18 +2,31 @@
 
 `App\Utilities\PermissionUtility`
 
-## 获取用户主角色权限
+## 获取用户主角色
 
 ```php
-PermissionUtility::getUserMainRolePerms($userId);
+PermissionUtility::getUserMainRole($userId, $langTag);
 ```
 | 参数名 | 类型 | 是否必传 | 说明 |
 | --- | --- | --- | --- |
 | userId | Number | YES | `users > id` |
+| langTag | String | NO | 角色名使用的语言 |
 
-- 如果主角色有过期时间，并且已经过期，则输出继承角色权限。
-- 如果无继承角色（或者该继承 ID 找不到角色），则以配置表 `default_role` 键名键值的角色权限为准。
+- 如果主角色有过期时间，并且已经过期，则输出继承角色。
+- 如果无继承角色（或者该继承 ID 找不到角色），则以配置表 `default_role` 键名键值的角色为准。
 - 如果配置表键值为空（或找不到角色），则输出 `null`。
+
+## 获取用户所有角色
+
+```php
+PermissionUtility::getUserRoles($userId, $langTag);
+```
+| 参数名 | 类型 | 是否必传 | 说明 |
+| --- | --- | --- | --- |
+| userId | Number | YES | `users > id` |
+| langTag | String | NO | 角色名使用的语言 |
+
+- 仅输出有效期内的角色列表，包括主角色。
 
 ## 获取不显示的小组 ID
 
