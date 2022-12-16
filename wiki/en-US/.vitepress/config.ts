@@ -610,6 +610,7 @@ function sidebarSupports() {
             collapsible: true,
             items: [
                 { text: 'Dataset', link: '/supports/models/' },
+                { text: 'Cache Key and Tag', link: '/supports/models/cache.md' },
             ]
         },
     ]

@@ -620,6 +620,7 @@ function sidebarSupports() {
             collapsible: true,
             items: [
                 { text: '数据集模型', link: '/supports/models/' },
+                { text: '缓存键名和标签', link: '/supports/models/cache.md' },
             ]
         },
     ]
