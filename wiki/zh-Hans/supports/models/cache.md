@@ -1,7 +1,7 @@
 # Cache
 
 - 以下列表为缓存键名规则和标签，一个缓存键可能有多个标签。
-- 注意：使用 `file`、`dynamodb` 或 `database` 缓存驱动程序时不支持缓存标记。
+- 注意：使用 `file`、`dynamodb` 或 `database` 缓存驱动程序时不支持缓存标签。
 
 ```php
 use App\Helpers\CacheHelper;

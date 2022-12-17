@@ -1,7 +1,7 @@
 # Cache Key and Tag
 
-- 以下列表为缓存键名规则和标签，一个缓存键可能有多个标签。
-- 注意：使用 `file`、`dynamodb` 或 `database` 缓存驱动程序时不支持缓存标记。
+- The following list shows the cache key name rules and tags; a cache key may have multiple tags.
+- Cache tags are not supported when using the `file`, `dynamodb`, or `database` cache drivers.
 
 ```php
 use App\Helpers\CacheHelper;
