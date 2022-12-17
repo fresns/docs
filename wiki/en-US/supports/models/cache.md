@@ -51,14 +51,13 @@ fresns_config_tag_{$itemTag}_{$langTag}
 fresns_config_file_accept
 fresns_config_file_url_expire
 fresns_plugin_url_{$unikey}
-fresns_content_block_words // fresns_{$type}_block_words
-fresns_user_block_words // fresns_{$type}_block_words
-fresns_conversation_block_words // fresns_{$type}_block_words
+fresns_content_block_words   fresns_{$type}_block_words
+fresns_user_block_words      fresns_{$type}_block_words
+fresns_conversation_block_words  // fresns_{$type}_block_words
 fresns_content_ban_words
 fresns_content_review_words
 fresns_user_ban_words
 fresns_conversation_ban_words
-fresns_editor_{$type}_extends_{$roleId}_{$langTag}
 ```
 
 ## fresnsLanguages
@@ -104,6 +103,7 @@ fresns_model_conversation_{$userId}_{$conversationUserId}    // +tag: fresnsUser
 fresns_user_{$userId}_main_role_{$langTag}                   // +tag: fresnsUserRoles
 fresns_user_{$userId}_roles_{$langTag}                       // +tag: fresnsUserRoles
 fresns_publish_{$type}_config_{$userId}_{$langTag}           // +tag: fresnsUserConfigs
+fresns_plugin_{$unikey}_badge_{$userId}                      // +tag: fresnsUserConfigs
 fresns_interaction_status_{$markType}_{$markId}_{$userId}    // +tag: fresnsUserInteractions
 fresns_follow_{$type}_array_by_{$userId}                     // +tag: fresnsUserInteractions, fresnsFollowData
 fresns_block_{$type}_array_by_{$userId}                      // +tag: fresnsUserInteractions, fresnsBlockData
@@ -131,7 +131,6 @@ fresns_guest_all_groups                                      // +tag: fresnsGrou
 fresns_user_{$userId}_all_groups                             // +tag: fresnsGroupData, fresnsUsers, fresnsUserData
 fresns_follow_group_model_{$id}_by_{$userId}                 // +tag: fresnsGroupData, fresnsUsers, fresnsUserInteractions, fresnsFollowData
 fresns_api_group_{$gid}_{$langTag}                           // +tag: fresnsGroupData
-fresns_api_group_{$gid}_extensions_{$userId}_{$langTag}      // +tag: fresnsGroupExtensions
 ```
 
 ## fresnsHashtags
@@ -194,14 +193,33 @@ fresns_model_conversation_{$conversationId}      // +tag: fresnsConversations
 - tag: `fresnsExtensions`
 
 ```php
-fresns_wallet_extends_{$langTag}
-fresns_{$type}_content_types_{$langTag}                  // +tag: fresnsConfigs
-fresns_{$type}_manages_by_everyone_{$langTag}            // +tag: fresnsManages
-fresns_{$type}_manages_by_group_{$langTag}               // +tag: fresnsManages, fresnsGroupConfigs
-fresns_{$type}_manages_by_role_{$roleId}_{$langTag}      // +tag: fresnsManages
-fresns_features_{$userId}_{$langTag}                     // +tag: fresnsUserData, fresnsUserFeatures
-fresns_profiles_{$userId}_{$langTag}                     // +tag: fresnsUserData, fresnsUserProfiles
-fresns_user_manages_{$rid}_{$langTag}                    // +tag: fresnsConfigs
+fresns_wallet_recharge_extends_by_everyone_{$langTag}    // +tag: fresnsWallets
+fresns_wallet_withdraw_extends_by_everyone_{$langTag}    // +tag: fresnsWallets
+fresns_post_content_types_by_{$typeName}_{$langTag}      // +tag: fresnsContentTypes
+fresns_comment_content_types_by_{$typeName}_{$langTag}   // +tag: fresnsContentTypes
+fresns_map_extends_by_everyone_{$langTag}                // +tag: fresnsMaps
+
+fresns_editor_post_extends_by_everyone_{$langTag}        // +tag: fresnsEditor
+fresns_editor_comment_extends_by_everyone_{$langTag}     // +tag: fresnsEditor
+fresns_manage_post_extends_by_everyone_{$langTag}        // +tag: fresnsManages
+fresns_manage_comment_extends_by_everyone_{$langTag}     // +tag: fresnsManages
+fresns_manage_user_extends_by_everyone_{$langTag}        // +tag: fresnsManages
+fresns_group_{$groupId}_extends_by_everyone_{$langTag}   // +tag: fresnsGroupConfigs, fresnsGroupExtensions
+fresns_feature_extends_by_everyone_{$langTag}            // +tag: fresnsFeatures
+fresns_profile_extends_by_everyone_{$langTag}            // +tag: fresnsProfiles
+
+fresns_editor_post_extends_by_role_{$langTag}            // +tag: fresnsEditor
+fresns_editor_comment_extends_by_role_{$langTag}         // +tag: fresnsEditor
+fresns_manage_post_extends_by_role_{$langTag}            // +tag: fresnsManages
+fresns_manage_comment_extends_by_role_{$langTag}         // +tag: fresnsManages
+fresns_manage_user_extends_by_role_{$langTag}            // +tag: fresnsManages
+fresns_group_{$groupId}_extends_by_role_{$langTag}       // +tag: fresnsGroupConfigs, fresnsGroupExtensions
+fresns_feature_extends_by_role_{$langTag}                // +tag: fresnsFeatures
+fresns_profile_extends_by_role_{$langTag}                // +tag: fresnsProfiles
+
+fresns_manage_post_extends_by_group_admin_{$langTag}         // +tag: fresnsManages
+fresns_manage_comment_extends_by_group_admin_{$langTag}      // +tag: fresnsManages
+fresns_group_{$groupId}_extends_by_group_admin_{$langTag}    // +tag: fresnsGroupConfigs, fresnsGroupExtensions
 ```
 
 ## fresnsApiData
