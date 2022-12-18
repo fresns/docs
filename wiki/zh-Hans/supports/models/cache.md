@@ -64,6 +64,7 @@ fresns_conversation_ban_words
 
 - tag: `fresnsLanguages`
 - tag: `fresnsUnknownLanguages`
+- tag: `fresnsConfigLanguages`
 - tag: `fresnsPluginUsageLanguages`
 - tag: `fresnsRoleLanguages`
 - tag: `fresnsStickerLanguages`
