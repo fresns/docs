@@ -487,14 +487,14 @@
         // 帖子作者
         // 通用数据结构->用户信息
     },
-    "previewComments": [
-        {
-            // 通用数据结构->评论信息
-        }
-    ],
     "previewLikeUsers": [
         {
             // 通用数据结构->用户信息
+        }
+    ],
+    "previewComments": [
+        {
+            // 通用数据结构->评论信息
         }
     ],
     "manages": [

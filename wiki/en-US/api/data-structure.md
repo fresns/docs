@@ -487,14 +487,14 @@
         // 帖子作者
         // Common Data Structure -> User Info
     },
-    "previewComments": [
-        {
-            // Common Data Structure -> Comment Info
-        }
-    ],
     "previewLikeUsers": [
         {
             // Common Data Structure -> User Info
+        }
+    ],
+    "previewComments": [
+        {
+            // Common Data Structure -> Comment Info
         }
     ],
     "manages": [

@@ -150,14 +150,15 @@ fresns_api_hashtag_{$hid}_{$langTag}     // +tag: fresnsHashtagData
 - tag: `fresnsPosts`
 
 ```php
-fresns_model_post_{$pid}                             // +tag: fresnsPostModels
-fresns_model_post_{$postId}                          // +tag: fresnsPostModels
-fresns_seo_post_{$id}                                // +tag: fresnsPostData
-fresns_api_post_{$pid}_{$langTag}                    // +tag: fresnsPostData
-fresns_api_post_{$pid}_list_content                  // +tag: fresnsPostData
-fresns_api_post_{$pid}_detail_content                // +tag: fresnsPostData
-fresns_api_post_{$pid}_allow_{$uid}                  // +tag: fresnsPostData, fresnsUsers, fresnsUserData
-fresns_api_post_{$postId}_top_comments_{$langTag}    // +tag: fresnsPostData, fresnsComments, fresnsCommentData
+fresns_model_post_{$pid}                                 // +tag: fresnsPostModels
+fresns_model_post_{$postId}                              // +tag: fresnsPostModels
+fresns_seo_post_{$id}                                    // +tag: fresnsPostData
+fresns_api_post_{$pid}_{$langTag}                        // +tag: fresnsPostData
+fresns_api_post_{$pid}_list_content                      // +tag: fresnsPostData
+fresns_api_post_{$pid}_detail_content                    // +tag: fresnsPostData
+fresns_api_post_{$pid}_allow_{$uid}                      // +tag: fresnsPostData, fresnsUsers, fresnsUserData
+fresns_api_post_{$postId}_preview_comments_{$langTag}    // +tag: fresnsPostData, fresnsComments, fresnsCommentData
+fresns_api_post_{$postId}_preview_like_users_{$langTag}  // +tag: fresnsPostData, fresnsUsers, fresnsUserData
 ```
 
 ## 评论
