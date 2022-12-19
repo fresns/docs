@@ -84,7 +84,6 @@ From [the user panel](../../api/user/panel.md) interface `data` parameters
 ### Groups
 
 ```php
-fs_groups() // All
 fs_groups('categories') // Group categories
 fs_groups('tree') // Tree all group
 ```
@@ -92,7 +91,6 @@ fs_groups('tree') // Tree all group
 ### Home List
 
 ```php
-fs_index_list() // All
 fs_index_list('users') // User home list
 fs_index_list('groups') // Group home list
 fs_index_list('hashtags') // Hashtag home list
@@ -121,7 +119,6 @@ route('fresns.api.index.list', [$type => 'comments', 'page' => 2]) // Comment ho
 ### List
 
 ```php
-fs_list() // All
 fs_list('users') // User list
 fs_list('groups') // Group list
 fs_list('hashtags') // Hashtag list

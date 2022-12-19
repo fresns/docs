@@ -84,7 +84,6 @@ fs_user_panel('key.key')
 ### 小组
 
 ```php
-fs_groups() // 全部
 fs_groups('categories') // 小组分类
 fs_groups('tree') // 树结构全部小组
 ```
@@ -92,7 +91,6 @@ fs_groups('tree') // 树结构全部小组
 ### 首页列表
 
 ```php
-fs_index_list() // 全部
 fs_index_list('users') // 用户首页列表
 fs_index_list('groups') // 小组首页列表
 fs_index_list('hashtags') // 话题首页列表
@@ -121,7 +119,6 @@ route('fresns.api.index.list', [$type => 'comments', 'page' => 2]) // 评论首�
 ### 列表
 
 ```php
-fs_list() // 全部
 fs_list('users') // 用户列表
 fs_list('groups') // 小组列表
 fs_list('hashtags') // 话题列表
