@@ -10,10 +10,10 @@
 | 评论可见度规则 | comment_visibility_rule | 0 | number | 单位：天<br>0 代表不限制，7 代表显示 7 天内可见<br>以帖子发表时间为计算值，大于可见度规则天数，该帖子的评论不再显示，也不可再评论。 |
 | 帖子点赞用户预览 | preview_post_like_users | 0 | number | 0 代表不启用，最大数字 10 |
 | 帖子评论预览数量 | preview_post_comments | 0 | number | 0 代表不启用，最大数字 5 |
-| 帖子评论预览类型 | preview_post_comment_sort | like | string | `like` 点赞数量，`comment` 子级评论数量，`timeAsc` 正序发表时间，`timeDesc` 倒序发表时间 |
+| 帖子评论预览类型 | preview_post_comment_sort | like | string | `like` 点赞数量，`comment` 子级评论数量，`oldest` 正序发表时间，`latest` 倒序发表时间 |
 | 帖子评论预览条件 | preview_post_comment_require | 10 | number | `like` 和 `comment` 专用，表示数量达到多少才输出预览 |
 | 子级评论预览数量 | preview_sub_comments | 3 | number | 0 代表不启用，最大数字 5 |
-| 子级评论预览类型 | preview_sub_comment_sort | timeAsc | string | `like` 点赞数量，`timeAsc` 正序发表时间，`timeDesc` 倒序发表时间 |
+| 子级评论预览类型 | preview_sub_comment_sort | oldest | string | `like` 点赞数量，`oldest` 正序发表时间，`latest` 倒序发表时间 |
 | 附近帖子默认范围（公里） | nearby_length_km | 50 | number |  |
 | 附近帖子默认范围（英里） | nearby_length_mi | 30 | number |  |
 

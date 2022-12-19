@@ -347,7 +347,7 @@
     "postDigestCount": "Number / 精华帖子总数",
     "commentCount": "Number / 评论总数",
     "commentDigestCount": "Number / 精华评论总数",
-    "createDate": "String / 小组创建日期",
+    "createDate": "String / 话题创建日期",
     "archives": {
         "String / 扩展参数 Code": "String / 扩展参数内容"
     },
@@ -487,10 +487,16 @@
         // 帖子作者
         // Common Data Structure -> User Info
     },
-    "topComment": {
-        // 帖子热门评论，可为 null
-        // Common Data Structure -> Comment Info
-    },
+    "previewComments": [
+        {
+            // Common Data Structure -> Comment Info
+        }
+    ],
+    "previewLikeUsers": [
+        {
+            // Common Data Structure -> User Info
+        }
+    ],
     "manages": [
         // 帖子管理扩展
         // Common Data Structure -> Extend Function Info
@@ -1028,8 +1034,8 @@
     "name": "String / 扩展名称",
     "icon": "String / 扩展图标地址",
     "url": "String / 扩展访问地址",
-    "badgesType": "Number / 扩展提示类型 null.无 1.红点 2.文字 3.数字",
-    "badgesValue": "String / 扩展提示值",
+    "badgeType": "Number / 扩展提示类型 null.无 1.红点 2.文字 3.数字",
+    "badgeValue": "String / 扩展提示值，文字或数字",
     "editorToolbar": "Boolean / 编辑器专用，是否在 toolbar 显示",
     "editorNumber": "Number / 编辑器专用，可使用数量",
     "pluginRating": {
