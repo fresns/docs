@@ -683,8 +683,9 @@
         "postCreatorLikeStatus": "Boolean / 帖子作者是否点赞"
     },
     "followType": "String / 来自哪种关注 null.无 user.我关注的用户 group.我关注的小组 hashtag.我关注的话题 digest.高级精华",
+    "pid": "String / 评论所属帖子 ID",
     "post": {
-        // 评论所属的帖子
+        // 评论所属的帖子完整信息
         // Common Data Structure -> Post Info
     }
 }
