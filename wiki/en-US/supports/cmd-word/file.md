@@ -35,8 +35,8 @@
 ```
 | Parameter Name | Type | Required | Description |
 | --- | --- | --- | --- |
-| usageType | Number | **required** | [文件用途类型](../../database/number.md#文件用途类型) |
 | platformId | Number | **required** | 平台编号（配置表 [platforms](../../database/dictionary/platforms.md) 键名的键值） |
+| usageType | Number | **required** | [文件用途类型](../../database/number.md#文件用途类型) |
 | tableName | String | **required** | 来源表名（哪个张使用） |
 | tableColumn | String | **required** | 来源字段名（哪个字段使用） |
 | tableId | Number | *optional* | 来源表主键 ID |
@@ -74,8 +74,8 @@
 ```
 | Parameter Name | Type | Required | Description |
 | --- | --- | --- | --- |
-| usageType | Number | **required** | [文件用途类型](../../database/number.md#文件用途类型) |
 | platformId | Number | **required** | 平台编号（配置表 [platforms](../../database/dictionary/platforms.md) 键名的键值） |
+| usageType | Number | **required** | [文件用途类型](../../database/number.md#文件用途类型) |
 | tableName | String | **required** | 来源表名 |
 | tableColumn | String | **required** | 来源字段名 |
 | tableId | Number | *optional* | 来源表主键 ID |
