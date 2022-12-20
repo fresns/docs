@@ -162,11 +162,13 @@
 | 36110 | Current role has no right to upload videos |
 | 36111 | Current role has no right to upload audios |
 | 36112 | Current role has no right to upload files |
-| 36113 | File size exceeded the limit for current role |
-| 36114 | Current role has no conversation message permission |
-| 36115 | The current role has reached the upper limit of today download, please download again tomorrow. |
-| 36116 | The current number of characters has reached the maximum number and cannot be added |
-| 36117 | Publish too fast, please post again at intervals. Please check the current role settings for details |
+| 36113 | File size exceeds the set limit |
+| 36114 | File time length exceeds the set limit |
+| 36115 | The number of files exceeds the set limit |
+| 36116 | Current role has no conversation message permission |
+| 36117 | The current role has reached the upper limit of today download, please download again tomorrow. |
+| 36118 | The current number of characters has reached the maximum number and cannot be added |
+| 36119 | Publish too fast, please post again at intervals. Please check the current role settings for details |
 | **Mark** |  |
 | 36200 | This feature is not open and cannot be operated |
 | 36201 | The content is not open and cannot be viewed |
