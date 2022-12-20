@@ -7,7 +7,7 @@ Before you install Fresns, it's important to check that your server meets the re
 | Environment | Services |
 | --- | --- |
 | Web Server | Nginx or Apache or IIS or Caddy |
-| Package Manager | Composer 2.4 or higher |
+| Package Manager | Composer 2.5 or higher |
 | Code Lang | PHP 8.x |
 | Database | MySQL 5.7 or 8.x |
 
