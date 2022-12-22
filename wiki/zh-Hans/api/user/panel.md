@@ -19,6 +19,10 @@
     "code": 0,
     "message": "ok",
     "data": {
+        "multiUser": {
+            "status": "Boolean / 是否有权使用",
+            "service": "String / 服务插件 URL 参数"
+        },
         "features": [
             {
                 // 用户功能扩展
