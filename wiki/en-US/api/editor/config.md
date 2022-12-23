@@ -21,8 +21,6 @@
 
 ## Return
 
-**帖子**
-
 ```json
 {
     "code": 0,
@@ -139,3 +137,7 @@
     }
 }
 ```
+
+- 编辑器文件配置的 `uploadForm` 参数
+    - `fresns` 则使用上传接口 [/api/v2/common/upload-file](../common/upload-file.md)
+    - `plugin` 则使用 WebView 访问 `uploadUrl` 参数的地址上传，规则见[回调返参](../../extensions/callback/index.md)。
