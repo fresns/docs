@@ -127,6 +127,13 @@ function sidebarGuide() {
             items: [
                 { text: '宝塔面板配置教程', link: '/guide/install/baota.md' },
             ]
+        },
+        {
+            text: 'Fresns 演示',
+            collapsible: true,
+            items: [
+                { text: '网站端演示', link: 'https://discuss.fresns.cn/post/demo' },
+            ]
         }
     ]
 }
