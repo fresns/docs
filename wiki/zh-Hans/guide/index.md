@@ -51,6 +51,7 @@ Fresns 遵循 [Apache-2.0](https://github.com/fresns/fresns/blob/main/LICENSE) �
 
 - 项目发起人：[唐杰](https://tangjie.me/about)
 - 联系邮箱：[support@fresns.org](mailto:support@fresns.org)
+- 官方社区：[https://discuss.fresns.cn](https://discuss.fresns.cn/)
 - QQ 群：[5980111](https://qm.qq.com/cgi-bin/qm/qr?k=R2pfcPUd4Nyc87AKdkuHP9yJ0MhddUaz&jump_from=webapi)
 - 微信群：*扫描下方二维码加唐杰微信，告之你要加「使用交流群」，稍后唐杰会拉你进群。*
 

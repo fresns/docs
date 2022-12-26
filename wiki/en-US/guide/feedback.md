@@ -10,7 +10,7 @@ Thank you for helping us test Fresns. We're happy to have you on the team! We ne
 
 Found a bug already? Wonderful! We'd love to hear about it — but first you should check around to make sure you're not wasting your time on a known issue:
 
-- Search our [Support forum](https://discuss.fresns.org/group/support) to see if it's already been reported.
+- Search our [Support forum](https://discuss.fresns.com/group/feedback) to see if it's already been reported.
 - We could be working on a fix, so search our [issue tracker](https://github.com/fresns/fresns/issues) too.
 
 If you've searched thoroughly and come up empty-handed, we'll welcome your report. If it's just a simple issue (a misspelled word or graphics glitch, for example) skip to the next paragraph. But if you're seeing errors, or something is clearly broken, we'll need you to gather some information first. Please head over to our Troubleshooting guide and follow the instructions there. Collect as much info as you can!

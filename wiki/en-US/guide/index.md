@@ -45,3 +45,4 @@ To distribute copies of your modified versions to others.
 
 - Founder: [Jarvis Tang](https://github.com/jarvis-tang/about)
 - Email: [support@fresns.org](mailto:support@fresns.org)
+- Community: [https://discuss.fresns.com](https://discuss.fresns.com/)
