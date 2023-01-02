@@ -33,6 +33,7 @@
     {"name":"refresh","canDelete":false},
     {"name":"reload","canDelete":false},
     {"name":"automatic","canDelete":false},
+    {"name":"default","canDelete":false},
     {"name":"modify","canDelete":false},
     {"name":"edit","canDelete":false},
     {"name":"delete","canDelete":false},

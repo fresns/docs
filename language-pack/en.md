@@ -32,6 +32,7 @@
     "refresh": "Refresh",
     "reload": "Reload",
     "automatic": "Automatic",
+    "default": "Default",
     "modify": "Modify",
     "edit": "Edit",
     "delete": "Delete",

@@ -32,6 +32,7 @@
     "refresh": "刷新",
     "reload": "重新载入",
     "automatic": "自动",
+    "default": "默认",
     "modify": "修改",
     "edit": "编辑",
     "delete": "删除",

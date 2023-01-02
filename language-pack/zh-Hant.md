@@ -32,6 +32,7 @@
     "refresh": "刷新",
     "reload": "重新載入",
     "automatic": "自動",
+    "default": "默認",
     "modify": "修改",
     "edit": "編輯",
     "delete": "刪除",
