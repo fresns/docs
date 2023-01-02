@@ -16,9 +16,7 @@ Before you install Fresns, it's important to check that your server meets the re
 - Functions: `putenv` `symlink` `readlink` `proc_open` `passthru`
 :::
 
-## Installing
-
-### 1. Get the package
+## Download
 
 ::: tip Option 1: Download the full package manually
 - [Click to download](https://app.fresns.org/latest.zip)
@@ -41,7 +39,9 @@ php artisan vendor:publish --provider="Fresns\MarketManager\Providers\MarketServ
 - If you need a website, please go to the application market to select a website engine and theme template
 :::
 
-### 2. Config the Web Server
+## Installing
+
+### 1. Config the Web Server
 
 - Point the website directory to `/public/`
 - Add [URL Rewriting](#url-rewriting) to the configuration file
@@ -49,7 +49,7 @@ php artisan vendor:publish --provider="Fresns\MarketManager\Providers\MarketServ
 
 > Note: As the “website root directory” is not the “main program root directory”, the website will request the main program root directory file upwards when running, so please do not turn on the function configuration of anti-cross-site attack (open_basedir).
 
-### 3. Install Config
+### 2. Install Config
 
 - Access `{website}/install`
 - Check the environment and configure the database information according to the process
