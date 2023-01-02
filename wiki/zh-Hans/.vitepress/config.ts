@@ -54,7 +54,7 @@ export default defineConfig({
 
         editLink: {
             pattern: 'https://github.com/fresns/docs/tree/main/wiki/zh-Hans/:path',
-            text: '在 GitHub 上编辑此页面'
+            text: '为此页提供修改建议'
         },
 
         lastUpdatedText: '最后一次更新',

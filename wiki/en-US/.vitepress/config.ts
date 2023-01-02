@@ -51,7 +51,8 @@ export default defineConfig({
         },
 
         editLink: {
-            pattern: 'https://github.com/fresns/docs/tree/main/wiki/en-US/:path'
+            pattern: 'https://github.com/fresns/docs/tree/main/wiki/en-US/:path',
+            text: 'Suggest changes to this page'
         },
 
         algolia: {
