@@ -32,8 +32,3 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: wiki/zh-Hans/.vitepress/dist
           publish_branch: zh-hans-pages
-
-      - name: Webhook
-        uses: joelwmale/webhook-action@master
-        with:
-          url: ${{ secrets.WEBHOOK_URL }}
