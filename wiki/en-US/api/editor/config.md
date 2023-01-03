@@ -119,6 +119,7 @@
             },
             "limit": {
                 "status": "Boolean / 是否有特殊规则",
+                "isInTime": "Boolean / 是否在执行时间范围内",
                 "type": "Number / 1.指定某个时间段范围内生效 2.指定每天的某个时间段范围内循环生效",
                 "periodStart": "String / type=1 专用，开始日期时间",
                 "periodEnd": "String / type=1 专用，结束日期时间",
