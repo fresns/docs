@@ -60,7 +60,9 @@ Whether it is website or mobile application, the use of plug-ins is embedded in 
 | `connect` | Connect Management | Manage account connect bindings |
 | `walletRecharge` | Recharge Extension |  |
 | `walletWithdraw` | Withdrawal Extension |  |
-| `extension` | Extended Items | Group Extensions / User Feature Extensions / User Profile Extensions |
+| `groupExtension` | Group Extension |  |
+| `profileExtension` | User Profile Extension |  |
+| `featureExtension` | User Feature Extension |  |
 | `operationImage` | Functional Extension Information | `operations.diversifyImages` |
 | `operationTip` | Functional tip copywriting | `operations.tips` |
 | `extendBox` | Extend Content | textBox / infoBox / interactionBox |

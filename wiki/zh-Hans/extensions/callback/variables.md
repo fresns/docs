@@ -60,7 +60,9 @@
 | `connect` | 互联管理 | 管理互联绑定 |
 | `walletRecharge` | 充值扩展 |  |
 | `walletWithdraw` | 提现扩展 |  |
-| `extension` | 扩展项 | 小组扩展 / 用户功能扩展 / 用户资料扩展 |
+| `groupExtension` | 小组扩展 |  |
+| `profileExtension` | 用户功能扩展 |  |
+| `featureExtension` | 用户资料扩展 |  |
 | `operationImage` | 功能性扩展资料 | `operations.diversifyImages` |
 | `operationTip` | 功能性提示文案 | `operations.tips` |
 | `extendBox` | 扩展内容 | 文本框 / 信息框 / 交互框 |
