@@ -166,3 +166,15 @@ PermissionUtility::checkContentEditPerm($createDateTime, $editTimeConfig, $timez
 | editTimeConfig | Number | **required** | `post_edit_time_limit` 或 `comment_edit_time_limit` |
 | timezone | String | *optional* | If empty, the default time zone is used. |
 | langTag | String | *optional* | If empty, the default language is used. |
+
+## 判断扩展权限
+
+```php
+PermissionUtility::checkExtendPerm($unikey, $scene, $groupId, $userId);
+```
+| 参数名 | 类型 | 是否必传 | 说明 |
+| --- | --- | --- | --- |
+| unikey | String | YES | 插件 UniKey |
+| scene | String | YES | [{scene} 入口场景](../../extensions/callback/variables.md#scene-入口场景) |
+| groupId | Number | NO | 小组 id `groups > id` |
+| userId | Number | NO | 用户 id `users > id` |
