@@ -47,6 +47,7 @@
     {"name":"dismiss","canDelete":false},
     {"name":"activate","canDelete":false},
     {"name":"deactivate","canDelete":false},
+    {"name":"status","canDelete":false},
     {"name":"install","canDelete":false},
     {"name":"uninstall","canDelete":false},
     {"name":"check","canDelete":false},

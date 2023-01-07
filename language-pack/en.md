@@ -46,6 +46,7 @@
     "dismiss": "Dismiss",
     "activate": "Activate",
     "deactivate": "Deactivate",
+    "status": "Status",
     "install": "Install",
     "uninstall": "Uninstall",
     "check": "Check",

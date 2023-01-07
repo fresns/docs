@@ -46,6 +46,7 @@
     "dismiss": "駁回",
     "activate": "啟用",
     "deactivate": "停用",
+    "status": "狀態",
     "install": "安裝",
     "uninstall": "卸載",
     "check": "驗證",
