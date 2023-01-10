@@ -15,7 +15,6 @@ CacheHelper::isSupportTags();
 ```php
 fresns_cache_is_support_tags
 fresns_cache_tags
-fresns_crontab_items
 install_{$step}
 autoUpgradeStep
 autoUpgradeTip
@@ -36,6 +35,7 @@ fresns_database_datetime
 fresns_panel_login_path
 fresns_panel_translation_{$locale}
 fresns_model_key_{$appId}
+fresns_crontab_items
 ```
 
 ## 配置
@@ -236,6 +236,7 @@ fresns_api_sticker_tree_{$langTag}                   // +tag: fresnsConfigs
 ## Fresns 插件
 
 - tag: `fresnsPlugins`
+- tag: `fresnsPluginAuth`
 
 ## Fresns 官方默认引擎插件
 
