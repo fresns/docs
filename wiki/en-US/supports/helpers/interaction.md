@@ -11,7 +11,7 @@ InteractionHelper::fresnsOverview();
 ## 获取角色信息和权限参数
 
 ```php
-InteractionHelper::fresnsRoleInteraction($roleId, $langTag);
+InteractionHelper::fresnsRoleInfo($roleId, $langTag);
 ```
 | 参数名 | 类型 | 是否必传 | 说明 |
 | --- | --- | --- | --- |
