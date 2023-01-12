@@ -83,6 +83,14 @@ fresns_{$tableName}_{$tableColumn}_{$tableId}_{$langTag}
 fresns_code_messages_{$unikey}_{$langTag}
 ```
 
+## 角色
+
+- tag: `fresnsRoles`
+
+```php
+fresns_role_{$id}_{$langTag}
+```
+
 ## 账号
 
 - tag: `fresnsAccounts`
