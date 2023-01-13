@@ -96,3 +96,13 @@ DateHelper::fresnsFormatTime($datetime, $langTag);
     - 时间超过 24 小时，但在 30 天以内，输出为“天”值，客户端使用场景为「n 天前」
     - 时间超过 30 天，但在 365 天以内，输出为“月”值，客户端使用场景为「n 个月前」
 :::
+
+## 按语言标签转换时间格式
+
+```php
+DateHelper::fresnsFormatConversion($datetime, $langTag);
+```
+| 参数名 | 类型 | 是否必传 | 说明 |
+| --- | --- | --- | --- |
+| datetime | String | NO | `Y-m-d H:i:s` |
+| langTag | String | NO | 输出为该语言的时间格式<br>`configs > language_menus` 语言标签的 `dateFormat` 参数<br>不传则使用默认语言的格式 |
