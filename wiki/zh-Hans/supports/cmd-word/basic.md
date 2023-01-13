@@ -16,6 +16,8 @@
 | aidToken | String | NO/YES | 账号身份凭证 |
 | uid | Number | NO/YES | 用户参数（用户主表 `users > uid` 字段） |
 | uidToken | String | NO/YES | 用户身份凭证 |
+| verifyType | Number | NO | 验证 [session_keys->type](../../database/systems/session-keys.md)，留空则默认为 1 |
+| verifyUnikey | String | NO | 类型为 3 时专用，验证关联插件 |
 
 ## 校验 URL 签名
 

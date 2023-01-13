@@ -16,6 +16,8 @@
 | aidToken | String | **optional** | 账号身份凭证 |
 | uid | Number | **optional** | 用户参数（用户主表 `users > uid` 字段） |
 | uidToken | String | **optional** | 用户身份凭证 |
+| verifyType | Number | *optional* | 验证 [session_keys->type](../../database/systems/session-keys.md)，留空则默认为 1 |
+| verifyUnikey | String | *optional* | 类型为 3 时专用，验证关联插件 |
 
 ## verifyUrlSign
 
