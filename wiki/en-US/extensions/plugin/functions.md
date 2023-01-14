@@ -49,9 +49,9 @@ Tell the main program which table to subscribe to, and which command word of its
 ```php
 // Example of subscription notification
 \FresnsCmdWord::plugin('YourUniKey')->yourCmdWord([
-    "tableName" => "Database Table Name",
-    "primaryId" => "Primary Key ID",
-    "changeType" => "Activity Type" // created or deleted
+    'tableName' => 'Database Table Name',
+    'primaryId' => 'Primary Key ID',
+    'changeType' => 'Activity Type' // created or deleted
 ]);
 ```
 
@@ -77,9 +77,58 @@ The plug-in subscribes to the account and the user requests in headers informati
 ```php
 // Example of subscription notification
 $wordBody = [
-    "uri" => 'Route when generating notifications',
-    "headers" => \request()->headers->all(),
-    "body" => $dtoRequest->toArray(),
+    'uri' => 'Route when generating notifications',
+    'headers' => \request()->headers->all(),
+    'body' => $dtoRequest->toArray(),
+];
+
+\FresnsCmdWord::plugin('YourUniKey')->yourCmdWord($wordBody);
+```
+
+
+## Subscribe Account and User Login
+
+Notify subscribers of command words when an account or user is logged in.
+
+```php
+// Create
+\FresnsCmdWord::plugin('Fresns')->addSubscribeItem($wordBody)
+
+// Cancel
+\FresnsCmdWord::plugin('Fresns')->deleteSubscribeItem($wordBody)
+```
+
+| Parameter | Description |
+| --- | --- |
+| type | Subscription Type `type = 3` |
+| unikey | Subscriber(plugin) |
+| cmdWord | Command word for subscriber |
+
+```php
+// Example of subscription notification
+$wordBody = [
+    'primaryId' => [
+        'accountId' =>  'Account Primary ID',
+        'userId' => 'User Primary ID',
+    ],
+    'accountToken' => [
+        'token' => 'String / Account Token',
+        'expiredHours' => 'Number / Expiration hours, null for permanent',
+        'expiredDays' => 'Number / Expiration days, null for permanent',
+        'expiredDateTime' => 'String / The token expiration date, null for permanent, in the format Y-m-d H:i:s'
+    ],
+    'accountDetail' => [
+        // Common Data Structure -> Account Info
+    ],
+    'userToken' => [
+        'token' => 'String / User Token',
+        'expiredHours' => 'Number / Expiration hours, null for permanent',
+        'expiredDays' => 'Number / Expiration days, null for permanent',
+        'expiredDateTime' => 'String / The token expiration date, null for permanent, in the format Y-m-d H:i:s'
+    ],
+    'userDetail' => [
+        // Common Data Structure -> User Info
+    ],
 ];
 
 \FresnsCmdWord::plugin('YourUniKey')->yourCmdWord($wordBody);

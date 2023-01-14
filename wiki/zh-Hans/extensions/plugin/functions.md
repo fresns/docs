@@ -57,9 +57,9 @@
 ```php
 //订阅通知示例
 \FresnsCmdWord::plugin('YourUniKey')->yourCmdWord([
-    "tableName" => "表名",
-    "primaryId" => "主键 ID",
-    "changeType" => "活动类型" // created 或 deleted
+    'tableName' => '表名',
+    'primaryId' => '主键 ID',
+    'changeType' => '活动类型' // created 或 deleted
 ]);
 ```
 
@@ -85,9 +85,58 @@
 ```php
 //订阅通知示例
 $wordBody = [
-    "uri" => '产生通知时操作的路由',
-    "headers" => \request()->headers->all(),
-    "body" => $dtoRequest->toArray(),
+    'uri' => '产生通知时操作的路由',
+    'headers' => \request()->headers->all(),
+    'body' => $dtoRequest->toArray(),
+];
+
+\FresnsCmdWord::plugin('YourUniKey')->yourCmdWord($wordBody);
+```
+
+
+## 订阅登录通知
+
+当账号或用户登录后，通知订阅者命令字。
+
+```php
+//建立订阅
+\FresnsCmdWord::plugin('Fresns')->addSubscribeItem($wordBody)
+
+//取消订阅
+\FresnsCmdWord::plugin('Fresns')->deleteSubscribeItem($wordBody)
+```
+
+| 参数 | 说明 |
+| --- | --- |
+| type | 订阅类型 `type = 3` |
+| unikey | 订阅者（插件） |
+| cmdWord | 订阅者的命令字 |
+
+```php
+//订阅通知示例
+$wordBody = [
+    'primaryId' => [
+        'accountId' =>  '账号数据表主键 ID',
+        'userId' => '用户数据表主键 ID',
+    ],
+    'accountToken' => [
+        'token' => 'String / 账号登录凭证',
+        'expiredHours' => 'Number / 有效期小时数，null 代表永久有效',
+        'expiredDays' => 'Number / 有效期天数，null 代表永久有效',
+        'expiredDateTime' => 'String / 凭证有效时间，null 代表永久有效，格式为 Y-m-d H:i:s'
+    ],
+    'accountDetail' => [
+        // 通用数据结构->账号信息
+    ],
+    'userToken' => [
+        'token' => 'String / 账号登录凭证',
+        'expiredHours' => 'Number / 有效期小时数，null 代表永久有效',
+        'expiredDays' => 'Number / 有效期天数，null 代表永久有效',
+        'expiredDateTime' => 'String / 凭证有效时间，null 代表永久有效，格式为 Y-m-d H:i:s'
+    ],
+    'userDetail' => [
+        // 通用数据结构->用户信息
+    ],
 ];
 
 \FresnsCmdWord::plugin('YourUniKey')->yourCmdWord($wordBody);
