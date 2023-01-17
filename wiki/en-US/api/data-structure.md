@@ -4,6 +4,7 @@
 
 - Empty array use `[]`
 - Empty object use `null`
+- like/dislike/follow/block 计数类 count 参数值，如果为 `null` 则表示后台配置为不公开，如果为公开则是数字值。
 
 ## Account Info
 
@@ -226,12 +227,12 @@
         "blockName": "String / block 行为自定义名称",
         "publishPostName": "String / 发表帖子自定义名称",
         "publishCommentName": "String / 发表评论自定义名称",
-        "likeStatus": "Boolean / 是否可以操作点赞",
-        "dislikeStatus": "Boolean / 是否可以操作点踩",
-        "followStatus": "Boolean / 是否可以操作关注",
+        "likeStatus": "Boolean / Like Status",
+        "dislikeStatus": "Boolean / Dislike Status",
+        "followStatus": "Boolean / Follow Status",
         "followMeStatus": "Boolean / 他是否关注了我",
         "followNote": "String / 我对他的关注备注",
-        "blockStatus": "Boolean / 是否可以操作屏蔽",
+        "blockStatus": "Boolean / Block Status",
         "blockMeStatus": "Boolean / 他是否屏蔽了我",
         "blockNote": "String / 我对他的屏蔽备注"
     },
@@ -318,13 +319,13 @@
         "blockName": "String / block 行为自定义名称",
         "publishPostName": "String / 发表帖子自定义名称",
         "publishCommentName": "String / 发表评论自定义名称",
-        "likeStatus": "Boolean / 是否可以操作点赞",
-        "dislikeStatus": "Boolean / 是否可以操作点踩",
-        "followStatus": "Boolean / 是否可以操作关注",
+        "likeStatus": "Boolean / Like Status",
+        "dislikeStatus": "Boolean / Dislike Status",
+        "followStatus": "Boolean / Follow Status",
         "followNote": "String / 我对该小组的关注备注",
         "followIsExpiry": "Boolean / 是否过期，公开小组模式始终为 false",
         "followEndDateTime": "String / 过期时间",
-        "blockStatus": "Boolean / 是否可以操作屏蔽",
+        "blockStatus": "Boolean / Block Status",
         "blockNote": "String / 我对该小组的屏蔽备注"
     }
 }
@@ -369,11 +370,11 @@
         "blockName": "String / block 行为自定义名称",
         "publishPostName": "String / 发表帖子自定义名称",
         "publishCommentName": "String / 发表评论自定义名称",
-        "likeStatus": "Boolean / 是否可以操作点赞",
-        "dislikeStatus": "Boolean / 是否可以操作点踩",
-        "followStatus": "Boolean / 是否可以操作关注",
+        "likeStatus": "Boolean / Like Status",
+        "dislikeStatus": "Boolean / Dislike Status",
+        "followStatus": "Boolean / Follow Status",
         "followNote": "String / 我对该话题的关注备注",
-        "blockStatus": "Boolean / 是否可以操作屏蔽",
+        "blockStatus": "Boolean / Block Status",
         "blockNote": "String / 我对该话题的屏蔽备注"
     }
 }
@@ -520,11 +521,11 @@
         "blockName": "String / block 行为自定义名称",
         "publishPostName": "String / 发表帖子自定义名称",
         "publishCommentName": "String / 发表评论自定义名称",
-        "likeStatus": "Boolean / 是否可以操作点赞",
-        "dislikeStatus": "Boolean / 是否可以操作点踩",
-        "followStatus": "Boolean / 是否可以操作关注",
+        "likeStatus": "Boolean / Like Status",
+        "dislikeStatus": "Boolean / Dislike Status",
+        "followStatus": "Boolean / Follow Status",
         "followNote": "String / 我对该帖子的关注备注",
-        "blockStatus": "Boolean / 是否可以操作屏蔽",
+        "blockStatus": "Boolean / Block Status",
         "blockNote": "String / 我对该帖子的屏蔽备注"
     },
     "commentHidden": "Boolean / 是否隐藏评论",
@@ -674,11 +675,11 @@
         "blockName": "String / block 行为自定义名称",
         "publishPostName": "String / 发表帖子自定义名称",
         "publishCommentName": "String / 发表评论自定义名称",
-        "likeStatus": "Boolean / 是否可以操作点赞",
-        "dislikeStatus": "Boolean / 是否可以操作点踩",
-        "followStatus": "Boolean / 是否可以操作关注",
+        "likeStatus": "Boolean / Like Status",
+        "dislikeStatus": "Boolean / Dislike Status",
+        "followStatus": "Boolean / Follow Status",
         "followNote": "String / 我对该评论的关注备注",
-        "blockStatus": "Boolean / 是否可以操作屏蔽",
+        "blockStatus": "Boolean / Block Status",
         "blockNote": "String / 我对该评论的屏蔽备注",
         "postCreatorLikeStatus": "Boolean / 帖子作者是否点赞"
     },
