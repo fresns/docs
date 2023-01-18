@@ -29,9 +29,15 @@
 
 ### PHP 函数
 
-PHP 函数启用了 `putenv` `symlink` `readlink` `proc_open` `passthru`
+- PHP 函数启用了 `putenv` `symlink` `readlink` `proc_open` `passthru`
 
 ![PHP 函数](https://cdn.fresns.cn/guide/baota-php-functions.png)
+
+### PHP 超时限制
+
+- 为了避免插件依赖下载超时，或者前端大文件上传等使用场景，需加大 PHP 超时限制。
+
+![PHP 超时限制](https://cdn.fresns.cn/guide/baota-php-timeout.png)
 
 ## 网站配置
 
