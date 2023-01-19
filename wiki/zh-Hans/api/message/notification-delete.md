@@ -8,10 +8,10 @@
 
 | 参数名 | 公开模式（是否必传） | 私有模式（是否必传） |
 | --- | --- | --- |
-| aid | YES | YES |
-| aidToken | YES | YES |
-| uid | YES | YES |
-| aidToken | YES | YES |
+| X-Fresns-Aid | YES | YES |
+| X-Fresns-Aid-Token | YES | YES |
+| X-Fresns-Uid | YES | YES |
+| X-Fresns-Aid-Token | YES | YES |
 
 ## Body 参数
 

@@ -8,10 +8,10 @@
 
 | 参数名 | 公开模式（是否必传） | 私有模式（是否必传） |
 | --- | --- | --- |
-| aid | NO | YES |
-| aidToken | NO | YES |
-| uid | NO | YES |
-| uidToken | NO | YES |
+| X-Fresns-Aid | NO | YES |
+| X-Fresns-Aid-Token | NO | YES |
+| X-Fresns-Uid | NO | YES |
+| X-Fresns-Uid-Token | NO | YES |
 
 ## Rest 参数
 

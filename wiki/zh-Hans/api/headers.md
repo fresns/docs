@@ -4,19 +4,19 @@
 
 | 参数名 | 类型 | 是否必传 | 说明 |
 | --- | --- | --- | --- |
-| platformId | Number | YES | 平台编号，与密钥的「平台」匹配<br>密钥位置：`控制面板->应用中心->应用密钥`<br>[查看平台对应的 ID 编号](../database/dictionary/platforms.md) |
-| version | String | YES | 你的客户端版本号，推荐使用语义化版本号 |
-| appId | String | YES | 密钥 App ID<br>密钥位置：`控制面板->应用中心->应用密钥`|
-| timestamp | String | YES | 签名生成时间（当前 Unix 时间戳，精确到秒或毫秒都支持） |
-| sign | String | YES | [查看签名生成规则](#签名生成规则) |
-| langTag | String | NO | 客户端的语言标签（留空则输出默认语言）<br>配置位置：`控制面板->系统->语言设置` |
-| timezone | String | NO | UTC 时区（留空则使用默认时区）<br>配置位置：`控制面板->系统->站点设置`<br>用户登录后，如果留空，则服务端自动以用户配置的时区处理时间格式 |
-| contentFormat | String | NO | 内容格式（帖子和评论的列表与详情），留空则原样输出。<br>传参 `html` 将内容转换为 html 格式（文本内容的 `\n` 转换为 `<br>`，Markdown 内容转换为 `HTML`） |
-| aid | String | YES/NO | 账号参数（留空则视为未登录账号） |
-| aidToken | String | YES/NO | 账号身份凭证（传参 `aid` 时必传） |
-| uid | Number | YES/NO | 用户参数（留空则视为未登录用户） |
-| uidToken | String | YES/NO | 用户身份凭证（传参 `uid` 时必传） |
-| deviceInfo | String | YES | [交互设备信息](../database/systems/session-logs.md#设备信息-json) `session_logs > device_info`<br>压缩 Object 信息为字符串传参 |
+| X-Fresns-App-Id | String | YES | 密钥 App ID<br>密钥位置：`控制面板->应用中心->应用密钥`|
+| X-Fresns-Client-Platform-Id | Number | YES | 平台编号，与密钥的「平台」匹配<br>密钥位置：`控制面板->应用中心->应用密钥`<br>[查看平台对应的 ID 编号](../database/dictionary/platforms.md) |
+| X-Fresns-Client-Version | String | YES | 你的客户端版本号，推荐使用语义化版本号 |
+| X-Fresns-Client-Device-Info | String | YES | [交互设备信息](../database/systems/session-logs.md#设备信息-json) `session_logs > device_info`<br>压缩 Object 信息为字符串传参 |
+| X-Fresns-Client-Lang-Tag | String | NO | 客户端的语言标签（留空则输出默认语言）<br>配置位置：`控制面板->系统->语言设置` |
+| X-Fresns-Client-Timezone | String | NO | UTC 时区（留空则使用默认时区）<br>配置位置：`控制面板->系统->站点设置`<br>用户登录后，如果留空，则服务端自动以用户配置的时区处理时间格式 |
+| X-Fresns-Client-Content-Format | String | NO | 内容格式（帖子和评论的列表与详情），留空则原样输出。<br>传参 `html` 将内容转换为 html 格式（文本内容的 `\n` 转换为 `<br>`，Markdown 内容转换为 `HTML`） |
+| X-Fresns-Aid | String | YES/NO | 账号参数（留空则视为未登录账号） |
+| X-Fresns-Aid-Token | String | YES/NO | 账号身份凭证（传参 `aid` 时必传） |
+| X-Fresns-Uid | Number | YES/NO | 用户参数（留空则视为未登录用户） |
+| X-Fresns-Uid-Token | String | YES/NO | 用户身份凭证（传参 `uid` 时必传） |
+| X-Fresns-Signature | String | YES | [查看签名生成规则](#签名生成规则) |
+| X-Fresns-Signature-Timestamp | String | YES | 签名生成时间（当前 Unix 时间戳，精确到秒或毫秒都支持） |
 
 ## 注册和登录流程
 
@@ -55,14 +55,14 @@
 ```php
 // headers 中参与签名的参数
 const SIGN_PARAM_ARR = [
-    'platformId',
-    'version',
-    'appId',
-    'timestamp',
-    'aid',
-    'aidToken',
-    'uid',
-    'uidToken',
+    'X-Fresns-App-Id',
+    'X-Fresns-Client-Platform-Id',
+    'X-Fresns-Client-Version',
+    'X-Fresns-Aid',
+    'X-Fresns-Aid-Token',
+    'X-Fresns-Uid',
+    'X-Fresns-Uid-Token',
+    'X-Fresns-Signature-Timestamp',
 ];
 ```
 
@@ -74,32 +74,32 @@ const SIGN_PARAM_ARR = [
 ```json
 // 未登录
 {
-	"platformId": 1,
-    "version": "2.0.0",
-    "appId": "yh1OJ7WL",
-    "timestamp": 1656653400000,
+    "X-Fresns-App-Id": "yh1OJ7WL",
+    "X-Fresns-Client-Platform-Id": 2,
+    "X-Fresns-Client-Version": "2.0.0",
+    "X-Fresns-Signature-Timestamp": 1674161913192
 }
 
 // 已登录账号
 {
-	"platformId": 1,
-    "version": "2.0.0",
-    "appId": "yh1OJ7WL",
-    "timestamp": 1656653400000,
-    "aid": "wIfu6jaF",
-    "aidToken": "uoX1hk6SHUgB2MFGJwNx38dem9DA7Vsz"
+    "X-Fresns-App-Id": "yh1OJ7WL",
+    "X-Fresns-Client-Platform-Id": 2,
+    "X-Fresns-Client-Version": "2.0.0",
+    "X-Fresns-Aid": "wIfu6jaF",
+    "X-Fresns-Aid-Token": "uoX1hk6SHUgB2MFGJwNx38dem9DA7Vsz",
+    "X-Fresns-Signature-Timestamp": 1674161913192
 }
 
 // 已登录用户
 {
-	"platformId": 1,
-    "version": "2.0.0",
-    "appId": "yh1OJ7WL",
-    "timestamp": 1656653400000,
-    "aid": "wIfu6jaF",
-    "aidToken": "uoX1hk6SHUgB2MFGJwNx38dem9DA7Vsz",
-    "uid": 782622,
-    "uidToken": "PqBpwPLJgfd1sH0X5JffYFGxTSc8RW7c"
+    "X-Fresns-App-Id": "yh1OJ7WL",
+    "X-Fresns-Client-Platform-Id": 2,
+    "X-Fresns-Client-Version": "2.0.0",
+    "X-Fresns-Aid": "wIfu6jaF",
+    "X-Fresns-Aid-Token": "uoX1hk6SHUgB2MFGJwNx38dem9DA7Vsz",
+    "X-Fresns-Uid": 782622,
+    "X-Fresns-Uid-Token": "PqBpwPLJgfd1sH0X5JffYFGxTSc8RW7c",
+    "X-Fresns-Signature-Timestamp": 1674161913192
 }
 ```
 
@@ -107,33 +107,33 @@ const SIGN_PARAM_ARR = [
 
 ```json
 {
-    "aid": "wIfu6jaF",
-    "aidToken": "uoX1hk6SHUgB2MFGJwNx38dem9DA7Vsz",
-    "appId": "yh1OJ7WL",
-	"platformId": 1,
-    "timestamp": 1656653400000,
-    "uid": 782622,
-    "uidToken": "PqBpwPLJgfd1sH0X5JffYFGxTSc8RW7c",
-    "version": "2.0.0",
+    "X-Fresns-App-Id": "yh1OJ7WL",
+    "X-Fresns-Client-Platform-Id": 2,
+    "X-Fresns-Client-Version": "2.0.0",
+    "X-Fresns-Aid": "wIfu6jaF",
+    "X-Fresns-Aid-Token": "uoX1hk6SHUgB2MFGJwNx38dem9DA7Vsz",
+    "X-Fresns-Uid": 782622,
+    "X-Fresns-Uid-Token": "PqBpwPLJgfd1sH0X5JffYFGxTSc8RW7c",
+    "X-Fresns-Signature-Timestamp": 1674161913192
 }
 ```
 
 **3、对排序后的新参数使用 URL 键值对的格式拼接成字符串。**
 
 ```
-aid=wIfu6jaF&aidToken=uoX1hk6SHUgB2MFGJwNx38dem9DA7Vsz&appId=yh1OJ7WL&platformId=1&timestamp=1656653400000&uid=782622&uidToken=PqBpwPLJgfd1sH0X5JffYFGxTSc8RW7c&version=2.0.0
+X-Fresns-Aid=wIfu6jaF&X-Fresns-Aid-Token=uoX1hk6SHUgB2MFGJwNx38dem9DA7Vsz&X-Fresns-App-Id=yh1OJ7WL&X-Fresns-Client-Platform-Id=2&X-Fresns-Client-Version=2.0.0&X-Fresns-Signature-Timestamp=1674161913192&X-Fresns-Uid=782622&X-Fresns-Uid-Token=PqBpwPLJgfd1sH0X5JffYFGxTSc8RW7c
 ```
 
-**4、再拼接上** `&appSecret={app_secret}` **得到待签名字符串。**
+**4、再拼接上** `&AppSecret={app_secret}` **得到待签名字符串。**
 
 ```
-aid=wIfu6jaF&aidToken=uoX1hk6SHUgB2MFGJwNx38dem9DA7Vsz&appId=yh1OJ7WL&platformId=1&timestamp=1656653400000&uid=782622&uidToken=PqBpwPLJgfd1sH0X5JffYFGxTSc8RW7c&version=2.0.0&appSecret=qUiEaDNQh2IpvGHOKlTMx7ujn8t1CZWX
+X-Fresns-Aid=wIfu6jaF&X-Fresns-Aid-Token=uoX1hk6SHUgB2MFGJwNx38dem9DA7Vsz&X-Fresns-App-Id=yh1OJ7WL&X-Fresns-Client-Platform-Id=2&X-Fresns-Client-Version=2.0.0&X-Fresns-Signature-Timestamp=1674161913192&X-Fresns-Uid=782622&X-Fresns-Uid-Token=PqBpwPLJgfd1sH0X5JffYFGxTSc8RW7c&AppSecret=qUiEaDNQh2IpvGHOKlTMx7ujn8t1CZWX
 ```
 
 **5、对签名字符串进行 MD5 运算（32 位小写），得到签名值**
 
 ```
-3f8e0d30b325f32e35aec475f38f85b5
+2174eaeab76fb6a3790ed4f7ebb2edfb
 ```
 
 ## 缓存介绍

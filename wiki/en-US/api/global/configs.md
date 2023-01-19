@@ -8,10 +8,10 @@
 
 | Parameter Name | Public Mode (Required) | Private Mode (Required) |
 | --- | --- | --- |
-| aid | *optional* | *optional* |
-| aidToken | *optional* | *optional* |
-| uid | *optional* | *optional* |
-| uidToken | *optional* | *optional* |
+| X-Fresns-Aid | *optional* | *optional* |
+| X-Fresns-Aid-Token | *optional* | *optional* |
+| X-Fresns-Uid | *optional* | *optional* |
+| X-Fresns-Uid-Token | *optional* | *optional* |
 
 ## Query Params
 

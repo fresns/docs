@@ -8,10 +8,10 @@
 
 | 参数名 | 公开模式（是否必传） | 私有模式（是否必传） |
 | --- | --- | --- |
-| aid | NO | NO |
-| aidToken | NO | NO |
-| uid | NO | NO |
-| uidToken | NO | NO |
+| X-Fresns-Aid | NO | NO |
+| X-Fresns-Aid-Token | NO | NO |
+| X-Fresns-Uid | NO | NO |
+| X-Fresns-Uid-Token | NO | NO |
 
 ## Query 参数
 

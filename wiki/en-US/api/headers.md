@@ -4,19 +4,19 @@
 
 | Parameter Name | Type | Required | Description |
 | --- | --- | --- | --- |
-| platformId | Number | **required** | Platform ID, matching the "platform" of the key<br>Path: `Panel->AppCenter->Keys`<br>[Check the ID number corresponding to the platform](../database/dictionary/platforms.md) |
-| version | String | **required** | Your client version, semantic version is recommended |
-| appId | String | **required** | Key App ID<br>Path: `Panel->AppCenter->Keys`|
-| timestamp | String | **required** | Signature generation time (current Unix time stamp, which can be accurate to second or millisecond) |
-| sign | String | **required** | [Signature generation rules](#signature-generation-rules) |
-| langTag | String | *optional* | Language Tag (output default language if left empty)<br>Path: `Panel->Systems->Languages` |
-| timezone | String | *optional* | UTC time zone (use default time zone if left empty)<br>Path: `Panel->Systems->General`<br>After the user logs in, if left blank, the server automatically processes the time format in the time zone configured by the user |
-| contentFormat | String | NO | Content format (list and detail of posts and comments), leave blank then output as is.<br>Pass the `html` reference to convert content to html format (`\n` for text content to `<br>`, Markdown content to `HTML`) |
-| aid | String |  | Account parameter (regarded as unlogged in account if left empty) |
-| aidToken | String |  | Account identity credential (If `aid` exists, it cannot be empty) |
-| uid | Number |  | User parameter (regarded as unlogged in user if left empty) |
-| uidToken | String |  | User identity credential (If `uid` exists, it cannot be empty) |
-| deviceInfo | String | **required** | [Interaction Device Information](../database/systems/session-logs.md#device-information-json) `session_logs > device_info`<br>Compress Object information as character string parameter transfer |
+| X-Fresns-App-Id | String | **required** | Key App ID<br>Path: `Panel->AppCenter->Keys`|
+| X-Fresns-Client-Platform-Id | Number | **required** | Platform ID, matching the "platform" of the key<br>Path: `Panel->AppCenter->Keys`<br>[Check the ID number corresponding to the platform](../database/dictionary/platforms.md) |
+| X-Fresns-Client-Version | String | **required** | Your client version, semantic version is recommended |
+| X-Fresns-Client-Device-Info | String | **required** | [Interaction Device Information](../database/systems/session-logs.md#device-information-json) `session_logs > device_info`<br>Compress Object information as character string parameter transfer |
+| X-Fresns-Client-Lang-Tag | String | *optional* | Language Tag (output default language if left empty)<br>Path: `Panel->Systems->Languages` |
+| X-Fresns-Client-Timezone | String | *optional* | UTC time zone (use default time zone if left empty)<br>Path: `Panel->Systems->General`<br>After the user logs in, if left blank, the server automatically processes the time format in the time zone configured by the user |
+| X-Fresns-Client-Content-Format | String | NO | Content format (list and detail of posts and comments), leave blank then output as is.<br>Pass the `html` reference to convert content to html format (`\n` for text content to `<br>`, Markdown content to `HTML`) |
+| X-Fresns-Aid | String |  | Account parameter (regarded as unlogged in account if left empty) |
+| X-Fresns-Aid-Token | String |  | Account identity credential (If `aid` exists, it cannot be empty) |
+| X-Fresns-Uid | Number |  | User parameter (regarded as unlogged in user if left empty) |
+| X-Fresns-Uid-Token | String |  | User identity credential (If `uid` exists, it cannot be empty) |
+| X-Fresns-Sign | String | **required** | [Signature generation rules](#signature-generation-rules) |
+| X-Fresns-Sign-Timestamp | String | **required** | Signature generation time (current Unix time stamp, which can be accurate to second or millisecond) |
 
 ## Register and Login Process
 
@@ -55,13 +55,14 @@
 ```php
 // Parameters participating in the singing process in headers
 const SIGN_PARAM_ARR = [
-    'platformId',
-    'version',
-    'appId',
-    'timestamp',
-    'aid',
-    'uid',
-    'token'
+    'X-Fresns-App-Id',
+    'X-Fresns-Client-Platform-Id',
+    'X-Fresns-Client-Version',
+    'X-Fresns-Aid',
+    'X-Fresns-Aid-Token',
+    'X-Fresns-Uid',
+    'X-Fresns-Uid-Token',
+    'X-Fresns-Signature-Timestamp',
 ];
 ```
 
@@ -73,32 +74,32 @@ const SIGN_PARAM_ARR = [
 ```json
 // No login
 {
-	"platformId": 1,
-    "version": "2.0.0",
-    "appId": "yh1OJ7WL",
-    "timestamp": 1656653400000,
+    "X-Fresns-App-Id": "yh1OJ7WL",
+    "X-Fresns-Client-Platform-Id": 2,
+    "X-Fresns-Client-Version": "2.0.0",
+    "X-Fresns-Signature-Timestamp": 1674161913192
 }
 
 // Logged in account
 {
-	"platformId": 1,
-    "version": "2.0.0",
-    "appId": "yh1OJ7WL",
-    "timestamp": 1656653400000,
-    "aid": "wIfu6jaF",
-    "aidToken": "uoX1hk6SHUgB2MFGJwNx38dem9DA7Vsz"
+    "X-Fresns-App-Id": "yh1OJ7WL",
+    "X-Fresns-Client-Platform-Id": 2,
+    "X-Fresns-Client-Version": "2.0.0",
+    "X-Fresns-Aid": "wIfu6jaF",
+    "X-Fresns-Aid-Token": "uoX1hk6SHUgB2MFGJwNx38dem9DA7Vsz",
+    "X-Fresns-Signature-Timestamp": 1674161913192
 }
 
 // Logged in user
 {
-	"platformId": 1,
-    "version": "2.0.0",
-    "appId": "yh1OJ7WL",
-    "timestamp": 1656653400000,
-    "aid": "wIfu6jaF",
-    "aidToken": "uoX1hk6SHUgB2MFGJwNx38dem9DA7Vsz",
-    "uid": 782622,
-    "uidToken": "PqBpwPLJgfd1sH0X5JffYFGxTSc8RW7c"
+    "X-Fresns-App-Id": "yh1OJ7WL",
+    "X-Fresns-Client-Platform-Id": 2,
+    "X-Fresns-Client-Version": "2.0.0",
+    "X-Fresns-Aid": "wIfu6jaF",
+    "X-Fresns-Aid-Token": "uoX1hk6SHUgB2MFGJwNx38dem9DA7Vsz",
+    "X-Fresns-Uid": 782622,
+    "X-Fresns-Uid-Token": "PqBpwPLJgfd1sH0X5JffYFGxTSc8RW7c",
+    "X-Fresns-Signature-Timestamp": 1674161913192
 }
 ```
 
@@ -106,33 +107,33 @@ const SIGN_PARAM_ARR = [
 
 ```json
 {
-    "aid": "wIfu6jaF",
-    "aidToken": "uoX1hk6SHUgB2MFGJwNx38dem9DA7Vsz",
-    "appId": "yh1OJ7WL",
-	"platformId": 1,
-    "timestamp": 1656653400000,
-    "uid": 782622,
-    "uidToken": "PqBpwPLJgfd1sH0X5JffYFGxTSc8RW7c",
-    "version": "2.0.0",
+    "X-Fresns-App-Id": "yh1OJ7WL",
+    "X-Fresns-Client-Platform-Id": 2,
+    "X-Fresns-Client-Version": "2.0.0",
+    "X-Fresns-Aid": "wIfu6jaF",
+    "X-Fresns-Aid-Token": "uoX1hk6SHUgB2MFGJwNx38dem9DA7Vsz",
+    "X-Fresns-Uid": 782622,
+    "X-Fresns-Uid-Token": "PqBpwPLJgfd1sH0X5JffYFGxTSc8RW7c",
+    "X-Fresns-Signature-Timestamp": 1674161913192
 }
 ```
 
 **3. Splice new parameters sorted into character strings with the right format of URL key value.**
 
 ```
-aid=wIfu6jaF&aidToken=uoX1hk6SHUgB2MFGJwNx38dem9DA7Vsz&appId=yh1OJ7WL&platformId=1&timestamp=1656653400000&uid=782622&uidToken=PqBpwPLJgfd1sH0X5JffYFGxTSc8RW7c&version=2.0.0
+X-Fresns-Aid=wIfu6jaF&X-Fresns-Aid-Token=uoX1hk6SHUgB2MFGJwNx38dem9DA7Vsz&X-Fresns-App-Id=yh1OJ7WL&X-Fresns-Client-Platform-Id=2&X-Fresns-Client-Version=2.0.0&X-Fresns-Signature-Timestamp=1674161913192&X-Fresns-Uid=782622&X-Fresns-Uid-Token=PqBpwPLJgfd1sH0X5JffYFGxTSc8RW7c
 ```
 
-**4. Splice `&appSecret={app_secret}` to obtain the character string to be signed.**
+**4. Splice `&AppSecret={app_secret}` to obtain the character string to be signed.**
 
 ```
-aid=wIfu6jaF&aidToken=uoX1hk6SHUgB2MFGJwNx38dem9DA7Vsz&appId=yh1OJ7WL&platformId=1&timestamp=1656653400000&uid=782622&uidToken=PqBpwPLJgfd1sH0X5JffYFGxTSc8RW7c&version=2.0.0&appSecret=qUiEaDNQh2IpvGHOKlTMx7ujn8t1CZWX
+X-Fresns-Aid=wIfu6jaF&X-Fresns-Aid-Token=uoX1hk6SHUgB2MFGJwNx38dem9DA7Vsz&X-Fresns-App-Id=yh1OJ7WL&X-Fresns-Client-Platform-Id=2&X-Fresns-Client-Version=2.0.0&X-Fresns-Signature-Timestamp=1674161913192&X-Fresns-Uid=782622&X-Fresns-Uid-Token=PqBpwPLJgfd1sH0X5JffYFGxTSc8RW7c&AppSecret=qUiEaDNQh2IpvGHOKlTMx7ujn8t1CZWX
 ```
 
 **5. Perform MD5 operation (32-digit lowercase) against the signed character signature to obtain the signature value.**
 
 ```
-3f8e0d30b325f32e35aec475f38f85b5
+2174eaeab76fb6a3790ed4f7ebb2edfb
 ```
 
 ## Cache Introduction

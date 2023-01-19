@@ -7,10 +7,10 @@
 
 | 参数名 | 公开模式（是否必传） | 私有模式（是否必传） |
 | --- | --- | --- |
-| aid | YES | YES |
-| aidToken | YES | YES |
-| uid | NO | NO |
-| uidToken | NO | NO |
+| X-Fresns-Aid | YES | YES |
+| X-Fresns-Aid-Token | YES | YES |
+| X-Fresns-Uid | NO | NO |
+| X-Fresns-Uid-Token | NO | NO |
 
 **接口使用说明**
 

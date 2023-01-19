@@ -8,10 +8,10 @@
 
 | 参数名 | 公开模式（是否必传） | 私有模式：接口不可请求 |
 | --- | --- | --- |
-| aid | NO |  |
-| aidToken | NO |  |
-| uid | NO |  |
-| uidToken | NO |  |
+| X-Fresns-Aid | NO |  |
+| X-Fresns-Aid-Token | NO |  |
+| X-Fresns-Uid | NO |  |
+| X-Fresns-Uid-Token | NO |  |
 
 ## Body 参数
 
