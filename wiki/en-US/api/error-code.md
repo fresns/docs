@@ -25,8 +25,8 @@
 | 31201 | Version not exist |
 | 31202 | Version and key do not match |
 | 31301 | App ID does not exist or is disabled |
-| 31302 | Sign error |
-| 31303 | Sign expired |
+| 31302 | Signature error |
+| 31303 | Signature expired |
 | 31304 | The key does not have the right to request for the interface |
 | 31401 | Language tag incorrect |
 | 31402 | Timezone incorrect |
