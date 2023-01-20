@@ -19,23 +19,21 @@
 | verifyType | Number | NO | 验证 [session_keys->type](../../database/systems/session-keys.md)，留空则默认为 1 |
 | verifyUnikey | String | NO | 类型为 3 时专用，验证关联插件 |
 
-## 校验 URL 签名
+## 校验 URL 凭证
 
 ```php
-\FresnsCmdWord::plugin('Fresns')->verifyUrlSign($wordBody)
+\FresnsCmdWord::plugin('Fresns')->verifyUrlAuthorization($wordBody)
 ```
 | 参数名 | 类型 | 是否必传 | 说明 |
 | --- | --- | --- | --- |
-| urlSign | String | YES | 参见：[为插件生成签名](../../extensions/callback/url-sign.md) |
+| urlAuthorization | String | YES | 参见：[为插件生成路径凭证](../../extensions/callback/url-authorization.md) |
 
 ::: details 逻辑说明
-用户将通过 URL 访问插件页面，URL 中会传参签名信息，用于一键登录。
+用户将通过 URL 访问插件页面，URL 中会传参凭证信息，用于一键登录。
 
-- 1、先使用 URL Encode 解码 `{urlSign}` 变量名的值，得到 base64 加密字符串
-- 2、再使用 base64 解密字符串，得到 json object 格式的 `header` 数据（包括 MD5 签名）
-    - 可以留空或不传的参数：`langTag`、`timezone`、`uid`、`deviceInfo`
-    - uid 不传，则表示为账号身份登录。
-- 3、获取 headers 中生成签名的信息，校验签名是否正确，正确则 code 为 0
+- 1、先使用 URL Encode 解码 `{authorization}` 变量名的值，得到 base64 加密字符串
+- 2、再使用 base64 解密字符串，得到 json object 格式的 `headers` 数据（包括 MD5 签名）
+- 3、获取 headers 中生成签名的信息，校验签名是否正确，正确则 `code` 为 `0`
 - 4、无论是否正确，都输出 headers 信息，格式见下方结果示例。
 :::
 
@@ -45,18 +43,19 @@
     "code": 0,
     "message": "ok",
     "data": {
-        "platformId": 4,
-        "version": "1.0.0",
         "appId": "qe12345",
-        "timestamp": 1626426833,
-        "sign": "d5db4371a0c2d7e17009dea8d53ecf15a7ec07b9",
+        "platformId": 4,
+        "version": "2.0.0",
+        "deviceInfo": "",
         "langTag": "zh-Hans",
         "timezone": "+8",
+        "contentFormat": "",
         "aid": "6a3bb3bc",
         "aidToken": "uoX1hk6SHUgB2MFGJwNx38dem9DA7Vsz",
         "uid": 782622,
         "uidToken": "PqBpwPLJgfd1sH0X5JffYFGxTSc8RW7c",
-        "deviceInfo": ""
+        "signature": "d5db4371a0c2d7e17009dea8d53ecf15a7ec07b9",
+        "timestamp": 1626426833
     }
 }
 ```

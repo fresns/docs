@@ -17,16 +17,20 @@ export default defineConfig({
         ['meta', { property: 'og:url', content: 'https://fresns.cn' }],
     ],
 
+    locales: {
+        root: {
+            label: '简体中文',
+            lang: 'zh-Hans'
+        },
+        en: {
+            label: 'English',
+            link: 'https://fresns.org/'
+        }
+    },
+
     themeConfig:{
         logo: 'https://cdn.fresns.cn/wiki/icons/fresns.png',
         nav: navbar(),
-
-        localeLinks: {
-            text: '简体中文',
-            items: [
-                { text: 'English', link: 'https://fresns.org' },
-            ]
-        },
 
         socialLinks: [
             {
@@ -164,7 +168,7 @@ function sidebarExtensions() {
                     items: [
                         { text: '定时任务和订阅', link: '/extensions/plugin/functions.md' },
                         { text: '命令字功能开发', link: '/extensions/plugin/command-word-dev.md' },
-                        { text: '验证路径签名', link: '/extensions/plugin/url-sign.md' },
+                        { text: '验证路径凭证', link: '/extensions/plugin/url-authorization.md' },
                     ]
                 },
                 {
@@ -195,7 +199,7 @@ function sidebarExtensions() {
             items: [
                 { text: '介绍', link: '/extensions/callback/' },
                 { text: '路径变量名', link: '/extensions/callback/variables.md' },
-                { text: '生成路径签名', link: '/extensions/callback/url-sign.md' },
+                { text: '生成路径凭证', link: '/extensions/callback/url-authorization.md' },
             ]
         },
     ]

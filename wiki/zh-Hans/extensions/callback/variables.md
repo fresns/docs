@@ -11,8 +11,7 @@
 
 | 变量名 | 说明 | 关联字段 |
 | --- | --- | --- |
-| `{sign}` | 鉴权，并且实现一键登录<br>[生成签名](url-sign.md) / [验证签名](../plugin/url-sign.md) |  |
-| `{langTag}` | 当前用户客户端语言标签 |  |
+| `{authorization}` | 鉴权信息，并且实现一键登录<br>[生成信息](url-authorization.md) / [验证信息](../plugin/url-authorization.md) |  |
 | `{type}` | 访问来源类型（客户端频道） |  |
 | `{scene}` | 入口场景 |  |
 | `{postMessageKey}` | 客户端接收通讯的标识名 |  |

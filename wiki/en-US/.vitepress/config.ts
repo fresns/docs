@@ -17,16 +17,20 @@ export default defineConfig({
         ['meta', { property: 'og:url', content: 'https://fresns.org' }],
     ],
 
+    locales: {
+        root: {
+            label: 'English',
+            lang: 'en-US'
+        },
+        en: {
+            label: '简体中文',
+            link: 'https://fresns.cn/'
+        }
+    },
+
     themeConfig:{
         logo: 'https://files.fresns.org/wiki/icons/fresns.png',
         nav: navbar(),
-
-        localeLinks: {
-            text: 'English',
-            items: [
-                { text: '简体中文', link: 'https://fresns.cn' },
-            ]
-        },
 
         socialLinks: [
             {
@@ -148,7 +152,7 @@ function sidebarExtensions() {
                     items: [
                         { text: 'Crontab and Subscribe', link: '/extensions/plugin/functions.md' },
                         { text: 'Command Word Dev', link: '/extensions/plugin/command-word-dev.md' },
-                        { text: 'Verify URL Sign', link: '/extensions/plugin/url-sign.md' },
+                        { text: 'Verify URL Authorization', link: '/extensions/plugin/url-authorization.md' },
                     ]
                 },
                 {
@@ -179,7 +183,7 @@ function sidebarExtensions() {
             items: [
                 { text: 'Introduction', link: '/extensions/callback/' },
                 { text: 'Path Variables', link: '/extensions/callback/variables.md' },
-                { text: 'Make URL Sign', link: '/extensions/callback/url-sign.md' },
+                { text: 'Make URL Authorization', link: '/extensions/callback/url-authorization.md' },
             ]
         },
     ]
