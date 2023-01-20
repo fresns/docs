@@ -2,7 +2,16 @@
 
 `App\Helpers\PluginHelper`
 
-## 获取插件地址
+## 获取插件 Host
+
+```php
+PluginHelper::fresnsPluginHostByUnikey($unikey);
+```
+| 参数名 | 类型 | 是否必传 | 说明 |
+| --- | --- | --- | --- |
+| unikey | String | YES | 插件 unikey |
+
+## 获取插件 URL
 
 ```php
 PluginHelper::fresnsPluginUrlByUnikey($unikey);

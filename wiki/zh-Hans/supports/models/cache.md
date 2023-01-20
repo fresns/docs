@@ -51,10 +51,9 @@ fresns_config_keys_{$key}_{$langTag}
 fresns_config_tag_{$itemTag}_{$langTag}
 fresns_config_file_accept
 fresns_config_file_url_expire
-fresns_plugin_url_{$unikey}
-fresns_content_block_words   fresns_{$type}_block_words
-fresns_user_block_words      fresns_{$type}_block_words
-fresns_conversation_block_words  // fresns_{$type}_block_words
+fresns_content_block_words          // fresns_{$type}_block_words
+fresns_user_block_words             // fresns_{$type}_block_words
+fresns_conversation_block_words     // fresns_{$type}_block_words
 fresns_content_ban_words
 fresns_content_review_words
 fresns_user_ban_words
@@ -230,6 +229,9 @@ fresns_profile_extends_by_role_{$roleId}_{$langTag}             // +tag: fresnsP
 fresns_manage_post_extends_by_group_admin_{$langTag}            // +tag: fresnsManages
 fresns_manage_comment_extends_by_group_admin_{$langTag}         // +tag: fresnsManages
 fresns_group_{$groupId}_extends_by_group_admin_{$langTag}       // +tag: fresnsGroupConfigs, fresnsGroupExtensions
+
+fresns_plugin_url_{$unikey}                                      // +tag: fresnsExtensionConfigs
+fresns_plugin_host_{$unikey}                                     // +tag: fresnsExtensionConfigs
 ```
 
 ## API 数据
