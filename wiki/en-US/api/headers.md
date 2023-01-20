@@ -15,8 +15,8 @@
 | X-Fresns-Aid-Token | String |  | Account identity credential (If `aid` exists, it cannot be empty) |
 | X-Fresns-Uid | Number |  | User parameter (regarded as unlogged in user if left empty) |
 | X-Fresns-Uid-Token | String |  | User identity credential (If `uid` exists, it cannot be empty) |
-| X-Fresns-Sign | String | **required** | [Signature generation rules](#signature-generation-rules) |
-| X-Fresns-Sign-Timestamp | String | **required** | Signature generation time (current Unix time stamp, which can be accurate to second or millisecond) |
+| X-Fresns-Signature | String | **required** | [Signature generation rules](#signature-generation-rules) |
+| X-Fresns-Signature-Timestamp | String | **required** | Signature generation time (current Unix time stamp, which can be accurate to second or millisecond) |
 
 ## Register and Login Process
 
