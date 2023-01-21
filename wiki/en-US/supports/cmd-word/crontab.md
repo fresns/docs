@@ -61,7 +61,7 @@
 
 ## 检查并更新版本信息
 
-每隔 12 小时执行一次后端主程序和扩展的版本情况，检查是否有新版。
+每隔 8 小时执行一次后端主程序和扩展的版本情况，检查是否有新版。
 
 ```php
 \FresnsCmdWord::plugin('Fresns')->checkExtensionsVersion()
