@@ -18,7 +18,7 @@
 | Parameter Name | Type | Required | Description |
 | --- | --- | --- | --- |
 | unikey | String | **required** | Data usage plug-in unikey |
-| uuid | String | **required** | Universally unique identifier |
+| ulid | String | **required** | Callback query key |
 
 ## Return
 
