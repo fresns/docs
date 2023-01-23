@@ -13,6 +13,8 @@
 ## 插件问题
 
 - [插件安装不上，没有任何信息输出](https://discuss.fresns.cn/post/s9IQ9cB8)
+- [插件安装长时间无响应，进度条停顿，教查看具体问题](https://discuss.fresns.cn/post/8xYJqtwq)
+- [插件安装失败，输出信息报错 putenv() has been disabled for security reasons](https://discuss.fresns.cn/post/YTG0RraJ)
 - [插件安装失败，输出信息的最后一段开头为 Your configuration does not allow connections](https://discuss.fresns.cn/post/Kcyo3qE3)
 - [安装插件后所有页面报错](https://discuss.fresns.cn/post/M4BP6rXi)
 
@@ -20,3 +22,4 @@
 
 - [重复升级的方法](https://discuss.fresns.cn/post/YqMweATz)
 - [登录后台 419 错误](https://discuss.fresns.cn/post/u4txRlqk)
+- [邮箱和短信的配置逻辑和介绍](https://discuss.fresns.cn/post/ijIhtG0Q)
