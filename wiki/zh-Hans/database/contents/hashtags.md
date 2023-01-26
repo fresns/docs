@@ -3,7 +3,7 @@
 | 字段名 | 字段类型 | 字段注释 | 默认值 | 可空 | 备注 |
 | --- | --- | --- | --- | --- | --- |
 | id | bigint *UNSIGNED* | 主键 ID | | NO | 自动递增 |
-| name | varchar(64) | 话题名 |  | NO | **唯一值**<br>不带 # 号存储 |
+| name | varchar(64) | 话题名 |  | NO |  |
 | slug | varchar(255) | 话题名 URL Encode 转码 |  | NO | **唯一值** |
 | description | varchar(255) | 描述 |  | YES | **多语言**  |
 | cover_file_id | bigint *UNSIGNED* | 封面图 ID |  | YES | 关联字段 [files->id](../systems/files.md) |
