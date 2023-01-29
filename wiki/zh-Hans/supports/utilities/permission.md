@@ -89,16 +89,11 @@ PermissionUtility::checkUserConversationPerm($receiveUserId, $authUserId, $langT
 | --- | --- | --- | --- |
 | receiveUserId | Number | YES | 收信人 `users > id` |
 | authUserId | Number | YES | 发信人 `users > id` |
-| langTag | String | NO | 提示语使用的语言 |
+| langTag | String | NO | 语言标签，可不传，不传则使用默认语言 |
 
 ::: details 查看结果
-```json
-{
-    "status": true,
-    "code": 36600, // 状态为 false 时输出的提示 code
-    "message": "", // 状态为 false 时输出的提示语
-}
-```
+- 有权则输出为 `0`
+- 无权则输出对应的 [Error Code](../../api/error-code.md)
 :::
 
 ## 判断用户是否为小组管理员

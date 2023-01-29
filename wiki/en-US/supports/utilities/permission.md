@@ -92,13 +92,8 @@ PermissionUtility::checkUserConversationPerm($receiveUserId, $authUserId, $langT
 | langTag | String | *optional* | 提示语使用的语言 |
 
 ::: details 查看结果
-```json
-{
-    "status": true,
-    "code": 36600, // 状态为 false 时输出的提示 code
-    "message": "", // 状态为 false 时输出的提示语
-}
-```
+- 有权则输出为 `0`
+- 无权则输出对应的 [Error Code](../../api/error-code.md)
 :::
 
 ## 判断用户是否为小组管理员
