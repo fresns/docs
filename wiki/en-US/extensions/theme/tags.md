@@ -166,6 +166,12 @@ fs_sticky_comments($pid)
 fs_content_types($type) // post or comment
 ```
 
+### Stickers
+
+```php
+fs_stickers()
+```
+
 ## Client Options
 
 ```html

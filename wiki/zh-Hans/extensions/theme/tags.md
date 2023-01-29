@@ -166,6 +166,12 @@ fs_sticky_comments($pid)
 fs_content_types($type) // post or comment
 ```
 
+### 表情
+
+```php
+fs_stickers()
+```
+
 ## 客户端判断
 
 ```html
