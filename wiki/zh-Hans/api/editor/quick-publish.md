@@ -48,6 +48,11 @@
 {
     "code": 0,
     "message": "ok",
-    "data": null
+    "data": {
+        "type": "String / post 或 comment",
+        "isDraft": "Boolean / 是否是草稿",
+        "draftId": "Number / 草稿 ID",
+        "fsid": "String / 不是草稿，正式内容的 pid 或 cid"
+    }
 }
 ```
