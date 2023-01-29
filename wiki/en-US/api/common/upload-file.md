@@ -17,11 +17,10 @@
 
 | Parameter Name | Type | Required | Description |
 | --- | --- | --- | --- |
-| usageType | Number | **required** | 参见数据库[文件用途类型](../../database/number.md#文件用途类型) |
-| tableName | String | **required** | 来源表名 |
-| tableColumn | String | **required** | 来源字段名，默认为 id |
+| tableName | String | **required** | 来源表名<br>`users` [/api/v2/user/edit](../user/edit.md)<br>`posts`<br>`comments`<br>`conversation_messages` [/api/v2/conversation/send-message](../message/conversation-send.md)<br>`post_logs` [/api/v2/editor/{type}/{draftId}](../editor/update.md)<br>`comment_logs` [/api/v2/editor/{type}/{draftId}](../editor/update.md) |
+| tableColumn | String | **required** | 来源字段名，默认填参 `id` |
 | tableId | Number | *optional* | 来源表主键 ID |
-| tableKey | String | *optional* | 来源表键名<br>`tableName=configs` 传参 `configs -> item_key`<br>`tableName=accounts` 传参 `accounts -> aid`<br>`tableName=users` 传参 `users -> uid 或 username`<br>`tableName=posts` 传参 `posts -> pid`<br>`tableName=comments` 传参 `comments -> cid`<br>`tableName=extends` 传参 `extends -> eid`<br>`tableName=groups` 传参 `groups -> gid`<br>`tableName=hashtags` 传参 `hashtags -> slug` |
+| tableKey | String | *optional* | 来源表键名 |
 | type | String | **required** | 四选一 `image`,`video`,`audio`,`document` |
 | uploadMode | String | **required** | 二选一<br>`file` 上传文件<br>`fileInfo` 上传文件信息 |
 | fileInfo | Array | *optional* | `uploadMode=fileInfo` 专用，上传文件信息数组 |

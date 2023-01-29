@@ -26,7 +26,6 @@
 - `message` 和 `fid` 二选一传参，不可全部留空，不可全部传参。
 - 发送文件，先使用[文件上传接口](../common/upload-file.md)，上传后获得 `fid` 传参。
 - 上传参数例子：
-    - `usageType` = `6`
     - `tableName` = `conversation_messages`
     - `tableColumn` = `message_file_id`
     - `tableId` = `null`

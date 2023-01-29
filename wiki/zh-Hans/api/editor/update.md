@@ -41,7 +41,6 @@
 
 - 参数留空表示不更新。
 - 文件功能，使用[文件上传接口](../common/upload-file.md) 上传文件，参数示例：
-    - `usageType` = 帖子 `7` 评论 `8`
     - `tableName` = 帖子 `post_logs` 评论 `comment_logs`
     - `tableColumn` = `id`
     - `tableId` = 当前草稿 ID `{draftId}`
