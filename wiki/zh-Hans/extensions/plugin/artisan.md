@@ -8,6 +8,8 @@ php artisan fresns                  // 进入插件开发模式
 fresns plugin                       // 查看所有可用指令
 fresns plugin:list                  // 查看所有已安装插件
 fresns new                          // 创建新插件
+fresns enter                        // 进入指定插件目录
+fresns back                         // 回到项目根目录
 
 // 开发指令
 fresns make:command                 // 生成插件 Command
@@ -89,9 +91,11 @@ export /path/to/project/vendor/bin
 
 - 3、进入插件目录
 ```php
-fresns new DemoPlugin               // 创建名为 DemoPlugin 的插件
+fresns new DemoPlugin       // 创建名为 DemoPlugin 的插件
 
-cd extensions/plugins/DemoPlugin    // 进入插件 DemoPlugin 目录
+fresns enter DemoPlugin     // 进入插件 DemoPlugin 目录
+
+fresns back                 // 退出插件目录，回到项目根目录
 ```
 
 - 4、在插件目录执行开发、管理、控制指令

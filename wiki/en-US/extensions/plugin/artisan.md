@@ -8,6 +8,8 @@ php artisan fresns                  // Enter Plugin Development Mode
 fresns plugin                       // View All Commands
 fresns plugin:list                  // View All Installed Plugins
 fresns new                          // Generate A New Plugin
+fresns enter                        // Go to plugin directory
+fresns back                         // Back to the fresns root directory
 
 // Development
 fresns make:command                 // Generate Plugin Command
@@ -89,9 +91,11 @@ export /path/to/project/vendor/bin
 
 - 3. Go to the plugin directory
 ```php
-fresns new DemoPlugin               // Create a plugin called DemoPlugin
+fresns new DemoPlugin       // Create a plugin called DemoPlugin
 
-cd extensions/plugins/DemoPlugin    // Go to the Plugin DemoPlugin directory
+fresns enter DemoPlugin     // Go to the Plugin DemoPlugin directory
+
+fresns back                 // Back to the fresns root directory
 ```
 
 - 4. Execute development, management, and control commands in the plugin directory
