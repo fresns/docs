@@ -93,7 +93,7 @@ export /path/to/project/vendor/bin
 ```php
 fresns new DemoPlugin       // Create a plugin called DemoPlugin
 
-fresns enter DemoPlugin     // Go to the Plugin DemoPlugin directory
+fresns enter DemoPlugin     // Go to the plugin DemoPlugin directory
 
 fresns back                 // Back to the fresns root directory
 ```
