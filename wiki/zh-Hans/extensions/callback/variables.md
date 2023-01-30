@@ -86,3 +86,5 @@
     "type": "String / 四选一文件类型: image,video,audio,document"
 }
 ```
+
+- [usageType 参数介绍](../../database/number.md#文件用途类型)

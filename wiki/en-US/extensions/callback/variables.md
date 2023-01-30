@@ -89,3 +89,5 @@ Whether it is website or mobile application, the use of plug-ins is embedded in 
     "type": "String / File Type: image,video,audio,document"
 }
 ```
+
+- [usageType Parameter Introduction](../../database/number.md#type-of-file-usage)
