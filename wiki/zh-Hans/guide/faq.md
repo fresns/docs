@@ -9,6 +9,7 @@
 - [cURL error 52 错误](https://discuss.fresns.cn/post/lcmDkIxz)
 - [cURL error 60 错误](https://discuss.fresns.cn/post/snuCNKKh)
 - [file_put_contents 错误](https://discuss.fresns.cn/post/NSQoPOuK)
+- [为什么访问感觉慢](https://discuss.fresns.cn/post/TFshHvWI)
 
 ## 插件问题
 
