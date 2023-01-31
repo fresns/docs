@@ -114,7 +114,7 @@ function sidebarGuide() {
     return [
         {
             text: '使用指南',
-            collapsible: true,
+            collapsed: false,
             items: [
                 { text: '介绍', link: '/guide/' },
                 { text: '特征', link: '/guide/features.md' },
@@ -127,14 +127,14 @@ function sidebarGuide() {
         },
         {
             text: '配置教程',
-            collapsible: true,
+            collapsed: false,
             items: [
                 { text: '宝塔面板配置教程', link: '/guide/install/baota.md' },
             ]
         },
         {
             text: 'Fresns 演示',
-            collapsible: true,
+            collapsed: false,
             items: [
                 { text: '网站端演示', link: 'https://discuss.fresns.cn/post/demo' },
             ]
@@ -147,7 +147,7 @@ function sidebarExtensions() {
     return [
         {
             text: '扩展 Fresns',
-            collapsible: true,
+            collapsed: false,
             items: [
                 { text: '介绍', link: '/extensions/' },
                 { text: '产品理念', link: '/extensions/idea.md' },
@@ -157,14 +157,14 @@ function sidebarExtensions() {
         },
         {
             text: '插件开发',
-            collapsible: true,
+            collapsed: true,
             items: [
                 { text: '介绍', link: '/extensions/plugin/' },
                 { text: '插件指令', link: '/extensions/plugin/artisan.md' },
                 { text: '命令字使用', link: '/extensions/plugin/command-word.md' },
                 {
                     text: '功能参考',
-                    collapsible: true,
+                    collapsed: false,
                     items: [
                         { text: '定时任务和订阅', link: '/extensions/plugin/functions.md' },
                         { text: '命令字功能开发', link: '/extensions/plugin/command-word-dev.md' },
@@ -173,7 +173,7 @@ function sidebarExtensions() {
                 },
                 {
                     text: '插件参考',
-                    collapsible: true,
+                    collapsed: false,
                     items: [
                         { text: '存储服务开发', link: '/extensions/plugin/storage.md' },
                         { text: '编辑器开发', link: '/extensions/plugin/editor.md' },
@@ -185,7 +185,7 @@ function sidebarExtensions() {
         },
         {
             text: '主题开发',
-            collapsible: true,
+            collapsed: true,
             items: [
                 { text: '介绍', link: '/extensions/theme/' },
                 { text: '主题功能', link: '/extensions/theme/functions.md' },
@@ -195,7 +195,7 @@ function sidebarExtensions() {
         },
         {
             text: '回调使用',
-            collapsible: true,
+            collapsed: true,
             items: [
                 { text: '介绍', link: '/extensions/callback/' },
                 { text: '路径变量名', link: '/extensions/callback/variables.md' },
@@ -210,7 +210,7 @@ function sidebarApi() {
     return [
         {
             text: '总览',
-            collapsible: true,
+            collapsed: false,
             items: [
                 { text: '介绍', link: '/api/' },
                 { text: '错误码', link: '/api/error-code.md' },
@@ -220,7 +220,7 @@ function sidebarApi() {
         },
         {
             text: '全局配置',
-            collapsible: true,
+            collapsed: false,
             items: [
                 { text: '全局配置信息', link: '/api/global/configs.md' },
                 { text: '状态码信息', link: '/api/global/code-messages.md' },
@@ -235,7 +235,7 @@ function sidebarApi() {
         },
         {
             text: '公共业务',
-            collapsible: true,
+            collapsed: false,
             items: [
                 { text: '输入提示信息', link: '/api/common/input-tips.md' },
                 { text: '回调返参查询', link: '/api/common/callback.md' },
@@ -248,7 +248,7 @@ function sidebarApi() {
         },
         {
             text: '账号',
-            collapsible: true,
+            collapsed: false,
             items: [
                 { text: '注册', link: '/api/account/register.md' },
                 { text: '登录', link: '/api/account/login.md' },
@@ -264,7 +264,7 @@ function sidebarApi() {
         },
         {
             text: '用户',
-            collapsible: true,
+            collapsed: false,
             items: [
                 { text: '获取用户[列表]', link: '/api/user/list.md' },
                 { text: '获取用户[详情]', link: '/api/user/detail.md' },
@@ -280,7 +280,7 @@ function sidebarApi() {
         },
         {
             text: '消息',
-            collapsible: true,
+            collapsed: false,
             items: [
                 { text: '[通知]获取消息列表', link: '/api/message/notification-list.md' },
                 { text: '[通知]更新阅读状态', link: '/api/message/notification-read.md' },
@@ -296,7 +296,7 @@ function sidebarApi() {
         },
         {
             text: '小组',
-            collapsible: true,
+            collapsed: false,
             items: [
                 { text: '获取小组[树结构列表]', link: '/api/group/tree.md' },
                 { text: '获取小组[列表] 分类', link: '/api/group/categories.md' },
@@ -307,7 +307,7 @@ function sidebarApi() {
         },
         {
             text: '话题',
-            collapsible: true,
+            collapsed: false,
             items: [
                 { text: '获取话题[列表]', link: '/api/hashtag/list.md' },
                 { text: '获取话题[详情]', link: '/api/hashtag/detail.md' },
@@ -316,7 +316,7 @@ function sidebarApi() {
         },
         {
             text: '帖子',
-            collapsible: true,
+            collapsed: false,
             items: [
                 { text: '获取帖子[列表]', link: '/api/post/list.md' },
                 { text: '获取帖子[列表] 关注对象的', link: '/api/post/follow.md' },
@@ -331,7 +331,7 @@ function sidebarApi() {
         },
         {
             text: '评论',
-            collapsible: true,
+            collapsed: false,
             items: [
                 { text: '获取评论[列表]', link: '/api/comment/list.md' },
                 { text: '获取评论[列表] 关注对象的', link: '/api/comment/follow.md' },
@@ -345,7 +345,7 @@ function sidebarApi() {
         },
         {
             text: '编辑器',
-            collapsible: true,
+            collapsed: false,
             items: [
                 { text: '快速发表', link: '/api/editor/quick-publish.md' },
                 { text: '编辑器配置信息', link: '/api/editor/config.md' },
@@ -361,7 +361,7 @@ function sidebarApi() {
         },
         {
             text: '搜索',
-            collapsible: true,
+            collapsed: false,
             items: [
                 { text: '用户', link: '/api/search/users.md' },
                 { text: '小组', link: '/api/search/groups.md' },
@@ -378,7 +378,7 @@ function sidebarDatabase() {
     return  [
         {
             text: '总览',
-            collapsible: true,
+            collapsed: false,
             items: [
                 { text: '介绍', link: '/database/' },
                 { text: '编号数据说明', link: '/database/number.md' },
@@ -386,11 +386,11 @@ function sidebarDatabase() {
         },
         {
             text: '表和字段',
-            collapsible: true,
+            collapsed: false,
             items: [
                 {
                     text: '系统',
-                    collapsible: true,
+                    collapsed: true,
                     items: [
                         { text: 'configs 全局配置表', link: '/database/systems/configs.md' },
                         { text: 'code_messages 全局状态码信息表', link: '/database/systems/code-messages.md' },
@@ -406,7 +406,7 @@ function sidebarDatabase() {
                 },
                 {
                     text: '插件',
-                    collapsible: true,
+                    collapsed: true,
                     items: [
                         { text: 'plugins 插件表', link: '/database/plugins/plugins.md' },
                         { text: 'plugin_callbacks 插件回调表', link: '/database/plugins/plugin-callbacks.md' },
@@ -416,7 +416,7 @@ function sidebarDatabase() {
                 },
                 {
                     text: '账号',
-                    collapsible: true,
+                    collapsed: true,
                     items: [
                         { text: 'accounts 账号主表', link: '/database/accounts/accounts.md' },
                         { text: 'account_connects 账号互联凭证表', link: '/database/accounts/account-connects.md' },
@@ -426,7 +426,7 @@ function sidebarDatabase() {
                 },
                 {
                     text: '用户',
-                    collapsible: true,
+                    collapsed: true,
                     items: [
                         { text: 'roles 角色表', link: '/database/users/roles.md' },
                         { text: 'users 用户主表', link: '/database/users/users.md' },
@@ -439,7 +439,7 @@ function sidebarDatabase() {
                 },
                 {
                     text: '互动',
-                    collapsible: true,
+                    collapsed: true,
                     items: [
                         { text: 'mentions 艾特记录表', link: '/database/interactions/mentions.md' },
                         { text: 'notifications 通知表', link: '/database/interactions/notifications.md' },
@@ -449,7 +449,7 @@ function sidebarDatabase() {
                 },
                 {
                     text: '扩展',
-                    collapsible: true,
+                    collapsed: true,
                     items: [
                         { text: 'archives 扩展参数表', link: '/database/extends/archives.md' },
                         { text: 'archive_usages 扩展参数使用表', link: '/database/extends/archive-usages.md' },
@@ -461,7 +461,7 @@ function sidebarDatabase() {
                 },
                 {
                     text: '内容信息',
-                    collapsible: true,
+                    collapsed: true,
                     items: [
                         { text: 'posts 帖子主表', link: '/database/contents/posts.md' },
                         { text: 'post_appends 帖子-附属表', link: '/database/contents/post-appends.md' },
@@ -475,7 +475,7 @@ function sidebarDatabase() {
                 },
                 {
                     text: '内容归类',
-                    collapsible: true,
+                    collapsed: true,
                     items: [
                         { text: 'groups 小组表', link: '/database/contents/groups.md' },
                         { text: 'group_admins 小组管理员表', link: '/database/contents/group-admins.md' },
@@ -488,7 +488,7 @@ function sidebarDatabase() {
                 },
                 {
                     text: '内容配置',
-                    collapsible: true,
+                    collapsed: true,
                     items: [
                         { text: 'stickers 表情表', link: '/database/contents/stickers.md' },
                         { text: 'block_words 阻止词表', link: '/database/contents/block-words.md' },
@@ -500,7 +500,7 @@ function sidebarDatabase() {
         },
         {
             text: '字典数据',
-            collapsible: true,
+            collapsed: false,
             items: [
                 { text: '终端平台编号', link: '/database/dictionary/platforms.md' },
                 { text: '互联平台编号', link: '/database/dictionary/connects.md' },
@@ -517,19 +517,19 @@ function sidebarDatabase() {
         },
         {
             text: '配置键名',
-            collapsible: true,
+            collapsed: false,
             items: [
                 { text: '介绍', link: '/database/keyname/index.md' },
                 {
                     text: '仪表盘',
-                    collapsible: true,
+                    collapsed: true,
                     items: [
                         { text: '设置', link: '/database/keyname/settings.md' },
                     ]
                 },
                 {
                     text: '系统',
-                    collapsible: true,
+                    collapsed: true,
                     items: [
                         { text: '语言设置', link: '/database/keyname/languages.md' },
                         { text: '站点设置', link: '/database/keyname/general.md' },
@@ -543,7 +543,7 @@ function sidebarDatabase() {
                 },
                 {
                     text: '运营',
-                    collapsible: true,
+                    collapsed: true,
                     items: [
                         { text: '命名配置', link: '/database/keyname/rename.md' },
                         { text: '互动配置', link: '/database/keyname/interaction.md' },
@@ -552,14 +552,14 @@ function sidebarDatabase() {
                 },
                 {
                     text: '扩展',
-                    collapsible: true,
+                    collapsed: true,
                     items: [
                         { text: '内容处理扩展', link: '/database/keyname/content-handler.md' },
                     ]
                 },
                 {
                     text: '客户端',
-                    collapsible: true,
+                    collapsed: true,
                     items: [
                         { text: '菜单配置', link: '/database/keyname/menus.md' },
                         { text: '栏目配置', link: '/database/keyname/columns.md' },
@@ -573,7 +573,7 @@ function sidebarDatabase() {
         },
         {
             text: '扩展配置键名',
-            collapsible: true,
+            collapsed: false,
             items: [
                 { text: '预设键名', link: '/database/keyname/planning-preset.md' },
                 { text: '规范生成键名', link: '/database/keyname/planning-generate.md' },
@@ -587,7 +587,7 @@ function sidebarSupports() {
     return  [
         {
             text: '功能命令字',
-            collapsible: true,
+            collapsed: false,
             items: [
                 { text: '基础功能', link: '/supports/cmd-word/basic.md' },
                 { text: '发信功能', link: '/supports/cmd-word/send.md' },
@@ -601,7 +601,7 @@ function sidebarSupports() {
         },
         {
             text: '辅助函数',
-            collapsible: true,
+            collapsed: false,
             items: [
                 { text: '配置 ConfigHelper', link: '/supports/helpers/config.md' },
                 { text: '语言 LanguageHelper', link: '/supports/helpers/language.md' },
@@ -615,7 +615,7 @@ function sidebarSupports() {
         },
         {
             text: '实用程序',
-            collapsible: true,
+            collapsed: false,
             items: [
                 { text: '配置项目 ConfigUtility', link: '/supports/utilities/config.md' },
                 { text: '数组工具 ArrUtility', link: '/supports/utilities/arr.md' },
@@ -628,7 +628,7 @@ function sidebarSupports() {
         },
         {
             text: '数据模型',
-            collapsible: true,
+            collapsed: false,
             items: [
                 { text: '数据集模型', link: '/supports/models/' },
                 { text: '缓存键名和标签', link: '/supports/models/cache.md' },
@@ -642,7 +642,7 @@ function sidebarCommunity() {
     return  [
         {
             text: '关于',
-            collapsible: true,
+            collapsed: false,
             items: [
                 { text: '团队', link: '/community/teams.md' },
                 { text: '加入我们', link: '/community/join.md' },
@@ -651,7 +651,7 @@ function sidebarCommunity() {
         },
         {
             text: '贡献',
-            collapsible: true,
+            collapsed: false,
             items: [
                 { text: '贡献指南', link: '/contributing/' },
                 { text: '翻译文档', link: '/contributing/translations.md' },
@@ -659,7 +659,7 @@ function sidebarCommunity() {
         },
         {
             text: '互动',
-            collapsible: true,
+            collapsed: false,
             items: [
                 { text: '互动交流', link: 'https://discuss.fresns.cn' },
                 { text: '应用市场', link: 'https://market.fresns.cn/open-source' },

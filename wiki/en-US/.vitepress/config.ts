@@ -105,7 +105,7 @@ function sidebarGuide() {
     return [
         {
             text: 'Guide',
-            collapsible: true,
+            collapsed: false,
             items: [
                 { text: 'Introduction', link: '/guide/' },
                 { text: 'Features', link: '/guide/features.md' },
@@ -118,7 +118,7 @@ function sidebarGuide() {
         },
         {
             text: 'Server Configuration',
-            collapsible: true,
+            collapsed: false,
             items: [
                 { text: 'Baota Panel', link: '/guide/install/baota.md' },
             ]
@@ -131,7 +131,7 @@ function sidebarExtensions() {
     return [
         {
             text: 'Extending Fresns',
-            collapsible: true,
+            collapsed: false,
             items: [
                 { text: 'Introduction', link: '/extensions/' },
                 { text: 'Product Idea', link: '/extensions/idea.md' },
@@ -141,14 +141,14 @@ function sidebarExtensions() {
         },
         {
             text: 'Plugin Dev',
-            collapsible: true,
+            collapsed: true,
             items: [
                 { text: 'Introduction', link: '/extensions/plugin/' },
                 { text: 'Artisan', link: '/extensions/plugin/artisan.md' },
                 { text: 'Command Word', link: '/extensions/plugin/command-word.md' },
                 {
                     text: 'Function Reference',
-                    collapsible: true,
+                    collapsed: false,
                     items: [
                         { text: 'Crontab and Subscribe', link: '/extensions/plugin/functions.md' },
                         { text: 'Command Word Dev', link: '/extensions/plugin/command-word-dev.md' },
@@ -157,7 +157,7 @@ function sidebarExtensions() {
                 },
                 {
                     text: 'Plugin Reference',
-                    collapsible: true,
+                    collapsed: false,
                     items: [
                         { text: 'Storage', link: '/extensions/plugin/storage.md' },
                         { text: 'Editor', link: '/extensions/plugin/editor.md' },
@@ -169,7 +169,7 @@ function sidebarExtensions() {
         },
         {
             text: 'Theme Dev',
-            collapsible: true,
+            collapsed: true,
             items: [
                 { text: 'Introduction', link: '/extensions/theme/' },
                 { text: 'Functions', link: '/extensions/theme/functions.md' },
@@ -179,7 +179,7 @@ function sidebarExtensions() {
         },
         {
             text: 'Callback',
-            collapsible: true,
+            collapsed: true,
             items: [
                 { text: 'Introduction', link: '/extensions/callback/' },
                 { text: 'Path Variables', link: '/extensions/callback/variables.md' },
@@ -194,7 +194,7 @@ function sidebarApi() {
     return [
         {
             text: 'Overview',
-            collapsible: true,
+            collapsed: false,
             items: [
                 { text: 'Introduction', link: '/api/' },
                 { text: 'Error Code', link: '/api/error-code.md' },
@@ -204,7 +204,7 @@ function sidebarApi() {
         },
         {
             text: 'Global',
-            collapsible: true,
+            collapsed: false,
             items: [
                 { text: 'Global Configs', link: '/api/global/configs.md' },
                 { text: 'Code Messages', link: '/api/global/code-messages.md' },
@@ -219,7 +219,7 @@ function sidebarApi() {
         },
         {
             text: 'Common',
-            collapsible: true,
+            collapsed: false,
             items: [
                 { text: 'Input Tips', link: '/api/common/input-tips.md' },
                 { text: 'Plugin Callback', link: '/api/common/callback.md' },
@@ -232,7 +232,7 @@ function sidebarApi() {
         },
         {
             text: 'Account',
-            collapsible: true,
+            collapsed: false,
             items: [
                 { text: 'Register', link: '/api/account/register.md' },
                 { text: 'Login', link: '/api/account/login.md' },
@@ -248,7 +248,7 @@ function sidebarApi() {
         },
         {
             text: 'User',
-            collapsible: true,
+            collapsed: false,
             items: [
                 { text: 'User List', link: '/api/user/list.md' },
                 { text: 'User Detail', link: '/api/user/detail.md' },
@@ -264,7 +264,7 @@ function sidebarApi() {
         },
         {
             text: 'Message',
-            collapsible: true,
+            collapsed: false,
             items: [
                 { text: '[Notification] List', link: '/api/message/notification-list.md' },
                 { text: '[Notification] Mark As Read', link: '/api/message/notification-read.md' },
@@ -280,7 +280,7 @@ function sidebarApi() {
         },
         {
             text: 'Group',
-            collapsible: true,
+            collapsed: false,
             items: [
                 { text: 'Group Tree List', link: '/api/group/tree.md' },
                 { text: 'Group Categories', link: '/api/group/categories.md' },
@@ -291,7 +291,7 @@ function sidebarApi() {
         },
         {
             text: 'Hashtag',
-            collapsible: true,
+            collapsed: false,
             items: [
                 { text: 'Hashtag List', link: '/api/hashtag/list.md' },
                 { text: 'Hashtag Detail', link: '/api/hashtag/detail.md' },
@@ -300,7 +300,7 @@ function sidebarApi() {
         },
         {
             text: 'Post',
-            collapsible: true,
+            collapsed: false,
             items: [
                 { text: 'Post List', link: '/api/post/list.md' },
                 { text: 'Post List by Follow', link: '/api/post/follow.md' },
@@ -315,7 +315,7 @@ function sidebarApi() {
         },
         {
             text: 'Comment',
-            collapsible: true,
+            collapsed: false,
             items: [
                 { text: 'Comment List', link: '/api/comment/list.md' },
                 { text: 'Comment List by Follow', link: '/api/comment/follow.md' },
@@ -329,7 +329,7 @@ function sidebarApi() {
         },
         {
             text: 'Editor',
-            collapsible: true,
+            collapsed: false,
             items: [
                 { text: 'Quick Publish', link: '/api/editor/quick-publish.md' },
                 { text: 'Editor Config', link: '/api/editor/config.md' },
@@ -345,7 +345,7 @@ function sidebarApi() {
         },
         {
             text: 'Search',
-            collapsible: true,
+            collapsed: false,
             items: [
                 { text: 'Users', link: '/api/search/users.md' },
                 { text: 'Groups', link: '/api/search/groups.md' },
@@ -362,7 +362,7 @@ function sidebarDatabase() {
     return  [
         {
             text: 'Overview',
-            collapsible: true,
+            collapsed: false,
             items: [
                 { text: 'Introduction', link: '/database/' },
                 { text: 'Numbered Description', link: '/database/number.md' },
@@ -370,11 +370,11 @@ function sidebarDatabase() {
         },
         {
             text: 'Data Structure',
-            collapsible: true,
+            collapsed: false,
             items: [
                 {
                     text: 'Systems',
-                    collapsible: true,
+                    collapsed: true,
                     items: [
                         { text: 'configs', link: '/database/systems/configs.md' },
                         { text: 'code_messages', link: '/database/systems/code-messages.md' },
@@ -390,7 +390,7 @@ function sidebarDatabase() {
                 },
                 {
                     text: 'Plugins',
-                    collapsible: true,
+                    collapsed: true,
                     items: [
                         { text: 'plugins', link: '/database/plugins/plugins.md' },
                         { text: 'plugin_callbacks', link: '/database/plugins/plugin-callbacks.md' },
@@ -400,7 +400,7 @@ function sidebarDatabase() {
                 },
                 {
                     text: 'Accounts',
-                    collapsible: true,
+                    collapsed: true,
                     items: [
                         { text: 'accounts', link: '/database/accounts/accounts.md' },
                         { text: 'account_connects', link: '/database/accounts/account-connects.md' },
@@ -410,7 +410,7 @@ function sidebarDatabase() {
                 },
                 {
                     text: 'Users',
-                    collapsible: true,
+                    collapsed: true,
                     items: [
                         { text: 'roles', link: '/database/users/roles.md' },
                         { text: 'users', link: '/database/users/users.md' },
@@ -423,7 +423,7 @@ function sidebarDatabase() {
                 },
                 {
                     text: 'Interactions',
-                    collapsible: true,
+                    collapsed: true,
                     items: [
                         { text: 'mentions', link: '/database/interactions/mentions.md' },
                         { text: 'notifications', link: '/database/interactions/notifications.md' },
@@ -433,7 +433,7 @@ function sidebarDatabase() {
                 },
                 {
                     text: 'Extends',
-                    collapsible: true,
+                    collapsed: true,
                     items: [
                         { text: 'archives', link: '/database/extends/archives.md' },
                         { text: 'archive_usages', link: '/database/extends/archive-usages.md' },
@@ -445,7 +445,7 @@ function sidebarDatabase() {
                 },
                 {
                     text: 'Content',
-                    collapsible: true,
+                    collapsed: true,
                     items: [
                         { text: 'posts', link: '/database/contents/posts.md' },
                         { text: 'post_appends', link: '/database/contents/post-appends.md' },
@@ -459,7 +459,7 @@ function sidebarDatabase() {
                 },
                 {
                     text: 'Content Category',
-                    collapsible: true,
+                    collapsed: true,
                     items: [
                         { text: 'groups', link: '/database/contents/groups.md' },
                         { text: 'group_admins', link: '/database/contents/group-admins.md' },
@@ -472,7 +472,7 @@ function sidebarDatabase() {
                 },
                 {
                     text: 'Content Config',
-                    collapsible: true,
+                    collapsed: true,
                     items: [
                         { text: 'stickers', link: '/database/contents/stickers.md' },
                         { text: 'block_words', link: '/database/contents/block-words.md' },
@@ -484,7 +484,7 @@ function sidebarDatabase() {
         },
         {
             text: 'Dictionary Data',
-            collapsible: true,
+            collapsed: false,
             items: [
                 { text: 'Platforms', link: '/database/dictionary/platforms.md' },
                 { text: 'Connects', link: '/database/dictionary/connects.md' },
@@ -501,19 +501,19 @@ function sidebarDatabase() {
         },
         {
             text: 'Config Key Name',
-            collapsible: true,
+            collapsed: false,
             items: [
                 { text: 'Introduction', link: '/database/keyname/index.md' },
                 {
                     text: 'Dashboard',
-                    collapsible: true,
+                    collapsed: true,
                     items: [
                         { text: 'Settings', link: '/database/keyname/settings.md' },
                     ]
                 },
                 {
                     text: 'Systems',
-                    collapsible: true,
+                    collapsed: true,
                     items: [
                         { text: 'Languages', link: '/database/keyname/languages.md' },
                         { text: 'General', link: '/database/keyname/general.md' },
@@ -527,7 +527,7 @@ function sidebarDatabase() {
                 },
                 {
                     text: 'Operations',
-                    collapsible: true,
+                    collapsed: true,
                     items: [
                         { text: 'Rename', link: '/database/keyname/rename.md' },
                         { text: 'Interaction', link: '/database/keyname/interaction.md' },
@@ -536,14 +536,14 @@ function sidebarDatabase() {
                 },
                 {
                     text: 'Expands',
-                    collapsible: true,
+                    collapsed: true,
                     items: [
                         { text: 'Content Handler', link: '/database/keyname/content-handler.md' },
                     ]
                 },
                 {
                     text: 'Clients',
-                    collapsible: true,
+                    collapsed: true,
                     items: [
                         { text: 'Menus', link: '/database/keyname/menus.md' },
                         { text: 'Columns', link: '/database/keyname/columns.md' },
@@ -557,7 +557,7 @@ function sidebarDatabase() {
         },
         {
             text: 'Extend Config Key',
-            collapsible: true,
+            collapsed: false,
             items: [
                 { text: 'Preset key name', link: '/database/keyname/planning-preset.md' },
                 { text: 'Generate key name', link: '/database/keyname/planning-generate.md' },
@@ -571,7 +571,7 @@ function sidebarSupports() {
     return  [
         {
             text: 'Command Word',
-            collapsible: true,
+            collapsed: false,
             items: [
                 { text: 'Basic', link: '/supports/cmd-word/basic.md' },
                 { text: 'Send', link: '/supports/cmd-word/send.md' },
@@ -585,7 +585,7 @@ function sidebarSupports() {
         },
         {
             text: 'Helpers',
-            collapsible: true,
+            collapsed: false,
             items: [
                 { text: 'Config', link: '/supports/helpers/config.md' },
                 { text: 'Language', link: '/supports/helpers/language.md' },
@@ -599,7 +599,7 @@ function sidebarSupports() {
         },
         {
             text: 'Utilities',
-            collapsible: true,
+            collapsed: false,
             items: [
                 { text: 'Config', link: '/supports/utilities/config.md' },
                 { text: 'Array', link: '/supports/utilities/arr.md' },
@@ -612,7 +612,7 @@ function sidebarSupports() {
         },
         {
             text: 'Models',
-            collapsible: true,
+            collapsed: false,
             items: [
                 { text: 'Dataset', link: '/supports/models/' },
                 { text: 'Cache Key and Tag', link: '/supports/models/cache.md' },
@@ -626,7 +626,7 @@ function sidebarCommunity() {
     return  [
         {
             text: 'About',
-            collapsible: true,
+            collapsed: false,
             items: [
                 { text: 'Teams', link: '/community/teams.md' },
                 { text: 'Join', link: '/community/join.md' },
@@ -635,7 +635,7 @@ function sidebarCommunity() {
         },
         {
             text: 'Contributing',
-            collapsible: true,
+            collapsed: false,
             items: [
                 { text: 'Guide', link: '/contributing/' },
                 { text: 'Translations', link: '/contributing/translations.md' },
@@ -643,7 +643,7 @@ function sidebarCommunity() {
         },
         {
             text: 'Interaction',
-            collapsible: true,
+            collapsed: false,
             items: [
                 { text: 'Community', link: 'https://discuss.fresns.com' },
                 { text: 'Marketplace', link: 'https://market.fresns.com/open-source' },
