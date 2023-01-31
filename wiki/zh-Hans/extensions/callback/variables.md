@@ -14,7 +14,8 @@
 | `{authorization}` | 鉴权信息，并且实现一键登录<br>[生成信息](url-authorization.md) / [验证信息](../plugin/url-authorization.md) |  |
 | `{type}` | 访问来源类型（客户端频道） |  |
 | `{scene}` | 入口场景 |  |
-| `{postMessageKey}` | 客户端接收通讯的标识名 |  |
+| `{postMessageKey}` | 标识名: 客户端以 `postMessage` 方式接收回调通知 |  |
+| `{callbackUlid}` | 标识名: 客户端以 `API` 方式接收回调通知 | plugin_callbacks->ulid |
 | `{aid}` | 账号 ID | accounts->aid |
 | `{uid}` | 用户 ID | users->uid |
 | `{rid}` | 角色 ID | roles->id |
