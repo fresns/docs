@@ -68,6 +68,7 @@ fresns/         // Main Program Root Directory
 
 | Version | Version Int | Release Date |
 | --- | --- | --- |
+| 2.4.0 | 15 | 2023-02-01 |
 | 2.3.1 | 14 | 2023-01-21 |
 | 2.3.0 | 13 | 2023-01-21 |
 | 2.2.0 | 12 | 2023-01-20 |
