@@ -51,7 +51,7 @@ When the plugin is installed and published, static resources are distributed to 
         // Plugin usage scenarios
     ],
     "accessPath": "/mall", // Front-end visitor page path
-    "settingPath": "/mall/admin", // Back-end settings page path
+    "settingsPath": "/mall/admin", // Back-end settings page path
     "providers": [
         "Plugins\\FresnsEmail\\Providers\\FresnsEmailServiceProvider",
         "Plugins\\FresnsEmail\\Providers\\CmdWordServiceProvider",

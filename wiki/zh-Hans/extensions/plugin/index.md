@@ -51,7 +51,7 @@ fresns/             //主程序根目录
         // 插件用途场景
     ],
     "accessPath": "/mall", // 前端访客路由
-    "settingPath": "/mall/admin", // 后端设置页路由
+    "settingsPath": "/mall/admin", // 后端设置页路由
     "providers": [
         "Plugins\\FresnsEmail\\Providers\\FresnsEmailServiceProvider",
         "Plugins\\FresnsEmail\\Providers\\CmdWordServiceProvider",
