@@ -41,7 +41,6 @@
 - 上传参数例子：
     - `tableName` = `users`
     - `tableColumn` = `avatar_file_id` 或 `banner_file_id`
-    - `tableId` = `null`
     - `tableKey` = 当前用户的 uid 或 username
 - 扩展资料示例：
 

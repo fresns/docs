@@ -44,7 +44,6 @@
     - `tableName` = 帖子 `post_logs` 评论 `comment_logs`
     - `tableColumn` = `id`
     - `tableId` = 当前草稿 ID `{draftId}`
-    - `tableKey` = `null`
 - 位置信息 `mapJson` 参数示例：
     - [查看 map id 信息](../../database/dictionary/maps.md)
     - 位置信息删除（清空）需使用 `deleteMap` 参数。

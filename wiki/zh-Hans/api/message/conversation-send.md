@@ -28,7 +28,6 @@
 - 上传参数例子：
     - `tableName` = `conversation_messages`
     - `tableColumn` = `message_file_id`
-    - `tableId` = `null`
     - `tableKey` = 对方的 `uid` 或 `username`
 
 ## 返回结果
