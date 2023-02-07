@@ -12,13 +12,12 @@
 | 存储配置名称 | image_bucket_name |  | string | 举例又拍云：服务名(空间名) |
 | 存储配置地域 | image_bucket_area |  | string | 举例又拍云：用不到，留空 |
 | 存储配置域名 | image_bucket_domain |  | string | http:// 或 https:// 开头，结尾不带 / |
-| 文件系统磁盘 | image_filesystem_disk | remote | string | 用于定义 URL 规则<br>`local` 会将 /storage 添加到给定的路径<br>`remote` 完全限定的远程 URL |
 | 支持的扩展名 | image_extension_names | png,gif,jpg,jpeg,bmp,heic | string | 以英文逗号 , 隔开 |
 | 支持的最大尺寸 | image_max_size | 5 | number | 单位：MB |
 | 防盗链功能 | image_url_status | false | boolean | 使用状态 |
 | 防盗链 Key | image_url_key |  | string |  |
 | 防盗链签名有效期 | image_url_expire | 10 | number | 单位：分钟 |
-| 图片处理位置 | image_handle_position | end | string | `start` 路径开始位置<br>`middle` 文件名开头位置<br>`end` 路径结尾位置 |
+| 图片处理位置 | image_handle_position | end | string | `start` 路径开始位置<br>`end` 路径结尾位置<br>`name-start` 文件名开头位置<br>`name-end` 文件名结尾位置（扩展名之前） |
 | 配置图参数 | image_thumb_config |  | string | 配置图专用 |
 | 头像图参数 | image_thumb_avatar |  | string | 头像图专用 |
 | 等比例缩略图参数 | image_thumb_ratio |  | string | 等比例缩小或者压缩图片 |
@@ -35,7 +34,6 @@
 | 存储配置名称 | video_bucket_name |  | string |  |
 | 存储配置地域 | video_bucket_area |  | string |  |
 | 存储配置域名 | video_bucket_domain |  | string | http:// 或 https:// 开头，结尾不带 / |
-| 文件系统磁盘 | video_filesystem_disk | remote | string | local 或 remote |
 | 视频支持的扩展名 | video_extension_names | wmv,rm,mov,mpeg,mp4,<br>3gp,flv,avi,rmvb | string | 以英文逗号 , 隔开 |
 | 支持的最大尺寸 | video_max_size | 50 | number | 单位：MB |
 | 视频支持的最大时长 | video_max_time | 60 | number | 单位：秒 |
@@ -57,7 +55,6 @@
 | 存储配置名称 | audio_bucket_name |  | string |  |
 | 存储配置地域 | audio_bucket_area |  | string |  |
 | 存储配置域名 | audio_bucket_domain |  | string | http:// 或 https:// 开头，结尾不带 / |
-| 文件系统磁盘 | audio_filesystem_disk | remote | string | local 或 remote |
 | 音频支持的扩展名 | audio_extension_names | mp3,wav,m4a | string | 以英文逗号 , 隔开 |
 | 支持的最大尺寸 | audio_max_size | 50 | number | 单位：MB |
 | 音频支持的最大时长 | audio_max_time | 60 | number | 单位：秒 |
@@ -76,7 +73,6 @@
 | 存储配置名称 | document_bucket_name |  | string |  |
 | 存储配置地域 | document_bucket_area |  | string |  |
 | 存储配置域名 | document_bucket_domain |  | string | http:// 或 https:// 开头，结尾不带 / |
-| 文件系统磁盘 | document_filesystem_disk | remote | string | local 或 remote |
 | 支持的扩展名 | document_extension_names | doc,docx,xls,xlsx,csv,<br>ppt,pptx,pps,ppts,<br>pdf,<br>txt,md,markdown,<br>rar,zip,7z,<br>epub,mobi | string | 以英文逗号 , 隔开 |
 | 支持的最大尺寸 | document_max_size | 10 | number | 单位：MB |
 | 防盗链功能 | document_url_status | false | boolean | 使用状态 |
