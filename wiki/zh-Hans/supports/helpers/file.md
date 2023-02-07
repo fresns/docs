@@ -155,7 +155,6 @@ FileHelper::fresnsFileUrlByTableColumn($idColumn, $urlColumn, $urlType);
 | urlType | String | NO | URL 类型，不传则使用默认 `imageConfigUrl` |
 
 ::: details urlType
-- `imageDefaultUrl`
 - `imageConfigUrl`
 - `imageAvatarUrl`
 - `imageRatioUrl`

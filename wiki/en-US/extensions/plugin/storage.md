@@ -112,7 +112,6 @@ $file->getFileInfo();
     "imageWidth": "files > image_width",
     "imageHeight": "files > image_height",
     "imageLong": "files > image_is_long",
-    "imageDefaultUrl": "image_bucket_domain + files->path",
     "imageConfigUrl": "image_bucket_domain + files->path + image_thumb_config",
     "imageAvatarUrl": "image_bucket_domain + files->path + image_thumb_avatar",
     "imageRatioUrl": "image_bucket_domain + files->path + image_thumb_ratio",

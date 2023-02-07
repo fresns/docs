@@ -929,7 +929,6 @@
     "imageWidth": "Number / 图片宽度",
     "imageHeight": "Number / 图片高度",
     "imageLong": "Boolean / 是否长图",
-    "imageDefaultUrl": "String / 默认图片地址",
     "imageConfigUrl": "String / 配置用途图片地址",
     "imageAvatarUrl": "String / 头像用途图片地址",
     "imageRatioUrl": "String / 等比例缩略图地址",

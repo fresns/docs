@@ -14,6 +14,7 @@
 | sha_type | varchar(16) | 文件 sha 类型 |  | YES | 比如 SHA1 或 SHA-256 |
 | disk | varchar(32) | 文件磁盘 | remote | NO | `local` 或 `remote` |
 | path | varchar(255) | 文件路径 |  | NO | **相对路径** |
+| image_handle_position | varchar(16) | 图片处理位置 |  | YES | 适用于生成物理缩略图的场景<br>凭此配置管理物理文件 |
 | image_width | smallint *UNSIGNED* | 图片宽度 |  | YES | 图片文件专用：像素 px |
 | image_height | smallint *UNSIGNED* | 图片高度 |  | YES | 图片文件专用：像素 px |
 | image_is_long | tinyint *UNSIGNED* | 是否长图 | 0 | NO | 图片文件专用<br>0.否 / 1.是 |
