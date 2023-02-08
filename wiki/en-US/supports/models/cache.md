@@ -106,7 +106,7 @@ fresns_api_account_{$aid}_{$langTag}         // +tag: fresnsAccountData
 
 ```php
 fresns_token_user_{$userId}_{$token}                         // +tag: fresnsUserTokens
-fresns_model_user_{$uidOrUsername}                           // +tag: fresnsUserModels
+fresns_model_user_{$uidOrUsername}_by_fsid                   // +tag: fresnsUserModels
 fresns_model_user_{$userId}                                  // +tag: fresnsUserModels
 fresns_model_conversation_{$userId}_{$conversationUserId}    // +tag: fresnsUserConversations
 fresns_user_{$userId}_main_role_{$langTag}                   // +tag: fresnsUserRoles
