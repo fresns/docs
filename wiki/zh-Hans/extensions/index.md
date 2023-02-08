@@ -105,3 +105,5 @@ Fresns 主程序 Composer 依赖库关系。
 ## 关注我们
 
 <img src="https://cdn.fresns.cn/wiki/images/wechat-mp.png" width="400">
+
+- 官方社区：[https://discuss.fresns.cn](https://discuss.fresns.cn/)

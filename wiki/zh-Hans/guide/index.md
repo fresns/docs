@@ -60,3 +60,5 @@ Fresns 遵循 [Apache-2.0](https://github.com/fresns/fresns/blob/main/LICENSE) �
 ## 关注我们
 
 <img src="https://cdn.fresns.cn/wiki/images/wechat-mp.png" width="400">
+
+- 官方社区：[https://discuss.fresns.cn](https://discuss.fresns.cn/)
