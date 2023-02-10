@@ -64,7 +64,7 @@ PermissionUtility::checkUserPerm($userId, $permUserIds);
 | Parameter Name | Type | Required | Description |
 | --- | --- | --- | --- |
 | userId | Number | **required** | `users > id` |
-| permUserIds | Array | **required** | 有权用户的 ID 数组 `["1","2"]` |
+| permUserIds | Array | *optional* | 有权用户的 ID 数组 `["1","2"]` |
 
 *将拥有权限的用户 ID 和需要确认的用户 ID 传参，该功能会判断用户 ID 是否包括在授权 IDs 当中。*
 

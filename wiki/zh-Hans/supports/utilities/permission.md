@@ -76,7 +76,7 @@ PermissionUtility::checkUserRolePerm($userId, $permRoleIds);
 | 参数名 | 类型 | 是否必传 | 说明 |
 | --- | --- | --- | --- |
 | userId | Number | YES | `users > id` |
-| permRoleIds | Array | YES | 有权角色的 ID 数组 `["1","2"]` |
+| permRoleIds | Array | NO | 有权角色的 ID 数组 `["1","2"]` |
 
 *将拥有权限的角色 ID 和需要确认的用户 ID 传参，该功能会判断用户名下所有角色是否拥有授权角色。*
 

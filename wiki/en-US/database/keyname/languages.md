@@ -32,6 +32,7 @@
         "timeFormatHour": "小时时间格式命名",
         "timeFormatDay": "天时间格式命名",
         "timeFormatMonth": "月时间格式命名",
+        "timeFormatYear": "年时间格式命名",
         "packVersion": "语言包版本",
         "isEnable": "true 或者 false"
     },
@@ -51,6 +52,7 @@
         "timeFormatHour": "{n} 小时前",
         "timeFormatDay": "{n} 天前",
         "timeFormatMonth": "{n} 个月前",
+        "timeFormatYear": "{n} 个年前",
         "packVersion": 1,
         "isEnable": true
     }
