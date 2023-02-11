@@ -17,14 +17,15 @@ Theme template settings file is responsible for defining the theme template's ow
 <form action="{{ route('panel.theme.functions.update', ['theme' => 'ThemeFrame']) }}" method="post" enctype="multipart/form-data">
     @csrf
     @method('put')
+
     <!-- input: item_key=fs_theme_name -->
-    <input type="text" name="fs_theme_name" value="{{ $themeParams['fs_theme_name']['value'] ?? '' }}">
+    <input type="text" name="fs_theme_name" value="{{ $params['fs_theme_name']['value'] ?? '' }}">
 
     <!-- textarea: item_key=fs_theme_intro -->
-    <textarea name="fs_theme_intro">{{ $themeParams['fs_theme_intro']['value'] ?? '' }}</textarea>
+    <textarea name="fs_theme_intro">{{ $params['fs_theme_intro']['value'] ?? '' }}</textarea>
 
     <!-- input file: item_key=fs_theme_logo -->
-    <input type="hidden" name="fs_theme_logo" value="{{ $themeParams['fs_theme_logo']['value'] }}">
+    <input type="hidden" name="fs_theme_logo" value="{{ $params['fs_theme_logo']['value'] }}">
     <input type="file" name="fs_theme_logo_file">
     <input type="url" name="fs_theme_logo_url">
 
@@ -43,7 +44,7 @@ Theme template settings file is responsible for defining the theme template's ow
     </select>
 
     <!-- plugin select multiple: item_key=fs_theme_plugins -->
-    @foreach($themeParams['fs_theme_plugins']['value'] ?? [] as $key => $item)
+    @foreach($params['fs_theme_plugins']['value'] ?? [] as $key => $item)
         <input type="text" name="fs_theme_plugins[{{$key}}][code]">
         <select name="fs_theme_plugins[{{$key}}][plugin]">
             <option value="">Null</option>
@@ -71,17 +72,18 @@ Theme template settings file is responsible for defining the theme template's ow
 
 ```html
 <!-- Get multilingual data -->
-{{ json_encode($themeParams['fs_theme_title']['languages'] ?? []) }}
+{{ json_encode($params['fs_theme_title']['languages'] ?? []) }}
 
 <!-- Value of the default language -->
-{{ $themeParams['fs_theme_title']['defaultLanguage'] ?? '' }}
+{{ $params['fs_theme_title']['defaultLanguage'] ?? '' }}
 ```
 
 ```html
 <!-- model(multi-language input): item_key=fs_theme_title -->
-<form action="{{ route('panel.theme.functions.update_language') }}" method="post">
+<form action="{{ route('panel.theme.functions.update.languages') }}" method="post">
     @csrf
     @method('put')
+
     <input type="hidden" name="theme" value="ThemeFrame">
     <input type="hidden" name="key" value="fs_theme_title">
 
@@ -106,17 +108,18 @@ Theme template settings file is responsible for defining the theme template's ow
 
 ```html
 <!-- Get multilingual data -->
-{{ json_encode($themeParams['fs_theme_desc']['languages'] ?? []) }}
+{{ json_encode($params['fs_theme_desc']['languages'] ?? []) }}
 
 <!-- Value of the default language -->
-{{ $themeParams['fs_theme_desc']['defaultLanguage'] ?? '' }}
+{{ $params['fs_theme_desc']['defaultLanguage'] ?? '' }}
 ```
 
 ```html
 <!-- model(multi-language textarea): item_key=fs_theme_desc -->
-<form action="{{ route('panel.theme.functions.update_language') }}" method="post">
+<form action="{{ route('panel.theme.functions.update.languages') }}" method="post">
     @csrf
     @method('put')
+
     <input type="hidden" name="theme" value="ThemeFrame">
     <input type="hidden" name="key" value="fs_theme_desc">
 
