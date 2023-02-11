@@ -47,6 +47,17 @@
     - `types=8` 代表 `actionUser` 评论了你的 `actionObject + actionInfo`
         - `content` 评论内容的摘要
         - `actionCid` 他的评论 cid
+- **触发行为 actionType 类型介绍：**
+    - 1.点赞
+    - 2.点踩
+    - 3.关注
+    - 4.屏蔽
+    - 5.发表
+    - 6.编辑
+    - 7.删除
+    - 8.置顶
+    - 9.设精
+    - 10.管理
 
 ## 返回结果
 
