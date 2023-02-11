@@ -3,6 +3,10 @@
 - 访问官方互动社区[安装使用](https://discuss.fresns.cn/group/use?allDigest=1)版区的精华内容，可以浏览到全部常见问题解决方案。
 - 以下内容为【常见问题】解决方案导览列表。
 
+## 必看
+
+- [一键分享 Fresns 报错信息的方法](https://discuss.fresns.cn/post/fvYIF3Je)
+
 ## 访问问题
 
 - [无法访问主程序](https://discuss.fresns.cn/post/Hz57d0oA)
