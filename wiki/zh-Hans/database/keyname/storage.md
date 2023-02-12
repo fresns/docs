@@ -17,9 +17,8 @@
 | 防盗链功能 | image_url_status | false | boolean | 使用状态 |
 | 防盗链 Key | image_url_key |  | string |  |
 | 防盗链签名有效期 | image_url_expire | 10 | number | 单位：分钟 |
-| 图片处理位置 | image_handle_position | end | string | `start` 路径开始位置<br>`end` 路径结尾位置<br>`name-start` 文件名开头位置<br>`name-end` 文件名结尾位置（扩展名之前） |
+| 图片处理位置 | image_handle_position | end | string | `{空}` 不使用<br>`path-start` 路径开始位置<br>`path-end` 路径结尾位置<br>`name-start` 文件名开头位置<br>`name-end` 文件名结尾位置（扩展名之前） |
 | 配置图参数 | image_thumb_config |  | string | 配置图专用 |
-| 头像图参数 | image_thumb_avatar |  | string | 头像图专用 |
 | 等比例缩略图参数 | image_thumb_ratio |  | string | 等比例缩小或者压缩图片 |
 | 正方形缩略图参数 | image_thumb_square |  | string | 强制输出正方形缩略图，不是正方形则会裁剪 |
 | 原图压缩图参数 | image_thumb_big |  | string | 原始图片压缩 |
@@ -40,10 +39,10 @@
 | 防盗链功能 | video_url_status | false | boolean | 使用状态 |
 | 防盗链 Key | video_url_key |  | string |  |
 | 防盗链签名有效期 | video_url_expire | 10 | number | 单位：分钟 |
-| 视频转码参数 | video_transcode |  | string |  |
-| 视频水印参数 | video_watermark |  | string |  |
-| 视频截图参数 | video_screenshot |  | string |  |
-| 视频转动图参数 | video_gift |  | string |  |
+| 视频转码参数 | video_transcode_parameter |  | string |  |
+| 视频转码参数处理位置 | video_transcode_handle_position |  | string | `{空}` 不使用<br>`path-start` 路径开始位置<br>`path-end` 路径结尾位置<br>`name-start` 文件名开头位置<br>`name-end` 文件名结尾位置（扩展名之前） |
+| 视频封面图参数 | video_poster_parameter |  | string |  |
+| 视频封面图参数处理位置 | video_poster_handle_position |  | string | `{空}` 不使用<br>`path-start` 路径开始位置<br>`path-end` 路径结尾位置<br>`name-start` 文件名开头位置<br>`name-end` 文件名结尾位置（扩展名之前） |
 
 ## 音频设置
 
@@ -61,7 +60,8 @@
 | 防盗链功能 | audio_url_status | false | boolean | 使用状态 |
 | 防盗链 Key | audio_url_key |  | string |  |
 | 防盗链签名有效期 | audio_url_expire | 10 | number | 单位：分钟 |
-| 音频转码参数 | audio_transcode |  | string |  |
+| 音频转码参数 | audio_transcode_parameter |  | string |  |
+| 音频转码参数处理位置 | audio_transcode_handle_position |  | string | `{空}` 不使用<br>`path-start` 路径开始位置<br>`path-end` 路径结尾位置<br>`name-start` 文件名开头位置<br>`name-end` 文件名结尾位置（扩展名之前） |
 
 ## 文档设置
 

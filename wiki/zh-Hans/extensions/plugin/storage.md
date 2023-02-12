@@ -113,14 +113,12 @@ $file->getFileInfo();
     "imageHeight": "files > image_height",
     "imageLong": "files > image_is_long",
     "imageConfigUrl": "image_bucket_domain + 文件 path 字段 + image_thumb_config",
-    "imageAvatarUrl": "image_bucket_domain + 文件 path 字段 + image_thumb_avatar",
     "imageRatioUrl": "image_bucket_domain + 文件 path 字段 + image_thumb_ratio",
     "imageSquareUrl": "image_bucket_domain + 文件 path 字段 + image_thumb_square",
     "imageBigUrl": "image_bucket_domain + 文件 path 字段 + image_thumb_big",
     // 视频专用参数
     "videoTime": "files > video_time",
-    "videoCoverUrl": "video_bucket_domain + 文件 video_cover 字段",
-    "videoGifUrl": "video_bucket_domain + 文件 video_gif 字段",
+    "videoPosterUrl": "video_bucket_domain + 文件 video_poster_path 字段",
     "videoUrl": "video_bucket_domain + 文件 path 字段",
     // 音频专用参数
     "audioTime": "files > audio_time",

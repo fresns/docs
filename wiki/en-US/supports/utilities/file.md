@@ -24,7 +24,7 @@ $bodyInfo = [
     'sha' => $sha,
     'shaType' => $shaType,
     'disk' => $disk, // local or remote
-    'imageHandlePosition' => $imageHandlePosition, // disk=local (specific), Support: start, end, name-start, name-end
+    'imageHandlePosition' => $imageHandlePosition, // Physical image files only, Support: path-start, path-end, name-start, name-end
     'moreJson' => $dtoWordBody->moreJson,
 ];
 
@@ -70,7 +70,7 @@ $uploadFileInfo = FileUtility::uploadFileInfo($bodyInfo);
         "shaType": "存储到 files > sha_type",
         "disk": "存储到 files > disk", // local or remote
         "path": "存储到 files > path",
-        "imageHandlePosition": "存储到 files > image_handle_position", // disk=local (specific), Support: start, end, name-start, name-end
+        "imageHandlePosition": "存储到 files > image_handle_position", // Physical image files only, Support: path-start, path-end, name-start, name-end
         "imageWidth": "图片专用，存储到 files > image_width",
         "imageHeight": "图片专用，存储到 files > image_height",
         "videoTime": "视频专用，存储到 files > video_time",
@@ -110,7 +110,7 @@ $bodyInfo = [
     'sha' => $sha,
     'shaType' => $shaType,
     'disk' => $disk, // local or remote
-    'imageHandlePosition' => $imageHandlePosition, // disk=local (specific), Support: start, end, name-start, name-end
+    'imageHandlePosition' => $imageHandlePosition, // Physical image files only, Support: path-start, path-end, name-start, name-end
     'moreJson' => $dtoWordBody->moreJson,
 ];
 

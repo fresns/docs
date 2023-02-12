@@ -156,12 +156,10 @@ FileHelper::fresnsFileUrlByTableColumn($idColumn, $urlColumn, $urlType);
 
 ::: details urlType
 - `imageConfigUrl`
-- `imageAvatarUrl`
 - `imageRatioUrl`
 - `imageSquareUrl`
 - `imageBigUrl`
-- `videoCoverUrl`
-- `videoGifUrl`
+- `videoPosterUrl`
 - `videoUrl`
 - `audioUrl`
 - `documentUrl`

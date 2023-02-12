@@ -113,14 +113,12 @@ $file->getFileInfo();
     "imageHeight": "files > image_height",
     "imageLong": "files > image_is_long",
     "imageConfigUrl": "image_bucket_domain + files->path + image_thumb_config",
-    "imageAvatarUrl": "image_bucket_domain + files->path + image_thumb_avatar",
     "imageRatioUrl": "image_bucket_domain + files->path + image_thumb_ratio",
     "imageSquareUrl": "image_bucket_domain + files->path + image_thumb_square",
     "imageBigUrl": "image_bucket_domain + files->path + image_thumb_big",
     // Video Parameters
     "videoTime": "files > video_time",
-    "videoCoverUrl": "video_bucket_domain + file->video_cover",
-    "videoGifUrl": "video_bucket_domain + files->video_gif",
+    "videoPosterUrl": "video_bucket_domain + file->video_poster_path",
     "videoUrl": "video_bucket_domain + files->path",
     // Audio Parameters
     "audioTime": "files > audio_time",

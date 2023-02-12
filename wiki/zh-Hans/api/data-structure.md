@@ -930,14 +930,12 @@
     "imageHeight": "Number / 图片高度",
     "imageLong": "Boolean / 是否长图",
     "imageConfigUrl": "String / 配置用途图片地址",
-    "imageAvatarUrl": "String / 头像用途图片地址",
     "imageRatioUrl": "String / 等比例缩略图地址",
     "imageSquareUrl": "String / 正方形缩略图地址",
     "imageBigUrl": "String / 原图压缩图地址",
     // 视频专用参数
     "videoTime": "Number / 视频时长",
-    "videoCoverUrl": "String / 视频封面图链接",
-    "videoGifUrl": "String / 视频动图链接",
+    "videoPosterUrl": "String / 视频封面图链接",
     "videoUrl": "String / 视频链接",
     // 音频专用参数
     "audioTime": "Number / 音频时长",
