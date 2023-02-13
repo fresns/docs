@@ -34,7 +34,7 @@
 | postDigestCountGt | Number | *optional* | 精华数大于 |
 | postDigestCountLt | Number | *optional* | 精华数小于 |
 | orderType | String | *optional* | 排序类型 like,follow,block,post,postDigest,createDate,rating<br>默认 rating |
-| orderDirection | String | *optional* | 排序方式 `asc`,`desc`，默认 `asc` |
+| orderDirection | String | *optional* | 排序方向 `asc`,`desc`，默认 `asc` |
 | pageSize | Number | *optional* | 每页显示条数（默认 15 条） |
 | page | Number | *optional* | 页码（默认 1） |
 

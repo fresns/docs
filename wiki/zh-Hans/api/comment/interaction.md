@@ -24,7 +24,7 @@
 
 | 参数名 | 类型 | 是否必传 | 说明 |
 | --- | --- | --- | --- |
-| orderDirection | String | NO | 排序方式 `asc`,`desc`，默认 `desc` |
+| orderDirection | String | NO | 排序方向 `asc`,`desc`，默认 `desc` |
 | pageSize | Number | NO | 每页显示条数（默认 15 条） |
 | page | Number | NO | 页码（默认 1） |
 

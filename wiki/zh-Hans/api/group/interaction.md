@@ -24,7 +24,7 @@
 
 | 参数名 | 类型 | 是否必传 | 说明 |
 | --- | --- | --- | --- |
-| orderDirection | String | NO | 排序方式 `asc`,`desc`，默认 `desc` |
+| orderDirection | String | NO | 排序方向 `asc`,`desc`，默认 `desc` |
 | pageSize | Number | NO | 每页显示条数（默认 15 条） |
 | page | Number | NO | 页码（默认 1） |
 
@@ -39,7 +39,7 @@
     - `group_dislikers` 配置，是否输出点踩 TA 的用户
     - `group_followers` 配置，是否输出关注 TA 的用户
     - `group_blockers` 配置，是否输出屏蔽 TA 的用户
-- `orderDirection` 排序方式以创建时间排序。
+- `orderDirection` 排序方向以创建时间排序。
 
 ## 返回结果
 

@@ -24,7 +24,7 @@
 
 | Parameter Name | Type | Required | Description |
 | --- | --- | --- | --- |
-| orderDirection | String | *optional* | 排序方式 `asc`,`desc`，默认 `desc` |
+| orderDirection | String | *optional* | 排序方向 `asc`,`desc`，默认 `desc` |
 | pageSize | Number | *optional* | 每页显示条数（默认 15 条） |
 | page | Number | *optional* | 页码（默认 1） |
 

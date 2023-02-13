@@ -23,6 +23,8 @@
 
 | Parameter Name | Type | Required | Description |
 | --- | --- | --- | --- |
+| orderDirection | String | *optional* | 排序方向，默认 `desc`<br>`asc`,`desc` |
+| pageListDirection | String | *optional* | 每页列表里数组排序方向，默认 `latest`<br>`latest`,`oldest` |
 | pageSize | Number | *optional* | 每页显示条数（默认 15 条） |
 | page | Number | *optional* | 页码（默认 1） |
 

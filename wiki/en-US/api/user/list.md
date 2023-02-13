@@ -48,7 +48,7 @@
 | extcredits5CountGt | Number | *optional* | extcredits5 大于 |
 | extcredits5CountLt | Number | *optional* | extcredits5 小于 |
 | orderType | String | *optional* | 排序类型，默认 `createDate`<br>createDate,like,dislike,follow,block<br>post,comment,postDigest,commentDigest<br>extcredits1,extcredits2,extcredits3,extcredits4,extcredits5 |
-| orderDirection | String | *optional* | 排序方式，默认 `desc`<br>`asc`,`desc` |
+| orderDirection | String | *optional* | 排序方向，默认 `desc`<br>`asc`,`desc` |
 | pageSize | Number | *optional* | 每页显示条数（默认 15 条） |
 | page | Number | *optional* | 页码（默认 1） |
 

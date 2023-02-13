@@ -25,7 +25,7 @@
 
 | 参数名 | 类型 | 是否必传 | 说明 |
 | --- | --- | --- | --- |
-| orderDirection | String | NO | 排序方式 `asc`,`desc`，默认 `desc` |
+| orderDirection | String | NO | 排序方向 `asc`,`desc`，默认 `desc` |
 | pageSize | Number | NO | 每页显示条数（默认 15 条） |
 | page | Number | NO | 页码（默认 1） |
 
@@ -59,7 +59,7 @@
         - `listType=posts` 获取 TA 屏蔽的帖子列表，配置键名 `it_block_posts` 决定是否输出。
         - `listType=comments` 获取 TA 屏蔽的评论列表，配置键名 `it_block_comments` 决定是否输出。
 - 如果 `uidOrUsername` 为登录用户自己时，上方配置无效，直接输出数据，表示查看自己的内容时无视开关。
-- `orderDirection` 排序方式以创建时间排序。
+- `orderDirection` 排序方向以创建时间排序。
 
 ## 返回结果
 

@@ -41,7 +41,7 @@
 | commentCountGt | Number | NO | 子级评论总数大于 |
 | commentCountLt | Number | NO | 子级评论总数小于 |
 | orderType | String | NO | 排序类型，默认 `createDate`<br>createDate,like,dislike,follow,block,comment |
-| orderDirection | String | NO | 排序方式，默认 `desc`<br>`asc`,`desc` |
+| orderDirection | String | NO | 排序方向，默认 `desc`<br>`asc`,`desc` |
 | pageSize | Number | NO | 每页显示条数（默认 15 条） |
 | page | Number | NO | 页码（默认 1） |
 
