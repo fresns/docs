@@ -15,6 +15,7 @@ CacheHelper::isSupportTags();
 ```php
 fresns_cache_is_support_tags
 fresns_cache_tags
+developer_mode
 install_{$step}
 autoUpgradeStep
 autoUpgradeTip
