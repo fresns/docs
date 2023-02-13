@@ -119,6 +119,7 @@
     "message": "ok",
     "data": {
         "type": 1, // 1.帖子 2.评论
+        "logId": "post_logs > id", // 或者 comment_logs > id
         "id": "posts > id", // 或者 comments > id
         "fsid": "posts > pid" // 或者 comments > cid
     }
