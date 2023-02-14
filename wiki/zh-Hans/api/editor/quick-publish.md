@@ -50,9 +50,8 @@
     "message": "ok",
     "data": {
         "type": "String / post 或 comment",
-        "isDraft": "Boolean / 是否是草稿",
-        "draftId": "Number / 草稿 ID",
-        "fsid": "String / 不是草稿，正式内容的 pid 或 cid"
+        "draftId": "Number / 草稿 ID", // 不是草稿则为 null
+        "fsid": "String / 正式内容的 pid 或 cid" // 不是正式内容则为 null
     }
 }
 ```
