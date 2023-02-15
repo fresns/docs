@@ -73,10 +73,14 @@
                     "required": "Boolean / 是否必填",
                     "length": "Number / 最大长度"
                 },
-                "mention": "Boolean / 是否显示艾特按钮",
+                "mention": {
+                    "status": "Boolean / 是否启用艾特",
+                    "display": "Boolean / 工具栏是否显示艾特操作按钮"
+                },
                 "hashtag": {
-                    "status": "Boolean / 是否显示话题按钮",
-                    "showMode": "Number / 话题格式 1.单 # 2.双 #"
+                    "status": "Boolean / 是否启用话题",
+                    "display": "Boolean / 工具栏是否显示话题操作按钮",
+                    "format": "Number / 话题格式 1.单 # 2.双 #"
                 },
                 "expand": {
                     "status": "Boolean / 是否启用扩展",

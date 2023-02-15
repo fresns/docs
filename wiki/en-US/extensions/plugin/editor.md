@@ -77,5 +77,5 @@ ConfigUtility::getPublishConfigByType($userId, $type, $langTag, $timezone);
 ## Content Rules
 
 - **Mention(At)**: preceded by `@` and ended with a space.
-- **Hashtag(Topic)**: based on the configured [editor.toolbar.hashtag.showMode](../../api/editor/config.md). If the value is 1, the topic should be preceded by `#` and ended with a space; if the value is 2, the topic should be preceded by `#` and ended with `#`. there could be a single space.
+- **Hashtag(Topic)**: based on the configured [editor.toolbar.hashtag.format](../../api/editor/config.md). If the value is 1, the topic should be preceded by `#` and ended with a space; if the value is 2, the topic should be preceded by `#` and ended with `#`. there could be a single space.
 - **Sticker(Emoji)**: preceded by `[` and ended with `]`, with no space between `[` and `]`.
