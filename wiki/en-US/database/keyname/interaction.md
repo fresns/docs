@@ -6,8 +6,8 @@
 
 | Menu Title | Key Name | Default Key Value | Value Type | Description |
 | --- | --- | --- | --- | --- |
-| 艾特功能 | mention_status | false | boolean |  |
-| 话题功能 | hashtag_status | false | boolean |  |
+| 艾特功能 | mention_status | true | boolean |  |
+| 话题功能 | hashtag_status | true | boolean |  |
 | 话题格式 | hashtag_format | 2 | number | `#话题` 和 `#话题#` 的区别 |
 | 帖子点赞用户预览 | preview_post_like_users | 0 | number | 0 代表不启用，最大数字 10 |
 | 帖子评论预览数量 | preview_post_comments | 0 | number | 0 代表不启用，最大数字 5 |
