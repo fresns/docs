@@ -23,6 +23,8 @@
 
 | Parameter Name | Type | Required | Description |
 | --- | --- | --- | --- |
+| whitelistParams | String | *optional* | 白名单参数，只返回给定参数的键值对<br>多个以英文逗号隔开，支持「点表示法」表示多维数组 |
+| blacklistParams | String | *optional* | 黑名单参数，从参数中删除指定的键值对<br>多个以英文逗号隔开，支持「点表示法」表示多维数组 |
 | pageSize | Number | *optional* | 每页显示条数（默认 15 条） |
 | page | Number | *optional* | 页码（默认 1） |
 

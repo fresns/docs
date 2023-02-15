@@ -35,6 +35,8 @@
 | postDigestCountLt | Number | *optional* | 精华数小于 |
 | orderType | String | *optional* | 排序类型 like,follow,block,post,postDigest,createDate,rating<br>默认 rating |
 | orderDirection | String | *optional* | 排序方向 `asc`,`desc`，默认 `asc` |
+| whitelistParams | String | *optional* | 白名单参数，只返回给定参数的键值对<br>多个以英文逗号隔开，支持「点表示法」表示多维数组 |
+| blacklistParams | String | *optional* | 黑名单参数，从参数中删除指定的键值对<br>多个以英文逗号隔开，支持「点表示法」表示多维数组 |
 | pageSize | Number | *optional* | 每页显示条数（默认 15 条） |
 | page | Number | *optional* | 页码（默认 1） |
 

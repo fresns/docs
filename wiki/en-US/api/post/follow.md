@@ -27,6 +27,8 @@
 | mapId | Number | *optional* | 地图服务商编号 |
 | mapLng | String | *optional* | 地图经度（用于计算距离） |
 | mapLat | String | *optional* | 地图纬度（用于计算距离） |
+| whitelistParams | String | *optional* | 白名单参数，只返回给定参数的键值对<br>多个以英文逗号隔开，支持「点表示法」表示多维数组 |
+| blacklistParams | String | *optional* | 黑名单参数，从参数中删除指定的键值对<br>多个以英文逗号隔开，支持「点表示法」表示多维数组 |
 | pluginRatingId | Number | *optional* | 排序编号（插件专用） |
 | pageSize | Number | *optional* | 每页显示条数（默认 15 条） |
 | page | Number | *optional* | 页码（默认 1） |

@@ -12,6 +12,13 @@
 | X-Fresns-Uid | NO | YES |
 | X-Fresns-Uid-Token | NO | YES |
 
+## Query 参数
+
+| 参数名 | 类型 | 是否必传 | 说明 |
+| --- | --- | --- | --- |
+| whitelistParams | String | NO | 白名单参数，只返回给定参数的键值对<br>多个以英文逗号隔开，支持「点表示法」表示多维数组 |
+| blacklistParams | String | NO | 黑名单参数，从参数中删除指定的键值对<br>多个以英文逗号隔开，支持「点表示法」表示多维数组 |
+
 **接口使用说明**
 
 - 本接口将获取全部小组，然后组装成树结构输出。

@@ -42,6 +42,8 @@
 | commentCountLt | Number | NO | 子级评论总数小于 |
 | orderType | String | NO | 排序类型，默认 `createDate`<br>createDate,like,dislike,follow,block,comment |
 | orderDirection | String | NO | 排序方向，默认 `desc`<br>`asc`,`desc` |
+| whitelistParams | String | NO | 白名单参数，只返回给定参数的键值对<br>多个以英文逗号隔开，支持「点表示法」表示多维数组 |
+| blacklistParams | String | NO | 黑名单参数，从参数中删除指定的键值对<br>多个以英文逗号隔开，支持「点表示法」表示多维数组 |
 | pageSize | Number | NO | 每页显示条数（默认 15 条） |
 | page | Number | NO | 页码（默认 1） |
 
