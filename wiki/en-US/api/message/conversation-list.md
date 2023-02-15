@@ -37,9 +37,8 @@
         "list": [
             {
                 "id": "Number / Conversation ID",
-                "userIsDeactivate": "Boolean / User is deactivate",
                 "user": {
-                    // 与我对话的用户信息
+                    // 与我对话的用户信息，为空表示用户已注销
                     // Common Data Structure -> User Info
                 },
                 "latestMessage": {

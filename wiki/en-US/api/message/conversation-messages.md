@@ -45,10 +45,9 @@
             {
                 "id": "Number / Message ID",
                 "user": {
-                    // 发信用户信息
+                    // 发信用户信息，为空表示用户已注销
                     // Common Data Structure -> User Info
                 },
-                "userIsDeactivate": "Boolean / 用户是否停用",
                 "isMe": "Boolean / 是否为自己发的",
                 "type": "Number / 1.文本消息 2.文件消息",
                 "content": "String / 消息内容",

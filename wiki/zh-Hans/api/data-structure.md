@@ -28,8 +28,6 @@
     "status": "Boolean / 账号状态",
     "waitDelete": "Boolean / 是否待删除",
     "waitDeleteDateTime": "String / 准备删除时间",
-    "deactivate": "Boolean / 是否已注销",
-    "deactivateTime": "String / 注销时间",
     "connects": [
         {
             "connectId": "Number / 互联平台编号",
@@ -116,8 +114,6 @@
     "status": "Boolean / 用户状态",
     "waitDelete": "Boolean / 是否待删除",
     "waitDeleteDateTime": "String / 准备删除时间",
-    "deactivate": "Boolean / 是否已注销",
-    "deactivateTime": "String / 注销时间",
     "nicknameColor": "String / 主角色-昵称颜色",
     "rid": "Number / 主角色-角色 ID",
     "roleName": "String / 主角色-角色名",

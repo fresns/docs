@@ -37,9 +37,8 @@
         "list": [
             {
                 "id": "Number / 对话 ID",
-                "userIsDeactivate": "Boolean / 用户是否停用",
                 "user": {
-                    // 与我对话的用户信息
+                    // 与我对话的用户信息，为空表示用户已注销
                     // 通用数据结构->用户信息
                 },
                 "latestMessage": {
