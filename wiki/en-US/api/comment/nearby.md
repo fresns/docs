@@ -23,8 +23,8 @@
 | unit | String | *optional* | 范围单位 km / mi |
 | length | Number | *optional* | 范围 |
 | contentType | String | *optional* | 指定类型：内容类型扩展配置的参数，为空或者为 All，则输出全部内容 |
-| whitelistParams | String | *optional* | 白名单键名，只返回给定键名的键值对<br>多个以英文逗号隔开，支持「点表示法」表示多维数组 |
-| blacklistParams | String | *optional* | 黑名单键名，从返回数据中删除指定的键值对<br>多个以英文逗号隔开，支持「点表示法」表示多维数组 |
+| whitelistKeys | String | *optional* | 白名单键名，只返回给定键名的键值对<br>多个以英文逗号隔开，支持「点表示法」表示多维数组 |
+| blacklistKeys | String | *optional* | 黑名单键名，从返回数据中删除指定的键值对<br>多个以英文逗号隔开，支持「点表示法」表示多维数组 |
 | pluginRatingId | Number | *optional* | 排序编号（插件专用） |
 | pageSize | Number | *optional* | 每页显示条数（默认 30 条） |
 | page | Number | *optional* | 页码（默认 1） |

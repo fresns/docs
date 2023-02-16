@@ -24,8 +24,8 @@
 | Parameter Name | Type | Required | Description |
 | --- | --- | --- | --- |
 | orderDirection | String | *optional* | 排序方向 `asc`,`desc`，默认 `desc` |
-| whitelistParams | String | *optional* | 白名单键名，只返回给定键名的键值对<br>多个以英文逗号隔开，支持「点表示法」表示多维数组 |
-| blacklistParams | String | *optional* | 黑名单键名，从返回数据中删除指定的键值对<br>多个以英文逗号隔开，支持「点表示法」表示多维数组 |
+| whitelistKeys | String | *optional* | 白名单键名，只返回给定键名的键值对<br>多个以英文逗号隔开，支持「点表示法」表示多维数组 |
+| blacklistKeys | String | *optional* | 黑名单键名，从返回数据中删除指定的键值对<br>多个以英文逗号隔开，支持「点表示法」表示多维数组 |
 | pageSize | Number | *optional* | 每页显示条数（默认 15 条） |
 | page | Number | *optional* | 页码（默认 1） |
 
