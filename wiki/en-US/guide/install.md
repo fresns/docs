@@ -18,7 +18,7 @@ Before you install Fresns, it's important to check that your server meets the re
 
 ## Download
 
-- Latest Version: v2.5.0 (2023-02-09)
+- Latest Version: v2.6.0 (2023-02-16)
 
 ::: tip Option 1: Download the full package manually
 - [Click to download](https://app.fresns.org/latest.zip)
