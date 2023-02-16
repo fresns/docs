@@ -270,7 +270,7 @@
     "contentViewOriginal": "查看原文",
     "contentCreator": "作者",
     "contentCreatorAnonymous": "匿名者",
-    "contentCreatorDeactivate": "账号已注销",
+    "contentCreatorDeactivate": "账号已停用",
     "contentCreatorLiked": "作者点赞了该评论",
     "contentPublishTime": "发布时间",
     "contentCommentTime": "评论时间",
