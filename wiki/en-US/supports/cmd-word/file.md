@@ -63,7 +63,7 @@
 
 ::: details 逻辑说明
 - 入库方法可以调用主程序封装功能 [FileUtility::saveFileInfoToDatabase($bodyInfo, $diskPath, $file)](../utilities/file.md#保存文件信息到数据库)
-- 如果文件类型为视频 `type=2`，还需处理视频封面图，对应字段为 `file->video_cover_path`，也可以处理视频动态封面图 `file->video_gif_path`。
+- 如果文件类型为视频 `type=2`，还需处理视频封面图，对应字段为 `file->video_poster_path`。
 - 查看返回结果[文件信息结构](../../extensions/plugin/storage.md#文件信息结构)
 :::
 
@@ -102,8 +102,7 @@
         "imageWidth": "图片专用，存储到 files > image_width",
         "imageHeight": "图片专用，存储到 files > image_height",
         "videoTime": "视频专用，存储到 files > video_time",
-        "videoCoverPath": "视频专用，存储到 files > video_cover_path",
-        "videoGifPath": "视频专用，存储到 files > video_gif_path",
+        "videoPosterPath": "视频专用，存储到 files > video_poster_path",
         "audioTime": "音频专用，存储到 files > audio_time",
         "transcodingState": "音视频专用，存储到 files > transcoding_state",
         "moreJson": {
@@ -135,7 +134,7 @@
 
 ::: details 逻辑说明
 - 入库方法可以调用主程序封装功能 [FileUtility::uploadFileInfo($bodyInfo)](../utilities/file.md#上传文件信息)
-- 如果文件类型为视频 `type=2`，还需处理视频封面图，对应字段为 `file->video_cover_path`，也可以处理视频动态封面图 `file->video_gif_path`。
+- 如果文件类型为视频 `type=2`，还需处理视频封面图，对应字段为 `file->video_poster_path`。
 - 查看返回结果[文件信息结构](../../extensions/plugin/storage.md#文件信息结构)
 :::
 
