@@ -3,7 +3,7 @@
 <p align="center"><img src="https://cdn.fresns.cn/wiki/images/logo.png" width="300"></p>
 
 <p align="center">
-<img src="https://img.shields.io/badge/PHP-%5E8.0-green" alt="PHP" style="display:inline">
+<img src="https://img.shields.io/badge/PHP-%5E8.1-green" alt="PHP" style="display:inline">
 <img src="https://img.shields.io/badge/MySQL-%5E5.7%7C%5E8.0-orange" alt="MySQL" style="display:inline;margin:0 8px">
 <img src="https://img.shields.io/badge/License-Apache--2.0-blue" alt="License" style="display:inline">
 </p>

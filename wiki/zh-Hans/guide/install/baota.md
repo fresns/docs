@@ -7,7 +7,7 @@
 ### 软件版本
 
 - 安装了 Nginx 或者 Apache
-- 安装了 PHP-8.0 或者 PHP-8.1
+- 安装了 PHP-8.1 或者 PHP-8.2
 - 安装了 MySQL 5.7 或者 MySQL 8.0
 
 ### 推荐方案
@@ -59,7 +59,7 @@
 
 ### PHP 版本
 
-- 不低于 PHP 8.0.2
+- 不低于 PHP 8.1
 
 ![PHP](https://cdn.fresns.cn/guide/baota-php-version.png)
 
