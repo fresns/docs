@@ -26,9 +26,10 @@
 | gid | String | NO | 指定范围：小组 |
 | hid | String | NO | 指定范围：话题 |
 | sticky | Boolean | NO | 是否置顶（留空输出全部） |
+| allDigest | Boolean | NO | 指定范围：全部精华，一级精华和二级精华<br>传参后，将忽略 `digestState` 参数 |
 | digestState | Number | NO | 指定范围：精华（留空输出全部）<br>digest_state 字段 1.否 2.一级精华 3.二级精华 |
 | contentType | String | NO | 内容类型（内容类型扩展配置的参数） |
-| allDigest | Boolean | NO | 指定范围：全部精华，一级精华和二级精华<br>传参后，将忽略 `digestState` 参数 |
+| createDate | String | NO | 发表日期：`today`,`yesterday`,`week`,`lastWeek`,`month`,`lastMonth`,`year`,`lastYear` |
 | createDateGt | String | NO | 发表时间大于 `Y-m-d` |
 | createDateLt | String | NO | 发表时间小于 `Y-m-d` |
 | likeCountGt | Number | NO | 点赞数大于 |
