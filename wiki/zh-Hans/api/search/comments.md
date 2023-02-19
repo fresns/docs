@@ -18,6 +18,10 @@
 | 参数名 | 类型 | 是否必传 | 说明 |
 | --- | --- | --- | --- |
 | searchKey | String | YES | 搜索词 |
+| followUsers | Boolean | NO | 指定范围：我关注的用户发表的 |
+| followGroups | Boolean | NO | 指定范围：我关注的小组里 |
+| followHashtags | Boolean | NO | 指定范围：我关注的话题里 |
+| followComments | Boolean | NO | 指定范围：我关注的评论 |
 | ... |  | NO | 可选[评论列表](../comment/list.md#query-参数)接口所有参数 |
 
 ## 返回结果

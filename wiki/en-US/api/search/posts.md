@@ -18,6 +18,10 @@
 | Parameter Name | Type | Required | Description |
 | --- | --- | --- | --- |
 | searchKey | String | **required** | Search Keywords |
+| followUsers | Boolean | NO | 指定范围：我关注的用户发表的 |
+| followGroups | Boolean | NO | 指定范围：我关注的小组里 |
+| followHashtags | Boolean | NO | 指定范围：我关注的话题里 |
+| followPosts | Boolean | NO | 指定范围：我关注的帖子 |
 | ... |  | *optional* | Optional [post list](../post/list.md#query-params) api all parameters |
 
 ## Return
