@@ -98,7 +98,7 @@
 | `GET` | /api/v2/post/nearby | Post List by Nearby |
 | `GET` | /api/v2/post/`{pid}`/detail | Post Detail |
 | `GET` | /api/v2/post/`{pid}`/interaction/`{type}` | Post Interaction Users |
-| `GET` | /api/v2/post/`{pid}`/user-list | Post Affiliate User List |
+| `GET` | /api/v2/post/`{pid}`/users | Post Affiliate User List |
 | `GET` | /api/v2/post/`{pid}`/logs | Post Logs |
 | `GET` | /api/v2/post/`{pid}`/log/`{logId}` | Post Log Detail |
 | `DELETE` | /api/v2/post/`{pid}` | Delete |

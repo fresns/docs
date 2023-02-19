@@ -1,6 +1,6 @@
 # 获取帖子[详情] 附属用户列表
 
-- 接口地址：`/api/v2/post/{pid}/user-list`
+- 接口地址：`/api/v2/post/{pid}/users`
 - 请求方式：`GET`
 - 传参方式：`Rest` + `Query`
 

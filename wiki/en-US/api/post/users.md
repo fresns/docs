@@ -1,6 +1,6 @@
 # Post Affiliate User List
 
-- Endpoint Path: `/api/v2/post/{pid}/user-list`
+- Endpoint Path: `/api/v2/post/{pid}/users`
 - Method: `GET`
 - Request: `Rest` + `Query`
 

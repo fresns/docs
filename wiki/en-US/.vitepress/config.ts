@@ -307,7 +307,7 @@ function sidebarApi() {
                 { text: 'Post List by Nearby', link: '/api/post/nearby.md' },
                 { text: 'Post Detail', link: '/api/post/detail.md' },
                 { text: 'Post Interaction Users', link: '/api/post/interaction.md' },
-                { text: 'Post Affiliate User List', link: '/api/post/user-list.md' },
+                { text: 'Post Affiliate User List', link: '/api/post/users.md' },
                 { text: 'Post Logs', link: '/api/post/logs.md' },
                 { text: 'Post Log Detail', link: '/api/post/log-detail.md' },
                 { text: 'Delete', link: '/api/post/delete.md' },

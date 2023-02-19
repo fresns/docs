@@ -323,7 +323,7 @@ function sidebarApi() {
                 { text: '获取帖子[列表] 位置附近的', link: '/api/post/nearby.md' },
                 { text: '获取帖子[详情]', link: '/api/post/detail.md' },
                 { text: '获取帖子[详情] 互动列表', link: '/api/post/interaction.md' },
-                { text: '获取帖子[详情] 附属用户列表', link: '/api/post/user-list.md' },
+                { text: '获取帖子[详情] 附属用户列表', link: '/api/post/users.md' },
                 { text: '获取帖子[详情] 日志列表', link: '/api/post/logs.md' },
                 { text: '获取帖子[详情] 日志详情', link: '/api/post/log-detail.md' },
                 { text: '删除帖子', link: '/api/post/delete.md' },
