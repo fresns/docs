@@ -19,6 +19,7 @@
 | --- | --- | --- | --- |
 | verified | Boolean | *optional* | 认证状态 |
 | gender | Number | *optional* | 性别 gender 字段<br>`1` 未设置 / `2` 男 / `3` 女 |
+| createDate | String | *optional* | 注册日期：`today`,`yesterday`,`week`,`lastWeek`,`month`,`lastMonth`,`year`,`lastYear` |
 | createDateGt | String | *optional* | 注册时间大于 `Y-m-d` |
 | createDateLt | String | *optional* | 注册时间小于 `Y-m-d` |
 | likeCountGt | Number | *optional* | 点赞数大于 |

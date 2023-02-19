@@ -17,6 +17,7 @@
 
 | 参数名 | 类型 | 是否必传 | 说明 |
 | --- | --- | --- | --- |
+| createDate | String | NO | 创建日期：`today`,`yesterday`,`week`,`lastWeek`,`month`,`lastMonth`,`year`,`lastYear` |
 | createDateGt | String | NO | 创建时间大于 `Y-m-d` |
 | createDateLt | String | NO | 创建时间小于 `Y-m-d` |
 | likeCountGt | Number | NO | 点赞数大于 |
