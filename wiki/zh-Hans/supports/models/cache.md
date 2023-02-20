@@ -119,6 +119,7 @@ fresns_follow_{$type}_array_by_{$userId}                     // +tag: fresnsUser
 fresns_block_{$type}_array_by_{$userId}                      // +tag: fresnsUserInteractions, fresnsBlockData
 fresns_seo_user_{$userId}                                    // +tag: fresnsUserData
 fresns_api_user_{$uid}_{$langTag}                            // +tag: fresnsUserData
+fresns_api_user_stats_{$uid}                                 // +tag: fresnsUserData
 fresns_api_user_panel_conversations_{$uid}                   // +tag: fresnsUserData, fresnsUserConversations
 fresns_api_user_panel_notifications_{$uid}                   // +tag: fresnsUserData, fresnsUserNotifications
 fresns_api_user_panel_drafts_{$uid}                          // +tag: fresnsUserData, fresnsUserDrafts

@@ -99,6 +99,42 @@ DB_TIMEZONE=  // Database Time Zone
 DB_PREFIX=  // Default is fs_
 ```
 
+### Cache Config
+
+You may specify which cache driver you would like to be used by default throughout your application. Fresns supports popular caching backends like `Memcached`, `Redis`, `DynamoDB`, and relational databases out of the box. In addition, a file based cache driver is available, while `array` and `null` cache drivers provide convenient cache backends for your automated tests.
+
+- The default caching system is `File`, if you want to change it, we recommend `Redis` or `Memcached` caching.
+- Before you can change the cache configuration, you must install the appropriate PHP extension and then modify the `.env' file to include the cache configuration.
+
+**Redis**
+
+*In addition to cache, other driver systems that support Redis can also be configured to use it.*
+
+```php
+REDIS_HOST=127.0.0.1
+REDIS_PASSWORD=null
+REDIS_PORT=6379
+
+CACHE_DRIVER=redis
+BROADCAST_DRIVER=redis
+SESSION_DRIVER=redis
+QUEUE_CONNECTION=redis
+```
+
+**Memcached**
+
+*Memcached only supports drive cache and session.*
+
+```php
+MEMCACHED_HOST=127.0.0.1
+MEMCACHED_PORT=11211
+MEMCACHED_USERNAME=null
+MEMCACHED_PASSWORD=null
+
+CACHE_DRIVER=memcached
+SESSION_DRIVER=memcached
+```
+
 ### Timezone Config
 
 Fresns is a software that supports cross-time zone service. To ensure the consistency of time values, [UTC](../database/dictionary/utc.md) time zone standard is adopted in the software.

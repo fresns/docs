@@ -103,6 +103,42 @@ DB_TIMEZONE=时区  // 数据库时区
 DB_PREFIX=表前缀  // 默认为 fs_
 ```
 
+### 缓存配置
+
+你可以指定应用默认使用哪个缓存驱动。Fresns 支持的缓存后端包括 `Memcached`、`Redis`、`DynamoDB`，以及现成的关系型数据库。此外，还支持基于文件的缓存驱动，以及方便自动化测试的缓存驱动 `array` 和 `null`。
+
+- 默认缓存系统为 `File`，如需更改，我们推荐 `Redis` 或 `Memcached` 缓存。
+- 修改缓存配置前，你需要安装对应的 PHP 扩展，然后修改 `.env` 文件，加上缓存配置。
+
+**Redis**
+
+*除了缓存，其他驱动系统支持 Redis 的也可以配置使用。*
+
+```php
+REDIS_HOST=127.0.0.1 // Host
+REDIS_PASSWORD=null // 密码
+REDIS_PORT=6379 // 端口
+
+CACHE_DRIVER=redis // 缓存驱动
+BROADCAST_DRIVER=redis // 广播驱动
+SESSION_DRIVER=redis // 会话驱动
+QUEUE_CONNECTION=redis // 队列驱动
+```
+
+**Memcached**
+
+*Memcached 仅支持驱动缓存和会话。*
+
+```php
+MEMCACHED_HOST=127.0.0.1 // Host
+MEMCACHED_PORT=11211 // 端口
+MEMCACHED_USERNAME=null // 用户名
+MEMCACHED_PASSWORD=null // 密码
+
+CACHE_DRIVER=memcached // 缓存驱动
+SESSION_DRIVER=memcached // 会话驱动
+```
+
 ### 时区配置介绍
 
 Fresns 是一款支持跨时区服务的软件，为了保证时间值的一致性，软件中采用 [UTC](../database/dictionary/utc.md) 时区标准。
