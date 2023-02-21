@@ -124,7 +124,6 @@ $file->getFileInfo();
     "audioTime": "files > audio_time",
     "audioUrl": "audio_bucket_domain + 文件 path 字段",
     // 文档专用参数
-    "documentUrl": "document_bucket_domain + 文件 path 字段",
     "documentPreviewUrl": "按规则替换后的链接",
     // 音视频共有参数
     "transcodingState": "files > transcoding_state"

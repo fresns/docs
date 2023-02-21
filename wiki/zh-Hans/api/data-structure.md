@@ -937,7 +937,6 @@
     "audioTime": "Number / 音频时长",
     "audioUrl": "String / 音频链接",
     // 文档专用参数
-    "documentUrl": "String / 文档链接",
     "documentPreviewUrl": "String / 文件预览链接",
     // 音视频共有参数
     "transcodingState": "Number / 音视频转码状态 1.待转码 2.转码中 3.转码完成 4.转码失败"

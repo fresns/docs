@@ -84,7 +84,7 @@ ConfigHelper::fresnsConfigFileUrlByItemKey($itemKey);
 - 图片输出为 `imageConfigUrl`
 - 视频输出为 `videoUrl`
 - 音频输出为 `audioUrl`
-- 文档输出为 `documentUrl`
+- 文档输出为 `documentPreviewUrl`
 :::
 
 ## 根据 langTag 获取长度单位

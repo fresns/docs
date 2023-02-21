@@ -124,7 +124,6 @@ $file->getFileInfo();
     "audioTime": "files > audio_time",
     "audioUrl": "audio_bucket_domain + files->path",
     // Document Parameters
-    "documentUrl": "document_bucket_domain + files->path",
     "documentPreviewUrl": "Links after replacement by rule",
     // Audio and Video Parameter
     "transcodingState": "files > transcoding_state"

@@ -162,7 +162,6 @@ FileHelper::fresnsFileUrlByTableColumn($idColumn, $urlColumn, $urlType);
 - `videoPosterUrl`
 - `videoUrl`
 - `audioUrl`
-- `documentUrl`
 - `documentPreviewUrl`
 :::
 
