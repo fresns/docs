@@ -15,9 +15,8 @@ A server operation and maintenance panel for Chinese users
 ### 推荐方案
 
 - Web 环境推荐 `Nginx`
-- PHP 推荐 `8.1`
+- PHP 推荐 `8.2`
 - MySQL 推荐 `8.0`
-- 安装方式推荐**极速安装**
 
 ## PHP 配置
 
@@ -73,7 +72,7 @@ A server operation and maintenance panel for Chinese users
 
 ### PHP 命令行版本
 
-- 选择 `PHP-80` 或者 `PHP-81`
+- 选择 `PHP-81` 或者 `PHP-82`
 
 ![PHP Cli](https://cdn.fresns.cn/guide/baota-php-cli.png)
 
@@ -153,12 +152,12 @@ REDIS_QUEUE=fresns
 
 - 队列连接方式：
     - `sync` 同步执行队列，无需额外配置
-    - `database` 使用数据库驱动队列，无需额外配置
     - `redis` 使用 PHP 扩展 redis 缓存器驱动队列
+    - `database` 使用数据库驱动队列，无需额外配置
     - `beanstalkd` 使用分布式内存队列系统，适用于大型项目
     - `sqs` 使用 AWS sqs 驱动队列，需配置 AWS 密钥，适用于大型项目
 
-推荐 `database` 或 `redis`，不配置则默认为 `sync`
+推荐 `redis` 或 `database`，不配置则默认为 `sync`
 
 ![env](https://cdn.fresns.cn/guide/baota-queue-env.png)
 
