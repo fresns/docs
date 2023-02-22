@@ -111,7 +111,7 @@
         "publish": {
             "perm": {
                 "draft": "Boolean / 是否可以创建新草稿",
-                "publish": "Boolean / 是否有权限表表",
+                "publish": "Boolean / 是否有权限发表",
                 "review": "Boolean / 发表是否需要审核",
                 "emailRequired": "Boolean / 邮箱要求是否通过",
                 "phoneRequired": "Boolean / 手机要求是否通过",
