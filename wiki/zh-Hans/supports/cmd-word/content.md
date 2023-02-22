@@ -112,6 +112,7 @@
 | isAnonymous | Boolean | NO | 默认配置：是否匿名 |  |
 | mapJson | Object | NO | 默认配置：位置信息 |  |
 | eid | String | NO | 默认配置：扩展内容 |  |
+| requireReview | Boolean | NO | 是否需要审核<br>默认为 `false` 不需要审核 | 是否需要审核<br>默认为 `false` 不需要审核 |
 
 ::: details 结果示例
 ```json

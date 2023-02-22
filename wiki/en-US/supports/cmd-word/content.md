@@ -111,6 +111,7 @@
 | isAnonymous | Boolean | *optional* | 默认配置：是否匿名 |  |
 | mapJson | Object | *optional* | 默认配置：位置信息 |  |
 | eid | String | *optional* | 默认配置：扩展内容 |  |
+| requireReview | Boolean | *optional* | 是否需要审核<br>默认为 `false` 不需要审核 | 是否需要审核<br>默认为 `false` 不需要审核 |
 
 ::: details Return Example
 ```json
