@@ -7,12 +7,17 @@
 
 - [一键分享 Fresns 报错信息的方法](https://discuss.fresns.cn/post/fvYIF3Je)
 
+## 环境问题
+
+- [PHP 函数已启用，但还是报错](https://discuss.fresns.cn/post/MWvAjFGh)
+- [cURL error 60 错误](https://discuss.fresns.cn/post/snuCNKKh)
+- [file_put_contents 错误](https://discuss.fresns.cn/post/NSQoPOuK)
+- [登录后台 419 错误](https://discuss.fresns.cn/post/u4txRlqk)
+
 ## 访问问题
 
 - [无法访问主程序](https://discuss.fresns.cn/post/Hz57d0oA)
 - [cURL error 52 错误](https://discuss.fresns.cn/post/lcmDkIxz)
-- [cURL error 60 错误](https://discuss.fresns.cn/post/snuCNKKh)
-- [file_put_contents 错误](https://discuss.fresns.cn/post/NSQoPOuK)
 - [为什么访问感觉慢](https://discuss.fresns.cn/post/TFshHvWI)
 
 ## 插件问题
@@ -26,5 +31,4 @@
 ## 其他
 
 - [重复升级的方法](https://discuss.fresns.cn/post/YqMweATz)
-- [登录后台 419 错误](https://discuss.fresns.cn/post/u4txRlqk)
 - [邮箱和短信的配置逻辑和介绍](https://discuss.fresns.cn/post/ijIhtG0Q)
