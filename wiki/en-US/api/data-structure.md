@@ -624,9 +624,9 @@
         // Common Data Structure -> User Info
         "isPostCreator": "Boolean / 是否为帖子作者"
     },
-    "replyToUser": {
-        // 是否回复某个用户
-        // Common Data Structure -> User Info
+    "replyToComment": {
+        // 是否回复某个评论
+        // Common Data Structure -> Comment Info
     },
     "subComments": [
         {

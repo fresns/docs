@@ -624,9 +624,9 @@
         // 通用数据结构->用户信息
         "isPostCreator": "Boolean / 是否为帖子作者"
     },
-    "replyToUser": {
-        // 是否回复某个用户
-        // 通用数据结构->用户信息
+    "replyToComment": {
+        // 是否回复某个评论
+        // 通用数据结构->评论信息
     },
     "subComments": [
         {
