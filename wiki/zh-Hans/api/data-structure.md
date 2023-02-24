@@ -829,6 +829,8 @@
 {
     "id": "Number / 日志 ID",
     "cid": "String / 所属评论 ID",
+    "pid": "String / 评论的帖子 ID",
+    "parentCid": "String / 回复评论的 ID",
     "isPluginEditor": "Boolean / 是否插件编辑器",
     "editorUnikey": "String / 编辑器插件 Unikey",
     "editorUrl": "String / 编辑器访问地址",

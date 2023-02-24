@@ -40,6 +40,8 @@
 | commentCountLt | Number | *optional* | 评论总数小于 |
 | orderType | String | *optional* | 排序类型，默认 `createDate`<br>createDate,like,dislike,follow,block,comment |
 | orderDirection | String | *optional* | 排序方向，默认 `desc`<br>`asc`,`desc` |
+| blockGroups | String | *optional* | 过滤小组，多个以英文逗号隔开 |
+| blockHashtags | String | *optional* | 过滤话题，多个以英文逗号隔开 |
 | whitelistKeys | String | *optional* | 白名单键名，只返回给定键名的键值对<br>多个以英文逗号隔开，支持「点表示法」表示多维数组 |
 | blacklistKeys | String | *optional* | 黑名单键名，从返回数据中删除指定的键值对<br>多个以英文逗号隔开，支持「点表示法」表示多维数组 |
 | pluginRatingId | Number | *optional* | 排序编号（插件专用） |
