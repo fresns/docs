@@ -19,6 +19,13 @@
 | --- | --- | --- | --- |
 | conversationId | Number | YES | 对话 ID |
 
+## Query 参数
+
+| 参数名 | 类型 | 是否必传 | 说明 |
+| --- | --- | --- | --- |
+| whitelistKeys | String | NO | 白名单键名，只返回给定键名的键值对<br>多个以英文逗号隔开，支持「点表示法」表示多维数组<br>仅对 `user` 参数有效 |
+| blacklistKeys | String | NO | 黑名单键名，从返回数据中删除指定的键值对<br>多个以英文逗号隔开，支持「点表示法」表示多维数组<br>仅对 `user` 参数有效 |
+
 ## 返回结果
 
 ```json
