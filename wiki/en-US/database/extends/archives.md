@@ -8,6 +8,8 @@
 | description | text | 介绍 |  | YES | **多语言** |
 | code | varchar(32) | 代码 |  | NO | **Unique**，纯英文字母，不支持任何符号或空格 |
 | usage_type | tinyint *UNSIGNED* | 用途类型 |  | NO | 1.用户 / 2.小组 / 3.话题 / 4.帖子 / 5.评论 |
+| usage_group_id | int *UNSIGNED* | 用途是小组内容专用时使用 | 0 | NO | 关联字段 [groups->id](../contents/groups.md)<br>关联插件所属小组，`0` 表示否 |
+| usage_group_content_type | tinyint *UNSIGNED* | 用途为小组哪种内容使用 |  | YES | 1.帖子 / 2.评论 |
 | form_element | varchar(16) | 表单元素 |  | NO | HTML form 元素 |
 | element_type | varchar(16) | 表单元素类型 |  | YES | 与 form_element 对应的类型 |
 | element_options | json | 选项类型配置值 |  | YES | 数组格式，支持**多语言**存储<br>为 select,checkbox,radio 等类型提供选项值 |

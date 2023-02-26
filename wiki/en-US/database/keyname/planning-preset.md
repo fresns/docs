@@ -64,14 +64,14 @@
 | users | extcredits5_unit | 扩展 5 单位 | 1 |
 | users | extcredits5_status | 扩展 5 状态（1.不启用 2.私有 3.公开） | 1 |
 
-## Operation Notice
+## Operation
 
 | Key Tag | Key Name | Description | is API |
 | --- | --- | --- | --- |
-| systems | system_bulletin_name | System bulletin name, multi-language | 1 |
-| systems | system_bulletin_contents | System bulletin content, arrays, multiple languages | 1 |
+| commons | bulletin_name | System bulletin name, multi-language | 1 |
+| commons | bulletin_contents | System bulletin content, arrays, multiple languages | 1 |
 
-### system_bulletin_contents Example
+### Example: bulletin_contents
 
 ```json
 [
@@ -83,6 +83,17 @@
         "descriptionColor": null,
         "buttonName": "Learn more",
         "buttonLink": "https://fresns.org/guide/feedback.html",
+    }
+]
+```
+
+### Example: advertising
+
+```json
+[
+    {
+        "code": "webAd",
+        "content": "", // html code
     }
 ]
 ```

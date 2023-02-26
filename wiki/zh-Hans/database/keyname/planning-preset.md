@@ -64,14 +64,15 @@
 | users | extcredits5_unit | 扩展 5 单位 | 1 |
 | users | extcredits5_status | 扩展 5 状态（1.不启用 2.私有 3.公开） | 1 |
 
-## 运营通知
+## 运营配置
 
 | 键标签 | 键名 | 备注 | 是否接口输出 |
 | --- | --- | --- | --- |
-| systems | system_bulletin_name | 系统公告名称，多语言 | 1 |
-| systems | system_bulletin_contents | 系统公告内容，数组，多语言 | 1 |
+| commons | bulletin_name | 系统公告名称，多语言 | 1 |
+| commons | bulletin_contents | 系统公告内容，数组，多语言 | 1 |
+| commons | advertising | 广告内容的数组 | 1 |
 
-### system_bulletin_contents 示例
+### 示例: bulletin_contents
 
 ```json
 [
@@ -83,6 +84,17 @@
         "descriptionColor": null,
         "buttonName": "Learn more",
         "buttonLink": "https://fresns.org/guide/feedback.html",
+    }
+]
+```
+
+### 示例: advertising
+
+```json
+[
+    {
+        "code": "webAd",
+        "content": "", // html code
     }
 ]
 ```
