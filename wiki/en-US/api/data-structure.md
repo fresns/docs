@@ -185,9 +185,9 @@
         "extcredits5Name": "String / 名称",
         "extcredits5Unit": "String / 单位"
     },
-    "archives": {
-        "String / 扩展参数 Code": "String / 扩展参数内容"
-    },
+    "archives": [
+        // Common Data Structure -> Extend Code Info
+    ],
     "operations": {
         // Common Data Structure -> Extend Operation Info
     },
@@ -278,9 +278,9 @@
         // 数据表 groups->permissions
     },
     "createDate": "String / 小组创建日期",
-    "archives": {
-        "String / 扩展参数 Code": "String / 扩展参数内容"
-    },
+    "archives": [
+        // Common Data Structure -> Extend Code Info
+    ],
     "operations": {
         // Common Data Structure -> Extend Operation Info
     },
@@ -288,7 +288,6 @@
         // Common Data Structure -> Extend Content Info
     },
     "creator": {
-        // 小组创建者
         // Common Data Structure -> User Info
     },
     "publishRule": {
@@ -345,9 +344,9 @@
     "commentCount": "Number / 评论总数",
     "commentDigestCount": "Number / 精华评论总数",
     "createDate": "String / 话题创建日期",
-    "archives": {
-        "String / 扩展参数 Code": "String / 扩展参数内容"
-    },
+    "archives": [
+        // Common Data Structure -> Extend Code Info
+    ],
     "operations": {
         // Common Data Structure -> Extend Operation Info
     },
@@ -433,9 +432,9 @@
     },
     "isComment": "Boolean / 是否可评论",
     "isCommentPublic": "Boolean / 是否公开评论（不公开则仅帖子作者可见）",
-    "archives": {
-        "String / 扩展参数 Code": "String / 扩展参数内容"
-    },
+    "archives": [
+        // Common Data Structure -> Extend Code Info
+    ],
     "operations": {
         // Common Data Structure -> Extend Operation Info
     },
@@ -576,9 +575,9 @@
         "unit": "String / 与我距离的单位 km 或 mi",
     },
     "isCommentPublic": "Boolean / 是否公开评论（不公开则仅帖子作者可见）",
-    "archives": {
-        "String / 扩展参数 Code": "String / 扩展参数内容"
-    },
+    "archives": [
+        // Common Data Structure -> Extend Code Info
+    ],
     "operations": {
         // Common Data Structure -> Extend Operation Info
     },
@@ -780,12 +779,11 @@
     "state": "Number / 状态",
     "reason": "String / 审核拒绝原因",
     "creator": {
-        // 创建者
         // Common Data Structure -> User Info
     },
-    "archives": {
-        "String / 扩展参数 Code": "String / 扩展参数内容"
-    },
+    "archives": [
+        // Common Data Structure -> Extend Code Info
+    ],
     "operations": {
         // Common Data Structure -> Extend Operation Info
     },
@@ -861,12 +859,11 @@
     "state": "Number / 状态",
     "reason": "String / 审核拒绝原因",
     "creator": {
-        // 创建者
         // Common Data Structure -> User Info
     },
-    "archives": {
-        "String / 扩展参数 Code": "String / 扩展参数内容"
-    },
+    "archives": [
+        // Common Data Structure -> Extend Code Info
+    ],
     "operations": {
         // Common Data Structure -> Extend Operation Info
     },
@@ -944,6 +941,19 @@
     "transcodingState": "Number / 音视频转码状态 1.待转码 2.转码中 3.转码完成 4.转码失败"
 }
 ```
+
+## Extend Code Info
+
+```json
+{
+    "code": "String / 标识码",
+    "name": "String / 名称",
+    "description": "String / 描述",
+    "value": "String / 参数值",
+}
+```
+
+- 参考资料: [archives](../database/extends/archives.md)
 
 ## Extend Operation Info
 
