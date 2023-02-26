@@ -24,7 +24,7 @@
 | input_size | smallint *UNSIGNED* | 大小 |  | YES |  |
 | input_step | smallint *UNSIGNED* | 步骤 |  | YES |  |
 | rating | smallint *UNSIGNED* | 排列顺序 | 9 | NO | 升序排序 |
-| api_type | varchar(16) | 接口类型 | string | NO | 同[配置表](../systems/configs.md) `item_type` 字段逻辑一样，支持 file/plugin/plugins 等类型 |
+| value_type | varchar(16) | 数据值类型 | string | NO | 同[配置表](../systems/configs.md) `item_type` 字段逻辑一样，支持 file/plugin/plugins 等类型 |
 | is_enable | tinyint *UNSIGNED* | 是否有效 | 1 | NO | 0.无效 / 1.有效<br>无效后，所有关联均无效 |
 | created_at | timestamp | 创建时间 | CURRENT_TIMESTAMP | NO |  |
 | updated_at | timestamp | 更新时间 |  | YES |  |
