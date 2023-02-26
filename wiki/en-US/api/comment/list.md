@@ -23,8 +23,9 @@
 | uidOrUsername | String | *optional* | 指定范围：用户 |
 | pid | String | *optional* | 指定范围：帖子 |
 | cid | String | *optional* | 指定范围：评论（获取该评论的子孙级评论） |
-| gid | String | *optional* | 指定范围：小组 |
 | hid | String | *optional* | 指定范围：话题 |
+| gid | String | *optional* | 指定范围：小组 |
+| includeSubgroups | Boolean | *optional* | 与 `gid` 配置使用，是否包含子级小组的内容 |
 | sticky | Boolean | *optional* | 是否置顶（留空输出全部） |
 | allDigest | Boolean | *optional* | 指定范围：全部精华，一级精华和二级精华<br>传参后，将忽略 `digestState` 参数 |
 | digestState | Number | *optional* | 指定范围：精华（留空输出全部）<br>digest_state 字段 1.否 2.一级精华 3.二级精华 |
