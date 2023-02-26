@@ -274,11 +274,11 @@
     "commentCount": "Number / 评论总数",
     "commentDigestCount": "Number / 精华评论总数",
     "permissions": {
-        // Object 角色权限
+        // 小组配置自定义参数
         // 数据表 groups->permissions
     },
     "createDate": "String / 小组创建日期",
-    "archives": [
+    "contentArchive": [
         // 通用数据结构->扩展参数信息
     ],
     "operations": {
@@ -293,9 +293,60 @@
     },
     "publishRule": {
         "allowPost": "Boolean / 是否有权发帖子",
+        "subGroupPost": "Boolean / 是否只能发表到子级小组",
         "reviewPost": "Boolean / 发帖子是否需要审核",
         "allowComment": "Boolean / 是否有权发评论",
         "reviewComment": "Boolean / 发评论是否需要审核"
+    },
+    "contentMeta": {
+        "post": [
+            {
+                "unikey": "String / 插件 Unikey",
+                "name": "String / 名称",
+                "description": "String / 描述",
+                "code": "String / Code",
+                "formElement": "String / HTML 表单元素",
+                "elementType": "String / 表单元素类型",
+                "elementOptions": "Array / 选项类型配置值",
+                "isMultiple": "Boolean / 是否多选，对 select,email,file 等元素有效",
+                "isRequired": "Boolean / 是否必填",
+                "fileType": "Number / 1.图片 2.视频 3.音频 4.文档", // elementType 为 file 时使用
+                "fileAccept": "String / 支持的文件后缀，例如 .jpg,.png", // elementType 为 file 时使用
+                "fileExt": "String / 支持的文件后缀，例如 jpg,png", // elementType 为 file 时使用
+                "inputPattern": "String / 自定义正则表达式",
+                "inputMax": "Number / 最大值",
+                "inputMin": "Number / 最小值",
+                "inputMaxlength": "Number / 最大长度",
+                "inputMinlength": "Number / 最小长度",
+                "inputSize": "Number / 大小",
+                "inputStep": "Number / 步骤",
+                "valueType": "String / 数据值类型"
+            }
+        ],
+        "comment": [
+            {
+                "unikey": "String / 插件 Unikey",
+                "name": "String / 名称",
+                "description": "String / 描述",
+                "code": "String / Code",
+                "formElement": "String / HTML 表单元素",
+                "elementType": "String / 表单元素类型",
+                "elementOptions": "Array / 选项类型配置值",
+                "isMultiple": "Boolean / 是否多选，对 select,email,file 等元素有效",
+                "isRequired": "Boolean / 是否必填",
+                "fileType": "Number / 1.图片 2.视频 3.音频 4.文档", // elementType 为 file 时使用
+                "fileAccept": "String / 支持的文件后缀，例如 .jpg,.png", // elementType 为 file 时使用
+                "fileExt": "String / 支持的文件后缀，例如 jpg,png", // elementType 为 file 时使用
+                "inputPattern": "String / 自定义正则表达式",
+                "inputMax": "Number / 最大值",
+                "inputMin": "Number / 最小值",
+                "inputMaxlength": "Number / 最大长度",
+                "inputMinlength": "Number / 最小长度",
+                "inputSize": "Number / 大小",
+                "inputStep": "Number / 步骤",
+                "valueType": "String / 数据值类型"
+            }
+        ],
     },
     "admins": [
         {

@@ -36,8 +36,13 @@
 
 ```json
 {
-    "archives": {
-        "archives->code": "archive_usages->archive_value"
-    }
+    "archives": [
+        {
+            "code": "String / 标识码",
+            "name": "String / 名称",
+            "description": "String / 描述",
+            "value": "String / 参数值",
+        }
+    ]
 }
 ```
