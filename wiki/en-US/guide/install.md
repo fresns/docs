@@ -18,7 +18,7 @@ Before you install Fresns, it's important to check that your server meets the re
 
 ## Download
 
-- Latest Version: v2.6.1 (2023-02-17)
+- Latest Version: v2.7.0 (2023-02-26)
 
 ::: tip Option 1: Download the full package manually
 - [Click to download](https://app.fresns.org/latest.zip)
@@ -38,7 +38,7 @@ php artisan vendor:publish --provider="Fresns\ThemeManager\Providers\ThemeServic
 php artisan vendor:publish --provider="Fresns\MarketManager\Providers\MarketServiceProvider"
 ```
 
-- If you need a website, please go to the application market to select a website engine and theme template
+- If you need a website, please go to the application market to select a [website engine](https://market.fresns.com/open-source/engines) and [theme template](https://market.fresns.com/open-source/themes)
 :::
 
 ## Installing
