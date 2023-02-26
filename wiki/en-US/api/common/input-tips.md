@@ -29,9 +29,8 @@
     "data": [
         {
             "fsid": "String / 简写 id 或者 slug",
-            "name": "String / 名称",
+            "name": "String / 名称（或昵称）",
             "image": "String / 图片链接",
-            "nickname": "String / type=user 专用，昵称",
             "followStatus": "Boolean / type=user 专用，关注状态",
         }
     ]
