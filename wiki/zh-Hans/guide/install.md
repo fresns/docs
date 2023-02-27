@@ -26,7 +26,7 @@ Fresns 是一款基于 PHP 和 MySQL 开发的社交社区网络服务软件。
 
 ::: tip 方式 1: 手动下载完整包（已内置网站引擎和主题模板）
 - [中国版](https://app.fresns.cn/latest.zip)
-- [国际版](https://fresns.org/guide/install.html)
+- [国际版](https://fresns.org/guide/install.html#download)
 :::
 
 ::: tip 方式 2: 基于 Composer 下载
