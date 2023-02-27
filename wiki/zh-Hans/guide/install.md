@@ -87,20 +87,20 @@ su -c "cd /www/wwwroot/fresns && php artisan schedule:run >> /dev/null 2>&1" -s 
 安装成功后，主程序根目录会有一个 `.env` 文件，该文件用于存储 Fresns 所有配置信息，具体介绍如下：
 
 ```php
-APP_ENV=production  // 运营环境，测试使用为 local，正式运营为 production
-APP_KEY=加密密钥  // 数据加密 key，可重新生成，指令为 php artisan key:generate
-APP_DEBUG=false // 是否输出详细报错信息，调试时改为 true
-APP_URL=主程序网址  // 例如 https://discuss.fresns.cn
-APP_FOUNDER=1 // 创始人账号 ID (accounts > id)
+APP_ENV=production  #运营环境，测试使用为 local，正式运营为 production
+APP_KEY=加密密钥  #数据加密 key，可重新生成，指令为 php artisan key:generate
+APP_DEBUG=false  #是否输出详细报错信息，调试时改为 true
+APP_URL=主程序网址  #例如 https://discuss.fresns.cn
+APP_FOUNDER=1  #创始人账号 ID (accounts > id)
 
-DB_CONNECTION=mysql  // 数据库类型，当前只支持 MySQL
-DB_HOST=数据库主机  // 默认为 127.0.0.1
-DB_PORT=数据库主机端口  // 默认为 3306
+DB_CONNECTION=mysql  #数据库类型，当前只支持 MySQL
+DB_HOST=数据库主机  #默认为 127.0.0.1
+DB_PORT=数据库主机端口  #默认为 3306
 DB_DATABASE=数据库名
 DB_USERNAME=用户名
 DB_PASSWORD=密码
-DB_TIMEZONE=时区  // 数据库时区
-DB_PREFIX=表前缀  // 默认为 fs_
+DB_TIMEZONE=时区  #数据库时区
+DB_PREFIX=表前缀  #默认为 fs_
 ```
 
 ### 缓存配置
@@ -115,14 +115,14 @@ DB_PREFIX=表前缀  // 默认为 fs_
 *除了缓存，其他驱动系统支持 Redis 的也可以配置使用。*
 
 ```php
-REDIS_HOST=127.0.0.1 // Host
-REDIS_PASSWORD=null // 密码
-REDIS_PORT=6379 // 端口
+REDIS_HOST=127.0.0.1  #Host
+REDIS_PASSWORD=null  #密码
+REDIS_PORT=6379  #端口
 
-CACHE_DRIVER=redis // 缓存驱动
-BROADCAST_DRIVER=redis // 广播驱动
-SESSION_DRIVER=redis // 会话驱动
-QUEUE_CONNECTION=redis // 队列驱动
+CACHE_DRIVER=redis  #缓存驱动
+BROADCAST_DRIVER=redis  #广播驱动
+SESSION_DRIVER=redis  #会话驱动
+QUEUE_CONNECTION=redis  #队列驱动
 ```
 
 **Memcached**
@@ -130,13 +130,13 @@ QUEUE_CONNECTION=redis // 队列驱动
 *Memcached 仅支持驱动缓存和会话。*
 
 ```php
-MEMCACHED_HOST=127.0.0.1 // Host
-MEMCACHED_PORT=11211 // 端口
-MEMCACHED_USERNAME=null // 用户名
-MEMCACHED_PASSWORD=null // 密码
+MEMCACHED_HOST=127.0.0.1 #Host
+MEMCACHED_PORT=11211 #端口
+MEMCACHED_USERNAME=null #用户名
+MEMCACHED_PASSWORD=null #密码
 
-CACHE_DRIVER=memcached // 缓存驱动
-SESSION_DRIVER=memcached // 会话驱动
+CACHE_DRIVER=memcached #缓存驱动
+SESSION_DRIVER=memcached #会话驱动
 ```
 
 ### 时区配置介绍

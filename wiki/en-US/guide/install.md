@@ -83,20 +83,20 @@ su -c "cd /www/wwwroot/fresns && php artisan schedule:run >> /dev/null 2>&1" -s 
 After successful installation, there will be an `.env` file in the root directory of the main program, which is used to store all the configuration information of Fresns. The details are as follows:
 
 ```php
-APP_ENV=production  // Operating environment, local for test use, production for official operation
-APP_KEY=Encryption Key  // Data encryption key, which can be regenerated with the command php artisan key:generate
-APP_DEBUG=false // Whether to output detailed error messages
-APP_URL=Main Program URL  // example https://discuss.fresns.org
-APP_FOUNDER=1 // Founder Account ID (accounts > id)
+APP_ENV=production  #Operating environment, local for test use, production for official operation
+APP_KEY=Encryption Key  #Data encryption key, which can be regenerated with the command php artisan key:generate
+APP_DEBUG=false  #Whether to output detailed error messages
+APP_URL=Main Program URL  #example https://discuss.fresns.org
+APP_FOUNDER=1  #Founder Account ID (accounts > id)
 
-DB_CONNECTION=mysql  // Database Type
-DB_HOST=  // Default is 127.0.0.1
-DB_PORT=  // Default is 3306
+DB_CONNECTION=mysql  #Database Type
+DB_HOST=  #Default is 127.0.0.1
+DB_PORT=  #Default is 3306
 DB_DATABASE=
 DB_USERNAME=
 DB_PASSWORD=
-DB_TIMEZONE=  // Database Time Zone
-DB_PREFIX=  // Default is fs_
+DB_TIMEZONE=  #Database Time Zone
+DB_PREFIX=  #Default is fs_
 ```
 
 ### Cache Config
