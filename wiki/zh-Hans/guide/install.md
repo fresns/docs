@@ -12,7 +12,7 @@ Fresns 是一款基于 PHP 和 MySQL 开发的社交社区网络服务软件。
 | 数据库 | MySQL 5.7 或 8.x |
 
 ::: info PHP 配置要求
-- 扩展要求支持：`fileinfo` `exif`
+- 扩展要求支持：`fileinfo`
 - 函数要求启用：`putenv` `symlink` `readlink` `proc_open` `passthru`
 :::
 

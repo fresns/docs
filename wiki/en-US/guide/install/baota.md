@@ -24,7 +24,7 @@ A server operation and maintenance panel for Chinese users
 
 ### PHP 扩展
 
-- PHP 扩展安装了 `fileinfo` 和 `exif`
+- PHP 扩展安装了 `fileinfo`
 
 ![PHP 扩展](https://cdn.fresns.cn/guide/baota-php-extensions.png)
 

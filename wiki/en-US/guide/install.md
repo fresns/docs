@@ -12,7 +12,7 @@ Before you install Fresns, it's important to check that your server meets the re
 | Database | MySQL 5.7 or 8.x |
 
 ::: info PHP Config Requirements
-- Extensions: `fileinfo` `exif`
+- Extensions: `fileinfo`
 - Functions: `putenv` `symlink` `readlink` `proc_open` `passthru`
 :::
 
