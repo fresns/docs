@@ -3,7 +3,7 @@
 <p align="center"><img src="https://cdn.fresns.cn/wiki/images/logo.png" width="300"></p>
 
 <p align="center">
-<img src="https://img.shields.io/badge/Laravel-v9.x-blueviolet" alt="Laravel" style="display:inline">
+<img src="https://img.shields.io/badge/Laravel-v10.x-blueviolet" alt="Laravel" style="display:inline">
 <img src="https://img.shields.io/badge/Fresns-v2.x-blue" alt="Fresns" style="display:inline;margin:0 8px">
 </p>
 
