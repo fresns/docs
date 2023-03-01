@@ -14,10 +14,13 @@ hero:
   actions:
     - theme: brand
       text: 开始使用
-      link: /guide/
+      link: /guide/install.md
     - theme: alt
-      text: 加入我们
-      link: /community/join.md
+      text: 使用案例
+      link: https://discuss.fresns.cn/group/share
+    - theme: alt
+      text: 应用市场
+      link: https://market.fresns.cn/open-source
 
 features:
   - icon: 🎉
