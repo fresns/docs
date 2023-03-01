@@ -83,20 +83,37 @@ su -c "cd /www/wwwroot/fresns && php artisan schedule:run >> /dev/null 2>&1" -s 
 After successful installation, there will be an `.env` file in the root directory of the main program, which is used to store all the configuration information of Fresns. The details are as follows:
 
 ```php
-APP_ENV=production  #Operating environment, local for test use, production for official operation
-APP_KEY=Encryption Key  #Data encryption key, which can be regenerated with the command php artisan key:generate
-APP_DEBUG=false  #Whether to output detailed error messages
-APP_URL=Main Program URL  #example https://discuss.fresns.org
-APP_FOUNDER=1  #Founder Account ID (accounts > id)
+APP_ENV=production          #Operating environment, local for test use, production for official operation
+APP_KEY=Encryption Key      #Data encryption key, which can be regenerated with the command php artisan key:generate
+APP_DEBUG=false             #Whether to output detailed error messages
+APP_URL=Main Program URL    #example https://discuss.fresns.com
+APP_FOUNDER=1               #Founder Account ID (accounts->id)
 
-DB_CONNECTION=mysql  #Database Type
-DB_HOST=  #Default is 127.0.0.1
-DB_PORT=  #Default is 3306
-DB_DATABASE=
-DB_USERNAME=
-DB_PASSWORD=
-DB_TIMEZONE=  #Database Time Zone
-DB_PREFIX=  #Default is fs_
+DB_CONNECTION=mysql           #Database Type
+DB_HOST=127.0.0.1             #Default is 127.0.0.1
+DB_PORT=3306                  #Default is 3306
+DB_DATABASE=fresns            #Database
+DB_USERNAME=fresns            #Username
+DB_PASSWORD=123456            #Password
+DB_TIMEZONE=Asia/Singapore    #Database Timezone
+DB_PREFIX=fs_                 #Default is fs_
+```
+
+### Trusted Proxies
+
+If you are running as a proxy, you need to configure trusted IP information, multiple separated by English commas.
+
+Let's take the Cloudflare proxy environment as an example and configure [IPv4](https://www.cloudflare.com/ips-v4) and [IPv6](https://www.cloudflare.com/ips-v6)
+
+```php
+# IPv4
+TRUSTED_PROXIES=173.245.48.0/20,103.21.244.0/22,103.22.200.0/22,103.31.4.0/22,141.101.64.0/18,108.162.192.0/18,190.93.240.0/20,188.114.96.0/20,197.234.240.0/22,198.41.128.0/17,162.158.0.0/15,104.16.0.0/13,104.24.0.0/14,172.64.0.0/13,131.0.72.0/22
+
+# IPv6
+TRUSTED_PROXIES=2400:cb00::/32,2606:4700::/32,2803:f800::/32,2405:b500::/32,2405:8100::/32,2a06:98c0::/29,2c0f:f248::/32
+
+# or All
+TRUSTED_PROXIES=173.245.48.0/20,103.21.244.0/22,103.22.200.0/22,103.31.4.0/22,141.101.64.0/18,108.162.192.0/18,190.93.240.0/20,188.114.96.0/20,197.234.240.0/22,198.41.128.0/17,162.158.0.0/15,104.16.0.0/13,104.24.0.0/14,172.64.0.0/13,131.0.72.0/22,2400:cb00::/32,2606:4700::/32,2803:f800::/32,2405:b500::/32,2405:8100::/32,2a06:98c0::/29,2c0f:f248::/32
 ```
 
 ### Cache Config
