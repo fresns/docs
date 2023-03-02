@@ -27,12 +27,12 @@ Before you install Fresns, it's important to check that your server meets the re
 
 ::: tip Option 2: Download via Composer
 - Download the program
-```bash
+```sh
 composer create-project fresns/fresns
 ```
 
 - Configuration Manager
-```bash
+```sh
 php artisan vendor:publish --provider="Fresns\PluginManager\Providers\PluginServiceProvider"
 php artisan vendor:publish --provider="Fresns\ThemeManager\Providers\ThemeServiceProvider"
 php artisan vendor:publish --provider="Fresns\MarketManager\Providers\MarketServiceProvider"
@@ -64,7 +64,7 @@ php artisan vendor:publish --provider="Fresns\MarketManager\Providers\MarketServ
 
 When running Fresns, you need a way to keep “scheduled tasks” running normally, and task scheduling of Laravel framework is a mechanism to ensure that main programs and plug-ins can use scheduled tasks. With task scheduling configured, the main program can regularly clean up and log off accounts and detect the expiration of user roles.
 
-```bash
+```sh
 # Task Config
 * * * * * cd /your-project-path && php artisan schedule:run >> /dev/null 2>&1
 # or
@@ -82,7 +82,7 @@ su -c "cd /www/wwwroot/fresns && php artisan schedule:run >> /dev/null 2>&1" -s 
 
 After successful installation, there will be an `.env` file in the root directory of the main program, which is used to store all the configuration information of Fresns. The details are as follows:
 
-```php
+```sh
 APP_ENV=production          #Operating environment, local for test use, production for official operation
 APP_KEY=Encryption Key      #Data encryption key, which can be regenerated with the command php artisan key:generate
 APP_DEBUG=false             #Whether to output detailed error messages
@@ -105,7 +105,7 @@ If you are running as a proxy, you need to configure trusted IP information, mul
 
 Let's take the Cloudflare proxy environment as an example and configure [IPv4](https://www.cloudflare.com/ips-v4) and [IPv6](https://www.cloudflare.com/ips-v6)
 
-```php
+```sh
 # IPv4
 TRUSTED_PROXIES=173.245.48.0/20,103.21.244.0/22,103.22.200.0/22,103.31.4.0/22,141.101.64.0/18,108.162.192.0/18,190.93.240.0/20,188.114.96.0/20,197.234.240.0/22,198.41.128.0/17,162.158.0.0/15,104.16.0.0/13,104.24.0.0/14,172.64.0.0/13,131.0.72.0/22
 
@@ -127,7 +127,7 @@ You may specify which cache driver you would like to be used by default througho
 
 *In addition to cache, other driver systems that support Redis can also be configured to use it.*
 
-```php
+```sh
 REDIS_HOST=127.0.0.1
 REDIS_PASSWORD=null
 REDIS_PORT=6379
@@ -142,7 +142,7 @@ QUEUE_CONNECTION=redis
 
 *Memcached only supports drive cache and session.*
 
-```php
+```sh
 MEMCACHED_HOST=127.0.0.1
 MEMCACHED_PORT=11211
 MEMCACHED_USERNAME=null

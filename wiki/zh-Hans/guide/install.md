@@ -31,12 +31,12 @@ Fresns 是一款基于 PHP 和 MySQL 开发的社交社区网络服务软件。
 
 ::: tip 方式 2: 基于 Composer 下载
 - 下载程序（国际版）
-```bash
+```sh
 composer create-project fresns/fresns
 ```
 
 - 配置管理器
-```bash
+```sh
 php artisan vendor:publish --provider="Fresns\PluginManager\Providers\PluginServiceProvider"
 php artisan vendor:publish --provider="Fresns\ThemeManager\Providers\ThemeServiceProvider"
 php artisan vendor:publish --provider="Fresns\MarketManager\Providers\MarketServiceProvider"
@@ -68,7 +68,7 @@ php artisan vendor:publish --provider="Fresns\MarketManager\Providers\MarketServ
 
 在运营 Fresns 时，您需要一种方法来保持「定时任务」正常运行，而 Laravel 框架的任务调度就是一个保证主程序和插件能够使用定时任务的机制。配置了任务调度，主程序就可以定时清理注销账号和检测用户角色过期等任务。
 
-```bash
+```sh
 # 任务配置
 * * * * * cd /你的项目路径 && php artisan schedule:run >> /dev/null 2>&1
 # 或
@@ -86,7 +86,7 @@ su -c "cd /www/wwwroot/fresns && php artisan schedule:run >> /dev/null 2>&1" -s 
 
 安装成功后，主程序根目录会有一个 `.env` 文件，该文件用于存储 Fresns 所有配置信息，具体介绍如下：
 
-```php
+```sh
 APP_ENV=production            #运营环境，测试使用为 local，正式运营为 production
 APP_KEY=                      #数据加密 key，可重新生成，指令为 php artisan key:generate
 APP_DEBUG=false               #是否输出详细报错信息，调试时改为 true
@@ -109,7 +109,7 @@ DB_PREFIX=fs_                 #表前缀 默认为 fs_
 
 我们以 Cloudflare 代理环境为例，配置 [IPv4](https://www.cloudflare.com/ips-v4) 和 [IPv6](https://www.cloudflare.com/ips-v6)
 
-```php
+```sh
 # IPv4
 TRUSTED_PROXIES=173.245.48.0/20,103.21.244.0/22,103.22.200.0/22,103.31.4.0/22,141.101.64.0/18,108.162.192.0/18,190.93.240.0/20,188.114.96.0/20,197.234.240.0/22,198.41.128.0/17,162.158.0.0/15,104.16.0.0/13,104.24.0.0/14,172.64.0.0/13,131.0.72.0/22
 
@@ -131,7 +131,7 @@ TRUSTED_PROXIES=173.245.48.0/20,103.21.244.0/22,103.22.200.0/22,103.31.4.0/22,14
 
 *除了缓存，其他驱动系统支持 Redis 的也可以配置使用。*
 
-```php
+```sh
 REDIS_HOST=127.0.0.1      #Host
 REDIS_PASSWORD=null       #密码
 REDIS_PORT=6379           #端口
@@ -146,7 +146,7 @@ QUEUE_CONNECTION=redis    #队列驱动
 
 *Memcached 仅支持驱动缓存和会话。*
 
-```php
+```sh
 MEMCACHED_HOST=127.0.0.1    #Host
 MEMCACHED_PORT=11211        #端口
 MEMCACHED_USERNAME=null     #用户名
