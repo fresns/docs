@@ -34,8 +34,9 @@
 | content | String | NO | 正文内容，默认自带内容 |  |
 | isMarkdown | Boolean | NO | 默认配置：内容是否为 MD 格式 |  |
 | isAnonymous | Boolean | NO | 默认配置：是否匿名 |  |
-| mapJson | Object | NO | 默认配置：位置信息 |  |
+| map | Object | NO | 默认配置：位置信息 |  |
 | eid | String | NO | 默认配置：扩展内容 |  |
+| archives | Array | NO | 默认配置：扩展参数 |  |
 
 ## 返回结果
 

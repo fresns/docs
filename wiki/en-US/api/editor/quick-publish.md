@@ -32,8 +32,9 @@
 | content | String | *optional* | 正文内容 |  |
 | isMarkdown | Boolean | *optional* | 内容是否为 MD 格式 |  |
 | isAnonymous | Boolean | *optional* | 是否匿名 |  |
-| mapJson | Object | *optional* | 位置信息 |  |
+| map | Object | *optional* | 位置信息 |  |
 | eid | String | *optional* | 扩展内容 |  |
+| archives | Array | *optional* | 扩展参数 |
 | file | File | *optional* | 图片文件 | 图片文件 |
 
 **Request Description**

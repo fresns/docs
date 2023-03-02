@@ -32,9 +32,11 @@
 | content | String | NO | 正文内容 |  |
 | isMarkdown | Boolean | NO | 内容是否为 MD 格式 |  |
 | isAnonymous | Boolean | NO | 是否匿名 |  |
-| mapJson | Object | NO | 位置信息 |  |
+| map | Object | NO | 位置信息 |  |
+| archives | Array | NO | 扩展参数 |
 | deleteMap | Boolean | NO | 删除位置信息 |  |
 | deleteFile | String | NO | 删除文件，传参 `fid` |  |
+| deleteArchive | String | NO | 删除扩展参数，传参 `code` |  |
 | deleteExtend | String | NO | 删除扩展内容，传参 `eid` |  |
 
 **接口使用说明**
@@ -44,7 +46,7 @@
     - `tableName` = 帖子 `post_logs` 评论 `comment_logs`
     - `tableColumn` = `id`
     - `tableId` = 当前草稿 ID `{draftId}`
-- 位置信息 `mapJson` 参数示例：
+- 位置信息 `map` 参数示例：
     - [查看 map id 信息](../../database/dictionary/maps.md)
     - 位置信息删除（清空）需使用 `deleteMap` 参数。
 ```json
@@ -68,6 +70,18 @@
     "poi": "",
     "poiId": "",
 }
+```
+- 扩展资料示例：
+
+```json
+[
+    {
+        "code": "code",
+        "value": "value",
+        "isPrivate": false, // 是否私有（是否对外公开展示）
+        "pluginUnikey": null
+    }
+]
 ```
 
 ## 返回结果

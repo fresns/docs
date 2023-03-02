@@ -34,8 +34,9 @@
 | content | String | *optional* | 正文内容，默认自带内容 |  |
 | isMarkdown | Boolean | *optional* | 默认配置：内容是否为 MD 格式 |  |
 | isAnonymous | Boolean | *optional* | 默认配置：是否匿名 |  |
-| mapJson | Object | *optional* | 默认配置：位置信息 |  |
+| map | Object | *optional* | 默认配置：位置信息 |  |
 | eid | String | *optional* | 默认配置：扩展内容 |  |
+| archives | Array | *optional* | 默认配置：扩展参数 |
 
 ## Return
 
