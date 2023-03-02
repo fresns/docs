@@ -105,7 +105,7 @@ DB_PREFIX=fs_                 #表前缀 默认为 fs_
 
 ### 代理环境配置
 
-如果你的运行环境为代理，需要配置可信任的 IP 信息，多个以英文逗号隔开。
+如果你的运行环境为代理，需要配置 `.env` 可信任的 IP 信息，多个以英文逗号隔开。
 
 我们以 Cloudflare 代理环境为例，配置 [IPv4](https://www.cloudflare.com/ips-v4) 和 [IPv6](https://www.cloudflare.com/ips-v6)
 

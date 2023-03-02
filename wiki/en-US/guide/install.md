@@ -101,7 +101,7 @@ DB_PREFIX=fs_                 #Default is fs_
 
 ### Trusted Proxies
 
-If you are running as a proxy, you need to configure trusted IP information, multiple separated by English commas.
+If you are running as a proxy, you need to configure `.env` trusted IP information, multiple separated by English commas.
 
 Let's take the Cloudflare proxy environment as an example and configure [IPv4](https://www.cloudflare.com/ips-v4) and [IPv6](https://www.cloudflare.com/ips-v6)
 
