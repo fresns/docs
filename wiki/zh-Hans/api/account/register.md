@@ -63,8 +63,8 @@
 - 配置表 `site_mode` 键值为 `private` 时，该接口不可请求，为 `public` 时可请求。
 - 配置表 `site_public_status` 键值为 `false` 时，该接口不可请求，为 `true` 时可请求。
 - 配置表 `site_public_service` 键值有值时，该接口不可请求，为空可以请求。
-- 配置表 `site_register_email` 键值为 `false` 时，不支持邮箱方式注册。
-- 配置表 `site_register_phone` 键值为 `false` 时，不支持手机号方式注册。
+- 配置表 `site_email_register` 键值为 `false` 时，不支持邮箱方式注册。
+- 配置表 `site_phone_register` 键值为 `false` 时，不支持手机号方式注册。
 - 必须首先查验 `verifyCode` 参数是否正确（命令字 `checkCode` 查验），正确才执行下一步。
 - 全部条件符合后，使用命令字 `addAccount` 执行注册账号，并以 nickname 参数再请求命令字 `addUser` 生成一个用户。
 :::

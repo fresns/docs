@@ -15,10 +15,12 @@
 | 运行模式 | site_mode | public | string | 公开模式 public<br>私有模式 private |
 | 公开模式：注册状态 | site_public_status | true | boolean |  |
 | 公开模式：注册功能 | site_public_service |  | **plugin** | 插件应用场景参数 `register` |
-| 公开模式：邮箱注册功能 | site_register_email | true | boolean |  |
-| 公开模式：手机号注册功能 | site_register_phone | false | boolean |  |
+| 公开模式：邮箱注册功能 | site_email_register | true | boolean |  |
+| 公开模式：手机号注册功能 | site_phone_register | false | boolean |  |
 | 公开模式：登录时同步注册 | site_login_or_register | false | boolean |  |
 | 私有模式：开放状态 | site_private_status | false | boolean |  |
 | 私有模式：支持插件 | site_private_service |  | **plugin** | 插件应用场景参数 `join` |
 | 私有模式：到期后的状态 | site_private_end_after | 1 | number | `1` 站点内容全部不可见<br>`2` 到期前内容可见，新内容不可见 |
+| 登录支持：邮箱 | site_email_login | true | boolean |  |
+| 登录支持：手机号 | site_phone_login | false | boolean |  |
 | 管理员邮箱 | site_email |  | string | 当运行出错时，展示给用户，便于用户反馈问题。 |
