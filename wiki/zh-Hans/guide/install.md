@@ -22,7 +22,7 @@ Fresns 是一款基于 PHP 和 MySQL 开发的社交社区网络服务软件。
 
 > 中国版与国际版的功能一致，无区别，只是彼此使用的应用市场不同，中国版应用市场部署在中国境内服务器，并且数据与国际版互不相通。
 
-- 最新版: [v2.7.0 (2023-02-26)](https://discuss.fresns.cn/post/fresns-v2-7-0)
+- 最新版: [v2.7.1 (2023-03-02)](https://discuss.fresns.cn/post/fresns-v2-7-1)
 
 ::: tip 方式 1: 手动下载完整包（已内置网站引擎和主题模板）
 - [中国版](https://app.fresns.cn/latest.zip)
