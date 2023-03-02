@@ -33,11 +33,12 @@
 | isMarkdown | Boolean | *optional* | 内容是否为 MD 格式 |  |
 | isAnonymous | Boolean | *optional* | 是否匿名 |  |
 | map | Object | *optional* | 位置信息 |  |
+| extends | Array | *optional* | 扩展内容 |  |
 | archives | Array | *optional* | 扩展参数 |
 | deleteMap | Boolean | *optional* | 删除位置信息 |  |
 | deleteFile | String | *optional* | 删除文件，传参 `fid` |  |
-| deleteArchive | String | *optional* | 删除扩展参数，传参 `code` |  |
 | deleteExtend | String | *optional* | 删除扩展内容，传参 `eid` |  |
+| deleteArchive | String | *optional* | 删除扩展参数，传参 `code` |  |
 
 **Request Description**
 
@@ -70,6 +71,30 @@
     "poi": "",
     "poiId": "",
 }
+```
+- 扩展内容示例：
+
+```json
+[
+    {
+        "eid": "eid",
+        "canDelete": true, // 用户是否可以直接删除
+        "rating": 9, // 排序
+        "pluginUnikey": null
+    }
+]
+```
+- 扩展参数示例：
+
+```json
+[
+    {
+        "code": "code",
+        "value": "value",
+        "isPrivate": false, // 是否私有（是否对外公开展示）
+        "pluginUnikey": null
+    }
+]
 ```
 
 ## Return

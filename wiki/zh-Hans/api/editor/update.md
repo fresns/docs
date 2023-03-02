@@ -33,11 +33,12 @@
 | isMarkdown | Boolean | NO | 内容是否为 MD 格式 |  |
 | isAnonymous | Boolean | NO | 是否匿名 |  |
 | map | Object | NO | 位置信息 |  |
-| archives | Array | NO | 扩展参数 |
+| extends | Array | NO | 扩展内容 |  |
+| archives | Array | NO | 扩展参数 |  |
 | deleteMap | Boolean | NO | 删除位置信息 |  |
 | deleteFile | String | NO | 删除文件，传参 `fid` |  |
-| deleteArchive | String | NO | 删除扩展参数，传参 `code` |  |
 | deleteExtend | String | NO | 删除扩展内容，传参 `eid` |  |
+| deleteArchive | String | NO | 删除扩展参数，传参 `code` |  |
 
 **接口使用说明**
 
@@ -71,7 +72,19 @@
     "poiId": "",
 }
 ```
-- 扩展资料示例：
+- 扩展内容示例：
+
+```json
+[
+    {
+        "eid": "eid",
+        "canDelete": true, // 用户是否可以直接删除
+        "rating": 9, // 排序
+        "pluginUnikey": null
+    }
+]
+```
+- 扩展参数示例：
 
 ```json
 [

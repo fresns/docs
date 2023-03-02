@@ -33,7 +33,7 @@
 | isMarkdown | Boolean | NO | 内容是否为 MD 格式 |  |
 | isAnonymous | Boolean | NO | 是否匿名 |  |
 | map | Object | NO | 位置信息 |  |
-| eid | String | NO | 扩展内容 |  |
+| extends | Array | NO | 扩展内容 |  |
 | archives | Array | NO | 扩展参数 |  |
 | file | File | NO | 图片文件 | 图片文件 |
 

@@ -35,7 +35,7 @@
 | isMarkdown | Boolean | NO | 默认配置：内容是否为 MD 格式 |  |
 | isAnonymous | Boolean | NO | 默认配置：是否匿名 |  |
 | map | Object | NO | 默认配置：位置信息 |  |
-| eid | String | NO | 默认配置：扩展内容 |  |
+| extends | Array | NO | 默认配置：扩展内容 |  |
 | archives | Array | NO | 默认配置：扩展参数 |  |
 
 ## 返回结果
