@@ -57,6 +57,7 @@ Whether it is website or mobile application, the use of plug-ins is embedded in 
 | `block` | Block Operation | *Ibid* |
 | `manage` | Management Functions | *Ibid* |
 | `join` | Register to join | Register or Login Account |
+| `renewal` | Member Renewal | Private mode user renewal |
 | `connect` | Connect Management | Manage account connect bindings |
 | `walletRecharge` | Recharge Extension |  |
 | `walletWithdraw` | Withdrawal Extension |  |
