@@ -147,6 +147,7 @@ X-Fresns-Aid=wIfu6jaF&X-Fresns-Aid-Token=uoX1hk6SHUgB2MFGJwNx38dem9DA7Vsz&X-Fres
     - `fs_user_panel('key')` 调用 [/api/v2/user/panel](user/panel.md) 接口的 `data` 参数
     - 其他...
 - 由于全局数据每页都可能用到，为了避免频繁请求接口影响加载速度，所以我们在客户端采用了缓存。
-- 我们使用 `/api/v2/global/configs?keys=cache_datetime,cache_minutes` 检测缓存有效期，过期将自动重新缓存。
-    - `cache_datetime` 服务端最后一次配置的时间
-    - `cache_minutes` 建议客户端缓存保存最长分钟数，为空表示不限制
+- **配置项**：我们使用 `/api/v2/global/configs?keys=cache_datetime,cache_minutes` 检测缓存有效期，过期将自动重新缓存。
+    - `cache_datetime` 服务端最后一次配置的时间。
+    - `cache_minutes` 建议客户端缓存保存最长分钟数，为空 `null` 表示不限制。不限制则建议定期请求接口只获取 `cache_datetime,cache_minutes` 配置，对比有效期是否和本地一致，不一致则表示服务端已经更新配置，请重新缓存。
+- **用户资料**：我们建议用户登录后缓存，当用户操作了互动功能，比如点赞、发表、修改资料等操作后，重新再获取用户资料再缓存。

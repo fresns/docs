@@ -147,6 +147,7 @@ X-Fresns-Aid=wIfu6jaF&X-Fresns-Aid-Token=uoX1hk6SHUgB2MFGJwNx38dem9DA7Vsz&X-Fres
     - `fs_user_panel('key')` Call the `data` parameter of the [/api/v2/user/panel](user/panel.md) interface
     - Other...
 - Since global data may be used on every page, we use caching on the client side in order to avoid frequent requests to the interface affecting the loading speed.
-- We use `/api/v2/global/configs?keys=cache_datetime,cache_minutes` to detect cache expiration, so that cache expiration will be automatically re-cached.
-    - `cache_datetime` Datetime of last server-side configuration
-    - `cache_minutes` Recommended maximum number of minutes for client-side cache storage, null means no limit
+- **Configuration Items**: We use `/api/v2/global/configs?keys=cache_datetime,cache_minutes` to detect cache expiration, so that cache expiration will be automatically re-cached.
+    - `cache_datetime` Datetime of last server-side configuration.
+    - `cache_minutes` Recommend that the client caches be saved for a maximum number of minutes, with a value of `null` indicating no limit. If there is no limit, it is suggested to periodically request the interface and only obtain the `cache_datetime,cache_minutes` configuration, compare the validity period with that of the local one. If they are inconsistent, it means that the server has updated the configuration, so please re-cache it.
+- **User Profile**: We recommend caching user data after login. When the user interacts with features such as like, publish, or modifying their profile, we suggest retrieving the user data again and recaching it.
