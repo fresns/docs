@@ -17,6 +17,7 @@
 
 | Parameter Name | Type | Required | Description |
 | --- | --- | --- | --- |
+| roles | String | *optional* | 指定主角色，多个以英文逗号隔开 |
 | verified | Boolean | *optional* | 认证状态 |
 | gender | Number | *optional* | 性别 gender 字段<br>`1` 未设置 / `2` 男 / `3` 女 |
 | createDate | String | *optional* | 注册日期：`today`,`yesterday`,`week`,`lastWeek`,`month`,`lastMonth`,`year`,`lastYear` |
