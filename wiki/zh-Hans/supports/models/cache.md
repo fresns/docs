@@ -60,8 +60,10 @@ fresns_user_ban_words
 fresns_conversation_ban_words
 fresns_role_{$id}_{$langTag}
 fresns_code_messages_{$unikey}_{$langTag}
-fresns_api_sticker_tree_{$langTag}
+fresns_api_config_models
+fresns_api_configs_{$langTag}
 fresns_api_archives_{$type}_{$unikey}_{$langTag}
+fresns_api_sticker_tree_{$langTag}
 ```
 
 ## 多语言
