@@ -19,9 +19,6 @@
 | --- | --- | --- | --- |
 | keys | String | *optional* | 键名，获取指定键名的配置项，多个以英文逗号隔开 |
 | tags | String | *optional* | 键标签，获取指定键标签的配置项，多个以英文逗号隔开 |
-| isAll | Boolean | NO | 是否输出全部结果（不分页） |
-| pageSize | Number | *optional* | 每页显示条数（默认 50 条） |
-| page | Number | *optional* | 页码（默认 1） |
 
 **Request Description**
 
@@ -38,16 +35,8 @@
     "code": 0,
     "message": "ok",
     "data": {
-        "pagination": {
-            "total": "Number / How much data in total",
-            "pageSize": "Number / How much data on each page",
-            "currentPage": "Number / Current page number",
-            "lastPage": "Number / Last page number"
-        },
-        "list": {
-            "key name": "key value",
-            "itemKey": "itemValue",
-        }
+        "itemKey": "itemValue",
+        "key name": "key value",
     }
 }
 ```
