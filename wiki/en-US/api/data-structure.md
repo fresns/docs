@@ -102,7 +102,7 @@
     "verifiedIcon": "String / 自定义认证图标",
     "verifiedDesc": "String / 认证介绍",
     "verifiedDateTime": "String / 认证时间",
-    "isExpiry": "Boolean / 用户是否过期，公开模式始终为 false",
+    "expired": "Boolean / 用户是否过期，公开模式始终为 false",
     "expiryDateTime": "String / 用户过期时间",
     "lastPublishPost": "String / 最后发帖时间",
     "lastPublishComment": "String / 最后评论时间",
@@ -369,8 +369,8 @@
         "dislikeStatus": "Boolean / Dislike Status",
         "followStatus": "Boolean / Follow Status",
         "followNote": "String / 我对该小组的关注备注",
-        "followIsExpiry": "Boolean / 是否过期，公开小组模式始终为 false",
-        "followEndDateTime": "String / 过期时间",
+        "followExpired": "Boolean / 是否过期，公开小组模式始终为 false",
+        "followExpiryDateTime": "String / 过期时间",
         "blockStatus": "Boolean / Block Status",
         "blockNote": "String / 我对该小组的屏蔽备注"
     }
