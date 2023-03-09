@@ -139,6 +139,7 @@
     "accountPoliciesPrivacy": "隐私政策",
     "accountPoliciesCookies": "Cookies 使用条款",
     "accountPoliciesDelete": "注销说明",
+    "accountRealName": "实名认证",
     "password": "密码",
     "passwordCurrent": "当前密码",
     "passwordNew": "新密码",

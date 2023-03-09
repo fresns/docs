@@ -140,6 +140,7 @@
     {"name":"accountPoliciesPrivacy","canDelete":false},
     {"name":"accountPoliciesCookies","canDelete":false},
     {"name":"accountPoliciesDelete","canDelete":false},
+    {"name":"accountRealName","canDelete":false},
     {"name":"password","canDelete":false},
     {"name":"passwordCurrent","canDelete":false},
     {"name":"passwordNew","canDelete":false},

@@ -139,6 +139,7 @@
     "accountPoliciesPrivacy": "Data Policy",
     "accountPoliciesCookies": "Cookies Policy",
     "accountPoliciesDelete": "Delete Account Description",
+    "accountRealName": "Account Real Name",
     "password": "Password",
     "passwordCurrent": "Current password",
     "passwordNew": "New password",

@@ -139,6 +139,7 @@
     "accountPoliciesPrivacy": "隱私政策",
     "accountPoliciesCookies": "Cookie 使用條款",
     "accountPoliciesDelete": "註銷說明",
+    "accountRealName": "實名認證",
     "password": "密碼",
     "passwordCurrent": "當前密碼",
     "passwordNew": "新密碼",
