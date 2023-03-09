@@ -144,13 +144,18 @@
 | fresns.follow.group.comments | /follows/group-comments.blade.php | I follow groups comments |
 | fresns.follow.hashtag.comments | /follows/hashtag-comments.blade.php | I follow hashtags comments |
 
-## Message
+## Notifications
 
 | Route Name | View File | Description |
 | --- | --- | --- |
-| fresns.message.index | /messages/index.blade.php | Message Home |
-| fresns.message.conversation | /messages/conversation.blade.php | Conversation |
-| fresns.message.notifications | /messages/notifications.blade.php | Notifications |
+| fresns.notifications.index | /notifications/index.blade.php | Notification List |
+
+## Messages
+
+| Route Name | View File | Description |
+| --- | --- | --- |
+| fresns.messages.index | /messages/index.blade.php | Conversation List |
+| fresns.messages.conversation | /messages/conversation.blade.php | Conversation Messages |
 
 ## Editor
 

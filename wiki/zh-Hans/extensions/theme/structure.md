@@ -144,13 +144,18 @@
 | fresns.follow.group.comments | /follows/group-comments.blade.php | 关注小组的评论 |
 | fresns.follow.hashtag.comments | /follows/hashtag-comments.blade.php | 关注话题的评论 |
 
-## 消息
+## 通知
 
 | 路由名 | 模板文件 | 介绍 |
 | --- | --- | --- |
-| fresns.message.index | /messages/index.blade.php | 消息主页 |
-| fresns.message.conversation | /messages/conversation.blade.php | 对话 |
-| fresns.message.notifications | /messages/notifications.blade.php | 通知 |
+| fresns.notifications.index | /notifications/index.blade.php | 通知列表 |
+
+## 私信
+
+| 路由名 | 模板文件 | 介绍 |
+| --- | --- | --- |
+| fresns.messages.index | /messages/index.blade.php | 私信列表 |
+| fresns.messages.conversation | /messages/conversation.blade.php | 私信消息 |
 
 ## 编辑器
 
