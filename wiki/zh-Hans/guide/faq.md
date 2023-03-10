@@ -28,6 +28,10 @@
 - [插件安装失败，输出信息的最后一段开头为 Your configuration does not allow connections](https://discuss.fresns.cn/post/Kcyo3qE3)
 - [安装插件后所有页面报错](https://discuss.fresns.cn/post/M4BP6rXi)
 
+## 互动问题
+
+- [发表显示成功，但实际没有成功（没有新内容）](https://discuss.fresns.cn/post/oEiiwnZZ)
+
 ## 其他
 
 - [重复升级的方法](https://discuss.fresns.cn/post/YqMweATz)
