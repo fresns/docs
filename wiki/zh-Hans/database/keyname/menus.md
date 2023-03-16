@@ -6,7 +6,7 @@
 
 | 栏目标题 | 键名 | 默认键值 | 键值类型 | 说明 |
 | --- | --- | --- | --- | --- |
-| 默认首页 | default_homepage | group | string |  |
+| 默认首页 | default_homepage | post | string |  |
 
 ## 门户
 

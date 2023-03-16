@@ -6,7 +6,7 @@
 
 | Menu Title | Key Name | Default Key Value | Value Type | Description |
 | --- | --- | --- | --- | --- |
-| 默认首页 | default_homepage | group | string |  |
+| 默认首页 | default_homepage | post | string |  |
 
 ## Portal
 
