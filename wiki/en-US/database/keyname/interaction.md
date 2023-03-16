@@ -115,11 +115,11 @@
     - it_follow_hashtags
     - it_follow_posts
     - it_follow_comments
-    - it_follow_users
-    - it_follow_groups
-    - it_follow_hashtags
-    - it_follow_posts
-    - it_follow_comments
+    - it_block_users
+    - it_block_groups
+    - it_block_hashtags
+    - it_block_posts
+    - it_block_comments
 
 ## View interaction log settings
 
