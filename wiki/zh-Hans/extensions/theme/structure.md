@@ -79,14 +79,13 @@
 
 | 路由名 | 模板文件 | 介绍 |
 | --- | --- | --- |
-| fresns.profile.index | /profile/index.blade.php | 用户详情主页 |
 | fresns.profile.posts | /profile/posts.blade.php | TA 帖子列表 |
 | fresns.profile.comments | /profile/comments.blade.php | TA 评论列表 |
-| fresns.profile.likers | /profile/likers.blade.php | 点赞 TA 的用户 |
-| fresns.profile.dislikers | /profile/dislikers.blade.php | 点踩 TA 的用户 |
-| fresns.profile.followers | /profile/followers.blade.php | 关注 TA 的用户 |
-| fresns.profile.followers.you.follow | /profile/followers-you-follow.blade.php | 你认识的关注者 |
-| fresns.profile.blockers | /profile/blockers.blade.php | 屏蔽 TA 的用户 |
+| fresns.profile.followers.you.follow | /profile/interactions/followers-you-follow.blade.php | 你认识的关注者 |
+| fresns.profile.likers | /profile/interactions/likers.blade.php | 点赞 TA 的用户 |
+| fresns.profile.dislikers | /profile/interactions/dislikers.blade.php | 点踩 TA 的用户 |
+| fresns.profile.followers | /profile/interactions/followers.blade.php | 关注 TA 的用户 |
+| fresns.profile.blockers | /profile/interactions/blockers.blade.php | 屏蔽 TA 的用户 |
 | fresns.profile.likes.users | /profile/likes/users.blade.php | TA 点赞的用户 |
 | fresns.profile.likes.groups | /profile/likes/groups.blade.php | TA 点赞的小组 |
 | fresns.profile.likes.hashtags | /profile/likes/hashtags.blade.php | TA 点赞的话题 |

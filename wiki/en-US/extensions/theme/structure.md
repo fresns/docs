@@ -79,14 +79,13 @@
 
 | Route Name | View File | Description |
 | --- | --- | --- |
-| fresns.profile.index | /profile/index.blade.php | Profile Home |
 | fresns.profile.posts | /profile/posts.blade.php | It Posts |
 | fresns.profile.comments | /profile/comments.blade.php | It Comments |
-| fresns.profile.likers | /profile/likers.blade.php | Like it users |
-| fresns.profile.dislikers | /profile/dislikers.blade.php | Dislike it users |
-| fresns.profile.followers | /profile/followers.blade.php | Follow it users |
-| fresns.profile.followers.you.follow | /profile/followers-you-follow.blade.php | Followers you know |
-| fresns.profile.blockers | /profile/blockers.blade.php | Block it users |
+| fresns.profile.followers.you.follow | /profile/interactions/followers-you-follow.blade.php | Followers you know |
+| fresns.profile.likers | /profile/interactions/likers.blade.php | Like it users |
+| fresns.profile.dislikers | /profile/interactions/dislikers.blade.php | Dislike it users |
+| fresns.profile.followers | /profile/interactions/followers.blade.php | Follow it users |
+| fresns.profile.blockers | /profile/interactions/blockers.blade.php | Block it users |
 | fresns.profile.likes.users | /profile/likes/users.blade.php | It like users |
 | fresns.profile.likes.groups | /profile/likes/groups.blade.php | It like groups |
 | fresns.profile.likes.hashtags | /profile/likes/hashtags.blade.php | It like hashtags |
