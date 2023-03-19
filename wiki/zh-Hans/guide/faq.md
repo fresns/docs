@@ -6,6 +6,7 @@
 ## 必看
 
 - [一键分享 Fresns 报错信息的方法](https://discuss.fresns.cn/post/fvYIF3Je)
+- [遇到报错查看网络日志和服务端日志的方法](https://discuss.fresns.cn/post/t7uqeux4)
 
 ## 环境问题
 
