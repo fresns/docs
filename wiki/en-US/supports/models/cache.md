@@ -257,8 +257,6 @@ fresns_web_{$ulid}                                    // tag: fresnsWebAccountTo
 fresns_web_account_{$aid}_{$langTag}
 fresns_web_user_{$uid}_{$langTag}
 fresns_web_user_panel_{$uid}_{$langTag}
-fresns_web_post_{$pid}
-fresns_web_comment_{$cid}
 fresns_web_group_categories_by_{$uid}_{$langTag}
 fresns_web_group_tree_by_{$uid}_{$langTag}
 
