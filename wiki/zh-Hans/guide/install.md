@@ -13,7 +13,7 @@ Fresns 是一款基于 PHP 和 MySQL 开发的社交社区网络服务软件。
 
 ::: info PHP 配置要求
 - 扩展要求支持：`fileinfo`
-- 函数要求启用：`putenv` `symlink` `readlink` `proc_open` `passthru`
+- 函数要求启用：`putenv` `symlink` `proc_open` `passthru`
 :::
 
 *服务器运行环境的配置，网上有很多教程，大家可以自行搜索学习（国内外也有很多免费的可视化面板）；各大主机服务商的文档中心与服务市场也有教学和服务；所以在这里我们就不教大家如何配置运行环境了。*

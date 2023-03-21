@@ -30,7 +30,7 @@ A server operation and maintenance panel for Chinese users
 
 ### PHP 函数
 
-- PHP 函数启用了 `putenv` `symlink` `readlink` `proc_open` `passthru`
+- PHP 函数启用了 `putenv` `symlink` `proc_open` `passthru`
 
 ![PHP 函数](https://cdn.fresns.cn/guide/baota-php-functions.png)
 

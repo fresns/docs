@@ -13,7 +13,7 @@ Before you install Fresns, it's important to check that your server meets the re
 
 ::: info PHP Config Requirements
 - Extensions: `fileinfo`
-- Functions: `putenv` `symlink` `readlink` `proc_open` `passthru`
+- Functions: `putenv` `symlink` `proc_open` `passthru`
 :::
 
 ## Download
