@@ -3,12 +3,12 @@ import { VPTeamMembers } from 'vitepress/theme'
 
 const members = [
     {
-        avatar: 'https://files.fresns.org/wiki/avatars/jarvis-tang.jpg',
-        name: 'Jarvis Tang',
+        avatar: 'https://files.fresns.org/wiki/avatars/jevan-tang.jpg',
+        name: 'Jevan Tang',
         title: 'Creator',
         links: [
-            { icon: 'github', link: 'https://github.com/jarvis-tang' },
-            { icon: 'twitter', link: 'https://twitter.com/JarvisTang' },
+            { icon: 'github', link: 'https://github.com/jevantang' },
+            { icon: 'twitter', link: 'https://twitter.com/JevanTang' },
         ]
     },
     {

@@ -4,8 +4,8 @@ This document is for developers who want to join Fresns open-source organization
 
 The open-source community of Fresns is growing rapidly. If you recognize our open-source software and are interested in contributing to the development of Fresns, we sincerely welcome you to join us to develop and improve it. Whether it's [error reporting](../guide/feedback.md) or Pull Request development, even correcting a typo is a great help to us.
 
-- Founder: [Jarvis Tang](https://github.com/jarvis-tang/about)
-- Email: [jarvis.okay@gmail.com](mailto:jarvis.okay@gmail.com)
+- Founder: [Jevan Tang](https://github.com/jevantang)
+- Email: [jevan.tang@gmail.com](mailto:jevan.tang@gmail.com)
 
 ## Normative Standards
 

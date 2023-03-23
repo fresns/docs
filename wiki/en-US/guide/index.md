@@ -43,6 +43,6 @@ To distribute copies of your modified versions to others.
 
 ## Contact Us
 
-- Founder: [Jarvis Tang](https://github.com/jarvis-tang/about)
+- Founder: [Jevan Tang](https://github.com/jevantang)
 - Email: [support@fresns.org](mailto:support@fresns.org)
 - Community: [https://discuss.fresns.com](https://discuss.fresns.com/)

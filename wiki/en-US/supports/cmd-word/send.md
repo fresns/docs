@@ -28,7 +28,7 @@
 ```json
 // 变量名对应实际值
 {
-    "nickname": "Jarvis Tang",
+    "nickname": "Jevan Tang",
     "variale1": "有人艾特你"
 }
 ```

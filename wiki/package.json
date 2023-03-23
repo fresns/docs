@@ -6,7 +6,7 @@
   "private": true,
   "homepage": "https://fresns.org/",
   "repository": "https://github.com/fresns/docs",
-  "author": "Jarvis Tang",
+  "author": "Jevan Tang",
   "license": "Apache-2.0",
   "devDependencies": {
     "vitepress": "^1.0.0-alpha.61",

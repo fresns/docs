@@ -113,7 +113,7 @@ Fresns 团队确认，除非本协议中有明确的描述，你提供的任何�
 ```
 /*
  * Fresns (https://fresns.org)
- * Copyright (C) 2021-Present Jarvis Tang
+ * Copyright (C) 2021-Present Jevan Tang
  * Released under the Apache-2.0 License.
  */
 ```

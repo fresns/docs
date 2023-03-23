@@ -53,8 +53,8 @@ When the theme is installed, the static resources are published to the `public` 
     "unikey": "ThemeDemo",
     "name": "Theme Demo",
     "description": "This is the demo theme",
-    "author": "Jarvis Tang",
-    "authorLink": "https://github.com/jarvis-tang",
+    "author": "Jevan Tang",
+    "authorLink": "https://github.com/jevantang",
     "version": "1.0.0",
     "functions": true, // Availability of setting function
     "functionKeys": [

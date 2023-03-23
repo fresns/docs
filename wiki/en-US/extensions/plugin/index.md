@@ -44,8 +44,8 @@ When the plugin is installed and published, static resources are distributed to 
     "type": 1, // Type: 1.Extension plugin 2.Control Panel 3.Website Engine 4.Theme Template
     "name": "Demo Plugin",
     "description": "This is the demo plugin",
-    "author": "Jarvis Tang",
-    "authorLink": "https://github.com/jarvis-tang",
+    "author": "Jevan Tang",
+    "authorLink": "https://github.com/jevantang",
     "version": "1.0.0",
     "scene": [
         // Plugin usage scenarios

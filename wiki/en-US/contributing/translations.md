@@ -10,7 +10,7 @@ Although we support multiple languages, language packs still need to be translat
 
 | Documentation Guidelines | Version | Source |
 | --- | --- | --- |
-| [Chinese Docs Writing Guide](https://github.com/jarvis-tang/copywriting-style-guide) | 2021 | Jarvis Tang |
+| [Chinese Docs Writing Guide](https://tangjie.me/copywriting-style-guide) | 2021 | Jevan Tang |
 | [English Docs Writing Guide](writing-guide.md) | 2021 | Vue.js |
 
 ## Fresns Website

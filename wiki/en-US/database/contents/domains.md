@@ -20,6 +20,6 @@
 - host = mp.weixin.qq.com
 
 **示例 2**
-- link_url = https://github.com/jarvis-tang
+- link_url = https://github.com/jevantang
 - domain = tangjie.me
 - host = tangjie.me

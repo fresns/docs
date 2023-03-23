@@ -9,7 +9,7 @@ Hi! I'm really excited that you are interested in contributing to Fresns. Before
 | [The Twelve Factors](https://12factor.net/) | Adam Wiggins |
 | [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/) | Conventional Commits |
 | [Semantic Versioning](https://semver.org/) | Gravatars |
-| [Chinese Docs Writing Guide](https://github.com/jarvis-tang/copywriting-style-guide) | Jarvis Tang |
+| [Chinese Docs Writing Guide](https://tangjie.me/copywriting-style-guide) | Jevan Tang |
 | [English Docs Writing Guide](writing-guide.md) | Vue.js |
 
 ::: details View Commit Type Introduction
@@ -95,7 +95,7 @@ The Fresns Foundation acknowledges that, except as explicitly described in this 
 ```
 /*
  * Fresns (https://fresns.org)
- * Copyright (C) 2021-Present Jarvis Tang
+ * Copyright (C) 2021-Present Jevan Tang
  * Released under the Apache-2.0 License.
  */
 ```

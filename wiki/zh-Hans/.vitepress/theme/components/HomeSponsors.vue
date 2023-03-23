@@ -10,7 +10,7 @@ const { data } = useSponsor()
     v-if="data"
     message="Fresns is free and open source, made possible by wonderful sponsors."
     action-text="Become a sponsor"
-    action-link="https://github.com/sponsors/jarvis-tang"
+    action-link="https://github.com/sponsors/jevantang"
     :data="data"
   />
 </template>

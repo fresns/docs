@@ -13,8 +13,8 @@ const members = [
                 },
                 link: 'https://tangjie.me'
             },
-            { icon: 'github', link: 'https://github.com/jarvis-tang' },
-            { icon: 'twitter', link: 'https://twitter.com/JarvisTang' },
+            { icon: 'github', link: 'https://github.com/jevantang' },
+            { icon: 'twitter', link: 'https://twitter.com/JevanTang' },
         ]
     },
     {
