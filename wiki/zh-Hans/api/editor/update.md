@@ -29,6 +29,7 @@
 | postTitle | String | NO | 标题 | *帖子专用* |
 | postIsComment | Boolean | NO | 是否可以评论帖子 | *帖子专用* |
 | postIsCommentPublic | Boolean | NO | 是否公开评论<br>不公开则仅帖子作者可见 | *帖子专用* |
+| postQuotePid | String | NO | 引用的帖子 PID<br>非必填 | *帖子专用* |
 | content | String | NO | 正文内容 |  |
 | isMarkdown | Boolean | NO | 内容是否为 MD 格式 |  |
 | isAnonymous | Boolean | NO | 是否匿名 |  |

@@ -29,6 +29,7 @@
 | postTitle | String | *optional* | 标题，默认自带标题 | *帖子专用* |
 | postIsComment | Boolean | *optional* | 默认配置：是否可以评论帖子 | *帖子专用* |
 | postIsCommentPublic | Boolean | *optional* | 默认配置：是否公开评论<br>不公开则仅帖子作者可见 | *帖子专用* |
+| postQuotePid | String | *optional* | 引用的帖子 PID<br>非必填 | *帖子专用* |
 | commentPid | String | *optional* | *评论专用* | 评论哪个帖子，必传 |
 | commentCid | String | *optional* | *评论专用* | 留空表示评论帖子<br>有值表示回复这条评论 |
 | content | String | *optional* | 正文内容，默认自带内容 |  |
@@ -37,6 +38,11 @@
 | map | Object | *optional* | 默认配置：位置信息 |  |
 | extends | Array | *optional* | 默认配置：扩展内容 |  |
 | archives | Array | *optional* | 默认配置：扩展参数 |
+
+**Request Description**
+
+- 创建草稿时，如果数据库已经有 `createType=1` 的草稿，并且为空时（无内容、无文件、无扩展内容），则本次创建将直接返回该草稿。
+- `createType=2` 表示为用户主动创建的草稿。
 
 ## Return
 
