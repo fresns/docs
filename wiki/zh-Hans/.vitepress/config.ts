@@ -54,7 +54,10 @@ export default defineConfig({
             copyright: 'Copyright © 2021-2023 <a href="https://tangjie.me/" target="_blank">唐杰</a><br><a href="https://beian.miit.gov.cn/" target="_blank" rel="noopener">苏ICP备2021027795号-1</a> | <a href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=32058502010669" target="_blank" rel="noopener">苏公网安备32058502010669号</a>',
         },
 
-        outlineTitle: '页面梗概',
+        outlineTitle: '本页导览',
+        returnToTopLabel: '返回顶部',
+        sidebarMenuLabel: '菜单',
+        darkModeSwitchLabel: '深色模式',
 
         editLink: {
             pattern: 'https://github.com/fresns/docs/tree/main/wiki/zh-Hans/:path',
