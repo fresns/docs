@@ -546,6 +546,10 @@
             // 通用数据结构->评论信息
         }
     ],
+    "parentPost": {
+        // 当前帖子的父级帖子
+        // 通用数据结构->帖子信息
+    },
     "manages": [
         // 帖子管理扩展
         // 通用数据结构->扩展功能信息
@@ -677,8 +681,8 @@
         // 通用数据结构->用户信息
         "isPostCreator": "Boolean / 是否为帖子作者"
     },
-    "replyToComment": {
-        // 是否回复某个评论
+    "parentComment": {
+        // 当前评论的父级评论
         // 通用数据结构->评论信息
     },
     "subComments": [
@@ -732,12 +736,11 @@
         "blockNote": "String / 我对该评论的屏蔽备注",
         "postCreatorLikeStatus": "Boolean / 帖子作者是否点赞"
     },
-    "followType": "String / 来自哪种关注 null.无 user.我关注的用户 group.我关注的小组 hashtag.我关注的话题 digest.高级精华",
-    "pid": "String / 评论所属帖子 ID",
-    "post": {
-        // 评论所属的帖子完整信息
+    "replyToPost": {
+        // 评论所属的帖子信息
         // 通用数据结构->帖子信息
-    }
+    },
+    "followType": "String / 来自哪种关注 null.无 user.我关注的用户 group.我关注的小组 hashtag.我关注的话题 digest.高级精华"
 }
 ```
 

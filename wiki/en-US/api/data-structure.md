@@ -545,6 +545,10 @@
             // Common Data Structure -> Comment Info
         }
     ],
+    "parentPost": {
+        // 当前帖子的父级帖子
+        // Common Data Structure -> Post Info
+    },
     "manages": [
         // 帖子管理扩展
         // Common Data Structure -> Extend Function Info
@@ -676,8 +680,8 @@
         // Common Data Structure -> User Info
         "isPostCreator": "Boolean / 是否为帖子作者"
     },
-    "replyToComment": {
-        // 是否回复某个评论
+    "parentComment": {
+        // 当前评论的父级评论
         // Common Data Structure -> Comment Info
     },
     "subComments": [
@@ -731,12 +735,11 @@
         "blockNote": "String / 我对该评论的屏蔽备注",
         "postCreatorLikeStatus": "Boolean / 帖子作者是否点赞"
     },
-    "followType": "String / 来自哪种关注 null.无 user.我关注的用户 group.我关注的小组 hashtag.我关注的话题 digest.高级精华",
-    "pid": "String / 评论所属帖子 ID",
-    "post": {
-        // 评论所属的帖子完整信息
+    "replyToPost": {
+        // 评论所属的帖子信息
         // Common Data Structure -> Post Info
-    }
+    },
+    "followType": "String / 来自哪种关注 null.无 user.我关注的用户 group.我关注的小组 hashtag.我关注的话题 digest.高级精华"
 }
 ```
 
