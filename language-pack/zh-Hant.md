@@ -57,6 +57,7 @@
     "location": "位置",
     "home": "首頁",
     "discover": "發現",
+    "about": "關於",
     "list": "列表",
     "choose": "選擇",
     "update": "更新",

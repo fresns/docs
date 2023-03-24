@@ -57,6 +57,7 @@
     "location": "Location",
     "home": "Home",
     "discover": "Discover",
+    "about": "About",
     "list": "List",
     "choose": "Choose",
     "update": "Update",

@@ -58,6 +58,7 @@
     {"name":"location","canDelete":false},
     {"name":"home","canDelete":false},
     {"name":"discover","canDelete":false},
+    {"name":"about","canDelete":false},
     {"name":"list","canDelete":false},
     {"name":"choose","canDelete":false},
     {"name":"update","canDelete":false},

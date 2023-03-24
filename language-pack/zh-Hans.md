@@ -57,6 +57,7 @@
     "location": "位置",
     "home": "首页",
     "discover": "发现",
+    "about": "关于",
     "list": "列表",
     "choose": "选择",
     "update": "更新",
