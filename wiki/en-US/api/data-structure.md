@@ -535,6 +535,11 @@
         // 帖子作者
         // Common Data Structure -> User Info
     },
+    "isMultiLevelQuote": "Boolean / 是否多层级引用，上一级 quotedPost 帖子是否也有引用",
+    "quotedPost": {
+        // 当前帖子引用的帖子
+        // Common Data Structure -> Post Info
+    },
     "previewLikeUsers": [
         {
             // Common Data Structure -> User Info
@@ -545,10 +550,6 @@
             // Common Data Structure -> Comment Info
         }
     ],
-    "parentPost": {
-        // 当前帖子的父级帖子
-        // Common Data Structure -> Post Info
-    },
     "manages": [
         // 帖子管理扩展
         // Common Data Structure -> Extend Function Info
@@ -680,10 +681,6 @@
         // Common Data Structure -> User Info
         "isPostCreator": "Boolean / 是否为帖子作者"
     },
-    "parentComment": {
-        // 当前评论的父级评论
-        // Common Data Structure -> Comment Info
-    },
     "subComments": [
         {
             // 子评论预览
@@ -736,8 +733,12 @@
         "postCreatorLikeStatus": "Boolean / 帖子作者是否点赞"
     },
     "replyToPost": {
-        // 评论所属的帖子信息
+        // 评论所属的帖子信息，如果是子级评论列表仅有 pid 参数
         // Common Data Structure -> Post Info
+    },
+    "replyToComment": {
+        // 当前评论的父级评论
+        // Common Data Structure -> Comment Info
     },
     "followType": "String / 来自哪种关注 null.无 user.我关注的用户 group.我关注的小组 hashtag.我关注的话题 digest.高级精华"
 }

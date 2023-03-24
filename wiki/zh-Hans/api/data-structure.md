@@ -536,6 +536,11 @@
         // 帖子作者
         // 通用数据结构->用户信息
     },
+    "isMultiLevelQuote": "Boolean / 是否多层级引用，上一级 quotedPost 帖子是否也有引用",
+    "quotedPost": {
+        // 当前帖子引用的帖子
+        // 通用数据结构->帖子信息
+    },
     "previewLikeUsers": [
         {
             // 通用数据结构->用户信息
@@ -546,10 +551,6 @@
             // 通用数据结构->评论信息
         }
     ],
-    "parentPost": {
-        // 当前帖子的父级帖子
-        // 通用数据结构->帖子信息
-    },
     "manages": [
         // 帖子管理扩展
         // 通用数据结构->扩展功能信息
@@ -681,10 +682,6 @@
         // 通用数据结构->用户信息
         "isPostCreator": "Boolean / 是否为帖子作者"
     },
-    "parentComment": {
-        // 当前评论的父级评论
-        // 通用数据结构->评论信息
-    },
     "subComments": [
         {
             // 子评论预览
@@ -737,8 +734,12 @@
         "postCreatorLikeStatus": "Boolean / 帖子作者是否点赞"
     },
     "replyToPost": {
-        // 评论所属的帖子信息
+        // 评论所属的帖子信息，如果是子级评论列表仅有 pid 参数
         // 通用数据结构->帖子信息
+    },
+    "replyToComment": {
+        // 当前评论的父级评论
+        // 通用数据结构->评论信息
     },
     "followType": "String / 来自哪种关注 null.无 user.我关注的用户 group.我关注的小组 hashtag.我关注的话题 digest.高级精华"
 }
