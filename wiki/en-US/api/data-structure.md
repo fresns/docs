@@ -452,6 +452,7 @@
     "commentDislikeCount": "Number / 评论被点赞总数",
     "commentFollowCount": "Number / 评论被关注总数",
     "commentBlockCount": "Number / 评论被屏蔽总数",
+    "postCount": "Number / 关联帖子总数，别人引用它的数量",
     "createTime": "String / 帖子发表时间",
     "createTimeFormat": "String / 帖子发表人性化时间",
     "editTime": "String / 帖子最后编辑时间",
