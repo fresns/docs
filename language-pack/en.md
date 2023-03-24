@@ -271,7 +271,7 @@
     "contentSticky": "Sticky",
     "contentActive": "Active",
     "contentRecommend": "Recommend",
-    "contentFull": "Full",
+    "contentFull": "Show more",
     "contentViewOriginal": "View Original Article",
     "contentCreator": "Creator",
     "contentCreatorAnonymous": "Anonymous",
