@@ -4,8 +4,7 @@
 | --- | --- | --- | --- | --- | --- |
 | id | bigint *UNSIGNED* | 帖子 ID | | NO | 自动递增 |
 | pid | varchar(32) | 对外公开 ID |  | NO | **Unique** |
-| top_parent_id | bigint *UNSIGNED* | 顶级帖子 ID | 0 | NO | 所属哪个帖子，0 代表不属于任何帖子 |
-| parent_id | bigint *UNSIGNED* | 父级帖子 ID | 0 | NO | 0 代表一级帖子 |
+| parent_id | bigint *UNSIGNED* | 父级帖子 ID | 0 | NO | 0 代表无父级 |
 | user_id | bigint *UNSIGNED* | 发布者 ID |  | NO | 关联字段 [users->id](../users/users.md) |
 | group_id | int *UNSIGNED* | 小组 ID | 0 | NO | 关联字段 [groups->id](groups.md) |
 | title | varchar(255) | 标题 |  | YES |  |
@@ -29,6 +28,7 @@
 | comment_dislike_count | int *UNSIGNED* | 评论点踩数 | 0 | NO | 所有评论被点踩总数 |
 | comment_follow_count | int *UNSIGNED* | 评论关注数 | 0 | NO | 所有评论被关注总数 |
 | comment_block_count | int *UNSIGNED* | 评论屏蔽数 | 0 | NO | 所有评论被屏蔽总数 |
+| post_count | int *UNSIGNED* | 子级帖子数 | 0 | NO | 引用它的帖子总数 |
 | latest_edit_at | timestamp | 编辑时间 |  | YES | 如果发表后可以编辑，此处记录编辑时间 |
 | latest_comment_at | timestamp | 评论时间 |  | YES | 最新一条评论的时间 |
 | rank_state | tinyint *UNSIGNED* | 等级状态 | 1 | NO | 1.未设置 |
