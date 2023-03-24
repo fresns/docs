@@ -5,6 +5,7 @@
 | id | bigint *UNSIGNED* | Primary Key ID |  | NO | 自动递增 |
 | user_id | bigint *UNSIGNED* | 创建者 ID |  | NO | 关联字段 [users->id](../users/users.md) |
 | post_id | bigint *UNSIGNED* | 帖子 ID |  | YES | 关联字段 [posts->id](posts.md) |
+| parent_post_id | bigint *UNSIGNED* | 父级帖子 ID |  | YES | 关联字段 [posts->id](posts.md)<br>为空代表无引用帖子 |
 | create_type | tinyint *UNSIGNED* | 创建类型 | 1 | NO | 1.快捷创建 / 2.编辑器创建 / 3.由帖子复原创建 |
 | is_plugin_editor | tinyint *UNSIGNED* | 是否仅在插件中编辑 | 0 | NO | 0.否 / 1.是 |
 | editor_unikey | varchar(64) | 内容编辑插件 |  | YES | 关联字段 [plugins->unikey](../plugins/plugins.md) |
