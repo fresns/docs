@@ -23,11 +23,11 @@
 
 | 参数名 | 类型 | 是否必传 | **帖子**说明 | **评论**说明 |
 | --- | --- | --- | --- | --- |
+| postQuotePid | String | NO | 引用的帖子 PID<br>非必填 | *帖子专用* |
 | postGid | String | NO | 小组<br>[post_editor_group_required](../../database/keyname/publish.md)<br>如果配置必填，则此处传参也必填 | *帖子专用* |
 | postTitle | String | NO | 标题<br>[post_editor_title_required](../../database/keyname/publish.md)<br>如果配置必填，则此处传参也必填 | *帖子专用* |
 | postIsComment | Boolean | NO | 是否可以评论帖子 | *帖子专用* |
 | postIsCommentPublic | Boolean | NO | 是否公开评论<br>不公开则仅帖子作者可见 | *帖子专用* |
-| postQuotePid | String | NO | 引用的帖子 PID<br>非必填 | *帖子专用* |
 | commentPid | String | NO | *评论专用* | 评论哪个帖子，必传 |
 | commentCid | String | NO | *评论专用* | 留空表示评论帖子<br>有值表示回复这条评论 |
 | content | String | NO | 正文内容 |  |

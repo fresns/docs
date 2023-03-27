@@ -25,11 +25,11 @@
 | --- | --- | --- | --- | --- |
 | createType | Number | YES | 创建类型 1.快捷创建 2.编辑器创建 |  |
 | editorUnikey | String | NO | 是否插件编辑器，留空为否 |  |
+| postQuotePid | String | NO | 引用的帖子 PID<br>非必填 | *帖子专用* |
 | postGid | String | NO | 小组，默认选中了小组 | *帖子专用* |
 | postTitle | String | NO | 标题，默认自带标题 | *帖子专用* |
 | postIsComment | Boolean | NO | 默认配置：是否可以评论帖子 | *帖子专用* |
 | postIsCommentPublic | Boolean | NO | 默认配置：是否公开评论<br>不公开则仅帖子作者可见 | *帖子专用* |
-| postQuotePid | String | NO | 引用的帖子 PID<br>非必填 | *帖子专用* |
 | commentPid | String | NO | *评论专用* | 评论哪个帖子，必传 |
 | commentCid | String | NO | *评论专用* | 留空表示评论帖子<br>有值表示回复这条评论 |
 | content | String | NO | 正文内容，默认自带内容 |  |

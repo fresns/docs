@@ -25,11 +25,11 @@
 | 参数名 | 类型 | 是否必传 | **帖子**说明 | **评论**说明 |
 | --- | --- | --- | --- | --- |
 | editorUnikey | String | *optional* | 是否为编辑器插件<br>传参 `Fresns` 则重置为默认编辑器 |  |
+| postQuotePid | String | *optional* | 引用的帖子 PID<br>非必填 | *帖子专用* |
 | postGid | String | *optional* | 小组 | *帖子专用* |
 | postTitle | String | *optional* | 标题 | *帖子专用* |
 | postIsComment | Boolean | *optional* | 是否可以评论帖子 | *帖子专用* |
 | postIsCommentPublic | Boolean | *optional* | 是否公开评论<br>不公开则仅帖子作者可见 | *帖子专用* |
-| postQuotePid | String | *optional* | 引用的帖子 PID<br>非必填 | *帖子专用* |
 | content | String | *optional* | 正文内容 |  |
 | isMarkdown | Boolean | *optional* | 内容是否为 MD 格式 |  |
 | isAnonymous | Boolean | *optional* | 是否匿名 |  |
