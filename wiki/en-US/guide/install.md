@@ -252,7 +252,10 @@ fresns/         // Main Program Root Directory
 ├── bootstrap/      // Bootstrap Framework Directory
 ├── config/         // Configuration File Directory
 ├── database/       // Data File Directory
-├── extensions/     // Plugins and Themes
+├── extensions/     // Extensions Directory
+│   ├── plugins/
+│   ├── themes/
+│   └── backups/
 ├── public/         // Website Root Directory
 │   ├── assets/         // Extension Static Files
 │   ├── static/         // Built-in Static Files

@@ -257,6 +257,9 @@ fresns/         // 主程序根目录
 ├── config/         // 配置文件目录
 ├── database/       // 数据文件目录
 ├── extensions/     // 扩展目录
+│   ├── plugins/        // 功能插件
+│   ├── themes/         // 主题模板
+│   └── backups/        // 扩展备份目录
 ├── public/         // 网站根目录
 │   ├── assets/         // 扩展静态文件
 │   ├── static/         // 内置静态文件
