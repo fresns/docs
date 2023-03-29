@@ -535,7 +535,7 @@ function sidebarDatabase() {
                     ]
                 },
                 {
-                    text: 'Expands',
+                    text: 'Extends',
                     collapsed: true,
                     items: [
                         { text: 'Content Handler', link: '/database/keyname/content-handler.md' },

@@ -82,7 +82,7 @@
                     "display": "Boolean / 工具栏是否显示话题操作按钮",
                     "format": "Number / 话题格式 1.单 # 2.双 #"
                 },
-                "expand": {
+                "extend": {
                     "status": "Boolean / 是否启用扩展",
                     "list": [
                         {

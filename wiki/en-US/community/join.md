@@ -37,7 +37,7 @@ After that, you'll be ready to contribute to Fresns core repositories:
 
 ### Share (and Build) Your Experience
 
-Apart from answering questions and sharing resources in the [Community](https://discuss.fresns.org/), there are a few other less obvious ways to share and expand what you know:
+Apart from answering questions and sharing resources in the [Community](https://discuss.fresns.org/), there are a few other less obvious ways to share and extend what you know:
 
 - **Develop learning materials.** It's often said that the best way to learn is to teach. If there's something interesting you're doing with Fresns, strengthen your expertise by writing a blog post, developing a workshop, or even publishing a gist that you share on social media.
 - **Watch a repo you care about.** This will send you notifications whenever there's activity in that repository, giving you insider knowledge about ongoing discussions and upcoming features. It's a fantastic way to build expertise so that you're eventually able to help address issues and pull requests.

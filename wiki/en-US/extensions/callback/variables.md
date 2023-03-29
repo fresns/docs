@@ -23,7 +23,7 @@ Whether it is website or mobile application, the use of plug-ins is embedded in 
 | `{pid}` | Post ID | posts->pid |
 | `{cid}` | Comment ID | comments->cid |
 | `{fid}` | File ID | files->fid |
-| `{eid}` | Content Expand ID | extends->eid |
+| `{eid}` | Content Extend ID | extends->eid |
 | `{plid}` | Post Log ID | post_logs->id |
 | `{clid}` | Comment Log ID | comment_logs->id |
 | `{uploadInfo}` | Upload Parameters | [See Upload File API](../../api/common/upload-file.md) |

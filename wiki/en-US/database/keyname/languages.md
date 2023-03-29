@@ -90,12 +90,12 @@
 | 用户角色名 | Operations > Roles > Name |
 | 内容小组名称 | Operations > Groups > Name |
 | 内容小组描述 | Operations > Groups > Description |
-| 编辑器扩展名称 | Expands > Editor > Name |
-| 搜索类型扩展名称 | Expands > Content Type > Name |
-| 管理扩展名称 | Expands > Manage > Name |
-| 小组扩展名称 | Expands > Group > Name |
-| 用户功能扩展名称 | Expands > User Feature > Name |
-| 用户资料扩展名称 | Expands > User Profile > Name |
+| 编辑器扩展名称 | Extends > Editor > Name |
+| 搜索类型扩展名称 | Extends > Content Type > Name |
+| 管理扩展名称 | Extends > Manage > Name |
+| 小组扩展名称 | Extends > Group > Name |
+| 用户功能扩展名称 | Extends > User Feature > Name |
+| 用户资料扩展名称 | Extends > User Profile > Name |
 | 菜单配置 | Clients > Menus |
 | 栏目配置 | Clients > Columns |
 | 语言包配置 | Clients > Language Packs |

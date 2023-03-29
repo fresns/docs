@@ -82,16 +82,16 @@ When the plugin is installed and published, static resources are distributed to 
 | map | Map Service Provider | Panel > Systems > Maps |
 | editor | Editor Plugin | Panel > Operations > Publish |
 | followGroup | Group Follow Mode Support | Panel > Operations > Groups |
-| extendEditor | Editor Extensions | Panel > Expands > Editor |
-| extendContentType | Content Type Extensions | Panel > Expands > Content Type |
-| extendIp | IP Service Providers | Panel > Expands > Content Handler |
-| extendNotification | Notification Provider | Panel > Expands > Content Handler |
-| extendReview | Review Service Provider | Panel > Expands > Content Handler |
-| extendData | Data Service Provider | Panel > Expands > Content Handler |
-| extendSearch | Search Service Providers | Panel > Expands > Content Handler |
-| extendManage | Management Extensions | Panel > Expands > Manage |
-| extendGroup | Group Extensions | Panel > Expands > Group |
-| extendUser | User Function Extensions | Panel > Expands > User Feature<br>Panel > Expands > User Profile |
+| extendEditor | Editor Extensions | Panel > Extends > Editor |
+| extendContentType | Content Type Extensions | Panel > Extends > Content Type |
+| extendIp | IP Service Providers | Panel > Extends > Content Handler |
+| extendNotification | Notification Provider | Panel > Extends > Content Handler |
+| extendReview | Review Service Provider | Panel > Extends > Content Handler |
+| extendData | Data Service Provider | Panel > Extends > Content Handler |
+| extendSearch | Search Service Providers | Panel > Extends > Content Handler |
+| extendManage | Management Extensions | Panel > Extends > Manage |
+| extendGroup | Group Extensions | Panel > Extends > Group |
+| extendUser | User Function Extensions | Panel > Extends > User Feature<br>Panel > Extends > User Profile |
 | engine | Web Engine | Panel > Clients > Website |
 | appNotification | Mobile Notification Service Provider | Panel > Clients > App |
 

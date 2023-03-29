@@ -1,6 +1,6 @@
 # Content Handler
 
-> Panel > Expands > Content Handler
+> Panel > Extends > Content Handler
 
 ## Content Service
 

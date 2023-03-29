@@ -1,6 +1,6 @@
 # Content Handler Plugin Development
 
-- Content Handler Service Configuration `Panel > Expands > Content Handler`
+- Content Handler Service Configuration `Panel > Extends > Content Handler`
 - [View plugin configuration information](../../database/keyname/content-handler.md)
 
 ## API involved

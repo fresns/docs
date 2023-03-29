@@ -16,7 +16,7 @@ In order to achieve this extensibility, Fresns has been built with rich APIs and
 
 ## Extending Type
 
-**Function Plugins**: Enhance and enrich the expansion of main program functions, such as expanding a channel, customizing registration process or editor, and enhancing management functions, content security check, and control panel.
+**Function Plugins**: Enhance and enrich the extension of main program functions, such as extending a channel, customizing registration process or editor, and enhancing management functions, content security check, and control panel.
 
 **Engine**: The website functions developed based on the main program [API](../api/) include integrated engine and independent engine respectively. An independent engine is similar to an independent website, which is deployed and run independently outside the main program, and is tantamount to a mobile application. Based on independent deployment, a set of data can be run in different functional forms, and the purpose of differentiated operation can be achieved.
 

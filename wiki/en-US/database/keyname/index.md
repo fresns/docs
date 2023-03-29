@@ -26,7 +26,7 @@
 | interactions | 互动配置 | Panel > Operations > Interaction |
 | postEditor | 帖子编辑器配置 | Panel > Operations > Publish > Post |
 | commentEditor | 评论编辑器配置 | Panel > Operations > Publish > Comment |
-| extends | 扩展配置 | Panel > Expands |
+| extends | 扩展配置 | Panel > Extends |
 | menus | 菜单配置 | Panel > Clients > Menus<br>Panel > Clients > Columns |
 | languages | 语言包配置 | Panel > Clients > Language Packs |
 | websites | 网页端 | Panel > Clients > Paths<br>Panel > Clients > Website |

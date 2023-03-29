@@ -30,7 +30,7 @@ The user’s perception of a product’s service (sense of experience) does not 
 
 ## Public and private modes
 
-The operation mode of the site can be public or private. In the private mode, you can create your own secret circle, and can join in various ways such as invitation, payment, Q&A. If you want to expand the independent gameplay, the product also reserves the More Json extension from the database to the interface level, allowing you to define new parameters at will. By combining the matching theme and client, you can realize the features of any currently known social products.
+The operation mode of the site can be public or private. In the private mode, you can create your own secret circle, and can join in various ways such as invitation, payment, Q&A. If you want to extend the independent gameplay, the product also reserves the More Json extension from the database to the interface level, allowing you to define new parameters at will. By combining the matching theme and client, you can realize the features of any currently known social products.
 
 ## Various product models and forms
 
