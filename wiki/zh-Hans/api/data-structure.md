@@ -517,12 +517,6 @@
             }
         ]
     },
-    "fileCount": {
-        "images": "Number / 图片数量",
-        "videos": "Number / 视频数量",
-        "audios": "Number / 音频数量",
-        "documents": "Number / 文档数量"
-    },
     "group": {
         // 帖子所属小组，可为 null
         // 通用数据结构->小组信息
@@ -666,12 +660,6 @@
             }
         ]
     },
-    "fileCount": {
-        "images": "Number / 图片数量",
-        "videos": "Number / 视频数量",
-        "audios": "Number / 音频数量",
-        "documents": "Number / 文档数量"
-    },
     "hashtags": [
         {
             // 帖子关联话题
@@ -752,6 +740,7 @@
 {
     "id": "Number / 日志 ID",
     "pid": "String / 所属帖子 ID",
+    "quotedPid": "String / 引用帖子 ID",
     "isPluginEditor": "Boolean / 是否插件编辑器",
     "editorUnikey": "String / 编辑器插件 Unikey",
     "editorUrl": "String / 编辑器访问地址",
@@ -841,15 +830,6 @@
         // 创建者
         // 通用数据结构->用户信息
     },
-    "archives": [
-        // 通用数据结构->扩展参数信息
-    ],
-    "operations": {
-        // 通用数据结构->扩展资料信息
-    },
-    "extends": {
-        // 通用数据结构->扩展内容信息
-    },
     "files": {
         "images": [
             {
@@ -872,11 +852,14 @@
             }
         ]
     },
-    "fileCount": {
-        "images": "Number / 图片数量",
-        "videos": "Number / 视频数量",
-        "audios": "Number / 音频数量",
-        "documents": "Number / 文档数量"
+    "archives": [
+        // 通用数据结构->扩展参数信息
+    ],
+    "operations": {
+        // 通用数据结构->扩展资料信息
+    },
+    "extends": {
+        // 通用数据结构->扩展内容信息
     }
 }
 ```
@@ -922,15 +905,6 @@
         // 创建者
         // 通用数据结构->用户信息
     },
-    "archives": [
-        // 通用数据结构->扩展参数信息
-    ],
-    "operations": {
-        // 通用数据结构->扩展资料信息
-    },
-    "extends": {
-        // 通用数据结构->扩展内容信息
-    },
     "files": {
         "images": [
             {
@@ -953,11 +927,14 @@
             }
         ]
     },
-    "fileCount": {
-        "images": "Number / 图片数量",
-        "videos": "Number / 视频数量",
-        "audios": "Number / 音频数量",
-        "documents": "Number / 文档数量"
+    "archives": [
+        // 通用数据结构->扩展参数信息
+    ],
+    "operations": {
+        // 通用数据结构->扩展资料信息
+    },
+    "extends": {
+        // 通用数据结构->扩展内容信息
     }
 }
 ```

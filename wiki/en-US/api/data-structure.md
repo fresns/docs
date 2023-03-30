@@ -516,12 +516,6 @@
             }
         ]
     },
-    "fileCount": {
-        "images": "Number / 图片数量",
-        "videos": "Number / 视频数量",
-        "audios": "Number / 音频数量",
-        "documents": "Number / 文档数量"
-    },
     "group": {
         // 帖子所属小组，可为 null
         // Common Data Structure -> Group Info
@@ -665,12 +659,6 @@
             }
         ]
     },
-    "fileCount": {
-        "images": "Number / 图片数量",
-        "videos": "Number / 视频数量",
-        "audios": "Number / 音频数量",
-        "documents": "Number / 文档数量"
-    },
     "hashtags": [
         {
             // 帖子关联话题
@@ -751,6 +739,7 @@
 {
     "id": "Number / 日志 ID",
     "pid": "String / 所属帖子 ID",
+    "quotedPid": "String / 引用帖子 ID",
     "isPluginEditor": "Boolean / 是否插件编辑器",
     "editorUnikey": "String / 编辑器插件 Unikey",
     "editorUrl": "String / 编辑器访问地址",
@@ -839,15 +828,6 @@
     "creator": {
         // Common Data Structure -> User Info
     },
-    "archives": [
-        // Common Data Structure -> Extend Archive Info
-    ],
-    "operations": {
-        // Common Data Structure -> Extend Operation Info
-    },
-    "extends": {
-        // Common Data Structure -> Extend Content Info
-    },
     "files": {
         "images": [
             {
@@ -870,11 +850,14 @@
             }
         ]
     },
-    "fileCount": {
-        "images": "Number / 图片数量",
-        "videos": "Number / 视频数量",
-        "audios": "Number / 音频数量",
-        "documents": "Number / 文档数量"
+    "archives": [
+        // Common Data Structure -> Extend Archive Info
+    ],
+    "operations": {
+        // Common Data Structure -> Extend Operation Info
+    },
+    "extends": {
+        // Common Data Structure -> Extend Content Info
     }
 }
 ```
@@ -919,15 +902,6 @@
     "creator": {
         // Common Data Structure -> User Info
     },
-    "archives": [
-        // Common Data Structure -> Extend Archive Info
-    ],
-    "operations": {
-        // Common Data Structure -> Extend Operation Info
-    },
-    "extends": {
-        // Common Data Structure -> Extend Content Info
-    },
     "files": {
         "images": [
             {
@@ -950,11 +924,14 @@
             }
         ]
     },
-    "fileCount": {
-        "images": "Number / 图片数量",
-        "videos": "Number / 视频数量",
-        "audios": "Number / 音频数量",
-        "documents": "Number / 文档数量"
+    "archives": [
+        // Common Data Structure -> Extend Archive Info
+    ],
+    "operations": {
+        // Common Data Structure -> Extend Operation Info
+    },
+    "extends": {
+        // Common Data Structure -> Extend Content Info
     }
 }
 ```
