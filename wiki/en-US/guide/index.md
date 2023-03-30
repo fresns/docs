@@ -3,9 +3,11 @@
 <p align="center"><img src="https://files.fresns.org/wiki/images/logo.png" width="300"></p>
 
 <p align="center">
-<img src="https://img.shields.io/badge/PHP-%5E8.1-green" alt="PHP" style="display:inline">
-<img src="https://img.shields.io/badge/MySQL-%5E5.7%7C%5E8.0-orange" alt="MySQL" style="display:inline;margin:0 8px">
-<img src="https://img.shields.io/badge/License-Apache--2.0-blue" alt="License" style="display:inline">
+<img src="https://img.shields.io/badge/PHP-%5E8.1-blueviolet" alt="PHP" style="display:inline;">
+<img src="https://img.shields.io/badge/MySQL-%5E5.7%7C%5E8.0-orange" alt="MySQL" style="display:inline;margin-left:8px;">
+<img src="https://img.shields.io/badge/PostgreSQL-%5E11.0-blue" alt="PostgreSQL" style="display:inline;margin:0 8px;">
+<img src="https://img.shields.io/badge/SQL%20Server-%5E13.0-red" alt="SQL Server" style="display:inline;margin-right:8px;">
+<img src="https://img.shields.io/badge/License-Apache--2.0-green" alt="License" style="display:inline;">
 </p>
 
 Fresns is a free and open source social network service software, a general-purpose community product designed for cross-platform, and supports flexible and diverse content forms. It conforms to the trend of the times, satisfies a variety of operating scenarios, is more open and easier to re-development.
