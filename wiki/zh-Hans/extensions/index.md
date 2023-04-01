@@ -28,7 +28,7 @@ Fresns 虽小，五脏俱全。事实上 Fresns 自带的大多数功能，都�
 
 ## 目录结构
 
-Fresns 主程序是基于 PHP Laravel 框架和 MySQL 数据库而开发的社交网络服务软件。
+Fresns 主程序是基于 PHP Laravel 框架和关系型数据库而开发的社交网络服务软件。
 
 ```php
 fresns/         // 主程序根目录

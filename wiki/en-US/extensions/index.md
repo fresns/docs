@@ -27,7 +27,7 @@ In order to achieve this extensibility, Fresns has been built with rich APIs and
 
 ## Directory Structure
 
-Fresns main program is a social network service software based on PHP Laravel framework and MySQL database.
+Fresns main program is a social network service software based on PHP Laravel framework and relational database.
 
 ```php
 fresns/         // Main Program Root Directory

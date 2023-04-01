@@ -2,9 +2,10 @@
 
 <p align="center">
 <img src="https://img.shields.io/badge/PHP-%5E8.1-blueviolet" alt="PHP">
-<img src="https://img.shields.io/badge/MySQL-%5E5.7%7C%5E8.0-orange" alt="MySQL">
+<img src="https://img.shields.io/badge/MySQL-%5E5.7-orange" alt="MySQL">
 <img src="https://img.shields.io/badge/PostgreSQL-%5E11.0-blue" alt="PostgreSQL">
 <img src="https://img.shields.io/badge/SQL%20Server-%5E13.0-red" alt="SQL Server">
+<img src="https://img.shields.io/badge/SQLite-%5E3.9-9cf" alt="SQLite">
 <img src="https://img.shields.io/badge/License-Apache--2.0-green" alt="License">
 </p>
 

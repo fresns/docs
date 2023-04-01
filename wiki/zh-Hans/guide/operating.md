@@ -32,14 +32,7 @@
 
 ## 经验分享
 
-### 安装使用
-
 - [关于物理删除的功能说明](https://discuss.fresns.cn/post/gbWMp2Om)
 - [Fresns 客户端菜单默认参数配置解说](https://discuss.fresns.cn/post/QXQPtuD5)
 - [Fresns 如何帮助你提防政策风险](https://discuss.fresns.cn/post/KwcXx5M4)
 - [Fresns 云储存火山引擎与七牛插件「视频转码」的使用分享](https://discuss.fresns.cn/post/TPYyrQ3V)
-
-### 案例分享
-
-- [农贸人](https://discuss.fresns.cn/post/Fy78XT8c)
-- [悠然创业社区](https://discuss.fresns.cn/post/dbrWpkuX)

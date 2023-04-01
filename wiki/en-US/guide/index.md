@@ -4,9 +4,10 @@
 
 <p align="center">
 <img src="https://img.shields.io/badge/PHP-%5E8.1-blueviolet" alt="PHP" style="display:inline;">
-<img src="https://img.shields.io/badge/MySQL-%5E5.7%7C%5E8.0-orange" alt="MySQL" style="display:inline;margin-left:8px;">
+<img src="https://img.shields.io/badge/MySQL-%5E5.7-orange" alt="MySQL" style="display:inline;margin-left:8px;">
 <img src="https://img.shields.io/badge/PostgreSQL-%5E11.0-blue" alt="PostgreSQL" style="display:inline;margin:0 8px;">
 <img src="https://img.shields.io/badge/SQL%20Server-%5E13.0-red" alt="SQL Server" style="display:inline;margin-right:8px;">
+<img src="https://img.shields.io/badge/SQLite-%5E3.9-9cf" alt="SQLite" style="display:inline;margin-right:8px;">
 <img src="https://img.shields.io/badge/License-Apache--2.0-green" alt="License" style="display:inline;">
 </p>
 
