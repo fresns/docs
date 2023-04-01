@@ -17,7 +17,7 @@
 
 | 参数名 | 类型 | 是否必传 | 说明 |
 | --- | --- | --- | --- |
-| roles | String | NO | 指定主角色，多个以英文逗号隔开 |
+| roles | String | NO | 指定主角色 ID，多个以英文逗号隔开 |
 | verified | Boolean | NO | 认证状态 |
 | gender | Number | NO | 性别 gender 字段<br>`1` 未设置 / `2` 男 / `3` 女 |
 | createDate | String | NO | 注册日期：`today`,`yesterday`,`week`,`lastWeek`,`month`,`lastMonth`,`year`,`lastYear` |
