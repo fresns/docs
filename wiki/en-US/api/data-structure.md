@@ -470,7 +470,12 @@
     "userListName": "String / 用户列表名称",
     "userListUrl": "String / 查看用户列表的地址",
     "userListCount": "Number / 用户列表用户数",
-    "ipLocation": "String / 发表 IP 位置",
+    "moreJson": {
+        // 更多信息 comments > more_json
+        // 以下是已知 Key
+        "ipLocation": "String / 发表者 IP 位置名",
+        "deviceName": "String / 发表者设备名称",
+    },
     "location": {
         "isLbs": "Boolean / 是否有位置信息",
         "mapId": "Number / 经纬度地图编号",
@@ -614,7 +619,12 @@
     "latestCommentTimeFormat": "String / 最新子级评论的人性化时间",
     "rankState": "Number / 等级状态",
     "status": "Boolean / 评论状态",
-    "ipLocation": "String / 发表 IP 位置",
+    "moreJson": {
+        // 更多信息 comments > more_json
+        // 以下是已知 Key
+        "ipLocation": "String / 发表者 IP 位置名",
+        "deviceName": "String / 发表者设备名称",
+    },
     "location": {
         "isLbs": "Boolean / 是否有位置信息",
         "mapId": "Number / 经纬度地图编号",

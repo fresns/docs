@@ -20,9 +20,9 @@
 | comment_btn_name | varchar(64) | 评论扩展按钮-按钮文字 |  | YES | **多语言** |
 | comment_btn_style | varchar(64) | 评论扩展按钮-风格 |  | YES | primary / secondary / success / danger / warning / info |
 | comment_btn_plugin_unikey | varchar(64) | 评论扩展按钮-处理插件 |  | YES | 关联字段 [plugins->unikey](../plugins/plugins.md) |
-| ip_location | varchar(64) | IP 地区名 |  | YES |  |
-| map_id | tinyint *UNSIGNED* | 地图-服务商编号 |  | YES | 来源地图服务商键值字典 |
+| more_json | json | 更多信息字段 |  | YES | 比如发布者 IP 位置名、设备名等 |
 | map_json | json | 地图-详细信息 |  | YES |  |
+| map_id | tinyint *UNSIGNED* | 地图-服务商编号 |  | YES | 来源地图服务商键值字典 |
 | map_continent_code | varchar(8) | 地图-洲代码 |  | YES | 亚洲 AS |
 | map_country_code | varchar(8) | 地图-国家代码 |  | YES | 中国 CN |
 | map_region_code | varchar(8) | 地图-省或州代码 |  | YES | 江苏 JS |
