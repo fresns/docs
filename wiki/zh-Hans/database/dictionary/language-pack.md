@@ -32,6 +32,7 @@
     {"name":"reset","canDelete":false},
     {"name":"refresh","canDelete":false},
     {"name":"reload","canDelete":false},
+    {"name":"retry","canDelete":false},
     {"name":"automatic","canDelete":false},
     {"name":"default","canDelete":false},
     {"name":"modify","canDelete":false},

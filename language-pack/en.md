@@ -31,6 +31,7 @@
     "reset": "Reset",
     "refresh": "Refresh",
     "reload": "Reload",
+    "retry": "Retry",
     "automatic": "Automatic",
     "default": "Default",
     "modify": "Modify",

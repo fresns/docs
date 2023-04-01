@@ -31,6 +31,7 @@
     "reset": "重置",
     "refresh": "刷新",
     "reload": "重新載入",
+    "retry": "重試",
     "automatic": "自動",
     "default": "默認",
     "modify": "修改",
