@@ -13,9 +13,8 @@
 | writing_direction | char(3) | 语言写作方向 |  | YES |  |
 | is_markdown | tinyint *UNSIGNED* | 内容是否为 MD 格式 | 0 | NO | 0.否 / 1.是 |
 | is_anonymous | tinyint *UNSIGNED* | 是否匿名 | 0 | NO | 0.否 / 1.是 |
-| map_id | tinyint *UNSIGNED* | 地图-服务商编号 |  | YES | 来源地图服务商键值字典 |
-| map_longitude | decimal(12,8) | 地图-经度 |  | YES | 浮点数，范围为-180~180，负数表示西经 |
-| map_latitude | decimal(12,8) | 地图-纬度 |  | YES | 浮点数，范围为-90~90，负数表示南纬 |
+| map_longitude | decimal(12,8) | 地图-经度 |  | YES | 浮点数，范围为 -180~180，负数表示西经 |
+| map_latitude | decimal(12,8) | 地图-纬度 |  | YES | 浮点数，范围为 -90~90，负数表示南纬 |
 | sticky_state | tinyint *UNSIGNED* | 置顶状态 | 1 | NO | 1.否 / 2.小组页置顶 / 3.全局置顶 |
 | digest_state | tinyint *UNSIGNED* | 精华状态 | 1 | NO | 1.否 / 2.普通精华 / 3.高级精华 |
 | like_count | int *UNSIGNED* | 点赞数 | 0 | NO | 有多少用户点赞了该帖子 |
