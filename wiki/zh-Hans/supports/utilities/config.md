@@ -1,4 +1,4 @@
-# 配置项目 ConfigUtility
+# 配置工具 ConfigUtility
 
 `App\Utilities\ConfigUtility`
 

@@ -601,6 +601,7 @@ function sidebarSupports() {
             text: 'Utilities',
             collapsed: false,
             items: [
+                { text: 'General', link: '/supports/utilities/general.md' },
                 { text: 'Config', link: '/supports/utilities/config.md' },
                 { text: 'Array', link: '/supports/utilities/arr.md' },
                 { text: 'Extend', link: '/supports/utilities/extend.md' },
