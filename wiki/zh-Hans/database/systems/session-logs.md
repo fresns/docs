@@ -87,11 +87,11 @@
     "networkMobile": true,
     "networkProxy": false,
     "networkHosting": false,
-    "appImei": "",
-    "appAndroidId": "",
-    "appOaid": "",
-    "appIdfa": "",
-    "simImsi": "",
+    "appImei": "", // 国际移动设备识别码
+    "appAndroidId": "", // 安卓设备的唯一标识符
+    "appOaid": "", // 开放匿名设备标识符
+    "appIdfa": "", // 苹果设备广告标识符
+    "simImsi": "", // 国际移动用户识别码
     "mapId": 1, // 字典数据: 地图服务商编号
     "latitude": 113.324520,
     "longitude": 23.099994,
