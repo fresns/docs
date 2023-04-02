@@ -221,6 +221,7 @@ function sidebarApi() {
             text: 'Common',
             collapsed: false,
             items: [
+                { text: 'IP Information', link: '/api/common/ip-info.md' },
                 { text: 'Input Tips', link: '/api/common/input-tips.md' },
                 { text: 'Plugin Callback', link: '/api/common/callback.md' },
                 { text: 'Send Verify Code', link: '/api/common/send-verify-code.md' },

@@ -18,6 +18,7 @@
 
 | 请求方式 | 接口路径 | 描述 |
 | --- | --- | --- |
+| `GET` | /api/v2/common/ip-info | IP 信息 |
 | `GET` | /api/v2/common/input-tips | 输入提示信息 |
 | `GET` | /api/v2/common/callback | 回调返参查询 |
 | `POST` | /api/v2/common/send-verify-code | 发送验证码 |

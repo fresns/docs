@@ -117,8 +117,6 @@
 ```
 | 参数名 | 类型 | 是否必传 | 说明 |
 | --- | --- | --- | --- |
-| ipv4 | String | NO |  |
-| ipv6 | String | NO |  |
+| ip | String | YES | 支持 IPv4 或 IPv6 |
 
-- 二选一传参
-- 输出结果同 [session_logs->device_info](../../database/systems/session-logs.md#设备信息-json)
+- 输出结果同 [IP 信息接口](../../api/common/ip-info.md)

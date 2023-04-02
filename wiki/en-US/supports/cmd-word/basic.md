@@ -108,8 +108,6 @@
 ```
 | Parameter Name | Type | Required | Description |
 | --- | --- | --- | --- |
-| ipv4 | String | *optional* |  |
-| ipv6 | String | *optional* |  |
+| ipv4 | String | **required** | 支持 IPv4 或 IPv6 |
 
-- 二选一传参
-- 输出结果同 [session_logs->device_info](../../database/systems/session-logs.md#设备信息-json)
+- 输出结果同 [IP 信息接口](../../api/common/ip-info.md)

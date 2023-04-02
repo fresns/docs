@@ -18,6 +18,7 @@
 
 | Method | Endpoint Path | Description |
 | --- | --- | --- |
+| `GET` | /api/v2/common/ip-info | IP Information |
 | `GET` | /api/v2/common/input-tips | Input Tips |
 | `GET` | /api/v2/common/callback | Plugin Callback |
 | `POST` | /api/v2/common/send-verify-code | Send Verify Code |
