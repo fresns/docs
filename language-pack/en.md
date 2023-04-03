@@ -32,6 +32,7 @@
     "refresh": "Refresh",
     "reload": "Reload",
     "retry": "Retry",
+    "reselect": "Reselect",
     "automatic": "Automatic",
     "default": "Default",
     "modify": "Modify",

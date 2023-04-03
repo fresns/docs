@@ -32,6 +32,7 @@
     "refresh": "刷新",
     "reload": "重新载入",
     "retry": "重试",
+    "reselect": "重选",
     "automatic": "自动",
     "default": "默认",
     "modify": "修改",

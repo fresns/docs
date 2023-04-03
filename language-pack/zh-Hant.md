@@ -32,6 +32,7 @@
     "refresh": "刷新",
     "reload": "重新載入",
     "retry": "重試",
+    "reselect": "重選",
     "automatic": "自動",
     "default": "默認",
     "modify": "修改",
