@@ -100,6 +100,7 @@
 | `GET` | /api/v2/post/`{pid}`/detail | 获取帖子详情 |
 | `GET` | /api/v2/post/`{pid}`/interaction/`{type}` | 获取帖子互动的用户列表 |
 | `GET` | /api/v2/post/`{pid}`/users | 获取帖子的附属用户列表 |
+| `GET` | /api/v2/post/`{pid}`/quotes | 获取帖子的引用它的帖子列表 |
 | `GET` | /api/v2/post/`{pid}`/logs | 获取帖子的日志列表 |
 | `GET` | /api/v2/post/`{pid}`/log/`{logId}` | 获取帖子日志详情 |
 | `DELETE` | /api/v2/post/`{pid}` | 删除帖子 |
