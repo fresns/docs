@@ -7,6 +7,7 @@
 | 栏目标题 | 键名 | 键值类型 | 命令字 | 说明 |
 | --- | --- | --- | --- | --- |
 | IP 服务商 | ip_service | **plugin** | `ipInfo` | 插件应用场景参数 `extendIp` |
+| 地图服务商 | map_service | **plugin** |  | 插件应用场景参数 `extendMap` |
 | 通知服务商 | notifications_service | **plugin** | `sendNotification` | 插件应用场景参数 `extendNotification` |
 | 内容审核服务商 | content_review_service | **plugin** | `reviewNotice` | 插件应用场景参数 `extendReview` |
 

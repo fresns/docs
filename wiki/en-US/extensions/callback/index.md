@@ -46,6 +46,7 @@ After the operation is completed on the plug-in page, it will return the data in
         "plid": "",
         "clid": "",
         "uploadInfo": "",
+        "locationInfo": "",
     },
     // The following logic is consistent with the API
     "code": 0, // Processing status code

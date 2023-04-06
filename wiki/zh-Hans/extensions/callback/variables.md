@@ -27,6 +27,7 @@
 | `{plid}` | 帖子日志 ID | post_logs->id |
 | `{clid}` | 评论日志 ID | comment_logs->id |
 | `{uploadInfo}` | 上传参数 | [同上传接口](../../api/common/upload-file.md) |
+| `{locationInfo}` | 位置参数 | `纬度,经度,比例` 以英文逗号隔开，例如 `1.2803074,103.8610191,16` |
 
 ## {type} 访问来源类型
 

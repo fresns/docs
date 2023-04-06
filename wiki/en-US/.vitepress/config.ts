@@ -524,7 +524,6 @@ function sidebarDatabase() {
                         { text: 'User', link: '/database/keyname/user.md' },
                         { text: 'Wallet', link: '/database/keyname/wallet.md' },
                         { text: 'Storage', link: '/database/keyname/storage.md' },
-                        { text: 'Maps', link: '/database/keyname/maps.md' },
                     ]
                 },
                 {

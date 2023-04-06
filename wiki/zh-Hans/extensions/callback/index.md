@@ -46,6 +46,7 @@ Fresns 主程序内置了 [iFrame Resizer](https://github.com/davidjbradshaw/ifr
         "plid": "",
         "clid": "",
         "uploadInfo": "",
+        "locationInfo": "",
     },
     // 以下逻辑同 API 一致
     "code": 0, // 处理状态，0 表示成功，其余为失败状态码

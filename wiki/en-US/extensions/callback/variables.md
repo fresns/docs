@@ -27,6 +27,7 @@ Whether it is website or mobile application, the use of plug-ins is embedded in 
 | `{plid}` | Post Log ID | post_logs->id |
 | `{clid}` | Comment Log ID | comment_logs->id |
 | `{uploadInfo}` | Upload Parameters | [See Upload File API](../../api/common/upload-file.md) |
+| `{locationInfo}` | Location Parameters | `latitude,longitude,scale` Separated by commas, e.g. `1.2803074,103.8610191,16` |
 
 ## {type} Access source type
 

@@ -79,12 +79,12 @@ When the plugin is installed and published, static resources are distributed to 
 | recharge | Wallet Recharge Service Provider | Panel > Systems > Wallet |
 | withdraw | Wallet Withdrawal Service Provider | Panel > Systems > Wallet |
 | storage | Storage Service Provider | Panel > Systems > Storage |
-| map | Map Service Provider | Panel > Systems > Maps |
 | editor | Editor Plugin | Panel > Operations > Publish |
 | followGroup | Group Follow Mode Support | Panel > Operations > Groups |
 | extendEditor | Editor Extensions | Panel > Extends > Editor |
 | extendContentType | Content Type Extensions | Panel > Extends > Content Type |
 | extendIp | IP Service Providers | Panel > Extends > Content Handler |
+| extendMap | Map Service Providers | Panel > Extends > Content Handler |
 | extendNotification | Notification Provider | Panel > Extends > Content Handler |
 | extendReview | Review Service Provider | Panel > Extends > Content Handler |
 | extendData | Data Service Provider | Panel > Extends > Content Handler |
@@ -92,7 +92,6 @@ When the plugin is installed and published, static resources are distributed to 
 | extendManage | Management Extensions | Panel > Extends > Manage |
 | extendGroup | Group Extensions | Panel > Extends > Group |
 | extendUser | User Function Extensions | Panel > Extends > User Feature<br>Panel > Extends > User Profile |
-| engine | Web Engine | Panel > Clients > Website |
 | appNotification | Mobile Notification Service Provider | Panel > Clients > App |
 
 ## composer.json Config File
