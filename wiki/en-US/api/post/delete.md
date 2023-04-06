@@ -17,7 +17,7 @@
 
 | Parameter Name | Type | Required | Description |
 | --- | --- | --- | --- |
-| pid | String | **required** | 帖子 PID |
+| pid | String | **required** | Post PID |
 
 ## Return
 

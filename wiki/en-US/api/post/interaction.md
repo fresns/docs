@@ -17,8 +17,8 @@
 
 | Parameter Name | Type | Required | Description |
 | --- | --- | --- | --- |
-| pid | String | **required** | 帖子 PID |
-| type | String | **required** | 查看类型 `like`,`dislike`,`follow`,`block` |
+| pid | String | **required** | Post PID |
+| type | String | **required** | View Type `like`,`dislike`,`follow`,`block` |
 
 ## Query Params
 
