@@ -14,10 +14,13 @@ hero:
   actions:
     - theme: brand
       text: Get Started
-      link: /guide/
+      link: /guide/install.md
     - theme: alt
-      text: Join Fresns
-      link: /community/join.md
+      text: Community ↗
+      link: https://discuss.fresns.com/
+    - theme: alt
+      text: Marketplace ↗
+      link: https://market.fresns.com/open-source
 
 features:
   - icon: 🎉

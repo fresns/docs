@@ -16,10 +16,10 @@ hero:
       text: 开始使用
       link: /guide/install.md
     - theme: alt
-      text: 使用案例
-      link: https://discuss.fresns.com/group/share
+      text: 官方社区 ↗
+      link: https://discuss.fresns.com/
     - theme: alt
-      text: 应用市场
+      text: 应用市场 ↗
       link: https://market.fresns.com/open-source
 
 features:
