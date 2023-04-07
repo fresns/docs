@@ -6,22 +6,17 @@ Before you install Fresns, it's important to check that your server meets the re
 
 | Environment | Services |
 | --- | --- |
-| Web Server | Nginx or Apache or IIS or Caddy |
+| Web Server<br>`Choose any one` | Nginx<br>Apache<br>Caddy<br>IIS |
+| PHP Version | PHP 8.1 or higher |
+| PHP Extensions | `fileinfo` |
+| PHP Functions | `putenv`, `symlink`, `proc_open`, `passthru` |
 | Package Manager | Composer 2.5 or higher |
-| Code Lang | PHP 8.1 or higher |
-| Database | MySQL 5.7 or 8.x |
-
-::: info PHP Config Requirements
-- Extensions: `fileinfo`
-- Functions: `putenv` `symlink` `proc_open` `passthru`
-:::
+| Database and Version<br>`Choose any one` | MySQL `5.7 ~ 8.x`<br>MariaDB `10.3 ~ 11.x`<br>PostgreSQL `11.x ~ 15.x`<br>SQL Server `2016(13.x) ~ 2022(16.x)`<br>SQLite `3.9 及以上` |
 
 ## Download
 
-- Latest Version: v2.7.2 (2023-03-05)
-
 ::: tip Option 1: Download the full package manually
-- [Click to download](https://app.fresns.org/latest.zip)
+- [Download v2.7.2 (2023-03-05)](https://app.fresns.org/latest.zip)
 - *Website engine and theme templates already built in*
 :::
 
@@ -83,13 +78,13 @@ su -c "cd /www/wwwroot/fresns && php artisan schedule:run >> /dev/null 2>&1" -s 
 After successful installation, there will be an `.env` file in the root directory of the main program, which is used to store all the configuration information of Fresns. The details are as follows:
 
 ```sh
-APP_ENV=production          #Operating environment, local for test use, production for official operation
-APP_KEY=Encryption Key      #Data encryption key, which can be regenerated with the command php artisan key:generate
-APP_DEBUG=false             #Whether to output detailed error messages
-APP_URL=Main Program URL    #example https://discuss.fresns.com
-APP_FOUNDER=1               #Founder Account ID (accounts->id)
+APP_ENV=production            #Operating environment, local for test use, production for official operation
+APP_KEY=EncryptionKey         #Data encryption key, which can be regenerated with the command php artisan key:generate
+APP_DEBUG=false               #Whether to output detailed error messages
+APP_URL=MainProgramURL        #example https://discuss.fresns.com
+APP_FOUNDER=1                 #Founder Account ID (accounts->id)
 
-DB_CONNECTION=mysql           #Database Type
+DB_CONNECTION=mysql           #Database Type: sqlite, mysql, pgsql, sqlsrv
 DB_HOST=127.0.0.1             #Default is 127.0.0.1
 DB_PORT=3306                  #Default is 3306
 DB_DATABASE=fresns            #Database

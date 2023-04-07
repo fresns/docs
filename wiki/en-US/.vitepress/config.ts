@@ -22,9 +22,9 @@ export default defineConfig({
             label: 'English',
             lang: 'en-US'
         },
-        en: {
+        'zh-hans': {
             label: '简体中文',
-            link: 'https://fresns.cn/'
+            link: 'https://zh-hans.fresns.org/'
         }
     },
 
@@ -114,13 +114,6 @@ function sidebarGuide() {
                 { text: 'Operating', link: '/guide/operating.md' },
                 { text: 'Reporting Bugs', link: '/guide/feedback.md' },
                 { text: 'FAQ', link: '/guide/faq.md' },
-            ]
-        },
-        {
-            text: 'Server Configuration',
-            collapsed: false,
-            items: [
-                { text: 'Baota Panel', link: '/guide/install/baota.md' },
             ]
         }
     ]

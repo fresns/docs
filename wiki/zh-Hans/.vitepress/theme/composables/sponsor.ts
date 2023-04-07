@@ -18,7 +18,7 @@ interface Sponsor {
 // shared data across instances so we load only once.
 const data = ref()
 
-const dataHost = 'https://app.fresns.cn'
+const dataHost = 'https://app.fresns.org'
 const dataUrl = `${dataHost}/sponsor/sponsors.json`
 
 export function useSponsor() {

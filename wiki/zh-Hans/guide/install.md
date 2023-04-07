@@ -2,35 +2,25 @@
 
 ## 环境要求
 
-Fresns 是一款基于 PHP 和 MySQL 开发的社交社区网络服务软件。
+Fresns 是一款基于 PHP 编程语言和关系型数据库开发的社交社区网络服务软件。
 
-| 环境 | 服务 |
+| 配置项 | 要求 |
 | --- | --- |
-| Web 服务器 | Nginx 或 Apache 或 IIS 或 Caddy |
+| Web 服务器<br>`任选一种` | Nginx<br>Apache<br>Caddy<br>IIS |
+| PHP 版本 | 8.1 或以上 |
+| PHP 扩展支持 | `fileinfo` |
+| PHP 函数启用 | `putenv`, `symlink`, `proc_open`, `passthru` |
 | 软件包管理器 | Composer 2.5 或以上 |
-| 程序语言 | PHP 8.1 或以上 |
-| 数据库 | MySQL 5.7 或 8.x |
-
-::: info PHP 配置要求
-- 扩展要求支持：`fileinfo`
-- 函数要求启用：`putenv` `symlink` `proc_open` `passthru`
-:::
-
-*服务器运行环境的配置，网上有很多教程，大家可以自行搜索学习（国内外也有很多免费的可视化面板）；各大主机服务商的文档中心与服务市场也有教学和服务；所以在这里我们就不教大家如何配置运行环境了。*
+| 数据库和版本<br>`任选一种` | MySQL `5.7 ~ 8.x`<br>MariaDB `10.3 ~ 11.x`<br>PostgreSQL `11.x ~ 15.x`<br>SQL Server `2016(13.x) ~ 2022(16.x)`<br>SQLite `3.9 及以上` |
 
 ## 下载安装包
 
-> 中国版与国际版的功能一致，无区别，只是彼此使用的应用市场不同，中国版应用市场部署在中国境内服务器，并且数据与国际版互不相通。
-
-- 最新版: [v2.7.2 (2023-03-05)](https://discuss.fresns.cn/post/fresns-v2-7-2)
-
 ::: tip 方式 1: 手动下载完整包（已内置网站引擎和主题模板）
-- [中国版](https://app.fresns.cn/latest.zip)
-- [国际版](https://fresns.org/guide/install.html#download)
+- [下载 v2.7.2 (2023-03-05)](https://app.fresns.org/latest.zip)
 :::
 
 ::: tip 方式 2: 基于 Composer 下载
-- 下载程序（国际版）
+- 下载程序
 ```sh
 composer create-project fresns/fresns
 ```
@@ -42,7 +32,7 @@ php artisan vendor:publish --provider="Fresns\ThemeManager\Providers\ThemeServic
 php artisan vendor:publish --provider="Fresns\MarketManager\Providers\MarketServiceProvider"
 ```
 
-- 如果需要网站端，请至应用市场挑选[网站引擎](https://market.fresns.cn/open-source/engines)和[主题模板](https://market.fresns.cn/open-source/themes)
+- 如果需要网站端，请至应用市场挑选[网站引擎](https://market.fresns.com/open-source/engines)和[主题模板](https://market.fresns.com/open-source/themes)
 :::
 
 ## 主程序安装
@@ -90,10 +80,10 @@ su -c "cd /www/wwwroot/fresns && php artisan schedule:run >> /dev/null 2>&1" -s 
 APP_ENV=production            #运营环境，测试使用为 local，正式运营为 production
 APP_KEY=                      #数据加密 key，可重新生成，指令为 php artisan key:generate
 APP_DEBUG=false               #是否输出详细报错信息，调试时改为 true
-APP_URL=                      #你的系统网址，例如 https://discuss.fresns.cn
+APP_URL=                      #你的系统网址，例如 https://discuss.fresns.com
 APP_FOUNDER=1                 #创始人账号 ID (accounts->id)
 
-DB_CONNECTION=mysql           #数据库类型，当前只支持 MySQL
+DB_CONNECTION=mysql           #数据库类型  sqlite, mysql, pgsql, sqlsrv
 DB_HOST=127.0.0.1             #数据库主机  默认为 127.0.0.1
 DB_PORT=3306                  #数据库主机端口 默认为 3306
 DB_DATABASE=fresns            #数据库名

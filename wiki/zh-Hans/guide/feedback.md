@@ -10,7 +10,7 @@
 
 已经发现了一个 Bug？很好！这确实是个好消息——但你应该先查看一下相关情况，以免你在已知问题上浪费时间：
 
-- 搜索 [支持社区](https://discuss.fresns.cn/group/feedback)，看看这个 bug 是否已经被报告。
+- 搜索 [支持社区](https://discuss.fresns.com/group/feedback)，看看这个 bug 是否已经被报告。
 - 搜索我们的 [问题追踪器](https://github.com/fresns/fresns/issues)，或许这个 bug 正在修复中。
 
 在**搜索一番**后，如果无人报告该问题，欢迎你提交报告。

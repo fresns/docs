@@ -9,7 +9,7 @@ hero:
   text: 一款免费开源的社交网络服务软件
   tagline: 专为跨平台而打造的通用型社区产品，支持灵活多样的内容形态，可以满足多种运营场景，符合时代潮流，更开放且更易于二次开发。
   image:
-      src: https://cdn.fresns.cn/wiki/images/work.png
+      src: https://files.fresns.org/wiki/images/work.png
       alt: Fresns
   actions:
     - theme: brand
@@ -17,10 +17,10 @@ hero:
       link: /guide/install.md
     - theme: alt
       text: 使用案例
-      link: https://discuss.fresns.cn/group/share
+      link: https://discuss.fresns.com/group/share
     - theme: alt
       text: 应用市场
-      link: https://market.fresns.cn/open-source
+      link: https://market.fresns.com/open-source
 
 features:
   - icon: 🎉

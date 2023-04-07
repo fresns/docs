@@ -9,12 +9,12 @@ export default defineConfig({
     lastUpdated: true,
 
     head: [
-        ['link', { rel: 'icon', type: 'image/png', href: 'https://cdn.fresns.cn/wiki/icons/fresns.png' }],
+        ['link', { rel: 'icon', type: 'image/png', href: 'https://files.fresns.org/wiki/icons/fresns.png' }],
         ['meta', { property: 'og:type', content: 'website' }],
         ['meta', { property: 'og:title', content: 'Fresns' }],
         ['meta', { property: 'og:description', content: '一款免费开源的社交网络服务软件' }],
-        ['meta', { property: 'og:image', content: 'https://cdn.fresns.cn/wiki/images/og-image.jpg' }],
-        ['meta', { property: 'og:url', content: 'https://fresns.cn' }],
+        ['meta', { property: 'og:image', content: 'https://files.fresns.org/wiki/images/og-image-zh-hans.jpg' }],
+        ['meta', { property: 'og:url', content: 'https://zh-hans.fresns.org' }],
     ],
 
     locales: {
@@ -29,7 +29,7 @@ export default defineConfig({
     },
 
     themeConfig:{
-        logo: 'https://cdn.fresns.cn/wiki/icons/fresns.png',
+        logo: 'https://files.fresns.org/wiki/icons/fresns.png',
         nav: navbar(),
 
         socialLinks: [
@@ -51,7 +51,7 @@ export default defineConfig({
 
         footer: {
             message: '遵循 Apache-2.0 开源协议',
-            copyright: 'Copyright © 2021-2023 <a href="https://tangjie.me/" target="_blank">唐杰</a><br><a href="https://beian.miit.gov.cn/" target="_blank" rel="noopener">苏ICP备2021027795号-1</a> | <a href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=32058502010669" target="_blank" rel="noopener">苏公网安备32058502010669号</a>',
+            copyright: 'Copyright © 2021-2023 <a href="https://github.com/jevantang" target="_blank">唐杰</a>',
         },
 
         outlineTitle: '本页导览',
@@ -104,8 +104,8 @@ function navbar() {
                 { text: '加入我们', link: '/community/join.md' },
                 { text: '赞助我们', link: '/community/sponsor.md' },
                 { text: '贡献指南', link: '/contributing/' },
-                { text: '互动交流', link: 'https://discuss.fresns.cn' },
-                { text: '应用市场', link: 'https://market.fresns.cn/open-source' },
+                { text: '互动交流', link: 'https://discuss.fresns.com' },
+                { text: '应用市场', link: 'https://market.fresns.com/open-source' },
             ],
             activeMatch: `^/(community|contributing)/`,
         }
@@ -133,13 +133,6 @@ function sidebarGuide() {
             collapsed: false,
             items: [
                 { text: '宝塔面板配置教程', link: '/guide/install/baota.md' },
-            ]
-        },
-        {
-            text: 'Fresns 演示',
-            collapsed: false,
-            items: [
-                { text: '网站端演示', link: 'https://discuss.fresns.cn/post/demo' },
             ]
         }
     ]
@@ -230,7 +223,6 @@ function sidebarApi() {
                 { text: '扩展档案配置', link: '/api/global/archives.md' },
                 { text: '获取上传凭证', link: '/api/global/upload-token.md' },
                 { text: '用户角色', link: '/api/global/roles.md' },
-                { text: '地图服务商', link: '/api/global/maps.md' },
                 { text: '内容类型', link: '/api/global/content-types.md' },
                 { text: '表情图', link: '/api/global/stickers.md' },
                 { text: '阻止词', link: '/api/global/block-words.md' },
@@ -240,6 +232,7 @@ function sidebarApi() {
             text: '公共业务',
             collapsed: false,
             items: [
+                { text: 'IP 信息', link: '/api/common/ip-info.md' },
                 { text: '输入提示信息', link: '/api/common/input-tips.md' },
                 { text: '回调返参查询', link: '/api/common/callback.md' },
                 { text: '发送验证码', link: '/api/common/send-verify-code.md' },
@@ -327,6 +320,7 @@ function sidebarApi() {
                 { text: '获取帖子[详情]', link: '/api/post/detail.md' },
                 { text: '获取帖子[详情] 互动列表', link: '/api/post/interaction.md' },
                 { text: '获取帖子[详情] 附属用户列表', link: '/api/post/users.md' },
+                { text: '获取帖子[详情] 引用它的帖子列表', link: '/api/post/quotes.md' },
                 { text: '获取帖子[详情] 日志列表', link: '/api/post/logs.md' },
                 { text: '获取帖子[详情] 日志详情', link: '/api/post/log-detail.md' },
                 { text: '删除帖子', link: '/api/post/delete.md' },
@@ -541,7 +535,6 @@ function sidebarDatabase() {
                         { text: '用户设置', link: '/database/keyname/user.md' },
                         { text: '钱包设置', link: '/database/keyname/wallet.md' },
                         { text: '存储设置', link: '/database/keyname/storage.md' },
-                        { text: '地图设置', link: '/database/keyname/maps.md' },
                     ]
                 },
                 {
@@ -620,7 +613,8 @@ function sidebarSupports() {
             text: '实用程序',
             collapsed: false,
             items: [
-                { text: '配置项目 ConfigUtility', link: '/supports/utilities/config.md' },
+                { text: '通用工具 GeneralUtility', link: '/supports/utilities/general.md' },
+                { text: '配置工具 ConfigUtility', link: '/supports/utilities/config.md' },
                 { text: '数组工具 ArrUtility', link: '/supports/utilities/arr.md' },
                 { text: '扩展工具 ExtendUtility', link: '/supports/utilities/extend.md' },
                 { text: '文件工具 FileUtility', link: '/supports/utilities/file.md' },
@@ -664,8 +658,8 @@ function sidebarCommunity() {
             text: '互动',
             collapsed: false,
             items: [
-                { text: '互动交流', link: 'https://discuss.fresns.cn' },
-                { text: '应用市场', link: 'https://market.fresns.cn/open-source' },
+                { text: '互动交流', link: 'https://discuss.fresns.com' },
+                { text: '应用市场', link: 'https://market.fresns.com/open-source' },
             ]
         },
     ]

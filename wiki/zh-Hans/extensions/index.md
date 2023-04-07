@@ -1,6 +1,6 @@
 # 扩展 Fresns
 
-<p align="center"><img src="https://cdn.fresns.cn/wiki/images/logo.png" width="300"></p>
+<p align="center"><img src="https://files.fresns.org/wiki/images/logo.png" width="300"></p>
 
 <p align="center">
 <img src="https://img.shields.io/badge/Laravel-10.x-blue" alt="Laravel" style="display:inline;">
@@ -98,13 +98,4 @@ Fresns 主程序 Composer 依赖库关系。
 
 - 项目发起人：[唐杰](https://tangjie.me/about)
 - 联系邮箱：[support@fresns.org](mailto:support@fresns.org)
-- 官方社区：[https://discuss.fresns.cn](https://discuss.fresns.cn/)
-- 微信群：*扫描下方二维码加唐杰微信，告之你要加「开发者群」，稍后唐杰会拉你进群。*
-
-<img src="https://cdn.fresns.cn/wiki/images/wechat.jpg" width="200">
-
-## 关注我们
-
-<img src="https://cdn.fresns.cn/wiki/images/wechat-mp.png" width="400">
-
-- 官方社区：[https://discuss.fresns.cn](https://discuss.fresns.cn/)
+- 官方社区：[https://discuss.fresns.com](https://discuss.fresns.com/)
