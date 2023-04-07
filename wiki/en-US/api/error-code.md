@@ -133,6 +133,7 @@
 | 35108 | Nickname length incorrect |
 | 35109 | Nickname does not meet the minimum length requirement |
 | 35110 | The nickname contains block words |
+| 35111 | That nickname has been taken. Please choose another. |
 | 35201 | Current user not exist or not belong to the current account |
 | 35202 | Current user has been banned |
 | 35203 | The user has been logged out |

@@ -23,6 +23,7 @@
 | 昵称最小长度 | nickname_min | 2 | number |  |
 | 昵称最大长度 | nickname_max | 20 | number |  |
 | 昵称修改间隔天数 | nickname_edit | 1 | number |  |
+| 昵称不可重复 | nickname_unique | false | boolean |  |
 | 用户简介字数限制 | bio_length | 128 | number | 字符数长度 |
 | 用户简介支持艾特 | bio_support_mention | false | boolean | true 或 false |
 | 用户简介支持链接 | bio_support_link | false | boolean | true 或 false |
