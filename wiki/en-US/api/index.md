@@ -9,7 +9,6 @@
 | `GET` | /api/v2/global/`{type}`/archives | Extend Archives |
 | `GET` | /api/v2/global/upload-token | Get Upload Token |
 | `GET` | /api/v2/global/roles | User Roles |
-| `GET` | /api/v2/global/maps | Map Services |
 | `GET` | /api/v2/global/`{type}`/content-types | Content Types |
 | `GET` | /api/v2/global/stickers | Stickers |
 | `GET` | /api/v2/global/block-words | Block Words |
@@ -100,7 +99,7 @@
 | `GET` | /api/v2/post/`{pid}`/detail | Post Detail |
 | `GET` | /api/v2/post/`{pid}`/interaction/`{type}` | Post Interaction Users |
 | `GET` | /api/v2/post/`{pid}`/users | Post Affiliate User List |
-| `GET` | /api/v2/post/`{pid}`/quotes | Posts that quote it |
+| `GET` | /api/v2/post/`{pid}`/quotes | Post Quote It List |
 | `GET` | /api/v2/post/`{pid}`/logs | Post Logs |
 | `GET` | /api/v2/post/`{pid}`/log/`{logId}` | Post Log Detail |
 | `DELETE` | /api/v2/post/`{pid}` | Delete |

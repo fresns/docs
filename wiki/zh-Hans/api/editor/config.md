@@ -98,11 +98,7 @@
                 },
                 "location": {
                     "status": "Boolean / 是否启用位置",
-                    "maps": [
-                        {
-                            // 通用数据结构->扩展功能信息
-                        }
-                    ]
+                    "map": "String / 地图 Web 页面"
                 },
                 "anonymous": "Boolean / 是否支持匿名",
                 "contentLength": "Number / 内容最大长度"

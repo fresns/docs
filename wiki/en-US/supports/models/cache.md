@@ -203,7 +203,6 @@ fresns_wallet_recharge_extends_by_everyone_{$langTag}
 fresns_wallet_withdraw_extends_by_everyone_{$langTag}
 fresns_post_content_types_by_{$typeName}_{$langTag}              // +tag: fresnsConfigs
 fresns_comment_content_types_by_{$typeName}_{$langTag}           // +tag: fresnsConfigs
-fresns_map_extends_by_everyone_{$langTag}
 
 fresns_editor_post_extends_by_everyone_{$langTag}
 fresns_editor_comment_extends_by_everyone_{$langTag}

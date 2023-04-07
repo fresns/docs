@@ -211,7 +211,6 @@ function sidebarApi() {
                 { text: 'Extend Archives', link: '/api/global/archives.md' },
                 { text: 'Get Upload Token', link: '/api/global/upload-token.md' },
                 { text: 'User Roles', link: '/api/global/roles.md' },
-                { text: 'Map Services', link: '/api/global/maps.md' },
                 { text: 'Content Types', link: '/api/global/content-types.md' },
                 { text: 'Stickers', link: '/api/global/stickers.md' },
                 { text: 'Block Words', link: '/api/global/block-words.md' },
