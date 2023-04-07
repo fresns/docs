@@ -27,7 +27,7 @@ const members = [
         ]
     },
     {
-        avatar: 'https://files.fresns.org/wiki/avatars/tracy.jpg',
+        avatar: 'https://files.fresns.org/wiki/avatars/tracy-yuan.jpg',
         name: 'Tracy Yuan',
         title: 'Tester',
         links: [
