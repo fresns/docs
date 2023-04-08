@@ -62,9 +62,9 @@ export default defineConfig({
         algolia: {
             appId: 'IWES74ZEKI',
             apiKey: 'ca90647551baab10e88397dc8b58506c',
-            indexName: 'fresns_cn',
+            indexName: 'fresns_zh_hans',
             locales: {
-                zh: {
+                root: {
                     placeholder: '搜索文档',
                     translations: {
                         button: {
