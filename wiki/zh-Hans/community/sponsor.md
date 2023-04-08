@@ -1,3 +1,8 @@
+---
+editLink: false
+lastUpdated: false
+---
+
 # 成为 Fresns 的赞助者
 
 Fresns 是采用 Apache-2.0 许可的开源项目，使用完全免费。

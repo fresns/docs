@@ -1,3 +1,8 @@
+---
+editLink: false
+lastUpdated: false
+---
+
 # Become a Fresns Sponsor
 
 Fresns is an Apache-2.0 licensed open source project and completely free to use. The tremendous amount of effort needed to maintain such a large ecosystem and develop new features for the project is only made sustainable thanks to the generous financial backing of our sponsors.

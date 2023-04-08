@@ -1,3 +1,8 @@
+---
+editLink: false
+lastUpdated: false
+---
+
 # Join the Fresns Community
 
 This document is for developers who want to join Fresns open-source organization. If you are only a user, please read the [guide](../guide/) document; if you are a developer of an extension plug-in, please read the [extension](../extensions/) documentation; if you are a mobile application developer, please read the [API](../api/) documentation.

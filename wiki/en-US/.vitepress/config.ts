@@ -54,16 +54,16 @@ export default defineConfig({
             copyright: 'Copyright © 2021-2023 <a href="https://github.com/jevantang" target="_blank">Jevan Tang</a>',
         },
 
-        editLink: {
-            pattern: 'https://github.com/fresns/docs/tree/main/wiki/en-US/:path',
-            text: 'Suggest changes to this page'
-        },
-
         algolia: {
             appId: 'IWES74ZEKI',
             apiKey: 'ca90647551baab10e88397dc8b58506c',
             indexName: 'fresns'
-        }
+        },
+
+        editLink: {
+            pattern: 'https://github.com/fresns/docs/tree/main/wiki/en-US/:path',
+            text: 'Suggest changes to this page'
+        },
     }
 })
 

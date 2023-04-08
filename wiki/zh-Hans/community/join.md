@@ -1,3 +1,8 @@
+---
+editLink: false
+lastUpdated: false
+---
+
 # 加入 Fresns
 
 本文档是为想要加入 Fresns 开源组织的开发者提供的。如果你只是使用者，请阅读[指南](../guide/)文档；如果你是扩展插件的开发者，请阅读[扩展](../extensions/)文档；如果你是移动应用开发者，请阅读 [API](../api/) 文档。
