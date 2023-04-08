@@ -62,6 +62,7 @@ ValidationUtility::nickname('nickname');
     "formatSpace": true,  // 一个空格
     "minLength": true,  // 最小长度
     "maxLength": true,  // 最大长度
+    "use": true,  // 未被使用或无验证要求
     "banName": true,  // 无禁用名
 }
 ```
