@@ -14,8 +14,8 @@ Whether it is website or mobile application, the use of plug-ins is embedded in 
 | `{authorization}` | Authorization and quick login<br>[Generate Authorization](url-authorization.md) / [Verify Authorization](../plugin/url-authorization.md) |  |
 | `{type}` | Type of access source (client channel) |  |
 | `{scene}` | Scene of the source |  |
-| `{postMessageKey}` | Identification name: Client receiving callback message as `postMessage` |  |
-| `{callbackUlid}` | Identification name: Client receiving callback message as `API` | plugin_callbacks->ulid |
+| `{postMessageKey}` | Callback identification name<br>Client receiving callback message as `postMessage` |  |
+| `{callbackUlid}` | Callback identification name<br>Client receiving callback message as `API` | plugin_callbacks->ulid |
 | `{aid}` | Account ID | accounts->aid |
 | `{uid}` | User ID | users->uid |
 | `{rid}` | Role ID | roles->id |
@@ -27,7 +27,7 @@ Whether it is website or mobile application, the use of plug-ins is embedded in 
 | `{plid}` | Post Log ID | post_logs->id |
 | `{clid}` | Comment Log ID | comment_logs->id |
 | `{uploadInfo}` | Upload Parameters | [See Upload File API](../../api/common/upload-file.md) |
-| `{locationInfo}` | Location Parameters | `latitude,longitude,scale` Separated by commas, e.g. `1.2803074,103.8610191,16` |
+| `{locationInfo}` | Location Parameters | `mapId,latitude,longitude,scale` Separated by commas<br>[Map ID](../../database/dictionary/maps.md)<br>e.g. `2,1.2803074,103.8610191,16` |
 
 ## {type} Access source type
 

@@ -14,8 +14,8 @@
 | `{authorization}` | 鉴权信息，并且实现一键登录<br>[生成信息](url-authorization.md) / [验证信息](../plugin/url-authorization.md) |  |
 | `{type}` | 访问来源类型（客户端频道） |  |
 | `{scene}` | 入口场景 |  |
-| `{postMessageKey}` | 标识名: 客户端以 `postMessage` 方式接收回调通知 |  |
-| `{callbackUlid}` | 标识名: 客户端以 `API` 方式接收回调通知 | plugin_callbacks->ulid |
+| `{postMessageKey}` | 回调标识名<br>客户端以 `postMessage` 方式接收回调通知 |  |
+| `{callbackUlid}` | 回调标识名<br>客户端以 `API` 方式接收回调通知 | plugin_callbacks->ulid |
 | `{aid}` | 账号 ID | accounts->aid |
 | `{uid}` | 用户 ID | users->uid |
 | `{rid}` | 角色 ID | roles->id |
@@ -27,7 +27,7 @@
 | `{plid}` | 帖子日志 ID | post_logs->id |
 | `{clid}` | 评论日志 ID | comment_logs->id |
 | `{uploadInfo}` | 上传参数 | [同上传接口](../../api/common/upload-file.md) |
-| `{locationInfo}` | 位置参数 | `纬度,经度,比例` 以英文逗号隔开，例如 `1.2803074,103.8610191,16` |
+| `{locationInfo}` | 位置参数 | `地图 ID,纬度,经度,比例` 以英文逗号隔开<br>[地图 ID 信息](../../database/dictionary/maps.md)<br>例如 `2,1.2803074,103.8610191,16` |
 
 ## {type} 访问来源类型
 
