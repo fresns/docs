@@ -35,29 +35,53 @@
     - state=3 代表该 ID 帖子的历史正式版本，可能有多个。
 
 ## 字段: map_json 位置信息
-位置信息
 
-```json
+::: code-group
+```json [字段说明]
+// 未注明字段的参数，不单独存字段，与完整 json 存入 post_appends->map_json
 {
-    "mapId": "posts > map_id",
+    "mapId": "post_appends > map_id",
     "latitude": "posts > map_latitude",
     "longitude": "posts > map_longitude",
     "scale": "post_appends > map_scale",
-    "continent": "Asia", // 不单独存字段，会随着完整 json 存入 post_appends->map_json
+    "continent": "",
     "continentCode": "post_appends > map_continent_code",
-    "country": "China",
+    "country": "",
     "countryCode": "post_appends > map_country_code",
-    "region": "Jiangsu",
+    "region": "",
     "regionCode": "post_appends > map_region_code",
-    "city": "post_appends > map_city",
+    "city": "",
     "cityCode": "post_appends > map_city_code",
     "district": "",
     "address": "",
     "zip": "post_appends > map_zip",
-    "poi": "post_appends > map_poi",
+    "poi": "",
     "poiId": "post_appends > map_poi_id",
 }
 ```
+
+```json [参数示例]
+{
+    "mapId": 2,
+    "latitude": 37.3185039,
+    "longitude": -122.0288017,
+    "scale": 14,
+    "continent": "North America",
+    "continentCode": "NA",
+    "country": "United States",
+    "countryCode": "US",
+    "region": "California",
+    "regionCode": "CA",
+    "city": "Santa Clara",
+    "cityCode": "SC",
+    "district": "Cupertino",
+    "address": "10800 Torre Ave, Cupertino, CA 95014",
+    "zip": "95014",
+    "poi": "Cupertino Library",
+    "poiId": "TRDucfBPkhuzzR9a7",
+}
+```
+:::
 
 ## 字段: allow_json 阅读权限配置
 

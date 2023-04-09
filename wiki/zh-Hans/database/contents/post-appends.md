@@ -36,24 +36,48 @@
 
 ## map_json 完整信息
 
-```json
+::: code-group
+```json [en]
 {
-    "mapId": "posts > map_id",
-    "latitude": "posts > map_latitude",
-    "longitude": "posts > map_longitude",
-    "scale": "post_appends > map_scale",
-    "continent": "Asia",
-    "continentCode": "AS",
-    "country": "China",
-    "countryCode": "CN",
-    "region": "Jiangsu",
-    "regionCode": "JS",
-    "city": "Suzhou",
-    "cityCode": "SZ",
-    "district": "Taicang",
-    "address": "xxx",
-    "zip": "215400",
-    "poi": "",
-    "poiId": "",
+    "mapId": 2,
+    "latitude": 37.3185039,
+    "longitude": -122.0288017,
+    "scale": 14,
+    "continent": "North America",
+    "continentCode": "NA",
+    "country": "United States",
+    "countryCode": "US",
+    "region": "California",
+    "regionCode": "CA",
+    "city": "Santa Clara",
+    "cityCode": "SC",
+    "district": "Cupertino",
+    "address": "10800 Torre Ave, Cupertino, CA 95014",
+    "zip": "95014",
+    "poi": "Cupertino Library",
+    "poiId": "TRDucfBPkhuzzR9a7",
 }
 ```
+
+```json [zh-Hans]
+{
+    "mapId": 4,
+    "latitude": 31.299,
+    "longitude": 120.585,
+    "scale": 6,
+    "continent": "亚洲",
+    "continentCode": "AS",
+    "country": "中国",
+    "countryCode": "CN",
+    "region": "江苏",
+    "regionCode": "JS",
+    "city": "苏州",
+    "cityCode": "SZ",
+    "district": "工业园区",
+    "address": "苏州工业园区星港街199号",
+    "zip": "215000",
+    "poi": "东方之门",
+    "poiId": "B020017GRH",
+}
+```
+:::

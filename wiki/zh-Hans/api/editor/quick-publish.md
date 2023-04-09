@@ -33,16 +33,16 @@
 | content | String | NO | 正文内容 |  |
 | isMarkdown | Boolean | NO | 内容是否为 MD 格式 |  |
 | isAnonymous | Boolean | NO | 是否匿名 |  |
-| map | Object | NO | 位置信息 |  |
-| extends | Array | NO | 扩展内容 |  |
-| archives | Array | NO | 扩展参数 |  |
-| file | File | NO | 图片文件 | 图片文件 |
+| map | String | NO | 位置信息: 压缩 Object 信息为字符串传参 |  |
+| extends | String | NO | 扩展内容: 压缩 Array 信息为字符串传参 |  |
+| archives | String | NO | 扩展参数: 压缩 Array 信息为字符串传参 |  |
+| image | File | NO | 图片文件 | 图片文件 |
 
 **接口使用说明**
 
 - 跳过草稿逻辑，直接发表内容。发表内容不存草稿（日志）。
-- 支持关联单个已有的扩展内容。
 - 支持接口直传单个图片文件。
+- `map`, `extends`, `archives` 参见[更新草稿接口](update.md)
 
 ## 返回结果
 

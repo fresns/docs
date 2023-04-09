@@ -24,3 +24,27 @@
 | created_at | timestamp | Create Time | CURRENT_TIMESTAMP | NO |  |
 | updated_at | timestamp | Update Time |  | YES |  |
 | deleted_at | timestamp | Delete Time |  | YES |  |
+
+## map_json 完整信息
+
+```json
+{
+    "mapId": 2,
+    "latitude": 37.3185039,
+    "longitude": -122.0288017,
+    "scale": 14,
+    "continent": "North America",
+    "continentCode": "NA",
+    "country": "United States",
+    "countryCode": "US",
+    "region": "California",
+    "regionCode": "CA",
+    "city": "Santa Clara",
+    "cityCode": "SC",
+    "district": "Cupertino",
+    "address": "10800 Torre Ave, Cupertino, CA 95014",
+    "zip": "95014",
+    "poi": "Cupertino Library",
+    "poiId": "TRDucfBPkhuzzR9a7",
+}
+```

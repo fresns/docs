@@ -37,24 +37,49 @@
 
 ## 字段: 位置信息 map_json
 
-```json
+::: code-group
+```json [字段说明]
+// 未注明字段的参数，不单独存字段，与完整 json 存入 comment_appends->map_json
 {
-    "mapId": "posts > map_id",
-    "latitude": "posts > map_latitude",
-    "longitude": "posts > map_longitude",
-    "scale": "post_appends > map_scale",
-    "continent": "Asia", // 不单独存字段，会随着完整 json 存入 post_appends->map_json
-    "continentCode": "post_appends > map_continent_code",
-    "country": "China",
-    "countryCode": "post_appends > map_country_code",
-    "region": "Jiangsu",
-    "regionCode": "post_appends > map_region_code",
-    "city": "post_appends > map_city",
-    "cityCode": "post_appends > map_city_code",
+    "mapId": "comment_appends > map_id",
+    "latitude": "comments > map_latitude",
+    "longitude": "comments > map_longitude",
+    "scale": "comment_appends > map_scale",
+    "continent": "",
+    "continentCode": "comment_appends > map_continent_code",
+    "country": "",
+    "countryCode": "comment_appends > map_country_code",
+    "region": "",
+    "regionCode": "comment_appends > map_region_code",
+    "city": "",
+    "cityCode": "comment_appends > map_city_code",
     "district": "",
     "address": "",
-    "zip": "post_appends > map_zip",
-    "poi": "post_appends > map_poi",
-    "poiId": "post_appends > map_poi_id",
+    "zip": "comment_appends > map_zip",
+    "poi": "",
+    "poiId": "comment_appends > map_poi_id",
 }
 ```
+
+```json [参数示例]
+{
+    "mapId": 2,
+    "latitude": 37.3185039,
+    "longitude": -122.0288017,
+    "scale": 14,
+    "continent": "North America",
+    "continentCode": "NA",
+    "country": "United States",
+    "countryCode": "US",
+    "region": "California",
+    "regionCode": "CA",
+    "city": "Santa Clara",
+    "cityCode": "SC",
+    "district": "Cupertino",
+    "address": "10800 Torre Ave, Cupertino, CA 95014",
+    "zip": "95014",
+    "poi": "Cupertino Library",
+    "poiId": "TRDucfBPkhuzzR9a7",
+}
+```
+:::

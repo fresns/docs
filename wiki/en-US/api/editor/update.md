@@ -49,33 +49,36 @@
     - `tableColumn` = `id`
     - `tableId` = 当前草稿 ID `{draftId}`
 - 位置信息 `map` 参数示例：
-    - [查看 map id 信息](../../database/dictionary/maps.md)
+    - 位置信息 `mapId`,`latitude`,`longitude`,`poi` 这四个信息必传，其余可选
+    - `mapId` 来自数据字典，[地图服务商编号](../../database/dictionary/maps.md)
     - 位置信息删除（清空）需使用 `deleteMap` 参数。
-```json
-// mapId,latitude,longitude,poi 这四个信息必传，其余可选
+
+**参数示例**
+
+::: code-group
+```json [位置信息示例]
 {
     "mapId": 2,
-    "latitude": 113.324520,
-    "longitude": 23.099994,
-    "scale": "",
-    "continent": "Asia",
-    "continentCode": "AS",
-    "country": "China",
-    "countryCode": "CN",
-    "region": "Jiangsu",
-    "regionCode": "JS",
-    "city": "Suzhou",
-    "cityCode": "SZ",
-    "district": "Taicang",
-    "address": "",
-    "zip": "215400",
-    "poi": "",
-    "poiId": "",
+    "latitude": 37.3185039,
+    "longitude": -122.0288017,
+    "scale": 14,
+    "continent": "North America",
+    "continentCode": "NA",
+    "country": "United States",
+    "countryCode": "US",
+    "region": "California",
+    "regionCode": "CA",
+    "city": "Santa Clara",
+    "cityCode": "SC",
+    "district": "Cupertino",
+    "address": "10800 Torre Ave, Cupertino, CA 95014",
+    "zip": "95014",
+    "poi": "Cupertino Library",
+    "poiId": "TRDucfBPkhuzzR9a7",
 }
 ```
-- 扩展内容示例：
 
-```json
+```json [扩展内容示例]
 [
     {
         "eid": "eid",
@@ -85,9 +88,8 @@
     }
 ]
 ```
-- 扩展参数示例：
 
-```json
+```json [扩展参数示例]
 [
     {
         "code": "code",
@@ -97,6 +99,7 @@
     }
 ]
 ```
+:::
 
 ## Return
 
