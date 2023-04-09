@@ -59,19 +59,23 @@ php artisan vendor:publish --provider="Fresns\MarketManager\Providers\MarketServ
 
 When running Fresns, you need a way to keep “scheduled tasks” running normally, and task scheduling of Laravel framework is a mechanism to ensure that main programs and plug-ins can use scheduled tasks. With task scheduling configured, the main program can regularly clean up and log off accounts and detect the expiration of user roles.
 
-```sh
+::: code-group
+```sh [Intro]
 # Task Config
 * * * * * cd /your-project-path && php artisan schedule:run >> /dev/null 2>&1
+
 # or
 su -c "cd /your-project-path && php artisan schedule:run >> /dev/null 2>&1" -s /bin/sh owner
+```
 
-
-
+```sh [Example]
 # Example
 * * * * * cd /www/wwwroot/fresns && php artisan schedule:run >> /dev/null 2>&1
+
 # or
 su -c "cd /www/wwwroot/fresns && php artisan schedule:run >> /dev/null 2>&1" -s /bin/sh www
 ```
+:::
 
 ### .env Config File
 
@@ -83,16 +87,51 @@ APP_KEY=EncryptionKey         #Data encryption key, which can be regenerated wit
 APP_DEBUG=false               #Whether to output detailed error messages
 APP_URL=MainProgramURL        #example https://discuss.fresns.com
 APP_FOUNDER=1                 #Founder Account ID (accounts->id)
-
-DB_CONNECTION=mysql           #Database Type: sqlite, mysql, pgsql, sqlsrv
-DB_HOST=127.0.0.1             #Default is 127.0.0.1
-DB_PORT=3306                  #Default is 3306
-DB_DATABASE=fresns            #Database
-DB_USERNAME=fresns            #Username
-DB_PASSWORD=123456            #Password
-DB_TIMEZONE=Asia/Singapore    #Database Timezone
-DB_PREFIX=fs_                 #Default is fs_
 ```
+
+::: code-group
+```sh [MySQL/MariaDB]
+DB_CONNECTION=mysql               #Database Type: sqlite, mysql, pgsql, sqlsrv
+DB_HOST=127.0.0.1                 #Default is 127.0.0.1
+DB_PORT=3306                      #Default is 3306
+DB_DATABASE=fresns                #Database
+DB_USERNAME=fresns                #Username
+DB_PASSWORD=123456                #Password
+DB_TIMEZONE=Asia/Singapore        #Database Timezone
+DB_PREFIX=fs_                     #Default is fs_
+
+DB_COLLATION=utf8mb4_0900_ai_ci   #Default is utf8mb4_unicode_520_ci
+```
+
+```sh [PostgreSQL]
+DB_CONNECTION=pgsql
+DB_HOST=127.0.0.1
+DB_PORT=54321
+DB_DATABASE=fresns
+DB_USERNAME=fresns
+DB_PASSWORD=123456
+DB_TIMEZONE=Asia/Singapore
+DB_PREFIX=fs_
+```
+
+```sh [SQL Server]
+DB_CONNECTION=sqlsrv
+DB_HOST=127.0.0.1
+DB_PORT=1433
+DB_DATABASE=fresns
+DB_USERNAME=fresns
+DB_PASSWORD=123456
+DB_TIMEZONE=Asia/Singapore
+DB_PREFIX=fs_
+```
+
+```sh [SQLite]
+DB_CONNECTION=sqlite
+DB_DATABASE=/www/wwwroot/fresns/database/fresns.sqlite
+DB_TIMEZONE=Asia/Singapore
+DB_PREFIX=fs_
+```
+:::
 
 ### Trusted Proxies
 
@@ -100,16 +139,19 @@ If you are running as a proxy, you need to configure `.env` trusted IP informati
 
 Let's take the Cloudflare proxy environment as an example and configure [IPv4](https://www.cloudflare.com/ips-v4) and [IPv6](https://www.cloudflare.com/ips-v6)
 
-```sh
-# IPv4
+::: code-group
+```sh [IPv4]
 TRUSTED_PROXIES=173.245.48.0/20,103.21.244.0/22,103.22.200.0/22,103.31.4.0/22,141.101.64.0/18,108.162.192.0/18,190.93.240.0/20,188.114.96.0/20,197.234.240.0/22,198.41.128.0/17,162.158.0.0/15,104.16.0.0/13,104.24.0.0/14,172.64.0.0/13,131.0.72.0/22
+```
 
-# IPv6
+```sh [IPv6]
 TRUSTED_PROXIES=2400:cb00::/32,2606:4700::/32,2803:f800::/32,2405:b500::/32,2405:8100::/32,2a06:98c0::/29,2c0f:f248::/32
+```
 
-# or All
+```sh [All]
 TRUSTED_PROXIES=173.245.48.0/20,103.21.244.0/22,103.22.200.0/22,103.31.4.0/22,141.101.64.0/18,108.162.192.0/18,190.93.240.0/20,188.114.96.0/20,197.234.240.0/22,198.41.128.0/17,162.158.0.0/15,104.16.0.0/13,104.24.0.0/14,172.64.0.0/13,131.0.72.0/22,2400:cb00::/32,2606:4700::/32,2803:f800::/32,2405:b500::/32,2405:8100::/32,2a06:98c0::/29,2c0f:f248::/32
 ```
+:::
 
 ### Cache Config
 
@@ -118,11 +160,8 @@ You may specify which cache driver you would like to be used by default througho
 - The default caching system is `File`, if you want to change it, we recommend `Redis` or `Memcached` caching.
 - Before you can change the cache configuration, you must install the appropriate PHP extension and then modify the `.env' file to include the cache configuration.
 
-**Redis**
-
-*In addition to cache, other driver systems that support Redis can also be configured to use it.*
-
-```sh
+::: code-group
+```sh [Redis]
 REDIS_HOST=127.0.0.1
 REDIS_PASSWORD=null
 REDIS_PORT=6379
@@ -133,11 +172,7 @@ SESSION_DRIVER=redis
 QUEUE_CONNECTION=redis
 ```
 
-**Memcached**
-
-*Memcached only supports drive cache and session.*
-
-```sh
+```sh [Memcached]
 MEMCACHED_HOST=127.0.0.1
 MEMCACHED_PORT=11211
 MEMCACHED_USERNAME=null
@@ -146,6 +181,10 @@ MEMCACHED_PASSWORD=null
 CACHE_DRIVER=memcached
 SESSION_DRIVER=memcached
 ```
+:::
+
+- `Redis`: In addition to cache, other driver systems that support Redis can also be configured to use it.
+- `Memcached`: only supports drive cache and session.
 
 ### Timezone Config
 
@@ -169,17 +208,14 @@ Fresns is a software that supports cross-time zone service. To ensure the consis
 
 Make sure your Web server directs all requests to the `public/index.php` directory file, and never try to move the `index.php` file to the main program root directory. This is because running the program from the main program root directory will expose many sensitive files to the public Internet, which is a very unsafe way to run.
 
-### Nginx
-
-```nginx
+::: code-group
+```nginx [Nginx]
 location / {
     try_files $uri $uri/ /index.php?$query_string;
 }
 ```
 
-### Apache
-
-```apache
+```apache [Apache]
 <IfModule mod_rewrite.c>
     <IfModule mod_negotiation.c>
         Options -MultiViews -Indexes
@@ -203,9 +239,7 @@ location / {
 </IfModule>
 ```
 
-### IIS
-
-```bash
+```bash [IIS]
 <configuration>
   <system.webServer>
     <rewrite>
@@ -231,13 +265,12 @@ location / {
 </configuration>
 ```
 
-### Caddy
-
-```bash
+```bash [Caddy]
 rewrite {
     to {path} {path}/ /index.php?{query}
 }
 ```
+:::
 
 ## Directory Structure
 
