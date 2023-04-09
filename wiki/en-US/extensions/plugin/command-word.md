@@ -14,9 +14,9 @@
 ```php
 // $parameter list = (parameter array);
 $wordBody = [
-    "email" => "Mail address",
-    "title" => "Mail title",
-    "content" => "Mail content"
+    'email' => 'Mail address',
+    'title' => 'Mail title',
+    'content' => 'Mail content',
 ];
 
 // \facades::plugin('plugin name')->cmd word($parameter list): Define the contract for the return object
@@ -27,9 +27,9 @@ $wordBody = [
 
 ```php
 \FresnsCmdWord::plugin('FresnsEmail')->sendEmail([
-    "email" => "Mail address",
-    "title" => "Mail title",
-    "content" => "Mail content"
+    'email' => 'Mail address',
+    'title' => 'Mail title',
+    'content' => 'Mail content',
 ]);
 ```
 

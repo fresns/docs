@@ -3,7 +3,6 @@ import { ref, onMounted } from 'vue'
 interface Sponsors {
   special: Sponsor[]
   platinum: Sponsor[]
-  platinum_china: Sponsor[]
   gold: Sponsor[]
   silver: Sponsor[]
   bronze: Sponsor[]

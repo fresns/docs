@@ -14,9 +14,9 @@
 ```php
 // $参数数组名 = [参数数组];
 $wordBody = [
-    "email" => "收件地址",
-    "title" => "邮件标题",
-    "content" => "邮件内容"
+    'email' => '收件地址',
+    'title' => '邮件标题',
+    'content' => '邮件内容',
 ];
 
 // \命令字立面::plugin('插件名')->命令字($参数数组名)
@@ -27,9 +27,9 @@ $wordBody = [
 
 ```php
 \FresnsCmdWord::plugin('FresnsEmail')->sendEmail([
-    "email" => "收件地址",
-    "title" => "邮件标题",
-    "content" => "邮件内容"
+    'email' => '收件地址',
+    'title' => '邮件标题',
+    'content' => '邮件内容',
 ]);
 ```
 
