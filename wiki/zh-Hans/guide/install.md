@@ -32,7 +32,7 @@ php artisan vendor:publish --provider="Fresns\ThemeManager\Providers\ThemeServic
 php artisan vendor:publish --provider="Fresns\MarketManager\Providers\MarketServiceProvider"
 ```
 
-- 如果需要网站端，请至应用市场挑选[网站引擎](https://market.fresns.com/zh-hans/open-source/engines)和[主题模板](https://market.fresns.com/zh-hans/open-source/themes)
+- 如果需要网站端，请至应用市场挑选[网站引擎](https://market.fresns.com/zh-Hans/open-source/engines)和[主题模板](https://market.fresns.com/zh-Hans/open-source/themes)
 :::
 
 ## 主程序安装

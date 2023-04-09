@@ -147,8 +147,8 @@ function navbar() {
                 { text: '加入我们', link: '/community/join.md' },
                 { text: '赞助我们', link: '/community/sponsor.md' },
                 { text: '贡献指南', link: '/contributing/' },
-                { text: '互动交流', link: 'https://discuss.fresns.com/zh-hans' },
-                { text: '应用市场', link: 'https://market.fresns.com/zh-hans/open-source' },
+                { text: '互动交流', link: 'https://discuss.fresns.com/zh-Hans' },
+                { text: '应用市场', link: 'https://market.fresns.com/zh-Hans/open-source' },
             ],
             activeMatch: `^/(community|contributing)/`,
         }
@@ -701,8 +701,8 @@ function sidebarCommunity() {
             text: '互动',
             collapsed: false,
             items: [
-                { text: '互动交流', link: 'https://discuss.fresns.com/zh-hans' },
-                { text: '应用市场', link: 'https://market.fresns.com/zh-hans/open-source' },
+                { text: '互动交流', link: 'https://discuss.fresns.com/zh-Hans' },
+                { text: '应用市场', link: 'https://market.fresns.com/zh-Hans/open-source' },
             ]
         },
     ]
