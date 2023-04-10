@@ -17,10 +17,10 @@ hero:
       link: /guide/install.md
     - theme: alt
       text: 官方社区 ↗
-      link: https://discuss.fresns.com/
+      link: https://discuss.fresns.com/zh-Hans
     - theme: alt
       text: 应用市场 ↗
-      link: https://market.fresns.com/zh-hans/open-source
+      link: https://market.fresns.com/zh-Hans/open-source
 
 features:
   - icon: 🎉

@@ -60,9 +60,9 @@ export default defineConfig({
         darkModeSwitchLabel: '深色模式',
 
         algolia: {
-            appId: 'IWES74ZEKI',
-            apiKey: 'ca90647551baab10e88397dc8b58506c',
-            indexName: 'fresns_zh_hans',
+            appId: 'E7ZGYF9AMI',
+            apiKey: '8b34aa821267c2ff574bef1e69fbf8a4',
+            indexName: 'zh-hans-fresns',
             locales: {
                 root: {
                     placeholder: '搜索文档',
