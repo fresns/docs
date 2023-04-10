@@ -9,9 +9,9 @@
 | name | varchar(64) | 小组名称 |  | NO | **多语言**  |
 | description | varchar(255) | 小组描述 |  | YES | **多语言** |
 | type | tinyint *UNSIGNED* | 是否小组分类 | 2 | NO | 1.小组分类（仅作为父级小组，不可发帖）<br>2.小组<br>3.子小组，小组内小组 |
-| type_mode | tinyint *UNSIGNED* | 小组模式 | 1 | NO | 1.公开（任何用户都能查看小组内帖子）<br>2.非公开（只有关注的用户才能查看小组内帖子） |
+| type_mode | tinyint *UNSIGNED* | 小组模式 | 1 | NO | 1.公开（任何人都能查看小组内帖子）<br>2.非公开（只有成员才能查看小组内帖子） |
 | type_mode_end_after | tinyint *UNSIGNED* | 非公开小组配置 | 1 | NO | 1.不限制<br>2.小组内容全部不可见<br>3.到期前内容可见，新内容不可见 |
-| type_find | tinyint *UNSIGNED* | 是否可发现<br>也可理解为是否显示 | 1 | NO | 1.可发现（任何用户都能找到这个小组）<br>2.不可发现（只有组内成员能找到这个小组） |
+| type_find | tinyint *UNSIGNED* | 是否可发现<br>也可理解为是否显示 | 1 | NO | 1.可发现（任何人都能找到这个小组）<br>2.不可发现（只有成员能找到这个小组） |
 | type_follow | tinyint *UNSIGNED* | 关注方式 | 1 | NO | 1.原生方式 / 2.插件方式 |
 | plugin_unikey | varchar(64) | 关联插件 |  | YES | type_follow=2 时使用<br>关联字段 [plugins->unikey](../plugins/plugins.md) |
 | sublevel_public | tinyint *UNSIGNED* | type=3 专用<br>子级小组是否公开 | 0 | NO | 0.不公开，仅小组内专用<br>1.公开，全站可见 |
@@ -40,6 +40,10 @@
 
 ```json
 {
+    // 非公开模式的白名单角色
+    "mode_whitelist_roles": [
+        "2", "3"
+    ],
     // 发表帖子设置
     "publish_post": 1, // 发表帖子权限 1.所有用户 2.仅关注了小组的用户 3.仅指定的角色用户 4.仅限小组管理员
     "publish_post_roles": [
@@ -60,5 +64,5 @@
 ## 权限参数默认值
 
 ```json
-{"publish_post":1,"publish_post_roles":[],"publish_post_review":false,"publish_comment":1,"publish_comment_roles":[],"publish_comment_review":false}
+{"mode_whitelist_roles":[],"publish_post":1,"publish_post_roles":[],"publish_post_review":false,"publish_comment":1,"publish_comment_roles":[],"publish_comment_review":false}
 ```

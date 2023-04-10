@@ -156,6 +156,7 @@ fresns_api_user_panel_drafts_{$uid}
 ```php
 fresns_group_count
 fresns_private_groups
+fresns_filter_group_models
 fresns_filter_groups_by_guest
 fresns_filter_groups_by_user_{$userId}   // +tag: fresnsUsers
 fresns_guest_all_groups

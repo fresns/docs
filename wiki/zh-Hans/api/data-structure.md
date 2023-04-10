@@ -291,6 +291,7 @@
         // 小组创建者
         // 通用数据结构->用户信息
     },
+    "canViewContent": "Boolean / 是否有权查看内容",
     "publishRule": {
         "allowPost": "Boolean / 是否有权发帖子",
         "subGroupPost": "Boolean / 是否只能发表到子级小组",

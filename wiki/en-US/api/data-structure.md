@@ -290,6 +290,7 @@
     "creator": {
         // Common Data Structure -> User Info
     },
+    "canViewContent": "Boolean / 是否有权查看内容",
     "publishRule": {
         "allowPost": "Boolean / 是否有权发帖子",
         "subGroupPost": "Boolean / 是否只能发表到子级小组",
