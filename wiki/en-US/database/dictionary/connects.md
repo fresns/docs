@@ -38,6 +38,6 @@
     {"id":"30","name":"Weibo"},
     {"id":"31","name":"Alipay"},
     {"id":"32","name":"ByteDance"},
-    {"id":"33","name":"Baidu"}
+    {"id":"33","name":"Steam"}
 ]
 ```
