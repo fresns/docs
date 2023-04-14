@@ -20,7 +20,7 @@ hero:
       link: https://discuss.fresns.com/zh-Hans
     - theme: alt
       text: 应用市场 ↗
-      link: https://market.fresns.com/zh-Hans/open-source
+      link: https://marketplace.fresns.com/zh-Hans/open-source
 
 features:
   - icon: 🎉

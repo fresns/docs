@@ -20,7 +20,7 @@ hero:
       link: https://discuss.fresns.com/
     - theme: alt
       text: Marketplace ↗
-      link: https://market.fresns.com/open-source
+      link: https://marketplace.fresns.com/open-source
 
 features:
   - icon: 🎉
