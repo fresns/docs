@@ -7,16 +7,16 @@ Before you install Fresns, it's important to check that your server meets the re
 | Environment | Services |
 | --- | --- |
 | Web Server<br>`Choose any one` | Nginx<br>Apache<br>Caddy<br>IIS |
-| PHP Version | PHP 8.1 or higher |
+| PHP Version | PHP 8.1 or greater |
 | PHP Extensions | `fileinfo` |
 | PHP Functions | `putenv`, `symlink`, `proc_open`, `passthru` |
-| Package Manager | Composer 2.5 or higher |
-| Database and Version<br>`Choose any one` | MySQL `5.7 ~ 8.x`<br>MariaDB `10.3 ~ 11.x`<br>PostgreSQL `11.x ~ 15.x`<br>SQL Server `2016(13.x) ~ 2022(16.x)`<br>SQLite `3.9 及以上` |
+| Package Manager | Composer 2.5 or greater |
+| Database and Version<br>`Choose any one` | MySQL `5.7 ~ 8.x`<br>MariaDB `10.3 ~ 11.x`<br>PostgreSQL `11.x ~ 15.x`<br>SQL Server `2016(13.x) ~ 2022(16.x)`<br>SQLite `3.9` or greater |
 
 ## Download
 
 ::: tip Option 1: Download the full package manually
-- [Download v2.7.2 (2023-03-05)](https://app.fresns.org/latest.zip)
+- [Download Fresns v2.8.0 (2023-04-14)](https://fresns.org/latest.zip)
 - *Website engine and theme templates already built in*
 :::
 
@@ -33,7 +33,7 @@ php artisan vendor:publish --provider="Fresns\ThemeManager\Providers\ThemeServic
 php artisan vendor:publish --provider="Fresns\MarketManager\Providers\MarketServiceProvider"
 ```
 
-- If you need a website, please go to the application market to select a [website engine](https://market.fresns.com/open-source/engines) and [theme template](https://market.fresns.com/open-source/themes)
+- If you need a website, please go to the application market to select a [website engine](https://marketplace.fresns.com/open-source/engines) and [theme template](https://marketplace.fresns.com/open-source/themes)
 :::
 
 ## Installing

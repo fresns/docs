@@ -7,16 +7,16 @@ Fresns 是一款基于 PHP 编程语言和关系型数据库开发的社交社�
 | 配置项 | 要求 |
 | --- | --- |
 | Web 服务器<br>`任选一种` | Nginx<br>Apache<br>Caddy<br>IIS |
-| PHP 版本 | 8.1 或以上 |
+| PHP 版本 | 8.1 或更高版本 |
 | PHP 扩展支持 | `fileinfo` |
 | PHP 函数启用 | `putenv`, `symlink`, `proc_open`, `passthru` |
-| 软件包管理器 | Composer 2.5 或以上 |
-| 数据库和版本<br>`任选一种` | MySQL `5.7 ~ 8.x`<br>MariaDB `10.3 ~ 11.x`<br>PostgreSQL `11.x ~ 15.x`<br>SQL Server `2016(13.x) ~ 2022(16.x)`<br>SQLite `3.9 及以上` |
+| 软件包管理器 | Composer 2.5 或更高版本 |
+| 数据库和版本<br>`任选一种` | MySQL `5.7 ~ 8.x`<br>MariaDB `10.3 ~ 11.x`<br>PostgreSQL `11.x ~ 15.x`<br>SQL Server `2016(13.x) ~ 2022(16.x)`<br>SQLite `3.9` 或更高版本 |
 
 ## 下载安装包
 
 ::: tip 方式 1: 手动下载完整包（已内置网站引擎和主题模板）
-- [下载 v2.7.2 (2023-03-05)](https://app.fresns.org/latest.zip)
+- [下载 Fresns v2.8.0 (2023-04-14)](https://fresns.org/latest.zip)
 :::
 
 ::: tip 方式 2: 基于 Composer 下载
@@ -32,7 +32,7 @@ php artisan vendor:publish --provider="Fresns\ThemeManager\Providers\ThemeServic
 php artisan vendor:publish --provider="Fresns\MarketManager\Providers\MarketServiceProvider"
 ```
 
-- 如果需要网站端，请至应用市场挑选[网站引擎](https://market.fresns.com/zh-Hans/open-source/engines)和[主题模板](https://market.fresns.com/zh-Hans/open-source/themes)
+- 如果需要网站端，请至应用市场挑选[网站引擎](https://marketplace.fresns.com/zh-Hans/open-source/engines)和[主题模板](https://marketplace.fresns.com/zh-Hans/open-source/themes)
 :::
 
 ## 主程序安装
