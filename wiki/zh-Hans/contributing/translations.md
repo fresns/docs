@@ -47,6 +47,7 @@ Fresns 从数据流层面支持多语言，无需修改主程序、主题、插�
 | ja |  | Japanese |  | ja | 日语 |
 | ko |  | Korean |  | ko | 韩语 |
 | ru |  | Russian |  | ru | 俄语 |
+| it |  | Italian |  | it | 意大利语 |
 | pt |  | Portuguese |  | pt | 葡萄牙语 |
 | pt | BR | Portuguese | Brazil | pt-BR | 葡萄牙语（巴西） |
 | id |  | Indonesian |  | id | 印尼语 |

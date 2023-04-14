@@ -47,6 +47,7 @@ Participate in translation by means of Pull Request, and we will update the new 
 | ja |  | Japanese |  | ja |
 | ko |  | Korean |  | ko |
 | ru |  | Russian |  | ru |
+| it |  | Italian |  | it |
 | pt |  | Portuguese |  | pt |
 | pt | BR | Portuguese | Brazil | pt-BR |
 | id |  | Indonesian |  | id |
