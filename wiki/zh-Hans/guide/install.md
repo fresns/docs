@@ -9,7 +9,7 @@ Fresns 是一款基于 PHP 编程语言和关系型数据库开发的社交社�
 | Web 服务器<br>`任选一种` | Nginx<br>Apache<br>Caddy<br>IIS |
 | PHP 版本 | 8.1 或更高版本 |
 | PHP 扩展支持 | `fileinfo` |
-| PHP 函数启用 | `putenv`, `symlink`, `proc_open`, `passthru` |
+| PHP 函数启用 | `putenv`, `symlink`, `proc_open`, `passthru`, `shell_exec` |
 | 软件包管理器 | Composer 2.5 或更高版本 |
 | 数据库和版本<br>`任选一种` | MySQL `5.7 ~ 8.x`<br>MariaDB `10.3 ~ 11.x`<br>PostgreSQL `11.x ~ 15.x`<br>SQL Server `2016(13.x) ~ 2022(16.x)`<br>SQLite `3.9` 或更高版本 |
 
