@@ -35,7 +35,7 @@
         "connectId": 8, //存储到 account_connects > connect_id
         "connectToken": "unionid", //存储到 account_connects > connect_token
         "connectRefreshToken": null, //存储到 account_connects > connect_refresh_token
-        "connectName": "账号名", //存储到 account_connects > connect_name
+        "connectUsername": "账号名", //存储到 account_connects > connect_username
         "connectNickname": "昵称", //存储到 account_connects > connect_nickname
         "connectAvatar": "头像 URL", //存储到 account_connects > connect_avatar
         "pluginUnikey": "请求者 unikey ", //存储到 account_connects > plugin_unikey
@@ -45,7 +45,7 @@
         "connectId": 9,
         "connectToken": "openid",
         "connectRefreshToken": null,
-        "connectName": "账号名",
+        "connectUsername": "账号名",
         "connectNickname": "昵称",
         "connectAvatar": "头像 URL",
         "pluginUnikey": "请求者 unikey ",
