@@ -27,7 +27,8 @@
 :::
 
 ::: details 查看 connectInfo 参数介绍
-支持多个，例如微信平台会同时有 UnionID 和 OpenID 两个参数。
+- 支持多个，例如微信平台会同时有 UnionID 和 OpenID 两个参数。
+- 必传参数 `connectId` `connectToken` `connectNickname` `pluginUnikey`
 ```json
 [
     {
@@ -37,6 +38,8 @@
         "connectName": "账号名", //存储到 account_connects > connect_name
         "connectNickname": "昵称", //存储到 account_connects > connect_nickname
         "connectAvatar": "头像 URL", //存储到 account_connects > connect_avatar
+        "pluginUnikey": "请求者 unikey ", //存储到 account_connects > plugin_unikey
+        "moreJson": {}, //存储到 account_connects > more_json
     },
     {
         "connectId": 9,
@@ -45,6 +48,8 @@
         "connectName": "账号名",
         "connectNickname": "昵称",
         "connectAvatar": "头像 URL",
+        "pluginUnikey": "请求者 unikey ",
+        "moreJson": {},
     }
 ]
 ```
