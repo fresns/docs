@@ -1,4 +1,4 @@
-# Post Affiliate User List
+# Post Affiliated Users
 
 - Endpoint Path: `/api/v2/post/{pid}/users`
 - Method: `GET`

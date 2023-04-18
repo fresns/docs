@@ -1,56 +1,56 @@
 # Common Data Structure
 
-为了减少编写文档的工作量，以及保证公共数据的一致，本页面将 API 文档中相同的部分统一撰写为数据结构。
+To reduce documentation effort and ensure consistency of public data, the same sections of the API documentation are written as data structures on this page.
 
 - Empty array use `[]`
 - Empty object use `null`
-- like/dislike/follow/block 计数类 count 参数值，如果为 `null` 则表示后台配置为不公开，如果为公开则是数字值。
+- like/dislike/follow/block The count parameter, if `null`, means the backend is not public, if public, it is a numeric value.
 
 ## Account Info
 
 ```json
 {
-    "aid": "String / 账号 ID",
-    "countryCode": "Number / 手机国际区号",
-    "purePhone": "String / 加密的手机号",
-    "phone": "String / 加密的带国际区号的手机号",
-    "email": "String / 加密的邮箱",
-    "hasPassword": "Boolean / 账号是否有密码",
-    "verifyStatus": "Boolean / 是否实名认证",
-    "verifySupport": "String / 实名认证的地址",
-    "verifyRealName": "String / 加密的姓名",
-    "verifyGender": "Number / 性别 1.未知 2.男 3.女",
-    "verifyCertType": "String / 证件类型 idcard 身份证 passport 护照 driving 驾驶证 business 营业执照",
-    "verifyCertNumber": "String / 加密的证件号码",
-    "verifyIdentityType": "Number / 认证类型 1.未知 2.个人 3.企业",
-    "verifyDateTime": "String / 认证时间",
-    "registerDateTime": "String / 账号注册时间",
-    "status": "Boolean / 账号状态",
-    "waitDelete": "Boolean / 是否待删除",
-    "waitDeleteDateTime": "String / 准备删除时间",
+    "aid": "String / Account ID",
+    "countryCode": "Number / International Area Code of the Phone",
+    "purePhone": "String / Encrypted Phone Number",
+    "phone": "String / Encrypted Phone Number with International Area Code",
+    "email": "String / Encrypted Email",
+    "hasPassword": "Boolean / Account Has Password",
+    "verifyStatus": "Boolean / Verified Identity",
+    "verifySupport": "String / Verification Support Address",
+    "verifyRealName": "String / Encrypted Real Name",
+    "verifyGender": "Number / Gender 1.Unknown 2.Male 3.Female",
+    "verifyCertType": "String / Certificate Type: idcard, passport, driving, business",
+    "verifyCertNumber": "String / Encrypted Certificate Number",
+    "verifyIdentityType": "Number / Verification Type 1.Unknown 2.Individual 3.Enterprise",
+    "verifyDateTime": "String / Verification Time",
+    "registerDateTime": "String / Account Registration Time",
+    "status": "Boolean / Account Status",
+    "waitDelete": "Boolean / Pending Deletion",
+    "waitDeleteDateTime": "String / Scheduled Deletion Time",
     "connects": [
         {
-            "connectId": "Number / 互联平台编号",
-            "username": "String / 互联用户名",
-            "nickname": "String / 互联昵称",
-            "avatar": "String / 互联头像",
-            "status": "String / 互联是否有效"
+            "connectId": "Number / Connected Platform Number",
+            "username": "String / Connected Platform Username",
+            "nickname": "String / Connected Platform Nickname",
+            "avatar": "String / Connected Platform Avatar",
+            "status": "String / Connected Platform Validity"
         }
     ],
     "wallet": {
-        "status": "Boolean / 钱包是否有效",
-        "hasPassword": "Boolean / 钱包是否有密码",
-        "currencyCode": "String / 货币标识，例如 USD",
-        "currencyName": "String / 货币自定义名称",
-        "currencyUnit": "String / 货币单位自定义名称",
-        "currencyPrecision": "Number / 货币精度",
-        "balance": "String / 钱包金额",
-        "freezeAmount": "String / 不可用金额",
-        "bankName": "String / 银行名称",
-        "swiftCode": "String / SWIFT 代码",
-        "bankAddress": "String / 银行地址",
-        "bankAccount": "String / 加密的银行账号",
-        "bankStatus": "Boolean / 银行验证状态"
+        "status": "Boolean / Wallet Validity",
+        "hasPassword": "Boolean / Wallet Has Password",
+        "currencyCode": "String / Currency Code, e.g. USD",
+        "currencyName": "String / Custom Currency Name",
+        "currencyUnit": "String / Custom Currency Unit Name",
+        "currencyPrecision": "Number / Currency Precision",
+        "balance": "String / Wallet Balance",
+        "freezeAmount": "String / Unavailable Amount",
+        "bankName": "String / Bank Name",
+        "swiftCode": "String / SWIFT Code",
+        "bankAddress": "String / Bank Address",
+        "bankAccount": "String / Encrypted Bank Account",
+        "bankStatus": "Boolean / Bank Verification Status"
     },
     "users": [
         {
@@ -58,22 +58,22 @@
         }
     ],
     "interaction": {
-        "userName": "String / 用户身份自定义名称",
-        "userUidName": "String / 用户 ID 自定义名称",
-        "userUsernameName": "String / 用户名自定义名称",
-        "userNicknameName": "String / 用户昵称自定义名称",
-        "userRoleName": "String / 用户角色自定义名称",
-        "userBioName": "String / 用户介绍自定义名称",
-        "followSetting": "Boolean / 是否允许 follow",
-        "followName": "String / follow 行为自定义名称",
-        "likeSetting": "Boolean / 是否允许 like",
-        "likeName": "String / like 行为自定义名称",
-        "dislikeSetting": "Boolean / 是否允许 dislike",
-        "dislikeName": "String / dislike 行为自定义名称",
-        "blockSetting": "Boolean / 是否允许 block",
-        "blockName": "String / block 行为自定义名称",
-        "publishPostName": "String / 发表帖子自定义名称",
-        "publishCommentName": "String / 发表评论自定义名称",
+        "userName": "String / Custom User Identity Name",
+        "userUidName": "String / Custom User ID Name",
+        "userUsernameName": "String / Custom Username Name",
+        "userNicknameName": "String / Custom User Nickname Name",
+        "userRoleName": "String / Custom User Role Name",
+        "userBioName": "String / Custom User Introduction Name",
+        "followSetting": "Boolean / Allow Follow",
+        "followName": "String / Custom Follow Action Name",
+        "likeSetting": "Boolean / Allow Like",
+        "likeName": "String / Custom Like Action Name",
+        "dislikeSetting": "Boolean / Allow Dislike",
+        "dislikeName": "String / Custom Dislike Action Name",
+        "blockSetting": "Boolean / Allow Block",
+        "blockName": "String / Custom Block Action Name",
+        "publishPostName": "String / Custom Publish Post Name",
+        "publishCommentName": "String / Custom Publish Comment Name"
     }
 }
 ```
@@ -82,108 +82,108 @@
 
 ```json
 {
-    "fsid": "String / 用户标识 ID，uid 或 username",
-    "uid": "Number / 用户 ID",
-    "username": "String / 用户名",
-    "url": "String / 用户主页地址",
-    "nickname": "String / 用户昵称",
-    "avatar": "String / 头像图",
-    "decorate": "String / 头像挂件",
-    "banner": "String / 条幅图",
-    "gender": "Number / 性别 1.未知 2.男 3.女",
-    "birthday": "String / 生日",
-    "bio": "String / 简介",
-    "bioHtml": "String / 简介 HTML 格式",
-    "location": "String / 位置",
-    "conversationLimit": "Number / 对话设置，1.允许所有用户 2.仅允许我关注的用户 3.我关注的用户和已认证的用户 4.不允许所有用户",
-    "commentLimit": "Number / 评论设置，1.允许所有用户 2.仅允许我关注的用户 3.我关注的用户和已认证的用户 4.不允许所有用户",
-    "timezone": "String / 自定义 UTC 时区",
-    "verifiedStatus": "Boolean / 是否认证",
-    "verifiedIcon": "String / 自定义认证图标",
-    "verifiedDesc": "String / 认证介绍",
-    "verifiedDateTime": "String / 认证时间",
-    "expired": "Boolean / 用户是否过期，公开模式始终为 false",
-    "expiryDateTime": "String / 用户过期时间",
-    "lastPublishPost": "String / 最后发帖时间",
-    "lastPublishComment": "String / 最后评论时间",
-    "lastEditUsername": "String / 最后修改用户名时间",
-    "lastEditNickname": "String / 最后修改昵称时间",
-    "registerDate": "String / 注册日期",
-    "hasPassword": "Boolean / 是否有密码",
-    "rankState": "Number / 等级状态",
-    "status": "Boolean / 用户状态",
-    "waitDelete": "Boolean / 是否待删除",
-    "waitDeleteDateTime": "String / 准备删除时间",
-    "nicknameColor": "String / 主角色-昵称颜色",
-    "rid": "Number / 主角色-角色 ID",
-    "roleName": "String / 主角色-角色名",
-    "roleNameDisplay": "Boolean / 主角色-是否显示角色名",
-    "roleIcon": "String / 主角色-角色图标地址",
-    "roleIconDisplay": "Boolean / 主角色-是否显示角色图标",
-    "roleExpiryDateTime": "String / 主角色-角色过期日期",
-    "roleRankState": "Number / 等级状态",
+    "fsid": "String / User identifier ID, uid or username",
+    "uid": "Number / User ID",
+    "username": "String / Username",
+    "url": "String / User homepage URL",
+    "nickname": "String / User nickname",
+    "avatar": "String / Avatar image",
+    "decorate": "String / Avatar decoration",
+    "banner": "String / Banner image",
+    "gender": "Number / Gender 1. Unknown 2. Male 3. Female",
+    "birthday": "String / Birthday",
+    "bio": "String / Bio",
+    "bioHtml": "String / Bio in HTML format",
+    "location": "String / Location",
+    "conversationLimit": "Number / Conversation settings, 1. Allow all users 2. Only allow users I follow 3. Users I follow and verified users 4. No users allowed",
+    "commentLimit": "Number / Comment settings, 1. Allow all users 2. Only allow users I follow 3. Users I follow and verified users 4. No users allowed",
+    "timezone": "String / Custom UTC timezone",
+    "verifiedStatus": "Boolean / Verified status",
+    "verifiedIcon": "String / Custom verified icon",
+    "verifiedDesc": "String / Verification description",
+    "verifiedDateTime": "String / Verification date and time",
+    "expired": "Boolean / Whether the user is expired, always false in public mode",
+    "expiryDateTime": "String / User expiry date and time",
+    "lastPublishPost": "String / Last post publishing time",
+    "lastPublishComment": "String / Last comment time",
+    "lastEditUsername": "String / Last username edit time",
+    "lastEditNickname": "String / Last nickname edit time",
+    "registerDate": "String / Registration date",
+    "hasPassword": "Boolean / Has password",
+    "rankState": "Number / Rank status",
+    "status": "Boolean / User status",
+    "waitDelete": "Boolean / Waiting for deletion",
+    "waitDeleteDateTime": "String / Scheduled deletion time",
+    "nicknameColor": "String / Main role - Nickname color",
+    "rid": "Number / Main role - Role ID",
+    "roleName": "String / Main role - Role name",
+    "roleNameDisplay": "Boolean / Main role - Display role name",
+    "roleIcon": "String / Main role - Role icon URL",
+    "roleIconDisplay": "Boolean / Main role - Display role icon",
+    "roleExpiryDateTime": "String / Main role - Role expiry date",
+    "roleRankState": "Number / Rank status",
     "rolePermissions": {
-        // Object 角色权限
-        // 数据表 roles->permissions
+        // Data Table: roles->permissions
+        // Role permissions converted to Object format
     },
-    "roleStatus": "Boolean / 主角色-是否有效",
+    "roleStatus": "Boolean / Main role status",
     "stats": {
-        "likeUserCount": "Number / 他点赞的用户总数",
-        "likeGroupCount": "Number / 他点赞的小组总数",
-        "likeHashtagCount": "Number / 他点赞的话题总数",
-        "likePostCount": "Number / 他点赞的帖子总数",
-        "likeCommentCount": "Number / 他点赞的评论总数",
-        "dislikeUserCount": "Number / 他点踩的用户总数",
-        "dislikeGroupCount": "Number / 他点踩的小组总数",
-        "dislikeHashtagCount": "Number / 他点踩的话题总数",
-        "dislikePostCount": "Number / 他点踩的帖子总数",
-        "dislikeCommentCount": "Number / 他点踩的评论总数",
-        "followUserCount": "Number / 他关注的用户总数",
-        "followGroupCount": "Number / 他关注的小组总数",
-        "followHashtagCount": "Number / 他关注的（收藏）话题总数",
-        "followPostCount": "Number / 他关注的（收藏）帖子总数",
-        "followCommentCount": "Number / 他关注的（收藏）评论总数",
-        "blockUserCount": "Number / 他一共屏蔽（拉黑）了多少用户",
-        "blockGroupCount": "Number / 他屏蔽的（不感兴趣）小组总数",
-        "blockHashtagCount": "Number / 他屏蔽的（不感兴趣）话题总数",
-        "blockPostCount": "Number / 他屏蔽的（不感兴趣）帖子总数",
-        "blockCommentCount": "Number / 他屏蔽的（不感兴趣）评论总数",
-        "likeMeCount": "Number / 别人点赞他的人数",
-        "dislikeMeCount": "Number / 别人点踩他的人数",
-        "followMeCount": "Number / 别人关注他的人数（粉丝数）",
-        "blockMeCount": "Number / 别人屏蔽（拉黑）他的人数",
-        "postPublishCount": "Number / 他发表的帖子总数",
-        "postDigestCount": "Number / 他的帖子精华总数",
-        "postLikeCount": "Number / 别人赞了他的帖子总数",
-        "postDislikeCount": "Number / 别人踩了他的帖子总数",
-        "postFollowCount": "Number / 别人关注了他的帖子总数",
-        "postBlockCount": "Number / 别人屏蔽了他的帖子总数",
-        "commentPublishCount": "Number / 他发表的评论总数",
-        "commentDigestCount": "Number / 他的评论精华总数",
-        "commentLikeCount": "Number / 别人赞了他的评论总数",
-        "commentDislikeCount": "Number / 别人踩了他的评论总数",
-        "commentFollowCount": "Number / 别人关注了他的评论总数",
-        "commentBlockCount": "Number / 别人屏蔽了他的评论总数",
-        "extcredits1": "Number / 自定义分值",
-        "extcredits1Status": "Number / 状态 1.不启用 2.私有 3.公开",
-        "extcredits1Name": "String / 名称",
-        "extcredits1Unit": "String / 单位",
-        "extcredits2": "Number / 自定义分值",
-        "extcredits2Status": "Number / 状态 1.不启用 2.私有 3.公开",
-        "extcredits2Name": "String / 名称",
-        "extcredits2Unit": "String / 单位",
-        "extcredits3": "Number / 自定义分值",
-        "extcredits3Status": "Number / 状态 1.不启用 2.私有 3.公开",
-        "extcredits3Name": "String / 名称",
-        "extcredits3Unit": "String / 单位",
-        "extcredits4": "Number / 自定义分值",
-        "extcredits4Status": "Number / 状态 1.不启用 2.私有 3.公开",
-        "extcredits4Name": "String / 名称",
-        "extcredits4Unit": "String / 单位",
-        "extcredits5": "Number / 自定义分值",
-        "extcredits5Status": "Number / 状态 1.不启用 2.私有 3.公开",
-        "extcredits5Name": "String / 名称",
-        "extcredits5Unit": "String / 单位"
+        "likeUserCount": "Number / Total users they liked",
+        "likeGroupCount": "Number / Total groups they liked",
+        "likeHashtagCount": "Number / Total hashtags they liked",
+        "likePostCount": "Number / Total posts they liked",
+        "likeCommentCount": "Number / Total comments they liked",
+        "dislikeUserCount": "Number / Total users they disliked",
+        "dislikeGroupCount": "Number / Total groups they disliked",
+        "dislikeHashtagCount": "Number / Total hashtags they disliked",
+        "dislikePostCount": "Number / Total posts they disliked",
+        "dislikeCommentCount": "Number / Total comments they disliked",
+        "followUserCount": "Number / Total users they followed",
+        "followGroupCount": "Number / Total groups they followed",
+        "followHashtagCount": "Number / Total hashtags they followed (bookmarked)",
+        "followPostCount": "Number / Total posts they followed (bookmarked)",
+        "followCommentCount": "Number / Total comments they followed (bookmarked)",
+        "blockUserCount": "Number / Total users they blocked (blacklisted)",
+        "blockGroupCount": "Number / Total groups they blocked (not interested)",
+        "blockHashtagCount": "Number / Total hashtags they blocked (not interested)",
+        "blockPostCount": "Number / Total posts they blocked (not interested)",
+        "blockCommentCount": "Number / Total comments they blocked (not interested)",
+        "likeMeCount": "Number / Total people who liked them",
+        "dislikeMeCount": "Number / Total people who disliked them",
+        "followMeCount": "Number / Total people who followed them (follower count)",
+        "blockMeCount": "Number / Total people who blocked (blacklisted) them",
+        "postPublishCount": "Number / Total posts they published",
+        "postDigestCount": "Number / Total featured posts they published",
+        "postLikeCount": "Number / Total likes on their posts",
+        "postDislikeCount": "Number / Total dislikes on their posts",
+        "postFollowCount": "Number / Total follows on their posts",
+        "postBlockCount": "Number / Total blocks on their posts",
+        "commentPublishCount": "Number / Total comments they published",
+        "commentDigestCount": "Number / Total featured comments they published",
+        "commentLikeCount": "Number / Total likes on their comments",
+        "commentDislikeCount": "Number / Total dislikes on their comments",
+        "commentFollowCount": "Number / Total follows on their comments",
+        "commentBlockCount": "Number / Total blocks on their comments",
+        "extcredits1": "Number / Custom score",
+        "extcredits1Status": "Number / Status 1. Not enabled 2. Private 3. Public",
+        "extcredits1Name": "String / Name",
+        "extcredits1Unit": "String / Unit",
+        "extcredits2": "Number / Custom score",
+        "extcredits2Status": "Number / Status 1. Not enabled 2. Private 3. Public",
+        "extcredits2Name": "String / Name",
+        "extcredits2Unit": "String / Unit",
+        "extcredits3": "Number / Custom score",
+        "extcredits3Status": "Number / Status 1. Not enabled 2. Private 3. Public",
+        "extcredits3Name": "String / Name",
+        "extcredits3Unit": "String / Unit",
+        "extcredits4": "Number / Custom score",
+        "extcredits4Status": "Number / Status 1. Not enabled 2. Private 3. Public",
+        "extcredits4Name": "String / Name",
+        "extcredits4Unit": "String / Unit",
+        "extcredits5": "Number / Custom score",
+        "extcredits5Status": "Number / Status 1. Not enabled 2. Private 3. Public",
+        "extcredits5Name": "String / Name",
+        "extcredits5Unit": "String / Unit",
     },
     "archives": [
         // Common Data Structure -> Extend Archive Info
@@ -196,46 +196,46 @@
     },
     "roles": [
         {
-            "rid": "Number / 角色 ID",
-            "isMain": "Boolean / 是否为主角色",
-            "nicknameColor": "String / 昵称颜色",
-            "name": "String / 角色名",
-            "nameDisplay": "Boolean / 是否显示角色名",
-            "icon": "String / 角色图标地址",
-            "iconDisplay": "Boolean / 是否显示角色图标",
-            "status": "Boolean / 是否有效"
+            "rid": "Number / Role ID",
+            "isMain": "Boolean / Whether it is the main role",
+            "nicknameColor": "String / Nickname color",
+            "name": "String / Role name",
+            "nameDisplay": "Boolean / Whether to display the role name",
+            "icon": "String / Role icon URL",
+            "iconDisplay": "Boolean / Whether to display the role icon",
+            "status": "Boolean / Whether the role is valid"
         }
     ],
     "interaction": {
-        "userName": "String / 用户身份自定义名称",
-        "userUidName": "String / 用户 ID 自定义名称",
-        "userUsernameName": "String / 用户名自定义名称",
-        "userNicknameName": "String / 用户昵称自定义名称",
-        "userRoleName": "String / 用户角色自定义名称",
-        "userBioName": "String / 用户介绍自定义名称",
-        "likeSetting": "Boolean / 是否允许 like",
-        "likeName": "String / like 行为自定义名称",
-        "dislikeSetting": "Boolean / 是否允许 dislike",
-        "dislikeName": "String / dislike 行为自定义名称",
-        "followSetting": "Boolean / 是否允许 follow",
-        "followName": "String / follow 行为自定义名称",
-        "blockSetting": "Boolean / 是否允许 block",
-        "blockName": "String / block 行为自定义名称",
-        "publishPostName": "String / 发表帖子自定义名称",
-        "publishCommentName": "String / 发表评论自定义名称",
+        "userName": "String / Custom user identity name",
+        "userUidName": "String / Custom user ID name",
+        "userUsernameName": "String / Custom username name",
+        "userNicknameName": "String / Custom user nickname name",
+        "userRoleName": "String / Custom user role name",
+        "userBioName": "String / Custom user introduction name",
+        "likeSetting": "Boolean / Whether to allow like",
+        "likeName": "String / Custom like action name",
+        "dislikeSetting": "Boolean / Whether to allow dislike",
+        "dislikeName": "String / Custom dislike action name",
+        "followSetting": "Boolean / Whether to allow follow",
+        "followName": "String / Custom follow action name",
+        "blockSetting": "Boolean / Whether to allow block",
+        "blockName": "String / Custom block action name",
+        "publishPostName": "String / Custom publish post name",
+        "publishCommentName": "String / Custom publish comment name",
         "likeStatus": "Boolean / Like Status",
         "dislikeStatus": "Boolean / Dislike Status",
         "followStatus": "Boolean / Follow Status",
-        "followMeStatus": "Boolean / 他是否关注了我",
-        "followNote": "String / 我对他的关注备注",
+        "followMeStatus": "Boolean / Whether he is following me",
+        "followNote": "String / My note on following him",
         "blockStatus": "Boolean / Block Status",
-        "blockMeStatus": "Boolean / 他是否屏蔽了我",
-        "blockNote": "String / 我对他的屏蔽备注"
+        "blockMeStatus": "Boolean / Whether he has blocked me",
+        "blockNote": "String / My note on blocking him"
     },
     "conversation": {
-        "status": "Boolean / 是否可以给他发私信",
-        "code": "Number / 不能发时的错误码",
-        "message": "String / 不能发时的错误描述"
+        "status": "Boolean / Whether I can send him a private message",
+        "code": "Number / Error code when not allowed",
+        "message": "String / Error description when not allowed"
     }
 }
 ```
@@ -244,40 +244,40 @@
 
 ```json
 {
-    "gid": "String / 小组 ID",
-    "url": "String / 小组详情页地址",
-    "type": "Number / 小组类型 1.小组分类 2.小组 3.子小组，小组内小组",
-    "gname": "String / 小组名",
-    "description": "String / 小组介绍",
-    "cover": "String / 小组封面图",
-    "banner": "String / 小组条幅图",
-    "recommend": "Boolean / 是否为推荐小组",
-    "mode": "Number / 小组模式 1.公开 2.非公开",
-    "modeEndAfter": "Number / 非公开模式到期后 1.不限制 2.小组内容全部不可见 3.到期前内容可见，新内容不可见",
-    "find": "Number / 是否可发现（是否显示） 1.可发现 2.不可发现",
-    "followType": "Number / 关注方式 1.原生方式 2.插件方式",
-    "followUrl": "String / 关注方式 2 专用，操作关注插件页地址",
-    "parentGid": "String / 父级小组 ID",
+    "gid": "String / Group ID",
+    "url": "String / Group detail page URL",
+    "type": "Number / Group type 1.Group category 2.Group 3.Subgroup, group within group",
+    "gname": "String / Group name",
+    "description": "String / Group introduction",
+    "cover": "String / Group cover image",
+    "banner": "String / Group banner image",
+    "recommend": "Boolean / Whether it is a recommended group",
+    "mode": "Number / Group mode 1.Public 2.Non-public",
+    "modeEndAfter": "Number / After non-public mode expires 1.No restrictions 2.All group content is invisible 3.Content before expiration is visible, new content is not visible",
+    "find": "Number / Whether it can be discovered (whether it is displayed) 1.Discoverable 2.Not discoverable",
+    "followType": "Number / Follow method 1.Native method 2.Plugin method 3.close",
+    "followUrl": "String / Follow method 2 specific, follow plugin page URL",
+    "parentGid": "String / Parent group ID",
     "category": {
-        "gid": "String / 父级小组 ID",
-        "gname": "String / 父级小组名",
-        "description": "String / 父级小组介绍",
-        "cover": "String / 父级小组封面图",
-        "banner": "String / 父级小组条幅图"
+        "gid": "String / Parent group ID",
+        "gname": "String / Parent group name",
+        "description": "String / Parent group introduction",
+        "cover": "String / Parent group cover image",
+        "banner": "String / Parent group banner image"
     },
-    "likeCount": "Number / 被点赞总数",
-    "dislikeCount": "Number / 被点踩总数",
-    "followCount": "Number / 被关注总数",
-    "blockCount": "Number / 被屏蔽总数",
-    "postCount": "Number / 帖子总数",
-    "postDigestCount": "Number / 精华帖子总数",
-    "commentCount": "Number / 评论总数",
-    "commentDigestCount": "Number / 精华评论总数",
+    "likeCount": "Number / Total number of likes",
+    "dislikeCount": "Number / Total number of dislikes",
+    "followCount": "Number / Total number of follows",
+    "blockCount": "Number / Total number of blocks",
+    "postCount": "Number / Total number of posts",
+    "postDigestCount": "Number / Total number of featured posts",
+    "commentCount": "Number / Total number of comments",
+    "commentDigestCount": "Number / Total number of featured comments",
     "permissions": {
-        // 小组配置自定义参数
-        // 数据表 groups->permissions
+        // Custom group configuration parameters
+        // Data Table: groups->permissions
     },
-    "createDate": "String / 小组创建日期",
+    "createDate": "String / Group creation date",
     "archives": [
         // Common Data Structure -> Extend Archive Info
     ],
@@ -290,90 +290,90 @@
     "creator": {
         // Common Data Structure -> User Info
     },
-    "canViewContent": "Boolean / 是否有权查看内容",
+    "canViewContent": "Boolean / Whether the user has permission to view content",
     "publishRule": {
-        "allowPost": "Boolean / 是否有权发帖子",
-        "subGroupPost": "Boolean / 是否只能发表到子级小组",
-        "reviewPost": "Boolean / 发帖子是否需要审核",
-        "allowComment": "Boolean / 是否有权发评论",
-        "reviewComment": "Boolean / 发评论是否需要审核"
+        "allowPost": "Boolean / Whether the user has permission to post",
+        "subGroupPost": "Boolean / Whether posts can only be published to subgroups",
+        "reviewPost": "Boolean / Whether posts need to be reviewed",
+        "allowComment": "Boolean / Whether the user has permission to comment",
+        "reviewComment": "Boolean / Whether comments need to be reviewed"
     },
     "contentMeta": {
         "post": [
             {
-                "unikey": "String / 插件 Unikey",
-                "name": "String / 名称",
-                "description": "String / 描述",
+                "unikey": "String / Plugin Unikey",
+                "name": "String / Name",
+                "description": "String / Description",
                 "code": "String / Code",
-                "formElement": "String / HTML 表单元素",
-                "elementType": "String / 表单元素类型",
-                "elementOptions": "Array / 选项类型配置值",
-                "isMultiple": "Boolean / 是否多选，对 select,email,file 等元素有效",
-                "isRequired": "Boolean / 是否必填",
-                "fileType": "Number / 1.图片 2.视频 3.音频 4.文档", // elementType 为 file 时使用
-                "fileAccept": "String / 支持的文件后缀，例如 .jpg,.png", // elementType 为 file 时使用
-                "fileExt": "String / 支持的文件后缀，例如 jpg,png", // elementType 为 file 时使用
-                "inputPattern": "String / 自定义正则表达式",
-                "inputMax": "Number / 最大值",
-                "inputMin": "Number / 最小值",
-                "inputMaxlength": "Number / 最大长度",
-                "inputMinlength": "Number / 最小长度",
-                "inputSize": "Number / 大小",
-                "inputStep": "Number / 步骤",
-                "valueType": "String / 数据值类型"
+                "formElement": "String / HTML Form Element",
+                "elementType": "String / Form Element Type",
+                "elementOptions": "Array / Option Type Configuration Values",
+                "isMultiple": "Boolean / Whether multiple selection is allowed for select, email, file, etc.",
+                "isRequired": "Boolean / Whether required",
+                "fileType": "Number / 1.Image 2.Video 3.Audio 4.Document", // Used when elementType is file
+                "fileAccept": "String / Supported file extensions, e.g., .jpg, .png", // Used when elementType is file
+                "fileExt": "String / Supported file extensions, e.g., jpg, png", // Used when elementType is file
+                "inputPattern": "String / Custom Regular Expression",
+                "inputMax": "Number / Maximum Value",
+                "inputMin": "Number / Minimum Value",
+                "inputMaxlength": "Number / Maximum Length",
+                "inputMinlength": "Number / Minimum Length",
+                "inputSize": "Number / Size",
+                "inputStep": "Number / Step",
+                "valueType": "String / Data Value Type"
             }
         ],
         "comment": [
             {
-                "unikey": "String / 插件 Unikey",
-                "name": "String / 名称",
-                "description": "String / 描述",
+                "unikey": "String / Plugin Unikey",
+                "name": "String / Name",
+                "description": "String / Description",
                 "code": "String / Code",
-                "formElement": "String / HTML 表单元素",
-                "elementType": "String / 表单元素类型",
-                "elementOptions": "Array / 选项类型配置值",
-                "isMultiple": "Boolean / 是否多选，对 select,email,file 等元素有效",
-                "isRequired": "Boolean / 是否必填",
-                "fileType": "Number / 1.图片 2.视频 3.音频 4.文档", // elementType 为 file 时使用
-                "fileAccept": "String / 支持的文件后缀，例如 .jpg,.png", // elementType 为 file 时使用
-                "fileExt": "String / 支持的文件后缀，例如 jpg,png", // elementType 为 file 时使用
-                "inputPattern": "String / 自定义正则表达式",
-                "inputMax": "Number / 最大值",
-                "inputMin": "Number / 最小值",
-                "inputMaxlength": "Number / 最大长度",
-                "inputMinlength": "Number / 最小长度",
-                "inputSize": "Number / 大小",
-                "inputStep": "Number / 步骤",
-                "valueType": "String / 数据值类型"
+                "formElement": "String / HTML Form Element",
+                "elementType": "String / Form Element Type",
+                "elementOptions": "Array / Option Type Configuration Values",
+                "isMultiple": "Boolean / Whether multiple selection is allowed for select, email, file, etc.",
+                "isRequired": "Boolean / Whether required",
+                "fileType": "Number / 1.Image 2.Video 3.Audio 4.Document", // Used when elementType is file
+                "fileAccept": "String / Supported file extensions, e.g., .jpg, .png", // Used when elementType is file
+                "fileExt": "String / Supported file extensions, e.g., jpg, png", // Used when elementType is file
+                "inputPattern": "String / Custom Regular Expression",
+                "inputMax": "Number / Maximum Value",
+                "inputMin": "Number / Minimum Value",
+                "inputMaxlength": "Number / Maximum Length",
+                "inputMinlength": "Number / Minimum Length",
+                "inputSize": "Number / Size",
+                "inputStep": "Number / Step",
+                "valueType": "String / Data Value Type"
             }
         ],
     },
     "admins": [
         {
-            // 小组管理员列表
+            // Group admin list
             // Common Data Structure -> User Info
         }
     ],
     "interaction": {
-        "groupName": "String / 小组自定义名称",
-        "likeSetting": "Boolean / 是否允许 like",
-        "likeName": "String / like 行为自定义名称",
-        "dislikeSetting": "Boolean / 是否允许 dislike",
-        "dislikeName": "String / dislike 行为自定义名称",
-        "followSetting": "Boolean / 是否允许 follow",
-        "followName": "String / follow 行为自定义名称",
-        "blockSetting": "Boolean / 是否允许 block",
-        "blockName": "String / block 行为自定义名称",
-        "publishPostName": "String / 发表帖子自定义名称",
-        "publishCommentName": "String / 发表评论自定义名称",
+        "groupName": "String / Custom Group Name",
+        "likeSetting": "Boolean / Whether like is allowed",
+        "likeName": "String / Custom Like Action Name",
+        "dislikeSetting": "Boolean / Whether dislike is allowed",
+        "dislikeName": "String / Custom Dislike Action Name",
+        "followSetting": "Boolean / Whether follow is allowed",
+        "followName": "String / Custom Follow Action Name",
+        "blockSetting": "Boolean / Whether block is allowed",
+        "blockName": "String / Custom Block Action Name",
+        "publishPostName": "String / Custom Publish Post Name",
+        "publishCommentName": "String / Custom Publish Comment Name",
         "likeStatus": "Boolean / Like Status",
         "dislikeStatus": "Boolean / Dislike Status",
         "followStatus": "Boolean / Follow Status",
-        "followNote": "String / 我对该小组的关注备注",
-        "followExpired": "Boolean / 是否过期，公开小组模式始终为 false",
-        "followExpiryDateTime": "String / 过期时间",
+        "followNote": "String / My Note for Following This Group",
+        "followExpired": "Boolean / Whether expired, always false for public groups",
+        "followExpiryDateTime": "String / Expiry Date Time",
         "blockStatus": "Boolean / Block Status",
-        "blockNote": "String / 我对该小组的屏蔽备注"
+        "blockNote": "String / My Note for Blocking This Group"
     }
 }
 ```
@@ -382,20 +382,20 @@
 
 ```json
 {
-    "hid": "String / 话题 ID",
-    "url": "String / 话题详情页地址",
-    "hname": "String / 话题名",
-    "cover": "String / 话题封面图",
-    "description": "String / 话题介绍",
-    "likeCount": "Number / 被点赞总数",
-    "dislikeCount": "Number / 被点踩总数",
-    "followCount": "Number / 被关注总数",
-    "blockCount": "Number / 被屏蔽总数",
-    "postCount": "Number / 帖子总数",
-    "postDigestCount": "Number / 精华帖子总数",
-    "commentCount": "Number / 评论总数",
-    "commentDigestCount": "Number / 精华评论总数",
-    "createDate": "String / 话题创建日期",
+    "hid": "String / Topic ID",
+    "url": "String / Topic Detail Page URL",
+    "hname": "String / Topic Name",
+    "cover": "String / Topic Cover Image",
+    "description": "String / Topic Description",
+    "likeCount": "Number / Total Like Count",
+    "dislikeCount": "Number / Total Dislike Count",
+    "followCount": "Number / Total Follow Count",
+    "blockCount": "Number / Total Block Count",
+    "postCount": "Number / Total Post Count",
+    "postDigestCount": "Number / Total Digest Post Count",
+    "commentCount": "Number / Total Comment Count",
+    "commentDigestCount": "Number / Total Digest Comment Count",
+    "createDate": "String / Topic Creation Date",
     "archives": [
         // Common Data Structure -> Extend Archive Info
     ],
@@ -406,23 +406,23 @@
         // Common Data Structure -> Extend Content Info
     },
     "interaction": {
-        "hashtagName": "String / 话题自定义名称",
-        "likeSetting": "Boolean / 是否允许 like",
-        "likeName": "String / like 行为自定义名称",
-        "dislikeSetting": "Boolean / 是否允许 dislike",
-        "dislikeName": "String / dislike 行为自定义名称",
-        "followSetting": "Boolean / 是否允许 follow",
-        "followName": "String / follow 行为自定义名称",
-        "blockSetting": "Boolean / 是否允许 block",
-        "blockName": "String / block 行为自定义名称",
-        "publishPostName": "String / 发表帖子自定义名称",
-        "publishCommentName": "String / 发表评论自定义名称",
+        "hashtagName": "String / Custom Topic Name",
+        "likeSetting": "Boolean / Whether like is allowed",
+        "likeName": "String / Custom Like Action Name",
+        "dislikeSetting": "Boolean / Whether dislike is allowed",
+        "dislikeName": "String / Custom Dislike Action Name",
+        "followSetting": "Boolean / Whether follow is allowed",
+        "followName": "String / Custom Follow Action Name",
+        "blockSetting": "Boolean / Whether block is allowed",
+        "blockName": "String / Custom Block Action Name",
+        "publishPostName": "String / Custom Publish Post Name",
+        "publishCommentName": "String / Custom Publish Comment Name",
         "likeStatus": "Boolean / Like Status",
         "dislikeStatus": "Boolean / Dislike Status",
         "followStatus": "Boolean / Follow Status",
-        "followNote": "String / 我对该话题的关注备注",
+        "followNote": "String / My Note for Following This Topic",
         "blockStatus": "Boolean / Block Status",
-        "blockNote": "String / 我对该话题的屏蔽备注"
+        "blockNote": "String / My Note for Blocking This Topic"
     }
 }
 ```
@@ -431,77 +431,81 @@
 
 ```json
 {
-    "pid": "String / 帖子 ID",
-    "url": "String / 帖子详情页地址",
-    "title": "String / 帖子标题",
-    "content": "String / 帖子内容或简述",
-    "contentLength": "Number / 内容总长度",
-    "langTag": "String / 内容语言标签",
-    "writingDirection": "String / 内容撰写方向",
-    "isBrief": "Boolean / 是否为简述",
-    "isMarkdown": "Boolean / 是否为 MD 格式",
-    "isAnonymous": "Boolean / 是否匿名",
-    "stickyState": "Number / 置顶状态 1.否 2.小组页置顶 3.全局置顶",
-    "digestState": "Number / 精华状态 1.否 2.普通精华 3.高级精华",
-    "likeCount": "Number / 被点赞总数",
-    "dislikeCount": "Number / 被点踩总数",
-    "followCount": "Number / 被关注总数",
-    "blockCount": "Number / 被屏蔽总数",
-    "commentCount": "Number / 评论总数",
-    "commentDigestCount": "Number / 评论中精华总数",
-    "commentLikeCount": "Number / 评论被点赞总数",
-    "commentDislikeCount": "Number / 评论被点赞总数",
-    "commentFollowCount": "Number / 评论被关注总数",
-    "commentBlockCount": "Number / 评论被屏蔽总数",
-    "postCount": "Number / 关联帖子总数，别人引用它的数量",
-    "createTime": "String / 帖子发表时间",
-    "createTimeFormat": "String / 帖子发表人性化时间",
-    "editTime": "String / 帖子最后编辑时间",
-    "editTimeFormat": "String / 帖子最后编辑人性化时间",
-    "editCount": "Number / 编辑次数",
-    "latestCommentTime": "String / 最新评论的时间",
-    "latestCommentTimeFormat": "String / 最新评论的人性化时间",
-    "rankState": "Number / 等级状态",
-    "status": "Boolean / 帖子状态",
-    "isAllow": "Boolean / 是否需要授权",
-    "allowProportion": "Number / 无权时内容显示百分比",
-    "allowBtnName": "String / 无权时按钮文字",
-    "allowBtnUrl": "String / 处理授权的地址",
-    "isUserList": "Boolean / 是否有关联用户列表",
-    "userListName": "String / 用户列表名称",
-    "userListUrl": "String / 查看用户列表的地址",
-    "userListCount": "Number / 用户列表用户数",
+    "pid": "String / Post ID",
+    "url": "String / Post Detail Page URL",
+    "title": "String / Post Title",
+    "content": "String / Post Content or Summary",
+    "contentLength": "Number / Total Content Length",
+    "langTag": "String / Content Language Tag",
+    "writingDirection": "String / Content Writing Direction",
+    "isBrief": "Boolean / Whether it is a summary",
+    "isMarkdown": "Boolean / Whether it is in MD format",
+    "isAnonymous": "Boolean / Whether anonymous",
+    "stickyState": "Number / Sticky status 1.No 2.Group sticky 3.Global sticky",
+    "digestState": "Number / Digest status 1.No 2.General digest 3.Advanced digest",
+    "likeCount": "Number / Total Like Count",
+    "dislikeCount": "Number / Total Dislike Count",
+    "followCount": "Number / Total Follow Count",
+    "blockCount": "Number / Total Block Count",
+    "commentCount": "Number / Total Comment Count",
+    "commentDigestCount": "Number / Total Digest Comments Count",
+    "commentLikeCount": "Number / Total Comment Like Count",
+    "commentDislikeCount": "Number / Total Comment Dislike Count",
+    "commentFollowCount": "Number / Total Comment Follow Count",
+    "commentBlockCount": "Number / Total Comment Block Count",
+    "postCount": "Number / Total Related Posts Count, the number of other people quoting it",
+    "createdDatetime": "String / Post Publish Time",
+    "createdTimeAgo": "String / Human-readable Post Publish Time",
+    "editedDatetime": "String / Post Last Edit Time",
+    "editedTimeAgo": "String / Human-readable Post Last Edit Time",
+    "editedCount": "Number / Edit Count",
+    "latestCommentDatetime": "String / Latest Comment Time",
+    "latestCommentTimeAgo": "String / Human-readable Latest Comment Time",
+    "rankState": "Number / Rank State",
+    "status": "Boolean / Post Status",
+    "allowConfig": {
+        "isAllow": "Boolean / Whether Authorization is Required",
+        "previewProportion": "Number / Content Display Percentage When Unauthorized",
+        "buttonName": "String / Button Text When Unauthorized",
+        "buttonUrl": "String / URL to Handle Authorization",
+    },
+    "affiliatedUserConfig": {
+        "hasUserList": "Boolean / Whether there is a Related User List",
+        "userListName": "String / User List Name",
+        "userListUrl": "String / URL to View User List",
+        "userListCount": "Number / User List Count",
+    },
     "moreJson": {
-        // 更多信息 comments > more_json
-        // 以下是已知 Key
-        "ipLocation": "String / 发表者 IP 位置名",
-        "deviceName": "String / 发表者设备名称",
+        // Data Table: posts > more_json
+        // The following keys are known
+        "ipLocation": "String / Creator IP Location Name",
+        "deviceName": "String / Creator Device Name"
     },
     "location": {
-        "isLbs": "Boolean / 是否有位置信息",
-        "mapId": "Number / 经纬度地图编号",
-        "latitude": "String / 纬度",
-        "longitude": "String / 经度",
-        "scale": "String / 定位地图比例",
-        "continent": "String / 洲名",
-        "continentCode": "String / 洲名代码",
-        "country": "String / 国家名",
-        "countryCode": "String / 国家代码",
-        "region": "String / 省名",
-        "regionCode": "String / 省代码",
-        "city": "String / 城市名",
-        "cityCode": "String / 城市代码",
-        "district": "String / 城区名",
-        "address": "String / 地址",
-        "zip": "String / 邮编",
-        "poi": "String / POI 信息",
+        "isLbs": "Boolean / Whether there is location information",
+        "mapId": "Number / Latitude and Longitude Map ID",
+        "latitude": "String / Latitude",
+        "longitude": "String / Longitude",
+        "scale": "String / Map Scale",
+        "continent": "String / Continent Name",
+        "continentCode": "String / Continent Code",
+        "country": "String / Country Name",
+        "countryCode": "String / Country Code",
+        "region": "String / Province Name",
+        "regionCode": "String / Province Code",
+        "city": "String / City Name",
+        "cityCode": "String / City Code",
+        "district": "String / District Name",
+        "address": "String / Address",
+        "zip": "String / Postal Code",
+        "poi": "String / POI Information",
         "poiId": "String / POI ID",
-        "distance": "Number / 帖子发表位置与我的距离",
-        "unit": "String / 与我距离的单位 km 或 mi",
-        "encode": "String / 将 location 参数进行 Base64 编码和 URL 编码后的字符串",
+        "distance": "Number / Distance between the post location and me",
+        "unit": "String / Unit of distance from me, km or mi",
+        "encode": "String / Base64 and URL encoded location parameter string"
     },
-    "isComment": "Boolean / 是否可评论",
-    "isCommentPublic": "Boolean / 是否公开评论（不公开则仅帖子作者可见）",
+    "isComment": "Boolean / Whether comments are allowed",
+    "isCommentPublic": "Boolean / Whether comments are public (if not public, only the post author can see them)",
     "archives": [
         // Common Data Structure -> Extend Archive Info
     ],
@@ -534,22 +538,22 @@
         ]
     },
     "group": {
-        // 帖子所属小组，可为 null
+        // The group to which the item belongs can be null.
         // Common Data Structure -> Group Info
     },
     "hashtags": [
         {
-            // 帖子关联话题
+            // Post Related Topics
             // Common Data Structure -> Hashtag Info
         }
     ],
     "creator": {
-        // 帖子作者
+        // Post author
         // Common Data Structure -> User Info
     },
-    "isMultiLevelQuote": "Boolean / 是否多层级引用，上一级 quotedPost 帖子是否也有引用",
+    "isMultiLevelQuote": "Boolean / Whether there are multiple levels of reference, and whether quoted posts are also referenced at the previous level.",
     "quotedPost": {
-        // 当前帖子引用的帖子
+        // Posts quoted by the current post
         // Common Data Structure -> Post Info
     },
     "previewLikeUsers": [
@@ -563,37 +567,42 @@
         }
     ],
     "manages": [
-        // 帖子管理扩展
+        // Post Management Extension
         // Common Data Structure -> Extend Function Info
     ],
     "editStatus": {
-        "isMe": "Boolean / 我是否为作者",
-        "canDelete": "Boolean / 是否允许删除",
-        "canEdit": "Boolean / 是否允许编辑",
-        "isPluginEditor": "Boolean / 是否插件编辑器",
-        "editorUrl": "String / 插件编辑器访问地址"
+        "isMe": "Boolean / Whether I am the author",
+        "canDelete": "Boolean / Whether deletion is allowed",
+        "canEdit": "Boolean / Whether editing is allowed",
+        "isPluginEditor": "Boolean / Whether it's a plugin editor",
+        "editorUrl": "String / Plugin editor access URL"
     },
     "interaction": {
-        "postName": "String / 帖子自定义名称",
-        "likeSetting": "Boolean / 是否允许 like",
-        "likeName": "String / like 行为自定义名称",
-        "dislikeSetting": "Boolean / 是否允许 dislike",
-        "dislikeName": "String / dislike 行为自定义名称",
-        "followSetting": "Boolean / 是否允许 follow",
-        "followName": "String / follow 行为自定义名称",
-        "blockSetting": "Boolean / 是否允许 block",
-        "blockName": "String / block 行为自定义名称",
-        "publishPostName": "String / 发表帖子自定义名称",
-        "publishCommentName": "String / 发表评论自定义名称",
+        "postName": "String / Custom name for the post",
+        "likeSetting": "Boolean / Whether 'like' is allowed",
+        "likeName": "String / Custom name for the 'like' action",
+        "dislikeSetting": "Boolean / Whether 'dislike' is allowed",
+        "dislikeName": "String / Custom name for the 'dislike' action",
+        "followSetting": "Boolean / Whether 'follow' is allowed",
+        "followName": "String / Custom name for the 'follow' action",
+        "blockSetting": "Boolean / Whether 'block' is allowed",
+        "blockName": "String / Custom name for the 'block' action",
+        "publishPostName": "String / Custom name for publishing a post",
+        "publishCommentName": "String / Custom name for publishing a comment",
         "likeStatus": "Boolean / Like Status",
         "dislikeStatus": "Boolean / Dislike Status",
         "followStatus": "Boolean / Follow Status",
-        "followNote": "String / 我对该帖子的关注备注",
+        "followNote": "String / My follow note for this post",
         "blockStatus": "Boolean / Block Status",
-        "blockNote": "String / 我对该帖子的屏蔽备注"
+        "blockNote": "String / My block note for this post"
     },
-    "commentHidden": "Boolean / 是否隐藏评论",
-    "followType": "String / 来自哪种关注 null.无 user.我关注的用户 group.我关注的小组 hashtag.我关注的话题 digest.高级精华"
+    "commentHidden": "Boolean / Whether comments are hidden",
+    "followType": "String / From which type of follow"
+    // followType=null: none
+    // followType=user: followed user
+    // followType=group: followed group
+    // followType=hashtag: followed hashtag
+    // followType==digest: advanced digest
 }
 ```
 
@@ -601,66 +610,66 @@
 
 ```json
 {
-    "cid": "String / 评论 ID",
-    "url": "String / 评论详情页地址",
-    "content": "String / 评论内容或简述",
-    "contentLength": "Number / 内容总长度",
-    "langTag": "String / 内容语言标签",
-    "writingDirection": "String / 内容撰写方向",
-    "isBrief": "Boolean / 是否为简述",
-    "isMarkdown": "Boolean / 是否为 MD 格式",
-    "isAnonymous": "Boolean / 是否匿名",
-    "isSticky": "Boolean / 是否置顶",
-    "digestState": "Number / 精华状态 1.否 2.普级精华 3.高级精华",
-    "likeCount": "Number / 被点赞总数",
-    "dislikeCount": "Number / 被点踩总数",
-    "followCount": "Number / 被关注总数",
-    "blockCount": "Number / 被屏蔽总数",
-    "commentCount": "Number / 子评论总数",
-    "commentDigestCount": "Number / 子评论中精华总数",
-    "commentLikeCount": "Number / 子评论被点赞总数",
-    "commentDislikeCount": "Number / 子评论被点赞总数",
-    "commentFollowCount": "Number / 子评论被关注总数",
-    "commentBlockCount": "Number / 子评论被屏蔽总数",
-    "createTime": "String / 评论发表时间",
-    "createTimeFormat": "String / 评论发表人性化时间",
-    "editTime": "String / 评论最后编辑时间",
-    "editTimeFormat": "String / 评论最后编辑人性化时间",
-    "editCount": "Number / 编辑次数",
-    "latestCommentTime": "String / 最新子级评论的时间",
-    "latestCommentTimeFormat": "String / 最新子级评论的人性化时间",
-    "rankState": "Number / 等级状态",
-    "status": "Boolean / 评论状态",
+    "cid": "String / Comment ID",
+    "url": "String / Comment details page URL",
+    "content": "String / Comment content or summary",
+    "contentLength": "Number / Total content length",
+    "langTag": "String / Content language tag",
+    "writingDirection": "String / Content writing direction",
+    "isBrief": "Boolean / Whether it's a summary",
+    "isMarkdown": "Boolean / Whether it's in MD format",
+    "isAnonymous": "Boolean / Whether it's anonymous",
+    "isSticky": "Boolean / Whether it's pinned",
+    "digestState": "Number / Digest state 1: No, 2: Regular digest, 3: Advanced digest",
+    "likeCount": "Number / Total number of likes",
+    "dislikeCount": "Number / Total number of dislikes",
+    "followCount": "Number / Total number of follows",
+    "blockCount": "Number / Total number of blocks",
+    "commentCount": "Number / Total number of child comments",
+    "commentDigestCount": "Number / Total number of digests in child comments",
+    "commentLikeCount": "Number / Total number of likes on child comments",
+    "commentDislikeCount": "Number / Total number of dislikes on child comments",
+    "commentFollowCount": "Number / Total number of follows on child comments",
+    "commentBlockCount": "Number / Total number of blocks on child comments",
+    "createdDatetime": "String / Comment creation time",
+    "createdTimeAgo": "String / Human-friendly comment creation time",
+    "editedDatetime": "String / Comment last edit time",
+    "editedTimeAgo": "String / Human-friendly comment last edit time",
+    "editedCount": "Number / Number of edits",
+    "latestCommentDatetime": "String / Latest child comment time",
+    "latestCommentTimeAgo": "String / Human-friendly latest child comment time",
+    "rankState": "Number / Rank State",
+    "status": "Boolean / Comment Status",
     "moreJson": {
-        // 更多信息 comments > more_json
-        // 以下是已知 Key
-        "ipLocation": "String / 发表者 IP 位置名",
-        "deviceName": "String / 发表者设备名称",
+        // Data Table: comments > more_json
+        // The following keys are known
+        "ipLocation": "String / Creator IP Location Name",
+        "deviceName": "String / Creator Device Name"
     },
     "location": {
-        "isLbs": "Boolean / 是否有位置信息",
-        "mapId": "Number / 经纬度地图编号",
-        "latitude": "String / 纬度",
-        "longitude": "String / 经度",
-        "scale": "String / 定位地图比例",
-        "continent": "String / 洲名",
-        "continentCode": "String / 洲名代码",
-        "country": "String / 国家名",
-        "countryCode": "String / 国家代码",
-        "region": "String / 省名",
-        "regionCode": "String / 省代码",
-        "city": "String / 城市名",
-        "cityCode": "String / 城市代码",
-        "district": "String / 城区名",
-        "address": "String / 地址",
-        "zip": "String / 邮编",
-        "poi": "String / POI 信息",
+        "isLbs": "Boolean / Whether there is location information",
+        "mapId": "Number / Latitude and Longitude Map ID",
+        "latitude": "String / Latitude",
+        "longitude": "String / Longitude",
+        "scale": "String / Map Scale",
+        "continent": "String / Continent Name",
+        "continentCode": "String / Continent Code",
+        "country": "String / Country Name",
+        "countryCode": "String / Country Code",
+        "region": "String / Province Name",
+        "regionCode": "String / Province Code",
+        "city": "String / City Name",
+        "cityCode": "String / City Code",
+        "district": "String / District Name",
+        "address": "String / Address",
+        "zip": "String / Postal Code",
+        "poi": "String / POI Information",
         "poiId": "String / POI ID",
-        "distance": "Number / 帖子发表位置与我的距离",
-        "unit": "String / 与我距离的单位 km 或 mi",
-        "encode": "String / 将 location 参数进行 Base64 编码和 URL 编码后的字符串",
+        "distance": "Number / Distance between the post location and me",
+        "unit": "String / Unit of distance from me, km or mi",
+        "encode": "String / Base64 and URL encoded location parameter string"
     },
-    "isCommentPublic": "Boolean / 是否公开评论（不公开则仅帖子作者可见）",
+    "isCommentPublic": "Boolean / Whether to make comments public (if not, only the author of the post will be visible)",
     "archives": [
         // Common Data Structure -> Extend Archive Info
     ],
@@ -694,75 +703,81 @@
     },
     "hashtags": [
         {
-            // 帖子关联话题
+            // Comment Related Topics
             // Common Data Structure -> Hashtag Info
         }
     ],
     "creator": {
-        // 评论作者
+        // Comment author
         // Common Data Structure -> User Info
-        "isPostCreator": "Boolean / 是否为帖子作者"
+        "isPostCreator": "Boolean / Is the author of the post"
     },
     "subComments": [
         {
-            // 子评论预览
+            // Sub-Commons Preview
             // Common Data Structure -> Comment Info
         }
     ],
-    "extendBtn": {
-        "status": "Boolean / 是否显示扩展按钮",
-        "type": "String / 使用 default 或 active 按钮",
+    "extendButton": {
+        "status": "Boolean / Whether to display the extend button",
+        "type": "String / Use default or active button",
         "default": {
-            "name": "String / 按钮名称",
-            "style": "String / 按钮风格 primary secondary success danger warning info",
-            "url": "String / 按钮访问地址"
+            "name": "String / Button name",
+            "style": "String / Button style (primary, secondary, success, danger, warning, info)",
+            "url": "String / Button URL"
         },
         "active": {
-            "name": "String / 按钮名称",
-            "style": "String / 按钮风格 primary secondary success danger warning info",
-            "url": "String / 按钮访问地址"
-        },
+            "name": "String / Button name",
+            "style": "String / Button style (primary, secondary, success, danger, warning, info)",
+            "url": "String / Button URL"
+        }
     },
     "manages": [
-        // 评论管理扩展
+        // Common Management Extension
         // Common Data Structure -> Extend Function Info
     ],
     "editStatus": {
-        "isMe": "Boolean / 我是否为作者",
-        "canDelete": "Boolean / 是否允许删除",
-        "canEdit": "Boolean / 是否允许编辑",
-        "isPluginEditor": "Boolean / 是否插件编辑器",
-        "editorUrl": "String / 插件编辑器访问地址"
+        "isMe": "Boolean / Whether I am the author",
+        "canDelete": "Boolean / Whether deletion is allowed",
+        "canEdit": "Boolean / Whether editing is allowed",
+        "isPluginEditor": "Boolean / Whether it's a plugin editor",
+        "editorUrl": "String / Plugin editor access URL"
     },
     "interaction": {
-        "commentName": "String / 评论自定义名称",
-        "likeSetting": "Boolean / 是否允许 like",
-        "likeName": "String / like 行为自定义名称",
-        "dislikeSetting": "Boolean / 是否允许 dislike",
-        "dislikeName": "String / dislike 行为自定义名称",
-        "followSetting": "Boolean / 是否允许 follow",
-        "followName": "String / follow 行为自定义名称",
-        "blockSetting": "Boolean / 是否允许 block",
-        "blockName": "String / block 行为自定义名称",
-        "publishPostName": "String / 发表帖子自定义名称",
-        "publishCommentName": "String / 发表评论自定义名称",
-        "likeStatus": "Boolean / Like Status",
-        "dislikeStatus": "Boolean / Dislike Status",
-        "followStatus": "Boolean / Follow Status",
-        "followNote": "String / 我对该评论的关注备注",
-        "blockStatus": "Boolean / Block Status",
-        "blockNote": "String / 我对该评论的屏蔽备注",
-        "postCreatorLikeStatus": "Boolean / 帖子作者是否点赞"
+        "commentName": "String / Custom comment name",
+        "likeSetting": "Boolean / Whether liking is allowed",
+        "likeName": "String / Custom like action name",
+        "dislikeSetting": "Boolean / Whether disliking is allowed",
+        "dislikeName": "String / Custom dislike action name",
+        "followSetting": "Boolean / Whether following is allowed",
+        "followName": "String / Custom follow action name",
+        "blockSetting": "Boolean / Whether blocking is allowed",
+        "blockName": "String / Custom block action name",
+        "publishPostName": "String / Custom publish post name",
+        "publishCommentName": "String / Custom publish comment name",
+        "likeStatus": "Boolean / Like status",
+        "dislikeStatus": "Boolean / Dislike status",
+        "followStatus": "Boolean / Follow status",
+        "followNote": "String / My follow note on this comment",
+        "blockStatus": "Boolean / Block status",
+        "blockNote": "String / My block note on this comment",
+        "postCreatorLikeStatus": "Boolean / Whether the post creator liked this comment"
     },
     "replyToPost": {
-        // 评论所属的帖子信息，如果是子级评论列表仅有 pid 参数
+        // Information about the post this comment belongs to,
+        // if it's a sub-comment list, only the pid parameter is available
         // Common Data Structure -> Post Info
     },
     "replyToComment": {
-        // 当前评论的父级评论
+        // The parent comment of the current comment
         // Common Data Structure -> Comment Info
     },
-    "followType": "String / 来自哪种关注 null.无 user.我关注的用户 group.我关注的小组 hashtag.我关注的话题 digest.高级精华"
+    "followType": "String / From which type of follow"
+    // followType=null: none
+    // followType=user: followed user
+    // followType=group: followed group
+    // followType=hashtag: followed hashtag
+    // followType==digest: advanced digest
 }
 ```
 
@@ -770,94 +785,94 @@
 
 ```json
 {
-    "id": "Number / 日志 ID",
-    "pid": "String / 所属帖子 ID",
-    "quotedPid": "String / 引用帖子 ID",
-    "isPluginEditor": "Boolean / 是否插件编辑器",
-    "editorUnikey": "String / 编辑器插件 Unikey",
-    "editorUrl": "String / 编辑器访问地址",
+    "id": "Number / Log ID",
+    "pid": "String / Parent post ID",
+    "quotedPid": "String / Quoted post ID",
+    "isPluginEditor": "Boolean / Is plugin editor",
+    "editorUnikey": "String / Editor plugin Unikey",
+    "editorUrl": "String / Editor access URL",
     "group": {
-        // 所属小组
+        // Belongs to group
         // Common Data Structure -> Group Info
     },
-    "title": "String / 帖子标题",
-    "content": "String / 帖子内容或简述",
-    "contentLength": "Number / 内容总长度",
-    "isBrief": "Boolean / 是否为简述",
-    "isMarkdown": "Boolean / 是否为 MD 格式",
-    "isAnonymous": "Boolean / 是否匿名",
-    "isComment": "Boolean / 是否可评论",
-    "isCommentPublic": "Boolean / 是否公开评论（不公开则仅帖子作者可见）",
+    "title": "String / Post title",
+    "content": "String / Post content or brief",
+    "contentLength": "Number / Total content length",
+    "isBrief": "Boolean / Is brief",
+    "isMarkdown": "Boolean / Is MD format",
+    "isAnonymous": "Boolean / Is anonymous",
+    "isComment": "Boolean / Is commentable",
+    "isCommentPublic": "Boolean / Are comments public (if not, only post author can see)",
     "mapJson": {
-        "mapId": "Number / 经纬度地图编号",
-        "latitude": "String / 纬度",
-        "longitude": "String / 经度",
-        "scale": "String / 定位地图比例",
-        "continent": "String / 洲名",
-        "continentCode": "String / 洲名代码",
-        "country": "String / 国家名",
-        "countryCode": "String / 国家代码",
-        "region": "String / 省名",
-        "regionCode": "String / 省代码",
-        "city": "String / 城市名",
-        "cityCode": "String / 城市代码",
-        "district": "String / 城区名",
-        "address": "String / 地址",
-        "zip": "String / 邮编",
-        "poi": "String / POI 信息",
+        "mapId": "Number / Latitude and longitude map number",
+        "latitude": "String / Latitude",
+        "longitude": "String / Longitude",
+        "scale": "String / Map scale",
+        "continent": "String / Continent name",
+        "continentCode": "String / Continent code",
+        "country": "String / Country name",
+        "countryCode": "String / Country code",
+        "region": "String / Region name",
+        "regionCode": "String / Region code",
+        "city": "String / City name",
+        "cityCode": "String / City code",
+        "district": "String / District name",
+        "address": "String / Address",
+        "zip": "String / Zip code",
+        "poi": "String / POI information",
         "poiId": "String / POI ID"
     },
     "allowJson": {
-        "isAllow": "Boolean / 是否有权限配置",
-        "proportion": "Number / 无权时预读百分比",
-        "pluginUrl": "String / 配置插件地址",
-        "pluginUnikey": "String / 配置插件 unikey",
-        "defaultLangBtnName": "String / 无权时按钮文字",
+        "isAllow": "Boolean / Is permission configuration allowed",
+        "proportion": "Number / Pre-read percentage when unauthorized",
+        "pluginUrl": "String / Configuration plugin URL",
+        "pluginUnikey": "String / Configuration plugin unikey",
+        "defaultLangBtnName": "String / Button text when unauthorized",
         "btnName": [
-            // 无权时按钮文字，多语言配置
+            // Button text when unauthorized, multilingual configuration
         ],
         "permissions": {
             "users": [
                 {
-                    // 预授权用户
+                    // Pre-authorized users
                     // Common Data Structure -> User Info
                 }
             ],
             "roles": [
-                // 预授权角色
+                // Pre-authorized roles
                 {
-                    "rid": "Number / 角色 ID",
-                    "nicknameColor": "String / 昵称颜色",
-                    "name": "String / 角色名",
-                    "nameDisplay": "Boolean / 是否显示角色名",
-                    "icon": "String / 角色图标地址",
-                    "iconDisplay": "Boolean / 是否显示角色图标",
-                    "status": "Boolean / 是否有效"
+                    "rid": "Number / Role ID",
+                    "nicknameColor": "String / Nickname color",
+                    "name": "String / Role name",
+                    "nameDisplay": "Boolean / Is role name displayed",
+                    "icon": "String / Role icon URL",
+                    "iconDisplay": "Boolean / Is role icon displayed",
+                    "status": "Boolean / Is role valid"
                 }
             ]
         },
     },
     "userListJson": {
-        "isUserList": "Boolean / 是否有关联用户列表",
-        "defaultLangUserListName": "String / 用户名称",
+        "isUserList": "Boolean / Is there a related user list",
+        "defaultLangUserListName": "String / User list name",
         "userListName": [
-            // 用户名称，多语言配置
+            // User list name, multilingual configuration
         ],
-        "pluginUrl": "String / 配置插件地址",
-        "pluginUnikey": "String / 配置插件 unikey",
+        "pluginUrl": "String / Configuration plugin URL",
+        "pluginUnikey": "String / Configuration plugin unikey",
     },
     "commentBtnJson": {
-        "isCommentBtn": "Boolean / 评论是否有按钮",
-        "defaultLangBtnName": "String / 按钮文字",
+        "isCommentBtn": "Boolean / Is there a button for comments",
+        "defaultLangBtnName": "String / Button text",
         "btnName": [
-            // 按钮文字，多语言配置
+            // Button text, multilingual configuration
         ],
-        "btnStyle": "String / 按钮风格",
-        "pluginUrl": "String / 配置插件地址",
-        "pluginUnikey": "String / 配置插件 unikey",
+        "btnStyle": "String / Button style",
+        "pluginUrl": "String / Configuration plugin URL",
+        "pluginUnikey": "String / Configuration plugin unikey",
     },
-    "state": "Number / 状态",
-    "reason": "String / 审核拒绝原因",
+    "state": "Number / Status",
+    "reason": "String / Rejection reason during review",
     "creator": {
         // Common Data Structure -> User Info
     },
@@ -899,39 +914,39 @@
 
 ```json
 {
-    "id": "Number / 日志 ID",
-    "cid": "String / 所属评论 ID",
-    "pid": "String / 评论的帖子 ID",
-    "parentCid": "String / 回复评论的 ID",
-    "isPluginEditor": "Boolean / 是否插件编辑器",
-    "editorUnikey": "String / 编辑器插件 Unikey",
-    "editorUrl": "String / 编辑器访问地址",
-    "content": "String / 帖子内容或简述",
-    "contentLength": "Number / 内容总长度",
-    "isBrief": "Boolean / 是否为简述",
-    "isMarkdown": "Boolean / 是否为 MD 格式",
-    "isAnonymous": "Boolean / 是否匿名",
+    "id": "Number / Log ID",
+    "cid": "String / Belongs to comment ID",
+    "pid": "String / Commented post ID",
+    "parentCid": "String / Replied comment ID",
+    "isPluginEditor": "Boolean / Is plugin editor",
+    "editorUnikey": "String / Editor plugin Unikey",
+    "editorUrl": "String / Editor access URL",
+    "content": "String / Post content or brief",
+    "contentLength": "Number / Total content length",
+    "isBrief": "Boolean / Is brief",
+    "isMarkdown": "Boolean / Is MD format",
+    "isAnonymous": "Boolean / Is anonymous",
     "mapJson": {
-        "mapId": "Number / 经纬度地图编号",
-        "latitude": "String / 纬度",
-        "longitude": "String / 经度",
-        "scale": "String / 定位地图比例",
-        "continent": "String / 洲名",
-        "continentCode": "String / 洲名代码",
-        "country": "String / 国家名",
-        "countryCode": "String / 国家代码",
-        "region": "String / 省名",
-        "regionCode": "String / 省代码",
-        "city": "String / 城市名",
-        "cityCode": "String / 城市代码",
-        "district": "String / 城区名",
-        "address": "String / 地址",
-        "zip": "String / 邮编",
-        "poi": "String / POI 信息",
+        "mapId": "Number / Latitude and longitude map number",
+        "latitude": "String / Latitude",
+        "longitude": "String / Longitude",
+        "scale": "String / Map scale",
+        "continent": "String / Continent name",
+        "continentCode": "String / Continent code",
+        "country": "String / Country name",
+        "countryCode": "String / Country code",
+        "region": "String / Region name",
+        "regionCode": "String / Region code",
+        "city": "String / City name",
+        "cityCode": "String / City code",
+        "district": "String / District name",
+        "address": "String / Address",
+        "zip": "String / Zip code",
+        "poi": "String / POI information",
         "poiId": "String / POI ID"
     },
-    "state": "Number / 状态",
-    "reason": "String / 审核拒绝原因",
+    "state": "Number / Status",
+    "reason": "String / Rejection reason during review",
     "creator": {
         // Common Data Structure -> User Info
     },
@@ -973,40 +988,40 @@
 
 ```json
 {
-    "fid": "String / 文件 fid",
-    "type": "Number / 文件类型编号 1.图片 2.视频 3.音频 4.文档",
-    "status": "Boolean / 是否有效",
-    "substitutionImageUrl": "String / 文件无效提示图",
-    "sensitive": "Boolean / 是否为敏感文件",
-    "name": "String / 完整原始名称",
-    "mime": "String / 文件扩展名",
-    "extension": "String / 文件后缀名",
-    "size": "String / 大小",
-    "md5": "String / 文件 md5 编码",
-    "sha": "String / 文件 sha 编码",
-    "shaType": "String / 文件 sha 类型",
+    "fid": "String / File fid",
+    "type": "Number / File type number 1.Image 2.Video 3.Audio 4.Document",
+    "status": "Boolean / Is valid",
+    "substitutionImageUrl": "String / Invalid file prompt image",
+    "sensitive": "Boolean / Is sensitive file",
+    "name": "String / Complete original name",
+    "mime": "String / File MIME type",
+    "extension": "String / File extension",
+    "size": "String / Size",
+    "md5": "String / File md5 encoding",
+    "sha": "String / File sha encoding",
+    "shaType": "String / File sha type",
     "moreJson": {
         // files->more_json
     },
     // Image Parameters
-    "imageWidth": "Number / 图片宽度",
-    "imageHeight": "Number / 图片高度",
-    "imageLong": "Boolean / 是否长图",
-    "imageConfigUrl": "String / 配置用途图片地址",
-    "imageRatioUrl": "String / 等比例缩略图地址",
-    "imageSquareUrl": "String / 正方形缩略图地址",
-    "imageBigUrl": "String / 原图压缩图地址",
+    "imageWidth": "Number / Image width",
+    "imageHeight": "Number / Image height",
+    "imageLong": "Boolean / Is long image",
+    "imageConfigUrl": "String / Configuration purpose image URL",
+    "imageRatioUrl": "String / Proportional thumbnail URL",
+    "imageSquareUrl": "String / Square thumbnail URL",
+    "imageBigUrl": "String / Compressed original image URL",
     // Video Parameters
-    "videoTime": "Number / 视频时长",
-    "videoPosterUrl": "String / 视频封面图链接",
-    "videoUrl": "String / 视频链接",
+    "videoTime": "Number / Video duration",
+    "videoPosterUrl": "String / Video cover image URL",
+    "videoUrl": "String / Video URL",
     // Audio Parameters
-    "audioTime": "Number / 音频时长",
-    "audioUrl": "String / 音频链接",
+    "audioTime": "Number / Audio duration",
+    "audioUrl": "String / Audio URL",
     // Document Parameters
-    "documentPreviewUrl": "String / 文件预览链接",
+    "documentPreviewUrl": "String / Document preview URL",
     // Audio and Video Parameter
-    "transcodingState": "Number / 音视频转码状态 1.待转码 2.转码中 3.转码完成 4.转码失败"
+    "transcodingState": "Number / Audio and video transcoding status 1.Pending 2.Transcoding 3.Transcoding complete 4.Transcoding failed"
 }
 ```
 
@@ -1014,14 +1029,14 @@
 
 ```json
 {
-    "code": "String / 标识码",
-    "name": "String / 名称",
-    "description": "String / 描述",
-    "value": "String / 参数值",
+    "code": "String / Identifier code",
+    "name": "String / Name",
+    "description": "String / Description",
+    "value": "String / Parameter value",
 }
 ```
 
-- 参考资料: [archives](../database/extends/archives.md)
+- Reference: [archives](../database/extends/archives.md)
 
 ## Extend Operation Info
 
@@ -1029,35 +1044,35 @@
 {
     "customizes": [
         {
-            "code": "String / 标识码",
-            "style": "String / 风格 primary, secondary, success, danger, warning, info",
-            "name": "String / 名称",
-            "description": "String / 描述",
-            "imageUrl": "String / 图片",
-            "imageActiveUrl": "String / 二态图片",
-            "displayType": "Number / 展示类型 1.基础 2.功能（插件）",
-            "pluginUrl": "String / 展示类型 2 专用，插件访问地址",
+            "code": "String / Identifier code",
+            "style": "String / Style primary, secondary, success, danger, warning, info",
+            "name": "String / Name",
+            "description": "String / Description",
+            "imageUrl": "String / Image",
+            "imageActiveUrl": "String / Two-state image",
+            "displayType": "Number / Display type 1.Basic 2.Function (plugin)",
+            "pluginUrl": "String / Dedicated for display type 2, plugin access URL",
         }
     ],
     "buttonIcons": [
         {
-            // Ibid
+            // Same as above
         }
     ],
     "diversifyImages": [
         {
-            // Ibid
+            // Same as above
         }
     ],
     "tips": [
         {
-            // Ibid
+            // Same as above
         }
     ]
 }
 ```
 
-- 参考资料: [operations](../database/extends/operations.md#code-用途编码)
+- Reference: [operations](../database/extends/operations.md#code-用途编码)
 
 ## Extend Content Info
 
@@ -1065,36 +1080,36 @@
 {
     "textBox": [
         {
-            "eid": "String / 扩展内容 ID",
-            "type": "Number / 类型 1.文本框 2.信息框 3.交互框",
-            "textContent": "String / 文本框专用-内容",
-            "textIsMarkdown": "Boolean / 文本框专用-内容是否为 MD 格式",
-            "infoType": "Number / 信息框专用-类型编号",
-            "infoTypeString": "String / 信息框专用-类型字符串",
-            "cover": "String / 信息框专用-封面图",
-            "title": "String / 信息框专用-标题",
-            "titleColor": "String / 信息框专用-标题颜色",
-            "descPrimary": "String / 信息框专用-主要副信息",
-            "descPrimaryColor": "String / 信息框专用-主要副信息颜色",
-            "descSecondary": "String / 信息框专用-次要副信息",
-            "descSecondaryColor": "String / 信息框专用-次要副信息颜色",
-            "buttonName": "String / 信息框专用-按钮名称",
-            "buttonColor": "String / 信息框专用-按钮名称颜色",
-            "position": "Number / 显示位置 1.上方 2.下方",
-            "accessUrl": "String / 访问地址",
+            "eid": "String / Extension content ID",
+            "type": "Number / Type 1.Text box 2.Info box 3.Interaction box",
+            "textContent": "String / Text box specific - content",
+            "textIsMarkdown": "Boolean / Text box specific - Is content MD format",
+            "infoType": "Number / Info box specific - Type number",
+            "infoTypeString": "String / Info box specific - Type string",
+            "cover": "String / Info box specific - Cover image",
+            "title": "String / Info box specific - Title",
+            "titleColor": "String / Info box specific - Title color",
+            "descPrimary": "String / Info box specific - Primary sub-information",
+            "descPrimaryColor": "String / Info box specific - Primary sub-information color",
+            "descSecondary": "String / Info box specific - Secondary sub-information",
+            "descSecondaryColor": "String / Info box specific - Secondary sub-information color",
+            "buttonName": "String / Info box specific - Button name",
+            "buttonColor": "String / Info box specific - Button name color",
+            "position": "Number / Display position 1.Top 2.Bottom",
+            "accessUrl": "String / Access URL",
             "moreJson": {
-                // 自定义信息
+                // Custom information
             },
         }
     ],
     "infoBox": [
         {
-            // Ibid
+            // Same as above
         }
     ],
     "interactionBox": [
         {
-            // Ibid
+            // Same as above
         }
     ],
 }
@@ -1104,34 +1119,34 @@
 
 ```json
 {
-    "unikey": "String / 插件 Unikey",
-    "name": "String / 扩展名称",
-    "icon": "String / 扩展图标地址",
-    "url": "String / 扩展访问地址",
-    "badgeType": "Number / 扩展提示类型 null.无 1.红点 2.文字 3.数字",
-    "badgeValue": "String / 扩展提示值，文字或数字",
-    "editorToolbar": "Boolean / 编辑器专用，是否在 toolbar 显示",
-    "editorNumber": "Number / 编辑器专用，可使用数量",
+    "unikey": "String / Plugin Unikey",
+    "name": "String / Extension name",
+    "icon": "String / Extension icon URL",
+    "url": "String / Extension access URL",
+    "badgeType": "Number / Extension prompt type null.None 1.Red dot 2.Text 3.Number",
+    "badgeValue": "String / Extension prompt value, text or number",
+    "editorToolbar": "Boolean / Editor specific, whether to display in toolbar",
+    "editorNumber": "Number / Editor specific, available number",
     "pluginRating": {
         "postByAll": [
             {
-                "id": "Number / 列表接口 pluginRatingId 参数用途值",
-                "title": "String / 参数标题",
-                "description": "String / 参数描述"
+                "id": "Number / List interface pluginRatingId parameter purpose value",
+                "title": "String / Parameter title",
+                "description": "String / Parameter description"
             }
         ],
         "postByFollow": [
             {
-                "id": "Number / 列表接口 pluginRatingId 参数用途值",
-                "title": "String / 参数标题",
-                "description": "String / 参数描述"
+                "id": "Number / List interface pluginRatingId parameter purpose value",
+                "title": "String / Parameter title",
+                "description": "String / Parameter description"
             }
         ],
         "postByNearby": [
             {
-                "id": "Number / 列表接口 pluginRatingId 参数用途值",
-                "title": "String / 参数标题",
-                "description": "String / 参数描述"
+                "id": "Number / List interface pluginRatingId parameter purpose value",
+                "title": "String / Parameter title",
+                "description": "String / Parameter description"
             }
         ]
     }
