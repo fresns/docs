@@ -255,7 +255,7 @@
     "mode": "Number / 小组模式 1.公开 2.非公开",
     "modeEndAfter": "Number / 非公开模式到期后 1.不限制 2.小组内容全部不可见 3.到期前内容可见，新内容不可见",
     "find": "Number / 是否可发现（是否显示） 1.可发现 2.不可发现",
-    "followType": "Number / 关注方式 1.原生方式 2.插件方式",
+    "followType": "Number / 关注方式 1.原生方式 2.插件方式 3.关闭",
     "followUrl": "String / 关注方式 2 专用，操作关注插件页地址",
     "parentGid": "String / 父级小组 ID",
     "category": {
@@ -455,23 +455,27 @@
     "commentFollowCount": "Number / 评论被关注总数",
     "commentBlockCount": "Number / 评论被屏蔽总数",
     "postCount": "Number / 关联帖子总数，别人引用它的数量",
-    "createTime": "String / 帖子发表时间",
-    "createTimeFormat": "String / 帖子发表人性化时间",
-    "editTime": "String / 帖子最后编辑时间",
-    "editTimeFormat": "String / 帖子最后编辑人性化时间",
-    "editCount": "Number / 编辑次数",
-    "latestCommentTime": "String / 最新评论的时间",
-    "latestCommentTimeFormat": "String / 最新评论的人性化时间",
+    "createdDatetime": "String / 帖子发表时间",
+    "createdTimeAgo": "String / 帖子发表人性化时间",
+    "editedDatetime": "String / 帖子最后编辑时间",
+    "editedTimeAgo": "String / 帖子最后编辑人性化时间",
+    "editedCount": "Number / 编辑次数",
+    "latestCommentDatetime": "String / 最新评论的时间",
+    "latestCommentTimeAgo": "String / 最新评论的人性化时间",
     "rankState": "Number / 等级状态",
     "status": "Boolean / 帖子状态",
-    "isAllow": "Boolean / 是否需要授权",
-    "allowProportion": "Number / 无权时内容显示百分比",
-    "allowBtnName": "String / 无权时按钮文字",
-    "allowBtnUrl": "String / 处理授权的地址",
-    "isUserList": "Boolean / 是否有关联用户列表",
-    "userListName": "String / 用户列表名称",
-    "userListUrl": "String / 查看用户列表的地址",
-    "userListCount": "Number / 用户列表用户数",
+    "allowConfig": {
+        "isAllow": "Boolean / 是否需要授权",
+        "previewProportion": "Number / 无权时内容显示百分比",
+        "buttonName": "String / 无权时按钮文字",
+        "buttonUrl": "String / 处理授权的地址",
+    },
+    "affiliatedUserConfig": {
+        "hasUserList": "Boolean / 是否有关联用户列表",
+        "userListName": "String / 用户列表名称",
+        "userListUrl": "String / 查看用户列表的地址",
+        "userListCount": "Number / 用户列表用户数",
+    },
     "moreJson": {
         // 更多信息 posts > more_json
         // 以下是已知 Key
@@ -623,13 +627,13 @@
     "commentDislikeCount": "Number / 子评论被点赞总数",
     "commentFollowCount": "Number / 子评论被关注总数",
     "commentBlockCount": "Number / 子评论被屏蔽总数",
-    "createTime": "String / 评论发表时间",
-    "createTimeFormat": "String / 评论发表人性化时间",
-    "editTime": "String / 评论最后编辑时间",
-    "editTimeFormat": "String / 评论最后编辑人性化时间",
-    "editCount": "Number / 编辑次数",
-    "latestCommentTime": "String / 最新子级评论的时间",
-    "latestCommentTimeFormat": "String / 最新子级评论的人性化时间",
+    "createdDatetime": "String / 评论发表时间",
+    "createdTimeAgo": "String / 评论发表人性化时间",
+    "editedDatetime": "String / 评论最后编辑时间",
+    "editedTimeAgo": "String / 评论最后编辑人性化时间",
+    "editedCount": "Number / 编辑次数",
+    "latestCommentDatetime": "String / 最新子级评论的时间",
+    "latestCommentTimeAgo": "String / 最新子级评论的人性化时间",
     "rankState": "Number / 等级状态",
     "status": "Boolean / 评论状态",
     "moreJson": {
@@ -695,7 +699,7 @@
     },
     "hashtags": [
         {
-            // 帖子关联话题
+            // 评论关联话题
             // 通用数据结构->话题信息
         }
     ],
@@ -710,7 +714,7 @@
             // 通用数据结构->评论信息
         }
     ],
-    "extendBtn": {
+    "extendButton": {
         "status": "Boolean / 是否显示扩展按钮",
         "type": "String / 使用 default 或 active 按钮",
         "default": {
