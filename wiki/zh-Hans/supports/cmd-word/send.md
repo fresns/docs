@@ -41,7 +41,7 @@
 ```
 | 参数名 | 类型 | 是否必传 | 说明 |
 | --- | --- | --- | --- |
-| uid | Number | YES | 用户参数（用户主表 `users > uid` 字段） |
+| uid | Number | YES | 用户参数（用户主表 `users->uid` 字段） |
 | type | Number | YES | 1.系统通知 / 2.推荐 / 3.点赞 / 4.踩 / 5.关注 / 6.屏蔽 / 7.提及（艾特） / 8.评论 |
 | content | String | NO | 通知内容 |
 | isMarkdown | Boolean | NO | 内容是否为 MD 格式 |
@@ -73,7 +73,7 @@
 ```
 | 参数名 | 类型 | 是否必传 | 说明 |
 | --- | --- | --- | --- |
-| uid | Number | YES | 用户参数（用户主表 `users > uid` 字段） |
+| uid | Number | YES | 用户参数（用户主表 `users->uid` 字段） |
 | channel | Number | NO | 渠道 1.iOS / 2.Android |
 | template | String | NO | 模板参数 |
 | coverUrl | String | NO | 封面图，以 Laravel Validation 验参为 url |
@@ -96,7 +96,7 @@
 ```
 | 参数名 | 类型 | 是否必传 | 说明 |
 | --- | --- | --- | --- |
-| uid | Number | YES | 用户参数（用户主表 `users > uid` 字段） |
+| uid | Number | YES | 用户参数（用户主表 `users->uid` 字段） |
 | channel | Number | YES | 渠道 1.公众号 / 2.小程序 |
 | template | String | NO | 模板参数 |
 | coverUrl | String | NO | 封面图，以 Laravel Validation 验参为 url |

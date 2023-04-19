@@ -3,13 +3,13 @@
 | Column Name | Type | Comment | Default | Null | Remark |
 | --- | --- | --- | --- | --- | --- |
 | id | bigint *UNSIGNED* | Primary Key ID | | NO | Auto Increment |
-| comment_id | bigint *UNSIGNED* | Comment ID |  | NO | Related field comments > id |
+| comment_id | bigint *UNSIGNED* | Comment ID |  | NO | Related field comments->id |
 | is_plugin_editor | tinyint *UNSIGNED* | Is it edited only in the plugin? | 0 | NO | 0.No / 1.Yes |
 | editor_unikey | varchar(64) | Content Editing Plugin |  | YES | Related field [plugins->unikey](../plugins/plugins.md) |
 | can_delete | tinyint *UNSIGNED* | Does the author have the right to delete? | 1 | NO | 0.No / 1.Yes |
 | is_close_btn | tinyint *UNSIGNED* | Is the comment extension button closed? | 0 | NO | 0.No / 1.Yes<br>Corresponding field [post_appends->is_comment_btn](post-appends.md) |
 | is_change_btn | tinyint *UNSIGNED* | Is the comment extension button replaced? | 0 | NO | 0.No / 1.Yes |
-| btn_name_key | varchar(64) | Replacement button name key |  | YES | Related field configs > item_key |
+| btn_name_key | varchar(64) | Replacement button name key |  | YES | Related field configs->item_key |
 | btn_style | varchar(64) | Button style |  | YES | primary / secondary / success / danger / warning / info |
 | more_json | json | Additional information field |  | YES | E.g. publisher IP location name, device name, etc. |
 | map_json | json | Map - Detailed information |  | YES |  |

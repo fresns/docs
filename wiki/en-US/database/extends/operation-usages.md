@@ -5,7 +5,7 @@
 | id | bigint *UNSIGNED* | Primary Key ID |  | NO | Auto Increment |
 | usage_type | tinyint *UNSIGNED* | 目标类型 |  | NO |  |
 | usage_id | bigint *UNSIGNED* | 目标主键 ID |  | NO |  |
-| operation_id | int *UNSIGNED* | 扩展运营 ID |  | NO | Related field operations > id |
+| operation_id | int *UNSIGNED* | 扩展运营 ID |  | NO | Related field `operations->id` |
 | plugin_unikey | varchar(64) | 关联插件 |  | NO | Related field [plugins->unikey](../plugins/plugins.md)<br>哪个插件关联的 |
 | created_at | timestamp | Create Time | CURRENT_TIMESTAMP | NO |  |
 | updated_at | timestamp | Update Time |  | YES |  |

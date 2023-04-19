@@ -9,7 +9,7 @@ ConfigHelper::fresnsConfigByItemKey($itemKey, $langTag);
 ```
 | 参数名 | 类型 | 是否必传 | 说明 |
 | --- | --- | --- | --- |
-| itemKey | String | YES | [configs > item_key](../../database/systems/configs.md) |
+| itemKey | String | YES | [configs->item_key](../../database/systems/configs.md) |
 | langTag | String | NO | 语言标签，可不传，仅对多语言配置有效。<br>如果是多语言配置，不传则输出默认语言值。 |
 
 ## 根据一组 Key 获取配置值
@@ -19,7 +19,7 @@ ConfigHelper::fresnsConfigByItemKeys($itemKeys, $langTag);
 ```
 | 参数名 | 类型 | 是否必传 | 说明 |
 | --- | --- | --- | --- |
-| itemKeys | Array | YES | [configs > item_key](../../database/systems/configs.md) |
+| itemKeys | Array | YES | [configs->item_key](../../database/systems/configs.md) |
 | langTag | String | NO | 语言标签，可不传，仅对多语言配置有效。<br>如果是多语言配置，不传则输出默认语言值。 |
 
 ::: details 查看输出示例
@@ -39,7 +39,7 @@ ConfigHelper::fresnsConfigByItemTag($itemTag, $langTag);
 ```
 | 参数名 | 类型 | 是否必传 | 说明 |
 | --- | --- | --- | --- |
-| itemTag | String | YES | [configs > item_tag](../../database/systems/configs.md) |
+| itemTag | String | YES | [configs->item_tag](../../database/systems/configs.md) |
 | langTag | String | NO | 语言标签，可不传，仅对多语言配置有效。<br>如果是多语言配置，不传则输出默认语言值。 |
 
 ::: details 查看输出示例
@@ -64,7 +64,7 @@ ConfigHelper::fresnsConfigFileValueTypeByItemKey($itemKey);
 ```
 | 参数名 | 类型 | 是否必传 | 说明 |
 | --- | --- | --- | --- |
-| itemKey | String | YES | [configs > item_key](../../database/systems/configs.md) |
+| itemKey | String | YES | [configs->item_key](../../database/systems/configs.md) |
 
 ::: details 查看说明
 - `ID` 值为文件 ID：键值是数字
@@ -78,7 +78,7 @@ ConfigHelper::fresnsConfigFileUrlByItemKey($itemKey);
 ```
 | 参数名 | 类型 | 是否必传 | 说明 |
 | --- | --- | --- | --- |
-| itemKey | String | YES | [configs > item_key](../../database/systems/configs.md) |
+| itemKey | String | YES | [configs->item_key](../../database/systems/configs.md) |
 
 ::: details 查看说明
 - 图片输出为 `imageConfigUrl`

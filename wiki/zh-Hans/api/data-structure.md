@@ -477,7 +477,7 @@
         "userListCount": "Number / 用户列表用户数",
     },
     "moreJson": {
-        // 更多信息 posts > more_json
+        // 更多信息 posts->more_json
         // 以下是已知 Key
         "ipLocation": "String / 发表者 IP 位置名",
         "deviceName": "String / 发表者设备名称",
@@ -637,7 +637,7 @@
     "rankState": "Number / 等级状态",
     "status": "Boolean / 评论状态",
     "moreJson": {
-        // 更多信息 comments > more_json
+        // 更多信息 comments->more_json
         // 以下是已知 Key
         "ipLocation": "String / 发表者 IP 位置名",
         "deviceName": "String / 发表者设备名称",
@@ -993,7 +993,7 @@
     "sha": "String / 文件 sha 编码",
     "shaType": "String / 文件 sha 类型",
     "moreJson": {
-        // 扩展信息 files > more_json
+        // 扩展信息 files->more_json
     },
     // 图片专用参数
     "imageWidth": "Number / 图片宽度",

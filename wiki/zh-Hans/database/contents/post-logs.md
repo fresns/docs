@@ -9,7 +9,7 @@
 | create_type | tinyint *UNSIGNED* | 创建类型 | 1 | NO | 1.快捷创建 / 2.编辑器创建 / 3.由帖子复原创建 |
 | is_plugin_editor | tinyint *UNSIGNED* | 是否仅在插件中编辑 | 0 | NO | 0.否 / 1.是 |
 | editor_unikey | varchar(64) | 内容编辑插件 |  | YES | 关联字段 [plugins->unikey](../plugins/plugins.md) |
-| group_id | int *UNSIGNED* | 小组 ID |  | YES | 关联字段 groups > id |
+| group_id | int *UNSIGNED* | 小组 ID |  | YES | 关联字段 groups->id |
 | title | varchar(255) | 标题 |  | YES |  |
 | content | longtext | 内容 |  | YES | 完整内容 |
 | is_markdown | tinyint *UNSIGNED* | 内容是否为 MD 格式 | 0 | NO | 0.否 / 1.是 |
@@ -40,23 +40,23 @@
 ```json [字段说明]
 // 未注明字段的参数，不单独存字段，与完整 json 存入 post_appends->map_json
 {
-    "mapId": "post_appends > map_id",
-    "latitude": "posts > map_latitude",
-    "longitude": "posts > map_longitude",
-    "scale": "post_appends > map_scale",
+    "mapId": "post_appends->map_id",
+    "latitude": "posts->map_latitude",
+    "longitude": "posts->map_longitude",
+    "scale": "post_appends->map_scale",
     "continent": "",
-    "continentCode": "post_appends > map_continent_code",
+    "continentCode": "post_appends->map_continent_code",
     "country": "",
-    "countryCode": "post_appends > map_country_code",
+    "countryCode": "post_appends->map_country_code",
     "region": "",
-    "regionCode": "post_appends > map_region_code",
+    "regionCode": "post_appends->map_region_code",
     "city": "",
-    "cityCode": "post_appends > map_city_code",
+    "cityCode": "post_appends->map_city_code",
     "district": "",
     "address": "",
-    "zip": "post_appends > map_zip",
+    "zip": "post_appends->map_zip",
     "poi": "",
-    "poiId": "post_appends > map_poi_id",
+    "poiId": "post_appends->map_poi_id",
 }
 ```
 
@@ -109,29 +109,29 @@
 
 ```json
 {
-    "isAllow": "posts > is_allow",
+    "isAllow": "posts->is_allow",
     "btnName": [
         {
             "langTag": "en 语言标签",
-            "name": "post_appends > allow_btn_name 按钮名称"
+            "name": "post_appends->allow_btn_name 按钮名称"
         }
     ],
-    "proportion": "post_appends > allow_proportion",
+    "proportion": "post_appends->allow_proportion",
     "permissions": {
         "users": [
             1, 2,
             "userId", "userId"
-            // 发表时存入 post_allows > object_id
-            // post_allows > type = 1
+            // 发表时存入 post_allows->object_id
+            // post_allows->type = 1
         ],
         "roles": [
             1, 2,
             "roleId", "roleId"
-            // 发表时存入 post_allows > object_id
-            // post_allows > type = 2
+            // 发表时存入 post_allows->object_id
+            // post_allows->type = 2
         ]
     },
-    "pluginUnikey": "post_appends > allow_plugin_unikey"
+    "pluginUnikey": "post_appends->allow_plugin_unikey"
 }
 ```
 
@@ -139,14 +139,14 @@
 
 ```json
 {
-    "isUserList": "post_appends > is_user_list",
+    "isUserList": "post_appends->is_user_list",
     "userListName": [
         {
             "langTag": "en 语言标签",
-            "name": "post_appends > user_list_name 特定用户名称"
+            "name": "post_appends->user_list_name 特定用户名称"
         }
     ],
-    "pluginUnikey": "post_appends > user_list_plugin_unikey"
+    "pluginUnikey": "post_appends->user_list_plugin_unikey"
 }
 ```
 
@@ -154,13 +154,13 @@
 
 ```json
 {
-    "isCommentBtn": "post_appends > is_comment_btn",
+    "isCommentBtn": "post_appends->is_comment_btn",
     "btnName": [
         {
             "langTag": "en 语言标签",
-            "name": "post_appends > comment_btn_name 按钮名称"
+            "name": "post_appends->comment_btn_name 按钮名称"
         }
     ],
-    "pluginUnikey": "post_appends > comment_btn_plugin_unikey"
+    "pluginUnikey": "post_appends->comment_btn_plugin_unikey"
 }
 ```

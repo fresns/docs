@@ -78,22 +78,22 @@
 ```
 
 ::: details 开发说明
-- `editEmail` 修改邮箱，先验证 `accounts > email` 是否为空。
+- `editEmail` 修改邮箱，先验证 `accounts->email` 是否为空。
     - 为空：代表新绑定邮箱
         - 验证码参数仅 `newVerifyCode` 必传；
         - 以新邮箱 `editEmail` + `newVerifyCode` 验证，验证成功后，填充 `email` 字段。
     - 不为空：代表更换绑定
         - 两个验证码参数 `verifyCode` + `newVerifyCode` 必传，`verifyCode` 来自[身份验证](verify-identity.md)；
-        - 先拿当前数据库 `accounts > email` + `verifyCode` 验证，验证通过后下一步；
+        - 先拿当前数据库 `accounts->email` + `verifyCode` 验证，验证通过后下一步；
         - 再以新邮箱 `editEmail` + `newVerifyCode` 验证，验证成功后，新邮箱替换当前存储的邮箱 `email` 字段。
 
-- `editPhone` 修改手机号，联动参数 `editCountryCode` 必传，然后验证 `accounts > phone` 是否为空。
+- `editPhone` 修改手机号，联动参数 `editCountryCode` 必传，然后验证 `accounts->phone` 是否为空。
     - 为空：代表新绑定手机号
         - 验证码参数仅 `newVerifyCode` 必传；
         - 以新手机号 `editCountryCode . editPhone` + `newVerifyCode` 验证，验证成功后，填充手机号 `country_code` + `pure_phone` + `phone` 三个字段。
     - 不为空：代表更换绑定
         - 两个验证码参数 `verifyCode` + `newVerifyCode` 必传，`verifyCode` 来自[身份验证](verify-identity.md)；
-        - 先拿当前数据库 `accounts > phone` + `verifyCode` 验证，验证通过后下一步；
+        - 先拿当前数据库 `accounts->phone` + `verifyCode` 验证，验证通过后下一步；
         - 再以新手机号 `editPhone` + `newVerifyCode` 验证，验证成功后，新手机号替换当前存储的手机号，修改 `country_code` + `pure_phone` + `phone` 三个字段。
 
 - `editPassword` 修改登录密码
@@ -106,5 +106,5 @@
 
 - `deleteConnectInfo` 删除第三方互联信息，删除该账号互联凭证表 `connect_id` 这条记录（不是主键 ID）。
 
-- `editLastLoginTime` 修改最后登录时间，不需要验证，登录状态下就可以修改，账号表 `accounts > last_login_at` 字段。
+- `editLastLoginTime` 修改最后登录时间，不需要验证，登录状态下就可以修改，账号表 `accounts->last_login_at` 字段。
 :::

@@ -40,6 +40,6 @@
 ```
 
 ::: details 开发说明
-- 账号表 `accounts > wait_delete` 修改为 1
-- 账号表 `accounts > wait_delete_at` 填上 +`delete_account_todo` 天数的时间
+- 账号表 `accounts->wait_delete` 修改为 1
+- 账号表 `accounts->wait_delete_at` 填上 +`delete_account_todo` 天数的时间
 :::

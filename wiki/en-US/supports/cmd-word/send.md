@@ -41,7 +41,7 @@
 ```
 | Parameter Name | Type | Required | Description |
 | --- | --- | --- | --- |
-| uid | Number | **required** | 用户参数（用户主表 `users > uid` 字段） |
+| uid | Number | **required** | 用户参数（用户主表 `users->uid` 字段） |
 | type | Number | **required** | 1.系统通知 / 2.推荐 / 3.点赞 / 4.踩 / 5.关注 / 6.屏蔽 / 7.提及（艾特） / 8.评论 |
 | content | String | *optional* | 通知内容 |
 | isMarkdown | Boolean | *optional* | 内容是否为 MD 格式 |
@@ -73,7 +73,7 @@
 ```
 | Parameter Name | Type | Required | Description |
 | --- | --- | --- | --- |
-| uid | Number | **required** | 用户参数（用户主表 `users > uid` 字段） |
+| uid | Number | **required** | 用户参数（用户主表 `users->uid` 字段） |
 | channel | Number | *optional* | 渠道 1.iOS / 2.Android |
 | template | String | *optional* | 模板参数 |
 | coverUrl | String | *optional* | 封面图，以 Laravel Validation 验参为 url |
@@ -96,7 +96,7 @@
 ```
 | Parameter Name | Type | Required | Description |
 | --- | --- | --- | --- |
-| uid | Number | **required** | 用户参数（用户主表 `users > uid` 字段） |
+| uid | Number | **required** | 用户参数（用户主表 `users->uid` 字段） |
 | channel | Number | **required** | 渠道 1.公众号 / 2.小程序 |
 | template | String | *optional* | 模板参数 |
 | coverUrl | String | *optional* | 封面图，以 Laravel Validation 验参为 url |

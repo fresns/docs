@@ -476,7 +476,7 @@ To reduce documentation effort and ensure consistency of public data, the same s
         "userListCount": "Number / User List Count",
     },
     "moreJson": {
-        // Data Table: posts > more_json
+        // Data Table: posts->more_json
         // The following keys are known
         "ipLocation": "String / Creator IP Location Name",
         "deviceName": "String / Creator Device Name"
@@ -641,7 +641,7 @@ To reduce documentation effort and ensure consistency of public data, the same s
     "rankState": "Number / Rank State",
     "status": "Boolean / Comment Status",
     "moreJson": {
-        // Data Table: comments > more_json
+        // Data Table: comments->more_json
         // The following keys are known
         "ipLocation": "String / Creator IP Location Name",
         "deviceName": "String / Creator Device Name"

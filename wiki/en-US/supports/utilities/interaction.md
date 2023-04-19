@@ -10,7 +10,7 @@ InteractionUtility::checkUserLike($likeType, $likeId, $userId);
 | --- | --- | --- | --- |
 | likeType | Number | **required** | 1.User / 2.Group / 3.Hashtag / 4.Post / 5.Comment |
 | likeId | Number | **required** | 对应类型的主键 ID |
-| userId | Number | **required** | `users > id` |
+| userId | Number | **required** | `users->id` |
 
 - 检查用户 `userId` 是否对 `likeType` 对象的 `likeId` 操作了点赞。
 
@@ -22,7 +22,7 @@ InteractionUtility::checkUserDislike($dislikeType, $dislikeId, $userId);
 | --- | --- | --- | --- |
 | dislikeType | Number | **required** | 1.User / 2.Group / 3.Hashtag / 4.Post / 5.Comment |
 | dislikeId | Number | **required** | 对应类型的主键 ID |
-| userId | Number | **required** | `users > id` |
+| userId | Number | **required** | `users->id` |
 
 - 检查用户 `userId` 是否对 `dislikeType` 对象的 `dislikeId` 操作了点踩。
 
@@ -34,7 +34,7 @@ InteractionUtility::checkUserFollow($followType, $followId, $userId);
 | --- | --- | --- | --- |
 | followType | Number | **required** | 1.User / 2.Group / 3.Hashtag / 4.Post / 5.Comment |
 | followId | Number | **required** | 对应类型的主键 ID |
-| userId | Number | **required** | `users > id` |
+| userId | Number | **required** | `users->id` |
 
 - 检查用户 `userId` 是否对 `followType` 对象的 `followId` 操作了关注。
 
@@ -46,7 +46,7 @@ InteractionUtility::checkUserBlock($blockType, $blockId, $userId);
 | --- | --- | --- | --- |
 | blockType | Number | **required** | 1.User / 2.Group / 3.Hashtag / 4.Post / 5.Comment |
 | blockId | Number | **required** | 对应类型的主键 ID |
-| userId | Number | **required** | `users > id` |
+| userId | Number | **required** | `users->id` |
 
 - 检查用户 `userId` 是否对 `blockType` 对象的 `blockId` 操作了屏蔽。
 
@@ -58,7 +58,7 @@ InteractionUtility::checkInteractionStatus($markType, $markId, $userId);
 | --- | --- | --- | --- |
 | markType | Number | **required** | 1.User / 2.Group / 3.Hashtag / 4.Post / 5.Comment |
 | markId | Number | **required** | 对应类型的主键 ID |
-| userId | Number | **required** | `users > id` |
+| userId | Number | **required** | `users->id` |
 
 - 检查用户 `userId` 是否对 `markType` 对象的 `markId` 操作。
 - 输出是否点赞、点踩、关注、屏蔽。
@@ -110,7 +110,7 @@ InteractionUtility::markStats($userId, $interactionType, $markType, $markId, $ac
 ```
 | Parameter Name | Type | Required | Description |
 | --- | --- | --- | --- |
-| userId | Number | **required** | `users > id` |
+| userId | Number | **required** | `users->id` |
 | interactionType | String | **required** | `like`, `dislike`, `follow`, `block` |
 | markType | Number | **required** | 1.User / 2.Group / 3.Hashtag / 4.Post / 5.Comment |
 | markId | Number | **required** | 对应类型的主键 ID |
@@ -143,7 +143,7 @@ InteractionUtility::getFollowIdArr($type, $userId);
 | Parameter Name | Type | Required | Description |
 | --- | --- | --- | --- |
 | type | Number | **required** | 1.User / 2.Group / 3.Hashtag / 4.Post / 5.Comment |
-| userId | Number | **required** | `users > id` |
+| userId | Number | **required** | `users->id` |
 
 ## 获取屏蔽对象 ID 数组
 ```php
@@ -152,7 +152,7 @@ InteractionUtility::getBlockIdArr($type, $userId);
 | Parameter Name | Type | Required | Description |
 | --- | --- | --- | --- |
 | type | Number | **required** | 1.User / 2.Group / 3.Hashtag / 4.Post / 5.Comment |
-| userId | Number | **required** | `users > id` |
+| userId | Number | **required** | `users->id` |
 
 ## 获取私有小组 ID 数组
 ```php

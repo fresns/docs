@@ -33,7 +33,7 @@
     "message": "ok",
     "data": {
         "type": 1, // 1.帖子 2.评论
-        "logId": "post_logs > id" // 或者 comment_logs > id
+        "logId": "post_logs->id" // 或者 comment_logs->id
     }
 }
 ```
@@ -48,7 +48,7 @@
 | Parameter Name | Type | Required | Description |
 | --- | --- | --- | --- |
 | type | Number | **required** | 类型 1.帖子 2.评论 |
-| fsid | String | *optional* | 帖子 `posts > pid`<br>评论 `comments > cid` |
+| fsid | String | *optional* | 帖子 `posts->pid`<br>评论 `comments->cid` |
 
 - 将已发表的正式内容，还原生成编辑草稿。
 - 评论不支持子孙级评论，仅限一级评论可生成草稿。
@@ -60,7 +60,7 @@
     "message": "ok",
     "data": {
         "type": 1, // 1.帖子 2.评论
-        "logId": "post_logs > id", // 或者 comment_logs > id
+        "logId": "post_logs->id", // 或者 comment_logs->id
         "editableStatus": true, // 是否可编辑
         "editableTime": "03:00", // 剩余可编辑时长，剩余 3 分钟
         "deadlineTime": "2022-07-01 15:05:00" // 剩余可编辑截止具体日期时间
@@ -77,7 +77,7 @@
 | Parameter Name | Type | Required | Description |
 | --- | --- | --- | --- |
 | type | Number | **required** | 类型 1.帖子 2.评论 |
-| logId | Number | **required** | 帖子 `post_logs > id`<br>评论 `comment_logs > id` |
+| logId | Number | **required** | 帖子 `post_logs->id`<br>评论 `comment_logs->id` |
 
 ::: details Return Example
 ```json
@@ -86,8 +86,8 @@
     "message": "ok",
     "data": {
         "type": 1, // 1.帖子 2.评论
-        "id": "posts > id", // 或者 comments > id
-        "fsid": "posts > pid" // 或者 comments > cid
+        "id": "posts->id", // 或者 comments->id
+        "fsid": "posts->pid" // 或者 comments->cid
     }
 }
 ```
@@ -124,9 +124,9 @@
     "message": "ok",
     "data": {
         "type": 1, // 1.帖子 2.评论
-        "logId": "post_logs > id", // 或者 comment_logs > id
-        "id": "posts > id", // 或者 comments > id
-        "fsid": "posts > pid" // 或者 comments > cid
+        "logId": "post_logs->id", // 或者 comment_logs->id
+        "id": "posts->id", // 或者 comments->id
+        "fsid": "posts->pid" // 或者 comments->cid
     }
 }
 ```

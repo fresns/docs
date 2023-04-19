@@ -3,13 +3,13 @@
 | 字段名 | 字段类型 | 字段注释 | 默认值 | 可空 | 备注 |
 | --- | --- | --- | --- | --- | --- |
 | id | bigint *UNSIGNED* | 主键 ID | | NO | 自动递增 |
-| comment_id | bigint *UNSIGNED* | 评论 ID |  | NO | 关联字段 comments > id |
+| comment_id | bigint *UNSIGNED* | 评论 ID |  | NO | 关联字段 comments->id |
 | is_plugin_editor | tinyint *UNSIGNED* | 是否仅在插件中编辑 | 0 | NO | 0.否 / 1.是 |
 | editor_unikey | varchar(64) | 内容编辑插件 |  | YES | 关联字段 [plugins->unikey](../plugins/plugins.md) |
 | can_delete | tinyint *UNSIGNED* | 作者是否有权删除 | 1 | NO | 0.否 / 1.是 |
 | is_close_btn | tinyint *UNSIGNED* | 是否关闭评论扩展按钮 | 0 | NO | 0.否 / 1.是<br>对应字段 [post_appends->is_comment_btn](post-appends.md) |
 | is_change_btn | tinyint *UNSIGNED* | 是否更换评论扩展按钮 | 0 | NO | 0.否 / 1.是 |
-| btn_name_key | varchar(64) | 更换按钮的名称键名 |  | YES | 关联字段 configs > item_key |
+| btn_name_key | varchar(64) | 更换按钮的名称键名 |  | YES | 关联字段 configs->item_key |
 | btn_style | varchar(64) | 按钮风格 |  | YES | primary / secondary / success / danger / warning / info |
 | more_json | json | 更多信息字段 |  | YES | 比如发布者 IP 位置名、设备名等 |
 | map_json | json | 地图-详细信息 |  | YES |  |

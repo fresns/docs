@@ -93,40 +93,40 @@ $file->getFileInfo();
 ::: details Example of information
 ```json
 {
-    "fid": "files > fid",
-    "type": "files > type",
-    "status": "files > is_enable",
+    "fid": "files->fid",
+    "type": "files->type",
+    "status": "files->is_enable",
     "substitutionImageUrl": "File expiration alert image",
-    "sensitive": "files > is_sensitive",
-    "name": "files > name",
-    "mime": "files > mime",
-    "extension": "files > extension",
-    "size": "files > size",
-    "md5": "files > md5",
-    "sha": "files > sha",
-    "shaType": "files > sha_type",
+    "sensitive": "files->is_sensitive",
+    "name": "files->name",
+    "mime": "files->mime",
+    "extension": "files->extension",
+    "size": "files->size",
+    "md5": "files->md5",
+    "sha": "files->sha",
+    "shaType": "files->sha_type",
     "moreJson": {
         // files->more_json
     },
     // Image Parameters
-    "imageWidth": "files > image_width",
-    "imageHeight": "files > image_height",
-    "imageLong": "files > image_is_long",
+    "imageWidth": "files->image_width",
+    "imageHeight": "files->image_height",
+    "imageLong": "files->image_is_long",
     "imageConfigUrl": "image_bucket_domain + files->path + image_thumb_config",
     "imageRatioUrl": "image_bucket_domain + files->path + image_thumb_ratio",
     "imageSquareUrl": "image_bucket_domain + files->path + image_thumb_square",
     "imageBigUrl": "image_bucket_domain + files->path + image_thumb_big",
     // Video Parameters
-    "videoTime": "files > video_time",
+    "videoTime": "files->video_time",
     "videoPosterUrl": "video_bucket_domain + file->video_poster_path",
     "videoUrl": "video_bucket_domain + files->path",
     // Audio Parameters
-    "audioTime": "files > audio_time",
+    "audioTime": "files->audio_time",
     "audioUrl": "audio_bucket_domain + files->path",
     // Document Parameters
     "documentPreviewUrl": "Links after replacement by rule",
     // Audio and Video Parameter
-    "transcodingState": "files > transcoding_state"
+    "transcodingState": "files->transcoding_state"
 }
 ```
 :::

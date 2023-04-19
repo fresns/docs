@@ -47,7 +47,7 @@
     // 发表帖子设置
     "publish_post": 1, // 发表帖子权限 1.所有用户 2.仅关注了小组的用户 3.仅指定的角色用户 4.仅限小组管理员
     "publish_post_roles": [
-        // 有权角色 ID，Related field roles > id
+        // 有权角色 ID，Related field roles->id
         "2", "3"
     ],
     "publish_post_review": false, // 是否发帖开启审核

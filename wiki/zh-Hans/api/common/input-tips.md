@@ -44,8 +44,8 @@
 
 | 参数名 | 用户名-关联字段 | 小组名-关联字段 | 话题名-关联字段 | 帖子标题-关联字段 | 扩展内容标题-关联字段 |
 | --- | --- | --- | --- | --- | --- |
-| fsid | users > uid 或 username | groups > gid | hashtags > slug | posts > pid | extends > eid |
-| name | users > nickname | languages > lang_content | hashtags > name | posts > title | languages > lang_content |
-| followStatus | user_follows > follow_type=1 | user_follows > follow_type=2 | user_follows > follow_type=3 | user_follows > follow_type=4 |  |
-| image | users > avatar_file_url | groups > cover_file_url | hashtags > cover_file_url |  | extends > cover_file_url |
+| fsid | users->uid 或 username | groups->gid | hashtags->slug | posts->pid | extends->eid |
+| name | users->nickname | languages->lang_content | hashtags->name | posts->title | languages->lang_content |
+| followStatus | user_follows->follow_type=1 | user_follows->follow_type=2 | user_follows->follow_type=3 | user_follows->follow_type=4 |  |
+| image | users->avatar_file_url | groups->cover_file_url | hashtags->cover_file_url |  | extends->cover_file_url |
 :::

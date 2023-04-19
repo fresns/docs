@@ -26,4 +26,4 @@
 ## 地址拼接说明
 
 - 1、插件完整的 URL 地址，由域名字段 `plugin_host` 加路径字段 `access_path` 拼接完成，当 `plugin_host` 为空时，与后端地址（配置表键名 `system_url`）拼接成完整 URL 地址。
-- 2、如果是「插件关联使用表」的关联插件，先根据第 1 条的逻辑拼接成完整地址，然后以 `plugin_usages > parameter` 字段值替换 URL 地址中的 `{parameter}`，替换后输出 URL。
+- 2、如果是「插件关联使用表」的关联插件，先根据第 1 条的逻辑拼接成完整地址，然后以 `plugin_usages->parameter` 字段值替换 URL 地址中的 `{parameter}`，替换后输出 URL。

@@ -54,8 +54,8 @@ PrimaryHelper::fresnsAccountIdByUidOrUsername($uidOrUsername);
 ```
 | Parameter Name | Type | Required | Description |
 | --- | --- | --- | --- |
-| aid | String | **required** | `accounts > aid` |
-| uidOrUsername | String | **required** | `users > uid` 或者 `users > username` |
+| aid | String | **required** | `accounts->aid` |
+| uidOrUsername | String | **required** | `users->uid` 或者 `users->username` |
 
 ## 获取用户主键 ID
 
@@ -64,7 +64,7 @@ PrimaryHelper::fresnsUserIdByUidOrUsername($uidOrUsername);
 ```
 | Parameter Name | Type | Required | Description |
 | --- | --- | --- | --- |
-| uidOrUsername | String | **required** | `users > uid` 或者 `users > username` |
+| uidOrUsername | String | **required** | `users->uid` 或者 `users->username` |
 
 ## 获取小组主键 ID
 
@@ -73,7 +73,7 @@ PrimaryHelper::fresnsGroupIdByGid($gid);
 ```
 | Parameter Name | Type | Required | Description |
 | --- | --- | --- | --- |
-| gid | String | **required** | `groups > gid` |
+| gid | String | **required** | `groups->gid` |
 
 ## 获取话题主键 ID
 
@@ -82,7 +82,7 @@ PrimaryHelper::fresnsHashtagIdByHid($hid);
 ```
 | Parameter Name | Type | Required | Description |
 | --- | --- | --- | --- |
-| hid | String | **required** | `hashtags > slug` |
+| hid | String | **required** | `hashtags->slug` |
 
 ## 获取帖子主键 ID
 
@@ -91,7 +91,7 @@ PrimaryHelper::fresnsPostIdByPid($pid);
 ```
 | Parameter Name | Type | Required | Description |
 | --- | --- | --- | --- |
-| pid | String | **required** | `posts > pid` |
+| pid | String | **required** | `posts->pid` |
 
 ## 获取评论主键 ID
 
@@ -100,7 +100,7 @@ PrimaryHelper::fresnsCommentIdByCid($cid);
 ```
 | Parameter Name | Type | Required | Description |
 | --- | --- | --- | --- |
-| cid | String | **required** | `comments > cid` |
+| cid | String | **required** | `comments->cid` |
 
 ## 获取文件主键 ID
 
@@ -109,7 +109,7 @@ PrimaryHelper::fresnsFileIdByFid($fid);
 ```
 | Parameter Name | Type | Required | Description |
 | --- | --- | --- | --- |
-| fid | String | **required** | `files > fid` |
+| fid | String | **required** | `files->fid` |
 
 ## 获取扩展主键 ID
 
@@ -118,4 +118,4 @@ PrimaryHelper::fresnsExtendIdByEid($eid);
 ```
 | Parameter Name | Type | Required | Description |
 | --- | --- | --- | --- |
-| eid | String | **required** | `extends > eid` |
+| eid | String | **required** | `extends->eid` |

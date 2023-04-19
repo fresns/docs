@@ -51,9 +51,9 @@
 
 **接口使用说明**
 
-- 如果是**私有模式**，当过期后 `users > expired_at`，需判断到期后的状态。
+- 如果是**私有模式**，当过期后 `users->expired_at`，需判断到期后的状态。
     - 配置表 `site_private_end_after` 键值为 `1` 时，该接口不可请求；
-    - 键值为 `2` 时，仅输出 `posts > created_at` 发表时间小于失效时间 `users > expired_at` 的帖子。
+    - 键值为 `2` 时，仅输出 `posts->created_at` 发表时间小于失效时间 `users->expired_at` 的帖子。
 - `uidOrUsername` 参数值代表获取指定用户的帖子，根据 `运营 > 互动配置 > 查看别人内容设置` 决定是否输出。
     - `it_posts` 配置，是否输出点赞我的用户
 - 如果 `uidOrUsername` 为登录用户自己时，上方配置无效，直接输出数据，表示查看自己的内容时无视开关。

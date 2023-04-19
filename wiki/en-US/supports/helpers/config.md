@@ -9,7 +9,7 @@ ConfigHelper::fresnsConfigByItemKey($itemKey, $langTag);
 ```
 | Parameter Name | Type | Required | Description |
 | --- | --- | --- | --- |
-| itemKey | String | **required** | [configs > item_key](../../database/systems/configs.md) |
+| itemKey | String | **required** | [configs->item_key](../../database/systems/configs.md) |
 | langTag | String | *optional* | 语言标签，可不传，仅对多语言配置有效。<br>如果是多语言配置，不传则输出默认语言值。 |
 
 ## 根据一组 Key 获取配置值
@@ -19,7 +19,7 @@ ConfigHelper::fresnsConfigByItemKeys($itemKeys, $langTag);
 ```
 | Parameter Name | Type | Required | Description |
 | --- | --- | --- | --- |
-| itemKeys | Array | **required** | [configs > item_key](../../database/systems/configs.md) |
+| itemKeys | Array | **required** | [configs->item_key](../../database/systems/configs.md) |
 | langTag | String | *optional* | 语言标签，可不传，仅对多语言配置有效。<br>如果是多语言配置，不传则输出默认语言值。 |
 
 ::: details Return Example
@@ -39,7 +39,7 @@ ConfigHelper::fresnsConfigByItemTag($itemTag, $langTag);
 ```
 | Parameter Name | Type | Required | Description |
 | --- | --- | --- | --- |
-| itemTag | String | **required** | [configs > item_tag](../../database/systems/configs.md) |
+| itemTag | String | **required** | [configs->item_tag](../../database/systems/configs.md) |
 | langTag | String | *optional* | 语言标签，可不传，仅对多语言配置有效。<br>如果是多语言配置，不传则输出默认语言值。 |
 
 ::: details Return Example
@@ -64,7 +64,7 @@ ConfigHelper::fresnsConfigFileValueTypeByItemKey($itemKey);
 ```
 | Parameter Name | Type | Required | Description |
 | --- | --- | --- | --- |
-| itemKey | String | **required** | [configs > item_key](../../database/systems/configs.md) |
+| itemKey | String | **required** | [configs->item_key](../../database/systems/configs.md) |
 
 ::: details 查看说明
 - `ID` 值为文件 ID：键值是数字
@@ -78,7 +78,7 @@ ConfigHelper::fresnsConfigFileUrlByItemKey($itemKey);
 ```
 | Parameter Name | Type | Required | Description |
 | --- | --- | --- | --- |
-| itemKey | String | **required** | [configs > item_key](../../database/systems/configs.md) |
+| itemKey | String | **required** | [configs->item_key](../../database/systems/configs.md) |
 
 ::: details 查看说明
 - 图片输出为 `imageConfigUrl`

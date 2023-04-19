@@ -37,8 +37,8 @@
 
 ::: details 开发说明
 - type = email
-    - 凭 headers 信息，获取账号邮箱 `accounts > email`
+    - 凭 headers 信息，获取账号邮箱 `accounts->email`
 - type = sms
-    - 凭 headers 信息，获取账号手机信息 `accounts > phone`
+    - 凭 headers 信息，获取账号手机信息 `accounts->phone`
 - 不使用命令字验参，验证码不重置为停用，此接口仅验证是否有效，不修改状态，为接下来其他用途保留验证码有效状态。
 :::

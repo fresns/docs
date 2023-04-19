@@ -39,7 +39,7 @@ ConfigUtility::getPublishConfigByType($userId, $type, $langTag, $timezone);
 ```
 | Parameter Name | Type | Required | Description |
 | --- | --- | --- | --- |
-| userId | Number | **required** | `users > id` |
+| userId | Number | **required** | `users->id` |
 | type | String | **required** | `post` or `comment` |
 | langTag | String | *optional* | If empty, the default language is used. |
 | timezone | String | *optional* | If empty, the default time zone is used. |

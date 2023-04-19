@@ -34,27 +34,27 @@
 ```json
 [
     {
-        "name": "存储到 files > name",
-        "mime": "存储到 files > mime",
-        "extension": "存储到 files > extension",
-        "size": "存储到 files > size", // 单位 Byte
-        "md5": "存储到 files > md5",
-        "sha": "存储到 files > sha",
-        "shaType": "存储到 files > sha_type",
-        "disk": "存储到 files > disk",
-        "path": "存储到 files > path",
-        "imageHandlePosition": "存储到 files > image_handle_position",
-        "imageWidth": "图片专用，存储到 files > image_width",
-        "imageHeight": "图片专用，存储到 files > image_height",
-        "videoTime": "视频专用，存储到 files > video_time",
-        "videoPosterPath": "视频专用，存储到 files > video_poster_path",
-        "audioTime": "音频专用，存储到 files > audio_time",
-        "transcodingState": "音视频专用，存储到 files > transcoding_state",
+        "name": "存储到 files->name",
+        "mime": "存储到 files->mime",
+        "extension": "存储到 files->extension",
+        "size": "存储到 files->size", // 单位 Byte
+        "md5": "存储到 files->md5",
+        "sha": "存储到 files->sha",
+        "shaType": "存储到 files->sha_type",
+        "disk": "存储到 files->disk",
+        "path": "存储到 files->path",
+        "imageHandlePosition": "存储到 files->image_handle_position",
+        "imageWidth": "图片专用，存储到 files->image_width",
+        "imageHeight": "图片专用，存储到 files->image_height",
+        "videoTime": "视频专用，存储到 files->video_time",
+        "videoPosterPath": "视频专用，存储到 files->video_poster_path",
+        "audioTime": "音频专用，存储到 files->audio_time",
+        "transcodingState": "音视频专用，存储到 files->transcoding_state",
         "moreJson": {
-            // 扩展信息，存储到 files > more_json
+            // 扩展信息，存储到 files->more_json
         },
-        "originalPath": "存储到 files > original_path",
-        "rating": "存储到 file_usages > rating",
+        "originalPath": "存储到 files->original_path",
+        "rating": "存储到 file_usages->rating",
     }
 ]
 ```

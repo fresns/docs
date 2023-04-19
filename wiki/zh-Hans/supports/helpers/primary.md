@@ -54,8 +54,8 @@ PrimaryHelper::fresnsAccountIdByUidOrUsername($uidOrUsername);
 ```
 | 参数名 | 类型 | 是否必传 | 说明 |
 | --- | --- | --- | --- |
-| aid | String | YES | `accounts > aid` |
-| uidOrUsername | String | YES | `users > uid` 或者 `users > username` |
+| aid | String | YES | `accounts->aid` |
+| uidOrUsername | String | YES | `users->uid` 或者 `users->username` |
 
 ## 获取用户主键 ID
 
@@ -64,7 +64,7 @@ PrimaryHelper::fresnsUserIdByUidOrUsername($uidOrUsername);
 ```
 | 参数名 | 类型 | 是否必传 | 说明 |
 | --- | --- | --- | --- |
-| uidOrUsername | String | YES | `users > uid` 或者 `users > username` |
+| uidOrUsername | String | YES | `users->uid` 或者 `users->username` |
 
 ## 获取小组主键 ID
 
@@ -73,7 +73,7 @@ PrimaryHelper::fresnsGroupIdByGid($gid);
 ```
 | 参数名 | 类型 | 是否必传 | 说明 |
 | --- | --- | --- | --- |
-| gid | String | YES | `groups > gid` |
+| gid | String | YES | `groups->gid` |
 
 ## 获取话题主键 ID
 
@@ -82,7 +82,7 @@ PrimaryHelper::fresnsHashtagIdByHid($hid);
 ```
 | 参数名 | 类型 | 是否必传 | 说明 |
 | --- | --- | --- | --- |
-| hid | String | YES | `hashtags > slug` |
+| hid | String | YES | `hashtags->slug` |
 
 ## 获取帖子主键 ID
 
@@ -91,7 +91,7 @@ PrimaryHelper::fresnsPostIdByPid($pid);
 ```
 | 参数名 | 类型 | 是否必传 | 说明 |
 | --- | --- | --- | --- |
-| pid | String | YES | `posts > pid` |
+| pid | String | YES | `posts->pid` |
 
 ## 获取评论主键 ID
 
@@ -100,7 +100,7 @@ PrimaryHelper::fresnsCommentIdByCid($cid);
 ```
 | 参数名 | 类型 | 是否必传 | 说明 |
 | --- | --- | --- | --- |
-| cid | String | YES | `comments > cid` |
+| cid | String | YES | `comments->cid` |
 
 ## 获取文件主键 ID
 
@@ -109,7 +109,7 @@ PrimaryHelper::fresnsFileIdByFid($fid);
 ```
 | 参数名 | 类型 | 是否必传 | 说明 |
 | --- | --- | --- | --- |
-| fid | String | YES | `files > fid` |
+| fid | String | YES | `files->fid` |
 
 ## 获取扩展主键 ID
 
@@ -118,4 +118,4 @@ PrimaryHelper::fresnsExtendIdByEid($eid);
 ```
 | 参数名 | 类型 | 是否必传 | 说明 |
 | --- | --- | --- | --- |
-| eid | String | YES | `extends > eid` |
+| eid | String | YES | `extends->eid` |

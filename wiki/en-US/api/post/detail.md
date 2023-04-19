@@ -31,9 +31,9 @@
 
 **Request Description**
 
-- 如果是**私有模式**，当过期后 `users > expired_at`，需判断到期后的状态。
+- 如果是**私有模式**，当过期后 `users->expired_at`，需判断到期后的状态。
     - 配置表 `site_private_end_after` 键值为 `1` 时，该接口不可请求；
-    - 键值为 `2` 时，再判断发表时间，如果 `posts > created_at` 发表时间大于失效时间 `users > expired_at`，则不输出；如果发表时间小于失效时间，则代表为失效前的内容，可以输出。
+    - 键值为 `2` 时，再判断发表时间，如果 `posts->created_at` 发表时间大于失效时间 `users->expired_at`，则不输出；如果发表时间小于失效时间，则代表为失效前的内容，可以输出。
 
 ## Return
 

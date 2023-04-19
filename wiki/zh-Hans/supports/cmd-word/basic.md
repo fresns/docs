@@ -12,9 +12,9 @@
 | appId | String | YES | App ID |
 | timestamp | Number | YES | 签名生成时间（当前 Unix 时间戳，精确到秒或毫秒都支持） |
 | sign | String | YES | 请求签名 |
-| aid | String | NO/YES | 账号参数（账号主表 `accounts > aid` 字段） |
+| aid | String | NO/YES | 账号参数（账号主表 `accounts->aid` 字段） |
 | aidToken | String | NO/YES | 账号身份凭证 |
-| uid | Number | NO/YES | 用户参数（用户主表 `users > uid` 字段） |
+| uid | Number | NO/YES | 用户参数（用户主表 `users->uid` 字段） |
 | uidToken | String | NO/YES | 用户身份凭证 |
 | verifyType | Number | NO | 验证 [session_keys->type](../../database/systems/session-keys.md)，留空则默认为 1 |
 | verifyUnikey | String | NO | 类型为 3 时专用，验证关联插件 |

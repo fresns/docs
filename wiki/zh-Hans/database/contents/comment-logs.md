@@ -41,23 +41,23 @@
 ```json [字段说明]
 // 未注明字段的参数，不单独存字段，与完整 json 存入 comment_appends->map_json
 {
-    "mapId": "comment_appends > map_id",
-    "latitude": "comments > map_latitude",
-    "longitude": "comments > map_longitude",
-    "scale": "comment_appends > map_scale",
+    "mapId": "comment_appends->map_id",
+    "latitude": "comments->map_latitude",
+    "longitude": "comments->map_longitude",
+    "scale": "comment_appends->map_scale",
     "continent": "",
-    "continentCode": "comment_appends > map_continent_code",
+    "continentCode": "comment_appends->map_continent_code",
     "country": "",
-    "countryCode": "comment_appends > map_country_code",
+    "countryCode": "comment_appends->map_country_code",
     "region": "",
-    "regionCode": "comment_appends > map_region_code",
+    "regionCode": "comment_appends->map_region_code",
     "city": "",
-    "cityCode": "comment_appends > map_city_code",
+    "cityCode": "comment_appends->map_city_code",
     "district": "",
     "address": "",
-    "zip": "comment_appends > map_zip",
+    "zip": "comment_appends->map_zip",
     "poi": "",
-    "poiId": "comment_appends > map_poi_id",
+    "poiId": "comment_appends->map_poi_id",
 }
 ```
 

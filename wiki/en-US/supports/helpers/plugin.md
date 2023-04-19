@@ -28,9 +28,9 @@ PluginHelper::fresnsPluginUsageUrl($unikey, $pluginUseId);
 | Parameter Name | Type | Required | Description |
 | --- | --- | --- | --- |
 | unikey | String | **required** | 插件 unikey |
-| pluginUseId | Number | **required** | [plugin_usages > id](../../database/plugins/plugin-usages.md) |
+| pluginUseId | Number | **required** | [plugin_usages->id](../../database/plugins/plugin-usages.md) |
 
-*已将插件地址中 `{parameter}` 变量名替换为 `plugin_usages > parameter` 字段值。*
+*已将插件地址中 `{parameter}` 变量名替换为 `plugin_usages->parameter` 字段值。*
 
 ## 获取插件版本号
 

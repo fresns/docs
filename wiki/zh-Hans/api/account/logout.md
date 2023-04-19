@@ -23,6 +23,6 @@
 ```
 
 ::: details 开发说明
-- aid 必填，删除账号 `session_tokens > token`
-- uid 选填，填写后，删除该用户 `session_tokens > token`
+- aid 必填，删除账号 `session_tokens->token`
+- uid 选填，填写后，删除该用户 `session_tokens->token`
 :::

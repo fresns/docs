@@ -25,6 +25,6 @@
 
 ::: details 开发说明
 - 注销缓冲期之内，账号可以中途取消注销，恢复账号为正常状态。
-- 账号表 `accounts > wait_delete` 修改为 0
-- 账号表 `accounts > wait_delete_at` 清空
+- 账号表 `accounts->wait_delete` 修改为 0
+- 账号表 `accounts->wait_delete_at` 清空
 :::

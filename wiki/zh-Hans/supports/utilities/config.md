@@ -110,7 +110,7 @@ ConfigUtility::getLoginErrorCount($accountId, $userId);
 ```
 | 参数名 | 类型 | 是否必传 | 说明 |
 | --- | --- | --- | --- |
-| accountId | Number | YES | `accounts > id` |
-| userId | Number | NO | `users > id` |
+| accountId | Number | YES | `accounts->id` |
+| userId | Number | NO | `users->id` |
 
 *输出近 1 小时内登录错误次数*

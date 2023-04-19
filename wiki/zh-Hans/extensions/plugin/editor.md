@@ -39,7 +39,7 @@ ConfigUtility::getPublishConfigByType($userId, $type, $langTag, $timezone);
 ```
 | 参数名 | 类型 | 是否必传 | 说明 |
 | --- | --- | --- | --- |
-| userId | Number | YES | `users > id` |
+| userId | Number | YES | `users->id` |
 | type | String | YES | `post` 或 `comment` |
 | langTag | String | NO | 语言标签，可不传，不传则使用默认语言 |
 | timezone | String | NO | UTC 时区，可不传，不传则使用默认时区 |

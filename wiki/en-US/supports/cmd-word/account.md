@@ -19,8 +19,8 @@
     "code": 0,
     "message": "ok",
     "data": {
-        "type": "accounts > type",
-        "aid": "accounts > aid"
+        "type": "accounts->type",
+        "aid": "accounts->aid"
     }
 }
 ```
@@ -32,14 +32,14 @@
 ```json
 [
     {
-        "connectId": 8, //存储到 account_connects > connect_id
-        "connectToken": "unionid", //存储到 account_connects > connect_token
-        "connectRefreshToken": null, //存储到 account_connects > connect_refresh_token
-        "connectUsername": "账号名", //存储到 account_connects > connect_username
-        "connectNickname": "昵称", //存储到 account_connects > connect_nickname
-        "connectAvatar": "头像 URL", //存储到 account_connects > connect_avatar
-        "pluginUnikey": "请求者 unikey ", //存储到 account_connects > plugin_unikey
-        "moreJson": {}, //存储到 account_connects > more_json
+        "connectId": 8, //存储到 account_connects->connect_id
+        "connectToken": "unionid", //存储到 account_connects->connect_token
+        "connectRefreshToken": null, //存储到 account_connects->connect_refresh_token
+        "connectUsername": "账号名", //存储到 account_connects->connect_username
+        "connectNickname": "昵称", //存储到 account_connects->connect_nickname
+        "connectAvatar": "头像 URL", //存储到 account_connects->connect_avatar
+        "pluginUnikey": "请求者 unikey ", //存储到 account_connects->plugin_unikey
+        "moreJson": {}, //存储到 account_connects->more_json
     },
     {
         "connectId": 9,
@@ -82,8 +82,8 @@
     "code": 0,
     "message": "ok",
     "data": {
-        "type": "accounts > type",
-        "aid": "accounts > aid",
+        "type": "accounts->type",
+        "aid": "accounts->aid",
     }
 }
 ```
@@ -99,7 +99,7 @@
 | platformId | Number | **required** | 平台编号（配置表 [platforms](../../database/dictionary/platforms.md) 键名的键值） |
 | version | String | **required** | 语义化版本号 |
 | appId | String | **required** | App ID |
-| aid | String | **required** | 账号参数 `session_tokens > account_id`<br>存储时由 `aid` 转换成 `accounts > id` |
+| aid | String | **required** | 账号参数 `session_tokens->account_id`<br>存储时由 `aid` 转换成 `accounts->id` |
 | expiredTime | Number | *optional* | 过期时间，单位：小时（为空代表永久有效） |
 
 ::: details Return Example
@@ -108,12 +108,12 @@
     "code": 0,
     "message": "ok",
     "data": {
-        "aid": "accounts > aid",
-        "aidToken": "session_tokens > token",
-        "aidTokenId": "session_tokens > id",
+        "aid": "accounts->aid",
+        "aidToken": "session_tokens->token",
+        "aidTokenId": "session_tokens->id",
         "expiredHours": "有效期小时数", // 没有则输出 null
         "expiredDays": "有效期天数", // 没有则输出 null
-        "expiredDateTime": "session_tokens > expired_at 留空代表永久有效，格式为 Y-m-d H:i:s", // 没有则输出 null
+        "expiredDateTime": "session_tokens->expired_at 留空代表永久有效，格式为 Y-m-d H:i:s", // 没有则输出 null
     }
 }
 ```
@@ -127,8 +127,8 @@
 | Parameter Name | Type | Required | Description |
 | --- | --- | --- | --- |
 | platformId | Number | **required** | 平台编号（配置表 [platforms](../../database/dictionary/platforms.md) 键名的键值） |
-| aid | String | **required** | 账号参数 `session_tokens > account_id`<br>查验时由 `aid` 转换成 `accounts > id` |
-| aidToken | String | **required** | 身份凭证（凭证表 `session_tokens > token` 字段） |
+| aid | String | **required** | 账号参数 `session_tokens->account_id`<br>查验时由 `aid` 转换成 `accounts->id` |
+| aidToken | String | **required** | 身份凭证（凭证表 `session_tokens->token` 字段） |
 
 ## logicalDeletionAccount
 
@@ -137,4 +137,4 @@
 ```
 | Parameter Name | Type | Required | Description |
 | --- | --- | --- | --- |
-| aid | Number | **required** | `accounts > aid` |
+| aid | Number | **required** | `accounts->aid` |

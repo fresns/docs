@@ -7,7 +7,7 @@
 | X-Fresns-App-Id | String | YES | 密钥 App ID<br>密钥位置：`控制面板->应用中心->应用密钥`|
 | X-Fresns-Client-Platform-Id | Number | YES | 平台编号，与密钥的「平台」匹配<br>密钥位置：`控制面板->应用中心->应用密钥`<br>[查看平台对应的 ID 编号](../database/dictionary/platforms.md) |
 | X-Fresns-Client-Version | String | YES | 你的客户端版本号，推荐使用语义化版本号 |
-| X-Fresns-Client-Device-Info | String | YES | [交互设备信息](../database/systems/session-logs.md#设备信息-json) `session_logs > device_info`<br>压缩 Object 信息为字符串传参 |
+| X-Fresns-Client-Device-Info | String | YES | [交互设备信息](../database/systems/session-logs.md#设备信息-json) `session_logs->device_info`<br>压缩 Object 信息为字符串传参 |
 | X-Fresns-Client-Lang-Tag | String | NO | 客户端的语言标签（留空则输出默认语言）<br>配置位置：`控制面板->系统->语言设置` |
 | X-Fresns-Client-Timezone | String | NO | UTC 时区（留空则使用默认时区）<br>配置位置：`控制面板->系统->站点设置`<br>用户登录后，如果留空，则服务端自动以用户配置的时区处理时间格式 |
 | X-Fresns-Client-Content-Format | String | NO | 内容格式（帖子和评论的列表与详情），留空则原样输出。<br>传参 `html` 将内容转换为 html 格式（文本内容的 `\n` 转换为 `<br>`，Markdown 内容转换为 `HTML`） |

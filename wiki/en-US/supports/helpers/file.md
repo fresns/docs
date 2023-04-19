@@ -58,7 +58,7 @@ FileHelper::fresnsFileInfoById($fileIdOrFid);
 ```
 | Parameter Name | Type | Required | Description |
 | --- | --- | --- | --- |
-| fileIdOrFid | String | **required** | `files > id` 或者 `files > fid` |
+| fileIdOrFid | String | **required** | `files->id` 或者 `files->fid` |
 
 - 输出结果会判断防盗链配置，如果开启则输出防盗链文件信息。
 - [查看文件信息格式](../../extensions/plugin/storage.md#文件信息结构)
@@ -70,7 +70,7 @@ FileHelper::fresnsFileInfoListByIds($fileIdsOrFids);
 ```
 | Parameter Name | Type | Required | Description |
 | --- | --- | --- | --- |
-| fileIdsOrFids | Array | **required** | `files > id` 或者 `files > fid` |
+| fileIdsOrFids | Array | **required** | `files->id` 或者 `files->fid` |
 
 - 输出结果会判断防盗链配置，如果开启则输出防盗链文件信息。
 
@@ -150,8 +150,8 @@ FileHelper::fresnsFileUrlByTableColumn($idColumn, $urlColumn, $urlType);
 ```
 | Parameter Name | Type | Required | Description |
 | --- | --- | --- | --- |
-| idColumn | Number | **required** | file_id 字段，比如 `users > decorate_file_id` |
-| urlColumn | String | **required** | file_url 字段，比如 `users > decorate_file_url` |
+| idColumn | Number | **required** | file_id 字段，比如 `users->decorate_file_id` |
+| urlColumn | String | **required** | file_url 字段，比如 `users->decorate_file_url` |
 | urlType | String | *optional* | URL 类型，不传则使用默认 `imageConfigUrl` |
 
 ::: details urlType
@@ -172,6 +172,6 @@ FileHelper::fresnsFileOriginalUrlById($fileIdOrFid);
 ```
 | Parameter Name | Type | Required | Description |
 | --- | --- | --- | --- |
-| fileIdOrFid | String | **required** | `files > id` 或者 `files > fid` |
+| fileIdOrFid | String | **required** | `files->id` 或者 `files->fid` |
 
 - 输出结果会判断防盗链配置，如果开启则输出防盗链文件信息。

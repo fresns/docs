@@ -93,40 +93,40 @@ $file->getFileInfo();
 ::: details 信息示例
 ```json
 {
-    "fid": "files > fid",
-    "type": "files > type",
-    "status": "files > is_enable",
+    "fid": "files->fid",
+    "type": "files->type",
+    "status": "files->is_enable",
     "substitutionImageUrl": "文件无效提示图",
-    "sensitive": "files > is_sensitive",
-    "name": "files > name",
-    "mime": "files > mime",
-    "extension": "files > extension",
-    "size": "files > size",
-    "md5": "files > md5",
-    "sha": "files > sha",
-    "shaType": "files > sha_type",
+    "sensitive": "files->is_sensitive",
+    "name": "files->name",
+    "mime": "files->mime",
+    "extension": "files->extension",
+    "size": "files->size",
+    "md5": "files->md5",
+    "sha": "files->sha",
+    "shaType": "files->sha_type",
     "moreJson": {
-        // 扩展信息 files > more_json
+        // 扩展信息 files->more_json
     },
     // 图片专用参数
-    "imageWidth": "files > image_width",
-    "imageHeight": "files > image_height",
-    "imageLong": "files > image_is_long",
+    "imageWidth": "files->image_width",
+    "imageHeight": "files->image_height",
+    "imageLong": "files->image_is_long",
     "imageConfigUrl": "image_bucket_domain + 文件 path 字段 + image_thumb_config",
     "imageRatioUrl": "image_bucket_domain + 文件 path 字段 + image_thumb_ratio",
     "imageSquareUrl": "image_bucket_domain + 文件 path 字段 + image_thumb_square",
     "imageBigUrl": "image_bucket_domain + 文件 path 字段 + image_thumb_big",
     // 视频专用参数
-    "videoTime": "files > video_time",
+    "videoTime": "files->video_time",
     "videoPosterUrl": "video_bucket_domain + 文件 video_poster_path 字段",
     "videoUrl": "video_bucket_domain + 文件 path 字段",
     // 音频专用参数
-    "audioTime": "files > audio_time",
+    "audioTime": "files->audio_time",
     "audioUrl": "audio_bucket_domain + 文件 path 字段",
     // 文档专用参数
     "documentPreviewUrl": "按规则替换后的链接",
     // 音视频共有参数
-    "transcodingState": "files > transcoding_state"
+    "transcodingState": "files->transcoding_state"
 }
 ```
 :::
