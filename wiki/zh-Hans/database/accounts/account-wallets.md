@@ -26,15 +26,15 @@
 - SWIFT 代码：*空*
 - 银行地址：上海市唐镇支行
 - 银行账号：6214 8888 8888 8888 8888
-- 账户持有人姓名：*关联字段 users > verify_real_name*
-- 账户持有人的电话号码：*关联字段 users > phone*
+- 账户持有人姓名：*关联字段 users->verify_real_name*
+- 账户持有人的电话号码：*关联字段 users->phone*
 
 支付宝举例：
 - 银行名称：Alipay
 - SWIFT 代码：*空*
 - 银行地址：
 - 银行账号：support@fresns.org
-- 账户持有人姓名：*关联字段 users > verify_real_name*
-- 账户持有人的电话号码：*关联字段 users > phone*
+- 账户持有人姓名：*关联字段 users->verify_real_name*
+- 账户持有人的电话号码：*关联字段 users->phone*
 
 *「SWIFT 代码」字段可以留空，或者存储插件专用内容，比如用于快速识别银行的编号*
