@@ -3,7 +3,7 @@
 | Column Name | Type | Comment | Default | Null | Remark |
 | --- | --- | --- | --- | --- | --- |
 | id | int *UNSIGNED* | Primary Key ID | | NO | 自动递增 |
-| domain_id | int *UNSIGNED* | 域名 ID |  | NO | 关联字段 [domains->id](domains.md) |
+| domain_id | int *UNSIGNED* | 域名 ID |  | NO | Related field [domains->id](domains.md) |
 | link_url | varchar(255) | 完整 URL 链接 |  | NO |  |
 | link_title | varchar(255) | 链接标题 |  | YES |  |
 | post_count | int *UNSIGNED* | 帖子数 | 0 | NO | 有多少帖子内容包含了该链接 |

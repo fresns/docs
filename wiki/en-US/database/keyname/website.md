@@ -6,7 +6,7 @@
 | --- | --- | --- | --- | --- |
 | Engine Cookie Prefix | engine_cookie_prefix | fresns_ | string |  |
 | Engine API Type | engine_api_type | local | string | `local` 或 `remote` |
-| Key 关联 | engine_key_id |  | number | 关联字段 [session_keys->id](../systems/session-keys.md) |
+| Key 关联 | engine_key_id |  | number | Related field [session_keys->id](../systems/session-keys.md) |
 | API Host | engine_api_host |  | string |  |
 | API App ID | engine_api_app_id |  | string |  |
 | API App Secret | engine_api_app_secret |  | string |  |

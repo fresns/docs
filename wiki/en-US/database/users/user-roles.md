@@ -3,8 +3,8 @@
 | Column Name | Type | Comment | Default | Null | Remark |
 | --- | --- | --- | --- | --- | --- |
 | id | bigint *UNSIGNED* | Primary Key ID |  | NO | Auto Increment |
-| user_id | bigint *UNSIGNED* | 用户主键 ID |  | NO | 关联字段 [users->id](users.md) |
-| role_id | int *UNSIGNED* | 角色 ID |  | NO | 关联字段 [roles->id](roles.md) |
+| user_id | bigint *UNSIGNED* | 用户主键 ID |  | NO | Related field [users->id](users.md) |
+| role_id | int *UNSIGNED* | 角色 ID |  | NO | Related field [roles->id](roles.md) |
 | is_main | tinyint *UNSIGNED* | 是否为主角色 | 0 | NO | 0.普通 / 1.主角色 |
 | expired_at | timestamp | 角色有效期 |  | YES | 过期时间 |
 | restore_role_id | int *UNSIGNED* | 继承角色 ID |  | YES | 如果是主角色，过期后谁继承主角色 |

@@ -3,9 +3,9 @@
 | Column Name | Type | Comment | Default | Null | Remark |
 | --- | --- | --- | --- | --- | --- |
 | id | bigint *UNSIGNED* | Primary Key ID | | NO | 自动递增 |
-| post_id | bigint *UNSIGNED* | 帖子 ID |  | NO | 关联字段 [posts->id](posts.md) |
-| user_id | bigint *UNSIGNED* | 用户 ID |  | NO | 关联字段 [users->id](../users/users.md) |
-| plugin_unikey | varchar(64) | 录入的插件 |  | NO | 哪个插件触发的记录<br>关联字段 [plugins->unikey](../plugins/plugins.md) |
+| post_id | bigint *UNSIGNED* | 帖子 ID |  | NO | Related field [posts->id](posts.md) |
+| user_id | bigint *UNSIGNED* | 用户 ID |  | NO | Related field [users->id](../users/users.md) |
+| plugin_unikey | varchar(64) | 录入的插件 |  | NO | 哪个插件触发的记录<br>Related field [plugins->unikey](../plugins/plugins.md) |
 | more_json | json | 扩展字段 |  | YES |  |
 | created_at | timestamp | Create Time | CURRENT_TIMESTAMP | NO |  |
 | updated_at | timestamp | Update Time |  | YES |  |

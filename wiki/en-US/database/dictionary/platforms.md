@@ -17,7 +17,6 @@
     {"id":"9","name":"QQ MiniProgram"},
     {"id":"10","name":"Alipay MiniApp"},
     {"id":"11","name":"ByteDance MicroApp"},
-    {"id":"12","name":"Quick App"},
-    {"id":"13","name":"Baidu SmartProgram"}
+    {"id":"12","name":"Quick App"}
 ]
 ```

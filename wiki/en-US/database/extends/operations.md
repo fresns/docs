@@ -8,13 +8,13 @@
 | style | varchar(32) | 风格 |  | NO | primary / secondary / success / danger / warning / info |
 | name | varchar(128) | 名称 |  | YES | **多语言**  |
 | description | text | 描述 |  | YES | **多语言** |
-| image_file_id | bigint *UNSIGNED* | 图片文件 ID |  | YES | 关联字段 [files->id](../systems/files.md) |
+| image_file_id | bigint *UNSIGNED* | 图片文件 ID |  | YES | Related field [files->id](../systems/files.md) |
 | image_file_url | varchar(255) | 图片文件 URL |  | YES |  |
-| image_active_file_id | bigint *UNSIGNED* | 二态图文件 ID |  | YES | 关联字段 [files->id](../systems/files.md) |
+| image_active_file_id | bigint *UNSIGNED* | 二态图文件 ID |  | YES | Related field [files->id](../systems/files.md) |
 | image_active_file_url | varchar(255) | 二态图文件 URL |  | YES |  |
 | display_type | tinyint *UNSIGNED* | 展示类型 | 1 | NO | 1.基础 / 2.功能（插件） |
-| plugin_unikey | varchar(64) | 关联插件 |  | NO | 关联字段 [plugins->unikey](../plugins/plugins.md)<br>哪个插件创建的，也是功能用途的插件页 |
-| is_enable | tinyint *UNSIGNED* | 是否有效 | 1 | NO | 0.无效 / 1.有效 |
+| plugin_unikey | varchar(64) | 关联插件 |  | NO | Related field [plugins->unikey](../plugins/plugins.md)<br>哪个插件创建的，也是功能用途的插件页 |
+| is_enable | tinyint *UNSIGNED* | Is Valid | 1 | NO | 0.Invalid / 1.Valid |
 | created_at | timestamp | Create Time | CURRENT_TIMESTAMP | NO |  |
 | updated_at | timestamp | Update Time |  | YES |  |
 | deleted_at | timestamp | Delete Time |  | YES |  |

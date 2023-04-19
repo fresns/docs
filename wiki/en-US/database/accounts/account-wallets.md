@@ -3,38 +3,38 @@
 | Column Name | Type | Comment | Default | Null | Remark |
 | --- | --- | --- | --- | --- | --- |
 | id | bigint *UNSIGNED* | Primary Key ID |  | NO | Auto Increment |
-| account_id | bigint *UNSIGNED* | Account ID |  | NO | 关联字段 [accounts->id](accounts.md) |
-| balance | decimal(10,2) | 钱包金额 | 0.00 | NO | 单位：元 |
-| freeze_amount | decimal(10,2) | 不可用金额 | 0.00 | NO | 例如正在提现或者冻结<br>单位：元 |
-| password | char(64) | 钱包支付密码 |  | YES |  |
-| bank_name | varchar(64) | 银行名称 |  | YES | 提现专用信息存储字段 |
-| swift_code | varchar(32) | SWIFT 代码 |  | YES | 提现专用信息存储字段 |
-| bank_address | varchar(255) | 银行地址 |  | YES | 提现专用信息存储字段 |
-| bank_account | varchar(128) | 银行账号 |  | YES | 提现专用信息存储字段 |
-| bank_status | tinyint *UNSIGNED* | 银行验证状态 | 1 | NO | 提现专用信息存储字段<br>1.未验证 / 2.已验证 |
-| is_enable | tinyint *UNSIGNED* | 是否有效 | 1 | NO | 0.禁用 / 1.正常<br>禁用时不可进行任何交易，包括提现 |
+| account_id | bigint *UNSIGNED* | Account ID |  | NO | Related field [accounts->id](accounts.md) |
+| balance | decimal(10,2) | Wallet Balance | 0.00 | NO | Unit: Yuan |
+| freeze_amount | decimal(10,2) | Unavailable Amount | 0.00 | NO | e.g. Withdrawal in progress or frozen<br>Unit: Yuan |
+| password | char(64) | Wallet Payment Password |  | YES |  |
+| bank_name | varchar(64) | Bank Name |  | YES | Dedicated field for withdrawal information storage |
+| swift_code | varchar(32) | SWIFT Code |  | YES | Dedicated field for withdrawal information storage |
+| bank_address | varchar(255) | Bank Address |  | YES | Dedicated field for withdrawal information storage |
+| bank_account | varchar(128) | Bank Account |  | YES | Dedicated field for withdrawal information storage |
+| bank_status | tinyint *UNSIGNED* | Bank Verification Status | 1 | NO | Dedicated field for withdrawal information storage<br>1.Unverified / 2.Verified |
+| is_enable | tinyint *UNSIGNED* | Is Valid | 1 | NO | 0.Disabled / 1.Normal<br>Cannot conduct any transactions, including withdrawals, when disabled |
 | created_at | timestamp | Create Time | CURRENT_TIMESTAMP | NO |  |
 | updated_at | timestamp | Update Time |  | YES |  |
 | deleted_at | timestamp | Delete Time |  | YES |  |
 
-## 提现专用字段说明
+## Description of withdrawal dedicated fields
 
-**提现专用字段，保证更新钱包插件也不影响用户填写的提现信息**
+**Dedicated withdrawal fields to ensure that updating the wallet plugin does not affect the withdrawal information entered by users**
 
-招商银行举例：
-- 银行名称：招商银行
-- SWIFT 代码：*空*
-- 银行地址：上海市唐镇支行
-- 银行账号：6214 8888 8888 8888 8888
-- 账户持有人姓名：*关联字段 users > verify_real_name*
-- 账户持有人的电话号码：*关联字段 users > phone*
+Chase Bank example:
+- Bank Name: JPMorgan Chase Bank, N.A.
+- SWIFT Code: CHASUS33
+- Bank Address:
+- Bank Account: 5329 9268 5228 1990
+- Account Holder Name: *Related field users->verify_real_name*
+- Account Holder Phone Number: *Related field users->phone*
 
-支付宝举例：
-- 银行名称：Alipay
-- SWIFT 代码：*空*
-- 银行地址：
-- 银行账号：support@fresns.org
-- 账户持有人姓名：*关联字段 users > verify_real_name*
-- 账户持有人的电话号码：*关联字段 users > phone*
+PayPal example:
+- Bank Name: PayPal
+- SWIFT Code: *Empty*
+- Bank Address:
+- Bank Account: support@fresns.org
+- Account Holder Name: *Related field users->verify_real_name*
+- Account Holder Phone Number: *Related field users->phone*
 
-*「SWIFT 代码」字段可以留空，或者存储插件专用内容，比如用于快速识别银行的编号*
+*The "SWIFT Code" field can be left empty or store plugin-specific content, such as a code for quickly identifying banks*

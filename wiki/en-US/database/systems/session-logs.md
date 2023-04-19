@@ -3,7 +3,7 @@
 | Column Name | Type | Comment | Default | Null | Remark |
 | --- | --- | --- | --- | --- | --- |
 | id | bigint *UNSIGNED* | Primary Key ID |  | NO | Auto Increment |
-| plugin_unikey | varchar(64) | 关联插件名称 | Fresns | NO | 关联字段 [plugins->unikey](../plugins/plugins.md)<br>Fresns 代表是主程序的日志 |
+| plugin_unikey | varchar(64) | Associated Plugin Unikey | Fresns | NO | Related field [plugins->unikey](../plugins/plugins.md)<br>Fresns 代表是主程序的日志 |
 | type | tinyint *UNSIGNED* | 日志类型 | 1 | NO | 见下方描述 |
 | platform_id | tinyint *UNSIGNED* | 平台编号 |  | NO | 关联键名 [configs->item_key = platforms](../dictionary/platforms.md) |
 | version | varchar(16) | 版本号 |  | NO | 语义化版本号 |
@@ -15,8 +15,8 @@
 | object_order_id | bigint *UNSIGNED* | 记录目标 ID |  | YES | 例如发表行为，则代表发表内容的 ID<br>插件行为，凭此 ID 可查询对应插件那边记录的关联信息 |
 | device_info | json | 设备信息 |  | YES |  |
 | device_token | varchar(128) | 设备 Token |  | YES | 例如 iOS Device Token 或 Android Device Token<br>可应用于推送消息 |
-| account_id | bigint *UNSIGNED* | 账号 ID |  | YES | 关联字段 [accounts->id](../accounts/accounts.md) |
-| user_id | bigint *UNSIGNED* | 用户 ID |  | YES | 关联字段 [users->id](../users/users.md) |
+| account_id | bigint *UNSIGNED* | 账号 ID |  | YES | Related field [accounts->id](../accounts/accounts.md) |
+| user_id | bigint *UNSIGNED* | 用户 ID |  | YES | Related field [users->id](../users/users.md) |
 | more_json | json | 备用字段 |  | YES | 例如存储操作行为快照 |
 | created_at | timestamp | Create Time | CURRENT_TIMESTAMP | NO |  |
 | updated_at | timestamp | Update Time |  | YES |  |

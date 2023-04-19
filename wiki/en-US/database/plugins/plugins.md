@@ -5,7 +5,7 @@
 | id | int *UNSIGNED* | Primary Key ID |  | NO | Auto Increment |
 | unikey | varchar(64) | 插件标识名 |  | NO | **Unique**，大驼峰格式 |
 | type | tinyint *UNSIGNED* | 插件类型  |  | NO | 1.扩展插件 / 2.控制面板 / 3.网站引擎 / 4.主题模板 |
-| name | varchar(64) | 插件名称 |  | NO |  |
+| name | varchar(64) | Plugin Name |  | NO |  |
 | description | varchar(255) | 插件描述  |  | NO |  |
 | version | varchar(16) | 语义化版本号 |  | NO | 用于展示的版本号 |
 | author | varchar(64) | 开发者名称 |  | NO |  |

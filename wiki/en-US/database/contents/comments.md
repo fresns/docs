@@ -4,10 +4,10 @@
 | --- | --- | --- | --- | --- | --- |
 | id | bigint *UNSIGNED* | Primary Key ID | | NO | 自动递增 |
 | cid | varchar(32) | 对外公开 ID |  | NO | **Unique** |
-| post_id | bigint *UNSIGNED* | 帖子 ID |  | NO | 关联字段 [posts->id](posts.md) |
+| post_id | bigint *UNSIGNED* | 帖子 ID |  | NO | Related field [posts->id](posts.md) |
 | top_parent_id | bigint *UNSIGNED* | 顶级评论 ID | 0 | NO | 所属哪个评论，0 代表不属于任何评论 |
 | parent_id | bigint *UNSIGNED* | 父级评论 ID | 0 | NO | 0 代表一级评论 |
-| user_id | bigint *UNSIGNED* | 发表者 ID |  | NO | 关联字段 [users->id](../users/users.md) |
+| user_id | bigint *UNSIGNED* | 发表者 ID |  | NO | Related field [users->id](../users/users.md) |
 | content | longtext | 内容 |  | YES |  |
 | lang_tag | char(16) | Language Tag |  | YES |  |
 | writing_direction | char(3) | 语言写作方向 |  | YES |  |
@@ -30,7 +30,7 @@
 | latest_edit_at | timestamp | 编辑时间 |  | YES | 如果发表后可以编辑，此处记录编辑时间 |
 | latest_comment_at | timestamp | 评论时间 |  | YES | 最新一条评论的时间<br>有用户回复了该条评论 |
 | rank_state | tinyint *UNSIGNED* | 等级状态 | 1 | NO | 1.未设置 |
-| is_enable | tinyint *UNSIGNED* | 是否有效 | 1 | NO | 0.无效（仅自己可见） / 1.有效 |
+| is_enable | tinyint *UNSIGNED* | Is Valid | 1 | NO | 0.Invalid (visible only to yourself) / 1.Valid |
 | created_at | timestamp | Create Time | CURRENT_TIMESTAMP | NO | 发表时间 |
 | updated_at | timestamp | Update Time |  | YES |  |
 | deleted_at | timestamp | Delete Time |  | YES |  |

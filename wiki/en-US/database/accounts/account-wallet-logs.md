@@ -3,10 +3,10 @@
 | Column Name | Type | Comment | Default | Null | Remark |
 | --- | --- | --- | --- | --- | --- |
 | id | bigint *UNSIGNED* | Primary Key ID |  | NO | Auto Increment |
-| account_id | bigint *UNSIGNED* | 账号 ID |  | NO | 这笔交易记录属于谁，关联字段 [accounts->id](accounts.md) |
-| user_id | bigint *UNSIGNED* | 用户 ID |  | YES | 这笔交易记录属于谁，关联字段 [users->id](../users/users.md) |
+| account_id | bigint *UNSIGNED* | 账号 ID |  | NO | 这笔交易记录属于谁，Related field [accounts->id](accounts.md) |
+| user_id | bigint *UNSIGNED* | 用户 ID |  | YES | 这笔交易记录属于谁，Related field [users->id](../users/users.md) |
 | type | tinyint *UNSIGNED* | 交易类型 | 1 | NO | 1.收入(充值) / 2.收入(解冻) / 3.收入(交易) <br> 4.支出(提现) / 5.支出(冻结) / 6.支出(交易) |
-| plugin_unikey | varchar(64) | 关联插件 |  | NO | 关联字段 [plugins->unikey](../plugins/plugins.md)<br>哪个插件触发的交易 |
+| plugin_unikey | varchar(64) | 关联插件 |  | NO | Related field [plugins->unikey](../plugins/plugins.md)<br>哪个插件触发的交易 |
 | transaction_id | bigint *UNSIGNED* | 交易 ID |  | YES | 插件记录值，如果插件有单独数据，可凭该 ID 查询到插件那边记录的内容 |
 | transaction_code | varchar(128) | 交易代码 |  | YES | 插件记录值，如果插件有单独数据，可凭该 Code 查询到插件那边记录的内容 |
 | amount_total | decimal(10,2) | 交易总额 |  | NO | 交易金额和服务费的总和，实际从钱包产生交易的金额<br>`transaction_amount` + `system_fee` |
@@ -14,9 +14,9 @@
 | system_fee | decimal(10,2) | 交易服务费 |  | NO |  |
 | opening_balance | decimal(10,2) | 期初余额 |  | NO | 交易前钱包余额 |
 | closing_balance | decimal(10,2) | 期末余额 |  | NO | 交易后钱包余额 |
-| object_account_id | bigint *UNSIGNED* | 关联账号 ID |  | YES | 关联字段 [accounts->id](accounts.md)，这笔交易来自谁 |
-| object_user_id | bigint *UNSIGNED* | 关联用户 ID |  | YES | 关联字段 [users->id](../users/users.md)，这笔交易来自谁 |
-| object_wallet_log_id | bigint *UNSIGNED* | 关联交易日志 ID |  | YES | 关联字段 account_wallet_logs->id |
+| object_account_id | bigint *UNSIGNED* | 关联账号 ID |  | YES | Related field [accounts->id](accounts.md)，这笔交易来自谁 |
+| object_user_id | bigint *UNSIGNED* | 关联用户 ID |  | YES | Related field [users->id](../users/users.md)，这笔交易来自谁 |
+| object_wallet_log_id | bigint *UNSIGNED* | 关联交易日志 ID |  | YES | Related field account_wallet_logs->id |
 | is_enable | tinyint *UNSIGNED* | 是否成功 | 1 | NO | 0.交易失败 / 1.交易成功 |
 | remark | text | 备注 |  | YES |  |
 | more_json | json | 备用字段 |  | YES |  |

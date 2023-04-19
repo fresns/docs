@@ -12,7 +12,7 @@
 | password | char(64) | 密码 |  | YES | 加密存储 |
 | last_login_at | timestamp | 最后一次登录时间 |  | NO |  |
 | is_verify | tinyint *UNSIGNED* | 实名认证状态 | 0 | NO | 0.未认证 / 1.已认证 |
-| verify_plugin_unikey | varchar(64) | 实名认证插件名称 |  | YES | 哪个插件处理的认证，关联字段 [plugins->unikey](../plugins/plugins.md) |
+| verify_plugin_unikey | varchar(64) | Real Name Auth Plugin Unikey |  | YES | 哪个插件处理的认证，Related field [plugins->unikey](../plugins/plugins.md) |
 | verify_real_name | varchar(128) | 证件姓名 |  | YES |  |
 | verify_gender | tinyint *UNSIGNED* | 证件性别 | 1 | NO | 1.未知 / 2.男 / 3.女 |
 | verify_cert_type | varchar(32) | 证件类型 | idcard | YES | `idcard` 身份证<br>`passport` 护照<br>`driving` 驾驶证<br>`business` 营业执照 |

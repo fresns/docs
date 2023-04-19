@@ -3,12 +3,12 @@
 | Column Name | Type | Comment | Default | Null | Remark |
 | --- | --- | --- | --- | --- | --- |
 | id | int *UNSIGNED* | Primary Key ID |  | NO | Auto Increment |
-| plugin_unikey | varchar(64) | 关联插件 |  | NO | 关联字段 [plugins->unikey](../plugins/plugins.md)<br>哪个插件创建的 |
+| plugin_unikey | varchar(64) | 关联插件 |  | NO | Related field [plugins->unikey](../plugins/plugins.md)<br>哪个插件创建的 |
 | name | varchar(64) | 名称 |  | YES | **多语言**  |
 | description | text | 介绍 |  | YES | **多语言** |
 | code | varchar(32) | 代码 |  | NO | **Unique**，纯英文字母，不支持任何符号或空格 |
 | usage_type | tinyint *UNSIGNED* | 用途类型 |  | NO | 1.用户 / 2.小组 / 3.话题 / 4.帖子 / 5.评论 |
-| usage_group_id | int *UNSIGNED* | 用途是小组内容专用时使用 | 0 | NO | 关联字段 [groups->id](../contents/groups.md)<br>关联插件所属小组，`0` 表示否 |
+| usage_group_id | int *UNSIGNED* | 用途是小组内容专用时使用 | 0 | NO | Related field [groups->id](../contents/groups.md)<br>关联插件所属小组，`0` 表示否 |
 | usage_group_content_type | tinyint *UNSIGNED* | 用途为小组哪种内容使用 |  | YES | 1.帖子 / 2.评论 |
 | form_element | varchar(16) | 表单元素 |  | NO | HTML form 元素 |
 | element_type | varchar(16) | 表单元素类型 |  | YES | 与 form_element 对应的类型 |
@@ -25,7 +25,7 @@
 | input_step | smallint *UNSIGNED* | 步骤 |  | YES |  |
 | rating | smallint *UNSIGNED* | 排列顺序 | 9 | NO | 升序排序 |
 | value_type | varchar(16) | 数据值类型 | string | NO | 同[配置表](../systems/configs.md) `item_type` 字段逻辑一样，支持 file/plugin/plugins 等类型 |
-| is_enable | tinyint *UNSIGNED* | 是否有效 | 1 | NO | 0.无效 / 1.有效<br>无效后，所有关联均无效 |
+| is_enable | tinyint *UNSIGNED* | Is Valid | 1 | NO | 0.无效 / 1.有效<br>无效后，所有关联均无效 |
 | created_at | timestamp | Create Time | CURRENT_TIMESTAMP | NO |  |
 | updated_at | timestamp | Update Time |  | YES |  |
 | deleted_at | timestamp | Delete Time |  | YES |  |

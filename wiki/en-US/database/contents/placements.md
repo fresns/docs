@@ -3,9 +3,9 @@
 | Column Name | Type | Comment | Default | Null | Remark |
 | --- | --- | --- | --- | --- | --- |
 | id | bigint *UNSIGNED* | Primary Key ID | | NO | 自动递增 |
-| plugin_unikey | varchar(64) | 创建者 |  | NO | 该条记录哪个插件创建的<br>关联字段 [plugins->unikey](../plugins/plugins.md) |
+| plugin_unikey | varchar(64) | 创建者 |  | NO | 该条记录哪个插件创建的<br>Related field [plugins->unikey](../plugins/plugins.md) |
 | placement_type | tinyint *UNSIGNED* | 目标类型 |  | NO | 1.用户 / 2.小组 / 3.话题 / 4.帖子 / 5.评论<br>读取哪种内容作为列表页参数 |
-| placement_id | bigint *UNSIGNED* | Key ID |  | NO | 1.关联字段 users > id<br>2.关联字段 groups > id<br>3.关联字段 hashtags > id<br>4.关联字段 posts > id<br>5.关联字段 comments > id |
+| placement_id | bigint *UNSIGNED* | Key ID |  | NO | 1.Related field users > id<br>2.Related field groups > id<br>3.Related field hashtags > id<br>4.Related field posts > id<br>5.Related field comments > id |
 | placement_template | json | 植入内容模板 |  | NO | 自定义编号，来源于使用的客户端 |
 | placement_name | varchar(64) | 名称 |  | NO | **多语言**<br>比如：赞助商、广告、你可能感兴趣等 |
 | open_type | tinyint *UNSIGNED* | 打开类型 |  | NO | 1.用户主页 / 2.小组详情页 / 3.话题详情页<br>4.帖子详情页 / 5.评论详情页 / 6.扩展内联框架<br>7.插件页 / 8.指定网址 |

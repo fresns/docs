@@ -6,7 +6,7 @@
 | name | varchar(64) | 话题名 |  | NO |  |
 | slug | varchar(255) | 话题名 URL Encode 转码 |  | NO | **Unique** |
 | description | varchar(255) | 描述 |  | YES | **多语言**  |
-| cover_file_id | bigint *UNSIGNED* | 封面图 ID |  | YES | 关联字段 [files->id](../systems/files.md) |
+| cover_file_id | bigint *UNSIGNED* | 封面图 ID |  | YES | Related field [files->id](../systems/files.md) |
 | cover_file_url | varchar(255) | 封面图 URL |  | YES |  |
 | like_count | int *UNSIGNED* | 点赞数 | 0 | NO | 有多少用户点赞了该话题 |
 | dislike_count | int *UNSIGNED* | 点踩数 | 0 | NO | 有多少用户点踩了该话题 |

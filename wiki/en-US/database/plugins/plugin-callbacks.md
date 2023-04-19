@@ -3,14 +3,14 @@
 | Column Name | Type | Comment | Default | Null | Remark |
 | --- | --- | --- | --- | --- | --- |
 | id | bigint *UNSIGNED* | Primary Key ID |  | NO | Auto Increment |
-| plugin_unikey | varchar(64) | 生成数据的插件名称 |  | NO | 关联字段 [plugins->unikey](../plugins/plugins.md) |
-| account_id | bigint *UNSIGNED* | 生成数据的账号 |  | YES | 关联字段 [accounts->id](../accounts/accounts.md) |
-| user_id | bigint *UNSIGNED* | 生成数据的用户 |  | YES | 关联字段 [users->id](../users/users.md) |
+| plugin_unikey | varchar(64) | Generate data for plugin unikey |  | NO | Related field [plugins->unikey](../plugins/plugins.md) |
+| account_id | bigint *UNSIGNED* | 生成数据的账号 |  | YES | Related field [accounts->id](../accounts/accounts.md) |
+| user_id | bigint *UNSIGNED* | 生成数据的用户 |  | YES | Related field [users->id](../users/users.md) |
 | ulid | varchar(64) | 回调查询键 |  | NO | **唯一值**<br>Universally Unique Lexicographically Sortable Identifier<br>示例 01GQBMS8BBTCKTT7B0T3EER8XR |
 | type | smallint *UNSIGNED* | 类型 | 1 | NO | 见下方描述，支持多个，以英文逗号隔开 |
 | content | json | 返参内容 |  | NO | 见下方描述，支持多种类型一起存储 |
 | is_use | tinyint *UNSIGNED* | 状态 | 0 | NO | 0.未调<br>1.已调（已使用） |
-| use_plugin_unikey | varchar(64) | 数据使用者插件名称 |  | YES | 关联字段 [plugins->unikey](../plugins/plugins.md) |
+| use_plugin_unikey | varchar(64) | Data use plugin unikey |  | YES | Related field [plugins->unikey](../plugins/plugins.md) |
 | created_at | timestamp | 创建时间 | CURRENT_TIMESTAMP | NO |  |
 | updated_at | timestamp | 更新时间 |  | YES |  |
 | deleted_at | timestamp | 删除时间 |  | YES |  |
