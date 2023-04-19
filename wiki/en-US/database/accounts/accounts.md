@@ -3,26 +3,26 @@
 | Column Name | Type | Comment | Default | Null | Remark |
 | --- | --- | --- | --- | --- | --- |
 | id | bigint *UNSIGNED* | Account ID |  | NO | Auto Increment |
-| aid | varchar(32) | 账号 ID |  | NO | **Unique** |
-| type | tinyint *UNSIGNED* | 类型 | 3 | NO | 1.超级管理员<br>2.普通管理员<br>3.普通用户 |
-| country_code | varchar(8) | 国际区号 |  | YES | 格式无加号，例如中国是 86，美国是 1 |
-| pure_phone | varchar(128) | 没有区号的手机号 |  | YES | 不带国际区号 |
-| phone | varchar(128) | 带区号的手机号 |  | YES | **Unique** 带国际区号（区号无加号） |
-| email | varchar(128) | 邮箱 |  | YES | **Unique** |
-| password | char(64) | 密码 |  | YES | 加密存储 |
-| last_login_at | timestamp | 最后一次登录时间 |  | NO |  |
-| is_verify | tinyint *UNSIGNED* | 实名认证状态 | 0 | NO | 0.未认证 / 1.已认证 |
-| verify_plugin_unikey | varchar(64) | Real Name Auth Plugin Unikey |  | YES | 哪个插件处理的认证，Related field [plugins->unikey](../plugins/plugins.md) |
-| verify_real_name | varchar(128) | 证件姓名 |  | YES |  |
-| verify_gender | tinyint *UNSIGNED* | 证件性别 | 1 | NO | 1.未知 / 2.男 / 3.女 |
-| verify_cert_type | varchar(32) | 证件类型 | idcard | YES | `idcard` 身份证<br>`passport` 护照<br>`driving` 驾驶证<br>`business` 营业执照 |
-| verify_cert_number | varchar(128) | 证件号码 |  | YES |  |
-| verify_identity_type | tinyint *UNSIGNED* | 实名认证类型 |  | YES | 1.未知 / 2.个人 / 3.企业 |
-| verify_at | timestamp | 实名认证时间 |  | YES |  |
-| verify_log | text | 认证结果记录 |  | YES | 接口返回数据包完整备份<br>**注意数据脱敏** |
-| is_enable | tinyint *UNSIGNED* | 是否启用 | 1 | NO | 0.禁用 / 1.正常 |
-| wait_delete | tinyint *UNSIGNED* | 是否待删除 | 0 | NO | 0.否 / 1.是 |
-| wait_delete_at | timestamp | 等待Delete Time |  | YES |  |
+| aid | varchar(32) | Account ID |  | NO | **Unique** |
+| type | tinyint *UNSIGNED* | Type | 3 | NO | 1.Super Administrator<br>2.Regular Administrator<br>3.Regular User |
+| country_code | varchar(8) | International Area Code |  | YES | Format without plus sign, e.g., Singapore is 65, USA is 1 |
+| pure_phone | varchar(128) | Phone Number without Area Code |  | YES | Without international area code |
+| phone | varchar(128) | Phone Number with Area Code |  | YES | **Unique** With international area code (no plus sign in the area code) |
+| email | varchar(128) | Email |  | YES | **Unique** |
+| password | char(64) | Password |  | YES | Encrypted storage |
+| last_login_at | timestamp | Last Login Time |  | NO |  |
+| is_verify | tinyint *UNSIGNED* | Real Name Verification Status | 0 | NO | 0.Unverified / 1.Verified |
+| verify_plugin_unikey | varchar(64) | Real Name Auth Plugin Unikey |  | YES | Which plugin handled the authentication, Related field [plugins->unikey](../plugins/plugins.md) |
+| verify_real_name | varchar(128) | Certificate Name |  | YES |  |
+| verify_gender | tinyint *UNSIGNED* | Certificate Gender | 1 | NO | 1.Unknown / 2.Male / 3.Female |
+| verify_cert_type | varchar(32) | Certificate Type | idcard | YES | `idcard`, `passport`, `driving`, `business` |
+| verify_cert_number | varchar(128) | Certificate Number |  | YES |  |
+| verify_identity_type | tinyint *UNSIGNED* | Real Name Verification Type |  | YES | 1.Unknown / 2.Individual / 3.Company |
+| verify_at | timestamp | Real Name Verification Time |  | YES |  |
+| verify_log | text | Verification Result Record |  | YES | Full backup of the returned data package<br>**Note data desensitization** |
+| is_enable | tinyint *UNSIGNED* | Is Enabled | 1 | NO | 0.Disabled / 1.Normal |
+| wait_delete | tinyint *UNSIGNED* | Is Pending Deletion | 0 | NO | 0.No / 1.Yes |
+| wait_delete_at | timestamp | Waiting Delete Time |  | YES |  |
 | created_at | timestamp | Create Time | CURRENT_TIMESTAMP | NO |  |
 | updated_at | timestamp | Update Time |  | YES |  |
 | deleted_at | timestamp | Delete Time |  | YES |  |

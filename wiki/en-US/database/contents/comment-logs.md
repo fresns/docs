@@ -2,44 +2,44 @@
 
 | Column Name | Type | Comment | Default | Null | Remark |
 | --- | --- | --- | --- | --- | --- |
-| id | bigint *UNSIGNED* | Primary Key ID | | NO | 自动递增 |
-| user_id | bigint *UNSIGNED* | 创建者 ID |  | NO | Related field [users->id](../users/users.md) |
-| comment_id | bigint *UNSIGNED* | 评论 ID |  | YES | Related field [comments->id](comments.md) |
-| post_id | bigint *UNSIGNED* | 帖子 ID |  | NO | Related field [posts->id](posts.md) |
-| parent_comment_id | bigint *UNSIGNED* | 父级评论 ID |  | YES | Related field [comments->id](comments.md)<br>为空代表一级评论 |
-| create_type | tinyint *UNSIGNED* | 创建类型 | 1 | NO | 1.快捷创建 / 2.编辑器创建 / 3.由帖子复原创建 |
-| is_plugin_editor | tinyint *UNSIGNED* | 是否仅在插件中编辑 | 0 | NO | 0.否 / 1.是 |
-| editor_unikey | varchar(64) | 内容编辑插件 |  | YES | Related field [plugins->unikey](../plugins/plugins.md) |
-| content | longtext | 内容 |  | YES | 完整内容 |
-| is_markdown | tinyint *UNSIGNED* | 内容是否为 MD 格式 | 0 | NO | 0.否 / 1.是 |
-| is_anonymous | tinyint *UNSIGNED* | 是否匿名 | 0 | NO |  0.否 / 1.是 |
-| map_json | json | 位置信息 |  | YES | 为空值，代表不创建或者修改时清空 |
-| state | tinyint *UNSIGNED* | 状态 | 1 | NO |  1.未发表（草稿）<br>2.已发表（审核中）<br>3.已发表（审核通过并封存）<br>4.已发表（审核未通过，又为草稿状态） |
-| reason | varchar(255) | 审核拒绝原因 |  | YES | 审核拒绝时使用 |
-| submit_at | timestamp | 提交审核时间 |  | YES |  |
+| id | bigint *UNSIGNED* | Primary Key ID | | NO | Auto Increment |
+| user_id | bigint *UNSIGNED* | Creator ID |  | NO | Related field [users->id](../users/users.md) |
+| comment_id | bigint *UNSIGNED* | Comment ID |  | YES | Related field [comments->id](comments.md) |
+| post_id | bigint *UNSIGNED* | Post ID |  | NO | Related field [posts->id](posts.md) |
+| parent_comment_id | bigint *UNSIGNED* | Parent Comment ID |  | YES | Related field [comments->id](comments.md)<br>Empty means a top-level comment |
+| create_type | tinyint *UNSIGNED* | Creation type | 1 | NO | 1.Quick creation / 2.Editor creation / 3.Recovered from post |
+| is_plugin_editor | tinyint *UNSIGNED* | Is it edited only in the plugin? | 0 | NO | 0.No / 1.Yes |
+| editor_unikey | varchar(64) | Content Editing Plugin |  | YES | Related field [plugins->unikey](../plugins/plugins.md) |
+| content | longtext | Content |  | YES | Full content |
+| is_markdown | tinyint *UNSIGNED* | Is the content in MD format? | 0 | NO | 0.No / 1.Yes |
+| is_anonymous | tinyint *UNSIGNED* | Is it anonymous? | 0 | NO | 0.No / 1.Yes |
+| map_json | json | Location information |  | YES | Empty value means not to create or clear when modifying |
+| state | tinyint *UNSIGNED* | Status | 1 | NO | 1.Unpublished (Draft)<br>2.Published (Under review)<br>3.Published (Approved and archived)<br>4.Published (Rejected, back to draft status) |
+| reason | varchar(255) | Review rejection reason |  | YES | Used when rejected in review |
+| submit_at | timestamp | Submit review time |  | YES |  |
 | created_at | timestamp | Create Time | CURRENT_TIMESTAMP | NO |  |
 | updated_at | timestamp | Update Time |  | YES |  |
 | deleted_at | timestamp | Delete Time |  | YES |  |
 
-## comment_id 字段说明
+## `comment_id` Field Description
 
-- 为空代表新评论草稿，可以有多条记录，相当于同一位创建者有多条待发表草稿。
-- 有 ID 时
-    - state=1、2、4 代表编辑该 ID 评论现有内容，该 ID 不可再创建新草稿，相当于同一篇评论只能有一篇正在编辑的草稿。
-    - state=3 代表该 ID 评论的历史正式版本，可能有多个。
+- If empty, it represents a new comment draft, and there can be multiple records, equivalent to a single creator having multiple drafts waiting to be published.
+- When there is an ID:
+    - state=1, 2, or 4 means editing the existing content of the comment with that ID. No new drafts can be created for that ID, which is equivalent to having only one draft being edited for the same comment.
+    - state=3 represents the historical official versions of the comment with that ID, which can have multiple instances.
 
-## post_id 字段说明
+## `post_id` Field Description
 
-- 不能为空，记录该评论属于哪条帖子。
-- 只有一级评论可以有草稿，子级评论不能生产草稿，所以 comment_id 不是父级评论 ID。
-- state=1、2、4 代表未发表的评论，此时不能再创建该帖子的评论草稿。相当于同一篇帖子只能产生一条评论草稿。
-- state=3，此时 comment_id 被补齐，表示该 comment_id 的历史版本。
+- Cannot be empty, as it records to which post the comment belongs.
+- Only top-level comments can have drafts; child comments cannot generate drafts, so the `comment_id` is not the parent comment ID.
+- state=1, 2, or 4 represents unpublished comments, and at this time, no new comment drafts for that post can be created. This is equivalent to having only one comment draft for the same post.
+- state=3, at this time, the `comment_id` is completed, indicating the historical versions of the comment with that `comment_id`.
 
-## 字段: 位置信息 map_json
+## Field: `map_json` Location information
 
 ::: code-group
-```json [字段说明]
-// 未注明字段的参数，不单独存字段，与完整 json 存入 comment_appends->map_json
+```json [Field Description]
+// Parameters of fields not specified will not be stored separately, but along with the complete JSON in comment_appends->map_json.
 {
     "mapId": "comment_appends > map_id",
     "latitude": "comments > map_latitude",
@@ -61,7 +61,7 @@
 }
 ```
 
-```json [参数示例]
+```json [Example Parameters]
 {
     "mapId": 2,
     "latitude": 37.3185039,

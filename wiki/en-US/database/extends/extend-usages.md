@@ -5,7 +5,7 @@
 | id | bigint *UNSIGNED* | Primary Key ID | | NO | 自动递增 |
 | usage_type | tinyint *UNSIGNED* | 目标类型 |  | NO |  |
 | usage_id | bigint *UNSIGNED* | 目标主键 ID |  | NO |  |
-| extend_id | bigint *UNSIGNED* | 扩展内容 ID |  | NO | Related field extends > id |
+| extend_id | bigint *UNSIGNED* | Extend Content ID |  | NO | Related field extends > id |
 | can_delete | tinyint *UNSIGNED* | 是否有权删除 | 1 | NO | 0.否 / 1.是<br>编辑器：用户是否有权删除 |
 | rating | smallint *UNSIGNED* | 排列顺序 | 9 | NO | 升序排序 |
 | plugin_unikey | varchar(64) | 关联插件 |  | NO | Related field extends > plugin_unikey |

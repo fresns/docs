@@ -2,30 +2,31 @@
 
 | Column Name | Type | Comment | Default | Null | Remark |
 | --- | --- | --- | --- | --- | --- |
-| id | bigint *UNSIGNED* | Primary Key ID | | NO | 自动递增 |
-| comment_id | bigint *UNSIGNED* | 评论 ID |  | NO | Related field comments > id |
-| is_plugin_editor | tinyint *UNSIGNED* | 是否仅在插件中编辑 | 0 | NO | 0.否 / 1.是 |
-| editor_unikey | varchar(64) | 内容编辑插件 |  | YES | Related field [plugins->unikey](../plugins/plugins.md) |
-| can_delete | tinyint *UNSIGNED* | 作者是否有权删除 | 1 | NO | 0.否 / 1.是 |
-| is_close_btn | tinyint *UNSIGNED* | 是否关闭评论扩展按钮 | 0 | NO | 0.否 / 1.是<br>对应字段 [post_appends->is_comment_btn](post-appends.md) |
-| is_change_btn | tinyint *UNSIGNED* | 是否更换评论扩展按钮 | 0 | NO | 0.否 / 1.是 |
-| btn_name_key | varchar(64) | 更换按钮的名称键名 |  | YES | Related field configs > item_key |
-| btn_style | varchar(64) | 按钮风格 |  | YES | primary / secondary / success / danger / warning / info |
-| more_json | json | 更多信息字段 |  | YES | 比如发布者 IP 位置名、设备名等 |
-| map_json | json | 地图-详细信息 |  | YES |  |
-| map_id | tinyint *UNSIGNED* | 地图-服务商编号 |  | YES | 来源地图服务商键值字典 |
-| map_continent_code | varchar(8) | 地图-洲代码 |  | YES | 亚洲 AS |
-| map_country_code | varchar(8) | 地图-国家代码 |  | YES | 中国 CN |
-| map_region_code | varchar(8) | 地图-省或州代码 |  | YES | 江苏 JS |
-| map_city_code | varchar(8) | 地图-城市代码 |  | YES | 苏州 SZ |
-| map_zip | varchar(32) | 地图-行政区划代码 |  | YES | 215000 |
-| map_poi_id | varchar(64) | 地图-POI ID |  | YES | 地图服务商专属 ID |
-| edit_count | smallint *UNSIGNED* | 编辑次数 | 0 | NO | 共编辑了几次 |
+| id | bigint *UNSIGNED* | Primary Key ID | | NO | Auto Increment |
+| comment_id | bigint *UNSIGNED* | Comment ID |  | NO | Related field comments > id |
+| is_plugin_editor | tinyint *UNSIGNED* | Is it edited only in the plugin? | 0 | NO | 0.No / 1.Yes |
+| editor_unikey | varchar(64) | Content Editing Plugin |  | YES | Related field [plugins->unikey](../plugins/plugins.md) |
+| can_delete | tinyint *UNSIGNED* | Does the author have the right to delete? | 1 | NO | 0.No / 1.Yes |
+| is_close_btn | tinyint *UNSIGNED* | Is the comment extension button closed? | 0 | NO | 0.No / 1.Yes<br>Corresponding field [post_appends->is_comment_btn](post-appends.md) |
+| is_change_btn | tinyint *UNSIGNED* | Is the comment extension button replaced? | 0 | NO | 0.No / 1.Yes |
+| btn_name_key | varchar(64) | Replacement button name key |  | YES | Related field configs > item_key |
+| btn_style | varchar(64) | Button style |  | YES | primary / secondary / success / danger / warning / info |
+| more_json | json | Additional information field |  | YES | E.g. publisher IP location name, device name, etc. |
+| map_json | json | Map - Detailed information |  | YES |  |
+| map_id | tinyint *UNSIGNED* | Map - Service provider number |  | YES | Source map service provider key-value dictionary |
+| map_continent_code | varchar(8) | Map - Continent code |  | YES |  |
+| map_country_code | varchar(8) | Map - Country code |  | YES |  |
+| map_region_code | varchar(8) | Map - Region or state code |  | YES |  |
+| map_city_code | varchar(8) | Map - City code |  | YES |  |
+| map_zip | varchar(32) | Map - Administrative division code |  | YES |  |
+| map_poi_id | varchar(64) | Map - POI ID |  | YES | Map service provider exclusive ID |
+| edit_count | smallint *UNSIGNED* | Number of edits | 0 | NO | Total number of edits |
 | created_at | timestamp | Create Time | CURRENT_TIMESTAMP | NO |  |
 | updated_at | timestamp | Update Time |  | YES |  |
 | deleted_at | timestamp | Delete Time |  | YES |  |
 
-## map_json 完整信息
+
+## `map_json` Complete Information
 
 ```json
 {

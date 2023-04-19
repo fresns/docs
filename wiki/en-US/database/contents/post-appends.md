@@ -23,18 +23,18 @@
 | more_json | json | 更多信息字段 |  | YES | 比如发布者 IP 位置名、设备名等 |
 | map_json | json | 地图-详细信息 |  | YES |  |
 | map_id | tinyint *UNSIGNED* | 地图-服务商编号 |  | YES | 来源地图服务商键值字典 |
-| map_continent_code | varchar(8) | 地图-洲代码 |  | YES | 亚洲 AS |
-| map_country_code | varchar(8) | 地图-国家代码 |  | YES | 中国 CN |
-| map_region_code | varchar(8) | 地图-省或州代码 |  | YES | 江苏 JS |
-| map_city_code | varchar(8) | 地图-城市代码 |  | YES | 苏州 SZ |
-| map_zip | varchar(32) | 地图-行政区划代码 |  | YES | 215000 |
+| map_continent_code | varchar(8) | 地图-洲代码 |  | YES |  |
+| map_country_code | varchar(8) | 地图-国家代码 |  | YES |  |
+| map_region_code | varchar(8) | 地图-省或州代码 |  | YES |  |
+| map_city_code | varchar(8) | 地图-城市代码 |  | YES |  |
+| map_zip | varchar(32) | 地图-行政区划代码 |  | YES |  |
 | map_poi_id | varchar(64) | 地图-POI ID |  | YES | 地图服务商专属 ID |
 | edit_count | smallint *UNSIGNED* | 编辑次数 | 0 | NO | 共编辑了几次 |
 | created_at | timestamp | Create Time | CURRENT_TIMESTAMP | NO |  |
 | updated_at | timestamp | Update Time |  | YES |  |
 | deleted_at | timestamp | Delete Time |  | YES |  |
 
-## map_json 完整信息
+## `map_json` Complete Information
 
 ```json
 {

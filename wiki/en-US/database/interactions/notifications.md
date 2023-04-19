@@ -12,7 +12,7 @@
 | plugin_unikey | varchar(64) | Associated Plugin Unikey |  | YES | Related field [plugins->unikey](../plugins/plugins.md)<br>由哪个插件生成的通知消息 |
 | action_user_id | bigint *UNSIGNED* | 触发的用户 ID |  | YES | Related field [users->id](../users/users.md) |
 | action_type | smallint *UNSIGNED* | 触发行为类型 |  | YES | 1.点赞 2.点踩 3.关注 4.屏蔽 5.发表 6.编辑 7.删除 8.置顶 9.设精 10.管理 |
-| action_object | tinyint *UNSIGNED* | 触发目标 |  | YES | 1.用户 / 2.小组 / 3.话题 / 4.帖子 / 5.评论 |
+| action_object | tinyint *UNSIGNED* | 触发目标 |  | YES | 1.User / 2.Group / 3.Hashtag / 4.Post / 5.Comment |
 | action_id | bigint *UNSIGNED* | 触发目标 ID |  | YES | 这条通知来源由哪个内容<br>1.Related field [users->id](../users/users.md)<br>2.Related field [groups->id](../contents/groups.md)<br>3.Related field [hashtags->id](../contents/hashtags.md)<br>4.Related field [posts->id](../contents/posts.md)<br>5.Related field [comments->id](../contents/comments.md) |
 | action_comment_id | bigint *UNSIGNED* | 评论 ID |  | YES | Related field [comments->id](../contents/comments.md) |
 | is_read | tinyint *UNSIGNED* | 阅读状态 | 0 | NO | 0.未读 / 1.已读 |

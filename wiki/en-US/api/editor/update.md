@@ -53,10 +53,10 @@
     - `mapId` 来自数据字典，[地图服务商编号](../../database/dictionary/maps.md)
     - 位置信息删除（清空）需使用 `deleteMap` 参数。
 
-**参数示例**
+**Example Parameters**
 
 ::: code-group
-```json [位置信息示例]
+```json [Location Info]
 {
     "mapId": 2,
     "latitude": 37.3185039,
@@ -78,7 +78,7 @@
 }
 ```
 
-```json [扩展内容示例]
+```json [Extend Content Info]
 [
     {
         "eid": "eid",
@@ -89,7 +89,7 @@
 ]
 ```
 
-```json [扩展参数示例]
+```json [Extend Archive Info]
 [
     {
         "code": "code",

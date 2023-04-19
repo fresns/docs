@@ -27,17 +27,17 @@
 | updated_at | timestamp | Update Time |  | YES |  |
 | deleted_at | timestamp | Delete Time |  | YES |  |
 
-## post_id 字段说明
+## `post_id` Field Description
 
 - 为空代表新帖子草稿，可以有多条记录，相当于同一位创建者有多条待发表草稿。
 - 有 ID 时
     - state=1、2、4 代表编辑该 ID 帖子现有内容，该 ID 不可再创建新草稿，相当于同一篇帖子只能有一篇正在编辑的草稿。
     - state=3 代表该 ID 帖子的历史正式版本，可能有多个。
 
-## 字段: map_json 位置信息
+## Field: `map_json` Location information
 
 ::: code-group
-```json [字段说明]
+```json [Field Description]
 // 未注明字段的参数，不单独存字段，与完整 json 存入 post_appends->map_json
 {
     "mapId": "post_appends > map_id",
@@ -60,7 +60,7 @@
 }
 ```
 
-```json [参数示例]
+```json [Example Parameters]
 {
     "mapId": 2,
     "latitude": 37.3185039,

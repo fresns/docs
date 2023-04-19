@@ -8,7 +8,7 @@ InteractionUtility::checkUserLike($likeType, $likeId, $userId);
 ```
 | Parameter Name | Type | Required | Description |
 | --- | --- | --- | --- |
-| likeType | Number | **required** | 1.用户 / 2.小组 / 3.话题 / 4.帖子 / 5.评论 |
+| likeType | Number | **required** | 1.User / 2.Group / 3.Hashtag / 4.Post / 5.Comment |
 | likeId | Number | **required** | 对应类型的主键 ID |
 | userId | Number | **required** | `users > id` |
 
@@ -20,7 +20,7 @@ InteractionUtility::checkUserDislike($dislikeType, $dislikeId, $userId);
 ```
 | Parameter Name | Type | Required | Description |
 | --- | --- | --- | --- |
-| dislikeType | Number | **required** | 1.用户 / 2.小组 / 3.话题 / 4.帖子 / 5.评论 |
+| dislikeType | Number | **required** | 1.User / 2.Group / 3.Hashtag / 4.Post / 5.Comment |
 | dislikeId | Number | **required** | 对应类型的主键 ID |
 | userId | Number | **required** | `users > id` |
 
@@ -32,7 +32,7 @@ InteractionUtility::checkUserFollow($followType, $followId, $userId);
 ```
 | Parameter Name | Type | Required | Description |
 | --- | --- | --- | --- |
-| followType | Number | **required** | 1.用户 / 2.小组 / 3.话题 / 4.帖子 / 5.评论 |
+| followType | Number | **required** | 1.User / 2.Group / 3.Hashtag / 4.Post / 5.Comment |
 | followId | Number | **required** | 对应类型的主键 ID |
 | userId | Number | **required** | `users > id` |
 
@@ -44,7 +44,7 @@ InteractionUtility::checkUserBlock($blockType, $blockId, $userId);
 ```
 | Parameter Name | Type | Required | Description |
 | --- | --- | --- | --- |
-| blockType | Number | **required** | 1.用户 / 2.小组 / 3.话题 / 4.帖子 / 5.评论 |
+| blockType | Number | **required** | 1.User / 2.Group / 3.Hashtag / 4.Post / 5.Comment |
 | blockId | Number | **required** | 对应类型的主键 ID |
 | userId | Number | **required** | `users > id` |
 
@@ -56,7 +56,7 @@ InteractionUtility::checkInteractionStatus($markType, $markId, $userId);
 ```
 | Parameter Name | Type | Required | Description |
 | --- | --- | --- | --- |
-| markType | Number | **required** | 1.用户 / 2.小组 / 3.话题 / 4.帖子 / 5.评论 |
+| markType | Number | **required** | 1.User / 2.Group / 3.Hashtag / 4.Post / 5.Comment |
 | markId | Number | **required** | 对应类型的主键 ID |
 | userId | Number | **required** | `users > id` |
 
@@ -112,7 +112,7 @@ InteractionUtility::markStats($userId, $interactionType, $markType, $markId, $ac
 | --- | --- | --- | --- |
 | userId | Number | **required** | `users > id` |
 | interactionType | String | **required** | `like`, `dislike`, `follow`, `block` |
-| markType | Number | **required** | 1.用户 / 2.小组 / 3.话题 / 4.帖子 / 5.评论 |
+| markType | Number | **required** | 1.User / 2.Group / 3.Hashtag / 4.Post / 5.Comment |
 | markId | Number | **required** | 对应类型的主键 ID |
 | actionType | String | **required** | `increment` 或 `decrement` |
 
@@ -142,7 +142,7 @@ InteractionUtility::getFollowIdArr($type, $userId);
 ```
 | Parameter Name | Type | Required | Description |
 | --- | --- | --- | --- |
-| type | Number | **required** | 1.用户 / 2.小组 / 3.话题 / 4.帖子 / 5.评论 |
+| type | Number | **required** | 1.User / 2.Group / 3.Hashtag / 4.Post / 5.Comment |
 | userId | Number | **required** | `users > id` |
 
 ## 获取屏蔽对象 ID 数组
@@ -151,7 +151,7 @@ InteractionUtility::getBlockIdArr($type, $userId);
 ```
 | Parameter Name | Type | Required | Description |
 | --- | --- | --- | --- |
-| type | Number | **required** | 1.用户 / 2.小组 / 3.话题 / 4.帖子 / 5.评论 |
+| type | Number | **required** | 1.User / 2.Group / 3.Hashtag / 4.Post / 5.Comment |
 | userId | Number | **required** | `users > id` |
 
 ## 获取私有小组 ID 数组

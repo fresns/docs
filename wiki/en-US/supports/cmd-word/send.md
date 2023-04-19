@@ -50,7 +50,7 @@
 | pluginUnikey | String | *optional* | 关联插件 |
 | actionUid | Number | *optional* | 触发者 |
 | actionType | Number | *optional* | 触发行为类型 1.点赞 2.点踩 3.关注 4.屏蔽 5.发表 6.编辑 7.删除 8.置顶 9.设精 10.管理 |
-| actionObject | Number | *optional* | 触发目标 1.用户 2.小组 3.话题 4.帖子 5.评论 6.帖子日志 7.评论日志 8.扩展内容 |
+| actionObject | Number | *optional* | 触发目标 1.User / 2.Group / 3.Hashtag / 4.Post / 5.Comment 6.Post Log 7.Comment Log 8.Extend Content |
 | actionFsid | String | *optional* | 触发目标 FsID |
 | actionCid | String | *optional* | 评论事件 cid |
 
@@ -80,7 +80,7 @@
 | title | String | *optional* | 标题 |
 | content | String | *optional* | 内容 |
 | time | String | *optional* | 时间，格式 Y-m-d H:i:s |
-| linkType | Number | *optional* | 链接类型：1.用户 2.小组 3.话题 4.帖子 5.评论 |
+| linkType | Number | *optional* | 链接类型：1.User / 2.Group / 3.Hashtag / 4.Post / 5.Comment |
 | linkFsid | String | *optional* | 链接类型传参后，此参必传，类型的 fsid |
 | linkUrl | String | *optional* | 链接地址，以 Laravel Validation 验参为 url |
 
@@ -103,6 +103,6 @@
 | title | String | *optional* | 标题 |
 | content | String | *optional* | 内容 |
 | time | String | *optional* | 时间，格式 Y-m-d H:i:s |
-| linkType | Number | *optional* | 链接类型：1.用户 2.小组 3.话题 4.帖子 5.评论 |
+| linkType | Number | *optional* | 链接类型：1.User / 2.Group / 3.Hashtag / 4.Post / 5.Comment |
 | linkFsid | String | *optional* | 链接类型传参后，此参必传，类型的 fsid |
 | linkUrl | String | *optional* | 链接地址，以 Laravel Validation 验参为 url |
