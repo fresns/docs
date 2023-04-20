@@ -488,7 +488,7 @@ function sidebarDatabase() {
                 { text: 'Area Codes', link: '/database/dictionary/area-codes.md' },
                 { text: 'Language Codes', link: '/database/dictionary/language-codes.md' },
                 { text: 'Currency Codes', link: '/database/dictionary/currency-codes.md' },
-                { text: 'Timezone', link: '/database/dictionary/utc.md' },
+                { text: 'Timezone', link: '/database/dictionary/timezone.md' },
                 { text: 'Ban Names', link: '/database/dictionary/ban-names.md' },
                 { text: 'Language Pack', link: '/database/dictionary/language-pack.md' },
             ]

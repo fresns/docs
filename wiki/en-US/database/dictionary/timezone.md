@@ -70,7 +70,7 @@
 
 | Key Name | Key Tag | Description |
 | --- | --- | --- |
-| timezones | commons | 仅收录了 PHP `timezone_identifiers_list` 函数包含的时区名 |
+| timezones | commons | Only the time zone names listed in the PHP `timezone_identifiers_list` function are included. |
 
 ```json
 {
@@ -505,7 +505,7 @@
 
 | Key Name | Key Tag | Description |
 | --- | --- | --- |
-| timezone_abbreviations | commons | 仅收录了 PHP `timezone_abbreviations_list` 函数包含的时区名 |
+| timezone_abbreviations | commons | Only the timezone abbreviations listed in the PHP `timezone_abbreviations_list` function are included. |
 
 ```json
 {

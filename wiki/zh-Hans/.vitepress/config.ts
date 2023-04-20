@@ -550,7 +550,7 @@ function sidebarDatabase() {
                 { text: '地区代码', link: '/database/dictionary/area-codes.md' },
                 { text: '语言代码', link: '/database/dictionary/language-codes.md' },
                 { text: '货币代码', link: '/database/dictionary/currency-codes.md' },
-                { text: '时区选项', link: '/database/dictionary/utc.md' },
+                { text: '时区选项', link: '/database/dictionary/timezone.md' },
                 { text: '禁用名', link: '/database/dictionary/ban-names.md' },
                 { text: '初始语言包', link: '/database/dictionary/language-pack.md' },
             ]
