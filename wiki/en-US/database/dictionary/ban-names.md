@@ -4,7 +4,7 @@
 | --- | --- |
 | ban_names | commons |
 
-**以下表字段将受禁用名影响**
+**The following data table columns are affected by the disabled name**
 
 | Table | Column |
 | --- | --- |
