@@ -9,7 +9,7 @@
 | Key Tag | Description | Control Panel Path |
 | --- | --- | --- |
 | systems | 后端配置 | Panel > Dashboard > Settings |
-| languages | 多语言 | Panel > Systems > Languages |
+| languages | Multilingual | Panel > Systems > Languages |
 | general | 站点信息 | Panel > Systems > General |
 | policies | 政策条款 | Panel > Systems > Policy |
 | sends | 发信设置 | Panel > Systems > Send |

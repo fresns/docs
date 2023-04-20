@@ -4,7 +4,7 @@
 | --- | --- | --- | --- | --- | --- |
 | id | int *UNSIGNED* | Primary Key ID |  | NO | Auto Increment |
 | type | tinyint *UNSIGNED* | 角色类型 | 3 | NO | 1.管理人员类：管理员、版主<br>2.系统设置类：待审核用户、禁止用户<br>3.用户运营类：普通会员、高级会员 |
-| name | varchar(128) | 角色名 |  | NO | **多语言** |
+| name | varchar(128) | 角色名 |  | NO | **Multilingual** |
 | icon_file_id | bigint *UNSIGNED* | 图标文件 ID |  | YES | Related field [files->id](../systems/files.md) |
 | icon_file_url | varchar(255) | 图标文件 URL |  | YES |  |
 | is_display_name | tinyint *UNSIGNED* | 是否显示文字标识 | 0 | NO | 0.不显示 / 1.显示  |

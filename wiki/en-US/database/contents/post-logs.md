@@ -2,43 +2,43 @@
 
 | Column Name | Type | Comment | Default | Null | Remark |
 | --- | --- | --- | --- | --- | --- |
-| id | bigint *UNSIGNED* | Primary Key ID |  | NO | 自动递增 |
-| user_id | bigint *UNSIGNED* | 创建者 ID |  | NO | Related field [users->id](../users/users.md) |
-| post_id | bigint *UNSIGNED* | 帖子 ID |  | YES | Related field [posts->id](posts.md) |
-| parent_post_id | bigint *UNSIGNED* | 父级帖子 ID |  | YES | Related field [posts->id](posts.md)<br>为空代表无引用帖子 |
-| create_type | tinyint *UNSIGNED* | 创建类型 | 1 | NO | 1.快捷创建 / 2.编辑器创建 / 3.由帖子复原创建 |
-| is_plugin_editor | tinyint *UNSIGNED* | 是否仅在插件中编辑 | 0 | NO | 0.否 / 1.是 |
-| editor_unikey | varchar(64) | 内容编辑插件 |  | YES | Related field [plugins->unikey](../plugins/plugins.md) |
-| group_id | int *UNSIGNED* | 小组 ID |  | YES | Related field `groups->id` |
-| title | varchar(255) | 标题 |  | YES |  |
-| content | longtext | 内容 |  | YES | 完整内容 |
-| is_markdown | tinyint *UNSIGNED* | 内容是否为 MD 格式 | 0 | NO | 0.否 / 1.是 |
-| is_anonymous | tinyint *UNSIGNED* | 是否匿名 | 0 | NO |  0.否 / 1.是 |
-| is_comment | tinyint *UNSIGNED* | 是否可评论 | 1 | NO |  0.否 / 1.是 |
-| is_comment_public | tinyint *UNSIGNED* | 是否公开评论（不公开则仅帖子作者可见） | 1 | NO |  0.否 / 1.是 |
-| map_json | json | 位置信息 |  | YES | 为空值，代表不创建或者修改时清空 |
-| allow_json | json | 阅读权限配置 |  | YES | 为空值，代表不创建或者修改时清空 |
-| user_list_json | json | 特定用户配置 |  | YES | 为空值，代表不创建或者修改时清空 |
-| comment_btn_json | json | 评论功能按钮设置 |  | YES | 为空值，代表不创建或者修改时清空 |
-| state | tinyint *UNSIGNED* | 状态 | 1 | NO |  1.未发表（草稿）<br>2.已发表（审核中）<br>3.已发表（审核通过并封存）<br>4.已发表（审核未通过，又为草稿状态） |
-| reason | varchar(255) | 审核拒绝原因 |  | YES | 审核拒绝时使用 |
-| submit_at | timestamp | 提交审核时间 |  | YES |  |
-| created_at | timestamp | Create Time | CURRENT_TIMESTAMP | NO | 作为草稿时Create Time |
+| id | bigint *UNSIGNED* | Primary Key ID |  | NO | Auto Increment |
+| user_id | bigint *UNSIGNED* | Creator ID |  | NO | Related field [users->id](../users/users.md) |
+| post_id | bigint *UNSIGNED* | Post ID |  | YES | Related field [posts->id](posts.md) |
+| parent_post_id | bigint *UNSIGNED* | Parent post ID |  | YES | Related field [posts->id](posts.md)<br>Empty means no referenced post |
+| create_type | tinyint *UNSIGNED* | Creation type | 1 | NO | 1.Quick create / 2.Editor create / 3.Restore from post |
+| is_plugin_editor | tinyint *UNSIGNED* | Edit only in plugin | 0 | NO | 0.No / 1.Yes |
+| editor_unikey | varchar(64) | Content editor plugin |  | YES | Related field [plugins->unikey](../plugins/plugins.md) |
+| group_id | int *UNSIGNED* | Group ID |  | YES | Related field `groups->id` |
+| title | varchar(255) | Title |  | YES |  |
+| content | longtext | Content |  | YES | Full content |
+| is_markdown | tinyint *UNSIGNED* | Is content in MD format | 0 | NO | 0.No / 1.Yes |
+| is_anonymous | tinyint *UNSIGNED* | Is anonymous | 0 | NO | 0.No / 1.Yes |
+| is_comment | tinyint *UNSIGNED* | Are comments allowed? | 1 | NO | 0.No / 1.Yes |
+| is_comment_public | tinyint *UNSIGNED* | Are comments public? (Non-public means only post author can see) | 1 | NO | 0.No / 1.Yes |
+| map_json | json | Location information |  | YES | Empty means not creating or clearing when modifying |
+| allow_json | json | Read permission settings |  | YES | Empty means not creating or clearing when modifying |
+| user_list_json | json | Specific user settings |  | YES | Empty means not creating or clearing when modifying |
+| comment_btn_json | json | Comment function button settings |  | YES | Empty means not creating or clearing when modifying |
+| state | tinyint *UNSIGNED* | Status | 1 | NO | 1.Unpublished (draft)<br>2.Published (under review)<br>3.Published (approved and archived)<br>4.Published (not approved, draft status again) |
+| reason | varchar(255) | Review rejection reason |  | YES | Used when review is rejected |
+| submit_at | timestamp | Submit review time |  | YES |  |
+| created_at | timestamp | Create Time | CURRENT_TIMESTAMP | NO | As draft Create Time |
 | updated_at | timestamp | Update Time |  | YES |  |
 | deleted_at | timestamp | Delete Time |  | YES |  |
 
 ## `post_id` Field Description
 
-- 为空代表新帖子草稿，可以有多条记录，相当于同一位创建者有多条待发表草稿。
-- 有 ID 时
-    - state=1、2、4 代表编辑该 ID 帖子现有内容，该 ID 不可再创建新草稿，相当于同一篇帖子只能有一篇正在编辑的草稿。
-    - state=3 代表该 ID 帖子的历史正式版本，可能有多个。
+- Empty means a new draft, which may have more than one record, equivalent to the same creator having more than one draft to publish.
+- If there is an ID
+    - state=1, 2, 4 means that the existing content of the ID's post is being edited, and that no new drafts can be created for that ID, i.e. there can only be one draft being edited for the same post.
+    - state=3 is the official version of the ID's post history, and there may be more than one.
 
 ## Field: `map_json` Location information
 
 ::: code-group
 ```json [Field Description]
-// 未注明字段的参数，不单独存字段，与完整 json 存入 post_appends->map_json
+// Parameters of fields not specified will not be stored separately, but along with the complete JSON in post_appends->map_json.
 {
     "mapId": "post_appends->map_id",
     "latitude": "posts->map_latitude",
@@ -83,7 +83,7 @@
 ```
 :::
 
-## 字段: allow_json 阅读权限配置
+## Field: `allow_json` Read permission configuration
 
 ```json
 {
@@ -91,7 +91,7 @@
     "btnName": [
         {
             "langTag": "en Language Tag",
-            "name": "post_appends->allow_btn_name 按钮名称"
+            "name": "post_appends->allow_btn_name / Button name"
         }
     ],
     "proportion": "post_appends->allow_proportion",
@@ -99,13 +99,13 @@
         "users": [
             1, 2,
             "userId", "userId"
-            // 发表时存入 post_allows->object_id
+            // Publish to post_allows->object_id
             // post_allows->type = 1
         ],
         "roles": [
             1, 2,
             "roleId", "roleId"
-            // 发表时存入 post_allows->object_id
+            // Publish to post_allows->object_id
             // post_allows->type = 2
         ]
     },
@@ -113,7 +113,7 @@
 }
 ```
 
-## 字段: user_list_json 特定用户列表
+## Field: `user_list_json` List of affiliated users
 
 ```json
 {
@@ -121,14 +121,14 @@
     "userListName": [
         {
             "langTag": "en Language Tag",
-            "name": "post_appends->user_list_name 特定用户名称"
+            "name": "post_appends->user_list_name / affiliated name"
         }
     ],
     "pluginUnikey": "post_appends->user_list_plugin_unikey"
 }
 ```
 
-## 字段: comment_btn_json 评论设置
+## Field: `comment_btn_json` Comment Settings
 
 ```json
 {
@@ -136,7 +136,7 @@
     "btnName": [
         {
             "langTag": "en Language Tag",
-            "name": "post_appends->comment_btn_name 按钮名称"
+            "name": "post_appends->comment_btn_name / Button name"
         }
     ],
     "pluginUnikey": "post_appends->comment_btn_plugin_unikey"

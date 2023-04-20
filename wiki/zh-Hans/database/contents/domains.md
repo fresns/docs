@@ -15,9 +15,9 @@
 ## 域名说明
 
 **示例 1**
-- link_url = https://mp.weixin.qq.com/s/NeUVDiSBksrt4N3piZE_RQ
-- domain = qq.com
-- host = mp.weixin.qq.com
+- link_url = https://zh-hans.fresns.org/contributing/writing-guide-zh.html
+- domain = fresns.org
+- host = zh-hans.fresns.org
 
 **示例 2**
 - link_url = https://tangjie.me

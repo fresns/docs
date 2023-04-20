@@ -17,7 +17,7 @@
 | 循环时间段限制-开始时间 | post_limit_cycle_start | 23:30 | string |  |
 | 循环时间段限制-结束时间 | post_limit_cycle_end | 08:30 | string |  |
 | 限制规则 | post_limit_rule | 1 | number | 1.可以发表，但需审核<br>2.禁止发表 |
-| 限制提示语 | post_limit_tip |  | string | **多语言** |
+| 限制提示语 | post_limit_tip |  | string | **Multilingual** |
 | 特殊规则白名单 | post_limit_whitelist | ["1"] | array | 用户角色 ID |
 | <hr> |  |  |  |  |
 | 帖子编辑权限 | post_edit | false | boolean |  |
@@ -70,7 +70,7 @@
 | 循环时间段限制-开始时间 | comment_limit_cycle_start | 23:30 | string |  |
 | 循环时间段限制-结束时间 | comment_limit_cycle_end | 08:30 | string |  |
 | 限制规则 | comment_limit_rule | 1 | number | 1.可以发表，但需审核<br>2.禁止发表 |
-| 限制提示语 | comment_limit_tip |  | string | **多语言** |
+| 限制提示语 | comment_limit_tip |  | string | **Multilingual** |
 | 特殊规则白名单角色 | comment_limit_whitelist | ["1"] | array | 用户角色 ID |
 | <hr> |  |  |  |  |
 | 评论编辑权限 | comment_edit | false | boolean |  |

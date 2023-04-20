@@ -2,48 +2,47 @@
 
 | Column Name | Type | Comment | Default | Null | Remark |
 | --- | --- | --- | --- | --- | --- |
-| id | bigint *UNSIGNED* | 帖子 ID | | NO | 自动递增 |
-| pid | varchar(32) | 对外公开 ID |  | NO | **Unique** |
-| parent_id | bigint *UNSIGNED* | 父级帖子 ID | 0 | NO | 0 代表无父级 |
-| user_id | bigint *UNSIGNED* | 发布者 ID |  | NO | Related field [users->id](../users/users.md) |
-| group_id | int *UNSIGNED* | 小组 ID | 0 | NO | Related field [groups->id](groups.md) |
-| title | varchar(255) | 标题 |  | YES |  |
-| content | longtext | 内容 |  | YES |  |
+| id | bigint *UNSIGNED* | Post ID | | NO | Auto Increment |
+| pid | varchar(32) | Public ID |  | NO | **Unique** |
+| parent_id | bigint *UNSIGNED* | Parent Post ID | 0 | NO | 0 means no parent |
+| user_id | bigint *UNSIGNED* | Publisher ID |  | NO | Related field [users->id](../users/users.md) |
+| group_id | int *UNSIGNED* | Group ID | 0 | NO | Related field [groups->id](groups.md) |
+| title | varchar(255) | Title |  | YES |  |
+| content | longtext | Content |  | YES |  |
 | lang_tag | char(16) | Language Tag |  | YES |  |
-| writing_direction | char(3) | 语言写作方向 |  | YES |  |
-| is_markdown | tinyint *UNSIGNED* | 内容是否为 MD 格式 | 0 | NO | 0.否 / 1.是 |
-| is_anonymous | tinyint *UNSIGNED* | 是否匿名 | 0 | NO | 0.否 / 1.是 |
-| map_longitude | decimal(12,8) | 地图-经度 |  | YES | 浮点数，范围为 -180~180，负数表示西经 |
-| map_latitude | decimal(12,8) | 地图-纬度 |  | YES | 浮点数，范围为 -90~90，负数表示南纬 |
-| sticky_state | tinyint *UNSIGNED* | 置顶状态 | 1 | NO | 1.否 / 2.小组页置顶 / 3.全局置顶 |
-| digest_state | tinyint *UNSIGNED* | 精华状态 | 1 | NO | 1.否 / 2.普通精华 / 3.高级精华 |
-| like_count | int *UNSIGNED* | 点赞数 | 0 | NO | 有多少用户点赞了该帖子 |
-| dislike_count | int *UNSIGNED* | 点踩数 | 0 | NO | 有多少用户点踩了该帖子 |
-| follow_count | int *UNSIGNED* | 关注数 | 0 | NO | 有多少用户关注了（收藏）该帖子 |
-| block_count | int *UNSIGNED* | 屏蔽数 | 0 | NO | 有多少用户屏蔽了（不感兴趣）该帖子 |
-| comment_count | int *UNSIGNED* | 评论数 | 0 | NO | 该帖子有多少条评论，包括评论二级回复 |
-| comment_digest_count | int *UNSIGNED* | 评论精华总数 | 0 | NO | 该帖子评论的精华总数 |
-| comment_like_count | int *UNSIGNED* | 评论点赞数 | 0 | NO | 所有评论被点赞总数 |
-| comment_dislike_count | int *UNSIGNED* | 评论点踩数 | 0 | NO | 所有评论被点踩总数 |
-| comment_follow_count | int *UNSIGNED* | 评论关注数 | 0 | NO | 所有评论被关注总数 |
-| comment_block_count | int *UNSIGNED* | 评论屏蔽数 | 0 | NO | 所有评论被屏蔽总数 |
-| post_count | int *UNSIGNED* | 子级帖子数 | 0 | NO | 引用它的帖子总数 |
-| latest_edit_at | timestamp | 编辑时间 |  | YES | 如果发表后可以编辑，此处记录编辑时间 |
-| latest_comment_at | timestamp | 评论时间 |  | YES | 最新一条评论的时间 |
-| rank_state | tinyint *UNSIGNED* | 等级状态 | 1 | NO | 1.未设置 |
+| writing_direction | char(3) | Writing Direction |  | YES |  |
+| is_markdown | tinyint *UNSIGNED* | Is content in MD format | 0 | NO | 0.No / 1.Yes |
+| is_anonymous | tinyint *UNSIGNED* | Is anonymous | 0 | NO | 0.No / 1.Yes |
+| map_longitude | decimal(12,8) | Map - Longitude |  | YES | Decimal, range -180~180, negative for west longitude |
+| map_latitude | decimal(12,8) | Map - Latitude |  | YES | Decimal, range -90~90, negative for south latitude |
+| sticky_state | tinyint *UNSIGNED* | Sticky state | 1 | NO | 1.No / 2.Group Sticky / 3.Global Sticky |
+| digest_state | tinyint *UNSIGNED* | Digest state | 1 | NO | 1.No / 2.General Digest / 3.Advanced Digest |
+| like_count | int *UNSIGNED* | Like count | 0 | NO | Number of users who liked the post |
+| dislike_count | int *UNSIGNED* | Dislike count | 0 | NO | Number of users who disliked the post |
+| follow_count | int *UNSIGNED* | Follow count | 0 | NO | Number of users who followed (saved) the post |
+| block_count | int *UNSIGNED* | Block count | 0 | NO | Number of users who blocked (not interested) the post |
+| comment_count | int *UNSIGNED* | Comment count | 0 | NO | Number of comments on the post, including second-level replies |
+| comment_digest_count | int *UNSIGNED* | Comment digest count | 0 | NO | Total number of digest comments on the post |
+| comment_like_count | int *UNSIGNED* | Comment like count | 0 | NO | Total number of likes on all comments |
+| comment_dislike_count | int *UNSIGNED* | Comment dislike count | 0 | NO | Total number of dislikes on all comments |
+| comment_follow_count | int *UNSIGNED* | Comment follow count | 0 | NO | Total number of follows on all comments |
+| comment_block_count | int *UNSIGNED* | Comment block count | 0 | NO | Total number of blocks on all comments |
+| post_count | int *UNSIGNED* | Sub-level post count | 0 | NO | Total number of posts referencing it |
+| latest_edit_at | timestamp | Edit time |  | YES | If editable after posting, record edit time here |
+| latest_comment_at | timestamp | Comment time |  | YES | Time of the latest comment |
+| rank_state | tinyint *UNSIGNED* | Rank Status | 1 | NO | 1.Not set |
 | is_enable | tinyint *UNSIGNED* | Is Valid | 1 | NO | 0.Invalid (visible only to yourself) / 1.Valid |
-| created_at | timestamp | Create Time | CURRENT_TIMESTAMP | NO | 发表时间 |
+| created_at | timestamp | Create Time | CURRENT_TIMESTAMP | NO | Publish time |
 | updated_at | timestamp | Update Time |  | YES |  |
 | deleted_at | timestamp | Delete Time |  | YES |  |
 
-## 精华说明
+## Digest Description
 
-**普通精华**
-- 常规曝光
-- 出现在关注了该小组的用户时间线里
+**General Digest**
+- General display
+- Appears in the timeline of users who have followed the group
 
-*开启关注“小组”功能后，关注页信息流默认只展示“小组”下设为精华的内容*
+*When the Groups feature is enabled, by default only the content set as an digest under Groups will be displayed in the stream of the following page.
 
-**高级精华**
-- 常规曝光
-- 出现在所有用户时间线里
+**Advanced Digest**
+- Appears on all users' timeline

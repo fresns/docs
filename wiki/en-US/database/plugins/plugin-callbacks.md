@@ -6,7 +6,7 @@
 | plugin_unikey | varchar(64) | Generate data for plugin unikey |  | NO | Related field [plugins->unikey](../plugins/plugins.md) |
 | account_id | bigint *UNSIGNED* | 生成数据的账号 |  | YES | Related field [accounts->id](../accounts/accounts.md) |
 | user_id | bigint *UNSIGNED* | 生成数据的用户 |  | YES | Related field [users->id](../users/users.md) |
-| ulid | varchar(64) | 回调查询键 |  | NO | **唯一值**<br>Universally Unique Lexicographically Sortable Identifier<br>示例 01GQBMS8BBTCKTT7B0T3EER8XR |
+| ulid | varchar(64) | 回调查询键 |  | NO | **唯一值**<br>Universally Unique Lexicographically Sortable Identifier<br>Example: 01GQBMS8BBTCKTT7B0T3EER8XR |
 | type | smallint *UNSIGNED* | 类型 | 1 | NO | 见下方描述，支持多个，以英文逗号隔开 |
 | content | json | 返参内容 |  | NO | 见下方描述，支持多种类型一起存储 |
 | is_use | tinyint *UNSIGNED* | 状态 | 0 | NO | 0.未调<br>1.已调（已使用） |

@@ -16,9 +16,9 @@
 | map_id | tinyint *UNSIGNED* | Map - Service provider number |  | YES | Source map service provider key-value dictionary |
 | map_continent_code | varchar(8) | Map - Continent code |  | YES |  |
 | map_country_code | varchar(8) | Map - Country code |  | YES |  |
-| map_region_code | varchar(8) | Map - Region or state code |  | YES |  |
+| map_region_code | varchar(8) | Map - Region code |  | YES |  |
 | map_city_code | varchar(8) | Map - City code |  | YES |  |
-| map_zip | varchar(32) | Map - Administrative division code |  | YES |  |
+| map_zip | varchar(32) | Map - zip |  | YES |  |
 | map_poi_id | varchar(64) | Map - POI ID |  | YES | Map service provider exclusive ID |
 | edit_count | smallint *UNSIGNED* | Number of edits | 0 | NO | Total number of edits |
 | created_at | timestamp | Create Time | CURRENT_TIMESTAMP | NO |  |

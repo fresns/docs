@@ -2,9 +2,9 @@
 
 | Column Name | Type | Comment | Default | Null | Remark |
 | --- | --- | --- | --- | --- | --- |
-| id | bigint *UNSIGNED* | Primary Key ID | | NO | 自动递增 |
-| usage_type | tinyint *UNSIGNED* | 目标类型 |  | NO |  |
-| usage_id | bigint *UNSIGNED* | 目标主键 ID |  | NO |  |
+| id | bigint *UNSIGNED* | Primary Key ID | | NO | Auto Increment |
+| usage_type | tinyint *UNSIGNED* | Type of target |  | NO |  |
+| usage_id | bigint *UNSIGNED* | Target primary key ID |  | NO |  |
 | extend_id | bigint *UNSIGNED* | Extend Content ID |  | NO | Related field `extends->id` |
 | can_delete | tinyint *UNSIGNED* | 是否有权删除 | 1 | NO | 0.否 / 1.是<br>编辑器：用户是否有权删除 |
 | rating | smallint *UNSIGNED* | 排列顺序 | 9 | NO | 升序排序 |
@@ -15,15 +15,15 @@
 
 ## 使用目标关联介绍
 
-- `usage_type` 目标类型
-    - `1` 用户
-    - `2` 小组
-    - `3` 话题
-    - `4` 帖子
-    - `5` 评论
-    - `6` 帖子日志
-    - `7` 评论日志
-- `usage_id` 目标主键 ID
+- `usage_type` Type of target
+    - `1` User
+    - `2` Group
+    - `3` Hashtag
+    - `4` Post
+    - `5` Comment
+    - `6` Post Log
+    - `7` Comment Log
+- `usage_id` Target primary key ID
     - `1` Related field [users->id](../users/users.md)
     - `2` Related field [groups->id](../contents/groups.md)
     - `3` Related field [hashtags->id](../contents/hashtags.md)

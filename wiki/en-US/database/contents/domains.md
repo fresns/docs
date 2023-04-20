@@ -2,24 +2,24 @@
 
 | Column Name | Type | Comment | Default | Null | Remark |
 | --- | --- | --- | --- | --- | --- |
-| id | int *UNSIGNED* | Primary Key ID | | NO | 自动递增 |
-| domain | varchar(64) | 域名 |  | NO | 顶级域名 |
-| host | varchar(128) | 网址 Host |  | NO | **Unique** |
-| post_count | int *UNSIGNED* | 帖子数 | 0 | NO | 有多少帖子内容包含了该域名 |
-| comment_count | int *UNSIGNED* | 评论数 | 0 | NO | 有多少评论内容包含了该域名 |
-| is_enable | tinyint *UNSIGNED* | 是否启用 | 1 | NO | 0.禁用 / 1.启用<br>禁用则该域名 URL 不能解析成超链接，仅作为纯文本显示 |
+| id | int *UNSIGNED* | Primary Key ID | | NO | Auto Increment |
+| domain | varchar(64) | Domain |  | NO | Top-level Domain |
+| host | varchar(128) | URL Host |  | NO | **Unique** |
+| post_count | int *UNSIGNED* | Number of Posts | 0 | NO | Number of posts containing this domain |
+| comment_count | int *UNSIGNED* | Number of Comments | 0 | NO | Number of comments containing this domain |
+| is_enable | tinyint *UNSIGNED* | Is Enabled | 1 | NO | 0.Disabled / 1.Enabled<br>Disabled means the domain URL cannot be parsed into a hyperlink and is displayed as plain text only |
 | created_at | timestamp | Create Time | CURRENT_TIMESTAMP | NO |  |
 | updated_at | timestamp | Update Time |  | YES |  |
-| deleted_at | timestamp | Delete Time |  | YES | 为空代表没有删除 |
+| deleted_at | timestamp | Delete Time |  | YES | Empty means not deleted |
 
-## 域名说明
+## Domain Name Description
 
-**示例 1**
-- link_url = https://mp.weixin.qq.com/s/NeUVDiSBksrt4N3piZE_RQ
-- domain = qq.com
-- host = mp.weixin.qq.com
+**Example 1**
+- link_url = https://pm.fresns.org/guide/installation.html
+- domain = fresns.org
+- host = pm.fresns.org
 
-**示例 2**
+**Example 2**
 - link_url = https://github.com/jevantang
-- domain = tangjie.me
-- host = tangjie.me
+- domain = github.com
+- host = github.com

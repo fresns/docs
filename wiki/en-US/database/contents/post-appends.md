@@ -2,34 +2,34 @@
 
 | Column Name | Type | Comment | Default | Null | Remark |
 | --- | --- | --- | --- | --- | --- |
-| id | bigint *UNSIGNED* | Primary Key ID | | NO | 自动递增 |
-| post_id | bigint *UNSIGNED* | 帖子 ID |  | NO | Related field [posts->id](posts.md) |
-| is_plugin_editor | tinyint *UNSIGNED* | 是否仅在插件中编辑 | 0 | NO | 0.否 / 1.是 |
-| editor_unikey | varchar(64) | 内容编辑插件 |  | YES | Related field [plugins->unikey](../plugins/plugins.md) |
-| can_delete | tinyint *UNSIGNED* | 作者是否有权删除 | 1 | NO | 0.否 / 1.是 |
-| is_allow | tinyint *UNSIGNED* | 是否全员允许阅读 | 1 | NO | 0.否 / 1.是 |
-| allow_proportion | tinyint *UNSIGNED* | 阅读权限-无权时内容显示比例 |  | YES | 百分比<br>30 代表显示 30% 的内容 |
-| allow_btn_name | varchar(64) | 阅读权限-无权时按钮文字 |  | YES | **多语言** |
-| allow_plugin_unikey | varchar(64) | 阅读权限-处理插件 |  | YES | Related field [plugins->unikey](../plugins/plugins.md) |
-| is_user_list | tinyint *UNSIGNED* | 是否有特殊用户列表 | 0 | NO | 0.否 / 1.是 |
-| user_list_name | varchar(128) | 特定用户的名称 |  | YES | **多语言**<br>比如：打赏用户、购买用户、已下载用户 |
-| user_list_plugin_unikey | varchar(64) | 特定用户来源插件 |  | YES | Related field [plugins->unikey](../plugins/plugins.md) |
-| is_comment | tinyint *UNSIGNED* | 是否可评论 | 1 | NO |  0.否 / 1.是 |
-| is_comment_public | tinyint *UNSIGNED* | 是否公开评论<br>不公开将仅帖子作者可见 | 1 | NO | 0.否 / 1.是 |
-| is_comment_btn | tinyint *UNSIGNED* | 评论是否有扩展按钮<br>该按钮仅帖子作者可见 | 0 | NO | 0.否 / 1.是 |
-| comment_btn_name | varchar(64) | 评论扩展按钮-按钮文字 |  | YES | **多语言** |
-| comment_btn_style | varchar(64) | 评论扩展按钮-风格 |  | YES | primary / secondary / success / danger / warning / info |
-| comment_btn_plugin_unikey | varchar(64) | 评论扩展按钮-处理插件 |  | YES | Related field [plugins->unikey](../plugins/plugins.md) |
-| more_json | json | 更多信息字段 |  | YES | 比如发布者 IP 位置名、设备名等 |
-| map_json | json | 地图-详细信息 |  | YES |  |
-| map_id | tinyint *UNSIGNED* | 地图-服务商编号 |  | YES | 来源地图服务商键值字典 |
-| map_continent_code | varchar(8) | 地图-洲代码 |  | YES |  |
-| map_country_code | varchar(8) | 地图-国家代码 |  | YES |  |
-| map_region_code | varchar(8) | 地图-省或州代码 |  | YES |  |
-| map_city_code | varchar(8) | 地图-城市代码 |  | YES |  |
-| map_zip | varchar(32) | 地图-行政区划代码 |  | YES |  |
-| map_poi_id | varchar(64) | 地图-POI ID |  | YES | 地图服务商专属 ID |
-| edit_count | smallint *UNSIGNED* | 编辑次数 | 0 | NO | 共编辑了几次 |
+| id | bigint *UNSIGNED* | Primary Key ID | | NO | Auto Increment |
+| post_id | bigint *UNSIGNED* | Post ID |  | NO | Related field [posts->id](posts.md) |
+| is_plugin_editor | tinyint *UNSIGNED* | Edit only in plugin | 0 | NO | 0.No / 1.Yes |
+| editor_unikey | varchar(64) | Content editor plugin |  | YES | Related field [plugins->unikey](../plugins/plugins.md) |
+| can_delete | tinyint *UNSIGNED* | Can author delete? | 1 | NO | 0.No / 1.Yes |
+| is_allow | tinyint *UNSIGNED* | Allow all users to read? | 1 | NO | 0.No / 1.Yes |
+| allow_proportion | tinyint *UNSIGNED* | Read permission - content display ratio when unauthorized |  | YES | Percentage<br>30 means displaying 30% of the content |
+| allow_btn_name | varchar(64) | Read permission - button text when unauthorized |  | YES | **Multilingual** |
+| allow_plugin_unikey | varchar(64) | Read permission - handling plugin |  | YES | Related field [plugins->unikey](../plugins/plugins.md) |
+| is_user_list | tinyint *UNSIGNED* | Is there a special user list? | 0 | NO | 0.No / 1.Yes |
+| user_list_name | varchar(128) | Specific user name |  | YES | **Multilingual**<br>For example: Rewarding users, Purchasing users, Downloaded users |
+| user_list_plugin_unikey | varchar(64) | Specific user source plugin |  | YES | Related field [plugins->unikey](../plugins/plugins.md) |
+| is_comment | tinyint *UNSIGNED* | Are comments allowed? | 1 | NO |  0.No / 1.Yes |
+| is_comment_public | tinyint *UNSIGNED* | Are comments public?<br>Non-public will only be visible to post author | 1 | NO | 0.No / 1.Yes |
+| is_comment_btn | tinyint *UNSIGNED* | Does the comment have an extended button?<br>This button is only visible to the post author | 0 | NO | 0.No / 1.Yes |
+| comment_btn_name | varchar(64) | Comment extended button - button text |  | YES | **Multilingual** |
+| comment_btn_style | varchar(64) | Comment extended button - style |  | YES | primary / secondary / success / danger / warning / info |
+| comment_btn_plugin_unikey | varchar(64) | Comment extended button - handling plugin |  | YES | Related field [plugins->unikey](../plugins/plugins.md) |
+| more_json | json | Additional information field |  | YES | For example: Publisher IP location name, device name, etc. |
+| map_json | json | Map - Detailed information |  | YES |  |
+| map_id | tinyint *UNSIGNED* | Map - Service provider ID |  | YES | Source map service provider key-value dictionary |
+| map_continent_code | varchar(8) | Map - Continent code |  | YES |  |
+| map_country_code | varchar(8) | Map - Country code |  | YES |  |
+| map_region_code | varchar(8) | Map - Region code |  | YES |  |
+| map_city_code | varchar(8) | Map - City code |  | YES |  |
+| map_zip | varchar(32) | Map - zip |  | YES |  |
+| map_poi_id | varchar(64) | Map - POI ID |  | YES | Map service provider exclusive ID |
+| edit_count | smallint *UNSIGNED* | Number of edits | 0 | NO | Total number of edits |
 | created_at | timestamp | Create Time | CURRENT_TIMESTAMP | NO |  |
 | updated_at | timestamp | Update Time |  | YES |  |
 | deleted_at | timestamp | Delete Time |  | YES |  |

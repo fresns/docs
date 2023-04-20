@@ -4,8 +4,8 @@
 | --- | --- | --- | --- | --- | --- |
 | id | int *UNSIGNED* | Primary Key ID |  | NO | Auto Increment |
 | plugin_unikey | varchar(64) | 关联插件 |  | NO | Related field [plugins->unikey](../plugins/plugins.md)<br>哪个插件创建的 |
-| name | varchar(64) | 名称 |  | YES | **多语言**  |
-| description | text | 介绍 |  | YES | **多语言** |
+| name | varchar(64) | 名称 |  | YES | **Multilingual**  |
+| description | text | 介绍 |  | YES | **Multilingual** |
 | code | varchar(32) | 代码 |  | NO | **Unique**，纯英文字母，不支持任何符号或空格 |
 | usage_type | tinyint *UNSIGNED* | 用途类型 |  | NO | 1.User / 2.Group / 3.Hashtag / 4.Post / 5.Comment |
 | usage_group_id | int *UNSIGNED* | 用途是小组内容专用时使用 | 0 | NO | Related field [groups->id](../contents/groups.md)<br>关联插件所属小组，`0` 表示否 |
