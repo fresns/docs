@@ -34,6 +34,7 @@
     {"id":"26","name":"华云数据 COS"},
     {"id":"27","name":"天翼云 CT-OOS"},
     {"id":"28","name":"保利威 Polyv"},
-    {"id":"29","name":"Fastly"}
+    {"id":"29","name":"Fastly"},
+    {"id":"30","name":"Cloudflare R2"}
 ]
 ```
