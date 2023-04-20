@@ -24,7 +24,7 @@ DateHelper::fresnsDateTimeToDatabaseTimezone($datetime, $timezone, $langTag);
 | Parameter Name | Type | Required | Description |
 | --- | --- | --- | --- |
 | datetime | String | **required** | `Y-m-d H:i:s` 日期时间值 |
-| timezone | String | **required** | 该 `timezone` 为 `datetime` 参数的 [UTC 时区](../../database/dictionary/utc.md) |
+| timezone | String | **required** | 该 `timezone` 为 `datetime` 参数的 [UTC 时区](../../database/dictionary/timezone.md) |
 | langTag | String | *optional* | 输出为该语言的时间格式<br>`configs->item_key=language_menus` 语言标签的 `dateFormat` 参数<br>不传则使用默认语言的格式 |
 
 *将 timezone 时区的 datetime 时间转换为当前数据库时区的日期时间*
@@ -37,7 +37,7 @@ DateHelper::fresnsDateTimeByTimezone($datetime, $timezone, $langTag);
 | Parameter Name | Type | Required | Description |
 | --- | --- | --- | --- |
 | datetime | String | **required** | `Y-m-d H:i:s` 时间值默认为数据库时间 |
-| timezone | String | **required** | 将 `datetime` 参数的时间值，转换为 `timezone` [UTC 时区](../../database/dictionary/utc.md)的时间 |
+| timezone | String | **required** | 将 `datetime` 参数的时间值，转换为 `timezone` [UTC 时区](../../database/dictionary/timezone.md)的时间 |
 | langTag | String | *optional* | 输出为该语言的时间格式<br>`configs->item_key=language_menus` 语言标签的 `dateFormat` 参数<br>不传则使用默认语言的格式 |
 
 ::: details 功能逻辑
@@ -56,7 +56,7 @@ DateHelper::fresnsTimeByTimezone($time, $timezone);
 | Parameter Name | Type | Required | Description |
 | --- | --- | --- | --- |
 | time | String | **required** | `H:i` 时间值，默认为数据库时间 |
-| timezone | String | **required** | 将 `time` 参数的时间值，转换为 `timezone` [UTC 时区](../../database/dictionary/utc.md)的时间 |
+| timezone | String | **required** | 将 `time` 参数的时间值，转换为 `timezone` [UTC 时区](../../database/dictionary/timezone.md)的时间 |
 
 ## 按时区和语言标签格式化时间输出
 
@@ -66,7 +66,7 @@ DateHelper::fresnsFormatDateTime($datetime, $timezone, $langTag);
 | Parameter Name | Type | Required | Description |
 | --- | --- | --- | --- |
 | datetime | String | **required** | `Y-m-d H:i:s` 时间值默认为数据库时间 |
-| timezone | String | **required** | 将 `datetime` 参数的时间值，转换为 `timezone` [UTC 时区](../../database/dictionary/utc.md)的时间 |
+| timezone | String | **required** | 将 `datetime` 参数的时间值，转换为 `timezone` [UTC 时区](../../database/dictionary/timezone.md)的时间 |
 | langTag | String | *optional* | 输出为该语言的时间格式<br>`configs->item_key=language_menus` 语言标签的 `dateFormat` 参数<br>不传则使用默认语言的格式 |
 
 ::: details 功能逻辑

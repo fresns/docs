@@ -11,7 +11,7 @@
 | 站点 LOGO | site_logo |  | **file** | 输出时是图片 URL |
 | 版权所有名称 | site_copyright | Fresns | string |  |
 | 版权所有年份 | site_copyright_years | 2021-Present | string |  |
-| 默认时区 | default_timezone | +8 | string | UTC 值，参见[时区选项](../dictionary/utc.md)<br>客户端默认时区，当 API 未传时区时，涉及时间参数使用该时区值。<br>API 时区顺序: 用户配置->系统时区->默认时区 |
+| 默认时区 | default_timezone | +8 | string | UTC 值，参见[时区选项](../dictionary/timezone.md)<br>客户端默认时区，当 API 未传时区时，涉及时间参数使用该时区值。<br>API 时区顺序: 用户配置->系统时区->默认时区 |
 | 运行模式 | site_mode | public | string | 公开模式 public<br>私有模式 private |
 | 公开模式：注册状态 | site_public_status | true | boolean |  |
 | 公开模式：注册功能 | site_public_service |  | **plugin** | 插件应用场景参数 `register` |

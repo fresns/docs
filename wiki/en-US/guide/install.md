@@ -188,18 +188,18 @@ SESSION_DRIVER=memcached
 
 ### Timezone Config
 
-Fresns is a software that supports cross-time zone service. To ensure the consistency of time values, [UTC](../database/dictionary/utc.md) time zone standard is adopted in the software.
+Fresns is a software that supports cross-time zone service. To ensure the consistency of time values, [UTC](../database/dictionary/timezone.md) time zone standard is adopted in the software.
 
 **Input time**
 
-- Considering the reason of the framework, the time zone option in the configuration file `.env DB_TIMEZONE` can only be based on [PHP time zone function](../database/dictionary/utc.md#timezone-identifiers-to-utc), which is named after the region.
+- Considering the reason of the framework, the time zone option in the configuration file `.env DB_TIMEZONE` can only be based on [PHP time zone function](../database/dictionary/timezone.md#timezone-identifiers-to-utc), which is named after the region.
 - The time entered the database from the framework will be processed into the time zone time configured by `.env DB_TIMEZONE`, that bypasses the framework will be processed into the database time zone by the database (the database time zone is usually the system time zone of the server where the database is located). Therefore, the time zone in the configuration file must be consistent with that in the database in order to ensure the accuracy of time.
 - The installation function of Fresns will randomly pair a PHP time zone function according to the UTC time zone you selected. If it does not conform to your region, please modify it in the `.env` file yourself. For example, Beijing, Shanghai, Singapore and Western Australia are all UTC+8 time zones, and any one of them can meet the standard.
 - In the background, you can check the UTC time zone of your database in the “Dashboard” system information.
 
 **Output time**
 
-- Fresns will automatically determine the [UTC](../database/dictionary/utc.md) time zone of the database, and then output the time according to the client’s request.
+- Fresns will automatically determine the [UTC](../database/dictionary/timezone.md) time zone of the database, and then output the time according to the client’s request.
 - When there is no request from the client, the “Default Time Zone” set in “Site Settings” will be output by default. For example, if the database time zone is UTC+8 and the default time zone set by the site is UTC-7, the database time will be converted to UTC-7 by default when the client does not file a request.
 - Requirement logic for the client time zone: when logging in, the user-defined time zone is preferred; If not logged in or not set by the user, the system time zone of the user’s device (computer or mobile phone) is obtained. If no system time zone is obtained, it will be based on the default time zone set by the site.
 
