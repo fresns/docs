@@ -3,65 +3,65 @@
 | Column Name | Type | Comment | Default | Null | Remark |
 | --- | --- | --- | --- | --- | --- |
 | id | int *UNSIGNED* | Primary Key ID |  | NO | Auto Increment |
-| type | tinyint *UNSIGNED* | 类型 | 1 | NO | 1.自定义 / 2.互动按钮图 / 3.勋章图标 / 4.提示文案 |
-| code | varchar(32) | 代码 |  | NO | 纯小写英文 |
-| style | varchar(32) | 风格 |  | NO | primary / secondary / success / danger / warning / info |
-| name | varchar(128) | 名称 |  | YES | **Multilingual**  |
-| description | text | 描述 |  | YES | **Multilingual** |
-| image_file_id | bigint *UNSIGNED* | 图片文件 ID |  | YES | Related field [files->id](../systems/files.md) |
-| image_file_url | varchar(255) | 图片文件 URL |  | YES |  |
-| image_active_file_id | bigint *UNSIGNED* | 二态图文件 ID |  | YES | Related field [files->id](../systems/files.md) |
-| image_active_file_url | varchar(255) | 二态图文件 URL |  | YES |  |
-| display_type | tinyint *UNSIGNED* | 展示类型 | 1 | NO | 1.基础 / 2.功能（插件） |
-| plugin_unikey | varchar(64) | 关联插件 |  | NO | Related field [plugins->unikey](../plugins/plugins.md)<br>哪个插件创建的，也是功能用途的插件页 |
+| type | tinyint *UNSIGNED* | Type | 1 | NO | 1. Custom / 2. Interactive button image / 3. Badge icon / 4. Prompt copy |
+| code | varchar(32) | Code |  | NO | Lowercase English only |
+| style | varchar(32) | Style |  | NO | primary / secondary / success / danger / warning / info |
+| name | varchar(128) | Name |  | YES | **Multilingual**  |
+| description | text | Description |  | YES | **Multilingual** |
+| image_file_id | bigint *UNSIGNED* | Image file ID |  | YES | Related field [files->id](../systems/files.md) |
+| image_file_url | varchar(255) | Image file URL |  | YES |  |
+| image_active_file_id | bigint *UNSIGNED* | Active state image file ID |  | YES | Related field [files->id](../systems/files.md) |
+| image_active_file_url | varchar(255) | Active state image file URL |  | YES |  |
+| display_type | tinyint *UNSIGNED* | Display type | 1 | NO | 1. Basic / 2. Function (plugin) |
+| plugin_unikey | varchar(64) | Related plugin |  | NO | Related field [plugins->unikey](../plugins/plugins.md)<br>Created by which plugin, also the plugin page for functional purposes |
 | is_enable | tinyint *UNSIGNED* | Is Valid | 1 | NO | 0.Invalid / 1.Valid |
 | created_at | timestamp | Create Time | CURRENT_TIMESTAMP | NO |  |
 | updated_at | timestamp | Update Time |  | YES |  |
 | deleted_at | timestamp | Delete Time |  | YES |  |
 
-## code 用途编码
+## Use Code
 
-- `1` 自定义 `customizes`
+- `1` Custom `customizes`
     - {code}
-- `2` 互动按钮图 `buttonIcons`
-    - `like` 点赞图标
-    - `dislike` 点踩图标
-    - `follow` 关注图标
-    - `block` 屏蔽图标
-    - `comment` 评论图标
-    - `share` 分享图标
-    - `more` 更多图标
-- `3` 个性装饰图 `diversifyImages`
-    - `title` 标题图
-        - 用户: 例如「联名」「小店」「徽章」等图标或功能图标
-        - 小组: 例如「开发者入驻」
-        - 话题: 例如「趋势」
-        - 帖子: 例如「投票」「抽奖」「商品」等标注帖子内容的图标
-        - 评论: 例如「神评」「优质评价」「热评」
-    - `decorate` 挂件图
-        - 用户: 头像挂件
-        - 小组: 封面图挂件
-        - 话题: 封面图挂件
-        - 帖子: 角标挂件
-        - 评论: 角标挂件
-    - `verified` 认证图
-        - 用户: 身份认证
-        - 小组: 官方认证
-        - 话题: 认证话题
-        - 帖子: 内容证实
-        - 评论: 内容证实
-    - `medal` 勋章图
-        - 用户: 例如「徽章」
-        - 小组:
-        - 话题:
-        - 帖子: 例如「专业」
-        - 评论:
-- `4` 提示文案 `tips`
-    - `alert` 提示文本
+- `2` Interactive Button Images `buttonIcons`
+    - `like` Like Icon
+    - `dislike` Dislike Icon
+    - `follow` Follow Icon
+    - `block` Block Icon
+    - `comment` Comment Icon
+    - `share` Share Icon
+    - `more` More Icon
+- `3` Personalized Decoration Images `diversifyImages`
+    - `title` Title Image
+        - User:For example, "Co-Branded", "Shop", "Badge" icons or functional icons
+        - Group: For example, "developer"
+        - Hashtag: For example, "trend"
+        - Post: For example, "vote", "raffle", "product" icons indicating post content
+        - Comment: For example, "good comment", "high-quality review", "hot review"
+    - `decorate` Decorative Images
+        - User: Avatar decoration
+        - Group: Cover image decoration
+        - Hashtag: Cover image decoration
+        - Post: Corner decoration
+        - Comment: Corner decoration
+    - `verified` Verification Image
+        - User: Identity verification
+        - Group: Official verification
+        - Hashtag: Verified topic
+        - Post: Content verification
+        - Comment: Content verification
+    - `medal` Medal Image
+        - User: For example, "badge"
+        - Group:
+        - Hashtag:
+        - Post: For example, "professional"
+        - Comment:
+- `4` Prompt Copy `tips`
+    - `alert` Prompt Text
 
-除以上系统内置定义外，插件可自行定义，用户支持关联多个，用途编码可供客户端区分用途和显示位置。
+In addition to the above built-in definitions, plugins can define their own, and users can associate multiple, with usage codes available for the client to distinguish between usage and display location.
 
-## 接口输出示例
+## API output example
 
 ```json
 {

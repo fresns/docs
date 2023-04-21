@@ -2,19 +2,19 @@
 
 ## Portal
 
-| 键标签 | 键名 | 备注 | 是否接口输出 |
+| Key Label | Key Name | Notes | Is API Output |
 | --- | --- | --- | --- |
-| portals | portal_`{platforms>id}` | 门户内容 | 1 |
+| portals | portal_`{platforms>id}` | Portal content | 1 |
 
-例如 Desktop Web 平台的门户键名为 `portal_2`
+For example, the portal key name for the Desktop Web platform is `portal_2`
 
-资料：[终端平台编号](../dictionary/platforms.md)
+Reference: [Terminal Platform Numbers](../dictionary/platforms.md)
 
 ## Theme
 
 > Fresns Panel > App Center > Engines
 
-| 栏目标题 | 组件类型 | 键名 | 说明 |
+| Column Title | Component Type | Key Name | Description |
 | --- | --- | --- | --- |
-| 电脑端主题模板 | select | {unikey}_Desktop | 关联存储主题模板文件名 `item_tag = themes` |
-| 手机端主题模板 | select | {unikey}_Mobile | 关联存储主题模板文件名 `item_tag = themes` |
+| Desktop Theme Template | select | {unikey}_Desktop | Associated storage theme template file name `item_tag = themes` |
+| Mobile Theme Template | select | {unikey}_Mobile | Associated storage theme template file name `item_tag = themes` |

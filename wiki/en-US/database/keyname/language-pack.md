@@ -4,30 +4,30 @@
 
 | Menu Title | Key Name | Default Key Value | Value Type | Description |
 | --- | --- | --- | --- | --- |
-| 语言包 | language_pack | [language_pack](../dictionary/language-pack.md) | array |  |
+| Language Pack | language_pack | [language_pack](../dictionary/language-pack.md) | array |  |
 
 ## Language Identifier
 
-**先以 [language_pack](../dictionary/language-pack.md) 为键名存储语言标识名**
+**The language identifier is initially stored under the key name [language_pack](../dictionary/language-pack.md).**
 
-切换不同配置页的时候，统一的输入列表，每个配置页都可以新增或删减（删，需二次确认）。
+When switching between configuration pages, the input list is unified and each configuration page can be added or deleted (deletion requires a second confirmation).
 
 ```json
 [
-    {"name":"accountLogin","canDelete":true}, //可以删除
-    {"name":"accountRegister","canDelete":false}, //不可以删除
+    {"name":"accountLogin","canDelete":true}, //It is possible to delete
+    {"name":"accountRegister","canDelete":false}, //cannot be deleted
     {"name":"accountRecovery","canDelete":false}
 ]
 ```
 
 ## Language Content
 
-**再以 language_pack_contents 为键名，存储所有语言标识对应的语言的内容**
+The `language_pack_contents` key is used to store the contents of all languages corresponding to the language identifier.
 
 ```json
 [
-    {"name":"accountLogin","content":"登录"},
-    {"name":"accountRegister","content":"注册"},
-    {"name":"accountRecovery","content":"找回密码"},
+    {"name":"accountLogin","content":"Login"},
+    {"name":"accountRegister","content":"Register"},
+    {"name":"accountRecovery","content":"Recovery Password"},
 ]
 ```

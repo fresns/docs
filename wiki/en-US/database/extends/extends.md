@@ -3,27 +3,28 @@
 | Column Name | Type | Comment | Default | Null | Remark |
 | --- | --- | --- | --- | --- | --- |
 | id | bigint *UNSIGNED* | Primary Key ID | | NO | Auto Increment |
-| eid | varchar(32) | 对外公开 ID |  | NO | **Unique** |
-| user_id | bigint *UNSIGNED* | 创建者 ID |  | NO | Related field [users->id](../users/users.md) |
-| plugin_unikey | varchar(64) | 创建者插件 |  | NO | Related field [plugins->unikey](../plugins/plugins.md) |
-| type | tinyint *UNSIGNED* | 类型 | 1 |  NO| 1.文本框 / 2.信息框 / 3.交互框 |
-| text_content | text | 文本框专用-内容 |  | YES | 仅 frame 为“文本框”扩展类型的时候有效，支持 Morkdown 格式 |
-| text_is_markdown | tinyint *UNSIGNED* | 文本框专用-内容是否为 MD 格式 | 0 | NO | 0.否 / 1.是 |
-| info_type | tinyint *UNSIGNED* | 信息框专用-类型 |  | YES | 1.正方形信息框架<br>2.大号正方形信息框架<br>3.纵图信息框架<br>4.横图信息框架 |
-| cover_file_id | bigint *UNSIGNED* | 封面图 ID |  | YES | Related field [files->id](../systems/files.md) |
-| cover_file_url | varchar(255) | 封面图 URL |  | YES |  |
-| title | varchar(255) | 标题 |  | YES | **Multilingual**  |
-| title_color | char(6) | 标题-文字颜色 |  | YES |  |
-| desc_primary | varchar(255) | 主要副信息 |  | YES | **Multilingual** |
-| desc_primary_color | char(6) | 主要副信息-文字颜色 |  | YES |  |
-| desc_secondary | varchar(255) | 次要副信息 |  | YES | **Multilingual** |
-| desc_secondary_color | char(6) | 次要副信息-文字颜色 |  | YES |  |
-| button_name | varchar(64) | 按钮名称 |  | YES | **Multilingual** |
-| button_color | char(6) | 按钮颜色 |  | YES |  |
-| position | tinyint *UNSIGNED* | 显示位置 | 2 | NO | 1.上方 / 2.下方 |
-| parameter | varchar(128) | 自定义参数 |  | YES | 逻辑参见[插件说明](../plugins/plugins.md#地址拼接说明) |
-| more_json | json | 扩展配置 |  | YES | 自定义信息，如何使用需客户端配合 |
+| eid | varchar(32) | Public ID |  | NO | **Unique** |
+| user_id | bigint *UNSIGNED* | Creator ID |  | NO | Related field [users->id](../users/users.md) |
+| plugin_unikey | varchar(64) | Creator plugin |  | NO | Related field [plugins->unikey](../plugins/plugins.md) |
+| type | tinyint *UNSIGNED* | Type | 1 |  NO| 1. Text box / 2. Info box / 3. Interactive box |
+| text_content | text | Text box specific - content |  | YES | Valid only when frame is "text box" extension type, supports Morkdown format |
+| text_is_markdown | tinyint *UNSIGNED* | Text box specific - content in MD format | 0 | NO | 0. No / 1. Yes |
+| info_type | tinyint *UNSIGNED* | Info box specific - type |  | YES | 1. Square info frame<br>2. Large square info frame<br>3. Vertical image info frame<br>4. Horizontal image info frame |
+| cover_file_id | bigint *UNSIGNED* | Cover image ID |  | YES | Related field [files->id](../systems/files.md) |
+| cover_file_url | varchar(255) | Cover image URL |  | YES |  |
+| title | varchar(255) | Title |  | YES | **Multilingual**  |
+| title_color | char(6) | Title - text color |  | YES |  |
+| desc_primary | varchar(255) | Primary description |  | YES | **Multilingual** |
+| desc_primary_color | char(6) | Primary description - text color |  | YES |  |
+| desc_secondary | varchar(255) | Secondary description |  | YES | **Multilingual** |
+| desc_secondary_color | char(6) | Secondary description - text color |  | YES |  |
+| button_name | varchar(64) | Button name |  | YES | **Multilingual** |
+| button_color | char(6) | Button color |  | YES |  |
+| position | tinyint *UNSIGNED* | Display position | 2 | NO | 1. Top / 2. Bottom |
+| parameter | varchar(128) | Custom parameter |  | YES | Logic refers to [plugin description](../plugins/plugins.md#address-splicing-description) |
+| more_json | json | Extended configuration |  | YES | Custom information, how to use requires client cooperation |
 | is_enable | tinyint *UNSIGNED* | Is Valid | 1 | NO | 0.Invalid / 1.Valid |
-| created_at | timestamp | 上传时间 | CURRENT_TIMESTAMP | NO |  |
+| created_at | timestamp | Upload time | CURRENT_TIMESTAMP | NO |  |
 | updated_at | timestamp | Update Time |  | YES |  |
-| deleted_at | timestamp | Delete Time |  | YES | 为空代表没有删除 |
+| deleted_at | timestamp | Delete Time |  | YES | Empty means not deleted |
+

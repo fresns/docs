@@ -4,34 +4,33 @@
 
 ## Content Service
 
-| 栏目标题 | 键名 | 键值类型 | Command Word | 说明 |
+| Column Title | Key Name | Key Value Type | Command Word | Description |
 | --- | --- | --- | --- | --- |
-| IP 服务商 | ip_service | **plugin** | `ipInfo` | 插件应用场景参数 `extendIp` |
-| 地图服务商 | map_service | **plugin** |  | 插件应用场景参数 `extendMap` |
-| 通知服务商 | notifications_service | **plugin** | `sendNotification` | 插件应用场景参数 `extendNotification` |
-| 内容审核服务商 | content_review_service | **plugin** | `reviewNotice` | 插件应用场景参数 `extendReview` |
+| IP Service Provider | ip_service | **plugin** | `ipInfo` | Plugin application scenario parameter `extendIp` |
+| Map Service Provider | map_service | **plugin** |  | Plugin application scenario parameter `extendMap` |
+| Notification Service Provider | notifications_service | **plugin** | `sendNotification` | Plugin application scenario parameter `extendNotification` |
+| Content Review Service Provider | content_review_service | **plugin** | `reviewNotice` | Plugin application scenario parameter `extendReview` |
 
 ## Content List
 
-| 栏目标题 | 键名 | 键值类型 | Command Word | 说明 |
+| Column Title | Key Name | Key Value Type | Command Word | Description |
 | --- | --- | --- | --- | --- |
-| 帖子和评论列表 | content_list_service | **plugin** | `getPostByAll`<br>`getCommentByAll` | 插件应用场景参数 `extendData` |
-| 帖子和评论列表 | content_follow_service | **plugin** | `getPostByFollow`<br>`getCommentByFollow` | 插件应用场景参数 `extendData` |
-| 帖子和评论列表 | content_nearby_service | **plugin** | `getPostByNearby`<br>`getCommentByNearby` | 插件应用场景参数 `extendData` |
+| Posts and Comments List | content_list_service | **plugin** | `getPostByAll`<br>`getCommentByAll` | Plugin application scenario parameter `extendData` |
+| Posts and Comments List | content_follow_service | **plugin** | `getPostByFollow`<br>`getCommentByFollow` | Plugin application scenario parameter `extendData` |
+| Posts and Comments List | content_nearby_service | **plugin** | `getPostByNearby`<br>`getCommentByNearby` | Plugin application scenario parameter `extendData` |
 
 ## Content Details
 
-| 栏目标题 | 键名 | 键值类型 | Command Word | 说明 |
+| Column Title | Key Name | Key Value Type | Command Word | Description |
 | --- | --- | --- | --- | --- |
-| 帖子和评论详情页 | content_detail_service | **plugin** | `getPostDetail`<br>`getCommentDetail` | 插件应用场景参数 `extendData` |
+| Post and Comment Detail Page | content_detail_service | **plugin** | `getPostDetail`<br>`getCommentDetail` | Plugin application scenario parameter `extendData` |
 
 ## Content Search
 
-| 栏目标题 | 键名 | 键值类型 | Command Word | 说明 |
+| Column Title | Key Name | Key Value Type | Command Word | Description |
 | --- | --- | --- | --- | --- |
-| 搜索用户服务商 | search_users_service | **plugin** | `searchUsers` | 插件应用场景参数 `extendSearch` |
-| 搜索小组服务商 | search_groups_service | **plugin** | `searchGroups` | 插件应用场景参数 `extendSearch` |
-| 搜索话题服务商 | search_hashtags_service | **plugin** | `searchHashtags` | 插件应用场景参数 `extendSearch` |
-| 搜索帖子服务商 | search_posts_service | **plugin** | `searchPosts` | 插件应用场景参数 `extendSearch` |
-| 搜索评论服务商 | search_comments_service | **plugin** | `searchComments` | 插件应用场景参数 `extendSearch` |
-
+| Search Users Provider | search_users_service | **plugin** | `searchUsers` | Plugin application scenario parameter `extendSearch` |
+| Search Groups Provider | search_groups_service | **plugin** | `searchGroups` | Plugin application scenario parameter `extendSearch` |
+| Search Hashtags Provider | search_hashtags_service | **plugin** | `searchHashtags` | Plugin application scenario parameter `extendSearch` |
+| Search Posts Provider | search_posts_service | **plugin** | `searchPosts` | Plugin application scenario parameter `extendSearch` |
+| Search Comments Provider | search_comments_service | **plugin** | `searchComments` | Plugin application scenario parameter `extendSearch` |

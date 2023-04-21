@@ -4,55 +4,55 @@
 
 | Menu Title | Key Name | Default Key Value | Value Type | Description |
 | --- | --- | --- | --- | --- |
-| 是否开启多语言 | language_status | true | boolean |  true 或 false |
-| 多语言配置列表 | language_menus |  | array | [语言列表 JSON 数据](#语言列表-json-数据) |
-| 默认语言 | default_language | zh-Hans | string | Language Tag |
+| Enable multilingual | language_status | true | boolean | true or false |
+| Language configuration list | language_menus |  | array | [Language list JSON data](#language-list-json-data) |
+| Default language | default_language | zh-Hans | string | Language Tag |
 
 ## Composition of language tags
 
-[查看示例和逻辑流程图](../../extensions/multilingual.md)
+[View examples and flowcharts](../../extensions/multilingual.md)
 
 ## Language List JSON Data
 
 ```json
 [
     {
-        "rating": "排序",
-        "langCode": "语言代码",
-        "langName": "语言名称（从字典中读取存入）",
-        "continentId": "洲 ID",
-        "areaStatus": "地区启用状态，true 或者 false",
-        "areaCode": "地区代码（可留空）",
-        "areaName": "地区名称（可留空，从字典中读取存入）",
-        "langTag": "语言标签（语言名称和地区代码组合）",
-        "writingDirection": "语言写作方向（从字典中读取存入）",
-        "lengthUnit": "长度单位",
-        "dateFormat": "日期格式",
-        "timeFormatMinute": "分钟时间格式命名",
-        "timeFormatHour": "小时时间格式命名",
-        "timeFormatDay": "天时间格式命名",
-        "timeFormatMonth": "月时间格式命名",
-        "timeFormatYear": "年时间格式命名",
-        "packVersion": "语言包版本",
-        "isEnable": "true 或者 false"
+        "rating": "Sorting",
+        "langCode": "Language code",
+        "langName": "Language name (read from dictionary and store)",
+        "continentId": "Continent ID",
+        "areaStatus": "Area enable status, true or false",
+        "areaCode": "Area code (can be empty)",
+        "areaName": "Area name (can be empty, read from dictionary and store)",
+        "langTag": "Language tag (combination of language name and area code)",
+        "writingDirection": "Language writing direction (read from dictionary and store)",
+        "lengthUnit": "Length unit",
+        "dateFormat": "Date format",
+        "timeFormatMinute": "Minute time format naming",
+        "timeFormatHour": "Hour time format naming",
+        "timeFormatDay": "Day time format naming",
+        "timeFormatMonth": "Month time format naming",
+        "timeFormatYear": "Year time format naming",
+        "packVersion": "Language pack version",
+        "isEnable": "true or false"
     },
     {
         "rating": 1,
         "langCode": "zh-Hans",
-        "langName": "简体中文",
+        "langName": "Simplified Chinese",
         "continentId": 1,
         "areaStatus": true,
-        "areaCode": "CN",
-        "areaName": "中国大陆",
-        "langTag": "zh-Hans-CN",
+        "areaCode": "SG",
+        "areaName": "Singapore",
+        "langTag": "zh-Hans-SG",
         "writingDirection": "ltr",
         "lengthUnit": "km",
         "dateFormat": "yyyy-mm-dd",
-        "timeFormatMinute": "{n} 分钟前",
-        "timeFormatHour": "{n} 小时前",
-        "timeFormatDay": "{n} 天前",
-        "timeFormatMonth": "{n} 个月前",
-        "timeFormatYear": "{n} 个年前",
+        "timeFormatMinute": "{n} minutes ago",
+        "timeFormatHour": "{n} hours ago",
+        "timeFormatDay": "{n} days ago",
+        "timeFormatMonth": "{n} months ago",
+        "timeFormatYear": "{n} years ago",
         "packVersion": 1,
         "isEnable": true
     }
@@ -61,41 +61,41 @@
 
 ## Humanized Time Format
 
-*API 输出内容时，对时间做人性化处理*
+*API output content, humanize the time*
 
-| 格式 | 示例 | 说明 |
+| Format | Example | Description |
 | --- | --- | --- |
-| n 分钟前 | 5 分钟前 | 发表时间在 60 分钟以内 |
-| n 小时前 | 5 小时前 | 发表时间超过 60 分钟，但在 24 小时以内 |
-| n 天前 | 5 天前 | 发表时间超过 24 小时，但在 30 天以内 |
-| n 个月前 | 5 月前 | 发表时间超过 30 天，但在今年以内 |
+| n minutes ago | 5 minutes ago | Posted within 60 minutes |
+| n hours ago | 5 hours ago | Posted over 60 minutes, but within 24 hours |
+| n days ago | 5 days ago | Posted over 24 hours, but within 30 days |
+| n months ago | 5 months ago | Posted over 30 days, but within this year |
 
 ## Help
 
-| 支持多语言的配置项 | Panel Path |
+| Multilingual supported configurations | Panel Path |
 | --- | --- |
-| 站点名称 | Systems > General |
-| 站点介绍 | Systems > General |
-| 服务条款 | Systems > Policy > Content |
-| 隐私权政策 | Systems > Policy > Content |
-| Cookies 政策 | Systems > Policy > Content |
-| 注销说明 | Systems > Policy > Content |
-| 验证码模板 | Systems > Send > Template > Config Template |
-| 钱包支付扩展名称 | Systems > Wallet > Recharge Services > Name |
-| 钱包提现扩展名称 | Systems > Wallet > Withdraw Services > Name |
-| 命名配置 | Operations > Rename |
-| 表情包名称 | Operations > Stickers > Group Name |
-| 发表帖子规则提示 | Operations > Publish > Post > Publish Post Rules > Rule Tip |
-| 发表评论规则提示 | Operations > Publish > Comment > Publish Post Rules > Rule Tip |
-| 用户角色名 | Operations > Roles > Name |
-| 内容小组名称 | Operations > Groups > Name |
-| 内容小组描述 | Operations > Groups > Description |
-| 编辑器扩展名称 | Extends > Editor > Name |
-| 搜索类型扩展名称 | Extends > Content Type > Name |
-| 管理扩展名称 | Extends > Manage > Name |
-| 小组扩展名称 | Extends > Group > Name |
-| 用户功能扩展名称 | Extends > User Feature > Name |
-| 用户资料扩展名称 | Extends > User Profile > Name |
-| 菜单配置 | Clients > Menus |
-| 栏目配置 | Clients > Columns |
-| 语言包配置 | Clients > Language Packs |
+| Site name | Systems > General |
+| Site introduction | Systems > General |
+| Terms of service | Systems > Policy > Content |
+| Privacy policy | Systems > Policy > Content |
+| Cookies policy | Systems > Policy > Content |
+| Logout instructions | Systems > Policy > Content |
+| Verification code template | Systems > Send > Template > Config Template |
+| Wallet payment extension name | Systems > Wallet > Recharge Services > Name |
+| Wallet withdrawal extension name | Systems > Wallet > Withdraw Services > Name |
+| Naming configuration | Operations > Rename |
+| Sticker pack name | Operations > Stickers > Group Name |
+| Post publishing rule tips | Operations > Publish > Post > Publish Post Rules > Rule Tip |
+| Comment publishing rule tips | Operations > Publish > Comment > Publish Post Rules > Rule Tip |
+| User role name | Operations > Roles > Name |
+| Content group name | Operations > Groups > Name |
+| Content group description | Operations > Groups > Description |
+| Editor extension name | Extends > Editor > Name |
+| Search type extension name | Extends > Content Type > Name |
+| Management extension name | Extends > Manage > Name |
+| Group extension name | Extends > Group > Name |
+| User feature extension name | Extends > User Feature > Name |
+| User profile extension name | Extends > User Profile > Name |
+| Menu configuration | Clients > Menus |
+| Column configuration | Clients > Columns |
+| Language pack configuration | Clients > Language Packs |

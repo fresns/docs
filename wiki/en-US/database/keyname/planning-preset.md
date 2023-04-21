@@ -4,17 +4,17 @@
 
 | Menu Title | Key Name | Description |
 | --- | --- | --- |
-| [插件订阅记录](../../extensions/plugin/functions.md#subscribe-database-table-activity) | subscribe_items | 插件向主程序订阅事件 `item_tag = systems` |
-| [插件定时任务](../../extensions/plugin/functions.md#crontab) | crontab_items | 插件向主程序标注定时任务 `item_tag = systems` |
+| [Plugin Subscription Records](../../extensions/plugin/functions.md#subscribe-database-table-activity) | subscribe_items | Plugin subscribes to events in the main program `item_tag = systems` |
+| [Plugin Scheduled Tasks](../../extensions/plugin/functions.md#crontab) | crontab_items | Plugin marks scheduled tasks for the main program `item_tag = systems` |
 
-::: details 查看「插件订阅记录」示例
+::: details View "Plugin Subscription Records" example
 ```json
 [
     {
-        "type": "订阅类型",
-        "unikey": "订阅者（插件）",
-        "cmdWord": "订阅者的命令字",
-        "subTableName": "订阅的表，类型 1 专用"
+        "type": "Subscription type",
+        "unikey": "Subscriber (Plugin)",
+        "cmdWord": "Subscriber's command word",
+        "subTableName": "Subscribed table, type 1 exclusive"
     },
     {
         "type": 1,
@@ -25,13 +25,13 @@
 ]
 ```
 :::
-::: details 查看「插件定时任务」示例
+::: details View "Plugin Scheduled Tasks" example
 ```json
 [
     {
-        "unikey": "定时任务插件",
-        "cmdWord": "定时任务插件命令字",
-        "cronTableFormat": "定时任务执行周期（定时任务表达式）"
+        "unikey": "Scheduled Task Plugin",
+        "cmdWord": "Scheduled Task Plugin Command Word",
+        "cronTableFormat": "Scheduled Task Execution Cycle (Cron Expression)"
     },
     {
         "unikey": "Fresns",
@@ -44,25 +44,25 @@
 
 ## User
 
-数据表 *user_stats*
+Data Table [user_stats](../users/user-stats.md)
 
 | Key Tag | Key Name | Description | is API |
 | --- | --- | --- | --- |
-| users | extcredits1_name | 扩展 1 名称 | 1 |
-| users | extcredits1_unit | 扩展 1 单位 | 1 |
-| users | extcredits1_status | 扩展 1 状态（1.不启用 2.私有 3.公开） | 1 |
-| users | extcredits2_name | 扩展 2 名称 | 1 |
-| users | extcredits2_unit | 扩展 2 单位 | 1 |
-| users | extcredits2_status | 扩展 2 状态（1.不启用 2.私有 3.公开） | 1 |
-| users | extcredits3_name | 扩展 3 名称 | 1 |
-| users | extcredits3_unit | 扩展 3 单位 | 1 |
-| users | extcredits3_status | 扩展 3 状态（1.不启用 2.私有 3.公开） | 1 |
-| users | extcredits4_name | 扩展 4 名称 | 1 |
-| users | extcredits4_unit | 扩展 4 单位 | 1 |
-| users | extcredits4_status | 扩展 4 状态（1.不启用 2.私有 3.公开） | 1 |
-| users | extcredits5_name | 扩展 5 名称 | 1 |
-| users | extcredits5_unit | 扩展 5 单位 | 1 |
-| users | extcredits5_status | 扩展 5 状态（1.不启用 2.私有 3.公开） | 1 |
+| users | extcredits1_name | Extension 1 Name | 1 |
+| users | extcredits1_unit | Extension 1 Unit | 1 |
+| users | extcredits1_status | Extension 1 Status (1. Disabled 2. Private 3. Public) | 1 |
+| users | extcredits2_name | Extension 2 Name | 1 |
+| users | extcredits2_unit | Extension 2 Unit | 1 |
+| users | extcredits2_status | Extension 2 Status (1. Disabled 2. Private 3. Public) | 1 |
+| users | extcredits3_name | Extension 3 Name | 1 |
+| users | extcredits3_unit | Extension 3 Unit | 1 |
+| users | extcredits3_status | Extension 3 Status (1. Disabled 2. Private 3. Public) | 1 |
+| users | extcredits4_name | Extension 4 Name | 1 |
+| users | extcredits4_unit | Extension 4 Unit | 1 |
+| users | extcredits4_status | Extension 4 Status (1. Disabled 2. Private 3. Public) | 1 |
+| users | extcredits5_name | Extension 5 Name | 1 |
+| users | extcredits5_unit | Extension 5 Unit | 1 |
+| users | extcredits5_status | Extension 5 Status (1. Disabled 2. Private 3. Public) | 1 |
 
 ## Operation
 

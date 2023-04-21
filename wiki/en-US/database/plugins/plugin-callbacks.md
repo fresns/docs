@@ -11,9 +11,9 @@
 | content | json | 返参内容 |  | NO | 见下方描述，支持多种类型一起存储 |
 | is_use | tinyint *UNSIGNED* | 状态 | 0 | NO | 0.未调<br>1.已调（已使用） |
 | use_plugin_unikey | varchar(64) | Data use plugin unikey |  | YES | Related field [plugins->unikey](../plugins/plugins.md) |
-| created_at | timestamp | 创建时间 | CURRENT_TIMESTAMP | NO |  |
-| updated_at | timestamp | 更新时间 |  | YES |  |
-| deleted_at | timestamp | 删除时间 |  | YES |  |
+| created_at | timestamp | Create Time | CURRENT_TIMESTAMP | NO |  |
+| updated_at | timestamp | Update Time |  | YES |  |
+| deleted_at | timestamp | Delete Time |  | YES |  |
 
 ## type
 

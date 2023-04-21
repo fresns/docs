@@ -6,14 +6,14 @@
 | usage_type | tinyint *UNSIGNED* | Type of target |  | NO |  |
 | usage_id | bigint *UNSIGNED* | Target primary key ID |  | NO |  |
 | extend_id | bigint *UNSIGNED* | Extend Content ID |  | NO | Related field `extends->id` |
-| can_delete | tinyint *UNSIGNED* | 是否有权删除 | 1 | NO | 0.否 / 1.是<br>编辑器：用户是否有权删除 |
-| rating | smallint *UNSIGNED* | 排列顺序 | 9 | NO | 升序排序 |
-| plugin_unikey | varchar(64) | 关联插件 |  | NO | Related field `extends->plugin_unikey` |
+| can_delete | tinyint *UNSIGNED* | Can be deleted | 1 | NO | 0. No / 1. Yes<br>Editor: User has the right to delete |
+| rating | smallint *UNSIGNED* | Display order | 9 | NO | Ascending order |
+| plugin_unikey | varchar(64) | Related plugin |  | NO | Related field `extends->plugin_unikey` |
 | created_at | timestamp | Create Time | CURRENT_TIMESTAMP | NO |  |
 | updated_at | timestamp | Update Time |  | YES |  |
 | deleted_at | timestamp | Delete Time |  | YES |  |
 
-## 使用目标关联介绍
+## Introduction to using target associations
 
 - `usage_type` Type of target
     - `1` User

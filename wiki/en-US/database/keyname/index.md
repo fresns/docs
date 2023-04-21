@@ -2,33 +2,32 @@
 
 ## Storage Location
 
-配置键存储在 [configs](../systems/configs.md) 表。
+The configuration keys are stored in the [configs](../systems/configs.md) table.
 
 ## Key Tags
 
 | Key Tag | Description | Control Panel Path |
 | --- | --- | --- |
-| systems | 后端配置 | Panel > Dashboard > Settings |
+| systems | Server-side configuration | Panel > Dashboard > Settings |
 | languages | Multilingual | Panel > Systems > Languages |
-| general | 站点信息 | Panel > Systems > General |
-| policies | 政策条款 | Panel > Systems > Policy |
-| sends | 发信设置 | Panel > Systems > Send |
-| verifyCodes | 验证码模板 | Panel > Systems > Send > Verify Codes |
-| users | 用户设置 | Panel > Systems > User |
-| wallets | 钱包功能设置 | Panel > Systems > Wallet |
-| storageImages | 图片存储设置 | Panel > Systems > Storage > Image |
-| storageVideos | 视频存储设置 | Panel > Systems > Storage > Video |
-| storageAudios | 音频存储设置 | Panel > Systems > Storage > Audio |
-| storageDocuments | 文档存储设置 | Panel > Systems > Storage > Document |
-| storages | 无效状态补位图 | Panel > Systems > Storage > Substitution |
-| maps | 地图设置 | Panel > Systems > Maps |
-| renames | 自定义命名配置 | Panel > Operations > Rename |
-| interactions | 互动配置 | Panel > Operations > Interaction |
-| postEditor | 帖子编辑器配置 | Panel > Operations > Publish > Post |
-| commentEditor | 评论编辑器配置 | Panel > Operations > Publish > Comment |
-| extends | 扩展配置 | Panel > Extends |
-| menus | 菜单配置 | Panel > Clients > Menus<br>Panel > Clients > Columns |
-| languages | 语言包配置 | Panel > Clients > Language Packs |
-| websites | 网页端 | Panel > Clients > Paths<br>Panel > Clients > Website |
-| apps | 网页端 | Panel > Clients > App |
-| themes | 主题模板设置项 |  |
+| general | Site information | Panel > Systems > General |
+| policies | Policy Terms | Panel > Systems > Policy |
+| sends | Sending settings | Panel > Systems > Send |
+| verifyCodes | Verify code Template | Panel > Systems > Send > Verify Codes |
+| users | User settings | Panel > Systems > User |
+| wallets | Wallet function settings | Panel > Systems > Wallet |
+| storageImages | Image storage settings | Panel > Systems > Storage > Image |
+| storageVideos | Video storage settings | Panel > Systems > Storage > Video |
+| storageAudios | Audio storage settings | Panel > Systems > Storage > Audio |
+| storageDocuments | Document storage settings | Panel > Systems > Storage > Document |
+| storages | Ineffective state complementary chart | Panel > Systems > Storage > Substitution |
+| renames | Customised naming configuration | Panel > Operations > Rename |
+| interactions | Interaction configurations | Panel > Operations > Interaction |
+| postEditor | Post editor configuration | Panel > Operations > Publish > Post |
+| commentEditor | Comment editor configuration | Panel > Operations > Publish > Comment |
+| extends | Extend configuration | Panel > Extends |
+| menus | Menu configuration | Panel > Clients > Menus<br>Panel > Clients > Columns |
+| languages | Language Pack Configuration | Panel > Clients > Language Packs |
+| websites | Web side | Panel > Clients > Paths<br>Panel > Clients > Website |
+| apps | App side | Panel > Clients > App |
+| themes | Theme template setting items |  |
