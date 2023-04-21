@@ -28,7 +28,7 @@
 | comment_follow_count | int *UNSIGNED* | Comment follow count | 0 | NO | Total number of follows on all comments |
 | comment_block_count | int *UNSIGNED* | Comment block count | 0 | NO | Total number of blocks on all comments |
 | post_count | int *UNSIGNED* | Sub-level post count | 0 | NO | Total number of posts referencing it |
-| latest_edit_at | timestamp | Edit time |  | YES | If editable after posting, record edit time here |
+| latest_edit_at | timestamp | Edit time |  | YES | If editable after publish, record edit time here |
 | latest_comment_at | timestamp | Comment time |  | YES | Time of the latest comment |
 | rank_state | tinyint *UNSIGNED* | Rank Status | 1 | NO | 1.Not set |
 | is_enable | tinyint *UNSIGNED* | Is Valid | 1 | NO | 0.Invalid (visible only to yourself) / 1.Valid |

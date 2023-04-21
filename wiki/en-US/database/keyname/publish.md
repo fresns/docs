@@ -16,7 +16,7 @@
 | Time Period Limit - End Time | post_limit_period_end |  | string |  |
 | Recurring Time Period Limit - Start Time | post_limit_cycle_start | 23:30 | string |  |
 | Recurring Time Period Limit - End Time | post_limit_cycle_end | 08:30 | string |  |
-| Limitation Rule | post_limit_rule | 1 | number | 1. Can post, but requires review<br>2. Prohibit posting |
+| Limitation Rule | post_limit_rule | 1 | number | 1. Can post, but requires review<br>2. Prohibit publish |
 | Limitation Tip | post_limit_tip |  | string | **Multilingual** |
 | Special Rule Whitelist | post_limit_whitelist | ["1"] | array | User role ID |
 | <hr> |  |  |  |  |
@@ -69,7 +69,7 @@
 | Time Period Restriction - End Time | comment_limit_period_end |  | string |  |
 | Recurring Time Period Restriction - Start Time | comment_limit_cycle_start | 23:30 | string |  |
 | Recurring Time Period Restriction - End Time | comment_limit_cycle_end | 08:30 | string |  |
-| Restriction Rule | comment_limit_rule | 1 | number | 1. Can post, but requires review<br>2. Prohibit posting |
+| Restriction Rule | comment_limit_rule | 1 | number | 1. Can post, but requires review<br>2. Prohibit publish |
 | Restriction Tips | comment_limit_tip |  | string | **Multilingual** |
 | Special Rule Whitelist Roles | comment_limit_whitelist | ["1"] | array | User Role ID |
 | <hr> |  |  |  |  |

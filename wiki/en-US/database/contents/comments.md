@@ -27,7 +27,7 @@
 | comment_dislike_count | int *UNSIGNED* | Number of Dislikes for Sub-Comments | 0 | NO | Total number of dislikes for all comments in response to this comment |
 | comment_follow_count | int *UNSIGNED* | Number of Follows for Sub-Comments | 0 | NO | Total number of follows for all comments in response to this comment |
 | comment_block_count | int *UNSIGNED* | Number of Blocks for Sub-Comments | 0 | NO | Total number of blocks for all comments in response to this comment |
-| latest_edit_at | timestamp | Edit Time |  | YES | If editable after posting, record edit time here |
+| latest_edit_at | timestamp | Edit Time |  | YES | If editable after publish, record edit time here |
 | latest_comment_at | timestamp | Comment Time |  | YES | Time of the latest comment<br>When a user replies to this comment |
 | rank_state | tinyint *UNSIGNED* | Rank Status | 1 | NO | 1.Not set |
 | is_enable | tinyint *UNSIGNED* | Is Valid | 1 | NO | 0.Invalid (visible only to yourself) / 1.Valid |

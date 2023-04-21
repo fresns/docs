@@ -170,6 +170,7 @@
 | 36117 | The current role has reached the upper limit of today download, please download again tomorrow. |
 | 36118 | The current number of characters has reached the maximum number and cannot be added |
 | 36119 | Publish too fast, please post again at intervals. Please check the current role settings for details |
+| 36120 | The daily publish limit has been reached, please publish again tomorrow |
 | **Mark** |  |
 | 36200 | This feature is not open and cannot be operated |
 | 36201 | The content is not open and cannot be viewed |
@@ -181,7 +182,7 @@
 | 36303 | Please go through the real-name verification process before publishing content |
 | 36304 | The system has time limit for content publishing. Please try again within specified time |
 | 36305 | Post cannot be edited after publication |
-| 36306 | Comment can not be edited after posting |
+| 36306 | Comment can not be edited after publish |
 | 36307 | Editing not allowed for top contents |
 | 36308 | Editing not allowed for highlighted contents |
 | 36309 | Editable time expired |

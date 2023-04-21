@@ -12,7 +12,7 @@
 | object_name | varchar(128) | Record Target Name |  | NO | Function model name or interface path<br>For example, model name App\Models\Post<br>For example, interface path: /api/v2/account/login |
 | object_action | varchar(128) | Record Target Action |  | YES | Action description, custom input content |
 | object_result | tinyint *UNSIGNED* | Record Action Result |  | NO | 1. Unknown or in progress / 2. Success / 3. Failure |
-| object_order_id | bigint *UNSIGNED* | Record Target ID |  | YES | For example, in case of a posting action, it represents the ID of the posted content<br>For plugin actions, this ID can be used to query the associated information recorded on the plugin side |
+| object_order_id | bigint *UNSIGNED* | Record Target ID |  | YES | For example, in case of a publish action, it represents the ID of the posted content<br>For plugin actions, this ID can be used to query the associated information recorded on the plugin side |
 | device_info | json | Device Information |  | YES |  |
 | device_token | varchar(128) | Device Token |  | YES | For example, iOS Device Token or Android Device Token<br>Can be used for push notifications |
 | account_id | bigint *UNSIGNED* | Account ID |  | YES | Related field [accounts->id](../accounts/accounts.md) |
