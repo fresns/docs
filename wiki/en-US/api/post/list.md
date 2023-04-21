@@ -17,9 +17,9 @@
 
 | Parameter Name | Type | Required | Description |
 | --- | --- | --- | --- |
-| mapId | Number | *optional* | 地图服务商编号 |
-| mapLng | String | *optional* | 地图经度（用于计算距离） |
-| mapLat | String | *optional* | 地图纬度（用于计算距离） |
+| mapId | Number | *optional* | [Map Service Provider](../../database/dictionary/maps.md) |
+| mapLng | String | *optional* | Map Longitude (For distance calculation) |
+| mapLat | String | *optional* | Map Latitude (For distance calculation) |
 | uidOrUsername | String | *optional* | 指定范围：用户 |
 | hid | String | *optional* | 指定范围：话题 |
 | gid | String | *optional* | 指定范围：小组 |

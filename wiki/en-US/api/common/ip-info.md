@@ -39,7 +39,7 @@
         "networkMobile": false,
         "networkProxy": false,
         "networkHosting": false,
-        "mapId": 2, // 字典数据: 地图服务商编号
+        "mapId": 2, // Dictionary data: Map service provider number
         "latitude": 1.29758,
         "longitude": 103.773,
         "scale": null,

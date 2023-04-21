@@ -15,41 +15,41 @@
 
 ## 涉及“多语言”的数据表
 
-|  表名  |  字段名  |  控制面板路径  |
-|  ---  |  ---  |  ---  |
-|  roles  |  name  |  控制面板 > 运营配置 > 用户角色  |
-|  stickers  |  name  |  控制面板 > 运营配置 > 发表配置 > 表情配置  |
-|  groups  |  name  |  控制面板 > 运营配置 > 内容小组  |
-|  groups  |  description  |  控制面板 > 运营配置 > 内容小组  |
-|  plugin_usages  |  name  |  控制面板 > 扩展管理  |
-|  users_icons  |  name  |  *插件录入*  |
-|  hashtags  |  description  |  *插件录入*  |
-|  post_appends  |  allow_btn_name  |  *插件录入*  |
-|  post_appends  |  post_btn_name  |  *插件录入*  |
-|  extends  |  title  |  *插件录入*  |
-|  extends  |  desc_primary  |  *插件录入*  |
-|  extends  |  desc_secondary  |  *插件录入*  |
-|  extends  |  btn_name  |  *插件录入*  |
+| 表名 | 字段名 | 控制面板路径 |
+| --- | --- | --- |
+| roles | name | 后台 > 运营 > 用户角色 |
+| stickers | name | 后台 > 运营 > 表情配置 |
+| groups | name | 后台 > 运营 > 内容小组 |
+| groups | description | 后台 > 运营 > 内容小组 |
+| plugin_usages | name | 后台 > 扩展 |
+| users_icons | name | *插件录入* |
+| hashtags | description | *插件录入* |
+| post_appends | allow_btn_name | *插件录入* |
+| post_appends | post_btn_name | *插件录入* |
+| extends | title | *插件录入* |
+| extends | desc_primary | *插件录入* |
+| extends | desc_secondary | *插件录入* |
+| extends | btn_name | *插件录入* |
 
 ## 涉及“多语言”的配置参数
 
-|  键名  |  描述  |  控制面板路径  |
-|  ---  |  ---  |  ---  |
-|  account_terms  |  服务条款  |  控制面板 > 基础设置 > 政策条款  |
-|  account_privacy  |  隐私权政策  |  控制面板 > 基础设置 > 政策条款  |
-|  account_cookies  |  Cookies 政策  |  控制面板 > 基础设置 > 政策条款  |
-|  account_delete  |  注销说明  |  控制面板 > 基础设置 > 政策条款  |
-|  site_name  |  站点名称  |  控制面板 > 系统设置 > 站点设置  |
-|  site_desc  |  站点介绍  |  控制面板 > 系统设置 > 站点设置  |
-|  |  自定义名称  |  控制面板 > 运营配置 > 命名配置  |
-|  *_limit_tip  |  限制提示语  |  控制面板 > 运营配置 > 发表配置  |
-|  extcredits1_name  |  扩展 1 名称  |  *插件录入*  |
-|  extcredits1_unit  |  扩展 1 单位  |  *插件录入*  |
-|  extcredits2_name  |  扩展 2 名称  |  *插件录入*  |
-|  extcredits2_unit  |  扩展 2 单位  |  *插件录入*  |
-|  extcredits3_name  |  扩展 3 名称  |  *插件录入*  |
-|  extcredits3_unit  |  扩展 3 单位  |  *插件录入*  |
-|  extcredits4_name  |  扩展 4 名称  |  *插件录入*  |
-|  extcredits4_unit  |  扩展 4 单位  |  *插件录入*  |
-|  extcredits5_name  |  扩展 5 名称  |  *插件录入*  |
-|  extcredits5_unit  |  扩展 5 单位  |  *插件录入*  |
+| 键名 | 描述 | 控制面板路径 |
+| --- | --- | --- |
+| account_terms | 服务条款 | 后台 > 系统 > 政策条款 |
+| account_privacy | 隐私权政策 | 后台 > 系统 > 政策条款 |
+| account_cookies | Cookies 政策 | 后台 > 系统 > 政策条款 |
+| account_delete | 注销说明 | 后台 > 系统 > 政策条款 |
+| site_name | 站点名称 | 后台 > 系统 > 站点设置 |
+| site_desc | 站点介绍 | 后台 > 系统 > 站点设置 |
+| | 自定义名称 | 后台 > 运营 > 命名配置 |
+| *_limit_tip | 限制提示语 | 后台 > 运营 > 发表配置 |
+| extcredits1_name | 扩展 1 名称 | *插件录入* |
+| extcredits1_unit | 扩展 1 单位 | *插件录入* |
+| extcredits2_name | 扩展 2 名称 | *插件录入* |
+| extcredits2_unit | 扩展 2 单位 | *插件录入* |
+| extcredits3_name | 扩展 3 名称 | *插件录入* |
+| extcredits3_unit | 扩展 3 单位 | *插件录入* |
+| extcredits4_name | 扩展 4 名称 | *插件录入* |
+| extcredits4_unit | 扩展 4 单位 | *插件录入* |
+| extcredits5_name | 扩展 5 名称 | *插件录入* |
+| extcredits5_unit | 扩展 5 单位 | *插件录入* |

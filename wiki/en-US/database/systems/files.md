@@ -3,50 +3,50 @@
 | Column Name | Type | Comment | Default | Null | Remark |
 | --- | --- | --- | --- | --- | --- |
 | id | bigint *UNSIGNED* | Primary Key ID |  | NO | Auto Increment |
-| fid | varchar(32) | 对外公开 ID |  | NO | **Unique** |
-| type | tinyint *UNSIGNED* | 文件类型 | 1 | NO | 1.图片 / 2.视频 / 3.音频 / 4.文档 |
-| name | varchar(128) | 文件名称 |  | NO | 完整原始名称，上传时的文件名，包含后缀名 |
-| mime | varchar(255) | 文件扩展名 |  | YES | 比如：image/jpeg 或 video/mp4 |
-| extension | varchar(32) | 文件后缀名 |  | NO | 比如：jpg 或 jpeg |
-| size | int *UNSIGNED* | 文件大小 |  | NO | 单位 Byte |
-| md5 | varchar(128) | 文件 md5 |  | YES | 文件 md5 编码 |
-| sha | varchar(128) | 文件 sha |  | YES | 文件 sha 编码 |
-| sha_type | varchar(16) | 文件 sha 类型 |  | YES | 比如 SHA1 或 SHA-256 |
-| disk | varchar(32) | 文件磁盘 | remote | NO | `local` 或 `remote` |
-| path | varchar(255) | 文件路径 |  | NO | **相对路径** |
-| image_handle_position | varchar(16) | 图片处理位置 |  | YES | 适用于生成物理缩略图的场景<br>凭此配置管理物理文件 |
-| image_width | smallint *UNSIGNED* | 图片宽度 |  | YES | 图片文件专用：像素 px |
-| image_height | smallint *UNSIGNED* | 图片高度 |  | YES | 图片文件专用：像素 px |
-| image_is_long | tinyint *UNSIGNED* | 是否长图 | 0 | NO | 图片文件专用<br>0.否 / 1.是 |
-| audio_time | smallint *UNSIGNED* | 音频时长 |  | YES | 单位：秒，音频文件专用 |
-| video_time | smallint *UNSIGNED* | 视频时长 |  | YES | 单位：秒，视频文件专用 |
-| video_poster_path | varchar(255) | 视频封面图 |  | YES | 视频封面图路径 |
-| more_json | json | 备用字段 |  | YES | 比如某种客户端或编辑器，可以发表像小红书那样图片带标签的内容，这样这里存储的是标签信息 |
-| transcoding_state | tinyint *UNSIGNED* | 音视频附件转码状态 | 1 | YES | 转码状态：1.待转码 2.转码中 3.转码完成 4.转码失败 |
-| transcoding_reason | varchar(255) | 音视频附件转码失败原因 |  | YES | 转码失败原因 |
-| original_path | varchar(255) | 原始文件路径 |  | YES | **相对路径**<br>如果文件涉及转码，转码前的文件存储路径<br>没有则留空 |
-| is_sensitive | tinyint *UNSIGNED* | 是否敏感 | 0 | NO | 0.否 / 1.是 |
+| fid | varchar(32) | Publicly available ID |  | NO | **Unique** |
+| type | tinyint *UNSIGNED* | File Type | 1 | NO | 1.Image / 2.Video / 3.Audio / 4.Document |
+| name | varchar(128) | File Name |  | NO | Full original name, filename when uploading, including extension |
+| mime | varchar(255) | File Extension |  | YES | For example: image/jpeg or video/mp4 |
+| extension | varchar(32) | File Extension Name |  | NO | For example: jpg or jpeg |
+| size | int *UNSIGNED* | File Size |  | NO | Unit Byte |
+| md5 | varchar(128) | File md5 |  | YES | File md5 encoding |
+| sha | varchar(128) | File sha |  | YES | File sha encoding |
+| sha_type | varchar(16) | File sha Type |  | YES | For example, SHA1 or SHA-256 |
+| disk | varchar(32) | File Disk | remote | NO | `local` or `remote` |
+| path | varchar(255) | File Path |  | NO | **Relative path** |
+| image_handle_position | varchar(16) | Image Processing Position |  | YES | Applicable to scenarios where physical thumbnails are generated<br>Manage physical files based on this configuration |
+| image_width | smallint *UNSIGNED* | Image Width |  | YES | Image file specific: pixels px |
+| image_height | smallint *UNSIGNED* | Image Height |  | YES | Image file specific: pixels px |
+| image_is_long | tinyint *UNSIGNED* | Is Long Image | 0 | NO | Image file specific<br>0.No / 1.Yes |
+| audio_time | smallint *UNSIGNED* | Audio Duration |  | YES | Unit: seconds, audio file specific |
+| video_time | smallint *UNSIGNED* | Video Duration |  | YES | Unit: seconds, video file specific |
+| video_poster_path | varchar(255) | Video Cover Image |  | YES | Video cover image path |
+| more_json | json | Spare Field |  | YES | For example, some clients or editors can publish content with tagged images like Xiaohongshu, so the information stored here is tag information |
+| transcoding_state | tinyint *UNSIGNED* | Audio and Video Attachment Transcoding Status | 1 | YES | Transcoding status: 1.Pending 2.Transcoding 3.Transcoding Completed 4.Transcoding Failed |
+| transcoding_reason | varchar(255) | Audio and Video Attachment Transcoding Failure Reason |  | YES | Transcoding failure reason |
+| original_path | varchar(255) | Original File Path |  | YES | **Relative path**<br>If the file involves transcoding, the storage path of the file before transcoding<br>If not, leave empty |
+| is_sensitive | tinyint *UNSIGNED* | Is Sensitive | 0 | NO | 0.No / 1.Yes |
 | is_enable | tinyint *UNSIGNED* | Is Valid | 1 | NO | 0.Invalid / 1.Valid |
-| physical_deletion | tinyint *UNSIGNED* | 物理删除状态 | 0 | NO | 0.否 / 1.是（已物理删除文件） |
+| physical_deletion | tinyint *UNSIGNED* | Physical Deletion Status | 0 | NO | 0.No / 1.Yes (File physically deleted) |
 | created_at | timestamp | Create Time | CURRENT_TIMESTAMP | NO |  |
 | updated_at | timestamp | Update Time |  | YES |  |
 | deleted_at | timestamp | Delete Time |  | YES |  |
 
-## 文件类型
+## File Types
 
-| type | 文件类型 | 域名存储在哪个键名 | 后台设置界面 |
+| type | File Type | Domain stored in which key name | Backend Setting Interface |
 | --- | --- | --- | --- |
-| 1 | 图片 | image_bucket_domain | 后台 > 系统 > 存储设置 > 图片存储设置 |
-| 2 | 视频 | video_bucket_domain | 后台 > 系统 > 存储设置 > 视频存储设置 |
-| 3 | 音频 | audio_bucket_domain | 后台 > 系统 > 存储设置 > 音频存储设置 |
-| 4 | 文档 | document_bucket_domain | 后台 > 系统 > 存储设置 > 文档存储设置 |
+| 1 | Image | image_bucket_domain | Panel > Systems > Storage > Image |
+| 2 | Video | video_bucket_domain | Panel > Systems > Storage > Video |
+| 3 | Audio | audio_bucket_domain | Panel > Systems > Storage > Audio |
+| 4 | Document | document_bucket_domain | Panel > Systems > Storage > Document |
 
-## 长图说明
+## Long Image Description
 
-字段: `image_is_long`
+Field: `image_is_long`
 
-当图片宽度大于 700 时，计算高度等于或大于宽度的 3.5 倍时，则为长图。
+When the image width is greater than 700, if the height is equal to or greater than 3.5 times the width, it is considered a long image.
 
-例如：
+For example:
 - image_width = 700
 - image_height = 2100

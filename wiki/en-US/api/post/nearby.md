@@ -17,9 +17,9 @@
 
 | Parameter Name | Type | Required | Description |
 | --- | --- | --- | --- |
-| mapId | Number | **required** | 地图服务商编号 |
-| mapLng | String | **required** | 地图经度（用于查询附近帖子） |
-| mapLat | String | **required** | 地图纬度（用于查询附近帖子） |
+| mapId | Number | **required** | [Map Service Provider](../../database/dictionary/maps.md) |
+| mapLng | String | **required** | Map Longitude |
+| mapLat | String | **required** | Map Latitude |
 | unit | String | *optional* | 范围单位 km / mi |
 | length | Number | *optional* | 范围 |
 | contentType | String | *optional* | 指定类型：内容类型扩展配置的参数，为空或者为 All，则输出全部内容 |

@@ -17,7 +17,7 @@
 
 | 参数名 | 类型 | 是否必传 | 说明 |
 | --- | --- | --- | --- |
-| mapId | Number | YES | 地图服务商编号 |
+| mapId | Number | YES | [地图服务商编号](../../database/dictionary/maps.md) |
 | mapLng | String | YES | 地图经度（用于查询附近帖子） |
 | mapLat | String | YES | 地图纬度（用于查询附近帖子） |
 | unit | String | NO | 范围单位 km / mi |

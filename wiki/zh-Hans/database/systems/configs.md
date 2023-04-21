@@ -34,7 +34,7 @@
 ]
 ```
 
-插件需要判断 plugins->plugin_host 是否有值；**有值**则是插件表 plugin_host + access_path 字段内容拼接成完整 URL；**无值**则是拿配置表 system_url 键值 + 插件表 access_path 字段拼接成完整 URL。
+插件需要判断 `plugins->plugin_host` 是否有值；**有值**则是插件表 `plugin_host + access_path` 字段内容拼接成完整 URL；**无值**则是拿 .env 配置文件 APP_URL + 插件表 access_path 字段拼接成完整 URL。
 
 - number
 - string

@@ -3,29 +3,29 @@
 | Column Name | Type | Comment | Default | Null | Remark |
 | --- | --- | --- | --- | --- | --- |
 | id | int *UNSIGNED* | Primary Key ID | | NO | Auto Increment |
-| item_key | varchar(64) | 键名 | | NO | **Unique** |
-| item_value | longtext | 键值 | | YES |  |
-| item_type | varchar(16) | 键类型 | string | NO |  |
-| item_tag | varchar(32) | 键标签 |  | NO |  |
-| is_multilingual | tinyint *UNSIGNED* | 是否多语言 | 0 | NO | 0.否 / 1.是 |
-| is_custom | tinyint *UNSIGNED* | 是否为自定义 | 1 | NO | 0.否 / 1.是<br>0 表示为系统自带，1 表示为插件新增 |
-| is_api | tinyint *UNSIGNED* | 是否接口输出 | 0 | NO | 0.禁止 / 1.允许 |
+| item_key | varchar(64) | Key Name | | NO | **Unique** |
+| item_value | longtext | Key Value | | YES |  |
+| item_type | varchar(16) | Key Type | string | NO |  |
+| item_tag | varchar(32) | Key Tag |  | NO |  |
+| is_multilingual | tinyint *UNSIGNED* | Is Multilingual | 0 | NO | 0. No / 1. Yes |
+| is_custom | tinyint *UNSIGNED* | Is Custom | 1 | NO | 0. No / 1. Yes<br>0 means system-built, 1 means added by plugin |
+| is_api | tinyint *UNSIGNED* | Is API Output | 0 | NO | 0. Forbidden / 1. Allowed |
 | created_at | timestamp | Create Time | CURRENT_TIMESTAMP | NO |  |
 | updated_at | timestamp | Update Time |  | YES |  |
 | deleted_at | timestamp | Delete Time |  | YES |  |
 
-## 键类型 item_type
+## Key Type `item_type`
 
-以 **JSON** 数据类型为基础，延伸有 `file`、`plugin`、`plugins` 三个类型。
+Based on **JSON** data type, extended with three types: `file`, `plugin`, and `plugins`.
 
-`file` 类型，如果键值数字，则代表是文件 ID，凭 ID 输出文件 URL，除此之外表示为文件 URL，原样输出。
+`file` type: If the key value is a number, it represents the file ID, and the file URL is output with the ID. Otherwise, it represents the file URL and is output as is.
 
-`plugin` 类型代表是插件 unikey 值，凭 unikey 输出插件 URL。
+`plugin` type represents the plugin unikey value, and the plugin URL is output with the unikey.
 
-`plugins` 类型代表是多选插件，以 Array 格式存储，将 unikey 替换为 url 输出插件 URL。
+`plugins` type represents multiple selected plugins, stored in Array format, replacing the unikey with the URL to output the plugin URL.
 
 ```json
-// plugins 格式
+// plugins format
 [
     {
         "code": "code",
@@ -34,7 +34,7 @@
 ]
 ```
 
-插件需要判断 plugins->plugin_host 是否有值；**有值**则是插件表 plugin_host + access_path 字段内容拼接成完整 URL；**无值**则是拿配置表 system_url 键值 + 插件表 access_path 字段拼接成完整 URL。
+Plugins need to determine whether `plugins->plugin_host` has a value; **if it has a value**, the plugin table's `plugin_host + access_path` fields are concatenated into a complete URL; **if it has no value**, the `.env APP_URL + plugins->access_path` field are concatenated into a complete URL.
 
 - number
 - string
@@ -45,4 +45,4 @@
 - plugin
 - plugins
 
-**`file`、`plugin`、`plugins` 类型的键值，需输出对应的 URL**
+For `file`, `plugin`, and `plugins` types of key values, the corresponding URL needs to be output.

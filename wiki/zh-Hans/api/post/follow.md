@@ -24,7 +24,7 @@
 | 参数名 | 类型 | 是否必传 | 说明 |
 | --- | --- | --- | --- |
 | contentType | String | NO | 筛选过滤内容类型 |
-| mapId | Number | NO | 地图服务商编号 |
+| mapId | Number | NO | [地图服务商编号](../../database/dictionary/maps.md) |
 | mapLng | String | NO | 地图经度（用于计算距离） |
 | mapLat | String | NO | 地图纬度（用于计算距离） |
 | whitelistKeys | String | NO | 白名单键名，只返回给定键名的键值对<br>多个以英文逗号隔开，支持「点表示法」表示多维数组 |

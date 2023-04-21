@@ -17,7 +17,7 @@
 
 | 参数名 | 类型 | 是否必传 | 说明 |
 | --- | --- | --- | --- |
-| mapId | Number | NO | 地图服务商编号 |
+| mapId | Number | NO | [地图服务商编号](../../database/dictionary/maps.md) |
 | mapLng | String | NO | 地图经度（用于计算距离） |
 | mapLat | String | NO | 地图纬度（用于计算距离） |
 | uidOrUsername | String | NO | 指定范围：用户 |
