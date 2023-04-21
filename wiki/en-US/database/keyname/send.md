@@ -6,23 +6,23 @@
 
 | Menu Title | Key Name | Default Key Value | Value Type | Description |
 | --- | --- | --- | --- | --- |
-| 邮件服务商 | send_email_service |  | **plugin** | 插件应用场景参数 `sendEmail` |
-| 短信服务商 | send_sms_service |  | **plugin** | 插件应用场景参数 `sendSms` |
-| 短信默认国际区号 | send_sms_default_code | 86 | number | 不带 + 号 |
-| 短信国际区号列表 | send_sms_supported_codes | ["86"] | array | 不带 + 号 |
+| Email Service Provider | send_email_service |  | **plugin** | Plugin application scenario parameter `sendEmail` |
+| SMS Service Provider | send_sms_service |  | **plugin** | Plugin application scenario parameter `sendSms` |
+| Default SMS Country Code | send_sms_default_code | 86 | number | No + sign |
+| Supported SMS Country Codes | send_sms_supported_codes | ["86"] | array | No + sign |
 
 ## Verify Code Templates
 
-| 栏目标题 | 键名 | 发信编号 | 说明 |
+| Column Title | Key Name | Sending Number | Description |
 | --- | --- | --- | --- |
-| 通用验证码 | verifycode_template1 | 1 | 键值 JSON 格式见下方 |
-| 注册新账号 | verifycode_template2 | 2 | 键值 JSON 格式见下方 |
-| 修改资料验证 | verifycode_template3 | 3 | 键值 JSON 格式见下方 |
-| 更换新绑定 | verifycode_template4 | 4 | 键值 JSON 格式见下方 |
-| 重置登录密码 | verifycode_template5 | 5 | 键值 JSON 格式见下方 |
-| 重置支付密码 | verifycode_template6 | 6 | 键值 JSON 格式见下方 |
-| 使用验证码登录 | verifycode_template7 | 7 | 键值 JSON 格式见下方 |
-| 使用验证码注销账号 | verifycode_template8 | 8 | 键值 JSON 格式见下方 |
+| General Verification Code | verifycode_template1 | 1 | Key value JSON format, see below |
+| Register New Account | verifycode_template2 | 2 | Key value JSON format, see below |
+| Modify Information Verification | verifycode_template3 | 3 | Key value JSON format, see below |
+| Change New Binding | verifycode_template4 | 4 | Key value JSON format, see below |
+| Reset Login Password | verifycode_template5 | 5 | Key value JSON format, see below |
+| Reset Payment Password | verifycode_template6 | 6 | Key value JSON format, see below |
+| Use Verification Code to Login | verifycode_template7 | 7 | Key value JSON format, see below |
+| Use Verification Code to Logout Account | verifycode_template8 | 8 | Key value JSON format, see below |
 
 
 ```json
@@ -33,8 +33,8 @@
         "template":[
             {
                 "langTag": "zh-Hans",
-                "title": "标题（支持 HTML）",
-                "content": "内容（支持 HTML）"
+                "title": "Title (HTML supported)",
+                "content": "Content (HTML support)"
             }
         ]
     },
@@ -43,17 +43,17 @@
         "isEnable": false,
         "template":[
             {
-                "langTag": "zh-Hans",
-                "signName": "短信签名名称",
-                "templateCode": "模板 ID",
-                "codeParam": "验证码变量名"
+                "langTag": "en",
+                "signName": "Text Message Signature Name",
+                "templateCode": "Template ID",
+                "codeParam": "Verify code variable name"
             }
         ]
     }
 ]
 ```
 
-邮件可用变量（插件解析）：
-- {sitename} 站点名称
-- {code} 验证码
-- {time} 有效时间
+Mail available variables (plugin parsing):
+- `{sitename}` Website Name
+- `{code}` Verify Code
+- `{time}` Valid Time

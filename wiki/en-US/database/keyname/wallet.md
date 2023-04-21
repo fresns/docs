@@ -4,16 +4,16 @@
 
 | Menu Title | Key Name | Default Key Value | Value Type | Description |
 | --- | --- | --- | --- | --- |
-| 钱包功能 | wallet_status | false | boolean | true 或 false |
-| 钱包货币代码 | wallet_currency_code | USD | string | 货币代码 [currency_codes](../dictionary/currency-codes.md) |
-| 货币自定义命名 | wallet_currency_name |  | string | **多语言** |
-| 货币单位自定义命名 | wallet_currency_unit |  | string | **多语言** |
-| 货币精度 | wallet_currency_precision | 2 | number | 小数点位数 |
-| 提现功能 | wallet_withdraw_status | false | boolean | true 或 false |
-| 提现是否需要审核 | wallet_withdraw_review | false | boolean | true 或 false |
-| 提现是否验证实名信息 | wallet_withdraw_verify | false | boolean | true 或 false |
-| 提现间隔时间 | wallet_withdraw_interval_time | 10 | number | 单位: 分钟<br>0 或不填则不限制 |
-| 提现手续费率 | wallet_withdraw_rate | 5 | number | 百分比，6 代表 6% |
-| 单次提现最小金额 | wallet_withdraw_min_sum | 100 | number | 单位: 元 |
-| 单次提现最大金额 | wallet_withdraw_max_sum | 1000 | number | 单位: 元 |
-| 每日提现总金额上限 | wallet_withdraw_sum_limit | 30000 | number | 整站用户所有提现的每日上限总金额 |
+| Wallet Function | wallet_status | false | boolean | true or false |
+| Wallet Currency Code | wallet_currency_code | USD | string | Currency code [currency_codes](../dictionary/currency-codes.md) |
+| Custom Currency Name | wallet_currency_name |  | string | **Multilingual** |
+| Custom Currency Unit Name | wallet_currency_unit |  | string | **Multilingual** |
+| Currency Precision | wallet_currency_precision | 2 | number | Decimal places |
+| Withdraw Function | wallet_withdraw_status | false | boolean | true or false |
+| Withdrawal Review Required | wallet_withdraw_review | false | boolean | true or false |
+| Withdrawal Verify Identity | wallet_withdraw_verify | false | boolean | true or false |
+| Withdrawal Interval Time | wallet_withdraw_interval_time | 10 | number | Unit: minutes<br>0 or empty means no limit |
+| Withdrawal Fee Rate | wallet_withdraw_rate | 5 | number | Percentage, 6 means 6% |
+| Minimum Withdrawal Amount per Transaction | wallet_withdraw_min_sum | 100 | number | Unit: currency |
+| Maximum Withdrawal Amount per Transaction | wallet_withdraw_max_sum | 1000 | number | Unit: currency |
+| Daily Withdrawal Amount Limit | wallet_withdraw_sum_limit | 30000 | number | Daily total limit for all users' withdrawals across the platform |

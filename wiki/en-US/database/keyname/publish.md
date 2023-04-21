@@ -6,98 +6,98 @@
 
 | Menu Title | Key Name | Default Key Value | Value Type | Description |
 | --- | --- | --- | --- | --- |
-| 发表帖子要求-邮箱 | post_email_verify | false | boolean |  |
-| 发表帖子要求-手机号 | post_phone_verify | false | boolean |  |
-| 发表帖子要求-实名制 | post_real_name_verify | false | boolean |  |
+| Post Requirement - Email | post_email_verify | false | boolean |  |
+| Post Requirement - Phone | post_phone_verify | false | boolean |  |
+| Post Requirement - Real Name | post_real_name_verify | false | boolean |  |
 | <hr> |  |  |  |  |
-| 发表帖子特殊规则 | post_limit_status | false | boolean |  |
-| 规则类型 | post_limit_type | 1 | number | 1.时间段限制<br>2.循环时间段限制 |
-| 时间段限制-开始时间 | post_limit_period_start |  | string |  |
-| 时间段限制-结束时间 | post_limit_period_end |  | string |  |
-| 循环时间段限制-开始时间 | post_limit_cycle_start | 23:30 | string |  |
-| 循环时间段限制-结束时间 | post_limit_cycle_end | 08:30 | string |  |
-| 限制规则 | post_limit_rule | 1 | number | 1.可以发表，但需审核<br>2.禁止发表 |
-| 限制提示语 | post_limit_tip |  | string | **Multilingual** |
-| 特殊规则白名单 | post_limit_whitelist | ["1"] | array | 用户角色 ID |
+| Special Post Rule | post_limit_status | false | boolean |  |
+| Rule Type | post_limit_type | 1 | number | 1. Time period limit<br>2. Recurring time period limit |
+| Time Period Limit - Start Time | post_limit_period_start |  | string |  |
+| Time Period Limit - End Time | post_limit_period_end |  | string |  |
+| Recurring Time Period Limit - Start Time | post_limit_cycle_start | 23:30 | string |  |
+| Recurring Time Period Limit - End Time | post_limit_cycle_end | 08:30 | string |  |
+| Limitation Rule | post_limit_rule | 1 | number | 1. Can post, but requires review<br>2. Prohibit posting |
+| Limitation Tip | post_limit_tip |  | string | **Multilingual** |
+| Special Rule Whitelist | post_limit_whitelist | ["1"] | array | User role ID |
 | <hr> |  |  |  |  |
-| 帖子编辑权限 | post_edit | false | boolean |  |
-| 多长时间内可以编辑 | post_edit_time_limit | 5 | number |  |
-| 帖子置顶后编辑权限 | post_edit_sticky_limit | false | boolean |  |
-| 帖子加精后编辑权限 | post_edit_digest_limit | false | boolean |  |
+| Post Edit Permission | post_edit | false | boolean |  |
+| Time Limit for Editing Posts | post_edit_time_limit | 5 | number |  |
+| Sticky Post Edit Permission | post_edit_sticky_limit | false | boolean |  |
+| Digest Post Edit Permission | post_edit_digest_limit | false | boolean |  |
 | <hr> |  |  |  |  |
-| 帖子编辑器 | post_editor_service |  | **plugin** | 插件应用场景参数 `editor` |
+| Post Editor | post_editor_service |  | **plugin** | Plugin application scenario parameter `editor` |
 | <hr> |  |  |  |  |
-| 小组 | post_editor_group | true | boolean |  |
-| 标题 | post_editor_title | true | boolean |  |
-| 表情 | post_editor_sticker | true | boolean |  |
-| 图片 | post_editor_image | false | boolean |  |
-| 视频 | post_editor_video | false | boolean |  |
-| 音频 | post_editor_audio | false | boolean |  |
-| 文档 | post_editor_document | false | boolean |  |
-| 艾特 | post_editor_mention | true | boolean |  |
-| 话题 | post_editor_hashtag | true | boolean |  |
-| 扩展功能 | post_editor_extend | false | boolean |  |
-| 定位 | post_editor_location | false | boolean |  |
-| 匿名 | post_editor_anonymous | false | boolean |  |
+| Group | post_editor_group | true | boolean |  |
+| Title | post_editor_title | true | boolean |  |
+| Sticker | post_editor_sticker | true | boolean |  |
+| Image | post_editor_image | false | boolean |  |
+| Video | post_editor_video | false | boolean |  |
+| Audio | post_editor_audio | false | boolean |  |
+| Document | post_editor_document | false | boolean |  |
+| Mention | post_editor_mention | true | boolean |  |
+| Hashtag | post_editor_hashtag | true | boolean |  |
+| Extended Function | post_editor_extend | false | boolean |  |
+| Location | post_editor_location | false | boolean |  |
+| Anonymous | post_editor_anonymous | false | boolean |  |
 | <hr> |  |  |  |  |
-| 图片上传方式 | post_editor_image_upload_form | fresns | string | fresns 或者 plugin |
-| 图片上传个数 | post_editor_image_upload_number | 9 | number |  |
-| 视频上传方式 | post_editor_video_upload_form | fresns | string | fresns 或者 plugin |
-| 视频上传个数 | post_editor_video_upload_number | 1 | number |  |
-| 音频上传方式 | post_editor_audio_upload_form | fresns | string | fresns 或者 plugin |
-| 音频上传个数 | post_editor_audio_upload_number | 1 | number |  |
-| 文档上传方式 | post_editor_document_upload_form | fresns | string | fresns 或者 plugin |
-| 文档上传个数 | post_editor_document_upload_number | 10 | number |  |
-| 小组是否必选 | post_editor_group_required | false | boolean |  |
-| 标题输入框是否强显示 | post_editor_title_view | 1 | number | 1.默认显示<br>2.默认隐藏 |
-| 标题是否必填 | post_editor_title_required | false | boolean |  |
-| 标题字数限制 | post_editor_title_length | 60 | number |  |
-| 帖子字数限制 | post_editor_content_length | 10000 | number |  |
-| 帖子摘要字数 | post_editor_brief_length | 280 | number |  |
+| Image Upload Method | post_editor_image_upload_form | fresns | string | fresns or plugin |
+| Image Upload Quantity | post_editor_image_upload_number | 9 | number |  |
+| Video Upload Method | post_editor_video_upload_form | fresns | string | fresns or plugin |
+| Video Upload Quantity | post_editor_video_upload_number | 1 | number |  |
+| Audio Upload Method | post_editor_audio_upload_form | fresns | string | fresns or plugin |
+| Audio Upload Quantity | post_editor_audio_upload_number | 1 | number |  |
+| Document Upload Method | post_editor_document_upload_form | fresns | string | fresns or plugin |
+| Document Upload Quantity | post_editor_document_upload_number | 10 | number |  |
+| Is Group Required | post_editor_group_required | false | boolean |  |
+| Title Input Box Force Display | post_editor_title_view | 1 | number | 1. Default Display<br>2. Default Hidden |
+| Is Title Required | post_editor_title_required | false | boolean |  |
+| Title Word Limit | post_editor_title_length | 60 | number |  |
+| Post Word Limit | post_editor_content_length | 10000 | number |  |
+| Post Summary Word Limit | post_editor_brief_length | 280 | number |  |
 
 ## Comment
 
 | Menu Title | Key Name | Default Key Value | Value Type | Description |
 | --- | --- | --- | --- | --- |
-| 发表评论要求-邮箱 | comment_email_verify | false | boolean |  |
-| 发表评论要求-手机号 | comment_phone_verify | false | boolean |  |
-| 发表评论要求-实名制 | comment_real_name_verify | false | boolean |  |
+| Comment Submission Requirement - Email | comment_email_verify | false | boolean |  |
+| Comment Submission Requirement - Phone Number | comment_phone_verify | false | boolean |  |
+| Comment Submission Requirement - Real Name | comment_real_name_verify | false | boolean |  |
 | <hr> |  |  |  |  |
-| 发表评论特殊规则 | comment_limit_status | false | boolean |  |
-| 规则类型 | comment_limit_type | 1 | number | 1.时间段限制<br>2.循环时间段限制 |
-| 时间段限制-开始时间 | comment_limit_period_start |  | string |  |
-| 时间段限制-结束时间 | comment_limit_period_end |  | string |  |
-| 循环时间段限制-开始时间 | comment_limit_cycle_start | 23:30 | string |  |
-| 循环时间段限制-结束时间 | comment_limit_cycle_end | 08:30 | string |  |
-| 限制规则 | comment_limit_rule | 1 | number | 1.可以发表，但需审核<br>2.禁止发表 |
-| 限制提示语 | comment_limit_tip |  | string | **Multilingual** |
-| 特殊规则白名单角色 | comment_limit_whitelist | ["1"] | array | 用户角色 ID |
+| Special Rules for Comment Submission | comment_limit_status | false | boolean |  |
+| Rule Type | comment_limit_type | 1 | number | 1. Time Period Restriction<br>2. Recurring Time Period Restriction |
+| Time Period Restriction - Start Time | comment_limit_period_start |  | string |  |
+| Time Period Restriction - End Time | comment_limit_period_end |  | string |  |
+| Recurring Time Period Restriction - Start Time | comment_limit_cycle_start | 23:30 | string |  |
+| Recurring Time Period Restriction - End Time | comment_limit_cycle_end | 08:30 | string |  |
+| Restriction Rule | comment_limit_rule | 1 | number | 1. Can post, but requires review<br>2. Prohibit posting |
+| Restriction Tips | comment_limit_tip |  | string | **Multilingual** |
+| Special Rule Whitelist Roles | comment_limit_whitelist | ["1"] | array | User Role ID |
 | <hr> |  |  |  |  |
-| 评论编辑权限 | comment_edit | false | boolean |  |
-| 多长时间内可以编辑 | comment_edit_time_limit | 5 | number |  |
-| 评论置顶后编辑权限 | comment_edit_sticky_limit | false | boolean |  |
-| 评论加精后编辑权限 | comment_edit_digest_limit | false | boolean |  |
+| Comment Editing Permissions | comment_edit | false | boolean |  |
+| How Long Can Edit | comment_edit_time_limit | 5 | number |  |
+| Comment Top After Editing Permissions | comment_edit_sticky_limit | false | boolean |  |
+| Comment Essence After Editing Permissions | comment_edit_digest_limit | false | boolean |  |
 | <hr> |  |  |  |  |
-| 评论编辑器 | comment_editor_service |  | **plugin** | 插件应用场景参数 `editor` |
+| Comment Editor | comment_editor_service |  | **plugin** | Plugin Application Scene Parameter `editor` |
 | <hr> |  |  |  |  |
-| 表情 | comment_editor_sticker | true | boolean |  |
-| 图片 | comment_editor_image | false | boolean |  |
-| 视频 | comment_editor_video | false | boolean |  |
-| 音频 | comment_editor_audio | false | boolean |  |
-| 文档 | comment_editor_document | false | boolean |  |
-| 艾特 | comment_editor_mention | true | boolean |  |
-| 话题 | comment_editor_hashtag | true | boolean |  |
-| 扩展功能 | comment_editor_extend | false | boolean |  |
-| 定位 | comment_editor_location | false | boolean |  |
-| 匿名 | comment_editor_anonymous | false | boolean |  |
+| Emoji | comment_editor_sticker | true | boolean |  |
+| Image | comment_editor_image | false | boolean |  |
+| Video | comment_editor_video | false | boolean |  |
+| Audio | comment_editor_audio | false | boolean |  |
+| Document | comment_editor_document | false | boolean |  |
+| Mention | comment_editor_mention | true | boolean |  |
+| Hashtag | comment_editor_hashtag | true | boolean |  |
+| Extended Function | comment_editor_extend | false | boolean |  |
+| Location | comment_editor_location | false | boolean |  |
+| Anonymous | comment_editor_anonymous | false | boolean |  |
 | <hr> |  |  |  |  |
-| 图片上传方式 | comment_editor_image_upload_form | fresns | string | fresns 或者 plugin |
-| 图片上传个数 | comment_editor_image_upload_number | 9 | number |  |
-| 视频上传方式 | comment_editor_video_upload_form | fresns | string | fresns 或者 plugin |
-| 视频上传个数 | comment_editor_video_upload_number | 1 | number |  |
-| 音频上传方式 | comment_editor_audio_upload_form | fresns | string | fresns 或者 plugin |
-| 音频上传个数 | comment_editor_audio_upload_number | 1 | number |  |
-| 文档上传方式 | comment_editor_document_upload_form | fresns | string | fresns 或者 plugin |
-| 文档上传个数 | comment_editor_document_upload_number | 10 | number |  |
-| 评论字数限制 | comment_editor_content_length | 1000 | number |  |
-| 评论摘要字数 | comment_editor_brief_length | 280 | number |  |
+| Image Upload Method | comment_editor_image_upload_form | fresns | string | fresns or plugin |
+| Image Upload Number | comment_editor_image_upload_number | 9 | number |  |
+| Video Upload Method | comment_editor_video_upload_form | fresns | string | fresns or plugin |
+| Video Upload Number | comment_editor_video_upload_number | 1 | number |  |
+| Audio Upload Method | comment_editor_audio_upload_form | fresns | string | fresns or plugin |
+| Audio Upload Number | comment_editor_audio_upload_number | 1 | number |  |
+| Document Upload Method | comment_editor_document_upload_form | fresns | string | fresns or plugin |
+| Document Upload Number | comment_editor_document_upload_number | 10 | number |  |
+| Comment Word Limit | comment_editor_content_length | 1000 | number |  |
+| Comment Summary Word Limit | comment_editor_brief_length | 280 | number |  |
