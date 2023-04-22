@@ -41,13 +41,13 @@
         "items": {
             "walletRecharges": [
                 {
-                    // 钱包充值扩展
+                    // Wallet Recharge Extensions
                     // Common Data Structure -> Extend Function Info
                 }
             ],
             "walletWithdraws": [
                 {
-                    // 钱包充值扩展
+                    // Wallet Withdraw Extensions
                     // Common Data Structure -> Extend Function Info
                 }
             ],

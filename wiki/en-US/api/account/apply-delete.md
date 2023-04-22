@@ -17,14 +17,14 @@
 
 | Parameter Name | Type | Required | Description |
 | --- | --- | --- | --- |
-| password | String | *optional* | 登录密码（以 Base64 传参） |
-| verifyCode | String | *optional* | 验证码 |
-| codeType | String | *optional* | 验证码类型：`email`,`sms` |
+| password | String | *optional* | Login password (transferred in Base64) |
+| verifyCode | String | *optional* | Verification code |
+| codeType | String | *optional* | Verification code type: `email`, `sms` |
 
 **Request Description**
 
-- password 和 verifyCode 二选一传参。
-- verifyCode 传参时，codeType 参数必传。
+- Choose either `password` or `verifyCode` for transfer.
+- When transferring `verifyCode`, the `codeType` parameter must be transferred.
 
 ## Return
 
@@ -33,8 +33,8 @@
     "code": 0,
     "message": "ok",
     "data": {
-        "day": "Number / 注销缓冲期，多少天后正式执行删除流程",
-        "dateTime": "String / 具体日期时间",
+        "day": "Number / Cancellation buffer period, number of days before the deletion process is officially executed",
+        "dateTime": "String / Specific date and time",
     }
 }
 ```
