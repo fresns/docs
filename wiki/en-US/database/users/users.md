@@ -2,35 +2,35 @@
 
 | Column Name | Type | Comment | Default | Null | Remark |
 | --- | --- | --- | --- | --- | --- |
-| id | bigint *UNSIGNED* | 用户主键 ID |  | NO | Auto Increment |
-| account_id | bigint *UNSIGNED* | 账号主键 ID |  | NO | Related field [accounts->id](../accounts/accounts.md) |
-| uid | bigint *UNSIGNED* | 用户 ID |  | NO | **Unique**<br>初始化 8 位数随机生成，8 位数不够再 9 位数，以此类推。<br>随机生成时，不以 0 开头 |
-| username | varchar(64) | 用户名 |  | NO | **Unique**，只能是包含字母、数字和单个连字符 |
-| nickname | varchar(64) | 用户昵称 |  | NO | 不能带标点符号或特殊符号<br>允许有单个空格，但空格不能在开头或结尾 |
-| password | char(64) | 密码 |  | YES | 加密存储<br>为空代表无密码，切换用户无需验证<br>密码四位数起，只能是数字、英文字母，或者两种组合 |
-| avatar_file_id | bigint *UNSIGNED* | 头像图片 ID |  | YES | Related field [files->id](../systems/files.md) |
-| avatar_file_url | varchar(255) | 头像图片完整 URL |  | YES |  |
-| banner_file_id | bigint *UNSIGNED* | 背景条幅图 ID |  | YES | Related field [files->id](../systems/files.md) |
-| banner_file_url | varchar(255) | 背景条幅图 URL |  | YES |  |
-| gender | tinyint *UNSIGNED* | 性别 | 1 | NO | 1.未知 / 2.男 / 3.女 |
-| birthday | timestamp | 生日 |  | YES |  |
-| bio | text | 简介 |  | YES |  |
-| location | varchar(128) | 地点 |  | YES |  |
-| verified_status | tinyint *UNSIGNED* | 用户认证状态 | 0 | NO | 0.未认证 / 1.已认证 |
-| verified_desc | varchar(255) | 用户认证描述 |  | YES |  |
-| verified_at | timestamp | 用户认证时间 |  | YES |  |
-| conversation_limit | tinyint *UNSIGNED* | 对话设置 | 1 | NO | 1.允许所有用户<br>2.仅允许我关注的用户<br>3.我关注的用户和已认证的用户（verified_status）<br>4.不允许所有用户 |
-| comment_limit | tinyint *UNSIGNED* | 评论设置 | 1 | NO | 1.允许所有用户<br>2.仅允许我关注的用户<br>3.我关注的用户和已认证的用户（verified_status）<br>4.不允许所有用户 |
-| timezone | varchar(16) | 偏好时区 |  | YES |  |
-| expired_at | timestamp | 失效时间 |  | YES | 私有模式专用字段，为空代表永久有效 |
-| last_post_at | timestamp | 最后发表帖子时间 |  | YES |  |
-| last_comment_at | timestamp | 最后发表评论时间 |  | YES |  |
-| last_username_at | timestamp | 最后修改用户名时间 |  | YES |  |
-| last_nickname_at | timestamp | 最后修改用户昵称时间 |  | YES |  |
-| rank_state | tinyint *UNSIGNED* | 等级状态 | 1 | NO | 1.未设置 |
-| is_enable | tinyint *UNSIGNED* | 是否封号 | 1 | NO | 0.封号 / 1.正常 |
-| wait_delete | tinyint *UNSIGNED* | 是否待删除 | 0 | NO | 0.否 / 1.是 |
-| wait_delete_at | timestamp | 等待Delete Time |  | YES |  |
+| id | bigint *UNSIGNED* | User Primary Key ID |  | NO | Auto Increment |
+| account_id | bigint *UNSIGNED* | Account Primary Key ID |  | NO | Related field [accounts->id](../accounts/accounts.md) |
+| uid | bigint *UNSIGNED* | User ID |  | NO | **Unique**<br>Initialized with 8-digit random number, 9 digits if not enough, and so on.<br>Randomly generated without starting with 0 |
+| username | varchar(64) | Username |  | NO | **Unique**, can only contain letters, numbers, and single hyphens |
+| nickname | varchar(64) | Nickname |  | NO | Cannot contain punctuation or special symbols<br>Single space allowed but not at the beginning or end |
+| password | char(64) | Password |  | YES | Encrypted storage<br>Empty means no password, switching users without verification<br>Passwords can only be numbers, English letters, or combinations, starting from four digits |
+| avatar_file_id | bigint *UNSIGNED* | Avatar Image ID |  | YES | Related field [files->id](../systems/files.md) |
+| avatar_file_url | varchar(255) | Avatar Image Full URL |  | YES |  |
+| banner_file_id | bigint *UNSIGNED* | Background Banner Image ID |  | YES | Related field [files->id](../systems/files.md) |
+| banner_file_url | varchar(255) | Background Banner Image URL |  | YES |  |
+| gender | tinyint *UNSIGNED* | Gender | 1 | NO | 1.Unknown / 2.Male / 3.Female |
+| birthday | timestamp | Birthday |  | YES |  |
+| bio | text | Bio |  | YES |  |
+| location | varchar(128) | Location |  | YES |  |
+| verified_status | tinyint *UNSIGNED* | User Verification Status | 0 | NO | 0.Unverified / 1.Verified |
+| verified_desc | varchar(255) | User Verification Description |  | YES |  |
+| verified_at | timestamp | User Verification Time |  | YES |  |
+| conversation_limit | tinyint *UNSIGNED* | Conversation Settings | 1 | NO | 1.Allow all users<br>2.Only allow users I follow<br>3.Allow users I follow and verified users (verified_status)<br>4.Disallow all users |
+| comment_limit | tinyint *UNSIGNED* | Comment Settings | 1 | NO | 1.Allow all users<br>2.Only allow users I follow<br>3.Allow users I follow and verified users (verified_status)<br>4.Disallow all users |
+| timezone | varchar(16) | Preferred Timezone |  | YES |  |
+| expired_at | timestamp | Expiration Time |  | YES | Private mode dedicated field, empty means permanently valid |
+| last_post_at | timestamp | Last Post Published Time |  | YES |  |
+| last_comment_at | timestamp | Last Comment Published Time |  | YES |  |
+| last_username_at | timestamp | Last Username Modification Time |  | YES |  |
+| last_nickname_at | timestamp | Last Nickname Modification Time |  | YES |  |
+| rank_state | tinyint *UNSIGNED* | Rank State | 1 | NO | 1.Not set |
+| is_enable | tinyint *UNSIGNED* | Account Disabled | 1 | NO | 0.Disabled / 1.Normal |
+| wait_delete | tinyint *UNSIGNED* | Pending Deletion | 0 | NO | 0.No / 1.Yes |
+| wait_delete_at | timestamp | Pending Deletion Time |  | YES |  |
 | created_at | timestamp | Create Time | CURRENT_TIMESTAMP | NO |  |
 | updated_at | timestamp | Update Time |  | YES |  |
 | deleted_at | timestamp | Delete Time |  | YES |  |
