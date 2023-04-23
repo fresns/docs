@@ -41,6 +41,7 @@
     - `comment_dislikers` 配置，是否输出点踩 TA 的用户
     - `comment_followers` 配置，是否输出关注 TA 的用户
     - `comment_blockers` 配置，是否输出屏蔽 TA 的用户
+- `orderDirection` 排序方向以创建时间排序。
 
 ## 返回结果
 

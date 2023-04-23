@@ -32,7 +32,6 @@
 
 **接口使用说明**
 
-- 获取对 TA 操作标注的用户。
 - `type=like` 获得点赞了 `uidOrUsername` 的用户列表。
 - `type=dislike` 获得点踩了 `uidOrUsername` 的用户列表。
 - `type=follow` 获得关注了 `uidOrUsername` 的用户列表。

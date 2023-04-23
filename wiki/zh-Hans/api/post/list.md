@@ -33,6 +33,8 @@
 | createDateLt | String | NO | 发表时间小于 `Y-m-d` |
 | likeCountGt | Number | NO | 点赞数大于 |
 | likeCountLt | Number | NO | 点赞数小于 |
+| dislikeCountGt | Number | NO | 点踩数大于 |
+| dislikeCountLt | Number | NO | 点踩数小于 |
 | followCountGt | Number | NO | 关注数大于 |
 | followCountLt | Number | NO | 关注数小于 |
 | blockCountGt | Number | NO | 屏蔽数大于 |
@@ -41,8 +43,8 @@
 | commentCountLt | Number | NO | 评论总数小于 |
 | orderType | String | NO | 排序类型，默认 `createDate`<br>createDate,like,dislike,follow,block,comment |
 | orderDirection | String | NO | 排序方向，默认 `desc`<br>`asc`,`desc` |
-| blockGroups | String | NO | 过滤小组，多个以英文逗号隔开 |
-| blockHashtags | String | NO | 过滤话题，多个以英文逗号隔开 |
+| blockGroups | String | NO | 过滤小组，`gid` 多个以英文逗号隔开 |
+| blockHashtags | String | NO | 过滤话题，`hid` 多个以英文逗号隔开 |
 | whitelistKeys | String | NO | 白名单键名，只返回给定键名的键值对<br>多个以英文逗号隔开，支持「点表示法」表示多维数组 |
 | blacklistKeys | String | NO | 黑名单键名，从返回数据中删除指定的键值对<br>多个以英文逗号隔开，支持「点表示法」表示多维数组 |
 | pluginRatingId | Number | NO | 排序编号（插件专用） |

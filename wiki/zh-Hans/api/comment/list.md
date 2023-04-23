@@ -35,6 +35,8 @@
 | createDateLt | String | NO | 发表时间小于 `Y-m-d` |
 | likeCountGt | Number | NO | 点赞数大于 |
 | likeCountLt | Number | NO | 点赞数小于 |
+| dislikeCountGt | Number | NO | 点踩数大于 |
+| dislikeCountLt | Number | NO | 点踩数小于 |
 | followCountGt | Number | NO | 关注数大于 |
 | followCountLt | Number | NO | 关注数小于 |
 | blockCountGt | Number | NO | 屏蔽数大于 |

@@ -43,9 +43,9 @@
         },
         "list": [
             {
-                "downloadTime": "String / 下载时间",
-                "downloadTimeFormat": "String / 下载时间",
-                "downloadUser": {
+                "datetime": "String / 下载时间",
+                "timeAgo": "String / 人性化的下载时间",
+                "user": {
                     // 通用数据结构->用户信息
                 }
             }
