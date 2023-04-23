@@ -17,7 +17,7 @@
 
 | Parameter Name | Type | Required | Description |
 | --- | --- | --- | --- |
-| cid | String | **required** | 评论 CID |
+| cid | String | **required** | Comment CID |
 
 ## Return
 

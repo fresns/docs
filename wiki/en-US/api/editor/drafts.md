@@ -17,15 +17,15 @@
 
 | Parameter Name | Type | Required | Description |
 | --- | --- | --- | --- |
-| type | String | **required** | `post` 或 `comment` |
+| type | String | **required** | `post` or `comment` |
 
 ## Query Params
 
 | Parameter Name | Type | Required | Description |
 | --- | --- | --- | --- |
 | status | Number | *optional* | 1.可编辑草稿 / 2.审核中草稿<br>留空输出全部 |
-| pageSize | Number | *optional* | 每页显示条数（默认 15 条） |
-| page | Number | *optional* | 页码（默认 1） |
+| pageSize | Number | *optional* | Number of items per page (default 15 items) |
+| page | Number | *optional* | Page number (default 1) |
 
 ## Return
 
@@ -42,7 +42,7 @@
         },
         "list": [
             {
-                // Common Data Structure -> Post Log Info 或者 评论日志信息
+                // Common Data Structure -> Post Log Info or Comment Log Info
             }
         ]
     }

@@ -20,8 +20,8 @@
 | ids | String | *optional* | 角色 rid，多个以英文逗号隔开 |
 | type | Number | *optional* | `1` 管理人员类<br>`2` 系统设置类<br>`3` 用户运营类<br>留空输出全部 |
 | status | Boolean | *optional* | `0` 停用角色<br>`1` 启用角色<br>留空输出全部 |
-| pageSize | Number | *optional* | 每页显示条数（默认 15 条） |
-| page | Number | *optional* | 页码（默认 1） |
+| pageSize | Number | *optional* | Number of items per page (default 15 items) |
+| page | Number | *optional* | Page number (default 1) |
 
 ## Return
 

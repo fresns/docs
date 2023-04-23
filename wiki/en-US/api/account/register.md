@@ -17,13 +17,13 @@
 
 | Parameter Name | Type | Required | Description |
 | --- | --- | --- | --- |
-| type | String | **required** | 账号类型：`email`,`phone` |
-| account | String | **required** | 邮箱地址 / 手机号码 |
-| countryCode | Number | *optional* | 手机号专用：国际区号 |
-| verifyCode | String | **required** | 验证码 |
-| password | String | **required** | 登录密码（以 Base64 传参） |
-| nickname | String | **required** | 昵称 |
-| deviceToken | String | *optional* | iOS 或 Android 设备 Token |
+| type | String | **required** | Account type: `email`, `phone` |
+| account | String | **required** | Email address / Phone number |
+| countryCode | Number | *optional* | Phone number specific: International area code |
+| verifyCode | String | **required** | Verification code |
+| password | String | **required** | Login password (Base64 encoded) |
+| nickname | String | **required** | Nickname |
+| deviceToken | String | *optional* | iOS or Android device Token |
 
 ## Return
 
@@ -33,10 +33,10 @@
     "message": "ok",
     "data": {
         "sessionToken": {
-            "token": "String / 账号登录凭证",
-            "expiredHours": "Number / 有效期小时数，null 代表永久有效",
-            "expiredDays": "Number / 有效期天数，null 代表永久有效",
-            "expiredDateTime": "String / 凭证有效时间，null 代表永久有效，格式为 Y-m-d H:i:s"
+            "token": "String / Account login token",
+            "expiredHours": "Number / Expiration hours, null indicates permanent validity",
+            "expiredDays": "Number / Expiration days, null indicates permanent validity",
+            "expiredDateTime": "String / Token expiration time, null indicates permanent validity, format is Y-m-d H:i:s"
         },
         "items": {
             "walletRecharges": [

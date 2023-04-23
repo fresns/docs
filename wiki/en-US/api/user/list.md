@@ -49,12 +49,12 @@
 | extcredits4CountLt | Number | *optional* | extcredits4 小于 |
 | extcredits5CountGt | Number | *optional* | extcredits5 大于 |
 | extcredits5CountLt | Number | *optional* | extcredits5 小于 |
-| orderType | String | *optional* | 排序类型，默认 `createDate`<br>createDate,like,dislike,follow,block<br>post,comment,postDigest,commentDigest<br>extcredits1,extcredits2,extcredits3,extcredits4,extcredits5 |
-| orderDirection | String | *optional* | 排序方向，默认 `desc`<br>`asc`,`desc` |
-| whitelistKeys | String | *optional* | 白名单键名，只返回给定键名的键值对<br>多个以英文逗号隔开，支持「点表示法」表示多维数组 |
-| blacklistKeys | String | *optional* | 黑名单键名，从返回数据中删除指定的键值对<br>多个以英文逗号隔开，支持「点表示法」表示多维数组 |
-| pageSize | Number | *optional* | 每页显示条数（默认 15 条） |
-| page | Number | *optional* | 页码（默认 1） |
+| orderType | String | *optional* | Sort by type, default `createDate`<br>createDate,like,dislike,follow,block<br>post,comment,postDigest,commentDigest<br>extcredits1,extcredits2,extcredits3,extcredits4,extcredits5 |
+| orderDirection | String | *optional* | Sort by direction, default `desc`<br>`asc`,`desc` |
+| whitelistKeys | String | *optional* | Whitelist key names, only returns key-value pairs for the given key names<br>Multiple separated by English commas, supports "dot notation" for multi-dimensional arrays |
+| blacklistKeys | String | *optional* | Blacklist key names, removes specified key-value pairs from the returned data<br>Multiple separated by English commas, supports "dot notation" for multi-dimensional arrays |
+| pageSize | Number | *optional* | Number of items per page (default 15 items) |
+| page | Number | *optional* | Page number (default 1) |
 
 ## Return
 

@@ -23,8 +23,8 @@
 
 | Parameter Name | Type | Required | Description |
 | --- | --- | --- | --- |
-| whitelistKeys | String | *optional* | 白名单键名，只返回给定键名的键值对<br>多个以英文逗号隔开，支持「点表示法」表示多维数组 |
-| blacklistKeys | String | *optional* | 黑名单键名，从返回数据中删除指定的键值对<br>多个以英文逗号隔开，支持「点表示法」表示多维数组 |
+| whitelistKeys | String | *optional* | Whitelist key names, only returns key-value pairs for the given key names<br>Multiple separated by English commas, supports "dot notation" for multi-dimensional arrays |
+| blacklistKeys | String | *optional* | Blacklist key names, removes specified key-value pairs from the returned data<br>Multiple separated by English commas, supports "dot notation" for multi-dimensional arrays |
 
 ## Return
 
@@ -34,9 +34,9 @@
     "message": "ok",
     "data": {
         "items": {
-            "title": "String / SEO 标题",
-            "keywords": "String / SEO 关键词",
-            "description": "String / SEO 描述",
+            "title": "String / SEO Title",
+            "keywords": "String / SEO Keywords",
+            "description": "String / SEO Description",
             "manages": [
                 {
                     // 用户管理扩展

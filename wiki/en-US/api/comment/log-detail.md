@@ -17,8 +17,8 @@
 
 | Parameter Name | Type | Required | Description |
 | --- | --- | --- | --- |
-| cid | String | **required** | 评论 CID |
-| logId | Number | **required** | 评论日志 ID |
+| cid | String | **required** | Comment CID |
+| logId | Number | **required** | Comment Log ID |
 
 ## Return
 

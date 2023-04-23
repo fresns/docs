@@ -17,8 +17,8 @@
 
 | Parameter Name | Type | Required | Description |
 | --- | --- | --- | --- |
-| pageSize | Number | *optional* | 每页显示条数（默认 30 条） |
-| page | Number | *optional* | 页码（默认 1） |
+| pageSize | Number | *optional* | Number of items per page (default 30 items) |
+| page | Number | *optional* | Page number (default 1) |
 
 ## Return
 

@@ -17,8 +17,8 @@
 
 | Parameter Name | Type | Required | Description |
 | --- | --- | --- | --- |
-| type | String | **required** | 验证码类型：`email`,`sms` |
-| verifyCode | String | **required** | 验证码 |
+| type | String | **required** | Verify code type: `email`,`sms` |
+| verifyCode | String | **required** | Verify code |
 
 **Request Description**
 

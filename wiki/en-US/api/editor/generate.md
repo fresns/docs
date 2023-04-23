@@ -17,8 +17,8 @@
 
 | Parameter Name | Type | Required | Description |
 | --- | --- | --- | --- |
-| type | String | **required** | `post` 或 `comment` |
-| fsid | String | **required** | `pid` 或 `cid` |
+| type | String | **required** | `post` or `comment` |
+| fsid | String | **required** | `pid` or `cid` |
 
 ## Return
 
@@ -28,7 +28,7 @@
     "message": "ok",
     "data": {
         "detail": {
-            // Common Data Structure -> Post Log Info 或者 评论日志信息
+            // Common Data Structure -> Post Log Info or Comment Log Info
         },
         "edit": {
             "isEdit": "Boolean / 是否为编辑草稿",

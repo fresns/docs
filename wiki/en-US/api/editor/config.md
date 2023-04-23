@@ -17,7 +17,7 @@
 
 | Parameter Name | Type | Required | Description |
 | --- | --- | --- | --- |
-| type | String | **required** | `post` 或 `comment` |
+| type | String | **required** | `post` or `comment` |
 
 ## Return
 

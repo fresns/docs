@@ -17,7 +17,7 @@
 
 | Parameter Name | Type | Required | Description |
 | --- | --- | --- | --- |
-| type | String | **required** | `conversation` 或 `message` |
+| type | String | **required** | `conversation` or `message` |
 | conversationId | Number | *optional* |  |
 | messageIds | String | *optional* | 多个以英文逗号隔开 |
 

@@ -39,15 +39,15 @@
 | blockCountLt | Number | *optional* | 屏蔽数小于 |
 | commentCountGt | Number | *optional* | 评论总数大于 |
 | commentCountLt | Number | *optional* | 评论总数小于 |
-| orderType | String | *optional* | 排序类型，默认 `createDate`<br>createDate,like,dislike,follow,block,comment |
-| orderDirection | String | *optional* | 排序方向，默认 `desc`<br>`asc`,`desc` |
+| orderType | String | *optional* | Sort by type, default `createDate`<br>createDate,like,dislike,follow,block,comment |
+| orderDirection | String | *optional* | Sort by direction, default `desc`<br>`asc`,`desc` |
 | blockGroups | String | *optional* | 过滤小组，多个以英文逗号隔开 |
 | blockHashtags | String | *optional* | 过滤话题，多个以英文逗号隔开 |
-| whitelistKeys | String | *optional* | 白名单键名，只返回给定键名的键值对<br>多个以英文逗号隔开，支持「点表示法」表示多维数组 |
-| blacklistKeys | String | *optional* | 黑名单键名，从返回数据中删除指定的键值对<br>多个以英文逗号隔开，支持「点表示法」表示多维数组 |
-| pluginRatingId | Number | *optional* | 排序编号（插件专用） |
-| pageSize | Number | *optional* | 每页显示条数（默认 15 条） |
-| page | Number | *optional* | 页码（默认 1） |
+| whitelistKeys | String | *optional* | Whitelist key names, only returns key-value pairs for the given key names<br>Multiple separated by English commas, supports "dot notation" for multi-dimensional arrays |
+| blacklistKeys | String | *optional* | Blacklist key names, removes specified key-value pairs from the returned data<br>Multiple separated by English commas, supports "dot notation" for multi-dimensional arrays |
+| pluginRatingId | Number | *optional* | Sort number (plug-in specific) |
+| pageSize | Number | *optional* | Number of items per page (default 15 items) |
+| page | Number | *optional* | Page number (default 1) |
 
 **Request Description**
 

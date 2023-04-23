@@ -17,7 +17,7 @@
 
 | Parameter Name | Type | Required | Description |
 | --- | --- | --- | --- |
-| type | String | **required** | `post` 或 `comment` |
+| type | String | **required** | `post` or `comment` |
 
 ## Body Params
 
@@ -52,7 +52,7 @@
     "message": "ok",
     "data": {
         "detail": {
-            // Common Data Structure -> Post Log Info 或者 评论日志信息
+            // Common Data Structure -> Post Log Info or Comment Log Info
         },
         "edit": {
             "isEdit": "Boolean / 是否为编辑草稿",

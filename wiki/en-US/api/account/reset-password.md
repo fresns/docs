@@ -17,11 +17,11 @@
 
 | Parameter Name | Type | Required | Description |
 | --- | --- | --- | --- |
-| type | String | **required** | 账号类型：`email`,`phone` |
-| account | String | **required** | 邮箱地址或者手机号码 |
-| countryCode | Number | *optional* | 手机号码专用，专用时必填，国际区号 |
-| verifyCode | String | **required** | 验证码（命令字 `checkCode` 查验） |
-| newPassword | String | **required** | 新密码（以 Base64 传参） |
+| type | String | **required** | Account type: `email`, `phone` |
+| account | String | **required** | Email address or phone number |
+| countryCode | Number | *optional* | Phone number specific, required when used, international area code |
+| verifyCode | String | **required** | Verification code (checked with `checkCode` command) |
+| newPassword | String | **required** | New password (Base64 encoded) |
 
 ## Return
 
