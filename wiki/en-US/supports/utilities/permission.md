@@ -170,6 +170,6 @@ PermissionUtility::checkExtendPerm($unikey, $scene, $groupId, $userId);
 | 参数名 | 类型 | 是否必传 | 说明 |
 | --- | --- | --- | --- |
 | unikey | String | YES | 插件 UniKey |
-| scene | String | YES | [{scene} 入口场景](../../extensions/callback/variables.md#scene-入口场景) |
+| scene | String | YES | [{scene} 入口场景](../../extensions/callback/variables.md#scene-entrance-scene) |
 | groupId | Number | NO | 小组 id `groups->id` |
 | userId | Number | NO | 用户 id `users->id` |

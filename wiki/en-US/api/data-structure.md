@@ -1072,7 +1072,7 @@ To reduce documentation effort and ensure consistency of public data, the same s
 }
 ```
 
-- Reference: [operations](../database/extends/operations.md#code-用途编码)
+- Reference: [operations](../database/extends/operations.md#use-code)
 
 ## Extend Content Info
 

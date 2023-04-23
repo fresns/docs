@@ -24,34 +24,33 @@
 
 | Parameter Name | Type | Required | **Post** Description | **Comment** Description |
 | --- | --- | --- | --- | --- |
-| editorUnikey | String | *optional* | 是否为编辑器插件<br>传参 `Fresns` 则重置为默认编辑器 |  |
-| postQuotePid | String | *optional* | 引用的帖子 PID<br>非必填 | *帖子专用* |
-| postGid | String | *optional* | 小组 | *帖子专用* |
-| postTitle | String | *optional* | 标题 | *帖子专用* |
-| postIsComment | Boolean | *optional* | 是否可以评论帖子 | *帖子专用* |
-| postIsCommentPublic | Boolean | *optional* | 是否公开评论<br>不公开则仅帖子作者可见 | *帖子专用* |
-| content | String | *optional* | 正文内容 |  |
-| isMarkdown | Boolean | *optional* | 内容是否为 MD 格式 |  |
-| isAnonymous | Boolean | *optional* | 是否匿名 |  |
-| map | Object | *optional* | 位置信息 |  |
-| extends | Array | *optional* | 扩展内容 |  |
-| archives | Array | *optional* | 扩展参数 |
-| deleteMap | Boolean | *optional* | 删除位置信息 |  |
-| deleteFile | String | *optional* | 删除文件，传参 `fid` |  |
-| deleteExtend | String | *optional* | 删除扩展内容，传参 `eid` |  |
-| deleteArchive | String | *optional* | 删除扩展参数，传参 `code` |  |
+| editorUnikey | String | *optional* | Is it an editor plugin<br>Passing `Fresns` will reset to the default editor |  |
+| postQuotePid | String | *optional* | Quoted post PID<br>Not required | *Post-specific* |
+| postGid | String | *optional* | Group | *Post-specific* |
+| postTitle | String | *optional* | Title | *Post-specific* |
+| postIsComment | Boolean | *optional* | Whether the post can be commented | *Post-specific* |
+| postIsCommentPublic | Boolean | *optional* | Whether comments are public<br>If not public, only the post author can view | *Post-specific* |
+| content | String | *optional* | Main content |  |
+| isMarkdown | Boolean | *optional* | Is content in MD format |  |
+| isAnonymous | Boolean | *optional* | Is it anonymous |  |
+| map | Object | *optional* | Location information |  |
+| extends | Array | *optional* | Extended content |  |
+| archives | Array | *optional* | Extended parameters |
+| deleteMap | Boolean | *optional* | Delete location information |  |
+| deleteFile | String | *optional* | Delete file, pass `fid` as parameter |  |
+| deleteExtend | String | *optional* | Delete extended content, pass `eid` as parameter |  |
+| deleteArchive | String | *optional* | Delete extended parameters, pass `code` as parameter |  |
 
 **Request Description**
 
-- 参数留空表示不更新。
-- 文件功能，使用[文件上传接口](../common/upload-file.md) 上传文件，参数示例：
-    - `tableName` = 帖子 `post_logs` 评论 `comment_logs`
+- For file functionality, use the [File Upload Interface](../common/upload-file.md) to upload files, with the following parameter examples:
+    - `tableName` = Post `post_logs` Comment `comment_logs`
     - `tableColumn` = `id`
-    - `tableId` = 当前草稿 ID `{draftId}`
-- 位置信息 `map` 参数示例：
-    - 位置信息 `mapId`,`latitude`,`longitude`,`poi` 这四个信息必传，其余可选
-    - `mapId` 来自数据字典，[地图服务商编号](../../database/dictionary/maps.md)
-    - 位置信息删除（清空）需使用 `deleteMap` 参数。
+    - `tableId` = Current draft ID `{draftId}`
+- Location information `map` parameter example:
+    - Location information `mapId`, `latitude`, `longitude`, `poi` are required, others are optional
+    - `mapId` is from the data dictionary, [Map Service Provider Number](../../database/dictionary/maps.md)
+    - To delete (clear) location information, use the `deleteMap` parameter.
 
 **Example Parameters**
 
@@ -82,8 +81,8 @@
 [
     {
         "eid": "eid",
-        "canDelete": true, // 用户是否可以直接删除
-        "rating": 9, // 排序
+        "canDelete": true, // Can user delete
+        "rating": 9, // Sort by
         "pluginUnikey": null
     }
 ]
@@ -94,7 +93,7 @@
     {
         "code": "code",
         "value": "value",
-        "isPrivate": false, // 是否私有（是否对外公开展示）
+        "isPrivate": false, // Private or not (public display or not)
         "pluginUnikey": null
     }
 ]

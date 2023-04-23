@@ -43,7 +43,6 @@
 
 **接口使用说明**
 
-- 参数留空表示不更新。
 - 文件功能，使用[文件上传接口](../common/upload-file.md) 上传文件，参数示例：
     - `tableName` = 帖子 `post_logs` 评论 `comment_logs`
     - `tableColumn` = `id`

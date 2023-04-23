@@ -29,8 +29,8 @@
 | stickyState | Number | *optional* | Specify scope: Sticky (leave empty to output all)<br>sticky_state field `1` No `2` group sticky `3` global sticky |
 | contentType | String | *optional* | Filter content by type |
 | createDate | String | *optional* | Publish date: `today`,`yesterday`,`week`,`lastWeek`,`month`,`lastMonth`,`year`,`lastYear` |
-| createDateGt | String | *optional* | Publish time greater than `Y-m-d` |
-| createDateLt | String | *optional* | Publish time less than `Y-m-d` |
+| createDateGt | String | *optional* | Publish date greater than `Y-m-d` |
+| createDateLt | String | *optional* | Publish date less than `Y-m-d` |
 | likeCountGt | Number | *optional* | Likes count greater than |
 | likeCountLt | Number | *optional* | Likes count less than |
 | dislikeCountGt | Number | *optional* | Dislikes count greater than |

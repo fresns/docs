@@ -31,8 +31,8 @@
 | digestState | Number | *optional* | Specify scope: Digest (leave empty to output all)<br>digest_state field `1` No `2` general digest `3` advanced digest |
 | contentType | String | *optional* | Filter content by type |
 | createDate | String | *optional* | Publish date: `today`,`yesterday`,`week`,`lastWeek`,`month`,`lastMonth`,`year`,`lastYear` |
-| createDateGt | String | *optional* | Publish time greater than `Y-m-d` |
-| createDateLt | String | *optional* | Publish time less than `Y-m-d` |
+| createDateGt | String | *optional* | Publish date greater than `Y-m-d` |
+| createDateLt | String | *optional* | Publish date less than `Y-m-d` |
 | likeCountGt | Number | *optional* | Likes count greater than |
 | likeCountLt | Number | *optional* | Likes count less than |
 | dislikeCountGt | Number | *optional* | Dislikes count greater than |

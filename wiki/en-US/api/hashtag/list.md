@@ -17,9 +17,9 @@
 
 | Parameter Name | Type | Required | Description |
 | --- | --- | --- | --- |
-| createDate | String | *optional* | 创建日期：`today`,`yesterday`,`week`,`lastWeek`,`month`,`lastMonth`,`year`,`lastYear` |
-| createDateGt | String | *optional* | 创建时间大于 `Y-m-d` |
-| createDateLt | String | *optional* | 创建时间小于 `Y-m-d` |
+| createDate | String | *optional* | Date created: `today`,`yesterday`,`week`,`lastWeek`,`month`,`lastMonth`,`year`,`lastYear` |
+| createDateGt | String | *optional* | Create date greater than `Y-m-d` |
+| createDateLt | String | *optional* | Create date less than `Y-m-d` |
 | likeCountGt | Number | *optional* | Likes count greater than |
 | likeCountLt | Number | *optional* | Likes count less than |
 | dislikeCountGt | Number | *optional* | Dislikes count greater than |

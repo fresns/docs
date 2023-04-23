@@ -19,10 +19,10 @@
 | --- | --- | --- | --- |
 | roles | String | *optional* | 指定主角色 ID，多个以英文逗号隔开 |
 | verified | Boolean | *optional* | 认证状态 |
-| gender | Number | *optional* | 性别 gender 字段<br>`1` 未设置 / `2` 男 / `3` 女 |
-| createDate | String | *optional* | 注册日期：`today`,`yesterday`,`week`,`lastWeek`,`month`,`lastMonth`,`year`,`lastYear` |
-| createDateGt | String | *optional* | 注册时间大于 `Y-m-d` |
-| createDateLt | String | *optional* | 注册时间小于 `Y-m-d` |
+| gender | Number | *optional* | `gender` field<br>`1` 未设置 / `2` 男 / `3` 女 |
+| createDate | String | *optional* | Date register: `today`,`yesterday`,`week`,`lastWeek`,`month`,`lastMonth`,`year`,`lastYear` |
+| createDateGt | String | *optional* | Register date greater than `Y-m-d` |
+| createDateLt | String | *optional* | Register date less than `Y-m-d` |
 | likeCountGt | Number | *optional* | Likes count greater than |
 | likeCountLt | Number | *optional* | Likes count less than |
 | dislikeCountGt | Number | *optional* | Dislikes count greater than |

@@ -17,7 +17,7 @@
 
 | Parameter Name | Type | Required | Description |
 | --- | --- | --- | --- |
-| type | Number | **required** | [Log Type](../../database/systems/session-logs.md#日志类型-type) |
+| type | Number | **required** | [Log Type](../../database/systems/session-logs.md#log-type) |
 | pluginUnikey | String | *optional* | Plugin name |
 | objectName | String | **required** | Function model name or interface path<br>For example, model name: App\Models\Post<br>For example, interface path: /api/v2/account/login |
 | objectAction | String | **required** | Action description, custom input content |

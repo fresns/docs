@@ -37,7 +37,7 @@ FileHelper::fresnsFileStoragePath($fileType, $usageType);
 | Parameter Name | Type | Required | Description |
 | --- | --- | --- | --- |
 | fileType | Number | **required** | 1.图片 / 2.视频 / 3.音频 / 4.文档 |
-| usageType | Number | **required** | [见编号说明](../../database/number.md#文件用途类型) |
+| usageType | Number | **required** | [见编号说明](../../database/number.md#type-of-file-usage) |
 
 ## 获取文件支持的格式
 
@@ -61,7 +61,7 @@ FileHelper::fresnsFileInfoById($fileIdOrFid);
 | fileIdOrFid | String | **required** | `files->id` 或者 `files->fid` |
 
 - 输出结果会判断防盗链配置，如果开启则输出防盗链文件信息。
-- [查看文件信息格式](../../extensions/plugin/storage.md#文件信息结构)
+- [查看文件信息格式](../../extensions/plugin/storage.md#file-information-structure)
 
 ## 根据文件 ID 或 FID 获取多个信息
 

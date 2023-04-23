@@ -23,26 +23,26 @@
 
 | Parameter Name | Type | Required | **Post** Description | **Comment** Description |
 | --- | --- | --- | --- | --- |
-| postQuotePid | String | *optional* | 引用的帖子 PID<br>非必填 | *帖子专用* |
-| postGid | String | *optional* | 小组<br>[post_editor_group_required](../../database/keyname/publish.md)<br>如果配置必填，则此处传参也必填 | *帖子专用* |
-| postTitle | String | *optional* | 标题<br>[post_editor_title_required](../../database/keyname/publish.md)<br>如果配置必填，则此处传参也必填 | *帖子专用* |
-| postIsComment | Boolean | *optional* | 是否可以评论帖子 | *帖子专用* |
-| postIsCommentPublic | Boolean | *optional* | 是否公开评论<br>不公开则仅帖子作者可见 | *帖子专用* |
-| commentPid | String | *optional* | *评论专用* | 评论哪个帖子，必传 |
-| commentCid | String | *optional* | *评论专用* | 留空表示评论帖子<br>有值表示回复这条评论 |
-| content | String | *optional* | 正文内容 |  |
-| isMarkdown | Boolean | *optional* | 内容是否为 MD 格式 |  |
-| isAnonymous | Boolean | *optional* | 是否匿名 |  |
-| map | String | *optional* | 位置信息: 压缩 Object 信息为字符串传参 |  |
-| extends | String | *optional* | 扩展内容: 压缩 Array 信息为字符串传参 |  |
-| archives | String | *optional* | 扩展参数: 压缩 Array 信息为字符串传参 |  |
-| image | File | *optional* | 图片文件 | 图片文件 |
+| postQuotePid | String | *optional* | Quoted post PID<br>Not required | *Post-specific* |
+| postGid | String | *optional* | Group<br>[post_editor_group_required](../../database/keyname/publish.md)<br>If required by configuration, this parameter must also be provided | *Post-specific* |
+| postTitle | String | *optional* | Title<br>[post_editor_title_required](../../database/keyname/publish.md)<br>If required by configuration, this parameter must also be provided | *Post-specific* |
+| postIsComment | Boolean | *optional* | Whether the post can be commented | *Post-specific* |
+| postIsCommentPublic | Boolean | *optional* | Whether comments are public<br>If not public, only the post author can view | *Post-specific* |
+| commentPid | String | *optional* | *Comment-specific* | Comment on which post, required |
+| commentCid | String | *optional* | *Comment-specific* | Empty means comment on post<br>Value means reply to this comment |
+| content | String | *optional* | Main content |  |
+| isMarkdown | Boolean | *optional* | Is content in MD format |  |
+| isAnonymous | Boolean | *optional* | Is it anonymous |  |
+| map | String | *optional* | Location information: compress Object information into a string parameter |  |
+| extends | String | *optional* | Extended content: compress Array information into a string parameter |  |
+| archives | String | *optional* | Extended parameters: compress Array information into a string parameter |  |
+| image | File | *optional* | Image file | Image file |
 
 **Request Description**
 
-- 跳过草稿逻辑，直接发表内容。发表内容不存草稿（日志）。
-- 支持接口直传单个图片文件。
-- `map`, `extends`, `archives` 参见[更新草稿接口](update.md)
+- Skip the draft logic and publish content directly. Published content does not save drafts (logs).
+- Support direct upload of a single image file through the interface.
+- `map`, `extends`, `archives` Reference [update draft API](update.md)
 
 ## Return
 
@@ -51,9 +51,9 @@
     "code": 0,
     "message": "ok",
     "data": {
-        "type": "String / post 或 comment",
-        "draftId": "Number / 草稿 ID", // 不是草稿则为 null
-        "fsid": "String / 正式内容的 pid 或 cid" // 不是正式内容则为 null
+        "type": "String / post or comment",
+        "draftId": "Number / Draft ID", // If not a draft, then null
+        "fsid": "String / Official content's pid or cid" // If not official content, then null
     }
 }
 ```
