@@ -3,12 +3,9 @@
 <p align="center"><img src="https://files.fresns.org/wiki/images/logo.png" width="300"></p>
 
 <p align="center">
-<img src="https://img.shields.io/badge/PHP-%5E8.1-blueviolet" alt="PHP" style="display:inline;">
-<img src="https://img.shields.io/badge/MySQL-%5E5.7-orange" alt="MySQL" style="display:inline;margin-left:8px;">
-<img src="https://img.shields.io/badge/PostgreSQL-%5E11.0-blue" alt="PostgreSQL" style="display:inline;margin:0 8px;">
-<img src="https://img.shields.io/badge/SQL%20Server-%5E13.0-red" alt="SQL Server" style="display:inline;margin-right:8px;">
-<img src="https://img.shields.io/badge/SQLite-%5E3.9-9cf" alt="SQLite" style="display:inline;margin-right:8px;">
-<img src="https://img.shields.io/badge/License-Apache--2.0-green" alt="License" style="display:inline;">
+<img src="https://img.shields.io/packagist/dependency-v/fresns/fresns/php" alt="PHP" style="display:inline;">
+<img src="https://img.shields.io/github/v/release/fresns/fresns?color=orange" alt="Fresns" style="display:inline;margin:0 8px;">
+<img src="https://img.shields.io/github/license/fresns/fresns" alt="License" style="display:inline;">
 </p>
 
 Fresns is a free and open source social network service software, a general-purpose community product designed for cross-platform, and supports flexible and diverse content forms. It conforms to the trend of the times, satisfies a variety of operating scenarios, is more open and easier to re-development.
@@ -34,6 +31,16 @@ Fresns is a free and open source social network service software, a general-purp
 | Engine | Website features developed based on the main program API, with separate integrated and standalone engines<br>**Integration Engine**: Website engine running as a plugin in the main application<br>**Independent Engine**: Websites that are deployed and run independently of the main program, similar to mobile applications (apps) |
 | Theme | Appearance style (UE & UI interface) based on website engine development |
 | App | Mobile apps that run independently on iOS and Android, etc. |
+
+## Preview
+
+| Social Network | Forum |
+| :---: | :---: |
+| ![Moments](https://files.fresns.org/wiki/previews/Moments.png) | ![ForumX](https://files.fresns.org/wiki/previews/ForumX.png) |
+| ![ForumQ](https://files.fresns.org/wiki/previews/ForumQ.png) | ![ThemeFrame](https://files.fresns.org/wiki/previews/ThemeFrame.png) |
+
+- Get more themes: [https://marketplace.fresns.com/open-source/themes](https://marketplace.fresns.com/open-source/themes)
+- Get more apps: [https://marketplace.fresns.com/open-source/apps](https://marketplace.fresns.com/open-source/apps)
 
 ## License
 

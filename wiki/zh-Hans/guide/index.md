@@ -3,12 +3,9 @@
 <p align="center"><img src="https://files.fresns.org/wiki/images/logo.png" width="300"></p>
 
 <p align="center">
-<img src="https://img.shields.io/badge/PHP-%5E8.1-blueviolet" alt="PHP" style="display:inline;">
-<img src="https://img.shields.io/badge/MySQL-%5E5.7-orange" alt="MySQL" style="display:inline;margin-left:8px;">
-<img src="https://img.shields.io/badge/PostgreSQL-%5E11.0-blue" alt="PostgreSQL" style="display:inline;margin:0 8px;">
-<img src="https://img.shields.io/badge/SQL%20Server-%5E13.0-red" alt="SQL Server" style="display:inline;margin-right:8px;">
-<img src="https://img.shields.io/badge/SQLite-%5E3.9-9cf" alt="SQLite" style="display:inline;margin-right:8px;">
-<img src="https://img.shields.io/badge/License-Apache--2.0-green" alt="License" style="display:inline;">
+<img src="https://img.shields.io/packagist/dependency-v/fresns/fresns/php" alt="PHP" style="display:inline;">
+<img src="https://img.shields.io/github/v/release/fresns/fresns?color=orange" alt="Fresns" style="display:inline;margin:0 8px;">
+<img src="https://img.shields.io/github/license/fresns/fresns" alt="License" style="display:inline;">
 </p>
 
 Fresns 是一款免费开源的社交网络服务软件，专为跨平台而打造的通用型社区产品，支持灵活多样的内容形态，可以满足多种运营场景，符合时代潮流，更开放且更易于二次开发。
@@ -34,6 +31,16 @@ Fresns 是一款免费开源的社交网络服务软件，专为跨平台而打�
 | 网站引擎 | 基于主程序 API 开发的网站功能，分别有集成引擎和独立引擎<br>**集成引擎**：以插件方式运行在主程序中的网站引擎<br>**独立引擎**：独立部署和运行在主程序之外的网站，等同于移动应用（App） |
 | 主题模板 | 基于网站引擎开发的外观样式（UE&UI 界面） |
 | 移动应用 | 手机 App 和微信小程序等独立运行的移动端应用程序 |
+
+## 界面预览
+
+| 信息流 | 论坛 |
+| :---: | :---: |
+| ![Moments](https://files.fresns.org/wiki/previews/Moments.png) | ![ForumX](https://files.fresns.org/wiki/previews/ForumX.png) |
+| ![ForumQ](https://files.fresns.org/wiki/previews/ForumQ.png) | ![ThemeFrame](https://files.fresns.org/wiki/previews/ThemeFrame.png) |
+
+- 查看更多网站端: [https://marketplace.fresns.com/open-source/themes](https://marketplace.fresns.com/open-source/themes)
+- 查看更多移动端: [https://marketplace.fresns.com/open-source/apps](https://marketplace.fresns.com/open-source/apps)
 
 ## 许可协议
 
