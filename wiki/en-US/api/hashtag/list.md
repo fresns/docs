@@ -28,11 +28,11 @@
 | followCountLt | Number | *optional* | Follows count less than |
 | blockCountGt | Number | *optional* | Block count greater than |
 | blockCountLt | Number | *optional* | Block count less than |
-| postCountGt | Number | *optional* | 帖子数大于 |
-| postCountLt | Number | *optional* | 帖子数小于 |
-| postDigestCountGt | Number | *optional* | 精华数大于 |
-| postDigestCountLt | Number | *optional* | 精华数小于 |
-| orderType | String | *optional* | 排序类型 createDate,like,follow,block,post,postDigest<br>默认 createDate |
+| postCountGt | Number | *optional* | Total number of posts greater than |
+| postCountLt | Number | *optional* | Total number of posts less than |
+| postDigestCountGt | Number | *optional* | Total number of digest posts greater than |
+| postDigestCountLt | Number | *optional* | Total number of digest posts less than |
+| orderType | String | *optional* | Sort by type: `createDate`,`like`,`dislike`,`follow`,`block`,`post`,`postDigest`<br>Default `createDate` |
 | orderDirection | String | *optional* | Sort by direction `asc`,`desc`, Default: `desc` |
 | whitelistKeys | String | *optional* | Whitelist key names, only returns key-value pairs for the given key names<br>Multiple separated by English commas, supports "dot notation" for multi-dimensional arrays |
 | blacklistKeys | String | *optional* | Blacklist key names, removes specified key-value pairs from the returned data<br>Multiple separated by English commas, supports "dot notation" for multi-dimensional arrays |

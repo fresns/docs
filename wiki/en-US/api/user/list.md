@@ -17,9 +17,9 @@
 
 | Parameter Name | Type | Required | Description |
 | --- | --- | --- | --- |
-| roles | String | *optional* | 指定主角色 ID，多个以英文逗号隔开 |
-| verified | Boolean | *optional* | 认证状态 |
-| gender | Number | *optional* | `gender` field<br>`1` 未设置 / `2` 男 / `3` 女 |
+| roles | String | *optional* | Specify main role `rid`, separated by commas for multiple values |
+| verified | Boolean | *optional* | Verification status |
+| gender | Number | *optional* | `gender` field<br>`1` Not set / `2` Male / `3` Female |
 | createDate | String | *optional* | Date register: `today`,`yesterday`,`week`,`lastWeek`,`month`,`lastMonth`,`year`,`lastYear` |
 | createDateGt | String | *optional* | Register date greater than `Y-m-d` |
 | createDateLt | String | *optional* | Register date less than `Y-m-d` |
@@ -31,25 +31,25 @@
 | followCountLt | Number | *optional* | Follows count less than |
 | blockCountGt | Number | *optional* | Block count greater than |
 | blockCountLt | Number | *optional* | Block count less than |
-| postCountGt | Number | *optional* | 发帖数大于 |
-| postCountLt | Number | *optional* | 发帖数小于 |
-| commentCountGt | Number | *optional* | 发评论数大于 |
-| commentCountLt | Number | *optional* | 发评论数小于 |
-| postDigestCountGt | Number | *optional* | 精华帖数大于 |
-| postDigestCountLt | Number | *optional* | 精华帖数小于 |
-| commentDigestCountGt | Number | *optional* | 精华评论数大于 |
-| commentDigestCountLt | Number | *optional* | 精华评论数小于 |
-| extcredits1CountGt | Number | *optional* | extcredits1 大于 |
-| extcredits1CountLt | Number | *optional* | extcredits1 小于 |
-| extcredits2CountGt | Number | *optional* | extcredits2 大于 |
-| extcredits2CountLt | Number | *optional* | extcredits2 小于 |
-| extcredits3CountGt | Number | *optional* | extcredits3 大于 |
-| extcredits3CountLt | Number | *optional* | extcredits3 小于 |
-| extcredits4CountGt | Number | *optional* | extcredits4 大于 |
-| extcredits4CountLt | Number | *optional* | extcredits4 小于 |
-| extcredits5CountGt | Number | *optional* | extcredits5 大于 |
-| extcredits5CountLt | Number | *optional* | extcredits5 小于 |
-| orderType | String | *optional* | Sort by type, default `createDate`<br>createDate,like,dislike,follow,block<br>post,comment,postDigest,commentDigest<br>extcredits1,extcredits2,extcredits3,extcredits4,extcredits5 |
+| postCountGt | Number | *optional* | Total number of posts greater than |
+| postCountLt | Number | *optional* | Total number of posts less than |
+| commentCountGt | Number | *optional* | Total number of comments greater than |
+| commentCountLt | Number | *optional* | Total number of comments less than |
+| postDigestCountGt | Number | *optional* | Total number of digest posts greater than |
+| postDigestCountLt | Number | *optional* | Total number of digest posts less than |
+| commentDigestCountGt | Number | *optional* | Total number of digest comments greater than |
+| commentDigestCountLt | Number | *optional* | Total number of digest comments less than |
+| extcredits1CountGt | Number | *optional* | extcredits1 greater than |
+| extcredits1CountLt | Number | *optional* | extcredits1 less than |
+| extcredits2CountGt | Number | *optional* | extcredits2 greater than |
+| extcredits2CountLt | Number | *optional* | extcredits2 less than |
+| extcredits3CountGt | Number | *optional* | extcredits3 greater than |
+| extcredits3CountLt | Number | *optional* | extcredits3 less than |
+| extcredits4CountGt | Number | *optional* | extcredits4 greater than |
+| extcredits4CountLt | Number | *optional* | extcredits4 less than |
+| extcredits5CountGt | Number | *optional* | extcredits5 greater than |
+| extcredits5CountLt | Number | *optional* | extcredits5 less than |
+| orderType | String | *optional* | Sort by type: `createDate`,`like`,`dislike`,`follow`,`block`<br>`post`,`comment`,`postDigest`,`commentDigest`<br>`extcredits1`,`extcredits2`,`extcredits3`,`extcredits4`,`extcredits5`<br>Default `createDate` |
 | orderDirection | String | *optional* | Sort by direction, default `desc`<br>`asc`,`desc` |
 | whitelistKeys | String | *optional* | Whitelist key names, only returns key-value pairs for the given key names<br>Multiple separated by English commas, supports "dot notation" for multi-dimensional arrays |
 | blacklistKeys | String | *optional* | Blacklist key names, removes specified key-value pairs from the returned data<br>Multiple separated by English commas, supports "dot notation" for multi-dimensional arrays |

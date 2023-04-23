@@ -17,8 +17,8 @@
 
 | Parameter Name | Type | Required | Description |
 | --- | --- | --- | --- |
-| keys | String | *optional* | 键名，获取指定键名的配置项，多个以英文逗号隔开 |
-| tags | String | *optional* | 键标签，获取指定键标签的配置项，多个以英文逗号隔开 |
+| keys | String | *optional* | Key names, get the configuration items of the specified key names, separated by English commas for multiple keys |
+| tags | String | *optional* | Key tags, get the configuration items of the specified key tags, separated by English commas for multiple tags |
 
 **Request Description**
 

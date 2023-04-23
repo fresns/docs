@@ -27,18 +27,18 @@
     "message": "ok",
     "data": [
         {
-            "unikey": "String / 插件 Unikey",
-            "name": "String / 名称",
-            "icon": "String / 服务商图标 URL",
-            "url": "String / 服务商访问 URL",
-            "badgesType": "Number / 显示类型 1.红点 2.文字 3.数字",
-            "badgesValue": "String / 显示文字或者数字",
+            "unikey": "String / Plugin Unikey",
+            "name": "String / Name",
+            "icon": "String / Service provider icon URL",
+            "url": "String / Service provider access URL",
+            "badgesType": "Number / Display type 1.Red dot 2.Text 3.Number",
+            "badgesValue": "String / Display text or number",
             "pluginRating": {
                 "postByAll": [
                     {
-                        "id": "Number / 用于列表接口 pluginRatingId 参数",
-                        "title":"String / 标题",
-                        "description":"String / 描述"
+                        "id": "Number / For list interface pluginRatingId parameter",
+                        "title":"String / Title",
+                        "description":"String / Description"
                     }
                 ],
                 "postByFollow": [

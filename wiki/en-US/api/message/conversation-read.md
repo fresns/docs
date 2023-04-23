@@ -19,7 +19,7 @@
 | --- | --- | --- | --- |
 | type | String | **required** | `conversation` or `message` |
 | conversationId | Number | *optional* |  |
-| messageIds | String | *optional* | 多个以英文逗号隔开 |
+| messageIds | String | *optional* | separated by English commas for multiple id |
 
 **Request Description**
 

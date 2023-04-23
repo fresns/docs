@@ -22,8 +22,8 @@
 
 ## Notification Type Introduction
 
-- `1` System notification
-- `2` Recommended content
+- `1` System
+- `2` Recommend
 - `3` Like
 - `4` Dislike
 - `5` Follow

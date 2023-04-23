@@ -28,62 +28,62 @@
     "data": {
         "editor": {
             "toolbar": {
-                "sticker": "Boolean / 是否启用表情",
+                "sticker": "Boolean / Enable stickers",
                 "image": {
-                    "status": "Boolean / 是否启用图片",
-                    "extensions": "String / 支持的扩展名，示例 png,gif,jpg,jpeg,bmp,heic",
-                    "inputAccept": "String / 支持的扩展名，示例 image/png,image/gif,image/jpeg,image/jpeg,image/bmp",
-                    "maxSize": "Number / 最大文件尺寸，单位 MB",
-                    "uploadForm": "String / 上传方式 fresns 或 plugin",
-                    "uploadUrl": "String / Plugin 上传方式的地址",
-                    "uploadNumber": "Number / 允许上传个数"
+                    "status": "Boolean / Enable images",
+                    "extensions": "String / Supported extensions, e.g., png,gif,jpg,jpeg,bmp,heic",
+                    "inputAccept": "String / Supported extensions, e.g., image/png,image/gif,image/jpeg,image/jpeg,image/bmp",
+                    "maxSize": "Number / Maximum file size, in MB",
+                    "uploadForm": "String / Upload method: fresns or plugin",
+                    "uploadUrl": "String / Address for Plugin upload method",
+                    "uploadNumber": "Number / Number of allowed uploads"
                 },
                 "video": {
-                    "status": "Boolean / 是否启用视频",
-                    "extensions": "String / 支持的扩展名，示例 wmv,rm,mov,mpeg,mp4,3gp,flv,avi,rmvb",
-                    "inputAccept": "String / 支持的扩展名，示例 video/x-ms-wmv,application/vnd.rn-realmedia,video/quicktime,video/mpeg,video/mp4,video/3gpp,video/x-flv,video/x-msvideo,application/vnd.rn-realmedia-vbr",
-                    "maxSize": "Number / 最大文件尺寸，单位 MB",
-                    "maxTime": "Number / 最大文件时长，单位 秒",
-                    "uploadForm": "String / 上传方式 fresns 或 plugin",
-                    "uploadUrl": "String / Plugin 上传方式的地址",
-                    "uploadNumber": "Number / 允许上传个数"
+                    "status": "Boolean / Enable videos",
+                    "extensions": "String / Supported extensions, e.g., wmv,rm,mov,mpeg,mp4,3gp,flv,avi,rmvb",
+                    "inputAccept": "String / Supported extensions, e.g., video/x-ms-wmv,application/vnd.rn-realmedia,video/quicktime,video/mpeg,video/mp4,video/3gpp,video/x-flv,video/x-msvideo,application/vnd.rn-realmedia-vbr",
+                    "maxSize": "Number / Maximum file size, in MB",
+                    "maxTime": "Number / Maximum file duration, in seconds",
+                    "uploadForm": "String / Upload method: fresns or plugin",
+                    "uploadUrl": "String / Address for Plugin upload method",
+                    "uploadNumber": "Number / Number of allowed uploads"
                 },
                 "audio": {
-                    "status": "Boolean / 是否启用音频",
-                    "extensions": "String / 支持的扩展名，示例 mp3,wav,m4a",
-                    "inputAccept": "String / 支持的扩展名，示例 audio/mpeg,audio/x-wav,audio/mp4",
-                    "maxSize": "Number / 最大文件尺寸，单位 MB",
-                    "maxTime": "Number / 最大文件时长，单位 秒",
-                    "uploadForm": "String / 上传方式 fresns 或 plugin",
-                    "uploadUrl": "String / Plugin 上传方式的地址",
-                    "uploadNumber": "Number / 允许上传个数"
+                    "status": "Boolean / Enable audios",
+                    "extensions": "String / Supported extensions, e.g., mp3,wav,m4a",
+                    "inputAccept": "String / Supported extensions, e.g., audio/mpeg,audio/x-wav,audio/mp4",
+                    "maxSize": "Number / Maximum file size, in MB",
+                    "maxTime": "Number / Maximum file duration, in seconds",
+                    "uploadForm": "String / Upload method: fresns or plugin",
+                    "uploadUrl": "String / Address for Plugin upload method",
+                    "uploadNumber": "Number / Number of allowed uploads"
                 },
                 "document": {
-                    "status": "Boolean / 是否启用文档",
-                    "extensions": "String / 支持的扩展名，示例 doc,docx,xls,xlsx,csv,ppt,pptx,pps,ppts,pdf,txt,md,markdown,rar,zip,7z,epub,mobi",
-                    "inputAccept": "String / 支持的扩展名，示例 application/msword,application/vnd.openxmlformats-officedocument.wordprocessingml.document,application/vnd.ms-excel",
-                    "maxSize": "Number / 最大文件尺寸，单位 MB",
-                    "uploadForm": "String / 上传方式 fresns 或 plugin",
-                    "uploadUrl": "String / Plugin 上传方式的地址",
-                    "uploadNumber": "Number / 允许上传个数"
+                    "status": "Boolean / Enable documents",
+                    "extensions": "String / Supported extensions, e.g., doc,docx,xls,xlsx,csv,ppt,pptx,pps,ppts,pdf,txt,md,markdown,rar,zip,7z,epub,mobi",
+                    "inputAccept": "String / Supported extensions, e.g., application/msword,application/vnd.openxmlformats-officedocument.wordprocessingml.document,application/vnd.ms-excel",
+                    "maxSize": "Number / Maximum file size, in MB",
+                    "uploadForm": "String / Upload method: fresns or plugin",
+                    "uploadUrl": "String / Address for Plugin upload method",
+                    "uploadNumber": "Number / Number of allowed uploads"
                 },
                 "title": {
-                    "status": "Boolean / 是否启用标题",
-                    "view": "Number / 1.默认显示 2.默认隐藏",
-                    "required": "Boolean / 是否必填",
-                    "length": "Number / 最大长度"
+                    "status": "Boolean / Enable titles",
+                    "view": "Number / 1. Show by default 2. Hide by default",
+                    "required": "Boolean / Is required",
+                    "length": "Number / Maximum length"
                 },
                 "mention": {
-                    "status": "Boolean / 是否启用艾特",
-                    "display": "Boolean / 工具栏是否显示艾特操作按钮"
+                    "status": "Boolean / Enable mentions",
+                    "display": "Boolean / Toolbar displays mention operation button"
                 },
                 "hashtag": {
-                    "status": "Boolean / 是否启用话题",
-                    "display": "Boolean / 工具栏是否显示话题操作按钮",
-                    "format": "Number / 话题格式 1.单 # 2.双 #"
+                    "status": "Boolean / Enable hashtags",
+                    "display": "Boolean / Toolbar displays hashtag operation button",
+                    "format": "Number / Hashtag format 1. Single # 2. Double"
                 },
                 "extend": {
-                    "status": "Boolean / 是否启用扩展",
+                    "status": "Boolean / Enable extends",
                     "list": [
                         {
                             // Common Data Structure -> Extend Function Info
@@ -93,52 +93,52 @@
             },
             "features": {
                 "group": {
-                    "status": "Boolean / 是否启用小组",
-                    "required": "Boolean / 是否必选"
+                    "status": "Boolean / Enable groups",
+                    "required": "Boolean / Is required"
                 },
                 "location": {
-                    "status": "Boolean / 是否启用位置",
-                    "map": "String / 地图 Web 页面"
+                    "status": "Boolean / Enable locations",
+                    "map": "String / Map Web page"
                 },
-                "anonymous": "Boolean / 是否支持匿名",
-                "contentLength": "Number / 内容最大长度"
+                "anonymous": "Boolean / Support anonymous",
+                "contentLength": "Number / Maximum content length"
             }
         },
         "publish": {
             "perm": {
-                "draft": "Boolean / 是否可以创建新草稿",
-                "publish": "Boolean / 是否有权限发表",
-                "review": "Boolean / 发表是否需要审核",
-                "emailRequired": "Boolean / 邮箱要求是否通过",
-                "phoneRequired": "Boolean / 手机要求是否通过",
-                "realNameRequired": "Boolean / 实名制要求是否通过",
+                "draft": "Boolean / Can create new drafts",
+                "publish": "Boolean / Has permission to publish",
+                "review": "Boolean / Publishing requires review",
+                "emailRequired": "Boolean / Email requirement met",
+                "phoneRequired": "Boolean / Phone requirement met",
+                "realNameRequired": "Boolean / Real name requirement met",
                 "tips": [
-                    "String / 无要求的请求语 1",
-                    "String / 无要求的请求语 2"
+                    "String / Request language without requirements 1",
+                    "String / Request language without requirements 2"
                 ]
             },
             "limit": {
-                "status": "Boolean / 是否有特殊规则",
-                "isInTime": "Boolean / 是否在执行时间范围内",
-                "type": "Number / 1.指定某个时间段范围内生效 2.指定每天的某个时间段范围内循环生效",
-                "periodStart": "String / type=1 专用，开始日期时间",
-                "periodEnd": "String / type=1 专用，结束日期时间",
-                "cycleStart": "String / type=2 专用，开始时间",
-                "cycleEnd": "String / type=2 专用，结束时间",
-                "rule": "Number / 1.可以发表，但是需要审核 2.禁止发表",
-                "tip": "String / 提示语"
+                "status": "Boolean / Are there special rules",
+                "isInTime": "Boolean / Is within the execution time range",
+                "type": "Number / 1. Effective within a specified time period 2. Recurring effective within a specified time period every day",
+                "periodStart": "String / type=1 exclusive, start date and time",
+                "periodEnd": "String / type=1 exclusive, end date and time",
+                "cycleStart": "String / type=2 exclusive, start time",
+                "cycleEnd": "String / type=2 exclusive, end time",
+                "rule": "Number / 1. Can be published but needs review 2. Forbidden to publish",
+                "tip": "String / Tips"
             }
         },
         "editPerm": {
-            "status": "Boolean / 是否有权编辑",
-            "timeLimit": "Number / 多长时间内可以编辑",
-            "editSticky": "Boolean / 帖子置顶后是否可编辑",
-            "editDigest": "Boolean / 帖子加精后是否可编辑"
+            "status": "Boolean / Has permission to edit",
+            "timeLimit": "Number / Editable within a certain time",
+            "editSticky": "Boolean / Editable after post is sticky",
+            "editDigest": "Boolean / Editable after post is digest"
         }
     }
 }
 ```
 
-- 编辑器文件配置的 `uploadForm` 参数
-    - `fresns` 则使用上传接口 [/api/v2/common/upload-file](../common/upload-file.md)
-    - `plugin` 则使用 WebView 访问 `uploadUrl` 参数的地址上传，规则见[回调返参](../../extensions/callback/index.md)。
+- Editor file configuration's `uploadForm` parameter:
+    - If `fresns`, use the upload interface [/api/v2/common/upload-file](../common/upload-file.md)
+    - If `plugin`, use WebView to access the `uploadUrl` parameter address for uploading, see the rules in [callback return parameters](../../extensions/callback/index.md).

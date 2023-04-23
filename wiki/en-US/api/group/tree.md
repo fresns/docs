@@ -21,8 +21,8 @@
 
 **Request Description**
 
-- 本接口将获取全部小组，然后组装成树结构输出。
-- 本接口使用场景类似于传统 BBS 版区，以树结构平铺所有小组（版区）。
+- This interface will fetch all groups and then assemble them into a tree structure for output.
+- The use case of this interface is similar to traditional BBS sections, where all groups (sections) are displayed in a tree structure.
 
 ## Return
 
@@ -32,11 +32,11 @@
     "message": "ok",
     "data": [
         {
-            "gid": "String / 小组 ID",
-            "gname": "String / 小组名称",
-            "description": "String / 小组描述",
-            "cover": "String / 小组封面图地址",
-            "banner": "String / 小组条幅图地址",
+            "gid": "String / Group ID",
+            "gname": "String / Group name",
+            "description": "String / Group description",
+            "cover": "String / Group cover image URL",
+            "banner": "String / Group banner image URL",
             "groups": [
                 {
                     // Common Data Structure -> Group Info

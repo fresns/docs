@@ -41,7 +41,7 @@
 | blockCountLt | Number | NO | 屏蔽数小于 |
 | commentCountGt | Number | NO | 评论总数大于 |
 | commentCountLt | Number | NO | 评论总数小于 |
-| orderType | String | NO | 排序类型，默认 `createDate`<br>createDate,like,dislike,follow,block,comment |
+| orderType | String | NO | 排序类型 `createDate`,`like`,`dislike`,`follow`,`block`,`comment`<br>默认 `createDate` |
 | orderDirection | String | NO | 排序方向，默认 `desc`<br>`asc`,`desc` |
 | blockGroups | String | NO | 过滤小组，`gid` 多个以英文逗号隔开 |
 | blockHashtags | String | NO | 过滤话题，`hid` 多个以英文逗号隔开 |

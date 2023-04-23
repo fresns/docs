@@ -35,11 +35,11 @@
         },
         "list": [
             {
-                "gid": "String / 小组分类 ID",
-                "gname": "String / 小组分类名称",
-                "description": "String / 小组分类描述",
-                "cover": "String / 小组分类封面图地址",
-                "banner": "String / 小组分类条幅图地址"
+                "gid": "String / Group category ID",
+                "gname": "String / Group category name",
+                "description": "String / Group category description",
+                "cover": "String / Group category cover image URL",
+                "banner": "String / Group category banner image URL"
             }
         ]
     }

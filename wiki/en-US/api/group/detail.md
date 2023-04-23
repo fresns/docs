@@ -39,7 +39,7 @@
             "description": "String / SEO Description",
             "extensions": [
                 {
-                    // 小组的扩展
+                    // Group Extensions
                     // Common Data Structure -> Extend Function Info
                 }
             ]

@@ -43,7 +43,7 @@
 | blockCountLt | Number | NO | 屏蔽数小于 |
 | commentCountGt | Number | NO | 子级评论总数大于 |
 | commentCountLt | Number | NO | 子级评论总数小于 |
-| orderType | String | NO | 排序类型，默认 `createDate`<br>createDate,like,dislike,follow,block,comment |
+| orderType | String | NO | 排序类型 `createDate`,`like`,`dislike`,`follow`,`block`,`comment`<br>默认 `createDate` |
 | orderDirection | String | NO | 排序方向，默认 `desc`<br>`asc`,`desc` |
 | whitelistKeys | String | NO | 白名单键名，只返回给定键名的键值对<br>多个以英文逗号隔开，支持「点表示法」表示多维数组 |
 | blacklistKeys | String | NO | 黑名单键名，从返回数据中删除指定的键值对<br>多个以英文逗号隔开，支持「点表示法」表示多维数组 |

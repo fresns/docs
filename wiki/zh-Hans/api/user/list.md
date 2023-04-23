@@ -17,7 +17,7 @@
 
 | 参数名 | 类型 | 是否必传 | 说明 |
 | --- | --- | --- | --- |
-| roles | String | NO | 指定主角色 ID，多个以英文逗号隔开 |
+| roles | String | NO | 指定主角色 `rid`，多个以英文逗号隔开 |
 | verified | Boolean | NO | 认证状态 |
 | gender | Number | NO | 性别 gender 字段<br>`1` 未设置 / `2` 男 / `3` 女 |
 | createDate | String | NO | 注册日期：`today`,`yesterday`,`week`,`lastWeek`,`month`,`lastMonth`,`year`,`lastYear` |
@@ -49,7 +49,7 @@
 | extcredits4CountLt | Number | NO | extcredits4 小于 |
 | extcredits5CountGt | Number | NO | extcredits5 大于 |
 | extcredits5CountLt | Number | NO | extcredits5 小于 |
-| orderType | String | NO | 排序类型，默认 `createDate`<br>createDate,like,dislike,follow,block<br>post,comment,postDigest,commentDigest<br>extcredits1,extcredits2,extcredits3,extcredits4,extcredits5 |
+| orderType | String | NO | 排序类型 `createDate`,`like`,`dislike`,`follow`,`block`<br>`post`,`comment`,`postDigest`,`commentDigest`<br>`extcredits1`,`extcredits2`,`extcredits3`,`extcredits4`,`extcredits5`<br>默认 `createDate` |
 | orderDirection | String | NO | 排序方向，默认 `desc`<br>`asc`,`desc` |
 | whitelistKeys | String | NO | 白名单键名，只返回给定键名的键值对<br>多个以英文逗号隔开，支持「点表示法」表示多维数组 |
 | blacklistKeys | String | NO | 黑名单键名，从返回数据中删除指定的键值对<br>多个以英文逗号隔开，支持「点表示法」表示多维数组 |

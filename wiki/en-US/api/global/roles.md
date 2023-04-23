@@ -17,9 +17,9 @@
 
 | Parameter Name | Type | Required | Description |
 | --- | --- | --- | --- |
-| ids | String | *optional* | 角色 rid，多个以英文逗号隔开 |
-| type | Number | *optional* | `1` 管理人员类<br>`2` 系统设置类<br>`3` 用户运营类<br>leave empty to output all |
-| status | Boolean | *optional* | `0` 停用角色<br>`1` 启用角色<br>leave empty to output all |
+| ids | String | *optional* | Role `rid`, separated by English commas for multiple roles |
+| type | Number | *optional* | `1` Management personnel<br>`2` System settings<br>`3` User operation<br>Leave empty to output all |
+| status | Boolean | *optional* | `0` Disable role<br>`1` Enable role<br>Leave empty to output all |
 | pageSize | Number | *optional* | Number of items per page (default 15 items) |
 | page | Number | *optional* | Page number (default 1) |
 
@@ -38,16 +38,16 @@
         },
         "list": [
             {
-                "rid": "Number / 角色 ID",
-                "nicknameColor": "String / 角色用户的昵称颜色",
-                "name": "String / 角色名称",
-                "nameDisplay": "Boolean / 是否显示角色名",
-                "icon": "String / 角色图标 URL",
-                "iconDisplay": "Boolean / 是否显示角色图标",
+                "rid": "Number / Role ID",
+                "nicknameColor": "String / Nickname color for users with this role",
+                "name": "String / Role name",
+                "nameDisplay": "Boolean / Whether to display role name",
+                "icon": "String / Role icon URL",
+                "iconDisplay": "Boolean / Whether to display role icon",
                 "permission": [
-                    // roles 表 permission 字段所有内容
+                    // All content from roles table permission field
                 ],
-                "status": "Boolean / 启用状态",
+                "status": "Boolean / Enabled status",
             }
         ]
     }

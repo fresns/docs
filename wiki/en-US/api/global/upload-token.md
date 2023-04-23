@@ -17,9 +17,9 @@
 
 | Parameter Name | Type | Required | Description |
 | --- | --- | --- | --- |
-| type | String | **required** | 四选一 `image`,`video`,`audio`,`document` |
-| name | String | **required** | 本次上传的文件名 |
-| expireTime | Number | **required** | 有效期，单位：秒<br>上限 600 秒 |
+| type | String | **required** | Choose one from `image`, `video`, `audio`, `document` |
+| name | String | **required** | File name for this upload |
+| expireTime | Number | **required** | Expiration time, unit: seconds<br>Up to 600 seconds |
 
 ## Return
 
@@ -28,9 +28,9 @@
     "code": 0,
     "message": "ok",
     "data": {
-        "storageId": "Number / 存储服务商编号，见字典键值",
-        "token": "String / 跟插件索要的 SDK 上传 token",
-        "expireTime": "Number / 有效期，单位：秒" //没有则输出 null
+        "storageId": "Number / Storage service provider ID, see dictionary key-value",
+        "token": "String / SDK upload token requested from the plugin",
+        "expireTime": "Number / Expiration time, in seconds" // If not available, output null
     }
 }
 ```
