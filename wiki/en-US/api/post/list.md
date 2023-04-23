@@ -20,29 +20,31 @@
 | mapId | Number | *optional* | [Map Service Provider](../../database/dictionary/maps.md) |
 | mapLng | String | *optional* | Map Longitude (For distance calculation) |
 | mapLat | String | *optional* | Map Latitude (For distance calculation) |
-| uidOrUsername | String | *optional* | 指定范围：用户 |
-| hid | String | *optional* | 指定范围：话题 |
-| gid | String | *optional* | 指定范围：小组 |
-| includeSubgroups | Boolean | *optional* | 与 `gid` 配置使用，是否包含子级小组的内容<br>默认为 `false` |
-| allDigest | Boolean | *optional* | 指定范围：全部精华，一级精华和二级精华<br>传参后，将忽略 `digestState` 参数 |
-| digestState | Number | *optional* | 指定范围：精华（留空输出全部）<br>digest_state 字段 1.否 2.一级精华 3.二级精华 |
-| stickyState | Number | *optional* | 指定范围：置顶（留空输出全部）<br>sticky_state 字段 1.否 2.小组页置顶 3.全局置顶 |
-| contentType | String | *optional* | 内容类型（内容类型扩展配置的参数） |
-| createDate | String | *optional* | 发表日期：`today`,`yesterday`,`week`,`lastWeek`,`month`,`lastMonth`,`year`,`lastYear` |
-| createDateGt | String | *optional* | 发表时间大于 `Y-m-d` |
-| createDateLt | String | *optional* | 发表时间小于 `Y-m-d` |
-| likeCountGt | Number | *optional* | 点赞数大于 |
-| likeCountLt | Number | *optional* | 点赞数小于 |
-| followCountGt | Number | *optional* | 关注数大于 |
-| followCountLt | Number | *optional* | 关注数小于 |
-| blockCountGt | Number | *optional* | 屏蔽数大于 |
-| blockCountLt | Number | *optional* | 屏蔽数小于 |
-| commentCountGt | Number | *optional* | 评论总数大于 |
-| commentCountLt | Number | *optional* | 评论总数小于 |
+| uidOrUsername | String | *optional* | Specify scope: User |
+| hid | String | *optional* | Specify scope: Topic |
+| gid | String | *optional* | Specify scope: Group |
+| includeSubgroups | Boolean | *optional* | Used with `gid` configuration to include or exclude sublevel groups.<br>Default is `false` |
+| allDigest | Boolean | *optional* | Specify scope: All digest, general and advanced digest<br>When passed, the `digestState` parameter will be ignored |
+| digestState | Number | *optional* | Specify scope: Digest (leave empty to output all)<br>digest_state field `1` No `2` general digest `3` advanced digest |
+| stickyState | Number | *optional* | Specify scope: Sticky (leave empty to output all)<br>sticky_state field `1` No `2` group sticky `3` global sticky |
+| contentType | String | *optional* | Filter content by type |
+| createDate | String | *optional* | Publish date: `today`,`yesterday`,`week`,`lastWeek`,`month`,`lastMonth`,`year`,`lastYear` |
+| createDateGt | String | *optional* | Publish time greater than `Y-m-d` |
+| createDateLt | String | *optional* | Publish time less than `Y-m-d` |
+| likeCountGt | Number | *optional* | Likes count greater than |
+| likeCountLt | Number | *optional* | Likes count less than |
+| dislikeCountGt | Number | *optional* | Dislikes count greater than |
+| dislikeCountLt | Number | *optional* | Dislikes count less than |
+| followCountGt | Number | *optional* | Follows count greater than |
+| followCountLt | Number | *optional* | Follows count less than |
+| blockCountGt | Number | *optional* | Block count greater than |
+| blockCountLt | Number | *optional* | Block count less than |
+| commentCountGt | Number | *optional* | Total number of comments greater than |
+| commentCountLt | Number | *optional* | Total number of comments less than |
 | orderType | String | *optional* | Sort by type, default `createDate`<br>createDate,like,dislike,follow,block,comment |
 | orderDirection | String | *optional* | Sort by direction, default `desc`<br>`asc`,`desc` |
-| blockGroups | String | *optional* | 过滤小组，多个以英文逗号隔开 |
-| blockHashtags | String | *optional* | 过滤话题，多个以英文逗号隔开 |
+| blockGroups | String | *optional* | Filter groups, `gid` multiple separated by commas |
+| blockHashtags | String | *optional* | Filter hashtags, `hid` multiple separated by commas |
 | whitelistKeys | String | *optional* | Whitelist key names, only returns key-value pairs for the given key names<br>Multiple separated by English commas, supports "dot notation" for multi-dimensional arrays |
 | blacklistKeys | String | *optional* | Blacklist key names, removes specified key-value pairs from the returned data<br>Multiple separated by English commas, supports "dot notation" for multi-dimensional arrays |
 | pluginRatingId | Number | *optional* | Sort number (plug-in specific) |

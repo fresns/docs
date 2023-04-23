@@ -17,7 +17,7 @@
 
 | Parameter Name | Type | Required | Description |
 | --- | --- | --- | --- |
-| ip | String | *optional* | 留空将输出当前请求者的 IP 信息 |
+| ip | String | *optional* | If left blank, the IP information of the current requester will be displayed. |
 
 ## Return
 

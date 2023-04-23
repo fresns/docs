@@ -17,11 +17,11 @@
 
 | Parameter Name | Type | Required | Description |
 | --- | --- | --- | --- |
-| type | String | **required** | 发送类型：`email`,`sms` |
-| useType | Number | **required** | 用途类型：1.新账号验证 / 2.已存账号验证 / 3.填空验证 / 4.身份验证 / 5.其他 |
-| templateId | Number | **required** | [模板编号](../../database/keyname/send.md#verify-code-templates) |
-| account | String | **required** | 邮箱或者手机号（用途为 4 时，填写任意内容，不作使用） |
-| countryCode | Number | *optional* | 手机号码专用，专用时必填，国际区号 |
+| type | String | **required** | Sending type: `email`, `sms` |
+| useType | Number | **required** | Purpose type: 1. New account verification / 2. Existing account verification / 3. Fill-in-the-blank verification / 4. Identity verification / 5. Others |
+| templateId | Number | **required** | [Template ID](../../database/keyname/send.md#verify-code-templates) |
+| account | String | **required** | Email or phone number (for purpose 4, fill in any content, not used) |
+| countryCode | Number | *optional* | For phone number usage only, required when used, international area code |
 
 **Request Description**
 

@@ -31,10 +31,10 @@
             // Common Data Structure -> Post Log Info or Comment Log Info
         },
         "edit": {
-            "isEdit": "Boolean / 是否为编辑草稿",
-            "editableStatus": "Boolean / 是否可编辑",
-            "editableTime": "String / 剩余可编辑时长，例如 03:00 表示剩余 3 分钟",
-            "deadlineTime": "String / 剩余可编辑截止具体日期时间，例如 2022-07-01 15:05:00"
+            "isEdit": "Boolean / Whether it is an editable draft",
+            "editableStatus": "Boolean / Whether it can be edited",
+            "editableTime": "String / Remaining editable time, for example 03:00 means 3 minutes left",
+            "deadlineTime": "String / The specific date and time of the editable deadline, for example 2022-07-01 15:05:00"
         }
     }
 }

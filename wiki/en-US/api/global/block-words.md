@@ -17,7 +17,7 @@
 
 | Parameter Name | Type | Required | Description |
 | --- | --- | --- | --- |
-| type | String | *optional* | 三选一传参 `content`,`user`,`conversation`<br>留空输出全部 |
+| type | String | *optional* | Choose one from `content`,`user`,`conversation`<br>leave empty to output all |
 | pageSize | Number | *optional* | Number of items per page (default 50 items) |
 | page | Number | *optional* | Page number (default 1) |
 

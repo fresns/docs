@@ -32,16 +32,16 @@
 
 **Request Description**
 
-- `type=like` 获得点赞了 `pid` 的用户列表。
-- `type=dislike` 获得点踩了 `pid` 的用户列表。
-- `type=follow` 获得关注了 `pid` 的用户列表。
-- `type=block` 获得屏蔽了 `pid` 的用户列表。
-- 接口会根据配置表设置 `运营 > 互动配置 > 查看互动记录设置` 决定是否输出数据。
-    - `post_likers` 配置，是否输出点赞 TA 的用户
-    - `post_dislikers` 配置，是否输出点踩 TA 的用户
-    - `post_followers` 配置，是否输出关注 TA 的用户
-    - `post_blockers` 配置，是否输出屏蔽 TA 的用户
-- `orderDirection` 排序方向以创建时间排序。
+- `type=like` Get the list of users who liked `pid`.
+- `type=dislike` Get the list of users who disliked `pid`.
+- `type=follow` Get the list of users who followed `pid`.
+- `type=block` Get the list of users who blocked `pid`.
+- The interface will decide whether to output data based on the configuration table settings `Operations > Interactions > View Interaction Record Settings`.
+    - `post_likers` configuration, whether to output users who liked his
+    - `post_dislikers` configuration, whether to output users who disliked his
+    - `post_followers` configuration, whether to output users who followed his
+    - `post_blockers` configuration, whether to output users who blocked his
+- `orderDirection` The sort direction is sorted by creation time.
 
 ## Return
 

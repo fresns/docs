@@ -32,15 +32,16 @@
 
 **Request Description**
 
-- `type=like` 获得点赞了 `cid` 的用户列表。
-- `type=dislike` 获得点踩了 `cid` 的用户列表。
-- `type=follow` 获得关注了 `cid` 的用户列表。
-- `type=block` 获得屏蔽了 `cid` 的用户列表。
-- 接口会根据配置表设置 `运营 > 互动配置 > 查看互动记录设置` 决定是否输出数据。
-    - `comment_likers` 配置，是否输出点赞 TA 的用户
-    - `comment_dislikers` 配置，是否输出点踩 TA 的用户
-    - `comment_followers` 配置，是否输出关注 TA 的用户
-    - `comment_blockers` 配置，是否输出屏蔽 TA 的用户
+- `type=like` Get the list of users who liked `cid`.
+- `type=dislike` Get the list of users who disliked `cid`.
+- `type=follow` Get the list of users who followed `cid`.
+- `type=block` Get the list of users who blocked `cid`.
+- The interface will decide whether to output data based on the configuration table settings `Operations > Interactions > View Interaction Record Settings`.
+    - `comment_likers` configuration, whether to output users who liked his
+    - `comment_dislikers` configuration, whether to output users who disliked his
+    - `comment_followers` configuration, whether to output users who followed his
+    - `comment_blockers` configuration, whether to output users who blocked his
+- `orderDirection` The sort direction is sorted by creation time.
 
 ## Return
 

@@ -20,9 +20,9 @@
 | mapId | Number | **required** | [Map Service Provider](../../database/dictionary/maps.md) |
 | mapLng | String | **required** | Map Longitude |
 | mapLat | String | **required** | Map Latitude |
-| unit | String | *optional* | 范围单位 km / mi |
-| length | Number | *optional* | 范围 |
-| contentType | String | *optional* | 指定类型：内容类型扩展配置的参数，为空或者为 All，则输出全部内容 |
+| unit | String | *optional* | Range unit `km` or `mi` |
+| length | Number | *optional* | Range length |
+| contentType | String | *optional* | Filter content by type |
 | whitelistKeys | String | *optional* | Whitelist key names, only returns key-value pairs for the given key names<br>Multiple separated by English commas, supports "dot notation" for multi-dimensional arrays |
 | blacklistKeys | String | *optional* | Blacklist key names, removes specified key-value pairs from the returned data<br>Multiple separated by English commas, supports "dot notation" for multi-dimensional arrays |
 | pluginRatingId | Number | *optional* | Sort number (plug-in specific) |

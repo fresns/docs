@@ -17,14 +17,14 @@
 
 | Parameter Name | Type | Required | Description |
 | --- | --- | --- | --- |
-| fid | String | **required** | 要下载的文件 FID |
+| fid | String | **required** | File to be downloaded FID |
 
 ## Query Params
 
 | Parameter Name | Type | Required | Description |
 | --- | --- | --- | --- |
-| type | String | **required** | 三选一 `post`,`comment`,`extend`,`conversation` |
-| fsid | String | **required** | type 参数对应的数据表简写 ID `pid`/`cid`/`eid`/`messageId` |
+| type | String | **required** | Choose one from `post`, `comment`, `extend`, `conversation` |
+| fsid | String | **required** | Abbreviated ID `pid`/`cid`/`eid`/`messageId` corresponding to the type parameter's data table |
 
 ## Return
 
@@ -33,7 +33,7 @@
     "code": 0,
     "message": "ok",
     "data": {
-        "originalUrl": "String / 原始文件下载链接"
+        "originalUrl": "String / Download link to original file"
     }
 }
 ```

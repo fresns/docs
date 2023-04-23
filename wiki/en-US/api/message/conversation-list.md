@@ -17,7 +17,7 @@
 
 | Parameter Name | Type | Required | Description |
 | --- | --- | --- | --- |
-| isPin | Boolean | *optional* | 是否 Pin （留空输出全部） |
+| isPin | Boolean | *optional* | Pin or not (leave empty to output all) |
 | whitelistKeys | String | *optional* | Whitelist key names, only returns key-value pairs for the given key names<br>Multiple separated by English commas, supports "dot notation" for multi-dimensional arrays<br>Valid only for the `user` parameter |
 | blacklistKeys | String | *optional* | Blacklist key names, removes specified key-value pairs from the returned data<br>Multiple separated by English commas, supports "dot notation" for multi-dimensional arrays<br>Valid only for the `user` parameter |
 | pageSize | Number | *optional* | Number of items per page (default 15 items) |

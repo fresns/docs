@@ -6,12 +6,12 @@
 
 ## Headers Optional Parameter
 
-| 参数名 | 公开模式（是否必传） | 私有模式：接口不可请求 |
+| Parameter Name | Public Mode | Private Mode (API not available) |
 | --- | --- | --- |
 | X-Fresns-Aid | *optional* |  |
-| X-Fresns-Aid-Token | *optional* | *optional* |
-| X-Fresns-Uid | *optional* | *optional* |
-| X-Fresns-Uid-Token | *optional* | *optional* |
+| X-Fresns-Aid-Token | *optional* |  |
+| X-Fresns-Uid | *optional* |  |
+| X-Fresns-Uid-Token | *optional* |  |
 
 ## Body Params
 

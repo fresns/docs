@@ -18,11 +18,11 @@
 | Parameter Name | Type | Required | Description |
 | --- | --- | --- | --- |
 | type | String | **required** | `post` or `comment` |
-| draftId | Number | **required** | 草稿 ID |
+| draftId | Number | **required** | Draft ID |
 
 ## Body Params
 
-| 参数名 | 类型 | 是否必传 | **帖子**说明 | **评论**说明 |
+| Parameter Name | Type | Required | **Post** Description | **Comment** Description |
 | --- | --- | --- | --- | --- |
 | editorUnikey | String | *optional* | 是否为编辑器插件<br>传参 `Fresns` 则重置为默认编辑器 |  |
 | postQuotePid | String | *optional* | 引用的帖子 PID<br>非必填 | *帖子专用* |

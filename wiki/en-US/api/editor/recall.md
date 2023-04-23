@@ -18,7 +18,7 @@
 | Parameter Name | Type | Required | Description |
 | --- | --- | --- | --- |
 | type | String | **required** | `post` or `comment` |
-| draftId | Number | **required** | 草稿 ID |
+| draftId | Number | **required** | Draft ID |
 
 ## Return
 

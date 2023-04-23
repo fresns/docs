@@ -22,14 +22,14 @@
 | createDate | String | *optional* | 创建日期：`today`,`yesterday`,`week`,`lastWeek`,`month`,`lastMonth`,`year`,`lastYear` |
 | createDateGt | String | *optional* | 创建时间大于 `Y-m-d` |
 | createDateLt | String | *optional* | 创建时间小于 `Y-m-d` |
-| likeCountGt | Number | *optional* | 点赞数大于 |
-| likeCountLt | Number | *optional* | 点赞数小于 |
-| dislikeCountGt | Number | *optional* | 点踩数大于 |
-| dislikeCountLt | Number | *optional* | 点踩数小于 |
-| followCountGt | Number | *optional* | 关注数大于 |
-| followCountLt | Number | *optional* | 关注数小于 |
-| blockCountGt | Number | *optional* | 屏蔽数大于 |
-| blockCountLt | Number | *optional* | 屏蔽数小于 |
+| likeCountGt | Number | *optional* | Likes count greater than |
+| likeCountLt | Number | *optional* | Likes count less than |
+| dislikeCountGt | Number | *optional* | Dislikes count greater than |
+| dislikeCountLt | Number | *optional* | Dislikes count less than |
+| followCountGt | Number | *optional* | Follows count greater than |
+| followCountLt | Number | *optional* | Follows count less than |
+| blockCountGt | Number | *optional* | Block count greater than |
+| blockCountLt | Number | *optional* | Block count less than |
 | postCountGt | Number | *optional* | 帖子数大于 |
 | postCountLt | Number | *optional* | 帖子数小于 |
 | postDigestCountGt | Number | *optional* | 精华数大于 |

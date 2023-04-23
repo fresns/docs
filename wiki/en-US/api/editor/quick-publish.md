@@ -21,7 +21,7 @@
 
 ## Body Params
 
-| 参数名 | 类型 | 是否必传 | **帖子**说明 | **评论**说明 |
+| Parameter Name | Type | Required | **Post** Description | **Comment** Description |
 | --- | --- | --- | --- | --- |
 | postQuotePid | String | *optional* | 引用的帖子 PID<br>非必填 | *帖子专用* |
 | postGid | String | *optional* | 小组<br>[post_editor_group_required](../../database/keyname/publish.md)<br>如果配置必填，则此处传参也必填 | *帖子专用* |

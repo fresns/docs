@@ -23,7 +23,7 @@
 
 | Parameter Name | Type | Required | Description |
 | --- | --- | --- | --- |
-| contentType | String | *optional* | 筛选过滤内容类型 |
+| contentType | String | *optional* | Filter content by type |
 | mapId | Number | *optional* | [Map Service Provider](../../database/dictionary/maps.md) |
 | mapLng | String | *optional* | Map Longitude (For distance calculation) |
 | mapLat | String | *optional* | Map Latitude (For distance calculation) |

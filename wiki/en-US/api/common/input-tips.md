@@ -17,8 +17,8 @@
 
 | Parameter Name | Type | Required | Description |
 | --- | --- | --- | --- |
-| type | String | **required** | 选其一 `user`,`group`,`hashtag`,`post`,`extend` |
-| key | String | **required** | 关键词 |
+| type | String | **required** | Choose one from `user`, `group`, `hashtag`, `post`, `extend` |
+| key | String | **required** | Keyword |
 
 ## Return
 
@@ -28,10 +28,10 @@
     "message": "ok",
     "data": [
         {
-            "fsid": "String / 简写 id 或者 slug",
-            "name": "String / 名称（或昵称）",
-            "image": "String / 图片链接",
-            "followStatus": "Boolean / type=user 专用，关注状态",
+            "fsid": "String / Abbreviated id or slug",
+            "name": "String / Name (or nickname)",
+            "image": "String / Image URL",
+            "followStatus": "Boolean / type=user specific, follow status",
         }
     ]
 }

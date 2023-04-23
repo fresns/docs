@@ -23,7 +23,7 @@
 
 | Parameter Name | Type | Required | Description |
 | --- | --- | --- | --- |
-| status | Number | *optional* | 1.可编辑草稿 / 2.审核中草稿<br>留空输出全部 |
+| status | Number | *optional* | `1`Editable drafts / `2`Drafts under review<br>Leave all output blank |
 | pageSize | Number | *optional* | Number of items per page (default 15 items) |
 | page | Number | *optional* | Page number (default 1) |
 

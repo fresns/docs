@@ -17,7 +17,7 @@
 
 | Parameter Name | Type | Required | Description |
 | --- | --- | --- | --- |
-| fid | String | **required** | 要下载的文件 FID |
+| fid | String | **required** | File to download |
 
 ## Query Params
 
@@ -43,9 +43,9 @@
         },
         "list": [
             {
-                "downloadTime": "String / 下载时间",
-                "downloadTimeFormat": "String / 下载时间",
-                "downloadUser": {
+                "datetime": "String / Download time",
+                "timeAgo": "String / Humanised download time",
+                "user": {
                     // Common Data Structure -> User Info
                 }
             }
