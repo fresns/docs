@@ -18,10 +18,10 @@
 | Parameter Name | Type | Required | Description |
 | --- | --- | --- | --- |
 | searchKey | String | **required** | Search Keywords |
-| followUsers | Boolean | NO | 指定范围：我关注的用户发表的 |
-| followGroups | Boolean | NO | 指定范围：我关注的小组里 |
-| followHashtags | Boolean | NO | 指定范围：我关注的话题里 |
-| followPosts | Boolean | NO | 指定范围：我关注的帖子 |
+| followUsers | Boolean | NO | Specified range: Published by users I follow |
+| followGroups | Boolean | NO | Specified range: In the groups I follow |
+| followHashtags | Boolean | NO | Specified range: In the topics I follow |
+| followPosts | Boolean | NO | Specified range: In the posts I follow |
 | ... |  | *optional* | Optional [post list](../post/list.md#query-params) api all parameters |
 
 ## Return

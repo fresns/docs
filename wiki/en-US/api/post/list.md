@@ -53,27 +53,27 @@
 
 **Request Description**
 
-- 如果是**私有模式**，当过期后 `users->expired_at`，需判断到期后的状态。
-    - 配置表 `site_private_end_after` 键值为 `1` 时，该接口不可请求；
-    - 键值为 `2` 时，仅输出 `posts->created_at` 发表时间小于失效时间 `users->expired_at` 的帖子。
-- `uidOrUsername` 参数值代表获取指定用户的帖子，根据 `运营 > 互动配置 > 查看别人内容设置` 决定是否输出。
-    - `it_posts` 配置，是否输出点赞我的用户
-- 如果 `uidOrUsername` 为登录用户自己时，上方配置无效，直接输出数据，表示查看自己的内容时无视开关。
-- 如果是非公开小组的帖子，不是小组内成员（未关注小组），不输出。
-- 屏蔽对象的帖子（用户、小组、话题、帖子）不输出。
+- If in `private` mode, when expired at `users->expired_at`, you need to determine the status after expiration.
+    - When the key value of the configuration table `site_private_end_after` is `1`, this interface cannot be requested;
+    - When the key value is 2, further judge the posting time. If posts->created_at posting time is greater than the expiration time users->expired_at, it will not be output; if the posting time is less than the expiration time, it means the content was posted before expiration and can be output.
+- The `uidOrUsername` parameter value represents obtaining posts from a specified user, and whether to output is determined by `Operations > Interaction > View user content settings`.
+    - `it_posts` configuration, whether to output users who liked my posts
+- If `uidOrUsername` is the logged-in user themselves, the above configuration is invalid, and data is directly output, indicating that the switch is ignored when viewing their own content.
+- If it is a non-public group post and not a member of the group (not following the group), it will not be output.
+- Posts of blocked objects (users, groups, topics, posts) will not be output.
 
-| contentType 参数（大驼峰格式） | 说明 |
+| `contentType` parameter (PascalCase) | Description |
 | --- | --- |
-| {空} | 输出全部内容 |
-| All | 输出全部内容 |
-| Text | 输出纯文本帖子 |
-| Image | 输出带图片的帖子 |
-| Video | 输出带视频的帖子 |
-| Audio | 输出带音频的帖子 |
-| Document | 输出带文档的帖子 |
-| {AbcName} | 输出含有插件 unikey 为 AbcName 扩展内容的帖子 |
+| {empty} | Output all content |
+| All | Output all content |
+| Text | Output plain text posts |
+| Image | Output posts with images |
+| Video | Output posts with videos |
+| Audio | Output posts with audio |
+| Document | Output posts with documents |
+| {AbcName} | Output posts with plugin unikey AbcName extended content |
 
-- 内容类型列表参考 [/api/v2/global/{type}/content-types](../global/content-types.md)
+- For content type list, refer to [/api/v2/global/{type}/content-types](../global/content-types.md)
 
 ## Return
 

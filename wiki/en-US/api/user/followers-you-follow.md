@@ -30,7 +30,7 @@
 
 **Request Description**
 
-- 接口会根据配置表设置 `运营 > 互动配置 > 查看用户内容设置 > 用户的哪些内容可以被别人查看` 决定是否输出数据。
+- 接口会根据配置表设置 `Operations > Interaction > View user content settings > Which of the user's content can be viewed by others` 决定是否输出数据。
     - 你认识的关注者
     - 配置 key `it_followers_you_follow`
 - 未登录也可以请求，将输出为空列表。

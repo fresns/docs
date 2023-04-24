@@ -23,9 +23,9 @@
 
 **Request Description**
 
-- `notificationType` 和 `notificationIds` 二选一传参，不可同时传参。
-- `type = all` 使用 `notificationType` 参数，批量设置指定类型全部为已读。
-- `type = choose` 使用 `notificationIds` 参数，批量设置指定 ID 的消息为已读。
+- Choose either `notificationType` or `notificationIds` to pass as a parameter, but not both.
+- `type = all`: Use the `notificationType` parameter to set all messages of the specified type as read in bulk.
+- `type = choose`: Use the `notificationIds` parameter to set specified ID messages as read in bulk.
 
 ## Return
 

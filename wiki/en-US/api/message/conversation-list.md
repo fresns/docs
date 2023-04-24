@@ -40,19 +40,20 @@
             {
                 "id": "Number / Conversation ID",
                 "user": {
-                    // 与我对话的用户信息，为空表示用户已注销
+                    // User information for the conversation with me, empty if the user has been deactivated.
                     // Common Data Structure -> User Info
                 },
                 "latestMessage": {
-                    "id": "Number / 最新一条消息 ID",
-                    "type": "Number / 1.文本消息 2.文件消息",
-                    "message": "String / 最新一条消息内容",
-                    "datetime": "String / 最新一条消息的时间",
-                    "datetimeFormat": "String / 最新一条消息的时间格式化",
+                    "id": "Number / Latest message ID",
+                    "type": "Number / 1. Text message 2. File message",
+                    "message": "String / Latest message content",
+                    "datetime": "String / Time of the latest message",
+                    "datetimeFormat": "String / Formatted time of the latest message",
+                    "timeAgo": "String / Humanization time",
                 },
-                "isPin": "Boolean / 是否置顶",
-                "messageCount": "Number / 全部消息数",
-                "unreadCount": "Number / 对话框未读消息数"
+                "isPin": "Boolean / Whether pinned",
+                "messageCount": "Number / Total message count",
+                "unreadCount": "Number / Unread message count in the conversation"
             }
         ]
     }

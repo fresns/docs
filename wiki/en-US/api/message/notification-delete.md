@@ -23,9 +23,9 @@
 
 **Request Description**
 
-- `notificationType` 和 `notificationIds` 二选一传参，不可同时传参。
-- `type = all` 使用 `notificationType` 参数，批量删除指定类型全部消息。
-- `type = choose` 使用 `notificationIds` 参数，批量删除指定 ID 的消息。
+- Choose either `notificationType` or `notificationIds` to pass as a parameter, but not both.
+- `type = all`: Use the `notificationType` parameter to delete all messages of the specified type in bulk.
+- `type = choose`: Use the `notificationIds` parameter to delete messages with specified IDs in bulk.
 
 ## Return
 

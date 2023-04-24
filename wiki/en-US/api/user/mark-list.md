@@ -17,9 +17,9 @@
 
 | Parameter Name | Type | Required | Description |
 | --- | --- | --- | --- |
-| uidOrUsername | String | **required** | 用户 `uid` 或者 `username` |
-| markType | String | **required** | 标记类型 `like`,`dislike`,`follow`,`block` |
-| listType | String | **required** | 列表类型 `users`,`groups`,`hashtags`,`posts`,`comments` |
+| uidOrUsername | String | **required** | User `uid` or `username` |
+| markType | String | **required** | `like`,`dislike`,`follow`,`block` |
+| listType | String | **required** | `users`,`groups`,`hashtags`,`posts`,`comments` |
 
 ## Query Params
 

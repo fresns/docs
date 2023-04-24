@@ -23,9 +23,9 @@
 
 **Request Description**
 
-- `conversationId` 和 `messageIds` 二选一传参，不可同时传参。
-- `type = conversation` 使用 `conversationId` 参数，将当前对话框设置为删除，并将对话下属于当前用户的消息全部删除。
-- `type = message` 使用 `messageIds` 参数，批量删除指定 ID 的消息。
+- Choose either `conversationId` or `messageIds` to pass as a parameter, but not both.
+- `type = conversation`: Use the `conversationId` parameter to set the current conversation as deleted and delete all messages belonging to the current user in the conversation.
+- `type = message`: Use the `messageIds` parameter to delete messages with specified IDs in bulk.
 
 ## Return
 

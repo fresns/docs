@@ -35,11 +35,11 @@
     "data": {
         "id": "Number / Conversation ID",
         "user": {
-            // 与我对话的用户信息，为空表示用户已注销
+            // User information for the conversation with me, empty if the user has been deactivated.
             // Common Data Structure -> User Info
         },
-        "messageCount": "Number / 全部消息数",
-        "unreadCount": "Number / 对话框未读消息数"
+        "messageCount": "Number / Total message count",
+        "unreadCount": "Number / Unread message count in the conversation"
     }
 }
 ```

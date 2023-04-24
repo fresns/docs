@@ -47,19 +47,20 @@
             {
                 "id": "Number / Message ID",
                 "user": {
-                    // 发信用户信息，为空表示用户已注销
+                    // Sender's user information, empty if the user has been deactivated.
                     // Common Data Structure -> User Info
                 },
-                "isMe": "Boolean / 是否为自己发的",
-                "type": "Number / 1.文本消息 2.文件消息",
-                "content": "String / 消息内容",
+                "isMe": "Boolean / Whether sent by myself",
+                "type": "Number / 1. Text message 2. File message",
+                "content": "String / Message content",
                 "file": {
-                    // 文件消息专用
+                    // File message specific
                     // Common Data Structure -> File Info
                 },
-                "datetime": "String / 发送时间",
-                "datetimeFormat": "String / 格式化的发送时间",
-                "readStatus": "Boolean / 阅读状态"
+                "datetime": "String / Sent time",
+                "datetimeFormat": "String / Formatted sent time",
+                "timeAgo": "String / Humanization time",
+                "readStatus": "Boolean / Read status"
             }
         ]
     }

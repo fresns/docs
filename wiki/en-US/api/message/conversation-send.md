@@ -17,18 +17,18 @@
 
 | Parameter Name | Type | Required | Description |
 | --- | --- | --- | --- |
-| uidOrUsername | String | **required** | 用户 `uid` 或者 `username` |
-| message | String | *optional* | 消息内容 |
-| fid | String | *optional* | 文件 FID |
+| uidOrUsername | String | **required** | User `uid` or `username` |
+| message | String | *optional* | Message Content |
+| fid | String | *optional* | File FID |
 
 **Request Description**
 
-- `message` 和 `fid` 二选一传参，不可全部留空，不可全部传参。
-- 发送文件，先使用[文件上传接口](../common/upload-file.md)，上传后获得 `fid` 传参。
-- 上传参数例子：
+- Choose either `message` or `fid` to pass as a parameter, but not both or neither.
+- To send a file, first use the [file upload API](../common/upload-file.md) to upload and obtain the `fid` as a parameter.
+- Upload parameter examples:
     - `tableName` = `conversation_messages`
     - `tableColumn` = `message_file_id`
-    - `tableKey` = 对方的 `uid` or `username`
+    - `tableKey` = recipient's `uid` or `username`
 
 ## Return
 
@@ -39,19 +39,20 @@
     "data": {
         "id": "Number / Message ID",
         "user": {
-            // 发信用户信息
+            // Sender's user information
             // Common Data Structure -> User Info
         },
-        "isMe": "Boolean / 是否为自己发的",
-        "type": "Number / 1.文本消息 2.文件消息",
-        "content": "String / 消息内容",
+        "isMe": "Boolean / Whether sent by myself",
+        "type": "Number / 1. Text message 2. File message",
+        "content": "String / Message content",
         "file": {
-            // 文件消息专用
+            // File message specific
             // Common Data Structure -> File Info
         },
-        "datetime": "String / 发送时间",
-        "datetimeFormat": "String / 格式化的发送时间",
-        "readStatus": "Boolean / 阅读状态"
+        "datetime": "String / Sent time",
+        "datetimeFormat": "String / Formatted sent time",
+        "timeAgo": "String / Humanization time",
+        "readStatus": "Boolean / Read status"
     }
 }
 ```

@@ -36,7 +36,7 @@
 - `type=dislike` Get the list of users who disliked `pid`.
 - `type=follow` Get the list of users who followed `pid`.
 - `type=block` Get the list of users who blocked `pid`.
-- The interface will decide whether to output data based on the configuration table settings `Operations > Interactions > View Interaction Record Settings`.
+- The interface will decide whether to output data based on the configuration table settings `Operations > Interaction > View interaction log settings`.
     - `post_likers` configuration, whether to output users who liked his
     - `post_dislikers` configuration, whether to output users who disliked his
     - `post_followers` configuration, whether to output users who followed his

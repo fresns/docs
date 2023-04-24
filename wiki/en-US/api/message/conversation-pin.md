@@ -21,7 +21,7 @@
 
 **Request Description**
 
-- 未置顶则置顶，已置顶则取消置顶
+- If not pinned, pin it; if pinned, unpin it.
 
 ## Return
 

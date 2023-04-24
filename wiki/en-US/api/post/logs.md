@@ -28,7 +28,7 @@
 
 **Request Description**
 
-- 可用于历史版本等场景。
+- Can be used for scenarios such as historical versions.
 
 ## Return
 

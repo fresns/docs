@@ -23,9 +23,9 @@
 
 **Request Description**
 
-- `conversationId` 和 `messageIds` 二选一传参，不可同时传参。
-- `type = conversation` 使用 `conversationId` 参数，将当前对话框设置为已读，不包括对话下的消息。
-- `type = message` 使用 `messageIds` 参数，批量设置指定 ID 的消息为已读。
+- Choose either `conversationId` or `messageIds` to pass as a parameter, but not both.
+- `type = conversation`: Use the `conversationId` parameter to set the current conversation as read, not including messages within the conversation.
+- `type = message`: Use the `messageIds` parameter to set specified ID messages as read in bulk.
 
 ## Return
 

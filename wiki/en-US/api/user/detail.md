@@ -17,7 +17,7 @@
 
 | Parameter Name | Type | Required | Description |
 | --- | --- | --- | --- |
-| uidOrUsername | String | **required** | 用户 `uid` 或者 `username` |
+| uidOrUsername | String | **required** | User `uid` or `username` |
 
 ## Query Params
 
@@ -39,7 +39,7 @@
             "description": "String / SEO Description",
             "manages": [
                 {
-                    // 用户管理扩展
+                    // User manage extensions
                     // Common Data Structure -> Extend Function Info
                 }
             ],

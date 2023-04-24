@@ -31,9 +31,9 @@
 
 **Request Description**
 
-- 如果是**私有模式**，当过期后 `users->expired_at`，需判断到期后的状态。
-    - 配置表 `site_private_end_after` 键值为 `1` 时，该接口不可请求；
-    - 键值为 `2` 时，再判断发表时间，如果 `posts->created_at` 发表时间大于失效时间 `users->expired_at`，则不输出；如果发表时间小于失效时间，则代表为失效前的内容，可以输出。
+- If in `private` mode, when expired at `users->expired_at`, you need to determine the status after expiration.
+    - When the key value of the configuration table `site_private_end_after` is `1`, this interface cannot be requested;
+    - When the key value is `2`, further judge the posting time. If `posts->created_at` posting time is greater than the expiration time `users->expired_at`, it will not be output; if the posting time is less than the expiration time, it means the content was posted before expiration and can be output.
 
 ## Return
 

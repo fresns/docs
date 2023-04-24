@@ -17,21 +17,21 @@
 
 | Parameter Name | Type | Required | Description |
 | --- | --- | --- | --- |
-| username | String | *optional* | 用户名（留空代表不修改） |
-| nickname | String | *optional* | 用户昵称（留空代表不修改） |
-| avatarFid | String | *optional* | 头像图文件 FID（留空代表不修改） |
-| avatarUrl | String | *optional* | 头像图地址（留空代表不修改） |
-| bannerFid | String | *optional* | 背景条幅图文件 FID（留空代表不修改） |
-| bannerUrl | String | *optional* | 背景条幅图地址（留空代表不修改） |
-| gender | Number | *optional* | 性别（留空代表不修改） |
-| birthday | String | *optional* | 生日（留空代表不修改，格式为 Y-m-d H:i:s） |
-| bio | String | *optional* | 简介（留空代表不修改） |
-| location | String | *optional* | 位置（留空代表不修改） |
-| conversationLimit | Number | *optional* | 对话设置（留空代表不修改） |
-| commentLimit | Number | *optional* | 评论设置（留空代表不修改） |
-| timezone | String | *optional* | 偏好时区（留空代表不修改） |
-| archives | Array | *optional* | 扩展资料（留空代表不修改） |
-| deviceToken | String | *optional* | iOS 或 Android 设备 Token（留空代表不修改） |
+| username | String | *optional* | Username (leave empty to not modify) |
+| nickname | String | *optional* | User nickname (leave empty to not modify) |
+| avatarFid | String | *optional* | Avatar image file FID (leave empty to not modify) |
+| avatarUrl | String | *optional* | Avatar image URL (leave empty to not modify) |
+| bannerFid | String | *optional* | Background banner image file FID (leave empty to not modify) |
+| bannerUrl | String | *optional* | Background banner image URL (leave empty to not modify) |
+| gender | Number | *optional* | Gender (leave empty to not modify) |
+| birthday | String | *optional* | Birthday (leave empty to not modify, format: Y-m-d H:i:s) |
+| bio | String | *optional* | Bio (leave empty to not modify) |
+| location | String | *optional* | Location (leave empty to not modify) |
+| conversationLimit | Number | *optional* | Conversation settings (leave empty to not modify) |
+| commentLimit | Number | *optional* | Comment settings (leave empty to not modify) |
+| timezone | String | *optional* | Preferred timezone (leave empty to not modify) |
+| archives | Array | *optional* | Extended information (leave empty to not modify) |
+| deviceToken | String | *optional* | iOS or Android device Token (leave empty to not modify) |
 
 **Request Description**
 
@@ -49,14 +49,14 @@
     {
         "code": "code",
         "value": "value",
-        "isPrivate": false, // 是否私有（是否对外公开展示）
+        "isPrivate": false, // Private or not (public display or not)
         "pluginUnikey": null
     },
     {
         "code": "code",
         "value": "value",
-        "isPrivate": true, // 是私有（0/1 或者布尔型）
-        "pluginUnikey": "可空"
+        "isPrivate": true,
+        "pluginUnikey": "Fresns"
     }
 ]
 ```

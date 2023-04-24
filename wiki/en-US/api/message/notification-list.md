@@ -28,40 +28,40 @@
 
 **Request Description**
 
-- `types` 留空输出全部，传参支持多个，以英文逗号隔开。
-- 按时间倒序排列，最新的在前面。
-- **系统消息解读：**
-    - `types=1` 代表系统给你发了一条 `content` 消息内容
-        - `isAccessPlugin` 是否访问插件页
-        - `actionUser` 是否有触发用户
-        - `actionObject + actionInfo` 是否有附带内容
-- **推荐消息解读：**
-    - `types=2` 代表系统给你推荐了内容
-        - `content` 推荐语
-        - `isAccessPlugin` 是否访问插件页
-        - `actionUser` 是否有触发用户
-        - `actionObject + actionInfo` 推荐的内容
-- **互动消息解读：**
-    - `types=3` 代表 `actionUser` 点赞了你的 `actionObject + actionInfo`
-    - `types=4` 代表 `actionUser` 踩了你的 `actionObject + actionInfo`
-    - `types=5` 代表 `actionUser` 关注了你的 `actionObject + actionInfo`
-    - `types=6` 代表 `actionUser` 屏蔽了你的 `actionObject + actionInfo`
-    - `types=7` 代表 `actionUser` 在 `actionObject + actionInfo` 中提及了你
-        - `content` 提及内容的摘要
-    - `types=8` 代表 `actionUser` 评论了你的 `actionObject + actionInfo`
-        - `content` 评论内容的摘要
-        - `actionCid` 他的评论 cid
-- **触发行为 actionType 类型介绍：**
-    - 1.点赞
-    - 2.点踩
-    - 3.关注
-    - 4.屏蔽
-    - 5.发表
-    - 6.编辑
-    - 7.删除
-    - 8.置顶
-    - 9.设精
-    - 10.管理
+- Leave `types` empty to output all, or pass multiple parameters separated by English commas.
+- Sorted in descending order by time, with the latest ones at the top.
+- **System message interpretation:**
+    - `types=1` means the system sent you a `content` message.
+        - `isAccessPlugin`: Whether to visit the plugin page.
+        - `actionUser`: Whether there is a triggering user.
+        - `actionObject + actionInfo`: Whether there is additional content.
+- **Recommended message interpretation:**
+    - `types=2` means the system recommended content for you.
+        - `content`: Recommendation text.
+        - `isAccessPlugin`: Whether to visit the plugin page.
+        - `actionUser`: Whether there is a triggering user.
+        - `actionObject + actionInfo`: Recommended content.
+- **Interaction message interpretation:**
+    - `types=3` means `actionUser` liked your `actionObject + actionInfo`.
+    - `types=4` means `actionUser` disliked your `actionObject + actionInfo`.
+    - `types=5` means `actionUser` followed your `actionObject + actionInfo`.
+    - `types=6` means `actionUser` blocked your `actionObject + actionInfo`.
+    - `types=7` means `actionUser` mentioned you in `actionObject + actionInfo`.
+        - `content`: Summary of the mentioned content.
+    - `types=8` means `actionUser` commented on your `actionObject + actionInfo`.
+        - `content`: Summary of the comment content.
+        - `actionCid`: Their comment cid.
+- **Trigger action `actionType` type introduction:**
+    - 1. Like
+    - 2. Dislike
+    - 3. Follow
+    - 4. Block
+    - 5. Publish
+    - 6. Edit
+    - 7. Delete
+    - 8. Sticky
+    - 9. Digest
+    - 10. Manage
 
 ## Return
 
@@ -78,30 +78,31 @@
         },
         "list": [
             {
-                "id": "Number / 通知 ID",
-                "type": "Number / 通知类型",
-                "content": "String / 通知内容",
-                "isMarkdown": "Boolean / 内容是否为 Markdown 格式",
-                "isAccessPlugin": "Boolean / 是否访问插件页",
-                "pluginUrl": "String / 插件页地址",
+                "id": "Number / Notification ID",
+                "type": "Number / Notification type",
+                "content": "String / Notification content",
+                "isMarkdown": "Boolean / Whether the content is in Markdown format",
+                "isAccessPlugin": "Boolean / Whether to visit the plugin page",
+                "pluginUrl": "String / Plugin page URL",
                 "actionUser": {
-                    // 触发消息的用户信息
+                    // User information of the user who triggered the message
                     // Common Data Structure -> User Info
                 },
-                "actionType": "Number / 触发行为类型",
-                "actionObject": "Number / 触发目标",
+                "actionType": "Number / Trigger action type",
+                "actionObject": "Number / Trigger target",
                 "actionInfo": {
-                    // 触发关联内容（公共数据结构）
-                    // actionObject=1  用户信息
-                    // actionObject=2  小组信息
-                    // actionObject=3  话题信息
-                    // actionObject=4  帖子信息
-                    // actionObject=5  评论信息
+                    // Trigger-related content (Common Data Structure)
+                    // actionObject=1  User information
+                    // actionObject=2  Group information
+                    // actionObject=3  Hashtag information
+                    // actionObject=4  Post information
+                    // actionObject=5  Comment information
                 },
-                "actionCid": "String / 评论事件的 cid",
-                "datetime": "String / 通知时间",
-                "datetimeFormat": "String / 通知时间格式化",
-                "readStatus": "Boolean / 阅读状态"
+                "actionCid": "String / Comment event cid",
+                "datetime": "String / Notification time",
+                "datetimeFormat": "String / Formatted notification time",
+                "timeAgo": "String / Humanized notification time",
+                "readStatus": "Boolean / Read status"
             }
         ]
     }
