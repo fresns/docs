@@ -51,6 +51,7 @@
         },
         "datetime": "String / 发送时间",
         "datetimeFormat": "String / 格式化的发送时间",
+        "timeAgo": "String / 人性化发送时间",
         "readStatus": "Boolean / 阅读状态"
     }
 }

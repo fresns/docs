@@ -44,7 +44,7 @@
         "list": [
             {
                 "datetime": "String / Download time",
-                "timeAgo": "String / Humanised download time",
+                "timeAgo": "String / Humanized download time",
                 "user": {
                     // Common Data Structure -> User Info
                 }

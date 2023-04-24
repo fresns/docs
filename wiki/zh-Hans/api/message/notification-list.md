@@ -101,6 +101,7 @@
                 "actionCid": "String / 评论事件的 cid",
                 "datetime": "String / 通知时间",
                 "datetimeFormat": "String / 通知时间格式化",
+                "timeAgo": "String / 人性化通知时间",
                 "readStatus": "Boolean / 阅读状态"
             }
         ]

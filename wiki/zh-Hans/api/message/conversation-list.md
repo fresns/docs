@@ -49,6 +49,7 @@
                     "message": "String / 最新一条消息内容",
                     "datetime": "String / 最新一条消息的时间",
                     "datetimeFormat": "String / 最新一条消息的时间格式化",
+                    "timeAgo": "String / 最新一条消息的人性化时间",
                 },
                 "isPin": "Boolean / 是否置顶",
                 "messageCount": "Number / 全部消息数",
