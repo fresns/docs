@@ -33,6 +33,10 @@
 | pageSize | Number | *optional* | Number of items per page (default 15 items) |
 | page | Number | *optional* | Page number (default 1) |
 
+**Request Description**
+
+- Returns a list of posts from my followers, based on a timeline, with the user own posts included in the `user` timeline.
+
 ## Return
 
 ```json
