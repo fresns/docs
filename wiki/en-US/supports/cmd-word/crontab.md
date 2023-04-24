@@ -47,7 +47,7 @@
     - `user_likes`
     - `user_follows`
     - `user_blocks`
-    - `files` *头像*
+    - `files` *Avatar*
     - `file_usages`
     - `notifications`
     - `seo`
@@ -70,4 +70,4 @@
 - 1、向 Fresns 官方发送已安装扩展清单（插件、引擎、主题、移动应用），接口返回该清单扩展的最新版本号。
 - 2、对比插件表版本号，如果不一致，更新版本号
     - `is_upgrade = 1`
-    - `upgrade_version = 接口返回的版本号`
+    - `upgrade_version = API 返回的版本号`

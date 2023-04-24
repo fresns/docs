@@ -7,14 +7,14 @@
 ```php
 protected $fresnsConfigItems = [
     [
-        'item_key' => 'fssms_content', // 键名
-        'item_value' => 1, // 键值
-        'item_type' => 'number', // 键类型: number, string, boolean, array, object, file, plugin, plugins
-        'item_tag' => 'fssms', // 键标签，自行定义，可便于你批量获取 tag 所有配置项
-        'is_multilingual' => 1, // 是否多语言: 0.否 / 1.是
-        'is_api' => 0, // 是否接口输出: 0.禁止 / 1.允许
+        'item_key' => 'fssms_content', // Key name
+        'item_value' => 1, // Key value
+        'item_type' => 'number', // Key type: number, string, boolean, array, object, file, plugin, plugins
+        'item_tag' => 'fssms', // Key tag, self-defined, make it easy for you to get all the configuration items of a tag in bulk
+        'is_multilingual' => 1, // Multilingual or not: 0.No / 1.Yes
+        'is_api' => 0, // API output or not: 0.Disable / 1.Allow
         'language_values' => [
-            'zh-Hans' => '中文内容', // 多语言内容
+            'zh-Hans' => '中文内容', // Multilingual content
             'en' => 'English Content',
         ],
     ],
@@ -38,14 +38,14 @@ ConfigUtility::addFresnsConfigItems($fresnsConfigItems);
 ```php
 protected $fresnsConfigItems = [
     [
-        'item_key' => 'fssms_content', // 键名
-        'item_value' => 1, // 键值
-        'item_type' => 'number', // 键类型: number, string, boolean, array, object, file, plugin, plugins
-        'item_tag' => 'fssms', // 键标签，自行定义，可便于你批量获取 tag 所有配置项
-        'is_multilingual' => 1, // 是否多语言: 0.否 / 1.是
-        'is_api' => 0, // 是否接口输出: 0.禁止 / 1.允许
+        'item_key' => 'fssms_content', // Key name
+        'item_value' => 1, // Key value
+        'item_type' => 'number', // Key type: number, string, boolean, array, object, file, plugin, plugins
+        'item_tag' => 'fssms', // Key tag, self-defined, make it easy for you to get all the configuration items of a tag in bulk
+        'is_multilingual' => 1, // Multilingual or not: 0.No / 1.Yes
+        'is_api' => 0, // API output or not: 0.Disable / 1.Allow
         'language_values' => [
-            'zh-Hans' => '中文内容', // 多语言内容
+            'zh-Hans' => '中文内容', // Multilingual content
             'en' => 'English Content',
         ],
     ],
@@ -99,8 +99,8 @@ ConfigUtility::getCodeMessage($code, $unikey, $langTag);
 ```
 | Parameter Name | Type | Required | Description |
 | --- | --- | --- | --- |
-| code | Number | **required** | 状态码 |
-| unikey | String | *optional* | 关联插件 unikey，留空则为 Fresns |
+| code | Number | **required** | Status code |
+| unikey | String | *optional* | Associated plugin unikey, if empty, it is Fresns |
 | langTag | String | *optional* | If empty, the default language is used. |
 
 ## 获取账号或用户登录错误次数

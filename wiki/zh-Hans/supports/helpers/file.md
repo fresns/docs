@@ -9,7 +9,7 @@ FileHelper::fresnsFileStorageConfigByType($type);
 ```
 | 参数名 | 类型 | 是否必传 | 说明 |
 | --- | --- | --- | --- |
-| type | Number | YES | 类型 ID |
+| type | Number | YES | [文件类型编号](../../database/number.md#文件类型) |
 
 ::: details 查看输出示例
 ```json
@@ -46,7 +46,7 @@ FileHelper::fresnsFileAcceptByType($type);
 ```
 | 参数名 | 类型 | 是否必传 | 说明 |
 | --- | --- | --- | --- |
-| type | Number | No | 1.图片 / 2.视频 / 3.音频 / 4.文档 |
+| type | Number | NO | 1.图片 / 2.视频 / 3.音频 / 4.文档 |
 
 - Mime 格式，多个以英文逗号隔开
 - 不传 type 则输出全部

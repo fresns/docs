@@ -5,26 +5,25 @@
 ```php
 \FresnsCmdWord::plugin('Fresns')->createDraft($wordBody)
 ```
-
-| 参数名 | 类型 | 是否必传 | **帖子**说明 | **评论**说明 |
+| Parameter Name | Type | Required | **Post** Description | **Comment** Description |
 | --- | --- | --- | --- | --- |
-| uid | Number | **required** | 用户 UID |  |
-| type | Number | **required** | `1` 帖子 | `2` 评论 |
-| createType | Number | **required** | 创建类型 1.快捷创建 2.编辑器创建 |  |
-| editorUnikey | String | *optional* | 是否插件编辑器，留空为否 |  |
-| postGid | String | *optional* | 小组，默认选中了小组 | *帖子专用* |
-| postTitle | String | *optional* | 标题，默认自带标题 | *帖子专用* |
-| postIsComment | Boolean | *optional* | 默认配置：是否可以评论帖子 | *帖子专用* |
-| postIsCommentPublic | Boolean | *optional* | 默认配置：是否公开评论<br>不公开则仅帖子作者可见 | *帖子专用* |
-| postQuotePid | String | *optional* | 引用的帖子 PID<br>非必填 | *帖子专用* |
-| commentPid | String | *optional* | *评论专用* | 评论哪个帖子，必传 |
-| commentCid | String | *optional* | *评论专用* | 留空表示评论帖子<br>有值表示回复这条评论 |
-| content | String | *optional* | 正文内容，默认自带内容 |  |
-| isMarkdown | Boolean | *optional* | 默认配置：内容是否为 MD 格式 |  |
-| isAnonymous | Boolean | *optional* | 默认配置：是否匿名 |  |
-| map | Object | *optional* | 默认配置：位置信息 |  |
-| extends | Array | *optional* | 默认配置：扩展内容 |  |
-| archives | Array | *optional* | 默认配置：扩展参数 |  |
+| uid | Number | **required** | User UID |  |
+| type | Number | **required** | `1` Post | `2` Comment |
+| createType | Number | **required** | Creation Type 1. Quick Create 2. Editor Create |  |
+| editorUnikey | String | *optional* | Is it a plugin editor? Empty means no |  |
+| postGid | String | *optional* | Group, default selected group | *Post specific* |
+| postTitle | String | *optional* | Title, default with title | *Post specific* |
+| postIsComment | Boolean | *optional* | Default configuration: Can the post be commented on? | *Post specific* |
+| postIsCommentPublic | Boolean | *optional* | Default configuration: Are comments public?<br>If not public, only the post author can see | *Post specific* |
+| postQuotePid | String | *optional* | Quoted post PID<br>Not required | *Post specific* |
+| commentPid | String | *optional* | *Comment specific* | Which post to comment, required |
+| commentCid | String | *optional* | *Comment specific* | Leave empty to comment on the post<br>If there is a value, it means to reply to this comment |
+| content | String | *optional* | Main content, default with content |  |
+| isMarkdown | Boolean | *optional* | Default configuration: Is the content in MD format? |  |
+| isAnonymous | Boolean | *optional* | Default configuration: Is it anonymous? |  |
+| map | Object | *optional* | Default configuration: Location information |  |
+| extends | Array | *optional* | Default configuration: Extended content |  |
+| archives | Array | *optional* | Default configuration: Extended parameters |  |
 
 ::: details Return Example
 ```json
@@ -32,8 +31,8 @@
     "code": 0,
     "message": "ok",
     "data": {
-        "type": 1, // 1.帖子 2.评论
-        "logId": "post_logs->id" // 或者 comment_logs->id
+        "type": 1, // 1.Post 2.Comment
+        "logId": "post_logs->id" // or comment_logs->id
     }
 }
 ```
@@ -44,11 +43,10 @@
 ```php
 \FresnsCmdWord::plugin('Fresns')->generateDraft($wordBody)
 ```
-
 | Parameter Name | Type | Required | Description |
 | --- | --- | --- | --- |
-| type | Number | **required** | 类型 1.帖子 2.评论 |
-| fsid | String | *optional* | 帖子 `posts->pid`<br>评论 `comments->cid` |
+| type | Number | **required** | 1.Post 2.Comment |
+| fsid | String | *optional* | Post `posts->pid`<br>Comment `comments->cid` |
 
 - 将已发表的正式内容，还原生成编辑草稿。
 - 评论不支持子孙级评论，仅限一级评论可生成草稿。
@@ -59,11 +57,11 @@
     "code": 0,
     "message": "ok",
     "data": {
-        "type": 1, // 1.帖子 2.评论
-        "logId": "post_logs->id", // 或者 comment_logs->id
-        "editableStatus": true, // 是否可编辑
-        "editableTime": "03:00", // 剩余可编辑时长，剩余 3 分钟
-        "deadlineTime": "2022-07-01 15:05:00" // 剩余可编辑截止具体日期时间
+        "type": 1, // 1.Post 2.Comment
+        "logId": "post_logs->id", // or comment_logs->id
+        "editableStatus": true, // Whether it is editable
+        "editableTime": "03:00", // Remaining editable duration, 3 minutes left
+        "deadlineTime": "2022-07-01 15:05:00" // The specific date and time remaining for editing
     }
 }
 ```
@@ -76,8 +74,8 @@
 ```
 | Parameter Name | Type | Required | Description |
 | --- | --- | --- | --- |
-| type | Number | **required** | 类型 1.帖子 2.评论 |
-| logId | Number | **required** | 帖子 `post_logs->id`<br>评论 `comment_logs->id` |
+| type | Number | **required** | 1.Post 2.Comment |
+| logId | Number | **required** | Post `post_logs->id`<br>Comment `comment_logs->id` |
 
 ::: details Return Example
 ```json
@@ -85,9 +83,9 @@
     "code": 0,
     "message": "ok",
     "data": {
-        "type": 1, // 1.帖子 2.评论
-        "id": "posts->id", // 或者 comments->id
-        "fsid": "posts->pid" // 或者 comments->cid
+        "type": 1, // 1.Post 2.Comment
+        "id": "posts->id", // or comments->id
+        "fsid": "posts->pid" // or comments->cid
     }
 }
 ```
@@ -98,24 +96,24 @@
 ```php
 \FresnsCmdWord::plugin('Fresns')->contentQuickPublish($wordBody)
 ```
-| 参数名 | 类型 | 是否必传 | **帖子**说明 | **评论**说明 |
+| Parameter Name | Type | Required | **Post** Description | **Comment** Description |
 | --- | --- | --- | --- | --- |
-| uid | Number | **required** | 用户 UID |  |
-| type | Number | **required** | `1` 帖子 | `2` 评论 |
-| postGid | String | *optional* | 小组，默认选中了小组 | *帖子专用* |
-| postTitle | String | *optional* | 标题，默认自带标题 | *帖子专用* |
-| postIsComment | Boolean | *optional* | 默认配置：是否可以评论帖子 | *帖子专用* |
-| postIsCommentPublic | Boolean | *optional* | 默认配置：是否公开评论<br>不公开则仅帖子作者可见 | *帖子专用* |
-| postQuotePid | String | *optional* | 引用的帖子 PID<br>非必填 | *帖子专用* |
-| commentPid | String | *optional* | *评论专用* | 评论哪个帖子，必传 |
-| commentCid | String | *optional* | *评论专用* | 留空表示评论帖子<br>有值表示回复这条评论 |
-| content | String | *optional* | 正文内容，默认自带内容 |  |
-| isMarkdown | Boolean | *optional* | 默认配置：内容是否为 MD 格式 |  |
-| isAnonymous | Boolean | *optional* | 默认配置：是否匿名 |  |
-| map | Object | *optional* | 默认配置：位置信息 |  |
-| extends | Array | *optional* | 默认配置：扩展内容 |  |
-| archives | Array | *optional* | 默认配置：扩展参数 |  |
-| requireReview | Boolean | *optional* | 是否需要审核<br>默认为 `false` 不需要审核 | 是否需要审核<br>默认为 `false` 不需要审核 |
+| uid | Number | **required** | User UID |  |
+| type | Number | **required** | `1` Post | `2` Comment |
+| postGid | String | *optional* | Group, default selected group | *Post specific* |
+| postTitle | String | *optional* | Title, default with title | *Post specific* |
+| postIsComment | Boolean | *optional* | Default configuration: Can the post be commented on? | *Post specific* |
+| postIsCommentPublic | Boolean | *optional* | Default configuration: Are comments public?<br>If not public, only the post author can see | *Post specific* |
+| postQuotePid | String | *optional* | Quoted post PID<br>Not required | *Post specific* |
+| commentPid | String | *optional* | *Comment specific* | Which post to comment, required |
+| commentCid | String | *optional* | *Comment specific* | Leave empty to comment on the post<br>If there is a value, it means to reply to this comment |
+| content | String | *optional* | Main content, default with content |  |
+| isMarkdown | Boolean | *optional* | Default configuration: Is the content in MD format? |  |
+| isAnonymous | Boolean | *optional* | Default configuration: Is it anonymous? |  |
+| map | Object | *optional* | Default configuration: Location information |  |
+| extends | Array | *optional* | Default configuration: Extended content |  |
+| archives | Array | *optional* | Default configuration: Extended parameters |  |
+| requireReview | Boolean | optional | Whether review is required<br>Default to `false`, meaning no review is needed | Whether review is required<br>Default to `false`, meaning no review is needed |
 
 ::: details Return Example
 ```json
@@ -123,10 +121,10 @@
     "code": 0,
     "message": "ok",
     "data": {
-        "type": 1, // 1.帖子 2.评论
-        "logId": "post_logs->id", // 或者 comment_logs->id
-        "id": "posts->id", // 或者 comments->id
-        "fsid": "posts->pid" // 或者 comments->cid
+        "type": 1, // 1.Post 2.Comment
+        "logId": "post_logs->id", // or comment_logs->id
+        "id": "posts->id", // or comments->id
+        "fsid": "posts->pid" // or comments->cid
     }
 }
 ```
@@ -139,10 +137,10 @@
 ```
 | Parameter Name | Type | Required | Description |
 | --- | --- | --- | --- |
-| type | Number | **required** | 类型 1.帖子 2.评论 |
-| contentType | Number | **required** | 类型 1.主表内容 2.日志表内容 |
-| contentFsid | String | *optional* | `contentType=1` 专用：帖子 `pid`，评论 `cid` |
-| contentLogId | Number | *optional* | `contentType=2` 专用：日志表主键 id |
+| type | Number | **required** | 1.Post 2.Comment |
+| contentType | Number | **required** | 1.Main table content 2.Log table contents |
+| contentFsid | String | *optional* | `contentType=1` specific: Post `pid`Comment `cid` |
+| contentLogId | Number | *optional* | `contentType=2` specific: Log table primary key ID |
 
 *本命令字是全量逻辑删除，如果业务场景涉及撤回功能，请勿使用，避免恢复时处理数据较多。*
 
@@ -153,7 +151,7 @@
 ```
 | Parameter Name | Type | Required | Description |
 | --- | --- | --- | --- |
-| type | Number | **required** | 类型 1.帖子 2.评论 |
-| contentType | Number | **required** | 类型 1.主表内容 2.日志表内容 |
-| contentFsid | String | *optional* | `contentType=1` 专用：帖子 `pid`，评论 `cid` |
-| contentLogId | Number | *optional* | `contentType=2` 专用：日志表主键 id |
+| type | Number | **required** | 1.Post 2.Comment |
+| contentType | Number | **required** | 1.Main table content 2.Log table contents |
+| contentFsid | String | *optional* | `contentType=1` specific: Post `pid`Comment `cid` |
+| contentLogId | Number | *optional* | `contentType=2` specific: Log table primary key ID |

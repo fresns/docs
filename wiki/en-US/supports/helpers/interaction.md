@@ -13,10 +13,10 @@ InteractionHelper::fresnsOverview();
 ```php
 InteractionHelper::fresnsRoleInfo($roleId, $langTag);
 ```
-| 参数名 | 类型 | 是否必传 | 说明 |
+| Parameter Name | Type | Required | Description |
 | --- | --- | --- | --- |
-| roleId | Number | Yes | 角色 ID |
-| langTag | String | NO | 语言标签，不传则使用默认语言 |
+| roleId | Number | Yes | Role ID |
+| langTag | String | *optional* | Language tag, if not provided, the default language will be used |
 
 ## 获取用户交互配置
 

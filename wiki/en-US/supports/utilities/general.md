@@ -7,24 +7,24 @@
 ```php
 ExtendUtility::collectionToTree($data, $primary, $parent, $children);
 ```
-| 参数名 | 类型 | 是否必传 | 说明 |
+| Parameter Name | Type | Required | Description |
 | --- | --- | --- | --- |
-| data | Array | NO | 列表数据 |
-| primary | String | YES | 主键 Key |
-| parent | String | YES | 父级主键 Key |
-| children | String | YES | 树结构子级键 Key |
+| data | Array | *optional* | List data |
+| primary | String | **required** | Primary Key |
+| parent | String | **required** | Parent Primary Key |
+| children | String | **required** | Tree structure child Key |
 
 ## 根据经纬度计算距离
 
 ```php
 ExtendUtility::distanceOfLocation($langTag, $long, $lat, $userLong, $userLat, $mapId, $userMapId);
 ```
-| 参数名 | 类型 | 是否必传 | 说明 |
+| Parameter Name | Type | Required | Description |
 | --- | --- | --- | --- |
-| langTag | String | YES | 语言标签，获取该语言的距离单位 `km` 或 `mi` |
-| long | String | YES | 经度 `longitude` |
-| lat | String | YES | 纬度 `latitude` |
-| userLong | String | YES | 用户的经度 |
-| userLat | String | YES | 用户的纬度 |
-| mapId | String | NO | 经纬度来自哪个[地图](../../database//dictionary/maps.md) |
-| userMapId | String | NO | 用户的经纬度来自哪个[地图](../../database//dictionary/maps.md) |
+| langTag | String | **required** | Language tag, get the distance unit `km` or `mi` for this language |
+| long | String | **required** | Longitude `longitude` |
+| lat | String | **required** | Latitude `latitude` |
+| userLong | String | **required** | User's longitude |
+| userLat | String | **required** | User's latitude |
+| mapId | String | *optional* | Longitude and latitude from which [map](../../database//dictionary/maps.md) |
+| userMapId | String | *optional* | User's longitude and latitude from which [map](../../database//dictionary/maps.md) |

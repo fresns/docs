@@ -10,7 +10,7 @@ ConfigHelper::fresnsConfigByItemKey($itemKey, $langTag);
 | Parameter Name | Type | Required | Description |
 | --- | --- | --- | --- |
 | itemKey | String | **required** | [configs->item_key](../../database/systems/configs.md) |
-| langTag | String | *optional* | 语言标签，可不传，仅对多语言配置有效。<br>如果是多语言配置，不传则输出默认语言值。 |
+| langTag | String | *optional* | Language tag(can be omitted), only effective for multi-language configurations.<br>If it is a multi-language configuration and not provided, the default language value will be output. |
 
 ## 根据一组 Key 获取配置值
 
@@ -20,7 +20,7 @@ ConfigHelper::fresnsConfigByItemKeys($itemKeys, $langTag);
 | Parameter Name | Type | Required | Description |
 | --- | --- | --- | --- |
 | itemKeys | Array | **required** | [configs->item_key](../../database/systems/configs.md) |
-| langTag | String | *optional* | 语言标签，可不传，仅对多语言配置有效。<br>如果是多语言配置，不传则输出默认语言值。 |
+| langTag | String | *optional* | Language tag(can be omitted), only effective for multi-language configurations.<br>If it is a multi-language configuration and not provided, the default language value will be output. |
 
 ::: details Return Example
 ```json
@@ -40,7 +40,7 @@ ConfigHelper::fresnsConfigByItemTag($itemTag, $langTag);
 | Parameter Name | Type | Required | Description |
 | --- | --- | --- | --- |
 | itemTag | String | **required** | [configs->item_tag](../../database/systems/configs.md) |
-| langTag | String | *optional* | 语言标签，可不传，仅对多语言配置有效。<br>如果是多语言配置，不传则输出默认语言值。 |
+| langTag | String | *optional* | Language tag(can be omitted), only effective for multi-language configurations.<br>If it is a multi-language configuration and not provided, the default language value will be output. |
 
 ::: details Return Example
 ```json

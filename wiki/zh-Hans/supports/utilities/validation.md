@@ -76,8 +76,8 @@ ValidationUtility::bio('bio');
 ::: details 数组结果
 ```json
 {
-    "length": true,  // 长度
-    "banWord": true,  // 禁用词
+    "length": true,  // 长度验证
+    "banWord": true,  // 禁用词验证
 }
 ```
 :::

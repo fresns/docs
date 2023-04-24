@@ -2,8 +2,8 @@
 
 `App\Utilities\ValidationUtility`
 
-- `true` 验证通过
-- `false` 验证未通过
+- `true` Verification passed
+- `false` Verification failed
 
 ## 验证一次性邮箱
 
@@ -19,14 +19,14 @@ ValidationUtility::disposableEmail('email');
 ```php
 ValidationUtility::password('password');
 ```
-::: details 数组结果
+::: details Array Result
 ```json
 {
-    "length": true,  // 长度
-    "number": true,  // 包含数字
-    "lowercase": true,  // 包含小写字母
-    "uppercase": true,  // 包含大写字母
-    "symbols": true,  // 包含特殊符号（不包括空格）
+    "length": true,  // Length validation
+    "number": true,  // Contains number
+    "lowercase": true,  // Contains lowercase letter
+    "uppercase": true,  // Contains uppercase letter
+    "symbols": true,  // Contains special symbols (excluding space)
 }
 ```
 :::
@@ -36,16 +36,16 @@ ValidationUtility::password('password');
 ```php
 ValidationUtility::username('username');
 ```
-::: details 数组结果
+::: details Array Result
 ```json
 {
-    "formatString": true,  // 无特殊字符
-    "formatHyphen": true,  // 一个连字符
-    "formatNumeric": true,  // 不是纯数字
-    "minLength": true,  // 最小长度
-    "maxLength": true,  // 最大长度
-    "use": true,  // 未被使用
-    "banName": true,  // 无禁用名
+    "formatString": true,  // No special characters
+    "formatHyphen": true,  // One hyphen
+    "formatNumeric": true,  // Not all numbers
+    "minLength": true,  // Minimum length
+    "maxLength": true,  // Maximum length
+    "use": true,  // Not used
+    "banName": true,  // No banned name
 }
 ```
 :::
@@ -55,15 +55,15 @@ ValidationUtility::username('username');
 ```php
 ValidationUtility::nickname('nickname');
 ```
-::: details 数组结果
+::: details Array Result
 ```json
 {
-    "formatString": true,  // 无标点符号
-    "formatSpace": true,  // 一个空格
-    "minLength": true,  // 最小长度
-    "maxLength": true,  // 最大长度
-    "use": true,  // 未被使用或无验证要求
-    "banName": true,  // 无禁用名
+    "formatString": true,  // No punctuation
+    "formatSpace": true,  // One space
+    "minLength": true,  // Minimum length
+    "maxLength": true,  // Maximum length
+    "use": true,  // Not used or no validation requirement
+    "banName": true,  // No banned name
 }
 ```
 :::
@@ -73,11 +73,11 @@ ValidationUtility::nickname('nickname');
 ```php
 ValidationUtility::bio('bio');
 ```
-::: details 数组结果
+::: details Array Result
 ```json
 {
-    "length": true,  // 长度
-    "banWord": true,  // 禁用词
+    "length": true,  // Length validation
+    "banWord": true,  // Banned word validation
 }
 ```
 :::

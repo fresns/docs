@@ -61,28 +61,27 @@ $uploadFileInfo = FileUtility::uploadFileInfo($bodyInfo);
 ```json
 [
     {
-        "name": "存储到 files->name",
-        "mime": "存储到 files->mime",
-        "extension": "存储到 files->extension",
-        "size": "存储到 files->size", // 单位 Byte
-        "md5": "存储到 files->md5",
-        "sha": "存储到 files->sha",
-        "shaType": "存储到 files->sha_type",
-        "disk": "存储到 files->disk", // local or remote
-        "path": "存储到 files->path",
-        "imageHandlePosition": "存储到 files->image_handle_position", // Physical image files only, Support: path-start, path-end, name-start, name-end
-        "imageWidth": "图片专用，存储到 files->image_width",
-        "imageHeight": "图片专用，存储到 files->image_height",
-        "videoTime": "视频专用，存储到 files->video_time",
-        "videoCover": "视频专用，存储到 files->video_cover",
-        "videoGif": "视频专用，存储到 files->video_gif",
-        "audioTime": "音频专用，存储到 files->audio_time",
-        "transcodingState": "音视频专用，存储到 files->transcoding_state",
+        "name": "Store to files->name",
+        "mime": "Store to files->mime",
+        "extension": "Store to files->extension",
+        "size": "Store to files->size", // Unit Byte
+        "md5": "Store to files->md5",
+        "sha": "Store to files->sha",
+        "shaType": "Store to files->sha_type",
+        "disk": "Store to files->disk", // local or remote
+        "path": "Store to files->path",
+        "imageHandlePosition": "Store to files->image_handle_position", // Physical image files only, Support: path-start, path-end, name-start, name-end
+        "imageWidth": "Image specific, store to files->image_width",
+        "imageHeight": "Image specific, store to files->image_height",
+        "videoTime": "Video specific, store to files->video_time",
+        "videoPosterPath": "Video specific, store to files->video_poster_path",
+        "audioTime": "Audio specific, store to files->audio_time",
+        "transcodingState": "Audio and video specific, store to files->transcoding_state",
         "moreJson": {
-            // 扩展信息，存储到 files->more_json
+            // Extended information, store to files->more_json
         },
-        "originalPath": "存储到 files->original_path",
-        "rating": "存储到 file_usages->rating",
+        "originalPath": "Store to files->original_path",
+        "rating": "Store to file_usages->rating",
     }
 ]
 ```

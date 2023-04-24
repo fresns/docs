@@ -11,8 +11,8 @@ PrimaryHelper::fresnsModelById($modelName, $id);
 ```
 | Parameter Name | Type | Required | Description |
 | --- | --- | --- | --- |
-| modelName | String | **required** | 模型名 |
-| fsid | String | **required** | 字段值，比如 aid 值 |
+| modelName | String | **required** | Model name |
+| fsid | String | **required** | Field value, e.g. aid value |
 
 **模型名**
 
@@ -33,12 +33,12 @@ PrimaryHelper::fresnsPrimaryId($tableName, $tableKey);
 ```
 | Parameter Name | Type | Required | Description |
 | --- | --- | --- | --- |
-| tableName | String | **required** | 表名 |
-| tableKey | String | **required** | 字段值，比如 aid 值 |
+| tableName | String | **required** | Table Name |
+| tableKey | String | **required** | Primary Key Name<br>For example, the aid value |
 
 - `configs`->`item_key`
 - `accounts`->`aid`
-- `users`->`uid`或者`username`
+- `users`->`uid` or `username`
 - `posts`->`pid`
 - `comments`->`cid`
 - `extends`->`eid`
@@ -55,7 +55,7 @@ PrimaryHelper::fresnsAccountIdByUidOrUsername($uidOrUsername);
 | Parameter Name | Type | Required | Description |
 | --- | --- | --- | --- |
 | aid | String | **required** | `accounts->aid` |
-| uidOrUsername | String | **required** | `users->uid` 或者 `users->username` |
+| uidOrUsername | String | **required** | `users->uid` or `users->username` |
 
 ## 获取用户主键 ID
 
@@ -64,7 +64,7 @@ PrimaryHelper::fresnsUserIdByUidOrUsername($uidOrUsername);
 ```
 | Parameter Name | Type | Required | Description |
 | --- | --- | --- | --- |
-| uidOrUsername | String | **required** | `users->uid` 或者 `users->username` |
+| uidOrUsername | String | **required** | `users->uid` or `users->username` |
 
 ## 获取小组主键 ID
 

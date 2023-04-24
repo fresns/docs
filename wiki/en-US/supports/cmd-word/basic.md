@@ -7,17 +7,17 @@
 ```
 | Parameter Name | Type | Required | Description |
 | --- | --- | --- | --- |
-| platformId | Number | **required** | 平台编号（配置表 [platforms](../../database/dictionary/platforms.md) 键名的键值） |
-| version | String | **required** | 语义化版本号 |
+| platformId | Number | **required** | Platform ID (Key value of the [platforms](../../database/dictionary/platforms.md) key name in the configuration table) |
+| version | String | **required** | Semantic version number |
 | appId | String | **required** | App ID |
-| timestamp | Number | **required** | 签名生成时间（当前 Unix 时间戳，精确到秒或毫秒都支持） |
-| sign | String | **required** | 请求签名 |
-| aid | String | **optional** | 账号参数（账号主表 `accounts->aid` 字段） |
-| aidToken | String | **optional** | 账号身份凭证 |
-| uid | Number | **optional** | 用户参数（用户主表 `users->uid` 字段） |
-| uidToken | String | **optional** | 用户身份凭证 |
-| verifyType | Number | *optional* | 验证 [session_keys->type](../../database/systems/session-keys.md)，留空则默认为 1 |
-| verifyUnikey | String | *optional* | 类型为 3 时专用，验证关联插件 |
+| timestamp | Number | **required** | Signature generation time (current Unix timestamp, accurate to seconds or milliseconds) |
+| signature | String | **required** | Request signature |
+| aid | String | **optional** | Account parameter (Account main table `accounts->aid` field) |
+| aidToken | String | **optional** | Account identity credential |
+| uid | Number | **optional** | User parameter (User main table `users->uid` field) |
+| uidToken | String | **optional** | User identity credential |
+| verifyType | Number | *optional* | Verify [session_keys->type](../../database/systems/session-keys.md), default to 1 if empty |
+| verifyUnikey | String | *optional* | Dedicated for type 3, verify associated plugin |
 
 ## verifyUrlAuthorization
 
@@ -26,7 +26,7 @@
 ```
 | Parameter Name | Type | Required | Description |
 | --- | --- | --- | --- |
-| urlAuthorization | String | **required** | 参考：[为插件生成路径凭证](../../extensions/callback/url-authorization.md) |
+| urlAuthorization | String | **required** | Reference: [Make URL Authorization](../../extensions/callback/url-authorization.md) |
 
 ::: details Return Example
 ```json
@@ -59,21 +59,21 @@
 ```
 | Parameter Name | Type | Required | Description |
 | --- | --- | --- | --- |
-| type | Number | **required** | [记录类型](../../database/systems/session-logs.md#log-type) |
-| platformId | Number | **required** | 平台编号（配置表 [platforms](../../database/dictionary/platforms.md) 键名的键值） |
-| version | String | **required** | 语义化版本号，例如: `2.0.0` |
-| appId | String | *optional* | 密钥 App ID |
+| type | Number | **required** | [Log Type](../../database/systems/session-logs.md#log-type) |
+| platformId | Number | **required** | Platform ID (Key value of the [platforms](../../database/dictionary/platforms.md) key name in the configuration table) |
+| version | String | **required** | Semantic version number, e.g., `2.0.0` |
+| appId | String | *optional* | Secret App ID |
 | langTag | String | *optional* | Language Tag |
-| pluginUnikey | String | *optional* | 插件 Unikey |
-| aid | String | *optional* | 账号 |
-| uid | Number | *optional* | 用户 |
-| objectName | String | **required** | 功能模型名或者接口路径<br>例如模型名 App\Models\Post<br>例如接口路径：/api/v2/account/login |
-| objectAction | String | **required** | 行为描述，自定义输入内容 |
-| objectResult | Number | **required** | 1.未知或执行中 / 2.成功 / 3.失败 |
-| objectOrderId | String | *optional* | 例如发表行为，则代表发表内容的 ID<br>插件行为，凭此 ID 可查询对应插件那边记录的关联信息 |
-| deviceInfo | Object | *optional* | 交互设备信息 |
-| deviceToken | String | *optional* | 交互设备 Token<br>例如 iOS Device Token 或 Android Device Token<br>可应用于推送消息 |
-| moreJson | Object | *optional* | 其他自定义信息 |
+| pluginUnikey | String | *optional* | Plugin Unikey |
+| aid | String | *optional* | Account |
+| uid | Number | *optional* | User |
+| objectName | String | **required** | Function model name or interface path<br>For example, model name App\Models\Post<br>For example, interface path: /api/v2/account/login |
+| objectAction | String | **required** | Action description, custom input content |
+| objectResult | Number | **required** | 1. Unknown or in progress / 2. Success / 3. Failure |
+| objectOrderId | String | *optional* | For example, if it is a publishing action, it represents the ID of the published content<br>Plugin behavior, this ID can query the corresponding plugin-side related information |
+| deviceInfo | Object | *optional* | Interaction device information |
+| deviceToken | String | *optional* | Interaction device Token<br>For example, iOS Device Token or Android Device Token<br>Can be used for push notifications |
+| moreJson | Object | *optional* | Other custom information |
 
 ## sendCode
 
@@ -82,10 +82,10 @@
 ```
 | Parameter Name | Type | Required | Description |
 | --- | --- | --- | --- |
-| type | Number | **required** | 类型：1.邮件验证码 / 2.短信验证码 |
-| account | String | **required** | 账号（邮箱或手机号） |
-| countryCode | Number | *optional* | 国际区号（手机号专用） |
-| templateId | Number | **required** | [验证码模板 ID](../../database/keyname/send.md#verify-code-templates) |
+| type | Number | **required** | Type: 1. Email verification code / 2. SMS verification code |
+| account | String | **required** | Account (email or phone number) |
+| countryCode | Number | *optional* | International area code (phone number specific) |
+| templateId | Number | **required** | [Code Template ID](../../database/keyname/send.md#verify-code-templates) |
 | langTag | String | **required** | Language Tag |
 
 ## checkCode
@@ -95,11 +95,11 @@
 ```
 | Parameter Name | Type | Required | Description |
 | --- | --- | --- | --- |
-| type | Number | **required** | 类型：1.邮件验证码 / 2.短信验证码 |
-| account | String | **required** | 账号（邮箱或手机号） |
-| countryCode | Number | *optional* | 国际区号（手机号专用） |
-| verifyCode | String | **required** | 验证码 |
-| templateId | Number | **required** | [验证码模板 ID](../../database/keyname/send.md#verify-code-templates) |
+| type | Number | **required** | Type: 1. Email verification code / 2. SMS verification code |
+| account | String | **required** | Account (email or phone number) |
+| countryCode | Number | *optional* | International area code (phone number specific) |
+| verifyCode | String | **required** | Verify Code |
+| templateId | Number | **required** | [Code Template ID](../../database/keyname/send.md#verify-code-templates) |
 
 ## ipInfo
 
@@ -108,6 +108,6 @@
 ```
 | Parameter Name | Type | Required | Description |
 | --- | --- | --- | --- |
-| ipv4 | String | **required** | 支持 IPv4 或 IPv6 |
+| ipv4 | String | **required** | IPv4 and IPv6 support |
 
-- 输出结果同 [IP 信息接口](../../api/common/ip-info.md)
+- The output result is the same as the [IP Info Interface](../../api/common/ip-info.md)

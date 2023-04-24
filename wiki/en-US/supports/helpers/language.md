@@ -9,10 +9,10 @@ LanguageHelper::fresnsLanguageByTableId($tableName, $tableColumn, $tableId, $lan
 ```
 | Parameter Name | Type | Required | Description |
 | --- | --- | --- | --- |
-| tableName | String | **required** | 表名 |
-| tableColumn | String | **required** | 字段名 |
-| tableId | Number | **required** | 主键 ID |
-| langTag | String | *optional* | 语言标签，可不传<br>如果传参，则输出指定语言标签内容。<br>如果不传，则输出全部语言值，格式见下方。 |
+| tableName | String | **required** | Table name |
+| tableColumn | String | **required** | Column name |
+| tableId | Number | **required** | Primary key ID |
+| langTag | String | *optional* | Language tag, not required<br>If passed, output content for the specified language tag.<br>If not passed, output values for all languages, format as below. |
 
 ::: details Return Example
 ```json
@@ -36,6 +36,6 @@ LanguageHelper::fresnsLanguageByTableKey($tableKey, $itemType, $langTag);
 ```
 | Parameter Name | Type | Required | Description |
 | --- | --- | --- | --- |
-| tableKey | String | **required** | 配置表 Key |
-| itemType | String | *optional* | 数据类型，默认为 string<br>number / string / boolean / array / object |
-| langTag | String | *optional* | 语言标签，可不传<br>如果传参，则输出指定语言标签内容。<br>如果不传，则输出全部语言值，格式同上。 |
+| tableKey | String | **required** | Configuration table Key |
+| itemType | String | *optional* | Data type, default is string<br>number / string / boolean / array / object |
+| langTag | String | *optional* | Language tag, not required<br>If passed, output content for the specified language tag.<br>If not passed, output values for all languages, format as above. |

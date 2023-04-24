@@ -7,11 +7,11 @@
 ```
 | Parameter Name | Type | Required | Description |
 | --- | --- | --- | --- |
-| type | Number | **required** | 账号类型：1.邮箱 / 2.手机号 / 3.互联平台 |
-| account | String | **optional** | 邮箱或手机号专用：邮箱地址 / 手机号码（`type=1 或 2` 时必填） |
-| countryCode | Number | **optional** | 手机号专用：国际区号（`type=2` 时必填） |
-| connectInfo | Array | **optional** | 互联平台专用：平台信息（`type=3` 时必填） |
-| password | String | *optional* | 登录密码 |
+| type | Number | **required** | Account type: 1. Email / 2. Mobile number / 3. Connected platform |
+| account | String | **optional** | Email or mobile number specific: Email address / Mobile number (required when `type=1 or 2`) |
+| countryCode | Number | **optional** | Mobile number specific: International area code (required when `type=2`) |
+| connectInfo | Array | **optional** | Connected platform specific: Platform information (required when `type=3`) |
+| password | String | *optional* | Login password |
 
 ::: details Return Example
 ```json
@@ -26,41 +26,40 @@
 ```
 :::
 
-::: details 查看 connectInfo 参数介绍
-- 支持多个，例如微信平台会同时有 UnionID 和 OpenID 两个参数。
-- 必传参数 `connectId` `connectToken` `connectNickname` `pluginUnikey`
+::: details Check `connectInfo` parameter introduction
+- Supports multiple, for example, the WeChat platform will have both UnionID and OpenID parameters.
+- Required parameters: `connectId`, `connectToken`, `connectNickname`, `pluginUnikey`
 ```json
 [
     {
-        "connectId": 8, //存储到 account_connects->connect_id
-        "connectToken": "unionid", //存储到 account_connects->connect_token
-        "connectRefreshToken": null, //存储到 account_connects->connect_refresh_token
-        "connectUsername": "账号名", //存储到 account_connects->connect_username
-        "connectNickname": "昵称", //存储到 account_connects->connect_nickname
-        "connectAvatar": "头像 URL", //存储到 account_connects->connect_avatar
-        "pluginUnikey": "请求者 unikey ", //存储到 account_connects->plugin_unikey
-        "moreJson": {}, //存储到 account_connects->more_json
+        "connectId": 8, //Store to account_connects->connect_id
+        "connectToken": "unionid", //Store to account_connects->connect_token
+        "connectRefreshToken": null, //Store to account_connects->connect_refresh_token
+        "connectUsername": "Account name", //Store to account_connects->connect_username
+        "connectNickname": "Nickname", //Store to account_connects->connect_nickname
+        "connectAvatar": "Avatar URL", //Store to account_connects->connect_avatar
+        "pluginUnikey": "Requester's unikey", //Store to account_connects->plugin_unikey
+        "moreJson": {}, //Store to account_connects->more_json
     },
     {
         "connectId": 9,
         "connectToken": "openid",
         "connectRefreshToken": null,
-        "connectUsername": "账号名",
-        "connectNickname": "昵称",
-        "connectAvatar": "头像 URL",
-        "pluginUnikey": "请求者 unikey ",
+        "connectUsername": "Account name",
+        "connectNickname": "Nickname",
+        "connectAvatar": "Avatar URL",
+        "pluginUnikey": "Requester's unikey",
         "moreJson": {},
     }
 ]
 ```
 :::
 
-::: details 查看注册逻辑
-- 注册时需要生成的数据清单
-    - 账号主表 `accounts`
-    - 账号钱包表 `account_wallets`
-    - 其余传参有值时直接录入，无值时留空。
-- 注册完成后，增加数据统计。配置表键值 `accounts_count +1`。
+::: details Check registration logic
+- List of data to be generated during registration
+    - Main account table `accounts`
+    - Account wallet table `account_wallets`
+    - Record other parameters directly if they have a value, otherwise leave them empty.
 :::
 
 ## verifyAccount
@@ -70,11 +69,11 @@
 ```
 | Parameter Name | Type | Required | Description |
 | --- | --- | --- | --- |
-| type | Number | **required** | 账号类型：1.邮箱 / 2.手机号 |
-| account | String | **required** | 邮箱地址<br>手机号码 |
-| countryCode | Number | *optional* | 手机号专用：国际区号（`type=2` 时必填） |
-| password | String | *optional* | 以密码校验专用 |
-| verifyCode | String | *optional* | 以验证码校验专用（命令字 [checkCode](#校验验证码) 查验） |
+| type | Number | **required** | Account type: 1. Email / 2. Mobile number |
+| account | String | **required** | Email address<br>Mobile number |
+| countryCode | Number | *optional* | Mobile number specific: International area code (required when `type=2`) |
+| password | String | *optional* | For password verification specific |
+| verifyCode | String | *optional* | For verification code specific (check using [checkCode](basic.md#checkcode) command) |
 
 ::: details Return Example
 ```json
@@ -96,11 +95,11 @@
 ```
 | Parameter Name | Type | Required | Description |
 | --- | --- | --- | --- |
-| platformId | Number | **required** | 平台编号（配置表 [platforms](../../database/dictionary/platforms.md) 键名的键值） |
-| version | String | **required** | 语义化版本号 |
+| platformId | Number | **required** | Platform ID (Key value of the [platforms](../../database/dictionary/platforms.md) key name in the configuration table) |
+| version | String | **required** | Semantic version number |
 | appId | String | **required** | App ID |
-| aid | String | **required** | 账号参数 `session_tokens->account_id`<br>存储时由 `aid` 转换成 `accounts->id` |
-| expiredTime | Number | *optional* | 过期时间，单位：小时（为空代表永久有效） |
+| aid | String | **required** | Account parameter `session_tokens->account_id`<br>Stored as `accounts->id` after converting from `aid` |
+| expiredTime | Number | *optional* | Expiration time, in hours (empty means valid forever) |
 
 ::: details Return Example
 ```json
@@ -111,9 +110,9 @@
         "aid": "accounts->aid",
         "aidToken": "session_tokens->token",
         "aidTokenId": "session_tokens->id",
-        "expiredHours": "有效期小时数", // 没有则输出 null
-        "expiredDays": "有效期天数", // 没有则输出 null
-        "expiredDateTime": "session_tokens->expired_at 留空代表永久有效，格式为 Y-m-d H:i:s", // 没有则输出 null
+        "expiredHours": "Expiration hours, null indicates permanent validity",
+        "expiredDays": "Expiration days, null indicates permanent validity",
+        "expiredDateTime": "session_tokens->expired_at / Token expiration time, null indicates permanent validity, format is Y-m-d H:i:s",
     }
 }
 ```
@@ -126,9 +125,9 @@
 ```
 | Parameter Name | Type | Required | Description |
 | --- | --- | --- | --- |
-| platformId | Number | **required** | 平台编号（配置表 [platforms](../../database/dictionary/platforms.md) 键名的键值） |
-| aid | String | **required** | 账号参数 `session_tokens->account_id`<br>查验时由 `aid` 转换成 `accounts->id` |
-| aidToken | String | **required** | 身份凭证（凭证表 `session_tokens->token` 字段） |
+| platformId | Number | **required** | Platform ID (Key value of the [platforms](../../database/dictionary/platforms.md) key name in the configuration table) |
+| aid | String | **required** | Account parameter `session_tokens->account_id`<br>Checked by converting `aid` to `accounts->id` |
+| aidToken | String | **required** | Identity credential (Credential table `session_tokens->token` field) |
 
 ## logicalDeletionAccount
 

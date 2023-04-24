@@ -9,7 +9,7 @@ InteractionUtility::checkUserLike($likeType, $likeId, $userId);
 | Parameter Name | Type | Required | Description |
 | --- | --- | --- | --- |
 | likeType | Number | **required** | 1.User / 2.Group / 3.Hashtag / 4.Post / 5.Comment |
-| likeId | Number | **required** | 对应类型的主键 ID |
+| likeId | Number | **required** | Primary key ID of the corresponding type |
 | userId | Number | **required** | `users->id` |
 
 - 检查用户 `userId` 是否对 `likeType` 对象的 `likeId` 操作了点赞。
@@ -21,7 +21,7 @@ InteractionUtility::checkUserDislike($dislikeType, $dislikeId, $userId);
 | Parameter Name | Type | Required | Description |
 | --- | --- | --- | --- |
 | dislikeType | Number | **required** | 1.User / 2.Group / 3.Hashtag / 4.Post / 5.Comment |
-| dislikeId | Number | **required** | 对应类型的主键 ID |
+| dislikeId | Number | **required** | Primary key ID of the corresponding type |
 | userId | Number | **required** | `users->id` |
 
 - 检查用户 `userId` 是否对 `dislikeType` 对象的 `dislikeId` 操作了点踩。
@@ -33,7 +33,7 @@ InteractionUtility::checkUserFollow($followType, $followId, $userId);
 | Parameter Name | Type | Required | Description |
 | --- | --- | --- | --- |
 | followType | Number | **required** | 1.User / 2.Group / 3.Hashtag / 4.Post / 5.Comment |
-| followId | Number | **required** | 对应类型的主键 ID |
+| followId | Number | **required** | Primary key ID of the corresponding type |
 | userId | Number | **required** | `users->id` |
 
 - 检查用户 `userId` 是否对 `followType` 对象的 `followId` 操作了关注。
@@ -45,7 +45,7 @@ InteractionUtility::checkUserBlock($blockType, $blockId, $userId);
 | Parameter Name | Type | Required | Description |
 | --- | --- | --- | --- |
 | blockType | Number | **required** | 1.User / 2.Group / 3.Hashtag / 4.Post / 5.Comment |
-| blockId | Number | **required** | 对应类型的主键 ID |
+| blockId | Number | **required** | Primary key ID of the corresponding type |
 | userId | Number | **required** | `users->id` |
 
 - 检查用户 `userId` 是否对 `blockType` 对象的 `blockId` 操作了屏蔽。
@@ -57,7 +57,7 @@ InteractionUtility::checkInteractionStatus($markType, $markId, $userId);
 | Parameter Name | Type | Required | Description |
 | --- | --- | --- | --- |
 | markType | Number | **required** | 1.User / 2.Group / 3.Hashtag / 4.Post / 5.Comment |
-| markId | Number | **required** | 对应类型的主键 ID |
+| markId | Number | **required** | Primary key ID of the corresponding type |
 | userId | Number | **required** | `users->id` |
 
 - 检查用户 `userId` 是否对 `markType` 对象的 `markId` 操作。
@@ -90,9 +90,9 @@ InteractionUtility::markContentSticky($type, $id, $stickyState);
 ```
 | Parameter Name | Type | Required | Description |
 | --- | --- | --- | --- |
-| type | Number | **required** | `post` 或 `comment` |
-| id | Number | **required** | 对应类型的主键 ID |
-| stickyState | Number | **required** | 帖子: 1.否 / 2.小组页置顶 / 3.全局置顶<br>评论: 0.否 / 1.是 |
+| type | Number | **required** | `post` or `comment` |
+| id | Number | **required** | Primary key ID of the corresponding type |
+| stickyState | Number | **required** | Post: 1.No / 2.Group State / 3.Global Sticky<br>Comment: 0.No / 1.Yes |
 
 ## 操作内容精华
 ```php
@@ -100,9 +100,9 @@ InteractionUtility::markContentDigest($type, $id, $digestState);
 ```
 | Parameter Name | Type | Required | Description |
 | --- | --- | --- | --- |
-| type | Number | **required** | `post` 或 `comment` |
-| id | Number | **required** | 对应类型的主键 ID |
-| digestState | Number | **required** | 1.否 / 2.普通精华 / 3.高级精华 |
+| type | Number | **required** | `post` or `comment` |
+| id | Number | **required** | Primary key ID of the corresponding type |
+| digestState | Number | **required** | 1.No / 2.General Digest / 3.Advanced Digest |
 
 ## 操作行为统计记数
 ```php
@@ -113,8 +113,8 @@ InteractionUtility::markStats($userId, $interactionType, $markType, $markId, $ac
 | userId | Number | **required** | `users->id` |
 | interactionType | String | **required** | `like`, `dislike`, `follow`, `block` |
 | markType | Number | **required** | 1.User / 2.Group / 3.Hashtag / 4.Post / 5.Comment |
-| markId | Number | **required** | 对应类型的主键 ID |
-| actionType | String | **required** | `increment` 或 `decrement` |
+| markId | Number | **required** | Primary key ID of the corresponding type |
+| actionType | String | **required** | `increment` or `decrement` |
 
 ## 发表行为统计记数
 ```php
@@ -122,9 +122,9 @@ InteractionUtility::publishStats($type, $id, $actionType);
 ```
 | Parameter Name | Type | Required | Description |
 | --- | --- | --- | --- |
-| type | Number | **required** | `post` 或 `comment` |
-| id | Number | **required** | 对应类型的主键 ID |
-| actionType | String | **required** | `increment` 或 `decrement` |
+| type | Number | **required** | `post` or `comment` |
+| id | Number | **required** | Primary key ID of the corresponding type |
+| actionType | String | **required** | `increment` or `decrement` |
 
 ## 精华行为统计记数
 ```php
@@ -132,9 +132,9 @@ InteractionUtility::digestStats($type, $id, $actionType);
 ```
 | Parameter Name | Type | Required | Description |
 | --- | --- | --- | --- |
-| type | Number | **required** | `post` 或 `comment` |
-| id | Number | **required** | 对应类型的主键 ID |
-| actionType | String | **required** | `increment` 或 `decrement` |
+| type | Number | **required** | `post` or `comment` |
+| id | Number | **required** | Primary key ID of the corresponding type |
+| actionType | String | **required** | `increment` or `decrement` |
 
 ## 获取关注对象 ID 数组
 ```php

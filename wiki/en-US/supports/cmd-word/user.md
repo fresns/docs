@@ -7,20 +7,20 @@
 ```
 | Parameter Name | Type | Required | Description |
 | --- | --- | --- | --- |
-| aid | String | **required** | 关联字段 `accounts->aid` |
-| aidToken | String | *optional* | 不传则不验证账号身份，直接为该账号添加用户 |
-| platformId | Number | *optional* | 平台编号，传 `aidToken` 时必传 |
-| version | String | *optional* | 语义化版本号，传 `aidToken` 时必传 |
-| appId | String | *optional* | App ID，传 `aidToken` 时必传 |
-| nickname | String | **required** | 昵称，关联字段 `users->nickname` |
-| username | String | *optional* | 用户名，关联字段 `users->username`<br>不传则随机生成一个 6~8 位字符，需要避免使用禁用名（键名 [ban_names](../../database/dictionary/ban-names.md) 禁用值） |
-| password | String | *optional* | 登录密码，关联字段 `users->password` |
-| avatarFid | String | *optional* | 头像 fid，存储时转换成 `files->id`<br>关联字段 `users->avatar_file_id` |
-| avatarUrl | String | *optional* | 头像 URL，关联字段 `users->avatar_file_url`<br>如果留空，则判断 `avatarFid` 是否也留空，如果有值，则凭 fid 获取 url 入库（忽略防盗链，仅拼接地址） |
-| gender | Number | *optional* | 性别，关联字段 `users->gender` |
-| birthday | String | *optional* | 生日，关联字段 `users->birthday`，格式为 Y-m-d H:i:s |
-| timezone | String | *optional* | 偏好时区，关联字段 `users->timezone` |
-| language | String | *optional* | 偏好语言，关联字段 `users->language` |
+| aid | String | **required** | Related field `accounts->aid` |
+| aidToken | String | *optional* | If not passed, the account identity will not be verified, and users will be added directly to the account |
+| platformId | Number | *optional* | Platform ID, required when passing `aidToken` |
+| version | String | *optional* | Semantic version number, required when passing `aidToken` |
+| appId | String | *optional* | App ID, required when passing `aidToken` |
+| nickname | String | **required** | Nickname, related field `users->nickname` |
+| username | String | *optional* | Username, related field `users->username`<br>If not passed, a random 6-8 character string will be generated, avoiding the use of banned names (key name [ban_names](../../database/dictionary/ban-names.md) banned values) |
+| password | String | *optional* | Login password, related field `users->password` |
+| avatarFid | String | *optional* | Avatar file fid, converted to `files->id` when stored<br>Related field `users->avatar_file_id` |
+| avatarUrl | String | *optional* | Avatar file URL, related field `users->avatar_file_url`<br>If left empty, check if `avatarFid` is also empty, if not, store the url obtained by fid in the database (ignoring anti-leech, only stitching the address) |
+| gender | Number | *optional* | Gender, related field `users->gender` |
+| birthday | String | *optional* | Birthday, related field `users->birthday`, format is Y-m-d H:i:s |
+| timezone | String | *optional* | Preferred timezone, related field `users->timezone` |
+| language | String | *optional* | Preferred language, related field `users->language` |
 
 ::: details Return Example
 ```json
@@ -44,7 +44,6 @@
     - 用户数据统计表 `user_stats`
     - 用户角色关联表 `user_roles`：初始角色来自配置表 `default_role` 键值。
     - 其余传参有值时直接录入，无值时留空。
-- 注册完成后，增加数据统计。配置表键值 `users_count +1`。
 :::
 
 ## verifyUser
@@ -54,13 +53,13 @@
 ```
 | Parameter Name | Type | Required | Description |
 | --- | --- | --- | --- |
-| platformId | Number | **required** | 平台编号（配置表 [platforms](../../database/dictionary/platforms.md) 键名的键值） |
-| version | String | **required** | 语义化版本号 |
+| platformId | Number | **required** | Platform ID (key value of the key name in the configuration table [platforms](../../database/dictionary/platforms.md)) |
+| version | String | **required** | Semantic version number |
 | appId | String | **required** | App ID |
-| aid | String | **required** | 账号 AID `accounts->aid` |
-| aidToken | String | **required** | 账号 Token |
-| uid | Number | **required** | 用户 UID `users->uid` |
-| password | String | *optional* | 密码 `users->password` |
+| aid | String | **required** | Account AID `accounts->aid` |
+| aidToken | String | **required** | Account Token |
+| uid | Number | **required** | User UID `users->uid` |
+| password | String | *optional* | Password `users->password` |
 
 ::: details Return Example
 ```json
@@ -83,13 +82,13 @@
 ```
 | Parameter Name | Type | Required | Description |
 | --- | --- | --- | --- |
-| platformId | Number | **required** | 平台编号（配置表 [platforms](../../database/dictionary/platforms.md) 键名的键值） |
-| version | String | **required** | 语义化版本号 |
+| platformId | Number | **required** | Platform ID (key value of the key name in the configuration table [platforms](../../database/dictionary/platforms.md)) |
+| version | String | **required** | Semantic version number |
 | appId | String | **required** | App ID |
-| aid | String | **required** | 账号参数 `session_tokens->account_id`<br>存储时由 `aid` 转换成 `accounts->id` |
-| aidToken | String | **required** | 账号身份凭证（凭证表 `session_tokens->token` 字段） |
-| uid | Number | **required** | 用户参数 `session_tokens->user_id`<br>存储时由 `uid` 转换成 `users->id` |
-| expiredTime | Number | *optional* | 过期时间，单位：小时（为空代表永久有效） |
+| aid | String | **required** | Account parameter `session_tokens->account_id`<br>Stored as `accounts->id` when converted from `aid` |
+| aidToken | String | **required** | Account identity credential (credential table `session_tokens->token` field) |
+| uid | Number | **required** | User parameter `session_tokens->user_id`<br>Stored as `users->id` when converted from `uid` |
+| expiredTime | Number | *optional* | Expiration time, unit: hours (empty means valid forever) |
 
 ::: details Return Example
 ```json
@@ -102,9 +101,9 @@
         "uid": "users->uid",
         "uidToken": "session_tokens->token",
         "uidTokenId": "session_tokens->id",
-        "expiredHours": "有效期小时数", // 没有则输出 null
-        "expiredDays": "有效期天数", // 没有则输出 null
-        "expiredDateTime": "session_tokens->expired_at 留空代表永久有效，格式为 Y-m-d H:i:s", // 没有则输出 null
+        "expiredHours": "Expiration hours", // If not available, output null
+        "expiredDays": "Expiration days", // If not available, output null
+        "expiredDateTime": "session_tokens->expired_at, leave empty for permanent validity, format: Y-m-d H:i:s", // If not available, output null
     }
 }
 ```
@@ -117,11 +116,11 @@
 ```
 | Parameter Name | Type | Required | Description |
 | --- | --- | --- | --- |
-| platformId | Number | **required** | 平台编号（配置表 [platforms](../../database/dictionary/platforms.md) 键名的键值） |
-| aid | String | **required** | 账号参数 `session_tokens->account_id`<br>查验时由 `aid` 转换成 `accounts->id` |
-| aidToken | String | **required** | 账号身份凭证（凭证表 `session_tokens->token` 字段） |
-| uid | Number | **required** | 用户参数 `session_tokens->user_id`<br>查验时由 `uid` 转换成 `users->id` |
-| uidToken | String | **required** | 用户身份凭证（凭证表 `session_tokens->token` 字段） |
+| platformId | Number | **required** | Platform ID (key value of the key name in the configuration table [platforms](../../database/dictionary/platforms.md)) |
+| aid | String | **required** | Account parameter `session_tokens->account_id`<br>Checked by converting `aid` to `accounts->id` |
+| aidToken | String | **required** | Account identity credential (credential table `session_tokens->token` field) |
+| uid | Number | **required** | User parameter `session_tokens->user_id`<br>Checked by converting `uid` to `users->id` |
+| uidToken | String | **required** | User identity credential (credential table `session_tokens->token` field) |
 
 ## logicalDeletionUser
 
@@ -130,4 +129,4 @@
 ```
 | Parameter Name | Type | Required | Description |
 | --- | --- | --- | --- |
-| uid | Number | *optional* | 用户 UID `users->uid` |
+| uid | Number | *optional* | User UID `users->uid` |

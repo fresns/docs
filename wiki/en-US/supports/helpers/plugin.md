@@ -7,9 +7,9 @@
 ```php
 PluginHelper::fresnsPluginHostByUnikey($unikey);
 ```
-| 参数名 | 类型 | 是否必传 | 说明 |
+| Parameter Name | Type | Required | Description |
 | --- | --- | --- | --- |
-| unikey | String | YES | 插件 unikey |
+| unikey | String | **required** | Plugin unikey |
 
 ## 获取插件 URL
 
@@ -18,7 +18,7 @@ PluginHelper::fresnsPluginUrlByUnikey($unikey);
 ```
 | Parameter Name | Type | Required | Description |
 | --- | --- | --- | --- |
-| unikey | String | **required** | 插件 unikey |
+| unikey | String | **required** | Plugin unikey |
 
 ## 获取已替换自定义参数的插件地址
 
@@ -27,7 +27,7 @@ PluginHelper::fresnsPluginUsageUrl($unikey, $pluginUseId);
 ```
 | Parameter Name | Type | Required | Description |
 | --- | --- | --- | --- |
-| unikey | String | **required** | 插件 unikey |
+| unikey | String | **required** | Plugin unikey |
 | pluginUseId | Number | **required** | [plugin_usages->id](../../database/plugins/plugin-usages.md) |
 
 *已将插件地址中 `{parameter}` 变量名替换为 `plugin_usages->parameter` 字段值。*
@@ -39,7 +39,7 @@ PluginHelper::fresnsPluginVersionByUnikey($unikey);
 ```
 | Parameter Name | Type | Required | Description |
 | --- | --- | --- | --- |
-| unikey | String | **required** | 插件 unikey |
+| unikey | String | **required** | Plugin unikey |
 
 ## 获取插件升级码
 
@@ -48,4 +48,4 @@ PluginHelper::fresnsPluginUpgradeCodeByUnikey($unikey);
 ```
 | Parameter Name | Type | Required | Description |
 | --- | --- | --- | --- |
-| unikey | String | **required** | 插件 unikey |
+| unikey | String | **required** | Plugin unikey |
