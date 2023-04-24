@@ -33,35 +33,35 @@
 
 **Request Description**
 
-- TA 操作标注的内容。获取 `uidOrUsername` 用户标记内容列表。
-- 根据记录时间排序，比如帖子，是根据标注时间排序，而不是帖子发表时间。
-- 接口会根据配置表设置 `运营 > 互动配置 > 查看别人内容设置` 决定是否输出数据。
-    - 点赞配置 `markType=like`
-        - `listType=users` 获取 TA 点赞的用户列表，配置键名 `it_like_users` 决定是否输出。
-        - `listType=groups` 获取 TA 点赞的小组列表，配置键名 `it_like_groups` 决定是否输出。
-        - `listType=hashtags` 获取 TA 点赞的话题列表，配置键名 `it_like_hashtags` 决定是否输出。
-        - `listType=posts` 获取 TA 点赞的帖子列表，配置键名 `it_like_posts` 决定是否输出。
-        - `listType=comments` 获取 TA 点赞的评论列表，配置键名 `it_like_comments` 决定是否输出。
-    - 点踩配置 `markType=dislike`
-        - `listType=users` 获取 TA 踩的用户列表，配置键名 `it_dislike_users` 决定是否输出。
-        - `listType=groups` 获取 TA 踩的小组列表，配置键名 `it_dislike_groups` 决定是否输出。
-        - `listType=hashtags` 获取 TA 踩的话题列表，配置键名 `it_dislike_hashtags` 决定是否输出。
-        - `listType=posts` 获取 TA 踩的帖子列表，配置键名 `it_dislike_posts` 决定是否输出。
-        - `listType=comments` 获取 TA 踩的评论列表，配置键名 `it_dislike_comments` 决定是否输出。
-    - 关注配置 `markType=follow`
-        - `listType=users` 获取 TA 关注的用户列表，配置键名 `it_follow_users` 决定是否输出。
-        - `listType=groups` 获取 TA 关注的小组列表，配置键名 `it_follow_groups` 决定是否输出。
-        - `listType=hashtags` 获取 TA 关注的话题列表，配置键名 `it_follow_hashtags` 决定是否输出。
-        - `listType=posts` 获取 TA 关注的帖子列表，配置键名 `it_follow_posts` 决定是否输出。
-        - `listType=comments` 获取 TA 关注的评论列表，配置键名 `it_follow_comments` 决定是否输出。
-    - 屏蔽配置 `markType=block`
-        - `listType=users` 获取 TA 屏蔽的用户列表，配置键名 `it_block_users` 决定是否输出。
-        - `listType=groups` 获取 TA 屏蔽的小组列表，配置键名 `it_block_groups` 决定是否输出。
-        - `listType=hashtags` 获取 TA 屏蔽的话题列表，配置键名 `it_block_hashtags` 决定是否输出。
-        - `listType=posts` 获取 TA 屏蔽的帖子列表，配置键名 `it_block_posts` 决定是否输出。
-        - `listType=comments` 获取 TA 屏蔽的评论列表，配置键名 `it_block_comments` 决定是否输出。
-- 如果 `uidOrUsername` 为登录用户自己时，上方配置无效，直接输出数据，表示查看自己的内容时无视开关。
-- `orderDirection` 排序方向以创建时间排序。
+- Content marked by they actions. Get the content marked by the user `uidOrUsername`.
+- Ordered by record time, e.g., for posts, it is sorted by the marking time, not the post creation time.
+- The interface will output data based on the configuration table setting `Operations > Interaction Configuration > View Others' Content Settings`.
+    - Like configuration `markType=like`
+        - `listType=users` Get the list of users they liked, the configuration key `it_like_users` determines whether to output.
+        - `listType=groups` Get the list of groups they liked, the configuration key `it_like_groups` determines whether to output.
+        - `listType=hashtags` Get the list of topics they liked, the configuration key `it_like_hashtags` determines whether to output.
+        - `listType=posts` Get the list of posts they liked, the configuration key `it_like_posts` determines whether to output.
+        - `listType=comments` Get the list of comments they liked, the configuration key `it_like_comments` determines whether to output.
+    - Dislike configuration `markType=dislike`
+        - `listType=users` Get the list of users they disliked, the configuration key `it_dislike_users` determines whether to output.
+        - `listType=groups` Get the list of groups they disliked, the configuration key `it_dislike_groups` determines whether to output.
+        - `listType=hashtags` Get the list of topics they disliked, the configuration key `it_dislike_hashtags` determines whether to output.
+        - `listType=posts` Get the list of posts they disliked, the configuration key `it_dislike_posts` determines whether to output.
+        - `listType=comments` Get the list of comments they disliked, the configuration key `it_dislike_comments` determines whether to output.
+    - Follow configuration `markType=follow`
+        - `listType=users` Get the list of users they followed, the configuration key `it_follow_users` determines whether to output.
+        - `listType=groups` Get the list of groups they followed, the configuration key `it_follow_groups` determines whether to output.
+        - `listType=hashtags` Get the list of topics they followed, the configuration key `it_follow_hashtags` determines whether to output.
+        - `listType=posts` Get the list of posts they followed, the configuration key `it_follow_posts` determines whether to output.
+        - `listType=comments` Get the list of comments they followed, the configuration key `it_follow_comments` determines whether to output.
+    - Block configuration `markType=block`
+        - `listType=users` Get the list of users they blocked, the configuration key `it_block_users` determines whether to output.
+        - `listType=groups` Get the list of groups they blocked, the configuration key `it_block_groups` determines whether to output.
+        - `listType=hashtags` Get the list of topics they blocked, the configuration key `it_block_hashtags` determines whether to output.
+        - `listType=posts` Get the list of posts they blocked, the configuration key `it_block_posts` determines whether to output.
+        - `listType=comments` Get the list of comments they blocked, the configuration key `it_block_comments` determines whether to output.
+- If `uidOrUsername` is the logged-in user themselves, the above configuration is invalid, and the data is output directly, meaning that when viewing their own content, the switch is ignored.
+- `orderDirection` The sorting direction is based on the creation time.
 
 ## Return
 
@@ -78,7 +78,7 @@
         },
         "list": [
             {
-                // Common Data Structure -> 对应内容类型的信息
+                // Common Data Structure -> Structural information for the corresponding content type
             }
         ]
     }

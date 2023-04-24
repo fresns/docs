@@ -17,14 +17,14 @@
 
 | Parameter Name | Type | Required | Description |
 | --- | --- | --- | --- |
-| interactionType | String | **required** | 标记行为 `follow`,`block` |
-| markType | String | **required** | 标记类型 `user`,`group`,`hashtag`,`post`,`comment` |
-| fsid | String | **required** | 目标 `FsID`<br>user 传参 uid 或 username<br>group 传参 gid<br>hashtag 传参 hid<br>post 传参 pid<br>comment 传参 cid |
-| note | String | *optional* | 备注内容，留空表示清空备注 |
+| interactionType | String | **required** | Mark action `follow`,`block` |
+| markType | String | **required** | Mark type `user`,`group`,`hashtag`,`post`,`comment` |
+| fsid | String | **required** | Target `FsID`<br>For user, pass `uid` or `username`<br>For group, pass `gid`<br>For hashtag, pass `hid`<br>For post, pass `pid`<br>For comment, pass `cid` |
+| note | String | *optional* | Note content, leave empty to clear the note |
 
 **Request Description**
 
-- 对自己关注或屏蔽的对象进行备注。
+- Make a note of the people you follow or block.
 
 ## Return
 

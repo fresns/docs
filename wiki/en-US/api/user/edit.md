@@ -35,14 +35,14 @@
 
 **Request Description**
 
-- `avatarFid` 和 `avatarUrl` 两者留空表示不修改，传参时二选一。
-- `bannerFid` 和 `bannerUrl` 两者留空表示不修改，传参时二选一。
-- 头像和背景条幅图如果使用 `fid`，先使用[文件上传接口](../common/upload-file.md)，上传后获得 `fid` 传参。
-- 上传参数例子：
+- Leaving both `avatarFid` and `avatarUrl` empty means not changing them, choose one when passing parameters.
+- Leaving both `bannerFid` and `bannerUrl` empty means not changing them, choose one when passing parameters.
+- If using `fid` for avatar and background banner images, first use the [file upload interface](../common/upload-file.md), then pass the obtained `fid` as a parameter.
+- Example of upload parameters:
     - `tableName` = `users`
     - `tableColumn` = `avatar_file_id` or `banner_file_id`
-    - `tableKey` = 当前用户的 uid 或 username
-- 扩展资料示例：
+    - `tableKey` = current user's uid or username
+- Example of extended information:
 
 ```json
 [

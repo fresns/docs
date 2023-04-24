@@ -20,96 +20,98 @@
     "message": "ok",
     "data": {
         "multiUser": {
-            "status": "Boolean / 是否有权使用",
-            "service": "String / 服务插件 URL 参数"
+            "status": "Boolean / Whether they have the right to use",
+            "service": "String / Service plugin URL parameter"
         },
         "features": [
             {
-                // 用户功能扩展
+                // User Feature Extensions
                 // Common Data Structure -> Extend Function Info
             }
         ],
         "profiles": [
             {
-                // 用户资料扩展
+                // User Profile Extensions
                 // Common Data Structure -> Extend Function Info
             }
         ],
         "conversations": {
-            "conversationCount": "Number / 对话数量",
-            "unreadMessages": "Number / 未读对话消息数量"
+            "conversationCount": "Number / Conversation count",
+            "unreadMessages": "Number / Unread conversation message count"
         },
         "unreadNotifications":{
-            "systems": "Number / 未读系统通知",
-            "recommends": "Number / 未读推荐",
-            "likes": "Number / 未读点赞",
-            "dislikes": "Number / 未读点踩",
-            "follows": "Number / 未读关注",
-            "blocks": "Number / 未读屏蔽",
-            "mentions": "Number / 未读提及（艾特）",
-            "comments": "Number / 未读评论（回复）"
+            "systems": "Number / Unread system notifications",
+            "recommends": "Number / Unread recommendations",
+            "likes": "Number / Unread likes",
+            "dislikes": "Number / Unread dislikes",
+            "follows": "Number / Unread follows",
+            "blocks": "Number / Unread blocks",
+            "mentions": "Number / Unread mentions (at)",
+            "comments": "Number / Unread comments (replies)"
         },
         "draftCount": {
-            "posts": "Number / 帖子草稿数",
-            "comments": "Number / 评论草稿数"
+            "posts": "Number / Post draft count",
+            "comments": "Number / Comment draft count"
         },
         "publishConfig": {
-            // 发表帖子权限配置
+            // Post publishing permission configuration
             "post": {
                 "perm": {
-                    "draft": "Boolean / 是否可以创建新草稿",
-                    "publish": "Boolean / 是否有权限发表",
-                    "review": "Boolean / 发表是否需要审核",
-                    "emailRequired": "Boolean / 邮箱要求是否通过",
-                    "phoneRequired": "Boolean / 手机要求是否通过",
-                    "realNameRequired": "Boolean / 实名制要求是否通过",
+                    "draft": "Boolean / Can create new drafts",
+                    "publish": "Boolean / Has permission to publish",
+                    "review": "Boolean / Publishing requires review",
+                    "emailRequired": "Boolean / Email requirement met",
+                    "phoneRequired": "Boolean / Phone requirement met",
+                    "realNameRequired": "Boolean / Real name requirement met",
                     "tips": [
-                        "String / 无要求的请求语 1",
-                        "String / 无要求的请求语 2"
+                        "String / Request language without requirements 1",
+                        "String / Request language without requirements 2"
                     ]
                 },
                 "limit": {
-                    "status": "Boolean / 是否有特殊规则",
-                    "type": "Number / 1.指定某个时间段范围内生效 2.指定每天的某个时间段范围内循环生效",
-                    "periodStart": "String / type=1 专用，开始日期时间",
-                    "periodEnd": "String / type=1 专用，结束日期时间",
-                    "cycleStart": "String / type=2 专用，开始时间",
-                    "cycleEnd": "String / type=2 专用，结束时间",
-                    "rule": "Number / 1.可以发表，但是需要审核 2.禁止发表",
-                    "tip": "String / 提示语"
+                    "status": "Boolean / Are there special rules",
+                    "isInTime": "Boolean / Is within the execution time range",
+                    "type": "Number / 1. Effective within a specified time period 2. Recurring effective within a specified time period every day",
+                    "periodStart": "String / type=1 exclusive, start date and time",
+                    "periodEnd": "String / type=1 exclusive, end date and time",
+                    "cycleStart": "String / type=2 exclusive, start time",
+                    "cycleEnd": "String / type=2 exclusive, end time",
+                    "rule": "Number / 1. Can be published but needs review 2. Forbidden to publish",
+                    "tip": "String / Tips"
                 }
             },
-            // 发表评论权限配置
+            // Comment publishing permission configuration
             "comment": {
                 "perm": {
-                    "draft": "Boolean / 是否可以创建新草稿",
-                    "publish": "Boolean / 是否有权限发表",
-                    "review": "Boolean / 发表是否需要审核",
-                    "emailRequired": "Boolean / 邮箱要求是否通过",
-                    "phoneRequired": "Boolean / 手机要求是否通过",
-                    "realNameRequired": "Boolean / 实名制要求是否通过",
+                    "draft": "Boolean / Can create new drafts",
+                    "publish": "Boolean / Has permission to publish",
+                    "review": "Boolean / Publishing requires review",
+                    "emailRequired": "Boolean / Email requirement met",
+                    "phoneRequired": "Boolean / Phone requirement met",
+                    "realNameRequired": "Boolean / Real name requirement met",
                     "tips": [
-                        "String / 无要求的请求语 1",
-                        "String / 无要求的请求语 2"
+                        "String / Request language without requirements 1",
+                        "String / Request language without requirements 2"
                     ]
                 },
                 "limit": {
-                    "status": "Boolean / 是否有特殊规则",
-                    "type": "Number / 1.指定某个时间段范围内生效 2.指定每天的某个时间段范围内循环生效",
-                    "periodStart": "String / type=1 专用，开始日期时间",
-                    "periodEnd": "String / type=1 专用，结束日期时间",
-                    "cycleStart": "String / type=2 专用，开始时间",
-                    "cycleEnd": "String / type=2 专用，结束时间",
-                    "rule": "Number / 1.可以发表，但是需要审核 2.禁止发表",
-                    "tip": "String / 提示语"
+                    "status": "Boolean / Are there special rules",
+                    "isInTime": "Boolean / Is within the execution time range",
+                    "type": "Number / 1. Effective within a specified time period 2. Recurring effective within a specified time period every day",
+                    "periodStart": "String / type=1 exclusive, start date and time",
+                    "periodEnd": "String / type=1 exclusive, end date and time",
+                    "cycleStart": "String / type=2 exclusive, start time",
+                    "cycleEnd": "String / type=2 exclusive, end time",
+                    "rule": "Number / 1. Can be published but needs review 2. Forbidden to publish",
+                    "tip": "String / Tips"
                 }
             },
         },
         "fileAccept": {
-            "images": "String / 允许上传的图片后缀",
-            "videos": "String / 允许上传的视频后缀",
-            "audios": "String / 允许上传的音频后缀",
-            "documents": "String / 允许上传的文档后缀"
+            "images": "String / Allowed image extensions",
+            "videos": "String / Allowed video extensions",
+            "audios": "String / Allowed audio extensions",
+            "documents": "String / Allowed document extensions"
         }
     }
 }

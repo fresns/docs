@@ -30,10 +30,10 @@
 
 **Request Description**
 
-- 接口会根据配置表设置 `Operations > Interaction > View user content settings > Which of the user's content can be viewed by others` 决定是否输出数据。
-    - 你认识的关注者
-    - 配置 key `it_followers_you_follow`
-- 未登录也可以请求，将输出为空列表。
+- The interface will output data based on the configuration table setting `Operations > Interaction > View user content settings > Which of the user's content can be viewed by others`.
+    - Followers you know
+    - Configuration key `it_followers_you_follow`
+- Unauthenticated requests are also allowed, but the output will be an empty list.
 
 ## Return
 

@@ -52,22 +52,22 @@
 
 **Request Description**
 
-- `uidOrUsername` 参数有值，代表获取指定用户的帖子，将根据 `运营 > 互动配置 > 查看别人内容设置` 决定是否输出数据。
-    - `it_comments` 配置，是否输出点赞我的用户
-- 如果 `uidOrUsername` 为登录用户自己时，上方配置无效，直接输出数据，表示查看自己的内容时无视开关。
+- The `uidOrUsername` parameter value represents obtaining comments from a specified user, and whether to output is determined by `Operations > Interaction > View user content settings`.
+    - `it_comments` configuration, whether to output users who liked my comments
+- If `uidOrUsername` is the logged-in user themselves, the above configuration is invalid, and data is directly output, indicating that the switch is ignored when viewing their own content.
 
-| contentType 参数（大驼峰格式） | 说明 |
+| `contentType` parameter (PascalCase) | Description |
 | --- | --- |
-| {空} | 输出全部内容 |
-| All | 输出全部内容 |
-| Text | 输出纯文本评论 |
-| Image | 输出带图片的评论 |
-| Video | 输出带视频的评论 |
-| Audio | 输出带音频的评论 |
-| Document | 输出带文档的评论 |
-| {AbcName} | 输出含有插件 unikey 为 AbcName 扩展内容的评论 |
+| {empty} | Output all content |
+| All | Output all content |
+| Text | Output plain text comments |
+| Image | Output comments with images |
+| Video | Output comments with videos |
+| Audio | Output comments with audio |
+| Document | Output comments with documents |
+| {AbcName} | Output comments with plugin unikey AbcName extended content |
 
-- 内容类型列表参考 [/api/v2/global/{type}/content-types](../global/content-types.md)
+- For content type list, refer to [/api/v2/global/{type}/content-types](../global/content-types.md)
 
 ## Return
 
