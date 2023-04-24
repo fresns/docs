@@ -2,7 +2,7 @@
 
 `App\Utilities\ConfigUtility`
 
-## 新增配置键
+## Add Configuration Key
 
 ```php
 protected $fresnsConfigItems = [
@@ -33,7 +33,7 @@ ConfigUtility::addFresnsConfigItems($fresnsConfigItems);
 
 *item_key 存在则自动跳过*
 
-## 修改配置键值
+## Modify Configuration Key Value
 
 ```php
 protected $fresnsConfigItems = [
@@ -64,7 +64,7 @@ ConfigUtility::changeFresnsConfigItems($fresnsConfigItems);
 
 *存在则修改，不存在则新建*
 
-## 移除配置键
+## Remove Configuration Key
 
 ```php
 $fresnsConfigKeys = [
@@ -75,7 +75,7 @@ $fresnsConfigKeys = [
 ConfigUtility::removeFresnsConfigItems($fresnsConfigKeys);
 ```
 
-## 修改多语言内容
+## Change Multilingual Content
 
 ```php
 protected $fresnsLangItems = [
@@ -92,7 +92,7 @@ protected $fresnsLangItems = [
 ConfigUtility::changeFresnsLanguageItems($fresnsLangItems);
 ```
 
-## 获取状态码多语言描述
+## Get Status Code Multilingual Description
 
 ```php
 ConfigUtility::getCodeMessage($code, $unikey, $langTag);
@@ -103,7 +103,7 @@ ConfigUtility::getCodeMessage($code, $unikey, $langTag);
 | unikey | String | *optional* | Associated plugin unikey, if empty, it is Fresns |
 | langTag | String | *optional* | If empty, the default language is used. |
 
-## 获取账号或用户登录错误次数
+## Get Account or User Login Error Count
 
 ```php
 ConfigUtility::getLoginErrorCount($accountId, $userId);

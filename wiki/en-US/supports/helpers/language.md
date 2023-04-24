@@ -2,7 +2,7 @@
 
 `App\Helpers\LanguageHelper`
 
-## 根据主键 ID 获取语言值
+## Get Language Value by Primary ID
 
 ```php
 LanguageHelper::fresnsLanguageByTableId($tableName, $tableColumn, $tableId, $langTag);
@@ -11,7 +11,7 @@ LanguageHelper::fresnsLanguageByTableId($tableName, $tableColumn, $tableId, $lan
 | --- | --- | --- | --- |
 | tableName | String | **required** | Table name |
 | tableColumn | String | **required** | Column name |
-| tableId | Number | **required** | Primary key ID |
+| tableId | Number | **required** | Primary ID |
 | langTag | String | *optional* | Language tag, not required<br>If passed, output content for the specified language tag.<br>If not passed, output values for all languages, format as below. |
 
 ::: details Return Example
@@ -29,7 +29,7 @@ LanguageHelper::fresnsLanguageByTableId($tableName, $tableColumn, $tableId, $lan
 ```
 :::
 
-## 根据配置 Key 获取语言值
+## Get Language Value by Configuration Key
 
 ```php
 LanguageHelper::fresnsLanguageByTableKey($tableKey, $itemType, $langTag);

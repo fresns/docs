@@ -2,7 +2,7 @@
 
 `App\Utilities\ArrUtility`
 
-## 获取指定数值
+## Get Specified Value
 
 ```php
 ArrUtility::get($array, $key, $values);
@@ -16,7 +16,7 @@ ArrUtility::get($array, $key, $values);
 - From an array, get the array with the specified key name for the specified key value.
 - Example output `{"name":"language","canDelete":false}`
 
-## 移除指定数值
+## Remove Specified Value
 
 ```php
 ArrUtility::forget($array, $key, $values);
@@ -30,7 +30,7 @@ ArrUtility::forget($array, $key, $values);
 - From an array, removes the array with the specified key name for the specified key value.
 - Example output `[{"name":"errorUnknown","canDelete":false}]`
 
-## 返回并清理指定值
+## Return and Clear Specified Value
 
 ```php
 ArrUtility::pull($array, $key, $values);
@@ -45,7 +45,7 @@ ArrUtility::pull($array, $key, $values);
 - Return `{"name":"language","canDelete":false}`
 - 传参的数组只剩下 `[{"name":"errorUnknown","canDelete":false}]`
 
-## 编辑数组值
+## Edit Array Value
 
 ```php
 ArrUtility::editValue($array, $key, $value, $newValue);
@@ -59,7 +59,7 @@ ArrUtility::editValue($array, $key, $value, $newValue);
 
 - Example after modification `[{"name":"lang","canDelete":false},{"name":"errorUnknown","canDelete":false}]`
 
-## 编辑对象键名
+## Edit Object Key Name
 
 ```php
 ArrUtility::editKey($object, $key, $newKey);

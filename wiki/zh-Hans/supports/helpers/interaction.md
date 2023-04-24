@@ -63,8 +63,11 @@ InteractionHelper::fresnsCommentInteraction($langTag);
 | --- | --- | --- | --- |
 | langTag | String | NO | 语言标签，不传则使用默认语言 |
 
-## 获取匿名用户信息
+## 获取替补用户信息
 
 ```php
-InteractionHelper::fresnsUserAnonymousProfile();
+InteractionHelper::fresnsUserSubstitutionProfile($type);
 ```
+| 参数名 | 类型 | 是否必传 | 说明 |
+| --- | --- | --- | --- |
+| type | String | NO | `anonymous` 或者 `deactivate` |

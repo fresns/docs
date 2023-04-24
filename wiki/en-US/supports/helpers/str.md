@@ -2,14 +2,14 @@
 
 `App\Helpers\StrHelper`
 
-## 加密输出邮箱
+## Encrypt and Output Email
 
 ```php
 StrHelper::maskEmail('email');
 //显示前 3 位 + *(实际位数,最少有三个*号) + 邮箱后缀，如 jav***@qq.com
 ```
 
-## 加密输出数字
+## Encrypt and Output Numbers
 
 ```php
 StrHelper::maskNumber('number');
@@ -19,38 +19,40 @@ StrHelper::maskNumber('number');
 //比如银行卡：62*************96
 ```
 
-## 加密输出姓名
+## Encrypt and Output Name
 
 ```php
 StrHelper::maskName('name');
 //显示后 1 位，如：*杰
 ```
 
-## 生成纯数字（非 0 开头）
+## Generate Pure Numeric String
+
+- Not Starting with 0
 
 ```php
 StrHelper::generateDigital('8'); //8 表示生成 8 位数
 ```
 
-## 拼接完整 URL 地址
+## Concatenate Complete URL
 
 ```php
 StrHelper::qualifyUrl('uri', 'domain');
 ```
 
-## 是否为纯数字值
+## Check if Pure Numeric Value
 
 ```php
 StrHelper::isPureInt('variable');
 ```
 
-## 提取 Host 中的域名
+## Extract Domain from Host
 
 ```php
 StrHelper::extractDomainByHost('host');
 ```
 
-## 提取 URL 中的域名
+## Extract Domain from URL
 
 ```php
 StrHelper::extractDomainByUrl('url');

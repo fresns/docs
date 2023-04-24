@@ -5,7 +5,7 @@
 - `true` Verification passed
 - `false` Verification failed
 
-## 验证一次性邮箱
+## Validate Disposable Email
 
 ```php
 ValidationUtility::disposableEmail('email');
@@ -14,7 +14,7 @@ ValidationUtility::disposableEmail('email');
 - 邮箱服务商（域名）是否属于一次性邮箱。
 - `false` 验证未通过，表示为一次性邮箱。
 
-## 验证密码
+## Validate Password
 
 ```php
 ValidationUtility::password('password');
@@ -31,7 +31,7 @@ ValidationUtility::password('password');
 ```
 :::
 
-## 验证用户名
+## Validate Username
 
 ```php
 ValidationUtility::username('username');
@@ -50,7 +50,7 @@ ValidationUtility::username('username');
 ```
 :::
 
-## 验证昵称
+## Validate Nickname
 
 ```php
 ValidationUtility::nickname('nickname');
@@ -68,7 +68,7 @@ ValidationUtility::nickname('nickname');
 ```
 :::
 
-## 验证简介
+## Validate Bio
 
 ```php
 ValidationUtility::bio('bio');
@@ -82,25 +82,25 @@ ValidationUtility::bio('bio');
 ```
 :::
 
-## 验证 Mark 自己
+## Validate Mark Itself
 
 ```php
 ValidationUtility::userMarkOwn($userId, $markType, $markId);
 ```
 
-## 验证内容禁用词
+## Validate Content Ban Words
 
 ```php
 ValidationUtility::contentBanWords($content);
 ```
 
-## 验证内容审核词
+## Validate Content Review Words
 
 ```php
 ValidationUtility::contentReviewWords($content);
 ```
 
-## 验证消息禁用词
+## Validate Message Ban Words
 
 ```php
 ValidationUtility::messageBanWords($message);

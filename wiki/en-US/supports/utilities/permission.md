@@ -2,7 +2,7 @@
 
 `App\Utilities\PermissionUtility`
 
-## 获取用户主角色
+## Get User rMain Role
 
 ```php
 PermissionUtility::getUserMainRole($userId, $langTag);
@@ -16,7 +16,7 @@ PermissionUtility::getUserMainRole($userId, $langTag);
 - 如果无继承角色（或者该继承 ID 找不到角色），则以配置表 `default_role` 键名键值的角色为准。
 - 如果配置表键值为空（或找不到角色），则输出 `null`。
 
-## 获取用户所有角色
+## Get User All Roles
 
 ```php
 PermissionUtility::getUserRoles($userId, $langTag);
@@ -28,7 +28,7 @@ PermissionUtility::getUserRoles($userId, $langTag);
 
 - 仅输出有效期内的角色列表，包括主角色。
 
-## 获取不显示的小组 ID
+## Get Group IDs Not Displayed
 
 ```php
 PermissionUtility::getGroupFilterIds($userId);
@@ -37,7 +37,7 @@ PermissionUtility::getGroupFilterIds($userId);
 | --- | --- | --- | --- |
 | userId | Number | *optional* | `users->id` |
 
-## 获取不输出帖子的小组 ID
+## Get Group IDs Excluding Posts
 
 ```php
 PermissionUtility::getPostFilterByGroupIds($userId);
@@ -46,7 +46,7 @@ PermissionUtility::getPostFilterByGroupIds($userId);
 | --- | --- | --- | --- |
 | userId | Number | *optional* | `users->id` |
 
-## 判断用户是否归属该账号
+## Determine if User Belongs to Account
 
 ```php
 PermissionUtility::checkUserAffiliation($userId, $accountId);
@@ -56,7 +56,7 @@ PermissionUtility::checkUserAffiliation($userId, $accountId);
 | userId | Number | **required** | `users->id` |
 | accountId | Number | **required** | `accounts->id` |
 
-## 判断用户权限
+## Determine User Permissions
 
 ```php
 PermissionUtility::checkUserPerm($userId, $permUserIds);
@@ -68,7 +68,7 @@ PermissionUtility::checkUserPerm($userId, $permUserIds);
 
 *将拥有权限的用户 ID 和需要确认的用户 ID 传参，该功能会判断用户 ID 是否包括在授权 IDs 当中。*
 
-## 判断用户角色权限
+## Determine User Role Permissions
 
 ```php
 PermissionUtility::checkUserRolePerm($userId, $permRoleIds);
@@ -80,7 +80,7 @@ PermissionUtility::checkUserRolePerm($userId, $permRoleIds);
 
 *将拥有权限的角色 ID 和需要确认的用户 ID 传参，该功能会判断用户名下所有角色是否拥有授权角色。*
 
-## 判断用户对话权限
+## Determine User Conversation Permissions
 
 ```php
 PermissionUtility::checkUserConversationPerm($receiveUserId, $authUserId, $langTag);
@@ -96,7 +96,7 @@ PermissionUtility::checkUserConversationPerm($receiveUserId, $authUserId, $langT
 - 无权则输出对应的 [Error Code](../../api/error-code.md)
 :::
 
-## 判断用户是否为小组管理员
+## Determine if User is Group Administrator
 
 ```php
 PermissionUtility::checkUserGroupAdmin($groupId, $userId);
@@ -106,7 +106,7 @@ PermissionUtility::checkUserGroupAdmin($groupId, $userId);
 | groupId | Number | **required** | `groups->id` |
 | userId | Number | **required** | `users->id` |
 
-## 判断用户是否有小组发表权限
+## Determine if User Has Group Publish Permissions
 
 ```php
 PermissionUtility::checkUserGroupPublishPerm($groupId, $permissions, $userId);
@@ -128,7 +128,7 @@ PermissionUtility::checkUserGroupPublishPerm($groupId, $permissions, $userId);
 ```
 :::
 
-## 判断帖子阅读权限
+## Determine Post Reading Permissions
 
 ```php
 PermissionUtility::checkPostAllow($postId, $userId);
@@ -140,7 +140,7 @@ PermissionUtility::checkPostAllow($postId, $userId);
 
 *对需要授权的帖子，判断当前用户是否符合授权要求*
 
-## 判断帖子是否可以评论
+## Determine if Post Can Be Commented On
 
 ```php
 PermissionUtility::checkPostCommentPerm($pidOrPostId, $userId);
@@ -150,7 +150,7 @@ PermissionUtility::checkPostCommentPerm($pidOrPostId, $userId);
 | pidOrPostId | string | *optional* | `posts->id` |
 | userId | Number | *optional* | `users->id` |
 
-## 判断内容编辑状态
+## Determine Content Editing Status
 
 ```php
 PermissionUtility::checkContentEditPerm($createDateTime, $editTimeConfig, $timezone, $langTag);
@@ -162,7 +162,7 @@ PermissionUtility::checkContentEditPerm($createDateTime, $editTimeConfig, $timez
 | timezone | String | *optional* | If empty, the default time zone is used. |
 | langTag | String | *optional* | If empty, the default language is used. |
 
-## 判断扩展权限
+## Determine Extension Permissions
 
 ```php
 PermissionUtility::checkExtendPerm($unikey, $scene, $groupId, $userId);

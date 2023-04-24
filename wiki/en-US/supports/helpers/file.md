@@ -2,7 +2,7 @@
 
 `App\Helpers\FileHelper`
 
-## 根据文件类型输出存储配置信息
+## Get Storage Config Info by File Type
 
 ```php
 FileHelper::fresnsFileStorageConfigByType($type);
@@ -29,7 +29,7 @@ FileHelper::fresnsFileStorageConfigByType($type);
 ```
 :::
 
-## 获取文件存储路径
+## Get File Storage Path
 
 ```php
 FileHelper::fresnsFileStoragePath($fileType, $usageType);
@@ -39,7 +39,7 @@ FileHelper::fresnsFileStoragePath($fileType, $usageType);
 | fileType | Number | **required** | 1.Image / 2.Video / 3.Audio / 4.Document |
 | usageType | Number | **required** | [Type of File Usage](../../database/number.md#type-of-file-usage) |
 
-## 获取文件支持的格式
+## Get Supported File Formats
 
 ```php
 FileHelper::fresnsFileAcceptByType($type);
@@ -51,7 +51,7 @@ FileHelper::fresnsFileAcceptByType($type);
 - Mime 格式，多个以英文逗号隔开
 - 不传 type 则输出全部
 
-## 根据文件 ID 或 FID 获取单个信息
+## Get Single Information by File ID or FID
 
 ```php
 FileHelper::fresnsFileInfoById($fileIdOrFid);
@@ -63,7 +63,7 @@ FileHelper::fresnsFileInfoById($fileIdOrFid);
 - 输出结果会判断防盗链配置，如果开启则输出防盗链文件信息。
 - [查看文件信息格式](../../extensions/plugin/storage.md#file-information-structure)
 
-## 根据文件 ID 或 FID 获取多个信息
+## Get Multiple Information by File ID or FID
 
 ```php
 FileHelper::fresnsFileInfoListByIds($fileIdsOrFids);
@@ -101,7 +101,7 @@ FileHelper::fresnsFileInfoListByIds($fileIdsOrFids);
 ```
 :::
 
-## 根据表字段获取文件信息列表
+## Get File Information List by Table Field
 
 ```php
 FileHelper::fresnsFileInfoListByTableColumn($tableName, $tableColumn, $tableId, $tableKey);
@@ -110,7 +110,7 @@ FileHelper::fresnsFileInfoListByTableColumn($tableName, $tableColumn, $tableId, 
 | --- | --- | --- | --- |
 | tableName | String | **required** | Table Name |
 | tableColumn | String | **required** | Table Column Name |
-| tableId | Number | *optional* | Primary Key ID |
+| tableId | Number | *optional* | Primary ID |
 | tableKey | String | *optional* | Primary Key Name |
 
 - `tableId` 或 `tableKey` 二选一传参
@@ -143,7 +143,7 @@ FileHelper::fresnsFileInfoListByTableColumn($tableName, $tableColumn, $tableId, 
 ```
 :::
 
-## 根据文件字段输出指定链接
+## Get File URL by File Field
 
 ```php
 FileHelper::fresnsFileUrlByTableColumn($idColumn, $urlColumn, $urlType);
@@ -165,7 +165,7 @@ FileHelper::fresnsFileUrlByTableColumn($idColumn, $urlColumn, $urlType);
 - `documentPreviewUrl`
 :::
 
-## 根据文件 ID 或 FID 获取源文件链接
+## Get Original URL by File ID or FID
 
 ```php
 FileHelper::fresnsFileOriginalUrlById($fileIdOrFid);

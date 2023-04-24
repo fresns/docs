@@ -140,7 +140,7 @@
 | type | Number | **required** | 1.Post 2.Comment |
 | contentType | Number | **required** | 1.Main table content 2.Log table contents |
 | contentFsid | String | *optional* | `contentType=1` specific: Post `pid`Comment `cid` |
-| contentLogId | Number | *optional* | `contentType=2` specific: Log table primary key ID |
+| contentLogId | Number | *optional* | `contentType=2` specific: Log table primary id |
 
 *本命令字是全量逻辑删除，如果业务场景涉及撤回功能，请勿使用，避免恢复时处理数据较多。*
 
@@ -154,4 +154,4 @@
 | type | Number | **required** | 1.Post 2.Comment |
 | contentType | Number | **required** | 1.Main table content 2.Log table contents |
 | contentFsid | String | *optional* | `contentType=1` specific: Post `pid`Comment `cid` |
-| contentLogId | Number | *optional* | `contentType=2` specific: Log table primary key ID |
+| contentLogId | Number | *optional* | `contentType=2` specific: Log table primary id |

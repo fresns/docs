@@ -2,7 +2,7 @@
 
 `App\Utilities\ExtendUtility`
 
-## 获取插件扩展
+## Get Plugin Extension
 
 ```php
 ExtendUtility::getPluginExtends($type, $groupId, $scene, $userId, $langTag);
@@ -15,25 +15,25 @@ ExtendUtility::getPluginExtends($type, $groupId, $scene, $userId, $langTag);
 | userId | Number | *optional* | When there is no permission requirement, both passing and not passing can get the extension<br>If the extension has permission requirements, judge whether it has the right based on the passed parameter |
 | langTag | String | *optional* | If empty, the default language is used. |
 
-## 获取数据扩展
+## Get Data Extension
 
 ```php
 ExtendUtility::getDataExtend($contentType, $dataType);
 ```
 
-## 获取图标扩展
+## Get Icon Extension
 
 ```php
 ExtendUtility::getIcons($type, $id, $langTag);
 ```
 
-## 获取文案扩展
+## Get Copywriting Extension
 
 ```php
 ExtendUtility::getTips($type, $id, $langTag);
 ```
 
-## 获取内容扩展
+## Get Content Extension
 
 ```php
 ExtendUtility::getExtends($type, $id, $langTag);

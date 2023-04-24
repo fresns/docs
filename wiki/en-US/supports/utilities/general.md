@@ -2,7 +2,7 @@
 
 `App\Utilities\GeneralUtility`
 
-## 列表数据转换为树结构列表
+## Convert List Data to Tree Structure List
 
 ```php
 ExtendUtility::collectionToTree($data, $primary, $parent, $children);
@@ -14,7 +14,7 @@ ExtendUtility::collectionToTree($data, $primary, $parent, $children);
 | parent | String | **required** | Parent Primary Key |
 | children | String | **required** | Tree structure child Key |
 
-## 根据经纬度计算距离
+## Calculate Distance Based on Latitude and Longitude
 
 ```php
 ExtendUtility::distanceOfLocation($langTag, $long, $lat, $userLong, $userLat, $mapId, $userMapId);

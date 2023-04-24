@@ -19,7 +19,7 @@
 | --- | --- | --- | --- |
 | tableName | String | **required** | Source table name<br>`users` [/api/v2/user/edit](../user/edit.md)<br>`posts`<br>`comments`<br>`conversation_messages` [/api/v2/conversation/send-message](../message/conversation-send.md)<br>`post_logs` [/api/v2/editor/{type}/{draftId}](../editor/update.md)<br>`comment_logs` [/api/v2/editor/{type}/{draftId}](../editor/update.md) |
 | tableColumn | String | **required** | Source column name, default is `id` |
-| tableId | Number | *optional* | Source table primary key ID |
+| tableId | Number | *optional* | Source table primary ID |
 | tableKey | String | *optional* | Source table key name |
 | type | String | **required** | Choose one from `image`, `video`, `audio`, `document` |
 | uploadMode | String | **required** | Choose one from<br>`file` Upload file<br>`fileInfo` Upload file information |

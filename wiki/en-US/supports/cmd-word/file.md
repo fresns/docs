@@ -39,7 +39,7 @@
 | usageType | Number | **required** | [File usage type](../../database/number.md#type-of-file-usage) |
 | tableName | String | **required** | Source table name (which table is using) |
 | tableColumn | String | **required** | Source field name (which field is using) |
-| tableId | Number | *optional* | Source table primary key ID |
+| tableId | Number | *optional* | Source table primary id |
 | tableKey | String | *optional* | Source table key name `PrimaryHelper::fresnsPrimaryId()` |
 | aid | String | *optional* | Account parameter `file_usages->account_id`<br>Stored as `aid` converted to `accounts->id` |
 | uid | Number | *optional* | User parameter `file_usages->user_id`<br>Stored as `uid` converted to `users->id` |
@@ -78,7 +78,7 @@
 | usageType | Number | **required** | [File usage type](../../database/number.md#type-of-file-usage) |
 | tableName | String | **required** | Source table name |
 | tableColumn | String | **required** | Source field name |
-| tableId | Number | *optional* | Source table primary key ID |
+| tableId | Number | *optional* | Source table primary id |
 | tableKey | String | *optional* | Source table key name `PrimaryHelper::fresnsPrimaryId()` |
 | aid | String | *optional* | Account parameter `file_usages->account_id`<br>Stored as `aid` converted to `accounts->id` |
 | uid | Number | *optional* | User parameter `file_usages->user_id`<br>Stored as `uid` converted to `users->id` |

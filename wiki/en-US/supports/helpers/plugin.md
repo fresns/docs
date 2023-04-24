@@ -2,7 +2,7 @@
 
 `App\Helpers\PluginHelper`
 
-## 获取插件 Host
+## Get Plugin Host
 
 ```php
 PluginHelper::fresnsPluginHostByUnikey($unikey);
@@ -11,7 +11,7 @@ PluginHelper::fresnsPluginHostByUnikey($unikey);
 | --- | --- | --- | --- |
 | unikey | String | **required** | Plugin unikey |
 
-## 获取插件 URL
+## Get Plugin URL
 
 ```php
 PluginHelper::fresnsPluginUrlByUnikey($unikey);
@@ -20,7 +20,7 @@ PluginHelper::fresnsPluginUrlByUnikey($unikey);
 | --- | --- | --- | --- |
 | unikey | String | **required** | Plugin unikey |
 
-## 获取已替换自定义参数的插件地址
+## Get Plugin URL with Replaced Custom Parameter
 
 ```php
 PluginHelper::fresnsPluginUsageUrl($unikey, $pluginUseId);
@@ -32,7 +32,7 @@ PluginHelper::fresnsPluginUsageUrl($unikey, $pluginUseId);
 
 *已将插件地址中 `{parameter}` 变量名替换为 `plugin_usages->parameter` 字段值。*
 
-## 获取插件版本号
+## Get Plugin Version
 
 ```php
 PluginHelper::fresnsPluginVersionByUnikey($unikey);
@@ -41,7 +41,7 @@ PluginHelper::fresnsPluginVersionByUnikey($unikey);
 | --- | --- | --- | --- |
 | unikey | String | **required** | Plugin unikey |
 
-## 获取插件升级码
+## Get Plugin Upgrade Code
 
 ```php
 PluginHelper::fresnsPluginUpgradeCodeByUnikey($unikey);

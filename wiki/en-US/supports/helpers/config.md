@@ -2,7 +2,7 @@
 
 `App\Helpers\ConfigHelper`
 
-## 根据 Key 获取配置值
+## Get Configuration Value by Key
 
 ```php
 ConfigHelper::fresnsConfigByItemKey($itemKey, $langTag);
@@ -12,7 +12,7 @@ ConfigHelper::fresnsConfigByItemKey($itemKey, $langTag);
 | itemKey | String | **required** | [configs->item_key](../../database/systems/configs.md) |
 | langTag | String | *optional* | Language tag(can be omitted), only effective for multi-language configurations.<br>If it is a multi-language configuration and not provided, the default language value will be output. |
 
-## 根据一组 Key 获取配置值
+## Get Configuration Values by Key Array
 
 ```php
 ConfigHelper::fresnsConfigByItemKeys($itemKeys, $langTag);
@@ -32,7 +32,7 @@ ConfigHelper::fresnsConfigByItemKeys($itemKeys, $langTag);
 ```
 :::
 
-## 根据 Tag 获取一组配置值
+## Get Configuration Values by Tag
 
 ```php
 ConfigHelper::fresnsConfigByItemTag($itemTag, $langTag);
@@ -57,7 +57,7 @@ ConfigHelper::fresnsConfigByItemTag($itemTag, $langTag);
 ```
 :::
 
-## 根据 Key 判断文件配置类型
+## Determine File Configuration Type by Key
 
 ```php
 ConfigHelper::fresnsConfigFileValueTypeByItemKey($itemKey);
@@ -71,7 +71,7 @@ ConfigHelper::fresnsConfigFileValueTypeByItemKey($itemKey);
 - `URL` 值为文件 URL：键值是以 http:// 或 https:// 开头
 :::
 
-## 根据 key 获取文件地址
+## Get File Path by Key
 
 ```php
 ConfigHelper::fresnsConfigFileUrlByItemKey($itemKey);
@@ -87,7 +87,7 @@ ConfigHelper::fresnsConfigFileUrlByItemKey($itemKey);
 - 文档输出为 `documentPreviewUrl`
 :::
 
-## 根据 langTag 获取长度单位
+## Get Length Unit by langTag
 
 ```php
 ConfigHelper::fresnsConfigLengthUnit($langTag);
@@ -98,7 +98,7 @@ ConfigHelper::fresnsConfigLengthUnit($langTag);
 
 *查询 configs 表 language_menus 键名的键值，输出对应语言标签的 lengthUnits 参数。*
 
-## 根据 langTag 获取日期格式
+## Get Date Format by langTag
 
 ```php
 ConfigHelper::fresnsConfigDateFormat($langTag);

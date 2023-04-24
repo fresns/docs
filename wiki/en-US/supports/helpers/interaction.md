@@ -2,13 +2,13 @@
 
 `App\Helpers\InteractionHelper`
 
-## 获取数据计数
+## Get Data Count
 
 ```php
 InteractionHelper::fresnsOverview();
 ```
 
-## 获取角色信息和权限参数
+## Get Role Info and Permission Parameters
 
 ```php
 InteractionHelper::fresnsRoleInfo($roleId, $langTag);
@@ -18,7 +18,7 @@ InteractionHelper::fresnsRoleInfo($roleId, $langTag);
 | roleId | Number | Yes | Role ID |
 | langTag | String | *optional* | Language tag, if not provided, the default language will be used |
 
-## 获取用户交互配置
+## Get User Interaction Configuration
 
 ```php
 InteractionHelper::fresnsUserInteraction($langTag);
@@ -27,7 +27,7 @@ InteractionHelper::fresnsUserInteraction($langTag);
 | --- | --- | --- | --- |
 | langTag | String | *optional* | If empty, the default language is used. |
 
-## 获取小组交互配置
+## Get Group Interaction Configuration
 
 ```php
 InteractionHelper::fresnsGroupInteraction($langTag);
@@ -36,7 +36,7 @@ InteractionHelper::fresnsGroupInteraction($langTag);
 | --- | --- | --- | --- |
 | langTag | String | *optional* | If empty, the default language is used. |
 
-## 获取话题交互配置
+## Get Hashtag Interaction Configuration
 
 ```php
 InteractionHelper::fresnsHashtagInteraction($langTag);
@@ -45,7 +45,7 @@ InteractionHelper::fresnsHashtagInteraction($langTag);
 | --- | --- | --- | --- |
 | langTag | String | *optional* | If empty, the default language is used. |
 
-## 获取帖子交互配置
+## Get Post Interaction Configuration
 
 ```php
 InteractionHelper::fresnsPostInteraction($langTag);
@@ -54,7 +54,7 @@ InteractionHelper::fresnsPostInteraction($langTag);
 | --- | --- | --- | --- |
 | langTag | String | *optional* | If empty, the default language is used. |
 
-## 获取评论交互配置
+## Get Comment Interaction Configuration
 
 ```php
 InteractionHelper::fresnsCommentInteraction($langTag);
@@ -63,8 +63,11 @@ InteractionHelper::fresnsCommentInteraction($langTag);
 | --- | --- | --- | --- |
 | langTag | String | *optional* | If empty, the default language is used. |
 
-## 获取匿名用户信息
+## Get Substitution User Information
 
 ```php
-InteractionHelper::fresnsUserAnonymousProfile();
+InteractionHelper::fresnsUserSubstitutionProfile($type);
 ```
+| Parameter Name | Type | Required | Description |
+| --- | --- | --- | --- |
+| type | String | *optional* | `anonymous` or `deactivate` |

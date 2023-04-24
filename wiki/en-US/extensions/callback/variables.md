@@ -88,7 +88,7 @@ Whether it is website or mobile application, the use of plug-ins is embedded in 
     "usageType": "Number / Type of file usage",
     "tableName": "String / Source Table Name",
     "tableColumn": "String / Source Field Name",
-    "tableId": "Number / Source table primary key id",
+    "tableId": "Number / Source table primary id",
     "tableKey": "String / Source table key name",
     "type": "String / File Type: image,video,audio,document"
 }

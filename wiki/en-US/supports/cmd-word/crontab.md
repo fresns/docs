@@ -1,6 +1,6 @@
 # Crontab Command Word
 
-## 检查并处理用户主角色过期
+## Check and Process User Main Role Expiration
 
 每隔 10 分钟执行一次用户主角色过期时间检测
 
@@ -15,7 +15,7 @@
         - 2.1.2、无关联：删除该条过期记录，以 `restore_role_id` 字段值（角色 ID）创建一条新记录，并且 `type` 字段值为 `2`
     - 2.2、无值：中止任务，暂不做任何操作。
 
-## 检查并处理注销账号的删除
+## Check and Handle Account Deletion
 
 每隔 6 小时执行一次用户注销任务
 
@@ -59,7 +59,7 @@
 - 为避免遗漏，定时任务每次都检测库里所有 `accounts->deleted_at` 有值的用户，如果存在则执行物理删除。
 - 配置表 `delete_account_todo` 键值规定时间内的不处理；比如当前执行任务时，配置的是 7 天，则查询所有记录时，7 天内的不查（不处理）。
 
-## 检查并更新版本信息
+## Check and Update Version Information
 
 每隔 8 小时执行一次后端主程序和扩展的版本情况，检查是否有新版。
 

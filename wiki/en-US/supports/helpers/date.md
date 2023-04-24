@@ -2,34 +2,34 @@
 
 `App\Helpers\DateHelper`
 
-## 获取数据库时区
+## Get Database Timezone
 
 ```php
 DateHelper::fresnsDatabaseTimezone();
 ```
 *输出当前数据库的时区，UTC 标准*
 
-## 获取数据库日期时间
+## Get Database Datetime
 
 ```php
 DateHelper::fresnsDatabaseCurrentDateTime();
 ```
 *输出当前数据库的日期时间，格式 Y-m-d H:i:s*
 
-## 将日期时间转换为数据库时区时间
+## Convert Datetime to Database Timezone
 
 ```php
 DateHelper::fresnsDateTimeToDatabaseTimezone($datetime, $timezone, $langTag);
 ```
 | Parameter Name | Type | Required | Description |
 | --- | --- | --- | --- |
-| datetime | String | **required** | `Y-m-d H:i:s` date and time value |
+| datetime | String | **required** | `Y-m-d H:i:s` Datetime value |
 | timezone | String | **required** | This `timezone` is the [UTC timezone](../../database/dictionary/timezone.md) for the `datetime` parameter |
 | langTag | String | *optional* | Outputs the time format in the specified language<br>`configs->item_key=language_menus` language tag's `dateFormat` parameter<br>If not provided, the default language format will be used |
 
 *将 timezone 时区的 datetime 时间转换为当前数据库时区的日期时间*
 
-## 按指定时区输出日期时间
+## Get Datetime by Specified Timezone
 
 ```php
 DateHelper::fresnsDateTimeByTimezone($datetime, $timezone, $langTag);
@@ -48,7 +48,7 @@ DateHelper::fresnsDateTimeByTimezone($datetime, $timezone, $langTag);
 - 输出格式：Y-m-d H:i:s
 :::
 
-## 按指定时区输出时间
+## Get Time by Specified Timezone
 
 ```php
 DateHelper::fresnsTimeByTimezone($time, $timezone);
@@ -58,7 +58,7 @@ DateHelper::fresnsTimeByTimezone($time, $timezone);
 | time | String | **required** | `H:i` time value, default to database time |
 | timezone | String | **required** | Converts the time value of the `time` parameter into the `timezone` [UTC timezone](../../database/dictionary/timezone.md) |
 
-## 按时区和语言标签格式化时间输出
+## Format Time Output by Timezone and Language Tag
 
 ```php
 DateHelper::fresnsFormatDateTime($datetime, $timezone, $langTag);
@@ -75,7 +75,7 @@ DateHelper::fresnsFormatDateTime($datetime, $timezone, $langTag);
 - 不是同一天，也不是同一年，输出对应语言标签的格式，例如 `yyyy-mm-dd hh:mm` 或 `mm/dd/yyyy hh:mm`
 :::
 
-## 按语言标签转换时间格式
+## Convert Time Format by Language Tag
 
 ```php
 DateHelper::fresnsFormatConversion($datetime, $langTag);
@@ -85,7 +85,7 @@ DateHelper::fresnsFormatConversion($datetime, $langTag);
 | datetime | String | *optional* | `Y-m-d H:i:s` |
 | langTag | String | *optional* | Outputs the time format in the specified language<br>`configs->item_key=language_menus` language tag's `dateFormat` parameter<br>If not provided, the default language format will be used |
 
-## 按语言人性化格式时间输出
+## Humanize Time Output by Language Tag
 
 ```php
 DateHelper::fresnsHumanReadableTime($datetime, $langTag);

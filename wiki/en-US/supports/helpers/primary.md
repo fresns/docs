@@ -2,7 +2,7 @@
 
 `App\Helpers\PrimaryHelper`
 
-## 获取数据模型
+## Get Data Model
 
 ```php
 PrimaryHelper::fresnsModelByFsid($modelName, $fsid);
@@ -14,7 +14,7 @@ PrimaryHelper::fresnsModelById($modelName, $id);
 | modelName | String | **required** | Model name |
 | fsid | String | **required** | Field value, e.g. aid value |
 
-**模型名**
+**Model Name**
 
 - `account`
 - `user`
@@ -26,7 +26,7 @@ PrimaryHelper::fresnsModelById($modelName, $id);
 - `extend`
 - `archive`
 
-## 获取主键 ID
+## Get Primary ID
 
 ```php
 PrimaryHelper::fresnsPrimaryId($tableName, $tableKey);
@@ -45,7 +45,7 @@ PrimaryHelper::fresnsPrimaryId($tableName, $tableKey);
 - `groups`->`gid`
 - `hashtags`->`slug`
 
-## 获取账号主键 ID
+## Get Account Primary ID
 
 ```php
 PrimaryHelper::fresnsAccountIdByAid($aid);
@@ -57,7 +57,7 @@ PrimaryHelper::fresnsAccountIdByUidOrUsername($uidOrUsername);
 | aid | String | **required** | `accounts->aid` |
 | uidOrUsername | String | **required** | `users->uid` or `users->username` |
 
-## 获取用户主键 ID
+## Get User Primary ID
 
 ```php
 PrimaryHelper::fresnsUserIdByUidOrUsername($uidOrUsername);
@@ -66,7 +66,7 @@ PrimaryHelper::fresnsUserIdByUidOrUsername($uidOrUsername);
 | --- | --- | --- | --- |
 | uidOrUsername | String | **required** | `users->uid` or `users->username` |
 
-## 获取小组主键 ID
+## Get Group Primary ID
 
 ```php
 PrimaryHelper::fresnsGroupIdByGid($gid);
@@ -75,7 +75,7 @@ PrimaryHelper::fresnsGroupIdByGid($gid);
 | --- | --- | --- | --- |
 | gid | String | **required** | `groups->gid` |
 
-## 获取话题主键 ID
+## Get Hashtag Primary ID
 
 ```php
 PrimaryHelper::fresnsHashtagIdByHid($hid);
@@ -84,7 +84,7 @@ PrimaryHelper::fresnsHashtagIdByHid($hid);
 | --- | --- | --- | --- |
 | hid | String | **required** | `hashtags->slug` |
 
-## 获取帖子主键 ID
+## Get Post Primary ID
 
 ```php
 PrimaryHelper::fresnsPostIdByPid($pid);
@@ -93,7 +93,7 @@ PrimaryHelper::fresnsPostIdByPid($pid);
 | --- | --- | --- | --- |
 | pid | String | **required** | `posts->pid` |
 
-## 获取评论主键 ID
+## Get Comment Primary ID
 
 ```php
 PrimaryHelper::fresnsCommentIdByCid($cid);
@@ -102,7 +102,7 @@ PrimaryHelper::fresnsCommentIdByCid($cid);
 | --- | --- | --- | --- |
 | cid | String | **required** | `comments->cid` |
 
-## 获取文件主键 ID
+## Get File Primary ID
 
 ```php
 PrimaryHelper::fresnsFileIdByFid($fid);
@@ -111,7 +111,7 @@ PrimaryHelper::fresnsFileIdByFid($fid);
 | --- | --- | --- | --- |
 | fid | String | **required** | `files->fid` |
 
-## 获取扩展主键 ID
+## Get Extend Primary ID
 
 ```php
 PrimaryHelper::fresnsExtendIdByEid($eid);

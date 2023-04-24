@@ -2,109 +2,109 @@
 
 `App\Utilities\InteractionUtility`
 
-## 检查是否点赞
+## Check if Liked
 ```php
 InteractionUtility::checkUserLike($likeType, $likeId, $userId);
 ```
 | Parameter Name | Type | Required | Description |
 | --- | --- | --- | --- |
 | likeType | Number | **required** | 1.User / 2.Group / 3.Hashtag / 4.Post / 5.Comment |
-| likeId | Number | **required** | Primary key ID of the corresponding type |
+| likeId | Number | **required** | Primary id of the corresponding type |
 | userId | Number | **required** | `users->id` |
 
 - 检查用户 `userId` 是否对 `likeType` 对象的 `likeId` 操作了点赞。
 
-## 检查是否点踩
+## Check if Disliked
 ```php
 InteractionUtility::checkUserDislike($dislikeType, $dislikeId, $userId);
 ```
 | Parameter Name | Type | Required | Description |
 | --- | --- | --- | --- |
 | dislikeType | Number | **required** | 1.User / 2.Group / 3.Hashtag / 4.Post / 5.Comment |
-| dislikeId | Number | **required** | Primary key ID of the corresponding type |
+| dislikeId | Number | **required** | Primary id of the corresponding type |
 | userId | Number | **required** | `users->id` |
 
 - 检查用户 `userId` 是否对 `dislikeType` 对象的 `dislikeId` 操作了点踩。
 
-## 检查是否关注
+## Check if Followed
 ```php
 InteractionUtility::checkUserFollow($followType, $followId, $userId);
 ```
 | Parameter Name | Type | Required | Description |
 | --- | --- | --- | --- |
 | followType | Number | **required** | 1.User / 2.Group / 3.Hashtag / 4.Post / 5.Comment |
-| followId | Number | **required** | Primary key ID of the corresponding type |
+| followId | Number | **required** | Primary id of the corresponding type |
 | userId | Number | **required** | `users->id` |
 
 - 检查用户 `userId` 是否对 `followType` 对象的 `followId` 操作了关注。
 
-## 检查是否屏蔽
+## Check if Blocked
 ```php
 InteractionUtility::checkUserBlock($blockType, $blockId, $userId);
 ```
 | Parameter Name | Type | Required | Description |
 | --- | --- | --- | --- |
 | blockType | Number | **required** | 1.User / 2.Group / 3.Hashtag / 4.Post / 5.Comment |
-| blockId | Number | **required** | Primary key ID of the corresponding type |
+| blockId | Number | **required** | Primary id of the corresponding type |
 | userId | Number | **required** | `users->id` |
 
 - 检查用户 `userId` 是否对 `blockType` 对象的 `blockId` 操作了屏蔽。
 
-## 检查全部状态
+## Check All Statuses
 ```php
 InteractionUtility::checkInteractionStatus($markType, $markId, $userId);
 ```
 | Parameter Name | Type | Required | Description |
 | --- | --- | --- | --- |
 | markType | Number | **required** | 1.User / 2.Group / 3.Hashtag / 4.Post / 5.Comment |
-| markId | Number | **required** | Primary key ID of the corresponding type |
+| markId | Number | **required** | Primary id of the corresponding type |
 | userId | Number | **required** | `users->id` |
 
 - 检查用户 `userId` 是否对 `markType` 对象的 `markId` 操作。
 - 输出是否点赞、点踩、关注、屏蔽。
 - 参数名 `likeStatus`,`dislikeStatus`,`followStatus`,`blockStatus`
 
-## 操作点赞
+## Mark Like Action
 ```php
 InteractionUtility::markUserLike($userId, $likeType, $likeId);
 ```
 
-## 操作点踩
+## Mark Dislike Action
 ```php
 InteractionUtility::markUserDislike($userId, $dislikeType, $dislikeId);
 ```
 
-## 操作关注
+## Mark Follow Action
 ```php
 InteractionUtility::markUserFollow($userId, $followType, $followId);
 ```
 
-## 操作屏蔽
+## Mark Block Action
 ```php
 InteractionUtility::markUserBlock($userId, $blockType, $blockId);
 ```
 
-## 操作内容置顶
+## Mark Content Sticky
 ```php
 InteractionUtility::markContentSticky($type, $id, $stickyState);
 ```
 | Parameter Name | Type | Required | Description |
 | --- | --- | --- | --- |
 | type | Number | **required** | `post` or `comment` |
-| id | Number | **required** | Primary key ID of the corresponding type |
+| id | Number | **required** | Primary id of the corresponding type |
 | stickyState | Number | **required** | Post: 1.No / 2.Group State / 3.Global Sticky<br>Comment: 0.No / 1.Yes |
 
-## 操作内容精华
+## Mark Content Digest
 ```php
 InteractionUtility::markContentDigest($type, $id, $digestState);
 ```
 | Parameter Name | Type | Required | Description |
 | --- | --- | --- | --- |
 | type | Number | **required** | `post` or `comment` |
-| id | Number | **required** | Primary key ID of the corresponding type |
+| id | Number | **required** | Primary id of the corresponding type |
 | digestState | Number | **required** | 1.No / 2.General Digest / 3.Advanced Digest |
 
-## 操作行为统计记数
+## Mark Behavior Statistics Count
 ```php
 InteractionUtility::markStats($userId, $interactionType, $markType, $markId, $actionType);
 ```
@@ -113,30 +113,30 @@ InteractionUtility::markStats($userId, $interactionType, $markType, $markId, $ac
 | userId | Number | **required** | `users->id` |
 | interactionType | String | **required** | `like`, `dislike`, `follow`, `block` |
 | markType | Number | **required** | 1.User / 2.Group / 3.Hashtag / 4.Post / 5.Comment |
-| markId | Number | **required** | Primary key ID of the corresponding type |
+| markId | Number | **required** | Primary id of the corresponding type |
 | actionType | String | **required** | `increment` or `decrement` |
 
-## 发表行为统计记数
+## Publish Behavior Statistics Count
 ```php
 InteractionUtility::publishStats($type, $id, $actionType);
 ```
 | Parameter Name | Type | Required | Description |
 | --- | --- | --- | --- |
 | type | Number | **required** | `post` or `comment` |
-| id | Number | **required** | Primary key ID of the corresponding type |
+| id | Number | **required** | Primary id of the corresponding type |
 | actionType | String | **required** | `increment` or `decrement` |
 
-## 精华行为统计记数
+## Digest Behavior Statistics Count
 ```php
 InteractionUtility::digestStats($type, $id, $actionType);
 ```
 | Parameter Name | Type | Required | Description |
 | --- | --- | --- | --- |
 | type | Number | **required** | `post` or `comment` |
-| id | Number | **required** | Primary key ID of the corresponding type |
+| id | Number | **required** | Primary id of the corresponding type |
 | actionType | String | **required** | `increment` or `decrement` |
 
-## 获取关注对象 ID 数组
+## Get Followed Object ID Array
 ```php
 InteractionUtility::getFollowIdArr($type, $userId);
 ```
@@ -145,7 +145,7 @@ InteractionUtility::getFollowIdArr($type, $userId);
 | type | Number | **required** | 1.User / 2.Group / 3.Hashtag / 4.Post / 5.Comment |
 | userId | Number | **required** | `users->id` |
 
-## 获取屏蔽对象 ID 数组
+## Get Blocked Object ID Array
 ```php
 InteractionUtility::getBlockIdArr($type, $userId);
 ```
@@ -154,7 +154,7 @@ InteractionUtility::getBlockIdArr($type, $userId);
 | type | Number | **required** | 1.User / 2.Group / 3.Hashtag / 4.Post / 5.Comment |
 | userId | Number | **required** | `users->id` |
 
-## 获取私有小组 ID 数组
+## Get Private Group ID Array
 ```php
 InteractionUtility::getPrivateGroupIdArr();
 ```

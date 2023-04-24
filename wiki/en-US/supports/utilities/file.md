@@ -2,7 +2,7 @@
 
 `App\Utilities\FileUtility`
 
-## 上传文件
+## Upload File
 
 ```php
 FileUtility::uploadFile($bodyInfo, $file);
@@ -32,7 +32,7 @@ $uploadFile = FileUtility::uploadFile($bodyInfo, $dtoWordBody->file);
 ```
 :::
 
-## 上传文件信息
+## Upload File Information
 
 ```php
 FileUtility::uploadFileInfo($bodyInfo);
@@ -87,7 +87,7 @@ $uploadFileInfo = FileUtility::uploadFileInfo($bodyInfo);
 ```
 :::
 
-## 保存文件信息到数据库
+## Save File Information to Database
 
 ```php
 FileUtility::saveFileInfoToDatabase($bodyInfo, $diskPath, $file);
@@ -117,7 +117,7 @@ $uploadFile = FileUtility::saveFileInfoToDatabase($bodyInfo, $diskPath, $file);
 ```
 :::
 
-## 逻辑删除文件
+## Logically Delete File
 
 ```php
 FileUtility::logicalDeletionFiles($fileIdsOrFids);

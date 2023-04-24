@@ -2,7 +2,7 @@
 
 `App\Helpers\ConfigHelper`
 
-## 根据 Key 获取配置值
+## 根据 key 获取配置值
 
 ```php
 ConfigHelper::fresnsConfigByItemKey($itemKey, $langTag);
@@ -12,7 +12,7 @@ ConfigHelper::fresnsConfigByItemKey($itemKey, $langTag);
 | itemKey | String | YES | [configs->item_key](../../database/systems/configs.md) |
 | langTag | String | NO | 语言标签，可不传，仅对多语言配置有效。<br>如果是多语言配置，不传则输出默认语言值。 |
 
-## 根据一组 Key 获取配置值
+## 根据一组 key 获取配置值
 
 ```php
 ConfigHelper::fresnsConfigByItemKeys($itemKeys, $langTag);
@@ -32,7 +32,7 @@ ConfigHelper::fresnsConfigByItemKeys($itemKeys, $langTag);
 ```
 :::
 
-## 根据 Tag 获取一组配置值
+## 根据 tag 获取一组配置值
 
 ```php
 ConfigHelper::fresnsConfigByItemTag($itemTag, $langTag);
@@ -57,7 +57,7 @@ ConfigHelper::fresnsConfigByItemTag($itemTag, $langTag);
 ```
 :::
 
-## 根据 Key 判断文件配置类型
+## 根据 key 判断文件配置类型
 
 ```php
 ConfigHelper::fresnsConfigFileValueTypeByItemKey($itemKey);
