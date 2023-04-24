@@ -37,10 +37,10 @@
 - `type=follow` 获得关注了 `pid` 的用户列表。
 - `type=block` 获得屏蔽了 `pid` 的用户列表。
 - 接口会根据配置表设置 `运营 > 互动配置 > 查看互动记录设置` 决定是否输出数据。
-    - `post_likers` 配置，是否输出点赞 TA 的用户
-    - `post_dislikers` 配置，是否输出点踩 TA 的用户
-    - `post_followers` 配置，是否输出关注 TA 的用户
-    - `post_blockers` 配置，是否输出屏蔽 TA 的用户
+    - `post_likers` 配置，是否输出点赞他的用户
+    - `post_dislikers` 配置，是否输出点踩他的用户
+    - `post_followers` 配置，是否输出关注他的用户
+    - `post_blockers` 配置，是否输出屏蔽他的用户
 - `orderDirection` 排序方向以创建时间排序。
 
 ## 返回结果

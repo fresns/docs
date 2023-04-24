@@ -175,7 +175,7 @@
     "userFollowMutual": "互相关注",
     "userFollowMe": "关注了你",
     "userBlockMe": "拉黑了你",
-    "userFollowersYouKnow": "等人也关注了 TA",
+    "userFollowersYouKnow": "等人也关注了他",
     "userFollowersYouFollow": "你关注的人也在关注他",
     "walletStatus": "钱包状态",
     "walletBalance": "余额",

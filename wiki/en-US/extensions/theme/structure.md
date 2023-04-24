@@ -79,33 +79,33 @@
 
 | Route Name | View File | Description |
 | --- | --- | --- |
-| fresns.profile.posts | /profile/posts.blade.php | It Posts |
-| fresns.profile.comments | /profile/comments.blade.php | It Comments |
+| fresns.profile.posts | /profile/posts.blade.php | They Posts |
+| fresns.profile.comments | /profile/comments.blade.php | They Comments |
 | fresns.profile.followers.you.follow | /profile/interactions/followers-you-follow.blade.php | Followers you know |
-| fresns.profile.likers | /profile/interactions/likers.blade.php | Like it users |
-| fresns.profile.dislikers | /profile/interactions/dislikers.blade.php | Dislike it users |
-| fresns.profile.followers | /profile/interactions/followers.blade.php | Follow it users |
-| fresns.profile.blockers | /profile/interactions/blockers.blade.php | Block it users |
-| fresns.profile.likes.users | /profile/likes/users.blade.php | It like users |
-| fresns.profile.likes.groups | /profile/likes/groups.blade.php | It like groups |
-| fresns.profile.likes.hashtags | /profile/likes/hashtags.blade.php | It like hashtags |
-| fresns.profile.likes.posts | /profile/likes/posts.blade.php | It like posts |
-| fresns.profile.likes.comments | /profile/likes/comments.blade.php | It like comments |
-| fresns.profile.dislikes.users | /profile/dislikes/users.blade.php | It dislike users |
-| fresns.profile.dislikes.groups | /profile/dislikes/groups.blade.php | It dislike groups |
-| fresns.profile.dislikes.hashtags | /profile/dislikes/hashtags.blade.php | It dislike hashtags |
-| fresns.profile.dislikes.posts | /profile/dislikes/posts.blade.php | It dislike posts |
-| fresns.profile.dislikes.comments | /profile/dislikes/comments.blade.php | It dislike comments |
-| fresns.profile.following.users | /profile/following/users.blade.php | It follow users |
-| fresns.profile.following.groups | /profile/following/groups.blade.php | It follow groups |
-| fresns.profile.following.hashtags | /profile/following/hashtags.blade.php | It follow hashtags |
-| fresns.profile.following.posts | /profile/following/posts.blade.php | It follow posts |
-| fresns.profile.following.comments | /profile/following/comments.blade.php | It follow comments |
-| fresns.profile.blocking.users | /profile/blocking/users.blade.php | It block users |
-| fresns.profile.blocking.groups | /profile/blocking/groups.blade.php | It block groups |
-| fresns.profile.blocking.hashtags | /profile/blocking/hashtags.blade.php | It block hashtags |
-| fresns.profile.blocking.posts | /profile/blocking/posts.blade.php | It block posts |
-| fresns.profile.blocking.comments | /profile/blocking/comments.blade.php | It block comments |
+| fresns.profile.likers | /profile/interactions/likers.blade.php | Like they users |
+| fresns.profile.dislikers | /profile/interactions/dislikers.blade.php | Dislike they users |
+| fresns.profile.followers | /profile/interactions/followers.blade.php | Follow they users |
+| fresns.profile.blockers | /profile/interactions/blockers.blade.php | Block they users |
+| fresns.profile.likes.users | /profile/likes/users.blade.php | They like users |
+| fresns.profile.likes.groups | /profile/likes/groups.blade.php | They like groups |
+| fresns.profile.likes.hashtags | /profile/likes/hashtags.blade.php | They like hashtags |
+| fresns.profile.likes.posts | /profile/likes/posts.blade.php | They like posts |
+| fresns.profile.likes.comments | /profile/likes/comments.blade.php | They like comments |
+| fresns.profile.dislikes.users | /profile/dislikes/users.blade.php | They dislike users |
+| fresns.profile.dislikes.groups | /profile/dislikes/groups.blade.php | They dislike groups |
+| fresns.profile.dislikes.hashtags | /profile/dislikes/hashtags.blade.php | They dislike hashtags |
+| fresns.profile.dislikes.posts | /profile/dislikes/posts.blade.php | They dislike posts |
+| fresns.profile.dislikes.comments | /profile/dislikes/comments.blade.php | They dislike comments |
+| fresns.profile.following.users | /profile/following/users.blade.php | They follow users |
+| fresns.profile.following.groups | /profile/following/groups.blade.php | They follow groups |
+| fresns.profile.following.hashtags | /profile/following/hashtags.blade.php | They follow hashtags |
+| fresns.profile.following.posts | /profile/following/posts.blade.php | They follow posts |
+| fresns.profile.following.comments | /profile/following/comments.blade.php | They follow comments |
+| fresns.profile.blocking.users | /profile/blocking/users.blade.php | They block users |
+| fresns.profile.blocking.groups | /profile/blocking/groups.blade.php | They block groups |
+| fresns.profile.blocking.hashtags | /profile/blocking/hashtags.blade.php | They block hashtags |
+| fresns.profile.blocking.posts | /profile/blocking/posts.blade.php | They block posts |
+| fresns.profile.blocking.comments | /profile/blocking/comments.blade.php | They block comments |
 
 ## Search
 

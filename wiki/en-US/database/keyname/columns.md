@@ -109,28 +109,28 @@
 
 | Menu Title | Key Name | Default Key Value | Value Type | Description |
 | --- | --- | --- | --- | --- |
-| Like it users | menu_profile_likes | Likes | string | Multilingual |
-| Dislike it users | menu_profile_dislikes | Dislikes | string | Multilingual |
-| Follow it users | menu_profile_followers | Followers | string | Multilingual |
-| Block it users | menu_profile_blockers | Blockers | string | Multilingual |
+| Like they users | menu_profile_likes | Likes | string | Multilingual |
+| Dislike they users | menu_profile_dislikes | Dislikes | string | Multilingual |
+| Follow they users | menu_profile_followers | Followers | string | Multilingual |
+| Block they users | menu_profile_blockers | Blockers | string | Multilingual |
 | Followers You Follow | menu_profile_followers_you_follow | Followers You Know | string | Multilingual |
-| It like users | menu_profile_like_users | It like users | string | Multilingual |
-| It like groups | menu_profile_like_groups | It like groups | string | Multilingual |
-| It like hashtags | menu_profile_like_hashtags | It like hashtags | string | Multilingual |
-| It like posts | menu_profile_like_posts | It like posts | string | Multilingual |
-| It like comments | menu_profile_like_comments | It like comments | string | Multilingual |
-| It dislike users | menu_profile_dislike_users | It dislike users | string | Multilingual |
-| It dislike groups | menu_profile_dislike_groups | It dislike groups | string | Multilingual |
-| It dislike hashtags | menu_profile_dislike_hashtags | It dislike hashtags | string | Multilingual |
-| It dislike posts | menu_profile_dislike_posts | It dislike posts | string | Multilingual |
-| It dislike comments | menu_profile_dislike_comments | It dislike comments | string | Multilingual |
-| It follow users | menu_profile_follow_users | Following | string | Multilingual |
-| It follow groups | menu_profile_follow_groups | Being in it | string | Multilingual |
-| It follow hashtags | menu_profile_follow_hashtags | Subscribing now | string | Multilingual |
-| It follow posts | menu_profile_follow_posts | Favorites | string | Multilingual |
-| It follow comments | menu_profile_follow_comments | Favorites | string | Multilingual |
-| It block users | menu_profile_block_users | It Blacklist | string | Multilingual |
-| It block groups | menu_profile_block_groups | It block groups | string | Multilingual |
-| It block hashtags | menu_profile_block_hashtags | It block hashtags | string | Multilingual |
-| It block posts | menu_profile_block_posts | It block posts | string | Multilingual |
-| It block comments | menu_profile_block_comments | It block comments | string | Multilingual |
+| They like users | menu_profile_like_users | They like users | string | Multilingual |
+| They like groups | menu_profile_like_groups | They like groups | string | Multilingual |
+| They like hashtags | menu_profile_like_hashtags | They like hashtags | string | Multilingual |
+| They like posts | menu_profile_like_posts | They like posts | string | Multilingual |
+| They like comments | menu_profile_like_comments | They like comments | string | Multilingual |
+| They dislike users | menu_profile_dislike_users | They dislike users | string | Multilingual |
+| They dislike groups | menu_profile_dislike_groups | They dislike groups | string | Multilingual |
+| They dislike hashtags | menu_profile_dislike_hashtags | They dislike hashtags | string | Multilingual |
+| They dislike posts | menu_profile_dislike_posts | They dislike posts | string | Multilingual |
+| They dislike comments | menu_profile_dislike_comments | They dislike comments | string | Multilingual |
+| They follow users | menu_profile_follow_users | Following | string | Multilingual |
+| They follow groups | menu_profile_follow_groups | Being in they | string | Multilingual |
+| They follow hashtags | menu_profile_follow_hashtags | Subscribing now | string | Multilingual |
+| They follow posts | menu_profile_follow_posts | Favorites | string | Multilingual |
+| They follow comments | menu_profile_follow_comments | Favorites | string | Multilingual |
+| They block users | menu_profile_block_users | They Blacklist | string | Multilingual |
+| They block groups | menu_profile_block_groups | They block groups | string | Multilingual |
+| They block hashtags | menu_profile_block_hashtags | They block hashtags | string | Multilingual |
+| They block posts | menu_profile_block_posts | They block posts | string | Multilingual |
+| They block comments | menu_profile_block_comments | They block comments | string | Multilingual |

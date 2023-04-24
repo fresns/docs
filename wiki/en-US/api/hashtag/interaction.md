@@ -37,10 +37,10 @@
 - `type=follow` Get the list of users who followed `hid`.
 - `type=block` Get the list of users who blocked `hid`.
 - The interface will decide whether to output data based on the configuration table settings `Operations > Interaction > View interaction log settings`.
-    - `hashtag_likers` configuration, whether to output users who liked his
-    - `hashtag_dislikers` configuration, whether to output users who disliked his
-    - `hashtag_followers` configuration, whether to output users who followed his
-    - `hashtag_blockers` configuration, whether to output users who blocked his
+    - `hashtag_likers` configuration, whether to output users who liked it
+    - `hashtag_dislikers` configuration, whether to output users who disliked it
+    - `hashtag_followers` configuration, whether to output users who followed it
+    - `hashtag_blockers` configuration, whether to output users who blocked it
 - `orderDirection` The sort direction is sorted by creation time.
 
 ## Return

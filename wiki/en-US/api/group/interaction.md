@@ -37,10 +37,10 @@
 - `type=follow` Get the list of users who followed `gid`.
 - `type=block` Get the list of users who blocked `gid`.
 - The interface will decide whether to output data based on the configuration table settings `Operations > Interaction > View interaction log settings`.
-    - `group_likers` configuration, whether to output users who liked his
-    - `group_dislikers` configuration, whether to output users who disliked his
-    - `group_followers` configuration, whether to output users who followed his
-    - `group_blockers` configuration, whether to output users who blocked his
+    - `group_likers` configuration, whether to output users who liked it
+    - `group_dislikers` configuration, whether to output users who disliked it
+    - `group_followers` configuration, whether to output users who followed it
+    - `group_blockers` configuration, whether to output users who blocked it
 - `orderDirection` The sort direction is sorted by creation time.
 
 ## Return

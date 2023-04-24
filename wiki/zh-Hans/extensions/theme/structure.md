@@ -79,33 +79,33 @@
 
 | 路由名 | 模板文件 | 介绍 |
 | --- | --- | --- |
-| fresns.profile.posts | /profile/posts.blade.php | TA 帖子列表 |
-| fresns.profile.comments | /profile/comments.blade.php | TA 评论列表 |
+| fresns.profile.posts | /profile/posts.blade.php | 他帖子列表 |
+| fresns.profile.comments | /profile/comments.blade.php | 他评论列表 |
 | fresns.profile.followers.you.follow | /profile/interactions/followers-you-follow.blade.php | 你认识的关注者 |
-| fresns.profile.likers | /profile/interactions/likers.blade.php | 点赞 TA 的用户 |
-| fresns.profile.dislikers | /profile/interactions/dislikers.blade.php | 点踩 TA 的用户 |
-| fresns.profile.followers | /profile/interactions/followers.blade.php | 关注 TA 的用户 |
-| fresns.profile.blockers | /profile/interactions/blockers.blade.php | 屏蔽 TA 的用户 |
-| fresns.profile.likes.users | /profile/likes/users.blade.php | TA 点赞的用户 |
-| fresns.profile.likes.groups | /profile/likes/groups.blade.php | TA 点赞的小组 |
-| fresns.profile.likes.hashtags | /profile/likes/hashtags.blade.php | TA 点赞的话题 |
-| fresns.profile.likes.posts | /profile/likes/posts.blade.php | TA 点赞的帖子 |
-| fresns.profile.likes.comments | /profile/likes/comments.blade.php | TA 点赞的评论 |
-| fresns.profile.dislikes.users | /profile/dislikes/users.blade.php | TA 点踩的用户 |
-| fresns.profile.dislikes.groups | /profile/dislikes/groups.blade.php | TA 点踩的小组 |
-| fresns.profile.dislikes.hashtags | /profile/dislikes/hashtags.blade.php | TA 点踩的话题 |
-| fresns.profile.dislikes.posts | /profile/dislikes/posts.blade.php | TA 点踩的帖子 |
-| fresns.profile.dislikes.comments | /profile/dislikes/comments.blade.php | TA 点踩的评论 |
-| fresns.profile.following.users | /profile/following/users.blade.php | TA 关注的用户 |
-| fresns.profile.following.groups | /profile/following/groups.blade.php | TA 关注的小组 |
-| fresns.profile.following.hashtags | /profile/following/hashtags.blade.php | TA 关注的话题 |
-| fresns.profile.following.posts | /profile/following/posts.blade.php | TA 关注的帖子 |
-| fresns.profile.following.comments | /profile/following/comments.blade.php | TA 关注的评论 |
-| fresns.profile.blocking.users | /profile/blocking/users.blade.php | TA 屏蔽的用户 |
-| fresns.profile.blocking.groups | /profile/blocking/groups.blade.php | TA 屏蔽的小组 |
-| fresns.profile.blocking.hashtags | /profile/blocking/hashtags.blade.php | TA 屏蔽的话题 |
-| fresns.profile.blocking.posts | /profile/blocking/posts.blade.php | TA 屏蔽的帖子 |
-| fresns.profile.blocking.comments | /profile/blocking/comments.blade.php | TA 屏蔽的评论 |
+| fresns.profile.likers | /profile/interactions/likers.blade.php | 点赞他的用户 |
+| fresns.profile.dislikers | /profile/interactions/dislikers.blade.php | 点踩他的用户 |
+| fresns.profile.followers | /profile/interactions/followers.blade.php | 关注他的用户 |
+| fresns.profile.blockers | /profile/interactions/blockers.blade.php | 屏蔽他的用户 |
+| fresns.profile.likes.users | /profile/likes/users.blade.php | 他点赞的用户 |
+| fresns.profile.likes.groups | /profile/likes/groups.blade.php | 他点赞的小组 |
+| fresns.profile.likes.hashtags | /profile/likes/hashtags.blade.php | 他点赞的话题 |
+| fresns.profile.likes.posts | /profile/likes/posts.blade.php | 他点赞的帖子 |
+| fresns.profile.likes.comments | /profile/likes/comments.blade.php | 他点赞的评论 |
+| fresns.profile.dislikes.users | /profile/dislikes/users.blade.php | 他点踩的用户 |
+| fresns.profile.dislikes.groups | /profile/dislikes/groups.blade.php | 他点踩的小组 |
+| fresns.profile.dislikes.hashtags | /profile/dislikes/hashtags.blade.php | 他点踩的话题 |
+| fresns.profile.dislikes.posts | /profile/dislikes/posts.blade.php | 他点踩的帖子 |
+| fresns.profile.dislikes.comments | /profile/dislikes/comments.blade.php | 他点踩的评论 |
+| fresns.profile.following.users | /profile/following/users.blade.php | 他关注的用户 |
+| fresns.profile.following.groups | /profile/following/groups.blade.php | 他关注的小组 |
+| fresns.profile.following.hashtags | /profile/following/hashtags.blade.php | 他关注的话题 |
+| fresns.profile.following.posts | /profile/following/posts.blade.php | 他关注的帖子 |
+| fresns.profile.following.comments | /profile/following/comments.blade.php | 他关注的评论 |
+| fresns.profile.blocking.users | /profile/blocking/users.blade.php | 他屏蔽的用户 |
+| fresns.profile.blocking.groups | /profile/blocking/groups.blade.php | 他屏蔽的小组 |
+| fresns.profile.blocking.hashtags | /profile/blocking/hashtags.blade.php | 他屏蔽的话题 |
+| fresns.profile.blocking.posts | /profile/blocking/posts.blade.php | 他屏蔽的帖子 |
+| fresns.profile.blocking.comments | /profile/blocking/comments.blade.php | 他屏蔽的评论 |
 
 ## 搜索
 

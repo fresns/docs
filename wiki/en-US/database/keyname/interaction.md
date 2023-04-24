@@ -68,8 +68,8 @@
 
 | Menu Title | Key Name | Default Key Value | Value Type | Description |
 | --- | --- | --- | --- | --- |
-| Their Posts | it_posts | true | boolean | Posts |
-| Their Comments | it_comments | false | boolean | Comments |
+| They Posts | it_posts | true | boolean | Posts |
+| They Comments | it_comments | false | boolean | Comments |
 | Users They Like | it_like_users | false | boolean | Like |
 | Groups They Like | it_like_groups | false | boolean | Like |
 | Hashtags They Like | it_like_hashtags | false | boolean | Like |
@@ -100,10 +100,10 @@
 - `it_home_list` Option
     - it_posts
     - it_comments
-    - **user_likers** Users Who Liked Them
-    - **user_dislikers**  Users Who Disliked Them
-    - **user_followers** Users Who Followed Them
-    - **user_blockers** Users Who Blocked Them
+    - **user_likers** Users Who Liked They
+    - **user_dislikers**  Users Who Disliked They
+    - **user_followers** Users Who Followed They
+    - **user_blockers** Users Who Blocked They
     - it_like_users
     - it_like_groups
     - it_like_hashtags

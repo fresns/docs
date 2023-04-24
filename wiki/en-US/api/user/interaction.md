@@ -37,10 +37,10 @@
 - `type=follow` Get the list of users who followed `uidOrUsername`.
 - `type=block` Get the list of users who blocked `uidOrUsername`.
 - The interface will decide whether to output data based on the configuration table settings `Operations > Interaction > View interaction log settings`.
-    - `user_likers` configuration, whether to output users who liked his
-    - `user_dislikers` configuration, whether to output users who disliked his
-    - `user_followers` configuration, whether to output users who followed his
-    - `user_blockers` configuration, whether to output users who blocked his
+    - `user_likers` configuration, whether to output users who liked they
+    - `user_dislikers` configuration, whether to output users who disliked they
+    - `user_followers` configuration, whether to output users who followed they
+    - `user_blockers` configuration, whether to output users who blocked they
 - If `uidOrUsername` is the logged-in user themselves, it means viewing their own data. When the above configuration is closed, this determines whether to output data.
     - `my_likers` configuration, whether to output users who liked me
     - `my_dislikers` configuration, whether to output users who disliked me

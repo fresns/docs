@@ -109,28 +109,28 @@
 
 | 栏目标题 | 键名 | 默认键值 | 键值类型 | 说明 |
 | --- | --- | --- | --- | --- |
-| 点赞 TA 的用户 | menu_profile_likes | 被喜欢 | string | 多语言 |
-| 点踩 TA 的用户 | menu_profile_dislikes | 被不喜欢 | string | 多语言 |
-| 关注 TA 的用户 | menu_profile_followers | 粉丝 | string | 多语言 |
-| 屏蔽 TA 的用户 | menu_profile_blockers | 被拉黑 | string | 多语言 |
+| 点赞他的用户 | menu_profile_likes | 被喜欢 | string | 多语言 |
+| 点踩他的用户 | menu_profile_dislikes | 被不喜欢 | string | 多语言 |
+| 关注他的用户 | menu_profile_followers | 粉丝 | string | 多语言 |
+| 屏蔽他的用户 | menu_profile_blockers | 被拉黑 | string | 多语言 |
 | 你认识的关注者 | menu_profile_followers_you_follow | 你认识的关注者 | string | 多语言 |
-| TA 点赞的用户 | menu_profile_like_users | TA 点赞的用户 | string | 多语言 |
-| TA 点赞的小组 | menu_profile_like_groups | TA 点赞的小组 | string | 多语言 |
-| TA 点赞的话题 | menu_profile_like_hashtags | TA 点赞的话题 | string | 多语言 |
-| TA 点赞的帖子 | menu_profile_like_posts | TA 点赞的帖子 | string | 多语言 |
-| TA 点赞的评论 | menu_profile_like_comments | TA 点赞的评论 | string | 多语言 |
-| TA 点踩的用户 | menu_profile_dislike_users | TA 点踩的用户 | string | 多语言 |
-| TA 点踩的小组 | menu_profile_dislike_groups | TA 点踩的小组 | string | 多语言 |
-| TA 点踩的话题 | menu_profile_dislike_hashtags | TA 点踩的话题 | string | 多语言 |
-| TA 点踩的帖子 | menu_profile_dislike_posts | TA 点踩的帖子 | string | 多语言 |
-| TA 点踩的评论 | menu_profile_dislike_comments | TA 点踩的评论 | string | 多语言 |
-| TA 关注的用户 | menu_profile_follow_users | 正在关注 | string | 多语言 |
-| TA 关注的小组 | menu_profile_follow_groups | 正在其中 | string | 多语言 |
-| TA 关注的话题 | menu_profile_follow_hashtags | 正在订阅 | string | 多语言 |
-| TA 关注的帖子 | menu_profile_follow_posts | 收藏夹 | string | 多语言 |
-| TA 关注的评论 | menu_profile_follow_comments | 收藏夹 | string | 多语言 |
-| TA 屏蔽的用户 | menu_profile_block_users | TA 的黑名单 | string | 多语言 |
-| TA 屏蔽的小组 | menu_profile_block_groups | TA 屏蔽的小组 | string | 多语言 |
-| TA 屏蔽的话题 | menu_profile_block_hashtags | TA 屏蔽的话题 | string | 多语言 |
-| TA 屏蔽的帖子 | menu_profile_block_posts | TA 屏蔽的帖子 | string | 多语言 |
-| TA 屏蔽的评论 | menu_profile_block_comments | TA 屏蔽的评论 | string | 多语言 |
+| 他点赞的用户 | menu_profile_like_users | 他点赞的用户 | string | 多语言 |
+| 他点赞的小组 | menu_profile_like_groups | 他点赞的小组 | string | 多语言 |
+| 他点赞的话题 | menu_profile_like_hashtags | 他点赞的话题 | string | 多语言 |
+| 他点赞的帖子 | menu_profile_like_posts | 他点赞的帖子 | string | 多语言 |
+| 他点赞的评论 | menu_profile_like_comments | 他点赞的评论 | string | 多语言 |
+| 他点踩的用户 | menu_profile_dislike_users | 他点踩的用户 | string | 多语言 |
+| 他点踩的小组 | menu_profile_dislike_groups | 他点踩的小组 | string | 多语言 |
+| 他点踩的话题 | menu_profile_dislike_hashtags | 他点踩的话题 | string | 多语言 |
+| 他点踩的帖子 | menu_profile_dislike_posts | 他点踩的帖子 | string | 多语言 |
+| 他点踩的评论 | menu_profile_dislike_comments | 他点踩的评论 | string | 多语言 |
+| 他关注的用户 | menu_profile_follow_users | 正在关注 | string | 多语言 |
+| 他关注的小组 | menu_profile_follow_groups | 正在其中 | string | 多语言 |
+| 他关注的话题 | menu_profile_follow_hashtags | 正在订阅 | string | 多语言 |
+| 他关注的帖子 | menu_profile_follow_posts | 收藏夹 | string | 多语言 |
+| 他关注的评论 | menu_profile_follow_comments | 收藏夹 | string | 多语言 |
+| 他屏蔽的用户 | menu_profile_block_users | 他的黑名单 | string | 多语言 |
+| 他屏蔽的小组 | menu_profile_block_groups | 他屏蔽的小组 | string | 多语言 |
+| 他屏蔽的话题 | menu_profile_block_hashtags | 他屏蔽的话题 | string | 多语言 |
+| 他屏蔽的帖子 | menu_profile_block_posts | 他屏蔽的帖子 | string | 多语言 |
+| 他屏蔽的评论 | menu_profile_block_comments | 他屏蔽的评论 | string | 多语言 |

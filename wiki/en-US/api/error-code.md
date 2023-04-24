@@ -207,9 +207,9 @@
 | 36603 | You can not send messages to yourself |
 | 36604 | Each message should be either [file] or [text] |
 | 36605 | The message could not be sent for the block words it contains |
-| 36606 | The user has set that only the users he follows can send messages |
-| 36607 | The user has set that only the users he follows and the verified users can send messages |
-| 36608 | The other party has set the conversation off function |
+| 36606 | The user they set that only the users he follows can send messages |
+| 36607 | The user they set that only the users he follows and the verified users can send messages |
+| 36608 | The other party they set the conversation off function |
 | 36609 | Only your own conversation messages could be deleted. |
 | **Notification** |  |
 | 36700 | Notification exception or non-existent |

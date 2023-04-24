@@ -68,43 +68,43 @@
 
 | 栏目标题 | 键名 | 默认键值 | 键值类型 | 说明 |
 | --- | --- | --- | --- | --- |
-| TA 发表的帖子 | it_posts | true | boolean | 帖子 |
-| TA 发表的评论 | it_comments | true | boolean | 评论 |
+| 他发表的帖子 | it_posts | true | boolean | 帖子 |
+| 他发表的评论 | it_comments | true | boolean | 评论 |
 | 你认识的关注者 | it_followers_you_follow | true | boolean | 你关注的用户也关注了他 |
-| TA 点赞的用户 | it_like_users | false | boolean | 喜欢 |
-| TA 点赞的小组 | it_like_groups | false | boolean | 点赞 |
-| TA 点赞的话题 | it_like_hashtags | false | boolean | 点赞 |
-| TA 点赞的帖子 | it_like_posts | false | boolean | 点赞 |
-| TA 点赞的评论 | it_like_comments | false | boolean | 点赞 |
-| TA 踩的用户 | it_dislike_users | false | boolean |  |
-| TA 踩的小组 | it_dislike_groups | false | boolean |  |
-| TA 踩的话题 | it_dislike_hashtags | false | boolean |  |
-| TA 踩的帖子 | it_dislike_posts | false | boolean |  |
-| TA 踩的评论 | it_dislike_comments | false | boolean |  |
-| TA 关注的用户 | it_follow_users | true | boolean | 正在关注 |
-| TA 关注的小组 | it_follow_groups | true | boolean | 加入 |
-| TA 关注的话题 | it_follow_hashtags | false | boolean | 订阅 |
-| TA 关注的帖子 | it_follow_posts | false | boolean | 收藏 |
-| TA 关注的评论 | it_follow_comments | false | boolean | 收藏 |
-| TA 屏蔽的用户 | it_block_users | false | boolean | 黑名单 |
-| TA 屏蔽的小组 | it_block_groups | false | boolean | 屏蔽 |
-| TA 屏蔽的话题 | it_block_hashtags | false | boolean | 不感兴趣 |
-| TA 屏蔽的帖子 | it_block_posts | false | boolean | 不喜欢 |
-| TA 屏蔽的评论 | it_block_comments | false | boolean | 不喜欢 |
+| 他点赞的用户 | it_like_users | false | boolean | 喜欢 |
+| 他点赞的小组 | it_like_groups | false | boolean | 点赞 |
+| 他点赞的话题 | it_like_hashtags | false | boolean | 点赞 |
+| 他点赞的帖子 | it_like_posts | false | boolean | 点赞 |
+| 他点赞的评论 | it_like_comments | false | boolean | 点赞 |
+| 他踩的用户 | it_dislike_users | false | boolean |  |
+| 他踩的小组 | it_dislike_groups | false | boolean |  |
+| 他踩的话题 | it_dislike_hashtags | false | boolean |  |
+| 他踩的帖子 | it_dislike_posts | false | boolean |  |
+| 他踩的评论 | it_dislike_comments | false | boolean |  |
+| 他关注的用户 | it_follow_users | true | boolean | 正在关注 |
+| 他关注的小组 | it_follow_groups | true | boolean | 加入 |
+| 他关注的话题 | it_follow_hashtags | false | boolean | 订阅 |
+| 他关注的帖子 | it_follow_posts | false | boolean | 收藏 |
+| 他关注的评论 | it_follow_comments | false | boolean | 收藏 |
+| 他屏蔽的用户 | it_block_users | false | boolean | 黑名单 |
+| 他屏蔽的小组 | it_block_groups | false | boolean | 屏蔽 |
+| 他屏蔽的话题 | it_block_hashtags | false | boolean | 不感兴趣 |
+| 他屏蔽的帖子 | it_block_posts | false | boolean | 不喜欢 |
+| 他屏蔽的评论 | it_block_comments | false | boolean | 不喜欢 |
 
 **访问用户主页时，默认内容列表**
 
 | 栏目标题 | 键名 | 默认键值 | 键值类型 | 说明 |
 | --- | --- | --- | --- | --- |
-| TA 的主页默认内容列表 | it_home_list | it_posts | string |  |
+| 他的主页默认内容列表 | it_home_list | it_posts | string |  |
 
 - `it_home_list` 选项
     - it_posts
     - it_comments
-    - **user_likers** 点赞 TA 的用户
-    - **user_dislikers** 踩 TA 的用户
-    - **user_followers** 关注 TA 的用户
-    - **user_blockers** 屏蔽 TA 的用户
+    - **user_likers** 点赞他的用户
+    - **user_dislikers** 踩他的用户
+    - **user_followers** 关注他的用户
+    - **user_blockers** 屏蔽他的用户
     - it_like_users
     - it_like_groups
     - it_like_hashtags
@@ -134,66 +134,66 @@
 
 | 栏目标题 | 键名 | 默认键值 | 键值类型 | 说明 |
 | --- | --- | --- | --- | --- |
-| 点赞了 TA 的用户 | user_likers | false | boolean |  |
-| 踩了 TA 的用户 | user_dislikers | false | boolean |  |
-| 关注了 TA 的用户 | user_followers | true | boolean |  |
-| 屏蔽了 TA 的用户 | user_blockers | false | boolean |  |
-| 点赞了 TA 的用户总数 | user_liker_count | true | boolean |  |
-| 踩了 TA 的用户总数 | user_disliker_count | false | boolean |  |
-| 关注了 TA 的用户总数 | user_follower_count | true | boolean |  |
-| 屏蔽了 TA 的用户总数 | user_blocker_count | false | boolean |  |
+| 点赞了他的用户 | user_likers | false | boolean |  |
+| 踩了他的用户 | user_dislikers | false | boolean |  |
+| 关注了他的用户 | user_followers | true | boolean |  |
+| 屏蔽了他的用户 | user_blockers | false | boolean |  |
+| 点赞了他的用户总数 | user_liker_count | true | boolean |  |
+| 踩了他的用户总数 | user_disliker_count | false | boolean |  |
+| 关注了他的用户总数 | user_follower_count | true | boolean |  |
+| 屏蔽了他的用户总数 | user_blocker_count | false | boolean |  |
 
 **小组**
 
 | 栏目标题 | 键名 | 默认键值 | 键值类型 | 说明 |
 | --- | --- | --- | --- | --- |
-| 点赞了 TA 的用户 | group_likers | true | boolean |  |
-| 踩了 TA 的用户 | group_dislikers | false | boolean |  |
-| 关注了 TA 的用户 | group_followers | true | boolean |  |
-| 屏蔽了 TA 的用户 | group_blockers | false | boolean |  |
-| 点赞了 TA 的用户总数 | group_liker_count | true | boolean |  |
-| 踩了 TA 的用户总数 | group_disliker_count | false | boolean |  |
-| 关注了 TA 的用户总数 | group_follower_count | true | boolean |  |
-| 屏蔽了 TA 的用户总数 | group_blocker_count | false | boolean |  |
+| 点赞了他的用户 | group_likers | true | boolean |  |
+| 踩了他的用户 | group_dislikers | false | boolean |  |
+| 关注了他的用户 | group_followers | true | boolean |  |
+| 屏蔽了他的用户 | group_blockers | false | boolean |  |
+| 点赞了他的用户总数 | group_liker_count | true | boolean |  |
+| 踩了他的用户总数 | group_disliker_count | false | boolean |  |
+| 关注了他的用户总数 | group_follower_count | true | boolean |  |
+| 屏蔽了他的用户总数 | group_blocker_count | false | boolean |  |
 
 **话题**
 
 | 栏目标题 | 键名 | 默认键值 | 键值类型 | 说明 |
 | --- | --- | --- | --- | --- |
-| 点赞了 TA 的用户 | hashtag_likers | true | boolean |  |
-| 踩了 TA 的用户 | hashtag_dislikers | false | boolean |  |
-| 关注了 TA 的用户 | hashtag_followers | true | boolean |  |
-| 屏蔽了 TA 的用户 | hashtag_blockers | false | boolean |  |
-| 点赞了 TA 的用户总数 | hashtag_liker_count | true | boolean |  |
-| 踩了 TA 的用户总数 | hashtag_disliker_count | false | boolean |  |
-| 关注了 TA 的用户总数 | hashtag_follower_count | true | boolean |  |
-| 屏蔽了 TA 的用户总数 | hashtag_blocker_count | false | boolean |  |
+| 点赞了他的用户 | hashtag_likers | true | boolean |  |
+| 踩了他的用户 | hashtag_dislikers | false | boolean |  |
+| 关注了他的用户 | hashtag_followers | true | boolean |  |
+| 屏蔽了他的用户 | hashtag_blockers | false | boolean |  |
+| 点赞了他的用户总数 | hashtag_liker_count | true | boolean |  |
+| 踩了他的用户总数 | hashtag_disliker_count | false | boolean |  |
+| 关注了他的用户总数 | hashtag_follower_count | true | boolean |  |
+| 屏蔽了他的用户总数 | hashtag_blocker_count | false | boolean |  |
 
 **帖子**
 
 | 栏目标题 | 键名 | 默认键值 | 键值类型 | 说明 |
 | --- | --- | --- | --- | --- |
-| 点赞了 TA 的用户 | post_likers | true | boolean |  |
-| 踩了 TA 的用户 | post_dislikers | false | boolean |  |
-| 关注了 TA 的用户 | post_followers | true | boolean |  |
-| 屏蔽了 TA 的用户 | post_blockers | false | boolean |  |
-| 点赞了 TA 的用户总数 | post_liker_count | true | boolean |  |
-| 踩了 TA 的用户总数 | post_disliker_count | false | boolean |  |
-| 关注了 TA 的用户总数 | post_follower_count | true | boolean |  |
-| 屏蔽了 TA 的用户总数 | post_blocker_count | false | boolean |  |
+| 点赞了他的用户 | post_likers | true | boolean |  |
+| 踩了他的用户 | post_dislikers | false | boolean |  |
+| 关注了他的用户 | post_followers | true | boolean |  |
+| 屏蔽了他的用户 | post_blockers | false | boolean |  |
+| 点赞了他的用户总数 | post_liker_count | true | boolean |  |
+| 踩了他的用户总数 | post_disliker_count | false | boolean |  |
+| 关注了他的用户总数 | post_follower_count | true | boolean |  |
+| 屏蔽了他的用户总数 | post_blocker_count | false | boolean |  |
 
 **评论**
 
 | 栏目标题 | 键名 | 默认键值 | 键值类型 | 说明 |
 | --- | --- | --- | --- | --- |
-| 点赞了 TA 的用户 | comment_likers | true | boolean |  |
-| 踩了 TA 的用户 | comment_dislikers | false | boolean |  |
-| 关注了 TA 的用户 | comment_followers | true | boolean |  |
-| 屏蔽了 TA 的用户 | comment_blockers | false | boolean |  |
-| 点赞了 TA 的用户总数 | comment_liker_count | true | boolean |  |
-| 踩了 TA 的用户总数 | comment_disliker_count | false | boolean |  |
-| 关注了 TA 的用户总数 | comment_follower_count | true | boolean |  |
-| 屏蔽了 TA 的用户总数 | comment_blocker_count | false | boolean |  |
+| 点赞了他的用户 | comment_likers | true | boolean |  |
+| 踩了他的用户 | comment_dislikers | false | boolean |  |
+| 关注了他的用户 | comment_followers | true | boolean |  |
+| 屏蔽了他的用户 | comment_blockers | false | boolean |  |
+| 点赞了他的用户总数 | comment_liker_count | true | boolean |  |
+| 踩了他的用户总数 | comment_disliker_count | false | boolean |  |
+| 关注了他的用户总数 | comment_follower_count | true | boolean |  |
+| 屏蔽了他的用户总数 | comment_blocker_count | false | boolean |  |
 
 **用户可以查看自己的哪些互动**
 
