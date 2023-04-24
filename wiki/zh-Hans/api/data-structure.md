@@ -571,7 +571,7 @@
         // 帖子管理扩展
         // 通用数据结构->扩展功能信息
     ],
-    "editStatus": {
+    "editControls": {
         "isMe": "Boolean / 我是否为作者",
         "canDelete": "Boolean / 是否允许删除",
         "canEdit": "Boolean / 是否允许编辑",
@@ -732,7 +732,7 @@
         // 评论管理扩展
         // 通用数据结构->扩展功能信息
     ],
-    "editStatus": {
+    "editControls": {
         "isMe": "Boolean / 我是否为作者",
         "canDelete": "Boolean / 是否允许删除",
         "canEdit": "Boolean / 是否允许编辑",

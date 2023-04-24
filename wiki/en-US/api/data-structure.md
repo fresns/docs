@@ -570,7 +570,7 @@ To reduce documentation effort and ensure consistency of public data, the same s
         // Post Management Extension
         // Common Data Structure -> Extend Function Info
     ],
-    "editStatus": {
+    "editControls": {
         "isMe": "Boolean / Whether I am the author",
         "canDelete": "Boolean / Whether deletion is allowed",
         "canEdit": "Boolean / Whether editing is allowed",
@@ -736,7 +736,7 @@ To reduce documentation effort and ensure consistency of public data, the same s
         // Common Management Extension
         // Common Data Structure -> Extend Function Info
     ],
-    "editStatus": {
+    "editControls": {
         "isMe": "Boolean / Whether I am the author",
         "canDelete": "Boolean / Whether deletion is allowed",
         "canEdit": "Boolean / Whether editing is allowed",
