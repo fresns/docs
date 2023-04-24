@@ -38,6 +38,7 @@
         },
         "list": [
             {
+                "type": "Number / 角色类型",
                 "rid": "Number / 角色 ID",
                 "nicknameColor": "String / 角色用户的昵称颜色",
                 "name": "String / 角色名称",

@@ -38,6 +38,7 @@
         },
         "list": [
             {
+                "type": "Number / Role Type",
                 "rid": "Number / Role ID",
                 "nicknameColor": "String / Nickname color for users with this role",
                 "name": "String / Role name",

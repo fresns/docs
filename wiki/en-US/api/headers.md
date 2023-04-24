@@ -10,7 +10,7 @@
 | X-Fresns-Client-Device-Info | String | **required** | [Interaction Device Information](../database/systems/session-logs.md#device-information-json) `session_logs->device_info`<br>Compress Object information as character string parameter transfer |
 | X-Fresns-Client-Lang-Tag | String | *optional* | Language Tag (output default language if left empty)<br>Path: `Panel->Systems->Languages` |
 | X-Fresns-Client-Timezone | String | *optional* | UTC time zone (use default time zone if left empty)<br>Path: `Panel->Systems->General`<br>After the user logs in, if left blank, the server automatically processes the time format in the time zone configured by the user |
-| X-Fresns-Client-Content-Format | String | NO | Content format (list and detail of posts and comments), leave blank then output as is.<br>Pass the `html` reference to convert content to html format (`\n` for text content to `<br>`, Markdown content to `HTML`) |
+| X-Fresns-Client-Content-Format | String | *optional* | Content format (list and detail of posts and comments), leave blank then output as is.<br>Pass the `html` reference to convert content to html format (`\n` for text content to `<br>`, Markdown content to `HTML`) |
 | X-Fresns-Aid | String |  | Account parameter (regarded as unlogged in account if left empty) |
 | X-Fresns-Aid-Token | String |  | Account identity credential (If `aid` exists, it cannot be empty) |
 | X-Fresns-Uid | Number |  | User parameter (regarded as unlogged in user if left empty) |

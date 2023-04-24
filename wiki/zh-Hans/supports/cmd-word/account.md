@@ -60,7 +60,6 @@
     - 账号主表 `accounts`
     - 账号钱包表 `account_wallets`
     - 其余传参有值时直接录入，无值时留空。
-- 注册完成后，增加数据统计。配置表键值 `accounts_count +1`。
 :::
 
 ## 校验账号
@@ -74,7 +73,7 @@
 | account | String | YES | 邮箱地址<br>手机号码 |
 | countryCode | Number | NO | 手机号专用：国际区号（`type=2` 时必填） |
 | password | String | NO | 以密码校验专用 |
-| verifyCode | String | NO | 以验证码校验专用（命令字 [checkCode](#校验验证码) 查验） |
+| verifyCode | String | NO | 以验证码校验专用（命令字 [checkCode](basic.md#核对验证码) 查验） |
 
 ::: details 结果示例
 ```json

@@ -76,13 +76,13 @@
 | uid | Number | YES | 用户参数（用户主表 `users->uid` 字段） |
 | channel | Number | NO | 渠道 1.iOS / 2.Android |
 | template | String | NO | 模板参数 |
-| coverUrl | String | NO | 封面图，以 Laravel Validation 验参为 url |
+| coverUrl | String | NO | 封面图 |
 | title | String | NO | 标题 |
 | content | String | NO | 内容 |
 | time | String | NO | 时间，格式 Y-m-d H:i:s |
 | linkType | Number | NO | 链接类型：1.用户 2.小组 3.话题 4.帖子 5.评论 |
 | linkFsid | String | NO | 链接类型传参后，此参必传，类型的 fsid |
-| linkUrl | String | NO | 链接地址，以 Laravel Validation 验参为 url |
+| linkUrl | String | NO | 链接地址 |
 
 ::: details channel 参数说明
 - 根据 channel 获取通知配置插件 `send_ios_service`、`send_android_service`
@@ -99,10 +99,10 @@
 | uid | Number | YES | 用户参数（用户主表 `users->uid` 字段） |
 | channel | Number | YES | 渠道 1.公众号 / 2.小程序 |
 | template | String | NO | 模板参数 |
-| coverUrl | String | NO | 封面图，以 Laravel Validation 验参为 url |
+| coverUrl | String | NO | 封面图 |
 | title | String | NO | 标题 |
 | content | String | NO | 内容 |
 | time | String | NO | 时间，格式 Y-m-d H:i:s |
 | linkType | Number | NO | 链接类型：1.用户 2.小组 3.话题 4.帖子 5.评论 |
 | linkFsid | String | NO | 链接类型传参后，此参必传，类型的 fsid |
-| linkUrl | String | NO | 链接地址，以 Laravel Validation 验参为 url |
+| linkUrl | String | NO | 链接地址 |

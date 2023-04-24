@@ -11,7 +11,7 @@
 | version | String | YES | 语义化版本号 |
 | appId | String | YES | App ID |
 | timestamp | Number | YES | 签名生成时间（当前 Unix 时间戳，精确到秒或毫秒都支持） |
-| sign | String | YES | 请求签名 |
+| signature | String | YES | 请求签名 |
 | aid | String | NO/YES | 账号参数（账号主表 `accounts->aid` 字段） |
 | aidToken | String | NO/YES | 账号身份凭证 |
 | uid | Number | NO/YES | 用户参数（用户主表 `users->uid` 字段） |
@@ -117,6 +117,6 @@
 ```
 | 参数名 | 类型 | 是否必传 | 说明 |
 | --- | --- | --- | --- |
-| ip | String | YES | 支持 IPv4 或 IPv6 |
+| ip | String | YES | 支持 IPv4 和 IPv6 |
 
 - 输出结果同 [IP 信息接口](../../api/common/ip-info.md)

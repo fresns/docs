@@ -5,7 +5,6 @@
 ```php
 \FresnsCmdWord::plugin('Fresns')->createDraft($wordBody)
 ```
-
 | 参数名 | 类型 | 是否必传 | **帖子**说明 | **评论**说明 |
 | --- | --- | --- | --- | --- |
 | uid | Number | YES | 用户 UID |  |
@@ -44,7 +43,6 @@
 ```php
 \FresnsCmdWord::plugin('Fresns')->generateDraft($wordBody)
 ```
-
 | 参数名 | 类型 | 是否必传 | 说明 |
 | --- | --- | --- | --- |
 | type | Number | YES | 类型 1.帖子 2.评论 |

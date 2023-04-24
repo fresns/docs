@@ -74,8 +74,7 @@ $uploadFileInfo = FileUtility::uploadFileInfo($bodyInfo);
         "imageWidth": "图片专用，存储到 files->image_width",
         "imageHeight": "图片专用，存储到 files->image_height",
         "videoTime": "视频专用，存储到 files->video_time",
-        "videoCover": "视频专用，存储到 files->video_cover",
-        "videoGif": "视频专用，存储到 files->video_gif",
+        "videoPosterPath": "视频专用，存储到 files->video_poster_path",
         "audioTime": "音频专用，存储到 files->audio_time",
         "transcodingState": "音视频专用，存储到 files->transcoding_state",
         "moreJson": {
