@@ -57,7 +57,7 @@ $uploadFileInfo = FileUtility::uploadFileInfo($bodyInfo);
 ```
 :::
 
-::: details 查看 fileInfo 信息结构
+::: details View `fileInfo` information structure
 ```json
 [
     {

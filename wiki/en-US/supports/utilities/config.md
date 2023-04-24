@@ -31,7 +31,7 @@ protected $fresnsConfigItems = [
 ConfigUtility::addFresnsConfigItems($fresnsConfigItems);
 ```
 
-*item_key 存在则自动跳过*
+*If `item_key` exists, it will be automatically skipped*
 
 ## Modify Configuration Key Value
 
@@ -62,7 +62,7 @@ protected $fresnsConfigItems = [
 ConfigUtility::changeFresnsConfigItems($fresnsConfigItems);
 ```
 
-*存在则修改，不存在则新建*
+*Update if exists, create if not*
 
 ## Remove Configuration Key
 
@@ -113,4 +113,4 @@ ConfigUtility::getLoginErrorCount($accountId, $userId);
 | accountId | Number | **required** | `accounts->id` |
 | userId | Number | *optional* | `users->id` |
 
-*输出近 1 小时内登录错误次数*
+*Output the number of login errors within the last 1 hour*

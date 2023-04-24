@@ -7,14 +7,14 @@
 ```php
 DateHelper::fresnsDatabaseTimezone();
 ```
-*输出当前数据库的时区，UTC 标准*
+*Output the current database timezone in UTC standard*
 
 ## Get Database Datetime
 
 ```php
 DateHelper::fresnsDatabaseCurrentDateTime();
 ```
-*输出当前数据库的日期时间，格式 Y-m-d H:i:s*
+*Output the current database date and time in the format `Y-m-d H:i:s`*
 
 ## Convert Datetime to Database Timezone
 
@@ -27,7 +27,7 @@ DateHelper::fresnsDateTimeToDatabaseTimezone($datetime, $timezone, $langTag);
 | timezone | String | **required** | This `timezone` is the [UTC timezone](../../database/dictionary/timezone.md) for the `datetime` parameter |
 | langTag | String | *optional* | Outputs the time format in the specified language<br>`configs->item_key=language_menus` language tag's `dateFormat` parameter<br>If not provided, the default language format will be used |
 
-*将 timezone 时区的 datetime 时间转换为当前数据库时区的日期时间*
+*Convert the `datetime` in the `timezone` to the date and time in the current database timezone*
 
 ## Get Datetime by Specified Timezone
 
@@ -40,12 +40,12 @@ DateHelper::fresnsDateTimeByTimezone($datetime, $timezone, $langTag);
 | timezone | String | **required** | Converts the time value of the `datetime` parameter into the `timezone` [UTC timezone](../../database/dictionary/timezone.md) |
 | langTag | String | *optional* | Outputs the time format in the specified language<br>`configs->item_key=language_menus` language tag's `dateFormat` parameter<br>If not provided, the default language format will be used |
 
-::: details 功能逻辑
-- 1、获取当前数据库时区
-    - 1.1、如果数据库时区和传参 timezone 时区一致，则流程终止，原样 datetime 参数输出。
-    - 1.2、如果数据库时区和传参 timezone 时区不一致，则流程继续。
-- 2、将传参 datetime 时间以数据库时区为准，转换为传参 timezone 时区的时间并输出。
-- 输出格式：Y-m-d H:i:s
+::: details Logic Notes
+- 1. Get the current database timezone
+    - 1.1. If the database timezone is the same as the passed `timezone`, terminate the process and output the `datetime` parameter as is.
+    - 1.2. If the database timezone is different from the passed `timezone`, continue the process.
+- 2. Convert the passed `datetime` to the time in the passed `timezone` based on the database timezone and output it.
+- Output format: `Y-m-d H:i:s`
 :::
 
 ## Get Time by Specified Timezone
@@ -69,10 +69,10 @@ DateHelper::fresnsFormatDateTime($datetime, $timezone, $langTag);
 | timezone | String | **required** | Converts the time value of the `datetime` parameter into the `timezone` [UTC timezone](../../database/dictionary/timezone.md) |
 | langTag | String | *optional* | Outputs the time format in the specified language<br>`configs->item_key=language_menus` language tag's `dateFormat` parameter<br>If not provided, the default language format will be used |
 
-::: details 功能逻辑
-- 数据的时区时间和当前 datetime 参数，属于同一天，输出为 `hh:mm`
-- 不是同一天，但是同一年，输出对应语言标签的格式，例如 `mm-dd hh:mm` 或 `mm/dd hh:mm`
-- 不是同一天，也不是同一年，输出对应语言标签的格式，例如 `yyyy-mm-dd hh:mm` 或 `mm/dd/yyyy hh:mm`
+::: details Logic Notes
+- If the data's timezone time and the current `datetime` parameter are on the same day, output as `hh:mm`
+- If not on the same day but in the same year, output in the corresponding language label format, such as `mm-dd hh:mm` or `mm/dd hh:mm`
+- If not on the same day and not in the same year, output in the corresponding language label format, such as `yyyy-mm-dd hh:mm` or `mm/dd/yyyy hh:mm`
 :::
 
 ## Convert Time Format by Language Tag
@@ -95,14 +95,14 @@ DateHelper::fresnsHumanReadableTime($datetime, $langTag);
 | datetime | String | **required** | `Y-m-d H:i:s` time value defaults to database time |
 | langTag | String | *optional* | Corresponds to configs table language_menus key name key value timeFormat* configuration.<br>- timeFormatMinute<br>- timeFormatHour<br>- timeFormatDay<br>- timeFormatMonth<br>If not provided, the default language format will be used |
 
-::: details 功能逻辑
-- 逻辑
-    - 1、获取数据库当前时间；
-    - 2、以数据库当前时间减 datetime 参数的时间，得出时间差；
-    - 3、将时间差转换成人性化时间输出。
-- 场景
-    - 时间在 60 分钟以内（包括 1 分钟以内的秒），输出为“分钟”值，客户端使用场景为「n 分钟前」
-    - 时间超过 60 分钟，但在 24 小时以内，输出为“小时”值，客户端使用场景为「n 小时前」
-    - 时间超过 24 小时，但在 30 天以内，输出为“天”值，客户端使用场景为「n 天前」
-    - 时间超过 30 天，但在 365 天以内，输出为“月”值，客户端使用场景为「n 个月前」
+::: details Logic Notes
+- Logic
+    - 1. Get the current time of the database;
+    - 2. Subtract the `datetime` parameter from the current database time to get the time difference;
+    - 3. Convert the time difference into human-readable time output.
+- Scenarios
+    - Time is within 60 minutes (including seconds within 1 minute), output as "minutes" value, client usage scenario is `n minutes ago`
+    - Time exceeds 60 minutes, but within 24 hours, output as "hours" value, client usage scenario is `n hours ago`
+    - Time exceeds 24 hours, but within 30 days, output as "days" value, client usage scenario is `n days ago`
+    - Time exceeds 30 days, but within 365 days, output as "months" value, client usage scenario is `n months ago`
 :::

@@ -6,33 +6,34 @@
 
 ```php
 StrHelper::maskEmail('email');
-//显示前 3 位 + *(实际位数,最少有三个*号) + 邮箱后缀，如 jav***@qq.com
 ```
+
+- Encrypt and Output Email: Display the first 3 characters + *(actual number of characters, at least three *s) + email suffix, such as `jev***@gmail.com`
 
 ## Encrypt and Output Numbers
 
 ```php
 StrHelper::maskNumber('number');
-//显示前 2 位 + *(实际位数,最少有三个*号) + 后 2 位
-//比如手机号：13*******50
-//比如身份证：31**************23
-//比如银行卡：62*************96
 ```
+- Display the first 2 digits + *(actual number of digits, at least three *s) + last 2 digits
+- For example, phone number: `13*******50`
+- For example, ID card: `31**************23`
+- For example, bank card: `54*************96`
 
 ## Encrypt and Output Name
 
 ```php
 StrHelper::maskName('name');
-//显示后 1 位，如：*杰
 ```
+- Display the last 1 character, such as: `*g`
 
 ## Generate Pure Numeric String
 
-- Not Starting with 0
-
 ```php
-StrHelper::generateDigital('8'); //8 表示生成 8 位数
+StrHelper::generateDigital('8');
 ```
+- Not Starting with 0
+- 8 means generating an 8-digit number
 
 ## Concatenate Complete URL
 

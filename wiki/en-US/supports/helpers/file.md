@@ -48,8 +48,8 @@ FileHelper::fresnsFileAcceptByType($type);
 | --- | --- | --- | --- |
 | type | Number | *optional* | 1.Image / 2.Video / 3.Audio / 4.Document |
 
-- Mime 格式，多个以英文逗号隔开
-- 不传 type 则输出全部
+- Mime format, multiple values separated by commas
+- If `type` is not passed, output all
 
 ## Get Single Information by File ID or FID
 
@@ -60,8 +60,8 @@ FileHelper::fresnsFileInfoById($fileIdOrFid);
 | --- | --- | --- | --- |
 | fileIdOrFid | String | **required** | `files->id` or `files->fid` |
 
-- 输出结果会判断防盗链配置，如果开启则输出防盗链文件信息。
-- [查看文件信息格式](../../extensions/plugin/storage.md#file-information-structure)
+- The output result will check the anti-leech configuration, and if enabled, output the anti-leech file information.
+- [File Information Structure](../../extensions/plugin/storage.md#file-information-structure)
 
 ## Get Multiple Information by File ID or FID
 
@@ -72,7 +72,7 @@ FileHelper::fresnsFileInfoListByIds($fileIdsOrFids);
 | --- | --- | --- | --- |
 | fileIdsOrFids | Array | **required** | `files->id` or `files->fid` |
 
-- 输出结果会判断防盗链配置，如果开启则输出防盗链文件信息。
+- The output result will check the anti-leech configuration, and if enabled, output the anti-leech file information.
 
 ::: details Example
 ```json
@@ -113,8 +113,8 @@ FileHelper::fresnsFileInfoListByTableColumn($tableName, $tableColumn, $tableId, 
 | tableId | Number | *optional* | Primary ID |
 | tableKey | String | *optional* | Primary Key Name |
 
-- `tableId` 或 `tableKey` 二选一传参
-- 输出结果会判断防盗链配置，如果开启则输出防盗链文件信息。
+- Either `tableId` or `tableKey` must be passed as a parameter
+- The output result will check the anti-leech configuration, and if enabled, output the anti-leech file information.
 
 ::: details Example
 ```json
@@ -174,4 +174,4 @@ FileHelper::fresnsFileOriginalUrlById($fileIdOrFid);
 | --- | --- | --- | --- |
 | fileIdOrFid | String | **required** | `files->id` or `files->fid` |
 
-- 输出结果会判断防盗链配置，如果开启则输出防盗链文件信息。
+- The output result will check the anti-leech configuration, and if enabled, output the anti-leech file information.

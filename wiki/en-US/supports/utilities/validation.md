@@ -11,8 +11,8 @@
 ValidationUtility::disposableEmail('email');
 ```
 
-- 邮箱服务商（域名）是否属于一次性邮箱。
-- `false` 验证未通过，表示为一次性邮箱。
+- Check if the email service provider (domain) belongs to a disposable email.
+- `false` validation not passed, indicating it's a disposable email.
 
 ## Validate Password
 

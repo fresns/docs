@@ -24,9 +24,9 @@
 | templateCode | String | **required** | Template parameter |
 | templateParam | Object | *optional* | Variable parameters |
 
-::: details 查看变量参数 templateParam 格式
+::: details View the `templateParam` format for variable parameters
 ```json
-// 变量名对应实际值
+// Variable names correspond to actual values
 {
     "nickname": "Jevan Tang",
     "variale1": "Someone mention you"
@@ -54,8 +54,8 @@
 | actionFsid | String | *optional* | Trigger target FsID |
 | actionCid | String | *optional* | Comment event cid |
 
-::: details content 内容参数说明
-如果 `isMultilingual` 参数为多语言，则 `content` 参数的内容是以字符串传参的 json 内容。
+::: details `content` Description
+If the `isMultilingual` parameter is for multiple languages, the `content` parameter is a JSON content passed as a string.
 ```json
 [
     {
@@ -84,9 +84,9 @@
 | linkFsid | String | *optional* | After passing the link type parameter, this parameter is required, the fsid of the type |
 | linkUrl | String | *optional* | Link URL |
 
-::: details channel 参数说明
-- 根据 channel 获取通知配置插件 `send_ios_service`、`send_android_service`
-- 留空表示两者均要推送，分别请求两个配置的插件。
+::: details `channel` Description
+- Get notification configuration plugins `send_ios_service`, `send_android_service` based on `channel`
+- Leaving it blank means both need to be pushed, requesting plugins for both configurations separately.
 :::
 
 ## sendWechatMessage

@@ -12,9 +12,9 @@ PermissionUtility::getUserMainRole($userId, $langTag);
 | userId | Number | **required** | `users->id` |
 | langTag | String | *optional* | What language is the role name in |
 
-- 如果主角色有过期时间，并且已经过期，则输出继承角色。
-- 如果无继承角色（或者该继承 ID 找不到角色），则以配置表 `default_role` 键名键值的角色为准。
-- 如果配置表键值为空（或找不到角色），则输出 `null`。
+- If the main role has an expiration time and has expired, output the inherited role.
+- If there is no inherited role (or the inherited ID cannot find a role), use the role specified by the `default_role` key value in the configuration table.
+- If the configuration table key value is empty (or the role cannot be found), output `null`.
 
 ## Get User All Roles
 
@@ -26,7 +26,7 @@ PermissionUtility::getUserRoles($userId, $langTag);
 | userId | Number | **required** | `users->id` |
 | langTag | String | *optional* | What language is the role name in |
 
-- 仅输出有效期内的角色列表，包括主角色。
+- Only output the list of roles within the valid period, including the main role.
 
 ## Get Group IDs Not Displayed
 
@@ -66,7 +66,7 @@ PermissionUtility::checkUserPerm($userId, $permUserIds);
 | userId | Number | **required** | `users->id` |
 | permUserIds | Array | *optional* | ID array of authorised users `["1","2"]` |
 
-*将拥有权限的用户 ID 和需要确认的用户 ID 传参，该功能会判断用户 ID 是否包括在授权 IDs 当中。*
+*Pass the user IDs with permissions and the user IDs to be confirmed as parameters. This function will check if the user IDs are included in the authorized IDs.*
 
 ## Determine User Role Permissions
 
@@ -78,7 +78,7 @@ PermissionUtility::checkUserRolePerm($userId, $permRoleIds);
 | userId | Number | **required** | `users->id` |
 | permRoleIds | Array | **required** | ID array of authorised roles `["1","2"]` |
 
-*将拥有权限的角色 ID 和需要确认的用户 ID 传参，该功能会判断用户名下所有角色是否拥有授权角色。*
+*Pass the role IDs with permissions and the user IDs to be confirmed as parameters. This function will check if all roles under the username have authorized roles.*
 
 ## Determine User Conversation Permissions
 
@@ -92,8 +92,8 @@ PermissionUtility::checkUserConversationPerm($receiveUserId, $authUserId, $langT
 | langTag | String | *optional* | Language used for the prompt |
 
 ::: details View Result
-- 有权则输出为 `0`
-- 无权则输出对应的 [Error Code](../../api/error-code.md)
+- If authorized, the output will be `0`
+- If unauthorized, output the corresponding [Error Code](../../api/error-code.md)
 :::
 
 ## Determine if User is Group Administrator
@@ -138,7 +138,7 @@ PermissionUtility::checkPostAllow($postId, $userId);
 | postId | Number | **required** | `posts->id` |
 | userId | Number | **required** | `users->id` |
 
-*对需要授权的帖子，判断当前用户是否符合授权要求*
+*For posts that require authorization, determine if the current user meets the authorization requirements*
 
 ## Determine if Post Can Be Commented On
 
@@ -170,6 +170,6 @@ PermissionUtility::checkExtendPerm($unikey, $scene, $groupId, $userId);
 | Parameter Name | Type | Required | Description |
 | --- | --- | --- | --- |
 | unikey | String | **required** | Plugin UniKey |
-| scene | String | **required** | [{scene} 入口场景](../../extensions/callback/variables.md#scene-entrance-scene) |
+| scene | String | **required** | [{scene} Source Scene](../../extensions/callback/variables.md#scene-entrance-scene) |
 | groupId | Number | *optional* | Group ID `groups->id` |
 | userId | Number | *optional* | User ID `users->id` |

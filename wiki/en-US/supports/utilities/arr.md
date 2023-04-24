@@ -43,7 +43,7 @@ ArrUtility::pull($array, $key, $values);
 
 - Returns the value of the specified key from the array and removes this key-value pair.
 - Return `{"name":"language","canDelete":false}`
-- 传参的数组只剩下 `[{"name":"errorUnknown","canDelete":false}]`
+- The passed array only contains `[{"name":"errorUnknown","canDelete":false}]`
 
 ## Edit Array Value
 

@@ -2,38 +2,37 @@
 
 ## Check and Process User Main Role Expiration
 
-每隔 10 分钟执行一次用户主角色过期时间检测
+Perform a user's main role expiration time check every 10 minutes
 
 ```php
 \FresnsCmdWord::plugin('Fresns')->checkUserRoleExpired()
 ```
 
-- 1、筛选 `user_roles` 表，字段 `type=2` + `expired_at 小于当前时间` 的记录（时间小于，说明已经过期）。
-- 2、判断该记录 `restore_role_id` 字段是否有值。
-    - 2.1、有值，判断该值是否已经和该用户关联：
-        - 2.1.1、已关联：删除该条过期记录，将已关联的记录 `type` 字段值改为 `2`
-        - 2.1.2、无关联：删除该条过期记录，以 `restore_role_id` 字段值（角色 ID）创建一条新记录，并且 `type` 字段值为 `2`
-    - 2.2、无值：中止任务，暂不做任何操作。
+- 1. Filter the `user_roles` table for records with `type=2` + `expired_at less than the current time` (less than the current time indicates it has already expired).
+- 2. Check if the `restore_role_id` field of the record has a value.
+    - 2.1. If it has a value, check if the value is already associated with the user:
+        - 2.1.1. If it is associated: delete the expired record and change the `type` field value of the associated record to `2`
+        - 2.1.2. If not associated: delete the expired record, create a new record with the `restore_role_id` field value (role ID), and set the `type` field value to `2`
+    - 2.2. If it has no value: terminate the task and do not perform any actions for now.
 
 ## Check and Handle Account Deletion
 
-每隔 6 小时执行一次用户注销任务
+Perform a user deletion task every 6 hours
 
 ```php
 \FresnsCmdWord::plugin('Fresns')->checkDeleteAccount()
 ```
 
-**逻辑注销**：不删除数据，只标注状态
+**Logical Deletion**: Do not delete data, only mark the status
 
-- 在 `accounts` 表 `phone 和 email` 字段现有内容前加上 `deleted#YmdHis#` 前缀，`YmdHis` 为当前执行任务时的时间；
-- 物理删除 `account_connects` 表关联信息；
-- 对话表 `conversations` 如果存在记录，则标注已停用，字段为 `a_is_deactivate 或 b_is_deactivate`
-- 为避免遗漏，定时任务每次都检测库里所有 `accounts->deleted_at` 有值的用户，如果 `phone 和 email` 前缀有 `deleted#` 则代表执行过任务，则跳过，如果没有则执行任务。
-- 配置表 `delete_account_todo` 键值规定时间内的不处理；比如当前执行任务时，配置的是 7 天，则查询所有记录时，7 天内的不查（不处理）。
+- Add the `deleted#YmdHis#` prefix before the existing content of the `phone and email` fields in the `accounts` table, where `YmdHis` is the current time when the task is executed;
+- Physically delete associated information in the `account_connects` table;
+- To avoid omissions, the scheduled task checks all users with a value in `accounts->deleted_at` in the database each time. If the `phone and email` prefix has `deleted#`, it means the task has been executed and will be skipped; otherwise, the task will be executed.
+- The `delete_account_todo` key value in the configuration table specifies the time within which no processing should be performed; for example, if the current task execution time is set to 7 days, do not search (or process) records within 7 days.
 
-**物理注销**：物理删除数据（真实删除）
+**Physical Deletion**: Physically delete data (actual deletion)
 
-- 删除用户以下表的所有记录
+- Delete all records of the user from the following tables
     - `accounts`
     - `account_connects`
     - `account_wallets`
@@ -55,19 +54,18 @@
     - `post_logs`
     - `comments`
     - `comment_logs`
-- 对话表 `conversations` 如果存在记录，则标注已停用，字段为 `a_is_deactivate 或 b_is_deactivate`
-- 为避免遗漏，定时任务每次都检测库里所有 `accounts->deleted_at` 有值的用户，如果存在则执行物理删除。
-- 配置表 `delete_account_todo` 键值规定时间内的不处理；比如当前执行任务时，配置的是 7 天，则查询所有记录时，7 天内的不查（不处理）。
+- To avoid omissions, the scheduled task checks all users with a value in `accounts->deleted_at` in the database each time. If they exist, perform physical deletion.
+- The `delete_account_todo` key value in the configuration table specifies the time within which no processing should be performed; for example, if the current task execution time is set to 7 days, do not search (or process) records within 7 days.
 
 ## Check and Update Version Information
 
-每隔 8 小时执行一次后端主程序和扩展的版本情况，检查是否有新版。
+- Perform a backend main program and extension version check every 8 hours to see if there are any new versions available.
 
 ```php
 \FresnsCmdWord::plugin('Fresns')->checkExtensionsVersion()
 ```
 
-- 1、向 Fresns 官方发送已安装扩展清单（插件、引擎、主题、移动应用），接口返回该清单扩展的最新版本号。
-- 2、对比插件表版本号，如果不一致，更新版本号
+- 1. Send the list of installed extensions (plugins, engines, themes, mobile applications) to the Fresns official, and the interface will return the latest version for the extensions on the list.
+- 2. Compare the plugin table version, and if they are different, update the version
     - `is_upgrade = 1`
-    - `upgrade_version = API 返回的版本号`
+    - `upgrade_version = Version returned by the API`

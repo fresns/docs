@@ -11,8 +11,8 @@
 | name | String | **required** | The filename of this upload |
 | expireTime | Number | **required** | Expiration time, in seconds |
 
-- 客户端凭 Token 可以通过 SDK 直接上传到云服务商。
-- [存储服务商编号](../../database/dictionary/storages.md)
+- Clients can upload directly to the cloud service provider with a Token using the SDK.
+- [Storage Service Provider Number](../../database/dictionary/storages.md)
 
 ::: details Return Example
 ```json
@@ -47,7 +47,7 @@
 | moreJson | String | *optional* | Custom |
 | file | File | **required** | File |
 
-- `tableId` 和 `tableKey` 二选一必传一个。
+- Either `tableId` or `tableKey` must be passed.
 
 ::: details Return Example
 ```json
@@ -61,10 +61,10 @@
 ```
 :::
 
-::: details 逻辑说明
-- 入库方法可以调用主程序封装功能 [FileUtility::saveFileInfoToDatabase($bodyInfo, $diskPath, $file)](../utilities/file.md#保存文件信息到数据库)
-- 如果文件类型为视频 `type=2`，还需处理视频封面图，对应字段为 `file->video_poster_path`。
-- 查看返回结果[文件信息结构](../../extensions/plugin/storage.md#file-information-structure)
+::: details Logic Notes
+- The storage method can call the main program's encapsulated function [FileUtility::saveFileInfoToDatabase($bodyInfo, $diskPath, $file)](../utilities/file.md#save-file-information-to-database)
+- If the file type is video `type=2`, the video cover image also needs to be processed, corresponding to the field `file->video_poster_path`.
+- View the returned result [File Information Structure](../../extensions/plugin/storage.md#file-information-structure)
 :::
 
 ## uploadFileInfo
@@ -85,7 +85,7 @@
 | type | Number | **required** | 1.Image / 2.Video / 3.Audio / 4.Document |
 | fileInfo | Array | **required** | File information array |
 
-- `tableId` 和 `tableKey` 二选一必传一个。
+- Either `tableId` or `tableKey` must be passed.
 
 ::: details fileInfo Example
 ```json
@@ -132,10 +132,10 @@
 ```
 :::
 
-::: details 逻辑说明
-- 入库方法可以调用主程序封装功能 [FileUtility::uploadFileInfo($bodyInfo)](../utilities/file.md#上传文件信息)
-- 如果文件类型为视频 `type=2`，还需处理视频封面图，对应字段为 `file->video_poster_path`。
-- 查看返回结果[文件信息结构](../../extensions/plugin/storage.md#file-information-structure)
+::: details Logic Notes
+- The storage method can call the main program's encapsulated function [FileUtility::uploadFileInfo($bodyInfo)](../utilities/file.md#upload-file-information)
+- If the file type is video `type=2`, the video cover image also needs to be processed, corresponding to the field `file->video_poster_path`.
+- View the returned result [File Information Structure](../../extensions/plugin/storage.md#file-information-structure)
 :::
 
 ## getAntiLinkFileInfo (One)
@@ -160,8 +160,8 @@
 ```
 :::
 
-::: details 逻辑说明
-- 如果未开启防盗链，可使用模型中封装功能输出信息。
+::: details Logic Notes
+- If hotlink protection is not enabled, the encapsulated function in the model can be used to output information.
 - `$file->getFileInfo();`
 :::
 
@@ -192,8 +192,8 @@
 ```
 :::
 
-::: details 逻辑说明
-- 如果未开启防盗链，可请求封装功能输出信息。
+::: details Logic Notes
+- If hotlink protection is not enabled, the encapsulated function can be used to output information.
 - `FileHelper::fresnsFileInfoListByIds('fileIdsOrFids');`
 :::
 
@@ -220,8 +220,8 @@
 ```
 :::
 
-::: details 逻辑说明
-- 如果未开启防盗链，可请求模型中封装功能输出信息。
+::: details Logic Notes
+- If hotlink protection is not enabled, the encapsulated function in the model can be used to output information.
 - `$file->getFileOriginalUrl();`
 :::
 
@@ -244,4 +244,4 @@
 | type | Number | **required** | 1.Image / 2.Video / 3.Audio / 4.Document |
 | fileIdsOrFids | Array | **required** | `files->id` or `files->fid` |
 
-- `fileIds` 或 `fids` 数组值文件类型必须属于同一个 `type` 类型的文件。
+- The file types in the `fileIds` or `fids` array must belong to the same `type` category.

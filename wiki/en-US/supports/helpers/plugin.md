@@ -30,7 +30,7 @@ PluginHelper::fresnsPluginUsageUrl($unikey, $pluginUseId);
 | unikey | String | **required** | Plugin unikey |
 | pluginUseId | Number | **required** | [plugin_usages->id](../../database/plugins/plugin-usages.md) |
 
-*已将插件地址中 `{parameter}` 变量名替换为 `plugin_usages->parameter` 字段值。*
+*The plugin address `{parameter}` variable has been replaced with the `plugin_usages->parameter` field value.*
 
 ## Get Plugin Version
 

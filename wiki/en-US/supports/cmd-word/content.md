@@ -48,8 +48,8 @@
 | type | Number | **required** | 1.Post 2.Comment |
 | fsid | String | *optional* | Post `posts->pid`<br>Comment `comments->cid` |
 
-- 将已发表的正式内容，还原生成编辑草稿。
-- 评论不支持子孙级评论，仅限一级评论可生成草稿。
+- Revert published formal content to an editable draft.
+- Comments do not support descendant-level comments, only first-level comments can generate drafts.
 
 ::: details Return Example
 ```json
@@ -142,7 +142,7 @@
 | contentFsid | String | *optional* | `contentType=1` specific: Post `pid`Comment `cid` |
 | contentLogId | Number | *optional* | `contentType=2` specific: Log table primary id |
 
-*本命令字是全量逻辑删除，如果业务场景涉及撤回功能，请勿使用，避免恢复时处理数据较多。*
+*This command word is a full logical deletion. If the business scenario involves a withdrawal function, do not use it to avoid processing too much data during recovery.*
 
 ## physicalDeletionContent
 

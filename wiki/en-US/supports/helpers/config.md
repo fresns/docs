@@ -66,9 +66,9 @@ ConfigHelper::fresnsConfigFileValueTypeByItemKey($itemKey);
 | --- | --- | --- | --- |
 | itemKey | String | **required** | [configs->item_key](../../database/systems/configs.md) |
 
-::: details 查看说明
-- `ID` 值为文件 ID：键值是数字
-- `URL` 值为文件 URL：键值是以 http:// 或 https:// 开头
+::: details Description
+- `ID` value is the file ID: the key is a number
+- `URL` value is the file URL: the key starts with `http://` or `https://`
 :::
 
 ## Get File Path by Key
@@ -80,11 +80,11 @@ ConfigHelper::fresnsConfigFileUrlByItemKey($itemKey);
 | --- | --- | --- | --- |
 | itemKey | String | **required** | [configs->item_key](../../database/systems/configs.md) |
 
-::: details 查看说明
-- 图片输出为 `imageConfigUrl`
-- 视频输出为 `videoUrl`
-- 音频输出为 `audioUrl`
-- 文档输出为 `documentPreviewUrl`
+::: details Description
+- Image output as `imageConfigUrl`
+- Video output as `videoUrl`
+- Audio output as `audioUrl`
+- Document output as `documentPreviewUrl`
 :::
 
 ## Get Length Unit by langTag
@@ -96,7 +96,7 @@ ConfigHelper::fresnsConfigLengthUnit($langTag);
 | --- | --- | --- | --- |
 | langTag | String | **required** | Language Tag |
 
-*查询 configs 表 language_menus 键名的键值，输出对应语言标签的 lengthUnits 参数。*
+*Query the `language_menus` key value in the configs table and output the `lengthUnits` parameter for the corresponding language tag.*
 
 ## Get Date Format by langTag
 
@@ -107,4 +107,4 @@ ConfigHelper::fresnsConfigDateFormat($langTag);
 | --- | --- | --- | --- |
 | langTag | String | **required** | Language Tag |
 
-*查询 configs 表 language_menus 键名的键值，输出对应语言标签的 dateFormat 参数。*
+*Query the `language_menus` key value in the configs table and output the `dateFormat` parameter for the corresponding language tag.*

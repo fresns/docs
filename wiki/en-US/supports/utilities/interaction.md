@@ -12,7 +12,7 @@ InteractionUtility::checkUserLike($likeType, $likeId, $userId);
 | likeId | Number | **required** | Primary id of the corresponding type |
 | userId | Number | **required** | `users->id` |
 
-- 检查用户 `userId` 是否对 `likeType` 对象的 `likeId` 操作了点赞。
+- Check if user `userId` has liked the `likeType` object with `likeId`.
 
 ## Check if Disliked
 ```php
@@ -24,7 +24,7 @@ InteractionUtility::checkUserDislike($dislikeType, $dislikeId, $userId);
 | dislikeId | Number | **required** | Primary id of the corresponding type |
 | userId | Number | **required** | `users->id` |
 
-- 检查用户 `userId` 是否对 `dislikeType` 对象的 `dislikeId` 操作了点踩。
+- Check if user `userId` has disliked the `dislikeType` object with `dislikeId`.
 
 ## Check if Followed
 ```php
@@ -36,7 +36,7 @@ InteractionUtility::checkUserFollow($followType, $followId, $userId);
 | followId | Number | **required** | Primary id of the corresponding type |
 | userId | Number | **required** | `users->id` |
 
-- 检查用户 `userId` 是否对 `followType` 对象的 `followId` 操作了关注。
+- Check if user `userId` has followed the `followType` object with `followId`.
 
 ## Check if Blocked
 ```php
@@ -48,7 +48,7 @@ InteractionUtility::checkUserBlock($blockType, $blockId, $userId);
 | blockId | Number | **required** | Primary id of the corresponding type |
 | userId | Number | **required** | `users->id` |
 
-- 检查用户 `userId` 是否对 `blockType` 对象的 `blockId` 操作了屏蔽。
+- Check if user `userId` has blocked the `blockType` object with `blockId`.
 
 ## Check All Statuses
 ```php
@@ -60,9 +60,9 @@ InteractionUtility::checkInteractionStatus($markType, $markId, $userId);
 | markId | Number | **required** | Primary id of the corresponding type |
 | userId | Number | **required** | `users->id` |
 
-- 检查用户 `userId` 是否对 `markType` 对象的 `markId` 操作。
-- 输出是否点赞、点踩、关注、屏蔽。
-- 参数名 `likeStatus`,`dislikeStatus`,`followStatus`,`blockStatus`
+- Check if user `userId` has mark the `markType` object with `markId`.
+- Output whether to like, dislike, follow and block.
+- Parameter Name `likeStatus`,`dislikeStatus`,`followStatus`,`blockStatus`
 
 ## Mark Like Action
 ```php

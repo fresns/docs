@@ -38,12 +38,12 @@
 ```
 :::
 
-::: details 查看注册逻辑
-- 注册时需要生成的数据清单
-    - 用户主表 `users`
-    - 用户数据统计表 `user_stats`
-    - 用户角色关联表 `user_roles`：初始角色来自配置表 `default_role` 键值。
-    - 其余传参有值时直接录入，无值时留空。
+::: details View the add logic
+- Data list to be generated during registration
+    - Main user table `users`
+    - User data statistics table `user_stats`
+    - User role association table `user_roles`: The initial role comes from the `default_role` key in the configuration table.
+    - For other parameters, if there's a value, record it directly; if not, leave it blank.
 :::
 
 ## verifyUser
