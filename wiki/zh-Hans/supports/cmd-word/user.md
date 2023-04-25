@@ -129,4 +129,34 @@
 ```
 | 参数名 | 类型 | 是否必传 | 说明 |
 | --- | --- | --- | --- |
-| uid | Number | NO | 用户 UID `users->uid` |
+| uid | Number | YES | 用户 UID `users->uid` |
+
+## 设置用户有效期
+
+```php
+\FresnsCmdWord::plugin('Fresns')->setUserExpiryDatetime($wordBody)
+```
+| 参数名 | 类型 | 是否必传 | 说明 |
+| --- | --- | --- | --- |
+| uid | Number | YES | 用户 UID `users->uid` |
+| datetime | String | NO | `Y-m-d H:i:s` 日期时间值，时区为数据库时区 |
+| clearDatetime | Boolean | NO | 是否清空用户有效期 |
+
+- `datetime` 和 `clearDatetime` 二选一传参。
+- 该功能仅对站点私有模式有效。
+
+## 设置用户的小组有效期
+
+```php
+\FresnsCmdWord::plugin('Fresns')->setUserGroupExpiryDatetime($wordBody)
+```
+| 参数名 | 类型 | 是否必传 | 说明 |
+| --- | --- | --- | --- |
+| uid | Number | YES | 用户 UID `users->uid` |
+| gid | String | YES | 小组 GID `groups->gid` |
+| datetime | String | NO | `Y-m-d H:i:s` 日期时间值，时区为数据库时区 |
+| clearDatetime | Boolean | NO | 是否清空用户有效期 |
+
+- `datetime` 和 `clearDatetime` 二选一传参。
+- 该功能仅对小组私有模式有效。
+- 如果用户未加入小组，则自动加入小组并设置有效期。

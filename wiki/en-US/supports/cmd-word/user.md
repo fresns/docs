@@ -129,4 +129,36 @@
 ```
 | Parameter Name | Type | Required | Description |
 | --- | --- | --- | --- |
-| uid | Number | *optional* | User UID `users->uid` |
+| uid | Number | **required** | User UID `users->uid` |
+
+## setUserExpiryDatetime
+
+```php
+\FresnsCmdWord::plugin('Fresns')->setUserExpiryDatetime($wordBody)
+```
+| Parameter Name | Type | Required | Description |
+| --- | --- | --- | --- |
+| uid | Number | **required** | User UID `users->uid` |
+| datetime | String | *optional* | `Y-m-d H:i:s` Date and time value, timezone is the database timezone |
+| clearDatetime | Boolean | *optional* | Whether to clear the user's validity period |
+
+- Choose one between `datetime` and `clearDatetime` to pass as a parameter.
+- This feature is only effective for site private mode.
+- This feature is only effective for group private mode.
+- If the user has not joined the group, they will automatically join the group and set the validity period.
+
+## setUserGroupExpiryDatetime
+
+```php
+\FresnsCmdWord::plugin('Fresns')->setUserGroupExpiryDatetime($wordBody)
+```
+| Parameter Name | Type | Required | Description |
+| --- | --- | --- | --- |
+| uid | Number | **required** | User UID `users->uid` |
+| gid | String | **required** | Group GID `groups->gid` |
+| datetime | String | *optional* | `Y-m-d H:i:s` Date and time value, timezone is the database timezone |
+| clearDatetime | Boolean | *optional* | Whether to clear the user's validity period |
+
+- Choose one between `datetime` and `clearDatetime` to pass as a parameter.
+- This feature is only effective for group private mode.
+- If the user has not joined the group, they will automatically join the group and set the validity period.
