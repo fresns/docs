@@ -155,3 +155,108 @@
 | contentType | Number | YES | 类型 1.主表内容 2.日志表内容 |
 | contentFsid | String | NO | `contentType=1` 专用：帖子 `pid`，评论 `cid` |
 | contentLogId | Number | NO | `contentType=2` 专用：日志表主键 id |
+
+## 添加内容更多信息
+
+```php
+\FresnsCmdWord::plugin('Fresns')->addContentMoreInfo($wordBody)
+```
+| 参数名 | 类型 | 是否必传 | 说明 |
+| --- | --- | --- | --- |
+| type | Number | YES | 类型 1.帖子 2.评论 |
+| fsid | String | YES | `pid` 或者 `cid` |
+| key | String | YES | 信息键名 |
+| value | String/Number/Array | YES | 信息键值 |
+
+::: details 查看示例
+```php
+$wordBody = [
+    'type' => 1,
+    'fsid' => 'fresns-post',
+    'key' => 'ipLocation',
+    'value' => '江苏',
+];
+
+$wordBody = [
+    'type' => 1,
+    'fsid' => 'fresns-post',
+    'key' => 'deviceName',
+    'value' => 'iPhone',
+];
+```
+:::
+
+## 设置内容置顶
+
+```php
+\FresnsCmdWord::plugin('Fresns')->setContentSticky($wordBody)
+```
+| 参数名 | 类型 | 是否必传 | 说明 |
+| --- | --- | --- | --- |
+| type | Number | YES | 类型 1.帖子 2.评论 |
+| fsid | String | YES | `pid` 或者 `cid` |
+| state | Number | YES | 帖子: 1.否 / 2.小组页置顶 / 3.全局置顶<br>评论: 1.否 / 2.置顶 |
+
+## 设置内容精华
+
+```php
+\FresnsCmdWord::plugin('Fresns')->setContentDigest($wordBody)
+```
+| 参数名 | 类型 | 是否必传 | 说明 |
+| --- | --- | --- | --- |
+| type | Number | YES | 类型 1.帖子 2.评论 |
+| fsid | String | YES | `pid` 或者 `cid` |
+| state | Number | YES | 1.否 / 2.普通精华 / 3.高级精华 |
+
+## 设置内容关闭删除功能
+
+```php
+\FresnsCmdWord::plugin('Fresns')->setContentCloseDelete($wordBody)
+```
+| 参数名 | 类型 | 是否必传 | 说明 |
+| --- | --- | --- | --- |
+| type | Number | YES | 类型 1.帖子 2.评论 |
+| fsid | String | YES | `pid` 或者 `cid` |
+| canDelete | Boolean | YES | 0.不可以删除 1.可以删除 |
+
+## 设置帖子授权
+
+```php
+\FresnsCmdWord::plugin('Fresns')->setPostAuth($wordBody)
+```
+| 参数名 | 类型 | 是否必传 | 说明 |
+| --- | --- | --- | --- |
+| pid | String | YES |  |
+| type | String | YES | 类型 `add` 或 `remove` |
+| uid | Number | NO | 指定用户 |
+| rid | Number | NO | 指定角色 |
+
+- `uid` 和 `rid` 二选一传参
+
+## 设置帖子附属用户
+
+```php
+\FresnsCmdWord::plugin('Fresns')->setPostAffiliateUser($wordBody)
+```
+| 参数名 | 类型 | 是否必传 | 说明 |
+| --- | --- | --- | --- |
+| pid | String | YES |  |
+| type | String | YES | 类型 `add` 或 `remove` |
+| uid | Number | YES | 指定用户 |
+| pluginUnikey | String | YES | 插件 Unikey |
+| moreJson | Json | NO | 额外记录信息（Json） |
+
+## 设置评论扩展按钮
+
+```php
+\FresnsCmdWord::plugin('Fresns')->setCommentExtendButton($wordBody)
+```
+| 参数名 | 类型 | 是否必传 | 说明 |
+| --- | --- | --- | --- |
+| cid | String | YES |  |
+| close | Boolean | NO | `false` 关闭扩展按钮<br>`true`开启扩展按钮 |
+| change | String | NO | `default` 默认<br>`active`二态状态 |
+| activeNameKey | String | NO | change=active 专用，留空则不修改<br>传参配置表 [configs->item_key](../../database/systems/configs.md) 可适配多语言 |
+| activeStyle | String | NO | change=active 专用，留空则不修改<br>`primary`, `secondary`, `success`, `danger`, `warning`, `info` |
+
+- `close` 和 `change` 二选一传参

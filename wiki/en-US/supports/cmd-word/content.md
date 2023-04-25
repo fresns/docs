@@ -155,3 +155,108 @@
 | contentType | Number | **required** | 1.Main table content 2.Log table contents |
 | contentFsid | String | *optional* | `contentType=1` specific: Post `pid`Comment `cid` |
 | contentLogId | Number | *optional* | `contentType=2` specific: Log table primary id |
+
+## addContentMoreInfo
+
+```php
+\FresnsCmdWord::plugin('Fresns')->addContentMoreInfo($wordBody)
+```
+| Parameter Name | Type | Required | Description |
+| --- | --- | --- | --- |
+| type | Number | **required** | 1.Post 2.Comment |
+| fsid | String | **required** | `pid` or `cid` |
+| key | String | **required** | moreJson key |
+| value | String/Number/Array | **required** | moreJson value |
+
+::: details View Examples
+```php
+$wordBody = [
+    'type' => 1,
+    'fsid' => 'fresns-post',
+    'key' => 'ipLocation',
+    'value' => 'Singapore',
+];
+
+$wordBody = [
+    'type' => 1,
+    'fsid' => 'fresns-post',
+    'key' => 'deviceName',
+    'value' => 'iPhone',
+];
+```
+:::
+
+## setContentSticky
+
+```php
+\FresnsCmdWord::plugin('Fresns')->setContentSticky($wordBody)
+```
+| Parameter Name | Type | Required | Description |
+| --- | --- | --- | --- |
+| type | Number | **required** | 1.Post 2.Comment |
+| fsid | String | **required** | `pid` or `cid` |
+| state | Number | **required** | Post: 1.No / 2.Group Sticky / 3.Global Sticky<br>Comment: 1.No / 2.Sticky |
+
+## setContentDigest
+
+```php
+\FresnsCmdWord::plugin('Fresns')->setContentDigest($wordBody)
+```
+| Parameter Name | Type | Required | Description |
+| --- | --- | --- | --- |
+| type | Number | **required** | 1.Post 2.Comment |
+| fsid | String | **required** | `pid` or `cid` |
+| state | Number | **required** | 1.No / 2.General Digest / 3.Advanced Digest |
+
+## setContentCloseDelete
+
+```php
+\FresnsCmdWord::plugin('Fresns')->setContentCloseDelete($wordBody)
+```
+| Parameter Name | Type | Required | Description |
+| --- | --- | --- | --- |
+| type | Number | **required** | 1.Post 2.Comment |
+| fsid | String | **required** | `pid` or `cid` |
+| canDelete | Boolean | **required** | 0.Cannot be deleted 1.Can be deleted |
+
+## setPostAuth
+
+```php
+\FresnsCmdWord::plugin('Fresns')->setPostAuth($wordBody)
+```
+| Parameter Name | Type | Required | Description |
+| --- | --- | --- | --- |
+| pid | String | **required** |  |
+| type | String | **required** | `add` or `remove` |
+| uid | Number | *optional* | Specify user |
+| rid | Number | *optional* | Specify role |
+
+- Choose one between `uid` and `rid` to pass as a parameter
+
+## setPostAffiliateUser
+
+```php
+\FresnsCmdWord::plugin('Fresns')->setPostAffiliateUser($wordBody)
+```
+| Parameter Name | Type | Required | Description |
+| --- | --- | --- | --- |
+| pid | String | **required** |  |
+| type | String | **required** | `add` or `remove` |
+| uid | Number | **required** | Specify user |
+| pluginUnikey | String | **required** | Plugin Unikey |
+| moreJson | Json | *optional* | Additional record information (Json) |
+
+## setCommentExtendButton
+
+```php
+\FresnsCmdWord::plugin('Fresns')->setCommentExtendButton($wordBody)
+```
+| Parameter Name | Type | Required | Description |
+| --- | --- | --- | --- |
+| cid | String | **required** |  |
+| close | Boolean | *optional* | `false` disables extension button<br>`true` enables extension button |
+| change | String | *optional* | `default` Default<br>`active` Two-state |
+| activeNameKey | String | *optional* | For change=active only, leave blank for no change<br>Passing configuration table [configs->item_key](../../database/systems/configs.md) can adapt to multiple languages |
+| activeStyle | String | *optional* | For change=active only, leave blank for no change<br>`primary`, `secondary`, `success`, `danger`, `warning`, `info` |
+
+- Choose one between `close` and `change` to pass as a parameter
