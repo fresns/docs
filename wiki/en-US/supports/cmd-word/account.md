@@ -7,10 +7,13 @@
 ```
 | Parameter Name | Type | Required | Description |
 | --- | --- | --- | --- |
-| type | Number | **required** | Account type: 1. Email / 2. Mobile number / 3. Connected platform |
-| account | String | **optional** | Email or mobile number specific: Email address / Mobile number (required when `type=1 or 2`) |
-| countryCode | Number | **optional** | Mobile number specific: International area code (required when `type=2`) |
-| connectInfo | Array | **optional** | Connected platform specific: Platform information (required when `type=3`) |
+| type | Number | **required** | Account type: 1. Email / 2. Phone number / 3. Connect platform |
+| account | String | *optional* | Email or phone number specific: Email address / Phone number (required when `type=1 or 2`) |
+| countryCode | Number | *optional* | Phone number specific: International area code (required when `type=2`) |
+| connectInfo | Array | *optional* | Connect platform specific: Platform information (required when `type=3`) |
+| connectEmail | String | *optional* | Connect platform specific: platform email (optional when `type=3`) |
+| connectPhone | Number | *optional* | Connect platform specific: platform phone number (optional when `type=3`) |
+| connectCountryCode | Number | *optional* | Connect platform specific: phone international area code (optional when `type=3`) |
 | password | String | *optional* | Login password |
 
 ::: details Return Example
@@ -69,11 +72,12 @@
 ```
 | Parameter Name | Type | Required | Description |
 | --- | --- | --- | --- |
-| type | Number | **required** | Account type: 1. Email / 2. Mobile number |
-| account | String | **required** | Email address<br>Mobile number |
-| countryCode | Number | *optional* | Mobile number specific: International area code (required when `type=2`) |
+| type | Number | **required** | Account type: 1. Email / 2. Phone number / 3. Connect platform |
+| account | String | *optional* | Email address or Phone number |
+| countryCode | Number | *optional* | Phone number specific: International area code (required when `type=2`) |
 | password | String | *optional* | For password verification specific |
 | verifyCode | String | *optional* | For verification code specific (check using [checkCode](basic.md#checkcode) command) |
+| connectToken | String | *optional* | For connect platform specific |
 
 ::: details Return Example
 ```json

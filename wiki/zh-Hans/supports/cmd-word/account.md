@@ -11,6 +11,9 @@
 | account | String | NO/YES | 邮箱或手机号专用：邮箱地址 / 手机号码（`type=1 或 2` 时必填） |
 | countryCode | Number | NO/YES | 手机号专用：国际区号（`type=2` 时必填） |
 | connectInfo | Array | NO/YES | 互联平台专用：平台信息（`type=3` 时必填） |
+| connectEmail | String | NO | 互联平台专用：平台邮箱（`type=3` 时选填） |
+| connectPhone | Number | NO | 互联平台专用：平台手机号码（`type=3` 时选填） |
+| connectCountryCode | Number | NO | 互联平台专用：平台手机号码国际区号（`type=3` 时选填） |
 | password | String | NO | 登录密码 |
 
 ::: details 结果示例
@@ -69,11 +72,12 @@
 ```
 | 参数名 | 类型 | 是否必传 | 说明 |
 | --- | --- | --- | --- |
-| type | Number | YES | 账号类型：1.邮箱 / 2.手机号 |
-| account | String | YES | 邮箱地址<br>手机号码 |
-| countryCode | Number | NO | 手机号专用：国际区号（`type=2` 时必填） |
+| type | Number | YES | 账号类型：1.邮箱 / 2.手机号 / 3.互联平台 |
+| account | String | NO/YES | 邮箱或手机号专用：邮箱地址 / 手机号码（`type=1 或 2` 时必填） |
+| countryCode | Number | NO/YES | 手机号专用：国际区号（`type=2` 时必填） |
 | password | String | NO | 以密码校验专用 |
 | verifyCode | String | NO | 以验证码校验专用（命令字 [checkCode](basic.md#核对验证码) 查验） |
+| connectToken | String | NO | 以互联平台校验专用 |
 
 ::: details 结果示例
 ```json
