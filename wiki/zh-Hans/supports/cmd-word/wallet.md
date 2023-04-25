@@ -1,5 +1,15 @@
 # 钱包功能
 
+## 验证钱包密码
+
+```php
+\FresnsCmdWord::plugin('Fresns')->walletCheckPassword($wordBody)
+```
+| 参数名 | 类型 | 是否必传 | 说明 |
+| --- | --- | --- | --- |
+| aid | String | YES | 钱包账号 |
+| password | String | NO | 钱包密码，没有密码则留空 |
+
 ## 充值
 
 ```php

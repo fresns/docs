@@ -1,5 +1,15 @@
 # Wallet Command Word
 
+## walletCheckPassword
+
+```php
+\FresnsCmdWord::plugin('Fresns')->walletCheckPassword($wordBody)
+```
+| Parameter Name | Type | Required | Description |
+| --- | --- | --- | --- |
+| aid | String | **required** | Wallet account |
+| password | String | *optional* | Wallet password, leave blank if no password |
+
 ## walletRecharge
 
 ```php
