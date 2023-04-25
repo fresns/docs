@@ -111,6 +111,7 @@
 | 34401 | Email bound |
 | 34402 | Phone bound |
 | 34403 | Connect account error `(Connected Token already exists)` |
+| 34404 | Connect token is disabled |
 | 34501 | Account wallet not exist or has been banned |
 | 34502 | Account wallet password is incorrect |
 | 34503 | The counterparty wallet not exist or has been banned |
