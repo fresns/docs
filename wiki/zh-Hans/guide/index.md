@@ -39,8 +39,8 @@ Fresns 是一款免费开源的社交网络服务软件，专为跨平台而打�
 | ![Moments](https://files.fresns.org/wiki/previews/Moments.png) | ![ForumX](https://files.fresns.org/wiki/previews/ForumX.png) |
 | ![ForumQ](https://files.fresns.org/wiki/previews/ForumQ.png) | ![ThemeFrame](https://files.fresns.org/wiki/previews/ThemeFrame.png) |
 
-- 查看更多网站端: [https://marketplace.fresns.com/open-source/themes](https://marketplace.fresns.com/open-source/themes)
-- 查看更多移动端: [https://marketplace.fresns.com/open-source/apps](https://marketplace.fresns.com/open-source/apps)
+- 查看更多网站端: [https://marketplace.fresns.com/open-source/themes](https://marketplace.fresns.com/zh-Hans/open-source/themes)
+- 查看更多移动端: [https://marketplace.fresns.com/open-source/apps](https://marketplace.fresns.com/zh-Hans/open-source/apps)
 
 ## 许可协议
 
@@ -61,4 +61,4 @@ Fresns 遵循 [Apache-2.0](https://github.com/fresns/fresns/blob/main/LICENSE) �
 
 - 项目发起人：[唐杰](https://tangjie.me/about)
 - 联系邮箱：[support@fresns.org](mailto:support@fresns.org)
-- 官方社区：[https://discuss.fresns.com](https://discuss.fresns.com/)
+- 官方社区：[https://discuss.fresns.com](https://discuss.fresns.com/zh-Hans)

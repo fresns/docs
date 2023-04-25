@@ -98,4 +98,4 @@ Fresns 主程序 Composer 依赖库关系。
 
 - 项目发起人：[唐杰](https://tangjie.me/about)
 - 联系邮箱：[support@fresns.org](mailto:support@fresns.org)
-- 官方社区：[https://discuss.fresns.com](https://discuss.fresns.com/)
+- 官方社区：[https://discuss.fresns.com](https://discuss.fresns.com/zh-Hans)
