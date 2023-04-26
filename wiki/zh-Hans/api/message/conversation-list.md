@@ -17,7 +17,7 @@
 
 | 参数名 | 类型 | 是否必传 | 说明 |
 | --- | --- | --- | --- |
-| isPin | Boolean | NO | 是否 Pin （留空输出全部） |
+| pinned | Boolean | NO | 是否 Pin （留空输出全部） |
 | whitelistKeys | String | NO | 白名单键名，只返回给定键名的键值对<br>多个以英文逗号隔开，支持「点表示法」表示多维数组<br>仅对 `user` 参数有效 |
 | blacklistKeys | String | NO | 黑名单键名，从返回数据中删除指定的键值对<br>多个以英文逗号隔开，支持「点表示法」表示多维数组<br>仅对 `user` 参数有效 |
 | pageSize | Number | NO | 每页显示条数（默认 15 条） |
@@ -51,7 +51,7 @@
                     "datetimeFormat": "String / 最新一条消息的时间格式化",
                     "timeAgo": "String / 最新一条消息的人性化时间",
                 },
-                "isPin": "Boolean / 是否置顶",
+                "pinned": "Boolean / 是否置顶",
                 "messageCount": "Number / 全部消息数",
                 "unreadCount": "Number / 对话框未读消息数"
             }
