@@ -30,8 +30,8 @@
         "detail": {
             // Common Data Structure -> Post Log Info or Comment Log Info
         },
-        "edit": {
-            "isEdit": "Boolean / Whether it is an editable draft",
+        "editControls": {
+            "isEditDraft": "Boolean / Whether it is an editable draft",
             "editableStatus": "Boolean / Whether it can be edited",
             "editableTime": "String / Remaining editable time, for example 03:00 means 3 minutes left",
             "deadlineTime": "String / The specific date and time of the editable deadline, for example 2022-07-01 15:05:00"
