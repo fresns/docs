@@ -100,7 +100,7 @@ After the plug-in processes the request and returns the data, the main program w
     - 1. Do not output private group posts `groups->type_mode=2`
     - 2. Judge whether a post has any permission conditions `posts->is_allow`
         - If there is no permission condition, output the content normally, otherwise the content should be output according to the permission configuration directly (percentage, button text, and plugin)
-        - Percentage `post_appends->allow_proportion`
+        - Percentage `post_appends->allow_percentage`
         - Button Text `post_appends->allow_btn_name`
         - Plugin `post_appends->allow_plugin_unikey`
         - Reference `App\Fresns\Api\Services\PostService::contentHandle`

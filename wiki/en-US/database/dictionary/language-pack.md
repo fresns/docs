@@ -261,7 +261,7 @@
     {"name":"editorAllowTitle","canDelete":false},
     {"name":"editorAllowRoleName","canDelete":false},
     {"name":"editorAllowUserName","canDelete":false},
-    {"name":"editorAllowProportionName","canDelete":false},
+    {"name":"editorAllowPercentageName","canDelete":false},
     {"name":"editorAllowBtnName","canDelete":false},
     {"name":"editorCommentBtnTitle","canDelete":false},
     {"name":"editorCommentBtnName","canDelete":false},

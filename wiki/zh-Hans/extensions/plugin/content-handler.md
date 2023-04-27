@@ -100,7 +100,7 @@ $wordBody = [
     - 1、不输出非公开的小组帖子 `groups->type_mode=2`
     - 2、判断帖子是否有权限条件 `posts->is_allow`
         - 无权限条件，正常输出内容；有权限条件，则直接按权限配置输出内容（百分比、按钮文字和处理插件）。
-        - 百分比 `post_appends->allow_proportion`
+        - 百分比 `post_appends->allow_percentage`
         - 按钮文字 `post_appends->allow_btn_name`
         - 处理插件 `post_appends->allow_plugin_unikey`
         - 参考 `App\Fresns\Api\Services\PostService::contentHandle`

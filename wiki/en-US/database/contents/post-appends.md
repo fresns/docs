@@ -8,7 +8,7 @@
 | editor_unikey | varchar(64) | Content editor plugin |  | YES | Related field [plugins->unikey](../plugins/plugins.md) |
 | can_delete | tinyint *UNSIGNED* | Can author delete? | 1 | NO | 0.No / 1.Yes |
 | is_allow | tinyint *UNSIGNED* | Allow all users to read? | 1 | NO | 0.No / 1.Yes |
-| allow_proportion | tinyint *UNSIGNED* | Read permission - content display ratio when unauthorized |  | YES | Percentage<br>30 means displaying 30% of the content |
+| allow_percentage | tinyint *UNSIGNED* | Read permission - content display ratio when unauthorized |  | YES | Percentage<br>30 means displaying 30% of the content |
 | allow_btn_name | varchar(64) | Read permission - button text when unauthorized |  | YES | **Multilingual** |
 | allow_plugin_unikey | varchar(64) | Read permission - handling plugin |  | YES | Related field [plugins->unikey](../plugins/plugins.md) |
 | is_user_list | tinyint *UNSIGNED* | Is there a special user list? | 0 | NO | 0.No / 1.Yes |

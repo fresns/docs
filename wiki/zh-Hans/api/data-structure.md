@@ -466,7 +466,7 @@
     "status": "Boolean / 帖子状态",
     "allowConfig": {
         "isAllow": "Boolean / 是否需要授权",
-        "previewProportion": "Number / 无权时内容显示百分比",
+        "previewPercentage": "Number / 无权时内容显示百分比",
         "buttonName": "String / 无权时按钮文字",
         "buttonUrl": "String / 处理授权的地址",
     },
@@ -814,7 +814,7 @@
     },
     "allowJson": {
         "isAllow": "Boolean / 是否有权限配置",
-        "proportion": "Number / 无权时预读百分比",
+        "percentage": "Number / 无权时预读百分比",
         "pluginUrl": "String / 配置插件地址",
         "pluginUnikey": "String / 配置插件 unikey",
         "defaultLangBtnName": "String / 无权时按钮文字",

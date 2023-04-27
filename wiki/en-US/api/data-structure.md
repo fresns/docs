@@ -465,7 +465,7 @@ To reduce documentation effort and ensure consistency of public data, the same s
     "status": "Boolean / Post Status",
     "allowConfig": {
         "isAllow": "Boolean / Whether Authorization is Required",
-        "previewProportion": "Number / Content Display Percentage When Unauthorized",
+        "previewPercentage": "Number / Content Display Percentage When Unauthorized",
         "buttonName": "String / Button Text When Unauthorized",
         "buttonUrl": "String / URL to Handle Authorization",
     },
@@ -824,7 +824,7 @@ To reduce documentation effort and ensure consistency of public data, the same s
     },
     "allowJson": {
         "isAllow": "Boolean / Is permission configuration allowed",
-        "proportion": "Number / Pre-read percentage when unauthorized",
+        "percentage": "Number / Pre-read percentage when unauthorized",
         "pluginUrl": "String / Configuration plugin URL",
         "pluginUnikey": "String / Configuration plugin unikey",
         "defaultLangBtnName": "String / Button text when unauthorized",

@@ -116,7 +116,7 @@
             "name": "post_appends->allow_btn_name 按钮名称"
         }
     ],
-    "proportion": "post_appends->allow_proportion",
+    "percentage": "post_appends->allow_percentage",
     "permissions": {
         "users": [
             1, 2,
