@@ -27,6 +27,8 @@
 | Parameter Name | Type | Required | Description |
 | --- | --- | --- | --- |
 | urlAuthorization | String | **required** | Reference: [Make URL Authorization](../../extensions/callback/url-authorization.md) |
+| accountLogin | Boolean | *optional* | Whether a login is required, if left empty, no login is required |
+| userLogin | Boolean | *optional* | Whether a user login is required, if left empty, no login is required |
 
 ::: details Return Example
 ```json

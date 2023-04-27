@@ -27,6 +27,8 @@
 | 参数名 | 类型 | 是否必传 | 说明 |
 | --- | --- | --- | --- |
 | urlAuthorization | String | YES | 参见：[为插件生成路径凭证](../../extensions/callback/url-authorization.md) |
+| accountLogin | Boolean | NO | 是否要求必须登录账号，留空则不要求 |
+| userLogin | Boolean | NO | 是否要求必须登录用户，留空则不要求 |
 
 ::: details 逻辑说明
 用户将通过 URL 访问插件页面，URL 中会传参凭证信息，用于一键登录。
