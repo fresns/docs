@@ -29,7 +29,6 @@
 - `/n (斜线)`：那个 n 代表数字，即是每隔 n 单位间隔的意思，例：每五分钟进行一次，则：`*/5 * * * *`。
 :::
 
-
 ## 订阅数据表数据活动
 
 插件订阅数据表动态（所有数据表均可订阅）。告之主程序订阅哪张表，以及发生动态时，执行自己或者代理插件的哪个命令字；当订阅的数据表发生「新增」记录时，主程序执行插件指定的命令字。
@@ -52,17 +51,25 @@
 - 当数据表发生新增记录时，会将 `tableName` 和 `primaryId` 信息传参给订阅者的命令字 `cmdWord`。
     - `tableName` = `表名`
     - `primaryId` = `主键 ID`
-- 活动类型仅支持 `created` 和 `deleted`
+- 活动类型支持 `created`, `updated`, `deleted`
 
 ```php
 //订阅通知示例
 \FresnsCmdWord::plugin('YourUniKey')->yourCmdWord([
     'tableName' => '表名',
     'primaryId' => '主键 ID',
-    'changeType' => '活动类型' // created 或 deleted
+    'changeType' => '活动类型',
 ]);
 ```
 
+```php
+use App\Fresns\Subscribe\Subscribe;
+
+// 活动类型
+Subscribe::CHANGE_TYPE_CREATED;
+Subscribe::CHANGE_TYPE_UPDATED;
+Subscribe::CHANGE_TYPE_DELETED;
+```
 
 ## 订阅账号活跃状态
 
@@ -92,7 +99,6 @@ $wordBody = [
 
 \FresnsCmdWord::plugin('YourUniKey')->yourCmdWord($wordBody);
 ```
-
 
 ## 订阅登录通知
 

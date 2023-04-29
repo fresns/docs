@@ -44,17 +44,25 @@ Tell the main program which table to subscribe to, and which command word of its
 - When a new record is added to the data table, the information of `tableName` and `primaryId` will be passed to the command word `cmdWord` of the subscriber.
     - `tableName` = `Database Table Name`
     - `primaryId` = `Primary ID`
-- Only `created` and `deleted` activity types are supported.
+- Activity type support `created`, `updated`, `deleted`
 
 ```php
 // Example of subscription notification
 \FresnsCmdWord::plugin('YourUniKey')->yourCmdWord([
     'tableName' => 'Database Table Name',
     'primaryId' => 'Primary ID',
-    'changeType' => 'Activity Type' // created or deleted
+    'changeType' => 'Activity Type'
 ]);
 ```
 
+```php
+use App\Fresns\Subscribe\Subscribe;
+
+// Activity Type
+Subscribe::CHANGE_TYPE_CREATED;
+Subscribe::CHANGE_TYPE_UPDATED;
+Subscribe::CHANGE_TYPE_DELETED;
+```
 
 ## Subscribe Account Activity
 
@@ -84,7 +92,6 @@ $wordBody = [
 
 \FresnsCmdWord::plugin('YourUniKey')->yourCmdWord($wordBody);
 ```
-
 
 ## Subscribe Account and User Login
 
