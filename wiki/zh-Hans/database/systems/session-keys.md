@@ -9,6 +9,7 @@
 | plugin_unikey | varchar(64) | 关联插件 |  | YES | 插件 API 专用，关联字段 [plugins->unikey](../plugins/plugins.md) |
 | app_id | char(8) | App ID |  | NO | 自动生成 |
 | app_secret | char(32) | 客户端密钥 |  | NO | 自动生成，加密存储数据库中 |
+| is_read_only | tinyint *UNSIGNED* | 是否只读密钥 | 0 | NO | 0.否 / 1.是 |
 | is_enable | tinyint *UNSIGNED* | 是否启用 | 1 | NO | 0.停用 / 1.启用 |
 | remark | text | 备注 |  | YES |  |
 | created_at | timestamp | 创建时间 | CURRENT_TIMESTAMP | NO |  |
