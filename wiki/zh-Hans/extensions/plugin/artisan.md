@@ -36,8 +36,8 @@ fresns make:cmd-word-provider       // 生成插件命令字提供者 (fresns/cm
 fresns make:event-provider          // 生成插件事件服务提供者
 
 // 控制指令
-fresns plugin:unzip                 // 解压插件包到插件目录 /extensions/plugins/{unikey}/
-fresns plugin:publish               // 发布插件（分发静态资源） /public/assets/plugins/{unikey}/
+fresns plugin:unzip                 // 解压插件包到插件目录 /extensions/plugins/{fskey}/
+fresns plugin:publish               // 发布插件（分发静态资源） /public/assets/plugins/{fskey}/
 fresns plugin:unpublish             // 撤销发布（删除静态资源）
 fresns plugin:composer-update       // 更新插件 Composer 依赖包
 fresns plugin:migrate               // 执行插件 Migrate
@@ -57,8 +57,8 @@ fresns plugin:deactivate            // 停用插件
 
 ```php
 // Artisan 控制指令
-php artisan plugin:unzip            // 解压插件包到插件目录 /extensions/plugins/{unikey}/
-php artisan plugin:publish          // 发布插件（分发静态资源） /public/assets/plugins/{unikey}/
+php artisan plugin:unzip            // 解压插件包到插件目录 /extensions/plugins/{fskey}/
+php artisan plugin:publish          // 发布插件（分发静态资源） /public/assets/plugins/{fskey}/
 php artisan plugin:unpublish        // 撤销发布（删除静态资源）
 php artisan plugin:composer-update  // 更新插件 Composer 依赖包
 php artisan plugin:migrate          // 执行插件 Migrate
@@ -317,7 +317,7 @@ fresns make:event-provider
 
 ### 解压插件包
 
-Unzip the plugin files into the `/plugins/` directory, the final directory will be `/plugins/{unikey}/`.
+Unzip the plugin files into the `/plugins/` directory, the final directory will be `/plugins/{fskey}/`.
 
 ```php
 fresns plugin:unzip /www/wwwroot/fresns/storage/plugins/123e4567-e89b-12d3-a456-426614174000.zip
@@ -458,7 +458,7 @@ php artisan plugin:uninstall DemoPlugin --cleandata=false
 - `/plugins/DemoPlugin/` Physically deletion the folder.
 - `/public/assets/plugins/DemoPlugin/` Physically deletion the folder.
 - Remove the plugin composer dependency package (skip if the main application or another plugin is in use)
-- Logically deletion the value of the record where the `unikey` column of the `plugins` table is `DemoPlugin`.
+- Logically deletion the value of the record where the `fskey` column of the `plugins` table is `DemoPlugin`.
 
 
 ## 管理指令

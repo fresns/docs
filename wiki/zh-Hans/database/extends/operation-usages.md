@@ -6,7 +6,7 @@
 | usage_type | tinyint *UNSIGNED* | 目标类型 |  | NO |  |
 | usage_id | bigint *UNSIGNED* | 目标主键 ID |  | NO |  |
 | operation_id | int *UNSIGNED* | 扩展运营 ID |  | NO | 关联字段 operations->id |
-| plugin_unikey | varchar(64) | 关联插件 |  | NO | 关联字段 [plugins->unikey](../plugins/plugins.md)<br>哪个插件关联的 |
+| plugin_fskey | varchar(64) | 关联插件 |  | NO | 关联字段 [plugins->fskey](../plugins/plugins.md)<br>哪个插件关联的 |
 | created_at | timestamp | 创建时间 | CURRENT_TIMESTAMP | NO |  |
 | updated_at | timestamp | 更新时间 |  | YES |  |
 | deleted_at | timestamp | 删除时间 |  | YES |  |

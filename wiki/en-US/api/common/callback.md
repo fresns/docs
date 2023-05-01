@@ -17,7 +17,7 @@
 
 | Parameter Name | Type | Required | Description |
 | --- | --- | --- | --- |
-| unikey | String | **required** | Data usage plug-in unikey |
+| fskey | String | **required** | Data usage plug-in fskey |
 | ulid | String | **required** | Callback query key |
 
 ## Return

@@ -95,12 +95,12 @@ ConfigUtility::changeFresnsLanguageItems($fresnsLangItems);
 ## Get Status Code Multilingual Description
 
 ```php
-ConfigUtility::getCodeMessage($code, $unikey, $langTag);
+ConfigUtility::getCodeMessage($code, $fskey, $langTag);
 ```
 | Parameter Name | Type | Required | Description |
 | --- | --- | --- | --- |
 | code | Number | **required** | Status code |
-| unikey | String | *optional* | Associated plugin unikey, if empty, it is Fresns |
+| fskey | String | *optional* | Associated plugin fskey, if empty, it is Fresns |
 | langTag | String | *optional* | If empty, the default language is used. |
 
 ## Get Account or User Login Error Count

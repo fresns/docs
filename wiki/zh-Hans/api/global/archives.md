@@ -23,7 +23,7 @@
 
 | 参数名 | 类型 | 是否必传 | 说明 |
 | --- | --- | --- | --- |
-| unikey | String | NO | 留空输出全部，有值输出指定插件的扩展资料（[扩展自定义字段](../../database/extends/archives.md)） |
+| fskey | String | NO | 留空输出全部，有值输出指定插件的扩展资料（[扩展自定义字段](../../database/extends/archives.md)） |
 
 ## 返回结果
 
@@ -33,7 +33,7 @@
     "message": "ok",
     "data": [
         {
-            "unikey": "String / 插件 Unikey",
+            "fskey": "String / 插件 Fskey",
             "name": "String / 名称",
             "description": "String / 描述",
             "code": "String / Code",

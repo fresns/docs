@@ -13,7 +13,7 @@
 | image_active_file_id | bigint *UNSIGNED* | 二态图文件 ID |  | YES | 关联字段 [files->id](../systems/files.md) |
 | image_active_file_url | varchar(255) | 二态图文件 URL |  | YES |  |
 | display_type | tinyint *UNSIGNED* | 展示类型 | 1 | NO | 1.基础 / 2.功能（插件） |
-| plugin_unikey | varchar(64) | 关联插件 |  | NO | 关联字段 [plugins->unikey](../plugins/plugins.md)<br>哪个插件创建的，也是功能用途的插件页 |
+| plugin_fskey | varchar(64) | 关联插件 |  | NO | 关联字段 [plugins->fskey](../plugins/plugins.md)<br>哪个插件创建的，也是功能用途的插件页 |
 | is_enable | tinyint *UNSIGNED* | 是否有效 | 1 | NO | 0.无效 / 1.有效 |
 | created_at | timestamp | 创建时间 | CURRENT_TIMESTAMP | NO |  |
 | updated_at | timestamp | 更新时间 |  | YES |  |
@@ -75,7 +75,7 @@
                 "imageUrl": "operations->image_file_id 或 image_file_url",
                 "imageActiveUrl": "operations->image_active_file_id 或 image_active_file_url",
                 "displayType": "operations->display_type",
-                "pluginUrl": "operations->plugin_unikey",
+                "pluginUrl": "operations->plugin_fskey",
             }
         ],
         "buttonIcons": [
@@ -87,7 +87,7 @@
                 "imageUrl": "operations->image_file_id 或 image_file_url",
                 "imageActiveUrl": "operations->image_active_file_id 或 image_active_file_url",
                 "displayType": "operations->display_type",
-                "pluginUrl": "operations->plugin_unikey",
+                "pluginUrl": "operations->plugin_fskey",
             }
         ],
         "diversifyImages": [
@@ -99,7 +99,7 @@
                 "imageUrl": "operations->image_file_id 或 image_file_url",
                 "imageActiveUrl": "operations->image_active_file_id 或 image_active_file_url",
                 "displayType": "operations->display_type",
-                "pluginUrl": "operations->plugin_unikey",
+                "pluginUrl": "operations->plugin_fskey",
             }
         ],
         "tips": [
@@ -111,7 +111,7 @@
                 "imageUrl": "operations->image_file_id 或 image_file_url",
                 "imageActiveUrl": "operations->image_active_file_id 或 image_active_file_url",
                 "displayType": "operations->display_type",
-                "pluginUrl": "operations->plugin_unikey",
+                "pluginUrl": "operations->plugin_fskey",
             }
         ],
     }

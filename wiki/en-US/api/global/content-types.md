@@ -27,7 +27,7 @@
     "message": "ok",
     "data": [
         {
-            "unikey": "String / Plugin Unikey",
+            "fskey": "String / Plugin Fskey",
             "name": "String / Name",
             "icon": "String / Service provider icon URL",
             "url": "String / Service provider access URL",

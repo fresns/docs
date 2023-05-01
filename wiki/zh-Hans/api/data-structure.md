@@ -302,7 +302,7 @@
     "contentMeta": {
         "post": [
             {
-                "unikey": "String / 插件 Unikey",
+                "fskey": "String / 插件 Fskey",
                 "name": "String / 名称",
                 "description": "String / 描述",
                 "code": "String / Code",
@@ -326,7 +326,7 @@
         ],
         "comment": [
             {
-                "unikey": "String / 插件 Unikey",
+                "fskey": "String / 插件 Fskey",
                 "name": "String / 名称",
                 "description": "String / 描述",
                 "code": "String / Code",
@@ -779,7 +779,7 @@
     "pid": "String / 所属帖子 ID",
     "quotedPid": "String / 引用帖子 ID",
     "isPluginEditor": "Boolean / 是否插件编辑器",
-    "editorUnikey": "String / 编辑器插件 Unikey",
+    "editorFskey": "String / 编辑器插件 Fskey",
     "editorUrl": "String / 编辑器访问地址",
     "group": {
         // 所属小组
@@ -816,7 +816,7 @@
         "isAllow": "Boolean / 是否有权限配置",
         "percentage": "Number / 无权时预读百分比",
         "pluginUrl": "String / 配置插件地址",
-        "pluginUnikey": "String / 配置插件 unikey",
+        "pluginFskey": "String / 配置插件 fskey",
         "defaultLangBtnName": "String / 无权时按钮文字",
         "btnName": [
             // 无权时按钮文字，多语言配置
@@ -849,7 +849,7 @@
             // 用户名称，多语言配置
         ],
         "pluginUrl": "String / 配置插件地址",
-        "pluginUnikey": "String / 配置插件 unikey",
+        "pluginFskey": "String / 配置插件 fskey",
     },
     "commentBtnJson": {
         "isCommentBtn": "Boolean / 评论是否有按钮",
@@ -859,7 +859,7 @@
         ],
         "btnStyle": "String / 按钮风格",
         "pluginUrl": "String / 配置插件地址",
-        "pluginUnikey": "String / 配置插件 unikey",
+        "pluginFskey": "String / 配置插件 fskey",
     },
     "state": "Number / 状态",
     "reason": "String / 审核拒绝原因",
@@ -910,7 +910,7 @@
     "pid": "String / 评论的帖子 ID",
     "parentCid": "String / 回复评论的 ID",
     "isPluginEditor": "Boolean / 是否插件编辑器",
-    "editorUnikey": "String / 编辑器插件 Unikey",
+    "editorFskey": "String / 编辑器插件 Fskey",
     "editorUrl": "String / 编辑器访问地址",
     "content": "String / 帖子内容或简述",
     "contentLength": "Number / 内容总长度",
@@ -1111,7 +1111,7 @@
 
 ```json
 {
-    "unikey": "String / 插件 Unikey",
+    "fskey": "String / 插件 Fskey",
     "name": "String / 扩展名称",
     "icon": "String / 扩展图标地址",
     "url": "String / 扩展访问地址",

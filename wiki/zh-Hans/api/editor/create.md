@@ -24,7 +24,7 @@
 | 参数名 | 类型 | 是否必传 | **帖子**说明 | **评论**说明 |
 | --- | --- | --- | --- | --- |
 | createType | Number | YES | 创建类型 1.快捷创建 2.编辑器创建 |  |
-| editorUnikey | String | NO | 是否插件编辑器，留空为否 |  |
+| editorFskey | String | NO | 是否插件编辑器，留空为否 |  |
 | postQuotePid | String | NO | 引用的帖子 PID<br>非必填 | *帖子专用* |
 | postGid | String | NO | 小组，默认选中了小组 | *帖子专用* |
 | postTitle | String | NO | 标题，默认自带标题 | *帖子专用* |

@@ -8,7 +8,7 @@
 | archive_id | int *UNSIGNED* | Parameter ID |  | NO | Related field `archives->id` |
 | archive_value | text | Parameter value | | YES |  |
 | is_private | tinyint *UNSIGNED* | Is private | 0 | NO | 0.No / 1.Yes |
-| plugin_unikey | varchar(64) | Related plugin |  | YES | Related field [plugins->unikey](../plugins/plugins.md)<br>Which plugin is associated with |
+| plugin_fskey | varchar(64) | Related plugin |  | YES | Related field [plugins->fskey](../plugins/plugins.md)<br>Which plugin is associated with |
 | created_at | timestamp | Create Time | CURRENT_TIMESTAMP | NO |  |
 | updated_at | timestamp | Update Time |  | YES |  |
 | deleted_at | timestamp | Delete Time |  | YES |  |

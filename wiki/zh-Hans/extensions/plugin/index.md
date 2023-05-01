@@ -34,13 +34,13 @@ fresns/             //主程序根目录
 
 | 插件文件夹 | 分发到站点资源目录 |
 | --- | --- |
-| /extensions/plugins/`{unikey}`/Resources/assets/ | /public/assets/plugins/`{unikey}`/ |
+| /extensions/plugins/`{fskey}`/Resources/assets/ | /public/assets/plugins/`{fskey}`/ |
 
 ## plugin.json 配置信息
 
 ```json
 {
-    "unikey": "DemoPlugin", // 唯一标识，大驼峰
+    "fskey": "DemoPlugin", // 唯一标识，大驼峰
     "type": 1, // 类型: 1.扩展插件 2.控制面板 3.网站引擎 4.主题模板
     "name": "演示插件", // 名字
     "description": "这是演示插件", // 描述

@@ -5,7 +5,7 @@ The theme of the template is **Laravel Blade** template file, which must rely on
 ## Directory Structure
 
 ```php
-ThemeDemo/          // Theme template folder (named after uniKey)
+ThemeDemo/          // Theme template folder (named after fskey)
 ├── assets/             // Resource files
 │   ├── fresns.png          // Theme cover image (square), must be present and fixed in position
 │   ├── js/
@@ -40,7 +40,7 @@ When the theme is installed, the static resources are published to the `public` 
 
 | Theme Folder | Publish to the site resource directory |
 | --- | --- |
-| /extensions/themes/`{unikey}`/assets/ | /public/assets/themes/`{unikey}`/ |
+| /extensions/themes/`{fskey}`/assets/ | /public/assets/themes/`{fskey}`/ |
 | Other File | No Publish |
 
 
@@ -50,7 +50,7 @@ When the theme is installed, the static resources are published to the `public` 
 
 ```json
 {
-    "unikey": "ThemeDemo",
+    "fskey": "ThemeDemo",
     "name": "Theme Demo",
     "description": "This is the demo theme",
     "author": "Jevan Tang",

@@ -5,7 +5,7 @@
 | id | bigint *UNSIGNED* | 主键 ID | | NO | 自动递增 |
 | post_id | bigint *UNSIGNED* | 帖子 ID |  | NO | 关联字段 [posts->id](posts.md) |
 | user_id | bigint *UNSIGNED* | 用户 ID |  | NO | 关联字段 [users->id](../users/users.md) |
-| plugin_unikey | varchar(64) | 录入的插件 |  | NO | 哪个插件触发的记录<br>关联字段 [plugins->unikey](../plugins/plugins.md) |
+| plugin_fskey | varchar(64) | 录入的插件 |  | NO | 哪个插件触发的记录<br>关联字段 [plugins->fskey](../plugins/plugins.md) |
 | more_json | json | 扩展字段 |  | YES |  |
 | created_at | timestamp | 创建时间 | CURRENT_TIMESTAMP | NO |  |
 | updated_at | timestamp | 更新时间 |  | YES |  |

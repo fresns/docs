@@ -71,7 +71,7 @@
 | Video | Output posts with videos |
 | Audio | Output posts with audio |
 | Document | Output posts with documents |
-| {AbcName} | Output posts with plugin unikey AbcName extended content |
+| {AbcName} | Output posts with plugin fskey AbcName extended content |
 
 - For content type list, refer to [/api/v2/global/{type}/content-types](../global/content-types.md)
 

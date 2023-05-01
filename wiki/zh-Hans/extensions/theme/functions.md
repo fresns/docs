@@ -59,7 +59,7 @@
 <!-- plugin select multiple: template -->
 <template id="pluginTemplate">
     <input type="text" class="form-control plugin-code" name="">
-    <select class="form-select plugin-unikey" name="">
+    <select class="form-select plugin-fskey" name="">
         <option selected disabled>请选择关联插件</option>
         <option value="">Null</option>
         <option value="1">One</option>

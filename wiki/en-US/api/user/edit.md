@@ -50,13 +50,13 @@
         "code": "code",
         "value": "value",
         "isPrivate": false, // Private or not (public display or not)
-        "pluginUnikey": null
+        "pluginFskey": null
     },
     {
         "code": "code",
         "value": "value",
         "isPrivate": true,
-        "pluginUnikey": "Fresns"
+        "pluginFskey": "Fresns"
     }
 ]
 ```

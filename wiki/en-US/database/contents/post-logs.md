@@ -8,7 +8,7 @@
 | parent_post_id | bigint *UNSIGNED* | Parent post ID |  | YES | Related field [posts->id](posts.md)<br>Empty means no referenced post |
 | create_type | tinyint *UNSIGNED* | Creation type | 1 | NO | 1.Quick create / 2.Editor create / 3.Restore from post |
 | is_plugin_editor | tinyint *UNSIGNED* | Edit only in plugin | 0 | NO | 0.No / 1.Yes |
-| editor_unikey | varchar(64) | Content editor plugin |  | YES | Related field [plugins->unikey](../plugins/plugins.md) |
+| editor_fskey | varchar(64) | Content editor plugin |  | YES | Related field [plugins->fskey](../plugins/plugins.md) |
 | group_id | int *UNSIGNED* | Group ID |  | YES | Related field `groups->id` |
 | title | varchar(255) | Title |  | YES |  |
 | content | longtext | Content |  | YES | Full content |
@@ -109,7 +109,7 @@
             // post_allows->type = 2
         ]
     },
-    "pluginUnikey": "post_appends->allow_plugin_unikey"
+    "pluginFskey": "post_appends->allow_plugin_fskey"
 }
 ```
 
@@ -124,7 +124,7 @@
             "name": "post_appends->user_list_name / affiliated name"
         }
     ],
-    "pluginUnikey": "post_appends->user_list_plugin_unikey"
+    "pluginFskey": "post_appends->user_list_plugin_fskey"
 }
 ```
 
@@ -139,6 +139,6 @@
             "name": "post_appends->comment_btn_name / Button name"
         }
     ],
-    "pluginUnikey": "post_appends->comment_btn_plugin_unikey"
+    "pluginFskey": "post_appends->comment_btn_plugin_fskey"
 }
 ```

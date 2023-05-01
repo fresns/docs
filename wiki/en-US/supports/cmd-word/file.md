@@ -3,7 +3,7 @@
 ## getUploadToken
 
 ```php
-\FresnsCmdWord::plugin($unikey)->getUploadToken($wordBody)
+\FresnsCmdWord::plugin($fskey)->getUploadToken($wordBody)
 ```
 | Parameter Name | Type | Required | Description |
 | --- | --- | --- | --- |
@@ -31,7 +31,7 @@
 ## uploadFile
 
 ```php
-\FresnsCmdWord::plugin($unikey)->uploadFile($wordBody)
+\FresnsCmdWord::plugin($fskey)->uploadFile($wordBody)
 ```
 | Parameter Name | Type | Required | Description |
 | --- | --- | --- | --- |
@@ -70,7 +70,7 @@
 ## uploadFileInfo
 
 ```php
-\FresnsCmdWord::plugin($unikey)->uploadFileInfo($wordBody)
+\FresnsCmdWord::plugin($fskey)->uploadFileInfo($wordBody)
 ```
 | Parameter Name | Type | Required | Description |
 | --- | --- | --- | --- |
@@ -141,7 +141,7 @@
 ## getAntiLinkFileInfo (One)
 
 ```php
-\FresnsCmdWord::plugin($unikey)->getAntiLinkFileInfo($wordBody)
+\FresnsCmdWord::plugin($fskey)->getAntiLinkFileInfo($wordBody)
 ```
 | Parameter Name | Type | Required | Description |
 | --- | --- | --- | --- |
@@ -168,7 +168,7 @@
 ## getAntiLinkFileInfoList (Multiple)
 
 ```php
-\FresnsCmdWord::plugin($unikey)->getAntiLinkFileInfoList($wordBody)
+\FresnsCmdWord::plugin($fskey)->getAntiLinkFileInfoList($wordBody)
 ```
 | Parameter Name | Type | Required | Description |
 | --- | --- | --- | --- |
@@ -200,7 +200,7 @@
 ## getAntiLinkFileOriginalUrl
 
 ```php
-\FresnsCmdWord::plugin($unikey)->getAntiLinkFileOriginalUrl($wordBody)
+\FresnsCmdWord::plugin($fskey)->getAntiLinkFileOriginalUrl($wordBody)
 ```
 | Parameter Name | Type | Required | Description |
 | --- | --- | --- | --- |
@@ -228,7 +228,7 @@
 ## logicalDeletionFiles
 
 ```php
-\FresnsCmdWord::plugin($unikey)->logicalDeletionFiles($wordBody)
+\FresnsCmdWord::plugin($fskey)->logicalDeletionFiles($wordBody)
 ```
 | Parameter Name | Type | Required | Description |
 | --- | --- | --- | --- |
@@ -237,7 +237,7 @@
 ## physicalDeletionFiles
 
 ```php
-\FresnsCmdWord::plugin($unikey)->physicalDeletionFiles($wordBody)
+\FresnsCmdWord::plugin($fskey)->physicalDeletionFiles($wordBody)
 ```
 | Parameter Name | Type | Required | Description |
 | --- | --- | --- | --- |

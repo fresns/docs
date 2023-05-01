@@ -14,7 +14,7 @@ If the plug-in has scheduled tasks or subscription requirements, the command wor
 
 | Parameter | Description |
 | --- | --- |
-| unikey | Crontab Plugin |
+| fskey | Crontab Plugin |
 | cmdWord | Crontab Command Word |
 | taskPeriod | Task Execution Period(Laravel Cron Expression) |
 
@@ -37,7 +37,7 @@ Tell the main program which table to subscribe to, and which command word of its
 | Parameter | Description |
 | --- | --- |
 | type | Subscription Type `type = 1` |
-| unikey | Subscriber(plugin) |
+| fskey | Subscriber(plugin) |
 | cmdWord | Command word for subscriber |
 | subTableName | Which table to subscribe to |
 
@@ -48,7 +48,7 @@ Tell the main program which table to subscribe to, and which command word of its
 
 ```php
 // Example of subscription notification
-\FresnsCmdWord::plugin('YourUniKey')->yourCmdWord([
+\FresnsCmdWord::plugin('YourFskey')->yourCmdWord([
     'tableName' => 'Database Table Name',
     'primaryId' => 'Primary ID',
     'changeType' => 'Activity Type'
@@ -79,7 +79,7 @@ The plug-in subscribes to the account and the user requests in headers informati
 | Parameter | Description |
 | --- | --- |
 | type | Subscription Type `type = 2` |
-| unikey | Subscriber(plugin) |
+| fskey | Subscriber(plugin) |
 | cmdWord | Command word for subscriber |
 
 ```php
@@ -90,7 +90,7 @@ $wordBody = [
     'body' => $dtoRequest->toArray(),
 ];
 
-\FresnsCmdWord::plugin('YourUniKey')->yourCmdWord($wordBody);
+\FresnsCmdWord::plugin('YourFskey')->yourCmdWord($wordBody);
 ```
 
 ## Subscribe Account and User Login
@@ -108,7 +108,7 @@ Notify subscribers of command words when an account or user is logged in.
 | Parameter | Description |
 | --- | --- |
 | type | Subscription Type `type = 3` |
-| unikey | Subscriber(plugin) |
+| fskey | Subscriber(plugin) |
 | cmdWord | Command word for subscriber |
 
 ```php
@@ -138,5 +138,5 @@ $wordBody = [
     ],
 ];
 
-\FresnsCmdWord::plugin('YourUniKey')->yourCmdWord($wordBody);
+\FresnsCmdWord::plugin('YourFskey')->yourCmdWord($wordBody);
 ```

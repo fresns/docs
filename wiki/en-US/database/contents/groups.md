@@ -13,7 +13,7 @@
 | type_mode_end_after | tinyint *UNSIGNED* | Non-public Group Configuration | 1 | NO | 1.No restrictions<br>2.All group content invisible<br>3.Content visible before expiration, new content not visible |
 | type_find | tinyint *UNSIGNED* | Is Discoverable<br>Also understood as whether to display | 1 | NO | 1.Discoverable (anyone can find this group)<br>2.Undiscoverable (only members can find this group) |
 | type_follow | tinyint *UNSIGNED* | Follow Method | 1 | NO | 1.Native / 2.Plugin / 3.Closed |
-| plugin_unikey | varchar(64) | Related Plugin |  | YES | Used when type_follow=2<br>Related field [plugins->unikey](../plugins/plugins.md) |
+| plugin_fskey | varchar(64) | Related Plugin |  | YES | Used when type_follow=2<br>Related field [plugins->fskey](../plugins/plugins.md) |
 | sublevel_public | tinyint *UNSIGNED* | Type=3 specific<br>Are subgroups public | 0 | NO | 0.Not public, group-specific<br>1.Public, visible to the entire site |
 | cover_file_id | bigint *UNSIGNED* | Group Cover Image ID |  | YES | Related field [files->id](../systems/files.md) |
 | cover_file_url | varchar(255) | Group Cover Image URL |  | YES |  |

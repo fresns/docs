@@ -17,7 +17,7 @@
 | uid | Number | NO/YES | 用户参数（用户主表 `users->uid` 字段） |
 | uidToken | String | NO/YES | 用户身份凭证 |
 | verifyType | Number | NO | 验证 [session_keys->type](../../database/systems/session-keys.md)，留空则默认为 1 |
-| verifyUnikey | String | NO | 类型为 3 时专用，验证关联插件 |
+| verifyFskey | String | NO | 类型为 3 时专用，验证关联插件 |
 
 ## 校验 URL 凭证
 
@@ -75,7 +75,7 @@
 | version | String | YES | 语义化版本号，例如: `2.0.0` |
 | appId | String | NO | 密钥 App ID |
 | langTag | String | NO | 语言标签 |
-| pluginUnikey | String | NO | 插件 Unikey |
+| fskey | String | NO | 插件 Fskey |
 | aid | String | NO | 账号 |
 | uid | Number | NO | 用户 |
 | objectName | String | YES | 功能模型名或者接口路径<br>例如模型名 App\Models\Post<br>例如接口路径：/api/v2/account/login |

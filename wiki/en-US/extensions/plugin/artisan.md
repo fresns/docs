@@ -36,8 +36,8 @@ fresns make:cmd-word-provider       // Generate Plugin Command Word Provider (fr
 fresns make:event-provider          // Generate Plugin Event Provider
 
 // Control
-fresns plugin:unzip                 // Unzip the plugin package to the plugin directory: /extensions/plugins/{unikey}/
-fresns plugin:publish               // Publish Plugin (static resources): /public/assets/plugins/{unikey}/
+fresns plugin:unzip                 // Unzip the plugin package to the plugin directory: /extensions/plugins/{fskey}/
+fresns plugin:publish               // Publish Plugin (static resources): /public/assets/plugins/{fskey}/
 fresns plugin:unpublish             // Unpublish (remove static resources)
 fresns plugin:composer-update       // Update Plugin Composer Package
 fresns plugin:migrate               // Run Plugin Migrate
@@ -57,8 +57,8 @@ Plugin control and management commands are also supported in the Artisan way.
 
 ```php
 // Artisan Control
-php artisan plugin:unzip            // Unzip the plugin package to the plugin directory: /extensions/plugins/{unikey}/
-php artisan plugin:publish          // Publish Plugin (static resources): /public/assets/plugins/{unikey}/
+php artisan plugin:unzip            // Unzip the plugin package to the plugin directory: /extensions/plugins/{fskey}/
+php artisan plugin:publish          // Publish Plugin (static resources): /public/assets/plugins/{fskey}/
 php artisan plugin:unpublish        // Unpublish (remove static resources)
 php artisan plugin:composer-update  // Update Plugin Composer Package
 php artisan plugin:migrate          // Run Plugin Migrate
@@ -317,7 +317,7 @@ fresns make:event-provider
 
 ### Unzip The Plugin Package
 
-Unzip the plugin files into the `/plugins/` directory, the final directory will be `/plugins/{unikey}/`.
+Unzip the plugin files into the `/plugins/` directory, the final directory will be `/plugins/{fskey}/`.
 
 ```php
 fresns plugin:unzip /www/wwwroot/fresns/storage/plugins/123e4567-e89b-12d3-a456-426614174000.zip
@@ -456,7 +456,7 @@ php artisan plugin:uninstall DemoPlugin --cleandata=false
 - `/plugins/DemoPlugin/` Physically deletion the folder.
 - `/public/assets/plugins/DemoPlugin/` Physically deletion the folder.
 - Remove the plugin composer dependency package (skip if the main application or another plugin is in use)
-- Logically deletion the value of the record where the `unikey` column of the `plugins` table is `DemoPlugin`.
+- Logically deletion the value of the record where the `fskey` column of the `plugins` table is `DemoPlugin`.
 
 
 ## Management

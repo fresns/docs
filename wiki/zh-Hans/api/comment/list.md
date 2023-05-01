@@ -65,7 +65,7 @@
 | Video | 输出带视频的评论 |
 | Audio | 输出带音频的评论 |
 | Document | 输出带文档的评论 |
-| {AbcName} | 输出含有插件 unikey 为 AbcName 扩展内容的评论 |
+| {AbcName} | 输出含有插件 fskey 为 AbcName 扩展内容的评论 |
 
 - 内容类型列表参考 [/api/v2/global/{type}/content-types](../global/content-types.md)
 

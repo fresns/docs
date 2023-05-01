@@ -12,13 +12,13 @@
 [
     {
         "type": "Subscription type",
-        "unikey": "Subscriber (Plugin)",
+        "fskey": "Subscriber (Plugin)",
         "cmdWord": "Subscriber's command word",
         "subTableName": "Subscribed table, type 1 exclusive"
     },
     {
         "type": 1,
-        "unikey": "AqSms",
+        "fskey": "AqSms",
         "cmdWord": "sendSms",
         "subTableName": "users"
     }
@@ -29,12 +29,12 @@
 ```json
 [
     {
-        "unikey": "Scheduled Task Plugin",
+        "fskey": "Scheduled Task Plugin",
         "cmdWord": "Scheduled Task Plugin Command Word",
         "cronTableFormat": "Scheduled Task Execution Cycle (Cron Expression)"
     },
     {
-        "unikey": "Fresns",
+        "fskey": "Fresns",
         "cmdWord": "checkDeleteAccount",
         "cronTableFormat": "* * /6 * *"
     }

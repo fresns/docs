@@ -65,7 +65,7 @@
 | Video | Output comments with videos |
 | Audio | Output comments with audio |
 | Document | Output comments with documents |
-| {AbcName} | Output comments with plugin unikey AbcName extended content |
+| {AbcName} | Output comments with plugin fskey AbcName extended content |
 
 - For content type list, refer to [/api/v2/global/{type}/content-types](../global/content-types.md)
 

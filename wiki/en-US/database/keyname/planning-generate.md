@@ -16,5 +16,5 @@ Reference: [Terminal Platform Numbers](../dictionary/platforms.md)
 
 | Column Title | Component Type | Key Name | Description |
 | --- | --- | --- | --- |
-| Desktop Theme Template | select | {unikey}_Desktop | Associated storage theme template file name `item_tag = themes` |
-| Mobile Theme Template | select | {unikey}_Mobile | Associated storage theme template file name `item_tag = themes` |
+| Desktop Theme Template | select | {fskey}_Desktop | Associated storage theme template file name `item_tag = themes` |
+| Mobile Theme Template | select | {fskey}_Mobile | Associated storage theme template file name `item_tag = themes` |

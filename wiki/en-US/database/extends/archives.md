@@ -3,7 +3,7 @@
 | Column Name | Type | Comment | Default | Null | Remark |
 | --- | --- | --- | --- | --- | --- |
 | id | int *UNSIGNED* | Primary Key ID |  | NO | Auto Increment |
-| plugin_unikey | varchar(64) | Related Plugin |  | NO | Related field [plugins->unikey](../plugins/plugins.md)<br>Which plugin created it |
+| plugin_fskey | varchar(64) | Related Plugin |  | NO | Related field [plugins->fskey](../plugins/plugins.md)<br>Which plugin created it |
 | name | varchar(64) | Name |  | YES | **Multilingual**  |
 | description | text | Description |  | YES | **Multilingual** |
 | code | varchar(32) | Code |  | NO | **Unique**，English letters only, no symbols or spaces supported |

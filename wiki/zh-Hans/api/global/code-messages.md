@@ -17,8 +17,8 @@
 
 | 参数名 | 类型 | 是否必传 | 说明 |
 | --- | --- | --- | --- |
-| unikey | String | NO | 状态码 Unikey，留空将使用默认 Fresns |
-| isAll | Boolean | NO | 是否输出全部 `unikey` 结果 |
+| fskey | String | NO | 状态码 Fskey，留空将使用默认 Fresns |
+| isAll | Boolean | NO | 是否输出全部 `fskey` 结果 |
 | codes | String | NO | [状态码编号](../error-code.md)，多个以英文逗号隔开 |
 
 **接口使用说明**

@@ -11,13 +11,13 @@ The document is drafted to introduce the development of an integrated engine. Si
 
 ### Front-end description
 
-- The view files (template files) on the foreground interface are stored in the `/extensions/themes/` folder under the root directory of the project. The path guide is stored in the configuration table, with the key name of the configuration taking the format of engine `unikey` + `_Desktop` or + `_Mobile`.
+- The view files (template files) on the foreground interface are stored in the `/extensions/themes/` folder under the root directory of the project. The path guide is stored in the configuration table, with the key name of the configuration taking the format of engine `fskey` + `_Desktop` or + `_Mobile`.
 - The engine finds the theme template folder, reads Blade template files and renders the interface according to the guidance of the system.
 
-| Key Name | For example the engine unikey for `FresnsEngine` |
+| Key Name | For example the engine fskey for `FresnsEngine` |
 | --- | --- |
-| {unikey}_Desktop | FresnsEngine_Desktop |
-| {unikey}_Mobile | FresnsEngine_Mobile |
+| {fskey}_Desktop | FresnsEngine_Desktop |
+| {fskey}_Mobile | FresnsEngine_Mobile |
 
 ### Back-end description
 

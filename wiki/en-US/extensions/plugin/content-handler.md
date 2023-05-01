@@ -77,11 +77,11 @@ $wordBody = [
     "body" => $dtoRequest->toArray(),
 ];
 
-\FresnsCmdWord::plugin($unikey)->getPostByFollow($wordBody)
+\FresnsCmdWord::plugin($fskey)->getPostByFollow($wordBody)
 
-\FresnsCmdWord::plugin($unikey)->getPostDetail($wordBody)
+\FresnsCmdWord::plugin($fskey)->getPostDetail($wordBody)
 
-\FresnsCmdWord::plugin($unikey)->searchPosts($wordBody)
+\FresnsCmdWord::plugin($fskey)->searchPosts($wordBody)
 ```
 
 **Return Example:**
@@ -102,7 +102,7 @@ After the plug-in processes the request and returns the data, the main program w
         - If there is no permission condition, output the content normally, otherwise the content should be output according to the permission configuration directly (percentage, button text, and plugin)
         - Percentage `post_appends->allow_percentage`
         - Button Text `post_appends->allow_btn_name`
-        - Plugin `post_appends->allow_plugin_unikey`
+        - Plugin `post_appends->allow_plugin_fskey`
         - Reference `App\Fresns\Api\Services\PostService::contentHandle`
 - **Logged in**
     - 1. Do not output private group posts `groups->type_mode=2` unless the user has already followed(`user_follows`) the group.

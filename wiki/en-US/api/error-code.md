@@ -1,7 +1,7 @@
 # Error Code
 
 - Reference: [Extensions > Error Code](../extensions/error-code.md)
-- Usage: [ConfigUtility::getCodeMessage($code, $unikey, $langTag);](../supports/utilities/config.md#get-status-code-multilingual-description)
+- Usage: [ConfigUtility::getCodeMessage($code, $fskey, $langTag);](../supports/utilities/config.md#get-status-code-multilingual-description)
 
 ## Commons
 

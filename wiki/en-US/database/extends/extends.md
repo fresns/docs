@@ -5,7 +5,7 @@
 | id | bigint *UNSIGNED* | Primary Key ID | | NO | Auto Increment |
 | eid | varchar(32) | Public ID |  | NO | **Unique** |
 | user_id | bigint *UNSIGNED* | Creator ID |  | NO | Related field [users->id](../users/users.md) |
-| plugin_unikey | varchar(64) | Creator plugin |  | NO | Related field [plugins->unikey](../plugins/plugins.md) |
+| plugin_fskey | varchar(64) | Creator plugin |  | NO | Related field [plugins->fskey](../plugins/plugins.md) |
 | type | tinyint *UNSIGNED* | Type | 1 |  NO| 1. Text box / 2. Info box / 3. Interactive box |
 | text_content | text | Text box specific - content |  | YES | Valid only when frame is "text box" extension type, supports Morkdown format |
 | text_is_markdown | tinyint *UNSIGNED* | Text box specific - content in MD format | 0 | NO | 0. No / 1. Yes |

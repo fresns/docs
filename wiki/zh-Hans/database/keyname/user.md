@@ -35,11 +35,11 @@
 [
     {
         "code": "互联平台编号",
-        "unikey": "插件 Unikey"
+        "fskey": "插件 Fskey"
     },
     {
         "code": "2",
-        "unikey": "Placeholder"
+        "fskey": "Placeholder"
     }
 ]
 ```

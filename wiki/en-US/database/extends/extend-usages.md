@@ -8,7 +8,7 @@
 | extend_id | bigint *UNSIGNED* | Extend Content ID |  | NO | Related field `extends->id` |
 | can_delete | tinyint *UNSIGNED* | Can be deleted | 1 | NO | 0. No / 1. Yes<br>Editor: User has the right to delete |
 | rating | smallint *UNSIGNED* | Display order | 9 | NO | Ascending order |
-| plugin_unikey | varchar(64) | Related plugin |  | NO | Related field `extends->plugin_unikey` |
+| plugin_fskey | varchar(64) | Related plugin |  | NO | Related field `extends->plugin_fskey` |
 | created_at | timestamp | Create Time | CURRENT_TIMESTAMP | NO |  |
 | updated_at | timestamp | Update Time |  | YES |  |
 | deleted_at | timestamp | Delete Time |  | YES |  |

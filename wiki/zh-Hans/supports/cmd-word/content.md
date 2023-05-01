@@ -10,7 +10,7 @@
 | uid | Number | YES | 用户 UID |  |
 | type | Number | YES | `1` 帖子 | `2` 评论 |
 | createType | Number | YES | 创建类型 1.快捷创建 2.编辑器创建 |  |
-| editorUnikey | String | NO | 是否插件编辑器，留空为否 |  |
+| editorFskey | String | NO | 是否插件编辑器，留空为否 |  |
 | postGid | String | NO | 小组，默认选中了小组 | *帖子专用* |
 | postTitle | String | NO | 标题，默认自带标题 | *帖子专用* |
 | postIsComment | Boolean | NO | 默认配置：是否可以评论帖子 | *帖子专用* |
@@ -243,7 +243,7 @@ $wordBody = [
 | pid | String | YES |  |
 | type | String | YES | 类型 `add` 或 `remove` |
 | uid | Number | YES | 指定用户 |
-| pluginUnikey | String | YES | 插件 Unikey |
+| fskey | String | YES | 插件 Fskey |
 | moreJson | Json | NO | 额外记录信息（Json） |
 
 ## 设置评论扩展按钮

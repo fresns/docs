@@ -6,7 +6,7 @@
 | platform_id | tinyint *UNSIGNED* | Platform ID |  | NO | Related key name [configs->item_key = platforms](../dictionary/platforms.md) |
 | name | varchar(64) | Usage Name |  | NO |  |
 | type | tinyint *UNSIGNED* | Key Permission Type |  | NO | 1. Main Program API / 2. Admin API / 3. Plugin API |
-| plugin_unikey | varchar(64) | Related Plugin |  | YES | Plugin API exclusive, Related field [plugins->unikey](../plugins/plugins.md) |
+| plugin_fskey | varchar(64) | Related Plugin |  | YES | Plugin API exclusive, Related field [plugins->fskey](../plugins/plugins.md) |
 | app_id | char(8) | App ID |  | NO | Auto-generated |
 | app_secret | char(32) | Client Secret |  | NO | Auto-generated, encrypted storage in the database |
 | is_read_only | tinyint *UNSIGNED* | Is read-only | 0 | NO | 0.No / 1.Yes |

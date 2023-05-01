@@ -33,14 +33,14 @@ When the plugin is installed and published, static resources are distributed to 
 
 | Plugin Folder | Publish to the site resource directory |
 | --- | --- |
-| /extensions/plugins/`{unikey}`/Resources/assets/ | /public/assets/plugins/`{unikey}`/ |
+| /extensions/plugins/`{fskey}`/Resources/assets/ | /public/assets/plugins/`{fskey}`/ |
 | Other File | No Publish |
 
 ## plugin.json Config File
 
 ```json
 {
-    "unikey": "DemoPlugin", // The only key, upper camel case
+    "fskey": "DemoPlugin", // The only key, upper camel case
     "type": 1, // Type: 1.Extension plugin 2.Control Panel 3.Website Engine 4.Theme Template
     "name": "Demo Plugin",
     "description": "This is the demo plugin",

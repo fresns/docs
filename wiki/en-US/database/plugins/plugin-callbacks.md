@@ -3,14 +3,14 @@
 | Column Name | Type | Comment | Default | Null | Remark |
 | --- | --- | --- | --- | --- | --- |
 | id | bigint *UNSIGNED* | Primary Key ID |  | NO | Auto Increment |
-| plugin_unikey | varchar(64) | Generate data for plugin unikey |  | NO | Related field [plugins->unikey](../plugins/plugins.md) |
+| plugin_fskey | varchar(64) | Generate data for plugin fskey |  | NO | Related field [plugins->fskey](../plugins/plugins.md) |
 | account_id | bigint *UNSIGNED* | Account that generated the data |  | YES | Related field [accounts->id](../accounts/accounts.md) |
 | user_id | bigint *UNSIGNED* | User that generated the data |  | YES | Related field [users->id](../users/users.md) |
 | ulid | varchar(64) | Callback query key |  | NO | **Unique value**<br>Universally Unique Lexicographically Sortable Identifier<br>Example: 01GQBMS8BBTCKTT7B0T3EER8XR |
 | type | smallint *UNSIGNED* | Type | 1 | NO | See description below, support multiple types separated by commas |
 | content | json | Return parameter content |  | NO | See description below, supports storing multiple types together |
 | is_use | tinyint *UNSIGNED* | Status | 0 | NO | 0. Not called<br>1. Called (used) |
-| use_plugin_unikey | varchar(64) | Data use plugin unikey |  | YES | Related field [plugins->unikey](../plugins/plugins.md) |
+| use_plugin_fskey | varchar(64) | Data use plugin fskey |  | YES | Related field [plugins->fskey](../plugins/plugins.md) |
 | created_at | timestamp | Create Time | CURRENT_TIMESTAMP | NO |  |
 | updated_at | timestamp | Update Time |  | YES |  |
 | deleted_at | timestamp | Delete Time |  | YES |  |

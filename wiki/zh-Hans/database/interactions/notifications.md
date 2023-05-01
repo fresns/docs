@@ -8,8 +8,8 @@
 | content | text | 通知内容 |  | YES | 涉及到帖子或评论时，可存储摘要内容 |
 | is_markdown | tinyint *UNSIGNED* | 内容是否为 MD 格式 | 0 | NO | 0.否 / 1.是 |
 | is_multilingual | tinyint *UNSIGNED* | 内容是否为多语言 | 0 | NO | 0.否 / 1.是 |
-| is_access_plugin | varchar(64) | 是否访问插件页 | 0 | NO | 将输出 plugin_unikey 的访问地址 |
-| plugin_unikey | varchar(64) | 关联插件名称 |  | YES | 关联字段 [plugins->unikey](../plugins/plugins.md)<br>由哪个插件生成的通知消息 |
+| is_access_plugin | varchar(64) | 是否访问插件页 | 0 | NO | 将输出 plugin_fskey 的访问地址 |
+| plugin_fskey | varchar(64) | 关联插件名称 |  | YES | 关联字段 [plugins->fskey](../plugins/plugins.md)<br>由哪个插件生成的通知消息 |
 | action_user_id | bigint *UNSIGNED* | 触发的用户 ID |  | YES | 关联字段 [users->id](../users/users.md) |
 | action_type | smallint *UNSIGNED* | 触发行为类型 |  | YES | 1.点赞 2.点踩 3.关注 4.屏蔽 5.发表 6.编辑 7.删除 8.置顶 9.设精 10.管理 |
 | action_object | tinyint *UNSIGNED* | 触发目标 |  | YES | 1.用户 / 2.小组 / 3.话题 / 4.帖子 / 5.评论 |

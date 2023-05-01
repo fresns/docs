@@ -14,7 +14,7 @@ FileHelper::fresnsFileStorageConfigByType($type);
 ::: details Return Example
 ```json
 {
-    "service": "", // plugin unikey
+    "service": "", // plugin fskey
     "secretId": "",
     "secretKey": "",
     "bucketName": "",

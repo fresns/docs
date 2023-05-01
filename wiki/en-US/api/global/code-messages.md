@@ -17,8 +17,8 @@
 
 | Parameter Name | Type | Required | Description |
 | --- | --- | --- | --- |
-| unikey | String | *optional* | Status code Unikey, leave empty to use the default Fresns |
-| isAll | Boolean | *optional* | Whether to output all `unikey` results |
+| fskey | String | *optional* | Status code fskey, leave empty to use the default Fresns |
+| isAll | Boolean | *optional* | Whether to output all `fskey` results |
 | codes | String | *optional* | [Status code number](../error-code.md), separated by English commas for multiple codes |
 
 **Request Description**

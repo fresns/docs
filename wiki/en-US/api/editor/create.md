@@ -25,7 +25,7 @@
 | --- | --- | --- | --- | --- |
 | createType | Number | **required** | Creation type 1. Quick create 2. Editor create |  |
 | postQuotePid | String | *optional* | Quoted post PID<br>Not required | *Post-specific* |
-| editorUnikey | String | *optional* | Is it a plugin editor, empty means no |  |
+| editorFskey | String | *optional* | Is it a plugin editor, empty means no |  |
 | postGid | String | *optional* | Group, default selected group | *Post-specific* |
 | postTitle | String | *optional* | Title, default with title | *Post-specific* |
 | postIsComment | Boolean | *optional* | Default configuration: whether the post can be commented | *Post-specific* |

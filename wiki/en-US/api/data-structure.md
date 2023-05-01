@@ -301,7 +301,7 @@ To reduce documentation effort and ensure consistency of public data, the same s
     "contentMeta": {
         "post": [
             {
-                "unikey": "String / Plugin Unikey",
+                "fskey": "String / Plugin Fskey",
                 "name": "String / Name",
                 "description": "String / Description",
                 "code": "String / Code",
@@ -325,7 +325,7 @@ To reduce documentation effort and ensure consistency of public data, the same s
         ],
         "comment": [
             {
-                "unikey": "String / Plugin Unikey",
+                "fskey": "String / Plugin Fskey",
                 "name": "String / Name",
                 "description": "String / Description",
                 "code": "String / Code",
@@ -789,7 +789,7 @@ To reduce documentation effort and ensure consistency of public data, the same s
     "pid": "String / Parent post ID",
     "quotedPid": "String / Quoted post ID",
     "isPluginEditor": "Boolean / Is plugin editor",
-    "editorUnikey": "String / Editor plugin Unikey",
+    "editorFskey": "String / Editor plugin Fskey",
     "editorUrl": "String / Editor access URL",
     "group": {
         // Belongs to group
@@ -826,7 +826,7 @@ To reduce documentation effort and ensure consistency of public data, the same s
         "isAllow": "Boolean / Is permission configuration allowed",
         "percentage": "Number / Pre-read percentage when unauthorized",
         "pluginUrl": "String / Configuration plugin URL",
-        "pluginUnikey": "String / Configuration plugin unikey",
+        "pluginFskey": "String / Configuration plugin fskey",
         "defaultLangBtnName": "String / Button text when unauthorized",
         "btnName": [
             // Button text when unauthorized, multilingual configuration
@@ -859,7 +859,7 @@ To reduce documentation effort and ensure consistency of public data, the same s
             // User list name, multilingual configuration
         ],
         "pluginUrl": "String / Configuration plugin URL",
-        "pluginUnikey": "String / Configuration plugin unikey",
+        "pluginFskey": "String / Configuration plugin fskey",
     },
     "commentBtnJson": {
         "isCommentBtn": "Boolean / Is there a button for comments",
@@ -869,7 +869,7 @@ To reduce documentation effort and ensure consistency of public data, the same s
         ],
         "btnStyle": "String / Button style",
         "pluginUrl": "String / Configuration plugin URL",
-        "pluginUnikey": "String / Configuration plugin unikey",
+        "pluginFskey": "String / Configuration plugin fskey",
     },
     "state": "Number / Status",
     "reason": "String / Rejection reason during review",
@@ -919,7 +919,7 @@ To reduce documentation effort and ensure consistency of public data, the same s
     "pid": "String / Commented post ID",
     "parentCid": "String / Replied comment ID",
     "isPluginEditor": "Boolean / Is plugin editor",
-    "editorUnikey": "String / Editor plugin Unikey",
+    "editorFskey": "String / Editor plugin Fskey",
     "editorUrl": "String / Editor access URL",
     "content": "String / Post content or brief",
     "contentLength": "Number / Total content length",
@@ -1119,7 +1119,7 @@ To reduce documentation effort and ensure consistency of public data, the same s
 
 ```json
 {
-    "unikey": "String / Plugin Unikey",
+    "fskey": "String / Plugin Fskey",
     "name": "String / Extension name",
     "icon": "String / Extension icon URL",
     "url": "String / Extension access URL",

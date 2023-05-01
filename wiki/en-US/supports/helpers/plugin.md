@@ -5,29 +5,29 @@
 ## Get Plugin Host
 
 ```php
-PluginHelper::fresnsPluginHostByUnikey($unikey);
+PluginHelper::fresnsPluginHostByFskey($fskey);
 ```
 | Parameter Name | Type | Required | Description |
 | --- | --- | --- | --- |
-| unikey | String | **required** | Plugin unikey |
+| fskey | String | **required** | Plugin fskey |
 
 ## Get Plugin URL
 
 ```php
-PluginHelper::fresnsPluginUrlByUnikey($unikey);
+PluginHelper::fresnsPluginUrlByFskey($fskey);
 ```
 | Parameter Name | Type | Required | Description |
 | --- | --- | --- | --- |
-| unikey | String | **required** | Plugin unikey |
+| fskey | String | **required** | Plugin fskey |
 
 ## Get Plugin URL with Replaced Custom Parameter
 
 ```php
-PluginHelper::fresnsPluginUsageUrl($unikey, $pluginUseId);
+PluginHelper::fresnsPluginUsageUrl($fskey, $pluginUseId);
 ```
 | Parameter Name | Type | Required | Description |
 | --- | --- | --- | --- |
-| unikey | String | **required** | Plugin unikey |
+| fskey | String | **required** | Plugin fskey |
 | pluginUseId | Number | **required** | [plugin_usages->id](../../database/plugins/plugin-usages.md) |
 
 *The plugin address `{parameter}` variable has been replaced with the `plugin_usages->parameter` field value.*
@@ -35,17 +35,17 @@ PluginHelper::fresnsPluginUsageUrl($unikey, $pluginUseId);
 ## Get Plugin Version
 
 ```php
-PluginHelper::fresnsPluginVersionByUnikey($unikey);
+PluginHelper::fresnsPluginVersionByFskey($fskey);
 ```
 | Parameter Name | Type | Required | Description |
 | --- | --- | --- | --- |
-| unikey | String | **required** | Plugin unikey |
+| fskey | String | **required** | Plugin fskey |
 
 ## Get Plugin Upgrade Code
 
 ```php
-PluginHelper::fresnsPluginUpgradeCodeByUnikey($unikey);
+PluginHelper::fresnsPluginUpgradeCodeByFskey($fskey);
 ```
 | Parameter Name | Type | Required | Description |
 | --- | --- | --- | --- |
-| unikey | String | **required** | Plugin unikey |
+| fskey | String | **required** | Plugin fskey |

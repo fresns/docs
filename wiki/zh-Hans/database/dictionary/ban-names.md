@@ -9,7 +9,7 @@
 | 表名 | 字段名 |
 | --- | --- |
 | users | username |
-| plugins | unikey |
+| plugins | fskey |
 
 ```json
 [

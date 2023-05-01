@@ -23,7 +23,7 @@
 
 | Parameter Name | Type | Required | Description |
 | --- | --- | --- | --- |
-| unikey | String | *optional* | Leave empty to output all, output specified plugin extension information ([archives](../../database/extends/archives.md)) if a value is provided |
+| fskey | String | *optional* | Leave empty to output all, output specified plugin extension information ([archives](../../database/extends/archives.md)) if a value is provided |
 
 ## Return
 
@@ -33,7 +33,7 @@
     "message": "ok",
     "data": [
         {
-            "unikey": "String / Plugin Unikey",
+            "fskey": "String / Plugin Fskey",
             "name": "String / Name",
             "description": "String / Description",
             "code": "String / Code",

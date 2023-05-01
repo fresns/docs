@@ -6,7 +6,7 @@
 | account_id | bigint *UNSIGNED* | Account ID |  | NO | The account this transaction record belongs to, Related field [accounts->id](accounts.md) |
 | user_id | bigint *UNSIGNED* | User ID |  | YES | The user this transaction record belongs to, Related field [users->id](../users/users.md) |
 | type | tinyint *UNSIGNED* | Transaction Type | 1 | NO | 1.Income (Recharge) / 2.Income (Unfreeze) / 3.Income (Transaction) <br> 4.Expense (Withdrawal) / 5.Expense (Freeze) / 6.Expense (Transaction) |
-| plugin_unikey | varchar(64) | Related Plugin |  | NO | Related field [plugins->unikey](../plugins/plugins.md)<br>Which plugin triggered the transaction |
+| plugin_fskey | varchar(64) | Related Plugin |  | NO | Related field [plugins->fskey](../plugins/plugins.md)<br>Which plugin triggered the transaction |
 | transaction_id | bigint *UNSIGNED* | Transaction ID |  | YES | Plugin record value, if the plugin has separate data, this ID can be used to query the content recorded in the plugin |
 | transaction_code | varchar(128) | Transaction Code |  | YES | Plugin record value, if the plugin has separate data, this Code can be used to query the content recorded in the plugin |
 | amount_total | decimal(10,2) | Transaction Total |  | NO | The sum of transaction amount and service fee, actual transaction amount from the wallet<br>`transaction_amount` + `system_fee` |

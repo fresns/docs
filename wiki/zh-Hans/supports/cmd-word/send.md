@@ -47,7 +47,7 @@
 | isMarkdown | Boolean | NO | 内容是否为 MD 格式 |
 | isMultilingual | Boolean | NO | 内容是否为多语言 |
 | isAccessPlugin | Boolean | NO | 是否访问插件页 |
-| pluginUnikey | String | NO | 关联插件 |
+| pluginFskey | String | NO | 关联插件 |
 | actionUid | Number | NO | 触发者 |
 | actionType | Number | NO | 触发行为类型 1.点赞 2.点踩 3.关注 4.屏蔽 5.发表 6.编辑 7.删除 8.置顶 9.设精 10.管理 |
 | actionObject | Number | NO | 触发目标 1.用户 2.小组 3.话题 4.帖子 5.评论 6.帖子日志 7.评论日志 8.扩展内容 |

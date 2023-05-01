@@ -59,10 +59,10 @@ fresns_content_review_words
 fresns_user_ban_words
 fresns_conversation_ban_words
 fresns_role_{$id}_{$langTag}
-fresns_code_messages_{$unikey}_{$langTag}
+fresns_code_messages_{$fskey}_{$langTag}
 fresns_api_config_models
 fresns_api_configs_{$langTag}
-fresns_api_archives_{$type}_{$unikey}_{$langTag}
+fresns_api_archives_{$type}_{$fskey}_{$langTag}
 fresns_api_sticker_tree_{$langTag}
 ```
 
@@ -137,7 +137,7 @@ fresns_token_user_{$userId}_{$token}
 fresns_user_{$userId}_main_role_{$langTag}
 fresns_user_{$userId}_roles_{$langTag}
 fresns_publish_{$type}_config_{$userId}_{$langTag}
-fresns_plugin_{$unikey}_badge_{$userId}
+fresns_plugin_{$fskey}_badge_{$userId}
 fresns_interaction_status_{$markType}_{$markId}_{$userId}
 fresns_follow_{$type}_array_by_{$userId}
 fresns_block_{$type}_array_by_{$userId}
@@ -227,9 +227,9 @@ fresns_manage_post_extends_by_group_admin_{$langTag}
 fresns_manage_comment_extends_by_group_admin_{$langTag}
 fresns_group_{$groupId}_extends_by_group_admin_{$langTag}        // +tag: fresnsGroups
 
-fresns_plugin_url_{$unikey}                                      // +tag: fresnsConfigs
-fresns_plugin_host_{$unikey}                                     // +tag: fresnsConfigs
-fresns_plugin_version_{$unikey}                                  // +tag: fresnsConfigs
+fresns_plugin_url_{$fskey}                                      // +tag: fresnsConfigs
+fresns_plugin_host_{$fskey}                                     // +tag: fresnsConfigs
+fresns_plugin_version_{$fskey}                                  // +tag: fresnsConfigs
 ```
 
 ## fresnsPlugins
@@ -248,7 +248,7 @@ fresns_web_api_key                                    // tag: fresnsWebConfigs
 fresns_web_key_{$keyId}                               // tag: fresnsWebConfigs
 fresns_web_api_config_all_{$langTag}                  // tag: fresnsWebConfigs
 fresns_web_db_config_{$itemKey}_{$langTag}            // tag: fresnsWebConfigs
-fresns_web_code_message_all_{$unikey}_{$langTag}      // tag: fresnsWebConfigs
+fresns_web_code_message_all_{$fskey}_{$langTag}      // tag: fresnsWebConfigs
 fresns_web_post_content_types_{$langTag}              // tag: fresnsWebConfigs
 fresns_web_comment_content_types_{$langTag}           // tag: fresnsWebConfigs
 fresns_web_stickers_{$langTag}                        // tag: fresnsWebConfigs

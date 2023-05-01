@@ -71,7 +71,7 @@
 | Video | 输出带视频的帖子 |
 | Audio | 输出带音频的帖子 |
 | Document | 输出带文档的帖子 |
-| {AbcName} | 输出含有插件 unikey 为 AbcName 扩展内容的帖子 |
+| {AbcName} | 输出含有插件 fskey 为 AbcName 扩展内容的帖子 |
 
 - 内容类型列表参考 [/api/v2/global/{type}/content-types](../global/content-types.md)
 

@@ -36,11 +36,11 @@
 [
     {
         "code": "Connect platform number",
-        "unikey": "Plugin Unikey"
+        "fskey": "Plugin Fskey"
     },
     {
         "code": "2",
-        "unikey": "Placeholder"
+        "fskey": "Placeholder"
     }
 ]
 ```

@@ -17,7 +17,7 @@
 
 | 参数名 | 类型 | 是否必传 | 说明 |
 | --- | --- | --- | --- |
-| unikey | String | YES | 数据使用者 unikey |
+| fskey | String | YES | 数据使用者 fskey |
 | ulid | String | YES | 回调查询键 |
 
 ## 返回结果
@@ -38,5 +38,5 @@
     - 凭 ulid 传参查询数据表记录
     - 记录创建时间 created_at 必须为 30 分钟内（相当于 30 分钟内未被使用自动过期）
     - 记录状态 is_use 值必须为 0，表示未被使用过（相当于记录只能被输出一次）
-- 返回数据后，将 Query 传参的 unikey 参数填入 use_plugin_unikey 字段，并更新 is_use 字段为 1 值。
+- 返回数据后，将 Query 传参的 fskey 参数填入 use_plugin_fskey 字段，并更新 is_use 字段为 1 值。
 :::

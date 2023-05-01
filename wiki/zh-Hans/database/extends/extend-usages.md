@@ -8,7 +8,7 @@
 | extend_id | bigint *UNSIGNED* | 扩展内容 ID |  | NO | 关联字段 extends->id |
 | can_delete | tinyint *UNSIGNED* | 是否有权删除 | 1 | NO | 0.否 / 1.是<br>编辑器：用户是否有权删除 |
 | rating | smallint *UNSIGNED* | 排列顺序 | 9 | NO | 升序排序 |
-| plugin_unikey | varchar(64) | 关联插件 |  | NO | 关联字段 extends->plugin_unikey |
+| plugin_fskey | varchar(64) | 关联插件 |  | NO | 关联字段 extends->plugin_fskey |
 | created_at | timestamp | 创建时间 | CURRENT_TIMESTAMP | NO |  |
 | updated_at | timestamp | 更新时间 |  | YES |  |
 | deleted_at | timestamp | 删除时间 |  | YES |  |

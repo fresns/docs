@@ -17,7 +17,7 @@
 | uid | Number | **optional** | User parameter (User main table `users->uid` field) |
 | uidToken | String | **optional** | User identity credential |
 | verifyType | Number | *optional* | Verify [session_keys->type](../../database/systems/session-keys.md), default to 1 if empty |
-| verifyUnikey | String | *optional* | Dedicated for type 3, verify associated plugin |
+| verifyFskey | String | *optional* | Dedicated for type 3, verify associated plugin |
 
 ## verifyUrlAuthorization
 
@@ -66,7 +66,7 @@
 | version | String | **required** | Semantic version number, e.g., `2.0.0` |
 | appId | String | *optional* | Secret App ID |
 | langTag | String | *optional* | Language Tag |
-| pluginUnikey | String | *optional* | Plugin Unikey |
+| fskey | String | *optional* | Plugin Fskey |
 | aid | String | *optional* | Account |
 | uid | Number | *optional* | User |
 | objectName | String | **required** | Function model name or interface path<br>For example, model name App\Models\Post<br>For example, interface path: /api/v2/account/login |

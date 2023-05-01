@@ -20,16 +20,16 @@
 
 `file` 类型，如果键值数字，则代表是文件 ID，凭 ID 输出文件 URL，除此之外表示为文件 URL，原样输出。
 
-`plugin` 类型代表是插件 unikey 值，凭 unikey 输出插件 URL。
+`plugin` 类型代表是插件 fskey 值，凭 fskey 输出插件 URL。
 
-`plugins` 类型代表是多选插件，以 Array 格式存储，将 unikey 替换为 url 输出插件 URL。
+`plugins` 类型代表是多选插件，以 Array 格式存储，将 fskey 替换为 url 输出插件 URL。
 
 ```json
 // plugins 格式
 [
     {
         "code": "code",
-        "unikey": "unikey"
+        "fskey": "fskey"
     }
 ]
 ```

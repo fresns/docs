@@ -95,12 +95,12 @@ ConfigUtility::changeFresnsLanguageItems($fresnsLangItems);
 ## 获取状态码多语言描述
 
 ```php
-ConfigUtility::getCodeMessage($code, $unikey, $langTag);
+ConfigUtility::getCodeMessage($code, $fskey, $langTag);
 ```
 | 参数名 | 类型 | 是否必传 | 说明 |
 | --- | --- | --- | --- |
 | code | Number | YES | 状态码 |
-| unikey | String | NO | 关联插件 unikey，留空则为 Fresns |
+| fskey | String | NO | 关联插件 fskey，留空则为 Fresns |
 | langTag | String | NO | 语言标签，可不传，不传则使用默认语言 |
 
 ## 获取账号或用户登录错误次数

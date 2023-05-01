@@ -10,7 +10,7 @@
 | table_name | varchar(64) | Source Table Name |  | NO | Which table |
 | table_column | varchar(64) | Source Column Name |  | NO | Which column is the file value |
 | table_id | bigint *UNSIGNED* | Source Table Primary Key ID |  | YES | Which data record's file, the `Primary Key ID` of that record |
-| table_key | varchar(64) | Source Table Identifier |  | YES | If the data record is not based on `Primary Key ID`, fill in the identifier of the data record<br>For example: The configuration table is not based on `Primary Key ID`, so the key name is used as the identifier.<br>Another example is the plugin table identifier, Related field [plugins->unikey](../plugins/plugins.md) |
+| table_key | varchar(64) | Source Table Identifier |  | YES | If the data record is not based on `Primary Key ID`, fill in the identifier of the data record<br>For example: The configuration table is not based on `Primary Key ID`, so the key name is used as the identifier.<br>Another example is the plugin table identifier, Related field [plugins->fskey](../plugins/plugins.md) |
 | rating | smallint *UNSIGNED* | Sorting |  | YES |  |
 | account_id | bigint *UNSIGNED* | Account ID |  | YES | Related field [accounts->id](../accounts/accounts.md) |
 | user_id | bigint *UNSIGNED* | User ID |  | YES | Related field [users->id](../users/users.md) |

@@ -5,7 +5,7 @@
 | id | bigint *UNSIGNED* | 主键 ID | | NO | 自动递增 |
 | eid | varchar(32) | 对外公开 ID |  | NO | **唯一值** |
 | user_id | bigint *UNSIGNED* | 创建者 ID |  | NO | 关联字段 [users->id](../users/users.md) |
-| plugin_unikey | varchar(64) | 创建者插件 |  | NO | 关联字段 [plugins->unikey](../plugins/plugins.md) |
+| plugin_fskey | varchar(64) | 创建者插件 |  | NO | 关联字段 [plugins->fskey](../plugins/plugins.md) |
 | type | tinyint *UNSIGNED* | 类型 | 1 |  NO| 1.文本框 / 2.信息框 / 3.交互框 |
 | text_content | text | 文本框专用-内容 |  | YES | 仅 frame 为“文本框”扩展类型的时候有效，支持 Morkdown 格式 |
 | text_is_markdown | tinyint *UNSIGNED* | 文本框专用-内容是否为 MD 格式 | 0 | NO | 0.否 / 1.是 |

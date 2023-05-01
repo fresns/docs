@@ -5,7 +5,7 @@
 ## 文件目录结构
 
 ```php
-ThemeDemo/          // 主题模板文件夹（以 uniKey 命名）
+ThemeDemo/          // 主题模板文件夹（以 fskey 命名）
 ├── assets/             // 主题特有的资源文件
 │   ├── fresns.png          // 主题封面图（正方形），必须存在且位置固定
 │   ├── js/
@@ -40,7 +40,7 @@ Fresns 官方引擎的主题规范详见[路径结构](structure.md)。
 
 | 主题文件夹 | 分发到站点资源目录 |
 | --- | --- |
-| /extensions/themes/`{unikey}`/assets/ | /public/assets/themes/`{unikey}`/ |
+| /extensions/themes/`{fskey}`/assets/ | /public/assets/themes/`{fskey}`/ |
 | 其余文件 | 不分发 |
 
 
@@ -50,7 +50,7 @@ Fresns 官方引擎的主题规范详见[路径结构](structure.md)。
 
 ```json
 {
-    "unikey": "ThemeDemo",
+    "fskey": "ThemeDemo",
     "name": "演示主题",
     "description": "这是演示主题",
     "author": "唐杰",

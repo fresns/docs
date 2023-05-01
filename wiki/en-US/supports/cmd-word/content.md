@@ -10,7 +10,7 @@
 | uid | Number | **required** | User UID |  |
 | type | Number | **required** | `1` Post | `2` Comment |
 | createType | Number | **required** | Creation Type 1. Quick Create 2. Editor Create |  |
-| editorUnikey | String | *optional* | Is it a plugin editor? Empty means no |  |
+| editorFskey | String | *optional* | Is it a plugin editor? Empty means no |  |
 | postGid | String | *optional* | Group, default selected group | *Post specific* |
 | postTitle | String | *optional* | Title, default with title | *Post specific* |
 | postIsComment | Boolean | *optional* | Default configuration: Can the post be commented on? | *Post specific* |
@@ -243,7 +243,7 @@ $wordBody = [
 | pid | String | **required** |  |
 | type | String | **required** | `add` or `remove` |
 | uid | Number | **required** | Specify user |
-| pluginUnikey | String | **required** | Plugin Unikey |
+| fskey | String | **required** | Plugin Fskey |
 | moreJson | Json | *optional* | Additional record information (Json) |
 
 ## setCommentExtendButton

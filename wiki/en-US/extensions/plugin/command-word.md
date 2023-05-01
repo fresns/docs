@@ -7,7 +7,7 @@
 | Name | Description |
 | --- | --- |
 | `\FresnsCmdWord` | Command Word Facades |
-| `FresnsEmail` | Requesting Object `unikey`, Leaving blank or filling in `Fresns` means that the main program handles the request |
+| `FresnsEmail` | Requesting Object `fskey`, Leaving blank or filling in `Fresns` means that the main program handles the request |
 | `sendEmail` | Command Word([Word List](../../supports/cmd-word/basic.md)) |
 | `$wordBody` | Parameter list of command word parameters |
 

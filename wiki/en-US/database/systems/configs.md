@@ -20,16 +20,16 @@ Based on **JSON** data type, extended with three types: `file`, `plugin`, and `p
 
 `file` type: If the key value is a number, it represents the file ID, and the file URL is output with the ID. Otherwise, it represents the file URL and is output as is.
 
-`plugin` type represents the plugin unikey value, and the plugin URL is output with the unikey.
+`plugin` type represents the plugin fskey value, and the plugin URL is output with the fskey.
 
-`plugins` type represents multiple selected plugins, stored in Array format, replacing the unikey with the URL to output the plugin URL.
+`plugins` type represents multiple selected plugins, stored in Array format, replacing the fskey with the URL to output the plugin URL.
 
 ```json
 // plugins format
 [
     {
         "code": "code",
-        "unikey": "unikey"
+        "fskey": "fskey"
     }
 ]
 ```

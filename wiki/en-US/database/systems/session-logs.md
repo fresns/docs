@@ -3,7 +3,7 @@
 | Column Name | Type | Comment | Default | Null | Remark |
 | --- | --- | --- | --- | --- | --- |
 | id | bigint *UNSIGNED* | Primary Key ID |  | NO | Auto Increment |
-| plugin_unikey | varchar(64) | Associated Plugin Unikey | Fresns | NO | Related field [plugins->unikey](../plugins/plugins.md)<br>Fresns represents the main program logs |
+| plugin_fskey | varchar(64) | Associated Plugin Fskey | Fresns | NO | Related field [plugins->fskey](../plugins/plugins.md)<br>Fresns represents the main program logs |
 | type | tinyint *UNSIGNED* | Log Type | 1 | NO | See description below |
 | platform_id | tinyint *UNSIGNED* | Platform ID |  | NO | Related key name [configs->item_key = platforms](../dictionary/platforms.md) |
 | version | varchar(16) | Version Number |  | NO | Semantic versioning |

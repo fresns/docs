@@ -10,7 +10,7 @@
 | connect_username | varchar(128) | Connect Username |  | YES | Platform username, leave empty if not available |
 | connect_nickname | varchar(128) | Connect Nickname |  | NO | Platform nickname, use platform name if not available |
 | connect_avatar | varchar(255) | Connect Avatar |  | YES | Platform avatar URL, leave empty if not available |
-| plugin_unikey | varchar(64) | Plugin Unikey |  | NO | Related field [plugins->unikey](../plugins/plugins.md)<br>Created by which plugin  |
+| plugin_fskey | varchar(64) | Plugin Fskey |  | NO | Related field [plugins->fskey](../plugins/plugins.md)<br>Created by which plugin  |
 | is_enable | tinyint *UNSIGNED* | Is Valid | 1 | NO | 0.Invalid / 1.Valid |
 | more_json | json | Backup Field |  | YES |  |
 | created_at | timestamp | Create Time | CURRENT_TIMESTAMP | NO |  |

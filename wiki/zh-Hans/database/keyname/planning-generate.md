@@ -16,5 +16,5 @@
 
 | 栏目标题 | 组件类型 | 键名 | 说明 |
 | --- | --- | --- | --- |
-| 电脑端主题模板 | select | {unikey}_Desktop | 关联存储主题模板文件名 `item_tag = themes` |
-| 手机端主题模板 | select | {unikey}_Mobile | 关联存储主题模板文件名 `item_tag = themes` |
+| 电脑端主题模板 | select | {fskey}_Desktop | 关联存储主题模板文件名 `item_tag = themes` |
+| 手机端主题模板 | select | {fskey}_Mobile | 关联存储主题模板文件名 `item_tag = themes` |

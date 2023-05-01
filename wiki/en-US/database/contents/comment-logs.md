@@ -9,7 +9,7 @@
 | parent_comment_id | bigint *UNSIGNED* | Parent Comment ID |  | YES | Related field [comments->id](comments.md)<br>Empty means a top-level comment |
 | create_type | tinyint *UNSIGNED* | Creation type | 1 | NO | 1.Quick creation / 2.Editor creation / 3.Recovered from post |
 | is_plugin_editor | tinyint *UNSIGNED* | Is it edited only in the plugin? | 0 | NO | 0.No / 1.Yes |
-| editor_unikey | varchar(64) | Content Editing Plugin |  | YES | Related field [plugins->unikey](../plugins/plugins.md) |
+| editor_fskey | varchar(64) | Content Editing Plugin |  | YES | Related field [plugins->fskey](../plugins/plugins.md) |
 | content | longtext | Content |  | YES | Full content |
 | is_markdown | tinyint *UNSIGNED* | Is the content in MD format? | 0 | NO | 0.No / 1.Yes |
 | is_anonymous | tinyint *UNSIGNED* | Is it anonymous? | 0 | NO | 0.No / 1.Yes |

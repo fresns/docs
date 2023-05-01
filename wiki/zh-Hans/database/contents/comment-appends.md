@@ -5,7 +5,7 @@
 | id | bigint *UNSIGNED* | 主键 ID | | NO | 自动递增 |
 | comment_id | bigint *UNSIGNED* | 评论 ID |  | NO | 关联字段 comments->id |
 | is_plugin_editor | tinyint *UNSIGNED* | 是否仅在插件中编辑 | 0 | NO | 0.否 / 1.是 |
-| editor_unikey | varchar(64) | 内容编辑插件 |  | YES | 关联字段 [plugins->unikey](../plugins/plugins.md) |
+| editor_fskey | varchar(64) | 内容编辑插件 |  | YES | 关联字段 [plugins->fskey](../plugins/plugins.md) |
 | can_delete | tinyint *UNSIGNED* | 作者是否有权删除 | 1 | NO | 0.否 / 1.是 |
 | is_close_btn | tinyint *UNSIGNED* | 是否关闭评论扩展按钮 | 0 | NO | 0.否 / 1.是<br>对应字段 [post_appends->is_comment_btn](post-appends.md) |
 | is_change_btn | tinyint *UNSIGNED* | 是否更换评论扩展按钮 | 0 | NO | 0.否 / 1.是 |

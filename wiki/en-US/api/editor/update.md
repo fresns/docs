@@ -24,7 +24,7 @@
 
 | Parameter Name | Type | Required | **Post** Description | **Comment** Description |
 | --- | --- | --- | --- | --- |
-| editorUnikey | String | *optional* | Is it an editor plugin<br>Passing `Fresns` will reset to the default editor |  |
+| editorFskey | String | *optional* | Is it an editor plugin<br>Passing `Fresns` will reset to the default editor |  |
 | postQuotePid | String | *optional* | Quoted post PID<br>Not required | *Post-specific* |
 | postGid | String | *optional* | Group | *Post-specific* |
 | postTitle | String | *optional* | Title | *Post-specific* |
@@ -83,7 +83,7 @@
         "eid": "eid",
         "canDelete": true, // Can user delete
         "rating": 9, // Sort by
-        "pluginUnikey": null
+        "pluginFskey": null
     }
 ]
 ```
@@ -94,7 +94,7 @@
         "code": "code",
         "value": "value",
         "isPrivate": false, // Private or not (public display or not)
-        "pluginUnikey": null
+        "pluginFskey": null
     }
 ]
 ```

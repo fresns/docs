@@ -21,7 +21,7 @@
 | uid | Number | *optional* | Recharge party user |
 | amountTotal | Numeric | **required** | Total transaction amount 10.00<br>decimal type, a number with two decimal places |
 | systemFee | Numeric | **required** | System service fee 0.00<br>decimal type, a number with two decimal places |
-| transactionUnikey | String | **required** | Transaction processor |
+| transactionFskey | String | **required** | Transaction processor |
 | transactionId | Number | *optional* | Transaction record voucher ID |
 | transactionCode | String | *optional* | Transaction record voucher Code |
 | remark | String | *optional* | Transaction remark (string) |
@@ -39,7 +39,7 @@
 | password | String | *optional* | Withdrawal party user wallet password, leave blank if no password |
 | amountTotal | Numeric | **required** | Total transaction amount 10.00<br>decimal type, a number with two decimal places |
 | systemFee | Numeric | **required** | System service fee 0.00<br>decimal type, a number with two decimal places |
-| transactionUnikey | String | **required** | Transaction processor |
+| transactionFskey | String | **required** | Transaction processor |
 | transactionId | Number | *optional* | Transaction record voucher ID |
 | transactionCode | String | *optional* | Transaction record voucher Code |
 | remark | String | *optional* | Transaction remark (string) |
@@ -55,7 +55,7 @@
 | aid | String | **required** | Frozen account |
 | uid | Number | *optional* | Frozen user |
 | amountTotal | Numeric | **required** | Frozen amount 10.00<br>decimal type, a number with two decimal places |
-| transactionUnikey | String | **required** | Transaction processor |
+| transactionFskey | String | **required** | Transaction processor |
 | transactionId | Number | *optional* | Transaction record voucher ID |
 | transactionCode | String | *optional* | Transaction record voucher Code |
 | remark | String | *optional* | Transaction remark (string) |
@@ -71,7 +71,7 @@
 | aid | String | **required** | Unfreeze account |
 | uid | Number | *optional* | Unfreeze user |
 | amountTotal | Numeric | **required** | Unfreeze amount 10.00<br>decimal type, a number with two decimal places |
-| transactionUnikey | String | **required** | Transaction processor |
+| transactionFskey | String | **required** | Transaction processor |
 | transactionId | Number | *optional* | Transaction record voucher ID |
 | transactionCode | String | *optional* | Transaction record voucher Code |
 | remark | String | *optional* | Transaction remark (string) |
@@ -90,7 +90,7 @@
 | systemFee | Numeric | **required** | System service fee 0.00<br>decimal type, a number with two decimal places |
 | originAid | String | *optional* | Source account, deducted from which account wallet |
 | originUid | Number | *optional* | Source user |
-| transactionUnikey | String | **required** | Transaction processor |
+| transactionFskey | String | **required** | Transaction processor |
 | transactionId | Number | *optional* | Transaction record voucher ID |
 | transactionCode | String | *optional* | Transaction record voucher Code |
 | remark | String | *optional* | Transaction remark (string) |
@@ -110,7 +110,7 @@
 | systemFee | Numeric | **required** | System service fee 0.00<br>decimal type, a number with two decimal places |
 | originAid | String | *optional* | Destination account, transferred to which account wallet |
 | originUid | Number | *optional* | Destination user |
-| transactionUnikey | String | **required** | Transaction processor |
+| transactionFskey | String | **required** | Transaction processor |
 | transactionId | Number | *optional* | Transaction record voucher ID |
 | transactionCode | String | *optional* | Transaction record voucher Code |
 | remark | String | *optional* | Transaction remark (string) |

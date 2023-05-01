@@ -12,13 +12,13 @@
 [
     {
         "type": "订阅类型",
-        "unikey": "订阅者（插件）",
+        "fskey": "订阅者（插件）",
         "cmdWord": "订阅者的命令字",
         "subTableName": "订阅的表，类型 1 专用"
     },
     {
         "type": 1,
-        "unikey": "AqSms",
+        "fskey": "AqSms",
         "cmdWord": "sendSms",
         "subTableName": "users"
     }
@@ -29,12 +29,12 @@
 ```json
 [
     {
-        "unikey": "定时任务插件",
+        "fskey": "定时任务插件",
         "cmdWord": "定时任务插件命令字",
         "cronTableFormat": "定时任务执行周期（定时任务表达式）"
     },
     {
-        "unikey": "Fresns",
+        "fskey": "Fresns",
         "cmdWord": "checkDeleteAccount",
         "cronTableFormat": "* * /6 * *"
     }

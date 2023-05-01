@@ -59,7 +59,7 @@ Theme template settings file is responsible for defining the theme template's ow
 <!-- plugin select multiple: template -->
 <template id="pluginTemplate">
     <input type="text" class="form-control plugin-code" name="">
-    <select class="form-select plugin-unikey" name="">
+    <select class="form-select plugin-fskey" name="">
         <option selected disabled>Please select the plugin</option>
         <option value="">Null</option>
         <option value="1">One</option>

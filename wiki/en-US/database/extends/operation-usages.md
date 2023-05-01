@@ -6,7 +6,7 @@
 | usage_type | tinyint *UNSIGNED* | Type of target |  | NO |  |
 | usage_id | bigint *UNSIGNED* | Target primary key ID |  | NO |  |
 | operation_id | int *UNSIGNED* | Extended operation ID |  | NO | Related field `operations->id` |
-| plugin_unikey | varchar(64) | Related plugin |  | NO | Related field [plugins->unikey](../plugins/plugins.md)<br>Which plugin is related |
+| plugin_fskey | varchar(64) | Related plugin |  | NO | Related field [plugins->fskey](../plugins/plugins.md)<br>Which plugin is related |
 | created_at | timestamp | Create Time | CURRENT_TIMESTAMP | NO |  |
 | updated_at | timestamp | Update Time |  | YES |  |
 | deleted_at | timestamp | Delete Time |  | YES |  |

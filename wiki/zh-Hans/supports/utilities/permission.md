@@ -165,11 +165,11 @@ PermissionUtility::checkContentEditPerm($createDateTime, $editTimeConfig, $timez
 ## 判断扩展权限
 
 ```php
-PermissionUtility::checkExtendPerm($unikey, $scene, $groupId, $userId);
+PermissionUtility::checkExtendPerm($fskey, $scene, $groupId, $userId);
 ```
 | 参数名 | 类型 | 是否必传 | 说明 |
 | --- | --- | --- | --- |
-| unikey | String | YES | 插件 UniKey |
+| fskey | String | YES | 插件 Fskey |
 | scene | String | YES | [{scene} 入口场景](../../extensions/callback/variables.md#scene-入口场景) |
 | groupId | Number | NO | 小组 id `groups->id` |
 | userId | Number | NO | 用户 id `users->id` |

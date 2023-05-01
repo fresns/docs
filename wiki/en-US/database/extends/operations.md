@@ -13,7 +13,7 @@
 | image_active_file_id | bigint *UNSIGNED* | Active state image file ID |  | YES | Related field [files->id](../systems/files.md) |
 | image_active_file_url | varchar(255) | Active state image file URL |  | YES |  |
 | display_type | tinyint *UNSIGNED* | Display type | 1 | NO | 1. Basic / 2. Function (plugin) |
-| plugin_unikey | varchar(64) | Related plugin |  | NO | Related field [plugins->unikey](../plugins/plugins.md)<br>Created by which plugin, also the plugin page for functional purposes |
+| plugin_fskey | varchar(64) | Related plugin |  | NO | Related field [plugins->fskey](../plugins/plugins.md)<br>Created by which plugin, also the plugin page for functional purposes |
 | is_enable | tinyint *UNSIGNED* | Is Valid | 1 | NO | 0.Invalid / 1.Valid |
 | created_at | timestamp | Create Time | CURRENT_TIMESTAMP | NO |  |
 | updated_at | timestamp | Update Time |  | YES |  |
@@ -75,7 +75,7 @@ In addition to the above built-in definitions, plugins can define their own, and
                 "imageUrl": "operations->image_file_id or image_file_url",
                 "imageActiveUrl": "operations->image_active_file_id or image_active_file_url",
                 "displayType": "operations->display_type",
-                "pluginUrl": "operations->plugin_unikey",
+                "pluginUrl": "operations->plugin_fskey",
             }
         ],
         "buttonIcons": [
@@ -87,7 +87,7 @@ In addition to the above built-in definitions, plugins can define their own, and
                 "imageUrl": "operations->image_file_id or image_file_url",
                 "imageActiveUrl": "operations->image_active_file_id or image_active_file_url",
                 "displayType": "operations->display_type",
-                "pluginUrl": "operations->plugin_unikey",
+                "pluginUrl": "operations->plugin_fskey",
             }
         ],
         "diversifyImages": [
@@ -99,7 +99,7 @@ In addition to the above built-in definitions, plugins can define their own, and
                 "imageUrl": "operations->image_file_id or image_file_url",
                 "imageActiveUrl": "operations->image_active_file_id or image_active_file_url",
                 "displayType": "operations->display_type",
-                "pluginUrl": "operations->plugin_unikey",
+                "pluginUrl": "operations->plugin_fskey",
             }
         ],
         "tips": [
@@ -111,7 +111,7 @@ In addition to the above built-in definitions, plugins can define their own, and
                 "imageUrl": "operations->image_file_id or image_file_url",
                 "imageActiveUrl": "operations->image_active_file_id or image_active_file_url",
                 "displayType": "operations->display_type",
-                "pluginUrl": "operations->plugin_unikey",
+                "pluginUrl": "operations->plugin_fskey",
             }
         ],
     }

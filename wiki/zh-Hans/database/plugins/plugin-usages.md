@@ -4,7 +4,7 @@
 | --- | --- | --- | --- | --- | --- |
 | id | int *UNSIGNED* | 主键 ID |  | NO | 自动递赠 |
 | usage_type | tinyint *UNSIGNED* | 类型 |  | NO | 1.钱包充值<br>2.钱包提现<br>3.编辑器扩展<br>4.内容类型扩展<br>5.管理扩展<br>6.小组扩展<br>7.用户功能扩展<br>8.用户资料扩展 |
-| plugin_unikey | varchar(64) | 关联插件名称 |  | NO | 关联字段 [plugins->unikey](../plugins/plugins.md) |
+| plugin_fskey | varchar(64) | 关联插件名称 |  | NO | 关联字段 [plugins->fskey](../plugins/plugins.md) |
 | name | varchar(128) | 名称 |  | NO | **多语言** |
 | icon_file_id | bigint *UNSIGNED* | 图标文件 ID |  | YES | 关联字段 [files->id](../systems/files.md) |
 | icon_file_url | varchar(255) | 图标文件 URL |  | YES |  |
@@ -41,7 +41,7 @@
 ```json
 {
     "postByAll": {
-        "pluginUnikey": "为空代表默认，采用主程序 API 输出数据，有值则将接口请求转发给该插件",
+        "pluginFskey": "为空代表默认，采用主程序 API 输出数据，有值则将接口请求转发给该插件",
         "pluginRating": [
             {
                 "id": "接口 pluginRating 参数，转给插件，插件会知道数字代表什么",
@@ -61,31 +61,31 @@
         ]
     },
     "postByFollow": {
-        "pluginUnikey": "",
+        "pluginFskey": "",
         "pluginRating": [
             // 同上
         ]
     },
     "postByNearby": {
-        "pluginUnikey": "",
+        "pluginFskey": "",
         "pluginRating": [
             // 同上
         ]
     },
     "commentByAll": {
-        "pluginUnikey": "",
+        "pluginFskey": "",
         "pluginRating": [
             // 同上
         ]
     },
     "commentByFollow": {
-        "pluginUnikey": "",
+        "pluginFskey": "",
         "pluginRating": [
             // 同上
         ]
     },
     "commentByNearby": {
-        "pluginUnikey": "",
+        "pluginFskey": "",
         "pluginRating": [
             // 同上
         ]

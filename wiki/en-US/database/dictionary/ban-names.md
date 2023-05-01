@@ -9,7 +9,7 @@
 | Table | Column |
 | --- | --- |
 | users | username |
-| plugins | unikey |
+| plugins | fskey |
 
 ```json
 [

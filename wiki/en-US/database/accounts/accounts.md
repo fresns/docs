@@ -12,7 +12,7 @@
 | password | char(64) | Password |  | YES | Encrypted storage |
 | last_login_at | timestamp | Last Login Time |  | NO |  |
 | is_verify | tinyint *UNSIGNED* | Real Name Verification Status | 0 | NO | 0.Unverified / 1.Verified |
-| verify_plugin_unikey | varchar(64) | Real Name Auth Plugin Unikey |  | YES | Which plugin handled the authentication, Related field [plugins->unikey](../plugins/plugins.md) |
+| verify_plugin_fskey | varchar(64) | Real Name Auth Plugin Fskey |  | YES | Which plugin handled the authentication, Related field [plugins->fskey](../plugins/plugins.md) |
 | verify_real_name | varchar(128) | Certificate Name |  | YES |  |
 | verify_gender | tinyint *UNSIGNED* | Certificate Gender | 1 | NO | 1.Unknown / 2.Male / 3.Female |
 | verify_cert_type | varchar(32) | Certificate Type | idcard | YES | `idcard`, `passport`, `driving`, `business` |

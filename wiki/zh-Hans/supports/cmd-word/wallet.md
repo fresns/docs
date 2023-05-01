@@ -21,7 +21,7 @@
 | uid | Number | NO | 充值方用户 |
 | amountTotal | Numeric | YES | 交易总金额 10.00<br>decimal 类型，小数点两位的数字 |
 | systemFee | Numeric | YES | 系统服务费 0.00<br>decimal 类型，小数点两位的数字 |
-| transactionUnikey | String | YES | 交易处理者 |
+| transactionFskey | String | YES | 交易处理者 |
 | transactionId | Number | NO | 交易记录凭证 ID |
 | transactionCode | String | NO | 交易记录凭证 Code |
 | remark | String | NO | 交易备注（字符串） |
@@ -39,7 +39,7 @@
 | password | String | NO | 提现方用户钱包密码，没有密码则留空 |
 | amountTotal | Numeric | YES | 交易总金额 10.00<br>decimal 类型，小数点两位的数字 |
 | systemFee | Numeric | YES | 系统服务费 0.00<br>decimal 类型，小数点两位的数字 |
-| transactionUnikey | String | YES | 交易处理者 |
+| transactionFskey | String | YES | 交易处理者 |
 | transactionId | Number | NO | 交易记录凭证 ID |
 | transactionCode | String | NO | 交易记录凭证 Code |
 | remark | String | NO | 交易备注（字符串） |
@@ -55,7 +55,7 @@
 | aid | String | YES | 冻结账号 |
 | uid | Number | NO | 冻结用户 |
 | amountTotal | Numeric | YES | 冻结金额 10.00<br>decimal 类型，小数点两位的数字 |
-| transactionUnikey | String | YES | 交易处理者 |
+| transactionFskey | String | YES | 交易处理者 |
 | transactionId | Number | NO | 交易记录凭证 ID |
 | transactionCode | String | NO | 交易记录凭证 Code |
 | remark | String | NO | 交易备注（字符串） |
@@ -71,7 +71,7 @@
 | aid | String | YES | 解冻账号 |
 | uid | Number | NO | 解冻用户 |
 | amountTotal | Numeric | YES | 解冻金额 10.00<br>decimal 类型，小数点两位的数字 |
-| transactionUnikey | String | YES | 交易处理者 |
+| transactionFskey | String | YES | 交易处理者 |
 | transactionId | Number | NO | 交易记录凭证 ID |
 | transactionCode | String | NO | 交易记录凭证 Code |
 | remark | String | NO | 交易备注（字符串） |
@@ -90,7 +90,7 @@
 | systemFee | Numeric | YES | 系统服务费 0.00<br>decimal 类型，小数点两位的数字 |
 | originAid | String | NO | 来源账号，从哪个账号的钱包中扣款 |
 | originUid | Number | NO | 来源用户 |
-| transactionUnikey | String | YES | 交易处理者 |
+| transactionFskey | String | YES | 交易处理者 |
 | transactionId | Number | NO | 交易记录凭证 ID |
 | transactionCode | String | NO | 交易记录凭证 Code |
 | remark | String | NO | 交易备注（字符串） |
@@ -110,7 +110,7 @@
 | systemFee | Numeric | YES | 系统服务费 0.00<br>decimal 类型，小数点两位的数字 |
 | originAid | String | NO | 去向账号，转入哪个账号的钱包中 |
 | originUid | Number | NO | 去向用户 |
-| transactionUnikey | String | YES | 交易处理者 |
+| transactionFskey | String | YES | 交易处理者 |
 | transactionId | Number | NO | 交易记录凭证 ID |
 | transactionCode | String | NO | 交易记录凭证 Code |
 | remark | String | NO | 交易备注（字符串） |

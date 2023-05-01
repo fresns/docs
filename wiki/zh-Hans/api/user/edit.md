@@ -50,13 +50,13 @@
         "code": "code",
         "value": "value",
         "isPrivate": false, // 是否私有（是否对外公开展示）
-        "pluginUnikey": null
+        "pluginFskey": null
     },
     {
         "code": "code",
         "value": "value",
         "isPrivate": true, // 是私有（0/1 或者布尔型）
-        "pluginUnikey": "可空"
+        "pluginFskey": "可空"
     }
 ]
 ```

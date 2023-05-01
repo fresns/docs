@@ -14,7 +14,7 @@
 
 | 参数 | 说明 |
 | --- | --- |
-| unikey | 定时任务插件 |
+| fskey | 定时任务插件 |
 | cmdWord | 定时任务插件命令字 |
 | taskPeriod | 定时任务执行周期（Laravel 定时任务表达式） |
 
@@ -44,7 +44,7 @@
 | 参数 | 说明 |
 | --- | --- |
 | type | 订阅类型 `type = 1` |
-| unikey | 订阅者（插件） |
+| fskey | 订阅者（插件） |
 | cmdWord | 订阅者的命令字 |
 | subTableName | 订阅哪张表 |
 
@@ -55,7 +55,7 @@
 
 ```php
 //订阅通知示例
-\FresnsCmdWord::plugin('YourUniKey')->yourCmdWord([
+\FresnsCmdWord::plugin('YourFskey')->yourCmdWord([
     'tableName' => '表名',
     'primaryId' => '主键 ID',
     'changeType' => '活动类型',
@@ -86,7 +86,7 @@ Subscribe::CHANGE_TYPE_DELETED;
 | 参数 | 说明 |
 | --- | --- |
 | type | 订阅类型 `type = 2` |
-| unikey | 订阅者（插件） |
+| fskey | 订阅者（插件） |
 | cmdWord | 订阅者的命令字 |
 
 ```php
@@ -97,7 +97,7 @@ $wordBody = [
     'body' => $dtoRequest->toArray(),
 ];
 
-\FresnsCmdWord::plugin('YourUniKey')->yourCmdWord($wordBody);
+\FresnsCmdWord::plugin('YourFskey')->yourCmdWord($wordBody);
 ```
 
 ## 订阅登录通知
@@ -115,7 +115,7 @@ $wordBody = [
 | 参数 | 说明 |
 | --- | --- |
 | type | 订阅类型 `type = 3` |
-| unikey | 订阅者（插件） |
+| fskey | 订阅者（插件） |
 | cmdWord | 订阅者的命令字 |
 
 ```php
@@ -145,5 +145,5 @@ $wordBody = [
     ],
 ];
 
-\FresnsCmdWord::plugin('YourUniKey')->yourCmdWord($wordBody);
+\FresnsCmdWord::plugin('YourFskey')->yourCmdWord($wordBody);
 ```

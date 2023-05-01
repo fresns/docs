@@ -3,7 +3,7 @@
 | 字段名 | 字段类型 | 字段注释 | 默认值 | 可空 | 备注 |
 | --- | --- | --- | --- | --- | --- |
 | id | int *UNSIGNED* | 主键 ID |  | NO | 自动递赠 |
-| unikey | varchar(64) | 插件标识名 |  | NO | **唯一值**，大驼峰格式 |
+| fskey | varchar(64) | 插件标识名 |  | NO | **唯一值**，大驼峰格式 |
 | type | tinyint *UNSIGNED* | 插件类型  |  | NO | 1.扩展插件 / 2.控制面板 / 3.网站引擎 / 4.主题模板 |
 | name | varchar(64) | 插件名称 |  | NO |  |
 | description | varchar(255) | 插件描述  |  | NO |  |

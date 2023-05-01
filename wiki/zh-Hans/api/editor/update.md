@@ -24,7 +24,7 @@
 
 | 参数名 | 类型 | 是否必传 | **帖子**说明 | **评论**说明 |
 | --- | --- | --- | --- | --- |
-| editorUnikey | String | NO | 是否为编辑器插件<br>传参 `Fresns` 则重置为默认编辑器 |  |
+| editorFskey | String | NO | 是否为编辑器插件<br>传参 `Fresns` 则重置为默认编辑器 |  |
 | postQuotePid | String | NO | 引用的帖子 PID<br>非必填 | *帖子专用* |
 | postGid | String | NO | 小组 | *帖子专用* |
 | postTitle | String | NO | 标题 | *帖子专用* |
@@ -105,7 +105,7 @@
         "eid": "eid",
         "canDelete": true, // 用户是否可以直接删除
         "rating": 9, // 排序
-        "pluginUnikey": null
+        "pluginFskey": null
     }
 ]
 ```
@@ -116,7 +116,7 @@
         "code": "code",
         "value": "value",
         "isPrivate": false, // 是否私有（是否对外公开展示）
-        "pluginUnikey": null
+        "pluginFskey": null
     }
 ]
 ```

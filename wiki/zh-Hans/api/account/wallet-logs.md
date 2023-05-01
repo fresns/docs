@@ -46,7 +46,7 @@
                 "createdDatetime": "String / 交易创建时间",
                 "createdTimeAgo": "String / 交易创建时间人性化时间",
                 "remark": "String / 交易备注",
-                "pluginUnikey": "String / 处理交易的插件",
+                "pluginFskey": "String / 处理交易的插件",
                 "status": "Boolean / 交易状态",
             }
         ]

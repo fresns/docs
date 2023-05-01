@@ -8,7 +8,7 @@
 | parent_post_id | bigint *UNSIGNED* | 父级帖子 ID |  | YES | 关联字段 [posts->id](posts.md)<br>为空代表无引用帖子 |
 | create_type | tinyint *UNSIGNED* | 创建类型 | 1 | NO | 1.快捷创建 / 2.编辑器创建 / 3.由帖子复原创建 |
 | is_plugin_editor | tinyint *UNSIGNED* | 是否仅在插件中编辑 | 0 | NO | 0.否 / 1.是 |
-| editor_unikey | varchar(64) | 内容编辑插件 |  | YES | 关联字段 [plugins->unikey](../plugins/plugins.md) |
+| editor_fskey | varchar(64) | 内容编辑插件 |  | YES | 关联字段 [plugins->fskey](../plugins/plugins.md) |
 | group_id | int *UNSIGNED* | 小组 ID |  | YES | 关联字段 groups->id |
 | title | varchar(255) | 标题 |  | YES |  |
 | content | longtext | 内容 |  | YES | 完整内容 |
@@ -131,7 +131,7 @@
             // post_allows->type = 2
         ]
     },
-    "pluginUnikey": "post_appends->allow_plugin_unikey"
+    "pluginFskey": "post_appends->allow_plugin_fskey"
 }
 ```
 
@@ -146,7 +146,7 @@
             "name": "post_appends->user_list_name 特定用户名称"
         }
     ],
-    "pluginUnikey": "post_appends->user_list_plugin_unikey"
+    "pluginFskey": "post_appends->user_list_plugin_fskey"
 }
 ```
 
@@ -161,6 +161,6 @@
             "name": "post_appends->comment_btn_name 按钮名称"
         }
     ],
-    "pluginUnikey": "post_appends->comment_btn_plugin_unikey"
+    "pluginFskey": "post_appends->comment_btn_plugin_fskey"
 }
 ```

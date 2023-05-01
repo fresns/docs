@@ -27,7 +27,7 @@
     "message": "ok",
     "data": [
         {
-            "unikey": "String / 插件 Unikey",
+            "fskey": "String / 插件 Fskey",
             "name": "String / 名称",
             "icon": "String / 服务商图标 URL",
             "url": "String / 服务商访问 URL",

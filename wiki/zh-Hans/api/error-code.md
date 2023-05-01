@@ -1,7 +1,7 @@
 # 错误码
 
 - 参考：[扩展 > 状态码使用](../extensions/error-code.md)
-- 使用方法：[ConfigUtility::getCodeMessage($code, $unikey, $langTag);](../supports/utilities/config.md#获取状态码多语言描述)
+- 使用方法：[ConfigUtility::getCodeMessage($code, $fskey, $langTag);](../supports/utilities/config.md#获取状态码多语言描述)
 
 ## Commons
 

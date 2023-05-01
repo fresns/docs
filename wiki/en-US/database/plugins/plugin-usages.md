@@ -4,7 +4,7 @@
 | --- | --- | --- | --- | --- | --- |
 | id | int *UNSIGNED* | Primary Key ID |  | NO | Auto Increment |
 | usage_type | tinyint *UNSIGNED* | Type |  | NO | 1. Wallet recharge<br>2. Wallet withdrawal<br>3. Editor extension<br>4. Content type extension<br>5. Management extension<br>6. Group extension<br>7. User feature extension<br>8. User profile extension |
-| plugin_unikey | varchar(64) | Associated Plugin Unikey |  | NO | Related field [plugins->unikey](../plugins/plugins.md) |
+| plugin_fskey | varchar(64) | Associated Plugin Fskey |  | NO | Related field [plugins->fskey](../plugins/plugins.md) |
 | name | varchar(128) | Name |  | NO | **Multilingual** |
 | icon_file_id | bigint *UNSIGNED* | Icon file ID |  | YES | Related field [files->id](../systems/files.md) |
 | icon_file_url | varchar(255) | Icon file URL |  | YES |  |
@@ -41,7 +41,7 @@
 ```json
 {
     "postByAll": {
-        "pluginUnikey": "String / Empty means default, use main program API output data, if not empty, forward the API request to the plugin",
+        "pluginFskey": "String / Empty means default, use main program API output data, if not empty, forward the API request to the plugin",
         "pluginRating": [
             {
                 "id": "Number / API pluginRating parameter, passed to plugin, plugin will know what the number represents",
@@ -61,31 +61,31 @@
         ]
     },
     "postByFollow": {
-        "pluginUnikey": "",
+        "pluginFskey": "",
         "pluginRating": [
             // ditto
         ]
     },
     "postByNearby": {
-        "pluginUnikey": "",
+        "pluginFskey": "",
         "pluginRating": [
             // ditto
         ]
     },
     "commentByAll": {
-        "pluginUnikey": "",
+        "pluginFskey": "",
         "pluginRating": [
             // ditto
         ]
     },
     "commentByFollow": {
-        "pluginUnikey": "",
+        "pluginFskey": "",
         "pluginRating": [
             // ditto
         ]
     },
     "commentByNearby": {
-        "pluginUnikey": "",
+        "pluginFskey": "",
         "pluginRating": [
             // ditto
         ]
