@@ -9,7 +9,7 @@ If the plug-in has scheduled tasks or subscription requirements, the command wor
 \FresnsCmdWord::plugin('Fresns')->addCrontabItem($wordBody)
 
 // Cancel
-\FresnsCmdWord::plugin('Fresns')->deleteCrontabItem($wordBody)
+\FresnsCmdWord::plugin('Fresns')->removeCrontabItem($wordBody)
 ```
 
 | Parameter | Description |
@@ -20,7 +20,7 @@ If the plug-in has scheduled tasks or subscription requirements, the command wor
 
 - The main program requests the command word of the plug-in circularly according to the task cycle. 
 
-## Subscribe Database Table Activity
+## Subscribe Data Table Change
 
 Subscribe to plugin data table dynamics (all data tables can be subscribed).
 
@@ -31,7 +31,7 @@ Tell the main program which table to subscribe to, and which command word of its
 \FresnsCmdWord::plugin('Fresns')->addSubscribeItem($wordBody)
 
 // Cancel
-\FresnsCmdWord::plugin('Fresns')->deleteSubscribeItem($wordBody)
+\FresnsCmdWord::plugin('Fresns')->removeSubscribeItem($wordBody)
 ```
 
 | Parameter | Description |
@@ -64,16 +64,16 @@ Subscribe::CHANGE_TYPE_UPDATED;
 Subscribe::CHANGE_TYPE_DELETED;
 ```
 
-## Subscribe Account Activity
+## Subscribe User Activity
 
-The plug-in subscribes to the account and the user requests in headers information. Inform the main program which command word would be executed after the subscribed event occurs; after the API of the main program requests that the headers information contain account or user information, the main program executes the command word specified by the plug-in.
+The plug-in subscribes to the user requests in headers information. Inform the main program which command word would be executed after the subscribed event occurs; after the API of the main program requests that the headers information contain user information, the main program executes the command word specified by the plug-in.
 
 ```php
 // Create
 \FresnsCmdWord::plugin('Fresns')->addSubscribeItem($wordBody)
 
 // Cancel
-\FresnsCmdWord::plugin('Fresns')->deleteSubscribeItem($wordBody)
+\FresnsCmdWord::plugin('Fresns')->removeSubscribeItem($wordBody)
 ```
 
 | Parameter | Description |
@@ -85,7 +85,8 @@ The plug-in subscribes to the account and the user requests in headers informati
 ```php
 // Example of subscription notification
 $wordBody = [
-    'uri' => 'Route when generating notifications',
+    'route' => 'Route name when generating notifications',
+    'uri' => 'URI when generating notifications',
     'headers' => \request()->headers->all(),
     'body' => $dtoRequest->toArray(),
 ];
@@ -102,7 +103,7 @@ Notify subscribers of command words when an account or user is logged in.
 \FresnsCmdWord::plugin('Fresns')->addSubscribeItem($wordBody)
 
 // Cancel
-\FresnsCmdWord::plugin('Fresns')->deleteSubscribeItem($wordBody)
+\FresnsCmdWord::plugin('Fresns')->removeSubscribeItem($wordBody)
 ```
 
 | Parameter | Description |

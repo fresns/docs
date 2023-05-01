@@ -9,7 +9,7 @@
 \FresnsCmdWord::plugin('Fresns')->addCrontabItem($wordBody)
 
 //取消定时任务
-\FresnsCmdWord::plugin('Fresns')->deleteCrontabItem($wordBody)
+\FresnsCmdWord::plugin('Fresns')->removeCrontabItem($wordBody)
 ```
 
 | 参数 | 说明 |
@@ -38,7 +38,7 @@
 \FresnsCmdWord::plugin('Fresns')->addSubscribeItem($wordBody)
 
 //取消订阅
-\FresnsCmdWord::plugin('Fresns')->deleteSubscribeItem($wordBody)
+\FresnsCmdWord::plugin('Fresns')->removeSubscribeItem($wordBody)
 ```
 
 | 参数 | 说明 |
@@ -71,16 +71,16 @@ Subscribe::CHANGE_TYPE_UPDATED;
 Subscribe::CHANGE_TYPE_DELETED;
 ```
 
-## 订阅账号活跃状态
+## 订阅用户活跃状态
 
-插件订阅 headers 信息中账号和用户请求。告之主程序订阅事件发生后执行自己的哪个命令字；当主程序 API 请求 headers 信息中含有账号或用户信息后，主程序执行插件指定的命令字。
+插件订阅 headers 信息中用户请求。告之主程序订阅事件发生后执行自己的哪个命令字；当主程序 API 请求 headers 信息中含有用户信息后，主程序执行插件指定的命令字。
 
 ```php
 //建立订阅
 \FresnsCmdWord::plugin('Fresns')->addSubscribeItem($wordBody)
 
 //取消订阅
-\FresnsCmdWord::plugin('Fresns')->deleteSubscribeItem($wordBody)
+\FresnsCmdWord::plugin('Fresns')->removeSubscribeItem($wordBody)
 ```
 
 | 参数 | 说明 |
@@ -92,7 +92,8 @@ Subscribe::CHANGE_TYPE_DELETED;
 ```php
 //订阅通知示例
 $wordBody = [
-    'uri' => '产生通知时操作的路由',
+    'route' => '产生通知时操作的路由',
+    'uri' => '产生通知时操作的路径',
     'headers' => \request()->headers->all(),
     'body' => $dtoRequest->toArray(),
 ];
@@ -109,7 +110,7 @@ $wordBody = [
 \FresnsCmdWord::plugin('Fresns')->addSubscribeItem($wordBody)
 
 //取消订阅
-\FresnsCmdWord::plugin('Fresns')->deleteSubscribeItem($wordBody)
+\FresnsCmdWord::plugin('Fresns')->removeSubscribeItem($wordBody)
 ```
 
 | 参数 | 说明 |

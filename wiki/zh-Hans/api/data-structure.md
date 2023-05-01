@@ -17,7 +17,6 @@
     "email": "String / 加密的邮箱",
     "hasPassword": "Boolean / 账号是否有密码",
     "verifyStatus": "Boolean / 是否实名认证",
-    "verifySupport": "String / 实名认证的地址",
     "verifyRealName": "String / 加密的姓名",
     "verifyGender": "Number / 性别 1.未知 2.男 3.女",
     "verifyCertType": "String / 证件类型 idcard 身份证 passport 护照 driving 驾驶证 business 营业执照",

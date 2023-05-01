@@ -17,7 +17,6 @@ To reduce documentation effort and ensure consistency of public data, the same s
     "email": "String / Encrypted Email",
     "hasPassword": "Boolean / Account Has Password",
     "verifyStatus": "Boolean / Verified Identity",
-    "verifySupport": "String / Verification Support Address",
     "verifyRealName": "String / Encrypted Real Name",
     "verifyGender": "Number / Gender 1.Unknown 2.Male 3.Female",
     "verifyCertType": "String / Certificate Type: idcard, passport, driving, business",

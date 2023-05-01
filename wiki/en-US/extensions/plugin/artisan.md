@@ -444,13 +444,13 @@ php artisan plugin:install /www/wwwroot/fresns/storage/plugins/123e4567-e89b-12d
 Uninstall the plugin and select whether you want to clean the data of the plugin.
 
 ```php
-fresns plugin:uninstall --cleandata=true
-fresns plugin:uninstall --cleandata=false
+fresns plugin:uninstall --cleardata=true
+fresns plugin:uninstall --cleardata=false
 
 // or
 
-php artisan plugin:uninstall DemoPlugin --cleandata=true
-php artisan plugin:uninstall DemoPlugin --cleandata=false
+php artisan plugin:uninstall DemoPlugin --cleardata=true
+php artisan plugin:uninstall DemoPlugin --cleardata=false
 ```
 
 - `/plugins/DemoPlugin/` Physically deletion the folder.
