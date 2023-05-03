@@ -28,6 +28,7 @@
 | 31302 | Signature error |
 | 31303 | Signature expired |
 | 31304 | The key does not have the right to request for the interface |
+| 31305 | Read-only key are not entitled to request for the interface |
 | 31401 | Language tag incorrect |
 | 31402 | Timezone incorrect |
 | 31501 | Account not logged in, Unable to use `(AID is empty)` |
