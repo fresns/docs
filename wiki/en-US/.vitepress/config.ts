@@ -250,6 +250,7 @@ function sidebarApi() {
                 { text: 'User Mark List', link: '/api/user/mark-list.md' },
                 { text: 'Auth', link: '/api/user/auth.md' },
                 { text: 'Panel', link: '/api/user/panel.md' },
+                { text: 'Extcredits', link: '/api/user/extcredits-logs.md' },
                 { text: 'Edit', link: '/api/user/edit.md' },
                 { text: 'Mark', link: '/api/user/mark.md' },
                 { text: 'Mark Note', link: '/api/user/mark-note.md' },

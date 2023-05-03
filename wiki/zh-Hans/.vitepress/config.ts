@@ -312,6 +312,7 @@ function sidebarApi() {
                 { text: '获取用户[详情] 标记列表', link: '/api/user/mark-list.md' },
                 { text: '用户登录', link: '/api/user/auth.md' },
                 { text: '用户面板', link: '/api/user/panel.md' },
+                { text: '用户扩展分值记录', link: '/api/user/extcredits-logs.md' },
                 { text: '修改用户资料', link: '/api/user/edit.md' },
                 { text: '操作标记', link: '/api/user/mark.md' },
                 { text: '标记备注', link: '/api/user/mark-note.md' },

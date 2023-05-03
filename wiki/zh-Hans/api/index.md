@@ -52,6 +52,7 @@
 | `GET` | /api/v2/user/`{uidOrUsername}`/mark/`{markType}`/`{listType}` | 获取用户标记的内容列表 |
 | `POST` | /api/v2/user/auth | 用户登录 |
 | `GET` | /api/v2/user/panel | 用户面板 |
+| `GET` | /api/v2/user/extcredits-logs | 用户扩展分值记录 |
 | `PUT` | /api/v2/user/edit | 修改用户资料 |
 | `POST` | /api/v2/user/mark | 操作标记 |
 | `PUT` | /api/v2/user/mark-note | 标记备注 |

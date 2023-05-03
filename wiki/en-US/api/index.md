@@ -52,6 +52,7 @@
 | `GET` | /api/v2/user/`{uidOrUsername}`/mark/`{markType}`/`{listType}` | User Mark List |
 | `POST` | /api/v2/user/auth | Auth |
 | `GET` | /api/v2/user/panel | Panel |
+| `GET` | /api/v2/user/extcredits-logs | Extcredits Logs |
 | `PUT` | /api/v2/user/edit | Edit |
 | `POST` | /api/v2/user/mark | Mark |
 | `PUT` | /api/v2/user/mark-note | Mark Note |
