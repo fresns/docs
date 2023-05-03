@@ -18,7 +18,7 @@
 | Parameter Name | Type | Required | Description |
 | --- | --- | --- | --- |
 | type | Number | **required** | [Log Type](../../database/systems/session-logs.md#log-type) |
-| pluginFskey | String | *optional* | Plugin name |
+| fskey | String | *optional* | Plugin name |
 | objectName | String | **required** | Function model name or interface path<br>For example, model name: App\Models\Post<br>For example, interface path: /api/v2/account/login |
 | objectAction | String | **required** | Action description, custom input content |
 | objectResult | Number | **required** | 1. Unknown or in progress / 2. Success / 3. Failure |

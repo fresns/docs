@@ -18,7 +18,7 @@
 | 参数名 | 类型 | 是否必传 | 说明 |
 | --- | --- | --- | --- |
 | type | Number | YES | [日志类型](../../database/systems/session-logs.md#日志类型-type) |
-| pluginFskey | String | NO | 插件名 |
+| fskey | String | NO | 插件名 |
 | objectName | String | YES | 功能模型名或者接口路径<br>例如模型名 App\Models\Post<br>例如接口路径：/api/v2/account/login |
 | objectAction | String | YES | 行为描述，自定义输入内容 |
 | objectResult | Number | YES | 1.未知或执行中 / 2.成功 / 3.失败 |

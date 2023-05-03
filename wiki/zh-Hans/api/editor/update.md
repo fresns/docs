@@ -105,7 +105,7 @@
         "eid": "eid",
         "canDelete": true, // 用户是否可以直接删除
         "rating": 9, // 排序
-        "pluginFskey": null
+        "fskey": null
     }
 ]
 ```
@@ -116,7 +116,7 @@
         "code": "code",
         "value": "value",
         "isPrivate": false, // 是否私有（是否对外公开展示）
-        "pluginFskey": null
+        "fskey": null
     }
 ]
 ```
