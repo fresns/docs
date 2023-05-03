@@ -40,6 +40,7 @@
 | **roles** | 角色表 |
 | **users** | 用户主表 |
 | **user_stats** | 用户数据统计表 |
+| **user_extcredits_logs** | 用户扩展分值日志表 |
 | **user_roles** | 用户角色关联表 |
 | **user_likes** | 用户点赞记录表 |
 | **user_follows** | 用户关注记录表 |

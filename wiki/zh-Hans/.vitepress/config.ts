@@ -471,6 +471,7 @@ function sidebarDatabase() {
                         { text: 'roles 角色表', link: '/database/users/roles.md' },
                         { text: 'users 用户主表', link: '/database/users/users.md' },
                         { text: 'user_stats 用户数据统计表', link: '/database/users/user-stats.md' },
+                        { text: 'user_extcredits_logs 用户扩展分值日志表', link: '/database/users/user-extcredits-logs.md' },
                         { text: 'user_roles 用户角色关联表', link: '/database/users/user-roles.md' },
                         { text: 'user_likes 用户点赞记录表', link: '/database/users/user-likes.md' },
                         { text: 'user_follows 用户关注表', link: '/database/users/user-follows.md' },

@@ -40,6 +40,7 @@
 | **roles** | Role table |
 | **users** | User main table |
 | **user_stats** | User: stat table |
+| **user_extcredits_logs** | User: extcredits log table |
 | **user_roles** | User: role record table |
 | **user_likes** | User: like record table |
 | **user_follows** | User: follow record table |
