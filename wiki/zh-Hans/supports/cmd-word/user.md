@@ -139,9 +139,11 @@
 | 参数名 | 类型 | 是否必传 | 说明 |
 | --- | --- | --- | --- |
 | uid | Number | YES | 用户 UID `users->uid` |
-| type | Number | YES | `1`.extcredits1 / `2`.extcredits2 / `3`.extcredits3 / `4`.extcredits4 / `5`.extcredits5 |
+| extcredits | Number | YES | extcredits `1-5` |
+| fskey | String | YES | 操作者 |
 | operation | String | YES | 操作类型 `increment` 或 `decrement` |
 | amount | Number | NO | 留空则默认为 `1` |
+| remark | String | NO | 备注 |
 
 ## 设置用户有效期
 

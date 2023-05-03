@@ -139,9 +139,11 @@
 | Parameter Name | Type | Required | Description |
 | --- | --- | --- | --- |
 | uid | Number | **required** | User UID `users->uid` |
-| type | Number | **required** | `1`.extcredits1 / `2`.extcredits2 / `3`.extcredits3 / `4`.extcredits4 / `5`.extcredits5 |
+| extcredits | Number | **required** | extcredits `1-5` |
+| fskey | String | **required** | plugin fskey |
 | operation | String | **required** | Operation Type `increment` 或 `decrement` |
 | amount | Number | *optional* | Leave blank to default to `1` |
+| remark | String | *optional* | Remark |
 
 ## setUserExpiryDatetime
 
