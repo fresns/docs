@@ -34,7 +34,7 @@
         "timeFormatMonth": "Month time format naming",
         "timeFormatYear": "Year time format naming",
         "packVersion": "Language pack version",
-        "isEnable": "true or false"
+        "isEnabled": "true or false"
     },
     {
         "rating": 1,
@@ -54,7 +54,7 @@
         "timeFormatMonth": "{n} months ago",
         "timeFormatYear": "{n} years ago",
         "packVersion": 1,
-        "isEnable": true
+        "isEnabled": true
     }
 ]
 ```
@@ -69,6 +69,7 @@
 | n hours ago | 5 hours ago | Posted over 60 minutes, but within 24 hours |
 | n days ago | 5 days ago | Posted over 24 hours, but within 30 days |
 | n months ago | 5 months ago | Posted over 30 days, but within this year |
+| n years ago | 1 years ago | Posted over 365 days |
 
 ## Help
 

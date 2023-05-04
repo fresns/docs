@@ -29,7 +29,7 @@
 [
     {
         "type": "email",
-        "isEnable": true,
+        "isEnabled": true,
         "template":[
             {
                 "langTag": "zh-Hans",
@@ -40,7 +40,7 @@
     },
     {
         "type": "sms",
-        "isEnable": false,
+        "isEnabled": false,
         "template":[
             {
                 "langTag": "en",

@@ -34,7 +34,7 @@
         "timeFormatMonth": "月时间格式命名",
         "timeFormatYear": "年时间格式命名",
         "packVersion": "语言包版本",
-        "isEnable": "true 或者 false"
+        "isEnabled": "true 或者 false"
     },
     {
         "rating": 1,
@@ -54,7 +54,7 @@
         "timeFormatMonth": "{n} 个月前",
         "timeFormatYear": "{n} 个年前",
         "packVersion": 1,
-        "isEnable": true
+        "isEnabled": true
     }
 ]
 ```
@@ -69,6 +69,7 @@
 | n 小时前 | 5 小时前 | 发表时间超过 60 分钟，但在 24 小时以内 |
 | n 天前 | 5 天前 | 发表时间超过 24 小时，但在 30 天以内 |
 | n 个月前 | 5 月前 | 发表时间超过 30 天，但在今年以内 |
+| n 年前 | 1 年前 | 发表时间超过 365 天 |
 
 ## 帮助说明
 
