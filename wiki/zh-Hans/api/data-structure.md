@@ -548,7 +548,7 @@
             // 通用数据结构->话题信息
         }
     ],
-    "creator": {
+    "author": {
         // 帖子作者
         // 通用数据结构->用户信息
     },
@@ -702,10 +702,10 @@
             // 通用数据结构->话题信息
         }
     ],
-    "creator": {
+    "author": {
         // 评论作者
         // 通用数据结构->用户信息
-        "isPostCreator": "Boolean / 是否为帖子作者"
+        "isPostAuthor": "Boolean / 是否为帖子作者"
     },
     "subComments": [
         {
@@ -756,7 +756,7 @@
         "followNote": "String / 我对该评论的关注备注",
         "blockStatus": "Boolean / 屏蔽状态",
         "blockNote": "String / 我对该评论的屏蔽备注",
-        "postCreatorLikeStatus": "Boolean / 帖子作者是否点赞"
+        "postAuthorLikeStatus": "Boolean / 帖子作者是否点赞"
     },
     "replyToPost": {
         // 评论所属的帖子信息，如果是子级评论列表仅有 pid 参数
@@ -862,8 +862,8 @@
     },
     "state": "Number / 状态",
     "reason": "String / 审核拒绝原因",
-    "creator": {
-        // 创建者
+    "author": {
+        // 作者
         // 通用数据结构->用户信息
     },
     "files": {
@@ -937,8 +937,8 @@
     },
     "state": "Number / 状态",
     "reason": "String / 审核拒绝原因",
-    "creator": {
-        // 创建者
+    "author": {
+        // 作者
         // 通用数据结构->用户信息
     },
     "files": {

@@ -3,7 +3,7 @@
 | Column Name | Type | Comment | Default | Null | Remark |
 | --- | --- | --- | --- | --- | --- |
 | id | bigint *UNSIGNED* | Primary Key ID | | NO | Auto Increment |
-| user_id | bigint *UNSIGNED* | Creator ID |  | NO | Related field [users->id](../users/users.md) |
+| user_id | bigint *UNSIGNED* | Author ID |  | NO | Related field [users->id](../users/users.md) |
 | comment_id | bigint *UNSIGNED* | Comment ID |  | YES | Related field [comments->id](comments.md) |
 | post_id | bigint *UNSIGNED* | Post ID |  | NO | Related field [posts->id](posts.md) |
 | parent_comment_id | bigint *UNSIGNED* | Parent Comment ID |  | YES | Related field [comments->id](comments.md)<br>Empty means a top-level comment |
@@ -23,7 +23,7 @@
 
 ## `comment_id` Field Description
 
-- If empty, it represents a new comment draft, and there can be multiple records, equivalent to a single creator having multiple drafts waiting to be published.
+- If empty, it represents a new comment draft, and there can be multiple records, equivalent to a single author having multiple drafts waiting to be published.
 - When there is an ID:
     - state=1, 2, or 4 means editing the existing content of the comment with that ID. No new drafts can be created for that ID, which is equivalent to having only one draft being edited for the same comment.
     - state=3 represents the historical official versions of the comment with that ID, which can have multiple instances.

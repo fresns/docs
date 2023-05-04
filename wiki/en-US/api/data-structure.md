@@ -477,8 +477,8 @@ To reduce documentation effort and ensure consistency of public data, the same s
     "moreJson": {
         // Data Table: posts->more_json
         // The following keys are known
-        "ipLocation": "String / Creator IP Location Name",
-        "deviceName": "String / Creator Device Name"
+        "ipLocation": "String / Author IP Location Name",
+        "deviceName": "String / Author Device Name"
     },
     "location": {
         "isLbs": "Boolean / Whether there is location information",
@@ -547,7 +547,7 @@ To reduce documentation effort and ensure consistency of public data, the same s
             // Common Data Structure -> Hashtag Info
         }
     ],
-    "creator": {
+    "author": {
         // Post author
         // Common Data Structure -> User Info
     },
@@ -642,8 +642,8 @@ To reduce documentation effort and ensure consistency of public data, the same s
     "moreJson": {
         // Data Table: comments->more_json
         // The following keys are known
-        "ipLocation": "String / Creator IP Location Name",
-        "deviceName": "String / Creator Device Name"
+        "ipLocation": "String / Author IP Location Name",
+        "deviceName": "String / Author Device Name"
     },
     "location": {
         "isLbs": "Boolean / Whether there is location information",
@@ -706,10 +706,10 @@ To reduce documentation effort and ensure consistency of public data, the same s
             // Common Data Structure -> Hashtag Info
         }
     ],
-    "creator": {
+    "author": {
         // Comment author
         // Common Data Structure -> User Info
-        "isPostCreator": "Boolean / Is the author of the post"
+        "isPostAuthor": "Boolean / Is the author of the post"
     },
     "subComments": [
         {
@@ -760,7 +760,7 @@ To reduce documentation effort and ensure consistency of public data, the same s
         "followNote": "String / My follow note on this comment",
         "blockStatus": "Boolean / Block status",
         "blockNote": "String / My block note on this comment",
-        "postCreatorLikeStatus": "Boolean / Whether the post creator liked this comment"
+        "postAuthorLikeStatus": "Boolean / Whether the post author liked this comment"
     },
     "replyToPost": {
         // Information about the post this comment belongs to,
@@ -872,7 +872,7 @@ To reduce documentation effort and ensure consistency of public data, the same s
     },
     "state": "Number / Status",
     "reason": "String / Rejection reason during review",
-    "creator": {
+    "author": {
         // Common Data Structure -> User Info
     },
     "files": {
@@ -946,7 +946,7 @@ To reduce documentation effort and ensure consistency of public data, the same s
     },
     "state": "Number / Status",
     "reason": "String / Rejection reason during review",
-    "creator": {
+    "author": {
         // Common Data Structure -> User Info
     },
     "files": {

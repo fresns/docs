@@ -3,7 +3,7 @@
 | Column Name | Type | Comment | Default | Null | Remark |
 | --- | --- | --- | --- | --- | --- |
 | id | bigint *UNSIGNED* | Primary Key ID |  | NO | Auto Increment |
-| user_id | bigint *UNSIGNED* | Creator ID |  | NO | Related field [users->id](../users/users.md) |
+| user_id | bigint *UNSIGNED* | Author ID |  | NO | Related field [users->id](../users/users.md) |
 | post_id | bigint *UNSIGNED* | Post ID |  | YES | Related field [posts->id](posts.md) |
 | parent_post_id | bigint *UNSIGNED* | Parent post ID |  | YES | Related field [posts->id](posts.md)<br>Empty means no referenced post |
 | create_type | tinyint *UNSIGNED* | Creation type | 1 | NO | 1.Quick create / 2.Editor create / 3.Restore from post |
@@ -29,7 +29,7 @@
 
 ## `post_id` Field Description
 
-- Empty means a new draft, which may have more than one record, equivalent to the same creator having more than one draft to publish.
+- Empty means a new draft, which may have more than one record, equivalent to the same author having more than one draft to publish.
 - If there is an ID
     - state=1, 2, 4 means that the existing content of the ID's post is being edited, and that no new drafts can be created for that ID, i.e. there can only be one draft being edited for the same post.
     - state=3 is the official version of the ID's post history, and there may be more than one.
