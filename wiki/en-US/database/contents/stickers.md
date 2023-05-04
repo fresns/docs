@@ -10,7 +10,7 @@
 | type | tinyint *UNSIGNED* | Is it a sticker group | 1 | NO | 1.Sticker / 2.Sticker group |
 | parent_id | int *UNSIGNED* | Parent sticker ID |  | YES |  |
 | rating | smallint *UNSIGNED* | Display order | 99 | YES | Ascending order |
-| is_enable | tinyint *UNSIGNED* | Is enabled | 1 | YES | 0.Disabled / 1.Enabled |
+| is_enabled | tinyint *UNSIGNED* | Is enabled | 1 | YES | 0.Disabled / 1.Enabled |
 | created_at | timestamp | Create Time | CURRENT_TIMESTAMP | YES |  |
 | updated_at | timestamp | Update Time |  | YES |  |
 | deleted_at | timestamp | Delete Time |  | YES |  |

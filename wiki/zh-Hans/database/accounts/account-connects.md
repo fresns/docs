@@ -11,7 +11,7 @@
 | connect_nickname | varchar(128) | 关联昵称 |  | NO | 互联平台的昵称，没有则填写平台的名称 |
 | connect_avatar | varchar(255) | 关联头像 |  | YES | 互联平台的头像 URL，没有则留空 |
 | plugin_fskey | varchar(64) | 插件名 |  | NO | 关联字段 [plugins->fskey](../plugins/plugins.md)<br>是由哪个插件创建的  |
-| is_enable | tinyint *UNSIGNED* | 是否有效 | 1 | NO | 0.无效 / 1.有效 |
+| is_enabled | tinyint *UNSIGNED* | 是否有效 | 1 | NO | 0.无效 / 1.有效 |
 | more_json | json | 备用字段 |  | YES |  |
 | created_at | timestamp | 创建时间 | CURRENT_TIMESTAMP | NO |  |
 | updated_at | timestamp | 更新时间 |  | YES |  |

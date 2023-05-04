@@ -28,7 +28,7 @@
 | last_username_at | timestamp | Last Username Modification Time |  | YES |  |
 | last_nickname_at | timestamp | Last Nickname Modification Time |  | YES |  |
 | rank_state | tinyint *UNSIGNED* | Rank State | 1 | NO | 1.Not set |
-| is_enable | tinyint *UNSIGNED* | Account Disabled | 1 | NO | 0.Disabled / 1.Normal |
+| is_enabled | tinyint *UNSIGNED* | Account Disabled | 1 | NO | 0.Disabled / 1.Normal |
 | wait_delete | tinyint *UNSIGNED* | Pending Deletion | 0 | NO | 0.No / 1.Yes |
 | wait_delete_at | timestamp | Pending Deletion Time |  | YES |  |
 | created_at | timestamp | Create Time | CURRENT_TIMESTAMP | NO |  |

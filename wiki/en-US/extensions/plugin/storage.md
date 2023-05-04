@@ -95,7 +95,7 @@ $file->getFileInfo();
 {
     "fid": "files->fid",
     "type": "files->type",
-    "status": "files->is_enable",
+    "status": "files->is_enabled",
     "substitutionImageUrl": "File expiration alert image",
     "sensitive": "files->is_sensitive",
     "name": "files->name",

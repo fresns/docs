@@ -12,7 +12,7 @@
 | receive_user_id | bigint *UNSIGNED* | Receiver ID |  | NO | Related field [users->id](../users/users.md) |
 | receive_read_at | timestamp | Receiver-Read Time |  | YES | Empty means unread |
 | receive_deleted_at | timestamp | Receiver-Delete Time |  | YES | Empty means not deleted |
-| is_enable | tinyint *UNSIGNED* | Is Valid | 1 | NO | 0.Invalid / 1.Valid |
+| is_enabled | tinyint *UNSIGNED* | Is Valid | 1 | NO | 0.Invalid / 1.Valid |
 | created_at | timestamp | Create Time | CURRENT_TIMESTAMP | NO |  |
 | updated_at | timestamp | Update Time |  | YES |  |
 | deleted_at | timestamp | Delete Time |  | YES |  |

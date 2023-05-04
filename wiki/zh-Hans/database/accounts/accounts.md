@@ -20,7 +20,7 @@
 | verify_identity_type | tinyint *UNSIGNED* | 实名认证类型 |  | YES | 1.未知 / 2.个人 / 3.企业 |
 | verify_at | timestamp | 实名认证时间 |  | YES |  |
 | verify_log | text | 认证结果记录 |  | YES | 接口返回数据包完整备份<br>**注意数据脱敏** |
-| is_enable | tinyint *UNSIGNED* | 是否启用 | 1 | NO | 0.禁用 / 1.正常 |
+| is_enabled | tinyint *UNSIGNED* | 是否启用 | 1 | NO | 0.禁用 / 1.正常 |
 | wait_delete | tinyint *UNSIGNED* | 是否待删除 | 0 | NO | 0.否 / 1.是 |
 | wait_delete_at | timestamp | 等待删除时间 |  | YES |  |
 | created_at | timestamp | 创建时间 | CURRENT_TIMESTAMP | NO |  |

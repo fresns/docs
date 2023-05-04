@@ -28,7 +28,7 @@
 | last_username_at | timestamp | 最后修改用户名时间 |  | YES |  |
 | last_nickname_at | timestamp | 最后修改用户昵称时间 |  | YES |  |
 | rank_state | tinyint *UNSIGNED* | 等级状态 | 1 | NO | 1.未设置 |
-| is_enable | tinyint *UNSIGNED* | 是否封号 | 1 | NO | 0.封号 / 1.正常 |
+| is_enabled | tinyint *UNSIGNED* | 是否封号 | 1 | NO | 0.封号 / 1.正常 |
 | wait_delete | tinyint *UNSIGNED* | 是否待删除 | 0 | NO | 0.否 / 1.是 |
 | wait_delete_at | timestamp | 等待删除时间 |  | YES |  |
 | created_at | timestamp | 创建时间 | CURRENT_TIMESTAMP | NO |  |

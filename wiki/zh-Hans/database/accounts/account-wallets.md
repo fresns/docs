@@ -12,7 +12,7 @@
 | bank_address | varchar(255) | 银行地址 |  | YES | 提现专用信息存储字段 |
 | bank_account | varchar(128) | 银行账号 |  | YES | 提现专用信息存储字段 |
 | bank_status | tinyint *UNSIGNED* | 银行验证状态 | 1 | NO | 提现专用信息存储字段<br>1.未验证 / 2.已验证 |
-| is_enable | tinyint *UNSIGNED* | 是否有效 | 1 | NO | 0.禁用 / 1.正常<br>禁用时不可进行任何交易，包括提现 |
+| is_enabled | tinyint *UNSIGNED* | 是否有效 | 1 | NO | 0.禁用 / 1.正常<br>禁用时不可进行任何交易，包括提现 |
 | created_at | timestamp | 创建时间 | CURRENT_TIMESTAMP | NO |  |
 | updated_at | timestamp | 更新时间 |  | YES |  |
 | deleted_at | timestamp | 删除时间 |  | YES |  |

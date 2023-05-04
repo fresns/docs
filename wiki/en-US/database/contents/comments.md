@@ -30,7 +30,7 @@
 | latest_edit_at | timestamp | Edit Time |  | YES | If editable after publish, record edit time here |
 | latest_comment_at | timestamp | Comment Time |  | YES | Time of the latest comment<br>When a user replies to this comment |
 | rank_state | tinyint *UNSIGNED* | Rank Status | 1 | NO | 1.Not set |
-| is_enable | tinyint *UNSIGNED* | Is Valid | 1 | NO | 0.Invalid (visible only to yourself) / 1.Valid |
+| is_enabled | tinyint *UNSIGNED* | Is Valid | 1 | NO | 0.Invalid (visible only to yourself) / 1.Valid |
 | created_at | timestamp | Create Time | CURRENT_TIMESTAMP | NO | Publish time |
 | updated_at | timestamp | Update Time |  | YES |  |
 | deleted_at | timestamp | Delete Time |  | YES |  |

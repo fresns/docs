@@ -23,7 +23,7 @@
 | position | tinyint *UNSIGNED* | Display position | 2 | NO | 1. Top / 2. Bottom |
 | parameter | varchar(128) | Custom parameter |  | YES | Logic refers to [plugin description](../plugins/plugins.md#url-concatenation-description) |
 | more_json | json | Extended configuration |  | YES | Custom information, how to use requires client cooperation |
-| is_enable | tinyint *UNSIGNED* | Is Valid | 1 | NO | 0.Invalid / 1.Valid |
+| is_enabled | tinyint *UNSIGNED* | Is Valid | 1 | NO | 0.Invalid / 1.Valid |
 | created_at | timestamp | Upload time | CURRENT_TIMESTAMP | NO |  |
 | updated_at | timestamp | Update Time |  | YES |  |
 | deleted_at | timestamp | Delete Time |  | YES | Empty means not deleted |

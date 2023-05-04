@@ -10,7 +10,7 @@
 | type | tinyint *UNSIGNED* | 是否表情小组 | 1 | NO | 1.表情 / 2.表情小组 |
 | parent_id | int *UNSIGNED* | 父级表情 ID |  | YES |  |
 | rating | smallint *UNSIGNED* | 排列顺序 | 99 | YES | 升序排序 |
-| is_enable | tinyint *UNSIGNED* | 是否启用 | 1 | YES | 0.停用 / 1.启用 |
+| is_enabled | tinyint *UNSIGNED* | 是否启用 | 1 | YES | 0.停用 / 1.启用 |
 | created_at | timestamp | 创建时间 | CURRENT_TIMESTAMP | YES |  |
 | updated_at | timestamp | 更新时间 |  | YES |  |
 | deleted_at | timestamp | 删除时间 |  | YES |  |

@@ -20,7 +20,7 @@
 | verify_identity_type | tinyint *UNSIGNED* | Real Name Verification Type |  | YES | 1.Unknown / 2.Individual / 3.Company |
 | verify_at | timestamp | Real Name Verification Time |  | YES |  |
 | verify_log | text | Verification Result Record |  | YES | Full backup of the returned data package<br>**Note data desensitization** |
-| is_enable | tinyint *UNSIGNED* | Is Enabled | 1 | NO | 0.Disabled / 1.Normal |
+| is_enabled | tinyint *UNSIGNED* | Is Enabled | 1 | NO | 0.Disabled / 1.Normal |
 | wait_delete | tinyint *UNSIGNED* | Is Pending Deletion | 0 | NO | 0.No / 1.Yes |
 | wait_delete_at | timestamp | Waiting Delete Time |  | YES |  |
 | created_at | timestamp | Create Time | CURRENT_TIMESTAMP | NO |  |

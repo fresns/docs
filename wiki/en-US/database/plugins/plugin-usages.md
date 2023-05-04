@@ -18,7 +18,7 @@
 | parameter | varchar(128) | Custom parameter |  | YES |  |
 | rating | smallint *UNSIGNED* | Sorting order | 9 | NO | Ascending order |
 | can_delete | tinyint *UNSIGNED* | Can be deleted | 1 | NO | 0. Cannot delete / 1. Can delete |
-| is_enable | tinyint *UNSIGNED* | Is enabled | 1 | NO | 0. Disabled / 1. Enabled |
+| is_enabled | tinyint *UNSIGNED* | Is enabled | 1 | NO | 0. Disabled / 1. Enabled |
 | created_at | timestamp | Create Time | CURRENT_TIMESTAMP | NO |  |
 | updated_at | timestamp | Update Time |  | YES |  |
 | deleted_at | timestamp | Delete Time |  | YES |  |

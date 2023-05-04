@@ -18,7 +18,7 @@
 | is_upgrade | tinyint *UNSIGNED* | Is there an upgrade package | 0 | NO | 0.No / 1.Yes |
 | upgrade_version | varchar(16) | New version number |  | YES |  |
 | upgrade_code | varchar(32) | Upgrade code |  | YES | Official application market upgrade certificate |
-| is_enable | tinyint *UNSIGNED* | Is it enabled | 1 | NO | 0.Disabled / 1.Enabled |
+| is_enabled | tinyint *UNSIGNED* | Is it enabled | 1 | NO | 0.Disabled / 1.Enabled |
 | created_at | timestamp | Create Time | CURRENT_TIMESTAMP | NO  |  |
 | updated_at | timestamp | Update Time |  | NO  |  |
 | deleted_at | timestamp | Delete Time |  | YES |  |

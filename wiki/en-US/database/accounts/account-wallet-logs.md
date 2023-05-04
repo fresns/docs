@@ -17,7 +17,7 @@
 | object_account_id | bigint *UNSIGNED* | Related Account ID |  | YES | Related field [accounts->id](accounts.md), this transaction is from whom |
 | object_user_id | bigint *UNSIGNED* | Related User ID |  | YES | Related field [users->id](../users/users.md), this transaction is from whom |
 | object_wallet_log_id | bigint *UNSIGNED* | Related Transaction Log ID |  | YES | Related field account_wallet_logs->id |
-| is_enable | tinyint *UNSIGNED* | Is Successful | 1 | NO | 0.Transaction Failed / 1.Transaction Successful |
+| is_enabled | tinyint *UNSIGNED* | Is Successful | 1 | NO | 0.Transaction Failed / 1.Transaction Successful |
 | remark | text | Remark |  | YES |  |
 | more_json | json | Backup Field |  | YES |  |
 | created_at | timestamp | Create Time | CURRENT_TIMESTAMP | NO |  |

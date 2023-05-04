@@ -10,7 +10,7 @@
 | app_id | char(8) | App ID |  | NO | Auto-generated |
 | app_secret | char(32) | Client Secret |  | NO | Auto-generated, encrypted storage in the database |
 | is_read_only | tinyint *UNSIGNED* | Is read-only | 0 | NO | 0.No / 1.Yes |
-| is_enable | tinyint *UNSIGNED* | Is Enabled | 1 | NO | 0. Disabled / 1. Enabled |
+| is_enabled | tinyint *UNSIGNED* | Is Enabled | 1 | NO | 0. Disabled / 1. Enabled |
 | remark | text | Remark |  | YES |  |
 | created_at | timestamp | Create Time | CURRENT_TIMESTAMP | NO |  |
 | updated_at | timestamp | Update Time |  | YES |  |

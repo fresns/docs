@@ -95,7 +95,7 @@ $file->getFileInfo();
 {
     "fid": "files->fid",
     "type": "files->type",
-    "status": "files->is_enable",
+    "status": "files->is_enabled",
     "substitutionImageUrl": "文件无效提示图",
     "sensitive": "files->is_sensitive",
     "name": "files->name",

@@ -18,7 +18,7 @@
 | parameter | varchar(128) | 自定义参数 |  | YES |  |
 | rating | smallint *UNSIGNED* | 排列顺序 | 9 | NO | 升序排序 |
 | can_delete | tinyint *UNSIGNED* | 是否禁止删除 | 1 | NO | 0.禁止删除 / 1.允许删除 |
-| is_enable | tinyint *UNSIGNED* | 是否启用 | 1 | NO | 0.停用 / 1.启用 |
+| is_enabled | tinyint *UNSIGNED* | 是否启用 | 1 | NO | 0.停用 / 1.启用 |
 | created_at | timestamp | 创建时间 | CURRENT_TIMESTAMP | NO |  |
 | updated_at | timestamp | 更新时间 |  | YES |  |
 | deleted_at | timestamp | 删除时间 |  | YES |  |

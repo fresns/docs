@@ -13,7 +13,7 @@
 | permissions | json | Permission Parameters |  | NO |  |
 | rank_state | tinyint *UNSIGNED* | Rank Status | 1 | NO | 1.Not Set |
 | rating | smallint *UNSIGNED* | Sorting Order | 9 | NO | Ascending order |
-| is_enable | tinyint *UNSIGNED* | Is Enabled | 1 | NO | 0.Disabled / 1.Enabled |
+| is_enabled | tinyint *UNSIGNED* | Is Enabled | 1 | NO | 0.Disabled / 1.Enabled |
 | created_at | timestamp | Create Time | CURRENT_TIMESTAMP | NO |  |
 | updated_at | timestamp | Update Time |  | YES |  |
 | deleted_at | timestamp | Delete Time |  | YES |  |

@@ -23,7 +23,7 @@
 | position | tinyint *UNSIGNED* | 显示位置 | 2 | NO | 1.上方 / 2.下方 |
 | parameter | varchar(128) | 自定义参数 |  | YES | 逻辑参见[插件说明](../plugins/plugins.md#地址拼接说明) |
 | more_json | json | 扩展配置 |  | YES | 自定义信息，如何使用需客户端配合 |
-| is_enable | tinyint *UNSIGNED* | 是否有效 | 1 | NO | 0.无效 / 1.有效 |
+| is_enabled | tinyint *UNSIGNED* | 是否有效 | 1 | NO | 0.无效 / 1.有效 |
 | created_at | timestamp | 上传时间 | CURRENT_TIMESTAMP | NO |  |
 | updated_at | timestamp | 更新时间 |  | YES |  |
 | deleted_at | timestamp | 删除时间 |  | YES | 为空代表没有删除 |
