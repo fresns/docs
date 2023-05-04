@@ -127,6 +127,7 @@
 | fresns.account.reset.password | /account/reset-password.blade.php | 重置密码 |
 | fresns.account.index | /account/index.blade.php | 账号中心 |
 | fresns.account.wallet | /account/wallet.blade.php | 账号钱包 |
+| fresns.account.user.extcredits | /account/user-extcredits.blade.php | 用户扩展分值 |
 | fresns.account.users | /account/users.blade.php | 账号名下用户 |
 | fresns.account.settings | /account/settings.blade.php | 账号设置 |
 

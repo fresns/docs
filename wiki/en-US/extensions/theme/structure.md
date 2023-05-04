@@ -127,6 +127,7 @@
 | fresns.account.reset.password | /account/reset-password.blade.php | Reset Password |
 | fresns.account.index | /account/index.blade.php | Account Home |
 | fresns.account.wallet | /account/wallet.blade.php | Wallet |
+| fresns.account.user.extcredits | /account/user-extcredits.blade.php | User Extcredits |
 | fresns.account.users | /account/users.blade.php | Users under the account |
 | fresns.account.settings | /account/settings.blade.php | Settings |
 

@@ -48,7 +48,10 @@
                 "createdDatetime": "String / 交易创建时间",
                 "createdTimeAgo": "String / 交易创建时间人性化时间",
                 "remark": "String / 交易备注",
-                "user": "String / 交易的用户，没有则是 null",
+                "user": {
+                    // 交易关联用户，没有则为 null
+                    // 通用数据结构->用户信息
+                },
                 "fskey": "String / 处理交易的插件",
                 "status": "Boolean / 交易状态",
             }

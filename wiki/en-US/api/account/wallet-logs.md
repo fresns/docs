@@ -48,7 +48,10 @@
                 "createdDatetime": "String / Transaction creation time",
                 "createdTimeAgo": "String / Human-friendly time since transaction creation",
                 "remark": "String / Transaction remark",
-                "user": "String / Transaction user, If not, it is null",
+                "user": {
+                    // Transaction user, If not, it is null
+                    // Common Data Structure -> User Info
+                },
                 "fskey": "String / Plugin handling the transaction",
                 "status": "Boolean / Transaction status",
             }

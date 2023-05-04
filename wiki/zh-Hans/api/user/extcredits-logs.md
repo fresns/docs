@@ -41,7 +41,7 @@
                 "amount": "Number / 分值",
                 "openingAmount": "Number / 期初分值",
                 "closingAmount": "Number / 期末分值",
-                "fskey": "String / 处理交易的插件",
+                "fskey": "String / 处理的插件",
                 "remark": "String / 备注",
                 "createdDatetime": "String / 创建时间",
                 "createdTimeAgo": "String / 创建时间人性化时间",
