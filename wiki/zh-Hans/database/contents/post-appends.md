@@ -7,7 +7,7 @@
 | is_plugin_editor | tinyint *UNSIGNED* | 是否仅在插件中编辑 | 0 | NO | 0.否 / 1.是 |
 | editor_fskey | varchar(64) | 内容编辑插件 |  | YES | 关联字段 [plugins->fskey](../plugins/plugins.md) |
 | can_delete | tinyint *UNSIGNED* | 作者是否有权删除 | 1 | NO | 0.否 / 1.是 |
-| is_read_restricted | tinyint *UNSIGNED* | 是否需要阅读授权 | 0 | NO | 0.否 / 1.是 |
+| is_read_locked | tinyint *UNSIGNED* | 是否需要阅读授权 | 0 | NO | 0.否 / 1.是 |
 | read_pre_percentage | tinyint *UNSIGNED* | 阅读权限-无权时内容显示比例 |  | YES | 百分比<br>30 代表显示 30% 的内容 |
 | read_btn_name | varchar(64) | 阅读权限-无权时按钮文字 |  | YES | **多语言** |
 | read_plugin_fskey | varchar(64) | 阅读权限-处理插件 |  | YES | 关联字段 [plugins->fskey](../plugins/plugins.md) |

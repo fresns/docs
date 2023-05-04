@@ -28,8 +28,8 @@
 | postQuotePid | String | *optional* | Quoted post PID<br>Not required | *Post-specific* |
 | postGid | String | *optional* | Group | *Post-specific* |
 | postTitle | String | *optional* | Title | *Post-specific* |
-| postIsComment | Boolean | *optional* | Whether the post can be commented | *Post-specific* |
-| postIsCommentPublic | Boolean | *optional* | Whether comments are public<br>If not public, only the post author can view | *Post-specific* |
+| postIsCommentDisabled | Boolean | NO | Whether comments are disabled | *Post-specific* |
+| postIsCommentPrivate  | Boolean | NO | Whether the comment is private<br>Visible only to the comment author and post author | *Post-specific* |
 | content | String | *optional* | Main content |  |
 | isMarkdown | Boolean | *optional* | Is content in MD format |  |
 | isAnonymous | Boolean | *optional* | Is it anonymous |  |

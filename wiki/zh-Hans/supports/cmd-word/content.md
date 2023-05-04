@@ -13,17 +13,17 @@
 | editorFskey | String | NO | 是否插件编辑器，留空为否 |  |
 | postGid | String | NO | 小组，默认选中了小组 | *帖子专用* |
 | postTitle | String | NO | 标题，默认自带标题 | *帖子专用* |
-| postIsComment | Boolean | NO | 默认配置：是否可以评论帖子 | *帖子专用* |
-| postIsCommentPublic | Boolean | NO | 默认配置：是否公开评论<br>不公开则仅帖子作者可见 | *帖子专用* |
+| postIsCommentDisabled | Boolean | NO | 是否禁止评论 | *帖子专用* |
+| postIsCommentPrivate | Boolean | NO | 是否私有评论<br>私有则仅评论作者和帖子作者可见 | *帖子专用* |
 | postQuotePid | String | NO | 引用的帖子 PID<br>非必填 | *帖子专用* |
 | commentPid | String | NO | *评论专用* | 评论哪个帖子，必传 |
 | commentCid | String | NO | *评论专用* | 留空表示评论帖子<br>有值表示回复这条评论 |
 | content | String | NO | 正文内容，默认自带内容 |  |
-| isMarkdown | Boolean | NO | 默认配置：内容是否为 MD 格式 |  |
-| isAnonymous | Boolean | NO | 默认配置：是否匿名 |  |
-| map | Object | NO | 默认配置：位置信息 |  |
-| extends | Array | NO | 默认配置：扩展内容 |  |
-| archives | Array | NO | 默认配置：扩展参数 |  |
+| isMarkdown | Boolean | NO | 内容是否为 MD 格式 |  |
+| isAnonymous | Boolean | NO | 是否匿名 |  |
+| map | Object | NO | 位置信息 |  |
+| extends | Array | NO | 扩展内容 |  |
+| archives | Array | NO | 扩展参数 |  |
 
 ::: details 结果示例
 ```json
@@ -103,17 +103,17 @@
 | type | Number | YES | `1` 帖子 | `2` 评论 |
 | postGid | String | NO | 小组，默认选中了小组 | *帖子专用* |
 | postTitle | String | NO | 标题，默认自带标题 | *帖子专用* |
-| postIsComment | Boolean | NO | 默认配置：是否可以评论帖子 | *帖子专用* |
-| postIsCommentPublic | Boolean | NO | 默认配置：是否公开评论<br>不公开则仅帖子作者可见 | *帖子专用* |
+| postIsCommentDisabled | Boolean | NO | 是否禁止评论 | *帖子专用* |
+| postIsCommentPrivate | Boolean | NO | 是否私有评论<br>私有则仅评论作者和帖子作者可见 | *帖子专用* |
 | postQuotePid | String | NO | 引用的帖子 PID<br>非必填 | *帖子专用* |
 | commentPid | String | NO | *评论专用* | 评论哪个帖子，必传 |
 | commentCid | String | NO | *评论专用* | 留空表示评论帖子<br>有值表示回复这条评论 |
 | content | String | NO | 正文内容，默认自带内容 |  |
-| isMarkdown | Boolean | NO | 默认配置：内容是否为 MD 格式 |  |
-| isAnonymous | Boolean | NO | 默认配置：是否匿名 |  |
-| map | Object | NO | 默认配置：位置信息 |  |
-| extends | Array | NO | 默认配置：扩展内容 |  |
-| archives | Array | NO | 默认配置：扩展参数 |  |
+| isMarkdown | Boolean | NO | 内容是否为 MD 格式 |  |
+| isAnonymous | Boolean | NO | 是否匿名 |  |
+| map | Object | NO | 位置信息 |  |
+| extends | Array | NO | 扩展内容 |  |
+| archives | Array | NO | 扩展参数 |  |
 | requireReview | Boolean | NO | 是否需要审核<br>默认为 `false` 不需要审核 | 是否需要审核<br>默认为 `false` 不需要审核 |
 
 ::: details 结果示例

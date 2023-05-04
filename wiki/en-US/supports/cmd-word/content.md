@@ -13,17 +13,17 @@
 | editorFskey | String | *optional* | Is it a plugin editor? Empty means no |  |
 | postGid | String | *optional* | Group, default selected group | *Post specific* |
 | postTitle | String | *optional* | Title, default with title | *Post specific* |
-| postIsComment | Boolean | *optional* | Default configuration: Can the post be commented on? | *Post specific* |
-| postIsCommentPublic | Boolean | *optional* | Default configuration: Are comments public?<br>If not public, only the post author can see | *Post specific* |
+| postIsCommentDisabled | Boolean | NO | Whether comments are disabled | *Post-specific* |
+| postIsCommentPrivate  | Boolean | NO | Whether the comment is private<br>Visible only to the comment author and post author | *Post-specific* |
 | postQuotePid | String | *optional* | Quoted post PID<br>Not required | *Post specific* |
 | commentPid | String | *optional* | *Comment specific* | Which post to comment, required |
 | commentCid | String | *optional* | *Comment specific* | Leave empty to comment on the post<br>If there is a value, it means to reply to this comment |
 | content | String | *optional* | Main content, default with content |  |
-| isMarkdown | Boolean | *optional* | Default configuration: Is the content in MD format? |  |
-| isAnonymous | Boolean | *optional* | Default configuration: Is it anonymous? |  |
-| map | Object | *optional* | Default configuration: Location information |  |
-| extends | Array | *optional* | Default configuration: Extended content |  |
-| archives | Array | *optional* | Default configuration: Extended parameters |  |
+| isMarkdown | Boolean | *optional* | Is the content in MD format? |  |
+| isAnonymous | Boolean | *optional* | Is it anonymous? |  |
+| map | Object | *optional* | Location information |  |
+| extends | Array | *optional* | Extended content |  |
+| archives | Array | *optional* | Extended parameters |  |
 
 ::: details Return Example
 ```json
@@ -102,17 +102,17 @@
 | type | Number | **required** | `1` Post | `2` Comment |
 | postGid | String | *optional* | Group, default selected group | *Post specific* |
 | postTitle | String | *optional* | Title, default with title | *Post specific* |
-| postIsComment | Boolean | *optional* | Default configuration: Can the post be commented on? | *Post specific* |
-| postIsCommentPublic | Boolean | *optional* | Default configuration: Are comments public?<br>If not public, only the post author can see | *Post specific* |
+| postIsCommentDisabled | Boolean | NO | Whether comments are disabled | *Post-specific* |
+| postIsCommentPrivate  | Boolean | NO | Whether the comment is private<br>Visible only to the comment author and post author | *Post-specific* |
 | postQuotePid | String | *optional* | Quoted post PID<br>Not required | *Post specific* |
 | commentPid | String | *optional* | *Comment specific* | Which post to comment, required |
 | commentCid | String | *optional* | *Comment specific* | Leave empty to comment on the post<br>If there is a value, it means to reply to this comment |
 | content | String | *optional* | Main content, default with content |  |
-| isMarkdown | Boolean | *optional* | Default configuration: Is the content in MD format? |  |
-| isAnonymous | Boolean | *optional* | Default configuration: Is it anonymous? |  |
-| map | Object | *optional* | Default configuration: Location information |  |
-| extends | Array | *optional* | Default configuration: Extended content |  |
-| archives | Array | *optional* | Default configuration: Extended parameters |  |
+| isMarkdown | Boolean | *optional* | Is the content in MD format? |  |
+| isAnonymous | Boolean | *optional* | Is it anonymous? |  |
+| map | Object | *optional* | Location information |  |
+| extends | Array | *optional* | Extended content |  |
+| archives | Array | *optional* | Extended parameters |  |
 | requireReview | Boolean | optional | Whether review is required<br>Default to `false`, meaning no review is needed | Whether review is required<br>Default to `false`, meaning no review is needed |
 
 ::: details Return Example

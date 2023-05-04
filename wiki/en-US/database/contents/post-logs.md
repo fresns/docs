@@ -87,7 +87,7 @@
 
 ```json
 {
-    "isReadRestricted": "post_appends->is_read_restricted",
+    "isReadLocked": "post_appends->is_read_locked",
     "btnName": [
         {
             "langTag": "en Language Tag",

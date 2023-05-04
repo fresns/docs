@@ -26,8 +26,8 @@
 | postQuotePid | String | *optional* | Quoted post PID<br>Not required | *Post-specific* |
 | postGid | String | *optional* | Group<br>[post_editor_group_required](../../database/keyname/publish.md)<br>If required by configuration, this parameter must also be provided | *Post-specific* |
 | postTitle | String | *optional* | Title<br>[post_editor_title_required](../../database/keyname/publish.md)<br>If required by configuration, this parameter must also be provided | *Post-specific* |
-| postIsComment | Boolean | *optional* | Whether the post can be commented | *Post-specific* |
-| postIsCommentPublic | Boolean | *optional* | Whether comments are public<br>If not public, only the post author can view | *Post-specific* |
+| postIsCommentDisabled | Boolean | NO | Whether comments are disabled | *Post-specific* |
+| postIsCommentPrivate  | Boolean | NO | Whether the comment is private<br>Visible only to the comment author and post author | *Post-specific* |
 | commentPid | String | *optional* | *Comment-specific* | Comment on which post, required |
 | commentCid | String | *optional* | *Comment-specific* | Empty means comment on post<br>Value means reply to this comment |
 | content | String | *optional* | Main content |  |

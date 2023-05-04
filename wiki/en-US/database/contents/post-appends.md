@@ -7,7 +7,7 @@
 | is_plugin_editor | tinyint *UNSIGNED* | Edit only in plugin | 0 | NO | 0.No / 1.Yes |
 | editor_fskey | varchar(64) | Content editor plugin |  | YES | Related field [plugins->fskey](../plugins/plugins.md) |
 | can_delete | tinyint *UNSIGNED* | Can author delete? | 1 | NO | 0.No / 1.Yes |
-| is_read_restricted | tinyint *UNSIGNED* | Is a reading auth required | 0 | NO | 0.No / 1.Yes |
+| is_read_locked | tinyint *UNSIGNED* | Is a reading auth required | 0 | NO | 0.No / 1.Yes |
 | read_pre_percentage | tinyint *UNSIGNED* | Read permission - content display ratio when unauthorized |  | YES | Percentage<br>30 means displaying 30% of the content |
 | read_btn_name | varchar(64) | Read permission - button text when unauthorized |  | YES | **Multilingual** |
 | read_plugin_fskey | varchar(64) | Read permission - handling plugin |  | YES | Related field [plugins->fskey](../plugins/plugins.md) |

@@ -28,16 +28,16 @@
 | editorFskey | String | *optional* | Is it a plugin editor, empty means no |  |
 | postGid | String | *optional* | Group, default selected group | *Post-specific* |
 | postTitle | String | *optional* | Title, default with title | *Post-specific* |
-| postIsComment | Boolean | *optional* | Default configuration: whether the post can be commented | *Post-specific* |
-| postIsCommentPublic | Boolean | *optional* | Default configuration: whether comments are public<br>If not public, only the post author can view | *Post-specific* |
+| postIsCommentDisabled | Boolean | NO | Whether comments are disabled | *Post-specific* |
+| postIsCommentPrivate  | Boolean | NO | Whether the comment is private<br>Visible only to the comment author and post author | *Post-specific* |
 | commentPid | String | *optional* | *Comment-specific* | Comment on which post, required |
 | commentCid | String | *optional* | *Comment-specific* | Empty means comment on post<br>Value means reply to this comment |
 | content | String | *optional* | Main content, default with content |  |
-| isMarkdown | Boolean | *optional* | Default configuration: is content in MD format |  |
-| isAnonymous | Boolean | *optional* | Default configuration: is it anonymous |  |
-| map | Object | *optional* | Default configuration: location information |  |
-| extends | Array | *optional* | Default configuration: extended content |  |
-| archives | Array | *optional* | Default configuration: extended parameters |
+| isMarkdown | Boolean | *optional* | is content in MD format |  |
+| isAnonymous | Boolean | *optional* | is it anonymous |  |
+| map | Object | *optional* | location information |  |
+| extends | Array | *optional* | extended content |  |
+| archives | Array | *optional* | extended parameters |
 
 **Request Description**
 

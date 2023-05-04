@@ -463,7 +463,7 @@ To reduce documentation effort and ensure consistency of public data, the same s
     "rankState": "Number / Rank State",
     "status": "Boolean / Post Status",
     "readConfig": {
-        "isReadRestricted": "Boolean / Whether Authorization is Required",
+        "isReadLocked": "Boolean / Whether Authorization is Required",
         "previewPercentage": "Number / Content Display Percentage When Unauthorized",
         "buttonName": "String / Button Text When Unauthorized",
         "buttonUrl": "String / URL to Handle Authorization",
@@ -503,8 +503,9 @@ To reduce documentation effort and ensure consistency of public data, the same s
         "unit": "String / Unit of distance from me, km or mi",
         "encode": "String / Base64 and URL encoded location parameter string"
     },
-    "isComment": "Boolean / Whether comments are allowed",
-    "isCommentPublic": "Boolean / Whether comments are public (if not public, only the post author can see them)",
+    "isCommentHidden": "Boolean / Whether to hide all comments",
+    "isCommentDisabled": "Boolean / Whether comments are disabled",
+    "isCommentPrivate": "Boolean / Whether the comment is private (visible only to the comment author and post author)",
     "archives": [
         // Common Data Structure -> Extend Archive Info
     ],
@@ -595,7 +596,6 @@ To reduce documentation effort and ensure consistency of public data, the same s
         "blockStatus": "Boolean / Block Status",
         "blockNote": "String / My block note for this post"
     },
-    "commentHidden": "Boolean / Whether comments are hidden",
     "followType": "String / From which type of follow"
     // followType=null: none
     // followType=user: followed user
@@ -668,7 +668,7 @@ To reduce documentation effort and ensure consistency of public data, the same s
         "unit": "String / Unit of distance from me, km or mi",
         "encode": "String / Base64 and URL encoded location parameter string"
     },
-    "isCommentPublic": "Boolean / Whether to make comments public (if not, only the author of the post will be visible)",
+    "isCommentPrivate": "Boolean / Whether the comment is private (visible only to the comment author and post author)",
     "archives": [
         // Common Data Structure -> Extend Archive Info
     ],
@@ -800,8 +800,8 @@ To reduce documentation effort and ensure consistency of public data, the same s
     "isBrief": "Boolean / Is brief",
     "isMarkdown": "Boolean / Is MD format",
     "isAnonymous": "Boolean / Is anonymous",
-    "isComment": "Boolean / Is commentable",
-    "isCommentPublic": "Boolean / Are comments public (if not, only post author can see)",
+    "isCommentDisabled": "Boolean / Whether comments are disabled",
+    "isCommentPrivate": "Boolean / Whether the comment is private (visible only to the comment author and post author)",
     "mapJson": {
         "mapId": "Number / Latitude and longitude map number",
         "latitude": "String / Latitude",
@@ -822,7 +822,7 @@ To reduce documentation effort and ensure consistency of public data, the same s
         "poiId": "String / POI ID"
     },
     "readJson": {
-        "isReadRestricted": "Boolean / Is permission configuration restricted",
+        "isReadLocked": "Boolean / Is permission configuration restricted",
         "previewPercentage": "Number / Pre-read percentage when unauthorized",
         "pluginUrl": "String / Configuration plugin URL",
         "pluginFskey": "String / Configuration plugin fskey",

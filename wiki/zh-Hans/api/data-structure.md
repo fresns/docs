@@ -464,7 +464,7 @@
     "rankState": "Number / 等级状态",
     "status": "Boolean / 帖子状态",
     "readConfig": {
-        "isReadRestricted": "Boolean / 是否需要授权",
+        "isReadLocked": "Boolean / 是否需要授权",
         "previewPercentage": "Number / 无权时内容显示百分比",
         "buttonName": "String / 无权时按钮文字",
         "buttonUrl": "String / 处理授权的地址",
@@ -504,8 +504,9 @@
         "unit": "String / 与我距离的单位 km 或 mi",
         "encode": "String / 将 location 参数进行 Base64 编码和 URL 编码后的字符串",
     },
-    "isComment": "Boolean / 是否可评论",
-    "isCommentPublic": "Boolean / 是否公开评论（不公开则仅帖子作者可见）",
+    "isCommentHidden": "Boolean / 是否隐藏全部评论",
+    "isCommentDisabled": "Boolean / 是否禁止评论",
+    "isCommentPrivate": "Boolean / 是否私有评论（私有则仅评论作者和帖子作者可见）",
     "archives": [
         // 通用数据结构->扩展参数信息
     ],
@@ -596,7 +597,6 @@
         "blockStatus": "Boolean / 屏蔽状态",
         "blockNote": "String / 我对该帖子的屏蔽备注"
     },
-    "commentHidden": "Boolean / 是否隐藏评论",
     "followType": "String / 来自哪种关注 null.无 user.我关注的用户 group.我关注的小组 hashtag.我关注的话题 digest.高级精华"
 }
 ```
@@ -664,7 +664,7 @@
         "unit": "String / 与我距离的单位 km 或 mi",
         "encode": "String / 将 location 参数进行 Base64 编码和 URL 编码后的字符串",
     },
-    "isCommentPublic": "Boolean / 是否公开评论（不公开则仅帖子作者可见）",
+    "isCommentPrivate": "Boolean / 是否私有评论（私有仅评论作者和帖子作者可见）",
     "archives": [
         // 通用数据结构->扩展参数信息
     ],
@@ -790,8 +790,8 @@
     "isBrief": "Boolean / 是否为简述",
     "isMarkdown": "Boolean / 是否为 MD 格式",
     "isAnonymous": "Boolean / 是否匿名",
-    "isComment": "Boolean / 是否可评论",
-    "isCommentPublic": "Boolean / 是否公开评论（不公开则仅帖子作者可见）",
+    "isCommentDisabled": "Boolean / 是否禁止评论",
+    "isCommentPrivate": "Boolean / 是否私有评论（不公开则仅帖子作者可见）",
     "mapJson": {
         "mapId": "Number / 经纬度地图编号",
         "latitude": "String / 纬度",
@@ -812,7 +812,7 @@
         "poiId": "String / POI ID"
     },
     "readJson": {
-        "isReadRestricted": "Boolean / 是否有权限配置",
+        "isReadLocked": "Boolean / 是否有权限配置",
         "previewPercentage": "Number / 无权时预读百分比",
         "pluginUrl": "String / 配置插件地址",
         "pluginFskey": "String / 配置插件 fskey",

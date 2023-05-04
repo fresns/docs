@@ -24,8 +24,9 @@
 | plugin_usages | name | 后台 > 扩展 |
 | users_icons | name | *插件录入* |
 | hashtags | description | *插件录入* |
-| post_appends | allow_btn_name | *插件录入* |
-| post_appends | post_btn_name | *插件录入* |
+| post_appends | read_btn_name | *插件录入* |
+| post_appends | user_list_name | *插件录入* |
+| post_appends | comment_btn_name | *插件录入* |
 | extends | title | *插件录入* |
 | extends | desc_primary | *插件录入* |
 | extends | desc_secondary | *插件录入* |

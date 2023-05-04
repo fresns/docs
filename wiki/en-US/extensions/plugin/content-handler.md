@@ -98,7 +98,7 @@ After the plug-in processes the request and returns the data, the main program w
 
 - **Unlogged in**
     - 1. Do not output private group posts `groups->type_mode=2`
-    - 2. Judge whether a post has any permission conditions `post_appends->is_read_restricted`
+    - 2. Judge whether a post has any permission conditions `post_appends->is_read_locked`
         - If there is no permission condition, output the content normally, otherwise the content should be output according to the permission configuration directly (percentage, button text, and plugin)
         - Percentage `post_appends->read_pre_percentage`
         - Button Text `post_appends->read_btn_name`
@@ -111,7 +111,7 @@ After the plug-in processes the request and returns the data, the main program w
         - `block_type=2` Posts under the group
         - `block_type=3` Posts related to this hashtag
         - `block_type=4` The post
-    - 3.  Judge whether a post has any permission conditions `post_appends->is_read_restricted`. The logic is the same as above
+    - 3.  Judge whether a post has any permission conditions `post_appends->is_read_locked`. The logic is the same as above
 
 ### Private Mode: `site_mode=private`
 

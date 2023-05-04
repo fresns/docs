@@ -24,8 +24,9 @@
 | plugin_usages | name | Panel > Extends |
 | users_icons | name | *Plugin Input* |
 | hashtags | description | *Plugin Input* |
-| post_appends | allow_btn_name | *Plugin Input* |
-| post_appends | post_btn_name | *Plugin Input* |
+| post_appends | read_btn_name | *Plugin Input* |
+| post_appends | user_list_name | *Plugin Input* |
+| post_appends | comment_btn_name | *Plugin Input* |
 | extends | title | *Plugin Input* |
 | extends | desc_primary | *Plugin Input* |
 | extends | desc_secondary | *Plugin Input* |
