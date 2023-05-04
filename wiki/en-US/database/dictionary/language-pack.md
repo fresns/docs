@@ -263,6 +263,8 @@
     {"name":"editorContent","canDelete":false},
     {"name":"editorLocation","canDelete":false},
     {"name":"editorAnonymous","canDelete":false},
+    {"name":"editorCommentDisable","canDelete":false},
+    {"name":"editorCommentPrivate","canDelete":false},
     {"name":"editorUpload","canDelete":false},
     {"name":"editorUploadInfo","canDelete":false},
     {"name":"editorUploadExtensions","canDelete":false},

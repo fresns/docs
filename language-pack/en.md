@@ -262,6 +262,8 @@
     "editorContent": "Content",
     "editorLocation": "Location",
     "editorAnonymous": "Anonymous",
+    "editorCommentDisable": "Disable Comment",
+    "editorCommentPrivate": "Only visible to post author",
     "editorUpload": "Upload",
     "editorUploadInfo": "Please select upload resources",
     "editorUploadExtensions": "Extensions",

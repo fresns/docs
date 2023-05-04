@@ -262,6 +262,8 @@
     "editorContent": "正文",
     "editorLocation": "添加位置",
     "editorAnonymous": "是否匿名",
+    "editorCommentDisable": "禁止评论",
+    "editorCommentPrivate": "仅帖子作者可见",
     "editorUpload": "上传",
     "editorUploadInfo": "请选择上传资源",
     "editorUploadExtensions": "支持的扩展名",
