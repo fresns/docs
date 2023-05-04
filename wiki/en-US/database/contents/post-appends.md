@@ -7,15 +7,15 @@
 | is_plugin_editor | tinyint *UNSIGNED* | Edit only in plugin | 0 | NO | 0.No / 1.Yes |
 | editor_fskey | varchar(64) | Content editor plugin |  | YES | Related field [plugins->fskey](../plugins/plugins.md) |
 | can_delete | tinyint *UNSIGNED* | Can author delete? | 1 | NO | 0.No / 1.Yes |
-| is_allow | tinyint *UNSIGNED* | Allow all users to read? | 1 | NO | 0.No / 1.Yes |
-| allow_percentage | tinyint *UNSIGNED* | Read permission - content display ratio when unauthorized |  | YES | Percentage<br>30 means displaying 30% of the content |
-| allow_btn_name | varchar(64) | Read permission - button text when unauthorized |  | YES | **Multilingual** |
-| allow_plugin_fskey | varchar(64) | Read permission - handling plugin |  | YES | Related field [plugins->fskey](../plugins/plugins.md) |
+| is_read_restricted | tinyint *UNSIGNED* | Is a reading auth required | 0 | NO | 0.No / 1.Yes |
+| read_pre_percentage | tinyint *UNSIGNED* | Read permission - content display ratio when unauthorized |  | YES | Percentage<br>30 means displaying 30% of the content |
+| read_btn_name | varchar(64) | Read permission - button text when unauthorized |  | YES | **Multilingual** |
+| read_plugin_fskey | varchar(64) | Read permission - handling plugin |  | YES | Related field [plugins->fskey](../plugins/plugins.md) |
 | is_user_list | tinyint *UNSIGNED* | Is there a special user list? | 0 | NO | 0.No / 1.Yes |
 | user_list_name | varchar(128) | Specific user name |  | YES | **Multilingual**<br>For example: Rewarding users, Purchasing users, Downloaded users |
 | user_list_plugin_fskey | varchar(64) | Specific user source plugin |  | YES | Related field [plugins->fskey](../plugins/plugins.md) |
-| is_comment | tinyint *UNSIGNED* | Are comments allowed? | 1 | NO |  0.No / 1.Yes |
-| is_comment_public | tinyint *UNSIGNED* | Are comments public?<br>Non-public will only be visible to post author | 1 | NO | 0.No / 1.Yes |
+| is_comment_disabled | tinyint *UNSIGNED* | Are comments disabled? | 0 | NO |  0.No / 1.Yes |
+| is_comment_private | tinyint *UNSIGNED* | Are comments private?<br>Private only visible to the author of the post | 0 | NO | 0.No / 1.Yes |
 | is_comment_btn | tinyint *UNSIGNED* | Does the comment have an extended button?<br>This button is only visible to the post author | 0 | NO | 0.No / 1.Yes |
 | comment_btn_name | varchar(64) | Comment extended button - button text |  | YES | **Multilingual** |
 | comment_btn_style | varchar(64) | Comment extended button - style |  | YES | primary / secondary / success / danger / warning / info |

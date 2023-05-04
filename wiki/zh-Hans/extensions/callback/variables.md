@@ -70,7 +70,7 @@
 | `operationTip` | 功能性提示文案 | `operations.tips` |
 | `extendBox` | 扩展内容 | 文本框 / 信息框 / 交互框 |
 | `postUserList` | 帖子关联用户列表 | 帖子附属用户列表 |
-| `postAllowBtn` | 帖子权限按钮 | 帖子有权限要求，无权时按钮 |
+| `postAuthBtn` | 帖子授权按钮 | 帖子有权限要求，无权时按钮 |
 | `commentBtn` | 评论功能按钮 | 评论附带按钮，帖子作者可操作评论 |
 | `postEditor` | 帖子编辑器 |  |
 | `commentEditor` | 评论编辑器 |  |

@@ -14,10 +14,10 @@
 | content | longtext | Content |  | YES | Full content |
 | is_markdown | tinyint *UNSIGNED* | Is content in MD format | 0 | NO | 0.No / 1.Yes |
 | is_anonymous | tinyint *UNSIGNED* | Is anonymous | 0 | NO | 0.No / 1.Yes |
-| is_comment | tinyint *UNSIGNED* | Are comments allowed? | 1 | NO | 0.No / 1.Yes |
-| is_comment_public | tinyint *UNSIGNED* | Are comments public? (Non-public means only post author can see) | 1 | NO | 0.No / 1.Yes |
+| is_comment_disabled | tinyint *UNSIGNED* | Are comments disabled? | 0 | NO | 0.No / 1.Yes |
+| is_comment_private | tinyint *UNSIGNED* | Are comments private?<br>Private only visible to the author of the post | 0 | NO | 0.No / 1.Yes |
 | map_json | json | Location information |  | YES | Empty means not creating or clearing when modifying |
-| allow_json | json | Read permission settings |  | YES | Empty means not creating or clearing when modifying |
+| read_json | json | Read permission settings |  | YES | Empty means not creating or clearing when modifying |
 | user_list_json | json | Specific user settings |  | YES | Empty means not creating or clearing when modifying |
 | comment_btn_json | json | Comment function button settings |  | YES | Empty means not creating or clearing when modifying |
 | state | tinyint *UNSIGNED* | Status | 1 | NO | 1.Unpublished (draft)<br>2.Published (under review)<br>3.Published (approved and archived)<br>4.Published (not approved, draft status again) |
@@ -83,33 +83,33 @@
 ```
 :::
 
-## Field: `allow_json` Read permission configuration
+## Field: `read_json` Read permission configuration
 
 ```json
 {
-    "isAllow": "posts->is_allow",
+    "isReadRestricted": "post_appends->is_read_restricted",
     "btnName": [
         {
             "langTag": "en Language Tag",
-            "name": "post_appends->allow_btn_name / Button name"
+            "name": "post_appends->read_btn_name / Button name"
         }
     ],
-    "percentage": "post_appends->allow_percentage",
+    "previewPercentage": "post_appends->read_pre_percentage",
     "permissions": {
         "users": [
             1, 2,
             "userId", "userId"
-            // Publish to post_allows->object_id
-            // post_allows->type = 1
+            // Publish to post_auths->object_id
+            // post_auths->type = 1
         ],
         "roles": [
             1, 2,
             "roleId", "roleId"
-            // Publish to post_allows->object_id
-            // post_allows->type = 2
+            // Publish to post_auths->object_id
+            // post_auths->type = 2
         ]
     },
-    "pluginFskey": "post_appends->allow_plugin_fskey"
+    "pluginFskey": "post_appends->read_plugin_fskey"
 }
 ```
 

@@ -1,4 +1,4 @@
-# post_allows
+# post_auths
 
 | Column Name | Type | Comment | Default | Null | Remark |
 | --- | --- | --- | --- | --- | --- |

@@ -72,7 +72,7 @@
 | --- | --- |
 | **posts** | Post main table |
 | **post_appends** | Post append table |
-| **post_allows** | Post: permission record table |
+| **post_auths** | Post: permission record table |
 | **post_users** | Post: affiliated user table |
 | **post_logs** | Post: log table |
 | **comments** | Comment main table |

@@ -98,11 +98,11 @@ $wordBody = [
 
 - **未登录**
     - 1、不输出非公开的小组帖子 `groups->type_mode=2`
-    - 2、判断帖子是否有权限条件 `posts->is_allow`
+    - 2、判断帖子是否有权限条件 `post_appends->is_read_restricted`
         - 无权限条件，正常输出内容；有权限条件，则直接按权限配置输出内容（百分比、按钮文字和处理插件）。
-        - 百分比 `post_appends->allow_percentage`
-        - 按钮文字 `post_appends->allow_btn_name`
-        - 处理插件 `post_appends->allow_plugin_fskey`
+        - 百分比 `post_appends->read_pre_percentage`
+        - 按钮文字 `post_appends->read_btn_name`
+        - 处理插件 `post_appends->read_plugin_fskey`
         - 参考 `App\Fresns\Api\Services\PostService::contentHandle`
 - **已登录**
     - 1、不输出非公开的小组帖子 `groups->type_mode=2`，除非已经 `user_follows` 了该小组。
@@ -111,7 +111,7 @@ $wordBody = [
         - `block_type=2` 发表在该小组下的帖子
         - `block_type=3` 关联该话题的帖子
         - `block_type=4` 该帖子
-    - 3、判断帖子是否有权限条件 `posts->is_allow`，逻辑同上
+    - 3、判断帖子是否有权限条件 `post_appends->is_read_restricted`，逻辑同上
 
 ### 私有模式： site_mode=private
 

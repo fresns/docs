@@ -70,7 +70,7 @@ Whether it is website or mobile application, the use of plug-ins is embedded in 
 | `operationTip` | Functional tip copywriting | `operations.tips` |
 | `extendBox` | Extend Content | textBox / infoBox / interactionBox |
 | `postUserList` | Post User List | List of users attached to the post |
-| `postAllowBtn` | Post Allow Button | The button displayed when the post has permission requirements and the user has no rights |
+| `postAuthBtn` | Post Read Auth Button | The button displayed when the post has permission requirements and the user has no rights |
 | `commentBtn` | Comment Function Button | Comment with button, post author can operate comment |
 | `postEditor` | Post Editor |  |
 | `commentEditor` | Comment Editor |  |

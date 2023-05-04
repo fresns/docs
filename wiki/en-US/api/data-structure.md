@@ -462,8 +462,8 @@ To reduce documentation effort and ensure consistency of public data, the same s
     "latestCommentTimeAgo": "String / Human-readable Latest Comment Time",
     "rankState": "Number / Rank State",
     "status": "Boolean / Post Status",
-    "allowConfig": {
-        "isAllow": "Boolean / Whether Authorization is Required",
+    "readConfig": {
+        "isReadRestricted": "Boolean / Whether Authorization is Required",
         "previewPercentage": "Number / Content Display Percentage When Unauthorized",
         "buttonName": "String / Button Text When Unauthorized",
         "buttonUrl": "String / URL to Handle Authorization",
@@ -821,9 +821,9 @@ To reduce documentation effort and ensure consistency of public data, the same s
         "poi": "String / POI information",
         "poiId": "String / POI ID"
     },
-    "allowJson": {
-        "isAllow": "Boolean / Is permission configuration allowed",
-        "percentage": "Number / Pre-read percentage when unauthorized",
+    "readJson": {
+        "isReadRestricted": "Boolean / Is permission configuration restricted",
+        "previewPercentage": "Number / Pre-read percentage when unauthorized",
         "pluginUrl": "String / Configuration plugin URL",
         "pluginFskey": "String / Configuration plugin fskey",
         "defaultLangBtnName": "String / Button text when unauthorized",

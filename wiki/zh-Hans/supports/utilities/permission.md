@@ -131,7 +131,7 @@ PermissionUtility::checkUserGroupPublishPerm($groupId, $permissions, $userId);
 ## 判断帖子阅读权限
 
 ```php
-PermissionUtility::checkPostAllow($postId, $userId);
+PermissionUtility::checkPostAuth($postId, $userId);
 ```
 | 参数名 | 类型 | 是否必传 | 说明 |
 | --- | --- | --- | --- |

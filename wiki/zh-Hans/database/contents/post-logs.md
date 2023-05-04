@@ -14,10 +14,10 @@
 | content | longtext | 内容 |  | YES | 完整内容 |
 | is_markdown | tinyint *UNSIGNED* | 内容是否为 MD 格式 | 0 | NO | 0.否 / 1.是 |
 | is_anonymous | tinyint *UNSIGNED* | 是否匿名 | 0 | NO |  0.否 / 1.是 |
-| is_comment | tinyint *UNSIGNED* | 是否可评论 | 1 | NO |  0.否 / 1.是 |
-| is_comment_public | tinyint *UNSIGNED* | 是否公开评论（不公开则仅帖子作者可见） | 1 | NO |  0.否 / 1.是 |
+| is_comment_disabled | tinyint *UNSIGNED* | 是否禁止评论 | 0 | NO |  0.否 / 1.是 |
+| is_comment_private | tinyint *UNSIGNED* | 是否私有评论（私有仅帖子作者可见） | 0 | NO |  0.否 / 1.是 |
 | map_json | json | 位置信息 |  | YES | 为空值，代表不创建或者修改时清空 |
-| allow_json | json | 阅读权限配置 |  | YES | 为空值，代表不创建或者修改时清空 |
+| read_json | json | 阅读权限配置 |  | YES | 为空值，代表不创建或者修改时清空 |
 | user_list_json | json | 特定用户配置 |  | YES | 为空值，代表不创建或者修改时清空 |
 | comment_btn_json | json | 评论功能按钮设置 |  | YES | 为空值，代表不创建或者修改时清空 |
 | state | tinyint *UNSIGNED* | 状态 | 1 | NO |  1.未发表（草稿）<br>2.已发表（审核中）<br>3.已发表（审核通过并封存）<br>4.已发表（审核未通过，又为草稿状态） |
@@ -105,33 +105,33 @@
 ```
 :::
 
-## 字段: allow_json 阅读权限配置
+## 字段: read_json 阅读权限配置
 
 ```json
 {
-    "isAllow": "posts->is_allow",
+    "isReadRestricted": "post_appends->is_read_restricted",
     "btnName": [
         {
             "langTag": "en 语言标签",
-            "name": "post_appends->allow_btn_name 按钮名称"
+            "name": "post_appends->read_btn_name 按钮名称"
         }
     ],
-    "percentage": "post_appends->allow_percentage",
+    "previewPercentage": "post_appends->read_pre_percentage",
     "permissions": {
         "users": [
             1, 2,
             "userId", "userId"
-            // 发表时存入 post_allows->object_id
-            // post_allows->type = 1
+            // 发表时存入 post_auths->object_id
+            // post_auths->type = 1
         ],
         "roles": [
             1, 2,
             "roleId", "roleId"
-            // 发表时存入 post_allows->object_id
-            // post_allows->type = 2
+            // 发表时存入 post_auths->object_id
+            // post_auths->type = 2
         ]
     },
-    "pluginFskey": "post_appends->allow_plugin_fskey"
+    "pluginFskey": "post_appends->read_plugin_fskey"
 }
 ```
 

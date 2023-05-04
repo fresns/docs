@@ -131,7 +131,7 @@ PermissionUtility::checkUserGroupPublishPerm($groupId, $permissions, $userId);
 ## Determine Post Reading Permissions
 
 ```php
-PermissionUtility::checkPostAllow($postId, $userId);
+PermissionUtility::checkPostAuth($postId, $userId);
 ```
 | Parameter Name | Type | Required | Description |
 | --- | --- | --- | --- |

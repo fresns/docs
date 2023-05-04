@@ -33,7 +33,7 @@
 | 12 | TYPE_OPERATION | 扩展功能信息 |
 | 13 | TYPE_FILE | 文件 |
 | 14 | TYPE_MAP | 地图 |
-| 15 | TYPE_CONTENT_READ_ALLOW | 内容阅读权限 |
+| 15 | TYPE_CONTENT_READ_AUTH | 内容阅读权限 |
 | 16 | TYPE_CONTENT_USER_LIST | 内容附属用户 |
 | 17 | TYPE_CONTENT_COMMENT_BUTTON | 内容评论按钮 |
 | 18 | TYPE_CONTENT_COMMENT_CONFIG | 内容评论配置 |

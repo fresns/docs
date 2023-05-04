@@ -33,7 +33,7 @@
 | 12 | TYPE_OPERATION | Extended function information |
 | 13 | TYPE_FILE | File |
 | 14 | TYPE_MAP | Map |
-| 15 | TYPE_CONTENT_READ_ALLOW | Content read permission |
+| 15 | TYPE_CONTENT_READ_AUTH | Content read permission |
 | 16 | TYPE_CONTENT_USER_LIST | Content attached user |
 | 17 | TYPE_CONTENT_COMMENT_BUTTON | Content comment button |
 | 18 | TYPE_CONTENT_COMMENT_CONFIG | Content comment configuration |

@@ -463,8 +463,8 @@
     "latestCommentTimeAgo": "String / 最新评论的人性化时间",
     "rankState": "Number / 等级状态",
     "status": "Boolean / 帖子状态",
-    "allowConfig": {
-        "isAllow": "Boolean / 是否需要授权",
+    "readConfig": {
+        "isReadRestricted": "Boolean / 是否需要授权",
         "previewPercentage": "Number / 无权时内容显示百分比",
         "buttonName": "String / 无权时按钮文字",
         "buttonUrl": "String / 处理授权的地址",
@@ -811,9 +811,9 @@
         "poi": "String / POI 信息",
         "poiId": "String / POI ID"
     },
-    "allowJson": {
-        "isAllow": "Boolean / 是否有权限配置",
-        "percentage": "Number / 无权时预读百分比",
+    "readJson": {
+        "isReadRestricted": "Boolean / 是否有权限配置",
+        "previewPercentage": "Number / 无权时预读百分比",
         "pluginUrl": "String / 配置插件地址",
         "pluginFskey": "String / 配置插件 fskey",
         "defaultLangBtnName": "String / 无权时按钮文字",

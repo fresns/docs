@@ -41,7 +41,7 @@ The contents listed below are not stored in the multilingual table or in the flo
 | Table Name | Column or Key Name |
 | --- | --- |
 | code_messages | lang_tag |
-| post_logs | allow_json |
+| post_logs | read_json |
 | post_logs | user_list_json |
 | post_logs | comment_btn_json |
 | plugin_usages | data_sources |
