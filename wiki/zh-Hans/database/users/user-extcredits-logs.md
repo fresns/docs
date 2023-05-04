@@ -4,7 +4,7 @@
 | --- | --- | --- | --- | --- | --- |
 | id | bigint *UNSIGNED* | 主键 ID |  | NO | 自动递赠 |
 | user_id | bigint *UNSIGNED* | 用户 ID |  | NO | 关联字段 [users->id](../users/users.md) |
-| extcredits | tinyint *UNSIGNED* | extcredits 编号 |  | NO | extcredits 1~5 |
+| extcredits_id | tinyint *UNSIGNED* | extcredits 编号 |  | NO | extcredits 1~5 |
 | type | tinyint *UNSIGNED* | 操作类型 | 1 | NO | 1.加分 / 2.减分 |
 | amount | int *UNSIGNED* | 数值 | 0 | NO | 加或减的数值 |
 | opening_amount | int *UNSIGNED* | 期初数值 |  | NO | 操作前数值 |

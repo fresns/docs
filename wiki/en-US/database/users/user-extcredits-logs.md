@@ -4,7 +4,7 @@
 | --- | --- | --- | --- | --- | --- |
 | id | bigint *UNSIGNED* | Primary Key ID |  | NO | Auto Increment |
 | user_id | bigint *UNSIGNED* | User Primary Key ID |  | NO | Related field [users->id](users.md) |
-| extcredits | tinyint *UNSIGNED* | Extcredits Number |  | NO | extcredits 1~5 |
+| extcredits_id | tinyint *UNSIGNED* | Extcredits ID |  | NO | extcredits 1~5 |
 | type | tinyint *UNSIGNED* | Operation Type | 1 | NO | 1.increment / 2.decrement |
 | amount | int *UNSIGNED* | Amount | 0 | NO | increment or decrement amount |
 | opening_amount | int *UNSIGNED* | Opening Amount |  | NO |  |

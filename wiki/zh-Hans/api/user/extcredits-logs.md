@@ -17,7 +17,7 @@
 
 | 参数名 | 类型 | 是否必传 | 说明 |
 | --- | --- | --- | --- |
-| extcredits | String | NO | 分值类型编号（留空输出全部），多个以英文逗号隔开 |
+| extcreditsId | Number | NO | 分值类型编号（留空输出全部） |
 | pageSize | Number | NO | 每页显示条数（默认 15 条） |
 | page | Number | NO | 页码（默认 1） |
 
@@ -36,7 +36,7 @@
         },
         "list": [
             {
-                "extcredits": "Number / 分值类型编号",
+                "extcreditsId": "Number / 分值类型编号",
                 "type": "String / 操作类型，increment 或 decrement",
                 "amount": "Number / 分值",
                 "openingAmount": "Number / 期初分值",

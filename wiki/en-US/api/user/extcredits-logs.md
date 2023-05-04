@@ -17,7 +17,7 @@
 
 | Parameter Name | Type | Required | Description |
 | --- | --- | --- | --- |
-| extcredits | String | *optional* | Extcredits number (leave empty to output all), multiple types separated by English commas |
+| extcreditsId | Number | *optional* | Extcredits number (leave empty to output all) |
 | pageSize | Number | *optional* | Number of items per page (default 15 items) |
 | page | Number | *optional* | Page number (default 1) |
 
@@ -36,7 +36,7 @@
         },
         "list": [
             {
-                "extcredits": "Number / Extcredits number",
+                "extcreditsId": "Number / Extcredits number",
                 "type": "String / Operation type, increment or decrement",
                 "amount": "Number / Amount",
                 "openingAmount": "Number / Opening amount",
