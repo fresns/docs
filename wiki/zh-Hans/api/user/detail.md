@@ -54,6 +54,6 @@
 ::: details 开发说明
 - 无论是否登录，输出的是 `uidOrUsername` 用户信息，不是 `header` 里的 `uid` 的用户信息。
 - 自己的 `uid` 和接口 `uidOrUsername` 参数一样，则代表自己查看自己的信息；参数不一样，代表查看别人的信息。
-- 查看别人的信息，参数 `extcredits1` 要判断 `extcredits1_status` 键值，未启用或者为私有状态，则不输出。其他 2～5 同理。
+- 查看别人的信息，参数 `extcredits1` 要判断 `extcredits1_state` 键值，未启用或者为私有状态，则不输出。其他 2～5 同理。
 - 查看别人的信息，`features` 和 `profiles` 扩展列表不输出。
 :::

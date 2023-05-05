@@ -50,19 +50,19 @@
 | --- | --- | --- | --- |
 | users | extcredits1_name | 扩展 1 名称 | 1 |
 | users | extcredits1_unit | 扩展 1 单位 | 1 |
-| users | extcredits1_status | 扩展 1 状态（1.不启用 2.私有 3.公开） | 1 |
+| users | extcredits1_state | 扩展 1 状态（1.不启用 2.私有 3.公开） | 1 |
 | users | extcredits2_name | 扩展 2 名称 | 1 |
 | users | extcredits2_unit | 扩展 2 单位 | 1 |
-| users | extcredits2_status | 扩展 2 状态（1.不启用 2.私有 3.公开） | 1 |
+| users | extcredits2_state | 扩展 2 状态（1.不启用 2.私有 3.公开） | 1 |
 | users | extcredits3_name | 扩展 3 名称 | 1 |
 | users | extcredits3_unit | 扩展 3 单位 | 1 |
-| users | extcredits3_status | 扩展 3 状态（1.不启用 2.私有 3.公开） | 1 |
+| users | extcredits3_state | 扩展 3 状态（1.不启用 2.私有 3.公开） | 1 |
 | users | extcredits4_name | 扩展 4 名称 | 1 |
 | users | extcredits4_unit | 扩展 4 单位 | 1 |
-| users | extcredits4_status | 扩展 4 状态（1.不启用 2.私有 3.公开） | 1 |
+| users | extcredits4_state | 扩展 4 状态（1.不启用 2.私有 3.公开） | 1 |
 | users | extcredits5_name | 扩展 5 名称 | 1 |
 | users | extcredits5_unit | 扩展 5 单位 | 1 |
-| users | extcredits5_status | 扩展 5 状态（1.不启用 2.私有 3.公开） | 1 |
+| users | extcredits5_state | 扩展 5 状态（1.不启用 2.私有 3.公开） | 1 |
 
 ## 运营配置
 

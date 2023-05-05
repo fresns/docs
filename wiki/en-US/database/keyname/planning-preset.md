@@ -50,19 +50,19 @@ Data Table [user_stats](../users/user-stats.md)
 | --- | --- | --- | --- |
 | users | extcredits1_name | Extension 1 Name | 1 |
 | users | extcredits1_unit | Extension 1 Unit | 1 |
-| users | extcredits1_status | Extension 1 Status (1. Disabled 2. Private 3. Public) | 1 |
+| users | extcredits1_state | Extension 1 State (1. Disabled 2. Private 3. Public) | 1 |
 | users | extcredits2_name | Extension 2 Name | 1 |
 | users | extcredits2_unit | Extension 2 Unit | 1 |
-| users | extcredits2_status | Extension 2 Status (1. Disabled 2. Private 3. Public) | 1 |
+| users | extcredits2_state | Extension 2 State (1. Disabled 2. Private 3. Public) | 1 |
 | users | extcredits3_name | Extension 3 Name | 1 |
 | users | extcredits3_unit | Extension 3 Unit | 1 |
-| users | extcredits3_status | Extension 3 Status (1. Disabled 2. Private 3. Public) | 1 |
+| users | extcredits3_state | Extension 3 State (1. Disabled 2. Private 3. Public) | 1 |
 | users | extcredits4_name | Extension 4 Name | 1 |
 | users | extcredits4_unit | Extension 4 Unit | 1 |
-| users | extcredits4_status | Extension 4 Status (1. Disabled 2. Private 3. Public) | 1 |
+| users | extcredits4_state | Extension 4 State (1. Disabled 2. Private 3. Public) | 1 |
 | users | extcredits5_name | Extension 5 Name | 1 |
 | users | extcredits5_unit | Extension 5 Unit | 1 |
-| users | extcredits5_status | Extension 5 Status (1. Disabled 2. Private 3. Public) | 1 |
+| users | extcredits5_state | Extension 5 State (1. Disabled 2. Private 3. Public) | 1 |
 
 ## Operation
 
