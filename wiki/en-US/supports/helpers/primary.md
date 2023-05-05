@@ -54,8 +54,8 @@ PrimaryHelper::fresnsAccountIdByUidOrUsername($uidOrUsername);
 ```
 | Parameter Name | Type | Required | Description |
 | --- | --- | --- | --- |
-| aid | String | **required** | `accounts->aid` |
-| uidOrUsername | String | **required** | `users->uid` or `users->username` |
+| aid | String | *optional* | `accounts->aid` |
+| uidOrUsername | String | *optional* | `users->uid` or `users->username` |
 
 ## Get User Primary ID
 
@@ -64,7 +64,7 @@ PrimaryHelper::fresnsUserIdByUidOrUsername($uidOrUsername);
 ```
 | Parameter Name | Type | Required | Description |
 | --- | --- | --- | --- |
-| uidOrUsername | String | **required** | `users->uid` or `users->username` |
+| uidOrUsername | String | *optional* | `users->uid` or `users->username` |
 
 ## Get Group Primary ID
 
@@ -73,7 +73,17 @@ PrimaryHelper::fresnsGroupIdByGid($gid);
 ```
 | Parameter Name | Type | Required | Description |
 | --- | --- | --- | --- |
-| gid | String | **required** | `groups->gid` |
+| gid | String | *optional* | `groups->gid` |
+
+## Get Group Primary ID by ContentFsid
+
+```php
+PrimaryHelper::fresnsGroupIdByContentFsid($type, $fsid);
+```
+| Parameter Name | Type | Required | Description |
+| --- | --- | --- | --- |
+| type | String | **required** | `post` or `comment` |
+| fsid | String | *optional* | `posts->pid` or `comments->cid` |
 
 ## Get Hashtag Primary ID
 
@@ -82,7 +92,7 @@ PrimaryHelper::fresnsHashtagIdByHid($hid);
 ```
 | Parameter Name | Type | Required | Description |
 | --- | --- | --- | --- |
-| hid | String | **required** | `hashtags->slug` |
+| hid | String | *optional* | `hashtags->slug` |
 
 ## Get Post Primary ID
 
@@ -91,7 +101,7 @@ PrimaryHelper::fresnsPostIdByPid($pid);
 ```
 | Parameter Name | Type | Required | Description |
 | --- | --- | --- | --- |
-| pid | String | **required** | `posts->pid` |
+| pid | String | *optional* | `posts->pid` |
 
 ## Get Comment Primary ID
 
@@ -100,7 +110,7 @@ PrimaryHelper::fresnsCommentIdByCid($cid);
 ```
 | Parameter Name | Type | Required | Description |
 | --- | --- | --- | --- |
-| cid | String | **required** | `comments->cid` |
+| cid | String | *optional* | `comments->cid` |
 
 ## Get File Primary ID
 
@@ -109,7 +119,7 @@ PrimaryHelper::fresnsFileIdByFid($fid);
 ```
 | Parameter Name | Type | Required | Description |
 | --- | --- | --- | --- |
-| fid | String | **required** | `files->fid` |
+| fid | String | *optional* | `files->fid` |
 
 ## Get Extend Primary ID
 
@@ -118,4 +128,4 @@ PrimaryHelper::fresnsExtendIdByEid($eid);
 ```
 | Parameter Name | Type | Required | Description |
 | --- | --- | --- | --- |
-| eid | String | **required** | `extends->eid` |
+| eid | String | *optional* | `extends->eid` |

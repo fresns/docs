@@ -165,11 +165,11 @@ PermissionUtility::checkContentEditPerm($createDateTime, $editTimeConfig, $timez
 ## Determine Extension Permissions
 
 ```php
-PermissionUtility::checkExtendPerm($fskey, $scene, $groupId, $userId);
+PermissionUtility::checkExtendPerm($fskey, $usageType, $groupId, $userId);
 ```
 | Parameter Name | Type | Required | Description |
 | --- | --- | --- | --- |
 | fskey | String | **required** | Plugin Fskey |
-| scene | String | **required** | [{scene} Source Scene](../../extensions/callback/variables.md#scene-entrance-scene) |
+| usageType | Number | **required** | [plugin_usages->usage_type](../../database/plugins/plugin-usages.md) |
 | groupId | Number | *optional* | Group ID `groups->id` |
 | userId | Number | *optional* | User ID `users->id` |
