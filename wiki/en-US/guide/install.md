@@ -16,7 +16,7 @@ Before you install Fresns, it's important to check that your server meets the re
 ## Download
 
 ::: tip Option 1: Download the full package manually
-- [Download Fresns v2.10.2 (04/27/2023)](https://app.fresns.org/latest.zip)
+- [Download Fresns v2.11.0 (05/06/2023)](https://app.fresns.org/latest.zip)
 - *Website engine and theme templates already built in*
 :::
 
@@ -38,44 +38,32 @@ php artisan vendor:publish --provider="Fresns\MarketManager\Providers\MarketServ
 
 ## Installing
 
-### 1. Config the Web Server
+::: tip Option 1: Installation in Web View
+- Please configure the web server first
+- Browser access `/install`
+:::
+
+::: tip Option 2: Installation in Terminal
+```sh
+# Go to the fresns project root
+cd fresns
+
+# Go to the installation process
+php artisan fresns:install
+```
+:::
+
+- Default Admin Panel Path: `/fresns/admin`
+
+## Web Server Config
 
 - Point the website directory to `/public/`
 - Add [URL Rewriting](#url-rewriting) to the configuration file
 - Set directory [folder ownership](#folder-ownership)
 
-> Note: As the “website root directory” is not the “main program root directory”, the website will request the main program root directory file upwards when running, so please do not turn on the function configuration of anti-cross-site attack (open_basedir).
+> Note: As the `website root directory` is not the `main program root directory`, the website will request the main program root directory file upwards when running, so please do not turn on the function configuration of anti-cross-site attack (`open_basedir`).
 
-### 2. Install Config
-
-- Access `{website}/install`
-- Check the environment and configure the database information according to the process
-- Fill in the administrator information and register an administrator account
-- Login Panel `{website}/fresns/admin`
-
-## Config Intro
-
-### Task Scheduling
-
-When running Fresns, you need a way to keep “scheduled tasks” running normally, and task scheduling of Laravel framework is a mechanism to ensure that main programs and plug-ins can use scheduled tasks. With task scheduling configured, the main program can regularly clean up and log off accounts and detect the expiration of user roles.
-
-::: code-group
-```sh [Intro]
-# Task Config
-* * * * * cd /your-project-path && php artisan schedule:run >> /dev/null 2>&1
-
-# or
-su -c "cd /your-project-path && php artisan schedule:run >> /dev/null 2>&1" -s /bin/sh owner
-```
-
-```sh [Example]
-# Example
-* * * * * cd /www/wwwroot/fresns && php artisan schedule:run >> /dev/null 2>&1
-
-# or
-su -c "cd /www/wwwroot/fresns && php artisan schedule:run >> /dev/null 2>&1" -s /bin/sh www
-```
-:::
+## Environment Config
 
 ### .env Config File
 
@@ -185,6 +173,44 @@ SESSION_DRIVER=memcached
 
 - `Redis`: In addition to cache, other driver systems that support Redis can also be configured to use it.
 - `Memcached`: only supports drive cache and session.
+
+### Task Scheduling
+
+When running Fresns, you need a way to keep “scheduled tasks” running normally, and task scheduling of Laravel framework is a mechanism to ensure that main programs and plug-ins can use scheduled tasks. With task scheduling configured, the main program can regularly clean up and log off accounts and detect the expiration of user roles.
+
+::: code-group
+```sh [Intro]
+# Task Config
+* * * * * cd /your-project-path && php artisan schedule:run >> /dev/null 2>&1
+
+# or
+su -c "cd /your-project-path && php artisan schedule:run >> /dev/null 2>&1" -s /bin/sh owner
+```
+
+```sh [Example]
+# Example
+* * * * * cd /www/wwwroot/fresns && php artisan schedule:run >> /dev/null 2>&1
+
+# or
+su -c "cd /www/wwwroot/fresns && php artisan schedule:run >> /dev/null 2>&1" -s /bin/sh www
+```
+:::
+
+### Queues
+
+- Queue connection options:
+    - `sync` Synchronously execute the queue, no additional configuration required
+    - `redis` Use the PHP extension redis cache driver for the queue
+    - `database` Use the database driver for the queue, no additional configuration required
+    - `beanstalkd` Use a distributed memory queue system, suitable for large projects
+    - `sqs` Use AWS sqs for the queue, requires AWS key configuration, suitable for large projects
+
+It is recommended to use `redis` or `database`. The default is `sync` if not configured.
+
+```sh
+# Command to start the process
+php artisan queue:work
+```
 
 ### Timezone Config
 

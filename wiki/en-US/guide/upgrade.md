@@ -39,8 +39,7 @@ fresns/         // Main Program Root Directory
 ```json
 {
     "name": "Fresns",
-    "version": "2.0.0",
-    "versionInt": 1, // Please do not modify before upgrading
+    "version": "2.0.0", // Please do not modify before upgrading
     "plugins": {
         "FresnsEmail": false, // true means activate, false means deactivate
         "EasySms": false,
@@ -54,8 +53,7 @@ fresns/         // Main Program Root Directory
 
 {
     "name": "Fresns",
-    "version": "2.0.0",
-    "versionInt": 1, // Please do not modify before upgrading
+    "version": "2.0.0", // Please do not modify before upgrading
     "plugins": {}
 }
 ```
@@ -68,6 +66,7 @@ fresns/         // Main Program Root Directory
 
 | Version | Version Int | Release Date |
 | --- | --- | --- |
+| 2.11.0 | 28 | 05/06/2023 |
 | 2.10.2 | 27 | 04/27/2023 |
 | 2.10.1 | 26 | 04/27/2023 |
 | 2.10.0 | 25 | 04/27/2023 |

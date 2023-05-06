@@ -16,7 +16,7 @@ Fresns 是一款基于 PHP 编程语言和关系型数据库开发的社交社�
 ## 下载安装包
 
 ::: tip 方式 1: 手动下载完整包（已内置网站引擎和主题模板）
-- [下载 Fresns v2.10.2 (2023-04-27)](https://app.fresns.org/latest.zip)
+- [下载 Fresns v2.11.0 (2023-05-06)](https://app.fresns.org/latest.zip)
 :::
 
 ::: tip 方式 2: 基于 Composer 下载
@@ -37,7 +37,24 @@ php artisan vendor:publish --provider="Fresns\MarketManager\Providers\MarketServ
 
 ## 主程序安装
 
-### 1、配置 Web 服务器
+::: tip 方式 1: 可视化安装
+- 请先配置好 Web 服务器
+- 浏览器访问 `网址/install`
+:::
+
+::: tip 方式 2: 终端中安装
+```sh
+# 进入 fresns 项目根目录
+cd fresns
+
+# 进入安装流程
+php artisan fresns:install
+```
+:::
+
+- 默认后台路径 `网址/fresns/admin`
+
+## Web 服务器配置
 
 - 将网站运行目录指向 `/public/`
 - 在配置文件中添加 [URL 重写规则](#url-重写)
@@ -45,36 +62,7 @@ php artisan vendor:publish --provider="Fresns\MarketManager\Providers\MarketServ
 
 > 备注：由于“网站根目录”不是“主程序根目录”，网站运行时会向上请求主程序根目录文件，所以请勿开启 `防跨站攻击(open_basedir)` 的功能配置。
 
-### 2、执行安装
-
-- 访问 `网址/install`
-- 根据流程检测环境和配置数据库信息
-- 填写管理员信息，注册管理员账号
-- 登录后台 `网址/fresns/admin`
-
 ## 高级配置
-
-### 任务调度
-
-在运营 Fresns 时，您需要一种方法来保持「定时任务」正常运行，而 Laravel 框架的任务调度就是一个保证主程序和插件能够使用定时任务的机制。配置了任务调度，主程序就可以定时清理注销账号和检测用户角色过期等任务。
-
-::: code-group
-```sh [说明]
-# 任务配置
-* * * * * cd /你的项目路径 && php artisan schedule:run >> /dev/null 2>&1
-
-# 或
-su -c "cd /你的项目路径 && php artisan schedule:run >> /dev/null 2>&1" -s /bin/sh 所有者
-```
-
-```sh [示例]
-# 示例
-* * * * * cd /www/wwwroot/fresns && php artisan schedule:run >> /dev/null 2>&1
-
-# 或
-su -c "cd /www/wwwroot/fresns && php artisan schedule:run >> /dev/null 2>&1" -s /bin/sh www
-```
-:::
 
 ### .env 配置文件
 
@@ -184,6 +172,44 @@ SESSION_DRIVER=memcached    #会话驱动
 
 - `Redis`: 除了缓存，其他驱动系统支持 Redis 的也可以配置使用。
 - `Memcached`: 仅支持驱动缓存和会话。
+
+### 任务调度
+
+在运营 Fresns 时，您需要一种方法来保持「定时任务」正常运行，而 Laravel 框架的任务调度就是一个保证主程序和插件能够使用定时任务的机制。配置了任务调度，主程序就可以定时清理注销账号和检测用户角色过期等任务。
+
+::: code-group
+```sh [说明]
+# 任务配置
+* * * * * cd /你的项目路径 && php artisan schedule:run >> /dev/null 2>&1
+
+# 或
+su -c "cd /你的项目路径 && php artisan schedule:run >> /dev/null 2>&1" -s /bin/sh 所有者
+```
+
+```sh [示例]
+# 示例
+* * * * * cd /www/wwwroot/fresns && php artisan schedule:run >> /dev/null 2>&1
+
+# 或
+su -c "cd /www/wwwroot/fresns && php artisan schedule:run >> /dev/null 2>&1" -s /bin/sh www
+```
+:::
+
+### 队列
+
+- 队列连接方式：
+    - `sync` 同步执行队列，无需额外配置
+    - `redis` 使用 PHP 扩展 redis 缓存器驱动队列
+    - `database` 使用数据库驱动队列，无需额外配置
+    - `beanstalkd` 使用分布式内存队列系统，适用于大型项目
+    - `sqs` 使用 AWS sqs 驱动队列，需配置 AWS 密钥，适用于大型项目
+
+推荐 `redis` 或 `database`，不配置则默认为 `sync`
+
+```sh
+# 进程启动命令
+php artisan queue:work
+```
 
 ### 时区配置介绍
 
