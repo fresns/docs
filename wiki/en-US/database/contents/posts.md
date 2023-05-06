@@ -16,7 +16,7 @@
 | map_longitude | decimal(12,8) | Map - Longitude |  | YES | Decimal, range -180~180, negative for west longitude |
 | map_latitude | decimal(12,8) | Map - Latitude |  | YES | Decimal, range -90~90, negative for south latitude |
 | sticky_state | tinyint *UNSIGNED* | Sticky state | 1 | NO | 1.No / 2.Group Sticky / 3.Global Sticky |
-| digest_state | tinyint *UNSIGNED* | Digest state | 1 | NO | 1.No / 2.General Digest / 3.Advanced Digest |
+| digest_state | tinyint *UNSIGNED* | Digest state | 1 | NO | 1.No / 2.General Digest / 3.Premium Digest |
 | like_count | int *UNSIGNED* | Like count | 0 | NO | Number of users who liked the post |
 | dislike_count | int *UNSIGNED* | Dislike count | 0 | NO | Number of users who disliked the post |
 | follow_count | int *UNSIGNED* | Follow count | 0 | NO | Number of users who followed (saved) the post |
@@ -44,5 +44,5 @@
 
 *When the Groups feature is enabled, by default only the content set as an digest under Groups will be displayed in the stream of the following page.
 
-**Advanced Digest**
+**Premium Digest**
 - Appears on all users' timeline

@@ -16,7 +16,7 @@
 | map_longitude | decimal(12,8) | Map-Longitude |  | YES | Float, range -180~180, negative numbers represent west longitude |
 | map_latitude | decimal(12,8) | Map-Latitude |  | YES | Float, range -90~90, negative numbers represent south latitude |
 | is_sticky | tinyint *UNSIGNED* | Is Sticky | 0 | NO |  0.No / 1.Yes |
-| digest_state | tinyint *UNSIGNED* | Digest Status | 1 | NO |  1.No / 2.General Digest / 3.Advanced Digest |
+| digest_state | tinyint *UNSIGNED* | Digest Status | 1 | NO |  1.No / 2.General Digest / 3.Premium Digest |
 | like_count | int *UNSIGNED* | Number of Likes | 0 | NO | Number of users who liked this comment |
 | dislike_count | int *UNSIGNED* | Number of Dislikes | 0 | NO | Number of users who disliked this comment |
 | follow_count | int *UNSIGNED* | Number of Follows | 0 | NO | Number of users who followed (collected) this comment |

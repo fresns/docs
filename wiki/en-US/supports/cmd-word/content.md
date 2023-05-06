@@ -206,7 +206,7 @@ $wordBody = [
 | --- | --- | --- | --- |
 | type | Number | **required** | 1.Post 2.Comment |
 | fsid | String | **required** | `pid` or `cid` |
-| state | Number | **required** | 1.No / 2.General Digest / 3.Advanced Digest |
+| state | Number | **required** | 1.No / 2.General Digest / 3.Premium Digest |
 
 ## setContentCloseDelete
 

@@ -24,8 +24,8 @@
 | hid | String | *optional* | Specify scope: Topic |
 | gid | String | *optional* | Specify scope: Group |
 | includeSubgroups | Boolean | *optional* | Used with `gid` configuration to include or exclude sublevel groups.<br>Default is `false` |
-| allDigest | Boolean | *optional* | Specify scope: All digest, general and advanced digest<br>When passed, the `digestState` parameter will be ignored |
-| digestState | Number | *optional* | Specify scope: Digest (leave empty to output all)<br>digest_state field `1` No `2` general digest `3` advanced digest |
+| allDigest | Boolean | *optional* | Specify scope: All digest, general and premium digest<br>When passed, the `digestState` parameter will be ignored |
+| digestState | Number | *optional* | Specify scope: Digest (leave empty to output all)<br>digest_state field `1` No `2` general digest `3` premium digest |
 | stickyState | Number | *optional* | Specify scope: Sticky (leave empty to output all)<br>sticky_state field `1` No `2` group sticky `3` global sticky |
 | contentType | String | *optional* | Filter content by type |
 | createDate | String | *optional* | Publish date: `today`,`yesterday`,`week`,`lastWeek`,`month`,`lastMonth`,`year`,`lastYear` |

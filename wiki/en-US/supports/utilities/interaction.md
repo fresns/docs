@@ -102,7 +102,7 @@ InteractionUtility::markContentDigest($type, $id, $digestState);
 | --- | --- | --- | --- |
 | type | Number | **required** | `post` or `comment` |
 | id | Number | **required** | Primary id of the corresponding type |
-| digestState | Number | **required** | 1.No / 2.General Digest / 3.Advanced Digest |
+| digestState | Number | **required** | 1.No / 2.General Digest / 3.Premium Digest |
 
 ## Mark Behavior Statistics Count
 ```php

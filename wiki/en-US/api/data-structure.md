@@ -440,8 +440,8 @@ To reduce documentation effort and ensure consistency of public data, the same s
     "isBrief": "Boolean / Whether it is a summary",
     "isMarkdown": "Boolean / Whether it is in MD format",
     "isAnonymous": "Boolean / Whether anonymous",
-    "stickyState": "Number / Sticky status 1.No 2.Group sticky 3.Global sticky",
-    "digestState": "Number / Digest status 1.No 2.General digest 3.Advanced digest",
+    "stickyState": "Number / Sticky status 1.No 2.Group Sticky 3.Global Sticky",
+    "digestState": "Number / Digest status 1.No 2.General Digest 3.Premium Digest",
     "likeCount": "Number / Total Like Count",
     "dislikeCount": "Number / Total Dislike Count",
     "followCount": "Number / Total Follow Count",
@@ -601,7 +601,7 @@ To reduce documentation effort and ensure consistency of public data, the same s
     // followType=user: followed user
     // followType=group: followed group
     // followType=hashtag: followed hashtag
-    // followType==digest: advanced digest
+    // followType==digest: premium digest
 }
 ```
 
@@ -619,7 +619,7 @@ To reduce documentation effort and ensure consistency of public data, the same s
     "isMarkdown": "Boolean / Whether it's in MD format",
     "isAnonymous": "Boolean / Whether it's anonymous",
     "isSticky": "Boolean / Whether it's sticky",
-    "digestState": "Number / Digest state 1: No, 2: General Digest, 3: Advanced Digest",
+    "digestState": "Number / Digest state 1: No, 2: General Digest, 3: Premium Digest",
     "likeCount": "Number / Total number of likes",
     "dislikeCount": "Number / Total number of dislikes",
     "followCount": "Number / Total number of follows",
@@ -776,7 +776,7 @@ To reduce documentation effort and ensure consistency of public data, the same s
     // followType=user: followed user
     // followType=group: followed group
     // followType=hashtag: followed hashtag
-    // followType==digest: advanced digest
+    // followType==digest: premium digest
 }
 ```
 
