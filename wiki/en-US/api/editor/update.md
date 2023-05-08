@@ -30,7 +30,7 @@
 | postTitle | String | *optional* | Title | *Post-specific* |
 | postIsCommentDisabled | Boolean | NO | Whether comments are disabled | *Post-specific* |
 | postIsCommentPrivate  | Boolean | NO | Whether the comment is private<br>Visible only to the comment author and post author | *Post-specific* |
-| content | String | *optional* | Main content |  |
+| content | String | *optional* | Content<br>Insert the file in the content in the format `[file:{fid}]` |  |
 | isMarkdown | Boolean | *optional* | Is content in MD format |  |
 | isAnonymous | Boolean | *optional* | Is it anonymous |  |
 | map | Object | *optional* | Location information |  |

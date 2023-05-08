@@ -30,7 +30,7 @@
 | postTitle | String | NO | 标题 | *帖子专用* |
 | postIsCommentDisabled | Boolean | NO | 是否禁止评论 | *帖子专用* |
 | postIsCommentPrivate | Boolean | NO | 是否私有评论<br>私有则仅评论作者和帖子作者可见 | *帖子专用* |
-| content | String | NO | 正文内容 |  |
+| content | String | NO | 正文内容<br>内容中插入文件，格式为 `[file:{fid}]` |  |
 | isMarkdown | Boolean | NO | 内容是否为 MD 格式 |  |
 | isAnonymous | Boolean | NO | 是否匿名 |  |
 | map | Object | NO | 位置信息 |  |

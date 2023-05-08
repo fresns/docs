@@ -30,7 +30,7 @@
 | postIsCommentPrivate | Boolean | NO | 是否私有评论<br>私有则仅评论作者和帖子作者可见 | *帖子专用* |
 | commentPid | String | NO | *评论专用* | 评论哪个帖子，必传 |
 | commentCid | String | NO | *评论专用* | 留空表示评论帖子<br>有值表示回复这条评论 |
-| content | String | NO | 正文内容 |  |
+| content | String | NO | 正文内容<br>内容中插入文件，格式为 `[file:{fid}]` |  |
 | isMarkdown | Boolean | NO | 内容是否为 MD 格式 |  |
 | isAnonymous | Boolean | NO | 是否匿名 |  |
 | map | String | NO | 位置信息: 压缩 Object 信息为字符串传参 |  |

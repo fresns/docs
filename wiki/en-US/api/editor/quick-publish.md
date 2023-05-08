@@ -30,7 +30,7 @@
 | postIsCommentPrivate  | Boolean | NO | Whether the comment is private<br>Visible only to the comment author and post author | *Post-specific* |
 | commentPid | String | *optional* | *Comment-specific* | Comment on which post, required |
 | commentCid | String | *optional* | *Comment-specific* | Empty means comment on post<br>Value means reply to this comment |
-| content | String | *optional* | Main content |  |
+| content | String | *optional* | Content<br>Insert the file in the content in the format `[file:{fid}]` |  |
 | isMarkdown | Boolean | *optional* | Is content in MD format |  |
 | isAnonymous | Boolean | *optional* | Is it anonymous |  |
 | map | String | *optional* | Location information: compress Object information into a string parameter |  |
