@@ -15,15 +15,19 @@
 
 | Column Title | Key Name | Key Value Type | Command Word | Description |
 | --- | --- | --- | --- | --- |
-| Posts and Comments List | content_list_service | **plugin** | `getPostByAll`<br>`getCommentByAll` | Plugin application scenario parameter `extendData` |
-| Posts and Comments List | content_follow_service | **plugin** | `getPostByFollow`<br>`getCommentByFollow` | Plugin application scenario parameter `extendData` |
-| Posts and Comments List | content_nearby_service | **plugin** | `getPostByNearby`<br>`getCommentByNearby` | Plugin application scenario parameter `extendData` |
+| Post List | post_list_service | **plugin** | `getPostByAll` | Plugin application scenario parameter `extendData` |
+| Post List by Follow | post_follow_service | **plugin** | `getPostByFollow` | Plugin application scenario parameter `extendData` |
+| Post List by Nearby | post_nearby_service | **plugin** | `getPostByNearby` | Plugin application scenario parameter `extendData` |
+| Comment List | comment_list_service | **plugin** | `getCommentByAll` | Plugin application scenario parameter `extendData` |
+| Comment List by Follow | comment_follow_service | **plugin** | `getCommentByFollow` | Plugin application scenario parameter `extendData` |
+| Comment List by Nearby | comment_nearby_service | **plugin** | `getCommentByNearby` | Plugin application scenario parameter `extendData` |
 
 ## Content Details
 
 | Column Title | Key Name | Key Value Type | Command Word | Description |
 | --- | --- | --- | --- | --- |
-| Post and Comment Detail Page | content_detail_service | **plugin** | `getPostDetail`<br>`getCommentDetail` | Plugin application scenario parameter `extendData` |
+| Post Detail | post_detail_service | **plugin** | `getPostDetail` | Plugin application scenario parameter `extendData` |
+| Comment Detail | comment_detail_service | **plugin** | `getCommentDetail` | Plugin application scenario parameter `extendData` |
 
 ## Content Search
 
