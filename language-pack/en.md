@@ -218,6 +218,7 @@
     "notificationBlock": "Blocked you",
     "notificationMention": "Mentioned you",
     "notificationComment": "Commented you",
+    "notificationQuote": "Quoted you",
     "settingGeneral": "General",
     "settingPreference": "Preference",
     "settingAccount": "Account",

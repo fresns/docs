@@ -219,6 +219,7 @@
     {"name":"notificationBlock","canDelete":false},
     {"name":"notificationMention","canDelete":false},
     {"name":"notificationComment","canDelete":false},
+    {"name":"notificationQuote","canDelete":false},
     {"name":"settingGeneral","canDelete":false},
     {"name":"settingPreference","canDelete":false},
     {"name":"settingAccount","canDelete":false},

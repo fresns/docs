@@ -218,6 +218,7 @@
     "notificationBlock": "封鎖了你",
     "notificationMention": "提及了你",
     "notificationComment": "留言了你",
+    "notificationQuote": "引用了你",
     "settingGeneral": "個人資料",
     "settingPreference": "偏好設定",
     "settingAccount": "賬號設定",
