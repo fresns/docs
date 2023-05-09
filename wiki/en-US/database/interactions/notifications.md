@@ -14,7 +14,7 @@
 | action_type | smallint *UNSIGNED* | Triggering action type |  | YES | 1.Like 2.Dislike 3.Follow 4.Block 5.Publish 6.Edit 7.Delete 8.Pin 9.Highlight 10.Manage |
 | action_object | tinyint *UNSIGNED* | Triggering target |  | YES | 1.User / 2.Group / 3.Hashtag / 4.Post / 5.Comment |
 | action_id | bigint *UNSIGNED* | Triggering target ID |  | YES | Origin of this notification<br>1.Related field [users->id](../users/users.md)<br>2.Related field [groups->id](../contents/groups.md)<br>3.Related field [hashtags->id](../contents/hashtags.md)<br>4.Related field [posts->id](../contents/posts.md)<br>5.Related field [comments->id](../contents/comments.md) |
-| action_comment_id | bigint *UNSIGNED* | Comment ID |  | YES | Related field [comments->id](../contents/comments.md) |
+| action_content_id | bigint *UNSIGNED* | Post or Comment ID |  | YES | Related field [posts->id](../contents/posts.md) or [comments->id](../contents/comments.md) |
 | is_read | tinyint *UNSIGNED* | Read status | 0 | NO | 0.Unread / 1.Read |
 | created_at | timestamp | Create Time | CURRENT_TIMESTAMP | NO |  |
 | updated_at | timestamp | Update Time |  | YES |  |
@@ -30,6 +30,7 @@
 - `6` Block
 - `7` Mention
 - `8` Comment (reply)
+- `9` quote (reshare)
 
 ## System Message Interpretation
 
@@ -56,4 +57,7 @@
     - `content` Summary of the mention content
 - `type=8` represents `action_user_id` commented on your `action_object + action_id` content
     - `content` Summary of the comment content
-    - `action_comment_id` Their comment ID
+    - `action_content_id` Their comment ID
+- `type=9` represents `action_user_id` quoted on your `action_object=4 + action_id` content
+    - `content` Summary of the post content
+    - `action_content_id` Their post ID

@@ -17,7 +17,7 @@
 
 | 参数名 | 类型 | 是否必传 | 说明 |
 | --- | --- | --- | --- |
-| types | String | NO | `1` 系统通知 `2` 推荐内容 `3` 点赞 `4` 踩 `5` 关注 `6` 屏蔽 `7` 提及（艾特） `8` 评论（回复） |
+| types | String | NO | `1` 系统通知 `2` 推荐内容 `3` 点赞 `4` 踩 `5` 关注 `6` 屏蔽 `7` 提及（艾特） `8` 评论（回复） `9` 引用（转发） |
 | status | Boolean | NO | `0` 未读<br>`1` 已读<br>留空输出全部 |
 | userWhitelistKeys | String | NO | 白名单键名，只返回给定键名的键值对<br>多个以英文逗号隔开，支持「点表示法」表示多维数组<br>仅对 `actionUser` 参数有效 |
 | userBlacklistKeys | String | NO | 黑名单键名，从返回数据中删除指定的键值对<br>多个以英文逗号隔开，支持「点表示法」表示多维数组<br>仅对 `actionUser` 参数有效 |
@@ -50,7 +50,10 @@
         - `content` 提及内容的摘要
     - `types=8` 代表 `actionUser` 评论了你的 `actionObject + actionInfo`
         - `content` 评论内容的摘要
-        - `actionCid` 他的评论 cid
+        - `contentFsid` 他的评论 cid
+    - `types=9` 代表 `actionUser` 引用了你的帖子 `actionObject=4 + actionInfo`
+        - `content` 他的内容摘要
+        - `contentFsid` 他的帖子 pid
 - **触发行为 actionType 类型介绍：**
     - 1.点赞
     - 2.点踩
@@ -98,7 +101,7 @@
                     // actionObject=4  帖子信息
                     // actionObject=5  评论信息
                 },
-                "actionCid": "String / 评论事件的 cid",
+                "contentFsid": "String / 内容事件的 pid 或 cid",
                 "datetime": "String / 通知时间",
                 "datetimeFormat": "String / 通知时间格式化",
                 "timeAgo": "String / 人性化通知时间",

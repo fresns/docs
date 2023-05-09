@@ -42,7 +42,7 @@
 | Parameter Name | Type | Required | Description |
 | --- | --- | --- | --- |
 | uid | Number | **required** | User parameter (main user table `users->uid` field) |
-| type | Number | **required** | 1. System / 2. Recommend / 3. Like / 4. Dislike / 5. Follow / 6. Block / 7. Mention / 8. Comment |
+| type | Number | **required** | 1. System / 2. Recommend / 3. Like / 4. Dislike / 5. Follow / 6. Block / 7. Mention / 8. Comment / 9. Quote |
 | content | String | *optional* | Notification content |
 | isMarkdown | Boolean | *optional* | Is the content in MD format? |
 | isMultilingual | Boolean | *optional* | Is the content multilingual? |
@@ -52,7 +52,7 @@
 | actionType | Number | *optional* | Trigger action type 1.Like 2.Dislike 3.Follow 4.Block 5.Publish 6.Edit 7.Delete 8.Sticky 9.Digest 10.Manage |
 | actionObject | Number | *optional* | Trigger target 1.User / 2.Group / 3.Hashtag / 4.Post / 5.Comment 6.Post Log 7.Comment Log 8.Extend Content |
 | actionFsid | String | *optional* | Trigger target FsID |
-| actionCid | String | *optional* | Comment event cid |
+| contentFsid | String | *optional* | Content event pid or cid |
 
 ::: details `content` Description
 If the `isMultilingual` parameter is for multiple languages, the `content` parameter is a JSON content passed as a string.

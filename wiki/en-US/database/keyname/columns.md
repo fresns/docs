@@ -91,6 +91,7 @@
 | Notifications-Blocks | menu_notifications_blocks | Blocks | string | Multilingual |
 | Notifications-Mentions | menu_notifications_mentions | Mentions | string | Multilingual |
 | Notifications-Comments | menu_notifications_comments | Comments | string | Multilingual |
+| Notifications-Quotes | menu_notifications_quotes | Quotes | string | Multilingual |
 
 ## Search
 

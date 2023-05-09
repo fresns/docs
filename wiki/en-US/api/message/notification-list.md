@@ -17,7 +17,7 @@
 
 | Parameter Name | Type | Required | Description |
 | --- | --- | --- | --- |
-| types | String | *optional* | `1` System `2` Recommend `3` Like `4` Dislike `5` Follow `6` Block `7` Mention `8` Comment (reply) |
+| types | String | *optional* | `1` System `2` Recommend `3` Like `4` Dislike `5` Follow `6` Block `7` Mention `8` Comment `9` Quote |
 | status | Boolean | *optional* | `0` Unread<br>`1` Read<br>leave empty to output all |
 | userWhitelistKeys | String | *optional* | Whitelist key names, only returns key-value pairs for the given key names<br>Multiple separated by English commas, supports "dot notation" for multi-dimensional arrays<br>Valid only for the `actionUser` parameter |
 | userBlacklistKeys | String | *optional* | Blacklist key names, removes specified key-value pairs from the returned data<br>Multiple separated by English commas, supports "dot notation" for multi-dimensional arrays<br>Valid only for the `actionUser` parameter |
@@ -50,7 +50,10 @@
         - `content`: Summary of the mentioned content.
     - `types=8` means `actionUser` commented on your `actionObject + actionInfo`.
         - `content`: Summary of the comment content.
-        - `actionCid`: Their comment cid.
+        - `contentFsid`: Their comment cid.
+    - `types=9` means `actionUser` quoted on your `actionObject=4 + actionInfo`.
+        - `content`: Summary of the post content.
+        - `contentFsid`: Their post pid.
 - **Trigger action `actionType` type introduction:**
     - 1. Like
     - 2. Dislike
@@ -98,7 +101,7 @@
                     // actionObject=4  Post information
                     // actionObject=5  Comment information
                 },
-                "actionCid": "String / Comment event cid",
+                "contentFsid": "String / Content event pid or cid",
                 "datetime": "String / Notification time",
                 "datetimeFormat": "String / Formatted notification time",
                 "timeAgo": "String / Humanized notification time",

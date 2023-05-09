@@ -42,7 +42,7 @@
 | 参数名 | 类型 | 是否必传 | 说明 |
 | --- | --- | --- | --- |
 | uid | Number | YES | 用户参数（用户主表 `users->uid` 字段） |
-| type | Number | YES | 1.系统通知 / 2.推荐 / 3.点赞 / 4.踩 / 5.关注 / 6.屏蔽 / 7.提及（艾特） / 8.评论 |
+| type | Number | YES | 1.系统 / 2.推荐 / 3.点赞 / 4.踩 / 5.关注 / 6.屏蔽 / 7.提及 / 8.评论 / 9.引用 |
 | content | String | NO | 通知内容 |
 | isMarkdown | Boolean | NO | 内容是否为 MD 格式 |
 | isMultilingual | Boolean | NO | 内容是否为多语言 |
@@ -52,7 +52,7 @@
 | actionType | Number | NO | 触发行为类型 1.点赞 2.点踩 3.关注 4.屏蔽 5.发表 6.编辑 7.删除 8.置顶 9.设精 10.管理 |
 | actionObject | Number | NO | 触发目标 1.用户 2.小组 3.话题 4.帖子 5.评论 6.帖子日志 7.评论日志 8.扩展内容 |
 | actionFsid | String | NO | 触发目标 FsID |
-| actionCid | String | NO | 评论事件 cid |
+| contentFsid | String | NO | 内容事件 pid 或 cid |
 
 ::: details content 内容参数说明
 如果 `isMultilingual` 参数为多语言，则 `content` 参数的内容是以字符串传参的 json 内容。

@@ -14,7 +14,7 @@
 | action_type | smallint *UNSIGNED* | 触发行为类型 |  | YES | 1.点赞 2.点踩 3.关注 4.屏蔽 5.发表 6.编辑 7.删除 8.置顶 9.设精 10.管理 |
 | action_object | tinyint *UNSIGNED* | 触发目标 |  | YES | 1.用户 / 2.小组 / 3.话题 / 4.帖子 / 5.评论 |
 | action_id | bigint *UNSIGNED* | 触发目标 ID |  | YES | 这条通知来源由哪个内容<br>1.关联字段 [users->id](../users/users.md)<br>2.关联字段 [groups->id](../contents/groups.md)<br>3.关联字段 [hashtags->id](../contents/hashtags.md)<br>4.关联字段 [posts->id](../contents/posts.md)<br>5.关联字段 [comments->id](../contents/comments.md) |
-| action_comment_id | bigint *UNSIGNED* | 评论 ID |  | YES | 关联字段 [comments->id](../contents/comments.md) |
+| action_content_id | bigint *UNSIGNED* | 帖子或评论 ID |  | YES | 关联字段 [posts->id](../contents/posts.md) 或者 [comments->id](../contents/comments.md) |
 | is_read | tinyint *UNSIGNED* | 阅读状态 | 0 | NO | 0.未读 / 1.已读 |
 | created_at | timestamp | 创建时间 | CURRENT_TIMESTAMP | NO |  |
 | updated_at | timestamp | 更新时间 |  | YES |  |
@@ -30,6 +30,7 @@
 - `6` 屏蔽
 - `7` 提及（艾特）
 - `8` 评论（回复）
+- `9` 引用（转发）
 
 ## 系统消息解读
 
@@ -56,4 +57,7 @@
     - `content` 提及内容的摘要
 - `type=8` 代表 `action_user_id` 评论了你的 `action_object + action_id` 内容
     - `content` 评论内容的摘要
-    - `action_comment_id` 他的评论 ID
+    - `action_content_id` 他的评论 ID
+- `type=9` 代表 `action_user_id` 引用了你的 `action_object=4 + action_id` 帖子
+    - `content` 他的内容摘要
+    - `action_post_id` 他的帖子 ID

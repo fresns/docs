@@ -91,6 +91,7 @@
 | 通知-屏蔽 | menu_notifications_blocks | 屏蔽 | string | 多语言 |
 | 通知-提及 | menu_notifications_mentions | 提及 | string | 多语言 |
 | 通知-评论 | menu_notifications_comments | 评论 | string | 多语言 |
+| 通知-引用 | menu_notifications_quotes | 引用 | string | 多语言 |
 
 ## 搜索栏目命名
 
