@@ -143,7 +143,7 @@
     "accountPolicies": "私隱權和條款",
     "accountPoliciesTerms": "服務條款",
     "accountPoliciesPrivacy": "隱私政策",
-    "accountPoliciesCookies": "Cookie 使用條款",
+    "accountPoliciesCookies": "Cookies 使用條款",
     "accountPoliciesDelete": "註銷說明",
     "accountRealName": "實名認證",
     "password": "密碼",
