@@ -219,6 +219,7 @@
     "notificationMention": "Mentioned you",
     "notificationComment": "Commented you",
     "notificationQuote": "Quoted you",
+    "notificationFromContentMentionYou": "a content that mention you",
     "settingGeneral": "General",
     "settingPreference": "Preference",
     "settingAccount": "Account",

@@ -219,6 +219,7 @@
     "notificationMention": "提及了你",
     "notificationComment": "评论了你",
     "notificationQuote": "引用了你",
+    "notificationFromContentMentionYou": "一条提及你的内容",
     "settingGeneral": "个人资料",
     "settingPreference": "偏好设置",
     "settingAccount": "账号设置",
