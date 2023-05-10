@@ -27,7 +27,9 @@
     "code": 0,
     "message": "ok",
     "data": {
-        // plugin_callbacks->content
+        "ulid": "plugin_callbacks->ulid",
+        "type": "plugin_callbacks->type",
+        "content": "plugin_callbacks->content",
     }
 }
 ```

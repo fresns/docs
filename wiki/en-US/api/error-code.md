@@ -56,6 +56,7 @@
 | 32202 | Abnormal data: failed to be queried or data duplicated. |
 | 32203 | Record expired and invalid |
 | 32204 | Record used. Please try again. |
+| 32205 | Record content is empty |
 | 32301 | No response from the service provider |
 | 32302 | Service provider processing failed |
 | 32303 | Callback error: data lost or wrong record |
