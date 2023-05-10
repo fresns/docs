@@ -85,6 +85,7 @@
                 "type": "Number / 通知类型",
                 "content": "String / 通知内容",
                 "isMarkdown": "Boolean / 内容是否为 Markdown 格式",
+                "isMention": "Boolean / 是否为提及通知（别人内容里提及了我，然后互动通知的我）",
                 "isAccessPlugin": "Boolean / 是否访问插件页",
                 "pluginUrl": "String / 插件页地址",
                 "actionUser": {

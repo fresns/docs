@@ -85,6 +85,7 @@
                 "type": "Number / Notification type",
                 "content": "String / Notification content",
                 "isMarkdown": "Boolean / Whether the content is in Markdown format",
+                "isMention": "Boolean / Is mention to a notice (I was mentioned in someone else's content and then notified of the interactive action)",
                 "isAccessPlugin": "Boolean / Whether to visit the plugin page",
                 "pluginUrl": "String / Plugin page URL",
                 "actionUser": {

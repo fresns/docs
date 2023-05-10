@@ -47,7 +47,8 @@
             "follows": "Number / 未读关注",
             "blocks": "Number / 未读屏蔽",
             "mentions": "Number / 未读提及（艾特）",
-            "comments": "Number / 未读评论（回复）"
+            "comments": "Number / 未读评论（回复）",
+            "quotes": "Number / 未读引用（转发）"
         },
         "draftCount": {
             "posts": "Number / 帖子草稿数",

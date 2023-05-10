@@ -8,6 +8,7 @@
 | content | text | 通知内容 |  | YES | 涉及到帖子或评论时，可存储摘要内容 |
 | is_markdown | tinyint *UNSIGNED* | 内容是否为 MD 格式 | 0 | NO | 0.否 / 1.是 |
 | is_multilingual | tinyint *UNSIGNED* | 内容是否为多语言 | 0 | NO | 0.否 / 1.是 |
+| is_mention | tinyint *UNSIGNED* | 是否为提及通知 | 0 | NO | 0.否 / 1.是<br>别人内容里提及了我，然后互动通知的我 |
 | is_access_plugin | varchar(64) | 是否访问插件页 | 0 | NO | 将输出 plugin_fskey 的访问地址 |
 | plugin_fskey | varchar(64) | 关联插件名称 |  | YES | 关联字段 [plugins->fskey](../plugins/plugins.md)<br>由哪个插件生成的通知消息 |
 | action_user_id | bigint *UNSIGNED* | 触发的用户 ID |  | YES | 关联字段 [users->id](../users/users.md) |

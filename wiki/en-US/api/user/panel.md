@@ -47,7 +47,8 @@
             "follows": "Number / Unread follows",
             "blocks": "Number / Unread blocks",
             "mentions": "Number / Unread mentions (at)",
-            "comments": "Number / Unread comments (replies)"
+            "comments": "Number / Unread comments (replies)",
+            "quotes": "Number / Unread quotes (reshare)"
         },
         "draftCount": {
             "posts": "Number / Post draft count",
