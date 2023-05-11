@@ -18,7 +18,7 @@
 | Parameter Name | Type | Required | Description |
 | --- | --- | --- | --- |
 | gid | String | **required** | Group GID |
-| type | String | **required** | View Type `likes`,`dislikes`,`follows`,`blocks` |
+| type | String | **required** | View type `likers`,`dislikers`,`followers`,`blockers` |
 
 ## Query Params
 
@@ -32,10 +32,10 @@
 
 **Request Description**
 
-- `type=likes` Get the list of users who liked `gid`.
-- `type=dislikes` Get the list of users who disliked `gid`.
-- `type=follows` Get the list of users who followed `gid`.
-- `type=blocks` Get the list of users who blocked `gid`.
+- `type=likers` Get the list of users who liked `gid`.
+- `type=dislikers` Get the list of users who disliked `gid`.
+- `type=followers` Get the list of users who followed `gid`.
+- `type=blockers` Get the list of users who blocked `gid`.
 - The interface will decide whether to output data based on the configuration table settings `Operations > Interaction > View interaction log settings`.
     - `group_likers` configuration, whether to output users who liked it
     - `group_dislikers` configuration, whether to output users who disliked it

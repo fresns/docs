@@ -18,7 +18,7 @@
 | Parameter Name | Type | Required | Description |
 | --- | --- | --- | --- |
 | pid | String | **required** | Post PID |
-| type | String | **required** | View Type `likes`,`dislikes`,`follows`,`blocks` |
+| type | String | **required** | View type `likers`,`dislikers`,`followers`,`blockers` |
 
 ## Query Params
 
@@ -32,10 +32,10 @@
 
 **Request Description**
 
-- `type=likes` Get the list of users who liked `pid`.
-- `type=dislikes` Get the list of users who disliked `pid`.
-- `type=follows` Get the list of users who followed `pid`.
-- `type=blocks` Get the list of users who blocked `pid`.
+- `type=likers` Get the list of users who liked `pid`.
+- `type=dislikers` Get the list of users who disliked `pid`.
+- `type=followers` Get the list of users who followed `pid`.
+- `type=blockers` Get the list of users who blocked `pid`.
 - The interface will decide whether to output data based on the configuration table settings `Operations > Interaction > View interaction log settings`.
     - `post_likers` configuration, whether to output users who liked it
     - `post_dislikers` configuration, whether to output users who disliked it
