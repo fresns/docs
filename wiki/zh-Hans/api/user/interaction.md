@@ -18,7 +18,7 @@
 | 参数名 | 类型 | 是否必传 | 说明 |
 | --- | --- | --- | --- |
 | uidOrUsername | String | YES | 用户 `uid` 或者 `username` |
-| type | String | YES | 查看类型 `like`,`dislike`,`follow`,`block` |
+| type | String | YES | 查看类型 `likes`,`dislikes`,`follows`,`blocks` |
 
 ## Query 参数
 
@@ -32,10 +32,10 @@
 
 **接口使用说明**
 
-- `type=like` 获得点赞了 `uidOrUsername` 的用户列表。
-- `type=dislike` 获得点踩了 `uidOrUsername` 的用户列表。
-- `type=follow` 获得关注了 `uidOrUsername` 的用户列表。
-- `type=block` 获得屏蔽了 `uidOrUsername` 的用户列表。
+- `type=likes` 获得点赞了 `uidOrUsername` 的用户列表。
+- `type=dislikes` 获得点踩了 `uidOrUsername` 的用户列表。
+- `type=follows` 获得关注了 `uidOrUsername` 的用户列表。
+- `type=blocks` 获得屏蔽了 `uidOrUsername` 的用户列表。
 - 接口会根据配置表设置 `运营 > 互动配置 > 查看互动记录设置` 决定是否输出数据。
     - `user_likers` 配置，是否输出点赞他的用户
     - `user_dislikers` 配置，是否输出点踩他的用户

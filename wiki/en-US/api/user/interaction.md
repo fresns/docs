@@ -18,7 +18,7 @@
 | Parameter Name | Type | Required | Description |
 | --- | --- | --- | --- |
 | uidOrUsername | String | **required** | User `uid` or `username` |
-| type | String | **required** | Return type `like`,`dislike`,`follow`,`block` |
+| type | String | **required** | Return type `likes`,`dislikes`,`follows`,`blocks` |
 
 ## Query Params
 
@@ -32,10 +32,10 @@
 
 **Request Description**
 
-- `type=like` Get the list of users who liked `uidOrUsername`.
-- `type=dislike` Get the list of users who disliked `uidOrUsername`.
-- `type=follow` Get the list of users who followed `uidOrUsername`.
-- `type=block` Get the list of users who blocked `uidOrUsername`.
+- `type=likes` Get the list of users who liked `uidOrUsername`.
+- `type=dislikes` Get the list of users who disliked `uidOrUsername`.
+- `type=follows` Get the list of users who followed `uidOrUsername`.
+- `type=blocks` Get the list of users who blocked `uidOrUsername`.
 - The interface will decide whether to output data based on the configuration table settings `Operations > Interaction > View interaction log settings`.
     - `user_likers` configuration, whether to output users who liked they
     - `user_dislikers` configuration, whether to output users who disliked they

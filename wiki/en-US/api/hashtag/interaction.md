@@ -18,7 +18,7 @@
 | Parameter Name | Type | Required | Description |
 | --- | --- | --- | --- |
 | hid | String | **required** | Hashtag slug |
-| type | String | **required** | View Type `like`,`dislike`,`follow`,`block` |
+| type | String | **required** | View Type `likes`,`dislikes`,`follows`,`blocks` |
 
 ## Query Params
 
@@ -32,10 +32,10 @@
 
 **Request Description**
 
-- `type=like` Get the list of users who liked `hid`.
-- `type=dislike` Get the list of users who disliked `hid`.
-- `type=follow` Get the list of users who followed `hid`.
-- `type=block` Get the list of users who blocked `hid`.
+- `type=likes` Get the list of users who liked `hid`.
+- `type=dislikes` Get the list of users who disliked `hid`.
+- `type=follows` Get the list of users who followed `hid`.
+- `type=blocks` Get the list of users who blocked `hid`.
 - The interface will decide whether to output data based on the configuration table settings `Operations > Interaction > View interaction log settings`.
     - `hashtag_likers` configuration, whether to output users who liked it
     - `hashtag_dislikers` configuration, whether to output users who disliked it
