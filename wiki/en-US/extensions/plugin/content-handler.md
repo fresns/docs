@@ -68,20 +68,20 @@ $wordBody = [
 | --- | --- | --- | --- |
 | headers | Object | **required** | API Headers parameter |
 | body | Object | **required** | The Body parameter of the corresponding API |
+| type | String | *optional* | getPostByFollow and getCommentByFollow specific |
+| fsid | String | *optional* | getPostDetail and getCommentDetail specific, pid or cid |
 
 **Request Example:**
 
 ```php
 $wordBody = [
-    "headers" => \request()->headers->all(),
-    "body" => $dtoRequest->toArray(),
+    'headers' => \request()->headers->all(),
+    'body' => $dtoRequest->toArray(),
+    'type' => '',
+    'fsid' => '',
 ];
 
-\FresnsCmdWord::plugin($fskey)->getPostByFollow($wordBody)
-
-\FresnsCmdWord::plugin($fskey)->getPostDetail($wordBody)
-
-\FresnsCmdWord::plugin($fskey)->searchPosts($wordBody)
+\FresnsCmdWord::plugin($fskey)->getPostByAll($wordBody)
 ```
 
 **Return Example:**

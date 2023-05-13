@@ -45,9 +45,9 @@ $wordBody = [
 ```php
 //$参数列表 = 数据传输对象::make(参数数组);
 $wordBody = FsDto::make([
-    "email" => "收件地址",
-    "title" => "邮件标题",
-    "content" => "邮件内容"
+    'email' => '收件地址',
+    'title' => '邮件标题',
+    'content' => '邮件内容',
 ]);
 
 // \命令字立面::plugin('插件名')->命令字($参数列表): 定义返参对象的契约
@@ -58,9 +58,9 @@ $wordBody = FsDto::make([
 ```php
 \FresnsCmdWord::plugin('FresnsEmail')->sendEmail(
     FsDto::make([
-        "email" => "收件地址",
-        "title" => "邮件标题",
-        "content" => "邮件内容"
+        'email' => '收件地址',
+        'title' => '邮件标题',
+        'content' => '邮件内容',
     ])
 );
 ```

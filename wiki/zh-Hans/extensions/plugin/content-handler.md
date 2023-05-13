@@ -68,20 +68,20 @@ $wordBody = [
 | --- | --- | --- | --- |
 | headers | Object | YES | API 的 Headers 参数 |
 | body | Object | YES | 对应 API 的 Body 参数 |
+| type | String | NO | getPostByFollow 和 getCommentByFollow 专用 |
+| fsid | String | NO | getPostDetail 和 getCommentDetail 专用，pid 或 cid |
 
 **请求示例：**
 
 ```php
 $wordBody = [
-    "headers" => \request()->headers->all(),
-    "body" => $dtoRequest->toArray(),
+    'headers' => \request()->headers->all(),
+    'body' => $dtoRequest->toArray(),
+    'type' => '',
+    'fsid' => '',
 ];
 
-\FresnsCmdWord::plugin($fskey)->getPostByFollow($wordBody)
-
-\FresnsCmdWord::plugin($fskey)->getPostDetail($wordBody)
-
-\FresnsCmdWord::plugin($fskey)->searchPosts($wordBody)
+\FresnsCmdWord::plugin($fskey)->getPostByAll($wordBody)
 ```
 
 **返回示例：**
