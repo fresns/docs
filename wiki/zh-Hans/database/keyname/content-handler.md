@@ -38,4 +38,3 @@
 | 搜索话题服务商 | search_hashtags_service | **plugin** | `searchHashtags` | 插件应用场景参数 `extendSearch` |
 | 搜索帖子服务商 | search_posts_service | **plugin** | `searchPosts` | 插件应用场景参数 `extendSearch` |
 | 搜索评论服务商 | search_comments_service | **plugin** | `searchComments` | 插件应用场景参数 `extendSearch` |
-
