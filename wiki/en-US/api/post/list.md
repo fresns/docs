@@ -41,7 +41,7 @@
 | blockCountLt | Number | *optional* | Block count less than |
 | commentCountGt | Number | *optional* | Total number of comments greater than |
 | commentCountLt | Number | *optional* | Total number of comments less than |
-| orderType | String | *optional* | Sort by type: `createDate`,`like`,`dislike`,`follow`,`block`,`comment`<br>Default `createDate` |
+| orderType | String | *optional* | Sort by type: `createDate`,`random`,`like`,`dislike`,`follow`,`block`,`comment`<br>Default `createDate` |
 | orderDirection | String | *optional* | Sort by direction, default `desc`<br>`asc`,`desc` |
 | blockGroups | String | *optional* | Filter groups, `gid` multiple separated by commas |
 | blockHashtags | String | *optional* | Filter hashtags, `hid` multiple separated by commas |

@@ -43,7 +43,7 @@
 | blockCountLt | Number | *optional* | Block count less than |
 | commentCountGt | Number | *optional* | Total number of sub-comments greater than |
 | commentCountLt | Number | *optional* | Total number of sub-comments less than |
-| orderType | String | *optional* | Sort by type: `createDate`,`like`,`dislike`,`follow`,`block`,`comment`<br>Default `createDate` |
+| orderType | String | *optional* | Sort by type: `createDate`,`random`,`like`,`dislike`,`follow`,`block`,`comment`<br>Default `createDate` |
 | orderDirection | String | *optional* | Sort by direction, default `desc`<br>`asc`,`desc` |
 | whitelistKeys | String | *optional* | Whitelist key names, only returns key-value pairs for the given key names<br>Multiple separated by English commas, supports "dot notation" for multi-dimensional arrays |
 | blacklistKeys | String | *optional* | Blacklist key names, removes specified key-value pairs from the returned data<br>Multiple separated by English commas, supports "dot notation" for multi-dimensional arrays |

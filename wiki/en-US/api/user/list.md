@@ -49,7 +49,7 @@
 | extcredits4CountLt | Number | *optional* | extcredits4 less than |
 | extcredits5CountGt | Number | *optional* | extcredits5 greater than |
 | extcredits5CountLt | Number | *optional* | extcredits5 less than |
-| orderType | String | *optional* | Sort by type: `createDate`,`like`,`dislike`,`follow`,`block`<br>`post`,`comment`,`postDigest`,`commentDigest`<br>`extcredits1`,`extcredits2`,`extcredits3`,`extcredits4`,`extcredits5`<br>Default `createDate` |
+| orderType | String | *optional* | Sort by type: `createDate`,`random`,`like`,`dislike`,`follow`,`block`<br>`post`,`comment`,`postDigest`,`commentDigest`<br>`extcredits1`,`extcredits2`,`extcredits3`,`extcredits4`,`extcredits5`<br>Default `createDate` |
 | orderDirection | String | *optional* | Sort by direction, default `desc`<br>`asc`,`desc` |
 | whitelistKeys | String | *optional* | Whitelist key names, only returns key-value pairs for the given key names<br>Multiple separated by English commas, supports "dot notation" for multi-dimensional arrays |
 | blacklistKeys | String | *optional* | Blacklist key names, removes specified key-value pairs from the returned data<br>Multiple separated by English commas, supports "dot notation" for multi-dimensional arrays |
