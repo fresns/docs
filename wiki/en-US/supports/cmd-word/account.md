@@ -38,6 +38,7 @@
         "connectId": 8, //Store to account_connects->connect_id
         "connectToken": "unionid", //Store to account_connects->connect_token
         "connectRefreshToken": null, //Store to account_connects->connect_refresh_token
+        "refreshTokenExpiredDatetime": null, //Store to account_connects->refresh_token_expired_at // Y-m-d H:i:s
         "connectUsername": "Account name", //Store to account_connects->connect_username
         "connectNickname": "Nickname", //Store to account_connects->connect_nickname
         "connectAvatar": "Avatar URL", //Store to account_connects->connect_avatar
@@ -48,6 +49,7 @@
         "connectId": 9,
         "connectToken": "openid",
         "connectRefreshToken": null,
+        "refreshTokenExpiredDatetime": null,
         "connectUsername": "Account name",
         "connectNickname": "Nickname",
         "connectAvatar": "Avatar URL",
@@ -77,6 +79,7 @@
 | countryCode | Number | *optional* | Phone number specific: International area code (required when `type=2`) |
 | password | String | *optional* | For password verification specific |
 | verifyCode | String | *optional* | For verification code specific (check using [checkCode](basic.md#checkcode) command) |
+| connectId | Number | *optional* | For connect platform specific |
 | connectToken | String | *optional* | For connect platform specific |
 
 ::: details Return Example
@@ -91,6 +94,27 @@
 }
 ```
 :::
+
+## setAccountConnect
+
+```php
+\FresnsCmdWord::plugin('Fresns')->setAccountConnect($wordBody)
+```
+| Parameter Name | Type | Required | Description |
+| --- | --- | --- | --- |
+| fskey | String | **required**  | `account_connects->plugin_fskey` |
+| aid | Number | **required**  | `accounts->aid` |
+| connectId | Number | **required**  | `account_connects->connect_id` |
+| connectToken | String | **required**  | `account_connects->connect_token` |
+| connectRefreshToken | String | *optional* | `account_connects->connect_refresh_token` |
+| refreshTokenExpiredDatetime | String | *optional* | `Y-m-d H:i:s` `account_connects->refresh_token_expired_at` |
+| connectUsername | String | *optional* | `account_connects->connect_username` |
+| connectNickname | String | **required**  | `account_connects->connect_nickname` |
+| connectAvatar | String | *optional* | `account_connects->connect_avatar` |
+| moreJson | String | *optional* | `account_connects->more_json` |
+| connectEmail | String | *optional* | Platform email (will be stored when the account table email is empty, ignored if there is a value) |
+| connectPhone | Number | *optional* | Platform phone number (will be stored when the account table phone number is empty, ignored if there is a value) |
+| connectCountryCode | Number | *optional* | International area code for platform phone number (will be stored when the account table phone number is empty, ignored if there is a value) |
 
 ## createAccountToken
 

@@ -38,6 +38,7 @@
         "connectId": 8, //存储到 account_connects->connect_id
         "connectToken": "unionid", //存储到 account_connects->connect_token
         "connectRefreshToken": null, //存储到 account_connects->connect_refresh_token
+        "refreshTokenExpiredDatetime": null, //存储到 account_connects->refresh_token_expired_at // Y-m-d H:i:s
         "connectUsername": "账号名", //存储到 account_connects->connect_username
         "connectNickname": "昵称", //存储到 account_connects->connect_nickname
         "connectAvatar": "头像 URL", //存储到 account_connects->connect_avatar
@@ -48,6 +49,7 @@
         "connectId": 9,
         "connectToken": "openid",
         "connectRefreshToken": null,
+        "refreshTokenExpiredDatetime": null,
         "connectUsername": "账号名",
         "connectNickname": "昵称",
         "connectAvatar": "头像 URL",
@@ -77,6 +79,7 @@
 | countryCode | Number | NO/YES | 手机号专用：国际区号（`type=2` 时必填） |
 | password | String | NO | 以密码校验专用 |
 | verifyCode | String | NO | 以验证码校验专用（命令字 [checkCode](basic.md#核对验证码) 查验） |
+| connectId | Number | NO | 以互联平台校验专用 |
 | connectToken | String | NO | 以互联平台校验专用 |
 
 ::: details 结果示例
@@ -91,6 +94,27 @@
 }
 ```
 :::
+
+## 设置账号互联凭证
+
+```php
+\FresnsCmdWord::plugin('Fresns')->setAccountConnect($wordBody)
+```
+| 参数名 | 类型 | 是否必传 | 说明 |
+| --- | --- | --- | --- |
+| fskey | String | YES | `account_connects->plugin_fskey` |
+| aid | Number | YES | `accounts->aid` |
+| connectId | Number | YES | `account_connects->connect_id` |
+| connectToken | String | YES | `account_connects->connect_token` |
+| connectRefreshToken | String | NO | `account_connects->connect_refresh_token` |
+| refreshTokenExpiredDatetime | String | NO | `Y-m-d H:i:s` `account_connects->refresh_token_expired_at` |
+| connectUsername | String | NO | `account_connects->connect_username` |
+| connectNickname | String | YES | `account_connects->connect_nickname` |
+| connectAvatar | String | NO | `account_connects->connect_avatar` |
+| moreJson | String | NO | `account_connects->more_json` |
+| connectEmail | String | NO | 平台邮箱（账号表邮箱为空时将存入，有值则忽略） |
+| connectPhone | Number | NO | 平台手机号码（账号表手机号为空时将存入，有值则忽略） |
+| connectCountryCode | Number | NO | 平台手机号码国际区号（账号表手机号为空时将存入，有值则忽略） |
 
 ## 创建账号凭证
 
