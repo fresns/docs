@@ -31,23 +31,6 @@ Fresns 主程序内置了 [iFrame Resizer](https://github.com/davidjbradshaw/ifr
 {
     "postMessageKey": "fresnsEditorUpload", // 路径中 postMessageKey 变量值
     "windowClose": true, // 是否关闭窗口或弹出层(modal)
-    "variables": {
-        // 路径中变量值原样返回
-        "type": "",
-        "scene": "",
-        "aid": "",
-        "uid": "",
-        "rid": "",
-        "gid": "",
-        "pid": "",
-        "cid": "",
-        "eid": "",
-        "fid": "",
-        "plid": "",
-        "clid": "",
-        "uploadInfo": "",
-        "locationInfo": "",
-    },
     // 以下逻辑同 API 一致
     "code": 0, // 处理状态，0 表示成功，其余为失败状态码
     "message": "ok", // 失败时的提示信息

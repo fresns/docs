@@ -31,23 +31,6 @@ After the operation is completed on the plug-in page, it will return the data in
 {
     "postMessageKey": "fresnsEditorUpload", // The value of the postMessageKey variable in the path
     "windowClose": true, // Whether to close the window or modal
-    "variables": {
-        // Variable values in paths
-        "type": "",
-        "scene": "",
-        "aid": "",
-        "uid": "",
-        "rid": "",
-        "gid": "",
-        "pid": "",
-        "cid": "",
-        "eid": "",
-        "fid": "",
-        "plid": "",
-        "clid": "",
-        "uploadInfo": "",
-        "locationInfo": "",
-    },
     // The following logic is consistent with the API
     "code": 0, // Processing status code
     "message": "ok", // Alert message in case of failure
