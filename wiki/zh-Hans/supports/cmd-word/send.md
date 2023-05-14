@@ -3,7 +3,7 @@
 ## 发信-邮件
 
 ```php
-\FresnsCmdWord::plugin('Fresns')->sendEmail($wordBody)
+\FresnsCmdWord::plugin('Fresns')->sendEmail($wordBody);
 ```
 | 参数名 | 类型 | 是否必传 | 说明 |
 | --- | --- | --- | --- |
@@ -14,7 +14,7 @@
 ## 发信-短信
 
 ```php
-\FresnsCmdWord::plugin('Fresns')->sendSms($wordBody)
+\FresnsCmdWord::plugin('Fresns')->sendSms($wordBody);
 ```
 | 参数名 | 类型 | 是否必传 | 说明 |
 | --- | --- | --- | --- |
@@ -37,7 +37,7 @@
 ## 发信-系统通知
 
 ```php
-\FresnsCmdWord::plugin('Fresns')->sendNotification($wordBody)
+\FresnsCmdWord::plugin('Fresns')->sendNotification($wordBody);
 ```
 | 参数名 | 类型 | 是否必传 | 说明 |
 | --- | --- | --- | --- |
@@ -69,7 +69,7 @@
 ## 发信-App 通知
 
 ```php
-\FresnsCmdWord::plugin('Fresns')->sendAppNotification($wordBody)
+\FresnsCmdWord::plugin('Fresns')->sendAppNotification($wordBody);
 ```
 | 参数名 | 类型 | 是否必传 | 说明 |
 | --- | --- | --- | --- |
@@ -92,7 +92,7 @@
 ## 发信-微信消息
 
 ```php
-\FresnsCmdWord::plugin('Fresns')->sendWechatMessage($wordBody)
+\FresnsCmdWord::plugin('Fresns')->sendWechatMessage($wordBody);
 ```
 | 参数名 | 类型 | 是否必传 | 说明 |
 | --- | --- | --- | --- |

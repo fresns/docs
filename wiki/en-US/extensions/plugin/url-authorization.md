@@ -7,5 +7,5 @@ If the plug-in page needs to verify the user's login identity, you can add the a
 Get the parameters in the plug-in URL and send them to the command word [verifyUrlAuthorization](../../supports/cmd-word/basic.md#verifyUrlAuthorization) for verification.
 
 ```php
-\FresnsCmdWord::plugin('Fresns')->verifyUrlAuthorization($wordBody)
+\FresnsCmdWord::plugin('Fresns')->verifyUrlAuthorization($wordBody);
 ```

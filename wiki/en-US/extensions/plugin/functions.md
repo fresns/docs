@@ -6,10 +6,10 @@ If the plug-in has scheduled tasks or subscription requirements, the command wor
 
 ```php
 // Create
-\FresnsCmdWord::plugin('Fresns')->addCrontabItem($wordBody)
+\FresnsCmdWord::plugin('Fresns')->addCrontabItem($wordBody);
 
 // Cancel
-\FresnsCmdWord::plugin('Fresns')->removeCrontabItem($wordBody)
+\FresnsCmdWord::plugin('Fresns')->removeCrontabItem($wordBody);
 ```
 
 | Parameter | Description |
@@ -28,10 +28,10 @@ Tell the main program which table to subscribe to, and which command word of its
 
 ```php
 // Create
-\FresnsCmdWord::plugin('Fresns')->addSubscribeItem($wordBody)
+\FresnsCmdWord::plugin('Fresns')->addSubscribeItem($wordBody);
 
 // Cancel
-\FresnsCmdWord::plugin('Fresns')->removeSubscribeItem($wordBody)
+\FresnsCmdWord::plugin('Fresns')->removeSubscribeItem($wordBody);
 ```
 
 | Parameter | Description |
@@ -70,10 +70,10 @@ The plug-in subscribes to the user requests in headers information. Inform the m
 
 ```php
 // Create
-\FresnsCmdWord::plugin('Fresns')->addSubscribeItem($wordBody)
+\FresnsCmdWord::plugin('Fresns')->addSubscribeItem($wordBody);
 
 // Cancel
-\FresnsCmdWord::plugin('Fresns')->removeSubscribeItem($wordBody)
+\FresnsCmdWord::plugin('Fresns')->removeSubscribeItem($wordBody);
 ```
 
 | Parameter | Description |
@@ -100,10 +100,10 @@ Notify subscribers of command words when an account or user is logged in.
 
 ```php
 // Create
-\FresnsCmdWord::plugin('Fresns')->addSubscribeItem($wordBody)
+\FresnsCmdWord::plugin('Fresns')->addSubscribeItem($wordBody);
 
 // Cancel
-\FresnsCmdWord::plugin('Fresns')->removeSubscribeItem($wordBody)
+\FresnsCmdWord::plugin('Fresns')->removeSubscribeItem($wordBody);
 ```
 
 | Parameter | Description |

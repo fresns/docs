@@ -1,9 +1,41 @@
 # Basic Command Word
 
+## checkHeaders
+
+```php
+\FresnsCmdWord::plugin('Fresns')->checkHeaders();
+```
+
+- Parameter Value [API Request Headers](../../api/headers.md)
+
+::: details Return Example
+```json
+{
+    "code": 0,
+    "message": "ok",
+    "data": {
+        "appId": "qe12345",
+        "platformId": 4,
+        "version": "2.0.0",
+        "deviceInfo": "",
+        "langTag": "zh-Hans",
+        "timezone": "+8",
+        "contentFormat": "",
+        "aid": "6a3bb3bc",
+        "aidToken": "uoX1hk6SHUgB2MFGJwNx38dem9DA7Vsz",
+        "uid": 782622,
+        "uidToken": "PqBpwPLJgfd1sH0X5JffYFGxTSc8RW7c",
+        "signature": "d5db4371a0c2d7e17009dea8d53ecf15a7ec07b9",
+        "timestamp": 1626426833
+    }
+}
+```
+:::
+
 ## verifySign
 
 ```php
-\FresnsCmdWord::plugin('Fresns')->verifySign($wordBody)
+\FresnsCmdWord::plugin('Fresns')->verifySign($wordBody);
 ```
 | Parameter Name | Type | Required | Description |
 | --- | --- | --- | --- |
@@ -22,7 +54,7 @@
 ## verifyUrlAuthorization
 
 ```php
-\FresnsCmdWord::plugin('Fresns')->verifyUrlAuthorization($wordBody)
+\FresnsCmdWord::plugin('Fresns')->verifyUrlAuthorization($wordBody);
 ```
 | Parameter Name | Type | Required | Description |
 | --- | --- | --- | --- |
@@ -57,7 +89,7 @@
 ## uploadSessionLog
 
 ```php
-\FresnsCmdWord::plugin('Fresns')->uploadSessionLog($wordBody)
+\FresnsCmdWord::plugin('Fresns')->uploadSessionLog($wordBody);
 ```
 | Parameter Name | Type | Required | Description |
 | --- | --- | --- | --- |
@@ -80,7 +112,7 @@
 ## sendCode
 
 ```php
-\FresnsCmdWord::plugin('Fresns')->sendCode($wordBody)
+\FresnsCmdWord::plugin('Fresns')->sendCode($wordBody);
 ```
 | Parameter Name | Type | Required | Description |
 | --- | --- | --- | --- |
@@ -93,7 +125,7 @@
 ## checkCode
 
 ```php
-\FresnsCmdWord::plugin('Fresns')->checkCode($wordBody)
+\FresnsCmdWord::plugin('Fresns')->checkCode($wordBody);
 ```
 | Parameter Name | Type | Required | Description |
 | --- | --- | --- | --- |
@@ -106,7 +138,7 @@
 ## ipInfo
 
 ```php
-\FresnsCmdWord::plugin('Fresns')->ipInfo($wordBody)
+\FresnsCmdWord::plugin('Fresns')->ipInfo($wordBody);
 ```
 | Parameter Name | Type | Required | Description |
 | --- | --- | --- | --- |

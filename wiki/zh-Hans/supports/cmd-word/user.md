@@ -3,7 +3,7 @@
 ## 添加用户
 
 ```php
-\FresnsCmdWord::plugin('Fresns')->addUser($wordBody)
+\FresnsCmdWord::plugin('Fresns')->addUser($wordBody);
 ```
 | 参数名 | 类型 | 是否必传 | 说明 |
 | --- | --- | --- | --- |
@@ -49,7 +49,7 @@
 ## 校验用户
 
 ```php
-\FresnsCmdWord::plugin('Fresns')->verifyUser($wordBody)
+\FresnsCmdWord::plugin('Fresns')->verifyUser($wordBody);
 ```
 | 参数名 | 类型 | 是否必传 | 说明 |
 | --- | --- | --- | --- |
@@ -78,7 +78,7 @@
 ## 创建用户凭证
 
 ```php
-\FresnsCmdWord::plugin('Fresns')->createUserToken($wordBody)
+\FresnsCmdWord::plugin('Fresns')->createUserToken($wordBody);
 ```
 | 参数名 | 类型 | 是否必传 | 说明 |
 | --- | --- | --- | --- |
@@ -112,7 +112,7 @@
 ## 校验用户凭证
 
 ```php
-\FresnsCmdWord::plugin('Fresns')->verifyUserToken($wordBody)
+\FresnsCmdWord::plugin('Fresns')->verifyUserToken($wordBody);
 ```
 | 参数名 | 类型 | 是否必传 | 说明 |
 | --- | --- | --- | --- |
@@ -125,7 +125,7 @@
 ## 逻辑删除用户
 
 ```php
-\FresnsCmdWord::plugin('Fresns')->logicalDeletionUser($wordBody)
+\FresnsCmdWord::plugin('Fresns')->logicalDeletionUser($wordBody);
 ```
 | 参数名 | 类型 | 是否必传 | 说明 |
 | --- | --- | --- | --- |
@@ -134,7 +134,7 @@
 ## 设置用户扩展分值
 
 ```php
-\FresnsCmdWord::plugin('Fresns')->setUserExtcredits($wordBody)
+\FresnsCmdWord::plugin('Fresns')->setUserExtcredits($wordBody);
 ```
 | 参数名 | 类型 | 是否必传 | 说明 |
 | --- | --- | --- | --- |
@@ -148,7 +148,7 @@
 ## 设置用户有效期
 
 ```php
-\FresnsCmdWord::plugin('Fresns')->setUserExpiryDatetime($wordBody)
+\FresnsCmdWord::plugin('Fresns')->setUserExpiryDatetime($wordBody);
 ```
 | 参数名 | 类型 | 是否必传 | 说明 |
 | --- | --- | --- | --- |
@@ -162,7 +162,7 @@
 ## 设置用户的小组有效期
 
 ```php
-\FresnsCmdWord::plugin('Fresns')->setUserGroupExpiryDatetime($wordBody)
+\FresnsCmdWord::plugin('Fresns')->setUserGroupExpiryDatetime($wordBody);
 ```
 | 参数名 | 类型 | 是否必传 | 说明 |
 | --- | --- | --- | --- |

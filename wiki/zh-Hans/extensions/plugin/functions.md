@@ -6,10 +6,10 @@
 
 ```php
 //建立定时任务
-\FresnsCmdWord::plugin('Fresns')->addCrontabItem($wordBody)
+\FresnsCmdWord::plugin('Fresns')->addCrontabItem($wordBody);
 
 //取消定时任务
-\FresnsCmdWord::plugin('Fresns')->removeCrontabItem($wordBody)
+\FresnsCmdWord::plugin('Fresns')->removeCrontabItem($wordBody);
 ```
 
 | 参数 | 说明 |
@@ -35,10 +35,10 @@
 
 ```php
 //建立订阅
-\FresnsCmdWord::plugin('Fresns')->addSubscribeItem($wordBody)
+\FresnsCmdWord::plugin('Fresns')->addSubscribeItem($wordBody);
 
 //取消订阅
-\FresnsCmdWord::plugin('Fresns')->removeSubscribeItem($wordBody)
+\FresnsCmdWord::plugin('Fresns')->removeSubscribeItem($wordBody);
 ```
 
 | 参数 | 说明 |
@@ -77,10 +77,10 @@ Subscribe::CHANGE_TYPE_DELETED;
 
 ```php
 //建立订阅
-\FresnsCmdWord::plugin('Fresns')->addSubscribeItem($wordBody)
+\FresnsCmdWord::plugin('Fresns')->addSubscribeItem($wordBody);
 
 //取消订阅
-\FresnsCmdWord::plugin('Fresns')->removeSubscribeItem($wordBody)
+\FresnsCmdWord::plugin('Fresns')->removeSubscribeItem($wordBody);
 ```
 
 | 参数 | 说明 |
@@ -107,10 +107,10 @@ $wordBody = [
 
 ```php
 //建立订阅
-\FresnsCmdWord::plugin('Fresns')->addSubscribeItem($wordBody)
+\FresnsCmdWord::plugin('Fresns')->addSubscribeItem($wordBody);
 
 //取消订阅
-\FresnsCmdWord::plugin('Fresns')->removeSubscribeItem($wordBody)
+\FresnsCmdWord::plugin('Fresns')->removeSubscribeItem($wordBody);
 ```
 
 | 参数 | 说明 |

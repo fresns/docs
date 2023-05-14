@@ -81,7 +81,7 @@ $wordBody = [
     'fsid' => '',
 ];
 
-\FresnsCmdWord::plugin($fskey)->getPostByAll($wordBody)
+\FresnsCmdWord::plugin($fskey)->getPostByAll($wordBody);
 ```
 
 **Return Example:**

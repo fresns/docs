@@ -3,7 +3,7 @@
 ## sendEmail
 
 ```php
-\FresnsCmdWord::plugin('Fresns')->sendEmail($wordBody)
+\FresnsCmdWord::plugin('Fresns')->sendEmail($wordBody);
 ```
 | Parameter Name | Type | Required | Description |
 | --- | --- | --- | --- |
@@ -14,7 +14,7 @@
 ## sendSms
 
 ```php
-\FresnsCmdWord::plugin('Fresns')->sendSms($wordBody)
+\FresnsCmdWord::plugin('Fresns')->sendSms($wordBody);
 ```
 | Parameter Name | Type | Required | Description |
 | --- | --- | --- | --- |
@@ -37,7 +37,7 @@
 ## sendNotification
 
 ```php
-\FresnsCmdWord::plugin('Fresns')->sendNotification($wordBody)
+\FresnsCmdWord::plugin('Fresns')->sendNotification($wordBody);
 ```
 | Parameter Name | Type | Required | Description |
 | --- | --- | --- | --- |
@@ -69,7 +69,7 @@ If the `isMultilingual` parameter is for multiple languages, the `content` param
 ## sendAppNotification
 
 ```php
-\FresnsCmdWord::plugin('Fresns')->sendAppNotification($wordBody)
+\FresnsCmdWord::plugin('Fresns')->sendAppNotification($wordBody);
 ```
 | Parameter Name | Type | Required | Description |
 | --- | --- | --- | --- |
@@ -92,7 +92,7 @@ If the `isMultilingual` parameter is for multiple languages, the `content` param
 ## sendWechatMessage
 
 ```php
-\FresnsCmdWord::plugin('Fresns')->sendWechatMessage($wordBody)
+\FresnsCmdWord::plugin('Fresns')->sendWechatMessage($wordBody);
 ```
 | Parameter Name | Type | Required | Description |
 | --- | --- | --- | --- |

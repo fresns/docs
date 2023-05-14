@@ -3,7 +3,7 @@
 ## walletCheckPassword
 
 ```php
-\FresnsCmdWord::plugin('Fresns')->walletCheckPassword($wordBody)
+\FresnsCmdWord::plugin('Fresns')->walletCheckPassword($wordBody);
 ```
 | Parameter Name | Type | Required | Description |
 | --- | --- | --- | --- |
@@ -13,7 +13,7 @@
 ## walletRecharge
 
 ```php
-\FresnsCmdWord::plugin('Fresns')->walletRecharge($wordBody)
+\FresnsCmdWord::plugin('Fresns')->walletRecharge($wordBody);
 ```
 | Parameter Name | Type | Required | Description |
 | --- | --- | --- | --- |
@@ -30,7 +30,7 @@
 ## walletWithdraw
 
 ```php
-\FresnsCmdWord::plugin('Fresns')->walletWithdraw($wordBody)
+\FresnsCmdWord::plugin('Fresns')->walletWithdraw($wordBody);
 ```
 | Parameter Name | Type | Required | Description |
 | --- | --- | --- | --- |
@@ -48,7 +48,7 @@
 ## walletFreeze
 
 ```php
-\FresnsCmdWord::plugin('Fresns')->walletFreeze($wordBody)
+\FresnsCmdWord::plugin('Fresns')->walletFreeze($wordBody);
 ```
 | Parameter Name | Type | Required | Description |
 | --- | --- | --- | --- |
@@ -64,7 +64,7 @@
 ## walletUnfreeze
 
 ```php
-\FresnsCmdWord::plugin('Fresns')->walletUnfreeze($wordBody)
+\FresnsCmdWord::plugin('Fresns')->walletUnfreeze($wordBody);
 ```
 | Parameter Name | Type | Required | Description |
 | --- | --- | --- | --- |
@@ -80,7 +80,7 @@
 ## walletIncrease
 
 ```php
-\FresnsCmdWord::plugin('Fresns')->walletIncrease($wordBody)
+\FresnsCmdWord::plugin('Fresns')->walletIncrease($wordBody);
 ```
 | Parameter Name | Type | Required | Description |
 | --- | --- | --- | --- |
@@ -99,7 +99,7 @@
 ## walletDecrease
 
 ```php
-\FresnsCmdWord::plugin('Fresns')->walletDecrease($wordBody)
+\FresnsCmdWord::plugin('Fresns')->walletDecrease($wordBody);
 ```
 | Parameter Name | Type | Required | Description |
 | --- | --- | --- | --- |
@@ -119,7 +119,7 @@
 ## walletRevoke
 
 ```php
-\FresnsCmdWord::plugin('Fresns')->walletRevoke($wordBody)
+\FresnsCmdWord::plugin('Fresns')->walletRevoke($wordBody);
 ```
 | Parameter Name | Type | Required | Description |
 | --- | --- | --- | --- |

@@ -3,7 +3,7 @@
 ## 验证钱包密码
 
 ```php
-\FresnsCmdWord::plugin('Fresns')->walletCheckPassword($wordBody)
+\FresnsCmdWord::plugin('Fresns')->walletCheckPassword($wordBody);
 ```
 | 参数名 | 类型 | 是否必传 | 说明 |
 | --- | --- | --- | --- |
@@ -13,7 +13,7 @@
 ## 充值
 
 ```php
-\FresnsCmdWord::plugin('Fresns')->walletRecharge($wordBody)
+\FresnsCmdWord::plugin('Fresns')->walletRecharge($wordBody);
 ```
 | 参数名 | 类型 | 是否必传 | 说明 |
 | --- | --- | --- | --- |
@@ -30,7 +30,7 @@
 ## 提现
 
 ```php
-\FresnsCmdWord::plugin('Fresns')->walletWithdraw($wordBody)
+\FresnsCmdWord::plugin('Fresns')->walletWithdraw($wordBody);
 ```
 | 参数名 | 类型 | 是否必传 | 说明 |
 | --- | --- | --- | --- |
@@ -48,7 +48,7 @@
 ## 冻结
 
 ```php
-\FresnsCmdWord::plugin('Fresns')->walletFreeze($wordBody)
+\FresnsCmdWord::plugin('Fresns')->walletFreeze($wordBody);
 ```
 | 参数名 | 类型 | 是否必传 | 说明 |
 | --- | --- | --- | --- |
@@ -64,7 +64,7 @@
 ## 解冻
 
 ```php
-\FresnsCmdWord::plugin('Fresns')->walletUnfreeze($wordBody)
+\FresnsCmdWord::plugin('Fresns')->walletUnfreeze($wordBody);
 ```
 | 参数名 | 类型 | 是否必传 | 说明 |
 | --- | --- | --- | --- |
@@ -80,7 +80,7 @@
 ## 收入交易
 
 ```php
-\FresnsCmdWord::plugin('Fresns')->walletIncrease($wordBody)
+\FresnsCmdWord::plugin('Fresns')->walletIncrease($wordBody);
 ```
 | 参数名 | 类型 | 是否必传 | 说明 |
 | --- | --- | --- | --- |
@@ -99,7 +99,7 @@
 ## 支出交易
 
 ```php
-\FresnsCmdWord::plugin('Fresns')->walletDecrease($wordBody)
+\FresnsCmdWord::plugin('Fresns')->walletDecrease($wordBody);
 ```
 | 参数名 | 类型 | 是否必传 | 说明 |
 | --- | --- | --- | --- |
@@ -119,7 +119,7 @@
 ## 撤销交易
 
 ```php
-\FresnsCmdWord::plugin('Fresns')->walletRevoke($wordBody)
+\FresnsCmdWord::plugin('Fresns')->walletRevoke($wordBody);
 ```
 | 参数名 | 类型 | 是否必传 | 说明 |
 | --- | --- | --- | --- |

@@ -1,9 +1,41 @@
 # 基础功能
 
+## 检测 API 请求标头
+
+```php
+\FresnsCmdWord::plugin('Fresns')->checkHeaders();
+```
+
+- 参数值见 [API 请求标头](../../api/headers.md)
+
+::: details 结果示例
+```json
+{
+    "code": 0,
+    "message": "ok",
+    "data": {
+        "appId": "qe12345",
+        "platformId": 4,
+        "version": "2.0.0",
+        "deviceInfo": "",
+        "langTag": "zh-Hans",
+        "timezone": "+8",
+        "contentFormat": "",
+        "aid": "6a3bb3bc",
+        "aidToken": "uoX1hk6SHUgB2MFGJwNx38dem9DA7Vsz",
+        "uid": 782622,
+        "uidToken": "PqBpwPLJgfd1sH0X5JffYFGxTSc8RW7c",
+        "signature": "d5db4371a0c2d7e17009dea8d53ecf15a7ec07b9",
+        "timestamp": 1626426833
+    }
+}
+```
+:::
+
 ## 校验签名
 
 ```php
-\FresnsCmdWord::plugin('Fresns')->verifySign($wordBody)
+\FresnsCmdWord::plugin('Fresns')->verifySign($wordBody);
 ```
 | 参数名 | 类型 | 是否必传 | 说明 |
 | --- | --- | --- | --- |
@@ -22,7 +54,7 @@
 ## 校验 URL 凭证
 
 ```php
-\FresnsCmdWord::plugin('Fresns')->verifyUrlAuthorization($wordBody)
+\FresnsCmdWord::plugin('Fresns')->verifyUrlAuthorization($wordBody);
 ```
 | 参数名 | 类型 | 是否必传 | 说明 |
 | --- | --- | --- | --- |
@@ -66,7 +98,7 @@
 ## 上传交互日志
 
 ```php
-\FresnsCmdWord::plugin('Fresns')->uploadSessionLog($wordBody)
+\FresnsCmdWord::plugin('Fresns')->uploadSessionLog($wordBody);
 ```
 | 参数名 | 类型 | 是否必传 | 说明 |
 | --- | --- | --- | --- |
@@ -89,7 +121,7 @@
 ## 发送验证码
 
 ```php
-\FresnsCmdWord::plugin('Fresns')->sendCode($wordBody)
+\FresnsCmdWord::plugin('Fresns')->sendCode($wordBody);
 ```
 | 参数名 | 类型 | 是否必传 | 说明 |
 | --- | --- | --- | --- |
@@ -102,7 +134,7 @@
 ## 核对验证码
 
 ```php
-\FresnsCmdWord::plugin('Fresns')->checkCode($wordBody)
+\FresnsCmdWord::plugin('Fresns')->checkCode($wordBody);
 ```
 | 参数名 | 类型 | 是否必传 | 说明 |
 | --- | --- | --- | --- |
@@ -115,7 +147,7 @@
 ## 获取 IP 信息
 
 ```php
-\FresnsCmdWord::plugin('Fresns')->ipInfo($wordBody)
+\FresnsCmdWord::plugin('Fresns')->ipInfo($wordBody);
 ```
 | 参数名 | 类型 | 是否必传 | 说明 |
 | --- | --- | --- | --- |

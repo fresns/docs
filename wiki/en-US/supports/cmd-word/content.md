@@ -3,7 +3,7 @@
 ## createDraft
 
 ```php
-\FresnsCmdWord::plugin('Fresns')->createDraft($wordBody)
+\FresnsCmdWord::plugin('Fresns')->createDraft($wordBody);
 ```
 | Parameter Name | Type | Required | **Post** Description | **Comment** Description |
 | --- | --- | --- | --- | --- |
@@ -41,7 +41,7 @@
 ## generateDraft
 
 ```php
-\FresnsCmdWord::plugin('Fresns')->generateDraft($wordBody)
+\FresnsCmdWord::plugin('Fresns')->generateDraft($wordBody);
 ```
 | Parameter Name | Type | Required | Description |
 | --- | --- | --- | --- |
@@ -70,7 +70,7 @@
 ## contentPublishByDraft
 
 ```php
-\FresnsCmdWord::plugin('Fresns')->contentPublishByDraft($wordBody)
+\FresnsCmdWord::plugin('Fresns')->contentPublishByDraft($wordBody);
 ```
 | Parameter Name | Type | Required | Description |
 | --- | --- | --- | --- |
@@ -94,7 +94,7 @@
 ## contentQuickPublish
 
 ```php
-\FresnsCmdWord::plugin('Fresns')->contentQuickPublish($wordBody)
+\FresnsCmdWord::plugin('Fresns')->contentQuickPublish($wordBody);
 ```
 | Parameter Name | Type | Required | **Post** Description | **Comment** Description |
 | --- | --- | --- | --- | --- |
@@ -133,7 +133,7 @@
 ## logicalDeletionContent
 
 ```php
-\FresnsCmdWord::plugin('Fresns')->logicalDeletionContent($wordBody)
+\FresnsCmdWord::plugin('Fresns')->logicalDeletionContent($wordBody);
 ```
 | Parameter Name | Type | Required | Description |
 | --- | --- | --- | --- |
@@ -147,7 +147,7 @@
 ## physicalDeletionContent
 
 ```php
-\FresnsCmdWord::plugin('Fresns')->physicalDeletionContent($wordBody)
+\FresnsCmdWord::plugin('Fresns')->physicalDeletionContent($wordBody);
 ```
 | Parameter Name | Type | Required | Description |
 | --- | --- | --- | --- |
@@ -159,7 +159,7 @@
 ## addContentMoreInfo
 
 ```php
-\FresnsCmdWord::plugin('Fresns')->addContentMoreInfo($wordBody)
+\FresnsCmdWord::plugin('Fresns')->addContentMoreInfo($wordBody);
 ```
 | Parameter Name | Type | Required | Description |
 | --- | --- | --- | --- |
@@ -189,7 +189,7 @@ $wordBody = [
 ## setContentSticky
 
 ```php
-\FresnsCmdWord::plugin('Fresns')->setContentSticky($wordBody)
+\FresnsCmdWord::plugin('Fresns')->setContentSticky($wordBody);
 ```
 | Parameter Name | Type | Required | Description |
 | --- | --- | --- | --- |
@@ -200,7 +200,7 @@ $wordBody = [
 ## setContentDigest
 
 ```php
-\FresnsCmdWord::plugin('Fresns')->setContentDigest($wordBody)
+\FresnsCmdWord::plugin('Fresns')->setContentDigest($wordBody);
 ```
 | Parameter Name | Type | Required | Description |
 | --- | --- | --- | --- |
@@ -211,7 +211,7 @@ $wordBody = [
 ## setContentCloseDelete
 
 ```php
-\FresnsCmdWord::plugin('Fresns')->setContentCloseDelete($wordBody)
+\FresnsCmdWord::plugin('Fresns')->setContentCloseDelete($wordBody);
 ```
 | Parameter Name | Type | Required | Description |
 | --- | --- | --- | --- |
@@ -222,7 +222,7 @@ $wordBody = [
 ## setPostAuth
 
 ```php
-\FresnsCmdWord::plugin('Fresns')->setPostAuth($wordBody)
+\FresnsCmdWord::plugin('Fresns')->setPostAuth($wordBody);
 ```
 | Parameter Name | Type | Required | Description |
 | --- | --- | --- | --- |
@@ -236,7 +236,7 @@ $wordBody = [
 ## setPostAffiliateUser
 
 ```php
-\FresnsCmdWord::plugin('Fresns')->setPostAffiliateUser($wordBody)
+\FresnsCmdWord::plugin('Fresns')->setPostAffiliateUser($wordBody);
 ```
 | Parameter Name | Type | Required | Description |
 | --- | --- | --- | --- |
@@ -249,7 +249,7 @@ $wordBody = [
 ## setCommentExtendButton
 
 ```php
-\FresnsCmdWord::plugin('Fresns')->setCommentExtendButton($wordBody)
+\FresnsCmdWord::plugin('Fresns')->setCommentExtendButton($wordBody);
 ```
 | Parameter Name | Type | Required | Description |
 | --- | --- | --- | --- |

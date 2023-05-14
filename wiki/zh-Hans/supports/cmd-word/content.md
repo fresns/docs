@@ -3,7 +3,7 @@
 ## 创建草稿
 
 ```php
-\FresnsCmdWord::plugin('Fresns')->createDraft($wordBody)
+\FresnsCmdWord::plugin('Fresns')->createDraft($wordBody);
 ```
 | 参数名 | 类型 | 是否必传 | **帖子**说明 | **评论**说明 |
 | --- | --- | --- | --- | --- |
@@ -41,7 +41,7 @@
 ## 生成草稿
 
 ```php
-\FresnsCmdWord::plugin('Fresns')->generateDraft($wordBody)
+\FresnsCmdWord::plugin('Fresns')->generateDraft($wordBody);
 ```
 | 参数名 | 类型 | 是否必传 | 说明 |
 | --- | --- | --- | --- |
@@ -70,7 +70,7 @@
 ## 由草稿发布内容
 
 ```php
-\FresnsCmdWord::plugin('Fresns')->contentPublishByDraft($wordBody)
+\FresnsCmdWord::plugin('Fresns')->contentPublishByDraft($wordBody);
 ```
 | 参数名 | 类型 | 是否必传 | 说明 |
 | --- | --- | --- | --- |
@@ -95,7 +95,7 @@
 ## 快速发表内容
 
 ```php
-\FresnsCmdWord::plugin('Fresns')->contentQuickPublish($wordBody)
+\FresnsCmdWord::plugin('Fresns')->contentQuickPublish($wordBody);
 ```
 | 参数名 | 类型 | 是否必传 | **帖子**说明 | **评论**说明 |
 | --- | --- | --- | --- | --- |
@@ -133,7 +133,7 @@
 ## 逻辑删除内容
 
 ```php
-\FresnsCmdWord::plugin('Fresns')->logicalDeletionContent($wordBody)
+\FresnsCmdWord::plugin('Fresns')->logicalDeletionContent($wordBody);
 ```
 | 参数名 | 类型 | 是否必传 | 说明 |
 | --- | --- | --- | --- |
@@ -147,7 +147,7 @@
 ## 物理删除内容
 
 ```php
-\FresnsCmdWord::plugin('Fresns')->physicalDeletionContent($wordBody)
+\FresnsCmdWord::plugin('Fresns')->physicalDeletionContent($wordBody);
 ```
 | 参数名 | 类型 | 是否必传 | 说明 |
 | --- | --- | --- | --- |
@@ -159,7 +159,7 @@
 ## 添加内容更多信息
 
 ```php
-\FresnsCmdWord::plugin('Fresns')->addContentMoreInfo($wordBody)
+\FresnsCmdWord::plugin('Fresns')->addContentMoreInfo($wordBody);
 ```
 | 参数名 | 类型 | 是否必传 | 说明 |
 | --- | --- | --- | --- |
@@ -189,7 +189,7 @@ $wordBody = [
 ## 设置内容置顶
 
 ```php
-\FresnsCmdWord::plugin('Fresns')->setContentSticky($wordBody)
+\FresnsCmdWord::plugin('Fresns')->setContentSticky($wordBody);
 ```
 | 参数名 | 类型 | 是否必传 | 说明 |
 | --- | --- | --- | --- |
@@ -200,7 +200,7 @@ $wordBody = [
 ## 设置内容精华
 
 ```php
-\FresnsCmdWord::plugin('Fresns')->setContentDigest($wordBody)
+\FresnsCmdWord::plugin('Fresns')->setContentDigest($wordBody);
 ```
 | 参数名 | 类型 | 是否必传 | 说明 |
 | --- | --- | --- | --- |
@@ -211,7 +211,7 @@ $wordBody = [
 ## 设置内容关闭删除功能
 
 ```php
-\FresnsCmdWord::plugin('Fresns')->setContentCloseDelete($wordBody)
+\FresnsCmdWord::plugin('Fresns')->setContentCloseDelete($wordBody);
 ```
 | 参数名 | 类型 | 是否必传 | 说明 |
 | --- | --- | --- | --- |
@@ -222,7 +222,7 @@ $wordBody = [
 ## 设置帖子授权
 
 ```php
-\FresnsCmdWord::plugin('Fresns')->setPostAuth($wordBody)
+\FresnsCmdWord::plugin('Fresns')->setPostAuth($wordBody);
 ```
 | 参数名 | 类型 | 是否必传 | 说明 |
 | --- | --- | --- | --- |
@@ -236,7 +236,7 @@ $wordBody = [
 ## 设置帖子附属用户
 
 ```php
-\FresnsCmdWord::plugin('Fresns')->setPostAffiliateUser($wordBody)
+\FresnsCmdWord::plugin('Fresns')->setPostAffiliateUser($wordBody);
 ```
 | 参数名 | 类型 | 是否必传 | 说明 |
 | --- | --- | --- | --- |
@@ -249,7 +249,7 @@ $wordBody = [
 ## 设置评论扩展按钮
 
 ```php
-\FresnsCmdWord::plugin('Fresns')->setCommentExtendButton($wordBody)
+\FresnsCmdWord::plugin('Fresns')->setCommentExtendButton($wordBody);
 ```
 | 参数名 | 类型 | 是否必传 | 说明 |
 | --- | --- | --- | --- |

@@ -3,7 +3,7 @@
 ## addUser
 
 ```php
-\FresnsCmdWord::plugin('Fresns')->addUser($wordBody)
+\FresnsCmdWord::plugin('Fresns')->addUser($wordBody);
 ```
 | Parameter Name | Type | Required | Description |
 | --- | --- | --- | --- |
@@ -49,7 +49,7 @@
 ## verifyUser
 
 ```php
-\FresnsCmdWord::plugin('Fresns')->verifyUser($wordBody)
+\FresnsCmdWord::plugin('Fresns')->verifyUser($wordBody);
 ```
 | Parameter Name | Type | Required | Description |
 | --- | --- | --- | --- |
@@ -78,7 +78,7 @@
 ## createUserToken
 
 ```php
-\FresnsCmdWord::plugin('Fresns')->createUserToken($wordBody)
+\FresnsCmdWord::plugin('Fresns')->createUserToken($wordBody);
 ```
 | Parameter Name | Type | Required | Description |
 | --- | --- | --- | --- |
@@ -112,7 +112,7 @@
 ## verifyUserToken
 
 ```php
-\FresnsCmdWord::plugin('Fresns')->verifyUserToken($wordBody)
+\FresnsCmdWord::plugin('Fresns')->verifyUserToken($wordBody);
 ```
 | Parameter Name | Type | Required | Description |
 | --- | --- | --- | --- |
@@ -125,7 +125,7 @@
 ## logicalDeletionUser
 
 ```php
-\FresnsCmdWord::plugin('Fresns')->logicalDeletionUser($wordBody)
+\FresnsCmdWord::plugin('Fresns')->logicalDeletionUser($wordBody);
 ```
 | Parameter Name | Type | Required | Description |
 | --- | --- | --- | --- |
@@ -134,7 +134,7 @@
 ## setUserExtcredits
 
 ```php
-\FresnsCmdWord::plugin('Fresns')->setUserExtcredits($wordBody)
+\FresnsCmdWord::plugin('Fresns')->setUserExtcredits($wordBody);
 ```
 | Parameter Name | Type | Required | Description |
 | --- | --- | --- | --- |
@@ -148,7 +148,7 @@
 ## setUserExpiryDatetime
 
 ```php
-\FresnsCmdWord::plugin('Fresns')->setUserExpiryDatetime($wordBody)
+\FresnsCmdWord::plugin('Fresns')->setUserExpiryDatetime($wordBody);
 ```
 | Parameter Name | Type | Required | Description |
 | --- | --- | --- | --- |
@@ -164,7 +164,7 @@
 ## setUserGroupExpiryDatetime
 
 ```php
-\FresnsCmdWord::plugin('Fresns')->setUserGroupExpiryDatetime($wordBody)
+\FresnsCmdWord::plugin('Fresns')->setUserGroupExpiryDatetime($wordBody);
 ```
 | Parameter Name | Type | Required | Description |
 | --- | --- | --- | --- |

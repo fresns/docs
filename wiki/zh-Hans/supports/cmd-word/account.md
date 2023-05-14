@@ -3,7 +3,7 @@
 ## 添加账号
 
 ```php
-\FresnsCmdWord::plugin('Fresns')->addAccount($wordBody)
+\FresnsCmdWord::plugin('Fresns')->addAccount($wordBody);
 ```
 | 参数名 | 类型 | 是否必传 | 说明 |
 | --- | --- | --- | --- |
@@ -70,7 +70,7 @@
 ## 校验账号
 
 ```php
-\FresnsCmdWord::plugin('Fresns')->verifyAccount($wordBody)
+\FresnsCmdWord::plugin('Fresns')->verifyAccount($wordBody);
 ```
 | 参数名 | 类型 | 是否必传 | 说明 |
 | --- | --- | --- | --- |
@@ -98,7 +98,7 @@
 ## 设置账号互联凭证
 
 ```php
-\FresnsCmdWord::plugin('Fresns')->setAccountConnect($wordBody)
+\FresnsCmdWord::plugin('Fresns')->setAccountConnect($wordBody);
 ```
 | 参数名 | 类型 | 是否必传 | 说明 |
 | --- | --- | --- | --- |
@@ -119,7 +119,7 @@
 ## 创建账号凭证
 
 ```php
-\FresnsCmdWord::plugin('Fresns')->createAccountToken($wordBody)
+\FresnsCmdWord::plugin('Fresns')->createAccountToken($wordBody);
 ```
 | 参数名 | 类型 | 是否必传 | 说明 |
 | --- | --- | --- | --- |
@@ -149,7 +149,7 @@
 ## 校验账号凭证
 
 ```php
-\FresnsCmdWord::plugin('Fresns')->verifyAccountToken($wordBody)
+\FresnsCmdWord::plugin('Fresns')->verifyAccountToken($wordBody);
 ```
 | 参数名 | 类型 | 是否必传 | 说明 |
 | --- | --- | --- | --- |
@@ -160,7 +160,7 @@
 ## 逻辑删除账号
 
 ```php
-\FresnsCmdWord::plugin('Fresns')->logicalDeletionAccount($wordBody)
+\FresnsCmdWord::plugin('Fresns')->logicalDeletionAccount($wordBody);
 ```
 | 参数名 | 类型 | 是否必传 | 说明 |
 | --- | --- | --- | --- |

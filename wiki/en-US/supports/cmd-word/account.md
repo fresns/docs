@@ -3,7 +3,7 @@
 ## addAccount
 
 ```php
-\FresnsCmdWord::plugin('Fresns')->addAccount($wordBody)
+\FresnsCmdWord::plugin('Fresns')->addAccount($wordBody);
 ```
 | Parameter Name | Type | Required | Description |
 | --- | --- | --- | --- |
@@ -70,7 +70,7 @@
 ## verifyAccount
 
 ```php
-\FresnsCmdWord::plugin('Fresns')->verifyAccount($wordBody)
+\FresnsCmdWord::plugin('Fresns')->verifyAccount($wordBody);
 ```
 | Parameter Name | Type | Required | Description |
 | --- | --- | --- | --- |
@@ -98,7 +98,7 @@
 ## setAccountConnect
 
 ```php
-\FresnsCmdWord::plugin('Fresns')->setAccountConnect($wordBody)
+\FresnsCmdWord::plugin('Fresns')->setAccountConnect($wordBody);
 ```
 | Parameter Name | Type | Required | Description |
 | --- | --- | --- | --- |
@@ -119,7 +119,7 @@
 ## createAccountToken
 
 ```php
-\FresnsCmdWord::plugin('Fresns')->createAccountToken($wordBody)
+\FresnsCmdWord::plugin('Fresns')->createAccountToken($wordBody);
 ```
 | Parameter Name | Type | Required | Description |
 | --- | --- | --- | --- |
@@ -149,7 +149,7 @@
 ## verifyAccountToken
 
 ```php
-\FresnsCmdWord::plugin('Fresns')->verifyAccountToken($wordBody)
+\FresnsCmdWord::plugin('Fresns')->verifyAccountToken($wordBody);
 ```
 | Parameter Name | Type | Required | Description |
 | --- | --- | --- | --- |
@@ -160,7 +160,7 @@
 ## logicalDeletionAccount
 
 ```php
-\FresnsCmdWord::plugin('Fresns')->logicalDeletionAccount($wordBody)
+\FresnsCmdWord::plugin('Fresns')->logicalDeletionAccount($wordBody);
 ```
 | Parameter Name | Type | Required | Description |
 | --- | --- | --- | --- |
