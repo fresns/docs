@@ -1,9 +1,9 @@
 # Account Command Word
 
-## addAccount
+## createAccount
 
 ```php
-\FresnsCmdWord::plugin('Fresns')->addAccount($wordBody);
+\FresnsCmdWord::plugin('Fresns')->createAccount($wordBody);
 ```
 | Parameter Name | Type | Required | Description |
 | --- | --- | --- | --- |
@@ -15,6 +15,8 @@
 | connectPhone | Number | *optional* | Connect platform specific: platform phone number (optional when `type=3`) |
 | connectCountryCode | Number | *optional* | Connect platform specific: phone international area code (optional when `type=3`) |
 | password | String | *optional* | Login password |
+| createUser | Boolean | *optional* | Whether to create a user synchronously |
+| userInfo | Array | *optional* | Synchronisation of initial information at user creation |
 
 ::: details Return Example
 ```json
@@ -23,7 +25,10 @@
     "message": "ok",
     "data": {
         "type": "accounts->type",
-        "aid": "accounts->aid"
+        "aid": "accounts->aid",
+        "uid": "users->uid",
+        "username": "users->username",
+        "nickname": "users->nickname"
     }
 }
 ```
@@ -31,7 +36,7 @@
 
 ::: details Check `connectInfo` parameter introduction
 - Supports multiple, for example, the WeChat platform will have both UnionID and OpenID parameters.
-- Required parameters: `connectId`, `connectToken`, `connectNickname`, `pluginFskey`
+- Required parameters: `connectId`, `connectToken`, `pluginFskey`
 ```json
 [
     {
@@ -58,6 +63,20 @@
     }
 ]
 ```
+:::
+
+::: details Check `userInfo` parameter introduction
+| Parameter Name | Type | Required | Description |
+| --- | --- | --- | --- |
+| username | String | *optional* | Username, related field `users->username`<br>If not passed, a random 6-8 character string will be generated, avoiding the use of banned names (key name [ban_names](../../database/dictionary/ban-names.md) banned values) |
+| nickname | String | *optional* | Nickname, related field `users->nickname` |
+| password | String | *optional* | Login password, related field `users->password` |
+| avatarFid | String | *optional* | Avatar file fid, converted to `files->id` when stored<br>Related field `users->avatar_file_id` |
+| avatarUrl | String | *optional* | Avatar file URL, related field `users->avatar_file_url`<br>If left empty, check if `avatarFid` is also empty, if not, store the url obtained by fid in the database (ignoring anti-leech, only stitching the address) |
+| gender | Number | *optional* | Gender, related field `users->gender` |
+| birthday | String | *optional* | Birthday, related field `users->birthday`, format is Y-m-d H:i:s |
+| timezone | String | *optional* | Preferred timezone, related field `users->timezone` |
+| language | String | *optional* | Preferred language, related field `users->language` |
 :::
 
 ::: details Check registration logic

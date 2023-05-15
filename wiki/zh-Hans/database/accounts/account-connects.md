@@ -8,7 +8,7 @@
 | connect_token | varchar(128) | 关联凭证 Token |  | NO | **唯一值**<br>例如：微信 openid 或 GitHub Token |
 | connect_refresh_token | varchar(128) | 关联凭证 Refresh Token |  | YES |  |
 | connect_username | varchar(128) | 关联用户名 |  | YES | 互联平台的用户名，没有则留空 |
-| connect_nickname | varchar(128) | 关联昵称 |  | NO | 互联平台的昵称，没有则填写平台的名称 |
+| connect_nickname | varchar(128) | 关联昵称 |  | YES | 互联平台的昵称，没有则填写平台的名称 |
 | connect_avatar | varchar(255) | 关联头像 |  | YES | 互联平台的头像 URL，没有则留空 |
 | plugin_fskey | varchar(64) | 插件名 |  | NO | 关联字段 [plugins->fskey](../plugins/plugins.md)<br>是由哪个插件创建的  |
 | is_enabled | tinyint *UNSIGNED* | 是否有效 | 1 | NO | 0.无效 / 1.有效 |

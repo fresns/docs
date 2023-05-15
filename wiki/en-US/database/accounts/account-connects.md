@@ -8,7 +8,7 @@
 | connect_token | varchar(128) | Connect Token |  | NO | **Unique**<br>For example: WeChat openid or GitHub Token |
 | connect_refresh_token | varchar(128) | Connect Refresh Token |  | YES |  |
 | connect_username | varchar(128) | Connect Username |  | YES | Platform username, leave empty if not available |
-| connect_nickname | varchar(128) | Connect Nickname |  | NO | Platform nickname, use platform name if not available |
+| connect_nickname | varchar(128) | Connect Nickname |  | YES | Platform nickname, use platform name if not available |
 | connect_avatar | varchar(255) | Connect Avatar |  | YES | Platform avatar URL, leave empty if not available |
 | plugin_fskey | varchar(64) | Plugin Fskey |  | NO | Related field [plugins->fskey](../plugins/plugins.md)<br>Created by which plugin  |
 | is_enabled | tinyint *UNSIGNED* | Is Valid | 1 | NO | 0.Invalid / 1.Valid |

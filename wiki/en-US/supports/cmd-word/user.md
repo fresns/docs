@@ -1,9 +1,9 @@
 # User Command Word
 
-## addUser
+## createUser
 
 ```php
-\FresnsCmdWord::plugin('Fresns')->addUser($wordBody);
+\FresnsCmdWord::plugin('Fresns')->createUser($wordBody);
 ```
 | Parameter Name | Type | Required | Description |
 | --- | --- | --- | --- |
@@ -12,8 +12,8 @@
 | platformId | Number | *optional* | Platform ID, required when passing `aidToken` |
 | version | String | *optional* | Semantic version number, required when passing `aidToken` |
 | appId | String | *optional* | App ID, required when passing `aidToken` |
-| nickname | String | **required** | Nickname, related field `users->nickname` |
 | username | String | *optional* | Username, related field `users->username`<br>If not passed, a random 6-8 character string will be generated, avoiding the use of banned names (key name [ban_names](../../database/dictionary/ban-names.md) banned values) |
+| nickname | String | *optional* | Nickname, related field `users->nickname`<br>If not passed, a random 8 character string |
 | password | String | *optional* | Login password, related field `users->password` |
 | avatarFid | String | *optional* | Avatar file fid, converted to `files->id` when stored<br>Related field `users->avatar_file_id` |
 | avatarUrl | String | *optional* | Avatar file URL, related field `users->avatar_file_url`<br>If left empty, check if `avatarFid` is also empty, if not, store the url obtained by fid in the database (ignoring anti-leech, only stitching the address) |

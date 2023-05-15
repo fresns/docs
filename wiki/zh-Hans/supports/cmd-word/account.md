@@ -1,9 +1,9 @@
 # 账号功能
 
-## 添加账号
+## 创建账号
 
 ```php
-\FresnsCmdWord::plugin('Fresns')->addAccount($wordBody);
+\FresnsCmdWord::plugin('Fresns')->createAccount($wordBody);
 ```
 | 参数名 | 类型 | 是否必传 | 说明 |
 | --- | --- | --- | --- |
@@ -15,6 +15,8 @@
 | connectPhone | Number | NO | 互联平台专用：平台手机号码（`type=3` 时选填） |
 | connectCountryCode | Number | NO | 互联平台专用：平台手机号码国际区号（`type=3` 时选填） |
 | password | String | NO | 登录密码 |
+| createUser | Boolean | NO | 是否同步创建一个用户 |
+| userInfo | Array | NO | 同步创建用户时的初始信息 |
 
 ::: details 结果示例
 ```json
@@ -23,7 +25,10 @@
     "message": "ok",
     "data": {
         "type": "accounts->type",
-        "aid": "accounts->aid"
+        "aid": "accounts->aid",
+        "uid": "users->uid",
+        "username": "users->username",
+        "nickname": "users->nickname"
     }
 }
 ```
@@ -31,7 +36,7 @@
 
 ::: details 查看 connectInfo 参数介绍
 - 支持多个，例如微信平台会同时有 UnionID 和 OpenID 两个参数。
-- 必传参数 `connectId` `connectToken` `connectNickname` `pluginFskey`
+- 必传参数 `connectId` `connectToken` `pluginFskey`
 ```json
 [
     {
@@ -58,6 +63,20 @@
     }
 ]
 ```
+:::
+
+::: details 查看 userInfo 参数介绍
+| 参数名 | 类型 | 是否必传 | 说明 |
+| --- | --- | --- | --- |
+| username | String | NO | 用户名，关联字段 `users->username`<br>不传则随机生成一个 6~8 位字符，需要避免使用禁用名（键名 [ban_names](../../database/dictionary/ban-names.md) 禁用值） |
+| nickname | String | NO | 昵称，关联字段 `users->nickname` |
+| password | String | NO | 登录密码，关联字段 `users->password` |
+| avatarFid | String | NO | 头像 fid，存储时转换成 `files->id`<br>关联字段 `users->avatar_file_id` |
+| avatarUrl | String | NO | 头像 URL，关联字段 `users->avatar_file_url`<br>如果留空，则判断 `avatarFid` 是否也留空，如果有值，则凭 fid 获取 url 入库（忽略防盗链，仅拼接地址） |
+| gender | Number | NO | 性别，关联字段 `users->gender` |
+| birthday | String | NO | 生日，关联字段 `users->birthday`，格式为 Y-m-d H:i:s |
+| timezone | String | NO | 偏好时区，关联字段 `users->timezone` |
+| language | String | NO | 偏好语言，关联字段 `users->language` |
 :::
 
 ::: details 查看注册逻辑
