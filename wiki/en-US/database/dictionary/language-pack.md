@@ -242,7 +242,7 @@
     {"name":"settingGenderMale","canDelete":false},
     {"name":"settingGenderFemale","canDelete":false},
     {"name":"settingConnectAdd","canDelete":false},
-    {"name":"settingConnectRemove","canDelete":false},
+    {"name":"settingConnectDisconnect","canDelete":false},
     {"name":"admin","canDelete":false},
     {"name":"groupAdmin","canDelete":false},
     {"name":"editorFullFunctions","canDelete":false},

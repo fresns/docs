@@ -241,7 +241,7 @@
     "settingGenderMale": "男",
     "settingGenderFemale": "女",
     "settingConnectAdd": "绑定",
-    "settingConnectRemove": "解绑",
+    "settingConnectDisconnect": "解绑",
     "admin": "管理员",
     "groupAdmin": "小组管理员",
     "editorFullFunctions": "进入高级编辑模式",

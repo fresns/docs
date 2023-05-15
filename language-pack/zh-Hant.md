@@ -241,7 +241,7 @@
     "settingGenderMale": "男",
     "settingGenderFemale": "女",
     "settingConnectAdd": "關聯",
-    "settingConnectRemove": "解除",
+    "settingConnectDisconnect": "解除",
     "admin": "管理員",
     "groupAdmin": "社團管理員",
     "editorFullFunctions": "進入高級編輯模式",
