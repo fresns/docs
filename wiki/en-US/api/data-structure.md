@@ -30,10 +30,13 @@ To reduce documentation effort and ensure consistency of public data, the same s
     "connects": [
         {
             "connectId": "Number / Connected Platform Number",
+            "connectName": "String / Connected Platform Name",
+            "connected": "Boolean / is connected",
+            "service": "String / Connect Plugin Service",
             "username": "String / Connected Platform Username",
             "nickname": "String / Connected Platform Nickname",
             "avatar": "String / Connected Platform Avatar",
-            "status": "String / Connected Platform Validity"
+            "status": "Boolean / Connected Platform Validity"
         }
     ],
     "wallet": {

@@ -30,10 +30,13 @@
     "connects": [
         {
             "connectId": "Number / 互联平台编号",
+            "connectName": "String / 互联平台名称",
+            "connected": "Boolean / 是否已经绑定",
+            "service": "String / 互联平台插件",
             "username": "String / 互联用户名",
             "nickname": "String / 互联昵称",
             "avatar": "String / 互联头像",
-            "status": "String / 互联是否有效"
+            "status": "Boolean / 互联是否有效"
         }
     ],
     "wallet": {

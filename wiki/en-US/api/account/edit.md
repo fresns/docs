@@ -30,6 +30,7 @@
 | editWalletPassword | String | *optional* | Modify wallet password (leave blank to not modify, passed in Base64) |
 | editWalletPasswordConfirm | String | *optional* | Pass the new wallet password again (leave blank to not modify, passed in Base64) |
 | editLastLoginTime | Boolean | *optional* | Last login time (leave blank to not modify)<br>`1` Update |
+| disconnectConnectId | Number | *optional* | disconnect [account connect](../../database/dictionary/connects.md) |
 | deviceToken | String | *optional* | iOS or Android device Token (leave blank to not modify) |
 
 **Request Description**
