@@ -29,11 +29,13 @@ After the operation is completed on the plug-in page, it will return the data in
 
 ```json
 {
-    "postMessageKey": "fresnsEditorUpload", // The value of the postMessageKey variable in the path
-    "windowClose": true, // Whether to close the window or modal
-    // The following logic is consistent with the API
     "code": 0, // Processing status code
     "message": "ok", // Alert message in case of failure
+    "action": {
+        "postMessageKey": "fresnsEditorUpload", // The value of the postMessageKey variable in the path
+        "windowClose": true, // Whether to close the window or modal
+        "reloadData": false // Whether to reload data
+    },
     "data": {
         // For example, a map extension that returns information about the user's selected location
     }

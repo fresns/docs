@@ -29,11 +29,13 @@ Fresns 主程序内置了 [iFrame Resizer](https://github.com/davidjbradshaw/ifr
 
 ```json
 {
-    "postMessageKey": "fresnsEditorUpload", // 路径中 postMessageKey 变量值
-    "windowClose": true, // 是否关闭窗口或弹出层(modal)
-    // 以下逻辑同 API 一致
     "code": 0, // 处理状态，0 表示成功，其余为失败状态码
     "message": "ok", // 失败时的提示信息
+    "action": {
+        "postMessageKey": "fresnsEditorUpload", // 路径中 postMessageKey 变量值
+        "windowClose": true, // 是否关闭窗口或弹出层(modal)
+        "reloadData": false // 是否重载数据
+    },
     "data": {
         // 如果功能同 API 一样，则返回与 API 一致的数据格式
         // 例如上传文件，返回内容同 /api/v2/common/upload-file data 一致
