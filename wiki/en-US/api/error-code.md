@@ -116,6 +116,7 @@
 | 34403 | Connect account error `(Connected Token already exists)` |
 | 34404 | Connect token is disabled |
 | 34405 | You have already connected an account and cannot connect it again. |
+| 34406 | Your account is not set up with an email and phone number, so after you are disconnected your account will be empty, and you will not be able to log in, so disconnect is disabled. |
 | 34501 | Account wallet not exist or has been banned |
 | 34502 | Account wallet password is incorrect |
 | 34503 | The counterparty wallet not exist or has been banned |
