@@ -36,6 +36,7 @@
     "message": "ok",
     "data": {
         "sessionToken": {
+            "aid": "String / 账号 ID",
             "token": "String / 账号登录凭证",
             "expiredHours": "Number / 有效期小时数，null 代表永久有效",
             "expiredDays": "Number / 有效期天数，null 代表永久有效",

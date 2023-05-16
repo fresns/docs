@@ -29,6 +29,7 @@
     "message": "ok",
     "data": {
         "sessionToken": {
+            "uid": "String / User ID",
             "token": "String / User login token",
             "expiredHours": "Number / Validity period in hours, null for permanent validity",
             "expiredDays": "Number / Validity period in days, null for permanent validity",

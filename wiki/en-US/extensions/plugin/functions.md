@@ -120,6 +120,7 @@ $wordBody = [
         'userId' => 'User Primary ID',
     ],
     'accountToken' => [
+        "aid": "String / Account ID",
         'token' => 'String / Account Token',
         'expiredHours' => 'Number / Expiration hours, null for permanent',
         'expiredDays' => 'Number / Expiration days, null for permanent',
@@ -129,6 +130,7 @@ $wordBody = [
         // Common Data Structure -> Account Info
     ],
     'userToken' => [
+        "uid": "String / User ID",
         'token' => 'String / User Token',
         'expiredHours' => 'Number / Expiration hours, null for permanent',
         'expiredDays' => 'Number / Expiration days, null for permanent',

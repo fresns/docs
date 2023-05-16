@@ -127,6 +127,7 @@ $wordBody = [
         'userId' => '用户数据表主键 ID',
     ],
     'accountToken' => [
+        "aid": "String / 账号 ID",
         'token' => 'String / 账号登录凭证',
         'expiredHours' => 'Number / 有效期小时数，null 代表永久有效',
         'expiredDays' => 'Number / 有效期天数，null 代表永久有效',
@@ -136,6 +137,7 @@ $wordBody = [
         // 通用数据结构->账号信息
     ],
     'userToken' => [
+        "uid": "String / 用户 UID",
         'token' => 'String / 账号登录凭证',
         'expiredHours' => 'Number / 有效期小时数，null 代表永久有效',
         'expiredDays' => 'Number / 有效期天数，null 代表永久有效',

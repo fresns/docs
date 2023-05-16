@@ -36,6 +36,7 @@
     "message": "ok",
     "data": {
         "sessionToken": {
+            "aid": "String / Account ID",
             "token": "String / Account login token",
             "expiredHours": "Number / Expiration hours, null indicates permanent validity",
             "expiredDays": "Number / Expiration days, null indicates permanent validity",

@@ -29,6 +29,7 @@
     "message": "ok",
     "data": {
         "sessionToken": {
+            "uid": "String / 用户 UID",
             "token": "String / 用户登录凭证",
             "expiredHours": "Number / 有效期小时数，null 代表永久有效",
             "expiredDays": "Number / 有效期天数，null 代表永久有效",
