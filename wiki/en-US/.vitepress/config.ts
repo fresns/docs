@@ -575,6 +575,7 @@ function sidebarSupports() {
                 { text: 'Wallet', link: '/supports/cmd-word/wallet.md' },
                 { text: 'File', link: '/supports/cmd-word/file.md' },
                 { text: 'Content', link: '/supports/cmd-word/content.md' },
+                { text: 'Detail', link: '/supports/cmd-word/detail.md' },
                 { text: 'Crontab', link: '/supports/cmd-word/crontab.md' },
             ]
         },

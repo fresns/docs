@@ -637,6 +637,7 @@ function sidebarSupports() {
                 { text: '钱包功能', link: '/supports/cmd-word/wallet.md' },
                 { text: '文件功能', link: '/supports/cmd-word/file.md' },
                 { text: '内容功能', link: '/supports/cmd-word/content.md' },
+                { text: '详情功能', link: '/supports/cmd-word/detail.md' },
                 { text: '定时任务', link: '/supports/cmd-word/crontab.md' },
             ]
         },
