@@ -16,7 +16,9 @@
 | nickname | String | *optional* | Nickname, related field `users->nickname`<br>If not passed, a random 8 character string |
 | password | String | *optional* | Login password, related field `users->password` |
 | avatarFid | String | *optional* | Avatar file fid, converted to `files->id` when stored<br>Related field `users->avatar_file_id` |
-| avatarUrl | String | *optional* | Avatar file URL, related field `users->avatar_file_url`<br>If left empty, check if `avatarFid` is also empty, if not, store the url obtained by fid in the database (ignoring anti-leech, only stitching the address) |
+| avatarUrl | String | *optional* | Avatar file URL, related field `users->avatar_file_url` |
+| bannerFid | String | *optional* | Banner file fid, converted to `files->id` when stored<br>Related field `users->banner_file_id` |
+| bannerUrl | String | *optional* | Banner file URL, related field `users->banner_file_url` |
 | gender | Number | *optional* | Gender, related field `users->gender` |
 | birthday | String | *optional* | Birthday, related field `users->birthday`, format is Y-m-d H:i:s |
 | timezone | String | *optional* | Preferred timezone, related field `users->timezone` |
