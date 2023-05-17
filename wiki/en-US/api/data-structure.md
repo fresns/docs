@@ -267,6 +267,7 @@ To reduce documentation effort and ensure consistency of public data, the same s
         "cover": "String / Parent group cover image",
         "banner": "String / Parent group banner image"
     },
+    "subgroupCount": "Number / Total number of subgroup",
     "likeCount": "Number / Total number of likes",
     "dislikeCount": "Number / Total number of dislikes",
     "followCount": "Number / Total number of follows",

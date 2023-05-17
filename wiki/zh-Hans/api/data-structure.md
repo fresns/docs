@@ -267,6 +267,7 @@
         "cover": "String / 父级小组封面图",
         "banner": "String / 父级小组条幅图"
     },
+    "subgroupCount": "Number / 子级小组总数",
     "likeCount": "Number / 被点赞总数",
     "dislikeCount": "Number / 被点踩总数",
     "followCount": "Number / 被关注总数",
