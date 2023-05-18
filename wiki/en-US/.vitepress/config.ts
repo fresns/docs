@@ -113,6 +113,7 @@ function sidebarGuide() {
                 { text: 'Updating', link: '/guide/upgrade.md' },
                 { text: 'Operating', link: '/guide/operating.md' },
                 { text: 'Reporting Bugs', link: '/guide/feedback.md' },
+                { text: 'Release Notes', link: '/guide/changelog.md' },
                 { text: 'FAQ', link: '/guide/faq.md' },
             ]
         }

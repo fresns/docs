@@ -168,6 +168,7 @@ function sidebarGuide() {
                 { text: '升级', link: '/guide/upgrade.md' },
                 { text: '运营', link: '/guide/operating.md' },
                 { text: '提交反馈', link: '/guide/feedback.md' },
+                { text: '更新记录', link: '/guide/changelog.md' },
                 { text: '常见问题', link: '/guide/faq.md' },
             ]
         },
