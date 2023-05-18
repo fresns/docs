@@ -128,7 +128,7 @@
 | connectRefreshToken | String | NO | `account_connects->connect_refresh_token` |
 | refreshTokenExpiredDatetime | String | NO | `Y-m-d H:i:s` `account_connects->refresh_token_expired_at` |
 | connectUsername | String | NO | `account_connects->connect_username` |
-| connectNickname | String | YES | `account_connects->connect_nickname` |
+| connectNickname | String | NO | `account_connects->connect_nickname` |
 | connectAvatar | String | NO | `account_connects->connect_avatar` |
 | moreJson | String | NO | `account_connects->more_json` |
 | connectEmail | String | NO | 平台邮箱（账号表邮箱为空时将存入，有值则忽略） |

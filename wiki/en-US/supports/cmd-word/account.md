@@ -128,7 +128,7 @@
 | connectRefreshToken | String | *optional* | `account_connects->connect_refresh_token` |
 | refreshTokenExpiredDatetime | String | *optional* | `Y-m-d H:i:s` `account_connects->refresh_token_expired_at` |
 | connectUsername | String | *optional* | `account_connects->connect_username` |
-| connectNickname | String | **required**  | `account_connects->connect_nickname` |
+| connectNickname | String | *optional*  | `account_connects->connect_nickname` |
 | connectAvatar | String | *optional* | `account_connects->connect_avatar` |
 | moreJson | String | *optional* | `account_connects->more_json` |
 | connectEmail | String | *optional* | Platform email (will be stored when the account table email is empty, ignored if there is a value) |
