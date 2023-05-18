@@ -16,7 +16,7 @@ Before you install Fresns, it's important to check that your server meets the re
 ## Download
 
 ::: tip Option 1: Download the full package manually
-- [Download Fresns v2.11.2 (05/08/2023)](https://app.fresns.org/latest.zip)
+- [Download Fresns v2.12.0 (05/12/2023)](https://app.fresns.org/latest.zip)
 - *Website engine and theme templates already built in*
 :::
 
