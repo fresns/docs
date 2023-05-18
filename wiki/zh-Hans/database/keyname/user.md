@@ -34,10 +34,12 @@
 ```json
 [
     {
+        "order": 1,
         "code": "互联平台编号",
         "fskey": "插件 Fskey"
     },
     {
+        "order": 2,
         "code": "2",
         "fskey": "Placeholder"
     }

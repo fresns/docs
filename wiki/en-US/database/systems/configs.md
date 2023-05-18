@@ -28,6 +28,7 @@ Based on **JSON** data type, extended with three types: `file`, `plugin`, and `p
 // plugins format
 [
     {
+        "order": 1,
         "code": "code",
         "fskey": "fskey"
     }

@@ -28,6 +28,7 @@
 // plugins 格式
 [
     {
+        "order": 1,
         "code": "code",
         "fskey": "fskey"
     }

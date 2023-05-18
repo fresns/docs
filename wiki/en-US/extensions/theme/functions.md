@@ -51,6 +51,7 @@ Theme template settings file is responsible for defining the theme template's ow
             <option value="1">One</option>
             <option value="2">Two</option>
         </select>
+        <input type="number" name="fs_theme_plugins[{{$key}}][order]">
     @endforeach
 
     <button type="submit">Save</button>
@@ -58,13 +59,14 @@ Theme template settings file is responsible for defining the theme template's ow
 
 <!-- plugin select multiple: template -->
 <template id="pluginTemplate">
-    <input type="text" class="form-control plugin-code" name="">
-    <select class="form-select plugin-fskey" name="">
+    <input type="text" class="plugin-code" name="">
+    <select class="plugin-fskey" name="">
         <option selected disabled>Please select the plugin</option>
         <option value="">Null</option>
         <option value="1">One</option>
         <option value="2">Two</option>
     </select>
+    <input type="number" class="plugin-order" name="">
 </template>
 ```
 

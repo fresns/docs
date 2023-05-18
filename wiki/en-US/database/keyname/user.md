@@ -35,10 +35,12 @@
 ```json
 [
     {
+        "order": 1,
         "code": "Connect platform number",
         "fskey": "Plugin Fskey"
     },
     {
+        "order": 2,
         "code": "2",
         "fskey": "Placeholder"
     }
