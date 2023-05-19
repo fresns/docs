@@ -17,6 +17,7 @@
 | map_latitude | decimal(12,8) | 地图-纬度 |  | YES | 浮点数，范围为 -90~90，负数表示南纬 |
 | is_sticky | tinyint *UNSIGNED* | 是否置顶 | 0 | NO |  0.否 / 1.是 |
 | digest_state | tinyint *UNSIGNED* | 精华状态 | 1 | NO |  1.否 / 2.普级精华 / 3.高级精华 |
+| view_count | int *UNSIGNED* | 查看数 | 0 | NO |  |
 | like_count | int *UNSIGNED* | 点赞数 | 0 | NO | 有多少用户点赞了该条评论 |
 | dislike_count | int *UNSIGNED* | 点踩数 | 0 | NO | 有多少用户点踩了该条评论 |
 | follow_count | int *UNSIGNED* | 关注数 | 0 | NO | 有多少用户关注了（收藏）该条评论 |
