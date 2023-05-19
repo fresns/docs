@@ -141,7 +141,7 @@
 | Parameter Name | Type | Required | Description |
 | --- | --- | --- | --- |
 | uid | Number | **required** | User UID `users->uid` |
-| extcredits | Number | **required** | extcredits `1-5` |
+| extcreditsId | Number | **required** | extcredits id `1-5` |
 | fskey | String | **required** | plugin fskey |
 | operation | String | **required** | Operation Type `increment` 或 `decrement` |
 | amount | Number | *optional* | Leave blank to default to `1` |

@@ -141,7 +141,7 @@
 | 参数名 | 类型 | 是否必传 | 说明 |
 | --- | --- | --- | --- |
 | uid | Number | YES | 用户 UID `users->uid` |
-| extcredits | Number | YES | extcredits `1-5` |
+| extcreditsId | Number | YES | extcredits id `1-5` |
 | fskey | String | YES | 操作者 |
 | operation | String | YES | 操作类型 `increment` 或 `decrement` |
 | amount | Number | NO | 留空则默认为 `1` |
