@@ -57,6 +57,16 @@ ConfigHelper::fresnsConfigByItemTag($itemTag, $langTag);
 ```
 :::
 
+## Get Configuration API Value by Key
+
+```php
+ConfigHelper::fresnsConfigApiByItemKey($itemKey, $langTag);
+```
+| Parameter Name | Type | Required | Description |
+| --- | --- | --- | --- |
+| itemKey | String | **required** | [configs->item_key](../../database/systems/configs.md) |
+| langTag | String | *optional* | Language tag(can be omitted), only effective for multi-language configurations.<br>If it is a multi-language configuration and not provided, the default language value will be output. |
+
 ## Determine File Configuration Type by Key
 
 ```php

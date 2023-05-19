@@ -48,6 +48,7 @@ fresns_lang_tags
 fresns_config_{$itemKey}_{$langTag}
 fresns_config_keys_{$key}_{$langTag}
 fresns_config_tag_{$itemTag}_{$langTag}
+fresns_config_api_{$itemKey}_{$langTag}
 fresns_config_file_accept
 fresns_config_file_url_expire
 fresns_content_block_words       // fresns_{$type}_block_words
@@ -246,8 +247,7 @@ fresns_web_api_host                                   // tag: fresnsWebConfigs
 fresns_web_api_key                                    // tag: fresnsWebConfigs
 fresns_web_key_{$keyId}                               // tag: fresnsWebConfigs
 fresns_web_api_config_all_{$langTag}                  // tag: fresnsWebConfigs
-fresns_web_db_config_{$itemKey}_{$langTag}            // tag: fresnsWebConfigs
-fresns_web_code_message_all_{$fskey}_{$langTag}      // tag: fresnsWebConfigs
+fresns_web_code_message_all_{$fskey}_{$langTag}       // tag: fresnsWebConfigs
 fresns_web_post_content_types_{$langTag}              // tag: fresnsWebConfigs
 fresns_web_comment_content_types_{$langTag}           // tag: fresnsWebConfigs
 fresns_web_stickers_{$langTag}                        // tag: fresnsWebConfigs
