@@ -31,6 +31,8 @@
 | createDate | String | NO | 发表日期：`today`,`yesterday`,`week`,`lastWeek`,`month`,`lastMonth`,`year`,`lastYear` |
 | createDateGt | String | NO | 发表时间大于 `Y-m-d` |
 | createDateLt | String | NO | 发表时间小于 `Y-m-d` |
+| viewCountGt | Number | NO | 查看数大于 |
+| viewCountLt | Number | NO | 查看数小于 |
 | likeCountGt | Number | NO | 点赞数大于 |
 | likeCountLt | Number | NO | 点赞数小于 |
 | dislikeCountGt | Number | NO | 点踩数大于 |
@@ -41,7 +43,7 @@
 | blockCountLt | Number | NO | 屏蔽数小于 |
 | commentCountGt | Number | NO | 评论总数大于 |
 | commentCountLt | Number | NO | 评论总数小于 |
-| orderType | String | NO | 排序类型 `createDate`,`random`,`like`,`dislike`,`follow`,`block`,`comment`<br>默认 `createDate` |
+| orderType | String | NO | 排序类型 `createDate`,`random`,`view`,`like`,`dislike`,`follow`,`block`,`comment`<br>默认 `createDate` |
 | orderDirection | String | NO | 排序方向，默认 `desc`<br>`asc`,`desc` |
 | blockGroups | String | NO | 过滤小组，`gid` 多个以英文逗号隔开 |
 | blockHashtags | String | NO | 过滤话题，`hid` 多个以英文逗号隔开 |

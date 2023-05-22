@@ -20,6 +20,8 @@
 | createDate | String | NO | 创建日期：`today`,`yesterday`,`week`,`lastWeek`,`month`,`lastMonth`,`year`,`lastYear` |
 | createDateGt | String | NO | 创建时间大于 `Y-m-d` |
 | createDateLt | String | NO | 创建时间小于 `Y-m-d` |
+| viewCountGt | Number | NO | 查看数大于 |
+| viewCountLt | Number | NO | 查看数小于 |
 | likeCountGt | Number | NO | 点赞数大于 |
 | likeCountLt | Number | NO | 点赞数小于 |
 | dislikeCountGt | Number | NO | 点踩数大于 |
@@ -32,7 +34,7 @@
 | postCountLt | Number | NO | 帖子数小于 |
 | postDigestCountGt | Number | NO | 精华数大于 |
 | postDigestCountLt | Number | NO | 精华数小于 |
-| orderType | String | NO | 排序类型 `createDate`,`random`,`like`,`dislike`,`follow`,`block`,`post`,`postDigest`<br>默认 `createDate` |
+| orderType | String | NO | 排序类型 `createDate`,`random`,`view`,`like`,`dislike`,`follow`,`block`,`post`,`postDigest`<br>默认 `createDate` |
 | orderDirection | String | NO | 排序方向 `asc`,`desc`，默认 `desc` |
 | whitelistKeys | String | NO | 白名单键名，只返回给定键名的键值对<br>多个以英文逗号隔开，支持「点表示法」表示多维数组 |
 | blacklistKeys | String | NO | 黑名单键名，从返回数据中删除指定的键值对<br>多个以英文逗号隔开，支持「点表示法」表示多维数组 |
