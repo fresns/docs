@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 
 
+## 2.13.1 (05/23/2023)
+
+### Fixes
+- Utilities: Fixed a cache issue with getting characters
+
+
 ## 2.13.0 (05/23/2023)
 
 ### Added
