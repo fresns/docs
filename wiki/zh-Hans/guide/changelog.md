@@ -3,6 +3,23 @@
 Fresns 主程序所有版本更新日志都将记录在这个文件中。
 
 
+## 2.13.0 (2023-05-23)
+
+### Added
+- API: 用户、小组、话题、帖子、评论，数据结构增加 `viewCount` 参数
+- API: 五种内容列表页支持 `view` 筛选和排序参数
+- Words: 订阅命令字新增类型 `4` 查看事件通知
+
+### Fixes
+- Utilities: 发表触发通知失效
+- Words: 账号互联凭证查重时缺少 `connectId`
+- Words: 用户扩展分值 ID 错误 `extcreditsId`
+
+### BREAKING CHANGES
+- Words: 订阅功能命令字 `subTableName` 参数修改为 `subject`
+- Words: 用户扩展分值命令字 `extcredits` 参数修改为 `extcreditsId`
+
+
 ## 2.12.0 (2023-05-18)
 
 ### Added
