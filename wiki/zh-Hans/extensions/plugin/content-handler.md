@@ -131,3 +131,13 @@ $wordBody = [
     - 参考 `App\Utilities\ContentUtility::handleAndReplaceAll`
 - 内容输出还需替换过滤词。
     - 参考 `App\Utilities\ContentUtility::replaceBlockWords`
+
+### 调用查看通知
+
+如果使用自制内容数据，建议调用查看通知功能。
+
+```php
+use App\Utilities\InteractionUtility;
+
+InteractionUtility::sendViewNotification($type, $fsid, $viewType, $authUserId);
+```

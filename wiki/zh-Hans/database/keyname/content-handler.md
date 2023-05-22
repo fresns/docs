@@ -29,6 +29,16 @@
 | 帖子详情 | post_detail_service | **plugin** | `getPostDetail` | 插件应用场景参数 `extendData` |
 | 评论详情 | comment_detail_service | **plugin** | `getCommentDetail` | 插件应用场景参数 `extendData` |
 
+## 查看
+
+| 栏目标题 | 键名 | 键值类型 | 命令字 | 说明 |
+| --- | --- | --- | --- | --- |
+| 查看用户服务商 | view_user_service | **plugin** | `viewUser` | 插件应用场景参数 `extendView` |
+| 查看小组服务商 | view_group_service | **plugin** | `viewGroup` | 插件应用场景参数 `extendView` |
+| 查看话题服务商 | view_hashtag_service | **plugin** | `viewHashtag` | 插件应用场景参数 `extendView` |
+| 查看帖子服务商 | view_post_service | **plugin** | `viewPost` | 插件应用场景参数 `extendView` |
+| 查看评论服务商 | view_comment_service | **plugin** | `viewComment` | 插件应用场景参数 `extendView` |
+
 ## 搜索
 
 | 栏目标题 | 键名 | 键值类型 | 命令字 | 说明 |

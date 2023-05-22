@@ -131,3 +131,13 @@ After the plug-in processes the request and returns the data, the main program w
     - Reference `App\Utilities\ContentUtility::handleAndReplaceAll`
 - To output content, the filter words should be replaced.
     - Reference `App\Utilities\ContentUtility::replaceBlockWords`
+
+### Send View Notification
+
+If you are using yourself content data, it is recommended that you use the View Notification feature.
+
+```php
+use App\Utilities\InteractionUtility;
+
+InteractionUtility::sendViewNotification($type, $fsid, $viewType, $authUserId);
+```
