@@ -75,7 +75,7 @@ $wordBody = [
 
 ```php
 $wordBody = [
-    'headers' => \request()->headers->all(),
+    'headers' => AppHelper::getHeaders(),
     'body' => $dtoRequest->toArray(),
     'type' => '',
     'fsid' => '',
@@ -137,7 +137,7 @@ $wordBody = [
 如果使用自制内容数据，建议调用查看通知功能。
 
 ```php
-use App\Utilities\InteractionUtility;
+use App\Utilities\SubscribeUtility;
 
-InteractionUtility::sendViewNotification($type, $fsid, $viewType, $authUserId);
+SubscribeUtility::notifyViewContent($type, $fsid, $viewType, $authUserId);
 ```

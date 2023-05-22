@@ -46,7 +46,7 @@
 | type | 订阅类型 `type = 1` |
 | fskey | 订阅者（插件） |
 | cmdWord | 订阅者的命令字 |
-| subTableName | 订阅哪张表 |
+| subject | 订阅哪张表 |
 
 - 当数据表发生新增记录时，会将 `tableName` 和 `primaryId` 信息传参给订阅者的命令字 `cmdWord`。
     - `tableName` = `表名`
@@ -92,9 +92,11 @@ Subscribe::CHANGE_TYPE_DELETED;
 ```php
 //订阅通知示例
 $wordBody = [
-    'route' => '产生通知时操作的路由',
-    'uri' => '产生通知时操作的路径',
-    'headers' => \request()->headers->all(),
+    'ip' => request()->ip(),
+    'port' => $_SERVER['REMOTE_PORT'],
+    'uri' => request()->getRequestUri(),
+    'routeName' => request()->route()->getName(),
+    'headers' => AppHelper::getHeaders(),
     'body' => $dtoRequest->toArray(),
 ];
 
@@ -146,6 +148,53 @@ $wordBody = [
     'userDetail' => [
         // 通用数据结构->用户信息
     ],
+];
+
+\FresnsCmdWord::plugin('YourFskey')->yourCmdWord($wordBody);
+```
+
+## 订阅浏览通知
+
+当浏览用户、小组、话题、帖子、评论时，触发订阅通知。
+
+```php
+//建立订阅
+\FresnsCmdWord::plugin('Fresns')->addSubscribeItem($wordBody);
+
+//取消订阅
+\FresnsCmdWord::plugin('Fresns')->removeSubscribeItem($wordBody);
+```
+
+| 参数 | 说明 |
+| --- | --- |
+| type | 订阅类型 `type = 4` |
+| fskey | 订阅者（插件） |
+| cmdWord | 订阅者的命令字 |
+| subject | 订阅哪种查看类型 |
+
+```php
+use App\Fresns\Subscribe\Subscribe;
+
+// 查看类型
+Subscribe::VIEW_TYPE_USER;
+Subscribe::VIEW_TYPE_GROUP;
+Subscribe::VIEW_TYPE_HASHTAG;
+Subscribe::VIEW_TYPE_POST;
+Subscribe::VIEW_TYPE_COMMENT;
+```
+
+```php
+//订阅通知示例
+$wordBody = [
+    'ip' => request()->ip(),
+    'port' => $_SERVER['REMOTE_PORT'],
+    'uri' => request()->getRequestUri(),
+    'routeName' => request()->route()->getName(),
+    'headers' => AppHelper::getHeaders(),
+    'type' => $type, // user, group, hashtag, post, comment
+    'fsid' => $fsid,
+    'viewType' => $viewType, // list or detail
+    'authUserId' => $authUserId,
 ];
 
 \FresnsCmdWord::plugin('YourFskey')->yourCmdWord($wordBody);

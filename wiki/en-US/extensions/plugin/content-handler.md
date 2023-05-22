@@ -75,7 +75,7 @@ $wordBody = [
 
 ```php
 $wordBody = [
-    'headers' => \request()->headers->all(),
+    'headers' => AppHelper::getHeaders(),
     'body' => $dtoRequest->toArray(),
     'type' => '',
     'fsid' => '',
@@ -137,7 +137,7 @@ After the plug-in processes the request and returns the data, the main program w
 If you are using yourself content data, it is recommended that you use the View Notification feature.
 
 ```php
-use App\Utilities\InteractionUtility;
+use App\Utilities\SubscribeUtility;
 
-InteractionUtility::sendViewNotification($type, $fsid, $viewType, $authUserId);
+SubscribeUtility::notifyViewContent($type, $fsid, $viewType, $authUserId);
 ```

@@ -29,16 +29,6 @@
 | Post Detail | post_detail_service | **plugin** | `getPostDetail` | Plugin application scenario parameter `extendData` |
 | Comment Detail | comment_detail_service | **plugin** | `getCommentDetail` | Plugin application scenario parameter `extendData` |
 
-## View
-
-| Column Title | Key Name | Key Value Type | Command Word | Description |
-| --- | --- | --- | --- | --- |
-| View User Provider | view_user_service | **plugin** | `viewUser` | Plugin application scenario parameter `extendView` |
-| View Group Provider | view_group_service | **plugin** | `viewGroup` | Plugin application scenario parameter `extendView` |
-| View Hashtag Provider | view_hashtag_service | **plugin** | `viewHashtag` | Plugin application scenario parameter `extendView` |
-| View Post Provider | view_post_service | **plugin** | `viewPost` | Plugin application scenario parameter `extendView` |
-| View Comment Provider | view_comment_service | **plugin** | `viewComment` | Plugin application scenario parameter `extendView` |
-
 ## Search
 
 | Column Title | Key Name | Key Value Type | Command Word | Description |

@@ -39,7 +39,7 @@ Tell the main program which table to subscribe to, and which command word of its
 | type | Subscription Type `type = 1` |
 | fskey | Subscriber(plugin) |
 | cmdWord | Command word for subscriber |
-| subTableName | Which table to subscribe to |
+| subject | Which table to subscribe to |
 
 - When a new record is added to the data table, the information of `tableName` and `primaryId` will be passed to the command word `cmdWord` of the subscriber.
     - `tableName` = `Database Table Name`
@@ -85,9 +85,11 @@ The plug-in subscribes to the user requests in headers information. Inform the m
 ```php
 // Example of subscription notification
 $wordBody = [
-    'route' => 'Route name when generating notifications',
-    'uri' => 'URI when generating notifications',
-    'headers' => \request()->headers->all(),
+    'ip' => request()->ip(),
+    'port' => $_SERVER['REMOTE_PORT'],
+    'uri' => request()->getRequestUri(),
+    'routeName' => request()->route()->getName(),
+    'headers' => AppHelper::getHeaders(),
     'body' => $dtoRequest->toArray(),
 ];
 
@@ -139,6 +141,53 @@ $wordBody = [
     'userDetail' => [
         // Common Data Structure -> User Info
     ],
+];
+
+\FresnsCmdWord::plugin('YourFskey')->yourCmdWord($wordBody);
+```
+
+## Subscribe View
+
+Trigger subscription notifications when viewing users, groups, topics, posts, comments.
+
+```php
+// Create
+\FresnsCmdWord::plugin('Fresns')->addSubscribeItem($wordBody);
+
+// Cancel
+\FresnsCmdWord::plugin('Fresns')->removeSubscribeItem($wordBody);
+```
+
+| Parameter | Description |
+| --- | --- |
+| type | Subscription Type `type = 4` |
+| fskey | Subscriber(plugin) |
+| cmdWord | Command word for subscriber |
+| subject | Which view type to subscribe to |
+
+```php
+use App\Fresns\Subscribe\Subscribe;
+
+// View Type
+Subscribe::VIEW_TYPE_USER;
+Subscribe::VIEW_TYPE_GROUP;
+Subscribe::VIEW_TYPE_HASHTAG;
+Subscribe::VIEW_TYPE_POST;
+Subscribe::VIEW_TYPE_COMMENT;
+```
+
+```php
+// Example of subscription notification
+$wordBody = [
+    'ip' => request()->ip(),
+    'port' => $_SERVER['REMOTE_PORT'],
+    'uri' => request()->getRequestUri(),
+    'routeName' => request()->route()->getName(),
+    'headers' => AppHelper::getHeaders(),
+    'type' => $type, // user, group, hashtag, post, comment
+    'fsid' => $fsid,
+    'viewType' => $viewType, // list or detail
+    'authUserId' => $authUserId,
 ];
 
 \FresnsCmdWord::plugin('YourFskey')->yourCmdWord($wordBody);

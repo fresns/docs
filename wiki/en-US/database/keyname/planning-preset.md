@@ -14,13 +14,13 @@
         "type": "Subscription type",
         "fskey": "Subscriber (Plugin)",
         "cmdWord": "Subscriber's command word",
-        "subTableName": "Subscribed table, type 1 exclusive"
+        "subject": "Subscribed table or view type"
     },
     {
         "type": 1,
         "fskey": "AqSms",
         "cmdWord": "sendSms",
-        "subTableName": "users"
+        "subject": "users"
     }
 ]
 ```

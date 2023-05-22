@@ -14,13 +14,13 @@
         "type": "订阅类型",
         "fskey": "订阅者（插件）",
         "cmdWord": "订阅者的命令字",
-        "subTableName": "订阅的表，类型 1 专用"
+        "subject": "订阅的表名或查看类型"
     },
     {
         "type": 1,
         "fskey": "AqSms",
         "cmdWord": "sendSms",
-        "subTableName": "users"
+        "subject": "users"
     }
 ]
 ```
