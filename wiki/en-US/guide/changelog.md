@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 
 
+## 2.13.2 (05/23/2023)
+
+### Fixes
+- Utilities: Queue issues for active user subscriptions
+
+
 ## 2.13.1 (05/23/2023)
 
 ### Fixes
