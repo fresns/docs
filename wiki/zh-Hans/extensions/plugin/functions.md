@@ -63,12 +63,12 @@
 ```
 
 ```php
-use App\Fresns\Subscribe\Subscribe;
+use App\Utilities\SubscribeUtility;
 
 // 活动类型
-Subscribe::CHANGE_TYPE_CREATED;
-Subscribe::CHANGE_TYPE_UPDATED;
-Subscribe::CHANGE_TYPE_DELETED;
+SubscribeUtility::CHANGE_TYPE_CREATED;
+SubscribeUtility::CHANGE_TYPE_UPDATED;
+SubscribeUtility::CHANGE_TYPE_DELETED;
 ```
 
 ## 订阅用户活跃状态
@@ -173,14 +173,14 @@ $wordBody = [
 | subject | 订阅哪种查看类型 |
 
 ```php
-use App\Fresns\Subscribe\Subscribe;
+use App\Utilities\SubscribeUtility;
 
 // 查看类型
-Subscribe::VIEW_TYPE_USER;
-Subscribe::VIEW_TYPE_GROUP;
-Subscribe::VIEW_TYPE_HASHTAG;
-Subscribe::VIEW_TYPE_POST;
-Subscribe::VIEW_TYPE_COMMENT;
+SubscribeUtility::VIEW_TYPE_USER;
+SubscribeUtility::VIEW_TYPE_GROUP;
+SubscribeUtility::VIEW_TYPE_HASHTAG;
+SubscribeUtility::VIEW_TYPE_POST;
+SubscribeUtility::VIEW_TYPE_COMMENT;
 ```
 
 ```php

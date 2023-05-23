@@ -56,12 +56,12 @@ Tell the main program which table to subscribe to, and which command word of its
 ```
 
 ```php
-use App\Fresns\Subscribe\Subscribe;
+use App\Utilities\SubscribeUtility;
 
 // Activity Type
-Subscribe::CHANGE_TYPE_CREATED;
-Subscribe::CHANGE_TYPE_UPDATED;
-Subscribe::CHANGE_TYPE_DELETED;
+SubscribeUtility::CHANGE_TYPE_CREATED;
+SubscribeUtility::CHANGE_TYPE_UPDATED;
+SubscribeUtility::CHANGE_TYPE_DELETED;
 ```
 
 ## Subscribe User Activity
@@ -166,14 +166,14 @@ Trigger subscription notifications when viewing users, groups, topics, posts, co
 | subject | Which view type to subscribe to |
 
 ```php
-use App\Fresns\Subscribe\Subscribe;
+use App\Utilities\SubscribeUtility;
 
 // View Type
-Subscribe::VIEW_TYPE_USER;
-Subscribe::VIEW_TYPE_GROUP;
-Subscribe::VIEW_TYPE_HASHTAG;
-Subscribe::VIEW_TYPE_POST;
-Subscribe::VIEW_TYPE_COMMENT;
+SubscribeUtility::VIEW_TYPE_USER;
+SubscribeUtility::VIEW_TYPE_GROUP;
+SubscribeUtility::VIEW_TYPE_HASHTAG;
+SubscribeUtility::VIEW_TYPE_POST;
+SubscribeUtility::VIEW_TYPE_COMMENT;
 ```
 
 ```php
