@@ -2,7 +2,7 @@
 
 | 字段名 | 字段类型 | 字段注释 | 默认值 | 可空 | 备注 |
 | --- | --- | --- | --- | --- | --- |
-| id | bigint *UNSIGNED* | 主键 ID |  | NO | 自动递赠 |
+| id | bigint *UNSIGNED* | 主键 ID |  | NO | 自动递增 |
 | table_name | varchar(64) | 表名 |  | NO | 哪个表 |
 | table_column | varchar(64) | 字段名 |  | NO | 哪个字段是多语言 |
 | table_id | bigint *UNSIGNED* | 数据记录的主键 ID |  | YES | 哪条数据记录是多语言，该条记录的`主键 ID` |

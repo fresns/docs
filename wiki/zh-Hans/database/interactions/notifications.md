@@ -2,7 +2,7 @@
 
 | 字段名 | 字段类型 | 字段注释 | 默认值 | 可空 | 备注 |
 | --- | --- | --- | --- | --- | --- |
-| id | bigint *UNSIGNED* | 主键 ID |  | NO | 自动递赠 |
+| id | bigint *UNSIGNED* | 主键 ID |  | NO | 自动递增 |
 | type | tinyint *UNSIGNED* | 通知类型 |  | NO |  |
 | user_id | bigint *UNSIGNED* | 用户 ID |  | NO | 关联字段 [users->id](../users/users.md)，这条通知属于谁 |
 | content | text | 通知内容 |  | YES | 涉及到帖子或评论时，可存储摘要内容 |

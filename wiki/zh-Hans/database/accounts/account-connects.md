@@ -2,7 +2,7 @@
 
 | 字段名 | 字段类型 | 字段注释 | 默认值 | 可空 | 备注 |
 | --- | --- | --- | --- | --- | --- |
-| id | bigint *UNSIGNED* | 主键 ID |  | NO | 自动递赠 |
+| id | bigint *UNSIGNED* | 主键 ID |  | NO | 自动递增 |
 | account_id | bigint *UNSIGNED* | 账号主键 ID |  | NO | 关联字段 [accounts->id](accounts.md) |
 | connect_id | tinyint *UNSIGNED* | 互联平台编号 |  | NO | 关联配置表 [connects](../../database/dictionary/connects.md) 键值 |
 | connect_token | varchar(128) | 关联凭证 Token |  | NO | **唯一值**<br>例如：微信 openid 或 GitHub Token |

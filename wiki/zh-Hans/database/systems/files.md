@@ -2,7 +2,7 @@
 
 | 字段名 | 字段类型 | 字段注释 | 默认值 | 可空 | 备注 |
 | --- | --- | --- | --- | --- | --- |
-| id | bigint *UNSIGNED* | 主键 ID |  | NO | 自动递赠 |
+| id | bigint *UNSIGNED* | 主键 ID |  | NO | 自动递增 |
 | fid | varchar(32) | 对外公开 ID |  | NO | **唯一值** |
 | type | tinyint *UNSIGNED* | 文件类型 | 1 | NO | 1.图片 / 2.视频 / 3.音频 / 4.文档 |
 | name | varchar(128) | 文件名称 |  | NO | 完整原始名称，上传时的文件名，包含后缀名 |

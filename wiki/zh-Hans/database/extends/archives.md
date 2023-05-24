@@ -2,7 +2,7 @@
 
 | 字段名 | 字段类型 | 字段注释 | 默认值 | 可空 | 备注 |
 | --- | --- | --- | --- | --- | --- |
-| id | int *UNSIGNED* | 主键 ID |  | NO | 自动递赠 |
+| id | int *UNSIGNED* | 主键 ID |  | NO | 自动递增 |
 | plugin_fskey | varchar(64) | 关联插件 |  | NO | 关联字段 [plugins->fskey](../plugins/plugins.md)<br>哪个插件创建的 |
 | name | varchar(64) | 名称 |  | YES | **多语言**  |
 | description | text | 介绍 |  | YES | **多语言** |

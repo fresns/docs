@@ -2,7 +2,7 @@
 
 | 字段名 | 字段类型 | 字段注释 | 默认值 | 可空 | 备注 |
 | --- | --- | --- | --- | --- | --- |
-| id | int *UNSIGNED* | 主键 ID |  | NO | 自动递赠 |
+| id | int *UNSIGNED* | 主键 ID |  | NO | 自动递增 |
 | type | tinyint *UNSIGNED* | 角色类型 | 3 | NO | 1.管理人员类：管理员、版主<br>2.系统设置类：待审核用户、禁止用户<br>3.用户运营类：普通会员、高级会员 |
 | name | varchar(128) | 角色名 |  | NO | **多语言** |
 | icon_file_id | bigint *UNSIGNED* | 图标文件 ID |  | YES | 关联字段 [files->id](../systems/files.md) |

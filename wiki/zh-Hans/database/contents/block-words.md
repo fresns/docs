@@ -2,7 +2,7 @@
 
 | 字段名 | 字段类型 | 字段注释 | 默认值 | 可空 | 备注 |
 | --- | --- | --- | --- | --- | --- |
-| id | int *UNSIGNED* | 主键 ID |  | NO | 自动递赠 |
+| id | int *UNSIGNED* | 主键 ID |  | NO | 自动递增 |
 | word | varchar(32) | 处理词 |  | NO | **唯一值** |
 | content_mode | tinyint *UNSIGNED* | 内容处理方式（帖子和评论） | 1 | NO | 1.不处理<br>2.自动替换<br>3.禁止发表<br>4.发表后需审核 |
 | user_mode | tinyint *UNSIGNED* | 用户处理方式（昵称和简介） | 1 | NO | 1.不处理<br>2.自动替换<br>3.禁止使用 |

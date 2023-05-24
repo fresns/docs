@@ -2,7 +2,7 @@
 
 | 字段名 | 字段类型 | 字段注释 | 默认值 | 可空 | 备注 |
 | --- | --- | --- | --- | --- | --- |
-| id | int *UNSIGNED* | 主键 ID |  | NO | 自动递赠 |
+| id | int *UNSIGNED* | 主键 ID |  | NO | 自动递增 |
 | code | varchar(32) | 表情符号 |  | NO | **唯一值** 不区分中英文或符号 |
 | name | varchar(64) | 名称 |  | NO | **多语言** |
 | image_file_id | bigint *UNSIGNED* | 表情图 ID |  | YES | 关联字段 [files->id](../systems/files.md) |

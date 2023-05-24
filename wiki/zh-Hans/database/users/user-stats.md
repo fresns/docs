@@ -2,7 +2,7 @@
 
 | 字段名 | 字段类型 | 字段注释 | 默认值 | 可空 | 备注 |
 | --- | --- | --- | --- | --- | --- |
-| id | bigint *UNSIGNED* | 主键 ID |  | NO | 自动递赠 |
+| id | bigint *UNSIGNED* | 主键 ID |  | NO | 自动递增 |
 | user_id | bigint *UNSIGNED* | 用户主键 ID |  | NO | 关联字段 [users->id](users.md) |
 | like_user_count | int *UNSIGNED* | 用户点赞数 | 0 | NO | 我点赞的用户总数 |
 | like_group_count | int *UNSIGNED* | 小组点赞数 | 0 | NO | 我点赞的小组总数 |

@@ -2,7 +2,7 @@
 
 | 字段名 | 字段类型 | 字段注释 | 默认值 | 可空 | 备注 |
 | --- | --- | --- | --- | --- | --- |
-| id | bigint *UNSIGNED* | 主键 ID |  | NO | 自动递赠 |
+| id | bigint *UNSIGNED* | 主键 ID |  | NO | 自动递增 |
 | user_id | bigint *UNSIGNED* | 用户 ID |  | NO | 关联字段 [users->id](../users/users.md) |
 | extcredits_id | tinyint *UNSIGNED* | extcredits 编号 |  | NO | extcredits 1~5 |
 | type | tinyint *UNSIGNED* | 操作类型 | 1 | NO | 1.加分 / 2.减分 |

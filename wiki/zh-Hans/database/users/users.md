@@ -2,7 +2,7 @@
 
 | 字段名 | 字段类型 | 字段注释 | 默认值 | 可空 | 备注 |
 | --- | --- | --- | --- | --- | --- |
-| id | bigint *UNSIGNED* | 用户主键 ID |  | NO | 自动递赠 |
+| id | bigint *UNSIGNED* | 用户主键 ID |  | NO | 自动递增 |
 | account_id | bigint *UNSIGNED* | 账号主键 ID |  | NO | 关联字段 [accounts->id](../accounts/accounts.md) |
 | uid | bigint *UNSIGNED* | 用户 ID |  | NO | **唯一值**<br>初始化 8 位数随机生成，8 位数不够再 9 位数，以此类推。<br>随机生成时，不以 0 开头 |
 | username | varchar(64) | 用户名 |  | NO | **唯一值**，只能是包含字母、数字和单个连字符 |

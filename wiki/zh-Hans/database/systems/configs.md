@@ -2,7 +2,7 @@
 
 | 字段名 | 字段类型 | 字段注释 | 默认值 | 可空 | 备注 |
 | --- | --- | --- | --- | --- | --- |
-| id | int *UNSIGNED* | 主键 ID | | NO | 自动递赠 |
+| id | int *UNSIGNED* | 主键 ID | | NO | 自动递增 |
 | item_key | varchar(64) | 键名 | | NO | **唯一值** |
 | item_value | longtext | 键值 | | YES |  |
 | item_type | varchar(16) | 键类型 | string | NO |  |

@@ -2,7 +2,7 @@
 
 | 字段名 | 字段类型 | 字段注释 | 默认值 | 可空 | 备注 |
 | --- | --- | --- | --- | --- | --- |
-| id | bigint *UNSIGNED* | 账号主键 ID |  | NO | 自动递赠 |
+| id | bigint *UNSIGNED* | 账号主键 ID |  | NO | 自动递增 |
 | aid | varchar(32) | 账号 ID |  | NO | **唯一值** |
 | type | tinyint *UNSIGNED* | 类型 | 3 | NO | 1.超级管理员<br>2.普通管理员<br>3.普通用户 |
 | country_code | varchar(8) | 国际区号 |  | YES | 格式无加号，例如中国是 86，美国是 1 |

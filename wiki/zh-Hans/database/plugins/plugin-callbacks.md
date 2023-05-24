@@ -2,7 +2,7 @@
 
 | 字段名 | 字段类型 | 字段注释 | 默认值 | 可空 | 备注 |
 | --- | --- | --- | --- | --- | --- |
-| id | bigint *UNSIGNED* | 主键 ID |  | NO | 自动递赠 |
+| id | bigint *UNSIGNED* | 主键 ID |  | NO | 自动递增 |
 | plugin_fskey | varchar(64) | 生成数据的插件名称 |  | NO | 关联字段 [plugins->fskey](../plugins/plugins.md) |
 | account_id | bigint *UNSIGNED* | 生成数据的账号 |  | YES | 关联字段 [accounts->id](../accounts/accounts.md) |
 | user_id | bigint *UNSIGNED* | 生成数据的用户 |  | YES | 关联字段 [users->id](../users/users.md) |

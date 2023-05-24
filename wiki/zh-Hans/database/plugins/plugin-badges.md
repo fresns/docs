@@ -2,7 +2,7 @@
 
 | 字段名 | 字段类型 | 字段注释 | 默认值 | 可空 | 备注 |
 | --- | --- | --- | --- | --- | --- |
-| id | bigint *UNSIGNED* | 主键 ID |  | NO | 自动递赠 |
+| id | bigint *UNSIGNED* | 主键 ID |  | NO | 自动递增 |
 | plugin_fskey | varchar(64) | 关联插件名称 |  | NO | 关联字段 [plugins->fskey](../plugins/plugins.md) |
 | user_id | bigint *UNSIGNED* | 用户 ID |  | NO | 关联字段 [users->id](../users/users.md) |
 | display_type | tinyint *UNSIGNED* | 显示类型 |  | NO | 1.红点 / 2.文字 / 3.数字 |
