@@ -59,7 +59,7 @@
 | timezone | String | *optional* | Date time specified in [UTC timezone](../../database/dictionary/timezone.md) |
 | authUidOrUsername | String | *optional* | Interaction status (like, dislike, follow, block) for `pid` with this user request |
 | type | String | *optional* | 详情类型 `list` 或 `detail`，不传则默认为 `detail` |
-| outputPreviewComments | Boolean | *optional* | Exclusive for `list` detail type, whether to output the preview comment list and liked user list |
+| outputPreview | Boolean | *optional* | Exclusive for `list` detail type, whether to output the preview comment list and liked user list |
 | mapId | Number | *optional* | If the post has location information, it will calculate the distance between them when this parameter is passed |
 | mapLng | Numeric | *optional* | If the post has location information, it will calculate the distance between them when this parameter is passed |
 | mapLat | Numeric | *optional* | If the post has location information, it will calculate the distance between them when this parameter is passed |

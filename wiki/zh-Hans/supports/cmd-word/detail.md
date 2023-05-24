@@ -59,7 +59,7 @@
 | timezone | String | NO | 日期时间指定 [UTC 时区](../../database/dictionary/timezone.md) |
 | authUidOrUsername | String | NO | 凭该用户查询对 `pid` 的互动状态（点赞、点踩、关注、屏蔽） |
 | type | String | NO | 详情类型 `list` 或 `detail`，不传则默认为 `detail` |
-| outputPreviewComments | Boolean | NO | 详情类型为 `list` 专用，是否输出预览评论列表和点赞用户列表 |
+| outputPreview | Boolean | NO | 详情类型为 `list` 专用，是否输出预览评论列表和点赞用户列表 |
 | mapId | Number | NO | 如果帖子有位置信息，传参后，将计算两者之间的距离 |
 | mapLng | Numeric | NO | 如果帖子有位置信息，传参后，将计算两者之间的距离 |
 | mapLat | Numeric | NO | 如果帖子有位置信息，传参后，将计算两者之间的距离 |
