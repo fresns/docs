@@ -92,6 +92,7 @@ When the plugin is installed and published, static resources are distributed to 
 | extendManage | Management Extensions | Panel > Extends > Manage |
 | extendGroup | Group Extensions | Panel > Extends > Group |
 | extendUser | User Function Extensions | Panel > Extends > User Feature<br>Panel > Extends > User Profile |
+| extendChannel | Channel Extensions | Panel > Extends > Channel |
 | appNotification | Mobile Notification Service Provider | Panel > Clients > App |
 
 ## composer.json Config File

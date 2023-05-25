@@ -92,6 +92,7 @@ fresns/             //主程序根目录
 | extendManage | 管理扩展 | 扩展管理 > 管理扩展 |
 | extendGroup | 小组扩展 | 扩展管理 > 小组扩展 |
 | extendUser | 用户功能扩展 | 扩展管理 > 用户功能扩展<br>扩展管理 > 用户资料扩展 |
+| extendChannel | 频道扩展 | 扩展管理 > 频道扩展 |
 | appNotification | 移动通知服务商 | 客户端 > 移动应用 |
 
 ## composer.json 配置信息

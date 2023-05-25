@@ -3,7 +3,7 @@
 | Column Name | Type | Comment | Default | Null | Remark |
 | --- | --- | --- | --- | --- | --- |
 | id | int *UNSIGNED* | Primary Key ID |  | NO | Auto Increment |
-| usage_type | tinyint *UNSIGNED* | Type |  | NO | 1. Wallet recharge<br>2. Wallet withdrawal<br>3. Editor extension<br>4. Content type extension<br>5. Management extension<br>6. Group extension<br>7. User feature extension<br>8. User profile extension |
+| usage_type | tinyint *UNSIGNED* | Type |  | NO | 1.Wallet recharge<br>2.Wallet withdrawal<br>3.Editor extensions<br>4.Content type extensions<br>5.Management extensions<br>6.Group extensions<br>7.User feature extensions<br>8.User profile extensions<br>9.Channel extensions |
 | plugin_fskey | varchar(64) | Associated Plugin Fskey |  | NO | Related field [plugins->fskey](../plugins/plugins.md) |
 | name | varchar(128) | Name |  | NO | **Multilingual** |
 | icon_file_id | bigint *UNSIGNED* | Icon file ID |  | YES | Related field [files->id](../systems/files.md) |
