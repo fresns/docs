@@ -264,6 +264,7 @@ function sidebarApi() {
             items: [
                 { text: '全局配置信息', link: '/api/global/configs.md' },
                 { text: '状态码信息', link: '/api/global/code-messages.md' },
+                { text: '扩展频道', link: '/api/global/channels.md' },
                 { text: '扩展档案配置', link: '/api/global/archives.md' },
                 { text: '获取上传凭证', link: '/api/global/upload-token.md' },
                 { text: '用户角色', link: '/api/global/roles.md' },

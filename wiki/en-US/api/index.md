@@ -6,6 +6,7 @@
 | --- | --- | --- |
 | `GET` | /api/v2/global/configs | Global Configs |
 | `GET` | /api/v2/global/code-messages | Code Messages |
+| `GET` | /api/v2/global/channels | Extend Channels |
 | `GET` | /api/v2/global/`{type}`/archives | Extend Archives |
 | `GET` | /api/v2/global/upload-token | Get Upload Token |
 | `GET` | /api/v2/global/roles | User Roles |
