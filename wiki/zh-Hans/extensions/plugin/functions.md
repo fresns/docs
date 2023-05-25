@@ -16,7 +16,7 @@
 | --- | --- |
 | fskey | 定时任务插件 |
 | cmdWord | 定时任务插件命令字 |
-| taskPeriod | 定时任务执行周期（Laravel 定时任务表达式） |
+| cronTableFormat | 定时任务执行周期（Laravel 定时任务表达式） |
 
 - 主程序根据任务周期，循环请求插件的命令字。
 

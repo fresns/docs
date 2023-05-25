@@ -16,7 +16,7 @@ If the plug-in has scheduled tasks or subscription requirements, the command wor
 | --- | --- |
 | fskey | Crontab Plugin |
 | cmdWord | Crontab Command Word |
-| taskPeriod | Task Execution Period(Laravel Cron Expression) |
+| cronTableFormat | Task Execution Period(Laravel Cron Expression) |
 
 - The main program requests the command word of the plug-in circularly according to the task cycle. 
 
