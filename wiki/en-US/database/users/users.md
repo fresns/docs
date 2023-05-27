@@ -23,6 +23,7 @@
 | comment_limit | tinyint *UNSIGNED* | Comment Settings | 1 | NO | 1.Allow all users<br>2.Only allow users I follow<br>3.Allow users I follow and verified users (verified_status)<br>4.Disallow all users |
 | timezone | varchar(16) | Preferred Timezone |  | YES |  |
 | expired_at | timestamp | Expiration Time |  | YES | Private mode dedicated field, empty means permanently valid |
+| last_activity_at | timestamp | Last Activity Time |  | YES |  |
 | last_post_at | timestamp | Last Post Published Time |  | YES |  |
 | last_comment_at | timestamp | Last Comment Published Time |  | YES |  |
 | last_username_at | timestamp | Last Username Modification Time |  | YES |  |
