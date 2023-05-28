@@ -214,6 +214,7 @@ fresns_manage_user_extends_by_everyone_{$langTag}
 fresns_group_{$groupId}_extends_by_everyone_{$langTag}           // +tag: fresnsGroups
 fresns_feature_extends_by_everyone_{$langTag}
 fresns_profile_extends_by_everyone_{$langTag}
+fresns_channel_extends_by_everyone_{$langTag}
 
 fresns_editor_post_extends_by_role_{$roleId}_{$langTag}
 fresns_editor_comment_extends_by_role_{$roleId}_{$langTag}
@@ -248,6 +249,7 @@ fresns_web_api_host                                   // tag: fresnsWebConfigs
 fresns_web_api_key                                    // tag: fresnsWebConfigs
 fresns_web_key_{$keyId}                               // tag: fresnsWebConfigs
 fresns_web_api_config_all_{$langTag}                  // tag: fresnsWebConfigs
+fresns_web_api_channels_{$uid}_{$langTag}             // tag: fresnsWebConfigs
 fresns_web_code_message_all_{$fskey}_{$langTag}       // tag: fresnsWebConfigs
 fresns_web_post_content_types_{$langTag}              // tag: fresnsWebConfigs
 fresns_web_comment_content_types_{$langTag}           // tag: fresnsWebConfigs

@@ -69,6 +69,12 @@ fs_user('参数名')
 - [账号 API](../../api/account/detail.md)
 - [用户 API](../../api/user/detail.md)
 
+## 频道扩展
+
+```php
+fs_channels()
+```
+
 ## 全局数据
 
 ### 用户面板

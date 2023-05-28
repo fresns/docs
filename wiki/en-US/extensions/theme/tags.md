@@ -69,6 +69,12 @@ fs_user('key')
 - [Account Detail API](../../api/account/detail.md)
 - [User Detail API](../../api/user/detail.md)
 
+## Channel Extends
+
+```php
+fs_channels()
+```
+
 ## Global Data
 
 ### User Panel
