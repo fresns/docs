@@ -249,7 +249,6 @@ fresns_web_api_host                                   // tag: fresnsWebConfigs
 fresns_web_api_key                                    // tag: fresnsWebConfigs
 fresns_web_key_{$keyId}                               // tag: fresnsWebConfigs
 fresns_web_api_config_all_{$langTag}                  // tag: fresnsWebConfigs
-fresns_web_api_channels_{$uid}_{$langTag}             // tag: fresnsWebConfigs
 fresns_web_code_message_all_{$fskey}_{$langTag}       // tag: fresnsWebConfigs
 fresns_web_post_content_types_{$langTag}              // tag: fresnsWebConfigs
 fresns_web_comment_content_types_{$langTag}           // tag: fresnsWebConfigs
@@ -261,6 +260,8 @@ fresns_web_user_{$uid}_{$langTag}
 fresns_web_user_panel_{$uid}_{$langTag}
 fresns_web_group_categories_by_{$uid}_{$langTag}
 fresns_web_group_tree_by_{$uid}_{$langTag}
+fresns_web_channels_guest_{$langTag}
+fresns_web_channels_{$uid}_{$langTag}
 
 fresns_web_users_index_list_by_{$uid}_{$langTag}
 fresns_web_groups_index_list_by_{$uid}_{$langTag}

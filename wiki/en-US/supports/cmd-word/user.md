@@ -178,3 +178,35 @@
 - Choose one between `datetime` and `clearDatetime` to pass as a parameter.
 - This feature is only effective for group private mode.
 - If the user has not joined the group, they will automatically join the group and set the validity period.
+
+## setUserBadge
+
+```php
+\FresnsCmdWord::plugin('Fresns')->setUserBadge($wordBody);
+```
+| Parameter Name | Type | Required | Description |
+| --- | --- | --- | --- |
+| uid | Number | **required** | User UID `users->uid` |
+| fskey | String | **required** | plugin fskey |
+| type | Number | **required** | 1. Red dot / 2. Number / 3. Text |
+| badgeNumber | Number | *optional* | Required for `type=2`, the displayed number. If an old number exists, it will be accumulated |
+| badgeText | String | *optional* | Required for `type=3`, the displayed text content. Supports up to 8 characters |
+
+## clearUserBadge
+
+```php
+\FresnsCmdWord::plugin('Fresns')->clearUserBadge($wordBody);
+```
+| Parameter Name | Type | Required | Description |
+| --- | --- | --- | --- |
+| uid | Number | **required** | User UID `users->uid` |
+| fskey | String | **required** | plugin fskey |
+
+## clearUserAllBadges
+
+```php
+\FresnsCmdWord::plugin('Fresns')->clearUserAllBadges($wordBody);
+```
+| Parameter Name | Type | Required | Description |
+| --- | --- | --- | --- |
+| uid | Number | **required** | User UID `users->uid` |

@@ -176,3 +176,35 @@
 - `datetime` 和 `clearDatetime` 二选一传参。
 - 该功能仅对小组私有模式有效。
 - 如果用户未加入小组，则自动加入小组并设置有效期。
+
+## 设置用户徽章
+
+```php
+\FresnsCmdWord::plugin('Fresns')->setUserBadge($wordBody);
+```
+| 参数名 | 类型 | 是否必传 | 说明 |
+| --- | --- | --- | --- |
+| uid | Number | YES | 用户 UID `users->uid` |
+| fskey | String | YES | 插件 fskey |
+| type | Number | YES | 1.红点 / 2.数字 / 3.文字 |
+| badgeNumber | Number | NO | `type=2` 必传，显示的数字，如果有旧数字存在，则会累加 |
+| badgeText | String | NO | `type=3` 必传，显示的文字内容，最长支持 8 字符 |
+
+## 清除用户徽章
+
+```php
+\FresnsCmdWord::plugin('Fresns')->clearUserBadge($wordBody);
+```
+| 参数名 | 类型 | 是否必传 | 说明 |
+| --- | --- | --- | --- |
+| uid | Number | YES | 用户 UID `users->uid` |
+| fskey | String | YES | 插件 fskey |
+
+## 清除用户所有徽章
+
+```php
+\FresnsCmdWord::plugin('Fresns')->clearUserAllBadges($wordBody);
+```
+| 参数名 | 类型 | 是否必传 | 说明 |
+| --- | --- | --- | --- |
+| uid | Number | YES | 用户 UID `users->uid` |
