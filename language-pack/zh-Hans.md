@@ -178,6 +178,7 @@
     "userFollowersYouKnow": "等人也关注了他",
     "userFollowersYouFollow": "你关注的人也在关注他",
     "userDeactivate": "用户已停用",
+    "userExtcredits": "用户积分",
     "userExtcreditsLogs": "用户扩展分值记录",
     "userExtcreditsLogName": "分值名称",
     "userExtcreditsLogType": "操作类型",

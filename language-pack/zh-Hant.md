@@ -178,6 +178,7 @@
     "userFollowersYouKnow": "等人也跟隨了他",
     "userFollowersYouFollow": "你跟隨的人也在跟隨他",
     "userDeactivate": "用戶已停用",
+    "userExtcredits": "用戶積分",
     "userExtcreditsLogs": "用戶擴展分值記錄",
     "userExtcreditsLogName": "分值名稱",
     "userExtcreditsLogType": "操作類型",

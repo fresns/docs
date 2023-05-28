@@ -178,6 +178,7 @@
     "userFollowersYouKnow": "and others are also following they",
     "userFollowersYouFollow": "The person you are following is also following they",
     "userDeactivate": "User Deactivate",
+    "userExtcredits": "User Credits",
     "userExtcreditsLogs": "Extcredits History",
     "userExtcreditsLogName": "Extcredits",
     "userExtcreditsLogType": "Type",

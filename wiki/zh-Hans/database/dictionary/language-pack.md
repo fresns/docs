@@ -179,6 +179,7 @@
     {"name":"userFollowersYouKnow","canDelete":false},
     {"name":"userFollowersYouFollow","canDelete":false},
     {"name":"userDeactivate","canDelete":false},
+    {"name":"userExtcredits","canDelete":false},
     {"name":"userExtcreditsLogs","canDelete":false},
     {"name":"userExtcreditsLogName","canDelete":false},
     {"name":"userExtcreditsLogType","canDelete":false},
