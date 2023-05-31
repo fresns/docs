@@ -3,6 +3,26 @@
 Fresns 主程序所有版本更新日志都将记录在这个文件中。
 
 
+## 2.14.0 (2023-05-30)
+
+### Added
+- API: 新增频道扩展接口 `/api/v2/global/channels`
+- Panel: 新增频道扩展配置功能
+- Data: 用户表新增最后活跃时间字段 `users->last_activity_at`
+- Words: 增加「设置用户徽章」命令字 `setUserBadge`
+- Words: 增加「清除用户徽章」命令字 `clearUserBadge`
+- Words: 增加「清除用户所有徽章」命令字 `clearUserAllBadges`
+
+### Fixes
+- API: 引用帖子的过滤缓存问题
+- API: 删除对话消息后未清理对话模型缓存
+- API: 查看小组里帖子时，角色白名单未生效
+- Panel: 小组封面图编辑样式问题
+
+### BREAKING CHANGES
+- Panel: 仪表盘数据采用异步加载
+
+
 ## 2.13.2 (2023-05-23)
 
 ### Fixes
