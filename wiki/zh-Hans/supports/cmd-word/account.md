@@ -36,7 +36,7 @@
 
 ::: details 查看 connectInfo 参数介绍
 - 支持多个，例如微信平台会同时有 UnionID 和 OpenID 两个参数。
-- 必传参数 `connectId` `connectToken` `pluginFskey`
+- 必传参数 `connectPlatformId` `connectAccountId` `pluginFskey`
 ```json
 [
     {
@@ -100,8 +100,8 @@
 | countryCode | Number | NO/YES | 手机号专用：国际区号（`type=2` 时必填） |
 | password | String | NO | 以密码校验专用 |
 | verifyCode | String | NO | 以验证码校验专用（命令字 [checkCode](basic.md#核对验证码) 查验） |
-| connectId | Number | NO | 以互联平台校验专用 |
-| connectToken | String | NO | 以互联平台校验专用 |
+| connectPlatformId | Number | NO | 以互联平台校验专用 |
+| connectAccountId | String | NO | 以互联平台校验专用 |
 
 ::: details 结果示例
 ```json

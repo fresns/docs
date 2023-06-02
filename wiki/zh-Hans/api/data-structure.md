@@ -29,7 +29,7 @@
     "waitDeleteDateTime": "String / 准备删除时间",
     "connects": [
         {
-            "connectId": "Number / 互联平台编号",
+            "connectPlatformId": "Number / 互联平台编号",
             "connectName": "String / 互联平台名称",
             "connected": "Boolean / 是否已经绑定",
             "service": "String / 互联平台插件",

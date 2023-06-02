@@ -29,7 +29,7 @@ To reduce documentation effort and ensure consistency of public data, the same s
     "waitDeleteDateTime": "String / Scheduled Deletion Time",
     "connects": [
         {
-            "connectId": "Number / Connected Platform Number",
+            "connectPlatformId": "Number / Connected Platform Number",
             "connectName": "String / Connected Platform Name",
             "connected": "Boolean / is connected",
             "service": "String / Connect Plugin Service",

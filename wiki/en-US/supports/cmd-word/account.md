@@ -36,7 +36,7 @@
 
 ::: details Check `connectInfo` parameter introduction
 - Supports multiple, for example, the WeChat platform will have both UnionID and OpenID parameters.
-- Required parameters: `connectId`, `connectToken`, `pluginFskey`
+- Required parameters: `connectPlatformId`, `connectAccountId`, `pluginFskey`
 ```json
 [
     {
@@ -100,8 +100,8 @@
 | countryCode | Number | *optional* | Phone number specific: International area code (required when `type=2`) |
 | password | String | *optional* | For password verification specific |
 | verifyCode | String | *optional* | For verification code specific (check using [checkCode](basic.md#checkcode) command) |
-| connectId | Number | *optional* | For connect platform specific |
-| connectToken | String | *optional* | For connect platform specific |
+| connectPlatformId | Number | *optional* | For connect platform specific |
+| connectAccountId | String | *optional* | For connect platform specific |
 
 ::: details Return Example
 ```json
