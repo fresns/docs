@@ -30,7 +30,7 @@
 | editWalletPassword | String | NO | 修改钱包密码（留空代表不修改，以 Base64 传参） |
 | editWalletPasswordConfirm | String | NO | 再传一次新钱包密码（留空代表不修改，以 Base64 传参） |
 | editLastLoginTime | Boolean | NO | 最后一次登录时间（留空代表不修改）<br>`1` 更新 |
-| disconnectConnectId | Number | NO | 解除指定[互联平台](../../database/dictionary/connects.md)的绑定 |
+| disconnectPlatformId | Number | NO | 解除指定[互联平台](../../database/dictionary/connects.md)的绑定 |
 | deviceToken | String | NO | iOS 或 Android 设备 Token（留空代表不修改） |
 
 **接口使用说明**
@@ -104,8 +104,6 @@
 - `editWalletPassword` 修改钱包密码
     - 传了 `verifyCode` 和 `codeType` 参数，代表验证码修改，拿当前账号表现存信息（邮箱或手机号）去匹配 `verifyCode` 验证。
     - 传了 `walletPassword` 参数，代表旧密码验证修改，验证旧密码是否正确。
-
-- `deleteConnectInfo` 删除第三方互联信息，删除该账号互联凭证表 `connect_id` 这条记录（不是主键 ID）。
 
 - `editLastLoginTime` 修改最后登录时间，不需要验证，登录状态下就可以修改，账号表 `accounts->last_login_at` 字段。
 :::

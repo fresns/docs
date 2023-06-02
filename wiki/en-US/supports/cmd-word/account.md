@@ -40,8 +40,9 @@
 ```json
 [
     {
-        "connectId": 8, //Store to account_connects->connect_id
-        "connectToken": "unionid", //Store to account_connects->connect_token
+        "connectPlatformId": 8, //Store to account_connects->connect_platform_id
+        "connectAccountId": "unionid", //Store to account_connects->connect_account_id
+        "connectToken": null, //Store to account_connects->connect_token
         "connectRefreshToken": null, //Store to account_connects->connect_refresh_token
         "refreshTokenExpiredDatetime": null, //Store to account_connects->refresh_token_expired_at // Y-m-d H:i:s
         "connectUsername": "Account name", //Store to account_connects->connect_username
@@ -51,8 +52,9 @@
         "moreJson": {}, //Store to account_connects->more_json
     },
     {
-        "connectId": 9,
-        "connectToken": "openid",
+        "connectPlatformId": 9,
+        "connectAccountId": "openid",
+        "connectToken": null,
         "connectRefreshToken": null,
         "refreshTokenExpiredDatetime": null,
         "connectUsername": "Account name",
@@ -123,8 +125,9 @@
 | --- | --- | --- | --- |
 | fskey | String | **required**  | `account_connects->plugin_fskey` |
 | aid | Number | **required**  | `accounts->aid` |
-| connectId | Number | **required**  | `account_connects->connect_id` |
-| connectToken | String | **required**  | `account_connects->connect_token` |
+| connectPlatformId | Number | **required**  | `account_connects->connect_platform_id` |
+| connectAccountId | String | **required**  | `account_connects->connect_account_id` |
+| connectToken | String | *optional*  | `account_connects->connect_token` |
 | connectRefreshToken | String | *optional* | `account_connects->connect_refresh_token` |
 | refreshTokenExpiredDatetime | String | *optional* | `Y-m-d H:i:s` `account_connects->refresh_token_expired_at` |
 | connectUsername | String | *optional* | `account_connects->connect_username` |
@@ -134,6 +137,16 @@
 | connectEmail | String | *optional* | Platform email (will be stored when the account table email is empty, ignored if there is a value) |
 | connectPhone | Number | *optional* | Platform phone number (will be stored when the account table phone number is empty, ignored if there is a value) |
 | connectCountryCode | Number | *optional* | International area code for platform phone number (will be stored when the account table phone number is empty, ignored if there is a value) |
+
+## disconnectAccountConnect
+
+```php
+\FresnsCmdWord::plugin('Fresns')->disconnectAccountConnect($wordBody);
+```
+| Parameter Name | Type | Required | Description |
+| --- | --- | --- | --- |
+| aid | Number | **required**  | `accounts->aid` |
+| connectPlatformId | Number | **required**  | `account_connects->connect_platform_id` |
 
 ## createAccountToken
 

@@ -40,8 +40,9 @@
 ```json
 [
     {
-        "connectId": 8, //存储到 account_connects->connect_id
-        "connectToken": "unionid", //存储到 account_connects->connect_token
+        "connectPlatformId": 8, //存储到 account_connects->connect_platform_id
+        "connectAccountId": "unionid", //存储到 account_connects->connect_account_id
+        "connectToken": null, //存储到 account_connects->connect_token
         "connectRefreshToken": null, //存储到 account_connects->connect_refresh_token
         "refreshTokenExpiredDatetime": null, //存储到 account_connects->refresh_token_expired_at // Y-m-d H:i:s
         "connectUsername": "账号名", //存储到 account_connects->connect_username
@@ -51,8 +52,9 @@
         "moreJson": {}, //存储到 account_connects->more_json
     },
     {
-        "connectId": 9,
-        "connectToken": "openid",
+        "connectPlatformId": 9,
+        "connectAccountId": "openid",
+        "connectToken": null,
         "connectRefreshToken": null,
         "refreshTokenExpiredDatetime": null,
         "connectUsername": "账号名",
@@ -114,7 +116,7 @@
 ```
 :::
 
-## 设置账号互联凭证
+## 设置账号互联
 
 ```php
 \FresnsCmdWord::plugin('Fresns')->setAccountConnect($wordBody);
@@ -123,8 +125,9 @@
 | --- | --- | --- | --- |
 | fskey | String | YES | `account_connects->plugin_fskey` |
 | aid | Number | YES | `accounts->aid` |
-| connectId | Number | YES | `account_connects->connect_id` |
-| connectToken | String | YES | `account_connects->connect_token` |
+| connectPlatformId | Number | YES | `account_connects->connect_platform_id` |
+| connectAccountId | String | YES | `account_connects->connect_account_id` |
+| connectToken | String | NO | `account_connects->connect_token` |
 | connectRefreshToken | String | NO | `account_connects->connect_refresh_token` |
 | refreshTokenExpiredDatetime | String | NO | `Y-m-d H:i:s` `account_connects->refresh_token_expired_at` |
 | connectUsername | String | NO | `account_connects->connect_username` |
@@ -134,6 +137,16 @@
 | connectEmail | String | NO | 平台邮箱（账号表邮箱为空时将存入，有值则忽略） |
 | connectPhone | Number | NO | 平台手机号码（账号表手机号为空时将存入，有值则忽略） |
 | connectCountryCode | Number | NO | 平台手机号码国际区号（账号表手机号为空时将存入，有值则忽略） |
+
+## 断开账号互联
+
+```php
+\FresnsCmdWord::plugin('Fresns')->disconnectAccountConnect($wordBody);
+```
+| 参数名 | 类型 | 是否必传 | 说明 |
+| --- | --- | --- | --- |
+| aid | Number | YES | `accounts->aid` |
+| connectPlatformId | Number | YES | `account_connects->connect_platform_id` |
 
 ## 创建账号凭证
 

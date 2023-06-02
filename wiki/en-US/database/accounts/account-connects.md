@@ -4,9 +4,10 @@
 | --- | --- | --- | --- | --- | --- |
 | id | bigint *UNSIGNED* | Primary Key ID |  | NO | Auto Increment |
 | account_id | bigint *UNSIGNED* | Account ID |  | NO | Related field [accounts->id](accounts.md) |
-| connect_id | tinyint *UNSIGNED* | Platform Number |  | NO | Related configuration [connects](../../database/dictionary/connects.md) key value |
-| connect_token | varchar(128) | Connect Token |  | NO | **Unique**<br>For example: WeChat openid or GitHub Token |
-| connect_refresh_token | varchar(128) | Connect Refresh Token |  | YES |  |
+| connect_platform_id | tinyint *UNSIGNED* | Platform Number |  | NO | Related configuration [connects](../../database/dictionary/connects.md) key value |
+| connect_account_id | varchar(128) | Connect Token |  | NO | **Unique**<br>For example: WeChat openid or GitHub ID |
+| connect_token | varchar(128) | Auth Token |  | YES |  |
+| connect_refresh_token | varchar(128) | Auth Refresh Token |  | YES |  |
 | connect_username | varchar(128) | Connect Username |  | YES | Platform username, leave empty if not available |
 | connect_nickname | varchar(128) | Connect Nickname |  | YES | Platform nickname, use platform name if not available |
 | connect_avatar | varchar(255) | Connect Avatar |  | YES | Platform avatar URL, leave empty if not available |
