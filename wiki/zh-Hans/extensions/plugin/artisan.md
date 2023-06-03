@@ -293,14 +293,6 @@ Generate a console service provider for specified plugin.
 fresns make:console-provider
 ```
 
-### 生成插件 SQL 提供者
-
-Generate a sql provider for specified plugin.
-
-```php
-fresns make:sql-provider
-```
-
 ### 生成插件事件服务提供者
 
 Generate a event provider for specified plugin.
@@ -310,6 +302,14 @@ fresns make:event-provider
 ```
 
 - You need to add it yourself to the `providers` parameter of `plugin.json`.
+
+### 生成插件 SQL 提供者
+
+Generate a sql provider for specified plugin.
+
+```php
+fresns make:sql-provider
+```
 
 ### 生成插件命令字提供者
 

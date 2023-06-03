@@ -32,8 +32,8 @@ fresns make:rule                    // Generate Plugin Rule
 fresns make:resource                // Generate Plugin Resource
 fresns make:test                    // Generate Plugin Test
 fresns make:schedule-provider       // Generate Plugin Schedule Provider
-fresns make:sql-provider            // Generate Plugin SQL Provider
 fresns make:event-provider          // Generate Plugin Event Provider
+fresns make:sql-provider            // Generate Plugin SQL Provider
 fresns make:cmdword-provider        // Generate Plugin Command Word Provider (fresns/cmd-word-manager)
 
 // Control
@@ -293,22 +293,22 @@ Generate a console service provider for specified plugin.
 fresns make:console-provider
 ```
 
-### Generate Plugin SQL Provider
-
-Generate a sql provider for specified plugin.
-
-```php
-fresns make:sql-provider
-```
-
-- You need to add it yourself to the `providers` parameter of `plugin.json`.
-
 ### Generate Plugin Event Provider
 
 Generate a event provider for specified plugin.
 
 ```php
 fresns make:event-provider
+```
+
+- You need to add it yourself to the `providers` parameter of `plugin.json`.
+
+### Generate Plugin SQL Provider
+
+Generate a sql provider for specified plugin.
+
+```php
+fresns make:sql-provider
 ```
 
 - You need to add it yourself to the `providers` parameter of `plugin.json`.
