@@ -32,8 +32,9 @@ fresns make:rule                    // 生成插件 Rule
 fresns make:resource                // 生成插件 Resource
 fresns make:test                    // 生成插件 Test
 fresns make:schedule-provider       // 生成插件任务调度提供者
-fresns make:cmd-word-provider       // 生成插件命令字提供者 (fresns/cmd-word-manager)
 fresns make:event-provider          // 生成插件事件服务提供者
+fresns make:sql-provider            // 生成 SQL 服务提供者
+fresns make:cmdword-provider        // 生成插件命令字提供者 (fresns/cmd-word-manager)
 
 // 控制指令
 fresns plugin:unzip                 // 解压插件包到插件目录 /extensions/plugins/{fskey}/
@@ -292,15 +293,13 @@ Generate a console service provider for specified plugin.
 fresns make:console-provider
 ```
 
-### 生成插件命令字提供者
+### 生成插件 SQL 提供者
 
-Generate a [cmd word service provider](https://github.com/fresns/cmd-word-manager) for specified plugin.
+Generate a sql provider for specified plugin.
 
 ```php
-fresns make:cmd-word-provider
+fresns make:sql-provider
 ```
-
-- You need to add it yourself to the `providers` parameter of `plugin.json`.
 
 ### 生成插件事件服务提供者
 
@@ -308,6 +307,16 @@ Generate a event provider for specified plugin.
 
 ```php
 fresns make:event-provider
+```
+
+- You need to add it yourself to the `providers` parameter of `plugin.json`.
+
+### 生成插件命令字提供者
+
+Generate a [cmd word service provider](https://github.com/fresns/cmd-word-manager) for specified plugin.
+
+```php
+fresns make:cmdword-provider
 ```
 
 - You need to add it yourself to the `providers` parameter of `plugin.json`.

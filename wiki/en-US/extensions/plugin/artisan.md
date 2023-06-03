@@ -32,8 +32,9 @@ fresns make:rule                    // Generate Plugin Rule
 fresns make:resource                // Generate Plugin Resource
 fresns make:test                    // Generate Plugin Test
 fresns make:schedule-provider       // Generate Plugin Schedule Provider
-fresns make:cmd-word-provider       // Generate Plugin Command Word Provider (fresns/cmd-word-manager)
+fresns make:sql-provider            // Generate Plugin SQL Provider
 fresns make:event-provider          // Generate Plugin Event Provider
+fresns make:cmdword-provider        // Generate Plugin Command Word Provider (fresns/cmd-word-manager)
 
 // Control
 fresns plugin:unzip                 // Unzip the plugin package to the plugin directory: /extensions/plugins/{fskey}/
@@ -292,12 +293,12 @@ Generate a console service provider for specified plugin.
 fresns make:console-provider
 ```
 
-### Generate Plugin Command Word Provider
+### Generate Plugin SQL Provider
 
-Generate a [cmd word service provider](https://github.com/fresns/cmd-word-manager) for specified plugin.
+Generate a sql provider for specified plugin.
 
 ```php
-fresns make:cmd-word-provider
+fresns make:sql-provider
 ```
 
 - You need to add it yourself to the `providers` parameter of `plugin.json`.
@@ -308,6 +309,16 @@ Generate a event provider for specified plugin.
 
 ```php
 fresns make:event-provider
+```
+
+- You need to add it yourself to the `providers` parameter of `plugin.json`.
+
+### Generate Plugin Command Word Provider
+
+Generate a [cmd word service provider](https://github.com/fresns/cmd-word-manager) for specified plugin.
+
+```php
+fresns make:cmdword-provider
 ```
 
 - You need to add it yourself to the `providers` parameter of `plugin.json`.
