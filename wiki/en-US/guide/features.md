@@ -14,7 +14,7 @@ Multiple languages are supported from the data stream level, and various languag
 
 ## Support optional engines and templates
 
-The website engine and theme template can be separately optional and redeveloped, and multilingual SEO configuration is natively supported. No matter in which language environment you run or switch, you do not need to worry about search engine inclusion. It is also so flexible in operation and deployment that you can choose integrated deployment or independent deployment like App, and even support the deployment of multiple sites with the same engine or different engines, enabling differentiated operations of a set of data in multiple functional forms.
+The web engine and theme template can be separately optional and redeveloped, and multilingual SEO configuration is natively supported. No matter in which language environment you run or switch, you do not need to worry about search engine inclusion. It is also so flexible in operation and deployment that you can choose integrated deployment or independent deployment like App, and even support the deployment of multiple sites with the same engine or different engines, enabling differentiated operations of a set of data in multiple functional forms.
 
 ## Flexible technology architecture
 

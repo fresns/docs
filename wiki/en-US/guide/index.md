@@ -28,8 +28,8 @@ Fresns is a free and open source social network service software, a general-purp
 | --- | --- |
 | Main Program | Fresns core program with admin panel, API, wrapper functions, manager dependency packages, etc. |
 | Plugin | Mounted programs that extend and enhance the functionality of the main program, including plug-ins for site engine, control panel, mobile application management, etc. |
-| Engine | Website features developed based on the main program API, with separate integrated and standalone engines<br>**Integration Engine**: Website engine running as a plugin in the main application<br>**Independent Engine**: Websites that are deployed and run independently of the main program, similar to mobile applications (apps) |
-| Theme | Appearance style (UE & UI interface) based on website engine development |
+| Engine | Website features developed based on the main program API, with separate integrated and standalone engines<br>**Integration Engine**: Web engine running as a plugin in the main application<br>**Independent Engine**: Websites that are deployed and run independently of the main program, similar to mobile applications (apps) |
+| Theme | Appearance style (UE & UI interface) based on web engine development |
 | App | Mobile apps that run independently on iOS and Android, etc. |
 
 ## Preview

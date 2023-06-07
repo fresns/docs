@@ -4,7 +4,7 @@
 | --- | --- | --- | --- | --- | --- |
 | id | int *UNSIGNED* | Primary Key ID |  | NO | Auto Increment |
 | fskey | varchar(64) | Plugin identifier |  | NO | **Unique**, PascalCase format |
-| type | tinyint *UNSIGNED* | Plugin type  |  | NO | 1.Extension plugin / 2.Control panel / 3.Website engine / 4.Theme template |
+| type | tinyint *UNSIGNED* | Plugin type  |  | NO | 1.Extension plugin / 2.Control panel / 3.Web engine / 4.Theme template |
 | name | varchar(64) | Plugin Name |  | NO |  |
 | description | varchar(255) | Plugin description  |  | NO |  |
 | version | varchar(16) | Semantic version number |  | NO | Display version number |

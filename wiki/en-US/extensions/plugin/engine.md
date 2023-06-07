@@ -27,7 +27,7 @@ The document is drafted to introduce the development of an integrated engine. Si
 
 ## Engine Product Standards
 
-To ensure that the theme template could still be used when the user is replacing the website engine, it is recommended that developers of the engine and theme template follow the following standard. It could not only help the user but also make the engine developed by you compatible with more theme templates and thereby improve the user scale of the engine.
+To ensure that the theme template could still be used when the user is replacing the web engine, it is recommended that developers of the engine and theme template follow the following standard. It could not only help the user but also make the engine developed by you compatible with more theme templates and thereby improve the user scale of the engine.
 
 The standard only offers some suggestions, and you can choose whether to apply it or not. Since the standard mainly applies to the main functions (community functions), you can neglect it if you are developing non-community functions, including CMS, blogger, shopping mall, etc.
 

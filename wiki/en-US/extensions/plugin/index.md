@@ -1,6 +1,6 @@
 # Plugin Development
 
-From the framework level, the three channels of "extension plug-in", "control panel" and "website engine" in the "management background" are plug-ins. Though their business directions are different, their development is essentially the same.
+From the framework level, the three channels of "extension plug-in", "control panel" and "web engine" in the "management background" are plug-ins. Though their business directions are different, their development is essentially the same.
 
 ## Directory Structure
 
@@ -41,7 +41,7 @@ When the plugin is installed and published, static resources are distributed to 
 ```json
 {
     "fskey": "DemoPlugin", // The only key, upper camel case
-    "type": 1, // Type: 1.Extension plugin 2.Control Panel 3.Website Engine 4.Theme Template
+    "type": 1, // Type: 1.Extension plugin 2.Control Panel 3.Web Engine 4.Theme Template
     "name": "Demo Plugin",
     "description": "This is the demo plugin",
     "author": "Jevan Tang",

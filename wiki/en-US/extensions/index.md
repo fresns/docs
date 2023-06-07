@@ -21,7 +21,7 @@ In order to achieve this extensibility, Fresns has been built with rich APIs and
 
 **Engine**: The website functions developed based on the main program [API](../api/) include integrated engine and independent engine respectively. An independent engine is similar to an independent website, which is deployed and run independently outside the main program, and is tantamount to a mobile application. Based on independent deployment, a set of data can be run in different functional forms, and the purpose of differentiated operation can be achieved.
 
-**Theme**: The front-end interface attached to the website engine, and the UE&UI interface developed according to the template standard of the selected engine.
+**Theme**: The front-end interface attached to the web engine, and the UE&UI interface developed according to the template standard of the selected engine.
 
 **App**: Mobile applications developed based on the main program [API](../api/) can be independent websites, APPs, WeChat mini programs, fast applications and other forms. If the API of the main program does not meet the requirements, you can install or develop extension plug-ins to add APIs, or manage the equivalent configuration of mobile applications. Therefore, mobile applications may develop a plug-in and install it on the “Mobile Applications” channel of the console to enhance the functions and management of the mobile terminal.
 
