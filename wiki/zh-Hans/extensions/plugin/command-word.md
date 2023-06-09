@@ -1,6 +1,6 @@
 # 命令字使用
 
-插件与主程序之间，插件与插件之间，均通过[命令字](https://github.com/fresns/cmd-word-manager)通讯，一个完整的通讯流程包括请求输入 `input` 和结果输出 `output`。
+插件与主程序之间，插件与插件之间，均通过[命令字](https://pm.fresns.org/zh-Hans/command-word/)通讯，一个完整的通讯流程包括请求输入 `input` 和结果输出 `output`。
 
 ## 请求输入 input
 

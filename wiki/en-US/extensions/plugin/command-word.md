@@ -1,6 +1,6 @@
 # Command Word
 
-[Command word manager](https://github.com/fresns/cmd-word-manager)(in laravel) helps plugins(individual functional modules) to communicate with each other easily.
+[Command word manager](https://pm.fresns.org/command-word/)(in laravel) helps plugins(individual functional modules) to communicate with each other easily.
 
 ## Request Input
 

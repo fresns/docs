@@ -87,9 +87,9 @@ Fresns 主程序 Composer 依赖库关系。
 
 | 名称 | 介绍 |
 | --- | --- |
-| [DTO](https://github.com/fresns/dto) | 数据传输对象扩展包，用于便捷的生成数据规则和检查传输数据。 |
-| [命令字管理器](https://github.com/fresns/cmd-word-manager) | 帮助插件与插件之间通讯协作。 |
-| [插件管理器](https://github.com/fresns/plugin-manager) | 插件的开发和运行：安装、启用、停用、卸载。 |
+| [DTO](https://pm.fresns.org/zh-Hans/dto/) | 数据传输对象扩展包，用于便捷的生成数据规则和检查传输数据。 |
+| [命令字管理器](https://pm.fresns.org/zh-Hans/command-word/) | 帮助插件与插件之间通讯协作。 |
+| [插件管理器](https://pm.fresns.org/zh-Hans/) | 插件的开发和运行：安装、启用、停用、卸载。 |
 | [主题管理器](https://github.com/fresns/theme-manager) | 主题的开发和管理：安装、编辑、卸载。 |
 | [应用市场管理器](https://github.com/fresns/market-manager) | 从应用市场下载和升级应用，管理应用入库和升级更新。 |
 

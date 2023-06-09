@@ -1,6 +1,6 @@
 # Command Word Development
 
-As an independent functional module, the plug-in adopts "[command word](https://github.com/fresns/cmd-word-manager)" as the communication mode from the perspective of system design and business encapsulation, that is, a plug-in module includes multiple command words, and the functions of the plug-in are externally called through the command word mode. Plug-ins communicate with the main program and plug-ins through command words.
+As an independent functional module, the plug-in adopts "[command word](https://pm.fresns.org/command-word/)" as the communication mode from the perspective of system design and business encapsulation, that is, a plug-in module includes multiple command words, and the functions of the plug-in are externally called through the command word mode. Plug-ins communicate with the main program and plug-ins through command words.
 
 ## Make
 

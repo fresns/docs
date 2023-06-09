@@ -85,9 +85,9 @@ Composer packages require for fresns.
 
 | Package | Description |
 | --- | --- |
-| [DTO](https://github.com/fresns/dto) | Fresns data transfer object extension package for easy generation of data rules and inspection of transfer data. Works with Laravel projects. |
-| [Cmd Word Manager](https://github.com/fresns/cmd-word-manager) | Command word manager helps plugins to communicate with each other easily. |
-| [Plugin Manager](https://github.com/fresns/plugin-manager) | Development and operation of plugins: install, enable, disable, uninstall. |
+| [DTO](https://pm.fresns.org/dto/) | Fresns data transfer object extension package for easy generation of data rules and inspection of transfer data. Works with Laravel projects. |
+| [Cmd Word Manager](https://pm.fresns.org/command-word/) | Command word manager helps plugins to communicate with each other easily. |
+| [Plugin Manager](https://pm.fresns.org/) | Development and operation of plugins: install, enable, disable, uninstall. |
 | [Theme Manager](https://github.com/fresns/theme-manager) | Theme development and management: install, edit, uninstall. |
 | [Market Manager](https://github.com/fresns/market-manager) | Download and upgrade apps from the app marketplace, manage app accessions and upgrade updates. |
 
