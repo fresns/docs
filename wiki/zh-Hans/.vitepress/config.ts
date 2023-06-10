@@ -197,14 +197,14 @@ function sidebarExtensions() {
         },
         {
             text: '插件开发',
-            collapsed: true,
+            collapsed: false,
             items: [
                 { text: '介绍', link: '/extensions/plugin/' },
                 { text: '插件指令', link: '/extensions/plugin/artisan.md' },
                 { text: '命令字使用', link: '/extensions/plugin/command-word.md' },
                 {
                     text: '功能参考',
-                    collapsed: false,
+                    collapsed: true,
                     items: [
                         { text: '定时任务和订阅', link: '/extensions/plugin/functions.md' },
                         { text: '命令字功能开发', link: '/extensions/plugin/command-word-dev.md' },
@@ -213,7 +213,7 @@ function sidebarExtensions() {
                 },
                 {
                     text: '插件参考',
-                    collapsed: false,
+                    collapsed: true,
                     items: [
                         { text: '存储服务开发', link: '/extensions/plugin/storage.md' },
                         { text: '编辑器开发', link: '/extensions/plugin/editor.md' },
@@ -224,22 +224,29 @@ function sidebarExtensions() {
             ]
         },
         {
-            text: '主题开发',
-            collapsed: true,
+            text: '客户端开发',
+            collapsed: false,
             items: [
-                { text: '介绍', link: '/extensions/theme/' },
-                { text: '主题功能', link: '/extensions/theme/functions.md' },
-                { text: '路径结构', link: '/extensions/theme/structure.md' },
-                { text: '模板标签', link: '/extensions/theme/tags.md' },
-            ]
-        },
-        {
-            text: '回调使用',
-            collapsed: true,
-            items: [
-                { text: '介绍', link: '/extensions/callback/' },
-                { text: '路径变量名', link: '/extensions/callback/variables.md' },
-                { text: '生成路径凭证', link: '/extensions/callback/url-authorization.md' },
+                { text: '介绍', link: '/extensions/client/' },
+                {
+                    text: '回调使用',
+                    collapsed: false,
+                    items: [
+                        { text: '介绍', link: '/extensions/callback/' },
+                        { text: '路径变量名', link: '/extensions/callback/variables.md' },
+                        { text: '生成路径凭证', link: '/extensions/callback/url-authorization.md' },
+                    ]
+                },
+                {
+                    text: 'FresnsEngine 主题',
+                    collapsed: false,
+                    items: [
+                        { text: '介绍', link: '/extensions/theme/' },
+                        { text: '路径结构', link: '/extensions/theme/structure.md' },
+                        { text: '模板标签', link: '/extensions/theme/tags.md' },
+                        { text: '主题功能', link: '/extensions/theme/functions.md' },
+                    ]
+                },
             ]
         },
     ]

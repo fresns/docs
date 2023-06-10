@@ -19,11 +19,12 @@ In order to achieve this extensibility, Fresns has been built with rich APIs and
 
 **Function Plugins**: Enhance and enrich the extension of main program functions, such as extending a channel, customizing registration process or editor, and enhancing management functions, content security check, and control panel.
 
-**Engine**: The website functions developed based on the main program [API](../api/) include integrated engine and independent engine respectively. An independent engine is similar to an independent website, which is deployed and run independently outside the main program, and is tantamount to a mobile application. Based on independent deployment, a set of data can be run in different functional forms, and the purpose of differentiated operation can be achieved.
+**Engine**: Website drivers integrated to run in the fresns, providing a runtime environment for Web clients (themes) such as channel extensions, desktop sites, mobile sites, responsive sites.
 
-**Theme**: The front-end interface attached to the web engine, and the UE&UI interface developed according to the template standard of the selected engine.
+**Theme**: It is called a [client](https://marketplace.fresns.com/open-source/clients) in the application marketplace and supports the use of PHP code and Fresns encapsulated functions in the view. The development core is essentially client-side, except that it runs on the web engine.
 
-**App**: Mobile applications developed based on the main program [API](../api/) can be independent websites, APPs, WeChat mini programs, fast applications and other forms. If the API of the main program does not meet the requirements, you can install or develop extension plug-ins to add APIs, or manage the equivalent configuration of mobile applications. Therefore, mobile applications may develop a plug-in and install it on the “Mobile Applications” channel of the console to enhance the functions and management of the mobile terminal.
+**Client**: Application developed based on the main program [API](../api/) can be independent websites, APPs, WeChat mini programs, fast applications and other forms. If the API of the main program does not meet the requirements, you can install or develop extension plug-ins to add APIs, or manage the equivalent configuration of client applications.
+
 
 ## Directory Structure
 
@@ -88,8 +89,6 @@ Composer packages require for fresns.
 | [DTO](https://pm.fresns.org/dto/) | Fresns data transfer object extension package for easy generation of data rules and inspection of transfer data. Works with Laravel projects. |
 | [Cmd Word Manager](https://pm.fresns.org/command-word/) | Command word manager helps plugins to communicate with each other easily. |
 | [Plugin Manager](https://pm.fresns.org/) | Development and operation of plugins: install, enable, disable, uninstall. |
-| [Theme Manager](https://github.com/fresns/theme-manager) | Theme development and management: install, edit, uninstall. |
-| [Market Manager](https://github.com/fresns/market-manager) | Download and upgrade apps from the app marketplace, manage app accessions and upgrade updates. |
 
 
 ## Contact Us

@@ -135,14 +135,14 @@ function sidebarExtensions() {
         },
         {
             text: 'Plugin Dev',
-            collapsed: true,
+            collapsed: false,
             items: [
                 { text: 'Introduction', link: '/extensions/plugin/' },
                 { text: 'Artisan', link: '/extensions/plugin/artisan.md' },
                 { text: 'Command Word', link: '/extensions/plugin/command-word.md' },
                 {
                     text: 'Function Reference',
-                    collapsed: false,
+                    collapsed: true,
                     items: [
                         { text: 'Crontab and Subscribe', link: '/extensions/plugin/functions.md' },
                         { text: 'Command Word Dev', link: '/extensions/plugin/command-word-dev.md' },
@@ -151,7 +151,7 @@ function sidebarExtensions() {
                 },
                 {
                     text: 'Plugin Reference',
-                    collapsed: false,
+                    collapsed: true,
                     items: [
                         { text: 'Storage', link: '/extensions/plugin/storage.md' },
                         { text: 'Editor', link: '/extensions/plugin/editor.md' },
@@ -162,22 +162,29 @@ function sidebarExtensions() {
             ]
         },
         {
-            text: 'Theme Dev',
-            collapsed: true,
+            text: 'Client Dev',
+            collapsed: false,
             items: [
-                { text: 'Introduction', link: '/extensions/theme/' },
-                { text: 'Functions', link: '/extensions/theme/functions.md' },
-                { text: 'Structure', link: '/extensions/theme/structure.md' },
-                { text: 'Template Tags', link: '/extensions/theme/tags.md' },
-            ]
-        },
-        {
-            text: 'Callback',
-            collapsed: true,
-            items: [
-                { text: 'Introduction', link: '/extensions/callback/' },
-                { text: 'Path Variables', link: '/extensions/callback/variables.md' },
-                { text: 'Make URL Authorization', link: '/extensions/callback/url-authorization.md' },
+                { text: 'Introduction', link: '/extensions/client/' },
+                {
+                    text: 'Callback',
+                    collapsed: false,
+                    items: [
+                        { text: 'Introduction', link: '/extensions/callback/' },
+                        { text: 'Path Variables', link: '/extensions/callback/variables.md' },
+                        { text: 'Make URL Authorization', link: '/extensions/callback/url-authorization.md' },
+                    ]
+                },
+                {
+                    text: 'FresnsEngine Theme',
+                    collapsed: false,
+                    items: [
+                        { text: 'Introduction', link: '/extensions/theme/' },
+                        { text: 'Structure', link: '/extensions/theme/structure.md' },
+                        { text: 'Template Tags', link: '/extensions/theme/tags.md' },
+                        { text: 'Theme Functions', link: '/extensions/theme/functions.md' },
+                    ]
+                },
             ]
         },
     ]

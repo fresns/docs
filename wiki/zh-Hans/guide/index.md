@@ -22,16 +22,6 @@ Fresns 是一款免费开源的社交网络服务软件，专为跨平台而打�
 - 动静态分离
 - 功能模块化
 
-## 标准名称
-
-| 名称 | 介绍 |
-| --- | --- |
-| 主程序 | Fresns 核心程序，包含管理面板、API、封装功能、管理器依赖包等。 |
-| 扩展插件 | 延伸并增强主程序功能的挂载程序，包括网站引擎、控制面板、移动应用管理等插件。 |
-| 网站引擎 | 基于主程序 API 开发的网站功能，分别有集成引擎和独立引擎<br>**集成引擎**：以插件方式运行在主程序中的网站引擎<br>**独立引擎**：独立部署和运行在主程序之外的网站，等同于移动应用（App） |
-| 主题模板 | 基于网站引擎开发的外观样式（UE&UI 界面） |
-| 移动应用 | 手机 App 和微信小程序等独立运行的移动端应用程序 |
-
 ## 界面预览
 
 | 信息流 | 论坛 |
@@ -39,8 +29,7 @@ Fresns 是一款免费开源的社交网络服务软件，专为跨平台而打�
 | ![Moments](https://files.fresns.org/wiki/previews/Moments.png) | ![ForumX](https://files.fresns.org/wiki/previews/ForumX.png) |
 | ![ForumQ](https://files.fresns.org/wiki/previews/ForumQ.png) | ![ThemeFrame](https://files.fresns.org/wiki/previews/ThemeFrame.png) |
 
-- 查看更多网站端: [https://marketplace.fresns.com/open-source/themes](https://marketplace.fresns.com/zh-Hans/open-source/themes)
-- 查看更多移动端: [https://marketplace.fresns.com/open-source/apps](https://marketplace.fresns.com/zh-Hans/open-source/apps)
+- 查看更多: [https://marketplace.fresns.com/open-source/clients](https://marketplace.fresns.com/zh-Hans/open-source/clients)
 
 ## 许可协议
 

@@ -1,5 +1,7 @@
 # 主题开发
 
+采用 [FresnsEngine](https://marketplace.fresns.com/zh-Hans/open-source/detail/FresnsEngine) 作为 Web 客户端的运行支持，以下是开发标准。
+
 主题模板是 **Laravel Blade** 模板文件，必须依赖网站引擎运行，为网站引擎提供 UE&UI 界面；开发主题模板需要先确认为哪个引擎开发的，需要遵循该引擎的模板标准，参见该引擎的开发文档。
 
 ## 文件目录结构

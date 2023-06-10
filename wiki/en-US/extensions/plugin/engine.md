@@ -1,11 +1,8 @@
-# Web Engine Plugin Development
+# Engine Plugin Development
 
-The website functions developed based on the main program API include integrated engine and independent engine respectively.
+Website drivers integrated to run in the fresns, providing a runtime environment for Web clients (themes) such as channel extensions, desktop sites, mobile sites, responsive sites.
 
-- **Integrated Engine**：It is also a plug-in in its nature. From the perspective of the product, it is a complete solution, namely, a complete community function or a complete shopping mall, blogger, and CMS that has been developed. The main program could enable multiple engines simultaneously as long as the routes do not conflict with each other.
-- **Independent Engine**：Equivalent to mobile applications (App) and websites deployed and operating outside the main program independently to realize separate management of the business server.
-
-The document is drafted to introduce the development of an integrated engine. Since the integrated engine is a kind of plug-in in its nature, its development logic is the same as that of the plug-in. In this light, reference could be drawn from plug-in development. This document only introduces the difference with the plug-in.
+Since the engine is a kind of plug-in in its nature, its development logic is the same as that of the plug-in. In this light, reference could be drawn from plug-in development. This page only introduces the difference with the plug-in.
 
 ## Introduction to view files
 

@@ -42,3 +42,88 @@ After the operation is completed on the plug-in page, it will return the data in
     }
 }
 ```
+
+## Code Example
+
+- [https://github.com/fresns/themes/blob/release/Moments/account/login.blade.php#L20-L28](https://github.com/fresns/themes/blob/release/Moments/account/login.blade.php#L20-L28)
+- [https://github.com/fresns/themes/blob/release/Moments/assets/js/fresns.js#L1669-L1748](https://github.com/fresns/themes/blob/release/Moments/assets/js/fresns.js#L1669-L1748)
+- The `postMessageKey` is defined by the client developer, so the client knows the location and usage scenario of each `key`, and the client knows the subsequent processing logic.
+
+```js
+window.onmessage = function (event) {
+    let fresnsCallback;
+
+    try {
+        fresnsCallback = JSON.parse(event.data);
+    } catch (error) {
+        return;
+    }
+
+    if (!fresnsCallback) {
+        return;
+    }
+
+    if (fresnsCallback.code != 0) {
+        if (fresnsCallback.message) {
+            window.tips(fresnsCallback.message, fresnsCallback.code);
+        }
+        return;
+    }
+
+    switch (fresnsCallback.action.postMessageKey) {
+        case 'reload':
+            window.location.reload();
+            break;
+
+        case 'fresnsConnect':
+            if (fresnsCallback.action.reloadData) {
+                window.location.href = `/account/settings#account-tab`;
+            }
+            break;
+
+        case 'fresnsJoin':
+            let params = new URLSearchParams(window.location.search.slice(1));
+
+            $.ajax({
+                url: '/api/engine/account/connect-login',
+                type: 'post',
+                dataType: 'json',
+                data: {
+                    apiData: fresnsCallback,
+                    redirectURL: params.get('redirectURL'),
+                },
+                success: function (res) {
+                    if (res.code !== 0) {
+                        return window.tips(res.message, res.code);
+                    }
+
+                    if (res.data.redirectURL) {
+                        window.location.href = res.data.redirectURL;
+                        return;
+                    }
+                },
+            });
+            break;
+
+        case 'fresnsEditorUpload':
+            fresnsCallback.data.forEach((fileinfo) => {
+                addEditorAttachment(fileinfo);
+            });
+
+            if (fresnsCallback.action.reloadData) {
+                $('#fresnsModal').modal('hide');
+
+                return;
+            }
+            break;
+    }
+
+    if (fresnsCallback.action.windowClose) {
+        $('#fresnsModal').modal('hide');
+    }
+
+    if (fresnsCallback.action.redirectUrl) {
+        window.location.href = fresnsCallback.action.redirectUrl;
+    }
+};
+```
