@@ -9,13 +9,23 @@ Fresns 是一款基于 PHP 编程语言和关系型数据库开发的社交社�
 | Web 服务器<br>`任选一种` | Nginx<br>Apache<br>Caddy<br>IIS |
 | PHP 版本 | 8.1 或更高版本 |
 | PHP 扩展支持 | `fileinfo` |
-| PHP 函数启用 | `putenv`, `symlink`, `proc_open`, `passthru`, `shell_exec` |
+| PHP 函数启用 | `symlink`, `proc_open`, `shell_exec`, `passthru` |
 | 软件包管理器 | Composer 2.5 或更高版本 |
 | 数据库和版本<br>`任选一种` | MySQL `5.7 ~ 8.x`<br>MariaDB `10.3 ~ 11.x`<br>PostgreSQL `11.x ~ 15.x`<br>SQL Server `2016(13.x) ~ 2022(16.x)`<br>SQLite `3.9` 或更高版本 |
 
+**PHP 函数用途介绍**
+
+| 函数 | 用途 | 禁用操作 |
+| --- | --- | --- |
+| `symlink` | 生成存储软链接使用 | 安装完 Fresns 后可以禁用 |
+| `proc_open` | symfony/process 用于 composer 命令，升级 Fresns 或安装插件时使用 | 升级完 Fresns 后和安装完插件后可以禁用 |
+| `shell_exec` | symfony/console 用于 composer 命令，升级 Fresns 或安装插件时使用 | 升级完 Fresns 后和安装完插件后可以禁用 |
+| `passthru` | Fresns 升级使用，使用该函数执行升级可以避免升级超时 | 升级完 Fresns 后可以禁用 |
+| `exec` | 兼容 Windows 系统安装 Fresns 使用 | 安装完 Fresns 后可以禁用 |
+
 ## 下载安装包
 
-::: tip 方式 1: 手动下载完整包（已内置网站引擎和主题模板）
+::: tip 方式 1: 手动下载完整包（已内置网站客户端）
 - [下载 Fresns v2.14.0](https://app.fresns.org/latest.zip)
 :::
 
@@ -32,7 +42,7 @@ php artisan vendor:publish --provider="Fresns\ThemeManager\Providers\ThemeServic
 php artisan vendor:publish --provider="Fresns\MarketManager\Providers\MarketServiceProvider"
 ```
 
-- 如果需要网站端，请至应用市场挑选[网站引擎](https://marketplace.fresns.com/zh-Hans/open-source/engines)和[主题模板](https://marketplace.fresns.com/zh-Hans/open-source/themes)
+- Composer 下载的只有服务端，如需客户端，请至[应用市场](https://marketplace.fresns.com/zh-Hans/open-source/clients)挑选。
 :::
 
 ## 主程序安装

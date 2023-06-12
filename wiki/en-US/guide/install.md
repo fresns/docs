@@ -9,15 +9,25 @@ Before you install Fresns, it's important to check that your server meets the re
 | Web Server<br>`Choose any one` | Nginx<br>Apache<br>Caddy<br>IIS |
 | PHP Version | PHP 8.1 or greater |
 | PHP Extensions | `fileinfo` |
-| PHP Functions | `putenv`, `symlink`, `proc_open`, `passthru`, `shell_exec` |
+| PHP Functions | `symlink`, `proc_open`, `shell_exec`, `passthru` |
 | Package Manager | Composer 2.5 or greater |
 | Database and Version<br>`Choose any one` | MySQL `5.7 ~ 8.x`<br>MariaDB `10.3 ~ 11.x`<br>PostgreSQL `11.x ~ 15.x`<br>SQL Server `2016(13.x) ~ 2022(16.x)`<br>SQLite `3.9` or greater |
+
+**Introduction to PHP Functions**
+
+| Function | Purpose | Disabled Operations |
+| --- | --- | --- |
+| `symlink` | Generates symbolic links for storage | Can be disabled after Fresns is installed |
+| `proc_open` | Used by `symfony/process` for composer commands, used for upgrading Fresns or installing plugins | Can be disabled after upgrading Fresns or installing plugins |
+| `shell_exec` | Used by `symfony/console` for composer commands, used for upgrading Fresns or installing plugins | Can be disabled after upgrading Fresns or installing plugins |
+| `passthru` | Used for Fresns upgrades, executing upgrades with this function helps avoid timeouts | Can be disabled after Fresns is upgraded |
+| `exec` | Used for installing Fresns on Windows systems | Can be disabled after Fresns is installed |
 
 ## Download
 
 ::: tip Option 1: Download the full package manually
 - [Download Fresns v2.14.0](https://app.fresns.org/latest.zip)
-- *Web engine and theme templates already built in*
+- *Website client already built in*
 :::
 
 ::: tip Option 2: Download via Composer
@@ -33,7 +43,7 @@ php artisan vendor:publish --provider="Fresns\ThemeManager\Providers\ThemeServic
 php artisan vendor:publish --provider="Fresns\MarketManager\Providers\MarketServiceProvider"
 ```
 
-- If you need a website, please go to the application market to select a [web engine](https://marketplace.fresns.com/open-source/engines) and [theme template](https://marketplace.fresns.com/open-source/themes)
+- The composer download is for the server only, for the client please go to the [Fresns Marketplace](https://marketplace.fresns.com/open-source/clients).
 :::
 
 ## Installing
