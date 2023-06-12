@@ -21,7 +21,7 @@ Fresns 是一款基于 PHP 编程语言和关系型数据库开发的社交社�
 | `proc_open` | symfony/process 用于 composer 命令，升级 Fresns 或安装插件时使用 | 升级完 Fresns 后和安装完插件后可以禁用 |
 | `shell_exec` | symfony/console 用于 composer 命令，升级 Fresns 或安装插件时使用 | 升级完 Fresns 后和安装完插件后可以禁用 |
 | `passthru` | Fresns 升级使用，使用该函数执行升级可以避免执行超时 | 升级完 Fresns 后可以禁用 |
-| `exec` | 兼容 Windows 系统安装 Fresns 使用 | 安装完 Fresns 后可以禁用 |
+| `exec` | 不在环境要求的明细中，仅 Windows 系统安装 Fresns 使用 | 安装完 Fresns 后可以禁用 |
 
 ## 下载安装包
 

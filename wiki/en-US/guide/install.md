@@ -21,7 +21,7 @@ Before you install Fresns, it's important to check that your server meets the re
 | `proc_open` | Used by `symfony/process` for composer commands, used for upgrading Fresns or installing plugins | Can be disabled after upgrading Fresns or installing plugins |
 | `shell_exec` | Used by `symfony/console` for composer commands, used for upgrading Fresns or installing plugins | Can be disabled after upgrading Fresns or installing plugins |
 | `passthru` | Used for Fresns upgrades, executing upgrades with this function helps avoid timeouts | Can be disabled after Fresns is upgraded |
-| `exec` | Used for installing Fresns on Windows systems | Can be disabled after Fresns is installed |
+| `exec` | Not included in the list of server requirements, only used by Fresns for Windows installation | Can be disabled after Fresns is installed |
 
 ## Download
 

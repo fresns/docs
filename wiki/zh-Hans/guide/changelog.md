@@ -23,26 +23,6 @@ Fresns 主程序所有版本更新日志都将记录在这个文件中。
 - Panel: 支持一键安装扩展应用，无需用户复制操作
 
 
-## 2.15.0 (2023-06-12)
-
-### Fixes
-- Panel: 安装插件输出信息视图问题
-- API: 修复接口请求数据插件时 `body` 为空的问题
-
-### BREAKING CHANGES
-- Data: `account_connects` 账号互联表字段调整
-    - 字段 `connect_id` 修改为 `connect_platform_id`
-    - 字段 `connect_token` 修改为 `connect_account_id`，比如 github id
-    - 字段 `connect_token` 的用途修改为凭证平台的请求 token，比如 github token
-- Words: 互联凭证相关命令字调整
-    - 命令字 `createAccount` 修改数组参数 `connectInfo`
-    - 命令字 `setAccountConnect` 修改参数 `connectId` 和 `connectToken`
-    - 命令字 `disconnectAccountConnect` 修改参数 `connectId` 修改为 `connectPlatformId`
-    - 修改后的新介绍请阅读官网文档。
-- Panel: 重构扩展应用安装方式，用户无需选择插件或主题，由程序自行判断
-- Panel: 支持一键安装扩展应用，无需用户复制操作
-
-
 ## 2.14.0 (2023-05-30)
 
 ### Added
