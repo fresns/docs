@@ -4,9 +4,9 @@
 | --- | --- | --- | --- | --- | --- |
 | id | int *UNSIGNED* | Primary Key ID |  | NO | Auto Increment |
 | fskey | varchar(64) | Plugin identifier |  | NO | **Unique**, PascalCase format |
-| type | tinyint *UNSIGNED* | Plugin type  |  | NO | 1.Extension plugin / 2.Control panel / 3.Web engine / 4.Theme template |
+| type | tinyint *UNSIGNED* | Plugin type |  | NO | 1.Extension plugin / 2.Control panel / 3.Web engine / 4.Theme template / 5.Standalone deploy app |
 | name | varchar(64) | Plugin Name |  | NO |  |
-| description | varchar(255) | Plugin description  |  | NO |  |
+| description | varchar(255) | Plugin description |  | NO |  |
 | version | varchar(16) | Semantic version number |  | NO | Display version number |
 | author | varchar(64) | Developer name |  | NO |  |
 | author_link | varchar(128) | Developer link |  | YES |  |
