@@ -6,8 +6,8 @@
 | fid | varchar(32) | 对外公开 ID |  | NO | **唯一值** |
 | type | tinyint *UNSIGNED* | 文件类型 | 1 | NO | 1.图片 / 2.视频 / 3.音频 / 4.文档 |
 | name | varchar(128) | 文件名称 |  | NO | 完整原始名称，上传时的文件名，包含后缀名 |
-| mime | varchar(255) | 文件扩展名 |  | YES | 比如：image/jpeg 或 video/mp4 |
-| extension | varchar(32) | 文件后缀名 |  | NO | 比如：jpg 或 jpeg |
+| mime | varchar(255) | 文件 Mime 类型 |  | YES | 比如：image/jpeg 或 video/mp4 |
+| extension | varchar(32) | 文件扩展名 |  | NO | 比如：jpg 或 jpeg |
 | size | int *UNSIGNED* | 文件大小 |  | NO | 单位 Byte |
 | md5 | varchar(128) | 文件 md5 |  | YES | 文件 md5 编码 |
 | sha | varchar(128) | 文件 sha |  | YES | 文件 sha 编码 |

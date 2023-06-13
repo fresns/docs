@@ -6,7 +6,7 @@
 | fid | varchar(32) | Publicly available ID |  | NO | **Unique** |
 | type | tinyint *UNSIGNED* | File Type | 1 | NO | 1.Image / 2.Video / 3.Audio / 4.Document |
 | name | varchar(128) | File Name |  | NO | Full original name, filename when uploading, including extension |
-| mime | varchar(255) | File Extension |  | YES | For example: image/jpeg or video/mp4 |
+| mime | varchar(255) | File Mime Type |  | YES | For example: image/jpeg or video/mp4 |
 | extension | varchar(32) | File Extension Name |  | NO | For example: jpg or jpeg |
 | size | int *UNSIGNED* | File Size |  | NO | Unit Byte |
 | md5 | varchar(128) | File md5 |  | YES | File md5 encoding |
