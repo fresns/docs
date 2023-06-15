@@ -29,6 +29,7 @@
 | `{connectPlatformId}` | 互联平台 ID | [互联平台编号](../../database/dictionary/connects.md) |
 | `{uploadInfo}` | 上传参数 | [同上传接口](../../api/common/upload-file.md) |
 | `{locationInfo}` | 位置参数 | `地图 ID,纬度,经度,比例` 以英文逗号隔开<br>[地图 ID 信息](../../database/dictionary/maps.md)<br>例如 `2,1.2803074,103.8610191,16` |
+| `{parameter}` | 自定义参数 | plugin_usages->parameter |
 
 ## {type} 访问来源类型
 
