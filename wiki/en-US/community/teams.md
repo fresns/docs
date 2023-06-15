@@ -30,7 +30,7 @@ const members = [
         name: 'Tracy Yuan',
         title: 'Tester',
         links: [
-            { icon: 'linkedin', link: 'https://www.linkedin.com/in/tracy-yuanquan' },
+            { icon: 'github', link: 'https://github.com/tracy-yq' },
         ]
     },
 ]
