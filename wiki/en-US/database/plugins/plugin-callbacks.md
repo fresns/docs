@@ -9,8 +9,8 @@
 | ulid | varchar(64) | Callback query key |  | NO | **Unique value**<br>Universally Unique Lexicographically Sortable Identifier<br>Example: 01GQBMS8BBTCKTT7B0T3EER8XR |
 | type | smallint *UNSIGNED* | Type | 1 | NO | See description below |
 | content | json | Return parameter content |  | YES |  |
-| is_use | tinyint *UNSIGNED* | Status | 0 | NO | 0. Not called<br>1. Called (used) |
-| use_plugin_fskey | varchar(64) | Data use plugin fskey |  | YES | Related field [plugins->fskey](../plugins/plugins.md) |
+| is_used | tinyint *UNSIGNED* | Status | 0 | NO | 0. Not called<br>1. Called (used) |
+| used_plugin_fskey | varchar(64) | Data use plugin fskey |  | YES | Related field [plugins->fskey](../plugins/plugins.md) |
 | created_at | timestamp | Create Time | CURRENT_TIMESTAMP | NO |  |
 | updated_at | timestamp | Update Time |  | YES |  |
 | deleted_at | timestamp | Delete Time |  | YES |  |
