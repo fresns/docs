@@ -183,6 +183,24 @@ SESSION_DRIVER=memcached    #会话驱动
 - `Redis`: 除了缓存，其他驱动系统支持 Redis 的也可以配置使用。
 - `Memcached`: 仅支持驱动缓存和会话。
 
+### 队列
+
+- 如果修改了队列连接方式，比如 `QUEUE_CONNECTION=redis`，请配置进程守护。
+- `.env` 里没有配置，或者使用了 `sync` 默认配置，无需配置进程守护。
+- 队列连接方式：
+    - `sync` 同步执行队列，无需额外配置
+    - `redis` 使用 PHP 扩展 redis 缓存器驱动队列
+    - `database` 使用数据库驱动队列，无需额外配置
+    - `beanstalkd` 使用分布式内存队列系统，适用于大型项目
+    - `sqs` 使用 AWS sqs 驱动队列，需配置 AWS 密钥，适用于大型项目
+
+推荐 `redis` 或 `database`，不配置则默认为 `sync`
+
+```sh
+# 进程启动命令
+php artisan queue:work
+```
+
 ### 任务调度
 
 在运营 Fresns 时，您需要一种方法来保持「定时任务」正常运行，而 Laravel 框架的任务调度就是一个保证主程序和插件能够使用定时任务的机制。配置了任务调度，主程序就可以定时清理注销账号和检测用户角色过期等任务。
@@ -204,22 +222,6 @@ su -c "cd /你的项目路径 && php artisan schedule:run >> /dev/null 2>&1" -s 
 su -c "cd /www/wwwroot/fresns && php artisan schedule:run >> /dev/null 2>&1" -s /bin/sh www
 ```
 :::
-
-### 队列
-
-- 队列连接方式：
-    - `sync` 同步执行队列，无需额外配置
-    - `redis` 使用 PHP 扩展 redis 缓存器驱动队列
-    - `database` 使用数据库驱动队列，无需额外配置
-    - `beanstalkd` 使用分布式内存队列系统，适用于大型项目
-    - `sqs` 使用 AWS sqs 驱动队列，需配置 AWS 密钥，适用于大型项目
-
-推荐 `redis` 或 `database`，不配置则默认为 `sync`
-
-```sh
-# 进程启动命令
-php artisan queue:work
-```
 
 ### 时区配置介绍
 

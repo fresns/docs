@@ -184,6 +184,24 @@ SESSION_DRIVER=memcached
 - `Redis`: In addition to cache, other driver systems that support Redis can also be configured to use it.
 - `Memcached`: only supports drive cache and session.
 
+### Queues
+
+- If you have changed the queue connection method, e.g. `QUEUE_CONNECTION=redis`, please configure the Supervisor.
+- You do not need to configure the Supervisor if it is not configured in `.env`, or if the default `sync` is used.
+- Queue connection options:
+    - `sync` Synchronously execute the queue, no additional configuration required
+    - `redis` Use the PHP extension redis cache driver for the queue
+    - `database` Use the database driver for the queue, no additional configuration required
+    - `beanstalkd` Use a distributed memory queue system, suitable for large projects
+    - `sqs` Use AWS sqs for the queue, requires AWS key configuration, suitable for large projects
+
+It is recommended to use `redis` or `database`. The default is `sync` if not configured.
+
+```sh
+# Command to start the process
+php artisan queue:work
+```
+
 ### Task Scheduling
 
 When running Fresns, you need a way to keep “scheduled tasks” running normally, and task scheduling of Laravel framework is a mechanism to ensure that main programs and plug-ins can use scheduled tasks. With task scheduling configured, the main program can regularly clean up and log off accounts and detect the expiration of user roles.
@@ -205,22 +223,6 @@ su -c "cd /your-project-path && php artisan schedule:run >> /dev/null 2>&1" -s /
 su -c "cd /www/wwwroot/fresns && php artisan schedule:run >> /dev/null 2>&1" -s /bin/sh www
 ```
 :::
-
-### Queues
-
-- Queue connection options:
-    - `sync` Synchronously execute the queue, no additional configuration required
-    - `redis` Use the PHP extension redis cache driver for the queue
-    - `database` Use the database driver for the queue, no additional configuration required
-    - `beanstalkd` Use a distributed memory queue system, suitable for large projects
-    - `sqs` Use AWS sqs for the queue, requires AWS key configuration, suitable for large projects
-
-It is recommended to use `redis` or `database`. The default is `sync` if not configured.
-
-```sh
-# Command to start the process
-php artisan queue:work
-```
 
 ### Timezone Config
 
