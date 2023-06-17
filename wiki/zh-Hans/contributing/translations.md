@@ -19,6 +19,8 @@ Fresns 从数据流层面支持多语言，无需修改主程序、主题、插�
 
 - 代码仓库：[https://github.com/fresns/docs/](https://github.com/fresns/docs/)
 - 语言文件目录：[/wiki/](https://github.com/fresns/docs/tree/main/wiki)
+    - `en-US` [https://fresns.org](https://fresns.org)
+    - `zh-Hans` [https://zh-hans.fresns.org](https://zh-hans.fresns.org)
 
 ## 控制面板
 
