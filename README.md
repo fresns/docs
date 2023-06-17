@@ -6,41 +6,10 @@
 <img src="https://img.shields.io/github/license/fresns/fresns" alt="License">
 </p>
 
-## About Fresns
+## Introduction
 
-Fresns is a free and open source social network service software, a general-purpose community product designed for cross-platform, and supports flexible and diverse content forms. It conforms to the trend of the times, satisfies a variety of operating scenarios, is more open and easier to re-development.
+Fresns supports multiple languages at the data stream level, and various languages can be added at ease without modifying main programs, themes, plug-ins and clients. It supports 187 languages in 239 countries/regions around the world (the data strategy conforms to the laws and regulations of all regions in the world), and supports any language and time zone with a simple configuration in the background.
 
-- Database support `MySQL`, `MariaDB`, `PostgreSQL`, `SQL Server`, `SQLite`
-- [Click to discover the 16 features of Fresns](https://fresns.org/guide/features.html)
-- Users should read the [installation](https://fresns.org/guide/install.html) and [operating](https://fresns.org/guide/operating.html) documentation.
-- Extensions developers should read the [extension documentation](https://fresns.org/extensions/) and [database structure](https://fresns.org/database/).
-- For client developers (web or app), please read the [API reference](https://fresns.org/api/) documentation.
+Although we support multiple languages, language packs still need to be translated. Feel free to use your language to support the development of Fresns ecosystem.
 
-## Preview
-
-| Social Network | Forum |
-| :---: | :---: |
-| ![Moments](https://files.fresns.org/wiki/previews/Moments.png) | ![ForumX](https://files.fresns.org/wiki/previews/ForumX.png) |
-| ![ForumQ](https://files.fresns.org/wiki/previews/ForumQ.png) | ![ThemeFrame](https://files.fresns.org/wiki/previews/ThemeFrame.png) |
-
-- Get more: [https://marketplace.fresns.com/open-source/clients](https://marketplace.fresns.com/open-source/clients)
-
-## Installation
-
-Read the [**Installation guide**](https://fresns.org/guide/install.html) to get started. For support, refer to the [documentation](https://fresns.org/guide/), and ask questions on the [community forum](https://discuss.fresns.com/) or [github issues](https://github.com/fresns/fresns/issues).
-
-## Contributing
-
-Thank you for considering contributing to the Fresns core library! The contribution guide can be found in the [Fresns documentation](https://fresns.org/community/join.html).
-
-## Code of Conduct
-
-In order to ensure that the Fresns community is welcoming to all, please review and abide by the [Code of Conduct](https://fresns.org/community/join.html#code-of-conduct).
-
-## Security Vulnerabilities
-
-If you discover a security vulnerability within Fresns, please send an e-mail to Taylor Otwell via [support@fresns.org](mailto:support@fresns.org). All security vulnerabilities will be promptly addressed.
-
-## License
-
-Fresns is open-sourced software licensed under the [Apache-2.0 license](https://github.com/fresns/fresns/blob/main/LICENSE).
+- English Docs Writing Guide: [https://fresns.org/contributing/writing-guide.html](https://fresns.org/contributing/writing-guide.html)

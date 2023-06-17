@@ -15,24 +15,24 @@ Fresns 从数据流层面支持多语言，无需修改主程序、主题、插�
 
 ## Fresns 官网
 
-你当前看到的所有页面均属于官网范畴，基于 Markdown 文件编写，由 [VitePress](https://vitepress.vuejs.org/) 网站生成器编译生成。
+你当前看到的所有页面均属于官网范畴，基于 Markdown 文件编写，由 VitePress 网站生成器编译生成。
 
 - 代码仓库：[https://github.com/fresns/docs/](https://github.com/fresns/docs/)
-- 语言文件目录：`/wiki/`
+- 语言文件目录：[/wiki/](https://github.com/fresns/docs/tree/main/wiki)
 
 ## 控制面板
 
 主程序（后端）管理中心的语言包直接是主程序代码仓库的文件，通过 Pull Request 方式参与翻译，可以对已有语言文件进行错误修正，或者增加新的语言文件。
 
 - 代码仓库：[https://github.com/fresns/fresns](https://github.com/fresns/fresns)
-- 语言文件目录：`app/Fresns/Panel/Resources/lang/`
+- 语言文件目录：[app/Fresns/Panel/Resources/lang/](https://github.com/fresns/fresns/tree/2.x/app/Fresns/Panel/Resources/lang)
 
 ## 客户端
 
 以「语言标签」为键名，存储在数据库配置表当中的语言包，客户端通过接口获取后解析到客户本地使用（参见 [多语言设置](../database/keyname/languages.md) 功能）。语言标识名参见配置表 [language_pack](../database/dictionary/language-pack.md) 键值，这是 Fresns 初始化基础语言标识名，运营者可以根据实际客户端情况进行新增自定义语言标识名。如果不理解语言标识名是什么意思，可以参考 `zh-Hans` 简体中文。
 
 - 代码仓库：[https://github.com/fresns/docs/](https://github.com/fresns/docs/tree/master/language-pack)
-- 语言文件目录：`/language-pack/`
+- 语言文件目录：[/language-pack/](https://github.com/fresns/docs/tree/main/language-pack)
 
 通过 Pull Request 方式参与翻译，我们会在主程序版本升级时将新语言包更新到主程序数据库中。
 
