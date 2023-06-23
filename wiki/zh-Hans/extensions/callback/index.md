@@ -129,41 +129,7 @@ window.onmessage = function (event) {
             }
             break;
 
-        case 'fresnsJoin':
-            let params = new URLSearchParams(window.location.search.slice(1));
-
-            $.ajax({
-                url: '/api/engine/account/connect-login',
-                type: 'post',
-                dataType: 'json',
-                data: {
-                    apiData: fresnsCallback,
-                    redirectURL: params.get('redirectURL'),
-                },
-                success: function (res) {
-                    if (res.code !== 0) {
-                        return window.tips(res.message, res.code);
-                    }
-
-                    if (res.data.redirectURL) {
-                        window.location.href = res.data.redirectURL;
-                        return;
-                    }
-                },
-            });
-            break;
-
-        case 'fresnsEditorUpload':
-            fresnsCallback.data.forEach((fileinfo) => {
-                addEditorAttachment(fileinfo);
-            });
-
-            if (fresnsCallback.action.reloadData) {
-                $('#fresnsModal').modal('hide');
-
-                return;
-            }
-            break;
+        // 其他 postMessageKey
     }
 
     if (fresnsCallback.action.windowClose) {
