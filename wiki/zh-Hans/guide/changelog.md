@@ -3,6 +3,26 @@
 Fresns 主程序所有版本更新日志都将记录在这个文件中。
 
 
+## 2.16.0 (2023-06-23)
+
+### Added
+- API: 新增站点状态文件 `/status.json`
+- Panel: 新增客户端状态配置 `管理面板 -> 客户端 -> 状态`
+- Panel: 应用中心新增下载操作
+
+### Fixes
+- Words: 检测期末数值的记录查询问题
+- Words: 互联创建账号时 `connectToken` 为空时报错
+- Words: 修复上传日志验证 fskey 导致执行异常
+- Helpers: 域名提取兼容处理失败
+- Utilities: 修复链接替换的控制失效
+
+### BREAKING CHANGES
+- Data: `plugin_callbacks` 插件回调表字段调整
+    - 字段 `is_use` 修改为 `is_used`
+    - 字段 `use_plugin_fskey` 修改为 `used_plugin_fskey`
+
+
 ## 2.15.0 (2023-06-12)
 
 ### Fixes
