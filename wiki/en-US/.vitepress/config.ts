@@ -207,6 +207,7 @@ function sidebarApi() {
             text: 'Global',
             collapsed: false,
             items: [
+                { text: 'Client Status', link: '/api/global/status.md' },
                 { text: 'Global Configs', link: '/api/global/configs.md' },
                 { text: 'Code Messages', link: '/api/global/code-messages.md' },
                 { text: 'Extend Channels', link: '/api/global/channels.md' },

@@ -4,6 +4,7 @@
 
 | 请求方式 | 接口路径 | 描述 |
 | --- | --- | --- |
+| `GET` | /status.json | 客户端状态 |
 | `GET` | /api/v2/global/configs | 全局配置信息 |
 | `GET` | /api/v2/global/code-messages | 状态码信息 |
 | `GET` | /api/v2/global/channels | 扩展频道 |

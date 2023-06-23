@@ -4,6 +4,7 @@
 
 | Method | Endpoint Path | Description |
 | --- | --- | --- |
+| `GET` | /status.json | Client Status |
 | `GET` | /api/v2/global/configs | Global Configs |
 | `GET` | /api/v2/global/code-messages | Code Messages |
 | `GET` | /api/v2/global/channels | Extend Channels |

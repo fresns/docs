@@ -269,6 +269,7 @@ function sidebarApi() {
             text: '全局配置',
             collapsed: false,
             items: [
+                { text: '客户端状态', link: '/api/global/status.md' },
                 { text: '全局配置信息', link: '/api/global/configs.md' },
                 { text: '状态码信息', link: '/api/global/code-messages.md' },
                 { text: '扩展频道', link: '/api/global/channels.md' },
