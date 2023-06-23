@@ -16,13 +16,6 @@
 - 第 3 步、用户在插件页进行相应操作，操作后插件凭 `postMessageKey` 标识参数，向父级发送 [postMessage](https://developer.mozilla.org/zh-CN/docs/Web/API/Window/postMessage) 消息；
 - 第 4 步、客户端接收插件页的 `postMessage` 消息并处理后续业务功能。
 
-## 内置依赖
-
-Fresns 主程序内置了 [iFrame Resizer](https://github.com/davidjbradshaw/iframe-resizer) 扩展包。
-
-- `/static/js/iframeResizer.min.js`
-- `/static/js/iframeResizer.contentWindow.min.js`
-
 ## postMessage 说明
 
 插件页完成操作后，会通过 `postMessage` 通讯向客户端返回如下 Object 格式的数据，客户端凭定义的 `postMessageKey` 标识名定位后续业务功能。
@@ -45,6 +38,45 @@ Fresns 主程序内置了 [iFrame Resizer](https://github.com/davidjbradshaw/ifr
 ```
 
 ## 代码示例
+
+### 发送消息
+
+- 将数据压缩成字符串发送。
+
+```js
+const fresnsCallbackMessage = {
+    code: 0,
+    message: 'ok',
+    action: {
+        postMessageKey: 'reload',
+        windowClose: true,
+        reloadData: true,
+        redirectUrl: '',
+    },
+    data: '',
+}
+
+const messageString = JSON.stringify(fresnsCallbackMessage);
+
+if (window.Android) {
+    // Android (addJavascriptInterface)
+    window.Android.receiveMessage(messageString);
+} else if (window.webkit.messageHandlers.iOSHandler) {
+    // iOS (WKScriptMessageHandler)
+    window.webkit.messageHandlers.iOSHandler.postMessage(messageString);
+} else if (window.FresnsJavascriptChannel) {
+    // Flutter
+    window.FresnsJavascriptChannel.postMessage(messageString);
+} else if (window.ReactNativeWebView) {
+    // React Native WebView
+    window.ReactNativeWebView.postMessage(messageString);
+} else {
+    // Web
+    parent.postMessage(messageString, '*');
+}
+```
+
+### 接收消息
 
 - [https://github.com/fresns/themes/blob/release/Moments/account/login.blade.php#L20-L28](https://github.com/fresns/themes/blob/release/Moments/account/login.blade.php#L20-L28)
 - [https://github.com/fresns/themes/blob/release/Moments/assets/js/fresns.js#L1669-L1748](https://github.com/fresns/themes/blob/release/Moments/assets/js/fresns.js#L1669-L1748)

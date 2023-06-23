@@ -16,13 +16,6 @@ In order to realize the cross-platform plug-in mechanism, Fresns adopts "inline 
 - Step 3, the user performs the corresponding operation on the plug-in page, and after the operation, the plug-in sends the [postMessage](https://developer.mozilla.org/zh-CN/docs/Web/API/Window/postMessage) message to the parent by the `postMessageKey` identification parameter;
 - Step 4, the client receives the `postMessage` message of the plug-in page and processes the subsequent business functions.
 
-## Built-in Package
-
-The main program of Fresns has built-in [iFrame Resizer](https://github.com/davidjbradshaw/iframe-resizer) extension package.
-
-- `/static/js/iframeResizer.min.js`
-- `/static/js/iframeResizer.contentWindow.min.js`
-
 ## postMessage Intro
 
 After the operation is completed on the plug-in page, it will return the data in the following Object format to the client through `postMessage` communication, and the client will locate the subsequent business functions by the defined `postMessageKey` identification name.
@@ -44,6 +37,45 @@ After the operation is completed on the plug-in page, it will return the data in
 ```
 
 ## Code Example
+
+### Post Message
+
+- Convert to a JSON formatted string.
+
+```js
+const fresnsCallbackMessage = {
+    code: 0,
+    message: 'ok',
+    action: {
+        postMessageKey: 'reload',
+        windowClose: true,
+        reloadData: true,
+        redirectUrl: '',
+    },
+    data: '',
+}
+
+const messageString = JSON.stringify(fresnsCallbackMessage);
+
+if (window.Android) {
+    // Android (addJavascriptInterface)
+    window.Android.receiveMessage(messageString);
+} else if (window.webkit.messageHandlers.iOSHandler) {
+    // iOS (WKScriptMessageHandler)
+    window.webkit.messageHandlers.iOSHandler.postMessage(messageString);
+} else if (window.FresnsJavascriptChannel) {
+    // Flutter
+    window.FresnsJavascriptChannel.postMessage(messageString);
+} else if (window.ReactNativeWebView) {
+    // React Native WebView
+    window.ReactNativeWebView.postMessage(messageString);
+} else {
+    // Web
+    parent.postMessage(messageString, '*');
+}
+```
+
+### Message Event
 
 - [https://github.com/fresns/themes/blob/release/Moments/account/login.blade.php#L20-L28](https://github.com/fresns/themes/blob/release/Moments/account/login.blade.php#L20-L28)
 - [https://github.com/fresns/themes/blob/release/Moments/assets/js/fresns.js#L1669-L1748](https://github.com/fresns/themes/blob/release/Moments/assets/js/fresns.js#L1669-L1748)
