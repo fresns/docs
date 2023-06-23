@@ -57,22 +57,37 @@ const fresnsCallbackMessage = {
 }
 
 const messageString = JSON.stringify(fresnsCallbackMessage);
+const userAgent = navigator.userAgent.toLowerCase();
 
-if (window.Android) {
-    // Android (addJavascriptInterface)
-    window.Android.receiveMessage(messageString);
-} else if (window.webkit.messageHandlers.iOSHandler) {
-    // iOS (WKScriptMessageHandler)
-    window.webkit.messageHandlers.iOSHandler.postMessage(messageString);
-} else if (window.FresnsJavascriptChannel) {
-    // Flutter
-    window.FresnsJavascriptChannel.postMessage(messageString);
-} else if (window.ReactNativeWebView) {
-    // React Native WebView
-    window.ReactNativeWebView.postMessage(messageString);
-} else {
+switch (true) {
+    case (window.Android !== undefined):
+        // Android (addJavascriptInterface)
+        window.Android.receiveMessage(messageString);
+        break;
+
+    case (window.webkit && window.webkit.messageHandlers.iOSHandler !== undefined):
+        // iOS (WKScriptMessageHandler)
+        window.webkit.messageHandlers.iOSHandler.postMessage(messageString);
+        break;
+
+    case (window.FresnsJavascriptChannel !== undefined):
+        // Flutter
+        window.FresnsJavascriptChannel.postMessage(messageString);
+        break;
+
+    case (window.ReactNativeWebView !== undefined):
+        // React Native WebView
+        window.ReactNativeWebView.postMessage(messageString);
+        break;
+
+    case (userAgent.indexOf('miniprogram') > -1 && wx && wx.miniProgram):
+        // WeChat Mini Program
+        wx.miniProgram.postMessage({ data: messageString });
+        break;
+
     // Web
-    parent.postMessage(messageString, '*');
+    default:
+        parent.postMessage(messageString, '*');
 }
 ```
 
