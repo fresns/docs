@@ -44,10 +44,10 @@
 
 ### 网站目录
 
-- 未开启：防跨站攻击(open_basedir)
+- 网站目录为 Fresns 项目根目录
 - 运行目录指定为 `public`
 
-![public](https://cdn.fresns.cn/guide/baota-website-path.png)
+![public](https://cdn.fresns.cn/guide/baota-website-directory.png)
 
 ### URL 重写
 
