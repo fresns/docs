@@ -28,9 +28,10 @@
 | digestState | Number | *optional* | Specify scope: Digest (leave empty to output all)<br>digest_state field `1` No `2` general digest `3` premium digest |
 | stickyState | Number | *optional* | Specify scope: Sticky (leave empty to output all)<br>sticky_state field `1` No `2` group sticky `3` global sticky |
 | contentType | String | *optional* | Filter content by type |
-| createDate | String | *optional* | Publish date: `today`,`yesterday`,`week`,`lastWeek`,`month`,`lastMonth`,`year`,`lastYear` |
-| createDateGt | String | *optional* | Publish date greater than `Y-m-d` |
-| createDateLt | String | *optional* | Publish date less than `Y-m-d` |
+| createdDays | Number | *optional* | Publish days: Content created in the specified number of days |
+| createdDate | String | *optional* | Publish date: `today`,`yesterday`,`week`,`lastWeek`,`month`,`lastMonth`,`year`,`lastYear` |
+| createdDateGt | String | *optional* | Publish date greater than `Y-m-d` |
+| createdDateLt | String | *optional* | Publish date less than `Y-m-d` |
 | likeCountGt | Number | *optional* | Likes count greater than |
 | likeCountLt | Number | *optional* | Likes count less than |
 | dislikeCountGt | Number | *optional* | Dislikes count greater than |
@@ -41,7 +42,7 @@
 | blockCountLt | Number | *optional* | Block count less than |
 | commentCountGt | Number | *optional* | Total number of comments greater than |
 | commentCountLt | Number | *optional* | Total number of comments less than |
-| orderType | String | *optional* | Sort by type: `createDate`,`random`,`view`,`like`,`dislike`,`follow`,`block`,`comment`<br>Default `createDate` |
+| orderType | String | *optional* | Sort by type: `createdTime`,`random`,`view`,`like`,`dislike`,`follow`,`block`,`comment`<br>Default `createdTime` |
 | orderDirection | String | *optional* | Sort by direction, default `desc`<br>`asc`,`desc` |
 | blockGroups | String | *optional* | Filter groups, `gid` multiple separated by commas |
 | blockHashtags | String | *optional* | Filter hashtags, `hid` multiple separated by commas |

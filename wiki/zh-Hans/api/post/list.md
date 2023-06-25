@@ -28,9 +28,10 @@
 | digestState | Number | NO | 指定范围：精华（留空输出全部）<br>digest_state 字段 1.否 2.一级精华 3.二级精华 |
 | stickyState | Number | NO | 指定范围：置顶（留空输出全部）<br>sticky_state 字段 1.否 2.小组页置顶 3.全局置顶 |
 | contentType | String | NO | 内容类型（内容类型扩展配置的参数） |
-| createDate | String | NO | 发表日期：`today`,`yesterday`,`week`,`lastWeek`,`month`,`lastMonth`,`year`,`lastYear` |
-| createDateGt | String | NO | 发表时间大于 `Y-m-d` |
-| createDateLt | String | NO | 发表时间小于 `Y-m-d` |
+| createdDays | Number | NO | 发表天数：指定天数内创建的内容 |
+| createdDate | String | NO | 发表日期：`today`,`yesterday`,`week`,`lastWeek`,`month`,`lastMonth`,`year`,`lastYear` |
+| createdDateGt | String | NO | 发表时间大于 `Y-m-d` |
+| createdDateLt | String | NO | 发表时间小于 `Y-m-d` |
 | viewCountGt | Number | NO | 查看数大于 |
 | viewCountLt | Number | NO | 查看数小于 |
 | likeCountGt | Number | NO | 点赞数大于 |
@@ -43,7 +44,7 @@
 | blockCountLt | Number | NO | 屏蔽数小于 |
 | commentCountGt | Number | NO | 评论总数大于 |
 | commentCountLt | Number | NO | 评论总数小于 |
-| orderType | String | NO | 排序类型 `createDate`,`random`,`view`,`like`,`dislike`,`follow`,`block`,`comment`<br>默认 `createDate` |
+| orderType | String | NO | 排序类型 `createdTime`,`commentTime`,`random`,`view`,`like`,`dislike`,`follow`,`block`,`comment`<br>默认 `createdTime` |
 | orderDirection | String | NO | 排序方向，默认 `desc`<br>`asc`,`desc` |
 | blockGroups | String | NO | 过滤小组，`gid` 多个以英文逗号隔开 |
 | blockHashtags | String | NO | 过滤话题，`hid` 多个以英文逗号隔开 |

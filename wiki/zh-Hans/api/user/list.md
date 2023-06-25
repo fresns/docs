@@ -20,9 +20,10 @@
 | roles | String | NO | 指定主角色 `rid`，多个以英文逗号隔开 |
 | verified | Boolean | NO | 认证状态 |
 | gender | Number | NO | 性别 gender 字段<br>`1` 未设置 / `2` 男 / `3` 女 |
-| createDate | String | NO | 注册日期：`today`,`yesterday`,`week`,`lastWeek`,`month`,`lastMonth`,`year`,`lastYear` |
-| createDateGt | String | NO | 注册时间大于 `Y-m-d` |
-| createDateLt | String | NO | 注册时间小于 `Y-m-d` |
+| createdDays | Number | NO | 注册天数：指定天数内注册的用户 |
+| createdDate | String | NO | 注册日期：`today`,`yesterday`,`week`,`lastWeek`,`month`,`lastMonth`,`year`,`lastYear` |
+| createdDateGt | String | NO | 注册时间大于 `Y-m-d` |
+| createdDateLt | String | NO | 注册时间小于 `Y-m-d` |
 | viewCountGt | Number | NO | 查看数大于 |
 | viewCountLt | Number | NO | 查看数小于 |
 | likeCountGt | Number | NO | 点赞数大于 |
@@ -51,7 +52,7 @@
 | extcredits4CountLt | Number | NO | extcredits4 小于 |
 | extcredits5CountGt | Number | NO | extcredits5 大于 |
 | extcredits5CountLt | Number | NO | extcredits5 小于 |
-| orderType | String | NO | 排序类型 `createDate`,`random`,`view`,`like`,`dislike`,`follow`,`block`<br>`post`,`comment`,`postDigest`,`commentDigest`<br>`extcredits1`,`extcredits2`,`extcredits3`,`extcredits4`,`extcredits5`<br>默认 `createDate` |
+| orderType | String | NO | 排序类型 `createdTime`,`random`,`view`,`like`,`dislike`,`follow`,`block`<br>`post`,`comment`,`postDigest`,`commentDigest`<br>`extcredits1`,`extcredits2`,`extcredits3`,`extcredits4`,`extcredits5`<br>默认 `createdTime` |
 | orderDirection | String | NO | 排序方向，默认 `desc`<br>`asc`,`desc` |
 | whitelistKeys | String | NO | 白名单键名，只返回给定键名的键值对<br>多个以英文逗号隔开，支持「点表示法」表示多维数组 |
 | blacklistKeys | String | NO | 黑名单键名，从返回数据中删除指定的键值对<br>多个以英文逗号隔开，支持「点表示法」表示多维数组 |

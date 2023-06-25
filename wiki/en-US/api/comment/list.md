@@ -30,9 +30,10 @@
 | allDigest | Boolean | *optional* | Specify scope: All digest, general and premium digest<br>When passed, the `digestState` parameter will be ignored |
 | digestState | Number | *optional* | Specify scope: Digest (leave empty to output all)<br>digest_state field `1` No `2` general digest `3` premium digest |
 | contentType | String | *optional* | Filter content by type |
-| createDate | String | *optional* | Publish date: `today`,`yesterday`,`week`,`lastWeek`,`month`,`lastMonth`,`year`,`lastYear` |
-| createDateGt | String | *optional* | Publish date greater than `Y-m-d` |
-| createDateLt | String | *optional* | Publish date less than `Y-m-d` |
+| createdDays | Number | *optional* | Publish days: Content created in the specified number of days |
+| createdDate | String | *optional* | Publish date: `today`,`yesterday`,`week`,`lastWeek`,`month`,`lastMonth`,`year`,`lastYear` |
+| createdDateGt | String | *optional* | Publish date greater than `Y-m-d` |
+| createdDateLt | String | *optional* | Publish date less than `Y-m-d` |
 | viewCountGt | Number | *optional* | View count greater than |
 | viewCountLt | Number | *optional* | View count less than |
 | likeCountGt | Number | *optional* | Likes count greater than |
@@ -45,7 +46,7 @@
 | blockCountLt | Number | *optional* | Block count less than |
 | commentCountGt | Number | *optional* | Total number of sub-comments greater than |
 | commentCountLt | Number | *optional* | Total number of sub-comments less than |
-| orderType | String | *optional* | Sort by type: `createDate`,`random`,`view`,`like`,`dislike`,`follow`,`block`,`comment`<br>Default `createDate` |
+| orderType | String | *optional* | Sort by type: `createdTime`,`random`,`view`,`like`,`dislike`,`follow`,`block`,`comment`<br>Default `createdTime` |
 | orderDirection | String | *optional* | Sort by direction, default `desc`<br>`asc`,`desc` |
 | whitelistKeys | String | *optional* | Whitelist key names, only returns key-value pairs for the given key names<br>Multiple separated by English commas, supports "dot notation" for multi-dimensional arrays |
 | blacklistKeys | String | *optional* | Blacklist key names, removes specified key-value pairs from the returned data<br>Multiple separated by English commas, supports "dot notation" for multi-dimensional arrays |
