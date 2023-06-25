@@ -280,7 +280,7 @@
         // 小组配置自定义参数
         // 数据表 groups->permissions
     },
-    "createDate": "String / 小组创建日期",
+    "createdDatetime": "String / 小组创建日期",
     "contentArchive": [
         // 通用数据结构->扩展参数信息
     ],
@@ -399,7 +399,7 @@
     "postDigestCount": "Number / 精华帖子总数",
     "commentCount": "Number / 评论总数",
     "commentDigestCount": "Number / 精华评论总数",
-    "createDate": "String / 话题创建日期",
+    "createdDatetime": "String / 话题创建日期",
     "archives": [
         // 通用数据结构->扩展参数信息
     ],

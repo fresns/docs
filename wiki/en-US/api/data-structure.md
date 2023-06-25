@@ -280,7 +280,7 @@ To reduce documentation effort and ensure consistency of public data, the same s
         // Custom group configuration parameters
         // Data Table: groups->permissions
     },
-    "createDate": "String / Group creation date",
+    "createdDatetime": "String / Group creation datetime",
     "archives": [
         // Common Data Structure -> Extend Archive Info
     ],
@@ -398,7 +398,7 @@ To reduce documentation effort and ensure consistency of public data, the same s
     "postDigestCount": "Number / Total Digest Post Count",
     "commentCount": "Number / Total Comment Count",
     "commentDigestCount": "Number / Total Digest Comment Count",
-    "createDate": "String / Topic Creation Date",
+    "createdDatetime": "String / Topic Creation Datetime",
     "archives": [
         // Common Data Structure -> Extend Archive Info
     ],
