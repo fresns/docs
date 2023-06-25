@@ -153,11 +153,11 @@ PermissionUtility::checkPostCommentPerm($pidOrPostId, $userId);
 ## 判断内容编辑状态
 
 ```php
-PermissionUtility::checkContentEditPerm($createDateTime, $editTimeConfig, $timezone, $langTag);
+PermissionUtility::checkContentEditPerm($createdDatetime, $editTimeConfig, $timezone, $langTag);
 ```
 | 参数名 | 类型 | 是否必传 | 说明 |
 | --- | --- | --- | --- |
-| createDateTime | Carbon | YES | `posts->created_at` 或 `comments->created_at` |
+| createdDatetime | Carbon | YES | `posts->created_at` 或 `comments->created_at` |
 | editTimeConfig | Number | YES | `post_edit_time_limit` 或 `comment_edit_time_limit` |
 | timezone | String | NO | UTC 时区，可不传，不传则使用默认时区 |
 | langTag | String | NO | 语言标签，可不传，不传则使用默认语言 |

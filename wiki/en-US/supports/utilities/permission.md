@@ -153,11 +153,11 @@ PermissionUtility::checkPostCommentPerm($pidOrPostId, $userId);
 ## Determine Content Editing Status
 
 ```php
-PermissionUtility::checkContentEditPerm($createDateTime, $editTimeConfig, $timezone, $langTag);
+PermissionUtility::checkContentEditPerm($createdDatetime, $editTimeConfig, $timezone, $langTag);
 ```
 | Parameter Name | Type | Required | Description |
 | --- | --- | --- | --- |
-| createDateTime | Carbon | **required** | `posts->created_at` or `comments->created_at` |
+| createdDatetime | Carbon | **required** | `posts->created_at` or `comments->created_at` |
 | editTimeConfig | Number | **required** | `post_edit_time_limit` or `comment_edit_time_limit` |
 | timezone | String | *optional* | If empty, the default time zone is used. |
 | langTag | String | *optional* | If empty, the default language is used. |
