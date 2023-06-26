@@ -27,14 +27,14 @@
 | newPassword | String | NO | 修改登录密码（留空代表不修改，以 Base64 传参） |
 | currentWalletPassword | String | NO | 当前钱包密码（以 Base64 传参） |
 | newWalletPassword | String | NO | 修改钱包密码（留空代表不修改，以 Base64 传参） |
-| lastLoginTime | Boolean | NO | 最后一次登录时间（留空代表不修改）<br>`1` 更新 |
+| updateLastLoginTime | Boolean | NO | 最后一次登录时间（留空代表不修改）<br>`1` 更新 |
 | disconnectPlatformId | Number | NO | 解除指定[互联平台](../../database/dictionary/connects.md)的绑定 |
 | deviceToken | String | NO | iOS 或 Android 设备 Token（留空代表不修改） |
 
 **接口使用说明**
 
 - 一个验证码只能修改一次资料
-- 修改 `lastLoginTime`, `disconnectPlatformId`, `deviceToken` 不需要验证码
+- 修改 `updateLastLoginTime`, `disconnectPlatformId`, `deviceToken` 不需要验证码
 - 设置邮箱（当前账号无邮箱）
     - `newEmail`
     - `newVerifyCode` 验证码模板 ID 为 `4`
