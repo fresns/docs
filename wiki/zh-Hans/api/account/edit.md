@@ -19,54 +19,50 @@
 | --- | --- | --- | --- |
 | codeType | String | NO | 验证码类型：`email`,`sms` |
 | verifyCode | String | NO | 验证码 |
-| newVerifyCode | String | NO | 新账号验证码，修改邮箱和手机号专用 |
-| editEmail | String | NO | 邮箱（留空代表不修改） |
-| editPhone | Number | NO | 手机号码（留空代表不修改） |
-| editCountryCode | Number | NO | 国际区号，修改手机号必传 |
-| password | String | NO | 当前登录密码（以 Base64 传参） |
-| editPassword | String | NO | 修改登录密码（留空代表不修改，以 Base64 传参） |
-| editPasswordConfirm | String | NO | 再传一次新密码（留空代表不修改，以 Base64 传参） |
-| walletPassword | String | NO | 当前钱包密码（以 Base64 传参） |
-| editWalletPassword | String | NO | 修改钱包密码（留空代表不修改，以 Base64 传参） |
-| editWalletPasswordConfirm | String | NO | 再传一次新钱包密码（留空代表不修改，以 Base64 传参） |
-| editLastLoginTime | Boolean | NO | 最后一次登录时间（留空代表不修改）<br>`1` 更新 |
+| newEmail | String | NO | 邮箱（留空代表不修改） |
+| newPhone | Number | NO | 手机号码（留空代表不修改） |
+| newCountryCode | Number | NO | 国际区号，修改手机号必传 |
+| newVerifyCode | String | NO | 新账号（邮箱和手机号）验证码 |
+| currentPassword | String | NO | 当前登录密码（以 Base64 传参） |
+| newPassword | String | NO | 修改登录密码（留空代表不修改，以 Base64 传参） |
+| currentWalletPassword | String | NO | 当前钱包密码（以 Base64 传参） |
+| newWalletPassword | String | NO | 修改钱包密码（留空代表不修改，以 Base64 传参） |
+| lastLoginTime | Boolean | NO | 最后一次登录时间（留空代表不修改）<br>`1` 更新 |
 | disconnectPlatformId | Number | NO | 解除指定[互联平台](../../database/dictionary/connects.md)的绑定 |
 | deviceToken | String | NO | iOS 或 Android 设备 Token（留空代表不修改） |
 
 **接口使用说明**
 
-- `editLastLoginTime` 不需要验证码
 - 一个验证码只能修改一次资料
+- 修改 `lastLoginTime`, `disconnectPlatformId`, `deviceToken` 不需要验证码
 - 设置邮箱（当前账号无邮箱）
-    - `codeType`
+    - `newEmail`
     - `newVerifyCode` 验证码模板 ID 为 `4`
-    - `editEmail`
 - 修改邮箱
-    - `codeType`
-    - `verifyCode` 验证码模板 ID 为 `4`
+    - `codeType = email`
+    - `verifyCode` 当前邮箱验证码，验证码模板 ID 为 `4`
+    - `newEmail`
     - `newVerifyCode` 验证码模板 ID 为 `3`
-    - `editEmail`
 - 设置手机号码（当前账号无手机号码）
-    - `codeType`
+    - `newPhone`
+    - `newCountryCode`
     - `newVerifyCode` 验证码模板 ID 为 `4`
-    - `editPhone`
-    - `editCountryCode`
 - 修改手机号码
-    - `codeType`
-    - `verifyCode` 验证码模板 ID 为 `4`
+    - `codeType = sms`
+    - `verifyCode` 当前手机验证码，验证码模板 ID 为 `4`
+    - `newPhone`
+    - `newCountryCode`
     - `newVerifyCode` 验证码模板 ID 为 `3`
-    - `editPhone`
-    - `editCountryCode`
-- 修改登录密码：`verifyCode` 和 `password` 必传其一，或者全部传，全传则全验证
-    - `verifyCode` 验证码模板 ID 为 `5`
-    - `password`
-    - `editPassword`
-    - `editPasswordConfirm`
-- 修改钱包密码：`verifyCode` 和 `walletPassword` 必传其一，或者全部传，全传则全验证
-    - `verifyCode` 验证码模板 ID 为 `6`
-    - `walletPassword`
-    - `editWalletPassword`
-    - `editWalletPasswordConfirm`
+- 修改登录密码：`verifyCode` 和 `currentPassword` 必传其一，或者全部传，全传则全验证
+    - `codeType` 验证码类型
+    - `verifyCode` 当前账号验证码，验证码模板 ID 为 `5`
+    - `currentPassword`
+    - `newPassword`
+- 修改钱包密码：`verifyCode` 和 `currentWalletPassword` 必传其一，或者全部传，全传则全验证
+    - `codeType` 验证码类型
+    - `verifyCode` 当前账号验证码，验证码模板 ID 为 `6`
+    - `currentWalletPassword`
+    - `newWalletPassword`
 
 ## 返回结果
 
@@ -77,33 +73,3 @@
     "data": null
 }
 ```
-
-::: details 开发说明
-- `editEmail` 修改邮箱，先验证 `accounts->email` 是否为空。
-    - 为空：代表新绑定邮箱
-        - 验证码参数仅 `newVerifyCode` 必传；
-        - 以新邮箱 `editEmail` + `newVerifyCode` 验证，验证成功后，填充 `email` 字段。
-    - 不为空：代表更换绑定
-        - 两个验证码参数 `verifyCode` + `newVerifyCode` 必传，`verifyCode` 来自[身份验证](verify-identity.md)；
-        - 先拿当前数据库 `accounts->email` + `verifyCode` 验证，验证通过后下一步；
-        - 再以新邮箱 `editEmail` + `newVerifyCode` 验证，验证成功后，新邮箱替换当前存储的邮箱 `email` 字段。
-
-- `editPhone` 修改手机号，联动参数 `editCountryCode` 必传，然后验证 `accounts->phone` 是否为空。
-    - 为空：代表新绑定手机号
-        - 验证码参数仅 `newVerifyCode` 必传；
-        - 以新手机号 `editCountryCode . editPhone` + `newVerifyCode` 验证，验证成功后，填充手机号 `country_code` + `pure_phone` + `phone` 三个字段。
-    - 不为空：代表更换绑定
-        - 两个验证码参数 `verifyCode` + `newVerifyCode` 必传，`verifyCode` 来自[身份验证](verify-identity.md)；
-        - 先拿当前数据库 `accounts->phone` + `verifyCode` 验证，验证通过后下一步；
-        - 再以新手机号 `editPhone` + `newVerifyCode` 验证，验证成功后，新手机号替换当前存储的手机号，修改 `country_code` + `pure_phone` + `phone` 三个字段。
-
-- `editPassword` 修改登录密码
-    - 传了 `verifyCode` 和 `codeType` 参数，代表验证码修改，拿当前用账号表现存信息（邮箱或手机号）去匹配 `verifyCode` 验证。
-    - 传了 `password` 参数，代表旧密码验证修改，验证旧密码是否正确。
-
-- `editWalletPassword` 修改钱包密码
-    - 传了 `verifyCode` 和 `codeType` 参数，代表验证码修改，拿当前账号表现存信息（邮箱或手机号）去匹配 `verifyCode` 验证。
-    - 传了 `walletPassword` 参数，代表旧密码验证修改，验证旧密码是否正确。
-
-- `editLastLoginTime` 修改最后登录时间，不需要验证，登录状态下就可以修改，账号表 `accounts->last_login_at` 字段。
-:::
