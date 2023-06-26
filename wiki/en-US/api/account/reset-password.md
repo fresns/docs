@@ -23,6 +23,10 @@
 | verifyCode | String | **required** | Verification code (checked with `checkCode` command) |
 | newPassword | String | **required** | New password (Base64 encoded) |
 
+**Request Description**
+
+- Send verify code parameters `useType=2`, `templateId=5`
+
 ## Return
 
 ```json

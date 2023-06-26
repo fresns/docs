@@ -25,6 +25,10 @@
 | nickname | String | **required** | Nickname |
 | deviceToken | String | *optional* | iOS or Android device Token |
 
+**Request Description**
+
+- Send verify code parameters `useType=1`, `templateId=2`
+
 ## Return
 
 ```json

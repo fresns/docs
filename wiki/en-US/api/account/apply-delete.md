@@ -25,6 +25,7 @@
 
 - Choose either `password` or `verifyCode` for transfer.
 - When transferring `verifyCode`, the `codeType` parameter must be transferred.
+- Send verify code parameters `useType=4`, `templateId=8`
 
 ## Return
 

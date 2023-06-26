@@ -37,30 +37,30 @@
 - 修改 `updateLastLoginTime`, `disconnectPlatformId`, `deviceToken` 不需要验证码
 - 设置邮箱（当前账号无邮箱）
     - `newEmail`
-    - `newVerifyCode` 验证码模板 ID 为 `4`
+    - `newVerifyCode` 发送验证码参数 `useType=3;templateId=4`
 - 修改邮箱
     - `codeType = email`
-    - `verifyCode` 当前邮箱验证码，验证码模板 ID 为 `4`
+    - `verifyCode` 当前账号邮箱，发送验证码参数 `useType=4;templateId=4`
     - `newEmail`
-    - `newVerifyCode` 验证码模板 ID 为 `3`
+    - `newVerifyCode` 发送验证码参数 `useType=1;templateId=3`
 - 设置手机号码（当前账号无手机号码）
     - `newPhone`
     - `newCountryCode`
-    - `newVerifyCode` 验证码模板 ID 为 `4`
+    - `newVerifyCode` 发送验证码参数 `useType=3;templateId=4`
 - 修改手机号码
     - `codeType = sms`
-    - `verifyCode` 当前手机验证码，验证码模板 ID 为 `4`
+    - `verifyCode` 当前账号手机号，发送验证码参数 `useType=4;templateId=4`
     - `newPhone`
     - `newCountryCode`
-    - `newVerifyCode` 验证码模板 ID 为 `3`
+    - `newVerifyCode` 发送验证码参数 `useType=1;templateId=3`
 - 修改登录密码：`verifyCode` 和 `currentPassword` 必传其一，或者全部传，全传则全验证
-    - `codeType` 验证码类型
-    - `verifyCode` 当前账号验证码，验证码模板 ID 为 `5`
+    - `codeType`
+    - `verifyCode` 当前账号验证码，发送验证码参数 `useType=4;templateId=5`
     - `currentPassword`
     - `newPassword`
 - 修改钱包密码：`verifyCode` 和 `currentWalletPassword` 必传其一，或者全部传，全传则全验证
-    - `codeType` 验证码类型
-    - `verifyCode` 当前账号验证码，验证码模板 ID 为 `6`
+    - `codeType`
+    - `verifyCode` 当前账号验证码，发送验证码参数 `useType=4;templateId=6`
     - `currentWalletPassword`
     - `newWalletPassword`
 

@@ -23,6 +23,10 @@
 | verifyCode | String | YES | 验证码（命令字 `checkCode` 查验） |
 | newPassword | String | YES | 新密码（以 Base64 传参） |
 
+**接口使用说明**
+
+- 发送验证码参数 `useType=2`, `templateId=5`
+
 ## 返回结果
 
 ```json

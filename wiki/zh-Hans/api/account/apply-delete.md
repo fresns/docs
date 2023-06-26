@@ -25,6 +25,7 @@
 
 - password 和 verifyCode 二选一传参。
 - verifyCode 传参时，codeType 参数必传。
+- 发送验证码参数 `useType=4`, `templateId=8`
 
 ## 返回结果
 

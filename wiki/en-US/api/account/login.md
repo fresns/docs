@@ -27,6 +27,7 @@
 **Request Description**
 
 - Either `password` or `verifyCode` should be provided
+- Send verify code parameters `useType=2`, `templateId=7`
 
 ## Return
 

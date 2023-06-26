@@ -25,6 +25,10 @@
 | nickname | String | YES | 昵称 |
 | deviceToken | String | NO | iOS 或 Android 设备 Token |
 
+**接口使用说明**
+
+- 发送验证码参数 `useType=1`, `templateId=2`
+
 ## 返回结果
 
 ```json

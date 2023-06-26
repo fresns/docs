@@ -27,6 +27,7 @@
 **接口使用说明**
 
 - `password` 和 `verifyCode` 二选一传参
+- 发送验证码参数 `useType=2`, `templateId=7`
 
 ## 返回结果
 

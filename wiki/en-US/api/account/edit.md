@@ -37,30 +37,30 @@
 - Modify `updateLastLoginTime`, `disconnectPlatformId`, `deviceToken` does not require a verify code
 - Set email (current account has no email)
     - `newEmail`
-    - `newVerifyCode` Verify code template ID is `4`
+    - `newVerifyCode` send verify code parameters `useType=3;templateId=4`
 - Modify email
     - `codeType = email`
-    - `verifyCode` Verify code template ID is `4`
+    - `verifyCode` Current account email, send verify code parameters `useType=4;templateId=4`
     - `newEmail`
-    - `newVerifyCode` Verify code template ID is `3`
+    - `newVerifyCode` send verify code parameters `useType=1;templateId=3`
 - Set phone number (current account has no phone number)
     - `newPhone`
     - `newCountryCode`
-    - `newVerifyCode` Verify code template ID is `4`
+    - `newVerifyCode` send verify code parameters `useType=3;templateId=4`
 - Modify phone number
     - `codeType = sms`
-    - `verifyCode` Verify code template ID is `4`
+    - `verifyCode` Current account phone number, send verify code parameters `useType=4;templateId=4`
     - `newPhone`
     - `newCountryCode`
-    - `newVerifyCode` Verify code template ID is `3`
+    - `newVerifyCode` send verify code parameters `useType=1;templateId=3`
 - Modify login password: either `verifyCode` or `currentPassword` must be provided, or both can be provided for full verify
     - `codeType`
-    - `verifyCode` Verify code template ID is `5`
+    - `verifyCode` Current account verify code, send verify code parameters `useType=4;templateId=5`
     - `currentPassword`
     - `newPassword`
 - Modify wallet password: either `verifyCode` or `currentWalletPassword` must be provided, or both can be provided for full verify
     - `codeType`
-    - `verifyCode` Verify code template ID is `6`
+    - `verifyCode` Current account verify code, send verify code parameters `useType=4;templateId=6`
     - `currentWalletPassword`
     - `newWalletPassword`
 
