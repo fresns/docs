@@ -68,3 +68,13 @@
 | 屏蔽话题行为 | block_hashtag_name | 不感兴趣 | string | 多语言 |
 | 屏蔽帖子行为 | block_post_name | 不喜欢 | string | 多语言 |
 | 屏蔽评论行为 | block_comment_name | 不喜欢 | string | 多语言 |
+
+## 关注对象命名
+
+| 栏目标题 | 键名 | 默认键值 | 键值类型 | 说明 |
+| --- | --- | --- | --- | --- |
+| 关注用户对象 | user_follower_name | 关注者 | string | 多语言 |
+| 关注小组对象 | group_follower_name | 成员 | string | 多语言 |
+| 关注话题对象 | hashtag_follower_name | 订阅者 | string | 多语言 |
+| 关注帖子对象 | post_follower_name | 收藏者 | string | 多语言 |
+| 关注评论对象 | comment_follower_name | 收藏者 | string | 多语言 |

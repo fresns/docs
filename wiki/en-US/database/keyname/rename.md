@@ -68,3 +68,13 @@
 | Block Hashtag Action | block_hashtag_name | Not Interested | string | Multilingual |
 | Block Post Action | block_post_name | Dislike | string | Multilingual |
 | Block Comment Action | block_comment_name | Dislike | string | Multilingual |
+
+## Follower Naming
+
+| Menu Title | Key Name | Default Key Value | Value Type | Description |
+| --- | --- | --- | --- | --- |
+| User Follower | user_follower_name | Followers | string | Multilingual |
+| Group Follower | group_follower_name | Members | string | Multilingual |
+| Hashtag Follower | hashtag_follower_name | Subscribers | string | Multilingual |
+| Post Follower | post_follower_name | Collectors | string | Multilingual |
+| Comment Follower | comment_follower_name | Collectors | string | Multilingual |
