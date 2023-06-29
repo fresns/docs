@@ -9,6 +9,7 @@
 ```json
 {
     "name": "Fresns",
+    "version": "2.17.0",
     "activate": true,
     "deactivateDescription": {
         "default": "",
