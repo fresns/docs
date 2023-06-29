@@ -3,6 +3,26 @@
 Fresns 主程序所有版本更新日志都将记录在这个文件中。
 
 
+## 2.17.0 (2023-06-29)
+
+### Added
+- API: 用户、小组、帖子、话题、评论，列表接口新增 `createdDays` 参数，支持自定义天数内
+- API: 帖子和评论列表接口 `orderType` 参数选项新增 `commentTime` 参数，支持按最后评论时间排序
+- Panel: 互动命名配置新增关注对象命名
+
+### Fixes
+- API: 小组和话题的数据结构参数中创建时间键名错误，修正为 `createdDatetime`
+- API: 用户、小组、帖子、话题、评论，列表接口修正错误单词
+    - 参数 `createDate` 修正为 `createdDate`
+    - `orderType` 参数中的 `createDate` 选项修正为 `createdTime`
+- API: 修改账号资料接口未验证密码强度配置
+- Panel: 禁用 `proc_open` 函数时仪表盘报错
+- Words: 修复创建草稿时，空白草稿判断失败问题
+
+### BREAKING CHANGES
+- API: 修改账号资料 `/api/v2/account/edit` 参数重构，采用自然语言命名参数
+
+
 ## 2.16.0 (2023-06-23)
 
 ### Added
