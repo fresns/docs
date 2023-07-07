@@ -14,6 +14,7 @@
 | plugin_fskey | varchar(64) | Plugin Fskey |  | NO | Related field [plugins->fskey](../plugins/plugins.md)<br>Created by which plugin  |
 | is_enabled | tinyint *UNSIGNED* | Is Valid | 1 | NO | 0.Invalid / 1.Valid |
 | more_json | json | Backup Field |  | YES |  |
+| refresh_token_expired_at | timestamp | Auth Refresh Token Expired Time |  | YES | connect_refresh_token |
 | created_at | timestamp | Create Time | CURRENT_TIMESTAMP | NO |  |
 | updated_at | timestamp | Update Time |  | YES |  |
 | deleted_at | timestamp | Delete Time |  | YES |  |
