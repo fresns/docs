@@ -42,6 +42,7 @@ Perform a user deletion task every 6 hours
     - `plugin_badges`
     - `users`
     - `user_stats`
+    - `user_extcredits_logs`
     - `user_roles`
     - `user_likes`
     - `user_follows`
