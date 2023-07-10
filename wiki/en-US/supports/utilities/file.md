@@ -25,6 +25,10 @@ $bodyInfo = [
     'shaType' => $shaType,
     'disk' => $disk, // local or remote
     'imageHandlePosition' => $imageHandlePosition, // Physical image files only, Support: path-start, path-end, name-start, name-end
+    'videoTime' => '',
+    'videoPosterPath' => '',
+    'audioTime' => '',
+    'transcodingState' => '',
     'moreJson' => $dtoWordBody->moreJson,
 ];
 
@@ -110,6 +114,10 @@ $bodyInfo = [
     'shaType' => $shaType,
     'disk' => $disk, // local or remote
     'imageHandlePosition' => $imageHandlePosition, // Physical image files only, Support: path-start, path-end, name-start, name-end
+    'videoTime' => '',
+    'videoPosterPath' => '',
+    'audioTime' => '',
+    'transcodingState' => '',
     'moreJson' => $dtoWordBody->moreJson,
 ];
 

@@ -25,6 +25,10 @@ $bodyInfo = [
     'shaType' => $shaType,
     'disk' => $disk, // local 或 remote
     'imageHandlePosition' => $imageHandlePosition, // 生成物理图片专用，支持 path-start, path-end, name-start, name-end
+    'videoTime' => '',
+    'videoPosterPath' => '',
+    'audioTime' => '',
+    'transcodingState' => '',
     'moreJson' => $dtoWordBody->moreJson,
 ];
 
@@ -110,6 +114,10 @@ $bodyInfo = [
     'shaType' => $shaType,
     'disk' => $disk, // local 或 remote
     'imageHandlePosition' => $imageHandlePosition, // 生成物理图片专用，支持 path-start, path-end, name-start, name-end
+    'videoTime' => '',
+    'videoPosterPath' => '',
+    'audioTime' => '',
+    'transcodingState' => '',
     'moreJson' => $dtoWordBody->moreJson,
 ];
 
