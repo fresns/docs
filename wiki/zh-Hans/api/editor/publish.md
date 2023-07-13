@@ -26,7 +26,9 @@
 {
     "code": 0,
     "message": "ok",
-    "data": null
+    "data": {
+        "fsid": "String / 正式内容的 pid 或 cid"
+    }
 }
 ```
 

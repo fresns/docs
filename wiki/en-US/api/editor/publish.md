@@ -26,6 +26,8 @@
 {
     "code": 0,
     "message": "ok",
-    "data": null
+    "data": {
+        "fsid": "String / Official content's pid or cid"
+    }
 }
 ```
