@@ -24,18 +24,18 @@
     - 注册 [/api/v2/account/register](account/register.md)
     - 登录 [/api/v2/account/login](account/login.md)
     - 注册或登录成功后，获取账号凭证
-        - **aid**: `data.detail.aid`
+        - **aid**: `data.sessionToken.aid`
         - **aidToken**: `data.sessionToken.token`
 2. 判断账号名下用户数 `data.detail.users`
     - `1` 个
     - `2` 个及以上 `呈现「选择用户」视图`
-3. 判断是否有密码 `data.detail.users.hasPassword`
+3. 判断是否有密码 `data.detail.users[x].hasPassword`
     - 无密码
     - 有密码 `呈现「密码输入框」视图`
 4. 登录用户
     - [/api/v2/user/auth](user/auth.md)
     - 用户登录成功后，获取用户凭证
-        - **uid**: `data.detail.uid`
+        - **uid**: `data.sessionToken.uid`
         - **uidToken**: `data.sessionToken.token`
 5. 结束
     - > 当账号名下只有 1 个用户，并且无密码，建议直接让用户无感知的登录成功。
