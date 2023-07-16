@@ -23,8 +23,8 @@ DateHelper::fresnsDateTimeToDatabaseTimezone($datetime, $timezone, $langTag);
 ```
 | Parameter Name | Type | Required | Description |
 | --- | --- | --- | --- |
-| datetime | String | **required** | `Y-m-d H:i:s` Datetime value |
-| timezone | String | **required** | This `timezone` is the [UTC timezone](../../database/dictionary/timezone.md) for the `datetime` parameter |
+| datetime | String | *optional* | `Y-m-d H:i:s` Datetime value |
+| timezone | String | *optional* | This `timezone` is the [UTC timezone](../../database/dictionary/timezone.md) for the `datetime` parameter |
 | langTag | String | *optional* | Outputs the time format in the specified language<br>`configs->item_key=language_menus` language tag's `dateFormat` parameter<br>If not provided, the default language format will be used |
 
 *Convert the `datetime` in the `timezone` to the date and time in the current database timezone*
@@ -36,8 +36,8 @@ DateHelper::fresnsDateTimeByTimezone($datetime, $timezone, $langTag);
 ```
 | Parameter Name | Type | Required | Description |
 | --- | --- | --- | --- |
-| datetime | String | **required** | `Y-m-d H:i:s` time value defaults to database time |
-| timezone | String | **required** | Converts the time value of the `datetime` parameter into the `timezone` [UTC timezone](../../database/dictionary/timezone.md) |
+| datetime | String | *optional* | `Y-m-d H:i:s` time value defaults to database time |
+| timezone | String | *optional* | Converts the time value of the `datetime` parameter into the `timezone` [UTC timezone](../../database/dictionary/timezone.md) |
 | langTag | String | *optional* | Outputs the time format in the specified language<br>`configs->item_key=language_menus` language tag's `dateFormat` parameter<br>If not provided, the default language format will be used |
 
 ::: details Logic Notes
@@ -55,8 +55,8 @@ DateHelper::fresnsTimeByTimezone($time, $timezone);
 ```
 | Parameter Name | Type | Required | Description |
 | --- | --- | --- | --- |
-| time | String | **required** | `H:i` time value, default to database time |
-| timezone | String | **required** | Converts the time value of the `time` parameter into the `timezone` [UTC timezone](../../database/dictionary/timezone.md) |
+| time | String | *optional* | `H:i` time value, default to database time |
+| timezone | String | *optional* | Converts the time value of the `time` parameter into the `timezone` [UTC timezone](../../database/dictionary/timezone.md) |
 
 ## Format Time Output by Timezone and Language Tag
 
@@ -65,8 +65,8 @@ DateHelper::fresnsFormatDateTime($datetime, $timezone, $langTag);
 ```
 | Parameter Name | Type | Required | Description |
 | --- | --- | --- | --- |
-| datetime | String | **required** | `Y-m-d H:i:s` time value defaults to database time |
-| timezone | String | **required** | Converts the time value of the `datetime` parameter into the `timezone` [UTC timezone](../../database/dictionary/timezone.md) |
+| datetime | String | *optional* | `Y-m-d H:i:s` time value defaults to database time |
+| timezone | String | *optional* | Converts the time value of the `datetime` parameter into the `timezone` [UTC timezone](../../database/dictionary/timezone.md) |
 | langTag | String | *optional* | Outputs the time format in the specified language<br>`configs->item_key=language_menus` language tag's `dateFormat` parameter<br>If not provided, the default language format will be used |
 
 ::: details Logic Notes
