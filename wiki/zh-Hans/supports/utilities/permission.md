@@ -159,7 +159,7 @@ PermissionUtility::checkContentEditPerm($createdDatetime, $editTimeConfig, $time
 | --- | --- | --- | --- |
 | createdDatetime | Carbon | YES | `posts->created_at` 或 `comments->created_at` |
 | editTimeConfig | Number | YES | `post_edit_time_limit` 或 `comment_edit_time_limit` |
-| timezone | String | NO | UTC 时区，可不传，不传则使用默认时区 |
+| timezone | String | NO | UTC 时区，可不传，不传则使用数据库时区 |
 | langTag | String | NO | 语言标签，可不传，不传则使用默认语言 |
 
 ## 判断扩展权限

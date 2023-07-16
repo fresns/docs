@@ -99,7 +99,6 @@ To reduce documentation effort and ensure consistency of public data, the same s
     "location": "String / Location",
     "conversationLimit": "Number / Conversation settings, 1. Allow all users 2. Only allow users I follow 3. Users I follow and verified users 4. No users allowed",
     "commentLimit": "Number / Comment settings, 1. Allow all users 2. Only allow users I follow 3. Users I follow and verified users 4. No users allowed",
-    "timezone": "String / Custom UTC timezone",
     "verifiedStatus": "Boolean / Verified status",
     "verifiedIcon": "String / Custom verified icon",
     "verifiedDesc": "String / Verification description",

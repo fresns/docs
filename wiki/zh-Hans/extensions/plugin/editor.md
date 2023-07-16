@@ -42,7 +42,7 @@ ConfigUtility::getPublishConfigByType($userId, $type, $langTag, $timezone);
 | userId | Number | YES | `users->id` |
 | type | String | YES | `post` 或 `comment` |
 | langTag | String | NO | 语言标签，可不传，不传则使用默认语言 |
-| timezone | String | NO | UTC 时区，可不传，不传则使用默认时区 |
+| timezone | String | NO | UTC 时区，可不传，不传则使用数据库时区 |
 
 
 ## 编辑器功能流程

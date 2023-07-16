@@ -238,8 +238,6 @@ Fresns is a software that supports cross-time zone service. To ensure the consis
 **Output time**
 
 - Fresns will automatically determine the [UTC](../database/dictionary/timezone.md) time zone of the database, and then output the time according to the client’s request.
-- When there is no request from the client, the “Default Time Zone” set in “Site Settings” will be output by default. For example, if the database time zone is UTC+8 and the default time zone set by the site is UTC-7, the database time will be converted to UTC-7 by default when the client does not file a request.
-- Requirement logic for the client time zone: when logging in, the user-defined time zone is preferred; If not logged in or not set by the user, the system time zone of the user’s device (computer or mobile phone) is obtained. If no system time zone is obtained, it will be based on the default time zone set by the site.
 
 
 ## URL Rewriting

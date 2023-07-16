@@ -28,7 +28,8 @@ After the operation is completed on the plug-in page, it will return the data in
         "postMessageKey": "fresnsEditorUpload", // The value of the postMessageKey variable in the path
         "windowClose": true, // Whether to close the window or modal
         "reloadData": false, // Whether to reload data
-        "redirectUrl": "" // Redirect URL
+        "redirectUrl": "", // Redirect URL
+        "dataHandler": "" // Whether data are handle: add, remove, reload
     },
     "data": {
         // For example, a map extension that returns information about the user's selected location

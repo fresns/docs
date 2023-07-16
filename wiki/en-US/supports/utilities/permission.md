@@ -159,7 +159,7 @@ PermissionUtility::checkContentEditPerm($createdDatetime, $editTimeConfig, $time
 | --- | --- | --- | --- |
 | createdDatetime | Carbon | **required** | `posts->created_at` or `comments->created_at` |
 | editTimeConfig | Number | **required** | `post_edit_time_limit` or `comment_edit_time_limit` |
-| timezone | String | *optional* | If empty, the default time zone is used. |
+| timezone | String | *optional* | If empty, the database time zone is used. |
 | langTag | String | *optional* | If empty, the default language is used. |
 
 ## Determine Extension Permissions

@@ -44,7 +44,6 @@ fresns_model_key_{$appId}
 
 ```php
 fresns_default_langTag
-fresns_default_timezone
 fresns_lang_tags
 fresns_config_{$itemKey}_{$langTag}
 fresns_config_keys_{$key}_{$langTag}

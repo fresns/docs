@@ -11,7 +11,6 @@
 | Site LOGO | site_logo |  | **file** | Outputs image URL when used |
 | Copyright Owner Name | site_copyright | Fresns | string |  |
 | Copyright Year | site_copyright_years | 2021-Present | string |  |
-| Default Timezone | default_timezone | +8 | string | UTC value, see [Timezone Options](../dictionary/timezone.md)<br>Client default timezone, used for time parameters when API timezone is not provided.<br>API timezone order: User Config -> System Timezone -> Default Timezone |
 | Operating Mode | site_mode | public | string | Public mode public<br>Private mode private |
 | Public Mode: Registration Status | site_public_status | true | boolean |  |
 | Public Mode: Registration Feature | site_public_service |  | **plugin** | Plugin application scenario parameter `register` |

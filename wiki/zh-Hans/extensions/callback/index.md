@@ -27,8 +27,8 @@
     "action": {
         "postMessageKey": "fresnsEditorUpload", // 路径中 postMessageKey 变量值
         "windowClose": true, // 是否关闭窗口或弹出层(modal)
-        "reloadData": false, // 是否重载数据
-        "redirectUrl": "" // 是否重定向新页面
+        "redirectUrl": "", // 是否重定向新页面
+        "dataHandler": "" // 是否处理数据: add, remove, reload
     },
     "data": {
         // 如果功能同 API 一样，则返回与 API 一致的数据格式

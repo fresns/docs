@@ -8,8 +8,8 @@
 | X-Fresns-Client-Platform-Id | Number | **required** | Platform ID, matching the "platform" of the key<br>Path: `Panel->AppCenter->Keys`<br>[Check the ID number corresponding to the platform](../database/dictionary/platforms.md) |
 | X-Fresns-Client-Version | String | **required** | Your client version, semantic version is recommended |
 | X-Fresns-Client-Device-Info | String | **required** | [Interaction Device Information](../database/systems/session-logs.md#device-information-json) `session_logs->device_info`<br>Compress Object information as character string parameter transfer |
+| X-Fresns-Client-Timezone | String | **required** | UTC time zone (for processing signature timestamp and content timestamp)<br>After the user has logged in, if the user has configured a custom time zone, the content time values are processed with the user's configured item |
 | X-Fresns-Client-Lang-Tag | String | *optional* | Language Tag (output default language if left empty)<br>Path: `Panel->Systems->Languages` |
-| X-Fresns-Client-Timezone | String | *optional* | UTC time zone (use default time zone if left empty)<br>Path: `Panel->Systems->General`<br>After the user logs in, if left blank, the server automatically processes the time format in the time zone configured by the user |
 | X-Fresns-Client-Content-Format | String | *optional* | Content format (list and detail of posts and comments), leave blank then output as is.<br>Pass the `html` reference to convert content to html format (`\n` for text content to `<br>`, Markdown content to `HTML`) |
 | X-Fresns-Aid | String |  | Account parameter (regarded as unlogged in account if left empty) |
 | X-Fresns-Aid-Token | String |  | Account identity credential (If `aid` exists, it cannot be empty) |

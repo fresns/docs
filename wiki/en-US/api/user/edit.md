@@ -29,7 +29,6 @@
 | location | String | *optional* | Location (leave empty to not modify) |
 | conversationLimit | Number | *optional* | Conversation settings (leave empty to not modify) |
 | commentLimit | Number | *optional* | Comment settings (leave empty to not modify) |
-| timezone | String | *optional* | Preferred timezone (leave empty to not modify) |
 | archives | Array | *optional* | Extended information (leave empty to not modify) |
 | deviceToken | String | *optional* | iOS or Android device Token (leave empty to not modify) |
 

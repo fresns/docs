@@ -21,7 +21,6 @@
 | verified_at | timestamp | 用户认证时间 |  | YES |  |
 | conversation_limit | tinyint *UNSIGNED* | 对话设置 | 1 | NO | 1.允许所有用户<br>2.仅允许我关注的用户<br>3.我关注的用户和已认证的用户（verified_status）<br>4.不允许所有用户 |
 | comment_limit | tinyint *UNSIGNED* | 评论设置 | 1 | NO | 1.允许所有用户<br>2.仅允许我关注的用户<br>3.我关注的用户和已认证的用户（verified_status）<br>4.不允许所有用户 |
-| timezone | varchar(16) | 偏好时区 |  | YES |  |
 | expired_at | timestamp | 失效时间 |  | YES | 私有模式专用字段，为空代表永久有效 |
 | last_activity_at | timestamp | 最后活跃时间 |  | YES |  |
 | last_post_at | timestamp | 最后发表帖子时间 |  | YES |  |
