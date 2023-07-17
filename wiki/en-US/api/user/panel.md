@@ -2,6 +2,7 @@
 
 - Endpoint Path: `/api/v2/user/panel`
 - Method: `GET`
+- Request: `Query`
 
 ## Headers Optional Parameter
 
@@ -9,8 +10,20 @@
 | --- | --- | --- |
 | X-Fresns-Aid | **required** | **required** |
 | X-Fresns-Aid-Token | **required** | **required** |
-| X-Fresns-Uid | **required** | **required** |
-| X-Fresns-Uid-Token | **required** | **required** |
+| X-Fresns-Uid | *optional* | *optional* |
+| X-Fresns-Uid-Token | *optional* | *optional* |
+
+## Query Params
+
+| Parameter Name | Type | Required | Description |
+| --- | --- | --- | --- |
+| uidOrUsername | String | *optional* | User `uid` or `username` |
+
+**Request Description**
+- Unlogged user can also request
+- The headers `X-Fresns-Uid` and Query `uidOrUsername` cannot be empty, one of them must be passed.
+- If `uidOrUsername` is passed, then the user panel information is requested, if it is empty, then the `X-Fresns-Uid` user panel information is requested.
+- Query user `uidOrUsername` must belong to a logged-in account, querying other users is not supported.
 
 ## Return
 
@@ -53,60 +66,6 @@
         "draftCount": {
             "posts": "Number / Post draft count",
             "comments": "Number / Comment draft count"
-        },
-        "publishConfig": {
-            // Post publishing permission configuration
-            "post": {
-                "perm": {
-                    "draft": "Boolean / Can create new drafts",
-                    "publish": "Boolean / Has permission to publish",
-                    "review": "Boolean / Publishing requires review",
-                    "emailRequired": "Boolean / Email requirement met",
-                    "phoneRequired": "Boolean / Phone requirement met",
-                    "realNameRequired": "Boolean / Real name requirement met",
-                    "tips": [
-                        "String / Request language without requirements 1",
-                        "String / Request language without requirements 2"
-                    ]
-                },
-                "limit": {
-                    "status": "Boolean / Are there special rules",
-                    "isInTime": "Boolean / Is within the execution time range",
-                    "type": "Number / 1. Effective within a specified time period 2. Recurring effective within a specified time period every day",
-                    "periodStart": "String / type=1 exclusive, start date and time",
-                    "periodEnd": "String / type=1 exclusive, end date and time",
-                    "cycleStart": "String / type=2 exclusive, start time",
-                    "cycleEnd": "String / type=2 exclusive, end time",
-                    "rule": "Number / 1. Can be published but needs review 2. Forbidden to publish",
-                    "tip": "String / Tips"
-                }
-            },
-            // Comment publishing permission configuration
-            "comment": {
-                "perm": {
-                    "draft": "Boolean / Can create new drafts",
-                    "publish": "Boolean / Has permission to publish",
-                    "review": "Boolean / Publishing requires review",
-                    "emailRequired": "Boolean / Email requirement met",
-                    "phoneRequired": "Boolean / Phone requirement met",
-                    "realNameRequired": "Boolean / Real name requirement met",
-                    "tips": [
-                        "String / Request language without requirements 1",
-                        "String / Request language without requirements 2"
-                    ]
-                },
-                "limit": {
-                    "status": "Boolean / Are there special rules",
-                    "isInTime": "Boolean / Is within the execution time range",
-                    "type": "Number / 1. Effective within a specified time period 2. Recurring effective within a specified time period every day",
-                    "periodStart": "String / type=1 exclusive, start date and time",
-                    "periodEnd": "String / type=1 exclusive, end date and time",
-                    "cycleStart": "String / type=2 exclusive, start time",
-                    "cycleEnd": "String / type=2 exclusive, end time",
-                    "rule": "Number / 1. Can be published but needs review 2. Forbidden to publish",
-                    "tip": "String / Tips"
-                }
-            },
         },
         "fileAccept": {
             "images": "String / Allowed image extensions",
