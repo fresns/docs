@@ -35,10 +35,10 @@
 | timezone | String | *optional* | Date time specified in [UTC timezone](../../database/dictionary/timezone.md) |
 | authUidOrUsername | String | *optional* | Interaction status (like, dislike, follow, block) for `gid` with this user request |
 
-## getGroupDetail
+## getHashtagDetail
 
 ```php
-\FresnsCmdWord::plugin('Fresns')->getGroupDetail($wordBody);
+\FresnsCmdWord::plugin('Fresns')->getHashtagDetail($wordBody);
 ```
 | Parameter Name | Type | Required | Description |
 | --- | --- | --- | --- |
@@ -47,10 +47,10 @@
 | timezone | String | *optional* | Date time specified in [UTC timezone](../../database/dictionary/timezone.md) |
 | authUidOrUsername | String | *optional* | Interaction status (like, dislike, follow, block) for `hid` with this user request |
 
-## getGroupDetail
+## getPostDetail
 
 ```php
-\FresnsCmdWord::plugin('Fresns')->getGroupDetail($wordBody);
+\FresnsCmdWord::plugin('Fresns')->getPostDetail($wordBody);
 ```
 | Parameter Name | Type | Required | Description |
 | --- | --- | --- | --- |
@@ -64,10 +64,10 @@
 | mapLng | Numeric | *optional* | If the post has location information, it will calculate the distance between them when this parameter is passed |
 | mapLat | Numeric | *optional* | If the post has location information, it will calculate the distance between them when this parameter is passed |
 
-## getGroupDetail
+## getCommentDetail
 
 ```php
-\FresnsCmdWord::plugin('Fresns')->getGroupDetail($wordBody);
+\FresnsCmdWord::plugin('Fresns')->getCommentDetail($wordBody);
 ```
 | Parameter Name | Type | Required | Description |
 | --- | --- | --- | --- |

@@ -38,7 +38,7 @@
 ## 获取话题详情
 
 ```php
-\FresnsCmdWord::plugin('Fresns')->getGroupDetail($wordBody);
+\FresnsCmdWord::plugin('Fresns')->getHashtagDetail($wordBody);
 ```
 | 参数名 | 类型 | 是否必传 | 说明 |
 | --- | --- | --- | --- |
@@ -50,7 +50,7 @@
 ## 获取帖子详情
 
 ```php
-\FresnsCmdWord::plugin('Fresns')->getGroupDetail($wordBody);
+\FresnsCmdWord::plugin('Fresns')->getPostDetail($wordBody);
 ```
 | 参数名 | 类型 | 是否必传 | 说明 |
 | --- | --- | --- | --- |
@@ -67,7 +67,7 @@
 ## 获取评论详情
 
 ```php
-\FresnsCmdWord::plugin('Fresns')->getGroupDetail($wordBody);
+\FresnsCmdWord::plugin('Fresns')->getCommentDetail($wordBody);
 ```
 | 参数名 | 类型 | 是否必传 | 说明 |
 | --- | --- | --- | --- |
