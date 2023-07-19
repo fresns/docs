@@ -92,6 +92,7 @@
                     // 触发消息的用户信息
                     // 通用数据结构->用户信息
                 },
+                "actionUserIsAnonymous": "Boolean / 是否匿名",
                 "actionType": "Number / 触发行为类型",
                 "actionObject": "Number / 触发目标",
                 "actionInfo": {

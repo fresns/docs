@@ -92,6 +92,7 @@
                     // User information of the user who triggered the message
                     // Common Data Structure -> User Info
                 },
+                "actionUserIsAnonymous": "Boolean / Whether anonymous",
                 "actionType": "Number / Trigger action type",
                 "actionObject": "Number / Trigger target",
                 "actionInfo": {
