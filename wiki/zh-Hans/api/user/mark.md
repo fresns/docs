@@ -19,7 +19,7 @@
 | --- | --- | --- | --- |
 | interactionType | String | YES | 标记行为 `like`,`dislike`,`follow`,`block` |
 | markType | String | YES | 标记类型 `user`,`group`,`hashtag`,`post`,`comment` |
-| fsid | String | YES | 目标 `FsID`<br>user 传参 uid 或 username<br>group 传参 gid<br>hashtag 传参 hid<br>post 传参 pid<br>comment 传参 cid |
+| fsid | Number / String | YES | 目标 `FsID`<br>user 传参 uid 或 username<br>group 传参 gid<br>hashtag 传参 hid<br>post 传参 pid<br>comment 传参 cid |
 
 **接口使用说明**
 

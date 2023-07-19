@@ -17,7 +17,7 @@
 
 | 参数名 | 类型 | 是否必传 | 说明 |
 | --- | --- | --- | --- |
-| uidOrUsername | String | YES | 用户 `uid` 或者 `username` |
+| uidOrUsername | Number / String | YES | 用户 `uid` 或者 `username` |
 | password | String | NO | 密码（以 Base64 传参） |
 | deviceToken | String | NO | iOS 或 Android 设备 Token |
 

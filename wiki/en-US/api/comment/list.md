@@ -20,7 +20,7 @@
 | mapId | Number | *optional* | [Map Service Provider](../../database/dictionary/maps.md) |
 | mapLng | String | *optional* | Map Longitude (For distance calculation) |
 | mapLat | String | *optional* | Map Latitude (For distance calculation) |
-| uidOrUsername | String | *optional* | Specify scope: User |
+| uidOrUsername | Number / String | *optional* | Specify scope: User |
 | pid | String | *optional* | Specify scope: Post |
 | cid | String | *optional* | Specify scope: Comment (retrieve descendant comments of this comment) |
 | hid | String | *optional* | Specify scope: Topic |

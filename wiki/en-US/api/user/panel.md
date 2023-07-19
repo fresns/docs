@@ -17,7 +17,7 @@
 
 | Parameter Name | Type | Required | Description |
 | --- | --- | --- | --- |
-| uidOrUsername | String | *optional* | User `uid` or `username` |
+| uidOrUsername | Number / String | *optional* | User `uid` or `username` |
 
 **Request Description**
 - Unlogged user can also request

@@ -51,7 +51,7 @@
 | actionUid | Number | *optional* | Trigger initiator |
 | actionType | Number | *optional* | Trigger action type 1.Like 2.Dislike 3.Follow 4.Block 5.Publish 6.Edit 7.Delete 8.Sticky 9.Digest 10.Manage |
 | actionObject | Number | *optional* | Trigger target 1.User / 2.Group / 3.Hashtag / 4.Post / 5.Comment 6.Post Log 7.Comment Log 8.Extend Content |
-| actionFsid | String | *optional* | Trigger target Fsid |
+| actionFsid | Number / String | *optional* | Trigger target Fsid |
 | contentFsid | String | *optional* | Content event pid or cid<br>The published content itself, the action that it triggers |
 
 ::: details `content` Description
@@ -81,7 +81,7 @@ If the `isMultilingual` parameter is for multiple languages, the `content` param
 | content | String | *optional* | Content |
 | time | String | *optional* | Time, format Y-m-d H:i:s |
 | linkType | Number | *optional* | Link type: 1.User / 2.Group / 3.Hashtag / 4.Post / 5.Comment |
-| linkFsid | String | *optional* | After passing the link type parameter, this parameter is required, the fsid of the type |
+| linkFsid | Number / String | *optional* | After passing the link type parameter, this parameter is required, the fsid of the type |
 | linkUrl | String | *optional* | Link URL |
 
 ::: details `channel` Description
@@ -104,5 +104,5 @@ If the `isMultilingual` parameter is for multiple languages, the `content` param
 | content | String | *optional* | Content |
 | time | String | *optional* | Time, format Y-m-d H:i:s |
 | linkType | Number | *optional* | Link type: 1.User / 2.Group / 3.Hashtag / 4.Post / 5.Comment |
-| linkFsid | String | *optional* | After passing the link type parameter, this parameter is required, the fsid of the type |
+| linkFsid | Number / String | *optional* | After passing the link type parameter, this parameter is required, the fsid of the type |
 | linkUrl | String | *optional* | Link URL |

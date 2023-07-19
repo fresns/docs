@@ -20,7 +20,7 @@
 | mapId | Number | NO | [地图服务商编号](../../database/dictionary/maps.md) |
 | mapLng | String | NO | 地图经度（用于计算距离） |
 | mapLat | String | NO | 地图纬度（用于计算距离） |
-| uidOrUsername | String | NO | 指定范围：用户 |
+| uidOrUsername | Number / String | NO | 指定范围：用户 |
 | hid | String | NO | 指定范围：话题 |
 | gid | String | NO | 指定范围：小组 |
 | includeSubgroups | Boolean | NO | 与 `gid` 配置使用，是否包含子级小组的内容<br>默认为 `false` |

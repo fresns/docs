@@ -20,7 +20,7 @@
 | mapId | Number | NO | [地图服务商编号](../../database/dictionary/maps.md) |
 | mapLng | String | NO | 地图经度（用于计算距离） |
 | mapLat | String | NO | 地图纬度（用于计算距离） |
-| uidOrUsername | String | NO | 指定范围：用户 |
+| uidOrUsername | Number / String | NO | 指定范围：用户 |
 | pid | String | NO | 指定范围：帖子 |
 | cid | String | NO | 指定范围：评论（获取该评论的子孙级评论） |
 | hid | String | NO | 指定范围：话题 |

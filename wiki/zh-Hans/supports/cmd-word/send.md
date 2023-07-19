@@ -51,7 +51,7 @@
 | actionUid | Number | NO | 触发者 |
 | actionType | Number | NO | 触发行为类型 1.点赞 2.点踩 3.关注 4.屏蔽 5.发表 6.编辑 7.删除 8.置顶 9.设精 10.管理 |
 | actionObject | Number | NO | 触发目标 1.用户 2.小组 3.话题 4.帖子 5.评论 6.帖子日志 7.评论日志 8.扩展内容 |
-| actionFsid | String | NO | 触发目标 FsID |
+| actionFsid | Number / String | NO | 触发目标 FsID |
 | contentFsid | String | NO | 内容事件 pid 或 cid<br>发表的内容本身，由该内容触发的目标 |
 
 ::: details content 内容参数说明
@@ -81,7 +81,7 @@
 | content | String | NO | 内容 |
 | time | String | NO | 时间，格式 Y-m-d H:i:s |
 | linkType | Number | NO | 链接类型：1.用户 2.小组 3.话题 4.帖子 5.评论 |
-| linkFsid | String | NO | 链接类型传参后，此参必传，类型的 fsid |
+| linkFsid | Number / String | NO | 链接类型传参后，此参必传，类型的 fsid |
 | linkUrl | String | NO | 链接地址 |
 
 ::: details channel 参数说明
@@ -104,5 +104,5 @@
 | content | String | NO | 内容 |
 | time | String | NO | 时间，格式 Y-m-d H:i:s |
 | linkType | Number | NO | 链接类型：1.用户 2.小组 3.话题 4.帖子 5.评论 |
-| linkFsid | String | NO | 链接类型传参后，此参必传，类型的 fsid |
+| linkFsid | Number / String | NO | 链接类型传参后，此参必传，类型的 fsid |
 | linkUrl | String | NO | 链接地址 |

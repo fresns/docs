@@ -83,6 +83,7 @@ switch (true) {
     case (userAgent.indexOf('miniprogram') > -1):
         // WeChat Mini Program
         wx.miniProgram.postMessage({ data: messageString });
+        wx.miniProgram.navigateBack();
         break;
 
     // Web

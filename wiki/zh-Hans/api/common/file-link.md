@@ -24,7 +24,7 @@
 | 参数名 | 类型 | 是否必传 | 说明 |
 | --- | --- | --- | --- |
 | type | String | YES | 三选一 `post`,`comment`,`extend`,`conversation` |
-| fsid | String | YES | type 参数对应的数据表简写 ID `pid`/`cid`/`eid`/`messageId` |
+| fsid | String / Number | YES | type 参数对应的数据表简写 ID `pid`/`cid`/`eid`/`messageId` |
 
 ## 返回结果
 

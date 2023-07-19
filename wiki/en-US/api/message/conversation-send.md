@@ -17,7 +17,7 @@
 
 | Parameter Name | Type | Required | Description |
 | --- | --- | --- | --- |
-| uidOrUsername | String | **required** | User `uid` or `username` |
+| uidOrUsername | Number / String | **required** | User `uid` or `username` |
 | message | String | *optional* | Message Content |
 | fid | String | *optional* | File FID |
 

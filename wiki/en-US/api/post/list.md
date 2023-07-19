@@ -20,7 +20,7 @@
 | mapId | Number | *optional* | [Map Service Provider](../../database/dictionary/maps.md) |
 | mapLng | String | *optional* | Map Longitude (For distance calculation) |
 | mapLat | String | *optional* | Map Latitude (For distance calculation) |
-| uidOrUsername | String | *optional* | Specify scope: User |
+| uidOrUsername | Number / String | *optional* | Specify scope: User |
 | hid | String | *optional* | Specify scope: Topic |
 | gid | String | *optional* | Specify scope: Group |
 | includeSubgroups | Boolean | *optional* | Used with `gid` configuration to include or exclude sublevel groups.<br>Default is `false` |

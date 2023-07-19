@@ -24,7 +24,7 @@
 | Parameter Name | Type | Required | Description |
 | --- | --- | --- | --- |
 | type | String | **required** | Choose one from `post`, `comment`, `extend`, `conversation` |
-| fsid | String | **required** | Abbreviated ID `pid`/`cid`/`eid`/`messageId` corresponding to the type parameter's data table |
+| fsid | String / Number | **required** | Abbreviated ID `pid`/`cid`/`eid`/`messageId` corresponding to the type parameter's data table |
 
 ## Return
 

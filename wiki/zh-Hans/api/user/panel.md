@@ -17,7 +17,7 @@
 
 | 参数名 | 类型 | 是否必传 | 说明 |
 | --- | --- | --- | --- |
-| uidOrUsername | String | NO | 用户 `uid` 或者 `username` |
+| uidOrUsername | Number / String | NO | 用户 `uid` 或者 `username` |
 
 **接口使用说明**
 - 未登录用户也可以请求

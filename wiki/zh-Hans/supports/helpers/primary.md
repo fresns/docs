@@ -12,7 +12,7 @@ PrimaryHelper::fresnsModelById($modelName, $id);
 | 参数名 | 类型 | 是否必传 | 说明 |
 | --- | --- | --- | --- |
 | modelName | String | YES | 模型名 |
-| fsid | String | YES | 字段值，比如 aid 值 |
+| fsid | Number / String | YES | 字段值，比如 aid 值 |
 
 **模型名**
 
@@ -55,7 +55,7 @@ PrimaryHelper::fresnsAccountIdByUidOrUsername($uidOrUsername);
 | 参数名 | 类型 | 是否必传 | 说明 |
 | --- | --- | --- | --- |
 | aid | String | NO | `accounts->aid` |
-| uidOrUsername | String | NO | `users->uid` 或者 `users->username` |
+| uidOrUsername | Number / String | NO | `users->uid` 或者 `users->username` |
 
 ## 获取用户主键 ID
 
@@ -64,7 +64,7 @@ PrimaryHelper::fresnsUserIdByUidOrUsername($uidOrUsername);
 ```
 | 参数名 | 类型 | 是否必传 | 说明 |
 | --- | --- | --- | --- |
-| uidOrUsername | String | NO | `users->uid` 或者 `users->username` |
+| uidOrUsername | Number / String | NO | `users->uid` 或者 `users->username` |
 
 ## 获取小组主键 ID
 

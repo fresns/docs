@@ -19,7 +19,7 @@
 | --- | --- | --- | --- |
 | interactionType | String | **required** | Mark action `like`,`dislike`,`follow`,`block` |
 | markType | String | **required** | Mark type `user`,`group`,`hashtag`,`post`,`comment` |
-| fsid | String | **required** | Target `FsID`<br>For user, pass `uid` or `username`<br>For group, pass `gid`<br>For hashtag, pass `hid`<br>For post, pass `pid`<br>For comment, pass `cid` |
+| fsid | Number / String | **required** | Target `FsID`<br>For user, pass `uid` or `username`<br>For group, pass `gid`<br>For hashtag, pass `hid`<br>For post, pass `pid`<br>For comment, pass `cid` |
 
 **Request Description**
 

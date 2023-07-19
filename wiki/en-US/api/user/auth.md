@@ -17,7 +17,7 @@
 
 | Parameter Name | Type | Required | Description |
 | --- | --- | --- | --- |
-| uidOrUsername | String | **required** | User `uid` or `username` |
+| uidOrUsername | Number / String | **required** | User `uid` or `username` |
 | password | String | *optional* | Password (Base64 encoded)  |
 | deviceToken | String | *optional* | iOS or Android device Token |
 

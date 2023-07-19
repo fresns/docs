@@ -17,7 +17,7 @@
 
 | Parameter Name | Type | Required | Description |
 | --- | --- | --- | --- |
-| uidOrUsername | String | **required** | User `uid` or `username` |
+| uidOrUsername | Number / String | **required** | User `uid` or `username` |
 | type | String | **required** | View type `likers`,`dislikers`,`followers`,`blockers` |
 
 ## Query Params

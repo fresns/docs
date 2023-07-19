@@ -12,7 +12,7 @@ PrimaryHelper::fresnsModelById($modelName, $id);
 | Parameter Name | Type | Required | Description |
 | --- | --- | --- | --- |
 | modelName | String | **required** | Model name |
-| fsid | String | **required** | Field value, e.g. aid value |
+| fsid | Number / String | **required** | Field value, e.g. aid value |
 
 **Model Name**
 
@@ -55,7 +55,7 @@ PrimaryHelper::fresnsAccountIdByUidOrUsername($uidOrUsername);
 | Parameter Name | Type | Required | Description |
 | --- | --- | --- | --- |
 | aid | String | *optional* | `accounts->aid` |
-| uidOrUsername | String | *optional* | `users->uid` or `users->username` |
+| uidOrUsername | Number / String | *optional* | `users->uid` or `users->username` |
 
 ## Get User Primary ID
 
@@ -64,7 +64,7 @@ PrimaryHelper::fresnsUserIdByUidOrUsername($uidOrUsername);
 ```
 | Parameter Name | Type | Required | Description |
 | --- | --- | --- | --- |
-| uidOrUsername | String | *optional* | `users->uid` or `users->username` |
+| uidOrUsername | Number / String | *optional* | `users->uid` or `users->username` |
 
 ## Get Group Primary ID
 
