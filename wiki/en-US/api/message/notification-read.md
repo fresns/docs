@@ -18,7 +18,7 @@
 | Parameter Name | Type | Required | Description |
 | --- | --- | --- | --- |
 | type | String | **required** | `all` or `choose` |
-| notificationType | Number | *optional* | `0` All（1~8)<br>`1` System `2` Recommend `3` Like `4` Dislike `5` Follow `6` Block `7` Mention `8` Comment (reply) |
+| notificationType | Number | *optional* | `0` All（1~9)<br>`1` System `2` Recommend `3` Like `4` Dislike `5` Follow `6` Block `7` Mention `8` Comment (reply) `9` Quote |
 | notificationIds | String | *optional* | `notificationId`, separated by English commas for multiple id |
 
 **Request Description**
