@@ -9,7 +9,7 @@
 | type | tinyint *UNSIGNED* | 类型 | 1 |  NO| 1.文本框 / 2.信息框 / 3.交互框 |
 | text_content | text | 文本框专用-内容 |  | YES | 仅 frame 为“文本框”扩展类型的时候有效，支持 Morkdown 格式 |
 | text_is_markdown | tinyint *UNSIGNED* | 文本框专用-内容是否为 MD 格式 | 0 | NO | 0.否 / 1.是 |
-| info_type | tinyint *UNSIGNED* | 信息框专用-类型 |  | YES | 1.正方形信息框架<br>2.大号正方形信息框架<br>3.纵图信息框架<br>4.横图信息框架 |
+| info_box_type | tinyint *UNSIGNED* | 信息框专用-类型 |  | YES | 1.正方形信息框架<br>2.大号正方形信息框架<br>3.纵图信息框架<br>4.横图信息框架 |
 | cover_file_id | bigint *UNSIGNED* | 封面图 ID |  | YES | 关联字段 [files->id](../systems/files.md) |
 | cover_file_url | varchar(255) | 封面图 URL |  | YES |  |
 | title | varchar(255) | 标题 |  | YES | **多语言**  |

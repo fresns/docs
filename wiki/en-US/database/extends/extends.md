@@ -9,7 +9,7 @@
 | type | tinyint *UNSIGNED* | Type | 1 |  NO| 1. Text box / 2. Info box / 3. Interactive box |
 | text_content | text | Text box specific - content |  | YES | Valid only when frame is "text box" extension type, supports Morkdown format |
 | text_is_markdown | tinyint *UNSIGNED* | Text box specific - content in MD format | 0 | NO | 0. No / 1. Yes |
-| info_type | tinyint *UNSIGNED* | Info box specific - type |  | YES | 1. Square info frame<br>2. Large square info frame<br>3. Vertical image info frame<br>4. Horizontal image info frame |
+| info_box_type | tinyint *UNSIGNED* | Info box specific - type |  | YES | 1. Square info frame<br>2. Large square info frame<br>3. Vertical image info frame<br>4. Horizontal image info frame |
 | cover_file_id | bigint *UNSIGNED* | Cover image ID |  | YES | Related field [files->id](../systems/files.md) |
 | cover_file_url | varchar(255) | Cover image URL |  | YES |  |
 | title | varchar(255) | Title |  | YES | **Multilingual**  |

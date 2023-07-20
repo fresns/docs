@@ -1085,11 +1085,20 @@ To reduce documentation effort and ensure consistency of public data, the same s
     "textBox": [
         {
             "eid": "String / Extension content ID",
-            "type": "Number / Type 1.Text box 2.Info box 3.Interaction box",
             "textContent": "String / Text box specific - content",
             "textIsMarkdown": "Boolean / Text box specific - Is content MD format",
-            "infoType": "Number / Info box specific - Type number",
-            "infoTypeString": "String / Info box specific - Type string",
+            "position": "Number / Display position 1.Top 2.Bottom",
+            "accessUrl": "String / Access URL",
+            "moreJson": {
+                // Custom information
+            },
+        }
+    ],
+    "infoBox": [
+        {
+            "eid": "String / Extension content ID",
+            "infoBoxType": "Number / Info box specific - Type number",
+            "infoBoxTypeString": "String / Info box specific - Type string",
             "cover": "String / Info box specific - Cover image",
             "title": "String / Info box specific - Title",
             "titleColor": "String / Info box specific - Title color",
@@ -1106,14 +1115,9 @@ To reduce documentation effort and ensure consistency of public data, the same s
             },
         }
     ],
-    "infoBox": [
-        {
-            // Same as above
-        }
-    ],
     "interactionBox": [
         {
-            // Same as above
+            //
         }
     ],
 }

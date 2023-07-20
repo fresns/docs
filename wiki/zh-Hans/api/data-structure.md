@@ -1077,11 +1077,20 @@
     "textBox": [
         {
             "eid": "String / 扩展内容 ID",
-            "type": "Number / 类型 1.文本框 2.信息框 3.交互框",
             "textContent": "String / 文本框专用-内容",
             "textIsMarkdown": "Boolean / 文本框专用-内容是否为 MD 格式",
-            "infoType": "Number / 信息框专用-类型编号",
-            "infoTypeString": "String / 信息框专用-类型字符串",
+            "position": "Number / 显示位置 1.上方 2.下方",
+            "accessUrl": "String / 访问地址",
+            "moreJson": {
+                // 自定义信息
+            },
+        }
+    ],
+    "infoBox": [
+        {
+            "eid": "String / 扩展内容 ID",
+            "infoBoxType": "Number / 信息框专用-类型编号",
+            "infoBoxTypeString": "String / 信息框专用-类型字符串",
             "cover": "String / 信息框专用-封面图",
             "title": "String / 信息框专用-标题",
             "titleColor": "String / 信息框专用-标题颜色",
@@ -1098,14 +1107,9 @@
             },
         }
     ],
-    "infoBox": [
-        {
-            // 同上
-        }
-    ],
     "interactionBox": [
         {
-            // 同上
+            //
         }
     ],
 }
