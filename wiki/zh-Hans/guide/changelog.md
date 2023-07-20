@@ -3,6 +3,23 @@
 Fresns 主程序所有版本更新日志都将记录在这个文件中。
 
 
+## 2.17.2 (2023-07-20)
+
+### Fixes
+- API: `uidOrUsername` 数字 uid 转换为字符串才能使用问题
+- API: `/api/v2/notification/list` 匿名用户触发的消息，未在消息页匿名化用户
+    - 消息新增参数 `actionUserIsAnonymous`
+- Words: 物理删除内容时报错
+- Words: dto fskey 格式配置错误
+- Words: 签名验证时间戳未兼容时区差异
+
+### BREAKING CHANGES
+- API: 标头签名时间戳统一使用 UTC+0 时间，影响所有客户端
+- API: 用户资料移除时区自定义配置，统一由客户端标头传参
+- API: `/api/v2/user/panel` 未登录用户也可以请求，可以查询账号名下所有用户的面板信息
+- API: `/api/v2/user/panel` 移除 `publishConfig` 参数，可以请求编辑接口获取 `/api/v2/editor/{type}/config`
+
+
 ## 2.17.1 (2023-07-12)
 
 ### Fixes

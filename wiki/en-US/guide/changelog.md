@@ -3,7 +3,24 @@
 All notable changes to this project will be documented in this file.
 
 
-## 2.17.1 (2023-07-12)
+## 2.17.2 (07/20/2023)
+
+### Fixes
+- API: `uidOrUsername` number uid converted to string to work
+- API: `/api/v2/notification/list` message triggered by anonymous user, not anonymizing user on message page
+    - Added new `actionUserIsAnonymous` parameter to message
+- Words: Error when physically deleting content
+- Words: dto fskey format misconfiguration
+- Words: Signature verification timestamp not compatible with time zone differences
+
+### BREAKING CHANGES
+- API: Header signature timestamps are standardized to UTC+0 time, affecting all clients.
+- API: Remove timezone customization from user profiles passed uniformly by client header.
+- API: `/api/v2/user/panel` can be requested by unlogged users, can query panel information of all users under account name.
+- API: `/api/v2/user/panel` removed `publishConfig` parameter, can request editor interface to get `/api/v2/editor/{type}/config`.
+
+
+## 2.17.1 (07/12/2023)
 
 ### Fixes
 - Data: Description fields for groups and topics do not support long content
@@ -14,7 +31,7 @@ All notable changes to this project will be documented in this file.
 - Panel: Application installation fails with incorrect prompts
 
 
-## 2.17.0 (2023-06-29)
+## 2.17.0 (06/29/2023)
 
 ### Added
 - API: User, group, post, topic, comment, list interface added `createdDays` parameter, support for custom days within
@@ -34,7 +51,7 @@ All notable changes to this project will be documented in this file.
 - API: Change account profile `/api/v2/account/edit` parameters refactoring, adopt natural language naming parameters
 
 
-## 2.16.0 (2023-06-23)
+## 2.16.0 (06/23/2023)
 
 ### Added
 - API: Added site status file `/status.json`
@@ -54,7 +71,7 @@ All notable changes to this project will be documented in this file.
     - Field `use_plugin_fskey` changed to `used_plugin_fskey`
 
 
-## 2.15.0 (2023-06-12)
+## 2.15.0 (06/12/2023)
 
 ### Fixes
 - Panel: Issue with output information view of installed plugin
@@ -74,7 +91,7 @@ All notable changes to this project will be documented in this file.
 - Panel: Support one-click installation of extensions, no need for users to copy anything
 
 
-## 2.14.0 (2023-05-30)
+## 2.14.0 (05/30/2023)
 
 ### Added
 - API: Added channels interface `/api/v2/global/channels`
