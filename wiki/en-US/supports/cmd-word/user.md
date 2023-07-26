@@ -133,6 +133,17 @@
 | --- | --- | --- | --- |
 | uid | Number | **required** | User UID `users->uid` |
 
+## physicalDeletionUser
+
+```php
+\FresnsCmdWord::plugin('Fresns')->physicalDeletionUser($wordBody);
+```
+| Parameter Name | Type | Required | Description |
+| --- | --- | --- | --- |
+| uid | Number | **required** | User UID `users->uid` |
+
+- Physical deletion involves a lot of content, so the deletion function is performed using a queue, so configure [the Fresns queues](../../guide/install.md#queues).
+
 ## setUserExtcredits
 
 ```php

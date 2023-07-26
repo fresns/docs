@@ -133,6 +133,17 @@
 | --- | --- | --- | --- |
 | uid | Number | YES | 用户 UID `users->uid` |
 
+## 物理删除用户
+
+```php
+\FresnsCmdWord::plugin('Fresns')->physicalDeletionUser($wordBody);
+```
+| 参数名 | 类型 | 是否必传 | 说明 |
+| --- | --- | --- | --- |
+| uid | Number | YES | 用户 UID `users->uid` |
+
+- 物理删除涉及内容很多，所以删除功能使用队列执行，请配置 [Fresns 队列](../../guide/install.md#队列)。
+
 ## 设置用户扩展分值
 
 ```php

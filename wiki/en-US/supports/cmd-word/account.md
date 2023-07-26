@@ -197,3 +197,14 @@
 | Parameter Name | Type | Required | Description |
 | --- | --- | --- | --- |
 | aid | Number | **required** | `accounts->aid` |
+
+## physicalDeletionAccount
+
+```php
+\FresnsCmdWord::plugin('Fresns')->physicalDeletionAccount($wordBody);
+```
+| Parameter Name | Type | Required | Description |
+| --- | --- | --- | --- |
+| aid | Number | **required** | `accounts->aid` |
+
+- Physical deletion involves a lot of content, so the deletion function is performed using a queue, so configure [the Fresns queues](../../guide/install.md#queues).

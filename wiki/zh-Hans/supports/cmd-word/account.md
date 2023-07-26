@@ -197,3 +197,14 @@
 | 参数名 | 类型 | 是否必传 | 说明 |
 | --- | --- | --- | --- |
 | aid | Number | YES | `accounts->aid` |
+
+## 物理删除账号
+
+```php
+\FresnsCmdWord::plugin('Fresns')->physicalDeletionAccount($wordBody);
+```
+| 参数名 | 类型 | 是否必传 | 说明 |
+| --- | --- | --- | --- |
+| aid | Number | YES | `accounts->aid` |
+
+- 物理删除涉及内容很多，所以删除功能使用队列执行，请配置 [Fresns 队列](../../guide/install.md#队列)。
