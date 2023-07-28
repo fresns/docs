@@ -53,6 +53,7 @@
             "unreadMessages": "Number / Unread conversation message count"
         },
         "unreadNotifications":{
+            "all": "Number / Total of all unread below",
             "systems": "Number / Unread system notifications",
             "recommends": "Number / Unread recommendations",
             "likes": "Number / Unread likes",

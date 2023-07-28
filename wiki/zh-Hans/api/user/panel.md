@@ -53,6 +53,7 @@
             "unreadMessages": "Number / 未读对话消息数量"
         },
         "unreadNotifications":{
+            "all": "Number / 以下所有的未读总数",
             "systems": "Number / 未读系统通知",
             "recommends": "Number / 未读推荐",
             "likes": "Number / 未读点赞",
