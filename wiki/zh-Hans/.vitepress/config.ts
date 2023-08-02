@@ -648,6 +648,7 @@ function sidebarSupports() {
                 { text: '文件功能', link: '/supports/cmd-word/file.md' },
                 { text: '内容功能', link: '/supports/cmd-word/content.md' },
                 { text: '详情功能', link: '/supports/cmd-word/detail.md' },
+                { text: '管理功能', link: '/supports/cmd-word/manage.md' },
                 { text: '定时任务', link: '/supports/cmd-word/crontab.md' },
             ]
         },
