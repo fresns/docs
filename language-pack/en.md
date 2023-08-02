@@ -262,6 +262,7 @@
     "editorHashtag": "Hashtag",
     "editorExtends": "Extends",
     "editorContent": "Content",
+    "editorContentMarkdown": "Content is Markdown format",
     "editorLocation": "Location",
     "editorAnonymous": "Anonymous",
     "editorCommentDisable": "Disable Comment",

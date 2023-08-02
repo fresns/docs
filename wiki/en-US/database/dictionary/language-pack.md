@@ -263,6 +263,7 @@
     {"name":"editorHashtag","canDelete":false},
     {"name":"editorExtends","canDelete":false},
     {"name":"editorContent","canDelete":false},
+    {"name":"editorContentMarkdown","canDelete":false},
     {"name":"editorLocation","canDelete":false},
     {"name":"editorAnonymous","canDelete":false},
     {"name":"editorCommentDisable","canDelete":false},

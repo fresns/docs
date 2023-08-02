@@ -262,6 +262,7 @@
     "editorHashtag": "話題",
     "editorExtends": "擴展",
     "editorContent": "正文",
+    "editorContentMarkdown": "正文為 Markdown 格式",
     "editorLocation": "添加位置",
     "editorAnonymous": "是否匿名",
     "editorCommentDisable": "禁止留言",
