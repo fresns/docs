@@ -3,6 +3,22 @@
 Fresns 主程序所有版本更新日志都将记录在这个文件中。
 
 
+## 2.18.0 (2023-08-09)
+
+### Added
+- API: 未读通知消息增加 `all` 键值对，服务端统计总数
+- Words: 增加「获取门户内容」命令字 `getPortalContent`
+- Words: 增加「更新门户内容」命令字 `updatePortalContent`
+- Words: 增加「检测扩展使用权限」命令字 `checkExtendPerm`
+
+### Fixes
+- API: 签名有效期 60 秒导致长请求超时
+- Panel: 表情管理，上传的图片无法显示
+- Helpers: 获取不到 IP 端口号时报错
+- Helpers: 用户面板缓存清理方式错误
+- Utilities: 阅读权限配置中预授权 permissions 参数不存在时报错
+
+
 ## 2.17.2 (2023-07-20)
 
 ### Fixes

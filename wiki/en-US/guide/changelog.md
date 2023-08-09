@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 
 
+## 2.18.0 (08/09/2023)
+
+### Added
+- API: Unread notification messages add `all` key-value pairs, server tally totals
+- Words: Add command word `getPortalContent`
+- Words: Add command word `updatePortalContent`
+- Words: Add command word `checkExtendPerm`
+
+### Fixes
+- API: Signature validity of 60 seconds causes long request timeout
+- Panel: Sticker management, uploaded images cannot be displayed
+- Helpers: Failed to get IP port number
+- Helpers: User Panel cache cleanup method error
+- Utilities: Error when permissions parameter does not exist in read permission configuration.
+
+
 ## 2.17.2 (07/20/2023)
 
 ### Fixes
