@@ -141,6 +141,7 @@
     "accountError": "Account Error",
     "accountInfo": "By registering, you agree to the terms and conditions of this site",
     "accountPolicies": "Privacy & Terms",
+    "accountPoliciesError": "Please confirm that you have read and agree to the Terms and Data Policy.",
     "accountPoliciesTerms": "Terms",
     "accountPoliciesPrivacy": "Data Policy",
     "accountPoliciesCookies": "Cookies Policy",

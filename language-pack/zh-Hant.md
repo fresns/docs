@@ -141,6 +141,7 @@
     "accountError": "賬號錯誤",
     "accountInfo": "註冊即表示同意本站條款",
     "accountPolicies": "私隱權和條款",
+    "accountPoliciesError": "請確認已經閱讀並同意服務條款和隱私政策",
     "accountPoliciesTerms": "服務條款",
     "accountPoliciesPrivacy": "隱私政策",
     "accountPoliciesCookies": "Cookies 使用條款",

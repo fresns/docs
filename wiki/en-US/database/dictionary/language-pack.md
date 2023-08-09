@@ -142,6 +142,7 @@
     {"name":"accountError","canDelete":false},
     {"name":"accountInfo","canDelete":false},
     {"name":"accountPolicies","canDelete":false},
+    {"name":"accountPoliciesError","canDelete":false},
     {"name":"accountPoliciesTerms","canDelete":false},
     {"name":"accountPoliciesPrivacy","canDelete":false},
     {"name":"accountPoliciesCookies","canDelete":false},

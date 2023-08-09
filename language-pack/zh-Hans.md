@@ -141,6 +141,7 @@
     "accountError": "账号错误",
     "accountInfo": "注册即表示同意本站条款",
     "accountPolicies": "隐私权和条款",
+    "accountPoliciesError": "请确认已经阅读并同意服务条款和隐私政策",
     "accountPoliciesTerms": "服务条款",
     "accountPoliciesPrivacy": "隐私政策",
     "accountPoliciesCookies": "Cookies 使用条款",
