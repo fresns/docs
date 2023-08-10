@@ -3,7 +3,7 @@
 ## 获取上传凭证
 
 ```php
-\FresnsCmdWord::plugin($fskey)->getUploadToken($wordBody);
+\FresnsCmdWord::plugin('Fresns')->getUploadToken($wordBody);
 ```
 | 参数名 | 类型 | 是否必传 | 说明 |
 | --- | --- | --- | --- |
@@ -31,7 +31,7 @@
 ## 上传文件
 
 ```php
-\FresnsCmdWord::plugin($fskey)->uploadFile($wordBody);
+\FresnsCmdWord::plugin('Fresns')->uploadFile($wordBody);
 ```
 | 参数名 | 类型 | 是否必传 | 说明 |
 | --- | --- | --- | --- |
@@ -70,7 +70,7 @@
 ## 上传文件信息
 
 ```php
-\FresnsCmdWord::plugin($fskey)->uploadFileInfo($wordBody);
+\FresnsCmdWord::plugin('Fresns')->uploadFileInfo($wordBody);
 ```
 | 参数名 | 类型 | 是否必传 | 说明 |
 | --- | --- | --- | --- |
@@ -141,7 +141,7 @@
 ## 获取防盗链文件信息[单个]
 
 ```php
-\FresnsCmdWord::plugin($fskey)->getAntiLinkFileInfo($wordBody);
+\FresnsCmdWord::plugin('Fresns')->getAntiLinkFileInfo($wordBody);
 ```
 | 参数名 | 类型 | 是否必传 | 说明 |
 | --- | --- | --- | --- |
@@ -168,7 +168,7 @@
 ## 获取防盗链文件信息[多个]
 
 ```php
-\FresnsCmdWord::plugin($fskey)->getAntiLinkFileInfoList($wordBody);
+\FresnsCmdWord::plugin('Fresns')->getAntiLinkFileInfoList($wordBody);
 ```
 | 参数名 | 类型 | 是否必传 | 说明 |
 | --- | --- | --- | --- |
@@ -200,7 +200,7 @@
 ## 获取源文件防盗链链接
 
 ```php
-\FresnsCmdWord::plugin($fskey)->getAntiLinkFileOriginalUrl($wordBody);
+\FresnsCmdWord::plugin('Fresns')->getAntiLinkFileOriginalUrl($wordBody);
 ```
 | 参数名 | 类型 | 是否必传 | 说明 |
 | --- | --- | --- | --- |
@@ -228,7 +228,7 @@
 ## 逻辑删除文件
 
 ```php
-\FresnsCmdWord::plugin($fskey)->logicalDeletionFiles($wordBody);
+\FresnsCmdWord::plugin('Fresns')->logicalDeletionFiles($wordBody);
 ```
 | 参数名 | 类型 | 是否必传 | 说明 |
 | --- | --- | --- | --- |
@@ -237,7 +237,7 @@
 ## 物理删除文件
 
 ```php
-\FresnsCmdWord::plugin($fskey)->physicalDeletionFiles($wordBody);
+\FresnsCmdWord::plugin('Fresns')->physicalDeletionFiles($wordBody);
 ```
 | 参数名 | 类型 | 是否必传 | 说明 |
 | --- | --- | --- | --- |

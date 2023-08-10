@@ -3,7 +3,7 @@
 ## getPortalContent
 
 ```php
-\FresnsCmdWord::plugin($fskey)->getPortalContent($wordBody);
+\FresnsCmdWord::plugin('Fresns')->getPortalContent($wordBody);
 ```
 | Parameter Name | Type | Required | Description |
 | --- | --- | --- | --- |
@@ -13,7 +13,7 @@
 ## updatePortalContent
 
 ```php
-\FresnsCmdWord::plugin($fskey)->updatePortalContent($wordBody);
+\FresnsCmdWord::plugin('Fresns')->updatePortalContent($wordBody);
 ```
 | Parameter Name | Type | Required | Description |
 | --- | --- | --- | --- |
@@ -24,7 +24,7 @@
 ## checkExtendPerm
 
 ```php
-\FresnsCmdWord::plugin($fskey)->checkExtendPerm($wordBody);
+\FresnsCmdWord::plugin('Fresns')->checkExtendPerm($wordBody);
 ```
 | Parameter Name | Type | Required | Description |
 | --- | --- | --- | --- |

@@ -3,7 +3,7 @@
 ## getUploadToken
 
 ```php
-\FresnsCmdWord::plugin($fskey)->getUploadToken($wordBody);
+\FresnsCmdWord::plugin('Fresns')->getUploadToken($wordBody);
 ```
 | Parameter Name | Type | Required | Description |
 | --- | --- | --- | --- |
@@ -31,7 +31,7 @@
 ## uploadFile
 
 ```php
-\FresnsCmdWord::plugin($fskey)->uploadFile($wordBody);
+\FresnsCmdWord::plugin('Fresns')->uploadFile($wordBody);
 ```
 | Parameter Name | Type | Required | Description |
 | --- | --- | --- | --- |
@@ -70,7 +70,7 @@
 ## uploadFileInfo
 
 ```php
-\FresnsCmdWord::plugin($fskey)->uploadFileInfo($wordBody);
+\FresnsCmdWord::plugin('Fresns')->uploadFileInfo($wordBody);
 ```
 | Parameter Name | Type | Required | Description |
 | --- | --- | --- | --- |
@@ -141,7 +141,7 @@
 ## getAntiLinkFileInfo (One)
 
 ```php
-\FresnsCmdWord::plugin($fskey)->getAntiLinkFileInfo($wordBody);
+\FresnsCmdWord::plugin('Fresns')->getAntiLinkFileInfo($wordBody);
 ```
 | Parameter Name | Type | Required | Description |
 | --- | --- | --- | --- |
@@ -168,7 +168,7 @@
 ## getAntiLinkFileInfoList (Multiple)
 
 ```php
-\FresnsCmdWord::plugin($fskey)->getAntiLinkFileInfoList($wordBody);
+\FresnsCmdWord::plugin('Fresns')->getAntiLinkFileInfoList($wordBody);
 ```
 | Parameter Name | Type | Required | Description |
 | --- | --- | --- | --- |
@@ -200,7 +200,7 @@
 ## getAntiLinkFileOriginalUrl
 
 ```php
-\FresnsCmdWord::plugin($fskey)->getAntiLinkFileOriginalUrl($wordBody);
+\FresnsCmdWord::plugin('Fresns')->getAntiLinkFileOriginalUrl($wordBody);
 ```
 | Parameter Name | Type | Required | Description |
 | --- | --- | --- | --- |
@@ -228,7 +228,7 @@
 ## logicalDeletionFiles
 
 ```php
-\FresnsCmdWord::plugin($fskey)->logicalDeletionFiles($wordBody);
+\FresnsCmdWord::plugin('Fresns')->logicalDeletionFiles($wordBody);
 ```
 | Parameter Name | Type | Required | Description |
 | --- | --- | --- | --- |
@@ -237,7 +237,7 @@
 ## physicalDeletionFiles
 
 ```php
-\FresnsCmdWord::plugin($fskey)->physicalDeletionFiles($wordBody);
+\FresnsCmdWord::plugin('Fresns')->physicalDeletionFiles($wordBody);
 ```
 | Parameter Name | Type | Required | Description |
 | --- | --- | --- | --- |

@@ -3,7 +3,7 @@
 ## 获取门户内容
 
 ```php
-\FresnsCmdWord::plugin($fskey)->getPortalContent($wordBody);
+\FresnsCmdWord::plugin('Fresns')->getPortalContent($wordBody);
 ```
 | 参数名 | 类型 | 是否必传 | 说明 |
 | --- | --- | --- | --- |
@@ -13,7 +13,7 @@
 ## 更新门户内容
 
 ```php
-\FresnsCmdWord::plugin($fskey)->updatePortalContent($wordBody);
+\FresnsCmdWord::plugin('Fresns')->updatePortalContent($wordBody);
 ```
 | 参数名 | 类型 | 是否必传 | 说明 |
 | --- | --- | --- | --- |
@@ -24,7 +24,7 @@
 ## 检测扩展使用权限
 
 ```php
-\FresnsCmdWord::plugin($fskey)->checkExtendPerm($wordBody);
+\FresnsCmdWord::plugin('Fresns')->checkExtendPerm($wordBody);
 ```
 | 参数名 | 类型 | 是否必传 | 说明 |
 | --- | --- | --- | --- |
