@@ -9,7 +9,7 @@ Before you install Fresns, it's important to check that your server meets the re
 | Web Server<br>`Choose any one` | Nginx<br>Apache<br>Caddy<br>IIS |
 | PHP Version | PHP 8.1 or greater |
 | PHP Extensions | `fileinfo` |
-| PHP Functions | `symlink`, `proc_open`, `shell_exec`, `passthru` |
+| PHP Functions | `symlink`, `putenv`, `proc_open`, `shell_exec`, `passthru` |
 | Package Manager | Composer 2.5 or greater |
 | Database and Version<br>`Choose any one` | MySQL `5.7 ~ 8.x`<br>MariaDB `10.3 ~ 11.x`<br>PostgreSQL `11.x ~ 15.x`<br>SQL Server `2016(13.x) ~ 2022(16.x)`<br>SQLite `3.9` or greater |
 
@@ -19,6 +19,7 @@ Before you install Fresns, it's important to check that your server meets the re
 | --- | --- | --- |
 | `symlink` | Generates symbolic links for storage `storage:link` | Can be disabled after Fresns is installed |
 | `exec` | Generates symbolic links for storage `storage:link`<br>Not in the server requirements breakdown, only for Windows systems | Can be disabled after Fresns is installed |
+| `putenv` | Composer is used to set environment variables, used for upgrading Fresns or installing plugins | Can be disabled after upgrading Fresns or installing plugins |
 | `proc_open` | Used by `symfony/process` for composer commands, used for upgrading Fresns or installing plugins | Can be disabled after upgrading Fresns or installing plugins |
 | `shell_exec` | Used by `symfony/console` for composer commands, used for upgrading Fresns or installing plugins | Can be disabled after upgrading Fresns or installing plugins |
 | `passthru` | Used for Fresns upgrades, executing upgrades with this function helps avoid timeouts | Can be disabled after Fresns is upgraded |
@@ -26,7 +27,7 @@ Before you install Fresns, it's important to check that your server meets the re
 ## Download
 
 ::: tip Option 1: Download the full package manually
-- [Download Fresns v2.18.0](https://app.fresns.org/latest.zip)
+- [Download Fresns v2.18.1](https://app.fresns.org/latest.zip)
 - *Website client already built in*
 :::
 

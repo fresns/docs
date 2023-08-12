@@ -28,7 +28,7 @@
 
 ### PHP 函数
 
-- PHP 函数启用了 `symlink`, `proc_open`, `shell_exec`, `passthru`
+- PHP 函数启用了 `symlink`, `putenv`, `proc_open`, `shell_exec`, `passthru`
 
 ![PHP 函数](https://cdn.fresns.cn/guide/baota-php-functions.png)
 
