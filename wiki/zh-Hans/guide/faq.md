@@ -1,6 +1,6 @@
 # 常见问题
 
-- 访问官方互动社区[安装使用](https://discuss.fresns.cn/group/use?allDigest=1)版区的精华内容，可以浏览到全部常见问题解决方案。
+- 访问官方互动社区[使用指南](https://discuss.fresns.cn/group/guide)版区，可以浏览到全部常见问题解决方案。
 - 以下内容为【常见问题】解决方案导览列表。
 
 ## 必看
@@ -14,6 +14,7 @@
 - [cURL error 60 错误](https://discuss.fresns.cn/post/snuCNKKh)
 - [file_put_contents 错误](https://discuss.fresns.cn/post/NSQoPOuK)
 - [登录后台 419 错误](https://discuss.fresns.cn/post/u4txRlqk)
+- [因夏令时导致的时区异常，可以忽略](https://discuss.fresns.cn/post/iECo6xYO)
 
 ## 访问问题
 
