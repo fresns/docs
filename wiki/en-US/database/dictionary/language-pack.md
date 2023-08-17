@@ -69,6 +69,7 @@
     {"name":"save","canDelete":false},
     {"name":"saveChanges","canDelete":false},
     {"name":"confirm","canDelete":false},
+    {"name":"know","canDelete":false},
     {"name":"send","canDelete":false},
     {"name":"rankNum","canDelete":false},
     {"name":"type","canDelete":false},

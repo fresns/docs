@@ -68,6 +68,7 @@
     "save": "保存",
     "saveChanges": "保存更改",
     "confirm": "确认",
+    "know": "知道了",
     "send": "发送",
     "rankNum": "排序",
     "type": "类型",

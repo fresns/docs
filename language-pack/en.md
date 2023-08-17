@@ -68,6 +68,7 @@
     "save": "Save",
     "saveChanges": "Save changes",
     "confirm": "Confirm",
+    "know": "Got it",
     "send": "Send",
     "rankNum": "Order",
     "type": "Type",
