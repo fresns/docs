@@ -27,7 +27,7 @@ Fresns 是一款基于 PHP 编程语言和关系型数据库开发的社交社�
 ## 下载安装包
 
 ::: tip 方式 1: 手动下载完整包（已内置网站客户端）
-- [下载 Fresns v2.18.1](https://app.fresns.org/latest.zip)
+- [下载 Fresns v2.18.2](https://app.fresns.org/latest.zip)
 :::
 
 ::: tip 方式 2: 基于 Composer 下载
@@ -183,6 +183,24 @@ SESSION_DRIVER=memcached    #会话驱动
 
 - `Redis`: 除了缓存，其他驱动系统支持 Redis 的也可以配置使用。
 - `Memcached`: 仅支持驱动缓存和会话。
+
+::: details 同一台服务器部署多个 Fresns 项目时配置
+- Redis
+
+```sh
+REDIS_DB=2                          #默认是 0，只可选 2-15
+REDIS_CACHE_DB=3                    #默认是 1，只可选 2-15
+REDIS_QUEUE=fresns2                 #默认是 fresns 填写一个不一样的即可
+REDIS_PREFIX=fresns2_database_      #默认是 fresns_database_ 填写一个不一样的即可
+CACHE_PREFIX=fresns2_cache_         #默认是 fresns_cache_ 填写一个不一样的即可
+```
+
+- Memcached
+
+```sh
+MEMCACHED_PERSISTENT_ID=fresns2     #默认是 fresns 填写一个不一样的即可
+```
+:::
 
 ### 队列
 

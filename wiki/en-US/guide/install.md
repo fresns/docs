@@ -27,7 +27,7 @@ Before you install Fresns, it's important to check that your server meets the re
 ## Download
 
 ::: tip Option 1: Download the full package manually
-- [Download Fresns v2.18.1](https://app.fresns.org/latest.zip)
+- [Download Fresns v2.18.2](https://app.fresns.org/latest.zip)
 - *Website client already built in*
 :::
 
@@ -184,6 +184,24 @@ SESSION_DRIVER=memcached
 
 - `Redis`: In addition to cache, other driver systems that support Redis can also be configured to use it.
 - `Memcached`: only supports drive cache and session.
+
+::: details Configuration when deploying multiple Fresns projects on the same server
+- Redis
+
+```sh
+REDIS_DB=2                          #Default is 0, only 2-15 can be selected
+REDIS_CACHE_DB=3                    #Default is 1, only 2-15 can be selected
+REDIS_QUEUE=fresns2                 #The default is fresns. Just enter another one.
+REDIS_PREFIX=fresns2_database_      #The default is fresns_database_. Just enter another one.
+CACHE_PREFIX=fresns2_cache_         #The default is fresns_cache_. Just enter another one.
+```
+
+- Memcached
+
+```sh
+MEMCACHED_PERSISTENT_ID=fresns2     #The default is fresns. Just enter another one.
+```
+:::
 
 ### Queues
 
