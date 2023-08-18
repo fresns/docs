@@ -1,6 +1,6 @@
 # 常见问题
 
-- 访问官方互动社区[使用指南](https://discuss.fresns.cn/group/guide)版区，可以浏览到全部常见问题解决方案。
+- 访问官方互动社区「[使用指南](https://discuss.fresns.cn/group/guide)」和「[安装使用（精华内容）](https://discuss.fresns.cn/group/use?allDigest=1)」版区，可以浏览到全部常见问题解决方案。
 - 以下内容为【常见问题】解决方案导览列表。
 
 ## 必看

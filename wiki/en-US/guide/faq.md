@@ -1,6 +1,6 @@
 # FAQ
 
-- Visit the official interactive community "[Guide](https://discuss.fresns.cn/group/guide)" group to browse through all the FAQ solutions.
+- Visit the official interactive community "[Guide](https://discuss.fresns.com/group/guide)" and "[Install and Use (Digest Content)](https://discuss.fresns.com/group/use?allDigest=1)" group to browse through all the FAQ solutions.
 - The following is a list of how-to guides.
 
 ## Must Read
