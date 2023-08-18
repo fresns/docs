@@ -199,6 +199,7 @@ CACHE_PREFIX=fresns2_cache_         #默认是 fresns_cache_ 填写一个不一�
 
 ```sh
 MEMCACHED_PERSISTENT_ID=fresns2     #默认是 fresns 填写一个不一样的即可
+CACHE_PREFIX=fresns2_cache_         #默认是 fresns_cache_ 填写一个不一样的即可
 ```
 :::
 

@@ -200,6 +200,7 @@ CACHE_PREFIX=fresns2_cache_         #The default is fresns_cache_. Just enter an
 
 ```sh
 MEMCACHED_PERSISTENT_ID=fresns2     #The default is fresns. Just enter another one.
+CACHE_PREFIX=fresns2_cache_         #The default is fresns_cache_. Just enter another one.
 ```
 :::
 
