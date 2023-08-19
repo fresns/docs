@@ -28,7 +28,7 @@
 
 ### PHP 函数
 
-- PHP 函数启用了 `symlink`, `putenv`, `proc_open`, `shell_exec`, `passthru`
+- PHP 函数启用了 `symlink`, `putenv`, `proc_open`, `shell_exec`, `pcntl_signal`, `pcntl_alarm`, `pcntl_async_signals`, `passthru`
 
 ![PHP 函数](https://cdn.fresns.cn/guide/baota-php-functions.png)
 
@@ -46,6 +46,7 @@
 
 - 网站目录为 Fresns 项目根目录
 - 运行目录指定为 `public`
+- 不要开启：防跨站攻击(open_basedir)
 
 ![public](https://cdn.fresns.cn/guide/baota-website-directory.png)
 
