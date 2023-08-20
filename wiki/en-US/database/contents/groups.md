@@ -7,7 +7,7 @@
 | parent_id | int *UNSIGNED* | Parent Group ID |  | YES | Used when type=2 |
 | user_id | bigint *UNSIGNED* | Creator ID |  | YES | Related field [users->id](../users/users.md) |
 | name | varchar(64) | Group Name |  | NO | **Multilingual**  |
-| description | varchar(255) | Group Description |  | YES | **Multilingual** |
+| description | text | Group Description |  | YES | **Multilingual** |
 | type | tinyint *UNSIGNED* | Is Group Category | 2 | NO | 1.Group Category (only as a parent group, not for publish)<br>2.Group<br>3.Subgroup, group within a group |
 | type_mode | tinyint *UNSIGNED* | Group Mode | 1 | NO | 1.Public (anyone can view group posts)<br>2.Non-public (only members can view group posts) |
 | type_mode_end_after | tinyint *UNSIGNED* | Non-public Group Configuration | 1 | NO | 1.No restrictions<br>2.All group content invisible<br>3.Content visible before expiration, new content not visible |

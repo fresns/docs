@@ -5,7 +5,7 @@
 | id | bigint *UNSIGNED* | Primary Key ID | | NO | Auto Increment |
 | name | varchar(64) | Topic Name |  | NO |  |
 | slug | varchar(255) | Topic Name URL Encode |  | NO | **Unique** |
-| description | varchar(255) | Description |  | YES | **Multilingual**  |
+| description | text | Description |  | YES | **Multilingual**  |
 | cover_file_id | bigint *UNSIGNED* | Cover Image ID |  | YES | Related field [files->id](../systems/files.md) |
 | cover_file_url | varchar(255) | Cover Image URL |  | YES |  |
 | like_count | int *UNSIGNED* | Like Count | 0 | NO | Number of users who liked the topic |

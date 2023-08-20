@@ -7,7 +7,7 @@
 | parent_id | int *UNSIGNED* | 父级小组 ID |  | YES | type=2 时使用 |
 | user_id | bigint *UNSIGNED* | 创建者 ID |  | YES | 关联字段 [users->id](../users/users.md) |
 | name | varchar(64) | 小组名称 |  | NO | **多语言**  |
-| description | varchar(255) | 小组描述 |  | YES | **多语言** |
+| description | text | 小组描述 |  | YES | **多语言** |
 | type | tinyint *UNSIGNED* | 是否小组分类 | 2 | NO | 1.小组分类（仅作为父级小组，不可发帖）<br>2.小组<br>3.子小组，小组内小组 |
 | type_mode | tinyint *UNSIGNED* | 小组模式 | 1 | NO | 1.公开（任何人都能查看小组内帖子）<br>2.非公开（只有成员才能查看小组内帖子） |
 | type_mode_end_after | tinyint *UNSIGNED* | 非公开小组配置 | 1 | NO | 1.不限制<br>2.小组内容全部不可见<br>3.到期前内容可见，新内容不可见 |
