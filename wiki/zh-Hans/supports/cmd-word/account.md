@@ -77,8 +77,6 @@
 | avatarUrl | String | NO | 头像 URL，关联字段 `users->avatar_file_url`<br>如果留空，则判断 `avatarFid` 是否也留空，如果有值，则凭 fid 获取 url 入库（忽略防盗链，仅拼接地址） |
 | gender | Number | NO | 性别，关联字段 `users->gender` |
 | birthday | String | NO | 生日，关联字段 `users->birthday`，格式为 Y-m-d H:i:s |
-| timezone | String | NO | 偏好时区，关联字段 `users->timezone` |
-| language | String | NO | 偏好语言，关联字段 `users->language` |
 :::
 
 ::: details 查看注册逻辑

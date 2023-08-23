@@ -77,8 +77,6 @@
 | avatarUrl | String | *optional* | Avatar file URL, related field `users->avatar_file_url`<br>If left empty, check if `avatarFid` is also empty, if not, store the url obtained by fid in the database (ignoring anti-leech, only stitching the address) |
 | gender | Number | *optional* | Gender, related field `users->gender` |
 | birthday | String | *optional* | Birthday, related field `users->birthday`, format is Y-m-d H:i:s |
-| timezone | String | *optional* | Preferred timezone, related field `users->timezone` |
-| language | String | *optional* | Preferred language, related field `users->language` |
 :::
 
 ::: details Check registration logic

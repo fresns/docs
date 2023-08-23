@@ -21,8 +21,6 @@
 | bannerUrl | String | NO | 条幅图 URL，关联字段 `users->banner_file_url` |
 | gender | Number | NO | 性别，关联字段 `users->gender` |
 | birthday | String | NO | 生日，关联字段 `users->birthday`，格式为 Y-m-d H:i:s |
-| timezone | String | NO | 偏好时区，关联字段 `users->timezone` |
-| language | String | NO | 偏好语言，关联字段 `users->language` |
 
 ::: details 结果示例
 ```json

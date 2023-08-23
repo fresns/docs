@@ -21,8 +21,6 @@
 | bannerUrl | String | *optional* | Banner file URL, related field `users->banner_file_url` |
 | gender | Number | *optional* | Gender, related field `users->gender` |
 | birthday | String | *optional* | Birthday, related field `users->birthday`, format is Y-m-d H:i:s |
-| timezone | String | *optional* | Preferred timezone, related field `users->timezone` |
-| language | String | *optional* | Preferred language, related field `users->language` |
 
 ::: details Return Example
 ```json
