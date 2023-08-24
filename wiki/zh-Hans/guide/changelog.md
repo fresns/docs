@@ -3,6 +3,17 @@
 Fresns 主程序所有版本更新日志都将记录在这个文件中。
 
 
+## 2.18.3 (2023-08-24)
+
+### Fixes
+- API: 回滚让文件上传支持自定义关联表
+- Install: 环境检测缺少队列需要的三个函数 `pcntl_signal`, `pcntl_alarm`, `pcntl_async_signals`
+- Panel: 引擎 Cookie 前缀新增至四个，兼容同一个域名下部署多个 Fresns 站点
+- Panel: 修复大尺寸显示器导致插件页视图宽度溢出
+- Helpers: 修复清空评论缓存 tag 错误问题
+- Utilities: 查询 php 命令环境变量为空时，使用默认值，兼容 `php: command not found`
+
+
 ## 2.18.2 (2023-08-18)
 
 ### Fixes
