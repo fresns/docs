@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file.
 
 
+## 2.18.4 (08/25/2023)
+
+### Fixes
+- API: Upload file interface fixes custom related table issue
+- Panel: Dashboard view not displayed when new version is available
+
+
 ## 2.18.3 (08/24/2023)
 
 ### Fixes
