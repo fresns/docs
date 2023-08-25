@@ -44,6 +44,7 @@
 **Request Description**
 
 - For file functionality, use the [File Upload Interface](../common/upload-file.md) to upload files, with the following parameter examples:
+    - `usageType` = Post `7` Comment `8`
     - `tableName` = Post `post_logs` Comment `comment_logs`
     - `tableColumn` = `id`
     - `tableId` = Current draft ID `{draftId}`

@@ -26,6 +26,7 @@
 - Choose either `message` or `fid` to pass as a parameter, but not both or neither.
 - To send a file, first use the [file upload API](../common/upload-file.md) to upload and obtain the `fid` as a parameter.
 - Upload parameter examples:
+    - `usageType` = `6`
     - `tableName` = `conversation_messages`
     - `tableColumn` = `message_file_id`
     - `tableKey` = recipient's `uid` or `username`

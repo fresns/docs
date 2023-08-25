@@ -38,6 +38,7 @@
 - Leaving both `bannerFid` and `bannerUrl` empty means not changing them, choose one when passing parameters.
 - If using `fid` for avatar and background banner images, first use the [file upload interface](../common/upload-file.md), then pass the obtained `fid` as a parameter.
 - Example of upload parameters:
+    - `usageType` = `5`
     - `tableName` = `users`
     - `tableColumn` = `avatar_file_id` or `banner_file_id`
     - `tableKey` = current user's uid or username

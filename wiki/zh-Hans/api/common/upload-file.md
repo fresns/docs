@@ -17,6 +17,7 @@
 
 | 参数名 | 类型 | 是否必传 | 说明 |
 | --- | --- | --- | --- |
+| usageType | Number | YES | [文件用途类型](../../database/number.md#文件用途类型) |
 | tableName | String | YES | 来源表名<br>`users` [/api/v2/user/edit](../user/edit.md)<br>`posts`<br>`comments`<br>`conversation_messages` [/api/v2/conversation/send-message](../message/conversation-send.md)<br>`post_logs` [/api/v2/editor/{type}/{draftId}](../editor/update.md)<br>`comment_logs` [/api/v2/editor/{type}/{draftId}](../editor/update.md) |
 | tableColumn | String | YES | 来源字段名，默认填参 `id` |
 | tableId | Number | NO | 来源表主键 ID |
