@@ -14,7 +14,6 @@ const members = [
         links: [
             { icon: 'github', link: 'https://github.com/jevantang' },
             { icon: 'twitter', link: 'https://twitter.com/JevanTang' },
-            { icon: 'youtube', link: 'https://www.youtube.com/@pmtangjie' },
         ]
     },
     {
