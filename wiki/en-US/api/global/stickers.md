@@ -18,21 +18,23 @@
 {
     "code": 0,
     "message": "ok",
-    "data": {
-        "parentCode": "String / Parent Sticker Group Code",
-        "name": "String / Group name",
-        "code": "String / Sticker Group Code",
-        "codeFormat": "String / Sticker Group Code format",
-        "image": "String / Sticker Group image URL",
-        "stickers": [
-            {
-                "parentCode": "String / Parent Sticker Group Code",
-                "name": "String / Name",
-                "code": "String / Sticker Code",
-                "codeFormat": "String / Sticker Code format",
-                "image": "String / Sticker image URL",
-            }
-        ]
-    }
+    "data": [
+        {
+            "parentCode": "String / Parent Sticker Group Code",
+            "name": "String / Group name",
+            "code": "String / Sticker Group Code",
+            "codeFormat": "String / Sticker Group Code format",
+            "image": "String / Sticker Group image URL",
+            "stickers": [
+                {
+                    "parentCode": "String / Parent Sticker Group Code",
+                    "name": "String / Name",
+                    "code": "String / Sticker Code",
+                    "codeFormat": "String / Sticker Code format",
+                    "image": "String / Sticker image URL",
+                }
+            ]
+        }
+    ]
 }
 ```
