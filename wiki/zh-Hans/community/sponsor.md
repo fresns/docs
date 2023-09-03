@@ -5,51 +5,48 @@ lastUpdated: false
 
 # 成为 Fresns 的赞助者
 
-Fresns 是采用 Apache-2.0 许可的开源项目，使用完全免费。
+Fresns 是采用 `Apache-2.0` 许可的开源项目，使用完全免费。
 
 维护这样一个庞大的生态系统和为项目开发新功能所需的巨大努力，只有在我们的赞助者慷慨的财务支持下才得以持续。
 
-## 如何赞助
-
-*待完善*
-
-## 以企业名义赞助 Fresns
-
-*待完善*
-
-## 以个人名义赞助 Fresns
-
-*待完善*
-
 ## 赞助等级
 
-- **全球特别赞助商**
-    - 全球独家赞助商
-    - 官网首页 logo 标识位上方的独家展示。
-    - 在 [fresns](https://github.com/fresns/fresns) 代码仓库的 README 上明显的 logo 标识位。
-    - 官网所有页面侧边栏中突出显示 logo 标识位。
-    - 所有级别的 logo 标识位中最显眼的位置。
+- **特别赞助商（12000 元/季）**
+    - 所有级别的 logo 标识位中最显眼的位置，突出显示 logo 标识位。
+    - `官网首页` 特别赞助商显眼的 logo 标识位。
+    - `官网所有页面侧边栏` 独占一行前排显眼的 logo 标识位。
+    - `官方社区电脑端侧边栏` 独占一行以条幅图方式展示。
+    - `官方社区手机端发现页` 独占一行以条幅图方式展示。
+    - `官方社区小程序发现页` 独占一行以条幅图方式展示。
 
-- **铂金赞助商**
-    - 官网首页明显的 logo 标识位。
-    - 官网所有页面侧边栏上的明显的 logo 标识位。
-    - 在 [fresns](https://github.com/fresns/fresns) 代码仓库的 README 上明显的 logo 标识位。
+- **铂金赞助商（9000 元/季）**
+    - `官网首页` 明显的 logo 标识位。
+    - `官网所有页面侧边栏` 明显的 logo 标识位。
+    - `官方社区电脑端侧边栏` 明显的 logo 标识位。
+    - `官方社区手机端发现页` 明显的 logo 标识位。
+    - `官方社区小程序发现页` 明显的 logo 标识位。
 
-- **金牌赞助商**
-    - 官网首页的 logo 标识位。
-    - 官网所有页面侧边栏上的 logo 标识位。
-    - 在 [fresns](https://github.com/fresns/fresns) 代码仓库的 README 上明显的 logo 标识位。
-
-- **银牌赞助商**
-    - 在 [fresns](https://github.com/fresns/fresns) 代码仓库的 `BACKERS.md` 文件上中号的 logo 标识位。
-
-- **铜牌赞助商**
-    - 在 [fresns](https://github.com/fresns/fresns) 代码仓库的 `BACKERS.md` 文件上小号的 logo 标识位。
+- **金牌赞助商（5000 元/季）**
+    - `官网首页` 展示在 logo 标识位列表中。
+    - `官网所有页面侧边栏` 展示在 logo 标识位列表中。
+    - `官方社区电脑端侧边栏` 展示在 logo 标识位列表中。
+    - `官方社区手机端发现页` 展示在 logo 标识位列表中。
+    - `官方社区小程序发现页` 展示在 logo 标识位列表中。
 
 - **慷慨支持者**
-    - 在 [fresns](https://github.com/fresns/fresns) 代码仓库的 `BACKERS.md` 文件上的名单上，且在其他个人支持者的位置之前。
+    - 无论你是个人还是企业，欢迎扫描下方「唐杰」收款码，直接打赏即可。感谢支持。
+    - 官方社区的用户身份，如果您希望拥有赞助者标识，需要积累金额达到 1000 元及上。
 
-- **个人支持者**
-    - 在 [fresns](https://github.com/fresns/fresns) 代码仓库的 `BACKERS.md` 文件上的名单上。
+## 收款码
 
-## 当前赞助商
+| 微信 | 支付宝 |
+| :---: | :---: |
+| ![微信](https://tangjie.me/media/WeixinPay.png) | ![支付宝](https://tangjie.me/media/AliPay.png) |
+
+> 如需发票，请联系我们
+
+## 联系方式
+
+- 邮箱：[tangjie@fresns.cn](mailto:tangjie@fresns.cn)
+- 微信：*扫下方二维码*
+<img src="https://cdn.fresns.cn/wiki/images/wechat-tangjie.jpg" width="200">

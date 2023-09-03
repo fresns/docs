@@ -8,9 +8,9 @@ const { data } = useSponsor()
 <template>
   <VPHomeSponsors
     v-if="data"
-    message="Fresns is free and open source, made possible by wonderful sponsors."
-    action-text="Become a sponsor"
-    action-link="https://github.com/sponsors/jevantang"
+    message="Fresns 是免费且开源的，由出色的赞助商使之成为可能。"
+    action-text="成为 Fresns 的赞助者"
+    action-link="/community/sponsor.html"
     :data="data"
   />
 </template>

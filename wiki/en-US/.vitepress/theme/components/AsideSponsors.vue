@@ -17,31 +17,30 @@ const sponsors = computed(() => {
 })
 </script>
 
-<template>
-  <!-- <a class="fresnsAside" href="/community/sponsor.html" target="_blank">
+<!-- <template>
+  <a class="fresnsAside" href="/community/sponsor.html" target="_blank">
     <img width="22" height="22" src="https://files.fresns.org/wiki/icons/fresns.png" />
     <span>
-      <p class="extra-info">助力生态可持续发展</p>
-      <p class="heading">赞助 Fresns 发展</p>
-      <p class="extra-info">成为赞助者</p>
+      <p class="extra-info">Support our developers</p>
+      <p class="heading">Become Sponsor</p>
+      <p class="extra-info">Go to Sponsor Now</p>
     </span>
-  </a> -->
+  </a>
   <VPDocAsideSponsors v-if="data" :data="sponsors" />
-</template>
+</template> -->
 
 <style>
 .fresnsAside {
-  margin-top: 2rem;
+  margin-top: 1rem;
   margin-bottom: 1rem;
   border-radius: 14px;
   padding-left: 2.5rem;
   padding-top: 0.4rem;
   padding-bottom: 0.4rem;
   position: relative;
-  font-size: 1rem;
+  font-size: 0.9rem;
   font-weight: 700;
   line-height: 1.1rem;
-  filter: grayscale(100%);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -51,30 +50,28 @@ const sponsors = computed(() => {
   transition: border-color 0.5s;
 }
 .fresnsAside:hover {
-  filter: grayscale(0%);
   border: 2px solid var(--vp-c-brand-light);
 }
 .fresnsAside img {
   position: absolute;
-  left: 1.5rem;
+  left: 1.3rem;
   transition: transform 0.5s;
+  transform: scale(1.25);
 }
 .fresnsAside:hover img {
   transform: scale(1.75);
 }
-
-.fresnsAside:hover .heading {
+.fresnsAside .heading {
   background-image: linear-gradient(
     120deg,
-    #bd34fe 16%,
-    var(--vp-c-brand-light),
-    var(--vp-c-brand-light)
+    #b047ff 16%,
+    var(--vp-c-brand-lighter),
+    var(--vp-c-brand-lighter)
   );
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-
 .fresnsAside .extra-info {
   color: var(--vp-c-text-1);
   opacity: 0;

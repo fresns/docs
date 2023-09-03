@@ -17,7 +17,7 @@ interface Sponsor {
 // shared data across instances so we load only once.
 const data = ref()
 
-const dataHost = 'https://app.fresns.org'
+const dataHost = 'https://cdn.fresns.cn'
 const dataUrl = `${dataHost}/sponsor/sponsors.json`
 
 export function useSponsor() {
@@ -40,12 +40,17 @@ export function useSponsor() {
 function mapSponsors(sponsors: Sponsors) {
   return [
     {
-      tier: 'Platinum Sponsor',
+      tier: '特别赞助商',
       size: 'big',
-      items: mapImgPath(sponsors['platinum'])
+      items: mapImgPath(sponsors['special'])
     },
     {
-      tier: 'Gold Sponsors',
+      tier: '铂金赞助商',
+      size: 'big',
+      items: mapImgPath(sponsors['platinum']),
+    },
+    {
+      tier: '金牌赞助商',
       size: 'medium',
       items: mapImgPath(sponsors['gold'])
     }

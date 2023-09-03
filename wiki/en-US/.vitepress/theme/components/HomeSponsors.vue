@@ -5,12 +5,12 @@ import { useSponsor } from '../composables/sponsor'
 const { data } = useSponsor()
 </script>
 
-<template>
+<!-- <template>
   <VPHomeSponsors
     v-if="data"
     message="Fresns is free and open source, made possible by wonderful sponsors."
     action-text="Become a sponsor"
-    action-link="https://github.com/sponsors/jevantang"
+    action-link="/community/sponsor.html"
     :data="data"
   />
-</template>
+</template> -->
