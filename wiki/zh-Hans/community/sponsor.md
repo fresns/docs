@@ -9,6 +9,18 @@ Fresns 是采用 `Apache-2.0` 许可的开源项目，使用完全免费。
 
 维护这样一个庞大的生态系统和为项目开发新功能所需的巨大努力，只有在我们的赞助者慷慨的财务支持下才得以持续。
 
+如果你正在使用 Fresns 构建一款运营的产品（网站、小程序、移动应用等），那么赞助 Fresns 的开发是很有商业意义的，它可以确保你的产品所依赖的项目保持在健康和积极的维护状态。
+
+## 如何赞助
+
+- Fresns 由「唐杰」发起和开发，下方收款码的账户名为唐杰，直接转账即可赞助。
+
+| 微信 | 支付宝 |
+| :---: | :---: |
+| ![微信](https://cdn.fresns.cn/images/qr-wechatpay.png) | ![支付宝](https://cdn.fresns.cn/images/qr-alipay.png) |
+
+> 企业赞助者如需对公转账或者需要发票，请通过下方[联系方式](#联系方式)联系我。
+
 ## 赞助等级
 
 - **特别赞助商（10000 元/季）**
@@ -37,16 +49,8 @@ Fresns 是采用 `Apache-2.0` 许可的开源项目，使用完全免费。
     - 无论你是个人还是企业，欢迎扫描下方「唐杰」收款码，直接打赏即可。感谢支持。
     - 官方社区的用户身份，如果您希望拥有赞助者标识，需要积累金额达到 1000 元及上。
 
-## 收款码
-
-| 微信 | 支付宝 |
-| :---: | :---: |
-| ![微信](https://cdn.fresns.cn/images/qr-wechatpay.png) | ![支付宝](https://cdn.fresns.cn/images/qr-alipay.png) |
-
-> 如需发票，请联系我
-
 ## 联系方式
 
 - 邮箱：[tangjie@fresns.cn](mailto:tangjie@fresns.cn)
-- 微信：*扫下方二维码*
-<img src="https://cdn.fresns.cn/wiki/images/wechat-tangjie.jpg" width="200">
+- 微信：*扫描下方二维码*
+    <img src="https://cdn.fresns.cn/wiki/images/wechat-tangjie.jpg" width="200">
