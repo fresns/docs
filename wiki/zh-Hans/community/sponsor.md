@@ -41,7 +41,7 @@ Fresns 是采用 `Apache-2.0` 许可的开源项目，使用完全免费。
 
 | 微信 | 支付宝 |
 | :---: | :---: |
-| ![微信](https://tangjie.me/media/WeixinPay.png) | ![支付宝](https://tangjie.me/media/AliPay.png) |
+| ![微信](https://cdn.fresns.cn/images/qr-wechatpay.png) | ![支付宝](https://cdn.fresns.cn/images/qr-alipay.png) |
 
 > 如需发票，请联系我
 
