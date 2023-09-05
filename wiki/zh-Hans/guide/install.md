@@ -13,8 +13,7 @@ Fresns 是一款基于 PHP 编程语言和关系型数据库开发的社交社�
 | 软件包管理器 | Composer 2.5 或更高版本 |
 | 数据库和版本<br>`任选一种` | MySQL `5.7 ~ 8.x`<br>MariaDB `10.3 ~ 11.x`<br>PostgreSQL `11.x ~ 15.x`<br>SQL Server `2016(13.x) ~ 2022(16.x)`<br>SQLite `3.9` 或更高版本 |
 
-**PHP 函数用途介绍**
-
+::: details PHP 函数用途介绍
 | 函数 | 用途 | 禁用操作 |
 | --- | --- | --- |
 | `symlink` | 生成存储目录软链接使用 `storage:link` | 安装完 Fresns 后可以禁用 |
@@ -26,6 +25,7 @@ Fresns 是一款基于 PHP 编程语言和关系型数据库开发的社交社�
 | `pcntl_alarm` | illuminate/queue 用于 Fresns 队列任务 | 不配置队列，或者使用默认 `sync` 队列，则不需要该函数 |
 | `pcntl_async_signals` | illuminate/queue 用于 Fresns 队列任务 | 不配置队列，或者使用默认 `sync` 队列，则不需要该函数 |
 | `passthru` | Fresns 升级使用，使用该函数执行升级可以避免执行超时 | 升级完 Fresns 后可以禁用，或者只在[终端中执行升级](upgrade.md#自动升级-命令行)，则不需要该函数 |
+:::
 
 ## 下载安装包
 

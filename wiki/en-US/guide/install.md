@@ -13,8 +13,7 @@ Before you install Fresns, it's important to check that your server meets the re
 | Package Manager | Composer 2.5 or greater |
 | Database and Version<br>`Choose any one` | MySQL `5.7 ~ 8.x`<br>MariaDB `10.3 ~ 11.x`<br>PostgreSQL `11.x ~ 15.x`<br>SQL Server `2016(13.x) ~ 2022(16.x)`<br>SQLite `3.9` or greater |
 
-**Introduction to PHP Functions**
-
+::: details Introduction to PHP Functions
 | Function | Purpose | Disabled Operations |
 | --- | --- | --- |
 | `symlink` | Generates symbolic links for storage `storage:link` | Can be disabled after Fresns is installed |
@@ -26,6 +25,7 @@ Before you install Fresns, it's important to check that your server meets the re
 | `pcntl_alarm` | `illuminate/queue` for Fresns queue tasks | This function is not required if you do not configure a queue or if you use the default `sync` queue. |
 | `pcntl_async_signals` | `illuminate/queue` for Fresns queue tasks | This function is not required if you do not configure a queue or if you use the default `sync` queue. |
 | `passthru` | Used for Fresns upgrades, executing upgrades with this function helps avoid timeouts | Can be disabled after Fresns is upgraded, or it is not needed if you are only [upgrade in terminal](upgrade.md#auto-upgrade-command). |
+:::
 
 ## Download
 
