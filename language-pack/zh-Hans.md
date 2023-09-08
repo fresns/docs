@@ -138,6 +138,7 @@
     "accountConnectCreateNew": "没有账号，创建新账号",
     "accountLogout": "退出登录",
     "accountDelete": "注销账号",
+    "accountDeleteDesc": "注销申请需要账号验证码，必须绑定了邮箱或手机号才可操作",
     "accountApplyDelete": "申请注销",
     "accountWaitDelete": "账号注销等待执行中",
     "accountRecallDelete": "撤销注销",

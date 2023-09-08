@@ -139,6 +139,7 @@
     {"name":"accountConnectCreateNew","canDelete":false},
     {"name":"accountLogout","canDelete":false},
     {"name":"accountDelete","canDelete":false},
+    {"name":"accountDeleteDesc","canDelete":false},
     {"name":"accountApplyDelete","canDelete":false},
     {"name":"accountWaitDelete","canDelete":false},
     {"name":"accountRecallDelete","canDelete":false},

@@ -138,6 +138,7 @@
     "accountConnectCreateNew": "沒有賬號，創建新賬號",
     "accountLogout": "登出賬號",
     "accountDelete": "註銷賬號",
+    "accountDeleteDesc": "註銷申請需要賬號驗證碼，必須綁定了郵箱或手機號才可操作",
     "accountApplyDelete": "申請註銷",
     "accountWaitDelete": "賬號註銷等待執行中",
     "accountRecallDelete": "撤銷註銷",
