@@ -79,6 +79,7 @@
     "type": "类型",
     "view": "查看",
     "share": "分享",
+    "quote": "引用",
     "more": "更多",
     "file": "文件",
     "image": "图片",

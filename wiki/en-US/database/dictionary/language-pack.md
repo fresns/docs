@@ -80,6 +80,7 @@
     {"name":"type","canDelete":false},
     {"name":"view","canDelete":false},
     {"name":"share","canDelete":false},
+    {"name":"quote","canDelete":false},
     {"name":"more","canDelete":false},
     {"name":"file","canDelete":false},
     {"name":"image","canDelete":false},

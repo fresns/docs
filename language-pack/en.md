@@ -79,6 +79,7 @@
     "type": "Type",
     "view": "View",
     "share": "Share",
+    "quote": "Quote",
     "more": "More",
     "file": "File",
     "image": "Image",
