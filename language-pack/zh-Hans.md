@@ -50,6 +50,7 @@
     "close": "关闭",
     "cancel": "取消",
     "dismiss": "驳回",
+    "leave": "退出",
     "activate": "启用",
     "deactivate": "停用",
     "status": "状态",

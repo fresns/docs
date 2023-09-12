@@ -51,6 +51,7 @@
     {"name":"close","canDelete":false},
     {"name":"cancel","canDelete":false},
     {"name":"dismiss","canDelete":false},
+    {"name":"leave","canDelete":false},
     {"name":"activate","canDelete":false},
     {"name":"deactivate","canDelete":false},
     {"name":"status","canDelete":false},

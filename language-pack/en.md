@@ -50,6 +50,7 @@
     "close": "Close",
     "cancel": "Cancel",
     "dismiss": "Dismiss",
+    "leave": "Leave",
     "activate": "Activate",
     "deactivate": "Deactivate",
     "status": "Status",
