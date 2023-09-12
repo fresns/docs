@@ -17,6 +17,7 @@
 
 | 参数名 | 类型 | 是否必传 | 说明 |
 | --- | --- | --- | --- |
+| type | Number | NO | 指定类型 |
 | createdDays | Number | NO | 创建天数：指定天数内创建的话题 |
 | createdDate | String | NO | 创建日期：`today`,`yesterday`,`week`,`lastWeek`,`month`,`lastMonth`,`year`,`lastYear` |
 | createdDateGt | String | NO | 创建时间大于 `Y-m-d` |

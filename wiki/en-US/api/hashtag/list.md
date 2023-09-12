@@ -17,6 +17,7 @@
 
 | Parameter Name | Type | Required | Description |
 | --- | --- | --- | --- |
+| type | Number | *optional* | Specify type |
 | createdDays | Number | *optional* | Days created: Hashtag created in the specified number of days |
 | createdDate | String | *optional* | Date created: `today`,`yesterday`,`week`,`lastWeek`,`month`,`lastMonth`,`year`,`lastYear` |
 | createdDateGt | String | *optional* | Created date greater than `Y-m-d` |
