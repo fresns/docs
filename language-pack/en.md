@@ -80,6 +80,7 @@
     "type": "Type",
     "view": "View",
     "share": "Share",
+    "shareMessage": "Share with a friend",
     "quote": "Quote",
     "more": "More",
     "file": "File",
