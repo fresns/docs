@@ -11,6 +11,7 @@
 | is_display_icon | tinyint *UNSIGNED* | 是否显示图标标识 | 0 | NO | 0.不显示 / 1.显示  |
 | nickname_color | char(7) | 用户昵称颜色值 |  |  YES  |  |
 | permissions | json | 权限参数 |  | NO |  |
+| more_json | json | 备用字段 |  | YES |  |
 | rank_state | tinyint *UNSIGNED* | 等级状态 | 1 | NO | 1.未设置 |
 | rating | smallint *UNSIGNED* | 排列顺序 | 9 | NO | 升序排序 |
 | is_enabled | tinyint *UNSIGNED* | 是否启用 | 1 | NO | 0.停用 / 1.启用 |
