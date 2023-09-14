@@ -25,7 +25,7 @@
     "executionDate": "Execution Date",
     "checkVersion": "Check for Updates",
     "isLatestVersion": "Currently the latest version",
-    "update": "Update",
+    "upgrade": "Upgrade Now",
     "success": "Success",
     "failed": "Failed",
     "warning": "Warning",

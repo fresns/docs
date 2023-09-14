@@ -25,7 +25,7 @@
     "executionDate": "执行日期",
     "checkVersion": "检查更新",
     "isLatestVersion": "当前已是最新版本",
-    "update": "升级",
+    "upgrade": "立即升级",
     "success": "成功",
     "failed": "失败",
     "warning": "警告",

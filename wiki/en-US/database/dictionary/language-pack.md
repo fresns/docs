@@ -26,7 +26,7 @@
     {"name":"executionDate","canDelete":false},
     {"name":"checkVersion","canDelete":false},
     {"name":"isLatestVersion","canDelete":false},
-    {"name":"update","canDelete":false},
+    {"name":"upgrade","canDelete":false},
     {"name":"success","canDelete":false},
     {"name":"failed","canDelete":false},
     {"name":"warning","canDelete":false},
