@@ -27,6 +27,8 @@
     "refreshing": "正在刷新",
     "refreshDone": "刷新完成",
     "executionDate": "執行日期",
+    "useApp": "使用 App",
+    "downloadApp": "下載",
     "checkVersion": "檢查更新",
     "isLatestVersion": "當前已是最新版本",
     "upgrade": "立即升級",

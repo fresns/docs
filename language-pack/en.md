@@ -27,6 +27,8 @@
     "refreshing": "Refreshing...",
     "refreshDone": "Refresh done",
     "executionDate": "Execution Date",
+    "useApp": "Use App",
+    "downloadApp": "Download",
     "checkVersion": "Check for Updates",
     "isLatestVersion": "Currently the latest version",
     "upgrade": "Upgrade Now",

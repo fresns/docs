@@ -28,6 +28,8 @@
     {"name":"refreshing","canDelete":false},
     {"name":"refreshDone","canDelete":false},
     {"name":"executionDate","canDelete":false},
+    {"name":"useApp","canDelete":false},
+    {"name":"downloadApp","canDelete":false},
     {"name":"checkVersion","canDelete":false},
     {"name":"isLatestVersion","canDelete":false},
     {"name":"upgrade","canDelete":false},
