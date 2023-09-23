@@ -41,7 +41,7 @@
 
 ### 发送消息
 
-- 将数据压缩成字符串发送。
+- 将数据转换为字符串发送。
 
 ```js
 const fresnsCallbackMessage = {
