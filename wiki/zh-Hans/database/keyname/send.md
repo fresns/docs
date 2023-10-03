@@ -10,6 +10,10 @@
 | 短信服务商 | send_sms_service |  | **plugin** | 插件应用场景参数 `sendSms` |
 | 短信默认国际区号 | send_sms_default_code | 86 | number | 不带 + 号 |
 | 短信国际区号列表 | send_sms_supported_codes | ["86"] | array | 不带 + 号 |
+| 桌面推送服务商 | desktop_notifications_service |  | **plugin** | 插件应用场景参数 `appNotifications` |
+| iOS 推送服务商 | ios_notifications_service |  | **plugin** | 插件应用场景参数 `appNotifications` |
+| Android 推送服务商 | android_notifications_service |  | **plugin** | 插件应用场景参数 `appNotifications` |
+| 微信推送服务商 | wechat_notifications_service |  | **plugin** | 插件应用场景参数 `appNotifications` |
 
 ## 验证码模板设置
 

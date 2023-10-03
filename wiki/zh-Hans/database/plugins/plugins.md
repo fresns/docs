@@ -14,7 +14,7 @@
 | plugin_host | varchar(128) | 插件自定义域名 |  | YES | http:// 或 https:// 开头，结尾不带 / |
 | access_path | varchar(128) | 插件访问路径 |  | YES | 相对路径，支持变量名<br>当字段 `plugin_host` 为空时，与“后端域名”拼接成完整 URL |
 | settings_path | varchar(128) | 设置页面 |  | YES | 相对路径，为空代表没有设置页面 |
-| theme_functions | tinyint *UNSIGNED* | 主题配置功能 | 0 | NO | 0.无 / 1.有 |
+| is_standalone | tinyint *UNSIGNED* | 是否为独立部署 | 0 | NO | 0.否 / 1.是 |
 | is_upgrade | tinyint *UNSIGNED* | 是否有升级包 | 0 | NO | 0.无 / 1.有 |
 | upgrade_version | varchar(16) | 新版本号 |  | YES |  |
 | upgrade_code | varchar(32) | 升级码 |  | YES | 官方应用市场升级凭证 |

@@ -10,6 +10,10 @@
 | SMS Service Provider | send_sms_service |  | **plugin** | Plugin application scenario parameter `sendSms` |
 | Default SMS Country Code | send_sms_default_code | 86 | number | No + sign |
 | Supported SMS Country Codes | send_sms_supported_codes | ["86"] | array | No + sign |
+| Desktop Notification Provider | desktop_notifications_service |  | **plugin** | Plugin application scenario parameter `appNotifications` |
+| iOS Notification Provider | ios_notifications_service |  | **plugin** | Plugin application scenario parameter `appNotifications` |
+| Android Notification Provider | android_notifications_service |  | **plugin** | Plugin application scenario parameter `appNotifications` |
+| WeChat Notification Provider | wechat_notifications_service |  | **plugin** | Plugin application scenario parameter `appNotifications` |
 
 ## Verify Code Templates
 

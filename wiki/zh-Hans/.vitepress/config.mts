@@ -617,7 +617,6 @@ function sidebarDatabase() {
                         { text: '路径配置', link: '/database/keyname/paths.md' },
                         { text: '语言包配置', link: '/database/keyname/language-pack.md' },
                         { text: '网站网页', link: '/database/keyname/website.md' },
-                        { text: '移动应用', link: '/database/keyname/app.md' },
                     ]
                 },
             ]

@@ -555,7 +555,6 @@ function sidebarDatabase() {
                         { text: 'Paths', link: '/database/keyname/paths.md' },
                         { text: 'Language Packs', link: '/database/keyname/language-pack.md' },
                         { text: 'Website', link: '/database/keyname/website.md' },
-                        { text: 'App', link: '/database/keyname/app.md' },
                     ]
                 },
             ]

@@ -14,7 +14,7 @@
 | plugin_host | varchar(128) | Plugin custom domain |  | YES | Starts with `http://` or` https://`, without trailing / |
 | access_path | varchar(128) | Plugin access path |  | YES | Relative path, supports variable names<br>When the `plugin_host` field is empty, it is concatenated with the "backend domain" to form a complete URL |
 | settings_path | varchar(128) | Settings page |  | YES | Relative path, empty means no settings page |
-| theme_functions | tinyint *UNSIGNED* | Theme configuration features | 0 | NO | 0.None / 1.Yes |
+| is_standalone | tinyint *UNSIGNED* | Standalone App | 0 | NO | 0.No / 1.Yes |
 | is_upgrade | tinyint *UNSIGNED* | Is there an upgrade package | 0 | NO | 0.No / 1.Yes |
 | upgrade_version | varchar(16) | New version number |  | YES |  |
 | upgrade_code | varchar(32) | Upgrade code |  | YES | Official application market upgrade certificate |

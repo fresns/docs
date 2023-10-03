@@ -17,6 +17,7 @@ FileHelper::fresnsFileStorageConfigByType($type);
     "service": "", // plugin fskey
     "secretId": "",
     "secretKey": "",
+    "secretApp": "",
     "bucketName": "",
     "bucketArea": "",
     "bucketDomain": "",
