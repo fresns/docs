@@ -23,3 +23,8 @@
 | 登录支持：邮箱 | site_email_login | true | boolean |  |
 | 登录支持：手机号 | site_phone_login | false | boolean |  |
 | 管理员邮箱 | site_email |  | string | 当运行出错时，展示给用户，便于用户反馈问题。 |
+| 中国大陆模式 | site_china_mode | false | boolean | `false` 或 `true`<br>是否显示备案信息，如果网站服务器不在中国大陆，则关闭 |
+| ICP 备案号 | china_icp_filing |  | string | [https://beian.miit.gov.cn](https://beian.miit.gov.cn/) |
+| ICP 许可证号 | china_icp_license |  | string | [https://dxzhgl.miit.gov.cn](https://dxzhgl.miit.gov.cn/) |
+| 公安备案号 | china_psb_filing |  | string | [http://www.beian.gov.cn](http://www.beian.gov.cn/) |
+| 广播电视节目制作经营许可证 | china_broadcasting_license |  | string | [https://zw.nrta.gov.cn](https://zw.nrta.gov.cn/) |

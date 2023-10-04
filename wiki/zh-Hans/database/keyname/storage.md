@@ -7,8 +7,9 @@
 | 栏目标题 | 键名 | 默认键值 | 键值类型 | 说明 |
 | --- | --- | --- | --- | --- |
 | 存储平台 | image_service |  | **plugins** | 插件应用场景参数 `storage` |
-| SecretID | image_secret_id |  | string | 举例又拍云：操作员账号 |
-| SecretKey | image_secret_key |  | string | 举例又拍云：操作员密码 |
+| Secret ID | image_secret_id |  | string | 举例又拍云：操作员账号 |
+| Secret Key | image_secret_key |  | string | 举例又拍云：操作员密码 |
+| Secret App | image_secret_app |  | string |  |
 | 存储配置名称 | image_bucket_name |  | string | 举例又拍云：服务名(空间名) |
 | 存储配置地域 | image_bucket_area |  | string | 举例又拍云：用不到，留空 |
 | 存储配置域名 | image_bucket_domain |  | string | http:// 或 https:// 开头，结尾不带 / |
@@ -28,8 +29,9 @@
 | 栏目标题 | 键名 | 默认键值 | 键值类型 | 说明 |
 | --- | --- | --- | --- | --- |
 | 存储平台 | video_service |  | **plugins** | 插件应用场景参数 `storage` |
-| SecretID | video_secret_id |  | string |  |
-| SecretKey | video_secret_key |  | string |  |
+| Secret ID | video_secret_id |  | string |  |
+| Secret Key | video_secret_key |  | string |  |
+| Secret App | video_secret_app |  | string |  |
 | 存储配置名称 | video_bucket_name |  | string |  |
 | 存储配置地域 | video_bucket_area |  | string |  |
 | 存储配置域名 | video_bucket_domain |  | string | http:// 或 https:// 开头，结尾不带 / |
@@ -49,8 +51,9 @@
 | 栏目标题 | 键名 | 默认键值 | 键值类型 | 说明 |
 | --- | --- | --- | --- | --- |
 | 存储平台 | audio_service |  | **plugins** | 插件应用场景参数 `storage` |
-| SecretID | audio_secret_id |  | string |  |
-| SecretKey | audio_secret_key |  | string |  |
+| Secret ID | audio_secret_id |  | string |  |
+| Secret Key | audio_secret_key |  | string |  |
+| Secret App | audio_secret_app |  | string |  |
 | 存储配置名称 | audio_bucket_name |  | string |  |
 | 存储配置地域 | audio_bucket_area |  | string |  |
 | 存储配置域名 | audio_bucket_domain |  | string | http:// 或 https:// 开头，结尾不带 / |
@@ -68,8 +71,9 @@
 | 栏目标题 | 键名 | 默认键值 | 键值类型 | 说明 |
 | --- | --- | --- | --- | --- |
 | 存储平台 | document_service |  | **plugins** | 插件应用场景参数 `storage` |
-| SecretID | document_secret_id |  | string |  |
-| SecretKey | document_secret_key |  | string |  |
+| Secret ID | document_secret_id |  | string |  |
+| Secret Key | document_secret_key |  | string |  |
+| Secret App | document_secret_app |  | string |  |
 | 存储配置名称 | document_bucket_name |  | string |  |
 | 存储配置地域 | document_bucket_area |  | string |  |
 | 存储配置域名 | document_bucket_domain |  | string | http:// 或 https:// 开头，结尾不带 / |

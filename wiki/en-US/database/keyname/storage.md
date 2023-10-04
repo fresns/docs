@@ -7,8 +7,9 @@
 | Menu Title | Key Name | Default Key Value | Value Type | Description |
 | --- | --- | --- | --- | --- |
 | Storage Platform | image_service |  | **plugins** | Plugin application scenario parameter `storage` |
-| SecretID | image_secret_id |  | string | Example: Upyun Operator Account |
-| SecretKey | image_secret_key |  | string | Example: Upyun Operator Password |
+| Secret ID | image_secret_id |  | string | Example: Upyun Operator Account |
+| Secret Key | image_secret_key |  | string | Example: Upyun Operator Password |
+| Secret App | image_secret_app |  | string |  |
 | Storage Configuration Name | image_bucket_name |  | string | Example: Upyun Service Name (Space Name) |
 | Storage Configuration Region | image_bucket_area |  | string | Example: Upyun, not needed, leave empty |
 | Storage Configuration Domain | image_bucket_domain |  | string | Starts with http:// or https://, without trailing / |
@@ -28,8 +29,9 @@
 | Menu Title | Key Name | Default Key Value | Value Type | Description |
 | --- | --- | --- | --- | --- |
 | Storage Platform | video_service |  | **plugins** | Plugin application scenario parameter `storage` |
-| SecretID | video_secret_id |  | string |  |
-| SecretKey | video_secret_key |  | string |  |
+| Secret ID | video_secret_id |  | string |  |
+| Secret Key | video_secret_key |  | string |  |
+| Secret App | video_secret_app |  | string |  |
 | Storage Configuration Name | video_bucket_name |  | string |  |
 | Storage Configuration Region | video_bucket_area |  | string |  |
 | Storage Configuration Domain | video_bucket_domain |  | string | Starts with http:// or https://, without trailing / |
@@ -49,8 +51,9 @@
 | Menu Title | Key Name | Default Key Value | Value Type | Description |
 | --- | --- | --- | --- | --- |
 | Storage Platform | audio_service |  | **plugins** | Plugin application scenario parameter `storage` |
-| SecretID | audio_secret_id |  | string |  |
-| SecretKey | audio_secret_key |  | string |  |
+| Secret ID | audio_secret_id |  | string |  |
+| Secret Key | audio_secret_key |  | string |  |
+| Secret App | audio_secret_app |  | string |  |
 | Storage Configuration Name | audio_bucket_name |  | string |  |
 | Storage Configuration Region | audio_bucket_area |  | string |  |
 | Storage Configuration Domain | audio_bucket_domain |  | string | Starts with http:// or https://, without trailing / |
@@ -68,8 +71,9 @@
 | Menu Title | Key Name | Default Key Value | Value Type | Description |
 | --- | --- | --- | --- | --- |
 | Storage Platform | document_service |  | **plugins** | Plugin application scenario parameter `storage` |
-| SecretID | document_secret_id |  | string |  |
-| SecretKey | document_secret_key |  | string |  |
+| Secret ID | document_secret_id |  | string |  |
+| Secret Key | document_secret_key |  | string |  |
+| Secret App | document_secret_app |  | string |  |
 | Storage Configuration Name | document_bucket_name |  | string |  |
 | Storage Configuration Region | document_bucket_area |  | string |  |
 | Storage Configuration Domain | document_bucket_domain |  | string | Starts with http:// or https://, without trailing / |
