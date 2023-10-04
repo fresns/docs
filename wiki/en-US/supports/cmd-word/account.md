@@ -157,6 +157,7 @@
 | version | String | **required** | Semantic version number |
 | appId | String | **required** | App ID |
 | aid | String | **required** | Account parameter `session_tokens->account_id`<br>Stored as `accounts->id` after converting from `aid` |
+| deviceToken | String | *optional* | Interaction device Token<br>For example, iOS Device Token or Android Device Token<br>Can be used for push notifications |
 | expiredTime | Number | *optional* | Expiration time, in hours (empty means valid forever) |
 
 ::: details Return Example

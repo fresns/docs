@@ -88,6 +88,7 @@
 | aid | String | **required** | Account parameter `session_tokens->account_id`<br>Stored as `accounts->id` when converted from `aid` |
 | aidToken | String | **required** | Account identity credential (credential table `session_tokens->token` field) |
 | uid | Number | **required** | User parameter `session_tokens->user_id`<br>Stored as `users->id` when converted from `uid` |
+| deviceToken | String | *optional* | Interaction device Token<br>For example, iOS Device Token or Android Device Token<br>Can be used for push notifications |
 | expiredTime | Number | *optional* | Expiration time, unit: hours (empty means valid forever) |
 
 ::: details Return Example

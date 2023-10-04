@@ -157,6 +157,7 @@
 | version | String | YES | 语义化版本号 |
 | appId | String | YES | App ID |
 | aid | String | YES | 账号参数 `session_tokens->account_id`<br>存储时由 `aid` 转换成 `accounts->id` |
+| deviceToken | String | NO | 交互设备 Token<br>例如 iOS Device Token 或 Android Device Token<br>可应用于推送消息 |
 | expiredTime | Number | NO | 过期时间，单位：小时（为空代表永久有效） |
 
 ::: details 结果示例

@@ -88,6 +88,7 @@
 | aid | String | YES | 账号参数 `session_tokens->account_id`<br>存储时由 `aid` 转换成 `accounts->id` |
 | aidToken | String | YES | 账号身份凭证（凭证表 `session_tokens->token` 字段） |
 | uid | Number | YES | 用户参数 `session_tokens->user_id`<br>存储时由 `uid` 转换成 `users->id` |
+| deviceToken | String | NO | 交互设备 Token<br>例如 iOS Device Token 或 Android Device Token<br>可应用于推送消息 |
 | expiredTime | Number | NO | 过期时间，单位：小时（为空代表永久有效） |
 
 ::: details 结果示例

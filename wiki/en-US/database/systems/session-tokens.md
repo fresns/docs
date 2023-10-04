@@ -12,6 +12,7 @@
 | user_token | char(32) | User token |  | YES |  |
 | scope | varchar(128) | Scope |  | YES |  |
 | payload | text | Payload |  | YES |  |
+| device_token | varchar(128) | Device Token |  | YES | For example, iOS Device Token or Android Device Token<br>Can be used for push notifications |
 | expired_at | timestamp | Expiration Time |  | YES | Empty means valid indefinitely |
 | created_at | timestamp | Create Time | CURRENT_TIMESTAMP | NO |  |
 | updated_at | timestamp | Update Time |  | YES |  |
