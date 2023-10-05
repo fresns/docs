@@ -10,15 +10,7 @@ If your client is a standalone deployment such as Vue, React or other technical 
 
 ### Run in Fresns
 
-If your client is integrated to run in Fresns, you will need to develop the [web engine](../plugin/engine.md) as a plugin, or develop a theme template based on an existing engine that meets their view criteria.
-
-For example, [FresnsEngine](https://marketplace.fresns.com/open-source/detail/FresnsEngine) is used as the web client runtime support and the following development standards are in place.
-
-- The FresnsEngine client-side technology solution is the **Laravel Blade** template engine, which develops the views (themes) of the FresnsEngine engine with a client-side mindset.
-- [Introduction](../theme/)
-- [Structure](../theme/structure.md)
-- [Template Tags](../theme/tags.md)
-- [Theme Functions](../theme/functions.md)
+If your client is integrated to run in Fresns, you will need to develop the client as a plugin, please see the [plugin dev](../plugin/) and [API documentation](../../api/) for details.
 
 ## App Client
 

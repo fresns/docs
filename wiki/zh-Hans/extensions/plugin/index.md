@@ -6,27 +6,25 @@
 
 ```php
 fresns/             //主程序根目录
-└── extensions/         //扩展目录（插件和主题）
-    └── plugins/            //插件目录
-        └── DemoPlugin/         //示例插件
-            ├── app/
-            ├── config/
-            ├── database/
-            ├── resources/
-            │   ├── assets/
-            │   │   ├── fresns.png  //插件封面图（正方形），必须存在且位置固定
-            │   │   ├── js/
-            │   │   │   └── app.js
-            │   │   └── sass/
-            │   │       └── app.scss
-            │   ├── lang/
-            │   └── views/
-            ├── routes/
-            ├── tests/
-            ├── plugin.json
-            └── composer.json
+└── plugins/            //插件目录
+    └── DemoPlugin/         //示例插件
+        ├── app/
+        ├── config/
+        ├── database/
+        ├── resources/
+        │   ├── assets/
+        │   │   ├── fresns.png  //插件封面图（正方形），必须存在且位置固定
+        │   │   ├── js/
+        │   │   │   └── app.js
+        │   │   └── sass/
+        │   │       └── app.scss
+        │   ├── lang/
+        │   └── views/
+        ├── routes/
+        ├── tests/
+        ├── plugin.json
+        └── composer.json
 ```
-
 
 ## 文件分发介绍
 
@@ -41,7 +39,6 @@ fresns/             //主程序根目录
 ```json
 {
     "fskey": "DemoPlugin", // 唯一标识，大驼峰
-    "type": 1, // 类型: 1.扩展插件 2.控制面板 3.频道和网站引擎 4.主题模板
     "name": "演示插件", // 名字
     "description": "这是演示插件", // 描述
     "author": "唐杰", // 开发者
@@ -73,6 +70,7 @@ fresns/             //主程序根目录
 | join | “私有模式”加入通道支持插件 | 系统设置 > 站点设置 |
 | sendEmail | 邮件服务商 | 系统设置 > 发信设置 |
 | sendSms | 短信服务商 | 系统设置 > 发信设置 |
+| appNotification | 移动通知服务商 | 系统设置 > 发信设置 |
 | connect | 第三方互联支持 | 系统设置 > 用户配置 |
 | realName | 实名认证支持 | 系统设置 > 用户配置 |
 | multiUser | 多用户模式支持 | 系统设置 > 用户配置 |
@@ -93,7 +91,7 @@ fresns/             //主程序根目录
 | extendGroup | 小组扩展 | 扩展管理 > 小组扩展 |
 | extendUser | 用户功能扩展 | 扩展管理 > 用户功能扩展<br>扩展管理 > 用户资料扩展 |
 | extendChannel | 频道扩展 | 扩展管理 > 频道扩展 |
-| appNotification | 移动通知服务商 | 客户端 > 移动应用 |
+| website | 网站端插件 | 客户端 > 网站通用配置 |
 
 ## composer.json 配置信息
 

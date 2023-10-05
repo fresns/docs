@@ -49,14 +49,9 @@ fresns/         // Main Program Root Directory
 ├── bootstrap/
 ├── config/
 ├── database/
-├── extensions/
-│   ├── plugins/
-│   ├── themes/
-│   └── backups/
+├── plugins/
 ├── public/
 │   ├── assets/
-│   │   ├── plugins/
-│   │   └── themes/
 │   ├── static/
 │   ├── index.php
 │   ├── favicon.Icon
@@ -74,7 +69,7 @@ fresns/         // Main Program Root Directory
 ├── fresns.json
 ├── install.lock
 ├── package.json
-├── webpack.mix.js
+├── vite.config.js
 ├── phpunit.xml
 └── LICENSE
 ```

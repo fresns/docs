@@ -10,15 +10,7 @@
 
 ### 集成运行
 
-如果你的客户端是集成在 Fresns 中运行，需要以插件的方式开发[网站引擎](../plugin/engine.md)，或者基于已有的引擎开发符合它的视图标准的主题模板。
-
-比如采用 [FresnsEngine](https://marketplace.fresns.com/zh-Hans/open-source/detail/FresnsEngine) 作为 Web 客户端的运行支持，以下是开发标准。
-
-- FresnsEngine 客户端技术方案是 **Laravel Blade** 模板引擎，以客户端思维开发 FresnsEngine 引擎的视图（主题）。
-- [配置介绍](../theme/)
-- [路径结构介绍](../theme/structure.md)
-- [模板标签介绍](../theme/tags.md)
-- [functions.blade.php 设置功能介绍](../theme/functions.md)
+如果你的客户端是集成在 Fresns 中运行，需要以插件的方式开发客户端，详情请参考[插件开发](../plugin/)和 [API 文档](../../api/)。
 
 ## App 客户端
 

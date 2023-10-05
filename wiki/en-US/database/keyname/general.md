@@ -23,8 +23,3 @@
 | Login Support: Email | site_email_login | true | boolean |  |
 | Login Support: Phone Number | site_phone_login | false | boolean |  |
 | Admin Email | site_email |  | string | Displayed to users when an error occurs, for users to report issues. |
-| China Mode | site_china_mode | false | boolean | `false` or `true`<br>Whether to display filing information, turn it off if the website server is not in Mainland China |
-| Internet Content Provider Filing | china_icp_filing |  | string | [https://beian.miit.gov.cn](https://beian.miit.gov.cn/) |
-| Internet Content Provider License | china_icp_license |  | string | [https://dxzhgl.miit.gov.cn](https://dxzhgl.miit.gov.cn/) |
-| Public Security Bureau Filing | china_psb_filing |  | string | [http://www.beian.gov.cn](http://www.beian.gov.cn/) |
-| Broadcasting License | china_broadcasting_license |  | string | [https://zw.nrta.gov.cn](https://zw.nrta.gov.cn/) |

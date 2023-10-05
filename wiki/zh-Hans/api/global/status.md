@@ -9,13 +9,70 @@
 ```json
 {
     "name": "Fresns",
-    "version": "2.17.0",
+    "version": "2.0.0",
     "activate": true,
     "deactivateDescription": {
         "default": "",
         "en": "",
         "zh-Hans": "",
         "zh-Hant": ""
+    },
+    "client": {
+        "mobile": {
+            "ios":{
+                "version": "",
+                "appStore": ""
+            },
+            "android":{
+                "version": "",
+                "googlePlay": "",
+                "downloads": {
+                    "apk": ""
+                }
+            }
+        },
+        "tablet":{
+            "ios":{
+                "version": "",
+                "appStore": ""
+            },
+            "android":{
+                "version": "",
+                "googlePlay": "",
+                "downloads": {
+                    "apk": ""
+                }
+            }
+        },
+        "desktop": {
+            "macos":{
+                "version": "",
+                "appStore": "",
+                "downloads": {
+                    "intel": "",
+                    "appleSilicon": ""
+                }
+            },
+            "windows":{
+                "version": "",
+                "downloads": {
+                    "x86": "",
+                    "x64": ""
+                }
+            },
+            "linux":{
+                "version": "",
+                "downloads": {
+                    "x86Deb": "",
+                    "x86Rpm": "",
+                    "x86AppImage": "",
+                    "armDeb": "",
+                    "armRpm": "",
+                    "armAppImage": "",
+                    "mipsDeb": ""
+                }
+            }
+        }
     }
 }
 ```

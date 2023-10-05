@@ -204,7 +204,7 @@ function sidebarExtensions() {
                 { text: '命令字使用', link: '/extensions/plugin/command-word.md' },
                 {
                     text: '功能参考',
-                    collapsed: true,
+                    collapsed: false,
                     items: [
                         { text: '定时任务和订阅', link: '/extensions/plugin/functions.md' },
                         { text: '命令字功能开发', link: '/extensions/plugin/command-word-dev.md' },
@@ -213,12 +213,11 @@ function sidebarExtensions() {
                 },
                 {
                     text: '插件参考',
-                    collapsed: true,
+                    collapsed: false,
                     items: [
                         { text: '存储服务开发', link: '/extensions/plugin/storage.md' },
                         { text: '编辑器开发', link: '/extensions/plugin/editor.md' },
                         { text: '内容处理开发', link: '/extensions/plugin/content-handler.md' },
-                        { text: '网站引擎开发', link: '/extensions/plugin/engine.md' },
                     ]
                 },
             ]
@@ -235,16 +234,6 @@ function sidebarExtensions() {
                         { text: '介绍', link: '/extensions/callback/' },
                         { text: '路径变量名', link: '/extensions/callback/variables.md' },
                         { text: '生成路径凭证', link: '/extensions/callback/url-authorization.md' },
-                    ]
-                },
-                {
-                    text: 'FresnsEngine 主题',
-                    collapsed: false,
-                    items: [
-                        { text: '介绍', link: '/extensions/theme/' },
-                        { text: '路径结构', link: '/extensions/theme/structure.md' },
-                        { text: '模板标签', link: '/extensions/theme/tags.md' },
-                        { text: '主题功能', link: '/extensions/theme/functions.md' },
                     ]
                 },
             ]
@@ -616,7 +605,7 @@ function sidebarDatabase() {
                         { text: '栏目配置', link: '/database/keyname/columns.md' },
                         { text: '路径配置', link: '/database/keyname/paths.md' },
                         { text: '语言包配置', link: '/database/keyname/language-pack.md' },
-                        { text: '网站网页', link: '/database/keyname/website.md' },
+                        { text: '客户端基础配置', link: '/database/keyname/basic.md' },
                     ]
                 },
             ]

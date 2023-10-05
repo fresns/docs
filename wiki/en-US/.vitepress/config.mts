@@ -142,7 +142,7 @@ function sidebarExtensions() {
                 { text: 'Command Word', link: '/extensions/plugin/command-word.md' },
                 {
                     text: 'Function Reference',
-                    collapsed: true,
+                    collapsed: false,
                     items: [
                         { text: 'Crontab and Subscribe', link: '/extensions/plugin/functions.md' },
                         { text: 'Command Word Dev', link: '/extensions/plugin/command-word-dev.md' },
@@ -151,12 +151,11 @@ function sidebarExtensions() {
                 },
                 {
                     text: 'Plugin Reference',
-                    collapsed: true,
+                    collapsed: false,
                     items: [
                         { text: 'Storage', link: '/extensions/plugin/storage.md' },
                         { text: 'Editor', link: '/extensions/plugin/editor.md' },
                         { text: 'Content Handler', link: '/extensions/plugin/content-handler.md' },
-                        { text: 'Web Engine', link: '/extensions/plugin/engine.md' },
                     ]
                 },
             ]
@@ -173,16 +172,6 @@ function sidebarExtensions() {
                         { text: 'Introduction', link: '/extensions/callback/' },
                         { text: 'Path Variables', link: '/extensions/callback/variables.md' },
                         { text: 'Make URL Authorization', link: '/extensions/callback/url-authorization.md' },
-                    ]
-                },
-                {
-                    text: 'FresnsEngine Theme',
-                    collapsed: false,
-                    items: [
-                        { text: 'Introduction', link: '/extensions/theme/' },
-                        { text: 'Structure', link: '/extensions/theme/structure.md' },
-                        { text: 'Template Tags', link: '/extensions/theme/tags.md' },
-                        { text: 'Theme Functions', link: '/extensions/theme/functions.md' },
                     ]
                 },
             ]
@@ -554,7 +543,7 @@ function sidebarDatabase() {
                         { text: 'Columns', link: '/database/keyname/columns.md' },
                         { text: 'Paths', link: '/database/keyname/paths.md' },
                         { text: 'Language Packs', link: '/database/keyname/language-pack.md' },
-                        { text: 'Website', link: '/database/keyname/website.md' },
+                        { text: 'Basic', link: '/database/keyname/basic.md' },
                     ]
                 },
             ]

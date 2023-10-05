@@ -49,14 +49,9 @@ fresns/         // 主程序根目录
 ├── bootstrap/      // 引导程序目录
 ├── config/         // 配置文件目录
 ├── database/       // 数据文件目录
-├── extensions/     // 扩展目录
-│   ├── plugins/        // 插件目录
-│   ├── themes/         // 主题目录
-│   └── backups/        // 备份目录
+├── plugins/        // 插件目录
 ├── public/         // 网站根目录
-│   ├── assets/         // 扩展静态文件
-│   │   ├── plugins/        // 插件资源目录
-│   │   └── themes/         // 主题资源目录
+│   ├── assets/         // 插件资源目录
 │   ├── static/         // 内置静态文件
 │   ├── index.php       // 网站入口文件
 │   ├── favicon.ico     // 站点 ico 图标
@@ -75,7 +70,7 @@ fresns/         // 主程序根目录
 ├── fresns.json     // 主程序信息
 ├── install.lock    // 安装锁定文件（有该文件后，禁止再执行安装）
 ├── package.json    // 前端编译用途文件
-├── webpack.mix.js  // 前端编译用途文件
+├── vite.config.js  // 前端编译用途文件
 ├── phpunit.xml     // 单元测试用途文件
 └── LICENSE         // 版权文件
 ```

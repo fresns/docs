@@ -6,25 +6,24 @@ From the framework level, the three channels of "extension plug-in", "control pa
 
 ```php
 fresns/             // Main program root directory
-└── extensions/         // Extensions directory (plugins and themes)
-    └── plugins/            // Plugins directory
-        └── DemoPlugin/         // Example plugin
-            ├── app/
-            ├── config/
-            ├── database/
-            ├── resources/
-            │   ├── assets/
-            │   │   ├── fresns.png  // Plugin cover image (square), must be present and fixed in position
-            │   │   ├── js/
-            │   │   │   └── app.js
-            │   │   └── sass/
-            │   │       └── app.scss
-            │   ├── lang/
-            │   └── views/
-            ├── routes/
-            ├── tests/
-            ├── plugin.json
-            └── composer.json
+└── plugins/            // Plugins directory
+    └── DemoPlugin/         // Example plugin
+        ├── app/
+        ├── config/
+        ├── database/
+        ├── resources/
+        │   ├── assets/
+        │   │   ├── fresns.png  // Plugin cover image (square), must be present and fixed in position
+        │   │   ├── js/
+        │   │   │   └── app.js
+        │   │   └── sass/
+        │   │       └── app.scss
+        │   ├── lang/
+        │   └── views/
+        ├── routes/
+        ├── tests/
+        ├── plugin.json
+        └── composer.json
 ```
 
 ## File Publish
@@ -41,7 +40,6 @@ When the plugin is installed and published, static resources are distributed to 
 ```json
 {
     "fskey": "DemoPlugin", // The only key, upper camel case
-    "type": 1, // Type: 1.Extension plugin 2.Control Panel 3.Web Engine 4.Theme Template
     "name": "Demo Plugin",
     "description": "This is the demo plugin",
     "author": "Jevan Tang",
@@ -73,6 +71,7 @@ When the plugin is installed and published, static resources are distributed to 
 | join | Configuration of the "private mode" registration function | Panel > Systems > General |
 | sendEmail | Email Service Provider | Panel > Systems > Send |
 | sendSms | SMS Service Provider | Panel > Systems > Send |
+| appNotification | Mobile Notification Service Provider | Panel > Systems > Send |
 | connect | Account Connect Support | Panel > Systems > User |
 | realName | Real Name Authentication Support | Panel > Systems > User |
 | multiUser | Multi-User Mode Support | Panel > Systems > User |
@@ -93,7 +92,7 @@ When the plugin is installed and published, static resources are distributed to 
 | extendGroup | Group Extensions | Panel > Extends > Group |
 | extendUser | User Function Extensions | Panel > Extends > User Feature<br>Panel > Extends > User Profile |
 | extendChannel | Channel Extensions | Panel > Extends > Channel |
-| appNotification | Mobile Notification Service Provider | Panel > Clients > App |
+| website | Website Plugin | Panel > Clients > Website |
 
 ## composer.json Config File
 
