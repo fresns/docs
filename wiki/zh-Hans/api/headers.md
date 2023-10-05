@@ -138,7 +138,7 @@ X-Fresns-Aid=wIfu6jaF&X-Fresns-Aid-Token=uoX1hk6SHUgB2MFGJwNx38dem9DA7Vsz&X-Fres
 
 ## 缓存介绍
 
-- 我们开发的客户端都采用了全局函数封装，方便全局调用各种配置数据，可参见[主题模板标签](../extensions/theme/tags.md)
+- 我们开发的客户端都采用了全局函数封装，方便全局调用各种配置数据，可参见 [web-engine](https://github.com/fresns/web-engine) 扩展包。
     - `fs_api_config('配置键名')` 调用 [/api/v2/global/configs](global/configs.md) 接口的参数
     - `fs_lang('语言键名')` 调用 `fs_api_config('language_pack_contents')` 参数
     - `fs_code_message('编号')` 调用 [/api/v2/global/code-messages](global/code-messages.md) 接口的参数

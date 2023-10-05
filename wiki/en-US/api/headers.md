@@ -138,7 +138,7 @@ X-Fresns-Aid=wIfu6jaF&X-Fresns-Aid-Token=uoX1hk6SHUgB2MFGJwNx38dem9DA7Vsz&X-Fres
 
 ## Cache Introduction
 
-- To facilitate global calls to various configuration data, we have developed clients that use global function wrappers. See the [theme template tags](../extensions/theme/tags.md).
+- To facilitate global calls to various configuration data, we have developed clients that use global function wrappers. See the [web-engine](https://github.com/fresns/web-engine) composer package.
     - `fs_api_config('item_key')` Call the parameters of the [/api/v2/global/configs](global/configs.md) interface
     - `fs_lang('KeyName')` Call the `fs_api_config('language_pack_contents')` parameter
     - `fs_code_message('code')` Call the parameters of the [/api/v2/global/code-messages](global/code-messages.md) interface
