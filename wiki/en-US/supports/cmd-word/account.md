@@ -209,7 +209,8 @@
         {
             "platformId": 5,
             "uid": null, // Empty means not belonging to any user
-            "deviceToken": ""
+            "deviceToken": "",
+            "datetime": ""
         }
     ]
 }

@@ -143,7 +143,8 @@
     "data": [
         {
             "platformId": 5,
-            "deviceToken": ""
+            "deviceToken": "",
+            "datetime": ""
         }
     ]
 }

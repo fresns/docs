@@ -209,7 +209,8 @@
         {
             "platformId": 5,
             "uid": null, // 为空表示不属于任何用户
-            "deviceToken": ""
+            "deviceToken": "",
+            "datetime": ""
         }
     ]
 }
