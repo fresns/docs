@@ -75,7 +75,7 @@ If the `isMultilingual` parameter is for multiple languages, the `content` param
 | Parameter Name | Type | Required | Description |
 | --- | --- | --- | --- |
 | uid | Number | **required** | User parameter (main user table `users->uid` field) |
-| channel | Number | *optional* | Channel 1.iOS / 2.Android |
+| channel | Number | **required** | Channel 1.iOS / 2.Android |
 | template | String | *optional* | Template parameter |
 | coverUrl | String | *optional* | Cover image URL |
 | title | String | *optional* | Title |

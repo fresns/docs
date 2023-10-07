@@ -188,6 +188,34 @@
 | aid | String | YES | 账号参数 `session_tokens->account_id`<br>查验时由 `aid` 转换成 `accounts->id` |
 | aidToken | String | YES | 身份凭证（凭证表 `session_tokens->token` 字段） |
 
+## 获取账号设备 Token
+
+```php
+\FresnsCmdWord::plugin('Fresns')->getAccountDeviceToken($wordBody);
+```
+| 参数名 | 类型 | 是否必传 | 说明 |
+| --- | --- | --- | --- |
+| aid | String | YES |  |
+| platformId | Number | NO | 平台编号（配置表 [platforms](../../database/dictionary/platforms.md) 键名的键值）<br>留空则输出全部 |
+
+- 结果为数组列表，根据创建时间倒序排列，最新创建的在前面。
+
+::: details 结果示例
+```json
+{
+    "code": 0,
+    "message": "ok",
+    "data": [
+        {
+            "platformId": 5,
+            "uid": null, // 为空表示不属于任何用户
+            "deviceToken": ""
+        }
+    ]
+}
+```
+:::
+
 ## 逻辑删除账号
 
 ```php

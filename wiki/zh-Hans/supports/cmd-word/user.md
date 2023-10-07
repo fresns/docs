@@ -123,6 +123,33 @@
 | uid | Number | YES | 用户参数 `session_tokens->user_id`<br>查验时由 `uid` 转换成 `users->id` |
 | uidToken | String | YES | 用户身份凭证（凭证表 `session_tokens->token` 字段） |
 
+## 获取用户设备 Token
+
+```php
+\FresnsCmdWord::plugin('Fresns')->getUserDeviceToken($wordBody);
+```
+| 参数名 | 类型 | 是否必传 | 说明 |
+| --- | --- | --- | --- |
+| uid | Number | YES |  |
+| platformId | Number | NO | 平台编号（配置表 [platforms](../../database/dictionary/platforms.md) 键名的键值）<br>留空则输出全部 |
+
+- 结果为数组列表，根据创建时间倒序排列，最新创建的在前面。
+
+::: details 结果示例
+```json
+{
+    "code": 0,
+    "message": "ok",
+    "data": [
+        {
+            "platformId": 5,
+            "deviceToken": ""
+        }
+    ]
+}
+```
+:::
+
 ## 逻辑删除用户
 
 ```php

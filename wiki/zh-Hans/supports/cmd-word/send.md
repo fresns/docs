@@ -75,7 +75,7 @@
 | 参数名 | 类型 | 是否必传 | 说明 |
 | --- | --- | --- | --- |
 | uid | Number | YES | 用户参数（用户主表 `users->uid` 字段） |
-| channel | Number | NO | 渠道 1.iOS / 2.Android |
+| channel | Number | YES | 渠道 1.iOS / 2.Android |
 | template | String | NO | 模板参数 |
 | coverUrl | String | NO | 封面图 |
 | title | String | NO | 标题 |

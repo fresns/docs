@@ -123,6 +123,33 @@
 | uid | Number | **required** | User parameter `session_tokens->user_id`<br>Checked by converting `uid` to `users->id` |
 | uidToken | String | **required** | User identity credential (credential table `session_tokens->token` field) |
 
+## getUserDeviceToken
+
+```php
+\FresnsCmdWord::plugin('Fresns')->getUserDeviceToken($wordBody);
+```
+| Parameter Name | Type | Required | Description |
+| --- | --- | --- | --- |
+| uid | Number | **required** |  |
+| platformId | Number | *optional* | Platform ID (Key value of the [platforms](../../database/dictionary/platforms.md) key name in the configuration table)<br>No value then output all |
+
+- The result is an array sorted in reverse chronological order by creation time, with the most recent creation on top.
+
+::: details Return Example
+```json
+{
+    "code": 0,
+    "message": "ok",
+    "data": [
+        {
+            "platformId": 5,
+            "deviceToken": ""
+        }
+    ]
+}
+```
+:::
+
 ## logicalDeletionUser
 
 ```php

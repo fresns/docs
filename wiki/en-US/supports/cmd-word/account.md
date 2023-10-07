@@ -188,6 +188,34 @@
 | aid | String | **required** | Account parameter `session_tokens->account_id`<br>Checked by converting `aid` to `accounts->id` |
 | aidToken | String | **required** | Identity credential (Credential table `session_tokens->token` field) |
 
+## getAccountDeviceToken
+
+```php
+\FresnsCmdWord::plugin('Fresns')->getAccountDeviceToken($wordBody);
+```
+| Parameter Name | Type | Required | Description |
+| --- | --- | --- | --- |
+| aid | String | **required** |  |
+| platformId | Number | *optional* | Platform ID (Key value of the [platforms](../../database/dictionary/platforms.md) key name in the configuration table)<br>No value then output all |
+
+- The result is an array sorted in reverse chronological order by creation time, with the most recent creation on top.
+
+::: details Return Example
+```json
+{
+    "code": 0,
+    "message": "ok",
+    "data": [
+        {
+            "platformId": 5,
+            "uid": null, // Empty means not belonging to any user
+            "deviceToken": ""
+        }
+    ]
+}
+```
+:::
+
 ## logicalDeletionAccount
 
 ```php
