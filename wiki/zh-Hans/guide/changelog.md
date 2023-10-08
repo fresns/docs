@@ -3,6 +3,25 @@
 Fresns 主程序所有版本更新日志都将记录在这个文件中。
 
 
+## 2.19.0 (2023-10-08)
+
+### Added
+- Panel: 存储配置新增 Secret App 参数
+- Panel: 客户端配置新增 Apple App Site Association 配置
+- Panel: 客户端状态新增安装包版本和下载链接配置
+- Words: 增加「获取账号设备 Token」命令字 `getAccountDeviceToken`
+- Words: 增加「获取用户设备 Token」命令字 `getUserDeviceToken`
+
+### Fixes
+- Panel: 语言设置功能，删除语言时导致语言菜单格式错误
+- Words: App 发信命令字 channel 参数未配置为必填
+
+### BREAKING CHANGES
+- API: 请求标头 `X-Fresns-Client-Device-Info` 参数修改为 Base64 编码格式
+- 框架: 移除 fresns/theme-manager 依赖和主题模板概念，主程序仅作为单纯的服务端。
+- 框架: fresns/plugin-manager 升级，插件目录移动到主程序根目录
+
+
 ## 2.18.7 (2023-09-15)
 
 ### Fixes

@@ -9,7 +9,7 @@ Fresns 是一款基于 PHP 编程语言和关系型数据库开发的社交社�
 | Web 服务器<br>`任选一种` | Nginx<br>Apache<br>Caddy<br>IIS |
 | PHP 版本 | 8.1 或更高版本 |
 | PHP 扩展支持 | `fileinfo` |
-| PHP 函数启用 | `symlink`, `putenv`, `proc_open`, `shell_exec`, `pcntl_signal`, `pcntl_alarm`, `pcntl_async_signals`, `passthru` |
+| PHP 函数启用 | `symlink`, `putenv`, `proc_open`, `shell_exec`, `passthru`<br>`pcntl_signal`, `pcntl_alarm`, `pcntl_async_signals` |
 | 软件包管理器 | Composer 2.5 或更高版本 |
 | 数据库和版本<br>`任选一种` | MySQL `5.7 ~ 8.x`<br>MariaDB `10.3 ~ 11.x`<br>PostgreSQL `11.x ~ 15.x`<br>SQL Server `2016(13.x) ~ 2022(16.x)`<br>SQLite `3.9` 或更高版本 |
 
@@ -21,33 +21,25 @@ Fresns 是一款基于 PHP 编程语言和关系型数据库开发的社交社�
 | `putenv` | composer 用于设置环境变量，升级 Fresns 或安装插件时使用 | 升级完 Fresns 后和安装完插件后可以禁用 |
 | `proc_open` | symfony/process 用于 composer 命令，升级 Fresns 或安装插件时使用 | 升级完 Fresns 后和安装完插件后可以禁用 |
 | `shell_exec` | symfony/console 用于 composer 命令，升级 Fresns 或安装插件时使用 | 升级完 Fresns 后和安装完插件后可以禁用 |
+| `passthru` | Fresns 升级使用，使用该函数执行升级可以避免执行超时 | 升级完 Fresns 后可以禁用，或者只在[终端中执行升级](upgrade.md#自动升级-命令行)，则不需要该函数 |
 | `pcntl_signal` | illuminate/queue 用于 Fresns 队列任务 | 不配置队列，或者使用默认 `sync` 队列，则不需要该函数 |
 | `pcntl_alarm` | illuminate/queue 用于 Fresns 队列任务 | 不配置队列，或者使用默认 `sync` 队列，则不需要该函数 |
 | `pcntl_async_signals` | illuminate/queue 用于 Fresns 队列任务 | 不配置队列，或者使用默认 `sync` 队列，则不需要该函数 |
-| `passthru` | Fresns 升级使用，使用该函数执行升级可以避免执行超时 | 升级完 Fresns 后可以禁用，或者只在[终端中执行升级](upgrade.md#自动升级-命令行)，则不需要该函数 |
 :::
 
 ## 下载安装包
 
-::: tip 方式 1: 手动下载完整包（已内置网站客户端）
-- [下载 Fresns v2.18.7](https://app.fresns.org/latest.zip)
+::: tip 方式 1: 手动下载安装包
+- [下载 Fresns v2.19.0](https://app.fresns.org/latest.zip)
 :::
 
 ::: tip 方式 2: 基于 Composer 下载
-- 下载程序
 ```sh
 composer create-project fresns/fresns
 ```
-
-- 配置管理器
-```sh
-php artisan vendor:publish --provider="Fresns\PluginManager\Providers\PluginServiceProvider"
-php artisan vendor:publish --provider="Fresns\ThemeManager\Providers\ThemeServiceProvider"
-php artisan vendor:publish --provider="Fresns\MarketManager\Providers\MarketServiceProvider"
-```
-
-- Composer 下载的只有服务端，如需客户端，请至[应用市场](https://marketplace.fresns.com/zh-Hans/open-source/clients)挑选。
 :::
+
+- Fresns 是前后端分离，主程序只是服务端，如需客户端，请至[应用市场](https://marketplace.fresns.com/zh-Hans/open-source/clients)挑选安装。
 
 ## 主程序安装
 
@@ -338,12 +330,9 @@ fresns/         // 主程序根目录
 ├── bootstrap/      // 引导程序目录
 ├── config/         // 配置文件目录
 ├── database/       // 数据文件目录
-├── extensions/     // 扩展目录
-│   ├── plugins/        // 功能插件
-│   ├── themes/         // 主题模板
-│   └── backups/        // 扩展备份目录
+├── plugins/        // 插件目录
 ├── public/         // 网站根目录
-│   ├── assets/         // 扩展静态文件
+│   ├── assets/         // 插件静态文件
 │   ├── static/         // 内置静态文件
 │   ├── index.php       // 网站入口文件
 │   ├── favicon.ico     // 站点 ico 图标

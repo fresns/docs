@@ -3,6 +3,25 @@
 All notable changes to this project will be documented in this file.
 
 
+## 2.19.0 (10/08/2023)
+
+### Added
+- Panel: Storage Configuration Add `Secret App` Parameter
+- Panel: Client Configuration add `Apple App Site Association` Configuration
+- Panel: Client Status adds Installer Version and Download Link configuration
+- Words: Add command word `getAccountDeviceToken`
+- Words: Add command word `getUserDeviceToken`
+
+### Fixes
+- Panel: Language setting function, when deleting a language it causes the language menu to be formatted incorrectly
+- Words: App send command words `channel` parameter is not configured as mandatory
+
+### BREAKING CHANGES
+- API: `X-Fresns-Client-Device-Info` parameter in request header changed to Base64 encoding format.
+- Framework: fresns/theme-manager dependency and theme template concept removed, main program acts as a pure server.
+- Framework: fresns/plugin-manager upgraded, plugin directory moved to main program root.
+
+
 ## 2.18.7 (09/15/2023)
 
 ### Fixes

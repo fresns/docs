@@ -9,7 +9,7 @@ Before you install Fresns, it's important to check that your server meets the re
 | Web Server<br>`Choose any one` | Nginx<br>Apache<br>Caddy<br>IIS |
 | PHP Version | PHP 8.1 or greater |
 | PHP Extensions | `fileinfo` |
-| PHP Functions | `symlink`, `putenv`, `proc_open`, `shell_exec`, `pcntl_signal`, `pcntl_alarm`, `pcntl_async_signals`, `passthru` |
+| PHP Functions | `symlink`, `putenv`, `proc_open`, `shell_exec`, `passthru`<br>`pcntl_signal`, `pcntl_alarm`, `pcntl_async_signals` |
 | Package Manager | Composer 2.5 or greater |
 | Database and Version<br>`Choose any one` | MySQL `5.7 ~ 8.x`<br>MariaDB `10.3 ~ 11.x`<br>PostgreSQL `11.x ~ 15.x`<br>SQL Server `2016(13.x) ~ 2022(16.x)`<br>SQLite `3.9` or greater |
 
@@ -21,34 +21,25 @@ Before you install Fresns, it's important to check that your server meets the re
 | `putenv` | Composer is used to set environment variables, used for upgrading Fresns or installing plugins | Can be disabled after upgrading Fresns or installing plugins |
 | `proc_open` | Used by `symfony/process` for composer commands, used for upgrading Fresns or installing plugins | Can be disabled after upgrading Fresns or installing plugins |
 | `shell_exec` | Used by `symfony/console` for composer commands, used for upgrading Fresns or installing plugins | Can be disabled after upgrading Fresns or installing plugins |
+| `passthru` | Used for Fresns upgrades, executing upgrades with this function helps avoid timeouts | Can be disabled after Fresns is upgraded, or it is not needed if you are only [upgrade in terminal](upgrade.md#auto-upgrade-command). |
 | `pcntl_signal` | `illuminate/queue` for Fresns queue tasks | This function is not required if you do not configure a queue or if you use the default `sync` queue. |
 | `pcntl_alarm` | `illuminate/queue` for Fresns queue tasks | This function is not required if you do not configure a queue or if you use the default `sync` queue. |
 | `pcntl_async_signals` | `illuminate/queue` for Fresns queue tasks | This function is not required if you do not configure a queue or if you use the default `sync` queue. |
-| `passthru` | Used for Fresns upgrades, executing upgrades with this function helps avoid timeouts | Can be disabled after Fresns is upgraded, or it is not needed if you are only [upgrade in terminal](upgrade.md#auto-upgrade-command). |
 :::
 
 ## Download
 
-::: tip Option 1: Download the full package manually
-- [Download Fresns v2.18.7](https://app.fresns.org/latest.zip)
-- *Website client already built in*
+::: tip Option 1: Download via Package
+- [Download Fresns v2.19.0](https://app.fresns.org/latest.zip)
 :::
 
 ::: tip Option 2: Download via Composer
-- Download the program
 ```sh
 composer create-project fresns/fresns
 ```
-
-- Configuration Manager
-```sh
-php artisan vendor:publish --provider="Fresns\PluginManager\Providers\PluginServiceProvider"
-php artisan vendor:publish --provider="Fresns\ThemeManager\Providers\ThemeServiceProvider"
-php artisan vendor:publish --provider="Fresns\MarketManager\Providers\MarketServiceProvider"
-```
-
-- The composer download is for the server only, for the client please go to the [Fresns Marketplace](https://marketplace.fresns.com/open-source/clients).
 :::
+
+- Fresns is frontend and backend separated, the main program is only the server, if you need the client, please go to the [marketplace](https://marketplace.fresns.com/open-source/clients) to install it.
 
 ## Installing
 
@@ -339,12 +330,9 @@ fresns/         // Main Program Root Directory
 ├── bootstrap/      // Bootstrap Framework Directory
 ├── config/         // Configuration File Directory
 ├── database/       // Data File Directory
-├── extensions/     // Extensions Directory
-│   ├── plugins/
-│   ├── themes/
-│   └── backups/
+├── plugins/        // Plugins Directory
 ├── public/         // Website Root Directory
-│   ├── assets/         // Extension Static Files
+│   ├── assets/         // Plugins Static Files
 │   ├── static/         // Built-in Static Files
 │   ├── index.php       // Website Entrance File
 │   ├── favicon.ico     // Site ico Icon
