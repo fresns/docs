@@ -20,12 +20,12 @@ If you need to confirm the executed command during the upgrade, enter `yes` to c
 
 ## Manual Upgrade
 
-- 1. If you download the new version of the installation package, all the other files except the “Extension” and “Configuration Information” of the old version will be overwritten (before overwriting, please make a copy of the old version of the project to avoid the loss of the information of the old version due to improper overwriting).
+- 1. If you download the new version of the installation package, all the other files except the “Plugin Directory” and “Configuration File” of the old version will be overwritten (before overwriting, please make a copy of the old version of the project to avoid the loss of the information of the old version due to improper overwriting).
     - If you are using a local storage plugin, you should also keep the files located in the `storage` directory according to the plug-in documentation.
 
 ```php
 fresns/         // Main Program Root Directory
-├── extensions/     // Extension Directory(plugins and themes)
+├── plugins/        // Plugin Directory
 ├── storage/        // Storage Directory
 │   └── app
 │       └── public
