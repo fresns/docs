@@ -63,10 +63,10 @@ Perform a user deletion task every 6 hours
 - Perform a backend main program and extension version check every 8 hours to see if there are any new versions available.
 
 ```php
-\FresnsCmdWord::plugin('Fresns')->checkExtensionsVersion()
+\FresnsCmdWord::plugin('Fresns')->checkPluginsVersions()
 ```
 
-- 1. Send the list of installed extensions (plugins, engines, themes, mobile applications) to the Fresns official, and the interface will return the latest version for the extensions on the list.
-- 2. Compare the plugin table version, and if they are different, update the version
+- 1. Send the list of installed plugins to the Fresns official, and the interface will return the latest version for the plugins on the list.
+- 2. Compare the plugins table version, and if they are different, update the version
     - `is_upgrade = 1`
     - `upgrade_version = Version returned by the API`

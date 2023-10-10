@@ -60,13 +60,13 @@
 
 ## 检查并更新版本信息
 
-每隔 8 小时执行一次后端主程序和扩展的版本情况，检查是否有新版。
+每隔 8 小时执行一次插件版本情况，检查是否有新版。
 
 ```php
-\FresnsCmdWord::plugin('Fresns')->checkExtensionsVersion()
+\FresnsCmdWord::plugin('Fresns')->checkPluginsVersions()
 ```
 
-- 1、向 Fresns 官方发送已安装扩展清单（插件、引擎、主题、移动应用），接口返回该清单扩展的最新版本号。
+- 1、向 Fresns 官方发送已安装插件清单（插件和独立应用），接口返回该清单插件的最新版本号。
 - 2、对比插件表版本号，如果不一致，更新版本号
     - `is_upgrade = 1`
     - `upgrade_version = 接口返回的版本号`
