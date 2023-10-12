@@ -30,7 +30,7 @@ Before you install Fresns, it's important to check that your server meets the re
 ## Download
 
 ::: tip Option 1: Download via Package
-- [Download Fresns v2.19.0](https://app.fresns.org/latest.zip)
+- [Download Fresns v2.19.1](https://app.fresns.org/latest.zip)
 :::
 
 ::: tip Option 2: Download via Composer
@@ -38,8 +38,6 @@ Before you install Fresns, it's important to check that your server meets the re
 composer create-project fresns/fresns
 ```
 :::
-
-- Fresns is frontend and backend separated, the main program is only the server, if you need the client, please go to the [marketplace](https://marketplace.fresns.com/open-source/clients) to install it.
 
 ## Installing
 
@@ -59,6 +57,7 @@ php artisan fresns:install
 :::
 
 - Default Admin Panel Path: `/fresns/admin`
+- Fresns is frontend and backend separated, the main program is only the server, if you need the client, please go to the [marketplace](https://marketplace.fresns.com/open-source/clients) to install it.
 
 ## Web Server Config
 

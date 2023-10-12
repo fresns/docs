@@ -30,7 +30,7 @@ Fresns 是一款基于 PHP 编程语言和关系型数据库开发的社交社�
 ## 下载安装包
 
 ::: tip 方式 1: 手动下载安装包
-- [下载 Fresns v2.19.0](https://app.fresns.org/latest.zip)
+- [下载 Fresns v2.19.1](https://app.fresns.org/latest.zip)
 :::
 
 ::: tip 方式 2: 基于 Composer 下载
@@ -38,8 +38,6 @@ Fresns 是一款基于 PHP 编程语言和关系型数据库开发的社交社�
 composer create-project fresns/fresns
 ```
 :::
-
-- Fresns 是前后端分离，主程序只是服务端，如需客户端，请至[应用市场](https://marketplace.fresns.com/zh-Hans/open-source/clients)挑选安装。
 
 ## 主程序安装
 
@@ -59,6 +57,7 @@ php artisan fresns:install
 :::
 
 - 默认后台路径 `网址/fresns/admin`
+- Fresns 是前后端分离，主程序只是服务端，如需客户端，请至[应用市场](https://marketplace.fresns.com/zh-Hans/open-source/clients)挑选安装。
 
 ## Web 服务器配置
 
