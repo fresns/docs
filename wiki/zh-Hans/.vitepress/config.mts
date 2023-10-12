@@ -573,12 +573,12 @@ function sidebarDatabase() {
                     collapsed: true,
                     items: [
                         { text: '语言设置', link: '/database/keyname/languages.md' },
+                        { text: '存储设置', link: '/database/keyname/storage.md' },
                         { text: '站点设置', link: '/database/keyname/general.md' },
                         { text: '政策条款', link: '/database/keyname/policy.md' },
                         { text: '发信设置', link: '/database/keyname/send.md' },
                         { text: '用户设置', link: '/database/keyname/user.md' },
                         { text: '钱包设置', link: '/database/keyname/wallet.md' },
-                        { text: '存储设置', link: '/database/keyname/storage.md' },
                     ]
                 },
                 {

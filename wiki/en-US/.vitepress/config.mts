@@ -511,12 +511,12 @@ function sidebarDatabase() {
                     collapsed: true,
                     items: [
                         { text: 'Languages', link: '/database/keyname/languages.md' },
+                        { text: 'Storage', link: '/database/keyname/storage.md' },
                         { text: 'General', link: '/database/keyname/general.md' },
                         { text: 'Policy', link: '/database/keyname/policy.md' },
                         { text: 'Send', link: '/database/keyname/send.md' },
                         { text: 'User', link: '/database/keyname/user.md' },
                         { text: 'Wallet', link: '/database/keyname/wallet.md' },
-                        { text: 'Storage', link: '/database/keyname/storage.md' },
                     ]
                 },
                 {
