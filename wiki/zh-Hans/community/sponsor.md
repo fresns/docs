@@ -15,6 +15,10 @@ Fresns 是采用 `Apache-2.0` 许可的开源项目，使用完全免费。
 
 - Fresns 由「唐杰」发起和开发，下方收款码的账户名为唐杰，直接转账即可赞助。
 
+| 微信赞赏码 |
+| :---: |
+| ![微信赞赏码](https://cdn.fresns.cn/images/qr-wechatpay-reward.jpg) |
+
 | 微信 | 支付宝 |
 | :---: | :---: |
 | ![微信](https://cdn.fresns.cn/images/qr-wechatpay.png) | ![支付宝](https://cdn.fresns.cn/images/qr-alipay.png) |

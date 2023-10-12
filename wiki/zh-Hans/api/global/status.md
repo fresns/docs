@@ -11,7 +11,7 @@
     "name": "Fresns",
     "version": "2.0.0",
     "activate": true,
-    "deactivateDescription": {
+    "deactivateDescribe": {
         "default": "",
         "en": "",
         "zh-Hans": "",
@@ -20,11 +20,23 @@
     "client": {
         "mobile": {
             "ios":{
-                "version": "",
+                "version": "1.0.0",
+                "describe": {
+                    "default": "",
+                    "en": "",
+                    "zh-Hans": "",
+                    "zh-Hant": ""
+                },
                 "appStore": ""
             },
             "android":{
-                "version": "",
+                "version": "1.0.0",
+                "describe": {
+                    "default": "",
+                    "en": "",
+                    "zh-Hans": "",
+                    "zh-Hant": ""
+                },
                 "googlePlay": "",
                 "downloads": {
                     "apk": ""
@@ -33,11 +45,23 @@
         },
         "tablet":{
             "ios":{
-                "version": "",
+                "version": "1.0.0",
+                "describe": {
+                    "default": "",
+                    "en": "",
+                    "zh-Hans": "",
+                    "zh-Hant": ""
+                },
                 "appStore": ""
             },
             "android":{
-                "version": "",
+                "version": "1.0.0",
+                "describe": {
+                    "default": "",
+                    "en": "",
+                    "zh-Hans": "",
+                    "zh-Hant": ""
+                },
                 "googlePlay": "",
                 "downloads": {
                     "apk": ""
@@ -46,7 +70,13 @@
         },
         "desktop": {
             "macos":{
-                "version": "",
+                "version": "1.0.0",
+                "describe": {
+                    "default": "",
+                    "en": "",
+                    "zh-Hans": "",
+                    "zh-Hant": ""
+                },
                 "appStore": "",
                 "downloads": {
                     "intel": "",
@@ -54,14 +84,26 @@
                 }
             },
             "windows":{
-                "version": "",
+                "version": "1.0.0",
+                "describe": {
+                    "default": "",
+                    "en": "",
+                    "zh-Hans": "",
+                    "zh-Hant": ""
+                },
                 "downloads": {
                     "x86": "",
                     "x64": ""
                 }
             },
             "linux":{
-                "version": "",
+                "version": "1.0.0",
+                "describe": {
+                    "default": "",
+                    "en": "",
+                    "zh-Hans": "",
+                    "zh-Hant": ""
+                },
                 "downloads": {
                     "x86Deb": "",
                     "x86Rpm": "",
