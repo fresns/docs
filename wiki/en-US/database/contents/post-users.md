@@ -13,5 +13,5 @@
 
 ## Explanation
 
-- Data filled in by plugins, API output, how the frontend uses it is determined by the theme or client.
+- Data filled in by plugins, API output, how the view uses it is determined by the client.
 - Example scenario: Reward user list

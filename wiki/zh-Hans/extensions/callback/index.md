@@ -94,8 +94,8 @@ switch (true) {
 
 ### 接收消息
 
-- [https://github.com/fresns/themes/blob/release/Moments/account/login.blade.php#L20-L28](https://github.com/fresns/themes/blob/release/Moments/account/login.blade.php#L20-L28)
-- [https://github.com/fresns/themes/blob/release/Moments/assets/js/fresns.js#L1669-L1748](https://github.com/fresns/themes/blob/release/Moments/assets/js/fresns.js#L1669-L1748)
+- [https://github.com/fresns/website/blob/3.x/Moments/resources/views/account/login.blade.php#L24-L32](https://github.com/fresns/website/blob/3.x/Moments/resources/views/account/login.blade.php#L24-L32)
+- [https://github.com/fresns/website/blob/3.x/Moments/resources/assets/js/fresns.js#L1707-L1731](https://github.com/fresns/website/blob/3.x/Moments/resources/assets/js/fresns.js#L1707-L1731)
 - `postMessageKey` 由客户端开发者自己定义，所以客户端知道每一个 `key` 的位置和用途场景，客户端也就知道后续处理逻辑。
 
 ```js

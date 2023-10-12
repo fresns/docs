@@ -59,5 +59,5 @@ fresns/         // Main Program Root Directory
 ```
 
 - 3. Log in to the background (fresns panel) and click the `Manual Upgrade` button on the “Dashboard -> Update” page to confirm the upgrade.
-    - The system will automatically perform migration and installation of plug-ins and themes.
+    - The system will automatically perform migration and installation of plugins.
     - Upon completion, the version information in `fresns.json` file will be updated and the plug-in that was enabled before will be restored.

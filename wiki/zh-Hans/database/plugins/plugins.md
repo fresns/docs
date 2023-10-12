@@ -4,7 +4,7 @@
 | --- | --- | --- | --- | --- | --- |
 | id | int *UNSIGNED* | 主键 ID |  | NO | 自动递增 |
 | fskey | varchar(64) | 插件标识名 |  | NO | **唯一值**，大驼峰格式 |
-| type | tinyint *UNSIGNED* | 插件类型 |  | NO | 1.扩展插件 / 2.控制面板 / 3.频道和网站引擎 / 4.主题模板 / 5.独立部署应用 |
+| type | smallint *UNSIGNED* | 插件类型 |  | NO | 自定义归类 |
 | name | varchar(64) | 插件名称 |  | NO |  |
 | description | varchar(255) | 插件描述 |  | NO |  |
 | version | varchar(16) | 语义化版本号 |  | NO | 用于展示的版本号 |

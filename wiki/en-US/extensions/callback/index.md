@@ -94,8 +94,8 @@ switch (true) {
 
 ### Message Event
 
-- [https://github.com/fresns/themes/blob/release/Moments/account/login.blade.php#L20-L28](https://github.com/fresns/themes/blob/release/Moments/account/login.blade.php#L20-L28)
-- [https://github.com/fresns/themes/blob/release/Moments/assets/js/fresns.js#L1669-L1748](https://github.com/fresns/themes/blob/release/Moments/assets/js/fresns.js#L1669-L1748)
+- [https://github.com/fresns/website/blob/3.x/Moments/resources/views/account/login.blade.php#L24-L32](https://github.com/fresns/website/blob/3.x/Moments/resources/views/account/login.blade.php#L24-L32)
+- [https://github.com/fresns/website/blob/3.x/Moments/resources/assets/js/fresns.js#L1707-L1731](https://github.com/fresns/website/blob/3.x/Moments/resources/assets/js/fresns.js#L1707-L1731)
 - The `postMessageKey` is defined by the client developer, so the client knows the location and usage scenario of each `key`, and the client knows the subsequent processing logic.
 
 ```js

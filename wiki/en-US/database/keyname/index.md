@@ -30,4 +30,4 @@ The configuration keys are stored in the [configs](../systems/configs.md) table.
 | languages | Language Pack Configuration | Panel > Clients > Language Packs |
 | websites | Web side | Panel > Clients > Paths<br>Panel > Clients > Website |
 | apps | App side | Panel > Clients > App |
-| themes | Theme template setting items |  |
+| themes | Client view setting items |  |

@@ -10,11 +10,11 @@ Whether it is on a Web site, a mini program, a fast application, or a client suc
 
 ## Support multiple languages
 
-Multiple languages are supported from the data stream level, and various languages can be added at ease without modifying main programs, themes, plug-ins and clients. It supports 187 languages in 239 countries/regions around the world (the data strategy conforms to the laws and regulations of all regions in the world), and supports any language and time zone with a simple configuration in the background.
+Multiple languages are supported from the data stream level, and various languages can be added at ease without modifying main programs, plug-ins and clients. It supports 187 languages in 239 countries/regions around the world (the data strategy conforms to the laws and regulations of all regions in the world), and supports any language and time zone with a simple configuration in the background.
 
-## Support optional engines and templates
+## Support optional engines and views
 
-The web engine and theme template can be separately optional and redeveloped, and multilingual SEO configuration is natively supported. No matter in which language environment you run or switch, you do not need to worry about search engine inclusion. It is also so flexible in operation and deployment that you can choose integrated deployment or independent deployment like App, and even support the deployment of multiple sites with the same engine or different engines, enabling differentiated operations of a set of data in multiple functional forms.
+The web engine and views can be separately optional and redeveloped, and multilingual SEO configuration is natively supported. No matter in which language environment you run or switch, you do not need to worry about search engine inclusion. It is also so flexible in operation and deployment that you can choose integrated deployment or independent deployment like App, and even support the deployment of multiple sites with the same engine or different engines, enabling differentiated operations of a set of data in multiple functional forms.
 
 ## Flexible technology architecture
 
@@ -22,15 +22,15 @@ The main program contains no personalized requirements but is operation-oriented
 
 ## Horizontal menu mode
 
-The user’s perception of a product’s function (sense of space) does not depend on the URL, but primarily at the UE and UI levels (breadcrumb navigation). To this end, the product adopts the horizontal menu mode, and any page is not limited to the parent or can be the parent to make the first-level page. In this way, the menu level is no longer differentiated by hierarchy, but is completely determined by the theme and client used by the user, becoming more convenient for configuration and more flexible for customization.
+The user’s perception of a product’s function (sense of space) does not depend on the URL, but primarily at the UE and UI levels (breadcrumb navigation). To this end, the product adopts the horizontal menu mode, and any page is not limited to the parent or can be the parent to make the first-level page. In this way, the menu level is no longer differentiated by hierarchy, but is completely determined by the client used by the user, becoming more convenient for configuration and more flexible for customization.
 
 ## Back-end naming control
 
-The user’s perception of a product’s service (sense of experience) does not depend on the technical logic, but on the naming of function points. Therefore, any function point of a product can be customized with a name in the background. Any function point and description point from the content of user data to interaction behaviors can be named in a customized manner (supporting multiple languages). By naming, users’ cognition of products can be shaped (without modifying main programs, themes, plug-ins, clients), and various operation scenarios can be realized.
+The user’s perception of a product’s service (sense of experience) does not depend on the technical logic, but on the naming of function points. Therefore, any function point of a product can be customized with a name in the background. Any function point and description point from the content of user data to interaction behaviors can be named in a customized manner (supporting multiple languages). By naming, users’ cognition of products can be shaped (without modifying main programs, plug-ins, clients), and various operation scenarios can be realized.
 
 ## Public and private modes
 
-The operation mode of the site can be public or private. In the private mode, you can create your own secret circle, and can join in various ways such as invitation, payment, Q&A. If you want to extend the independent gameplay, the product also reserves the More Json extension from the database to the interface level, allowing you to define new parameters at will. By combining the matching theme and client, you can realize the features of any currently known social products.
+The operation mode of the site can be public or private. In the private mode, you can create your own secret circle, and can join in various ways such as invitation, payment, Q&A. If you want to extend the independent gameplay, the product also reserves the More Json extension from the database to the interface level, allowing you to define new parameters at will. By combining the matching client, you can realize the features of any currently known social products.
 
 ## Various product models and forms
 
@@ -54,7 +54,7 @@ If you want to implement social features in your existing product, you don’t h
 
 ## Support externally applied load algorithm
 
-If you need a personalized data list, you can develop or install the corresponding algorithm plug-in by yourself to make the data output more personalized. For example, if all kinds of content such as pictures, videos, commodities, and documents need to output results that meet the user’s preferences, it is not only necessary to build a user’s preference portrait, but also has higher requirements for retrieval engines. When the main program cannot meet your needs, you can load the specified plug-in externally without modifying the main program, themes, plug-ins, and clients.
+If you need a personalized data list, you can develop or install the corresponding algorithm plug-in by yourself to make the data output more personalized. For example, if all kinds of content such as pictures, videos, commodities, and documents need to output results that meet the user’s preferences, it is not only necessary to build a user’s preference portrait, but also has higher requirements for retrieval engines. When the main program cannot meet your needs, you can load the specified plug-in externally without modifying the main program, plug-ins, and clients.
 
 ## Support data stream subscription
 

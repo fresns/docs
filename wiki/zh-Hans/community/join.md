@@ -36,8 +36,8 @@ Fresns 的开源社区正在急速增长中，如果你认可我们的开源软�
 阅读之后，你应该已经准备好向 Fresns 的仓库贡献代码了：
 
 - [Fresns](https://github.com/fresns/fresns): 主程序仓库，核心库
-- [Extensions](https://github.com/fresns/extensions): 官方开发的扩展插件
-- [Themes](https://github.com/fresns/themes): 官方开发的主题模板仓库
+- [Plugins](https://github.com/fresns/plugins): 官方开发的扩展插件
+- [Website](https://github.com/fresns/website): 官方开发的网站端仓库
 
 除此之外，我们还有文档、管理器等[配套仓库](https://github.com/fresns)。
 

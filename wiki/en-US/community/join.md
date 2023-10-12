@@ -35,8 +35,8 @@ As with any project, there are rules to contributing. To ensure that we can help
 After that, you'll be ready to contribute to Fresns core repositories:
 
 - [Fresns](https://github.com/fresns/fresns): the core library
-- [Extensions](https://github.com/fresns/extensions): officially developed extension plugins
-- [Themes](https://github.com/fresns/themes): officially developed theme template repository
+- [Plugins](https://github.com/fresns/plugins): officially developed extension plugins
+- [Website](https://github.com/fresns/website): officially developed website repository
 
 ...as well as many smaller official [companion libraries](https://github.com/fresns).
 

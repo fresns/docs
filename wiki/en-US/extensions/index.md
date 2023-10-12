@@ -19,10 +19,6 @@ In order to achieve this extensibility, Fresns has been built with rich APIs and
 
 **Function Plugins**: Enhance and enrich the extension of main program functions, such as extending a channel, customizing registration process or editor, and enhancing management functions, content security check, and control panel.
 
-**Engine**: Website drivers integrated to run in the fresns, providing a runtime environment for Web clients (themes) such as channel extensions, desktop sites, mobile sites, responsive sites.
-
-**Theme**: It is called a [client](https://marketplace.fresns.com/open-source/clients) in the application marketplace and supports the use of PHP code and Fresns encapsulated functions in the view. The development core is essentially client-side, except that it runs on the web engine.
-
 **Client**: Application developed based on the main program [API](../api/) can be independent websites, APPs, WeChat mini programs, fast applications and other forms. If the API of the main program does not meet the requirements, you can install or develop extension plug-ins to add APIs, or manage the equivalent configuration of client applications.
 
 
