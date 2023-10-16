@@ -3,6 +3,14 @@
 Fresns 主程序所有版本更新日志都将记录在这个文件中。
 
 
+## 2.19.2 (2023-10-16)
+
+### Fixes
+- Models: 账号互联平台完善 QQ 平台
+- Providers: 生产环境应该不产生 SQL Logger
+- Views: 改进 error 视图
+
+
 ## 2.19.1 (2023-10-12)
 
 ### Added
