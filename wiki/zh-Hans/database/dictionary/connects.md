@@ -34,10 +34,13 @@
     {"id":26,"name":"WeChat Mobile Application"},
     {"id":27,"name":"WeChat Website Application"},
     {"id":28,"name":"WeCom"},
-    {"id":29,"name":"Tencent QQ"},
-    {"id":30,"name":"Gitee"},
-    {"id":31,"name":"Weibo"},
-    {"id":32,"name":"Alipay"},
-    {"id":33,"name":"ByteDance"}
+    {"id":29,"name":"Tencent QQ Open Platform (UnionID)"},
+    {"id":30,"name":"Tencent QQ Mini Program"},
+    {"id":31,"name":"Tencent QQ Mobile Application"},
+    {"id":32,"name":"Tencent QQ Website Application"},
+    {"id":33,"name":"Gitee"},
+    {"id":34,"name":"Weibo"},
+    {"id":35,"name":"Alipay"},
+    {"id":36,"name":"ByteDance"}
 ]
 ```
