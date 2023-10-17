@@ -12,5 +12,5 @@
 | 中国大陆模式 | site_china_mode | false | boolean | `false` 或 `true`<br>是否显示备案信息，如果网站服务器不在中国大陆，则关闭 |
 | ICP 备案号 | china_icp_filing |  | string | [https://beian.miit.gov.cn](https://beian.miit.gov.cn/) |
 | ICP 许可证号 | china_icp_license |  | string | [https://dxzhgl.miit.gov.cn](https://dxzhgl.miit.gov.cn/) |
-| 公安备案号 | china_psb_filing |  | string | [http://www.beian.gov.cn](http://www.beian.gov.cn/) |
+| 公安备案号 | china_mps_filing |  | string | [https://beian.mps.gov.cn](https://beian.mps.gov.cn/) |
 | 广播电视节目制作经营许可证 | china_broadcasting_license |  | string | [https://zw.nrta.gov.cn](https://zw.nrta.gov.cn/) |
