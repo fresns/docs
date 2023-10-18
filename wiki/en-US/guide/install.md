@@ -125,6 +125,8 @@ DB_PREFIX=fs_
 ```
 :::
 
+> If the `.env` change does not take effect because the configuration value was cached by the system, please delete the cached file `/bootstrap/cache/config.php`.
+
 ### Trusted Proxies
 
 If you are running as a proxy, you need to configure `.env` trusted IP information, multiple separated by English commas.
