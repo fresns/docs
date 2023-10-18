@@ -30,6 +30,7 @@
     "useApp": "Use App",
     "downloadApp": "Download App",
     "openApp": "Open the app",
+    "reviewApp": "Review App",
     "checkVersion": "Check for Updates",
     "isLatestVersion": "Currently the latest version",
     "upgrade": "Upgrade Now",

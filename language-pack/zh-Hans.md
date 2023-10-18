@@ -30,6 +30,7 @@
     "useApp": "使用 App",
     "downloadApp": "下载 App",
     "openApp": "打开应用",
+    "reviewApp": "评价 App",
     "checkVersion": "检查更新",
     "isLatestVersion": "当前已是最新版本",
     "upgrade": "立即升级",

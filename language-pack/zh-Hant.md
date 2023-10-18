@@ -30,6 +30,7 @@
     "useApp": "使用 App",
     "downloadApp": "下載 App",
     "openApp": "開啟應用程式",
+    "reviewApp": "評價 App",
     "checkVersion": "檢查更新",
     "isLatestVersion": "當前已是最新版本",
     "upgrade": "立即升級",

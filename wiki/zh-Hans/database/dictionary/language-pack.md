@@ -31,6 +31,7 @@
     {"name":"useApp","canDelete":false},
     {"name":"downloadApp","canDelete":false},
     {"name":"openApp","canDelete":false},
+    {"name":"reviewApp","canDelete":false},
     {"name":"checkVersion","canDelete":false},
     {"name":"isLatestVersion","canDelete":false},
     {"name":"upgrade","canDelete":false},
