@@ -30,7 +30,7 @@ Before you install Fresns, it's important to check that your server meets the re
 ## Download
 
 ::: tip Option 1: Download via Package
-- [Download Fresns v2.19.2](https://app.fresns.org/latest.zip)
+- [Download Fresns v2.19.3](https://app.fresns.org/latest.zip)
 :::
 
 ::: tip Option 2: Download via Composer

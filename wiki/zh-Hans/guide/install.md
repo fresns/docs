@@ -30,7 +30,7 @@ Fresns 是一款基于 PHP 编程语言和关系型数据库开发的社交社�
 ## 下载安装包
 
 ::: tip 方式 1: 手动下载安装包
-- [下载 Fresns v2.19.2](https://app.fresns.org/latest.zip)
+- [下载 Fresns v2.19.3](https://app.fresns.org/latest.zip)
 :::
 
 ::: tip 方式 2: 基于 Composer 下载
