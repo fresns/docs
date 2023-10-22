@@ -43,8 +43,9 @@
                 "closingAmount": "Number / 期末分值",
                 "fskey": "String / 处理的插件",
                 "remark": "String / 备注",
-                "createdDatetime": "String / 创建时间",
-                "createdTimeAgo": "String / 创建时间人性化时间",
+                "datetime": "String / 日期时间",
+                "datetimeFormat": "String / 日期时间格式化",
+                "timeAgo": "String / 人性化时间",
             }
         ]
     }

@@ -5,7 +5,7 @@
 | id | bigint *UNSIGNED* | 主键 ID |  | NO | 自动递增 |
 | account_id | bigint *UNSIGNED* | 账号 ID |  | NO | 这笔交易记录属于谁，关联字段 [accounts->id](accounts.md) |
 | user_id | bigint *UNSIGNED* | 用户 ID |  | YES | 这笔交易记录属于谁，关联字段 [users->id](../users/users.md) |
-| type | tinyint *UNSIGNED* | 交易类型 | 1 | NO | 1.收入(充值) / 2.收入(解冻) / 3.收入(交易) <br> 4.支出(提现) / 5.支出(冻结) / 6.支出(交易) |
+| type | tinyint *UNSIGNED* | 交易类型 | 1 | NO | 1.收入(充值) / 2.收入(解冻) / 3.收入(交易) / 4.收入(撤回之前交易的支出)<br>5.支出(提现) / 6.支出(冻结) / 7.支出(交易) / 8.支出(撤回之前交易的收入) |
 | plugin_fskey | varchar(64) | 关联插件 |  | NO | 关联字段 [plugins->fskey](../plugins/plugins.md)<br>哪个插件触发的交易 |
 | transaction_id | bigint *UNSIGNED* | 交易 ID |  | YES | 插件记录值，如果插件有单独数据，可凭该 ID 查询到插件那边记录的内容 |
 | transaction_code | varchar(128) | 交易代码 |  | YES | 插件记录值，如果插件有单独数据，可凭该 Code 查询到插件那边记录的内容 |
@@ -20,6 +20,7 @@
 | state | tinyint *UNSIGNED* | 交易状态 | 1 | NO | 1.待处理<br>2.处理中<br>3.成功<br>4.失败<br>5.撤回 |
 | remark | text | 备注 |  | YES |  |
 | more_json | json | 备用字段 |  | YES |  |
+| success_at | timestamp | 交易成功时间 |  | YES |  |
 | created_at | timestamp | 创建时间 | CURRENT_TIMESTAMP | NO |  |
 | updated_at | timestamp | 更新时间 |  | YES |  |
 | deleted_at | timestamp | 删除时间 |  | YES |  |

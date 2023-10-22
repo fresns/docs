@@ -26,6 +26,7 @@
 | transactionCode | String | NO | 交易记录凭证 Code |
 | remark | String | NO | 交易备注（字符串） |
 | moreJson | Json | NO | 交易备注（Json） |
+| immediate | Boolean | NO | 是否立即生效，不传则为 `false`<br>立即生效则表示立马执行交易，否则只是创建一条待处理的交易日志 |
 
 ## 提现
 
@@ -44,6 +45,25 @@
 | transactionCode | String | NO | 交易记录凭证 Code |
 | remark | String | NO | 交易备注（字符串） |
 | moreJson | Json | NO | 交易备注（Json） |
+| immediate | Boolean | NO | 是否立即生效，不传则为 `false`<br>立即生效则表示立马执行交易，否则只是创建一条待处理的交易日志 |
+
+## 变更充值或提现状态
+
+```php
+\FresnsCmdWord::plugin('Fresns')->walletUpdateState($wordBody);
+```
+| 参数名 | 类型 | 是否必传 | 说明 |
+| --- | --- | --- | --- |
+| aid | String | YES | 交易方账号 |
+| uid | Number | NO | 交易方用户 |
+| logId | Number | NO | 交易日志 ID |
+| transactionId | Number | NO | 交易记录凭证 ID |
+| transactionCode | String | NO | 交易记录凭证 Code |
+| updateState | Number | YES | 变更的状态 1.待处理 / 2.处理中 / 3.成功 / 4.失败 |
+
+- `logId`, `transactionId`, `transactionCode` 三个参数必须至少传一项
+- 仅支持充值和提现交易
+- 当交易的状态为 `3` 或 `4` 的时候，不支持变更状态
 
 ## 冻结
 
@@ -123,6 +143,11 @@
 ```
 | 参数名 | 类型 | 是否必传 | 说明 |
 | --- | --- | --- | --- |
-| logId | Number | YES | 交易日志 ID |
 | aid | String | YES | 交易方账号 |
 | uid | Number | NO | 交易方用户 |
+| logId | Number | NO | 交易日志 ID |
+| transactionId | Number | NO | 交易记录凭证 ID |
+| transactionCode | String | NO | 交易记录凭证 Code |
+
+- `logId`, `transactionId`, `transactionCode` 三个参数必须至少传一项
+- 仅支持收入和支出交易

@@ -43,8 +43,9 @@
                 "closingAmount": "Number / Closing amount",
                 "fskey": "String / Plugin fskey",
                 "remark": "String / Remark",
-                "createdDatetime": "String / Creation time",
-                "createdTimeAgo": "String / Human-friendly time since creation",
+                "datetime": "String / Datetime",
+                "datetimeFormat": "String / Formatted time",
+                "timeAgo": "String / Humanized time",
             }
         ]
     }

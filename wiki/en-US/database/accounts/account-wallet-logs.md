@@ -5,7 +5,7 @@
 | id | bigint *UNSIGNED* | Primary Key ID |  | NO | Auto Increment |
 | account_id | bigint *UNSIGNED* | Account ID |  | NO | The account this transaction record belongs to, Related field [accounts->id](accounts.md) |
 | user_id | bigint *UNSIGNED* | User ID |  | YES | The user this transaction record belongs to, Related field [users->id](../users/users.md) |
-| type | tinyint *UNSIGNED* | Transaction Type | 1 | NO | 1.Income (Recharge) / 2.Income (Unfreeze) / 3.Income (Transaction) <br> 4.Expense (Withdrawal) / 5.Expense (Freeze) / 6.Expense (Transaction) |
+| type | tinyint *UNSIGNED* | Transaction Type | 1 | NO | 1.Income (Recharge) / 2.Income (Unfreeze) / 3.Income (Transaction) 4.Income (Revoke) <br> 5.Expense (Withdrawal) / 6.Expense (Freeze) / 7.Expense (Transaction) / 8.Expense (Revoke) |
 | plugin_fskey | varchar(64) | Related Plugin |  | NO | Related field [plugins->fskey](../plugins/plugins.md)<br>Which plugin triggered the transaction |
 | transaction_id | bigint *UNSIGNED* | Transaction ID |  | YES | Plugin record value, if the plugin has separate data, this ID can be used to query the content recorded in the plugin |
 | transaction_code | varchar(128) | Transaction Code |  | YES | Plugin record value, if the plugin has separate data, this Code can be used to query the content recorded in the plugin |
@@ -17,9 +17,10 @@
 | object_account_id | bigint *UNSIGNED* | Related Account ID |  | YES | Related field [accounts->id](accounts.md), this transaction is from whom |
 | object_user_id | bigint *UNSIGNED* | Related User ID |  | YES | Related field [users->id](../users/users.md), this transaction is from whom |
 | object_wallet_log_id | bigint *UNSIGNED* | Related Transaction Log ID |  | YES | Related field account_wallet_logs->id |
-| state | tinyint *UNSIGNED* | Transaction State | 1 | NO | 1.PENDING<br>2.PROCESSING<br>3.SUCCESS<br>4.FAILED<br>5.REVERSED |
+| state | tinyint *UNSIGNED* | Transaction State | 1 | NO | 1.Pending<br>2.Processing<br>3.Success<br>4.Failed<br>5.Reversed |
 | remark | text | Remark |  | YES |  |
 | more_json | json | Backup Field |  | YES |  |
+| success_at | timestamp | Transaction Success Time |  | YES |  |
 | created_at | timestamp | Create Time | CURRENT_TIMESTAMP | NO |  |
 | updated_at | timestamp | Update Time |  | YES |  |
 | deleted_at | timestamp | Delete Time |  | YES |  |

@@ -26,6 +26,7 @@
 | transactionCode | String | *optional* | Transaction record voucher Code |
 | remark | String | *optional* | Transaction remark (string) |
 | moreJson | Json | *optional* | Transaction remark (Json) |
+| immediate | Boolean | *optional* | Whether to take effect immediately, `false` if not passed<br>Effective immediately means that the transaction will be executed immediately, otherwise it will just create a pending transaction log. |
 
 ## walletWithdraw
 
@@ -44,6 +45,25 @@
 | transactionCode | String | *optional* | Transaction record voucher Code |
 | remark | String | *optional* | Transaction remark (string) |
 | moreJson | Json | *optional* | Transaction remark (Json) |
+| immediate | Boolean | *optional* | Whether to take effect immediately, `false` if not passed<br>Effective immediately means that the transaction will be executed immediately, otherwise it will just create a pending transaction log. |
+
+## walletUpdateState
+
+```php
+\FresnsCmdWord::plugin('Fresns')->walletUpdateState($wordBody);
+```
+| Parameter Name | Type | Required | Description |
+| --- | --- | --- | --- |
+| aid | String | **required** | Trading party account |
+| uid | Number | *optional* | Trading party user |
+| logId | Number | *optional* | Transaction log ID |
+| transactionId | Number | *optional* | Transaction ID |
+| transactionCode | String | *optional* | Transaction Code |
+| updateState | Number | **required** | Changed Status: 1.Pending / 2.Processing / 3.Success / 4.Failed |
+
+- `logId`, `transactionId`, `transactionCode`, at least one of the three parameters must be passed.
+- Only supports recharge and withdrawal transactions
+- When the transaction status is `3` or `4`, changing the status is not supported
 
 ## walletFreeze
 
@@ -123,6 +143,10 @@
 ```
 | Parameter Name | Type | Required | Description |
 | --- | --- | --- | --- |
-| logId | Number | **required** | Transaction log ID |
 | aid | String | **required** | Trading party account |
 | uid | Number | *optional* | Trading party user |
+| logId | Number | *optional* | Transaction log ID |
+| transactionId | Number | *optional* | Transaction ID |
+| transactionCode | String | *optional* | Transaction Code |
+
+- `logId`, `transactionId`, `transactionCode`, at least one of the three parameters must be passed.
