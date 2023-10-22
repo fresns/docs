@@ -39,7 +39,7 @@
         },
         "list": [
             {
-                "type": "Number / 交易类型 1.收入(充值) 2.收入(解冻) 3.收入(交易) 4.支出(提现) 5.支出(冻结) 6.支出(交易)",
+                "type": "Number / 交易类型",
                 "fskey": "String / 处理交易的插件",
                 "transactionId": "Number / 交易数字凭证",
                 "transactionCode": "String / 交易字符串凭证",

@@ -139,7 +139,7 @@
 ## 撤销交易
 
 ```php
-\FresnsCmdWord::plugin('Fresns')->walletRevoke($wordBody);
+\FresnsCmdWord::plugin('Fresns')->walletReversal($wordBody);
 ```
 | 参数名 | 类型 | 是否必传 | 说明 |
 | --- | --- | --- | --- |

@@ -136,10 +136,10 @@
 | remark | String | *optional* | Transaction remark (string) |
 | moreJson | Json | *optional* | Transaction remark (Json) |
 
-## walletRevoke
+## walletReversal
 
 ```php
-\FresnsCmdWord::plugin('Fresns')->walletRevoke($wordBody);
+\FresnsCmdWord::plugin('Fresns')->walletReversal($wordBody);
 ```
 | Parameter Name | Type | Required | Description |
 | --- | --- | --- | --- |

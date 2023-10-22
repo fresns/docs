@@ -39,7 +39,7 @@
         },
         "list": [
             {
-                "type": "Number / Transaction type 1. Income (recharge) 2. Income (unfreeze) 3. Income (transaction) 4. Expense (withdrawal) 5. Expense (freeze) 6. Expense (transaction)",
+                "type": "Number / Transaction type",
                 "fskey": "String / Plugin handling the transaction",
                 "transactionId": "Number / Transaction ID",
                 "transactionCode": "String / Transaction Code",
