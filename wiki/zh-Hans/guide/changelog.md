@@ -3,6 +3,32 @@
 Fresns 主程序所有版本更新日志都将记录在这个文件中。
 
 
+## 2.20.0 (2023-10-22)
+
+### Added
+- API: `/api/v2/account/wallet-logs` 新增 `transactionId` 和 `transactionCode` 参数
+- API: `/api/v2/account/wallet-logs` 交易状态采用 `state` 参数名，状态使用数字编号
+- API: `/api/v2/account/wallet-logs` 参数新增 `datetimeFormat`
+- API: `/api/v2/user/extcredits-logs` 参数 `datetimeFormat`
+- Words: 增加「变更交易状态」命令字 `walletUpdateState`
+- Words: 钱包 `walletRecharge` 命令字新增 `immediate` 参数
+- Words: 钱包 `walletWithdraw` 命令字新增 `immediate` 参数
+
+### Fixes
+- API: 修复接口列表页数参数错误 `pagination`
+- API: 修复内容文件的缓存问题，避免 URL 失效
+- Models: 修复主角色为空时报错
+- Install: 修复未安装时因为 cookie prefix 问题导致报错无法安装
+
+### BREAKING CHANGES
+- API: 所有列表接口，分页信息参数名修改为 `pagination`
+- API: `/api/v2/account/wallet-logs` 参数 `createdDatetime` 修改为 `datetime`
+- API: `/api/v2/account/wallet-logs` 参数 `createdTimeAgo` 修改为 `timeAgo`
+- API: `/api/v2/user/extcredits-logs` 参数 `createdDatetime` 修改为 `datetime`
+- API: `/api/v2/user/extcredits-logs` 参数 `createdTimeAgo` 修改为 `timeAgo`
+- Words: 钱包 `walletRevoke` 命令字修改为 `walletReversal`
+
+
 ## 2.19.3 (2023-10-19)
 
 ### Fixes
