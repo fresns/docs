@@ -52,8 +52,10 @@
                     // Transaction user, If not, it is null
                     // Common Data Structure -> User Info
                 },
+                "transactionId": "Number / Transaction ID",
+                "transactionCode": "String / Transaction Code",
                 "fskey": "String / Plugin handling the transaction",
-                "status": "Boolean / Transaction status",
+                "state": "Number / Transaction state",
             }
         ]
     }

@@ -52,8 +52,10 @@
                     // 交易关联用户，没有则为 null
                     // 通用数据结构->用户信息
                 },
+                "transactionId": "Number / 交易数字凭证",
+                "transactionCode": "String / 交易字符串凭证",
                 "fskey": "String / 处理交易的插件",
-                "status": "Boolean / 交易状态",
+                "state": "Number / 交易状态",
             }
         ]
     }

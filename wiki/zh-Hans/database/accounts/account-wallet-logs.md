@@ -17,7 +17,7 @@
 | object_account_id | bigint *UNSIGNED* | 关联账号 ID |  | YES | 关联字段 [accounts->id](accounts.md)，这笔交易来自谁 |
 | object_user_id | bigint *UNSIGNED* | 关联用户 ID |  | YES | 关联字段 [users->id](../users/users.md)，这笔交易来自谁 |
 | object_wallet_log_id | bigint *UNSIGNED* | 关联交易日志 ID |  | YES | 关联字段 account_wallet_logs->id |
-| is_enabled | tinyint *UNSIGNED* | 是否成功 | 1 | NO | 0.交易失败 / 1.交易成功 |
+| state | tinyint *UNSIGNED* | 交易状态 | 1 | NO | 1.待处理<br>2.处理中<br>3.成功<br>4.失败<br>5.撤回 |
 | remark | text | 备注 |  | YES |  |
 | more_json | json | 备用字段 |  | YES |  |
 | created_at | timestamp | 创建时间 | CURRENT_TIMESTAMP | NO |  |
