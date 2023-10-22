@@ -243,6 +243,8 @@
     {"name":"walletLogType4","canDelete":false},
     {"name":"walletLogType5","canDelete":false},
     {"name":"walletLogType6","canDelete":false},
+    {"name":"walletLogType7","canDelete":false},
+    {"name":"walletLogType8","canDelete":false},
     {"name":"walletLogState1","canDelete":false},
     {"name":"walletLogState2","canDelete":false},
     {"name":"walletLogState3","canDelete":false},
