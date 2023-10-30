@@ -11,7 +11,7 @@
 | Secret Key | image_secret_key |  | string | 举例又拍云：操作员密码 |
 | Secret App | image_secret_app |  | string |  |
 | 存储配置名称 | image_bucket_name |  | string | 举例又拍云：服务名(空间名) |
-| 存储配置地域 | image_bucket_area |  | string | 举例又拍云：用不到，留空 |
+| 存储配置地域 | image_bucket_region |  | string | 举例又拍云：用不到，留空 |
 | 存储配置域名 | image_bucket_domain |  | string | http:// 或 https:// 开头，结尾不带 / |
 | 支持的扩展名 | image_extension_names | png,gif,jpg,jpeg,bmp,heic | string | 以英文逗号 , 隔开 |
 | 支持的最大尺寸 | image_max_size | 5 | number | 单位：MB |
@@ -33,7 +33,7 @@
 | Secret Key | video_secret_key |  | string |  |
 | Secret App | video_secret_app |  | string |  |
 | 存储配置名称 | video_bucket_name |  | string |  |
-| 存储配置地域 | video_bucket_area |  | string |  |
+| 存储配置地域 | video_bucket_region |  | string |  |
 | 存储配置域名 | video_bucket_domain |  | string | http:// 或 https:// 开头，结尾不带 / |
 | 视频支持的扩展名 | video_extension_names | wmv,rm,mov,mpeg,mp4,<br>3gp,flv,avi,rmvb | string | 以英文逗号 , 隔开 |
 | 支持的最大尺寸 | video_max_size | 50 | number | 单位：MB |
@@ -55,7 +55,7 @@
 | Secret Key | audio_secret_key |  | string |  |
 | Secret App | audio_secret_app |  | string |  |
 | 存储配置名称 | audio_bucket_name |  | string |  |
-| 存储配置地域 | audio_bucket_area |  | string |  |
+| 存储配置地域 | audio_bucket_region |  | string |  |
 | 存储配置域名 | audio_bucket_domain |  | string | http:// 或 https:// 开头，结尾不带 / |
 | 音频支持的扩展名 | audio_extension_names | mp3,wav,m4a | string | 以英文逗号 , 隔开 |
 | 支持的最大尺寸 | audio_max_size | 50 | number | 单位：MB |
@@ -75,7 +75,7 @@
 | Secret Key | document_secret_key |  | string |  |
 | Secret App | document_secret_app |  | string |  |
 | 存储配置名称 | document_bucket_name |  | string |  |
-| 存储配置地域 | document_bucket_area |  | string |  |
+| 存储配置地域 | document_bucket_region |  | string |  |
 | 存储配置域名 | document_bucket_domain |  | string | http:// 或 https:// 开头，结尾不带 / |
 | 支持的扩展名 | document_extension_names | doc,docx,xls,xlsx,csv,<br>ppt,pptx,pps,ppts,<br>pdf,<br>txt,md,markdown,<br>rar,zip,7z,<br>epub,mobi | string | 以英文逗号 , 隔开 |
 | 支持的最大尺寸 | document_max_size | 10 | number | 单位：MB |

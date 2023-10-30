@@ -24,6 +24,9 @@
 | Time Limit for Editing Posts | post_edit_time_limit | 5 | number |  |
 | Sticky Post Edit Permission | post_edit_sticky_limit | false | boolean |  |
 | Digest Post Edit Permission | post_edit_digest_limit | false | boolean |  |
+| Post Delete Permission | post_delete | true | boolean |  |
+| Sticky Post Delete Permission | post_delete_sticky_limit | true | boolean |  |
+| Digest Post Delete Permission | post_delete_digest_limit | true | boolean |  |
 | <hr> |  |  |  |  |
 | Post Editor | post_editor_service |  | **plugin** | Plugin application scenario parameter `editor` |
 | <hr> |  |  |  |  |
@@ -77,6 +80,9 @@
 | How Long Can Edit | comment_edit_time_limit | 5 | number |  |
 | Comment Top After Editing Permissions | comment_edit_sticky_limit | false | boolean |  |
 | Comment Essence After Editing Permissions | comment_edit_digest_limit | false | boolean |  |
+| Comment Delete Permission | comment_delete | true | boolean |  |
+| Sticky Comment Delete Permission | comment_delete_sticky_limit | true | boolean |  |
+| Digest Comment Delete Permission | comment_delete_digest_limit | true | boolean |  |
 | <hr> |  |  |  |  |
 | Comment Editor | comment_editor_service |  | **plugin** | Plugin Application Scene Parameter `editor` |
 | <hr> |  |  |  |  |

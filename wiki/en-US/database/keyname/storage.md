@@ -11,7 +11,7 @@
 | Secret Key | image_secret_key |  | string | Example: Upyun Operator Password |
 | Secret App | image_secret_app |  | string |  |
 | Storage Configuration Name | image_bucket_name |  | string | Example: Upyun Service Name (Space Name) |
-| Storage Configuration Region | image_bucket_area |  | string | Example: Upyun, not needed, leave empty |
+| Storage Configuration Region | image_bucket_region |  | string | Example: Upyun, not needed, leave empty |
 | Storage Configuration Domain | image_bucket_domain |  | string | Starts with http:// or https://, without trailing / |
 | Supported Extensions | image_extension_names | png,gif,jpg,jpeg,bmp,heic | string | Separated by English commas , |
 | Supported Maximum Size | image_max_size | 5 | number | Unit: MB |
@@ -33,7 +33,7 @@
 | Secret Key | video_secret_key |  | string |  |
 | Secret App | video_secret_app |  | string |  |
 | Storage Configuration Name | video_bucket_name |  | string |  |
-| Storage Configuration Region | video_bucket_area |  | string |  |
+| Storage Configuration Region | video_bucket_region |  | string |  |
 | Storage Configuration Domain | video_bucket_domain |  | string | Starts with http:// or https://, without trailing / |
 | Supported Video Extensions | video_extension_names | wmv,rm,mov,mpeg,mp4,<br>3gp,flv,avi,rmvb | string | Separated by English commas , |
 | Supported Maximum Size | video_max_size | 50 | number | Unit: MB |
@@ -55,7 +55,7 @@
 | Secret Key | audio_secret_key |  | string |  |
 | Secret App | audio_secret_app |  | string |  |
 | Storage Configuration Name | audio_bucket_name |  | string |  |
-| Storage Configuration Region | audio_bucket_area |  | string |  |
+| Storage Configuration Region | audio_bucket_region |  | string |  |
 | Storage Configuration Domain | audio_bucket_domain |  | string | Starts with http:// or https://, without trailing / |
 | Supported Audio Extensions | audio_extension_names | mp3,wav,m4a | string | Separated by English commas , |
 | Supported Maximum Size | audio_max_size | 50 | number | Unit: MB |
@@ -75,7 +75,7 @@
 | Secret Key | document_secret_key |  | string |  |
 | Secret App | document_secret_app |  | string |  |
 | Storage Configuration Name | document_bucket_name |  | string |  |
-| Storage Configuration Region | document_bucket_area |  | string |  |
+| Storage Configuration Region | document_bucket_region |  | string |  |
 | Storage Configuration Domain | document_bucket_domain |  | string | Starts with http:// or https://, without trailing / |
 | Supported Extensions | document_extension_names | doc,docx,xls,xlsx,csv,<br>ppt,pptx,pps,ppts,<br>pdf,<br>txt,md,markdown,<br>rar,zip,7z,<br>epub,mobi | string | Separated by English commas , |
 | Supported Maximum Size | document_max_size | 10 | number | Unit: MB |

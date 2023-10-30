@@ -24,6 +24,9 @@
 | 多长时间内可以编辑 | post_edit_time_limit | 5 | number |  |
 | 帖子置顶后编辑权限 | post_edit_sticky_limit | false | boolean |  |
 | 帖子加精后编辑权限 | post_edit_digest_limit | false | boolean |  |
+| 帖子删除权限 | post_delete | true | boolean |  |
+| 帖子置顶后删除权限 | post_delete_sticky_limit | true | boolean |  |
+| 帖子加精后删除权限 | post_delete_digest_limit | true | boolean |  |
 | <hr> |  |  |  |  |
 | 帖子编辑器 | post_editor_service |  | **plugin** | 插件应用场景参数 `editor` |
 | <hr> |  |  |  |  |
@@ -77,6 +80,9 @@
 | 多长时间内可以编辑 | comment_edit_time_limit | 5 | number |  |
 | 评论置顶后编辑权限 | comment_edit_sticky_limit | false | boolean |  |
 | 评论加精后编辑权限 | comment_edit_digest_limit | false | boolean |  |
+| 评论删除权限 | comment_delete | true | boolean |  |
+| 评论置顶后删除权限 | comment_delete_sticky_limit | true | boolean |  |
+| 评论加精后删除权限 | comment_delete_digest_limit | true | boolean |  |
 | <hr> |  |  |  |  |
 | 评论编辑器 | comment_editor_service |  | **plugin** | 插件应用场景参数 `editor` |
 | <hr> |  |  |  |  |
