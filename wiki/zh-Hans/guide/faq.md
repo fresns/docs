@@ -7,6 +7,7 @@
 
 - [一键分享 Fresns 报错信息的方法](https://discuss.fresns.cn/post/fvYIF3Je)
 - [遇到报错查看网络日志和服务端日志的方法](https://discuss.fresns.cn/post/t7uqeux4)
+- [主程序提速方案，解决插件安装和升级的速度问题](https://discuss.fresns.cn/post/DOZbnSaY)
 
 ## 环境问题
 
@@ -15,6 +16,7 @@
 - [file_put_contents 错误](https://discuss.fresns.cn/post/NSQoPOuK)
 - [登录后台 419 错误](https://discuss.fresns.cn/post/u4txRlqk)
 - [因夏令时导致的时区异常，可以忽略](https://discuss.fresns.cn/post/iECo6xYO)
+- [导致权限问题的三种原因](https://discuss.fresns.cn/post/6N6C8OaB)
 
 ## 访问问题
 
