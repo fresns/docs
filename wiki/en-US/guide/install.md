@@ -336,6 +336,7 @@ fresns/         // Main Program Root Directory
 │   ├── assets/         // Plugins Static Files
 │   ├── static/         // Built-in Static Files
 │   ├── index.php       // Website Entrance File
+│   ├── status.json     // Client Status Config File
 │   ├── favicon.ico     // Site ico Icon
 │   └── robots.txt      // Search Engine Robots Protocol
 ├── resources/      // Framework Resource Directory

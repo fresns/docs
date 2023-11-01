@@ -50,6 +50,7 @@ fresns/         // 主程序根目录
 │   ├── assets/         // 插件资源目录
 │   ├── static/         // 内置静态文件
 │   ├── index.php       // 网站入口文件
+│   ├── status.json     // 客户端状态配置文件
 │   ├── favicon.ico     // 站点 ico 图标
 │   └── robots.txt      // Robots 协议
 ├── resources/      // 框架资源目录

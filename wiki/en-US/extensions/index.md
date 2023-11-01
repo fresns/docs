@@ -50,7 +50,8 @@ fresns/         // Main Program Root Directory
 │   ├── assets/
 │   ├── static/
 │   ├── index.php
-│   ├── favicon.Icon
+│   ├── status.json
+│   ├── favicon.ico
 │   └── robots.txt
 ├── resources/
 │   ├── css/
