@@ -6,7 +6,8 @@
 | --- | --- | --- | --- | --- |
 | 站点地址 | site_url |  | string | 内容 Web URL 拼接时使用 |
 | 站点名称 | site_name |  | string | **多语言** |
-| 站点介绍 | site_desc |  | string | **多语言** |
+| 站点描述 | site_desc |  | string | **多语言** |
+| 站点介绍 | site_intro |  | string | **多语言** |
 | 站点 ICON | site_icon |  | **file** | 输出时是图片 URL |
 | 站点 LOGO | site_logo |  | **file** | 输出时是图片 URL |
 | 版权所有名称 | site_copyright | Fresns | string |  |
