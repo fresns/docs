@@ -355,6 +355,7 @@
     "contentAuthorLiked": "作者點讚了該留言",
     "contentPublishTime": "發表時間",
     "contentCommentTime": "留言時間",
+    "contentDigestTime": "精華時間",
     "contentLatestCommentTime": "最新留言時間",
     "contentPublishedOn": "發表於",
     "contentEditedOn": "編輯於",

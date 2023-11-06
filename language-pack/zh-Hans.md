@@ -355,6 +355,7 @@
     "contentAuthorLiked": "作者点赞了该评论",
     "contentPublishTime": "发布时间",
     "contentCommentTime": "评论时间",
+    "contentDigestTime": "精华时间",
     "contentLatestCommentTime": "最新评论时间",
     "contentPublishedOn": "发表于",
     "contentEditedOn": "编辑于",

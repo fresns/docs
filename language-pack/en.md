@@ -355,6 +355,7 @@
     "contentAuthorLiked": "The author liked the comment",
     "contentPublishTime": "Publish Time",
     "contentCommentTime": "Comment Time",
+    "contentDigestTime": "Digest Time",
     "contentLatestCommentTime": "Latest Comment Time",
     "contentPublishedOn": "Published on",
     "contentEditedOn": "Edited on",

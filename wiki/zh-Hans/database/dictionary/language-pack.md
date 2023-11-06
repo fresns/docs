@@ -355,6 +355,7 @@
     {"name":"contentAuthorLiked","canDelete":false},
     {"name":"contentPublishTime","canDelete":false},
     {"name":"contentCommentTime","canDelete":false},
+    {"name":"contentDigestTime","canDelete":false},
     {"name":"contentLatestCommentTime","canDelete":false},
     {"name":"contentPublishedOn","canDelete":false},
     {"name":"contentEditedOn","canDelete":false},
