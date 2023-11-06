@@ -17,6 +17,7 @@
 | map_latitude | decimal(12,8) | Map - Latitude |  | YES | Decimal, range -90~90, negative for south latitude |
 | sticky_state | tinyint *UNSIGNED* | Sticky state | 1 | NO | 1.No / 2.Group Sticky / 3.Global Sticky |
 | digest_state | tinyint *UNSIGNED* | Digest state | 1 | NO | 1.No / 2.General Digest / 3.Premium Digest |
+| digested_at | timestamp | Digest Time |  | YES | Time set to Digest |
 | view_count | int *UNSIGNED* | Number of View | 0 | NO |  |
 | like_count | int *UNSIGNED* | Like count | 0 | NO | Number of users who liked the post |
 | dislike_count | int *UNSIGNED* | Dislike count | 0 | NO | Number of users who disliked the post |

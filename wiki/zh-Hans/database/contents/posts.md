@@ -17,6 +17,7 @@
 | map_latitude | decimal(12,8) | 地图-纬度 |  | YES | 浮点数，范围为 -90~90，负数表示南纬 |
 | sticky_state | tinyint *UNSIGNED* | 置顶状态 | 1 | NO | 1.否 / 2.小组页置顶 / 3.全局置顶 |
 | digest_state | tinyint *UNSIGNED* | 精华状态 | 1 | NO | 1.否 / 2.普通精华 / 3.高级精华 |
+| digested_at | timestamp | 精华时间 |  | YES | 设为精华的时间 |
 | view_count | int *UNSIGNED* | 查看数 | 0 | NO |  |
 | like_count | int *UNSIGNED* | 点赞数 | 0 | NO | 有多少用户点赞了该帖子 |
 | dislike_count | int *UNSIGNED* | 点踩数 | 0 | NO | 有多少用户点踩了该帖子 |
