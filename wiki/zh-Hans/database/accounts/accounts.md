@@ -9,7 +9,7 @@
 | pure_phone | varchar(128) | 没有区号的手机号 |  | YES | 不带国际区号 |
 | phone | varchar(128) | 带区号的手机号 |  | YES | **唯一值** 带国际区号（区号无加号） |
 | email | varchar(128) | 邮箱 |  | YES | **唯一值** |
-| password | char(64) | 密码 |  | YES | 加密存储 |
+| password | varchar(64) | 密码 |  | YES | 加密存储 |
 | last_login_at | timestamp | 最后一次登录时间 |  | NO |  |
 | is_verify | tinyint *UNSIGNED* | 实名认证状态 | 0 | NO | 0.未认证 / 1.已认证 |
 | verify_plugin_fskey | varchar(64) | 实名认证插件名称 |  | YES | 哪个插件处理的认证，关联字段 [plugins->fskey](../plugins/plugins.md) |

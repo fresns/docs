@@ -9,7 +9,7 @@
 | pure_phone | varchar(128) | Phone Number without Area Code |  | YES | Without international area code |
 | phone | varchar(128) | Phone Number with Area Code |  | YES | **Unique** With international area code (no plus sign in the area code) |
 | email | varchar(128) | Email |  | YES | **Unique** |
-| password | char(64) | Password |  | YES | Encrypted storage |
+| password | varchar(64) | Password |  | YES | Encrypted storage |
 | last_login_at | timestamp | Last Login Time |  | NO |  |
 | is_verify | tinyint *UNSIGNED* | Real Name Verification Status | 0 | NO | 0.Unverified / 1.Verified |
 | verify_plugin_fskey | varchar(64) | Real Name Auth Plugin Fskey |  | YES | Which plugin handled the authentication, Related field [plugins->fskey](../plugins/plugins.md) |

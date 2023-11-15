@@ -6,7 +6,7 @@
 | account_id | bigint *UNSIGNED* | 账号主键 ID |  | NO | 关联字段 [accounts->id](accounts.md) |
 | balance | decimal(10,2) | 钱包金额 | 0.00 | NO | 单位：元 |
 | freeze_amount | decimal(10,2) | 不可用金额 | 0.00 | NO | 例如正在提现或者冻结<br>单位：元 |
-| password | char(64) | 钱包支付密码 |  | YES |  |
+| password | varchar(64) | 钱包支付密码 |  | YES |  |
 | bank_name | varchar(64) | 银行名称 |  | YES | 提现专用信息存储字段 |
 | swift_code | varchar(32) | SWIFT 代码 |  | YES | 提现专用信息存储字段 |
 | bank_address | varchar(255) | 银行地址 |  | YES | 提现专用信息存储字段 |

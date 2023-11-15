@@ -6,7 +6,7 @@
 | account_id | bigint *UNSIGNED* | Account ID |  | NO | Related field [accounts->id](accounts.md) |
 | balance | decimal(10,2) | Wallet Balance | 0.00 | NO | Unit: Yuan |
 | freeze_amount | decimal(10,2) | Unavailable Amount | 0.00 | NO | e.g. Withdrawal in progress or frozen<br>Unit: Yuan |
-| password | char(64) | Wallet Payment Password |  | YES |  |
+| password | varchar(64) | Wallet Payment Password |  | YES |  |
 | bank_name | varchar(64) | Bank Name |  | YES | Dedicated field for withdrawal information storage |
 | swift_code | varchar(32) | SWIFT Code |  | YES | Dedicated field for withdrawal information storage |
 | bank_address | varchar(255) | Bank Address |  | YES | Dedicated field for withdrawal information storage |
