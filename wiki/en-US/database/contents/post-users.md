@@ -1,3 +1,7 @@
+---
+aside: false
+---
+
 # post_users
 
 | Column Name | Type | Comment | Default | Null | Remark |

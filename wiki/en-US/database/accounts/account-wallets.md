@@ -1,3 +1,7 @@
+---
+aside: false
+---
+
 # account_wallets
 
 | Column Name | Type | Comment | Default | Null | Remark |

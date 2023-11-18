@@ -1,3 +1,7 @@
+---
+aside: false
+---
+
 # session_tokens
 
 | Column Name | Type | Comment | Default | Null | Remark |

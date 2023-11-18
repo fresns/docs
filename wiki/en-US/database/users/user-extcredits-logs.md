@@ -1,3 +1,7 @@
+---
+aside: false
+---
+
 # user_extcredits_logs
 
 | Column Name | Type | Comment | Default | Null | Remark |

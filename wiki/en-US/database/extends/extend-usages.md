@@ -1,3 +1,7 @@
+---
+aside: false
+---
+
 # extend_usages
 
 | Column Name | Type | Comment | Default | Null | Remark |

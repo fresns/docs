@@ -1,3 +1,7 @@
+---
+aside: false
+---
+
 # file_downloads
 
 | Column Name | Type | Comment | Default | Null | Remark |

@@ -1,3 +1,7 @@
+---
+aside: false
+---
+
 # comment_logs
 
 | Column Name | Type | Comment | Default | Null | Remark |

@@ -1,3 +1,7 @@
+---
+aside: false
+---
+
 # domains
 
 | Column Name | Type | Comment | Default | Null | Remark |

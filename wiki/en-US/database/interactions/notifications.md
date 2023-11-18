@@ -1,3 +1,7 @@
+---
+aside: false
+---
+
 # notifications
 
 | Column Name | Type | Comment | Default | Null | Remark |

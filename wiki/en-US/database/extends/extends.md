@@ -1,3 +1,7 @@
+---
+aside: false
+---
+
 # extends
 
 | Column Name | Type | Comment | Default | Null | Remark |

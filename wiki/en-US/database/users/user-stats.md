@@ -1,3 +1,7 @@
+---
+aside: false
+---
+
 # user_stats
 
 | Column Name | Type | Comment | Default | Null | Remark |

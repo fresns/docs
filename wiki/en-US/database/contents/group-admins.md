@@ -1,3 +1,7 @@
+---
+aside: false
+---
+
 # group_admins
 
 | Column Name | Type | Comment | Default | Null | Remark |

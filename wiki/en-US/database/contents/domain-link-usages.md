@@ -1,3 +1,7 @@
+---
+aside: false
+---
+
 # domain_link_usages
 
 | Column Name | Type | Comment | Default | Null | Remark |

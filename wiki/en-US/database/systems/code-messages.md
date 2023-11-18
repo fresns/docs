@@ -1,3 +1,7 @@
+---
+aside: false
+---
+
 # code_messages
 
 | Column Name | Type | Comment | Default | Null | Remark |

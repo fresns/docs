@@ -1,3 +1,7 @@
+---
+aside: false
+---
+
 # post_auths
 
 | Column Name | Type | Comment | Default | Null | Remark |

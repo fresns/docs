@@ -1,3 +1,7 @@
+---
+aside: false
+---
+
 # users
 
 | Column Name | Type | Comment | Default | Null | Remark |

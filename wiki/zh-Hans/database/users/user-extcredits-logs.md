@@ -1,3 +1,7 @@
+---
+aside: false
+---
+
 # user_extcredits_logs *用户扩展分值日志表*
 
 | 字段名 | 字段类型 | 字段注释 | 默认值 | 可空 | 备注 |

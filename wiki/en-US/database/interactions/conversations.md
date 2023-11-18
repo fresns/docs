@@ -1,3 +1,7 @@
+---
+aside: false
+---
+
 # conversations
 
 | Column Name | Type | Comment | Default | Null | Remark |

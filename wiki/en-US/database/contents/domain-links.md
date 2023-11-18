@@ -1,3 +1,7 @@
+---
+aside: false
+---
+
 # domain_links
 
 | Column Name | Type | Comment | Default | Null | Remark |

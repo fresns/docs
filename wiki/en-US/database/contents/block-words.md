@@ -1,3 +1,7 @@
+---
+aside: false
+---
+
 # block_words
 
 | Column Name | Type | Comment | Default | Null | Remark |

@@ -1,3 +1,7 @@
+---
+aside: false
+---
+
 # accounts
 
 | Column Name | Type | Comment | Default | Null | Remark |

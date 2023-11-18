@@ -1,3 +1,7 @@
+---
+aside: false
+---
+
 # configs
 
 | Column Name | Type | Comment | Default | Null | Remark |

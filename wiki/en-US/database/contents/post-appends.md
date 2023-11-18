@@ -1,3 +1,7 @@
+---
+aside: false
+---
+
 # post_appends
 
 | Column Name | Type | Comment | Default | Null | Remark |

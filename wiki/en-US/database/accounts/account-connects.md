@@ -1,3 +1,7 @@
+---
+aside: false
+---
+
 # account_connects
 
 | Column Name | Type | Comment | Default | Null | Remark |

@@ -1,3 +1,7 @@
+---
+aside: false
+---
+
 # archives
 
 | Column Name | Type | Comment | Default | Null | Remark |

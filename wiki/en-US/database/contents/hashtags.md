@@ -1,3 +1,7 @@
+---
+aside: false
+---
+
 # hashtags
 
 | Column Name | Type | Comment | Default | Null | Remark |

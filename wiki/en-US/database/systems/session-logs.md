@@ -1,3 +1,7 @@
+---
+aside: false
+---
+
 # session_logs
 
 | Column Name | Type | Comment | Default | Null | Remark |

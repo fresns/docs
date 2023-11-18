@@ -1,3 +1,7 @@
+---
+aside: false
+---
+
 # plugin_badges
 
 | Column Name | Type | Comment | Default | Null | Remark |

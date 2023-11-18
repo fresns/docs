@@ -1,3 +1,7 @@
+---
+aside: false
+---
+
 # languages
 
 | Column Name | Type | Comment | Default | Null | Remark |

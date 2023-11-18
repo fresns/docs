@@ -1,3 +1,7 @@
+---
+aside: false
+---
+
 # hashtag_usages
 
 | Column Name | Type | Comment | Default | Null | Remark |

@@ -1,3 +1,7 @@
+---
+aside: false
+---
+
 # placements
 
 | Column Name | Type | Comment | Default | Null | Remark |

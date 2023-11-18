@@ -1,3 +1,7 @@
+---
+aside: false
+---
+
 # files
 
 | Column Name | Type | Comment | Default | Null | Remark |

@@ -1,3 +1,7 @@
+---
+aside: false
+---
+
 # verify_codes
 
 | Column Name | Type | Comment | Default | Null | Remark |

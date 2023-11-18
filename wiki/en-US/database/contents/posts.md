@@ -1,3 +1,7 @@
+---
+aside: false
+---
+
 # posts
 
 | Column Name | Type | Comment | Default | Null | Remark |

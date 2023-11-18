@@ -1,3 +1,7 @@
+---
+aside: false
+---
+
 # plugins
 
 | Column Name | Type | Comment | Default | Null | Remark |

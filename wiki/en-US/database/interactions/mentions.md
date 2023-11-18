@@ -1,3 +1,7 @@
+---
+aside: false
+---
+
 # mentions
 
 | Column Name | Type | Comment | Default | Null | Remark |

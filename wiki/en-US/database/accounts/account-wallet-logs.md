@@ -1,3 +1,7 @@
+---
+aside: false
+---
+
 # account_wallet_logs
 
 | Column Name | Type | Comment | Default | Null | Remark |

@@ -1,3 +1,7 @@
+---
+aside: false
+---
+
 # plugin_callbacks
 
 | Column Name | Type | Comment | Default | Null | Remark |

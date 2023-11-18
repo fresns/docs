@@ -1,3 +1,7 @@
+---
+aside: false
+---
+
 # plugin_callbacks *插件回调表*
 
 | 字段名 | 字段类型 | 字段注释 | 默认值 | 可空 | 备注 |

@@ -1,3 +1,7 @@
+---
+aside: false
+---
+
 # stickers
 
 | Column Name | Type | Comment | Default | Null | Remark |

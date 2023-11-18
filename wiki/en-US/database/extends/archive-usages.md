@@ -1,3 +1,7 @@
+---
+aside: false
+---
+
 # archive_usages
 
 | Column Name | Type | Comment | Default | Null | Remark |

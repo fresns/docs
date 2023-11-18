@@ -1,3 +1,7 @@
+---
+aside: false
+---
+
 # conversation_messages *对话内容表*
 
 | 字段名 | 字段类型 | 字段注释 | 默认值 | 可空 | 备注 |
