@@ -11,7 +11,7 @@ aside: false
 | table_column | varchar(64) | Column Name |  | NO | Which column is multilingual |
 | table_id | bigint *UNSIGNED* | Data record primary key ID |  | YES | Which data record is multilingual, the `primary key ID` of that record |
 | table_key | varchar(64) | Data record identifier name |  | YES | If the data record is not based on the `primary key ID`, fill in the identifier name of the data record<br>For example: The configuration table is not based on the `primary key ID`, so the `key name` is used as the identifier name |
-| lang_tag | char(16) | Language Tag |  | NO | See "[Multilingual Uniqueness Logic](../../extensions/multilingual.md)" |
+| lang_tag | varchar(16) | Language Tag |  | NO | See "[Multilingual Uniqueness Logic](../../extensions/multilingual.md)" |
 | lang_content | longtext | Language Content |  | NO |  |
 | created_at | timestamp | Create Time | CURRENT_TIMESTAMP | NO |  |
 | updated_at | timestamp | Update Time |  | YES |  |

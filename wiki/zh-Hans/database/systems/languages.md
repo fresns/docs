@@ -11,7 +11,7 @@ aside: false
 | table_column | varchar(64) | 字段名 |  | NO | 哪个字段是多语言 |
 | table_id | bigint *UNSIGNED* | 数据记录的主键 ID |  | YES | 哪条数据记录是多语言，该条记录的`主键 ID` |
 | table_key | varchar(64) | 数据记录的标识名 |  | YES | 如果数据记录不以`主键 ID`为依据时，则填写数据记录的标识名<br>例如：配置表不以`主键 ID`为依据，所以使用`键名`作为标识名 |
-| lang_tag | char(16) | 语言标签 |  | NO | 参见「[多语言唯一性逻辑](../../extensions/multilingual.md)」 |
+| lang_tag | varchar(16) | 语言标签 |  | NO | 参见「[多语言唯一性逻辑](../../extensions/multilingual.md)」 |
 | lang_content | longtext | 语言内容 |  | NO |  |
 | created_at | timestamp | 创建时间 | CURRENT_TIMESTAMP | NO |  |
 | updated_at | timestamp | 更新时间 |  | YES |  |

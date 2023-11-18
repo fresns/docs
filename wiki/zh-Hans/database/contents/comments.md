@@ -13,7 +13,7 @@ aside: false
 | parent_id | bigint *UNSIGNED* | 父级评论 ID | 0 | NO | 0 代表一级评论 |
 | user_id | bigint *UNSIGNED* | 发表者 ID |  | NO | 关联字段 [users->id](../users/users.md) |
 | content | longtext | 内容 |  | YES |  |
-| lang_tag | char(16) | 语言标签 |  | YES |  |
+| lang_tag | varchar(16) | 语言标签 |  | YES |  |
 | writing_direction | char(3) | 语言写作方向 |  | YES |  |
 | is_markdown | tinyint *UNSIGNED* | 内容是否为 MD 格式 | 0 | NO | 0.否 / 1.是 |
 | is_anonymous | tinyint *UNSIGNED* | 是否匿名 | 0 | NO | 0.否 / 1.是 |

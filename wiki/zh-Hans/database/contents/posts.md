@@ -13,7 +13,7 @@ aside: false
 | group_id | int *UNSIGNED* | 小组 ID | 0 | NO | 关联字段 [groups->id](groups.md) |
 | title | varchar(255) | 标题 |  | YES |  |
 | content | longtext | 内容 |  | YES |  |
-| lang_tag | char(16) | 语言标签 |  | YES |  |
+| lang_tag | varchar(16) | 语言标签 |  | YES |  |
 | writing_direction | char(3) | 语言写作方向 |  | YES |  |
 | is_markdown | tinyint *UNSIGNED* | 内容是否为 MD 格式 | 0 | NO | 0.否 / 1.是 |
 | is_anonymous | tinyint *UNSIGNED* | 是否匿名 | 0 | NO | 0.否 / 1.是 |

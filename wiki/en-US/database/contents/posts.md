@@ -13,7 +13,7 @@ aside: false
 | group_id | int *UNSIGNED* | Group ID | 0 | NO | Related field [groups->id](groups.md) |
 | title | varchar(255) | Title |  | YES |  |
 | content | longtext | Content |  | YES |  |
-| lang_tag | char(16) | Language Tag |  | YES |  |
+| lang_tag | varchar(16) | Language Tag |  | YES |  |
 | writing_direction | char(3) | Writing Direction |  | YES |  |
 | is_markdown | tinyint *UNSIGNED* | Is content in MD format | 0 | NO | 0.No / 1.Yes |
 | is_anonymous | tinyint *UNSIGNED* | Is anonymous | 0 | NO | 0.No / 1.Yes |

@@ -13,7 +13,7 @@ aside: false
 | parent_id | bigint *UNSIGNED* | Parent Comment ID | 0 | NO | 0 means a first-level comment |
 | user_id | bigint *UNSIGNED* | Publisher ID |  | NO | Related field [users->id](../users/users.md) |
 | content | longtext | Content |  | YES |  |
-| lang_tag | char(16) | Language Tag |  | YES |  |
+| lang_tag | varchar(16) | Language Tag |  | YES |  |
 | writing_direction | char(3) | Writing Direction |  | YES |  |
 | is_markdown | tinyint *UNSIGNED* | Is the content in MD format | 0 | NO | 0.No / 1.Yes |
 | is_anonymous | tinyint *UNSIGNED* | Is Anonymous | 0 | NO | 0.No / 1.Yes |
