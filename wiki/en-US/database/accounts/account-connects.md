@@ -16,8 +16,6 @@ aside: false
 | connect_username | varchar(128) | Connect Username |  | YES | Platform username, leave empty if not available |
 | connect_nickname | varchar(128) | Connect Nickname |  | YES | Platform nickname, use platform name if not available |
 | connect_avatar | varchar(255) | Connect Avatar |  | YES | Platform avatar URL, leave empty if not available |
-| oauth_linked_id | varchar(26) | OAuth linked id |  | YES |  |
-| oauth_linked_token | char(64) | OAuth linked token |  | YES |  |
 | plugin_fskey | varchar(64) | Plugin Fskey |  | NO | Related field [plugins->fskey](../plugins/plugins.md)<br>Created by which plugin  |
 | is_enabled | tinyint *UNSIGNED* | Is Valid | 1 | NO | 0.Invalid / 1.Valid |
 | more_json | json | Backup Field |  | YES |  |
