@@ -1,6 +1,6 @@
 # zh-Hans > Chinese (Simplified)
 
-- Language Pack: [https://fresns.org/database/dictionary/language-pack.html](https://fresns.org/database/dictionary/language-pack.html)
+- Language Pack: [https://v2.fresns.org/database/dictionary/language-pack.html](https://fresns.org/v2.database/dictionary/language-pack.html)
 - Language Tag: `zh-Hans`
 
 ```json

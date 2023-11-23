@@ -1,6 +1,6 @@
 # zh-Hant > Chinese (Traditional)
 
-- Language Pack: [https://fresns.org/database/dictionary/language-pack.html](https://fresns.org/database/dictionary/language-pack.html)
+- Language Pack: [https://v2.fresns.org/database/dictionary/language-pack.html](https://v2.fresns.org/database/dictionary/language-pack.html)
 - Language Tag: `zh-Hant`
 
 ```json
