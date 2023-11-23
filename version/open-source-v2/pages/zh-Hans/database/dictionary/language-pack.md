@@ -2,7 +2,7 @@
 
 | 键名 | 键标签 | 使用说明 | 帮助我们翻译语言包 |
 | --- | --- | --- | --- |
-| language_pack | languages | [控制面板多语言设置](../../database/keyname/languages.md) | [改善现有语言包或者增加新语言包](../../contributing/translations.md) |
+| language_pack | languages | [控制面板多语言设置](../../database/keyname/languages.md) | [改善现有语言包或者增加新语言包](https://fresns.org/contributing/translations.html) |
 
 ```json
 [

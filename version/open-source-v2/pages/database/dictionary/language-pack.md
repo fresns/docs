@@ -2,7 +2,7 @@
 
 | Key Name | Key Tag | Description | Contributing Translations |
 | --- | --- | --- | --- |
-| language_pack | languages | [Control Panel multi-language settings](../../database/keyname/languages.md) | [Improve existing language packs or add new ones](../../contributing/translations.md) |
+| language_pack | languages | [Control Panel multi-language settings](../../database/keyname/languages.md) | [Improve existing language packs or add new ones](https://fresns.org/contributing/translations.html) |
 
 ```json
 [
