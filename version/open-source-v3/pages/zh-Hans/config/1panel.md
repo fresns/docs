@@ -20,8 +20,6 @@
 - PHP 推荐 `8.2`
 - MySQL 推荐 `8.2`
 
-> OpenLiteSpeed 配置比较复杂，如果你会配置，推荐使用 OpenLiteSpeed
-
 ## PHP 配置
 
 > 1Panel -> 应用商店 -> 运行环境
