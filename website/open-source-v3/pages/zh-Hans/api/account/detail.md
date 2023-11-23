@@ -1,0 +1,49 @@
+# 账号基本信息
+
+- 接口地址：`/api/v2/account/detail`
+- 请求方式：`GET`
+
+## Headers 可选参数
+
+| 参数名 | 公开模式（是否必传） | 私有模式（是否必传） |
+| --- | --- | --- |
+| X-Fresns-Aid | YES | YES |
+| X-Fresns-Aid-Token | YES | YES |
+| X-Fresns-Uid | NO | NO |
+| X-Fresns-Uid-Token | NO | NO |
+
+**接口使用说明**
+
+- 本接口不会输出 token 参数，该参数仅限注册和登录接口才会创建并输出。
+
+## 返回结果
+
+```json
+{
+    "code": 0,
+    "message": "ok",
+    "data": {
+        "items": {
+            "walletRecharges": [
+                {
+                    // 钱包充值扩展
+                    // 通用数据结构->扩展功能信息
+                }
+            ],
+            "walletWithdraws": [
+                {
+                    // 钱包提现扩展
+                    // 通用数据结构->扩展功能信息
+                }
+            ],
+        },
+        "detail": {
+            // 通用数据结构->账号信息
+        }
+    }
+}
+```
+
+::: details 开发说明
+- 通过命令字 `getAccountDetail` 获取上面返参信息。
+:::
