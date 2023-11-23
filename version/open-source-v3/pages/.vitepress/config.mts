@@ -6,8 +6,6 @@ export default defineConfig({
   title: 'Fresns Open Source',
   description: 'Fresns is a free and open source social network service software, a general-purpose community product designed for cross-platform, and supports flexible and diverse content forms. It conforms to the trend of the times, satisfies a variety of operating scenarios, is more open and easier to re-development.',
 
-  lastUpdated: true,
-
   head: [
     ['link', { rel: 'icon', type: 'image/png', href: 'https://files.fresns.org/wiki/icons/fresns.png' }],
     ['meta', { property: 'og:type', content: 'website' }],

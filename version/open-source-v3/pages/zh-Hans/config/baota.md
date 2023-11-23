@@ -45,7 +45,7 @@
 ### 网站目录
 
 - 网站目录为 Fresns 项目根目录
-- 运行目录指定为 `public`
+- 运行目录指定为 `/public`
 - 不要开启：防跨站攻击(open_basedir)
 
 ![public](https://cdn.fresns.cn/guide/baota-website-directory.png)
@@ -97,7 +97,7 @@
 DB_COLLATION=utf8mb4_0900_ai_ci
 ```
 
-![MySQL Collation](https://cdn.fresns.cn/guide/baota-mysql-collation.png)
+![MySQL Collation](https://cdn.fresns.cn/guide/mysql-collation.png)
 
 ## 目录权限
 
