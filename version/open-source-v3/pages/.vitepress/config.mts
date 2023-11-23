@@ -108,7 +108,7 @@ export default defineConfig({
 function navbar() {
   return [
     { text: 'Home', link: '/' },
-    { text: 'Introduction', link: '/introduction/', activeMatch: '/introduction/' },
+    { text: 'Intro', link: '/introduction/', activeMatch: '/introduction/' },
     { text: 'Guide', link: '/guide/', activeMatch: `^/(guide|config)/` },
     {
       text: 'Ecosystem',
@@ -125,8 +125,14 @@ function navbar() {
     {
       text: 'Developer Docs',
       items: [
-        { text: 'Development Extensions', link: 'https://docs.fresns.com/open-source' },
-        { text: 'Development Clients', link: 'https://docs.fresns.com/clients' },
+        { text: 'Extensions', link: 'https://docs.fresns.com/open-source' },
+        { text: 'Clients', link: 'https://docs.fresns.com/clients' },
+      ],
+    },
+    {
+      text: 'Version',
+      items: [
+        { text: 'Fresns v2', link: 'https://v2.fresns.org/' },
       ],
     },
   ]
@@ -221,6 +227,12 @@ function navbarForZh() {
       items: [
         { text: '开发扩展插件', link: 'https://docs.fresns.com/zh-Hans/open-source' },
         { text: '开发客户端', link: 'https://docs.fresns.com/zh-Hans/clients' },
+      ],
+    },
+    {
+      text: 'Version',
+      items: [
+        { text: 'Fresns v2', link: 'https://v2.fresns.org/zh-Hans/' },
       ],
     },
   ]

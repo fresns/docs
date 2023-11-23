@@ -125,18 +125,6 @@ function navbar() {
                 { text: 'Models', link: '/supports/models/' },
             ],
             activeMatch: '/supports/',
-        },
-        {
-            text: 'Ecosystem',
-            items: [
-                { text: 'Teams', link: '/community/teams.md' },
-                { text: 'Join', link: '/community/join.md' },
-                { text: 'Sponsor', link: '/community/sponsor.md' },
-                { text: 'Contributing', link: '/contributing/' },
-                { text: 'Community', link: 'https://discuss.fresns.org' },
-                { text: 'Marketplace', link: 'https://marketplace.fresns.com/open-source' },
-            ],
-            activeMatch: `^/(community|contributing)/`,
         }
     ]
 }
@@ -706,18 +694,6 @@ function navbarForZh() {
                 { text: '数据模型', link: '/zh-Hans/supports/models/' },
             ],
             activeMatch: '/zh-Hans/supports/',
-        },
-        {
-            text: '生态系统',
-            items: [
-                { text: '团队', link: '/zh-Hans/community/teams.md' },
-                { text: '加入我们', link: '/zh-Hans/community/join.md' },
-                { text: '赞助我们', link: '/zh-Hans/community/sponsor.md' },
-                { text: '贡献指南', link: '/zh-Hans/contributing/' },
-                { text: '互动交流', link: 'https://discuss.fresns.org/zh-Hans' },
-                { text: '应用市场', link: 'https://marketplace.fresns.com/zh-Hans/open-source' },
-            ],
-            activeMatch: `^/(zh-Hans/community|zh-Hans/contributing)/`,
         }
     ]
 }
