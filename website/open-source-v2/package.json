@@ -1,0 +1,17 @@
+{
+  "name": "Fresns",
+  "version": "2.0.0",
+  "description": "Cross-platform general-purpose multiple content forms social network service software.",
+  "homepage": "https://fresns.org/",
+  "repository": "https://github.com/fresns/docs",
+  "author": "Jevan Tang",
+  "license": "Apache-2.0",
+  "devDependencies": {
+    "vitepress": "^1.0.0-rc.29"
+  },
+  "scripts": {
+    "docs:dev": "vitepress dev pages",
+    "docs:build": "vitepress build pages",
+    "docs:preview": "vitepress preview pages"
+  }
+}
