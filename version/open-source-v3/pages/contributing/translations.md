@@ -13,14 +13,14 @@ Although we support multiple languages, language packs still need to be translat
 | [English Docs Writing Guide](writing-guide.md) | 2021 | Vue.js |
 | [Chinese Docs Writing Guide](https://tangjie.me/copywriting-style-guide) | 2021 | Jevan Tang |
 
-## Fresns Website
+## Fresns Open-Source Website
 
 All the pages you see at present fall into the category of official website. They are written based on Markdown files and compiled by VitePress site generator.
 
 - Code Repository: [https://github.com/fresns/docs/](https://github.com/fresns/docs/)
-- Language Files Directory: [/wiki/](https://github.com/fresns/docs/tree/main/wiki)
+- Language Files Directory: [/version/open-source-v3/](https://github.com/fresns/docs/tree/main/version/open-source-v3)
     - `en-US` [https://fresns.org](https://fresns.org)
-    - `zh-Hans` [https://zh-hans.fresns.org](https://zh-hans.fresns.org)
+    - `zh-Hans` [https://fresns.org/zh-Hans/](https://fresns.org/zh-Hans/)
 
 ## Control Panel
 
@@ -31,12 +31,7 @@ The language pack of the main program (back-end) management center is the file o
 
 ## Client Language Packages
 
-Language pack with "Language Tag" as the key name is stored in the database configuration table, which is obtained by the client through the interface, and then parsed for local use by the client (see [multilingual setting](../database/keyname/languages.md) function). See the key value of configuration table [language_pack](../database/dictionary/language-pack.md) for the language identification name, which is the basic language identification name of Fresns initialization. Operators can add custom language identification names according to the actual situation of the client.
-
-- Code Repository: [https://github.com/fresns/docs/](https://github.com/fresns/docs/tree/master/language-pack)
-- Language Files Directory: [/language-pack/](https://github.com/fresns/docs/tree/main/language-pack)
-
-Participate in translation by means of Pull Request, and we will update the new language pack to the main program database when the main program version is upgraded. In order to reduce the workload of writing documents and ensure the consistency of public data, this page uniformly writes the same parts of API documents into data structures.
+Language pack with "Language Tag" as the key name is stored in the database configuration table, which is obtained by the client through the interface, and then parsed for local use by the client (see [multilingual setting](https://docs.fresns.com/open-source/reference/panel/languages.html) function). See the key value of configuration table [language_packs](https://docs.fresns.com/clients/reference/language-pack.html) for the language identification name, which is the basic language identification name of Fresns initialization. Operators can add custom language identification names according to the actual situation of the client.
 
 | Lang Code | Area Code | Lang Name | Area Name | Lang Tag |
 | --- | --- | --- | --- | --- |

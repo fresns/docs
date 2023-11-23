@@ -5,7 +5,7 @@ lastUpdated: false
 
 # Join the Fresns Community
 
-This document is for developers who want to join Fresns open-source organization. If you are only a user, please read the [guide](../guide/) document; if you are a developer of an extension plug-in, please read the [extension](../extensions/) documentation; if you are a mobile application developer, please read the [API](../api/) documentation.
+This document is for developers who want to join Fresns open-source organization. If you are only a user, please read the [guide](../guide/) document; if you are a developer of an extension plug-in, please read the [extension](https://docs.fresns.com/open-source/extensions/) documentation; if you are a mobile application developer, please read the [API](https://docs.fresns.com/clients/api/) documentation.
 
 The open-source community of Fresns is growing rapidly. If you recognize our open-source software and are interested in contributing to the development of Fresns, we sincerely welcome you to join us to develop and improve it. Whether it's [error reporting](../guide/feedback.md) or Pull Request development, even correcting a typo is a great help to us.
 

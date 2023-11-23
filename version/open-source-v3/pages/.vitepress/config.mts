@@ -54,7 +54,7 @@ export default defineConfig({
     ],
 
     sidebar: {
-      '/introduction/': sidebarIntroduction(),
+      '/intro/': sidebarIntro(),
       '/guide/': sidebarGuide(),
       '/config/': sidebarGuide(),
       '/community/': sidebarCommunity(),
@@ -81,7 +81,7 @@ export default defineConfig({
         nav: navbarForZh(),
 
         sidebar: {
-          '/zh-Hans/introduction/': sidebarIntroductionForZh(),
+          '/zh-Hans/intro/': sidebarIntroForZh(),
           '/zh-Hans/guide/': sidebarGuideForZh(),
           '/zh-Hans/config/': sidebarGuideForZh(),
           '/zh-Hans/community/': sidebarCommunityForZh(),
@@ -108,7 +108,7 @@ export default defineConfig({
 function navbar() {
   return [
     { text: 'Home', link: '/' },
-    { text: 'Intro', link: '/introduction/', activeMatch: '/introduction/' },
+    { text: 'Intro', link: '/intro/', activeMatch: '/intro/' },
     { text: 'Guide', link: '/guide/', activeMatch: `^/(guide|config)/` },
     {
       text: 'Ecosystem',
@@ -125,8 +125,10 @@ function navbar() {
     {
       text: 'Developer Docs',
       items: [
-        { text: 'Extensions', link: 'https://docs.fresns.com/open-source' },
-        { text: 'Clients', link: 'https://docs.fresns.com/clients' },
+        { text: 'Development Extensions', link: 'https://docs.fresns.com/open-source/' },
+        { text: 'Development Clients', link: 'https://docs.fresns.com/clients/' },
+        { text: 'Plugin Manager', link: 'https://pm.fresns.org/' },
+        { text: 'Command Word Manager', link: 'https://pm.fresns.org/command-word/' },
       ],
     },
     {
@@ -138,18 +140,18 @@ function navbar() {
   ]
 }
 
-// sidebarIntroduction
-function sidebarIntroduction() {
+// sidebarIntro
+function sidebarIntro() {
   return [
     {
       text: 'Introduction',
       collapsed: false,
       items: [
-        { text: 'About Fresns', link: '/introduction/' },
-        { text: 'Features', link: '/introduction/features.md' },
-        { text: 'Operating', link: '/introduction/operating.md' },
-        { text: 'Core Directory', link: '/introduction/directory.md' },
-        { text: 'Release Notes', link: '/introduction/changelog.md' },
+        { text: 'About Fresns', link: '/intro/' },
+        { text: 'Features', link: '/intro/features.md' },
+        { text: 'Operating', link: '/intro/operating.md' },
+        { text: 'Core Directory', link: '/intro/directory.md' },
+        { text: 'Release Notes', link: '/intro/changelog.md' },
       ]
     }
   ]
@@ -208,7 +210,7 @@ function sidebarCommunity() {
 function navbarForZh() {
   return [
     { text: '首页', link: '/zh-Hans/' },
-    { text: '介绍', link: '/zh-Hans/introduction/', activeMatch: '/zh-Hans/introduction/' },
+    { text: '介绍', link: '/zh-Hans/intro/', activeMatch: '/zh-Hans/intro/' },
     { text: '使用指南', link: '/zh-Hans/guide/', activeMatch: `^/(zh-Hans/guide|zh-Hans/config)/` },
     {
       text: '生态系统',
@@ -225,8 +227,10 @@ function navbarForZh() {
     {
       text: '开发者文档',
       items: [
-        { text: '开发扩展插件', link: 'https://docs.fresns.com/zh-Hans/open-source' },
-        { text: '开发客户端', link: 'https://docs.fresns.com/zh-Hans/clients' },
+        { text: '开发扩展插件', link: 'https://docs.fresns.com/zh-Hans/open-source/' },
+        { text: '开发客户端', link: 'https://docs.fresns.com/zh-Hans/clients/' },
+        { text: '插件管理器', link: 'https://pm.fresns.org/zh-Hans/' },
+        { text: '命令字管理器', link: 'https://pm.fresns.org/zh-Hans/command-word/' },
       ],
     },
     {
@@ -238,18 +242,18 @@ function navbarForZh() {
   ]
 }
 
-// sidebarIntroduction
-function sidebarIntroductionForZh() {
+// sidebarIntro
+function sidebarIntroForZh() {
   return [
     {
       text: '介绍',
       collapsed: false,
       items: [
-        { text: '关于 Fresns', link: '/zh-Hans/introduction/' },
-        { text: '功能特征', link: '/zh-Hans/introduction/features.md' },
-        { text: '运营方向', link: '/zh-Hans/introduction/operating.md' },
-        { text: '目录结构', link: '/zh-Hans/introduction/directory.md' },
-        { text: '更新记录', link: '/zh-Hans/introduction/changelog.md' },
+        { text: '关于 Fresns', link: '/zh-Hans/intro/' },
+        { text: '功能特征', link: '/zh-Hans/intro/features.md' },
+        { text: '运营方向', link: '/zh-Hans/intro/operating.md' },
+        { text: '目录结构', link: '/zh-Hans/intro/directory.md' },
+        { text: '更新记录', link: '/zh-Hans/intro/changelog.md' },
       ]
     }
   ]
