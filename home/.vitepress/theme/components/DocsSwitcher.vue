@@ -1,34 +1,12 @@
-<template>
-  <div class="FsFlyout" @mouseover="isMenuOpen = true" @mouseleave="isMenuOpen = false">
-      <button type="button" class="button" aria-haspopup="true" :aria-expanded="isMenuOpen.toString()" @click="toggleMenu($event)">
-        <span class="text">
-          <span>🚀 {{ menuName }}</span>
-          <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" viewBox="0 0 24 24" class="text-icon">
-            <path d="M12,16c-0.3,0-0.5-0.1-0.7-0.3l-6-6c-0.4-0.4-0.4-1,0-1.4s1-0.4,1.4,0l5.3,5.3l5.3-5.3c0.4-0.4,1-0.4,1.4,0s0.4,1,0,1.4l-6,6C12.5,15.9,12.3,16,12,16z"></path>
-          </svg>
-        </span>
-      </button>
-      <div class="menus">
-        <div class="FsMenu">
-          <div class="FsMenuLink" v-for="link in links" :key="link.href">
-            <a class="link" :href="link.href">{{ link.text }}</a>
-          </div>
-        </div>
-      </div>
-  </div>
-</template>
-
 <script>
-import { computed, defineComponent } from 'vue';
-import { useRoute } from 'vitepress';
+import { computed, defineComponent } from 'vue'
+import { useRoute } from 'vitepress'
 
 export default defineComponent({
   setup() {
-    const route = useRoute();
-
     const menuNames = {
       '/': 'Get Started',
-      '/zh-Hans/': '开始',
+      'zh-Hans': '开始',
     };
 
     const baseLinks = {
@@ -38,7 +16,7 @@ export default defineComponent({
         { text: 'Open Source', href: '/open-source/' },
         { text: 'Clients', href: '/clients/' },
       ],
-      '/zh-Hans/': [
+      'zh-Hans': [
         { text: 'OAuth 应用', href: '/zh-Hans/oauth/' },
         { text: '云服务应用', href: '/zh-Hans/cloud/' },
         { text: '开源扩展', href: '/zh-Hans/open-source/' },
@@ -46,8 +24,9 @@ export default defineComponent({
       ],
     };
 
+    const route = useRoute();
     const currentLanguagePrefix = computed(() => {
-      return route.path.startsWith('/zh-Hans/') ? '/zh-Hans/' : '/';
+      return route.path.startsWith('/zh-Hans/') ? 'zh-Hans' : '/';
     });
 
     const menuName = computed(() => menuNames[currentLanguagePrefix.value]);
@@ -68,6 +47,26 @@ export default defineComponent({
   },
 });
 </script>
+
+<template>
+  <div class="FsFlyout" @mouseover="isMenuOpen = true" @mouseleave="isMenuOpen = false">
+      <button type="button" class="button" aria-haspopup="true" :aria-expanded="isMenuOpen.toString()" @click="toggleMenu($event)">
+        <span class="text">
+          <span>🚀 {{ menuName }}</span>
+          <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" viewBox="0 0 24 24" class="text-icon">
+            <path d="M12,16c-0.3,0-0.5-0.1-0.7-0.3l-6-6c-0.4-0.4-0.4-1,0-1.4s1-0.4,1.4,0l5.3,5.3l5.3-5.3c0.4-0.4,1-0.4,1.4,0s0.4,1,0,1.4l-6,6C12.5,15.9,12.3,16,12,16z"></path>
+          </svg>
+        </span>
+      </button>
+      <div class="menus">
+        <div class="FsMenu">
+          <div class="FsMenuLink" v-for="link in links" :key="link.href">
+            <a class="link" :href="link.href">{{ link.text }}</a>
+          </div>
+        </div>
+      </div>
+  </div>
+</template>
 
 <style>
 .FsFlyout {
