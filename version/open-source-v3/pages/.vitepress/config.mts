@@ -143,7 +143,6 @@ function sidebarIntro() {
   return [
     {
       text: 'Introduction',
-      collapsed: false,
       items: [
         { text: 'About Fresns', link: '/intro/' },
         { text: 'Features', link: '/intro/features.md' },
@@ -160,7 +159,6 @@ function sidebarGuide() {
   return [
     {
       text: 'Guide',
-      collapsed: false,
       items: [
         { text: 'Download', link: '/guide/' },
         { text: 'Installation', link: '/guide/install.md' },
@@ -178,7 +176,6 @@ function sidebarCommunity() {
   return  [
     {
         text: 'About',
-        collapsed: false,
         items: [
           { text: 'Teams', link: '/community/teams.md' },
           { text: 'Join', link: '/community/join.md' },
@@ -187,7 +184,6 @@ function sidebarCommunity() {
     },
     {
         text: 'Contributing',
-        collapsed: false,
         items: [
           { text: 'Guide', link: '/contributing/' },
           { text: 'Translations', link: '/contributing/translations.md' },
@@ -195,7 +191,6 @@ function sidebarCommunity() {
     },
     {
         text: 'Interaction',
-        collapsed: false,
         items: [
           { text: 'Community', link: 'https://discuss.fresns.org' },
           { text: 'Marketplace', link: 'https://marketplace.fresns.com/open-source' },
@@ -245,7 +240,6 @@ function sidebarIntroForZh() {
   return [
     {
       text: '介绍',
-      collapsed: false,
       items: [
         { text: '关于 Fresns', link: '/zh-Hans/intro/' },
         { text: '功能特征', link: '/zh-Hans/intro/features.md' },
@@ -262,7 +256,6 @@ function sidebarGuideForZh() {
   return [
     {
       text: '指南',
-      collapsed: false,
       items: [
         { text: '下载', link: '/zh-Hans/guide/' },
         { text: '安装', link: '/zh-Hans/guide/install.md' },
@@ -274,7 +267,6 @@ function sidebarGuideForZh() {
     },
     {
       text: '环境配置教程',
-      collapsed: false,
       items: [
         { text: '1Panel', link: '/zh-Hans/config/1panel.md' },
         { text: '宝塔面板', link: '/zh-Hans/config/baota.md' },
@@ -288,7 +280,6 @@ function sidebarCommunityForZh() {
   return  [
     {
       text: '关于',
-      collapsed: false,
       items: [
         { text: '团队', link: '/zh-Hans/community/teams.md' },
         { text: '加入我们', link: '/zh-Hans/community/join.md' },
@@ -297,7 +288,6 @@ function sidebarCommunityForZh() {
     },
     {
       text: '贡献',
-      collapsed: false,
       items: [
         { text: '贡献指南', link: '/zh-Hans/contributing/' },
         { text: '翻译文档', link: '/zh-Hans/contributing/translations.md' },
@@ -305,7 +295,6 @@ function sidebarCommunityForZh() {
     },
     {
       text: '互动',
-      collapsed: false,
       items: [
         { text: '互动交流', link: 'https://discuss.fresns.org/zh-Hans' },
         { text: '应用市场', link: 'https://marketplace.fresns.com/zh-Hans/open-source' },
