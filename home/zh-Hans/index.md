@@ -6,7 +6,7 @@ hero:
   text: "开发者文档"
   tagline: 在 Fresns 旅程中随时为你提供帮助。
   image:
-    src: https://files.fresns.org/wiki/images/social.svg
+    src: https://files.fresns.org/docs/images/social.svg
     alt: Fresns
   actions:
     - theme: brand
@@ -33,7 +33,7 @@ features:
   - icon: 
       src: /images/open-source.png
     title: 开源扩展
-    details: 利用 Fresns 的开源潜力，增强和扩大 Fresns 的核心功能，提供一个强大的框架，以增强社区体验，在此基础上自由的发挥心中所想。
+    details: 利用 Fresns 的开源潜力，扩展并强化其核心功能。我们的框架为开发人员提供了增强社区体验和添加个性化功能的灵活性。
     link: /open-source/
   - icon: 
       src: /images/clients.png

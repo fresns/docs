@@ -26,9 +26,9 @@ Fresns 是一款免费开源的社交网络服务软件，专为跨平台而打�
 
 | 信息流 | 论坛 |
 | :---: | :---: |
-| ![Moments](https://files.fresns.org/wiki/previews/Moments.png) | ![ForumX](https://files.fresns.org/wiki/previews/ForumX.png) |
-| ![ForumQ](https://files.fresns.org/wiki/previews/ForumQ.png) | ![WebFrame](https://files.fresns.org/wiki/previews/WebFrame.png) |
-| ![MomentsWeChat](https://files.fresns.org/wiki/previews/MomentsWeChat-square.png) | ![WeChat](https://files.fresns.org/wiki/previews/WeChat-square.png) |
+| ![Moments](https://files.fresns.org/docs/previews/Moments.png) | ![ForumX](https://files.fresns.org/docs/previews/ForumX.png) |
+| ![ForumQ](https://files.fresns.org/docs/previews/ForumQ.png) | ![WebFrame](https://files.fresns.org/docs/previews/WebFrame.png) |
+| ![MomentsWeChat](https://files.fresns.org/docs/previews/MomentsWeChat-square.png) | ![WeChat](https://files.fresns.org/docs/previews/WeChat-square.png) |
 
 - 查看更多: [https://marketplace.fresns.com/clients](https://marketplace.fresns.com/zh-Hans/clients)
 

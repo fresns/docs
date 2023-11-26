@@ -11,7 +11,7 @@ export default defineConfig({
     ['meta', { property: 'og:type', content: 'website' }],
     ['meta', { property: 'og:title', content: 'Fresns' }],
     ['meta', { property: 'og:description', content: 'Cross-platform general-purpose multiple content forms social network service software' }],
-    ['meta', { property: 'og:image', content: 'https://files.fresns.org/wiki/images/og-image.jpg' }],
+    ['meta', { property: 'og:image', content: 'https://files.fresns.org/docs/images/og-image.jpg' }],
     ['meta', { property: 'og:url', content: 'https://fresns.org' }],
   ],
 
