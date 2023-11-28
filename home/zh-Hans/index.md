@@ -2,8 +2,8 @@
 layout: home
 
 hero:
-  name: "Fresns"
-  text: "开发者文档"
+  name: Fresns
+  text: 开发者文档
   tagline: 在 Fresns 旅程中随时为你提供帮助。
   image:
     src: https://files.fresns.org/docs/images/social.svg

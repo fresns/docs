@@ -2,8 +2,8 @@
 layout: home
 
 hero:
-  name: "Fresns"
-  text: "Developer Documentation"
+  name: Fresns
+  text: Developer Documentation
   tagline: Help for wherever you are on your Fresns journey.
   image:
     src: https://files.fresns.org/docs/images/social.svg
@@ -38,6 +38,6 @@ features:
   - icon: 
       src: /images/clients.png
     title: Clients
-    details: Develop client applications with Fresns' unified and standardized APIs. Craft applications suited for various environments with a single development effort, ensuring compatibility and developer efficiency.
+    details: Develop client applications with Fresns unified and standardized APIs. Craft applications suited for various environments with a single development effort, ensuring compatibility and developer efficiency.
     link: /clients/
 ---
