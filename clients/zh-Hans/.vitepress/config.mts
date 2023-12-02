@@ -1,0 +1,342 @@
+import { defineConfig } from 'vitepress'
+
+export default defineConfig({
+  base: '/zh-Hans/clients/',
+  lang: 'zh-Hans',
+  title: 'Fresns 客户端开发文档',
+  titleTemplate: false,
+  description: 'Fresns 是一套社交网络服务产品解决方案，专为跨平台而打造的通用型社区产品，支持灵活多样的内容形态，可以满足多种运营场景，符合时代潮流，更开放且更易于二次开发。',
+
+  lastUpdated: true,
+
+  head: [
+    ['link', { rel: 'icon', type: 'image/png', href: 'https://files.fresns.org/wiki/icons/fresns.png' }],
+  ],
+
+  locales: {
+    root: {
+      label: '简体中文',
+      lang: 'zh-Hans'
+    },
+    en: {
+      label: 'English',
+      lang: 'en-US',
+      link: 'https://docs.fresns.com/clients'
+    }
+  },
+
+  themeConfig: {
+    siteTitle: 'Fresns 文档',
+    logo: 'https://files.fresns.org/wiki/icons/fresns.png',
+    nav: [
+        { text: '指南', link: '/guide/', activeMatch: '/guide/' },
+        { text: 'API', link: '/api/', activeMatch: '/api/' },
+        { text: '参考', link: '/reference/', activeMatch: '/reference/' },
+        { text: '主题', link: '/theme/', activeMatch: '/theme/' },
+        {
+          text: '生态系统',
+          items: [
+            { text: '交流社区', link: 'https://space.fresns.com/developers/zh-Hans/' },
+            { text: '开发者中心', link: 'https://developers.fresns.com/zh-Hans/' },
+            { text: '应用市场', link: 'https://marketplace.fresns.com/zh-Hans/' },
+          ],
+        }
+    ],
+
+    sidebar: {
+      '/guide/': sidebarGuide(),
+      '/api/': sidebarApi(),
+      '/reference/': sidebarReference(),
+      '/theme/': sidebarTheme(),
+    },
+
+    socialLinks: [
+      { icon: 'github', link: 'https://github.com/fresns' }
+    ],
+
+    footer: {
+      message: 'Released under the Apache-2.0 License',
+      copyright: 'Copyright © 2021-2023 <a href="https://github.com/jevantang" target="_blank">Jevan Tang</a>',
+    },
+
+    outlineTitle: '本页导览',
+    returnToTopLabel: '返回顶部',
+    sidebarMenuLabel: '菜单',
+    darkModeSwitchLabel: '深色模式',
+
+    lastUpdatedText: '最后一次更新',
+
+    docFooter: {
+      prev: '上一项',
+      next: '下一项',
+    },
+  }
+})
+
+// sidebarGuide
+function sidebarGuide() {
+  return [
+    {
+      text: '指南',
+      items: [
+        { text: '介绍', link: '/guide/' },
+        { text: '产品理念', link: '/guide/idea.md' },
+        { text: '使用方向', link: '/guide/directions.md' },
+        { text: '开发资源', link: '/guide/resources.md' },
+        { text: '更新日志', link: '/guide/changelog.md' },
+      ]
+    }
+  ]
+}
+
+// sidebarApi
+function sidebarApi() {
+  return [
+    { text: 'API 总览', link: '/api/' },
+    {
+      text: '全局配置',
+      collapsed: false,
+      items: [
+        { text: '客户端状态', link: '/api/global/status.md' },
+        { text: '配置信息', link: '/api/global/configs.md' },
+        { text: '状态码信息', link: '/api/global/code-messages.md' },
+        { text: '语言包信息', link: '/api/global/language-pack.md' },
+        { text: '扩展频道', link: '/api/global/channels.md' },
+        { text: '扩展档案配置', link: '/api/global/archives.md' },
+        { text: '存储桶令牌', link: '/api/global/storage-token.md' },
+        { text: '用户角色', link: '/api/global/roles.md' },
+        { text: '内容类型', link: '/api/global/content-types.md' },
+        { text: '表情图', link: '/api/global/stickers.md' },
+      ]
+    },
+    {
+      text: '公共业务',
+      collapsed: false,
+      items: [
+        { text: 'IP 信息', link: '/api/common/ip-info.md' },
+        { text: '输入提示信息', link: '/api/common/input-tips.md' },
+        { text: '回调返参查询', link: '/api/common/callback.md' },
+        { text: '更新设备凭证', link: '/api/common/update-device-token.md' },
+        { text: '命令字请求', link: '/api/common/cmd-word.md' },
+        { text: '扩展交互请求', link: '/api/common/extend-action.md' },
+        { text: '上传日志', link: '/api/common/upload-log.md' },
+        { text: '上传文件', link: '/api/common/upload-file.md' },
+        { text: '文件下载链接', link: '/api/common/file-link.md' },
+        { text: '下载过文件的用户', link: '/api/common/file-users.md' },
+      ]
+    },
+    {
+      text: '账号',
+      collapsed: false,
+      items: [
+        { text: '登录', link: '/api/account/login.md' },
+        { text: '获取账号详情', link: '/api/account/detail.md' },
+        { text: '钱包交易记录', link: '/api/account/wallet-records.md' },
+        { text: '退出登录', link: '/api/account/logout.md' },
+      ]
+    },
+    {
+      text: '用户',
+      collapsed: false,
+      items: [
+        {
+          text: '功能',
+          items: [
+            { text: '用户登录', link: '/api/user/auth.md' },
+            { text: '用户概览', link: '/api/user/overview.md' },
+            { text: '用户扩展分值记录', link: '/api/user/extcredits-records.md' },
+            { text: '修改用户资料', link: '/api/user/edit.md' },
+            { text: '操作标记', link: '/api/user/mark.md' },
+            { text: '标记备注', link: '/api/user/mark-note.md' },
+          ]
+        },
+        {
+          text: '互动',
+          items: [
+            { text: '获取用户[列表]', link: '/api/user/list.md' },
+            { text: '获取用户[详情]', link: '/api/user/detail.md' },
+            { text: '获取用户[详情] 认识的关注者', link: '/api/user/followers-you-follow.md' },
+            { text: '获取用户[详情] 互动列表', link: '/api/user/interaction.md' },
+            { text: '获取用户[详情] 标记列表', link: '/api/user/mark-list.md' },
+          ]
+        },
+      ]
+    },
+    {
+      text: '消息',
+      collapsed: false,
+      items: [
+        {
+          text: '通知',
+          items: [
+            { text: '获取消息列表', link: '/api/message/notification-list.md' },
+            { text: '更新阅读状态', link: '/api/message/notification-read.md' },
+            { text: '删除消息', link: '/api/message/notification-delete.md' },
+          ]
+        },
+        {
+          text: '对话',
+          items: [
+            { text: '获取对话列表', link: '/api/message/conversation-list.md' },
+            { text: '获取对话详情', link: '/api/message/conversation-detail.md' },
+            { text: '获取消息列表', link: '/api/message/conversation-messages.md' },
+            { text: '置顶对话', link: '/api/message/conversation-pin.md' },
+            { text: '更新阅读状态', link: '/api/message/conversation-read.md' },
+            { text: '发送消息', link: '/api/message/conversation-send.md' },
+            { text: '删除对话或对话的消息', link: '/api/message/conversation-delete.md' },
+          ]
+        },
+      ]
+    },
+    {
+      text: '小组',
+      collapsed: false,
+      items: [
+        { text: '获取小组[列表] 树结构', link: '/api/group/tree.md' },
+        { text: '获取小组[列表]', link: '/api/group/list.md' },
+        { text: '获取小组[详情]', link: '/api/group/detail.md' },
+        { text: '获取小组[详情] 互动列表', link: '/api/group/interaction.md' },
+      ]
+    },
+    {
+      text: '话题',
+      collapsed: false,
+      items: [
+        { text: '获取话题[列表]', link: '/api/hashtag/list.md' },
+        { text: '获取话题[详情]', link: '/api/hashtag/detail.md' },
+        { text: '获取话题[详情] 互动列表', link: '/api/hashtag/interaction.md' },
+      ]
+    },
+    {
+      text: '地理',
+      collapsed: false,
+      items: [
+        { text: '获取地理[列表]', link: '/api/geotag/list.md' },
+        { text: '获取地理[详情]', link: '/api/geotag/detail.md' },
+        { text: '获取地理[详情] 互动列表', link: '/api/geotag/interaction.md' },
+      ]
+    },
+    {
+      text: '帖子',
+      collapsed: false,
+      items: [
+        { text: '获取帖子[列表]', link: '/api/post/list.md' },
+        { text: '获取帖子[列表] 时间线', link: '/api/post/timelines.md' },
+        { text: '获取帖子[列表] 地理标记', link: '/api/post/geotags.md' },
+        { text: '获取帖子[详情]', link: '/api/post/detail.md' },
+        { text: '获取帖子[详情] 互动列表', link: '/api/post/interaction.md' },
+        { text: '获取帖子[详情] 附属用户列表', link: '/api/post/users.md' },
+        { text: '获取帖子[详情] 引用它的帖子列表', link: '/api/post/quotes.md' },
+        { text: '获取帖子[详情] 历史列表', link: '/api/post/histories.md' },
+        { text: '获取历史帖子[详情]', link: '/api/post/history-detail.md' },
+        { text: '删除帖子', link: '/api/post/delete.md' },
+      ]
+    },
+    {
+      text: '评论',
+      collapsed: false,
+      items: [
+        { text: '获取评论[列表]', link: '/api/comment/list.md' },
+        { text: '获取评论[列表] 时间线', link: '/api/comment/timelines.md' },
+        { text: '获取评论[列表] 地理标记', link: '/api/comment/geotags.md' },
+        { text: '获取评论[详情]', link: '/api/comment/detail.md' },
+        { text: '获取评论[详情] 互动列表', link: '/api/comment/interaction.md' },
+        { text: '获取评论[详情] 历史列表', link: '/api/comment/histories.md' },
+        { text: '获取历史评论[详情]', link: '/api/comment/history-detail.md' },
+        { text: '删除评论', link: '/api/comment/delete.md' },
+      ]
+    },
+    {
+      text: '编辑器',
+      collapsed: false,
+      items: [
+        { text: '快速发表', link: '/api/editor/quick-publish.md' },
+        { text: '编辑器配置信息', link: '/api/editor/configs.md' },
+        { text: '获取草稿列表', link: '/api/editor/drafts.md' },
+        { text: '创建草稿', link: '/api/editor/create.md' },
+        { text: '生成编辑草稿', link: '/api/editor/generate.md' },
+        { text: '获取草稿详情', link: '/api/editor/detail.md' },
+        { text: '更新草稿内容', link: '/api/editor/update.md' },
+        { text: '提交发表（或审核）', link: '/api/editor/publish.md' },
+        { text: '撤回审核中草稿', link: '/api/editor/recall.md' },
+        { text: '删除草稿', link: '/api/editor/delete.md' },
+      ]
+    },
+    {
+      text: '搜索',
+      collapsed: false,
+      items: [
+        { text: '用户', link: '/api/search/users.md' },
+        { text: '小组', link: '/api/search/groups.md' },
+        { text: '话题', link: '/api/search/hashtags.md' },
+        { text: '帖子', link: '/api/search/posts.md' },
+        { text: '评论', link: '/api/search/comments.md' },
+      ]
+    },
+  ]
+}
+
+// sidebarReference
+function sidebarReference() {
+  return [
+    {
+      text: '参考',
+      items: [
+        { text: '介绍', link: '/reference/' },
+        { text: '请求标头', link: '/reference/headers.md' },
+        { text: '缓存', link: '/reference/cache.md' },
+        { text: '状态码', link: '/reference/error-codes.md' },
+        { text: '语言包', link: '/reference/language-pack.md' },
+        { text: '全局配置', link: '/reference/configs.md' },
+        {
+          text: '字典数据',
+          collapsed: false,
+          items: [
+            { text: '终端平台编号', link: '/reference/dictionary/platforms.md' },
+            { text: '互联平台编号', link: '/reference/dictionary/connects.md' },
+            { text: '地图服务商编号', link: '/reference/dictionary/maps.md' },
+          ]
+        },
+        {
+          text: '通用数据结构',
+          collapsed: false,
+          items: [
+            { text: '账户', link: '/reference/data/account.md' },
+            { text: '用户', link: '/reference/data/user.md' },
+            { text: '小组', link: '/reference/data/group.md' },
+            { text: '话题', link: '/reference/data/hashtag.md' },
+            { text: '地理', link: '/reference/data/geotag.md' },
+            { text: '帖子', link: '/reference/data/post.md' },
+            { text: '评论', link: '/reference/data/comment.md' },
+            { text: '文件', link: '/reference/data/file.md' },
+            { text: '扩展', link: '/reference/data/extends.md' },
+          ]
+        },
+        {
+          text: '扩展回调',
+          collapsed: false,
+          items: [
+            { text: '使用流程', link: '/reference/callback/' },
+            { text: '路径变量名', link: '/reference/callback/variables.md' },
+            { text: '生成访问令牌', link: '/reference/callback/access-token.md' },
+          ]
+        },
+      ]
+    }
+  ]
+}
+
+// sidebarTheme
+function sidebarTheme() {
+  return [
+    {
+      text: '主题',
+      items: [
+        { text: '介绍', link: '/theme/' },
+        { text: '路径结构', link: '/theme/structure.md' },
+        { text: '模板标签', link: '/theme/tags.md' },
+        { text: '主题功能', link: '/theme/functions.md' },
+      ]
+    }
+  ]
+}
