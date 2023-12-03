@@ -30,15 +30,12 @@ The Fresns API is based on the `RESTful` standard and returns results in the fol
 
 | FSID | Description |
 | --- | --- |
+| sid | Space ID (Cloud Service ID) |
+| rid | Role ID |
 | aid | Account ID |
 | uid | User ID |
-| sid | Space ID (Cloud Service ID) |
 | gid | Group ID |
-| rid | Role ID |
-| nid | Notification ID |
-| cvid | Conversation ID |
-| cmid | Conversation Message ID |
-| hid | Hashtag ID |
+| htid | Hashtag ID |
 | gtid | Geotag ID |
 | pid | Post ID |
 | cid | Comment ID |
@@ -46,6 +43,9 @@ The Fresns API is based on the `RESTful` standard and returns results in the fol
 | hcid | History Comment ID |
 | fid | File ID |
 | eid | Extend Content ID |
+| nid | Notification ID |
+| cvid | Conversation ID |
+| cmid | Conversation Message ID |
 | did | Draft ID |
 
 ## Introduction of operation mode

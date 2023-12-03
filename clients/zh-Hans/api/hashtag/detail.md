@@ -1,6 +1,6 @@
 # 获取话题[详情]
 
-- 接口地址：`/fresns-api/v1/hashtag/{hid}/detail`
+- 接口地址：`/fresns-api/v1/hashtag/{htid}/detail`
 - 请求方式：`GET`
 - 传参方式：`Rest`
 
@@ -17,7 +17,7 @@
 
 | 变量名 | 类型 | 是否必传 | 说明 |
 | --- | --- | --- | --- |
-| hid | String | YES | 话题 slug |
+| htid | String | YES | 话题 ID |
 
 ## Query 参数
 

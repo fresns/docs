@@ -6,7 +6,7 @@ aside: false
 
 ```json
 {
-    "hid": "String / 话题 ID",
+    "htid": "String / 话题 ID",
     "url": "String / 话题详情页地址",
     "name": "String / 话题名",
     "cover": "String / 话题封面图",

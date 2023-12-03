@@ -1,6 +1,6 @@
 # 获取话题[详情] 互动列表
 
-- 接口地址：`/fresns-api/v1/hashtag/{hid}/interaction/{type}`
+- 接口地址：`/fresns-api/v1/hashtag/{htid}/interaction/{type}`
 - 请求方式：`GET`
 - 传参方式：`Rest` + `Query`
 
@@ -17,7 +17,7 @@
 
 | 变量名 | 类型 | 是否必传 | 说明 |
 | --- | --- | --- | --- |
-| hid | String | YES | 话题 slug |
+| htid | String | YES | 话题 ID |
 | type | String | YES | 查看类型 `likers`,`dislikers`,`followers`,`blockers` |
 
 ## Query 参数
@@ -32,10 +32,10 @@
 
 **接口使用说明**
 
-- `type=likers` 获得点赞了 `hid` 的用户列表。
-- `type=dislikers` 获得点踩了 `hid` 的用户列表。
-- `type=followers` 获得关注了 `hid` 的用户列表。
-- `type=blockers` 获得屏蔽了 `hid` 的用户列表。
+- `type=likers` 获得点赞了 `htid` 的用户列表。
+- `type=dislikers` 获得点踩了 `htid` 的用户列表。
+- `type=followers` 获得关注了 `htid` 的用户列表。
+- `type=blockers` 获得屏蔽了 `htid` 的用户列表。
 - 接口会根据配置表设置 `运营 > 互动配置 > 查看互动记录设置` 决定是否输出数据。
     - `hashtag_likers` 配置，是否输出点赞他的用户
     - `hashtag_dislikers` 配置，是否输出点踩他的用户

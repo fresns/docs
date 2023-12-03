@@ -30,15 +30,12 @@ Fresns API 遵循 `RESTful` 标准，返回结果的格式如下：
 
 | 简写 ID | 描述 |
 | --- | --- |
+| sid | 空间 ID |
+| rid | 角色 ID |
 | aid | 账号 ID |
 | uid | 用户 ID |
-| sid | 空间 ID |
 | gid | 小组 ID |
-| rid | 角色 ID |
-| nid | 通知 ID |
-| cvid | 对话 ID |
-| cmid | 对话消息 ID |
-| hid | 话题 ID |
+| htid | 话题 ID |
 | gtid | 地理 ID |
 | pid | 帖子 ID |
 | cid | 评论 ID |
@@ -46,6 +43,9 @@ Fresns API 遵循 `RESTful` 标准，返回结果的格式如下：
 | hcid | 历史评论 ID |
 | fid | 文件 ID |
 | eid | 扩展内容 ID |
+| nid | 通知 ID |
+| cvid | 对话 ID |
+| cmid | 对话消息 ID |
 | did | 草稿 ID |
 
 ## 运行模式介绍

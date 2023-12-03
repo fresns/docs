@@ -98,8 +98,8 @@
 | Method | Endpoint Path | Description |
 | --- | --- | --- |
 | `GET` | /fresns-api/v1/hashtag/list | Hashtag List |
-| `GET` | /fresns-api/v1/hashtag/`{hid}`/detail | Hashtag Detail |
-| `GET` | /fresns-api/v1/hashtag/`{hid}`/interaction/`{type}` | Hashtag Interaction Users |
+| `GET` | /fresns-api/v1/hashtag/`{htid}`/detail | Hashtag Detail |
+| `GET` | /fresns-api/v1/hashtag/`{htid}`/interaction/`{type}` | Hashtag Interaction Users |
 
 ## Geotag
 

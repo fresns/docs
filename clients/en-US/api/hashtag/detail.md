@@ -1,6 +1,6 @@
 # Hashtag Detail
 
-- Endpoint Path: `/fresns-api/v1/hashtag/{hid}/detail`
+- Endpoint Path: `/fresns-api/v1/hashtag/{htid}/detail`
 - Method: `GET`
 - Request: `Rest`
 
@@ -17,7 +17,7 @@
 
 | Key | Type | Required | Description |
 | --- | --- | --- | --- |
-| hid | String | **required** | Hashtag slug |
+| htid | String | **required** | Hashtag ID |
 
 ## Query Params
 

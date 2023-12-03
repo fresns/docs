@@ -6,7 +6,7 @@ aside: false
 
 ```json
 {
-    "hid": "String / Hashtag ID",
+    "htid": "String / Hashtag ID",
     "url": "String / Hashtag Detail Page URL",
     "name": "String / Hashtag Name",
     "cover": "String / Hashtag Cover Image",

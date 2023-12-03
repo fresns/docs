@@ -98,8 +98,8 @@
 | 请求方式 | 接口路径 | 描述 |
 | --- | --- | --- |
 | `GET` | /fresns-api/v1/hashtag/list | 获取话题列表 |
-| `GET` | /fresns-api/v1/hashtag/`{hid}`/detail | 获取话题详情 |
-| `GET` | /fresns-api/v1/hashtag/`{hid}`/interaction/`{type}` | 获取话题互动的用户列表 |
+| `GET` | /fresns-api/v1/hashtag/`{htid}`/detail | 获取话题详情 |
+| `GET` | /fresns-api/v1/hashtag/`{htid}`/interaction/`{type}` | 获取话题互动的用户列表 |
 
 ## 地理
 

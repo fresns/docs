@@ -1,6 +1,6 @@
 # Hashtag Interaction Users
 
-- Endpoint Path: `/fresns-api/v1/hashtag/{hid}/interaction/{type}`
+- Endpoint Path: `/fresns-api/v1/hashtag/{htid}/interaction/{type}`
 - Method: `GET`
 - Request: `Rest` + `Query`
 
@@ -17,7 +17,7 @@
 
 | Key | Type | Required | Description |
 | --- | --- | --- | --- |
-| hid | String | **required** | Hashtag slug |
+| htid | String | **required** | Hashtag ID |
 | type | String | **required** | View type `likers`,`dislikers`,`followers`,`blockers` |
 
 ## Query Params
@@ -32,10 +32,10 @@
 
 **Request Description**
 
-- `type=likers` Get the list of users who liked `hid`.
-- `type=dislikers` Get the list of users who disliked `hid`.
-- `type=followers` Get the list of users who followed `hid`.
-- `type=blockers` Get the list of users who blocked `hid`.
+- `type=likers` Get the list of users who liked `htid`.
+- `type=dislikers` Get the list of users who disliked `htid`.
+- `type=followers` Get the list of users who followed `htid`.
+- `type=blockers` Get the list of users who blocked `htid`.
 - The interface will decide whether to output data based on the configuration table settings `Operations > Interaction > View interaction log settings`.
     - `hashtag_likers` configuration, whether to output users who liked it
     - `hashtag_dislikers` configuration, whether to output users who disliked it
