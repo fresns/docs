@@ -20,7 +20,7 @@
 | searchKey | String | **required** | Search Keywords |
 | followUsers | Boolean | *optional* | Specified range: Published by users I follow |
 | followGroups | Boolean | *optional* | Specified range: In the groups I follow |
-| followHashtags | Boolean | *optional* | Specified range: In the topics I follow |
+| followHashtags | Boolean | *optional* | Specified range: In the hashtags I follow |
 | followPosts | Boolean | *optional* | Specified range: In the posts I follow |
 | ... |  | *optional* | Optional [post list](../post/list.md#query-params) api all parameters |
 
