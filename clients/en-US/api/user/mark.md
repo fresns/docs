@@ -17,9 +17,9 @@
 
 | Key | Type | Required | Description |
 | --- | --- | --- | --- |
-| interactionType | String | **required** | Mark action `like`,`dislike`,`follow`,`block` |
-| markType | String | **required** | Mark type `user`,`group`,`hashtag`,`geotag`,`post`,`comment` |
-| fsid | Number / String | **required** | Target `FsID`<br>For user, param `uid` or `username`<br>For group, param `gid`<br>For hashtag, param `hid`<br>For geotag, param `gtid`<br>For post, param `pid`<br>For comment, param `cid` |
+| markType | String | **required** | Mark action `like`,`dislike`,`follow`,`block` |
+| type | String | **required** | Mark type `user`,`group`,`hashtag`,`geotag`,`post`,`comment` |
+| fsid | Number / String | **required** | Target `FsID`<br>For user, param `uid` or `username`<br>For group, param `gid`<br>For hashtag, param `htid`<br>For geotag, param `gtid`<br>For post, param `pid`<br>For comment, param `cid` |
 
 **Request Description**
 
