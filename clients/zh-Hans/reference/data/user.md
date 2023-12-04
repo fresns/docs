@@ -22,6 +22,7 @@ aside: false
     "location": "String / 位置",
     "conversationLimit": "Number / 对话设置，1.允许所有用户 2.仅允许我关注的用户 3.我关注的用户和已认证的用户 4.不允许所有用户",
     "commentLimit": "Number / 评论设置，1.允许所有用户 2.仅允许我关注的用户 3.我关注的用户和已认证的用户 4.不允许所有用户",
+    "contentLimit": "Number / 内容设置，1.对所有人公开 2.仅对关注我的用户公开 3.仅对我关注的用户公开 4.不公开",
     "verified": "Boolean / 是否认证",
     "verifiedIcon": "String / 自定义认证图标",
     "verifiedDesc": "String / 认证介绍",
@@ -140,11 +141,10 @@ aside: false
         "likeStatus": "Boolean / 点赞状态",
         "dislikeStatus": "Boolean / 点踩状态",
         "followStatus": "Boolean / 关注状态",
-        "followMeStatus": "Boolean / 他是否关注了我",
-        "followNote": "String / 我对他的关注备注",
         "blockStatus": "Boolean / 屏蔽状态",
+        "followMeStatus": "Boolean / 他是否关注了我",
         "blockMeStatus": "Boolean / 他是否屏蔽了我",
-        "blockNote": "String / 我对他的屏蔽备注"
+        "note": "String / 我的互动备注（关注或屏蔽）"
     },
     "conversation": {
         "status": "Boolean / 是否可以给他发私信",

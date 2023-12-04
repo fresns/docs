@@ -132,9 +132,8 @@ aside: false
         "likeStatus": "Boolean / 点赞状态",
         "dislikeStatus": "Boolean / 点踩状态",
         "followStatus": "Boolean / 关注状态",
-        "followNote": "String / 我对该评论的关注备注",
         "blockStatus": "Boolean / 屏蔽状态",
-        "blockNote": "String / 我对该评论的屏蔽备注",
+        "note": "String / 我的互动备注（关注或屏蔽）",
         "postAuthorLikeStatus": "Boolean / 帖子作者是否点赞"
     },
     "replyToPost": {

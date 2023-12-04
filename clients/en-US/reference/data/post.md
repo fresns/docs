@@ -156,9 +156,8 @@ aside: false
         "likeStatus": "Boolean / Like Status",
         "dislikeStatus": "Boolean / Dislike Status",
         "followStatus": "Boolean / Follow Status",
-        "followNote": "String / My follow note for this post",
         "blockStatus": "Boolean / Block Status",
-        "blockNote": "String / My block note for this post"
+        "note": "String / My interaction note (follow or block)"
     },
     "followType": "String / From which type of follow"
     // followType=null: none

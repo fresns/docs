@@ -20,8 +20,9 @@ aside: false
     "bio": "String / Bio",
     "bioHtml": "String / Bio in HTML format",
     "location": "String / Location",
-    "conversationLimit": "Number / Conversation settings, 1. Allow all users 2. Only allow users I follow 3. Users I follow and verified users 4. No users allowed",
-    "commentLimit": "Number / Comment settings, 1. Allow all users 2. Only allow users I follow 3. Users I follow and verified users 4. No users allowed",
+    "conversationLimit": "Number / Conversation setting, 1. Allow all users / 2. Only allow users I follow / 3. Users I follow and verified users / 4. No users allowed",
+    "commentLimit": "Number / Comment setting, 1. Allow all users / 2. Only allow users I follow / 3. Users I follow and verified users / 4. No users allowed",
+    "contentLimit": "Number / Content setting, 1. public to everyone / 2. public only to users who follow me / 3. public only to users I follow / 4. not public",
     "verified": "Boolean / Verified status",
     "verifiedIcon": "String / Custom verified icon",
     "verifiedDesc": "String / Verification description",
@@ -140,11 +141,10 @@ aside: false
         "likeStatus": "Boolean / Like Status",
         "dislikeStatus": "Boolean / Dislike Status",
         "followStatus": "Boolean / Follow Status",
-        "followMeStatus": "Boolean / Whether he is following me",
-        "followNote": "String / My note on following him",
         "blockStatus": "Boolean / Block Status",
+        "followMeStatus": "Boolean / Whether he is following me",
         "blockMeStatus": "Boolean / Whether he has blocked me",
-        "blockNote": "String / My note on blocking him"
+        "note": "String / My interaction note (follow or block)"
     },
     "conversation": {
         "status": "Boolean / Whether I can send him a private message",

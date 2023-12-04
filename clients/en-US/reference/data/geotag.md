@@ -60,9 +60,8 @@ aside: false
         "likeStatus": "Boolean / Like Status",
         "dislikeStatus": "Boolean / Dislike Status",
         "followStatus": "Boolean / Follow Status",
-        "followNote": "String / My Note for Following This Geotag",
         "blockStatus": "Boolean / Block Status",
-        "blockNote": "String / My Note for Blocking This Geotag"
+        "note": "String / My interaction note (follow or block)"
     }
 }
 ```

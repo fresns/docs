@@ -82,11 +82,10 @@ aside: false
         "likeStatus": "Boolean / 点赞状态",
         "dislikeStatus": "Boolean / 点踩状态",
         "followStatus": "Boolean / 关注状态",
-        "followNote": "String / 我对该小组的关注备注",
         "followExpired": "Boolean / 是否过期，公开小组模式始终为 false",
         "followExpiryDateTime": "String / 过期时间",
         "blockStatus": "Boolean / 屏蔽状态",
-        "blockNote": "String / 我对该小组的屏蔽备注"
+        "note": "String / 我的互动备注（关注或屏蔽）"
     }
 }
 ```

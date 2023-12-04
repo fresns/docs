@@ -132,9 +132,8 @@ aside: false
         "likeStatus": "Boolean / Like status",
         "dislikeStatus": "Boolean / Dislike status",
         "followStatus": "Boolean / Follow status",
-        "followNote": "String / My follow note on this comment",
         "blockStatus": "Boolean / Block status",
-        "blockNote": "String / My block note on this comment",
+        "note": "String / My interaction note (follow or block)",
         "postAuthorLikeStatus": "Boolean / Whether the post author liked this comment"
     },
     "replyToPost": {

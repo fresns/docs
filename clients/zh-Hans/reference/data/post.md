@@ -156,9 +156,8 @@ aside: false
         "likeStatus": "Boolean / 点赞状态",
         "dislikeStatus": "Boolean / 点踩状态",
         "followStatus": "Boolean / 关注状态",
-        "followNote": "String / 我对该帖子的关注备注",
         "blockStatus": "Boolean / 屏蔽状态",
-        "blockNote": "String / 我对该帖子的屏蔽备注"
+        "note": "String / 我的互动备注（关注或屏蔽）"
     },
     "followType": "String / 来自哪种关注 null.无 user.我关注的用户 group.我关注的小组 hashtag.我关注的话题 digest.高级精华"
 }
