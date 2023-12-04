@@ -68,28 +68,6 @@ aside: false
         "ipLocation": "String / 发表者 IP 位置名",
         "deviceName": "String / 发表者设备名称"
     },
-    "location": {
-        "gtid": "String / 地理位置 ID",
-        "mapId": "Number / 经纬度地图编号",
-        "latitude": "String / 纬度",
-        "longitude": "String / 经度",
-        "scale": "String / 定位地图比例",
-        "continent": "String / 洲名",
-        "continentCode": "String / 洲名代码",
-        "country": "String / 国家名",
-        "countryCode": "String / 国家代码",
-        "region": "String / 省名",
-        "regionCode": "String / 省代码",
-        "city": "String / 城市名",
-        "cityCode": "String / 城市代码",
-        "district": "String / 城区名",
-        "address": "String / 地址",
-        "zip": "String / 邮编",
-        "poi": "String / POI 信息",
-        "poiId": "String / POI ID",
-        "distance": "Number / 帖子发表位置与我的距离",
-        "unit": "String / 与我距离的单位 km 或 mi"
-    },
     "archives": [
         // 通用数据结构->扩展资料信息
     ],
@@ -131,6 +109,11 @@ aside: false
             // 通用数据结构->话题信息
         }
     ],
+    "geotag": {
+        // 通用数据结构->地理信息
+        "distance": "Number / 帖子发表位置与我的距离",
+        "unit": "String / 与我距离的单位 km 或 mi"
+    },
     "author": {
         // 帖子作者
         // 通用数据结构->用户信息

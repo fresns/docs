@@ -68,28 +68,6 @@ aside: false
         "ipLocation": "String / Author IP Location Name",
         "deviceName": "String / Author Device Name"
     },
-    "location": {
-        "gtid": "String / Geotag id",
-        "mapId": "Number / Latitude and Longitude Map ID",
-        "latitude": "String / Latitude",
-        "longitude": "String / Longitude",
-        "scale": "String / Map Scale",
-        "continent": "String / Continent Name",
-        "continentCode": "String / Continent Code",
-        "country": "String / Country Name",
-        "countryCode": "String / Country Code",
-        "region": "String / Province Name",
-        "regionCode": "String / Province Code",
-        "city": "String / City Name",
-        "cityCode": "String / City Code",
-        "district": "String / District Name",
-        "address": "String / Address",
-        "zip": "String / Postal Code",
-        "poi": "String / POI Information",
-        "poiId": "String / POI ID",
-        "distance": "Number / Distance between the post location and me",
-        "unit": "String / Unit of distance from me, km or mi"
-    },
     "archives": [
         // Common Data Structure -> Extend Archive Info
     ],
@@ -127,10 +105,15 @@ aside: false
     },
     "hashtags": [
         {
-            // Post Related Topics
+            // Post Related Hashtags
             // Common Data Structure -> Hashtag Info
         }
     ],
+    "geotag": {
+        // Common Data Structure -> Geotag Info
+        "distance": "Number / Distance between the post location and me",
+        "unit": "String / Unit of distance from me, km or mi"
+    },
     "author": {
         // Post author
         // Common Data Structure -> User Info
