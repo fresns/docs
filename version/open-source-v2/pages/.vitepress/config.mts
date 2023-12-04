@@ -65,7 +65,7 @@ export default defineConfig({
 
         footer: {
             message: 'Released under the Apache-2.0 License',
-            copyright: 'Copyright © 2021-2023 <a href="https://github.com/jevantang" target="_blank">Jevan Tang</a>',
+            copyright: 'Copyright © 2021-2024 <a href="https://github.com/jevantang" target="_blank">Jevan Tang</a>',
         },
     },
 
