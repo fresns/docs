@@ -1,6 +1,6 @@
-# 获取评论[列表] 地理标记
+# 获取评论[列表] 附近
 
-- 接口地址：`/fresns-api/v1/comment/geotags`
+- 接口地址：`/fresns-api/v1/comment/nearby`
 - 请求方式：`GET`
 - 传参方式：`Query`
 
@@ -27,6 +27,8 @@
 | blacklistKeys | String | NO | 黑名单键名，从返回数据中删除指定的键值对<br>多个以英文逗号隔开，支持「点表示法」表示多维数组 |
 | whitelistHashtagKeys | String | NO | 针对评论信息中的 `hashtags` 参数 |
 | blacklistHashtagKeys | String | NO | 针对评论信息中的 `hashtags` 参数 |
+| whitelistGeotagKeys | String | NO | 针对评论信息中的 `geotag` 参数 |
+| blacklistGeotagKeys | String | NO | 针对评论信息中的 `geotag` 参数 |
 | whitelistAuthorKeys | String | NO | 针对评论信息中的 `author` 参数 |
 | blacklistAuthorKeys | String | NO | 针对评论信息中的 `author` 参数 |
 | whitelistPreviewLikeUserKeys | String | NO | 针对评论信息中的 `previewLikeUsers` 参数 |

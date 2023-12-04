@@ -21,7 +21,8 @@
 | mapLng | String | *optional* | Map Longitude (For distance calculation) |
 | mapLat | String | *optional* | Map Latitude (For distance calculation) |
 | uidOrUsername | Number / String | *optional* | Specify scope: User |
-| hid | String | *optional* | Specify scope: Topic |
+| htid | String | *optional* | Specify scope: Hashtag |
+| gtid | String | *optional* | Specify scope: Geotag |
 | gid | String | *optional* | Specify scope: Group |
 | includeSubgroups | Boolean | *optional* | Used with `gid` configuration to include or exclude sublevel groups.<br>Default is `false` |
 | allDigest | Boolean | *optional* | Specify scope: All digest, general and premium digest<br>When passed, the `digestState` parameter will be ignored |
@@ -46,13 +47,15 @@
 | orderType | String | *optional* | Sort by type: `createdTime`,`random`,`view`,`like`,`dislike`,`follow`,`block`,`comment`<br>Default `createdTime` |
 | orderDirection | String | *optional* | Sort by direction, default `desc`<br>`asc`,`desc` |
 | blockGroups | String | *optional* | Filter groups, `gid` multiple separated by commas |
-| blockHashtags | String | *optional* | Filter hashtags, `hid` multiple separated by commas |
+| blockHashtags | String | *optional* | Filter hashtags, `htid` multiple separated by commas |
 | whitelistKeys | String | *optional* | Whitelist key names, only returns key-value pairs for the given key names<br>Multiple separated by English commas, supports "dot notation" for multi-dimensional arrays |
 | blacklistKeys | String | *optional* | Blacklist key names, removes specified key-value pairs from the returned data<br>Multiple separated by English commas, supports "dot notation" for multi-dimensional arrays |
 | whitelistGroupKeys | String | *optional* | For the `group` parameter in the post information |
 | blacklistGroupKeys | String | *optional* | For the `group` parameter in the post information |
 | whitelistHashtagKeys | String | *optional* | For the `hashtags` parameter in the post information |
 | blacklistHashtagKeys | String | *optional* | For the `hashtags` parameter in the post information |
+| whitelistGeotagKeys | String | *optional* | For the `geotag` parameter in the post information |
+| blacklistGeotagKeys | String | *optional* | For the `geotag` parameter in the post information |
 | whitelistAuthorKeys | String | *optional* | For the `author` parameter in the post information |
 | blacklistAuthorKeys | String | *optional* | For the `author` parameter in the post information |
 | whitelistQuotedPostKeys | String | *optional* | For the `quotedPost` parameter in the post information |
@@ -73,7 +76,7 @@
     - `it_posts` configuration, whether to output users who liked my posts
 - If `uidOrUsername` is the logged-in user themselves, the above configuration is invalid, and data is directly output, indicating that the switch is ignored when viewing their own content.
 - If it is a non-public group post and not a member of the group (not following the group), it will not be output.
-- Posts of blocked objects (users, groups, topics, posts) will not be output.
+- Posts of blocked objects (users, groups, hashtags, posts) will not be output.
 
 | `contentType` parameter (PascalCase) | Description |
 | --- | --- |

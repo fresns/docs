@@ -222,7 +222,7 @@ function sidebarApi() {
       items: [
         { text: '获取帖子[列表]', link: '/api/post/list.md' },
         { text: '获取帖子[列表] 时间线', link: '/api/post/timelines.md' },
-        { text: '获取帖子[列表] 地理标记', link: '/api/post/geotags.md' },
+        { text: '获取帖子[列表] 附近', link: '/api/post/nearby.md' },
         { text: '获取帖子[详情]', link: '/api/post/detail.md' },
         { text: '获取帖子[详情] 互动列表', link: '/api/post/interaction.md' },
         { text: '获取帖子[详情] 附属用户列表', link: '/api/post/users.md' },
@@ -238,7 +238,7 @@ function sidebarApi() {
       items: [
         { text: '获取评论[列表]', link: '/api/comment/list.md' },
         { text: '获取评论[列表] 时间线', link: '/api/comment/timelines.md' },
-        { text: '获取评论[列表] 地理标记', link: '/api/comment/geotags.md' },
+        { text: '获取评论[列表] 附近', link: '/api/comment/nearby.md' },
         { text: '获取评论[详情]', link: '/api/comment/detail.md' },
         { text: '获取评论[详情] 互动列表', link: '/api/comment/interaction.md' },
         { text: '获取评论[详情] 历史列表', link: '/api/comment/histories.md' },

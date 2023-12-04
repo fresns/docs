@@ -115,7 +115,7 @@
 | --- | --- | --- |
 | `GET` | /fresns-api/v1/post/list | Post List |
 | `GET` | /fresns-api/v1/post/timelines | Post List by Timelines |
-| `GET` | /fresns-api/v1/post/geotags | Post List by Geotags |
+| `GET` | /fresns-api/v1/post/nearby | Post List by Nearby |
 | `GET` | /fresns-api/v1/post/`{pid}`/detail | Post Detail |
 | `GET` | /fresns-api/v1/post/`{pid}`/interaction/`{type}` | Post Interaction Users |
 | `GET` | /fresns-api/v1/post/`{pid}`/users | Post Affiliated Users |
@@ -130,7 +130,7 @@
 | --- | --- | --- |
 | `GET` | /fresns-api/v1/comment/list | Comment List |
 | `GET` | /fresns-api/v1/comment/timelines | Comment List by Timelines |
-| `GET` | /fresns-api/v1/comment/geotags | Comment List by Geotags |
+| `GET` | /fresns-api/v1/comment/nearby | Comment List by Nearby |
 | `GET` | /fresns-api/v1/comment/`{cid}`/detail | Comment Detail |
 | `GET` | /fresns-api/v1/comment/`{cid}`/interaction/`{type}` | Comment Interaction Users |
 | `GET` | /fresns-api/v1/comment/`{cid}`/histories | Comment Histories |

@@ -23,7 +23,8 @@
 | uidOrUsername | Number / String | *optional* | Specify scope: User |
 | pid | String | *optional* | Specify scope: Post |
 | cid | String | *optional* | Specify scope: Comment (retrieve descendant comments of this comment) |
-| hid | String | *optional* | Specify scope: Topic |
+| htid | String | *optional* | Specify scope: Hashtag |
+| gtid | String | *optional* | Specify scope: Geotag |
 | gid | String | *optional* | Specify scope: Group |
 | includeSubgroups | Boolean | *optional* | Used with `gid` configuration, whether to include contents of subgroups<br>Default is `false` |
 | sticky | Boolean | *optional* | Whether it's sticky (leave empty to output all) |
@@ -53,6 +54,8 @@
 | blacklistKeys | String | *optional* | Blacklist key names, removes specified key-value pairs from the returned data<br>Multiple separated by English commas, supports "dot notation" for multi-dimensional arrays |
 | whitelistHashtagKeys | String | *optional* | For the `hashtags` parameter in the comment information |
 | blacklistHashtagKeys | String | *optional* | For the `hashtags` parameter in the comment information |
+| whitelistGeotagKeys | String | *optional* | For the `geotag` parameter in the comment information |
+| blacklistGeotagKeys | String | *optional* | For the `geotag` parameter in the comment information |
 | whitelistAuthorKeys | String | *optional* | For the `author` parameter in the comment information |
 | blacklistAuthorKeys | String | *optional* | For the `author` parameter in the comment information |
 | whitelistPreviewLikeUserKeys | String | *optional* | For the `previewLikeUsers` parameter in the comment information |

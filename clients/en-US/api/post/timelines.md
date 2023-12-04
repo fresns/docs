@@ -29,6 +29,8 @@
 | blacklistGroupKeys | String | *optional* | For the `group` parameter in the post information |
 | whitelistHashtagKeys | String | *optional* | For the `hashtags` parameter in the post information |
 | blacklistHashtagKeys | String | *optional* | For the `hashtags` parameter in the post information |
+| whitelistGeotagKeys | String | *optional* | For the `geotag` parameter in the post information |
+| blacklistGeotagKeys | String | *optional* | For the `geotag` parameter in the post information |
 | whitelistAuthorKeys | String | *optional* | For the `author` parameter in the post information |
 | blacklistAuthorKeys | String | *optional* | For the `author` parameter in the post information |
 | whitelistQuotedPostKeys | String | *optional* | For the `quotedPost` parameter in the post information |
@@ -49,17 +51,17 @@
     - Posts from groups I follow that are set to digest will be output.
     - Hashtags I follow are only output if they are set to digest (but not posts in private groups).
     - Premium digests will be output regardless of whether I follow the poster (but not posts in private groups).
-    - Filter out users, groups, topics and posts that I have blocked.
+    - Filter out users, groups, hashtags and posts that I have blocked.
 - `type=user`
     - I made the post myself.
     - Users I follow whose posts will be output (but not posts in private groups).
     - Filter out the posts I blocked.
 - `type=group`
     - All posts in the groups I follow will be output, whether they are in digest or not.
-    - Filter out users, groups, topics and posts that I have blocked.
+    - Filter out users, groups, hashtags and posts that I have blocked.
 - `type=hashtag`
     - All posts under the hashtags I follow will be output, whether digested or not (but not posts in private groups).
-    - Filter out users, groups, topics and posts that I have blocked.
+    - Filter out users, groups, hashtags and posts that I have blocked.
 
 ## Return
 

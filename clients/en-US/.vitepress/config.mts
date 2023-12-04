@@ -210,7 +210,7 @@ function sidebarApi() {
       items: [
         { text: 'Post List', link: '/api/post/list.md' },
         { text: 'Post List by Timelines', link: '/api/post/timelines.md' },
-        { text: 'Post List by Geotags', link: '/api/post/geotags.md' },
+        { text: 'Post List by Nearby', link: '/api/post/nearby.md' },
         { text: 'Post Detail', link: '/api/post/detail.md' },
         { text: 'Post Interaction Users', link: '/api/post/interaction.md' },
         { text: 'Post Affiliated Users', link: '/api/post/users.md' },
@@ -226,7 +226,7 @@ function sidebarApi() {
       items: [
         { text: 'Comment List', link: '/api/comment/list.md' },
         { text: 'Comment List by Timelines', link: '/api/comment/timelines.md' },
-        { text: 'Comment List by Geotags', link: '/api/comment/geotags.md' },
+        { text: 'Comment List by Nearby', link: '/api/comment/nearby.md' },
         { text: 'Comment Detail', link: '/api/comment/detail.md' },
         { text: 'Comment Interaction Users', link: '/api/comment/interaction.md' },
         { text: 'Comment Histories', link: '/api/comment/histories.md' },

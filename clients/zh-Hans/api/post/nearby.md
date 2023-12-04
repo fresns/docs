@@ -1,6 +1,6 @@
-# 获取帖子[列表] 地理标记
+# 获取帖子[列表] 附近
 
-- 接口地址：`/fresns-api/v1/post/geotags`
+- 接口地址：`/fresns-api/v1/post/nearby`
 - 请求方式：`GET`
 - 传参方式：`Query`
 
@@ -29,6 +29,8 @@
 | blacklistGroupKeys | String | NO | 针对帖子信息中的 `group` 参数 |
 | whitelistHashtagKeys | String | NO | 针对帖子信息中的 `hashtags` 参数 |
 | blacklistHashtagKeys | String | NO | 针对帖子信息中的 `hashtags` 参数 |
+| whitelistGeotagKeys | String | NO | 针对帖子信息中的 `geotag` 参数 |
+| blacklistGeotagKeys | String | NO | 针对帖子信息中的 `geotag` 参数 |
 | whitelistAuthorKeys | String | NO | 针对帖子信息中的 `author` 参数 |
 | blacklistAuthorKeys | String | NO | 针对帖子信息中的 `author` 参数 |
 | whitelistQuotedPostKeys | String | NO | 针对帖子信息中的 `quotedPost` 参数 |

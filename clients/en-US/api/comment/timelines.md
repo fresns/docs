@@ -27,6 +27,8 @@
 | blacklistKeys | String | *optional* | Blacklist key names, removes specified key-value pairs from the returned data<br>Multiple separated by English commas, supports "dot notation" for multi-dimensional arrays |
 | whitelistHashtagKeys | String | *optional* | For the `hashtags` parameter in the comment information |
 | blacklistHashtagKeys | String | *optional* | For the `hashtags` parameter in the comment information |
+| whitelistGeotagKeys | String | *optional* | For the `geotag` parameter in the comment information |
+| blacklistGeotagKeys | String | *optional* | For the `geotag` parameter in the comment information |
 | whitelistAuthorKeys | String | *optional* | For the `author` parameter in the comment information |
 | blacklistAuthorKeys | String | *optional* | For the `author` parameter in the comment information |
 | whitelistPreviewLikeUserKeys | String | *optional* | For the `previewLikeUsers` parameter in the comment information |

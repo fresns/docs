@@ -32,6 +32,8 @@
 | blacklistGroupKeys | String | *optional* | For the `group` parameter in the post information |
 | whitelistHashtagKeys | String | *optional* | For the `hashtags` parameter in the post information |
 | blacklistHashtagKeys | String | *optional* | For the `hashtags` parameter in the post information |
+| whitelistGeotagKeys | String | *optional* | For the `geotag` parameter in the post information |
+| blacklistGeotagKeys | String | *optional* | For the `geotag` parameter in the post information |
 | whitelistAuthorKeys | String | *optional* | For the `author` parameter in the post information |
 | blacklistAuthorKeys | String | *optional* | For the `author` parameter in the post information |
 | whitelistQuotedPostKeys | String | *optional* | For the `quotedPost` parameter in the post information |

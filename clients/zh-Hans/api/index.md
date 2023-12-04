@@ -115,7 +115,7 @@
 | --- | --- | --- |
 | `GET` | /fresns-api/v1/post/list | 获取帖子列表 |
 | `GET` | /fresns-api/v1/post/timelines | 获取时间线的帖子列表 |
-| `GET` | /fresns-api/v1/post/geotags | 获取地理标记的帖子列表 |
+| `GET` | /fresns-api/v1/post/nearby | 获取附近的帖子列表 |
 | `GET` | /fresns-api/v1/post/`{pid}`/detail | 获取帖子详情 |
 | `GET` | /fresns-api/v1/post/`{pid}`/interaction/`{type}` | 获取帖子互动的用户列表 |
 | `GET` | /fresns-api/v1/post/`{pid}`/users | 获取帖子的附属用户列表 |
@@ -130,7 +130,7 @@
 | --- | --- | --- |
 | `GET` | /fresns-api/v1/comment/list | 获取评论列表 |
 | `GET` | /fresns-api/v1/comment/timelines | 获取时间线的评论列表 |
-| `GET` | /fresns-api/v1/comment/geotags | 获取地理标记的评论列表 |
+| `GET` | /fresns-api/v1/comment/nearby | 获取附近的评论列表 |
 | `GET` | /fresns-api/v1/comment/`{cid}`/detail | 获取评论详情 |
 | `GET` | /fresns-api/v1/comment/`{cid}`/interaction/`{type}` | 获取评论互动的用户列表 |
 | `GET` | /fresns-api/v1/comment/`{cid}`/histories | 获取评论的历史列表 |

@@ -23,7 +23,8 @@
 | uidOrUsername | Number / String | NO | 指定范围：用户 |
 | pid | String | NO | 指定范围：帖子 |
 | cid | String | NO | 指定范围：评论（获取该评论的子孙级评论） |
-| hid | String | NO | 指定范围：话题 |
+| htid | String | NO | 指定范围：话题 |
+| gtid | String | NO | 指定范围：地理 |
 | gid | String | NO | 指定范围：小组 |
 | includeSubgroups | Boolean | NO | 与 `gid` 配置使用，是否包含子级小组的内容<br>默认为 `false` |
 | sticky | Boolean | NO | 是否置顶（留空输出全部） |
@@ -53,6 +54,8 @@
 | blacklistKeys | String | NO | 黑名单键名，从返回数据中删除指定的键值对<br>多个以英文逗号隔开，支持「点表示法」表示多维数组 |
 | whitelistHashtagKeys | String | NO | 针对评论信息中的 `hashtags` 参数 |
 | blacklistHashtagKeys | String | NO | 针对评论信息中的 `hashtags` 参数 |
+| whitelistGeotagKeys | String | NO | 针对评论信息中的 `geotag` 参数 |
+| blacklistGeotagKeys | String | NO | 针对评论信息中的 `geotag` 参数 |
 | whitelistAuthorKeys | String | NO | 针对评论信息中的 `author` 参数 |
 | blacklistAuthorKeys | String | NO | 针对评论信息中的 `author` 参数 |
 | whitelistPreviewLikeUserKeys | String | NO | 针对评论信息中的 `previewLikeUsers` 参数 |

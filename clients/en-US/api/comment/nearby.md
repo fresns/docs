@@ -1,8 +1,8 @@
-# Comment Detail
+# Comment List by Nearby
 
-- Endpoint Path: `/fresns-api/v1/comment/{cid}/detail`
+- Endpoint Path: `/fresns-api/v1/comment/nearby`
 - Method: `GET`
-- Request: `Rest` + `Query`
+- Request: `Query`
 
 ## Headers Optional Parameter
 
@@ -13,19 +13,16 @@
 | X-Fresns-Uid | *optional* | **required** |
 | X-Fresns-Uid-Token | *optional* | **required** |
 
-## Path Variables
+## Body Params
 
 | Key | Type | Required | Description |
 | --- | --- | --- | --- |
-| cid | String | **required** | Comment ID |
-
-## Query Params
-
-| Key | Type | Required | Description |
-| --- | --- | --- | --- |
-| mapId | Number | *optional* | [Map Service Provider](../../reference/dictionary/maps.md) |
-| mapLng | String | *optional* | Map Longitude (For distance calculation) |
-| mapLat | String | *optional* | Map Latitude (For distance calculation) |
+| mapId | Number | **required** | [Map Service Provider](../../reference/dictionary/maps.md) |
+| mapLng | String | **required** | Map Longitude |
+| mapLat | String | **required** | Map Latitude |
+| unit | String | *optional* | Range unit `km` or `mi` |
+| length | Number | *optional* | Range length |
+| contentType | String | *optional* | Filter content by type |
 | whitelistKeys | String | *optional* | Whitelist key names, only returns key-value pairs for the given key names<br>Multiple separated by English commas, supports "dot notation" for multi-dimensional arrays |
 | blacklistKeys | String | *optional* | Blacklist key names, removes specified key-value pairs from the returned data<br>Multiple separated by English commas, supports "dot notation" for multi-dimensional arrays |
 | whitelistHashtagKeys | String | *optional* | For the `hashtags` parameter in the comment information |
@@ -42,6 +39,8 @@
 | blacklistReplyToPostKeys | String | *optional* | For the `replyToPost` parameter in the comment information |
 | whitelistReplyToCommentKeys | String | *optional* | For the `replyToComment` parameter in the comment information |
 | blacklistReplyToCommentKeys | String | *optional* | For the `replyToComment` parameter in the comment information |
+| pageSize | Number | *optional* | Number of items per page (default 30 items) |
+| page | Number | *optional* | Page number (default 1) |
 
 ## Return
 
@@ -50,14 +49,17 @@
     "code": 0,
     "message": "ok",
     "data": {
-        "items": {
-            "title": "String / SEO Title",
-            "keywords": "String / SEO Keywords",
-            "description": "String / SEO Description"
+        "pagination": {
+            "total": "Number / How much data in total",
+            "current": "Number / Current page number",
+            "pageSize": "Number / How much data on each page",
+            "lastPage": "Number / Last page number"
         },
-        "detail": {
-            // Common Data Structure -> Comment Info
-        }
+        "list": [
+            {
+                // Common Data Structure -> Comment Info
+            }
+        ]
     }
 }
 ```

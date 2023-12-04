@@ -21,7 +21,8 @@
 | mapLng | String | NO | 地图经度（用于计算距离） |
 | mapLat | String | NO | 地图纬度（用于计算距离） |
 | uidOrUsername | Number / String | NO | 指定范围：用户 |
-| hid | String | NO | 指定范围：话题 |
+| htid | String | NO | 指定范围：话题 |
+| gtid | String | NO | 指定范围：地理 |
 | gid | String | NO | 指定范围：小组 |
 | includeSubgroups | Boolean | NO | 与 `gid` 配置使用，是否包含子级小组的内容<br>默认为 `false` |
 | allDigest | Boolean | NO | 指定范围：全部精华，一级精华和二级精华<br>传参后，将忽略 `digestState` 参数 |
@@ -48,13 +49,15 @@
 | orderType | String | NO | 排序类型 `createdTime`,`commentTime`,`random`,`view`,`like`,`dislike`,`follow`,`block`,`comment`<br>默认 `createdTime` |
 | orderDirection | String | NO | 排序方向，默认 `desc`<br>`asc`,`desc` |
 | blockGroups | String | NO | 过滤小组，`gid` 多个以英文逗号隔开 |
-| blockHashtags | String | NO | 过滤话题，`hid` 多个以英文逗号隔开 |
+| blockHashtags | String | NO | 过滤话题，`htid` 多个以英文逗号隔开 |
 | whitelistKeys | String | NO | 白名单键名，只返回给定键名的键值对<br>多个以英文逗号隔开，支持「点表示法」表示多维数组 |
 | blacklistKeys | String | NO | 黑名单键名，从返回数据中删除指定的键值对<br>多个以英文逗号隔开，支持「点表示法」表示多维数组 |
 | whitelistGroupKeys | String | NO | 针对帖子信息中的 `group` 参数 |
 | blacklistGroupKeys | String | NO | 针对帖子信息中的 `group` 参数 |
 | whitelistHashtagKeys | String | NO | 针对帖子信息中的 `hashtags` 参数 |
 | blacklistHashtagKeys | String | NO | 针对帖子信息中的 `hashtags` 参数 |
+| whitelistGeotagKeys | String | NO | 针对帖子信息中的 `geotag` 参数 |
+| blacklistGeotagKeys | String | NO | 针对帖子信息中的 `geotag` 参数 |
 | whitelistAuthorKeys | String | NO | 针对帖子信息中的 `author` 参数 |
 | blacklistAuthorKeys | String | NO | 针对帖子信息中的 `author` 参数 |
 | whitelistQuotedPostKeys | String | NO | 针对帖子信息中的 `quotedPost` 参数 |

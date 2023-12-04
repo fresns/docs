@@ -32,6 +32,8 @@
 | blacklistGroupKeys | String | NO | 针对帖子信息中的 `group` 参数 |
 | whitelistHashtagKeys | String | NO | 针对帖子信息中的 `hashtags` 参数 |
 | blacklistHashtagKeys | String | NO | 针对帖子信息中的 `hashtags` 参数 |
+| whitelistGeotagKeys | String | NO | 针对帖子信息中的 `geotag` 参数 |
+| blacklistGeotagKeys | String | NO | 针对帖子信息中的 `geotag` 参数 |
 | whitelistAuthorKeys | String | NO | 针对帖子信息中的 `author` 参数 |
 | blacklistAuthorKeys | String | NO | 针对帖子信息中的 `author` 参数 |
 | whitelistQuotedPostKeys | String | NO | 针对帖子信息中的 `quotedPost` 参数 |
