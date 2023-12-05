@@ -16,8 +16,6 @@ aside: false
     "mode": "Number / 小组模式 1.公开 2.非公开",
     "modeEndAfter": "Number / 非公开模式到期后 1.不限制 2.小组内容全部不可见 3.到期前内容可见，新内容不可见",
     "find": "Number / 是否可发现（是否显示） 1.可发现 2.不可发现",
-    "followType": "Number / 关注方式 1.原生方式 2.应用方式 3.关闭",
-    "followUrl": "String / 关注方式 2 专用，操作关注应用页地址",
     "parentGid": "String / 父级小组 ID",
     "parentInfo": {
         "gid": "String / 父级小组 ID",
@@ -71,21 +69,23 @@ aside: false
         }
     ],
     "interaction": {
-        "likeSetting": "Boolean / 是否允许 like",
+        "likeEnabled": "Boolean / 是否允许 like",
         "likeName": "String / like 行为自定义名称",
-        "dislikeSetting": "Boolean / 是否允许 dislike",
+        "dislikeEnabled": "Boolean / 是否允许 dislike",
         "dislikeName": "String / dislike 行为自定义名称",
-        "followSetting": "Boolean / 是否允许 follow",
+        "followEnabled": "Boolean / 是否允许 follow",
         "followName": "String / follow 行为自定义名称",
-        "blockSetting": "Boolean / 是否允许 block",
+        "blockEnabled": "Boolean / 是否允许 block",
         "blockName": "String / block 行为自定义名称",
         "likeStatus": "Boolean / 点赞状态",
         "dislikeStatus": "Boolean / 点踩状态",
         "followStatus": "Boolean / 关注状态",
-        "followExpired": "Boolean / 是否过期，公开小组模式始终为 false",
-        "followExpiryDateTime": "String / 过期时间",
         "blockStatus": "Boolean / 屏蔽状态",
-        "note": "String / 我的互动备注（关注或屏蔽）"
+        "note": "String / 我的互动备注（关注或屏蔽）",
+        "followType": "Number / 关注方式 1.原生方式 2.应用方式 3.关闭",
+        "followUrl": "String / 关注方式 2 专用，操作关注应用页地址",
+        "followExpired": "Boolean / 是否过期，公开小组模式始终为 false",
+        "followExpiryDateTime": "String / 过期时间"
     }
 }
 ```

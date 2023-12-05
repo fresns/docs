@@ -49,13 +49,13 @@ aside: false
         // Common Data Structure -> Extend Content Info
     },
     "interaction": {
-        "likeSetting": "Boolean / Whether like is allowed",
+        "likeEnabled": "Boolean / Whether like is allowed",
         "likeName": "String / Custom Like Action Name",
-        "dislikeSetting": "Boolean / Whether dislike is allowed",
+        "dislikeEnabled": "Boolean / Whether dislike is allowed",
         "dislikeName": "String / Custom Dislike Action Name",
-        "followSetting": "Boolean / Whether follow is allowed",
+        "followEnabled": "Boolean / Whether follow is allowed",
         "followName": "String / Custom Follow Action Name",
-        "blockSetting": "Boolean / Whether block is allowed",
+        "blockEnabled": "Boolean / Whether block is allowed",
         "blockName": "String / Custom Block Action Name",
         "likeStatus": "Boolean / Like Status",
         "dislikeStatus": "Boolean / Dislike Status",

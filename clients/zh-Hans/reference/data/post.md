@@ -145,13 +145,13 @@ aside: false
         "editorUrl": "String / 应用编辑器访问地址"
     },
     "interaction": {
-        "likeSetting": "Boolean / 是否允许 like",
+        "likeEnabled": "Boolean / 是否允许 like",
         "likeName": "String / like 行为自定义名称",
-        "dislikeSetting": "Boolean / 是否允许 dislike",
+        "dislikeEnabled": "Boolean / 是否允许 dislike",
         "dislikeName": "String / dislike 行为自定义名称",
-        "followSetting": "Boolean / 是否允许 follow",
+        "followEnabled": "Boolean / 是否允许 follow",
         "followName": "String / follow 行为自定义名称",
-        "blockSetting": "Boolean / 是否允许 block",
+        "blockEnabled": "Boolean / 是否允许 block",
         "blockName": "String / block 行为自定义名称",
         "likeStatus": "Boolean / 点赞状态",
         "dislikeStatus": "Boolean / 点踩状态",

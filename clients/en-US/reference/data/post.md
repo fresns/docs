@@ -145,13 +145,13 @@ aside: false
         "editorUrl": "String / App editor access URL"
     },
     "interaction": {
-        "likeSetting": "Boolean / Whether 'like' is allowed",
+        "likeEnabled": "Boolean / Whether 'like' is allowed",
         "likeName": "String / Custom name for the 'like' action",
-        "dislikeSetting": "Boolean / Whether 'dislike' is allowed",
+        "dislikeEnabled": "Boolean / Whether 'dislike' is allowed",
         "dislikeName": "String / Custom name for the 'dislike' action",
-        "followSetting": "Boolean / Whether 'follow' is allowed",
+        "followEnabled": "Boolean / Whether 'follow' is allowed",
         "followName": "String / Custom name for the 'follow' action",
-        "blockSetting": "Boolean / Whether 'block' is allowed",
+        "blockEnabled": "Boolean / Whether 'block' is allowed",
         "blockName": "String / Custom name for the 'block' action",
         "likeStatus": "Boolean / Like Status",
         "dislikeStatus": "Boolean / Dislike Status",

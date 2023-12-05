@@ -16,8 +16,6 @@ aside: false
     "mode": "Number / Group mode 1.Public 2.Non-public",
     "modeEndAfter": "Number / After non-public mode expires 1.No restrictions 2.All group content is invisible 3.Content before expiration is visible, new content is not visible",
     "find": "Number / Whether it can be discovered (whether it is displayed) 1.Discoverable 2.Not discoverable",
-    "followType": "Number / Follow method 1.Native method 2.App method 3.close",
-    "followUrl": "String / Follow method 2 specific, follow app page URL",
     "parentGid": "String / Parent group ID",
     "parentInfo": {
         "gid": "String / Parent group ID",
@@ -70,21 +68,23 @@ aside: false
         }
     ],
     "interaction": {
-        "likeSetting": "Boolean / Whether like is allowed",
+        "likeEnabled": "Boolean / Whether like is allowed",
         "likeName": "String / Custom Like Action Name",
-        "dislikeSetting": "Boolean / Whether dislike is allowed",
+        "dislikeEnabled": "Boolean / Whether dislike is allowed",
         "dislikeName": "String / Custom Dislike Action Name",
-        "followSetting": "Boolean / Whether follow is allowed",
+        "followEnabled": "Boolean / Whether follow is allowed",
         "followName": "String / Custom Follow Action Name",
-        "blockSetting": "Boolean / Whether block is allowed",
+        "blockEnabled": "Boolean / Whether block is allowed",
         "blockName": "String / Custom Block Action Name",
         "likeStatus": "Boolean / Like Status",
         "dislikeStatus": "Boolean / Dislike Status",
         "followStatus": "Boolean / Follow Status",
-        "followExpired": "Boolean / Whether expired, always false for public groups",
-        "followExpiryDateTime": "String / Expiry Date Time",
         "blockStatus": "Boolean / Block Status",
-        "note": "String / My interaction note (follow or block)"
+        "note": "String / My interaction note (follow or block)",
+        "followType": "Number / Follow method 1.Native method 2.App method 3.close",
+        "followUrl": "String / Follow method 2 specific, follow app page URL",
+        "followExpired": "Boolean / Whether expired, always false for public group",
+        "followExpiryDateTime": "String / Expiry Date Time"
     }
 }
 ```
