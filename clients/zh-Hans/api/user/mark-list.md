@@ -1,6 +1,6 @@
 # 获取用户[详情] 标记列表
 
-- 接口地址：`/fresns-api/v1/user/{uidOrUsername}/mark/{markType}/{listType}`
+- 接口地址：`/api/fresns/v1/user/{uidOrUsername}/mark/{markType}/{listType}`
 - 请求方式：`GET`
 - 传参方式：`Rest` + `Query`
 

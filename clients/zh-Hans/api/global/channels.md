@@ -1,6 +1,6 @@
 # 扩展频道
 
-- 接口地址：`/fresns-api/v1/global/channels`
+- 接口地址：`/api/fresns/v1/global/channels`
 - 请求方式：`GET`
 
 ## Headers 可选参数

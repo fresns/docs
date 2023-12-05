@@ -1,6 +1,6 @@
 # Generate Draft
 
-- Endpoint Path: `/fresns-api/v1/editor/{type}/generate/{fsid}`
+- Endpoint Path: `/api/fresns/v1/editor/{type}/generate/{fsid}`
 - Method: `POST`
 - Request: `Rest`
 

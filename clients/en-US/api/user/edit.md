@@ -1,6 +1,6 @@
 # User Edit
 
-- Endpoint Path: `/fresns-api/v1/user/edit`
+- Endpoint Path: `/api/fresns/v1/user/edit`
 - Method: `PUT`
 - Request: `application/json`
 

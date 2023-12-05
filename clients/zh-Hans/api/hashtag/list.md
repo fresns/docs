@@ -1,6 +1,6 @@
 # 获取话题[列表]
 
-- 接口地址：`/fresns-api/v1/hashtag/list`
+- 接口地址：`/api/fresns/v1/hashtag/list`
 - 请求方式：`GET`
 - 传参方式：`Query`
 

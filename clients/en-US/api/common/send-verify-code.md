@@ -1,6 +1,6 @@
 # Send Verify Code
 
-- Endpoint Path: `/fresns-api/v1/common/send-verify-code`
+- Endpoint Path: `/api/fresns/v1/common/send-verify-code`
 - Method: `POST`
 - Request: `application/json`
 

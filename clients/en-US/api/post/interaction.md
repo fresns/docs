@@ -1,6 +1,6 @@
 # Post Interaction Users
 
-- Endpoint Path: `/fresns-api/v1/post/{pid}/interaction/{type}`
+- Endpoint Path: `/api/fresns/v1/post/{pid}/interaction/{type}`
 - Method: `GET`
 - Request: `Rest` + `Query`
 

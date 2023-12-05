@@ -1,6 +1,6 @@
 # Global Configs
 
-- Endpoint Path: `/fresns-api/v1/global/configs`
+- Endpoint Path: `/api/fresns/v1/global/configs`
 - Method: `GET`
 - Request: `Query`
 

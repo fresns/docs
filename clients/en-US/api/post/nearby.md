@@ -1,6 +1,6 @@
 # Post List by Nearby
 
-- Endpoint Path: `/fresns-api/v1/post/nearby`
+- Endpoint Path: `/api/fresns/v1/post/nearby`
 - Method: `GET`
 - Request: `Query`
 

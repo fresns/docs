@@ -1,6 +1,6 @@
 # User Detail
 
-- Endpoint Path: `/fresns-api/v1/user/{uidOrUsername}/detail`
+- Endpoint Path: `/api/fresns/v1/user/{uidOrUsername}/detail`
 - Method: `GET`
 - Request: `Rest`
 

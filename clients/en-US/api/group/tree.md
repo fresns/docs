@@ -1,6 +1,6 @@
 # Group Tree List
 
-- Endpoint Path: `/fresns-api/v1/group/tree`
+- Endpoint Path: `/api/fresns/v1/group/tree`
 - Method: `GET`
 
 ## Headers Optional Parameter

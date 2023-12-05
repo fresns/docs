@@ -1,7 +1,7 @@
 # Client Status
 
 - Endpoint Path (Open Source): `/status.json`
-- Endpoint Path (Cloud): `/fresns-api/v1/global/status`
+- Endpoint Path (Cloud): `/api/fresns/v1/global/status`
 - Method: `GET`
 
 > Open Source Fresns is a fixed file, not a routing interface, that reads the status.json file directly from the root directory of the website.

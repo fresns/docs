@@ -1,6 +1,6 @@
 # [通知]删除消息
 
-- 接口地址：`/fresns-api/v1/notification/delete`
+- 接口地址：`/api/fresns/v1/notification/delete`
 - 请求方式：`DELETE`
 - 传参方式：`application/json`
 

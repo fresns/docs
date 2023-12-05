@@ -1,6 +1,6 @@
 # [对话]获取消息列表
 
-- 接口地址：`/fresns-api/v1/conversation/{cvid}/messages`
+- 接口地址：`/api/fresns/v1/conversation/{cvid}/messages`
 - 请求方式：`GET`
 - 传参方式：`Rest` + `Query`
 

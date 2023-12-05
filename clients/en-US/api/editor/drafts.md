@@ -1,6 +1,6 @@
 # Draft List
 
-- Endpoint Path: `/fresns-api/v1/editor/{type}/drafts`
+- Endpoint Path: `/api/fresns/v1/editor/{type}/drafts`
 - Method: `GET`
 - Request: `Rest` + `Query`
 

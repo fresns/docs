@@ -1,6 +1,6 @@
 # 内容类型
 
-- 接口地址：`/fresns-api/v1/global/{type}/content-types`
+- 接口地址：`/api/fresns/v1/global/{type}/content-types`
 - 请求方式：`GET`
 - 传参方式：`Rest`
 

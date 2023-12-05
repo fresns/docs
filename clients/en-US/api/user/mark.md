@@ -1,6 +1,6 @@
 # User Mark
 
-- Endpoint Path: `/fresns-api/v1/user/mark`
+- Endpoint Path: `/api/fresns/v1/user/mark`
 - Method: `POST`
 - Request: `application/json`
 

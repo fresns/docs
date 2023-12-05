@@ -1,6 +1,6 @@
 # 发送验证码
 
-- 接口地址：`/fresns-api/v1/common/send-verify-code`
+- 接口地址：`/api/fresns/v1/common/send-verify-code`
 - 请求方式：`POST`
 - 传参方式：`application/json`
 

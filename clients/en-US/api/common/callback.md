@@ -1,6 +1,6 @@
 # App or Plugin Callback
 
-- Endpoint Path: `/fresns-api/v1/common/callback`
+- Endpoint Path: `/api/fresns/v1/common/callback`
 - Method: `GET`
 - Request: `Query`
 

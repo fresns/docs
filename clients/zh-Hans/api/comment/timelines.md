@@ -1,6 +1,6 @@
 # 获取评论[列表] 时间线
 
-- 接口地址：`/fresns-api/v1/comment/timelines`
+- 接口地址：`/api/fresns/v1/comment/timelines`
 - 请求方式：`GET`
 - 传参方式：`Query`
 

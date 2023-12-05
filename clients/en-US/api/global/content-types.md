@@ -1,6 +1,6 @@
 # Content Types
 
-- Endpoint Path: `/fresns-api/v1/global/{type}/content-types`
+- Endpoint Path: `/api/fresns/v1/global/{type}/content-types`
 - Method: `GET`
 - Request: `Rest`
 

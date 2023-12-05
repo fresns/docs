@@ -1,6 +1,6 @@
 # Comment List by Timelines
 
-- Endpoint Path: `/fresns-api/v1/comment/timelines`
+- Endpoint Path: `/api/fresns/v1/comment/timelines`
 - Method: `GET`
 - Request: `Query`
 

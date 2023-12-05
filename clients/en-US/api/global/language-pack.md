@@ -1,6 +1,6 @@
 # Language Pack
 
-- Endpoint Path: `/fresns-api/v1/global/language-pack`
+- Endpoint Path: `/api/fresns/v1/global/language-pack`
 - Method: `GET`
 - Request: `Query`
 

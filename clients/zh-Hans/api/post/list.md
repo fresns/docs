@@ -1,6 +1,6 @@
 # 获取帖子[列表]
 
-- 接口地址：`/fresns-api/v1/post/list`
+- 接口地址：`/api/fresns/v1/post/list`
 - 请求方式：`GET`
 - 传参方式：`Query`
 
@@ -91,7 +91,7 @@
 | Document | 输出带文档的帖子 |
 | {AbcName} | 输出含有插件 fskey 为 AbcName 扩展内容的帖子 |
 
-- 内容类型列表参考 [/fresns-api/v1/global/{type}/content-types](../global/content-types.md)
+- 内容类型列表参考 [/api/fresns/v1/global/{type}/content-types](../global/content-types.md)
 
 ## 返回结果
 

@@ -1,6 +1,6 @@
 # [Notification] List
 
-- Endpoint Path: `/fresns-api/v1/notification/list`
+- Endpoint Path: `/api/fresns/v1/notification/list`
 - Method: `GET`
 - Request: `Query`
 

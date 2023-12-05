@@ -24,7 +24,7 @@
 1. 开始
     - 获取[全局配置](configs.md)里账号中心链接 [account_center_service](configs.md#路径配置)
     - 使用 `WebView` 访问账号登录(或注册)页面，登录完成后获取回调 `postMessage` 信息里的 `loginToken` 参数。
-    - 凭 `loginToken` 参数请求登录接口 [/fresns-api/v1/account/login](../api/account/login.md)
+    - 凭 `loginToken` 参数请求登录接口 [/api/fresns/v1/account/login](../api/account/login.md)
     - 登录成功后，获取账号凭证
         - **aid**: `data.authToken.aid`
         - **aidToken**: `data.authToken.token`
@@ -35,7 +35,7 @@
     - 无密码
     - 有密码 `呈现「密码输入框」视图`
 4. 登录用户
-    - [/fresns-api/v1/user/auth](../api/user/auth.md)
+    - [/api/fresns/v1/user/auth](../api/user/auth.md)
     - 用户登录成功后，获取用户凭证
         - **uid**: `data.authToken.uid`
         - **uidToken**: `data.authToken.token`

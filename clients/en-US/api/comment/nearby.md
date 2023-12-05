@@ -1,6 +1,6 @@
 # Comment List by Nearby
 
-- Endpoint Path: `/fresns-api/v1/comment/nearby`
+- Endpoint Path: `/api/fresns/v1/comment/nearby`
 - Method: `GET`
 - Request: `Query`
 

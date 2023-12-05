@@ -1,6 +1,6 @@
 # 搜索话题
 
-- 接口地址：`/fresns-api/v1/search/hashtags`
+- 接口地址：`/api/fresns/v1/search/hashtags`
 - 请求方式：`GET`
 - 传参方式：`Query`
 

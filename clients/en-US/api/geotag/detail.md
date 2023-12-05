@@ -1,6 +1,6 @@
 # Geotag Detail
 
-- Endpoint Path: `/fresns-api/v1/geotag/{gtid}/detail`
+- Endpoint Path: `/api/fresns/v1/geotag/{gtid}/detail`
 - Method: `GET`
 - Request: `Rest` + `Query`
 

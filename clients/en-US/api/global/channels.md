@@ -1,6 +1,6 @@
 # Extend Channels
 
-- Endpoint Path: `/fresns-api/v1/global/channels`
+- Endpoint Path: `/api/fresns/v1/global/channels`
 - Method: `GET`
 
 ## Headers Optional Parameter

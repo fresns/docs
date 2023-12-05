@@ -1,6 +1,6 @@
 # Quick Publish
 
-- Endpoint Path: `/fresns-api/v1/editor/{type}/quick-publish`
+- Endpoint Path: `/api/fresns/v1/editor/{type}/quick-publish`
 - Method: `POST`
 - Request: `multipart/form-data`
 

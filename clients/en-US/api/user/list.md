@@ -1,6 +1,6 @@
 # User List
 
-- Endpoint Path: `/fresns-api/v1/user/list`
+- Endpoint Path: `/api/fresns/v1/user/list`
 - Method: `GET`
 - Request: `Query`
 

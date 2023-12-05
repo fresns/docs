@@ -1,6 +1,6 @@
 # Group Detail
 
-- Endpoint Path: `/fresns-api/v1/group/{gid}/detail`
+- Endpoint Path: `/api/fresns/v1/group/{gid}/detail`
 - Method: `GET`
 - Request: `Rest`
 

@@ -1,6 +1,6 @@
 # IP Information
 
-- Endpoint Path: `/fresns-api/v1/common/ip-info`
+- Endpoint Path: `/api/fresns/v1/common/ip-info`
 - Method: `GET`
 - Request: `Query`
 

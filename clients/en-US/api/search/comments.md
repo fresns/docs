@@ -1,6 +1,6 @@
 # Search Comments
 
-- Endpoint Path: `/fresns-api/v1/search/comments`
+- Endpoint Path: `/api/fresns/v1/search/comments`
 - Method: `GET`
 - Request: `Query`
 

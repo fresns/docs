@@ -1,6 +1,6 @@
 # Upload Log
 
-- Endpoint Path: `/fresns-api/v1/common/upload-log`
+- Endpoint Path: `/api/fresns/v1/common/upload-log`
 - Method: `POST`
 - Request: `application/json`
 
@@ -19,7 +19,7 @@
 | --- | --- | --- | --- |
 | type | Number | **required** | [Log Type](../../database/systems/session-logs.md#log-type) |
 | fskey | String | *optional* | Plugin name |
-| objectName | String | **required** | Function model name or interface path<br>For example, model name: App\Models\Post<br>For example, interface path: /fresns-api/v1/account/login |
+| objectName | String | **required** | Function model name or interface path<br>For example, model name: App\Models\Post<br>For example, interface path: /api/fresns/v1/account/login |
 | objectAction | String | **required** | Action description, custom input content |
 | objectResult | Number | **required** | 1. Unknown or in progress / 2. Success / 3. Failure |
 | objectOrderId | String | *optional* | For example, if it is a publishing action, it represents the ID of the published content<br>Plugin actions, this ID can be used to query the associated information recorded by the corresponding plugin |

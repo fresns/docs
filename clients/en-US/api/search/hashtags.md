@@ -1,6 +1,6 @@
 # Search Hashtags
 
-- Endpoint Path: `/fresns-api/v1/search/hashtags`
+- Endpoint Path: `/api/fresns/v1/search/hashtags`
 - Method: `GET`
 - Request: `Query`
 

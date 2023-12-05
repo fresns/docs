@@ -1,6 +1,6 @@
 # [Conversation] List
 
-- Endpoint Path: `/fresns-api/v1/conversation/list`
+- Endpoint Path: `/api/fresns/v1/conversation/list`
 - Method: `GET`
 - Request: `Query`
 

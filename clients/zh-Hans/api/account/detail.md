@@ -1,6 +1,6 @@
 # 账号基本信息
 
-- 接口地址：`/fresns-api/v1/account/detail`
+- 接口地址：`/api/fresns/v1/account/detail`
 - 请求方式：`GET`
 
 ## Headers 可选参数

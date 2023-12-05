@@ -1,6 +1,6 @@
 # User Auth
 
-- Endpoint Path: `/fresns-api/v1/user/auth`
+- Endpoint Path: `/api/fresns/v1/user/auth`
 - Method: `POST`
 - Request: `application/json`
 

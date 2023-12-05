@@ -1,6 +1,6 @@
 # User Roles
 
-- Endpoint Path: `/fresns-api/v1/global/roles`
+- Endpoint Path: `/api/fresns/v1/global/roles`
 - Method: `GET`
 - Request: `Query`
 

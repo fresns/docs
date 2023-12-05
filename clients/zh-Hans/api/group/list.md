@@ -1,6 +1,6 @@
 # 获取小组[列表] 小组
 
-- 接口地址：`/fresns-api/v1/group/list`
+- 接口地址：`/api/fresns/v1/group/list`
 - 请求方式：`GET`
 - 传参方式：`Query`
 

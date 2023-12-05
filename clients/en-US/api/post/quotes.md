@@ -1,6 +1,6 @@
 # Post Quote It List
 
-- Endpoint Path: `/fresns-api/v1/post/{pid}/quotes`
+- Endpoint Path: `/api/fresns/v1/post/{pid}/quotes`
 - Method: `GET`
 - Request: `Rest` + `Query`
 

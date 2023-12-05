@@ -1,6 +1,6 @@
 # 删除评论
 
-- 接口地址：`/fresns-api/v1/comment/{cid}`
+- 接口地址：`/api/fresns/v1/comment/{cid}`
 - 请求方式：`DELETE`
 - 传参方式：`Rest`
 

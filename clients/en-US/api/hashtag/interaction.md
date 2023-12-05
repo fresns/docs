@@ -1,6 +1,6 @@
 # Hashtag Interaction Users
 
-- Endpoint Path: `/fresns-api/v1/hashtag/{htid}/interaction/{type}`
+- Endpoint Path: `/api/fresns/v1/hashtag/{htid}/interaction/{type}`
 - Method: `GET`
 - Request: `Rest` + `Query`
 

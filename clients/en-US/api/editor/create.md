@@ -1,6 +1,6 @@
 # Create Draft
 
-- Endpoint Path: `/fresns-api/v1/editor/{type}/create`
+- Endpoint Path: `/api/fresns/v1/editor/{type}/create`
 - Method: `POST`
 - Request: `Rest` + `application/json`
 

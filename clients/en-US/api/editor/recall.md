@@ -1,6 +1,6 @@
 # Revoke draft under review
 
-- Endpoint Path: `/fresns-api/v1/editor/{type}/{did}`
+- Endpoint Path: `/api/fresns/v1/editor/{type}/{did}`
 - Method: `PATCH`
 - Request: `Rest`
 

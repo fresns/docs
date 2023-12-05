@@ -1,6 +1,6 @@
 # 获取帖子[详情] 历史列表
 
-- 接口地址：`/fresns-api/v1/post/{pid}/histories`
+- 接口地址：`/api/fresns/v1/post/{pid}/histories`
 - 请求方式：`GET`
 - 传参方式：`Rest` + `Query`
 

@@ -1,6 +1,6 @@
 # Post List by Timelines
 
-- Endpoint Path: `/fresns-api/v1/post/timelines`
+- Endpoint Path: `/api/fresns/v1/post/timelines`
 - Method: `GET`
 - Request: `Query`
 

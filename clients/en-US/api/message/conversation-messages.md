@@ -1,6 +1,6 @@
 # [Conversation] Messages
 
-- Endpoint Path: `/fresns-api/v1/conversation/{cvid}/messages`
+- Endpoint Path: `/api/fresns/v1/conversation/{cvid}/messages`
 - Method: `GET`
 - Request: `Rest` + `Query`
 

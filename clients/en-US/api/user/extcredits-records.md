@@ -1,6 +1,6 @@
 # User Extcredits Records
 
-- Endpoint Path: `/fresns-api/v1/user/extcredits-records`
+- Endpoint Path: `/api/fresns/v1/user/extcredits-records`
 - Method: `GET`
 - Request: `Query`
 

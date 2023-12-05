@@ -1,6 +1,6 @@
 # [通知]获取消息列表
 
-- 接口地址：`/fresns-api/v1/notification/list`
+- 接口地址：`/api/fresns/v1/notification/list`
 - 请求方式：`GET`
 - 传参方式：`Query`
 

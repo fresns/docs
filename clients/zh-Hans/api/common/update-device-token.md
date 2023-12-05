@@ -1,6 +1,6 @@
 # 更新设备凭证
 
-- 接口地址：`/fresns-api/v1/common/update-device-token`
+- 接口地址：`/api/fresns/v1/common/update-device-token`
 - 请求方式：`PUT`
 - 传参方式：`application/json`
 

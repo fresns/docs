@@ -1,6 +1,6 @@
 # Geotag List
 
-- Endpoint Path: `/fresns-api/v1/geotag/list`
+- Endpoint Path: `/api/fresns/v1/geotag/list`
 - Method: `GET`
 - Request: `Query`
 

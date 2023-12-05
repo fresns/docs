@@ -1,6 +1,6 @@
 # Post List
 
-- Endpoint Path: `/fresns-api/v1/post/list`
+- Endpoint Path: `/api/fresns/v1/post/list`
 - Method: `GET`
 - Request: `Query`
 
@@ -89,7 +89,7 @@
 | Document | Output posts with documents |
 | {AbcName} | Output posts with plugin fskey AbcName extended content |
 
-- For content type list, refer to [/fresns-api/v1/global/{type}/content-types](../global/content-types.md)
+- For content type list, refer to [/api/fresns/v1/global/{type}/content-types](../global/content-types.md)
 
 ## Return
 

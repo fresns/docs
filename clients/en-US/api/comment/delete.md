@@ -1,6 +1,6 @@
 # Delete Comment
 
-- Endpoint Path: `/fresns-api/v1/comment/{cid}`
+- Endpoint Path: `/api/fresns/v1/comment/{cid}`
 - Method: `DELETE`
 - Request: `Rest`
 

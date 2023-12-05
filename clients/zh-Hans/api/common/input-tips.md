@@ -1,6 +1,6 @@
 # 输入提示信息
 
-- 接口地址：`/fresns-api/v1/common/input-tips`
+- 接口地址：`/api/fresns/v1/common/input-tips`
 - 请求方式：`GET`
 - 传参方式：`Query`
 

@@ -1,6 +1,6 @@
 # Post History Detail
 
-- Endpoint Path: `/fresns-api/v1/history/{hpid}/detail`
+- Endpoint Path: `/api/fresns/v1/history/{hpid}/detail`
 - Method: `GET`
 - Request: `Rest` + `Query`
 

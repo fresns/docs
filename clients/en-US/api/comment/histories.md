@@ -1,6 +1,6 @@
 # Comment Histories
 
-- Endpoint Path: `/fresns-api/v1/comment/{cid}/histories`
+- Endpoint Path: `/api/fresns/v1/comment/{cid}/histories`
 - Method: `GET`
 - Request: `Rest` + `Query`
 

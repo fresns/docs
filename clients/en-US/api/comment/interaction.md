@@ -1,6 +1,6 @@
 # Comment Interaction Users
 
-- Endpoint Path: `/fresns-api/v1/comment/{cid}/interaction/{type}`
+- Endpoint Path: `/api/fresns/v1/comment/{cid}/interaction/{type}`
 - Method: `GET`
 - Request: `Rest` + `Query`
 

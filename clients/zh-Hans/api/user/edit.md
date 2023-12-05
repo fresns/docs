@@ -1,6 +1,6 @@
 # 修改用户资料
 
-- 接口地址：`/fresns-api/v1/user/edit`
+- 接口地址：`/api/fresns/v1/user/edit`
 - 请求方式：`PUT`
 - 传参方式：`application/json`
 

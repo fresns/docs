@@ -1,6 +1,6 @@
 # 命令字请求
 
-- 接口地址：`/fresns-api/v1/common/cmd-word`
+- 接口地址：`/api/fresns/v1/common/cmd-word`
 - 请求方式：`POST`
 - 传参方式：`application/json`
 

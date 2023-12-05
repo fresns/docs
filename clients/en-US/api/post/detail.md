@@ -1,6 +1,6 @@
 # Post Detail
 
-- Endpoint Path: `/fresns-api/v1/post/{pid}/detail`
+- Endpoint Path: `/api/fresns/v1/post/{pid}/detail`
 - Method: `GET`
 - Request: `Rest` + `Query`
 

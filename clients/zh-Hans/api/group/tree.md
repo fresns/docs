@@ -1,6 +1,6 @@
 # 获取小组[树结构列表]
 
-- 接口地址：`/fresns-api/v1/group/tree`
+- 接口地址：`/api/fresns/v1/group/tree`
 - 请求方式：`GET`
 
 ## Headers 可选参数

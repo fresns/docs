@@ -1,6 +1,6 @@
 # [Conversation] Detail
 
-- Endpoint Path: `/fresns-api/v1/conversation/{cvid}/detail`
+- Endpoint Path: `/api/fresns/v1/conversation/{cvid}/detail`
 - Method: `GET`
 - Request: `Rest` + `Query`
 
@@ -29,9 +29,9 @@
 **Request Description**
 
 - Upload Files `uploadType`
-    - `api` Using the upload interface [/fresns-api/v1/common/upload-file](../common/upload-file.md) `uploadMode=file`
+    - `api` Using the upload interface [/api/fresns/v1/common/upload-file](../common/upload-file.md) `uploadMode=file`
     - `page` Use WebView to access the address of the uploadUrl parameter to upload, see [callback](../../reference/callback/index.md) for rules.
-    - `sdk` Use [the s3 client SDK to upload](../global/storage-token.md), after uploading pass the data to the interface in the [/fresns-api/v1/common/upload-file](../common/upload-file.md) library. `uploadMode=fileInfo`
+    - `sdk` Use [the s3 client SDK to upload](../global/storage-token.md), after uploading pass the data to the interface in the [/api/fresns/v1/common/upload-file](../common/upload-file.md) library. `uploadMode=fileInfo`
 
 ## Return
 

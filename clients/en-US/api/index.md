@@ -4,40 +4,40 @@
 
 | Method | Endpoint Path | Description |
 | --- | --- | --- |
-| `GET` | /status.json<br>/fresns-api/v1/global/status | Client Status |
-| `GET` | /fresns-api/v1/global/configs | Configs |
-| `GET` | /fresns-api/v1/global/code-messages | Code Messages |
-| `GET` | /fresns-api/v1/global/language-pack | Language Pack |
-| `GET` | /fresns-api/v1/global/channels | Extend Channels |
-| `GET` | /fresns-api/v1/global/`{type}`/archives | Extend Archives |
-| `GET` | /fresns-api/v1/global/storage-token | Storage Token |
-| `GET` | /fresns-api/v1/global/roles | User Roles |
-| `GET` | /fresns-api/v1/global/`{type}`/content-types | Content Types |
-| `GET` | /fresns-api/v1/global/stickers | Stickers |
+| `GET` | /status.json<br>/api/fresns/v1/global/status | Client Status |
+| `GET` | /api/fresns/v1/global/configs | Configs |
+| `GET` | /api/fresns/v1/global/code-messages | Code Messages |
+| `GET` | /api/fresns/v1/global/language-pack | Language Pack |
+| `GET` | /api/fresns/v1/global/channels | Extend Channels |
+| `GET` | /api/fresns/v1/global/`{type}`/archives | Extend Archives |
+| `GET` | /api/fresns/v1/global/storage-token | Storage Token |
+| `GET` | /api/fresns/v1/global/roles | User Roles |
+| `GET` | /api/fresns/v1/global/`{type}`/content-types | Content Types |
+| `GET` | /api/fresns/v1/global/stickers | Stickers |
 
 ## Common
 
 | Method | Endpoint Path | Description |
 | --- | --- | --- |
-| `GET` | /fresns-api/v1/common/ip-info | IP Information |
-| `GET` | /fresns-api/v1/common/input-tips | Input Tips |
-| `GET` | /fresns-api/v1/common/callback | App or Plugin Callback |
-| `PUT` | /fresns-api/v1/common/update-device-token | Update Device Token |
-| `POST` | /fresns-api/v1/common/cmd-word | Command Word Request |
-| `POST` | /fresns-api/v1/common/extend-action | Extend Action Request |
-| `POST` | /fresns-api/v1/common/upload-log | Upload Log |
-| `POST` | /fresns-api/v1/common/upload-file | Upload File |
-| `GET` | /fresns-api/v1/common/file/`{fid}`/link | File Download Link |
-| `GET` | /fresns-api/v1/common/file/`{fid}`/users | File Download Users |
+| `GET` | /api/fresns/v1/common/ip-info | IP Information |
+| `GET` | /api/fresns/v1/common/input-tips | Input Tips |
+| `GET` | /api/fresns/v1/common/callback | App or Plugin Callback |
+| `PUT` | /api/fresns/v1/common/update-device-token | Update Device Token |
+| `POST` | /api/fresns/v1/common/cmd-word | Command Word Request |
+| `POST` | /api/fresns/v1/common/extend-action | Extend Action Request |
+| `POST` | /api/fresns/v1/common/upload-log | Upload Log |
+| `POST` | /api/fresns/v1/common/upload-file | Upload File |
+| `GET` | /api/fresns/v1/common/file/`{fid}`/link | File Download Link |
+| `GET` | /api/fresns/v1/common/file/`{fid}`/users | File Download Users |
 
 ## Account
 
 | Method | Endpoint Path | Description |
 | --- | --- | --- |
-| `POST` | /fresns-api/v1/account/login | Login |
-| `GET` | /fresns-api/v1/account/detail | Account Detail |
-| `GET` | /fresns-api/v1/account/wallet-records | Wallet Records |
-| `DELETE` | /fresns-api/v1/account/logout | Logout |
+| `POST` | /api/fresns/v1/account/login | Login |
+| `GET` | /api/fresns/v1/account/detail | Account Detail |
+| `GET` | /api/fresns/v1/account/wallet-records | Wallet Records |
+| `DELETE` | /api/fresns/v1/account/logout | Logout |
 
 ## User
 
@@ -45,22 +45,22 @@
 
 | Method | Endpoint Path | Description |
 | --- | --- | --- |
-| `POST` | /fresns-api/v1/user/auth | Auth |
-| `GET` | /fresns-api/v1/user/overview | Overview |
-| `GET` | /fresns-api/v1/user/extcredits-records | Extcredits Records |
-| `PUT` | /fresns-api/v1/user/edit | Edit |
-| `POST` | /fresns-api/v1/user/mark | Mark |
-| `PUT` | /fresns-api/v1/user/mark-note | Mark Note |
+| `POST` | /api/fresns/v1/user/auth | Auth |
+| `GET` | /api/fresns/v1/user/overview | Overview |
+| `GET` | /api/fresns/v1/user/extcredits-records | Extcredits Records |
+| `PUT` | /api/fresns/v1/user/edit | Edit |
+| `POST` | /api/fresns/v1/user/mark | Mark |
+| `PUT` | /api/fresns/v1/user/mark-note | Mark Note |
 
 **Interactive**
 
 | Method | Endpoint Path | Description |
 | --- | --- | --- |
-| `GET` | /fresns-api/v1/user/list | User List |
-| `GET` | /fresns-api/v1/user/`{uidOrUsername}`/detail | User Detail |
-| `GET` | /fresns-api/v1/user/`{uidOrUsername}`/followers-you-follow | Followers You Know |
-| `GET` | /fresns-api/v1/user/`{uidOrUsername}`/interaction/`{type}` | User Interaction Users |
-| `GET` | /fresns-api/v1/user/`{uidOrUsername}`/mark/`{markType}`/`{listType}` | User Mark List |
+| `GET` | /api/fresns/v1/user/list | User List |
+| `GET` | /api/fresns/v1/user/`{uidOrUsername}`/detail | User Detail |
+| `GET` | /api/fresns/v1/user/`{uidOrUsername}`/followers-you-follow | Followers You Know |
+| `GET` | /api/fresns/v1/user/`{uidOrUsername}`/interaction/`{type}` | User Interaction Users |
+| `GET` | /api/fresns/v1/user/`{uidOrUsername}`/mark/`{markType}`/`{listType}` | User Mark List |
 
 ## Message
 
@@ -68,96 +68,96 @@
 
 | Method | Endpoint Path | Description |
 | --- | --- | --- |
-| `GET` | /fresns-api/v1/notification/list | List |
-| `PUT` | /fresns-api/v1/notification/mark-as-read | Mark As Read |
-| `DELETE` | /fresns-api/v1/notification/delete | Delete |
+| `GET` | /api/fresns/v1/notification/list | List |
+| `PUT` | /api/fresns/v1/notification/mark-as-read | Mark As Read |
+| `DELETE` | /api/fresns/v1/notification/delete | Delete |
 
 **Conversation**
 
 | Method | Endpoint Path | Description |
 | --- | --- | --- |
-| `GET` | /fresns-api/v1/conversation/list | List |
-| `GET` | /fresns-api/v1/conversation/`{cvid}`/detail | Detail |
-| `GET` | /fresns-api/v1/conversation/`{cvid}`/messages | Messages |
-| `PUT` | /fresns-api/v1/conversation/pin | Pin Conversation |
-| `PUT` | /fresns-api/v1/conversation/mark-as-read | Mark As Read |
-| `POST` | /fresns-api/v1/conversation/send-message | Send Message |
-| `DELETE` | /fresns-api/v1/conversation/delete | Delete Conversation or Messages |
+| `GET` | /api/fresns/v1/conversation/list | List |
+| `GET` | /api/fresns/v1/conversation/`{cvid}`/detail | Detail |
+| `GET` | /api/fresns/v1/conversation/`{cvid}`/messages | Messages |
+| `PUT` | /api/fresns/v1/conversation/pin | Pin Conversation |
+| `PUT` | /api/fresns/v1/conversation/mark-as-read | Mark As Read |
+| `POST` | /api/fresns/v1/conversation/send-message | Send Message |
+| `DELETE` | /api/fresns/v1/conversation/delete | Delete Conversation or Messages |
 
 ## Group
 
 | Method | Endpoint Path | Description |
 | --- | --- | --- |
-| `GET` | /fresns-api/v1/group/tree | Group Tree List |
-| `GET` | /fresns-api/v1/group/list | Group List |
-| `GET` | /fresns-api/v1/group/`{gid}`/detail | Group Detail |
-| `GET` | /fresns-api/v1/group/`{gid}`/interaction/`{type}` | Group Interaction Users |
+| `GET` | /api/fresns/v1/group/tree | Group Tree List |
+| `GET` | /api/fresns/v1/group/list | Group List |
+| `GET` | /api/fresns/v1/group/`{gid}`/detail | Group Detail |
+| `GET` | /api/fresns/v1/group/`{gid}`/interaction/`{type}` | Group Interaction Users |
 
 ## Hashtag
 
 | Method | Endpoint Path | Description |
 | --- | --- | --- |
-| `GET` | /fresns-api/v1/hashtag/list | Hashtag List |
-| `GET` | /fresns-api/v1/hashtag/`{htid}`/detail | Hashtag Detail |
-| `GET` | /fresns-api/v1/hashtag/`{htid}`/interaction/`{type}` | Hashtag Interaction Users |
+| `GET` | /api/fresns/v1/hashtag/list | Hashtag List |
+| `GET` | /api/fresns/v1/hashtag/`{htid}`/detail | Hashtag Detail |
+| `GET` | /api/fresns/v1/hashtag/`{htid}`/interaction/`{type}` | Hashtag Interaction Users |
 
 ## Geotag
 
 | Method | Endpoint Path | Description |
 | --- | --- | --- |
-| `GET` | /fresns-api/v1/geotag/list | Geotag List |
-| `GET` | /fresns-api/v1/geotag/`{gtid}`/detail | Geotag Detail |
-| `GET` | /fresns-api/v1/geotag/`{gtid}`/interaction/`{type}` | Geotag Interaction Users |
+| `GET` | /api/fresns/v1/geotag/list | Geotag List |
+| `GET` | /api/fresns/v1/geotag/`{gtid}`/detail | Geotag Detail |
+| `GET` | /api/fresns/v1/geotag/`{gtid}`/interaction/`{type}` | Geotag Interaction Users |
 
 ## Post
 
 | Method | Endpoint Path | Description |
 | --- | --- | --- |
-| `GET` | /fresns-api/v1/post/list | Post List |
-| `GET` | /fresns-api/v1/post/timelines | Post List by Timelines |
-| `GET` | /fresns-api/v1/post/nearby | Post List by Nearby |
-| `GET` | /fresns-api/v1/post/`{pid}`/detail | Post Detail |
-| `GET` | /fresns-api/v1/post/`{pid}`/interaction/`{type}` | Post Interaction Users |
-| `GET` | /fresns-api/v1/post/`{pid}`/users | Post Affiliated Users |
-| `GET` | /fresns-api/v1/post/`{pid}`/quotes | Post Quote It List |
-| `GET` | /fresns-api/v1/post/`{pid}`/histories | Post Histories |
-| `GET` | /fresns-api/v1/post/history/`{hpid}`/detail | Post History Detail |
-| `DELETE` | /fresns-api/v1/post/`{pid}` | Delete |
+| `GET` | /api/fresns/v1/post/list | Post List |
+| `GET` | /api/fresns/v1/post/timelines | Post List by Timelines |
+| `GET` | /api/fresns/v1/post/nearby | Post List by Nearby |
+| `GET` | /api/fresns/v1/post/`{pid}`/detail | Post Detail |
+| `GET` | /api/fresns/v1/post/`{pid}`/interaction/`{type}` | Post Interaction Users |
+| `GET` | /api/fresns/v1/post/`{pid}`/users | Post Affiliated Users |
+| `GET` | /api/fresns/v1/post/`{pid}`/quotes | Post Quote It List |
+| `GET` | /api/fresns/v1/post/`{pid}`/histories | Post Histories |
+| `GET` | /api/fresns/v1/post/history/`{hpid}`/detail | Post History Detail |
+| `DELETE` | /api/fresns/v1/post/`{pid}` | Delete |
 
 ## Comment
 
 | Method | Endpoint Path | Description |
 | --- | --- | --- |
-| `GET` | /fresns-api/v1/comment/list | Comment List |
-| `GET` | /fresns-api/v1/comment/timelines | Comment List by Timelines |
-| `GET` | /fresns-api/v1/comment/nearby | Comment List by Nearby |
-| `GET` | /fresns-api/v1/comment/`{cid}`/detail | Comment Detail |
-| `GET` | /fresns-api/v1/comment/`{cid}`/interaction/`{type}` | Comment Interaction Users |
-| `GET` | /fresns-api/v1/comment/`{cid}`/histories | Comment Histories |
-| `GET` | /fresns-api/v1/comment/history/`{hcid}`/detail | Comment History Detail |
-| `DELETE` | /fresns-api/v1/comment/`{cid}` | Delete |
+| `GET` | /api/fresns/v1/comment/list | Comment List |
+| `GET` | /api/fresns/v1/comment/timelines | Comment List by Timelines |
+| `GET` | /api/fresns/v1/comment/nearby | Comment List by Nearby |
+| `GET` | /api/fresns/v1/comment/`{cid}`/detail | Comment Detail |
+| `GET` | /api/fresns/v1/comment/`{cid}`/interaction/`{type}` | Comment Interaction Users |
+| `GET` | /api/fresns/v1/comment/`{cid}`/histories | Comment Histories |
+| `GET` | /api/fresns/v1/comment/history/`{hcid}`/detail | Comment History Detail |
+| `DELETE` | /api/fresns/v1/comment/`{cid}` | Delete |
 
 ## Editor
 
 | Method | Endpoint Path | Description |
 | --- | --- | --- |
-| `POST` | /fresns-api/v1/editor/`{type}`/quick-publish | Quick Publish |
-| `GET` | /fresns-api/v1/editor/`{type}`/configs | Editor Configs |
-| `GET` | /fresns-api/v1/editor/`{type}`/drafts | Draft List |
-| `POST` | /fresns-api/v1/editor/`{type}`/create | Create Draft |
-| `POST` | /fresns-api/v1/editor/`{type}`/generate/`{fsid}` | Generate Draft |
-| `GET` | /fresns-api/v1/editor/`{type}`/`{did}` | Draft Detail |
-| `PUT` | /fresns-api/v1/editor/`{type}`/`{did}` | Update Draft |
-| `POST` | /fresns-api/v1/editor/`{type}`/`{did}` | Submit Publish |
-| `PATCH` | /fresns-api/v1/editor/`{type}`/`{did}` | Recall (Draft under review) |
-| `DELETE` | /fresns-api/v1/editor/`{type}`/`{did}` | Delete Draft |
+| `POST` | /api/fresns/v1/editor/`{type}`/quick-publish | Quick Publish |
+| `GET` | /api/fresns/v1/editor/`{type}`/configs | Editor Configs |
+| `GET` | /api/fresns/v1/editor/`{type}`/drafts | Draft List |
+| `POST` | /api/fresns/v1/editor/`{type}`/create | Create Draft |
+| `POST` | /api/fresns/v1/editor/`{type}`/generate/`{fsid}` | Generate Draft |
+| `GET` | /api/fresns/v1/editor/`{type}`/`{did}` | Draft Detail |
+| `PUT` | /api/fresns/v1/editor/`{type}`/`{did}` | Update Draft |
+| `POST` | /api/fresns/v1/editor/`{type}`/`{did}` | Submit Publish |
+| `PATCH` | /api/fresns/v1/editor/`{type}`/`{did}` | Recall (Draft under review) |
+| `DELETE` | /api/fresns/v1/editor/`{type}`/`{did}` | Delete Draft |
 
 ## Search
 
 | Method | Endpoint Path | Description |
 | --- | --- | --- |
-| `GET` | /fresns-api/v1/search/users | Search Users |
-| `GET` | /fresns-api/v1/search/groups | Search Groups |
-| `GET` | /fresns-api/v1/search/hashtags | Search Hashtags |
-| `GET` | /fresns-api/v1/search/posts | Search Posts |
-| `GET` | /fresns-api/v1/search/comments | Search Comments |
+| `GET` | /api/fresns/v1/search/users | Search Users |
+| `GET` | /api/fresns/v1/search/groups | Search Groups |
+| `GET` | /api/fresns/v1/search/hashtags | Search Hashtags |
+| `GET` | /api/fresns/v1/search/posts | Search Posts |
+| `GET` | /api/fresns/v1/search/comments | Search Comments |

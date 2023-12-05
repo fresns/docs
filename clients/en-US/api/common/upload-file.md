@@ -1,6 +1,6 @@
 # Upload File
 
-- Endpoint Path: `/fresns-api/v1/common/upload-file`
+- Endpoint Path: `/api/fresns/v1/common/upload-file`
 - Method: `POST`
 - Request: `multipart/form-data`
 

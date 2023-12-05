@@ -1,6 +1,6 @@
 # 获取地理[详情] 互动列表
 
-- 接口地址：`/fresns-api/v1/geotag/{gtid}/interaction/{type}`
+- 接口地址：`/api/fresns/v1/geotag/{gtid}/interaction/{type}`
 - 请求方式：`GET`
 - 传参方式：`Rest` + `Query`
 

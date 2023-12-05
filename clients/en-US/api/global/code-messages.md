@@ -1,6 +1,6 @@
 # Code Messages
 
-- Endpoint Path: `/fresns-api/v1/global/code-messages`
+- Endpoint Path: `/api/fresns/v1/global/code-messages`
 - Method: `GET`
 - Request: `Query`
 

@@ -1,6 +1,6 @@
 # Search Groups
 
-- Endpoint Path: `/fresns-api/v1/search/groups`
+- Endpoint Path: `/api/fresns/v1/search/groups`
 - Method: `GET`
 - Request: `Query`
 

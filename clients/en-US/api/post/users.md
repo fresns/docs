@@ -1,6 +1,6 @@
 # Post Affiliated Users
 
-- Endpoint Path: `/fresns-api/v1/post/{pid}/users`
+- Endpoint Path: `/api/fresns/v1/post/{pid}/users`
 - Method: `GET`
 - Request: `Rest` + `Query`
 

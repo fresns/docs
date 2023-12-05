@@ -1,6 +1,6 @@
 # Publish or Review
 
-- Endpoint Path: `/fresns-api/v1/editor/{type}/{did}`
+- Endpoint Path: `/api/fresns/v1/editor/{type}/{did}`
 - Method: `POST`
 - Request: `Rest`
 

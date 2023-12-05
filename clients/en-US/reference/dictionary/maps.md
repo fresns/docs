@@ -4,7 +4,7 @@ aside: false
 
 # Maps
 
-- Endpoint Path: [/fresns-api/v1/global/configs](/api/global/configs.md)
+- Endpoint Path: [/api/fresns/v1/global/configs](/api/global/configs.md)
 - Key Name: `maps`
 
 ```json

@@ -1,6 +1,6 @@
 # Command Word Request
 
-- Endpoint Path: `/fresns-api/v1/common/cmd-word`
+- Endpoint Path: `/api/fresns/v1/common/cmd-word`
 - Method: `POST`
 - Request: `application/json`
 

@@ -1,6 +1,6 @@
 # [对话]置顶对话
 
-- 接口地址：`/fresns-api/v1/conversation/pin`
+- 接口地址：`/api/fresns/v1/conversation/pin`
 - 请求方式：`PUT`
 - 传参方式：`application/json`
 

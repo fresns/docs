@@ -1,6 +1,6 @@
 # Delete Post
 
-- Endpoint Path: `/fresns-api/v1/post/{pid}`
+- Endpoint Path: `/api/fresns/v1/post/{pid}`
 - Method: `DELETE`
 - Request: `Rest`
 

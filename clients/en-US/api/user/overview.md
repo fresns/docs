@@ -1,6 +1,6 @@
 # User Overview
 
-- Endpoint Path: `/fresns-api/v1/user/overview`
+- Endpoint Path: `/api/fresns/v1/user/overview`
 - Method: `GET`
 - Request: `Query`
 

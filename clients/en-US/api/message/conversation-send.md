@@ -1,6 +1,6 @@
 # [Conversation] Send Message
 
-- Endpoint Path: `/fresns-api/v1/conversation/send-message`
+- Endpoint Path: `/api/fresns/v1/conversation/send-message`
 - Method: `POST`
 - Request: `application/json`
 

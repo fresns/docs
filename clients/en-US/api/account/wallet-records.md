@@ -1,6 +1,6 @@
 # Wallet Records
 
-- Endpoint Path: `/fresns-api/v1/account/wallet-records`
+- Endpoint Path: `/api/fresns/v1/account/wallet-records`
 - Method: `GET`
 - Request: `Query`
 

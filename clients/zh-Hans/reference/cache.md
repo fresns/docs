@@ -10,7 +10,7 @@
 
 ## 缓存时间
 
-`/fresns-api/v1/global/configs?keys=cache_datetime,cache_minutes`
+`/api/fresns/v1/global/configs?keys=cache_datetime,cache_minutes`
 
 - `cache_datetime` 服务端最后一次配置的时间。
 - `cache_minutes` 建议客户端缓存保存最长分钟数，为空 `null` 表示不限制。不限制则建议定期请求接口只获取 `cache_datetime,cache_minutes` 配置，对比有效期是否和本地一致，不一致则表示服务端已经更新配置，请重新缓存。

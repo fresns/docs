@@ -1,6 +1,6 @@
 # 语言包
 
-- 接口地址：[/fresns-api/v1/global/language-pack](/api/global/language-pack.md)
+- 接口地址：[/api/fresns/v1/global/language-pack](/api/global/language-pack.md)
 
 ## 系统
 

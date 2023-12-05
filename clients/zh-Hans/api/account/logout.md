@@ -1,6 +1,6 @@
 # 退出登录
 
-- 接口地址：`/fresns-api/v1/account/logout`
+- 接口地址：`/api/fresns/v1/account/logout`
 - 请求方式：`DELETE`
 
 ## Headers 可选参数

@@ -1,6 +1,6 @@
 # Group Interaction Users
 
-- Endpoint Path: `/fresns-api/v1/group/{gid}/interaction/{type}`
+- Endpoint Path: `/api/fresns/v1/group/{gid}/interaction/{type}`
 - Method: `GET`
 - Request: `Rest` + `Query`
 

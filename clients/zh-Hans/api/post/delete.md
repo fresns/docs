@@ -1,6 +1,6 @@
 # 删除帖子
 
-- 接口地址：`/fresns-api/v1/post/{pid}`
+- 接口地址：`/api/fresns/v1/post/{pid}`
 - 请求方式：`DELETE`
 - 传参方式：`Rest`
 

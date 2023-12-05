@@ -1,6 +1,6 @@
 # Followers You Know
 
-- Endpoint Path: `/fresns-api/v1/user/{uidOrUsername}/followers-you-follow`
+- Endpoint Path: `/api/fresns/v1/user/{uidOrUsername}/followers-you-follow`
 - Method: `GET`
 - Request: `Rest` + `Query`
 

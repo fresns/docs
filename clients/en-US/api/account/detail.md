@@ -1,6 +1,6 @@
 # Account Detail
 
-- Endpoint Path: `/fresns-api/v1/account/detail`
+- Endpoint Path: `/api/fresns/v1/account/detail`
 - Method: `GET`
 
 ## Headers Optional Parameter

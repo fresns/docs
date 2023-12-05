@@ -1,6 +1,6 @@
 # 搜索帖子
 
-- 接口地址：`/fresns-api/v1/search/posts`
+- 接口地址：`/api/fresns/v1/search/posts`
 - 请求方式：`GET`
 - 传参方式：`Query`
 

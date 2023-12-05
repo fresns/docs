@@ -1,6 +1,6 @@
 # 用户概览
 
-- 接口地址：`/fresns-api/v1/user/overview`
+- 接口地址：`/api/fresns/v1/user/overview`
 - 请求方式：`GET`
 - 传参方式：`Query`
 

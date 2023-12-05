@@ -1,6 +1,6 @@
 # User Mark List
 
-- Endpoint Path: `/fresns-api/v1/user/{uidOrUsername}/mark/{markType}/{listType}`
+- Endpoint Path: `/api/fresns/v1/user/{uidOrUsername}/mark/{markType}/{listType}`
 - Method: `GET`
 - Request: `Rest` + `Query`
 

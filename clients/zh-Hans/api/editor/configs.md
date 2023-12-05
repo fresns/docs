@@ -1,6 +1,6 @@
 # 编辑器配置信息
 
-- 接口地址：`/fresns-api/v1/editor/{type}/configs`
+- 接口地址：`/api/fresns/v1/editor/{type}/configs`
 - 请求方式：`GET`
 - 传参方式：`Rest`
 
@@ -22,13 +22,13 @@
 **接口使用说明**
 
 - 额外参数
-    - 使用 [/fresns-api/v1/global/{type}/archives](../global/archives.md) 获取编辑器是否有额外表单。
+    - 使用 [/api/fresns/v1/global/{type}/archives](../global/archives.md) 获取编辑器是否有额外表单。
     - 获取 `post` 或 `comment` 的额外参数的表单配置。
     - 当选择小组后，获取 `group` 类型，附加 Query 参数获取该小组发表帖子或评论的额外参数。
 - 上传文件 `uploadType`
-    - `api` 使用上传接口 [/fresns-api/v1/common/upload-file](../common/upload-file.md) `uploadMode=file`
+    - `api` 使用上传接口 [/api/fresns/v1/common/upload-file](../common/upload-file.md) `uploadMode=file`
     - `page` 使用 WebView 访问 `uploadUrl` 参数的地址上传，规则见[回调返参](../../reference/callback/index.md)
-    - `sdk` 使用 [s3 客户端 SDK 上传](../global/storage-token.md)，上传完成后将数据传递给接口入库 [/fresns-api/v1/common/upload-file](../common/upload-file.md) `uploadMode=fileInfo`
+    - `sdk` 使用 [s3 客户端 SDK 上传](../global/storage-token.md)，上传完成后将数据传递给接口入库 [/api/fresns/v1/common/upload-file](../common/upload-file.md) `uploadMode=fileInfo`
 
 ## 返回结果
 

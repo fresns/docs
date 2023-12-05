@@ -1,6 +1,6 @@
 # 撤回审核中草稿
 
-- 接口地址：`/fresns-api/v1/editor/{type}/{did}`
+- 接口地址：`/api/fresns/v1/editor/{type}/{did}`
 - 请求方式：`PATCH`
 - 传参方式：`Rest`
 

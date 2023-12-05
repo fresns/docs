@@ -1,6 +1,6 @@
 # Update Device Token
 
-- Endpoint Path: `/fresns-api/v1/common/update-device-token`
+- Endpoint Path: `/api/fresns/v1/common/update-device-token`
 - Method: `PUT`
 - Request: `application/json`
 

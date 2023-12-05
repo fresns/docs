@@ -1,6 +1,6 @@
 # [对话]发送消息
 
-- 接口地址：`/fresns-api/v1/conversation/send-message`
+- 接口地址：`/api/fresns/v1/conversation/send-message`
 - 请求方式：`POST`
 - 传参方式：`application/json`
 

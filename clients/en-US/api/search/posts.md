@@ -1,6 +1,6 @@
 # Search Posts
 
-- Endpoint Path: `/fresns-api/v1/search/posts`
+- Endpoint Path: `/api/fresns/v1/search/posts`
 - Method: `GET`
 - Request: `Query`
 

@@ -1,6 +1,6 @@
 # 表情图
 
-- 接口地址：`/fresns-api/v1/global/stickers`
+- 接口地址：`/api/fresns/v1/global/stickers`
 - 请求方式：`GET`
 
 ## Headers 可选参数

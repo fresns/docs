@@ -1,6 +1,6 @@
 # Update Draft
 
-- Endpoint Path: `/fresns-api/v1/editor/{type}/{did}`
+- Endpoint Path: `/api/fresns/v1/editor/{type}/{did}`
 - Method: `PUT`
 - Request: `Rest` + `application/json`
 

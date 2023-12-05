@@ -1,6 +1,6 @@
 # 快速发表
 
-- 接口地址：`/fresns-api/v1/editor/{type}/quick-publish`
+- 接口地址：`/api/fresns/v1/editor/{type}/quick-publish`
 - 请求方式：`POST`
 - 传参方式：`multipart/form-data`
 

@@ -1,6 +1,6 @@
 # 获取评论[详情]
 
-- 接口地址：`/fresns-api/v1/comment/{cid}/detail`
+- 接口地址：`/api/fresns/v1/comment/{cid}/detail`
 - 请求方式：`GET`
 - 传参方式：`Rest` + `Query`
 

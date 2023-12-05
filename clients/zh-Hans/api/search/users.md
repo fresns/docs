@@ -1,6 +1,6 @@
 # 搜索用户
 
-- 接口地址：`/fresns-api/v1/search/users`
+- 接口地址：`/api/fresns/v1/search/users`
 - 请求方式：`GET`
 - 传参方式：`Query`
 

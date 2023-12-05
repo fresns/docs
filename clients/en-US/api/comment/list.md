@@ -1,6 +1,6 @@
 # Comment List
 
-- Endpoint Path: `/fresns-api/v1/comment/list`
+- Endpoint Path: `/api/fresns/v1/comment/list`
 - Method: `GET`
 - Request: `Query`
 
@@ -86,7 +86,7 @@
 | Document | Output comments with documents |
 | {AbcName} | Output comments with plugin fskey AbcName extended content |
 
-- For content type list, refer to [/fresns-api/v1/global/{type}/content-types](../global/content-types.md)
+- For content type list, refer to [/api/fresns/v1/global/{type}/content-types](../global/content-types.md)
 
 ## Return
 

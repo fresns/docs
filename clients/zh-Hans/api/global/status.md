@@ -1,7 +1,7 @@
 # 客户端状态
 
 - 开源版接口地址：`/status.json`
-- 云服务接口地址：`/fresns-api/v1/global/status`
+- 云服务接口地址：`/api/fresns/v1/global/status`
 - 请求方式：`GET`
 
 > 开源版是一个固定的文件，不是路由接口，直接读取网站根目录的 status.json 文件。

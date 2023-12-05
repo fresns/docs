@@ -1,6 +1,6 @@
 # Extend Action Request
 
-- Endpoint Path: `/fresns-api/v1/common/extend-action`
+- Endpoint Path: `/api/fresns/v1/common/extend-action`
 - Method: `POST`
 - Request: `application/json`
 

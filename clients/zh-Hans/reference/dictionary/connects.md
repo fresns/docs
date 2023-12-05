@@ -4,7 +4,7 @@ aside: false
 
 # 互联平台编号
 
-- 接口地址：[/fresns-api/v1/global/configs](/api/global/configs.md)
+- 接口地址：[/api/fresns/v1/global/configs](/api/global/configs.md)
 - 键名：`connects`
 
 ```json

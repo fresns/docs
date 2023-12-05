@@ -1,6 +1,6 @@
 # 存储桶令牌
 
-- 接口地址：`/fresns-api/v1/global/storage-token`
+- 接口地址：`/api/fresns/v1/global/storage-token`
 - 请求方式：`GET`
 - 传参方式：`Query`
 

@@ -1,6 +1,6 @@
 # [对话]获取对话详情
 
-- 接口地址：`/fresns-api/v1/conversation/{cvid}/detail`
+- 接口地址：`/api/fresns/v1/conversation/{cvid}/detail`
 - 请求方式：`GET`
 - 传参方式：`Rest` + `Query`
 
@@ -29,9 +29,9 @@
 **接口使用说明**
 
 - 上传文件 `uploadType`
-    - `api` 使用上传接口 [/fresns-api/v1/common/upload-file](../common/upload-file.md) `uploadMode=file`
+    - `api` 使用上传接口 [/api/fresns/v1/common/upload-file](../common/upload-file.md) `uploadMode=file`
     - `page` 使用 WebView 访问 `uploadUrl` 参数的地址上传，规则见[回调返参](../../reference/callback/index.md)
-    - `sdk` 使用 [s3 客户端 SDK 上传](../global/storage-token.md)，上传完成后将数据传递给接口入库 [/fresns-api/v1/common/upload-file](../common/upload-file.md) `uploadMode=fileInfo`
+    - `sdk` 使用 [s3 客户端 SDK 上传](../global/storage-token.md)，上传完成后将数据传递给接口入库 [/api/fresns/v1/common/upload-file](../common/upload-file.md) `uploadMode=fileInfo`
 
 ## 返回结果
 

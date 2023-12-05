@@ -1,6 +1,6 @@
 # Input Tips
 
-- Endpoint Path: `/fresns-api/v1/common/input-tips`
+- Endpoint Path: `/api/fresns/v1/common/input-tips`
 - Method: `GET`
 - Request: `Query`
 

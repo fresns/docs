@@ -1,6 +1,6 @@
 # Stickers
 
-- Endpoint Path: `/fresns-api/v1/global/stickers`
+- Endpoint Path: `/api/fresns/v1/global/stickers`
 - Method: `GET`
 
 ## Headers Optional Parameter

@@ -1,6 +1,6 @@
 # Editor Config
 
-- Endpoint Path: `/fresns-api/v1/editor/{type}/configs`
+- Endpoint Path: `/api/fresns/v1/editor/{type}/configs`
 - Method: `GET`
 - Request: `Rest`
 
@@ -22,13 +22,13 @@
 **Request Description**
 
 - Forms Configuration
-    - Use [/fresns-api/v1/global/{type}/archives](../global/archives.md) to get if the editor has extra forms.
+    - Use [/api/fresns/v1/global/{type}/archives](../global/archives.md) to get if the editor has extra forms.
     - Get the form configuration for extra `post` or `comment` parameters.
     - If a group is selected, get the type of the `group` and append the query parameter to get the extra parameters for posting or commenting in the group.
 - Upload Files `uploadType`
-    - `api` Using the upload interface [/fresns-api/v1/common/upload-file](../common/upload-file.md) `uploadMode=file`
+    - `api` Using the upload interface [/api/fresns/v1/common/upload-file](../common/upload-file.md) `uploadMode=file`
     - `page` Use WebView to access the address of the uploadUrl parameter to upload, see [callback](../../reference/callback/index.md) for rules.
-    - `sdk` Use [the s3 client SDK to upload](../global/storage-token.md), after uploading pass the data to the interface in the [/fresns-api/v1/common/upload-file](../common/upload-file.md) library. `uploadMode=fileInfo`
+    - `sdk` Use [the s3 client SDK to upload](../global/storage-token.md), after uploading pass the data to the interface in the [/api/fresns/v1/common/upload-file](../common/upload-file.md) library. `uploadMode=fileInfo`
 
 ## Return
 

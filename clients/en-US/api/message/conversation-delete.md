@@ -1,6 +1,6 @@
 # [Conversation] Delete Conversation or Messages
 
-- Endpoint Path: `/fresns-api/v1/conversation/delete`
+- Endpoint Path: `/api/fresns/v1/conversation/delete`
 - Method: `DELETE`
 - Request: `application/json`
 

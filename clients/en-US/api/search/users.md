@@ -1,6 +1,6 @@
 # Search Users
 
-- Endpoint Path: `/fresns-api/v1/search/users`
+- Endpoint Path: `/api/fresns/v1/search/users`
 - Method: `GET`
 - Request: `Query`
 
