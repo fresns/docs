@@ -11,9 +11,10 @@
 | 路由名 | 模板文件 | 介绍 |
 | --- | --- | --- |
 | fresns.portal | /portal/index.blade.php | 门户主页 |
+| fresns.about | /portal/about.blade.php | 关于页面 |
 | fresns.policies | /portal/policies.blade.php | 隐私权和条款信息页 |
 |  | /portal/private.blade.php | 私有模式提示页 |
-| fresns.custom.page<br>`['name' => 'fileName']` | /portal/{fileName}.blade.php | 自定义页面 |
+| fresns.custom.page<br>`['name' => 'fileName']` | /portal/`{fileName}`.blade.php | 自定义页面 |
 
 ## 用户页
 
