@@ -53,7 +53,6 @@
 | getLocation | 获取定位 |
 | reloadLocation | 重新定位 |
 | locationLoading | 正在定位... |
-| list | 列表 |
 | listEmpty | 列表为空，暂无内容 |
 | listWithoutPage | 没有了 |
 
@@ -102,6 +101,8 @@
 | search | 搜索 |
 | location | 位置 |
 | select | 选择 |
+| required | 必填 |
+| optional | 选填 |
 | update | 更新 |
 | recall | 撤回 |
 | submit | 提交 |
@@ -113,7 +114,7 @@
 | disagree | 不同意 |
 | know | 知道了 |
 | send | 发送 |
-| rankNum | 排序 |
+| sortOrder | 排序 |
 | type | 类型 |
 | view | 查看 |
 | more | 更多 |
@@ -132,7 +133,6 @@
 | --- | --- |
 | home | 首页 |
 | discover | 发现 |
-| me | 我 |
 | about | 关于 |
 
 ## 辅助元素
@@ -144,6 +144,7 @@
 | video | 视频 |
 | audio | 音频 |
 | document | 文档 |
+| list | 列表 |
 | modifierCount | 共 |
 | modifierOr | 或 |
 | modifierCompleted | 已 |
@@ -161,6 +162,9 @@
 | unitWordCount | 字数 |
 | unitKm | 公里 |
 | unitMi | 英里 |
+| warningNudity | 裸体 |
+| warningViolence | 暴力 |
+| warningSensitive | 敏感内容 |
 | ipLocation | IP 属地 |
 | groupAdmin | 小组管理员 |
 
@@ -185,10 +189,12 @@
 | accountJoin | 申请加入 |
 | accountRegister | 注册 |
 | accountLogin | 登录 |
+| accountLoginOrRegister | 登录或注册 |
 | accountLoginGoTo | 前往登录 |
 | accountLoginByPassword | 密码登录 |
 | accountLoginByCode | 验证码登录 |
 | accountLoginByConnects | 快速登录 |
+| accountResetPassword | 忘记密码 |
 | accountConnectEmpty | 未查询到账号关联信息 |
 | accountConnectLinked | 我有账号，绑定关联 |
 | accountConnectLinkedTip | 请先使用「密码」或者「验证码」登录账号，登录后在账号设置中绑定关联。 |
@@ -238,7 +244,7 @@
 | walletLogs | 钱包交易记录 |
 | walletLogType | 交易类型 |
 | walletLogAmountTotal | 交易总额 |
-| walletLogAmount | 交易金额 |f
+| walletLogAmount | 交易金额 |
 | walletLogSystemFee | 交易服务费 |
 | walletLogOpeningBalance | 期初余额 |
 | walletLogClosingBalance | 期末余额 |
@@ -268,7 +274,10 @@
 | settingGeneral | 个人资料 |
 | settingInteraction | 互动设置 |
 | settingAccount | 账号设置 |
-| settingConnect | 互联信息 |
+| settingConnects | 互联信息 |
+| settingConversationLimit | 对话设置 |
+| settingCommentLimit | 评论设置 |
+| settingContentLimit | 内容设置 |
 | settingType | 修改方式 |
 | settingAlready | 已设置 |
 | settingNot | 未设置 |
@@ -278,13 +287,28 @@
 | settingAllowMyFollow | 仅允许我关注的用户 |
 | settingAllowMyFollowAndVerified | 我关注的用户和已认证的用户 |
 | settingAllowNotAll | 不允许所有用户 |
+| settingContentPublic | 对所有人公开 |
+| settingContentAllowFollower | 仅对关注我的用户公开 |
+| settingContentAllowMyFollowing | 仅对我关注的用户公开 |
+| settingContentPrivate | 不公开 |
 | settingIntervalDays | 修改间隔天数 |
 | settingLastTime | 上次修改时间 |
 | settingNameWarning | 仅支持英文字母和数字，可以纯字母或者与数字混合，但不能纯数字 |
 | settingNicknameWarning | 不能带标点符号或特殊符号 |
+| settingBirthdayTip | 提供你的出生日期将确保 Fresns 提供与你年龄相符的使用体验。 |
+| settingBirthdayDisplayType1 | 不公开 |
+| settingBirthdayDisplayType2 | 显示年份 |
+| settingBirthdayDisplayType3 | 显示月和日 |
+| settingBirthdayDisplayType4 | 完整显示 |
 | settingGenderNull | 保密 |
 | settingGenderMale | 男 |
 | settingGenderFemale | 女 |
+| settingGenderCustom | 自定义 |
+| settingGenderPronounOptionTip | 选择你的人称代词 |
+| settingGenderPronounOptionShe | 她: “祝她生日快乐！” |
+| settingGenderPronounOptionHe | 他: “祝他生日快乐！” |
+| settingGenderPronounOptionThey | TA: “祝 TA 生日快乐！” |
+| settingGenderPronounTip | 所有人都能看到你的人称代词。 |
 | settingAccountConnect | 绑定 |
 | settingAccountDisconnect | 解绑 |
 
@@ -295,7 +319,7 @@
 | userCurrent | 当前用户 |
 | userPin | 密码登录 |
 | userAuthPin | 用户密码 |
-| userAuth | 进入社区 |
+| userEnter | 进入社区 |
 | userProfile | 个人信息 |
 | userAvatar | 头像 |
 | userGender | 性别 |
@@ -329,22 +353,20 @@
 | --- | --- |
 | notificationMarkAllAsRead | 标记全部为已读 |
 | notificationMarkAsRead | 标记为已读 |
-| notificationLike | 点赞了你 |
-| notificationDislike | 踩了你 |
-| notificationFollow | 关注了你 |
-| notificationBlock | 屏蔽了你 |
-| notificationMention | 提及了你 |
-| notificationComment | 评论了你 |
-| notificationQuote | 引用了你 |
+| notificationLiked | 点赞了你 |
+| notificationDisliked | 踩了你 |
+| notificationFollowed | 关注了你 |
+| notificationBlocked | 屏蔽了你 |
+| notificationMentioned | 提及了你 |
+| notificationCommented | 评论了你 |
+| notificationQuoted | 引用了你 |
 | notificationFromContentMentionYou | 一条提及你的内容 |
 
 ## 编辑器
 
 | 键名 | 键值 |
 | --- | --- |
-| editorFullFunctions | 进入高级编辑模式 |
-| editorRequired | 必填 |
-| editorOptional | 非必填 |
+| editorGoTo | 进入编辑器 |
 | editorDraftSelect | 从草稿箱中选择一篇草稿 |
 | editorDraftCreate | 创建新草稿 |
 | editorNoSelectGroup | 未选择 |
@@ -353,7 +375,6 @@
 | editorStickers | 表情 |
 | editorImages | 图片 |
 | editorVideos | 视频 |
-| editorVideoPlay | 上传成功，发表后可播放 |
 | editorAudios | 音频 |
 | editorDocuments | 文档 |
 | editorTitle | 标题 |
@@ -373,6 +394,10 @@
 | editorUploadMaxTime | 支持的最长时间 |
 | editorUploadNumber | 支持上传的数量 |
 | editorUploadButton | 确认上传 |
+| editorVideoPlayTip | 上传成功，发表后可播放 |
+| editorFileWarning | 内容警告 |
+| editorFileWarningInfo | 给文件添加警告 |
+| editorFileWarningTip | 选择一个类别，我们就会在文件上加上警告。这可以帮助人们避开他们不想看到的内容。 |
 | editorLimitTitle | 发表限制提醒 |
 | editorLimitTypeName | 限制类型 |
 | editorLimitType1Desc | 指定日期范围内限制 |
