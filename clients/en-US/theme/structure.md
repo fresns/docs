@@ -110,10 +110,12 @@
 
 | Route Name | View File | Description |
 | --- | --- | --- |
-| fresns.timeline.index | /timelines/index.blade.php | Timeline Home |
+| fresns.timeline.index |  | Timeline Home |
+| fresns.timeline.posts | /timelines/posts.blade.php | All posts followed |
 | fresns.timeline.user.posts | /timelines/user-posts.blade.php | I follow users posts |
 | fresns.timeline.group.posts | /timelines/group-posts.blade.php | I follow groups posts |
 | fresns.timeline.hashtag.posts | /timelines/hashtag-posts.blade.php | I follow hashtags posts |
+| fresns.timeline.comments | /timelines/comments.blade.php | All comments followed |
 | fresns.timeline.user.comments | /timelines/user-comments.blade.php | I follow users comments |
 | fresns.timeline.group.comments | /timelines/group-comments.blade.php | I follow groups comments |
 | fresns.timeline.hashtag.comments | /timelines/hashtag-comments.blade.php | I follow hashtags comments |
@@ -122,15 +124,18 @@
 
 | Route Name | View File | Description |
 | --- | --- | --- |
-| fresns.nearby.index | /nearby/index.blade.php | Locating Nearby |
+| fresns.nearby.index |  | Locating Nearby |
+| fresns.nearby.posts | /nearby/posts.blade.php | Posts by Nearby |
+| fresns.nearby.comments | /nearby/comments.blade.php | Comments by Nearby |
 
 ## Me
 
 | Route Name | View File | Description |
 | --- | --- | --- |
 | fresns.me.index | /me/index.blade.php | Me |
-| fresns.me.wallet | /me/wallet.blade.php | Wallet |
 | fresns.me.extcredits | /me/extcredits.blade.php | Extcredits |
+| fresns.me.wallet | /me/wallet.blade.php | Wallet |
+| fresns.me.drafts | /me/drafts.blade.php | Drafts |
 | fresns.me.users | /me/users.blade.php | Users |
 | fresns.me.settings | /me/settings.blade.php | Settings |
 
@@ -195,6 +200,5 @@
 
 | Route Name | View File | Description |
 | --- | --- | --- |
-| fresns.editor.drafts | /editor/drafts.blade.php | Drafts |
-| fresns.editor.post | /editor/editor.blade.php | Post Editor |
-| fresns.editor.comment | /editor/editor.blade.php | Comment Editor |
+| fresns.editor.post | /editor/post.blade.php | Post Editor |
+| fresns.editor.comment | /editor/comment.blade.php | Comment Editor |

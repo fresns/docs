@@ -53,10 +53,10 @@
 | fresns.hashtag.following | /hashtags/following.blade.php | 我关注的话题 |
 | fresns.hashtag.blocking | /hashtags/blocking.blade.php | 我屏蔽的话题 |
 | fresns.hashtag.detail | /hashtags/detail.blade.php | 话题详情页 |
-| fresns.hashtag.detail.likers | /hashtags/detail-likers.blade.php | 点赞小组的话题 |
-| fresns.hashtag.detail.dislikers | /hashtags/detail-dislikers.blade.php | 点踩小组的话题 |
-| fresns.hashtag.detail.followers | /hashtags/detail-followers.blade.php | 关注小组的话题 |
-| fresns.hashtag.detail.blockers | /hashtags/detail-blockers.blade.php | 屏蔽小组的话题 |
+| fresns.hashtag.detail.likers | /hashtags/detail-likers.blade.php | 点赞小组的用户 |
+| fresns.hashtag.detail.dislikers | /hashtags/detail-dislikers.blade.php | 点踩小组的用户 |
+| fresns.hashtag.detail.followers | /hashtags/detail-followers.blade.php | 关注小组的用户 |
+| fresns.hashtag.detail.blockers | /hashtags/detail-blockers.blade.php | 屏蔽小组的用户 |
 
 ## 地理页
 
@@ -69,10 +69,10 @@
 | fresns.geotag.following | /geotags/following.blade.php | 我关注的地理 |
 | fresns.geotag.blocking | /geotags/blocking.blade.php | 我屏蔽的地理 |
 | fresns.geotag.detail | /geotags/detail.blade.php | 地理详情页 |
-| fresns.geotag.detail.likers | /geotags/detail-likers.blade.php | 点赞小组的地理 |
-| fresns.geotag.detail.dislikers | /geotags/detail-dislikers.blade.php | 点踩小组的地理 |
-| fresns.geotag.detail.followers | /geotags/detail-followers.blade.php | 关注小组的地理 |
-| fresns.geotag.detail.blockers | /geotags/detail-blockers.blade.php | 屏蔽小组的地理 |
+| fresns.geotag.detail.likers | /geotags/detail-likers.blade.php | 点赞小组的用户 |
+| fresns.geotag.detail.dislikers | /geotags/detail-dislikers.blade.php | 点踩小组的用户 |
+| fresns.geotag.detail.followers | /geotags/detail-followers.blade.php | 关注小组的用户 |
+| fresns.geotag.detail.blockers | /geotags/detail-blockers.blade.php | 屏蔽小组的用户 |
 
 ## 帖子页
 
@@ -85,10 +85,10 @@
 | fresns.post.following | /posts/following.blade.php | 我关注的帖子 |
 | fresns.post.blocking | /posts/blocking.blade.php | 我屏蔽的帖子 |
 | fresns.post.detail | /posts/detail.blade.php | 帖子详情页 |
-| fresns.post.detail.likers | /posts/detail-likers.blade.php | 点赞小组的帖子 |
-| fresns.post.detail.dislikers | /posts/detail-dislikers.blade.php | 点踩小组的帖子 |
-| fresns.post.detail.followers | /posts/detail-followers.blade.php | 关注小组的帖子 |
-| fresns.post.detail.blockers | /posts/detail-blockers.blade.php | 屏蔽小组的帖子 |
+| fresns.post.detail.likers | /posts/detail-likers.blade.php | 点赞小组的用户 |
+| fresns.post.detail.dislikers | /posts/detail-dislikers.blade.php | 点踩小组的用户 |
+| fresns.post.detail.followers | /posts/detail-followers.blade.php | 关注小组的用户 |
+| fresns.post.detail.blockers | /posts/detail-blockers.blade.php | 屏蔽小组的用户 |
 
 ## 评论页
 
@@ -110,10 +110,12 @@
 
 | 路由名 | 模板文件 | 介绍 |
 | --- | --- | --- |
-| fresns.timeline.index | /timelines/index.blade.php | 时间线主页 |
+| fresns.timeline.index |  | 时间线主页 |
+| fresns.timeline.posts | /timelines/posts.blade.php | 全部关注的帖子 |
 | fresns.timeline.user.posts | /timelines/user-posts.blade.php | 关注用户的帖子 |
 | fresns.timeline.group.posts | /timelines/group-posts.blade.php | 关注小组的帖子 |
 | fresns.timeline.hashtag.posts | /timelines/hashtag-posts.blade.php | 关注话题的帖子 |
+| fresns.timeline.comments | /timelines/comments.blade.php | 全部关注的评论 |
 | fresns.timeline.user.comments | /timelines/user-comments.blade.php | 关注用户的评论 |
 | fresns.timeline.group.comments | /timelines/group-comments.blade.php | 关注小组的评论 |
 | fresns.timeline.hashtag.comments | /timelines/hashtag-comments.blade.php | 关注话题的评论 |
@@ -122,15 +124,18 @@
 
 | 路由名 | 模板文件 | 介绍 |
 | --- | --- | --- |
-| fresns.nearby.index | /nearby/index.blade.php | 附近 |
+| fresns.nearby.index |  | 附近 |
+| fresns.nearby.posts | /nearby/posts.blade.php | 附近的帖子 |
+| fresns.nearby.comments | /nearby/comments.blade.php | 附近的评论 |
 
 ## 个人中心
 
 | 路由名 | 模板文件 | 介绍 |
 | --- | --- | --- |
 | fresns.me.index | /me/index.blade.php | 个人中心 |
-| fresns.me.wallet | /me/wallet.blade.php | 钱包 |
 | fresns.me.extcredits | /me/extcredits.blade.php | 扩展分值 |
+| fresns.me.wallet | /me/wallet.blade.php | 钱包 |
+| fresns.me.drafts | /me/drafts.blade.php | 草稿箱 |
 | fresns.me.users | /me/users.blade.php | 名下用户 |
 | fresns.me.settings | /me/settings.blade.php | 设置 |
 
@@ -195,6 +200,5 @@
 
 | 路由名 | 模板文件 | 介绍 |
 | --- | --- | --- |
-| fresns.editor.drafts | /editor/drafts.blade.php | 草稿箱 |
-| fresns.editor.post | /editor/editor.blade.php | 帖子编辑器 |
-| fresns.editor.comment | /editor/editor.blade.php | 评论编辑器 |
+| fresns.editor.post | /editor/post.blade.php | 帖子编辑器 |
+| fresns.editor.comment | /editor/comment.blade.php | 评论编辑器 |
