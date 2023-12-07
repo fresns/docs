@@ -25,7 +25,7 @@
 | bannerUrl | String | *optional* | Background banner image URL |
 | gender | Number | *optional* | Gender: 1.Null 2.Female / 3.Male / 4.Custom |
 | genderCustom | String | *optional* | Gender Custom |
-| genderPreferredPronoun | Number | *optional* | Preferred Pronoun: 1.She / 2.He / 3.They |
+| genderPronoun | Number | *optional* | Preferred Pronoun: 1.She / 2.He / 3.They |
 | birthday | String | *optional* | Birthday (format: Y-m-d) |
 | birthdayDisplayType | Number | *optional* | Birthday: 1.No display / 2.Y / 3.m-d / 4.Y-m-d |
 | bio | String | *optional* | Bio |
