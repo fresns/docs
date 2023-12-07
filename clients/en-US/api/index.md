@@ -10,9 +10,8 @@
 | `GET` | /api/fresns/v1/global/language-pack | Language Pack |
 | `GET` | /api/fresns/v1/global/channels | Extend Channels |
 | `GET` | /api/fresns/v1/global/`{type}`/archives | Extend Archives |
-| `GET` | /api/fresns/v1/global/storage-token | Storage Token |
-| `GET` | /api/fresns/v1/global/roles | User Roles |
 | `GET` | /api/fresns/v1/global/`{type}`/content-types | Content Types |
+| `GET` | /api/fresns/v1/global/roles | User Roles |
 | `GET` | /api/fresns/v1/global/stickers | Stickers |
 
 ## Common
@@ -22,11 +21,12 @@
 | `GET` | /api/fresns/v1/common/ip-info | IP Information |
 | `GET` | /api/fresns/v1/common/input-tips | Input Tips |
 | `GET` | /api/fresns/v1/common/callback | App or Plugin Callback |
-| `PUT` | /api/fresns/v1/common/update-device-token | Update Device Token |
+| `PUT` | /api/fresns/v1/common/device-token | Update Device Token |
 | `POST` | /api/fresns/v1/common/cmd-word | Command Word Request |
 | `POST` | /api/fresns/v1/common/extend-action | Extend Action Request |
-| `POST` | /api/fresns/v1/common/upload-log | Upload Log |
-| `POST` | /api/fresns/v1/common/upload-file | Upload File |
+| `GET` | /api/fresns/v1/common/file/storage-token | File Storage Token |
+| `POST` | /api/fresns/v1/common/file/upload | File Upload |
+| `PUT` | /api/fresns/v1/common/file/`{fid}`/warning | File Update Warning |
 | `GET` | /api/fresns/v1/common/file/`{fid}`/link | File Download Link |
 | `GET` | /api/fresns/v1/common/file/`{fid}`/users | File Download Users |
 
@@ -34,10 +34,10 @@
 
 | Method | Endpoint Path | Description |
 | --- | --- | --- |
-| `POST` | /api/fresns/v1/account/login | Login |
+| `POST` | /api/fresns/v1/account/auth-token | Create Account Token (Login) |
+| `DELETE` | /api/fresns/v1/account/auth-token | Delete Account Token (Logout) |
 | `GET` | /api/fresns/v1/account/detail | Account Detail |
 | `GET` | /api/fresns/v1/account/wallet-records | Wallet Records |
-| `DELETE` | /api/fresns/v1/account/logout | Logout |
 
 ## User
 
@@ -45,7 +45,7 @@
 
 | Method | Endpoint Path | Description |
 | --- | --- | --- |
-| `POST` | /api/fresns/v1/user/auth | Auth |
+| `POST` | /api/fresns/v1/user/auth-token | Create User Token (Login) |
 | `GET` | /api/fresns/v1/user/overview | Overview |
 | `GET` | /api/fresns/v1/user/extcredits-records | Extcredits Records |
 | `PUT` | /api/fresns/v1/user/edit | Edit |
@@ -141,16 +141,16 @@
 
 | Method | Endpoint Path | Description |
 | --- | --- | --- |
-| `POST` | /api/fresns/v1/editor/`{type}`/quick-publish | Quick Publish |
 | `GET` | /api/fresns/v1/editor/`{type}`/configs | Editor Configs |
+| `POST` | /api/fresns/v1/editor/`{type}`/quick-publish | Quick Publish |
 | `GET` | /api/fresns/v1/editor/`{type}`/drafts | Draft List |
-| `POST` | /api/fresns/v1/editor/`{type}`/create | Create Draft |
-| `POST` | /api/fresns/v1/editor/`{type}`/generate/`{fsid}` | Generate Draft |
-| `GET` | /api/fresns/v1/editor/`{type}`/`{did}` | Draft Detail |
-| `PUT` | /api/fresns/v1/editor/`{type}`/`{did}` | Update Draft |
-| `POST` | /api/fresns/v1/editor/`{type}`/`{did}` | Submit Publish |
-| `PATCH` | /api/fresns/v1/editor/`{type}`/`{did}` | Recall (Draft under review) |
-| `DELETE` | /api/fresns/v1/editor/`{type}`/`{did}` | Delete Draft |
+| `POST` | /api/fresns/v1/editor/`{type}`/draft | Create Draft |
+| `POST` | /api/fresns/v1/editor/`{type}`/edit/`{fsid}` | Edit post or comment |
+| `GET` | /api/fresns/v1/editor/`{type}`/draft/`{did}` | Draft Detail |
+| `PUT` | /api/fresns/v1/editor/`{type}`/draft/`{did}` | Draft Update |
+| `POST` | /api/fresns/v1/editor/`{type}`/draft/`{did}` | Draft Publish |
+| `PATCH` | /api/fresns/v1/editor/`{type}`/draft/`{did}` | Draft Recall (Draft under review) |
+| `DELETE` | /api/fresns/v1/editor/`{type}`/draft/`{did}` | Draft Delete |
 
 ## Search
 
@@ -159,5 +159,6 @@
 | `GET` | /api/fresns/v1/search/users | Search Users |
 | `GET` | /api/fresns/v1/search/groups | Search Groups |
 | `GET` | /api/fresns/v1/search/hashtags | Search Hashtags |
+| `GET` | /api/fresns/v1/search/geotags | Search Geotags |
 | `GET` | /api/fresns/v1/search/posts | Search Posts |
 | `GET` | /api/fresns/v1/search/comments | Search Comments |

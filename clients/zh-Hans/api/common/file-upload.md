@@ -1,6 +1,6 @@
 # 上传文件
 
-- 接口地址：`/api/fresns/v1/common/upload-file`
+- 接口地址：`/api/fresns/v1/common/file/upload`
 - 请求方式：`POST`
 - 传参方式：`multipart/form-data`
 
@@ -22,8 +22,9 @@
 | type | String | YES | 四选一 `image`,`video`,`audio`,`document` |
 | uploadMode | String | YES | 二选一<br>`file` 上传文件<br>`fileInfo` 上传文件信息 |
 | file | File | NO | `uploadMode=file` 专用，上传文件 |
-| moreInfo | Object | NO | `uploadMode=file` 专用，可选 |
 | fileInfo | Object | NO | `uploadMode=fileInfo` 专用，上传文件信息数组 |
+| warning | String | NO | 文件警告 `nudity`, `violence`, `sensitive` |
+| moreInfo | Object | NO | 文件自定义信息 |
 
 **接口使用说明**
 
@@ -47,9 +48,6 @@
     "videoPosterPath": "视频专用，存储到 files->video_poster_path",
     "audioTime": "音频专用，存储到 files->audio_time",
     "transcodingState": "音视频专用，存储到 files->transcoding_state",
-    "moreInfo": {
-        // 扩展信息，存储到 files->more_info
-    },
     "originalPath": "存储到 files->original_path",
     "sortOrder": "存储到 file_usages->sort_order",
 }

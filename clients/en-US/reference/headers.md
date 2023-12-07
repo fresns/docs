@@ -24,7 +24,7 @@
 1. Start
     - Get the account centre link in the [global configuration](configs.md#path). account_center_service
     - Access the account login (or registration) page using the `WebView` and get the `loginToken` parameter in the callback `postMessage` message after login is complete.
-    - Request the login interface [/api/fresns/v1/account/login](../api/account/login.md) with the loginToken parameter.
+    - Request the login interface [/api/fresns/v1/account/auth-token](../api/account/login.md) with the loginToken parameter.
     - After successful login, get the account token
         - **aid**: `data.authToken.aid`
         - **aidToken**: `data.authToken.token`
@@ -35,7 +35,7 @@
     - No pin
     - With pin `Presenting the "Pin Entry Box" view`
 4. Login User
-    - [/api/fresns/v1/user/auth](../api/user/auth.md)
+    - [/api/fresns/v1/user/auth-token](../api/user/login.md)
     - After the user login successfully, obtain the user credential.
         - **uid**: `data.authToken.uid`
         - **uidToken**: `data.authToken.token`

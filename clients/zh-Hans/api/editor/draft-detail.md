@@ -1,7 +1,7 @@
-# 生成编辑草稿
+# 获取草稿详情
 
-- 接口地址：`/api/fresns/v1/editor/{type}/generate/{fsid}`
-- 请求方式：`POST`
+- 接口地址：`/api/fresns/v1/editor/{type}/draft/{did}`
+- 请求方式：`GET`
 - 传参方式：`Rest`
 
 ## Headers 可选参数
@@ -18,7 +18,7 @@
 | 变量名 | 类型 | 是否必传 | 说明 |
 | --- | --- | --- | --- |
 | type | String | YES | `post` 或 `comment` |
-| fsid | String | YES | `pid` 或 `cid` |
+| did | String | YES | 草稿 ID |
 
 ## 返回结果
 

@@ -1,6 +1,6 @@
 # 用户登录
 
-- 接口地址：`/api/fresns/v1/user/auth`
+- 接口地址：`/api/fresns/v1/user/auth-token`
 - 请求方式：`POST`
 - 传参方式：`application/json`
 

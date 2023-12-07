@@ -1,8 +1,8 @@
-# Delete Draft
+# File Update Warning
 
-- Endpoint Path: `/api/fresns/v1/editor/{type}/{did}`
-- Method: `DELETE`
-- Request: `Rest`
+- Endpoint Path: `/api/fresns/v1/common/file/{fid}/warning`
+- Method: `PUT`
+- Request: `application/json`
 
 ## Headers Optional Parameter
 
@@ -13,12 +13,15 @@
 | X-Fresns-Uid | **required** | **required** |
 | X-Fresns-Uid-Token | **required** | **required** |
 
-## Path Variables
+## Body Params
 
 | Key | Type | Required | Description |
 | --- | --- | --- | --- |
-| type | String | **required** | `post` or `comment` |
-| did | String | **required** | Draft ID |
+| warning | String | *optional* | File Warning `nudity`, `violence`, `sensitive` |
+
+**Request Description**
+
+- `warning` parameter null this parameter blank to clear the existing warning configuration.
 
 ## Return
 

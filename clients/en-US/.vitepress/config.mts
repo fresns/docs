@@ -91,9 +91,8 @@ function sidebarApi() {
         { text: 'Language Pack', link: '/api/global/language-pack.md' },
         { text: 'Extend Channels', link: '/api/global/channels.md' },
         { text: 'Extend Archives', link: '/api/global/archives.md' },
-        { text: 'Storage Token', link: '/api/global/storage-token.md' },
-        { text: 'User Roles', link: '/api/global/roles.md' },
         { text: 'Content Types', link: '/api/global/content-types.md' },
+        { text: 'User Roles', link: '/api/global/roles.md' },
         { text: 'Stickers', link: '/api/global/stickers.md' },
       ]
     },
@@ -104,11 +103,12 @@ function sidebarApi() {
         { text: 'IP Information', link: '/api/common/ip-info.md' },
         { text: 'Input Tips', link: '/api/common/input-tips.md' },
         { text: 'App or Plugin Callback', link: '/api/common/callback.md' },
-        { text: 'Update Device Token', link: '/api/common/update-device-token.md' },
+        { text: 'Update Device Token', link: '/api/common/device-token.md' },
         { text: 'Command Word Request', link: '/api/common/cmd-word.md' },
         { text: 'Extend Action Request', link: '/api/common/extend-action.md' },
-        { text: 'Upload Log', link: '/api/common/upload-log.md' },
-        { text: 'Upload File', link: '/api/common/upload-file.md' },
+        { text: 'File Storage Token', link: '/api/common/file-storage-token.md' },
+        { text: 'File Upload', link: '/api/common/file-upload.md' },
+        { text: 'File Update Warning', link: '/api/common/file-warning.md' },
         { text: 'File Download Link', link: '/api/common/file-link.md' },
         { text: 'File Download Users', link: '/api/common/file-users.md' },
       ]
@@ -118,9 +118,9 @@ function sidebarApi() {
       collapsed: false,
       items: [
         { text: 'Login', link: '/api/account/login.md' },
+        { text: 'Logout', link: '/api/account/logout.md' },
         { text: 'Account Detail', link: '/api/account/detail.md' },
         { text: 'Wallet Records', link: '/api/account/wallet-records.md' },
-        { text: 'Logout', link: '/api/account/logout.md' },
       ]
     },
     {
@@ -130,7 +130,7 @@ function sidebarApi() {
         {
           text: 'Function',
           items: [
-            { text: 'Auth', link: '/api/user/auth.md' },
+            { text: 'Login', link: '/api/user/login.md' },
             { text: 'Overview', link: '/api/user/overview.md' },
             { text: 'Extcredits Records', link: '/api/user/extcredits-records.md' },
             { text: 'Edit', link: '/api/user/edit.md' },
@@ -238,16 +238,16 @@ function sidebarApi() {
       text: 'Editor',
       collapsed: false,
       items: [
-        { text: 'Quick Publish', link: '/api/editor/quick-publish.md' },
         { text: 'Editor Configs', link: '/api/editor/configs.md' },
+        { text: 'Quick Publish', link: '/api/editor/quick-publish.md' },
         { text: 'Draft List', link: '/api/editor/drafts.md' },
-        { text: 'Create Draft', link: '/api/editor/create.md' },
-        { text: 'Generate Draft', link: '/api/editor/generate.md' },
-        { text: 'Draft Detail', link: '/api/editor/detail.md' },
-        { text: 'Update Draft', link: '/api/editor/update.md' },
-        { text: 'Submit Publish', link: '/api/editor/publish.md' },
-        { text: 'Recall (Draft under review)', link: '/api/editor/recall.md' },
-        { text: 'Delete Draft', link: '/api/editor/delete.md' },
+        { text: 'Create Draft', link: '/api/editor/draft.md' },
+        { text: 'Generate Draft', link: '/api/editor/edit.md' },
+        { text: 'Draft Detail', link: '/api/editor/draft-detail.md' },
+        { text: 'Update Draft', link: '/api/editor/draft-update.md' },
+        { text: 'Submit Publish', link: '/api/editor/draft-publish.md' },
+        { text: 'Recall (Draft under review)', link: '/api/editor/draft-recall.md' },
+        { text: 'Delete Draft', link: '/api/editor/draft-delete.md' },
       ]
     },
     {
@@ -257,6 +257,7 @@ function sidebarApi() {
         { text: 'Users', link: '/api/search/users.md' },
         { text: 'Groups', link: '/api/search/groups.md' },
         { text: 'Hashtags', link: '/api/search/hashtags.md' },
+        { text: 'Geotags', link: '/api/search/geotags.md' },
         { text: 'Posts', link: '/api/search/posts.md' },
         { text: 'Comments', link: '/api/search/comments.md' },
       ]

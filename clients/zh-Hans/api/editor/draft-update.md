@@ -1,6 +1,6 @@
 # 更新草稿内容
 
-- 接口地址：`/api/fresns/v1/editor/{type}/{did}`
+- 接口地址：`/api/fresns/v1/editor/{type}/draft/{did}`
 - 请求方式：`PUT`
 - 传参方式：`Rest` + `application/json`
 
@@ -43,7 +43,7 @@
 
 **接口使用说明**
 
-- 文件功能，使用[文件上传接口](../common/upload-file.md)上传文件。
+- 文件功能，使用[文件上传接口](../common/file-upload.md)上传文件。
 - 位置信息 `map` 参数示例：
     - 位置信息 `mapId`,`latitude`,`longitude`,`poi` 这四个信息必传，其余可选
     - `mapId` 来自数据字典，[地图服务商编号](../../database/dictionary/maps.md)

@@ -1,6 +1,6 @@
 # Account Logout
 
-- Endpoint Path: `/api/fresns/v1/account/logout`
+- Endpoint Path: `/api/fresns/v1/account/auth-token`
 - Method: `DELETE`
 
 ## Headers Optional Parameter

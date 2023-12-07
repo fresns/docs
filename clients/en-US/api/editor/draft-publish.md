@@ -1,8 +1,8 @@
-# Update Device Token
+# Publish or Review
 
-- Endpoint Path: `/api/fresns/v1/common/update-device-token`
-- Method: `PUT`
-- Request: `application/json`
+- Endpoint Path: `/api/fresns/v1/editor/{type}/draft/{did}`
+- Method: `POST`
+- Request: `Rest`
 
 ## Headers Optional Parameter
 
@@ -13,11 +13,12 @@
 | X-Fresns-Uid | **required** | **required** |
 | X-Fresns-Uid-Token | **required** | **required** |
 
-## Body Params
+## Path Variables
 
 | Key | Type | Required | Description |
 | --- | --- | --- | --- |
-| deviceToken | String | **required** | iOS or Android device Token |
+| type | String | **required** | `post` or `comment` |
+| did | String | **required** | Draft ID |
 
 ## Return
 
@@ -25,6 +26,8 @@
 {
     "code": 0,
     "message": "ok",
-    "data": null
+    "data": {
+        "fsid": "String / Official content's pid or cid"
+    }
 }
 ```

@@ -1,6 +1,6 @@
 # 提交发表（或审核）
 
-- 接口地址：`/api/fresns/v1/editor/{type}/{did}`
+- 接口地址：`/api/fresns/v1/editor/{type}/draft/{did}`
 - 请求方式：`POST`
 - 传参方式：`Rest`
 

@@ -103,9 +103,8 @@ function sidebarApi() {
         { text: '语言包信息', link: '/api/global/language-pack.md' },
         { text: '扩展频道', link: '/api/global/channels.md' },
         { text: '扩展档案配置', link: '/api/global/archives.md' },
-        { text: '存储桶令牌', link: '/api/global/storage-token.md' },
-        { text: '用户角色', link: '/api/global/roles.md' },
         { text: '内容类型', link: '/api/global/content-types.md' },
+        { text: '用户角色', link: '/api/global/roles.md' },
         { text: '表情图', link: '/api/global/stickers.md' },
       ]
     },
@@ -116,11 +115,12 @@ function sidebarApi() {
         { text: 'IP 信息', link: '/api/common/ip-info.md' },
         { text: '输入提示信息', link: '/api/common/input-tips.md' },
         { text: '回调返参查询', link: '/api/common/callback.md' },
-        { text: '更新设备凭证', link: '/api/common/update-device-token.md' },
+        { text: '更新设备凭证', link: '/api/common/device-token.md' },
         { text: '命令字请求', link: '/api/common/cmd-word.md' },
         { text: '扩展交互请求', link: '/api/common/extend-action.md' },
-        { text: '上传日志', link: '/api/common/upload-log.md' },
-        { text: '上传文件', link: '/api/common/upload-file.md' },
+        { text: '存储桶令牌', link: '/api/common/file-storage-token.md' },
+        { text: '上传文件', link: '/api/common/file-upload.md' },
+        { text: '更新文件警告', link: '/api/common/file-warning.md' },
         { text: '文件下载链接', link: '/api/common/file-link.md' },
         { text: '下载过文件的用户', link: '/api/common/file-users.md' },
       ]
@@ -129,10 +129,10 @@ function sidebarApi() {
       text: '账号',
       collapsed: false,
       items: [
-        { text: '登录', link: '/api/account/login.md' },
+        { text: '账号登录', link: '/api/account/login.md' },
+        { text: '退出登录', link: '/api/account/logout.md' },
         { text: '获取账号详情', link: '/api/account/detail.md' },
         { text: '钱包交易记录', link: '/api/account/wallet-records.md' },
-        { text: '退出登录', link: '/api/account/logout.md' },
       ]
     },
     {
@@ -142,7 +142,7 @@ function sidebarApi() {
         {
           text: '功能',
           items: [
-            { text: '用户登录', link: '/api/user/auth.md' },
+            { text: '用户登录', link: '/api/user/login.md' },
             { text: '用户概览', link: '/api/user/overview.md' },
             { text: '用户扩展分值记录', link: '/api/user/extcredits-records.md' },
             { text: '修改用户资料', link: '/api/user/edit.md' },
@@ -250,16 +250,16 @@ function sidebarApi() {
       text: '编辑器',
       collapsed: false,
       items: [
-        { text: '快速发表', link: '/api/editor/quick-publish.md' },
         { text: '编辑器配置信息', link: '/api/editor/configs.md' },
+        { text: '快速发表', link: '/api/editor/quick-publish.md' },
         { text: '获取草稿列表', link: '/api/editor/drafts.md' },
-        { text: '创建草稿', link: '/api/editor/create.md' },
-        { text: '生成编辑草稿', link: '/api/editor/generate.md' },
-        { text: '获取草稿详情', link: '/api/editor/detail.md' },
-        { text: '更新草稿内容', link: '/api/editor/update.md' },
-        { text: '提交发表（或审核）', link: '/api/editor/publish.md' },
-        { text: '撤回审核中草稿', link: '/api/editor/recall.md' },
-        { text: '删除草稿', link: '/api/editor/delete.md' },
+        { text: '创建草稿', link: '/api/editor/draft.md' },
+        { text: '生成编辑草稿', link: '/api/editor/edit.md' },
+        { text: '获取草稿详情', link: '/api/editor/draft-detail.md' },
+        { text: '更新草稿内容', link: '/api/editor/draft-update.md' },
+        { text: '提交发表（或审核）', link: '/api/editor/draft-publish.md' },
+        { text: '撤回审核中草稿', link: '/api/editor/draft-recall.md' },
+        { text: '删除草稿', link: '/api/editor/draft-delete.md' },
       ]
     },
     {
@@ -269,6 +269,7 @@ function sidebarApi() {
         { text: '用户', link: '/api/search/users.md' },
         { text: '小组', link: '/api/search/groups.md' },
         { text: '话题', link: '/api/search/hashtags.md' },
+        { text: '地理', link: '/api/search/geotags.md' },
         { text: '帖子', link: '/api/search/posts.md' },
         { text: '评论', link: '/api/search/comments.md' },
       ]

@@ -1,6 +1,6 @@
 # Get Storage Token
 
-- Endpoint Path: `/api/fresns/v1/global/storage-token`
+- Endpoint Path: `/api/fresns/v1/common/file/storage-token`
 - Method: `GET`
 - Request: `Query`
 

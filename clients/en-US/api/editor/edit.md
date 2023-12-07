@@ -1,7 +1,7 @@
-# Draft Detail
+# Edit post or comment
 
-- Endpoint Path: `/api/fresns/v1/editor/{type}/{did}`
-- Method: `GET`
+- Endpoint Path: `/api/fresns/v1/editor/{type}/edit/{fsid}`
+- Method: `POST`
 - Request: `Rest`
 
 ## Headers Optional Parameter
@@ -18,7 +18,7 @@
 | Key | Type | Required | Description |
 | --- | --- | --- | --- |
 | type | String | **required** | `post` or `comment` |
-| did | String | **required** | Draft ID |
+| fsid | String | **required** | `pid` or `cid` |
 
 ## Return
 

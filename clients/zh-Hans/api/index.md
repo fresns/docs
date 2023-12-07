@@ -10,9 +10,8 @@
 | `GET` | /api/fresns/v1/global/language-pack | 语言包信息 |
 | `GET` | /api/fresns/v1/global/channels | 扩展频道 |
 | `GET` | /api/fresns/v1/global/`{type}`/archives | 扩展档案配置 |
-| `GET` | /api/fresns/v1/global/storage-token | 存储桶令牌 |
-| `GET` | /api/fresns/v1/global/roles | 用户角色 |
 | `GET` | /api/fresns/v1/global/`{type}`/content-types | 内容类型 |
+| `GET` | /api/fresns/v1/global/roles | 用户角色 |
 | `GET` | /api/fresns/v1/global/stickers | 表情图 |
 
 ## 公共业务
@@ -22,11 +21,12 @@
 | `GET` | /api/fresns/v1/common/ip-info | IP 信息 |
 | `GET` | /api/fresns/v1/common/input-tips | 输入提示信息 |
 | `GET` | /api/fresns/v1/common/callback | 回调返参查询 |
-| `PUT` | /api/fresns/v1/common/update-device-token | 更新设备凭证 |
+| `PUT` | /api/fresns/v1/common/device-token | 更新设备凭证 |
 | `POST` | /api/fresns/v1/common/cmd-word | 命令字请求 |
 | `POST` | /api/fresns/v1/common/extend-action | 扩展交互请求 |
-| `POST` | /api/fresns/v1/common/upload-log | 上传日志 |
-| `POST` | /api/fresns/v1/common/upload-file | 上传文件 |
+| `GET` | /api/fresns/v1/common/file/storage-token | 存储桶令牌 |
+| `POST` | /api/fresns/v1/common/file/upload | 上传文件 |
+| `PUT` | /api/fresns/v1/common/file/`{fid}`/warning | 更新文件警告 |
 | `GET` | /api/fresns/v1/common/file/`{fid}`/link | 文件下载链接 |
 | `GET` | /api/fresns/v1/common/file/`{fid}`/users | 下载过文件的用户 |
 
@@ -34,10 +34,10 @@
 
 | 请求方式 | 接口路径 | 描述 |
 | --- | --- | --- |
-| `POST` | /api/fresns/v1/account/login | 登录 |
+| `POST` | /api/fresns/v1/account/auth-token | 账号登录 |
+| `DELETE` | /api/fresns/v1/account/auth-token | 退出登录 |
 | `GET` | /api/fresns/v1/account/detail | 获取账号详情 |
 | `GET` | /api/fresns/v1/account/wallet-records | 钱包交易记录 |
-| `DELETE` | /api/fresns/v1/account/logout | 退出登录 |
 
 ## 用户
 
@@ -45,7 +45,7 @@
 
 | 请求方式 | 接口路径 | 描述 |
 | --- | --- | --- |
-| `POST` | /api/fresns/v1/user/auth | 用户登录 |
+| `POST` | /api/fresns/v1/user/auth-token | 用户登录 |
 | `GET` | /api/fresns/v1/user/overview | 用户概览 |
 | `GET` | /api/fresns/v1/user/extcredits-records | 用户扩展分值记录 |
 | `PUT` | /api/fresns/v1/user/edit | 修改用户资料 |
@@ -141,16 +141,16 @@
 
 | 请求方式 | 接口路径 | 描述 |
 | --- | --- | --- |
+| `GET` | /api/fresns/v1/editor/`{type}`/configs | 编辑器配置信息 |
 | `POST` | /api/fresns/v1/editor/`{type}`/quick-publish | 快速发表 |
-| `GET` | /api/fresns/v1/editor/`{type}`/config | 编辑器配置信息 |
 | `GET` | /api/fresns/v1/editor/`{type}`/drafts | 获取草稿列表 |
-| `POST` | /api/fresns/v1/editor/`{type}`/create | 创建草稿 |
-| `POST` | /api/fresns/v1/editor/`{type}`/generate/`{fsid}` | 生成编辑草稿 |
-| `GET` | /api/fresns/v1/editor/`{type}`/`{did}` | 获取草稿详情 |
-| `PUT` | /api/fresns/v1/editor/`{type}`/`{did}` | 更新草稿内容 |
-| `POST` | /api/fresns/v1/editor/`{type}`/`{did}` | 提交发表（或审核） |
-| `PATCH` | /api/fresns/v1/editor/`{type}`/`{did}` | 撤回审核中草稿 |
-| `DELETE` | /api/fresns/v1/editor/`{type}`/`{did}` | 删除草稿 |
+| `POST` | /api/fresns/v1/editor/`{type}`/draft | 创建空草稿 |
+| `POST` | /api/fresns/v1/editor/`{type}`/edit/`{fsid}` | 编辑帖子或评论 |
+| `GET` | /api/fresns/v1/editor/`{type}`/draft/`{did}` | 获取草稿详情 |
+| `PUT` | /api/fresns/v1/editor/`{type}`/draft/`{did}` | 更新草稿内容 |
+| `POST` | /api/fresns/v1/editor/`{type}`/draft/`{did}` | 提交发表（或审核） |
+| `PATCH` | /api/fresns/v1/editor/`{type}`/draft/`{did}` | 撤回审核中草稿 |
+| `DELETE` | /api/fresns/v1/editor/`{type}`/draft/`{did}` | 删除草稿 |
 
 ## 搜索
 
@@ -159,5 +159,6 @@
 | `GET` | /api/fresns/v1/search/users | 用户 |
 | `GET` | /api/fresns/v1/search/groups | 小组 |
 | `GET` | /api/fresns/v1/search/hashtags | 话题 |
+| `GET` | /api/fresns/v1/search/geotags | 地理 |
 | `GET` | /api/fresns/v1/search/posts | 帖子 |
 | `GET` | /api/fresns/v1/search/comments | 评论 |

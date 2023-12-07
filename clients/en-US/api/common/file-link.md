@@ -33,7 +33,7 @@
     "code": 0,
     "message": "ok",
     "data": {
-        "originalUrl": "String / Download link to original file"
+        "link": "String / Download link to original file"
     }
 }
 ```

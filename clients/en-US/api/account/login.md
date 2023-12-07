@@ -1,6 +1,6 @@
 # Account Login
 
-- Endpoint Path: `/api/fresns/v1/account/login`
+- Endpoint Path: `/api/fresns/v1/account/auth-token`
 - Method: `POST`
 - Request: `application/json`
 

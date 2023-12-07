@@ -1,8 +1,8 @@
-# 删除草稿
+# 更新设备凭证
 
-- 接口地址：`/api/fresns/v1/editor/{type}/{did}`
-- 请求方式：`DELETE`
-- 传参方式：`Rest`
+- 接口地址：`/api/fresns/v1/common/device-token`
+- 请求方式：`PUT`
+- 传参方式：`application/json`
 
 ## Headers 可选参数
 
@@ -13,12 +13,11 @@
 | X-Fresns-Uid | YES | YES |
 | X-Fresns-Uid-Token | YES | YES |
 
-## Path 变量
+## Body 参数
 
-| 变量名 | 类型 | 是否必传 | 说明 |
+| 参数名 | 类型 | 是否必传 | 说明 |
 | --- | --- | --- | --- |
-| type | String | YES | `post` 或 `comment` |
-| did | String | YES | 草稿 ID |
+| deviceToken | String | YES | iOS 或 Android 设备 Token |
 
 ## 返回结果
 

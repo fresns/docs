@@ -1,7 +1,7 @@
-# Publish or Review
+# Delete Draft
 
-- Endpoint Path: `/api/fresns/v1/editor/{type}/{did}`
-- Method: `POST`
+- Endpoint Path: `/api/fresns/v1/editor/{type}/draft/{did}`
+- Method: `DELETE`
 - Request: `Rest`
 
 ## Headers Optional Parameter
@@ -26,8 +26,6 @@
 {
     "code": 0,
     "message": "ok",
-    "data": {
-        "fsid": "String / Official content's pid or cid"
-    }
+    "data": null
 }
 ```

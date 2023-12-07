@@ -1,6 +1,6 @@
 # 创建草稿
 
-- 接口地址：`/api/fresns/v1/editor/{type}/create`
+- 接口地址：`/api/fresns/v1/editor/{type}/draft`
 - 请求方式：`POST`
 - 传参方式：`Rest` + `application/json`
 

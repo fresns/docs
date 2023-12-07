@@ -1,6 +1,6 @@
 # Upload File
 
-- Endpoint Path: `/api/fresns/v1/common/upload-file`
+- Endpoint Path: `/api/fresns/v1/common/file/upload`
 - Method: `POST`
 - Request: `multipart/form-data`
 
@@ -22,8 +22,9 @@
 | type | String | **required** | Choose one from `image`, `video`, `audio`, `document` |
 | uploadMode | String | **required** | Choose one from<br>`file` Upload file<br>`fileInfo` Upload file information |
 | file | File | *optional* | For `uploadMode=file` only, upload file |
-| moreInfo | Object | *optional* | For `uploadMode=file` only, optional |
 | fileInfo | Object | *optional* | For `uploadMode=fileInfo` only, upload file information array |
+| warning | String | *optional* | File Warning `nudity`, `violence`, `sensitive` |
+| moreInfo | Object | *optional* | File custom information |
 
 **Request Description**
 
@@ -47,9 +48,6 @@
     "videoPosterPath": "Video specific, store to files->video_poster_path",
     "audioTime": "Audio specific, store to files->audio_time",
     "transcodingState": "Audio and video specific, store to files->transcoding_state",
-    "moreInfo": {
-        // Extended information, store to files->more_info
-    },
     "originalPath": "Store to files->original_path",
     "sortOrder": "Store to file_usages->sort_order",
 }

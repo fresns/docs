@@ -1,6 +1,6 @@
 # Update Draft
 
-- Endpoint Path: `/api/fresns/v1/editor/{type}/{did}`
+- Endpoint Path: `/api/fresns/v1/editor/{type}/draft/{did}`
 - Method: `PUT`
 - Request: `Rest` + `application/json`
 
@@ -43,7 +43,7 @@
 
 **Request Description**
 
-- For file functionality, use the [File Upload Interface](../common/upload-file.md) to upload files.
+- For file functionality, use the [File Upload Interface](../common/file-upload.md) to upload files.
 - Location information `map` parameter example:
     - Location information `mapId`, `latitude`, `longitude`, `poi` are required, others are optional
     - `mapId` is from the data dictionary, [Map Service Provider Number](../../database/dictionary/maps.md)
