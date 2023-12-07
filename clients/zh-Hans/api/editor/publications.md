@@ -1,6 +1,6 @@
 # 快速发表
 
-- 接口地址：`/api/fresns/v1/editor/{type}/quick-publish`
+- 接口地址：`/api/fresns/v1/editor/{type}/publications`
 - 请求方式：`POST`
 - 传参方式：`multipart/form-data`
 
@@ -42,7 +42,7 @@
 
 - 跳过草稿逻辑，直接发表内容。发表内容不存草稿（历史）。
 - 支持接口直传单个图片文件。
-- `map`, `extends`, `archives` 参见[更新草稿接口](update.md)
+- `map`, `extends`, `archives` 参见[更新草稿接口](draft-update.md)
 
 ## 返回结果
 

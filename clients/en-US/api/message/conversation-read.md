@@ -1,6 +1,6 @@
 # [Conversation] Mark As Read
 
-- Endpoint Path: `/api/fresns/v1/conversation/mark-as-read`
+- Endpoint Path: `/api/fresns/v1/conversation/read-status`
 - Method: `PUT`
 - Request: `application/json`
 

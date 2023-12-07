@@ -1,6 +1,6 @@
 # File Download Link
 
-- Endpoint Path: `/api/fresns/v1/common/file/{fid}/link`
+- Endpoint Path: `/api/fresns/v1/file/{fid}/link`
 - Method: `GET`
 - Request: `Rest` + `Query`
 

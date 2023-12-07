@@ -43,10 +43,10 @@
 
 **接口使用说明**
 
-- 文件功能，使用[文件上传接口](../common/file-upload.md)上传文件。
+- 文件功能，使用[文件上传接口](../file/uploads.md)上传文件。
 - 位置信息 `map` 参数示例：
     - 位置信息 `mapId`,`latitude`,`longitude`,`poi` 这四个信息必传，其余可选
-    - `mapId` 来自数据字典，[地图服务商编号](../../database/dictionary/maps.md)
+    - `mapId` 来自数据字典，[地图服务商编号](../../reference/dictionary/maps.md)
     - 位置信息删除（清空）需使用 `deleteMap` 参数。
 
 **参数示例**

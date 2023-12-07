@@ -106,11 +106,17 @@ function sidebarApi() {
         { text: 'Update Device Token', link: '/api/common/device-token.md' },
         { text: 'Command Word Request', link: '/api/common/cmd-word.md' },
         { text: 'Extend Action Request', link: '/api/common/extend-action.md' },
-        { text: 'File Storage Token', link: '/api/common/file-storage-token.md' },
-        { text: 'File Upload', link: '/api/common/file-upload.md' },
-        { text: 'File Update Warning', link: '/api/common/file-warning.md' },
-        { text: 'File Download Link', link: '/api/common/file-link.md' },
-        { text: 'File Download Users', link: '/api/common/file-users.md' },
+      ]
+    },
+    {
+      text: 'File',
+      collapsed: false,
+      items: [
+        { text: 'Storage Token', link: '/api/file/storage-token.md' },
+        { text: 'Uploads', link: '/api/file/uploads.md' },
+        { text: 'Update Warning', link: '/api/file/warning.md' },
+        { text: 'Download Link', link: '/api/file/link.md' },
+        { text: 'Download Users', link: '/api/file/users.md' },
       ]
     },
     {
@@ -239,7 +245,7 @@ function sidebarApi() {
       collapsed: false,
       items: [
         { text: 'Editor Configs', link: '/api/editor/configs.md' },
-        { text: 'Quick Publish', link: '/api/editor/quick-publish.md' },
+        { text: 'Quick Publish', link: '/api/editor/publications.md' },
         { text: 'Draft List', link: '/api/editor/drafts.md' },
         { text: 'Create Draft', link: '/api/editor/draft.md' },
         { text: 'Generate Draft', link: '/api/editor/edit.md' },

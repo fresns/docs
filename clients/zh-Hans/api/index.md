@@ -24,11 +24,16 @@
 | `PUT` | /api/fresns/v1/common/device-token | 更新设备凭证 |
 | `POST` | /api/fresns/v1/common/cmd-word | 命令字请求 |
 | `POST` | /api/fresns/v1/common/extend-action | 扩展交互请求 |
-| `GET` | /api/fresns/v1/common/file/storage-token | 存储桶令牌 |
-| `POST` | /api/fresns/v1/common/file/upload | 上传文件 |
-| `PUT` | /api/fresns/v1/common/file/`{fid}`/warning | 更新文件警告 |
-| `GET` | /api/fresns/v1/common/file/`{fid}`/link | 文件下载链接 |
-| `GET` | /api/fresns/v1/common/file/`{fid}`/users | 下载过文件的用户 |
+
+## 文件
+
+| 请求方式 | 接口路径 | 描述 |
+| --- | --- | --- |
+| `GET` | /api/fresns/v1/file/storage-token | 存储桶令牌 |
+| `POST` | /api/fresns/v1/file/uploads | 上传文件 |
+| `PUT` | /api/fresns/v1/file/`{fid}`/warning | 更新文件警告 |
+| `GET` | /api/fresns/v1/file/`{fid}`/link | 文件下载链接 |
+| `GET` | /api/fresns/v1/file/`{fid}`/users | 下载过文件的用户 |
 
 ## 账号
 
@@ -69,7 +74,7 @@
 | 请求方式 | 接口路径 | 描述 |
 | --- | --- | --- |
 | `GET` | /api/fresns/v1/notification/list | 获取消息列表 |
-| `PUT` | /api/fresns/v1/notification/mark-as-read | 更新阅读状态 |
+| `PUT` | /api/fresns/v1/notification/read-status | 更新阅读状态 |
 | `DELETE` | /api/fresns/v1/notification/delete | 删除消息 |
 
 **对话**
@@ -80,7 +85,7 @@
 | `GET` | /api/fresns/v1/conversation/`{cvid}`/detail | 获取对话详情 |
 | `GET` | /api/fresns/v1/conversation/`{cvid}`/messages | 获取消息列表 |
 | `PUT` | /api/fresns/v1/conversation/pin | 置顶对话 |
-| `PUT` | /api/fresns/v1/conversation/mark-as-read | 更新阅读状态 |
+| `PUT` | /api/fresns/v1/conversation/read-status | 更新阅读状态 |
 | `POST` | /api/fresns/v1/conversation/send-message | 发送消息 |
 | `DELETE` | /api/fresns/v1/conversation/delete | 删除对话或对话的消息 |
 
@@ -142,7 +147,7 @@
 | 请求方式 | 接口路径 | 描述 |
 | --- | --- | --- |
 | `GET` | /api/fresns/v1/editor/`{type}`/configs | 编辑器配置信息 |
-| `POST` | /api/fresns/v1/editor/`{type}`/quick-publish | 快速发表 |
+| `POST` | /api/fresns/v1/editor/`{type}`/publications | 快速发表 |
 | `GET` | /api/fresns/v1/editor/`{type}`/drafts | 获取草稿列表 |
 | `POST` | /api/fresns/v1/editor/`{type}`/draft | 创建空草稿 |
 | `POST` | /api/fresns/v1/editor/`{type}`/edit/`{fsid}` | 编辑帖子或评论 |

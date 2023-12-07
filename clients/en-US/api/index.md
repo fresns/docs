@@ -24,11 +24,16 @@
 | `PUT` | /api/fresns/v1/common/device-token | Update Device Token |
 | `POST` | /api/fresns/v1/common/cmd-word | Command Word Request |
 | `POST` | /api/fresns/v1/common/extend-action | Extend Action Request |
-| `GET` | /api/fresns/v1/common/file/storage-token | File Storage Token |
-| `POST` | /api/fresns/v1/common/file/upload | File Upload |
-| `PUT` | /api/fresns/v1/common/file/`{fid}`/warning | File Update Warning |
-| `GET` | /api/fresns/v1/common/file/`{fid}`/link | File Download Link |
-| `GET` | /api/fresns/v1/common/file/`{fid}`/users | File Download Users |
+
+## File
+
+| Method | Endpoint Path | Description |
+| --- | --- | --- |
+| `GET` | /api/fresns/v1/file/storage-token | Storage Token |
+| `POST` | /api/fresns/v1/file/uploads | Uploads |
+| `PUT` | /api/fresns/v1/file/`{fid}`/warning | Update Warning |
+| `GET` | /api/fresns/v1/file/`{fid}`/link | Download Link |
+| `GET` | /api/fresns/v1/file/`{fid}`/users | Download Users |
 
 ## Account
 
@@ -69,7 +74,7 @@
 | Method | Endpoint Path | Description |
 | --- | --- | --- |
 | `GET` | /api/fresns/v1/notification/list | List |
-| `PUT` | /api/fresns/v1/notification/mark-as-read | Mark As Read |
+| `PUT` | /api/fresns/v1/notification/read-status | Mark As Read |
 | `DELETE` | /api/fresns/v1/notification/delete | Delete |
 
 **Conversation**
@@ -80,7 +85,7 @@
 | `GET` | /api/fresns/v1/conversation/`{cvid}`/detail | Detail |
 | `GET` | /api/fresns/v1/conversation/`{cvid}`/messages | Messages |
 | `PUT` | /api/fresns/v1/conversation/pin | Pin Conversation |
-| `PUT` | /api/fresns/v1/conversation/mark-as-read | Mark As Read |
+| `PUT` | /api/fresns/v1/conversation/read-status | Mark As Read |
 | `POST` | /api/fresns/v1/conversation/send-message | Send Message |
 | `DELETE` | /api/fresns/v1/conversation/delete | Delete Conversation or Messages |
 
@@ -142,7 +147,7 @@
 | Method | Endpoint Path | Description |
 | --- | --- | --- |
 | `GET` | /api/fresns/v1/editor/`{type}`/configs | Editor Configs |
-| `POST` | /api/fresns/v1/editor/`{type}`/quick-publish | Quick Publish |
+| `POST` | /api/fresns/v1/editor/`{type}`/publications | Quick Publish |
 | `GET` | /api/fresns/v1/editor/`{type}`/drafts | Draft List |
 | `POST` | /api/fresns/v1/editor/`{type}`/draft | Create Draft |
 | `POST` | /api/fresns/v1/editor/`{type}`/edit/`{fsid}` | Edit post or comment |

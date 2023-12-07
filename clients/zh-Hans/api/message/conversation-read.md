@@ -1,6 +1,6 @@
 # [对话]更新阅读状态
 
-- 接口地址：`/api/fresns/v1/conversation/mark-as-read`
+- 接口地址：`/api/fresns/v1/conversation/read-status`
 - 请求方式：`PUT`
 - 传参方式：`application/json`
 

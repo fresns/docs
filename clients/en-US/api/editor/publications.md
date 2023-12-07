@@ -1,6 +1,6 @@
 # Quick Publish
 
-- Endpoint Path: `/api/fresns/v1/editor/{type}/quick-publish`
+- Endpoint Path: `/api/fresns/v1/editor/{type}/publications`
 - Method: `POST`
 - Request: `multipart/form-data`
 
@@ -42,7 +42,7 @@
 
 - Skip the draft logic and publish content directly. Published content does not save drafts (histories).
 - Support direct upload of a single image file through the interface.
-- `map`, `extends`, `archives` Reference [update draft API](update.md)
+- `map`, `extends`, `archives` Reference [update draft API](draft-update.md)
 
 ## Return
 

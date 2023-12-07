@@ -1,6 +1,6 @@
 # [Notification] Mark As Read
 
-- Endpoint Path: `/api/fresns/v1/notification/mark-as-read`
+- Endpoint Path: `/api/fresns/v1/notification/read-status`
 - Method: `PUT`
 - Request: `application/json`
 

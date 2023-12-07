@@ -1,6 +1,6 @@
 # 下载过文件的用户
 
-- 接口地址：`/api/fresns/v1/common/file/{fid}/users`
+- 接口地址：`/api/fresns/v1/file/{fid}/users`
 - 请求方式：`GET`
 - 传参方式：`Rest` + `Query`
 

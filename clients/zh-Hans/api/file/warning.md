@@ -1,6 +1,6 @@
 # 更新文件警告
 
-- 接口地址：`/api/fresns/v1/common/file/{fid}/warning`
+- 接口地址：`/api/fresns/v1/file/{fid}/warning`
 - 请求方式：`PUT`
 - 传参方式：`application/json`
 

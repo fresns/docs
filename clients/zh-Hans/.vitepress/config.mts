@@ -118,11 +118,17 @@ function sidebarApi() {
         { text: '更新设备凭证', link: '/api/common/device-token.md' },
         { text: '命令字请求', link: '/api/common/cmd-word.md' },
         { text: '扩展交互请求', link: '/api/common/extend-action.md' },
-        { text: '存储桶令牌', link: '/api/common/file-storage-token.md' },
-        { text: '上传文件', link: '/api/common/file-upload.md' },
-        { text: '更新文件警告', link: '/api/common/file-warning.md' },
-        { text: '文件下载链接', link: '/api/common/file-link.md' },
-        { text: '下载过文件的用户', link: '/api/common/file-users.md' },
+      ]
+    },
+    {
+      text: '文件',
+      collapsed: false,
+      items: [
+        { text: '存储桶令牌', link: '/api/file/storage-token.md' },
+        { text: '上传文件', link: '/api/file/uploads.md' },
+        { text: '更新文件警告', link: '/api/file/warning.md' },
+        { text: '文件下载链接', link: '/api/file/link.md' },
+        { text: '下载过文件的用户', link: '/api/file/users.md' },
       ]
     },
     {
@@ -251,7 +257,7 @@ function sidebarApi() {
       collapsed: false,
       items: [
         { text: '编辑器配置信息', link: '/api/editor/configs.md' },
-        { text: '快速发表', link: '/api/editor/quick-publish.md' },
+        { text: '快速发表', link: '/api/editor/publications.md' },
         { text: '获取草稿列表', link: '/api/editor/drafts.md' },
         { text: '创建草稿', link: '/api/editor/draft.md' },
         { text: '生成编辑草稿', link: '/api/editor/edit.md' },

@@ -43,10 +43,10 @@
 
 **Request Description**
 
-- For file functionality, use the [File Upload Interface](../common/file-upload.md) to upload files.
+- For file functionality, use the [File Upload Interface](../file/uploads.md) to upload files.
 - Location information `map` parameter example:
     - Location information `mapId`, `latitude`, `longitude`, `poi` are required, others are optional
-    - `mapId` is from the data dictionary, [Map Service Provider Number](../../database/dictionary/maps.md)
+    - `mapId` is from the data dictionary, [Map Service Provider Number](../../reference//dictionary/maps.md)
     - To delete (clear) location information, use the `deleteMap` parameter.
 
 **Example Parameters**
