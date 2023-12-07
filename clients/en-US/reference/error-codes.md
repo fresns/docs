@@ -238,23 +238,26 @@
 | **Hashtag** |  |
 | 37200 | Wrong hashtag or record not exist |
 | 37201 | Hashtag has been banned |
+| **Geotag** |  |
+| 37300 | Wrong geotag or record not exist |
+| 37301 | Geotag has been banned |
 | **Post** |  |
-| 37300 | Wrong post or record not exist |
-| 37301 | Post has been banned |
-| 37302 | Wrong post log or record not exist |
-| 37303 | The content could not be accessed without authorization |
+| 37400 | Wrong post or record not exist |
+| 37401 | Post has been banned |
+| 37402 | Wrong post log or record not exist |
+| 37403 | The content could not be accessed without authorization |
 | **Comment** |  |
-| 37400 | Wrong comment or record not exist |
-| 37401 | Comment has been banned |
-| 37402 | Wrong comment log or record not exist |
-| 37403 | Comments are only visible to the author of the post |
-| 37404 | The post has timed out and no longer shows comments |
+| 37500 | Wrong comment or record not exist |
+| 37501 | Comment has been banned |
+| 37502 | Wrong comment log or record not exist |
+| 37503 | Comments are only visible to the author of the post |
+| 37504 | The post has timed out and no longer shows comments |
 | **File** |  |
-| 37500 | Wrong file or record not exist |
-| 37501 | File has been banned |
+| 37600 | Wrong file or record not exist |
+| 37601 | File has been banned |
 | **Extend** |  |
-| 37600 | Wrong extend content or record not exist |
-| 37601 | Extend has been banned |
+| 37700 | Wrong extend content or record not exist |
+| 37701 | Extend has been banned |
 
 ## Editor
 
