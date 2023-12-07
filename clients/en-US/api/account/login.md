@@ -18,6 +18,7 @@
 | Key | Type | Required | Description |
 | --- | --- | --- | --- |
 | loginToken | String | **required** | Login Token |
+| deviceToken | String | *optional* | iOS or Android device Token |
 
 **Request Description**
 

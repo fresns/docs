@@ -1,7 +1,7 @@
 # [Conversation] Pin
 
 - Endpoint Path: `/api/fresns/v1/conversation/pin`
-- Method: `PUT`
+- Method: `PATCH`
 - Request: `application/json`
 
 ## Headers Optional Parameter

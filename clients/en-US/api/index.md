@@ -21,7 +21,7 @@
 | `GET` | /api/fresns/v1/common/ip-info | IP Information |
 | `GET` | /api/fresns/v1/common/input-tips | Input Tips |
 | `GET` | /api/fresns/v1/common/callback | App or Plugin Callback |
-| `PUT` | /api/fresns/v1/common/device-token | Update Device Token |
+| `PATCH` | /api/fresns/v1/common/device-token | Update Device Token |
 | `POST` | /api/fresns/v1/common/cmd-word | Command Word Request |
 | `POST` | /api/fresns/v1/common/extend-action | Extend Action Request |
 
@@ -31,7 +31,7 @@
 | --- | --- | --- |
 | `GET` | /api/fresns/v1/file/storage-token | Storage Token |
 | `POST` | /api/fresns/v1/file/uploads | Uploads |
-| `PUT` | /api/fresns/v1/file/`{fid}`/warning | Update Warning |
+| `PATCH` | /api/fresns/v1/file/`{fid}`/warning | Update Warning |
 | `GET` | /api/fresns/v1/file/`{fid}`/link | Download Link |
 | `GET` | /api/fresns/v1/file/`{fid}`/users | Download Users |
 
@@ -53,9 +53,9 @@
 | `POST` | /api/fresns/v1/user/auth-token | Create User Token (Login) |
 | `GET` | /api/fresns/v1/user/overview | Overview |
 | `GET` | /api/fresns/v1/user/extcredits-records | Extcredits Records |
-| `PUT` | /api/fresns/v1/user/edit | Edit |
+| `PATCH` | /api/fresns/v1/user/profile | Edit Profile |
 | `POST` | /api/fresns/v1/user/mark | Mark |
-| `PUT` | /api/fresns/v1/user/mark-note | Mark Note |
+| `PATCH` | /api/fresns/v1/user/mark-note | Mark Note |
 
 **Interactive**
 
@@ -74,7 +74,7 @@
 | Method | Endpoint Path | Description |
 | --- | --- | --- |
 | `GET` | /api/fresns/v1/notification/list | List |
-| `PUT` | /api/fresns/v1/notification/read-status | Mark As Read |
+| `PATCH` | /api/fresns/v1/notification/read-status | Mark As Read |
 | `DELETE` | /api/fresns/v1/notification/delete | Delete |
 
 **Conversation**
@@ -84,8 +84,8 @@
 | `GET` | /api/fresns/v1/conversation/list | List |
 | `GET` | /api/fresns/v1/conversation/`{cvid}`/detail | Detail |
 | `GET` | /api/fresns/v1/conversation/`{cvid}`/messages | Messages |
-| `PUT` | /api/fresns/v1/conversation/pin | Pin Conversation |
-| `PUT` | /api/fresns/v1/conversation/read-status | Mark As Read |
+| `PATCH` | /api/fresns/v1/conversation/pin | Pin Conversation |
+| `PATCH` | /api/fresns/v1/conversation/read-status | Mark As Read |
 | `POST` | /api/fresns/v1/conversation/send-message | Send Message |
 | `DELETE` | /api/fresns/v1/conversation/delete | Delete Conversation or Messages |
 
@@ -152,9 +152,9 @@
 | `POST` | /api/fresns/v1/editor/`{type}`/draft | Create Draft |
 | `POST` | /api/fresns/v1/editor/`{type}`/edit/`{fsid}` | Edit post or comment |
 | `GET` | /api/fresns/v1/editor/`{type}`/draft/`{did}` | Draft Detail |
-| `PUT` | /api/fresns/v1/editor/`{type}`/draft/`{did}` | Draft Update |
+| `PATCH` | /api/fresns/v1/editor/`{type}`/draft/`{did}` | Draft Update |
 | `POST` | /api/fresns/v1/editor/`{type}`/draft/`{did}` | Draft Publish |
-| `PATCH` | /api/fresns/v1/editor/`{type}`/draft/`{did}` | Draft Recall (Draft under review) |
+| `PUT` | /api/fresns/v1/editor/`{type}`/draft/`{did}` | Draft Recall (Draft under review) |
 | `DELETE` | /api/fresns/v1/editor/`{type}`/draft/`{did}` | Draft Delete |
 
 ## Search

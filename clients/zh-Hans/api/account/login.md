@@ -18,6 +18,7 @@
 | 参数名 | 类型 | 是否必传 | 说明 |
 | --- | --- | --- | --- |
 | loginToken | String | YES | 登录令牌 |
+| deviceToken | String | NO | iOS 或 Android 设备 Token |
 
 **接口使用说明**
 

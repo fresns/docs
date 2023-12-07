@@ -19,6 +19,7 @@
 | --- | --- | --- | --- |
 | uidOrUsername | Number / String | YES | 用户 `uid` 或者 `username` |
 | pin | String | NO | Personal Identification Number |
+| deviceToken | String | NO | iOS 或 Android 设备 Token |
 
 ## 返回结果
 

@@ -1,7 +1,7 @@
 # [Notification] Mark As Read
 
 - Endpoint Path: `/api/fresns/v1/notification/read-status`
-- Method: `PUT`
+- Method: `PATCH`
 - Request: `application/json`
 
 ## Headers Optional Parameter

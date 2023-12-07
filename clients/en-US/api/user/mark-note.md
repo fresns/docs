@@ -1,7 +1,7 @@
 # User Mark Note
 
 - Endpoint Path: `/api/fresns/v1/user/mark-note`
-- Method: `PUT`
+- Method: `PATCH`
 - Request: `application/json`
 
 ## Headers Optional Parameter

@@ -1,7 +1,7 @@
 # 更新草稿内容
 
 - 接口地址：`/api/fresns/v1/editor/{type}/draft/{did}`
-- 请求方式：`PUT`
+- 请求方式：`PATCH`
 - 传参方式：`Rest` + `application/json`
 
 ## Headers 可选参数

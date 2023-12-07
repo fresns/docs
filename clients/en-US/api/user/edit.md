@@ -1,7 +1,7 @@
-# User Edit
+# Edit Profile
 
-- Endpoint Path: `/api/fresns/v1/user/edit`
-- Method: `PUT`
+- Endpoint Path: `/api/fresns/v1/user/profile`
+- Method: `PATCH`
 - Request: `application/json`
 
 ## Headers Optional Parameter
@@ -23,12 +23,16 @@
 | avatarUrl | String | *optional* | Avatar image URL |
 | bannerFid | String | *optional* | Background banner image file FID |
 | bannerUrl | String | *optional* | Background banner image URL |
-| gender | Number | *optional* | Gender |
-| birthday | String | *optional* | Birthday (format: Y-m-d H:i:s) |
+| gender | Number | *optional* | Gender: 1.Null 2.Female / 3.Male / 4.Custom |
+| genderCustom | String | *optional* | Gender Custom |
+| genderPreferredPronoun | Number | *optional* | Preferred Pronoun: 1.She / 2.He / 3.They |
+| birthday | String | *optional* | Birthday (format: Y-m-d) |
+| birthdayDisplayType | Number | *optional* | Birthday: 1.No display / 2.Y / 3.m-d / 4.Y-m-d |
 | bio | String | *optional* | Bio |
 | location | String | *optional* | Location |
-| conversationLimit | Number | *optional* | Conversation settings |
-| commentLimit | Number | *optional* | Comment settings |
+| conversationLimit | Number | *optional* | Conversation setting |
+| commentLimit | Number | *optional* | Comment setting |
+| contentLimit | Number | *optional* | Content setting |
 | archives | Array | *optional* | Extended information |
 
 **Request Description**
@@ -36,7 +40,7 @@
 - Null to not modify.
 - Leaving both `avatarFid` and `avatarUrl` empty means not changing them, choose one when passing parameters.
 - Leaving both `bannerFid` and `bannerUrl` empty means not changing them, choose one when passing parameters.
-- If using `fid` for avatar and background banner images, first use the [file upload interface](../common/upload-file.md), then pass the obtained `fid` as a parameter.
+- If using `fid` for avatar and background banner images, first use the [file upload interface](../file/uploads.md), then pass the obtained `fid` as a parameter.
 - Example of extended information:
 
 ```json

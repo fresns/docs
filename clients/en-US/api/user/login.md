@@ -19,6 +19,7 @@
 | --- | --- | --- | --- |
 | uidOrUsername | Number / String | **required** | User `uid` or `username` |
 | pin | String | *optional* | Personal Identification Number |
+| deviceToken | String | *optional* | iOS or Android device Token |
 
 ## Return
 

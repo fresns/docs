@@ -1,7 +1,7 @@
 # File Update Warning
 
 - Endpoint Path: `/api/fresns/v1/file/{fid}/warning`
-- Method: `PUT`
+- Method: `PATCH`
 - Request: `application/json`
 
 ## Headers Optional Parameter

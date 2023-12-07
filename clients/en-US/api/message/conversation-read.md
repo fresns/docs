@@ -1,7 +1,7 @@
 # [Conversation] Mark As Read
 
 - Endpoint Path: `/api/fresns/v1/conversation/read-status`
-- Method: `PUT`
+- Method: `PATCH`
 - Request: `application/json`
 
 ## Headers Optional Parameter

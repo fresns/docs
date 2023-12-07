@@ -1,7 +1,7 @@
 # 更新文件警告
 
 - 接口地址：`/api/fresns/v1/file/{fid}/warning`
-- 请求方式：`PUT`
+- 请求方式：`PATCH`
 - 传参方式：`application/json`
 
 ## Headers 可选参数

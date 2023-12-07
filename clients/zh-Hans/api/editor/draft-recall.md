@@ -1,7 +1,7 @@
 # 撤回审核中草稿
 
 - 接口地址：`/api/fresns/v1/editor/{type}/draft/{did}`
-- 请求方式：`PATCH`
+- 请求方式：`PUT`
 - 传参方式：`Rest`
 
 ## Headers 可选参数
