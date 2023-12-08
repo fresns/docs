@@ -179,13 +179,19 @@
 | --- | --- |
 | account | Account |
 | email | E-Mail |
+| currentEmail | Current E-mail |
 | newEmail | New E-Mail |
+| currentPhone | Current Phone Number |
 | phone | Phone Number |
 | newPhone | New Phone |
 | countryCode | Country Code |
+| currentEmailDesc | The email address currently used for the account |
+| currentPhoneDesc | Phone number currently used for the account |
 | verifyCode | Verify Code |
 | emailVerifyCode | Email Code |
+| emailVerifyCodeTip | Verify code has been sent via Email to |
 | smsVerifyCode | SMS Code |
+| smsVerifyCodeTip | Verify code has been sent via SMS to |
 | newVerifyCode | New Verify Code |
 | sendVerifyCode | Send Code |
 | resendVerifyCode | Resend Code |
@@ -244,7 +250,7 @@
 | walletBalance | Balance |
 | walletFreezeAmount | Freeze Amount |
 | walletPassword | Pay Password |
-| walletRecharge | Recharge |
+| walletRecharge | Top-up |
 | walletWithdraw | Withdraw |
 | walletLogs | Transaction Record |
 | walletLogType | Type |
@@ -258,7 +264,7 @@
 | walletLogUser | User |
 | walletLogCode | Transaction Code |
 | walletLogState | State |
-| walletLogType1 | Recharge |
+| walletLogType1 | Top-up |
 | walletLogType2 | Unfreeze |
 | walletLogType3 | Transaction Income |
 | walletLogType4 | Reversal Expense |

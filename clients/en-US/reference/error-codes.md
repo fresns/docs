@@ -87,8 +87,8 @@
 
 | Code | Message |
 | --- | --- |
-| 34101 | Email format incorrect |
-| 34102 | Phone number format incorrect |
+| 34101 | Email incorrect |
+| 34102 | Phone number incorrect |
 | 34103 | Country calling code error |
 | 34104 | The new password entered twice does not match |
 | 34105 | Password length incorrect |
