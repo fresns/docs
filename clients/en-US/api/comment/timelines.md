@@ -19,7 +19,8 @@
 | --- | --- | --- | --- |
 | type | String | *optional* | `user`,`group`,`hashtag`, Null to output all |
 | contentType | String | *optional* | Filter content by type |
-| lastCid | String | *optional* | Use this comment as a boundary to check for new content |
+| sinceCid | String | *optional* | query new content after this comment |
+| beforeCid | String | *optional* | query old content before this comment |
 | mapId | Number | *optional* | [Map Service Provider](../../reference/dictionary/maps.md) |
 | mapLng | String | *optional* | Map Longitude (For distance calculation) |
 | mapLat | String | *optional* | Map Latitude (For distance calculation) |

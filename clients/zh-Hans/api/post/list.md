@@ -45,7 +45,8 @@
 | blockCountLt | Number | NO | 屏蔽数小于 |
 | commentCountGt | Number | NO | 评论总数大于 |
 | commentCountLt | Number | NO | 评论总数小于 |
-| lastPid | String | NO | 以此帖子为界线，查询新内容 |
+| sincePid | String | NO | 查询该帖子之后的新内容 |
+| beforePid | String | NO | 查询该帖子之前的旧内容 |
 | orderType | String | NO | 排序类型 `createdTime`,`commentTime`,`random`,`view`,`like`,`dislike`,`follow`,`block`,`comment`<br>默认 `createdTime` |
 | orderDirection | String | NO | 排序方向，默认 `desc`<br>`asc`,`desc` |
 | blockGroups | String | NO | 过滤小组，`gid` 多个以英文逗号隔开 |

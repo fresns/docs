@@ -19,7 +19,8 @@
 | --- | --- | --- | --- |
 | type | String | NO | `user`,`group`,`hashtag`，留空输出全部 |
 | contentType | String | NO | 筛选过滤内容类型 |
-| lastPid | String | NO | 以此帖子为界线，查询新内容 |
+| sincePid | String | NO | 查询该帖子之后的新内容 |
+| beforePid | String | NO | 查询该帖子之前的旧内容 |
 | mapId | Number | NO | [地图服务商编号](../../reference/dictionary/maps.md) |
 | mapLng | String | NO | 地图经度（用于计算距离） |
 | mapLat | String | NO | 地图纬度（用于计算距离） |

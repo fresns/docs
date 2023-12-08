@@ -47,7 +47,8 @@
 | blockCountLt | Number | NO | 屏蔽数小于 |
 | commentCountGt | Number | NO | 子级评论总数大于 |
 | commentCountLt | Number | NO | 子级评论总数小于 |
-| lastCid | String | NO | 以此评论为界线，查询新内容 |
+| sinceCid | String | NO | 查询该评论之后的新内容 |
+| beforeCid | String | NO | 查询该评论之前的旧内容 |
 | orderType | String | NO | 排序类型 `createdTime`,`commentTime`,`random`,`view`,`like`,`dislike`,`follow`,`block`,`comment`<br>默认 `createdTime` |
 | orderDirection | String | NO | 排序方向，默认 `desc`<br>`asc`,`desc` |
 | whitelistKeys | String | NO | 白名单键名，只返回给定键名的键值对<br>多个以英文逗号隔开，支持「点表示法」表示多维数组 |

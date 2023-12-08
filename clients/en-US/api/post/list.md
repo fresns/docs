@@ -43,7 +43,8 @@
 | blockCountLt | Number | *optional* | Block count less than |
 | commentCountGt | Number | *optional* | Total number of comments greater than |
 | commentCountLt | Number | *optional* | Total number of comments less than |
-| lastPid | String | *optional* | Use this post as a boundary to check for new content |
+| sincePid | String | *optional* | query new content after this post |
+| beforePid | String | *optional* | query old content before this post |
 | orderType | String | *optional* | Sort by type: `createdTime`,`random`,`view`,`like`,`dislike`,`follow`,`block`,`comment`<br>Default `createdTime` |
 | orderDirection | String | *optional* | Sort by direction, default `desc`<br>`asc`,`desc` |
 | blockGroups | String | *optional* | Filter groups, `gid` multiple separated by commas |

@@ -47,7 +47,8 @@
 | blockCountLt | Number | *optional* | Block count less than |
 | commentCountGt | Number | *optional* | Total number of sub-comments greater than |
 | commentCountLt | Number | *optional* | Total number of sub-comments less than |
-| lastCid | String | *optional* | Use this comment as a boundary to check for new content |
+| sinceCid | String | *optional* | query new content after this comment |
+| beforeCid | String | *optional* | query old content before this comment |
 | orderType | String | *optional* | Sort by type: `createdTime`,`random`,`view`,`like`,`dislike`,`follow`,`block`,`comment`<br>Default `createdTime` |
 | orderDirection | String | *optional* | Sort by direction, default `desc`<br>`asc`,`desc` |
 | whitelistKeys | String | *optional* | Whitelist key names, only returns key-value pairs for the given key names<br>Multiple separated by English commas, supports "dot notation" for multi-dimensional arrays |
