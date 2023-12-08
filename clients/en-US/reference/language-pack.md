@@ -53,6 +53,10 @@
 | getLocation | Get Location |
 | reloadLocation | Reload Location |
 | locationLoading | Location Loading... |
+| newPosts | New posts |
+| newComments | New comments |
+| showMorePosts | Show more posts |
+| showMoreComments | Show more comments |
 | listEmpty | The list is empty, no content at the moment. |
 | listWithoutPage | No More |
 
@@ -117,6 +121,7 @@
 | sortOrder | Sort Order |
 | type | Type |
 | view | View |
+| show | Show |
 | more | More |
 | learnMore | Learn More |
 | quote | Quote |
@@ -429,6 +434,8 @@
 | contentReviewPending | Content review in progress |
 | contentReviewRejected | Content review rejected |
 | contentLoginError | Login is required to view |
+| contentWarning | Content Warning |
+| contentWarningTip | The author flagged this file as showing sensitive content. |
 | contentAllList | All |
 | contentNewList | New |
 | contentHotList | Hot |

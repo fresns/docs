@@ -53,6 +53,10 @@
 | getLocation | 获取定位 |
 | reloadLocation | 重新定位 |
 | locationLoading | 正在定位... |
+| newPosts | 新帖子 |
+| newComments | 新评论 |
+| showMorePosts | 显示更多帖子 |
+| showMoreComments | 显示更多评论 |
 | listEmpty | 列表为空，暂无内容 |
 | listWithoutPage | 没有了 |
 
@@ -117,6 +121,7 @@
 | sortOrder | 排序 |
 | type | 类型 |
 | view | 查看 |
+| show | 显示 |
 | more | 更多 |
 | learnMore | 了解详情 |
 | quote | 引用 |
@@ -429,6 +434,8 @@
 | contentReviewPending | 内容审核中 |
 | contentReviewRejected | 内容审核拒绝 |
 | contentLoginError | 需要登录后才能查看 |
+| contentWarning | 内容警告 |
+| contentWarningTip | 作者将此文件标记为显示敏感内容。 |
 | contentAllList | 所有 |
 | contentNewList | 最新 |
 | contentHotList | 热门 |
