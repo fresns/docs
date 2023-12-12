@@ -27,9 +27,9 @@
     "message": "ok",
     "data": [
         {
-            "fskey": "String / 扩展 Fskey",
+            "fskey": "String / 类型 Fskey",
             "name": "String / 名称",
-            "icon": "String / 服务商图标 URL"
+            "icon": "String / 图标 URL"
         }
     ]
 }
