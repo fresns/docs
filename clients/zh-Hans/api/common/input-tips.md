@@ -17,7 +17,7 @@
 
 | 参数名 | 类型 | 是否必传 | 说明 |
 | --- | --- | --- | --- |
-| type | String | YES | 选其一 `user`,`group`,`hashtag`,`geotag`,`extend` |
+| type | String | YES | 选其一 `user`, `hashtag` |
 | key | String | YES | 关键词 |
 
 ## 返回结果
@@ -28,10 +28,10 @@
     "message": "ok",
     "data": [
         {
-            "fsid": "String / 简写 id 或者 slug",
-            "name": "String / 名称（或昵称）",
-            "image": "String / 图片链接",
-            "followStatus": "Boolean / type=user 专用，关注状态",
+            "fsid": "String / username 或 hid",
+            "name": "String / 用户昵称或话题名",
+            "image": "String / 用户头像或话题封面",
+            "followStatus": "Boolean / 关注状态"
         }
     ]
 }

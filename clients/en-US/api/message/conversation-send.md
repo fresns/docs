@@ -1,6 +1,6 @@
 # [Conversation] Send Message
 
-- Endpoint Path: `/api/fresns/v1/conversation/send-message`
+- Endpoint Path: `/api/fresns/v1/conversation/message`
 - Method: `POST`
 - Request: `application/json`
 
@@ -24,7 +24,7 @@
 **Request Description**
 
 - Choose either `message` or `fid` to pass as a parameter, but not both or neither.
-- To send a file, first use the [file upload API](../common/upload-file.md) to upload and obtain the `fid` as a parameter.
+- To send a file, first use the [file upload API](../file/uploads.md) to upload and obtain the `fid` as a parameter.
 
 ## Return
 

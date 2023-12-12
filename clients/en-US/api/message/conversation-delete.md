@@ -1,8 +1,8 @@
-# [Conversation] Delete Conversation or Messages
+# [Conversation] Delete Conversation
 
-- Endpoint Path: `/api/fresns/v1/conversation/delete`
+- Endpoint Path: `/api/fresns/v1/conversation/{cvid}`
 - Method: `DELETE`
-- Request: `application/json`
+- Request: `Rest`
 
 ## Headers Optional Parameter
 
@@ -13,19 +13,11 @@
 | X-Fresns-Uid | **required** | **required** |
 | X-Fresns-Uid-Token | **required** | **required** |
 
-## Body Params
+## Path Variables
 
 | Key | Type | Required | Description |
 | --- | --- | --- | --- |
-| type | String | **required** | `conversation` or `message` |
-| cvid | Number | *optional* |  |
-| cmids | String | *optional* | separated by English commas for multiple id |
-
-**Request Description**
-
-- Choose either `cvid` or `cmids` to pass as a parameter, but not both.
-- `type = conversation`: Use the `cvid` parameter to set the current conversation as deleted and delete all messages belonging to the current user in the conversation.
-- `type = message`: Use the `cmids` parameter to delete messages with specified IDs in bulk.
+| cvid | String | **required** | Conversation ID |
 
 ## Return
 

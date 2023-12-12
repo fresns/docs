@@ -75,7 +75,7 @@
 | --- | --- | --- |
 | `GET` | /api/fresns/v1/notification/list | List |
 | `PATCH` | /api/fresns/v1/notification/read-status | Mark As Read |
-| `DELETE` | /api/fresns/v1/notification/delete | Delete |
+| `DELETE` | /api/fresns/v1/notification/messages | Delete Messages |
 
 **Conversation**
 
@@ -84,10 +84,11 @@
 | `GET` | /api/fresns/v1/conversation/list | List |
 | `GET` | /api/fresns/v1/conversation/`{cvid}`/detail | Detail |
 | `GET` | /api/fresns/v1/conversation/`{cvid}`/messages | Messages |
-| `PATCH` | /api/fresns/v1/conversation/pin | Pin Conversation |
-| `PATCH` | /api/fresns/v1/conversation/read-status | Mark As Read |
-| `POST` | /api/fresns/v1/conversation/send-message | Send Message |
-| `DELETE` | /api/fresns/v1/conversation/delete | Delete Conversation or Messages |
+| `PATCH` | /api/fresns/v1/conversation/`{cvid}`/pin | Pin Conversation |
+| `PATCH` | /api/fresns/v1/conversation/`{cvid}`/read-status | Mark As Read |
+| `DELETE` | /api/fresns/v1/conversation/`{cvid}`/messages | Delete Messages |
+| `DELETE` | /api/fresns/v1/conversation/`{cvid}` | Delete Conversation |
+| `POST` | /api/fresns/v1/conversation/message | Send Message |
 
 ## Group
 

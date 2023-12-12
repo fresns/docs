@@ -1,7 +1,7 @@
-# [对话]更新阅读状态
+# [对话]删除对话
 
-- 接口地址：`/api/fresns/v1/conversation/{cvid}/read-status`
-- 请求方式：`PATCH`
+- 接口地址：`/api/fresns/v1/conversation/{cvid}/messages`
+- 请求方式：`DELETE`
 - 传参方式：`Rest` + `application/json`
 
 ## Headers 可选参数
@@ -23,12 +23,7 @@
 
 | 参数名 | 类型 | 是否必传 | 说明 |
 | --- | --- | --- | --- |
-| cmids | String | NO | 多个 `cmid` 以英文逗号隔开 |
-
-**接口使用说明**
-
-- `cmids` 留空则整个对话标记为已读
-- 使用 `cmids` 参数，批量设置指定 ID 的消息为已读。
+| cmids | String | YES | 多个 `cmid` 以英文逗号隔开 |
 
 ## 返回结果
 

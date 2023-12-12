@@ -188,8 +188,9 @@ function sidebarApi() {
             { text: '获取消息列表', link: '/api/message/conversation-messages.md' },
             { text: '置顶对话', link: '/api/message/conversation-pin.md' },
             { text: '更新阅读状态', link: '/api/message/conversation-read.md' },
+            { text: '删除消息', link: '/api/message/conversation-messages-delete.md' },
+            { text: '删除对话', link: '/api/message/conversation-delete.md' },
             { text: '发送消息', link: '/api/message/conversation-send.md' },
-            { text: '删除对话或对话的消息', link: '/api/message/conversation-delete.md' },
           ]
         },
       ]

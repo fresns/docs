@@ -17,7 +17,7 @@
 
 | Key | Type | Required | Description |
 | --- | --- | --- | --- |
-| type | String | **required** | Choose one from `user`, `group`, `hashtag`, `geotag`, `extend` |
+| type | String | **required** | Choose one from `user`, `hashtag` |
 | key | String | **required** | Keyword |
 
 ## Return
@@ -28,10 +28,10 @@
     "message": "ok",
     "data": [
         {
-            "fsid": "String / Abbreviated id or slug",
-            "name": "String / Name (or nickname)",
-            "image": "String / Image URL",
-            "followStatus": "Boolean / type=user specific, follow status",
+            "fsid": "String / username or hid",
+            "name": "String / nickname or hashtag name",
+            "image": "String / user avatar or hashtag cover",
+            "followStatus": "Boolean / follow status"
         }
     ]
 }

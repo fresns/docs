@@ -75,7 +75,7 @@
 | --- | --- | --- |
 | `GET` | /api/fresns/v1/notification/list | 获取消息列表 |
 | `PATCH` | /api/fresns/v1/notification/read-status | 更新阅读状态 |
-| `DELETE` | /api/fresns/v1/notification/delete | 删除消息 |
+| `DELETE` | /api/fresns/v1/notification/messages | 删除消息 |
 
 **对话**
 
@@ -84,10 +84,11 @@
 | `GET` | /api/fresns/v1/conversation/list | 获取对话列表 |
 | `GET` | /api/fresns/v1/conversation/`{cvid}`/detail | 获取对话详情 |
 | `GET` | /api/fresns/v1/conversation/`{cvid}`/messages | 获取消息列表 |
-| `PATCH` | /api/fresns/v1/conversation/pin | 置顶对话 |
-| `PATCH` | /api/fresns/v1/conversation/read-status | 更新阅读状态 |
-| `POST` | /api/fresns/v1/conversation/send-message | 发送消息 |
-| `DELETE` | /api/fresns/v1/conversation/delete | 删除对话或对话的消息 |
+| `PATCH` | /api/fresns/v1/conversation/`{cvid}`/pin | 置顶对话 |
+| `PATCH` | /api/fresns/v1/conversation/`{cvid}`/read-status | 更新阅读状态 |
+| `DELETE` | /api/fresns/v1/conversation/`{cvid}`/messages | 删除消息 |
+| `DELETE` | /api/fresns/v1/conversation/`{cvid}` | 删除对话 |
+| `POST` | /api/fresns/v1/conversation/message | 发送消息 |
 
 ## 小组
 

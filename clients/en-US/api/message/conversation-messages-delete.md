@@ -1,8 +1,8 @@
-# [Conversation] Pin
+# [Conversation] Delete Messages
 
-- Endpoint Path: `/api/fresns/v1/conversation/{cvid}/pin`
-- Method: `PATCH`
-- Request: `Rest`
+- Endpoint Path: `/api/fresns/v1/conversation/{cvid}/messages`
+- Method: `DELETE`
+- Request: `Rest` + `application/json`
 
 ## Headers Optional Parameter
 
@@ -19,9 +19,11 @@
 | --- | --- | --- | --- |
 | cvid | String | **required** | Conversation ID |
 
-**Request Description**
+## Body Params
 
-- If not pinned, pin it; if pinned, unpin it.
+| Key | Type | Required | Description |
+| --- | --- | --- | --- |
+| cmids | String | **required** | separated by English commas for multiple cmid |
 
 ## Return
 

@@ -1,6 +1,6 @@
-# [Notification] Delete
+# [Notification] Delete Messages
 
-- Endpoint Path: `/api/fresns/v1/notification/delete`
+- Endpoint Path: `/api/fresns/v1/notification/messages`
 - Method: `DELETE`
 - Request: `application/json`
 

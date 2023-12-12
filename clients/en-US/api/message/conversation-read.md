@@ -1,8 +1,8 @@
 # [Conversation] Mark As Read
 
-- Endpoint Path: `/api/fresns/v1/conversation/read-status`
+- Endpoint Path: `/api/fresns/v1/conversation/{cvid}/read-status`
 - Method: `PATCH`
-- Request: `application/json`
+- Request: `Rest` + `application/json`
 
 ## Headers Optional Parameter
 
@@ -13,19 +13,22 @@
 | X-Fresns-Uid | **required** | **required** |
 | X-Fresns-Uid-Token | **required** | **required** |
 
+## Path Variables
+
+| Key | Type | Required | Description |
+| --- | --- | --- | --- |
+| cvid | String | **required** | Conversation ID |
+
 ## Body Params
 
 | Key | Type | Required | Description |
 | --- | --- | --- | --- |
-| type | String | **required** | `conversation` or `message` |
-| cvid | String | *optional* |  |
-| cmids | String | *optional* | separated by English commas for multiple id |
+| cmids | String | *optional* | separated by English commas for multiple cmid |
 
 **Request Description**
 
-- Choose either `cvid` or `cmids` to pass as a parameter, but not both.
-- `type = conversation`: Use the `cvid` parameter to set the current conversation as read, not including messages within the conversation.
-- `type = message`: Use the `cmids` parameter to set specified ID messages as read in bulk.
+- cmids Leave null to mark the entire conversation as read.
+- Use the `cmids` parameter to set specified ID messages as read in bulk.
 
 ## Return
 
