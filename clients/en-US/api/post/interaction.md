@@ -32,16 +32,18 @@
 
 **Request Description**
 
-- `type=likers` Get the list of users who liked `pid`.
-- `type=dislikers` Get the list of users who disliked `pid`.
-- `type=followers` Get the list of users who followed `pid`.
-- `type=blockers` Get the list of users who blocked `pid`.
-- The interface will decide whether to output data based on the configuration table settings `Operations > Interaction > View interaction log settings`.
-    - `post_likers` configuration, whether to output users who liked it
-    - `post_dislikers` configuration, whether to output users who disliked it
-    - `post_followers` configuration, whether to output users who followed it
-    - `post_blockers` configuration, whether to output users who blocked it
-- `orderDirection` The sort direction is sorted by creation time.
+- List Type
+    - `type=likers` Get the list of users who liked `pid`.
+    - `type=dislikers` Get the list of users who disliked `pid`.
+    - `type=followers` Get the list of users who followed `pid`.
+    - `type=blockers` Get the list of users who blocked `pid`.
+- Sort by direction
+    - `orderDirection` The sort direction is sorted by creation time.
+- Judgement of whether to output records
+    - `detail.interaction.likePublicRecord`
+    - `detail.interaction.dislikePublicRecord`
+    - `detail.interaction.followPublicRecord`
+    - `detail.interaction.blockPublicRecord`
 
 ## Return
 

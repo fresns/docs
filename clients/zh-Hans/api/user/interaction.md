@@ -32,21 +32,18 @@
 
 **接口使用说明**
 
-- `type=likers` 获得点赞了 `uidOrUsername` 的用户列表。
-- `type=dislikers` 获得点踩了 `uidOrUsername` 的用户列表。
-- `type=followers` 获得关注了 `uidOrUsername` 的用户列表。
-- `type=blockers` 获得屏蔽了 `uidOrUsername` 的用户列表。
-- 接口会根据配置表设置 `运营 > 互动配置 > 查看互动记录设置` 决定是否输出数据。
-    - `user_likers` 配置，是否输出点赞他的用户
-    - `user_dislikers` 配置，是否输出点踩他的用户
-    - `user_followers` 配置，是否输出关注他的用户
-    - `user_blockers` 配置，是否输出屏蔽他的用户
-- 如果 `uidOrUsername` 为登录用户自己时，表示查看自己的数据，当上方配置为关闭时，则以此判断是否输出数据。
-    - `my_likers` 配置，是否输出点赞我的用户
-    - `my_dislikers` 配置，是否输出点踩我的用户
-    - `my_followers` 配置，是否输出关注我的用户
-    - `my_blockers` 配置，是否输出屏蔽我的用户
-- `orderDirection` 排序方向以创建时间排序。
+- 类型
+    - `type=likers` 获得点赞了 `uidOrUsername` 的用户列表。
+    - `type=dislikers` 获得点踩了 `uidOrUsername` 的用户列表。
+    - `type=followers` 获得关注了 `uidOrUsername` 的用户列表。
+    - `type=blockers` 获得屏蔽了 `uidOrUsername` 的用户列表。
+- 排序
+    - `orderDirection` 排序方向以创建时间排序。
+- 是否输出记录的判断
+    - `detail.interaction.likePublicRecord`
+    - `detail.interaction.dislikePublicRecord`
+    - `detail.interaction.followPublicRecord`
+    - `detail.interaction.blockPublicRecord`
 
 ## 返回结果
 

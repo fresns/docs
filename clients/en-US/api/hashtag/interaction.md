@@ -32,16 +32,18 @@
 
 **Request Description**
 
-- `type=likers` Get the list of users who liked `htid`.
-- `type=dislikers` Get the list of users who disliked `htid`.
-- `type=followers` Get the list of users who followed `htid`.
-- `type=blockers` Get the list of users who blocked `htid`.
-- The interface will decide whether to output data based on the configuration table settings `Operations > Interaction > View interaction log settings`.
-    - `hashtag_likers` configuration, whether to output users who liked it
-    - `hashtag_dislikers` configuration, whether to output users who disliked it
-    - `hashtag_followers` configuration, whether to output users who followed it
-    - `hashtag_blockers` configuration, whether to output users who blocked it
-- `orderDirection` The sort direction is sorted by creation time.
+- List Type
+    - `type=likers` Get the list of users who liked `htid`.
+    - `type=dislikers` Get the list of users who disliked `htid`.
+    - `type=followers` Get the list of users who followed `htid`.
+    - `type=blockers` Get the list of users who blocked `htid`.
+- Sort by direction
+    - `orderDirection` The sort direction is sorted by creation time.
+- Judgement of whether to output records
+    - `detail.interaction.likePublicRecord`
+    - `detail.interaction.dislikePublicRecord`
+    - `detail.interaction.followPublicRecord`
+    - `detail.interaction.blockPublicRecord`
 
 ## Return
 

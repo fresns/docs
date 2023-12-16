@@ -32,16 +32,18 @@
 
 **接口使用说明**
 
-- `type=likers` 获得点赞了 `htid` 的用户列表。
-- `type=dislikers` 获得点踩了 `htid` 的用户列表。
-- `type=followers` 获得关注了 `htid` 的用户列表。
-- `type=blockers` 获得屏蔽了 `htid` 的用户列表。
-- 接口会根据配置表设置 `运营 > 互动配置 > 查看互动记录设置` 决定是否输出数据。
-    - `hashtag_likers` 配置，是否输出点赞他的用户
-    - `hashtag_dislikers` 配置，是否输出点踩他的用户
-    - `hashtag_followers` 配置，是否输出关注他的用户
-    - `hashtag_blockers` 配置，是否输出屏蔽他的用户
-- `orderDirection` 排序方向以创建时间排序。
+- 类型
+    - `type=likers` 获得点赞了 `htid` 的用户列表。
+    - `type=dislikers` 获得点踩了 `htid` 的用户列表。
+    - `type=followers` 获得关注了 `htid` 的用户列表。
+    - `type=blockers` 获得屏蔽了 `htid` 的用户列表。
+- 排序
+    - `orderDirection` 排序方向以创建时间排序。
+- 是否输出记录的判断
+    - `detail.interaction.likePublicRecord`
+    - `detail.interaction.dislikePublicRecord`
+    - `detail.interaction.followPublicRecord`
+    - `detail.interaction.blockPublicRecord`
 
 ## 返回结果
 

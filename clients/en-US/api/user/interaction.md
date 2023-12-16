@@ -32,21 +32,18 @@
 
 **Request Description**
 
-- `type=likers` Get the list of users who liked `uidOrUsername`.
-- `type=dislikers` Get the list of users who disliked `uidOrUsername`.
-- `type=followers` Get the list of users who followed `uidOrUsername`.
-- `type=blockers` Get the list of users who blocked `uidOrUsername`.
-- The interface will decide whether to output data based on the configuration table settings `Operations > Interaction > View interaction log settings`.
-    - `user_likers` configuration, whether to output users who liked they
-    - `user_dislikers` configuration, whether to output users who disliked they
-    - `user_followers` configuration, whether to output users who followed they
-    - `user_blockers` configuration, whether to output users who blocked they
-- If `uidOrUsername` is the logged-in user themselves, it means viewing their own data. When the above configuration is closed, this determines whether to output data.
-    - `my_likers` configuration, whether to output users who liked me
-    - `my_dislikers` configuration, whether to output users who disliked me
-    - `my_followers` configuration, whether to output users who followed me
-    - `my_blockers` configuration, whether to output users who blocked me
-- `orderDirection` The sort direction is sorted by creation time.
+- List Type
+    - `type=likers` Get the list of users who liked `uidOrUsername`.
+    - `type=dislikers` Get the list of users who disliked `uidOrUsername`.
+    - `type=followers` Get the list of users who followed `uidOrUsername`.
+    - `type=blockers` Get the list of users who blocked `uidOrUsername`.
+- Sort by direction
+    - `orderDirection` The sort direction is sorted by creation time.
+- Judgement of whether to output records
+    - `detail.interaction.likePublicRecord`
+    - `detail.interaction.dislikePublicRecord`
+    - `detail.interaction.followPublicRecord`
+    - `detail.interaction.blockPublicRecord`
 
 ## Return
 
