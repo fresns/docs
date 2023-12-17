@@ -41,6 +41,10 @@
 | orderDirection | String | NO | 排序方向 `asc`,`desc`，默认 `asc` |
 | whitelistKeys | String | NO | 白名单键名，只返回给定键名的键值对<br>多个以英文逗号隔开，支持「点表示法」表示多维数组 |
 | blacklistKeys | String | NO | 黑名单键名，从返回数据中删除指定的键值对<br>多个以英文逗号隔开，支持「点表示法」表示多维数组 |
+| whitelistCreatorKeys | String | NO | 针对小组信息中的 `creator` 参数 |
+| blacklistCreatorKeys | String | NO | 针对小组信息中的 `creator` 参数 |
+| whitelistAdminKeys | String | NO | 针对小组信息中的 `admins` 参数 |
+| blacklistAdminKeys | String | NO | 针对小组信息中的 `admins` 参数 |
 | pageSize | Number | NO | 每页显示条数（默认 15 条） |
 | page | Number | NO | 页码（默认 1） |
 
