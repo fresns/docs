@@ -59,7 +59,7 @@ const SIGN_PARAM_ARR = [
 ];
 ```
 
-- 开源版可以引用封装方法 `App\Helpers\SignHelper::makeSign($signMap, $appSecret)`
+- 开源版可以引用封装方法 `App\Helpers\SignHelper::makeSign($signMap, $appKey)`
 - 其他客户端请参考下方流程：
 
 **1、提取参与签名的 headers 参数**
@@ -117,10 +117,10 @@ const SIGN_PARAM_ARR = [
 X-Fresns-Aid=wIfu6jaF&X-Fresns-Aid-Token=uoX1hk6SHUgB2MFGJwNx38dem9DA7Vsz&X-Fresns-App-Id=yh1OJ7WL&X-Fresns-Client-Platform-Id=2&X-Fresns-Client-Version=2.0.0&X-Fresns-Signature-Timestamp=1674161913192&X-Fresns-Uid=782622&X-Fresns-Uid-Token=PqBpwPLJgfd1sH0X5JffYFGxTSc8RW7c
 ```
 
-**4、再拼接上** `&AppSecret={app_secret}` **得到待签名字符串。**
+**4、再拼接上** `&AppKey={app_key}` **得到待签名字符串。**
 
 ```
-X-Fresns-Aid=wIfu6jaF&X-Fresns-Aid-Token=uoX1hk6SHUgB2MFGJwNx38dem9DA7Vsz&X-Fresns-App-Id=yh1OJ7WL&X-Fresns-Client-Platform-Id=2&X-Fresns-Client-Version=2.0.0&X-Fresns-Signature-Timestamp=1674161913192&X-Fresns-Uid=782622&X-Fresns-Uid-Token=PqBpwPLJgfd1sH0X5JffYFGxTSc8RW7c&AppSecret=qUiEaDNQh2IpvGHOKlTMx7ujn8t1CZWX
+X-Fresns-Aid=wIfu6jaF&X-Fresns-Aid-Token=uoX1hk6SHUgB2MFGJwNx38dem9DA7Vsz&X-Fresns-App-Id=yh1OJ7WL&X-Fresns-Client-Platform-Id=2&X-Fresns-Client-Version=2.0.0&X-Fresns-Signature-Timestamp=1674161913192&X-Fresns-Uid=782622&X-Fresns-Uid-Token=PqBpwPLJgfd1sH0X5JffYFGxTSc8RW7c&AppKey=qUiEaDNQh2IpvGHOKlTMx7ujn8t1CZWX
 ```
 
 **5、对签名字符串进行 `hash sha256` 运算（64 位小写），得到签名值**

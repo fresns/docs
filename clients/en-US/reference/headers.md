@@ -59,7 +59,7 @@ const SIGN_PARAM_ARR = [
 ];
 ```
 
-- Encapsulation method can be referred to in PHP `App\Helpers\SignHelper::makeSign($signMap, $appSecret)`
+- Encapsulation method can be referred to in PHP `App\Helpers\SignHelper::makeSign($signMap, $appKey)`
 - As for other client ends, please refer to the following procedures:
 
 **1. Extract the headers parameters participating in the signing process.**
@@ -117,10 +117,10 @@ const SIGN_PARAM_ARR = [
 X-Fresns-Aid=wIfu6jaF&X-Fresns-Aid-Token=uoX1hk6SHUgB2MFGJwNx38dem9DA7Vsz&X-Fresns-App-Id=yh1OJ7WL&X-Fresns-Client-Platform-Id=2&X-Fresns-Client-Version=2.0.0&X-Fresns-Signature-Timestamp=1674161913192&X-Fresns-Uid=782622&X-Fresns-Uid-Token=PqBpwPLJgfd1sH0X5JffYFGxTSc8RW7c
 ```
 
-**4. Splice `&AppSecret={app_secret}` to obtain the character string to be signed.**
+**4. Splice `&AppKey={app_key}` to obtain the character string to be signed.**
 
 ```
-X-Fresns-Aid=wIfu6jaF&X-Fresns-Aid-Token=uoX1hk6SHUgB2MFGJwNx38dem9DA7Vsz&X-Fresns-App-Id=yh1OJ7WL&X-Fresns-Client-Platform-Id=2&X-Fresns-Client-Version=2.0.0&X-Fresns-Signature-Timestamp=1674161913192&X-Fresns-Uid=782622&X-Fresns-Uid-Token=PqBpwPLJgfd1sH0X5JffYFGxTSc8RW7c&AppSecret=qUiEaDNQh2IpvGHOKlTMx7ujn8t1CZWX
+X-Fresns-Aid=wIfu6jaF&X-Fresns-Aid-Token=uoX1hk6SHUgB2MFGJwNx38dem9DA7Vsz&X-Fresns-App-Id=yh1OJ7WL&X-Fresns-Client-Platform-Id=2&X-Fresns-Client-Version=2.0.0&X-Fresns-Signature-Timestamp=1674161913192&X-Fresns-Uid=782622&X-Fresns-Uid-Token=PqBpwPLJgfd1sH0X5JffYFGxTSc8RW7c&AppKey=qUiEaDNQh2IpvGHOKlTMx7ujn8t1CZWX
 ```
 
 **5. Perform `hash sha256` operation (64-digit lowercase) against the signed character signature to obtain the signature value.**
