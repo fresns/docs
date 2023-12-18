@@ -44,3 +44,5 @@
     }
 }
 ```
+
+- [Common Data Structure -> Hashtag Info](../../reference/data/hashtag.md)

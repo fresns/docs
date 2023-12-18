@@ -51,3 +51,5 @@
     }
 }
 ```
+
+- [Common Data Structure -> Post -> History Post Info](../../reference/data/post.md#history-post-info)

@@ -41,3 +41,5 @@
     }
 }
 ```
+
+- [通用数据结构->话题信息](../../reference/data/hashtag.md)

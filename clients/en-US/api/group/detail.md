@@ -54,3 +54,6 @@
     }
 }
 ```
+
+- [Common Data Structure -> Extends -> Extend Function Info](../../reference/data/extends.md#extend-function-info)
+- [Common Data Structure -> Group Info](../../reference/data/group.md)

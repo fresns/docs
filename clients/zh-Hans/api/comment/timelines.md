@@ -68,3 +68,5 @@
     }
 }
 ```
+
+- [通用数据结构->评论信息](../../reference/data/comment.md)

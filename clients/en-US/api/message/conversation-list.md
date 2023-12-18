@@ -59,3 +59,5 @@
     }
 }
 ```
+
+- [Common Data Structure -> User Info](../../reference/data/user.md)

@@ -64,3 +64,5 @@
     }
 }
 ```
+
+- [Common Data Structure -> File Info](../../reference/data/file.md)

@@ -48,3 +48,6 @@
     }
 }
 ```
+
+- [Common Data Structure -> Post -> History Post Info](../../reference/data/post.md#history-post-info)
+- [Common Data Structure -> Comment -> History Comment Info](../../reference/data/comment.md#history-comment-info)

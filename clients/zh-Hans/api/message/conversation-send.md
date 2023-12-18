@@ -52,3 +52,6 @@
     }
 }
 ```
+
+- [通用数据结构->用户信息](../../reference/data/user.md)
+- [通用数据结构->文件信息](../../reference/data/file.md)

@@ -41,3 +41,5 @@
     }
 }
 ```
+
+- [通用数据结构->地理信息](../../reference/data/geotag.md)

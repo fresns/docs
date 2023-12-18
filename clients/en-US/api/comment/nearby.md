@@ -63,3 +63,5 @@
     }
 }
 ```
+
+- [Common Data Structure -> Comment Info](../../reference/data/comment.md)

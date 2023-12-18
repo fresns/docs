@@ -69,3 +69,5 @@
     }
 }
 ```
+
+- [Common Data Structure -> Group Info](../../reference/data/group.md)

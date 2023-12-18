@@ -85,3 +85,5 @@
     }
 }
 ```
+
+- [Common Data Structure -> Post Info](../../reference/data/post.md)

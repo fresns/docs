@@ -66,3 +66,6 @@
     }
 }
 ```
+
+- [Common Data Structure -> User Info](../../reference/data/user.md)
+- [Common Data Structure -> File Info](../../reference/data/file.md)

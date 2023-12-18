@@ -68,3 +68,5 @@
     }
 }
 ```
+
+- [Common Data Structure -> Extends -> Extend Function Info](../../reference/data/extends.md#extend-function-info)

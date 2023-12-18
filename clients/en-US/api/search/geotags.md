@@ -41,3 +41,5 @@
     }
 }
 ```
+
+- [Common Data Structure -> geotag Info](../../reference/data/geotag.md)
