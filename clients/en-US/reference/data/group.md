@@ -13,9 +13,9 @@ aside: false
     "cover": "String / Group cover image",
     "banner": "String / Group banner image",
     "recommend": "Boolean / Whether it is a recommended group",
-    "mode": "Number / Group mode 1.Public 2.Non-public",
-    "modeEndAfter": "Number / After non-public mode expires 1.No restrictions 2.All group content is invisible 3.Content before expiration is visible, new content is not visible",
-    "find": "Number / Whether it can be discovered (whether it is displayed) 1.Discoverable 2.Not discoverable",
+    "privacy": "String / public (Anyone can see who's in the group and what they post.) or private (Only members can see who's in the group and what they post.)",
+    "privateEndAfter": "Number / After private mode expires 1.No restrictions 2.All group content is invisible 3.Content before expiration is visible, new content is not visible",
+    "visibility": "String / visible (Anyone can find this group.) or hidden (Only members can find this group.)",
     "parentGid": "String / Parent group ID",
     "parentInfo": {
         "gid": "String / Parent group ID",

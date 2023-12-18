@@ -13,9 +13,9 @@ aside: false
     "cover": "String / 小组封面图",
     "banner": "String / 小组条幅图",
     "recommend": "Boolean / 是否为推荐小组",
-    "mode": "Number / 小组模式 1.公开 2.非公开",
-    "modeEndAfter": "Number / 非公开模式到期后 1.不限制 2.小组内容全部不可见 3.到期前内容可见，新内容不可见",
-    "find": "Number / 是否可发现（是否显示） 1.可发现 2.不可发现",
+    "privacy": "String / public (任何人都能查看小组内帖子) 或 private (只有成员才能查看小组内帖子)",
+    "privateEndAfter": "Number / private 模式到期后 1.不限制 2.小组内容全部不可见 3.到期前内容可见，新内容不可见",
+    "visibility": "String / visible (任何人都能找到这个小组) 或 hidden (只有成员能找到这个小组)",
     "parentGid": "String / 父级小组 ID",
     "parentInfo": {
         "gid": "String / 父级小组 ID",
