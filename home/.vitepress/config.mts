@@ -6,6 +6,8 @@ export default defineConfig({
   titleTemplate: false,
   description: 'Fresns Developer Documentation. Help for wherever you are on your Fresns journey.',
 
+  cleanUrls: false,
+
   themeConfig: {
     siteTitle: 'Fresns Docs',
     logo: 'https://files.fresns.org/wiki/icons/fresns.png',

@@ -15,6 +15,8 @@ export default defineConfig({
     ['meta', { property: 'og:url', content: 'https://fresns.org' }],
   ],
 
+  cleanUrls: false,
+
   themeConfig:{
     logo: 'https://files.fresns.org/wiki/icons/fresns.png',
     nav: navbar(),

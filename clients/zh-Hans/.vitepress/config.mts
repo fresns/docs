@@ -9,6 +9,8 @@ export default defineConfig({
 
   lastUpdated: true,
 
+  cleanUrls: false,
+
   head: [
     ['link', { rel: 'icon', type: 'image/png', href: 'https://files.fresns.org/wiki/icons/fresns.png' }],
   ],
