@@ -45,7 +45,7 @@ aside: false
         "buttonName": "String / Button Text When Unauthorized",
         "buttonUrl": "String / URL to Handle Authorization",
     },
-    "affiliatedUserConfig": {
+    "associatedUserListConfig": {
         "hasUserList": "Boolean / Whether there is a Related User List",
         "userListName": "String / User List Name",
         "userListCount": "Number / User List Count",

@@ -1,4 +1,4 @@
-# Post Affiliated Users
+# Post Associated Users
 
 - Endpoint Path: `/api/fresns/v1/post/{pid}/users`
 - Method: `GET`

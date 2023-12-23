@@ -124,7 +124,7 @@
 | `GET` | /api/fresns/v1/post/nearby | Post List by Nearby |
 | `GET` | /api/fresns/v1/post/`{pid}`/detail | Post Detail |
 | `GET` | /api/fresns/v1/post/`{pid}`/interaction/`{type}` | Post Interaction Users |
-| `GET` | /api/fresns/v1/post/`{pid}`/users | Post Affiliated Users |
+| `GET` | /api/fresns/v1/post/`{pid}`/users | Post Associated Users |
 | `GET` | /api/fresns/v1/post/`{pid}`/quotes | Post Quote It List |
 | `GET` | /api/fresns/v1/post/`{pid}`/histories | Post Histories |
 | `GET` | /api/fresns/v1/post/history/`{hpid}`/detail | Post History Detail |

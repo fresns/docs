@@ -45,7 +45,7 @@ aside: false
         "buttonName": "String / 无权时按钮文字",
         "buttonUrl": "String / 处理授权的地址"
     },
-    "affiliatedUserConfig": {
+    "associatedUserListConfig": {
         "hasUserList": "Boolean / 是否有关联用户列表",
         "userListName": "String / 用户列表名称",
         "userListCount": "Number / 用户列表用户数",
