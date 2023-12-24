@@ -17,7 +17,7 @@
 
 | Key | Type | Required | Description |
 | --- | --- | --- | --- |
-| type | String | *optional* | `user`,`group`,`hashtag`, Null to output all |
+| type | String | *optional* | `user`,`group` Null to output all |
 | contentType | String | *optional* | Filter content by type |
 | sinceCid | String | *optional* | query new content after this comment |
 | beforeCid | String | *optional* | query old content before this comment |

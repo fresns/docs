@@ -17,7 +17,7 @@
 
 | 参数名 | 类型 | 是否必传 | 说明 |
 | --- | --- | --- | --- |
-| type | String | NO | `user`,`group`,`hashtag`，留空输出全部 |
+| type | String | NO | `user`,`group` 留空输出全部 |
 | contentType | String | NO | 筛选过滤内容类型 |
 | sinceCid | String | NO | 查询该评论之后的新内容 |
 | beforeCid | String | NO | 查询该评论之前的旧内容 |

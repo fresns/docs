@@ -173,9 +173,8 @@ aside: false
     },
     "followType": "String / From which type of follow"
     // followType=null: none
-    // followType=user: followed user
-    // followType=group: followed group
-    // followType=hashtag: followed hashtag
+    // followType=user: followed users
+    // followType=group: followed groups
     // followType==digest: premium digest
 }
 ```

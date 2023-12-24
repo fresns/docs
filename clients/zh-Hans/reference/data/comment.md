@@ -156,7 +156,7 @@ aside: false
         // 当前评论的父级评论
         // 通用数据结构->评论信息
     },
-    "followType": "String / 来自哪种关注 null.无 user.我关注的用户 group.我关注的小组 hashtag.我关注的话题 digest.高级精华"
+    "followType": "String / 来自哪种关注 null.无 user.我关注的用户 group.我关注的小组 digest.高级精华"
 }
 ```
 
