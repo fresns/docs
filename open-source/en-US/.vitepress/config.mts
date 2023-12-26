@@ -302,6 +302,7 @@ function sidebarConfigs() {
           items: [
             { text: 'Channels', link: '/configs/panel/channels.md' },
             { text: 'Paths', link: '/configs/panel/paths.md' },
+            { text: 'Language Packs', link: '/configs/panel/language-packs.md' },
             { text: 'Basic', link: '/configs/panel/basic.md' },
           ]
         },

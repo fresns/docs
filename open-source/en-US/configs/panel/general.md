@@ -4,7 +4,7 @@
 
 | Menu Title | Key Name | Default Key Value | Value Type | Description |
 | --- | --- | --- | --- | --- |
-| Site Address | site_url |  | string | Used for content Web URL concatenation |
+| Site URL | site_url |  | string | Used for content Web URL concatenation |
 | Site Name | site_name |  | string | **Multilingual** |
 | Site Description | site_desc |  | string | **Multilingual** |
 | Site Introduction | site_intro |  | string | **Multilingual** |

@@ -4,7 +4,7 @@
 
 | Menu Title | Key Name | Default Key Value | Value Type | Description |
 | --- | --- | --- | --- | --- |
-| Enable multilingual | language_status | true | boolean |  `true` or `false` |
+| Enable Multilingual | language_status | true | boolean |  `true` or `false` |
 | Language configuration list | language_menus |  | array | [Language list JSON data](#language-list-json-data) |
 | Default language | default_language | zh-Hans | string | 	Language Tag |
 
@@ -31,7 +31,6 @@
         "timeFormatDay": "Day time format naming",
         "timeFormatMonth": "Month time format naming",
         "timeFormatYear": "Year time format naming",
-        "packVersion": "Language pack version",
         "isEnabled": "true or false"
     },
     {
@@ -51,7 +50,6 @@
         "timeFormatDay": "{n} days ago",
         "timeFormatMonth": "{n} months ago",
         "timeFormatYear": "{n} years ago",
-        "packVersion": 1,
         "isEnabled": true
     }
 ]

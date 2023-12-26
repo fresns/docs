@@ -314,6 +314,7 @@ function sidebarConfigs() {
           items: [
             { text: '频道配置', link: '/configs/panel/channels.md' },
             { text: '路径配置', link: '/configs/panel/paths.md' },
+            { text: '语言包配置', link: '/configs/panel/language-packs.md' },
             { text: '客户端基础配置', link: '/configs/panel/basic.md' },
           ]
         },

@@ -5,7 +5,7 @@
 | 栏目标题 | 键名 | 默认键值 | 键值类型 | 说明 |
 | --- | --- | --- | --- | --- |
 | 钱包功能 | wallet_status | false | boolean | true 或 false |
-| 钱包货币代码 | wallet_currency_code | USD | string | 货币代码 [currency_codes](../dictionary/currency-codes.md) |
+| 货币代码 | wallet_currency_code | USD | string | 货币代码 [currency_codes](../dictionary/currency-codes.md) |
 | 货币自定义命名 | wallet_currency_name |  | object | **多语言** |
 | 货币单位自定义命名 | wallet_currency_unit |  | object | **多语言** |
 | 货币精度 | wallet_currency_precision | 2 | number | 小数点位数 |
