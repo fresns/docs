@@ -37,33 +37,33 @@
 - Ordered by record time, e.g., for posts, it is sorted by the marking time, not the post creation time.
 - Judgement of whether to output records
     - Like configuration `markType=like`
-        - `listType=users` Get the list of users they liked, the config key `profile_like_users_enabled`
-        - `listType=groups` Get the list of groups they liked, the config key `profile_like_groups_enabled`
-        - `listType=hashtags` Get the list of hashtags they liked, the config key `profile_like_hashtags_enabled`
-        - `listType=geotags` Get the list of geotags they liked, the config key `profile_like_geotags_enabled`
-        - `listType=posts` Get the list of posts they liked, the config key `profile_like_posts_enabled`
-        - `listType=comments` Get the list of comments they liked, the config key `profile_like_comments_enabled`
+        - `listType=users` Get the list of users they liked, the config key `profile_likes_users_enabled`
+        - `listType=groups` Get the list of groups they liked, the config key `profile_likes_groups_enabled`
+        - `listType=hashtags` Get the list of hashtags they liked, the config key `profile_likes_hashtags_enabled`
+        - `listType=geotags` Get the list of geotags they liked, the config key `profile_likes_geotags_enabled`
+        - `listType=posts` Get the list of posts they liked, the config key `profile_likes_posts_enabled`
+        - `listType=comments` Get the list of comments they liked, the config key `profile_likes_comments_enabled`
     - Dislike configuration `markType=dislike`
-        - `listType=users` Get the list of users they disliked, the config key `profile_dislike_users_enabled`
-        - `listType=groups` Get the list of groups they disliked, the config key `profile_dislike_groups_enabled`
-        - `listType=hashtags` Get the list of hashtags they disliked, the config key `profile_dislike_hashtags_enabled`
-        - `listType=geotags` Get the list of geotags they disliked, the config key `profile_dislike_geotags_enabled`
-        - `listType=posts` Get the list of posts they disliked, the config key `profile_dislike_posts_enabled`
-        - `listType=comments` Get the list of comments they disliked, the config key `profile_dislike_comments_enabled`
+        - `listType=users` Get the list of users they disliked, the config key `profile_dislikes_users_enabled`
+        - `listType=groups` Get the list of groups they disliked, the config key `profile_dislikes_groups_enabled`
+        - `listType=hashtags` Get the list of hashtags they disliked, the config key `profile_dislikes_hashtags_enabled`
+        - `listType=geotags` Get the list of geotags they disliked, the config key `profile_dislikes_geotags_enabled`
+        - `listType=posts` Get the list of posts they disliked, the config key `profile_dislikes_posts_enabled`
+        - `listType=comments` Get the list of comments they disliked, the config key `profile_dislikes_comments_enabled`
     - Follow configuration `markType=follow`
-        - `listType=users` Get the list of users they followed, the config key `profile_follow_users_enabled`
-        - `listType=groups` Get the list of groups they followed, the config key `profile_follow_groups_enabled`
-        - `listType=hashtags` Get the list of hashtags they followed, the config key `profile_follow_hashtags_enabled`
-        - `listType=geotags` Get the list of geotags they followed, the config key `profile_follow_geotags_enabled`
-        - `listType=posts` Get the list of posts they followed, the config key `profile_follow_posts_enabled`
-        - `listType=comments` Get the list of comments they followed, the config key `profile_follow_comments_enabled`
+        - `listType=users` Get the list of users they followed, the config key `profile_following_users_enabled`
+        - `listType=groups` Get the list of groups they followed, the config key `profile_following_groups_enabled`
+        - `listType=hashtags` Get the list of hashtags they followed, the config key `profile_following_hashtags_enabled`
+        - `listType=geotags` Get the list of geotags they followed, the config key `profile_following_geotags_enabled`
+        - `listType=posts` Get the list of posts they followed, the config key `profile_following_posts_enabled`
+        - `listType=comments` Get the list of comments they followed, the config key `profile_following_comments_enabled`
     - Block configuration `markType=block`
-        - `listType=users` Get the list of users they blocked, the config key `profile_block_users_enabled`
-        - `listType=groups` Get the list of groups they blocked, the config key `profile_block_groups_enabled`
-        - `listType=hashtags` Get the list of hashtags they blocked, the config key `profile_block_hashtags_enabled`
-        - `listType=geotags` Get the list of geotags they blocked, the config key `profile_block_geotags_enabled`
-        - `listType=posts` Get the list of posts they blocked, the config key `profile_block_posts_enabled`
-        - `listType=comments` Get the list of comments they blocked, the config key `profile_block_comments_enabled`
+        - `listType=users` Get the list of users they blocked, the config key `profile_blocking_users_enabled`
+        - `listType=groups` Get the list of groups they blocked, the config key `profile_blocking_groups_enabled`
+        - `listType=hashtags` Get the list of hashtags they blocked, the config key `profile_blocking_hashtags_enabled`
+        - `listType=geotags` Get the list of geotags they blocked, the config key `profile_blocking_geotags_enabled`
+        - `listType=posts` Get the list of posts they blocked, the config key `profile_blocking_posts_enabled`
+        - `listType=comments` Get the list of comments they blocked, the config key `profile_blocking_comments_enabled`
 - If `uidOrUsername` is the logged-in user themselves, the above configuration is invalid, and the data is output directly, meaning that when viewing their own content, the switch is ignored.
 - `orderDirection` The sorting direction is based on the creation time.
 

@@ -37,33 +37,33 @@
 - 根据记录时间排序，比如帖子，是根据标注时间排序，而不是帖子发表时间。
 - 是否输出记录的判断
     - 点赞配置 `markType=like`
-        - `listType=users` 他点赞的用户列表，配置键名 `profile_like_users_enabled`
-        - `listType=groups` 他点赞的小组列表，配置键名 `profile_like_groups_enabled`
-        - `listType=hashtags` 他点赞的话题列表，配置键名 `profile_like_hashtags_enabled`
-        - `listType=geotags` 他点赞的地理列表，配置键名 `profile_like_geotags_enabled`
-        - `listType=posts` 他点赞的帖子列表，配置键名 `profile_like_posts_enabled`
-        - `listType=comments` 他点赞的评论列表，配置键名 `profile_like_comments_enabled`
+        - `listType=users` 他点赞的用户列表，配置键名 `profile_likes_users_enabled`
+        - `listType=groups` 他点赞的小组列表，配置键名 `profile_likes_groups_enabled`
+        - `listType=hashtags` 他点赞的话题列表，配置键名 `profile_likes_hashtags_enabled`
+        - `listType=geotags` 他点赞的地理列表，配置键名 `profile_likes_geotags_enabled`
+        - `listType=posts` 他点赞的帖子列表，配置键名 `profile_likes_posts_enabled`
+        - `listType=comments` 他点赞的评论列表，配置键名 `profile_likes_comments_enabled`
     - 点踩配置 `markType=dislike`
-        - `listType=users` 他踩的用户列表，配置键名 `profile_dislike_users_enabled`
-        - `listType=groups` 他踩的小组列表，配置键名 `profile_dislike_groups_enabled`
-        - `listType=hashtags` 他踩的话题列表，配置键名 `profile_dislike_hashtags_enabled`
-        - `listType=geotags` 他踩的地理列表，配置键名 `profile_dislike_geotags_enabled`
-        - `listType=posts` 他踩的帖子列表，配置键名 `profile_dislike_posts_enabled`
-        - `listType=comments` 他踩的评论列表，配置键名 `profile_dislike_comments_enabled`
+        - `listType=users` 他踩的用户列表，配置键名 `profile_dislikes_users_enabled`
+        - `listType=groups` 他踩的小组列表，配置键名 `profile_dislikes_groups_enabled`
+        - `listType=hashtags` 他踩的话题列表，配置键名 `profile_dislikes_hashtags_enabled`
+        - `listType=geotags` 他踩的地理列表，配置键名 `profile_dislikes_geotags_enabled`
+        - `listType=posts` 他踩的帖子列表，配置键名 `profile_dislikes_posts_enabled`
+        - `listType=comments` 他踩的评论列表，配置键名 `profile_dislikes_comments_enabled`
     - 关注配置 `markType=follow`
-        - `listType=users` 他关注的用户列表，配置键名 `profile_follow_users_enabled`
-        - `listType=groups` 他关注的小组列表，配置键名 `profile_follow_groups_enabled`
-        - `listType=hashtags` 他关注的话题列表，配置键名 `profile_follow_hashtags_enabled`
-        - `listType=geotags` 他关注的地理列表，配置键名 `profile_follow_geotags_enabled`
-        - `listType=posts` 他关注的帖子列表，配置键名 `profile_follow_posts_enabled`
-        - `listType=comments` 他关注的评论列表，配置键名 `profile_follow_comments_enabled`
+        - `listType=users` 他关注的用户列表，配置键名 `profile_following_users_enabled`
+        - `listType=groups` 他关注的小组列表，配置键名 `profile_following_groups_enabled`
+        - `listType=hashtags` 他关注的话题列表，配置键名 `profile_following_hashtags_enabled`
+        - `listType=geotags` 他关注的地理列表，配置键名 `profile_following_geotags_enabled`
+        - `listType=posts` 他关注的帖子列表，配置键名 `profile_following_posts_enabled`
+        - `listType=comments` 他关注的评论列表，配置键名 `profile_following_comments_enabled`
     - 屏蔽配置 `markType=block`
-        - `listType=users` 他屏蔽的用户列表，配置键名 `profile_block_users_enabled`
-        - `listType=groups` 他屏蔽的小组列表，配置键名 `profile_block_groups_enabled`
-        - `listType=hashtags` 他屏蔽的话题列表，配置键名 `profile_block_hashtags_enabled`
-        - `listType=geotags` 他屏蔽的地理列表，配置键名 `profile_block_geotags_enabled`
-        - `listType=posts` 他屏蔽的帖子列表，配置键名 `profile_block_posts_enabled`
-        - `listType=comments` 他屏蔽的评论列表，配置键名 `profile_block_comments_enabled`
+        - `listType=users` 他屏蔽的用户列表，配置键名 `profile_blocking_users_enabled`
+        - `listType=groups` 他屏蔽的小组列表，配置键名 `profile_blocking_groups_enabled`
+        - `listType=hashtags` 他屏蔽的话题列表，配置键名 `profile_blocking_hashtags_enabled`
+        - `listType=geotags` 他屏蔽的地理列表，配置键名 `profile_blocking_geotags_enabled`
+        - `listType=posts` 他屏蔽的帖子列表，配置键名 `profile_blocking_posts_enabled`
+        - `listType=comments` 他屏蔽的评论列表，配置键名 `profile_blocking_comments_enabled`
 - 如果 `uidOrUsername` 为登录用户自己时，上方配置无效，直接输出数据，表示查看自己的内容时无视开关。
 - `orderDirection` 排序方向以创建时间排序。
 

@@ -81,8 +81,8 @@
                 "title": {
                     "status": "Boolean / Enable titles",
                     "required": "Boolean / Is required",
-                    "length": "Number / Maximum length",
-                    "inputDisplay": "Boolean / Whether to display input by default"
+                    "show": "Boolean / Whether to display input by default",
+                    "length": "Number / Maximum length"
                 },
                 "mention": {
                     "status": "Boolean / Enable mentions",

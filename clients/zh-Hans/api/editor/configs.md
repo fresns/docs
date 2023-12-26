@@ -81,8 +81,8 @@
                 "title": {
                     "status": "Boolean / 是否启用标题",
                     "required": "Boolean / 是否必填",
-                    "length": "Number / 最大长度",
-                    "inputDisplay": "Boolean / 是否默认显示 input"
+                    "show": "Boolean / 是否默认显示 input",
+                    "length": "Number / 最大长度"
                 },
                 "mention": {
                     "status": "Boolean / 是否启用艾特",
