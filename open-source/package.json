@@ -1,0 +1,14 @@
+{
+  "dependencies": {},
+  "devDependencies": {
+    "vitepress": "^1.0.0-rc.32"
+  },
+  "scripts": {
+    "docs:dev": "vitepress dev en-US",
+    "docs:build": "vitepress build en-US",
+    "docs:preview": "vitepress preview en-US",
+    "zh-Hans:dev": "vitepress dev zh-Hans",
+    "zh-Hans:build": "vitepress build zh-Hans",
+    "zh-Hans:preview": "vitepress preview zh-Hans"
+  }
+}
