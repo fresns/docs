@@ -112,14 +112,12 @@
 | Route Name | View File | Description |
 | --- | --- | --- |
 | fresns.timeline.index |  | Timeline Home |
-| fresns.timeline.posts | /timelines/posts.blade.php | All posts followed |
+| fresns.timeline.posts | /timelines/posts.blade.php | All followed posts |
 | fresns.timeline.user.posts | /timelines/user-posts.blade.php | I follow users posts |
 | fresns.timeline.group.posts | /timelines/group-posts.blade.php | I follow groups posts |
-| fresns.timeline.hashtag.posts | /timelines/hashtag-posts.blade.php | I follow hashtags posts |
-| fresns.timeline.comments | /timelines/comments.blade.php | All comments followed |
+| fresns.timeline.comments | /timelines/comments.blade.php | All followed comments |
 | fresns.timeline.user.comments | /timelines/user-comments.blade.php | I follow users comments |
 | fresns.timeline.group.comments | /timelines/group-comments.blade.php | I follow groups comments |
-| fresns.timeline.hashtag.comments | /timelines/hashtag-comments.blade.php | I follow hashtags comments |
 
 ## Nearby
 
@@ -144,9 +142,9 @@
 
 | Route Name | View File | Description |
 | --- | --- | --- |
-| fresns.message.index | /messages/index.blade.php | Message Home |
-| fresns.message.conversation | /messages/conversation.blade.php | Conversation |
-| fresns.message.notifications | /messages/notifications.blade.php | Notifications |
+| fresns.conversation.index | /messages/conversations.blade.php | Conversations |
+| fresns.conversation.detail | /messages/conversation-detail.blade.php | Conversation Messages |
+| fresns.notification.index | /messages/notifications.blade.php | Notifications |
 
 ## User Profile
 

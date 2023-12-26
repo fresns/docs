@@ -115,11 +115,9 @@
 | fresns.timeline.posts | /timelines/posts.blade.php | 全部关注的帖子 |
 | fresns.timeline.user.posts | /timelines/user-posts.blade.php | 关注用户的帖子 |
 | fresns.timeline.group.posts | /timelines/group-posts.blade.php | 关注小组的帖子 |
-| fresns.timeline.hashtag.posts | /timelines/hashtag-posts.blade.php | 关注话题的帖子 |
 | fresns.timeline.comments | /timelines/comments.blade.php | 全部关注的评论 |
 | fresns.timeline.user.comments | /timelines/user-comments.blade.php | 关注用户的评论 |
 | fresns.timeline.group.comments | /timelines/group-comments.blade.php | 关注小组的评论 |
-| fresns.timeline.hashtag.comments | /timelines/hashtag-comments.blade.php | 关注话题的评论 |
 
 ## 附近
 
@@ -144,9 +142,9 @@
 
 | 路由名 | 模板文件 | 介绍 |
 | --- | --- | --- |
-| fresns.message.index | /messages/index.blade.php | 消息主页 |
-| fresns.message.conversation | /messages/conversation.blade.php | 对话页 |
-| fresns.message.notifications | /messages/notifications.blade.php | 通知页 |
+| fresns.conversation.index | /messages/conversations.blade.php | 对话 |
+| fresns.conversation.detail | /messages/conversation-detail.blade.php | 对话详情页 |
+| fresns.notification.index | /messages/notifications.blade.php | 通知 |
 
 ## 用户详情页
 
