@@ -11,7 +11,7 @@
 | Currency Precision | wallet_currency_precision | 2 | number | Decimal places |
 | Withdraw Function | wallet_withdraw_status | false | boolean | `true` or `false` |
 | Withdrawal Review Required | wallet_withdraw_review | false | boolean | `true` or `false` |
-| Withdrawal Verify Identity | wallet_withdraw_check_kyc | false | boolean | `true` or `false` |
+| Withdrawal Verify KYC | wallet_withdraw_check_kyc | false | boolean | `true` or `false` |
 | Withdrawal Interval Time | wallet_withdraw_interval_time | 10 | number | Unit: minutes<br>0 or empty means no limit |
 | Withdrawal Fee Rate | wallet_withdraw_rate | 5 | number | Percentage, 6 means 6% |
 | Minimum Withdrawal Amount per Transaction | wallet_withdraw_min_sum | 100 | number | Unit: currency |
