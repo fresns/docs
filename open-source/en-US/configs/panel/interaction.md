@@ -170,60 +170,60 @@
 
 | Menu Title | Key Name | Default Key Value | Value Type | Description |
 | --- | --- | --- | --- | --- |
-| They like the users | profile_like_users_enabled | false | boolean |  |
-|  | profile_like_users_name |  | object | **Multilingual** |
-| They like the groups | profile_like_groups_enabled | false | boolean |  |
-|  | profile_like_groups_name |  | object | **Multilingual** |
-| They like the hashtags | profile_like_hashtags_enabled | false | boolean |  |
-|  | profile_like_hashtags_name |  | object | **Multilingual** |
-| They like the geotags | profile_like_geotags_enabled | false | boolean |  |
-|  | profile_like_geotags_name |  | object | **Multilingual** |
-| They like the posts | profile_like_posts_enabled | false | boolean |  |
-|  | profile_like_posts_name |  | object | **Multilingual** |
-| They like the comments | profile_like_comments_enabled | false | boolean |  |
-|  | profile_like_comments_name |  | object | **Multilingual** |
+| They like the users | profile_likes_users_enabled | false | boolean |  |
+|  | profile_likes_users_name |  | object | **Multilingual** |
+| They like the groups | profile_likes_groups_enabled | false | boolean |  |
+|  | profile_likes_groups_name |  | object | **Multilingual** |
+| They like the hashtags | profile_likes_hashtags_enabled | false | boolean |  |
+|  | profile_likes_hashtags_name |  | object | **Multilingual** |
+| They like the geotags | profile_likes_geotags_enabled | false | boolean |  |
+|  | profile_likes_geotags_name |  | object | **Multilingual** |
+| They like the posts | profile_likes_posts_enabled | false | boolean |  |
+|  | profile_likes_posts_name |  | object | **Multilingual** |
+| They like the comments | profile_likes_comments_enabled | false | boolean |  |
+|  | profile_likes_comments_name |  | object | **Multilingual** |
 
 | Menu Title | Key Name | Default Key Value | Value Type | Description |
 | --- | --- | --- | --- | --- |
-| They dislike the users | profile_dislike_users_enabled | false | boolean |  |
-|  | profile_dislike_users_name |  | object | **Multilingual** |
-| They dislike the groups | profile_dislike_groups_enabled | false | boolean |  |
-|  | profile_dislike_groups_name |  | object | **Multilingual** |
-| They dislike the hashtags | profile_dislike_hashtags_enabled | false | boolean |  |
-|  | profile_dislike_hashtags_name |  | object | **Multilingual** |
-| They dislike the geotags | profile_dislike_geotags_enabled | false | boolean |  |
-|  | profile_dislike_geotags_name |  | object | **Multilingual** |
-| They dislike the posts | profile_dislike_posts_enabled | false | boolean |  |
-|  | profile_dislike_posts_name |  | object | **Multilingual** |
-| They dislike the comments | profile_dislike_comments_enabled | false | boolean |  |
-|  | profile_dislike_comments_name |  | object | **Multilingual** |
+| They dislike the users | profile_dislikes_users_enabled | false | boolean |  |
+|  | profile_dislikes_users_name |  | object | **Multilingual** |
+| They dislike the groups | profile_dislikes_groups_enabled | false | boolean |  |
+|  | profile_dislikes_groups_name |  | object | **Multilingual** |
+| They dislike the hashtags | profile_dislikes_hashtags_enabled | false | boolean |  |
+|  | profile_dislikes_hashtags_name |  | object | **Multilingual** |
+| They dislike the geotags | profile_dislikes_geotags_enabled | false | boolean |  |
+|  | profile_dislikes_geotags_name |  | object | **Multilingual** |
+| They dislike the posts | profile_dislikes_posts_enabled | false | boolean |  |
+|  | profile_dislikes_posts_name |  | object | **Multilingual** |
+| They dislike the comments | profile_dislikes_comments_enabled | false | boolean |  |
+|  | profile_dislikes_comments_name |  | object | **Multilingual** |
 
 | Menu Title | Key Name | Default Key Value | Value Type | Description |
 | --- | --- | --- | --- | --- |
-| They follow the users | profile_follow_users_enabled | true | boolean |  |
-|  | profile_follow_users_name |  | object | **Multilingual** |
-| They follow the groups | profile_follow_groups_enabled | true | boolean |  |
-|  | profile_follow_groups_name |  | object | **Multilingual** |
-| They follow the hashtags | profile_follow_hashtags_enabled | false | boolean |  |
-|  | profile_follow_hashtags_name |  | object | **Multilingual** |
-| They follow the geotags | profile_follow_geotags_enabled | false | boolean |  |
-|  | profile_follow_geotags_name |  | object | **Multilingual** |
-| They follow the posts | profile_follow_posts_enabled | false | boolean |  |
-|  | profile_follow_posts_name |  | object | **Multilingual** |
-| They follow the comments | profile_follow_comments_enabled | false | boolean |  |
-|  | profile_follow_comments_name |  | object | **Multilingual** |
+| They follow the users | profile_following_users_enabled | true | boolean |  |
+|  | profile_following_users_name |  | object | **Multilingual** |
+| They follow the groups | profile_following_groups_enabled | true | boolean |  |
+|  | profile_following_groups_name |  | object | **Multilingual** |
+| They follow the hashtags | profile_following_hashtags_enabled | false | boolean |  |
+|  | profile_following_hashtags_name |  | object | **Multilingual** |
+| They follow the geotags | profile_following_geotags_enabled | false | boolean |  |
+|  | profile_following_geotags_name |  | object | **Multilingual** |
+| They follow the posts | profile_following_posts_enabled | false | boolean |  |
+|  | profile_following_posts_name |  | object | **Multilingual** |
+| They follow the comments | profile_following_comments_enabled | false | boolean |  |
+|  | profile_following_comments_name |  | object | **Multilingual** |
 
 | Menu Title | Key Name | Default Key Value | Value Type | Description |
 | --- | --- | --- | --- | --- |
-| They block the users | profile_block_users_enabled | false | boolean |  |
-|  | profile_block_users_name |  | object | **Multilingual** |
-| They block the groups | profile_block_groups_enabled | false | boolean |  |
-|  | profile_block_groups_name |  | object | **Multilingual** |
-| They block the hashtags | profile_block_hashtags_enabled | false | boolean |  |
-|  | profile_block_hashtags_name |  | object | **Multilingual** |
-| They block the geotags | profile_block_geotags_enabled | false | boolean |  |
-|  | profile_block_geotags_name |  | object | **Multilingual** |
-| They block the posts | profile_block_posts_enabled | false | boolean |  |
-|  | profile_block_posts_name |  | object | **Multilingual** |
-| They block the comments | profile_block_comments_enabled | false | boolean |  |
-|  | profile_block_comments_name |  | object | **Multilingual** |
+| They block the users | profile_blocking_users_enabled | false | boolean |  |
+|  | profile_blocking_users_name |  | object | **Multilingual** |
+| They block the groups | profile_blocking_groups_enabled | false | boolean |  |
+|  | profile_blocking_groups_name |  | object | **Multilingual** |
+| They block the hashtags | profile_blocking_hashtags_enabled | false | boolean |  |
+|  | profile_blocking_hashtags_name |  | object | **Multilingual** |
+| They block the geotags | profile_blocking_geotags_enabled | false | boolean |  |
+|  | profile_blocking_geotags_name |  | object | **Multilingual** |
+| They block the posts | profile_blocking_posts_enabled | false | boolean |  |
+|  | profile_blocking_posts_name |  | object | **Multilingual** |
+| They block the comments | profile_blocking_comments_enabled | false | boolean |  |
+|  | profile_blocking_comments_name |  | object | **Multilingual** |

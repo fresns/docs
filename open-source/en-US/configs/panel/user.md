@@ -32,30 +32,30 @@
 - **dislikers** `Users who disliked him`
 - **followers** `Users who followed him`
 - **blockers** `Users who blocked him`
-- like_users
-- like_groups
-- like_hashtags
-- like_geotags
-- like_posts
-- like_comments
-- dislike_users
-- dislike_groups
-- dislike_hashtags
-- dislike_geotags
-- dislike_posts
-- dislike_comments
-- follow_users
-- follow_groups
-- follow_hashtags
-- follow_geotags
-- follow_posts
-- follow_comments
-- block_users
-- block_groups
-- block_hashtags
-- block_geotags
-- block_posts
-- block_comments
+- likes_users
+- likes_groups
+- likes_hashtags
+- likes_geotags
+- likes_posts
+- likes_comments
+- dislikes_users
+- dislikes_groups
+- dislikes_hashtags
+- dislikes_geotags
+- dislikes_posts
+- dislikes_comments
+- following_users
+- following_groups
+- following_hashtags
+- following_geotags
+- following_posts
+- following_comments
+- blocking_users
+- blocking_groups
+- blocking_hashtags
+- blocking_geotags
+- blocking_posts
+- blocking_comments
 :::
 
 ## Edit Config

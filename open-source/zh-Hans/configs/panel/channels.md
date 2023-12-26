@@ -55,10 +55,10 @@
 
 | 栏目标题 | 键名 | 默认键值 | 键值类型 | 说明 |
 | --- | --- | --- | --- | --- |
-| 赞的用户-名称 | channel_my_like_users_name |  | object | `我的喜欢` **多语言** |
-| 踩的用户-名称 | channel_my_dislike_users_name |  | object | `我不喜欢的` **多语言** |
-| 关注的用户-名称 | channel_my_follow_users_name |  | object | `我的关注` **多语言** |
-| 屏蔽的用户-名称 | channel_my_block_users_name |  | object | `黑名单` **多语言** |
+| 赞的用户-名称 | channel_likes_users_name |  | object | `我的喜欢` **多语言** |
+| 踩的用户-名称 | channel_dislikes_users_name |  | object | `我不喜欢的` **多语言** |
+| 关注的用户-名称 | channel_following_users_name |  | object | `我的关注` **多语言** |
+| 屏蔽的用户-名称 | channel_blocking_users_name |  | object | `黑名单` **多语言** |
 
 ## 小组
 
@@ -91,10 +91,10 @@
 
 | 栏目标题 | 键名 | 默认键值 | 键值类型 | 说明 |
 | --- | --- | --- | --- | --- |
-| 赞的小组-名称 | channel_my_like_groups_name |  | object | `我赞的小组` **多语言** |
-| 踩的小组-名称 | channel_my_dislike_groups_name |  | object | `我不喜欢的小组` **多语言** |
-| 关注的小组-名称 | channel_my_follow_groups_name |  | object | `我的小组` **多语言** |
-| 屏蔽的小组-名称 | channel_my_block_groups_name |  | object | `我屏蔽的` **多语言** |
+| 赞的小组-名称 | channel_likes_groups_name |  | object | `我赞的小组` **多语言** |
+| 踩的小组-名称 | channel_dislikes_groups_name |  | object | `我不喜欢的小组` **多语言** |
+| 关注的小组-名称 | channel_following_groups_name |  | object | `我的小组` **多语言** |
+| 屏蔽的小组-名称 | channel_blocking_groups_name |  | object | `我屏蔽的` **多语言** |
 
 ## 话题
 
@@ -126,10 +126,10 @@
 
 | 栏目标题 | 键名 | 默认键值 | 键值类型 | 说明 |
 | --- | --- | --- | --- | --- |
-| 赞的话题-名称 | channel_my_like_hashtags_name |  | object | `我赞的话题` **多语言** |
-| 踩的话题-名称 | channel_my_dislike_hashtags_name |  | object | `我不喜欢的话题` **多语言** |
-| 关注的话题-名称 | channel_my_follow_hashtags_name |  | object | `我的订阅` **多语言** |
-| 屏蔽的话题-名称 | channel_my_block_hashtags_name |  | object | `我不感兴趣的` **多语言** |
+| 赞的话题-名称 | channel_likes_hashtags_name |  | object | `我赞的话题` **多语言** |
+| 踩的话题-名称 | channel_dislikes_hashtags_name |  | object | `我不喜欢的话题` **多语言** |
+| 关注的话题-名称 | channel_following_hashtags_name |  | object | `我的订阅` **多语言** |
+| 屏蔽的话题-名称 | channel_blocking_hashtags_name |  | object | `我不感兴趣的` **多语言** |
 
 ## 地理
 
@@ -161,10 +161,10 @@
 
 | 栏目标题 | 键名 | 默认键值 | 键值类型 | 说明 |
 | --- | --- | --- | --- | --- |
-| 赞的地理-名称 | channel_my_like_geotags_name |  | object | `我赞的地理` **多语言** |
-| 踩的地理-名称 | channel_my_dislike_geotags_name |  | object | `我不喜欢的地理` **多语言** |
-| 关注的地理-名称 | channel_my_follow_geotags_name |  | object | `地理收藏夹` **多语言** |
-| 屏蔽的地理-名称 | channel_my_block_geotags_name |  | object | `我不感兴趣的` **多语言** |
+| 赞的地理-名称 | channel_likes_geotags_name |  | object | `我赞的地理` **多语言** |
+| 踩的地理-名称 | channel_dislikes_geotags_name |  | object | `我不喜欢的地理` **多语言** |
+| 关注的地理-名称 | channel_following_geotags_name |  | object | `地理收藏夹` **多语言** |
+| 屏蔽的地理-名称 | channel_blocking_geotags_name |  | object | `我不感兴趣的` **多语言** |
 
 ## 帖子
 
@@ -190,10 +190,10 @@
 
 | 栏目标题 | 键名 | 默认键值 | 键值类型 | 说明 |
 | --- | --- | --- | --- | --- |
-| 赞的帖子-名称 | channel_my_like_posts_name |  | object | `我赞的帖子` **多语言** |
-| 踩的帖子-名称 | channel_my_dislike_posts_name |  | object | `我不喜欢的帖子` **多语言** |
-| 关注的帖子-名称 | channel_my_follow_posts_name |  | object | `帖子收藏夹` **多语言** |
-| 屏蔽的帖子-名称 | channel_my_block_posts_name |  | object | `我不感兴趣的` **多语言** |
+| 赞的帖子-名称 | channel_likes_posts_name |  | object | `我赞的帖子` **多语言** |
+| 踩的帖子-名称 | channel_dislikes_posts_name |  | object | `我不喜欢的帖子` **多语言** |
+| 关注的帖子-名称 | channel_following_posts_name |  | object | `帖子收藏夹` **多语言** |
+| 屏蔽的帖子-名称 | channel_blocking_posts_name |  | object | `我不感兴趣的` **多语言** |
 
 ## 评论
 
@@ -219,10 +219,10 @@
 
 | 栏目标题 | 键名 | 默认键值 | 键值类型 | 说明 |
 | --- | --- | --- | --- | --- |
-| 赞的评论-名称 | channel_my_like_comments_name |  | object | `我赞的评论` **多语言** |
-| 踩的评论-名称 | channel_my_dislike_comments_name |  | object | `我不喜欢的评论` **多语言** |
-| 关注的评论-名称 | channel_my_follow_comments_name |  | object | `评论收藏夹` **多语言** |
-| 屏蔽的评论-名称 | channel_my_block_comments_name |  | object | `我不感兴趣的` **多语言** |
+| 赞的评论-名称 | channel_likes_comments_name |  | object | `我赞的评论` **多语言** |
+| 踩的评论-名称 | channel_dislikes_comments_name |  | object | `我不喜欢的评论` **多语言** |
+| 关注的评论-名称 | channel_following_comments_name |  | object | `评论收藏夹` **多语言** |
+| 屏蔽的评论-名称 | channel_blocking_comments_name |  | object | `我不感兴趣的` **多语言** |
 
 ## 时间线
 

@@ -170,60 +170,60 @@
 
 | 栏目标题 | 键名 | 默认键值 | 键值类型 | 说明 |
 | --- | --- | --- | --- | --- |
-| 他赞的用户 | profile_like_users_enabled | false | boolean |  |
-|  | profile_like_users_name |  | object | **多语言** |
-| 他赞的小组 | profile_like_groups_enabled | false | boolean |  |
-|  | profile_like_groups_name |  | object | **多语言** |
-| 他赞的话题 | profile_like_hashtags_enabled | false | boolean |  |
-|  | profile_like_hashtags_name |  | object | **多语言** |
-| 他赞的地理 | profile_like_geotags_enabled | false | boolean |  |
-|  | profile_like_geotags_name |  | object | **多语言** |
-| 他赞的帖子 | profile_like_posts_enabled | false | boolean |  |
-|  | profile_like_posts_name |  | object | **多语言** |
-| 他赞的评论 | profile_like_comments_enabled | false | boolean |  |
-|  | profile_like_comments_name |  | object | **多语言** |
+| 他赞的用户 | profile_likes_users_enabled | false | boolean |  |
+|  | profile_likes_users_name |  | object | **多语言** |
+| 他赞的小组 | profile_likes_groups_enabled | false | boolean |  |
+|  | profile_likes_groups_name |  | object | **多语言** |
+| 他赞的话题 | profile_likes_hashtags_enabled | false | boolean |  |
+|  | profile_likes_hashtags_name |  | object | **多语言** |
+| 他赞的地理 | profile_likes_geotags_enabled | false | boolean |  |
+|  | profile_likes_geotags_name |  | object | **多语言** |
+| 他赞的帖子 | profile_likes_posts_enabled | false | boolean |  |
+|  | profile_likes_posts_name |  | object | **多语言** |
+| 他赞的评论 | profile_likes_comments_enabled | false | boolean |  |
+|  | profile_likes_comments_name |  | object | **多语言** |
 
 | 栏目标题 | 键名 | 默认键值 | 键值类型 | 说明 |
 | --- | --- | --- | --- | --- |
-| 他踩的用户 | profile_dislike_users_enabled | false | boolean |  |
-|  | profile_dislike_users_name |  | object | **多语言** |
-| 他踩的小组 | profile_dislike_groups_enabled | false | boolean |  |
-|  | profile_dislike_groups_name |  | object | **多语言** |
-| 他踩的话题 | profile_dislike_hashtags_enabled | false | boolean |  |
-|  | profile_dislike_hashtags_name |  | object | **多语言** |
-| 他踩的地理 | profile_dislike_geotags_enabled | false | boolean |  |
-|  | profile_dislike_geotags_name |  | object | **多语言** |
-| 他踩的帖子 | profile_dislike_posts_enabled | false | boolean |  |
-|  | profile_dislike_posts_name |  | object | **多语言** |
-| 他踩的评论 | profile_dislike_comments_enabled | false | boolean |  |
-|  | profile_dislike_comments_name |  | object | **多语言** |
+| 他踩的用户 | profile_dislikes_users_enabled | false | boolean |  |
+|  | profile_dislikes_users_name |  | object | **多语言** |
+| 他踩的小组 | profile_dislikes_groups_enabled | false | boolean |  |
+|  | profile_dislikes_groups_name |  | object | **多语言** |
+| 他踩的话题 | profile_dislikes_hashtags_enabled | false | boolean |  |
+|  | profile_dislikes_hashtags_name |  | object | **多语言** |
+| 他踩的地理 | profile_dislikes_geotags_enabled | false | boolean |  |
+|  | profile_dislikes_geotags_name |  | object | **多语言** |
+| 他踩的帖子 | profile_dislikes_posts_enabled | false | boolean |  |
+|  | profile_dislikes_posts_name |  | object | **多语言** |
+| 他踩的评论 | profile_dislikes_comments_enabled | false | boolean |  |
+|  | profile_dislikes_comments_name |  | object | **多语言** |
 
 | 栏目标题 | 键名 | 默认键值 | 键值类型 | 说明 |
 | --- | --- | --- | --- | --- |
-| 他关注的用户 | profile_follow_users_enabled | true | boolean |  |
-| `正在关注` | profile_follow_users_name |  | object | **多语言** |
-| 他关注的小组 | profile_follow_groups_enabled | true | boolean |  |
-| `加入的小组` | profile_follow_groups_name |  | object | **多语言** |
-| 他关注的话题 | profile_follow_hashtags_enabled | false | boolean |  |
-| `正在订阅` | profile_follow_hashtags_name |  | object | **多语言** |
-| 他关注的地理 | profile_follow_geotags_enabled | false | boolean |  |
-|  | profile_follow_geotags_name |  | object | **多语言** |
-| 他关注的帖子 | profile_follow_posts_enabled | false | boolean |  |
-| `他的收藏` | profile_follow_posts_name |  | object | **多语言** |
-| 他关注的评论 | profile_follow_comments_enabled | false | boolean |  |
-|  | profile_follow_comments_name |  | object | **多语言** |
+| 他关注的用户 | profile_following_users_enabled | true | boolean |  |
+| `正在关注` | profile_following_users_name |  | object | **多语言** |
+| 他关注的小组 | profile_following_groups_enabled | true | boolean |  |
+| `加入的小组` | profile_following_groups_name |  | object | **多语言** |
+| 他关注的话题 | profile_following_hashtags_enabled | false | boolean |  |
+| `正在订阅` | profile_following_hashtags_name |  | object | **多语言** |
+| 他关注的地理 | profile_following_geotags_enabled | false | boolean |  |
+|  | profile_following_geotags_name |  | object | **多语言** |
+| 他关注的帖子 | profile_following_posts_enabled | false | boolean |  |
+| `他的收藏` | profile_following_posts_name |  | object | **多语言** |
+| 他关注的评论 | profile_following_comments_enabled | false | boolean |  |
+|  | profile_following_comments_name |  | object | **多语言** |
 
 | 栏目标题 | 键名 | 默认键值 | 键值类型 | 说明 |
 | --- | --- | --- | --- | --- |
-| 他屏蔽的用户 | profile_block_users_enabled | false | boolean |  |
-|  | profile_block_users_name |  | object | **多语言** |
-| 他屏蔽的小组 | profile_block_groups_enabled | false | boolean |  |
-|  | profile_block_groups_name |  | object | **多语言** |
-| 他屏蔽的话题 | profile_block_hashtags_enabled | false | boolean |  |
-|  | profile_block_hashtags_name |  | object | **多语言** |
-| 他屏蔽的地理 | profile_block_geotags_enabled | false | boolean |  |
-|  | profile_block_geotags_name |  | object | **多语言** |
-| 他屏蔽的帖子 | profile_block_posts_enabled | false | boolean |  |
-|  | profile_block_posts_name |  | object | **多语言** |
-| 他屏蔽的评论 | profile_block_comments_enabled | false | boolean |  |
-|  | profile_block_comments_name |  | object | **多语言** |
+| 他屏蔽的用户 | profile_blocking_users_enabled | false | boolean |  |
+|  | profile_blocking_users_name |  | object | **多语言** |
+| 他屏蔽的小组 | profile_blocking_groups_enabled | false | boolean |  |
+|  | profile_blocking_groups_name |  | object | **多语言** |
+| 他屏蔽的话题 | profile_blocking_hashtags_enabled | false | boolean |  |
+|  | profile_blocking_hashtags_name |  | object | **多语言** |
+| 他屏蔽的地理 | profile_blocking_geotags_enabled | false | boolean |  |
+|  | profile_blocking_geotags_name |  | object | **多语言** |
+| 他屏蔽的帖子 | profile_blocking_posts_enabled | false | boolean |  |
+|  | profile_blocking_posts_name |  | object | **多语言** |
+| 他屏蔽的评论 | profile_blocking_comments_enabled | false | boolean |  |
+|  | profile_blocking_comments_name |  | object | **多语言** |

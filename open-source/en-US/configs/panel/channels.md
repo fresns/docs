@@ -55,10 +55,10 @@
 
 | Menu Title | Key Name | Default Key Value | Value Type | Description |
 | --- | --- | --- | --- | --- |
-| Liked Users-Name | channel_my_like_users_name |  | object | **Multilingual** |
-| Disliked Users-Name | channel_my_dislike_users_name |  | object | **Multilingual** |
-| Followed Users-Name | channel_my_follow_users_name |  | object | **Multilingual** |
-| Blocked Users-Name | channel_my_block_users_name |  | object | **Multilingual** |
+| Liked Users-Name | channel_likes_users_name |  | object | **Multilingual** |
+| Disliked Users-Name | channel_dislikes_users_name |  | object | **Multilingual** |
+| Followed Users-Name | channel_following_users_name |  | object | **Multilingual** |
+| Blocked Users-Name | channel_blocking_users_name |  | object | **Multilingual** |
 
 ## Group
 
@@ -91,10 +91,10 @@
 
 | Menu Title | Key Name | Default Key Value | Value Type | Description |
 | --- | --- | --- | --- | --- |
-| Liked Groups-Name | channel_my_like_groups_name |  | object | **Multilingual** |
-| Disliked Groups-Name | channel_my_dislike_groups_name |  | object | **Multilingual** |
-| Followed Groups-Name | channel_my_follow_groups_name |  | object | **Multilingual** |
-| Blocked Groups-Name | channel_my_block_groups_name |  | object | **Multilingual** |
+| Liked Groups-Name | channel_likes_groups_name |  | object | **Multilingual** |
+| Disliked Groups-Name | channel_dislikes_groups_name |  | object | **Multilingual** |
+| Followed Groups-Name | channel_following_groups_name |  | object | **Multilingual** |
+| Blocked Groups-Name | channel_blocking_groups_name |  | object | **Multilingual** |
 
 ## Hashtag
 
@@ -126,10 +126,10 @@
 
 | Menu Title | Key Name | Default Key Value | Value Type | Description |
 | --- | --- | --- | --- | --- |
-| Liked Hashtags-Name | channel_my_like_hashtags_name |  | object | **Multilingual** |
-| Disliked Hashtags-Name | channel_my_dislike_hashtags_name |  | object | **Multilingual** |
-| Followed Hashtags-Name | channel_my_follow_hashtags_name |  | object | **Multilingual** |
-| Blocked Hashtags-Name | channel_my_block_hashtags_name |  | object | **Multilingual** |
+| Liked Hashtags-Name | channel_likes_hashtags_name |  | object | **Multilingual** |
+| Disliked Hashtags-Name | channel_dislikes_hashtags_name |  | object | **Multilingual** |
+| Followed Hashtags-Name | channel_following_hashtags_name |  | object | **Multilingual** |
+| Blocked Hashtags-Name | channel_blocking_hashtags_name |  | object | **Multilingual** |
 
 ## Geotag
 
@@ -161,10 +161,10 @@
 
 | Menu Title | Key Name | Default Key Value | Value Type | Description |
 | --- | --- | --- | --- | --- |
-| Liked Geotags-Name | channel_my_like_geotags_name |  | object | **Multilingual** |
-| Disliked Geotags-Name | channel_my_dislike_geotags_name |  | object | **Multilingual** |
-| Followed Geotags-Name | channel_my_follow_geotags_name |  | object | **Multilingual** |
-| Blocked Geotags-Name | channel_my_block_geotags_name |  | object | **Multilingual** |
+| Liked Geotags-Name | channel_likes_geotags_name |  | object | **Multilingual** |
+| Disliked Geotags-Name | channel_dislikes_geotags_name |  | object | **Multilingual** |
+| Followed Geotags-Name | channel_following_geotags_name |  | object | **Multilingual** |
+| Blocked Geotags-Name | channel_blocking_geotags_name |  | object | **Multilingual** |
 
 ## Post
 
@@ -190,10 +190,10 @@
 
 | Menu Title | Key Name | Default Key Value | Value Type | Description |
 | --- | --- | --- | --- | --- |
-| Liked Posts-Name | channel_my_like_posts_name |  | object | **Multilingual** |
-| Disliked Posts-Name | channel_my_dislike_posts_name |  | object | **Multilingual** |
-| Followed Posts-Name | channel_my_follow_posts_name |  | object | **Multilingual** |
-| Blocked Posts-Name | channel_my_block_posts_name |  | object | **Multilingual** |
+| Liked Posts-Name | channel_likes_posts_name |  | object | **Multilingual** |
+| Disliked Posts-Name | channel_dislikes_posts_name |  | object | **Multilingual** |
+| Followed Posts-Name | channel_following_posts_name |  | object | **Multilingual** |
+| Blocked Posts-Name | channel_blocking_posts_name |  | object | **Multilingual** |
 
 ## Comment
 
@@ -219,10 +219,10 @@
 
 | Menu Title | Key Name | Default Key Value | Value Type | Description |
 | --- | --- | --- | --- | --- |
-| Liked Comments-Name | channel_my_like_comments_name |  | object | **Multilingual** |
-| Disliked Comments-Name | channel_my_dislike_comments_name |  | object | **Multilingual** |
-| Followed Comments-Name | channel_my_follow_comments_name |  | object | **Multilingual** |
-| Blocked Comments-Name | channel_my_block_comments_name |  | object | **Multilingual** |
+| Liked Comments-Name | channel_likes_comments_name |  | object | **Multilingual** |
+| Disliked Comments-Name | channel_dislikes_comments_name |  | object | **Multilingual** |
+| Followed Comments-Name | channel_following_comments_name |  | object | **Multilingual** |
+| Blocked Comments-Name | channel_blocking_comments_name |  | object | **Multilingual** |
 
 ## Timeline
 
