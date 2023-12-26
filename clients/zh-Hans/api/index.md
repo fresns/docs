@@ -6,7 +6,6 @@
 | --- | --- | --- |
 | `GET` | /status.json<br>/api/fresns/v1/global/status | 客户端状态 |
 | `GET` | /api/fresns/v1/global/configs | 配置信息 |
-| `GET` | /api/fresns/v1/global/code-messages | 状态码信息 |
 | `GET` | /api/fresns/v1/global/language-pack | 语言包信息 |
 | `GET` | /api/fresns/v1/global/channels | 扩展频道 |
 | `GET` | /api/fresns/v1/global/`{type}`/archives | 扩展档案配置 |

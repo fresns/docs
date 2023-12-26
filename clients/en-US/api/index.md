@@ -6,7 +6,6 @@
 | --- | --- | --- |
 | `GET` | /status.json<br>/api/fresns/v1/global/status | Client Status |
 | `GET` | /api/fresns/v1/global/configs | Configs |
-| `GET` | /api/fresns/v1/global/code-messages | Code Messages |
 | `GET` | /api/fresns/v1/global/language-pack | Language Pack |
 | `GET` | /api/fresns/v1/global/channels | Extend Channels |
 | `GET` | /api/fresns/v1/global/`{type}`/archives | Extend Archives |

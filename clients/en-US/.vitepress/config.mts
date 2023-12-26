@@ -89,7 +89,6 @@ function sidebarApi() {
       items: [
         { text: 'Client Status', link: '/api/global/status.md' },
         { text: 'Configs', link: '/api/global/configs.md' },
-        { text: 'Code Messages', link: '/api/global/code-messages.md' },
         { text: 'Language Pack', link: '/api/global/language-pack.md' },
         { text: 'Extend Channels', link: '/api/global/channels.md' },
         { text: 'Extend Archives', link: '/api/global/archives.md' },
