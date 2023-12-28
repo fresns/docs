@@ -5,8 +5,8 @@
 | 表名 | 描述 |
 | --- | --- |
 | **configs** | 全局配置表 |
-| **code_messages** | 全局状态码信息表 |
-| **languages** | 全局语言内容表 |
+| **code_messages** | 状态码信息表 |
+| **language_packs** | 语言包表 |
 | **session_keys** | 交互密钥表 |
 | **session_tokens** | 交互凭证表 |
 | **session_logs** | 交互日志表 |

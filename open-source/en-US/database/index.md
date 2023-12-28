@@ -5,8 +5,8 @@
 | Table Name | Description |
 | --- | --- |
 | **configs** | Global configuration table |
-| **code_messages** | Global status code information table |
-| **languages** | Global language table of contents |
+| **code_messages** | Status code information table |
+| **language_packs** | Language Packs table of contents |
 | **session_keys** | Interaction key table |
 | **session_tokens** | Interaction token table |
 | **session_logs** | Interaction log table |
