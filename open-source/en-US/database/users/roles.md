@@ -19,7 +19,7 @@ aside: false
 | rank_state | tinyint *UNSIGNED* | Rank Status | 1 | NO | 1.Not Set |
 | sort_order | smallint *UNSIGNED* | Sorting Order | 9 | NO | Ascending order |
 | is_enabled | tinyint *UNSIGNED* | Is Enabled | 1 | NO | 0.Disabled / 1.Enabled |
-| created_at | timestamp | Create Time | CURRENT_TIMESTAMP | NO |  |
+| created_at | timestamp | Create Time | useCurrent | NO | For example, MySQL defaults to `CURRENT_TIMESTAMP` |
 | updated_at | timestamp | Update Time |  | YES |  |
 | deleted_at | timestamp | Delete Time |  | YES |  |
 

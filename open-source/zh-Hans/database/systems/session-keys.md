@@ -16,7 +16,7 @@ aside: false
 | is_read_only | tinyint *UNSIGNED* | 是否只读密钥 | 0 | NO | 0.否 / 1.是 |
 | is_enabled | tinyint *UNSIGNED* | 是否启用 | 1 | NO | 0.停用 / 1.启用 |
 | remark | text | 备注 |  | YES |  |
-| created_at | timestamp | 创建时间 | CURRENT_TIMESTAMP | NO |  |
+| created_at | timestamp | 创建时间 | useCurrent | NO | 比如 MySQL 默认值为 CURRENT_TIMESTAMP |
 | updated_at | timestamp | 更新时间 |  | YES |  |
 | deleted_at | timestamp | 删除时间 |  | YES |  |
 

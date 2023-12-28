@@ -49,6 +49,6 @@ aside: false
 | extcredits3 | int *UNSIGNED* | 扩展 3 | 0 | NO | 同上，留空代表不定义名称或单位 |
 | extcredits4 | int *UNSIGNED* | 扩展 4 | 0 | NO | 同上，留空代表不定义名称或单位 |
 | extcredits5 | int *UNSIGNED* | 扩展 5 | 0 | NO | 同上，留空代表不定义名称或单位 |
-| created_at | timestamp | 创建时间 | CURRENT_TIMESTAMP | NO |  |
+| created_at | timestamp | 创建时间 | useCurrent | NO | 比如 MySQL 默认值为 CURRENT_TIMESTAMP |
 | updated_at | timestamp | 更新时间 |  | YES |  |
 | deleted_at | timestamp | 删除时间 |  | YES |  |

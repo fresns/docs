@@ -22,7 +22,7 @@ aside: false
 | action_id | bigint *UNSIGNED* | 触发目标 ID |  | YES | 这条通知来源由哪个内容<br>1.关联字段 [users->id](../users/users.md)<br>2.关联字段 [groups->id](../contents/groups.md)<br>3.关联字段 [hashtags->id](../contents/hashtags.md)<br>4.关联字段 [posts->id](../contents/posts.md)<br>5.关联字段 [comments->id](../contents/comments.md) |
 | action_content_id | bigint *UNSIGNED* | 帖子或评论 ID |  | YES | 关联字段 [posts->id](../contents/posts.md) 或者 [comments->id](../contents/comments.md) |
 | is_read | tinyint *UNSIGNED* | 阅读状态 | 0 | NO | 0.未读 / 1.已读 |
-| created_at | timestamp | 创建时间 | CURRENT_TIMESTAMP | NO |  |
+| created_at | timestamp | 创建时间 | useCurrent | NO | 比如 MySQL 默认值为 CURRENT_TIMESTAMP |
 | updated_at | timestamp | 更新时间 |  | YES |  |
 | deleted_at | timestamp | 删除时间 |  | YES |  |
 

@@ -13,6 +13,6 @@ aside: false
 | title | varchar(255) | SEO 标题 |  | YES |  |
 | keywords | varchar(255) | SEO 关键词 |  | YES |  |
 | description | varchar(255) | SEO 描述 |  | YES |  |
-| created_at | timestamp | 创建时间 | CURRENT_TIMESTAMP | NO |  |
+| created_at | timestamp | 创建时间 | useCurrent | NO | 比如 MySQL 默认值为 CURRENT_TIMESTAMP |
 | updated_at | timestamp | 更新时间 |  | YES |  |
 | deleted_at | timestamp | 删除时间 |  | YES |  |

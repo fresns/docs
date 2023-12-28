@@ -25,7 +25,7 @@ aside: false
 | remark | text | 备注 |  | YES |  |
 | more_json | json | 备用字段 |  | YES |  |
 | success_at | timestamp | 交易成功时间 |  | YES |  |
-| created_at | timestamp | 创建时间 | CURRENT_TIMESTAMP | NO |  |
+| created_at | timestamp | 创建时间 | useCurrent | NO | 比如 MySQL 默认值为 CURRENT_TIMESTAMP |
 | updated_at | timestamp | 更新时间 |  | YES |  |
 | deleted_at | timestamp | 删除时间 |  | YES |  |
 

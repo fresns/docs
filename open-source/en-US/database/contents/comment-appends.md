@@ -25,7 +25,7 @@ aside: false
 | map_zip | varchar(32) | Map - zip |  | YES |  |
 | map_poi_id | varchar(64) | Map - POI ID |  | YES | Map service provider exclusive ID |
 | edit_count | smallint *UNSIGNED* | Number of edits | 0 | NO | Total number of edits |
-| created_at | timestamp | Create Time | CURRENT_TIMESTAMP | NO |  |
+| created_at | timestamp | Create Time | useCurrent | NO | For example, MySQL defaults to `CURRENT_TIMESTAMP` |
 | updated_at | timestamp | Update Time |  | YES |  |
 | deleted_at | timestamp | Delete Time |  | YES |  |
 

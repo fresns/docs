@@ -2,13 +2,14 @@
 aside: false
 ---
 
-# group_admins
+# language_packs
 
 | Column Name | Type | Comment | Default | Null | Remark |
 | --- | --- | --- | --- | --- | --- |
-| id | int *UNSIGNED* | Primary Key ID | | NO | Auto Increment |
-| group_id | int *UNSIGNED* | Group ID | | NO | Related field [groups->id](groups.md) |
-| user_id | bigint *UNSIGNED* | User ID |  | NO | Related field [users->id](../users/users.md) |
+| id | bigint *UNSIGNED* | Primary Key ID |  | NO | Auto Increment |
+| lang_key | varchar(64) | Key Name | | NO | **Unique** |
+| lang_values | json | Language Content |  | NO | **Multilingual** |
+| is_custom | tinyint *UNSIGNED* | Is Custom | 1 | NO | 0. No / 1. Yes<br>0 means system-built, 1 means added by app |
 | created_at | timestamp | Create Time | useCurrent | NO | For example, MySQL defaults to `CURRENT_TIMESTAMP` |
 | updated_at | timestamp | Update Time |  | YES |  |
 | deleted_at | timestamp | Delete Time |  | YES |  |

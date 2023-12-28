@@ -19,7 +19,7 @@ aside: false
 | display_type | tinyint *UNSIGNED* | Display type | 1 | NO | 1. Basic / 2. Function (plugin) |
 | app_fskey | varchar(64) | Related plugin |  | NO | Related field [apps->fskey](../apps/apps.md)<br>Created by which plugin, also the plugin page for functional purposes |
 | is_enabled | tinyint *UNSIGNED* | Is Valid | 1 | NO | 0.Invalid / 1.Valid |
-| created_at | timestamp | Create Time | CURRENT_TIMESTAMP | NO |  |
+| created_at | timestamp | Create Time | useCurrent | NO | For example, MySQL defaults to `CURRENT_TIMESTAMP` |
 | updated_at | timestamp | Update Time |  | YES |  |
 | deleted_at | timestamp | Delete Time |  | YES |  |
 

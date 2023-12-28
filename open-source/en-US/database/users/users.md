@@ -35,6 +35,6 @@ aside: false
 | is_enabled | tinyint *UNSIGNED* | Account Disabled | 1 | NO | 0.Disabled / 1.Normal |
 | wait_delete | tinyint *UNSIGNED* | Pending Deletion | 0 | NO | 0.No / 1.Yes |
 | wait_delete_at | timestamp | Pending Deletion Time |  | YES |  |
-| created_at | timestamp | Create Time | CURRENT_TIMESTAMP | NO |  |
+| created_at | timestamp | Create Time | useCurrent | NO | For example, MySQL defaults to `CURRENT_TIMESTAMP` |
 | updated_at | timestamp | Update Time |  | YES |  |
 | deleted_at | timestamp | Delete Time |  | YES |  |

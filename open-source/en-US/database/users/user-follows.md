@@ -15,6 +15,6 @@ aside: false
 | is_mutual | tinyint *UNSIGNED* | User-specific: Mutual Follow | 0 | NO | 0.No / 1.Yes |
 | is_enabled | tinyint *UNSIGNED* | Is Valid | 1 | NO | 0.Invalid / 1.Valid |
 | expired_at | timestamp | Group-specific: Expiration Time |  | YES |  |
-| created_at | timestamp | Create Time | CURRENT_TIMESTAMP | NO |  |
+| created_at | timestamp | Create Time | useCurrent | NO | For example, MySQL defaults to `CURRENT_TIMESTAMP` |
 | updated_at | timestamp | Update Time |  | YES |  |
 | deleted_at | timestamp | Delete Time |  | YES |  |

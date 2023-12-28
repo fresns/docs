@@ -137,11 +137,11 @@ function sidebarDatabase() {
       },
       {
         text: 'Systems',
-        collapsed: true,
+        collapsed: false,
         items: [
           { text: 'configs', link: '/database/systems/configs.md' },
           { text: 'code_messages', link: '/database/systems/code-messages.md' },
-          { text: 'languages', link: '/database/systems/languages.md' },
+          { text: 'language_packs', link: '/database/systems/language-packs.md' },
           { text: 'session_keys', link: '/database/systems/session-keys.md' },
           { text: 'session_tokens', link: '/database/systems/session-tokens.md' },
           { text: 'session_logs', link: '/database/systems/session-logs.md' },
@@ -153,7 +153,7 @@ function sidebarDatabase() {
       },
       {
         text: 'Apps',
-        collapsed: true,
+        collapsed: false,
         items: [
           { text: 'apps', link: '/database/apps/apps.md' },
           { text: 'app_callbacks', link: '/database/apps/app-callbacks.md' },
@@ -163,7 +163,7 @@ function sidebarDatabase() {
       },
       {
         text: 'Accounts',
-        collapsed: true,
+        collapsed: false,
         items: [
           { text: 'accounts', link: '/database/accounts/accounts.md' },
           { text: 'account_connects', link: '/database/accounts/account-connects.md' },
@@ -173,7 +173,7 @@ function sidebarDatabase() {
       },
       {
         text: 'Users',
-        collapsed: true,
+        collapsed: false,
         items: [
           { text: 'roles', link: '/database/users/roles.md' },
           { text: 'users', link: '/database/users/users.md' },
@@ -187,7 +187,7 @@ function sidebarDatabase() {
       },
       {
         text: 'Interactions',
-        collapsed: true,
+        collapsed: false,
         items: [
           { text: 'mentions', link: '/database/interactions/mentions.md' },
           { text: 'notifications', link: '/database/interactions/notifications.md' },
@@ -197,7 +197,7 @@ function sidebarDatabase() {
       },
       {
         text: 'Content',
-        collapsed: true,
+        collapsed: false,
         items: [
           { text: 'posts', link: '/database/contents/posts.md' },
           { text: 'post_appends', link: '/database/contents/post-appends.md' },
@@ -211,7 +211,7 @@ function sidebarDatabase() {
       },
       {
         text: 'Content Category',
-        collapsed: true,
+        collapsed: false,
         items: [
           { text: 'groups', link: '/database/contents/groups.md' },
           { text: 'group_admins', link: '/database/contents/group-admins.md' },
@@ -224,7 +224,7 @@ function sidebarDatabase() {
       },
       {
         text: 'Content Configuration',
-        collapsed: true,
+        collapsed: false,
         items: [
           { text: 'archives', link: '/database/extends/archives.md' },
           { text: 'archive_usages', link: '/database/extends/archive-usages.md' },

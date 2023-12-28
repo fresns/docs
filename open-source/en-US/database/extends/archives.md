@@ -30,7 +30,7 @@ aside: false
 | rating | smallint *UNSIGNED* | Sorting Order | 9 | NO | Ascending order |
 | value_type | varchar(16) | Data Value Type | string | NO | Same logic as the [configuration table](../systems/configs.md) `item_type` field, supports file/app/apps, etc. |
 | is_enabled | tinyint *UNSIGNED* | Is Valid | 1 | NO | 0.Invalid / 1.Valid<br>Invalid after, all related are invalid |
-| created_at | timestamp | Create Time | CURRENT_TIMESTAMP | NO |  |
+| created_at | timestamp | Create Time | useCurrent | NO | For example, MySQL defaults to `CURRENT_TIMESTAMP` |
 | updated_at | timestamp | Update Time |  | YES |  |
 | deleted_at | timestamp | Delete Time |  | YES |  |
 

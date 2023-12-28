@@ -12,6 +12,6 @@ aside: false
 | is_main | tinyint *UNSIGNED* | 是否为主角色 | 0 | NO | 0.普通 / 1.主角色 |
 | expired_at | timestamp | 角色有效期 |  | YES | 过期时间 |
 | restore_role_id | int *UNSIGNED* | 继承角色 ID |  | YES | 如果是主角色，过期后谁继承主角色 |
-| created_at | timestamp | 创建时间 | CURRENT_TIMESTAMP | NO |  |
+| created_at | timestamp | 创建时间 | useCurrent | NO | 比如 MySQL 默认值为 CURRENT_TIMESTAMP |
 | updated_at | timestamp | 更新时间 |  | YES |  |
 | deleted_at | timestamp | 删除时间 |  | YES |  |

@@ -17,7 +17,7 @@ aside: false
 | bank_account | varchar(128) | Bank Account |  | YES | Dedicated field for withdrawal information storage |
 | bank_status | tinyint *UNSIGNED* | Bank Verification Status | 1 | NO | Dedicated field for withdrawal information storage<br>1.Unverified / 2.Verified |
 | is_enabled | tinyint *UNSIGNED* | Is Valid | 1 | NO | 0.Disabled / 1.Normal<br>Cannot conduct any transactions, including withdrawals, when disabled |
-| created_at | timestamp | Create Time | CURRENT_TIMESTAMP | NO |  |
+| created_at | timestamp | Create Time | useCurrent | NO | For example, MySQL defaults to `CURRENT_TIMESTAMP` |
 | updated_at | timestamp | Update Time |  | YES |  |
 | deleted_at | timestamp | Delete Time |  | YES |  |
 

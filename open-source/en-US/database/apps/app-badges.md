@@ -12,6 +12,6 @@ aside: false
 | display_type | tinyint *UNSIGNED* | Display Type |  | NO | 1. Red dot / 2. Number / 3. Text |
 | value_number | smallint *UNSIGNED* | Numeric Value |  | YES | Numeric content |
 | value_text | varchar(8) | Text |  | YES | Pure text content |
-| created_at | timestamp | Create Time | CURRENT_TIMESTAMP | NO |  |
+| created_at | timestamp | Create Time | useCurrent | NO | For example, MySQL defaults to `CURRENT_TIMESTAMP` |
 | updated_at | timestamp | Update Time |  | YES |  |
 | deleted_at | timestamp | Delete Time |  | YES |  |

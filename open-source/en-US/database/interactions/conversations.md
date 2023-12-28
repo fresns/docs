@@ -14,6 +14,6 @@ aside: false
 | a_is_pin | tinyint *UNSIGNED* | User A Pin Conversation  | 0 | NO | 0.No / 1.Yes |
 | b_is_pin | tinyint *UNSIGNED* | User B Pin Conversation  | 0 | NO | 0.No / 1.Yes |
 | latest_message_at | timestamp | Latest Message Time |  | YES |  |
-| created_at | timestamp | Create Time | CURRENT_TIMESTAMP | NO |  |
+| created_at | timestamp | Create Time | useCurrent | NO | For example, MySQL defaults to `CURRENT_TIMESTAMP` |
 | updated_at | timestamp | Update Time |  | YES |  |
 | deleted_at | timestamp | Delete Time |  | YES |  |

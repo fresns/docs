@@ -25,7 +25,7 @@ aside: false
 | map_zip | varchar(32) | 地图-行政区划代码 |  | YES | 215000 |
 | map_poi_id | varchar(64) | 地图-POI ID |  | YES | 地图服务商专属 ID |
 | edit_count | smallint *UNSIGNED* | 编辑次数 | 0 | NO | 共编辑了几次 |
-| created_at | timestamp | 创建时间 | CURRENT_TIMESTAMP | NO |  |
+| created_at | timestamp | 创建时间 | useCurrent | NO | 比如 MySQL 默认值为 CURRENT_TIMESTAMP |
 | updated_at | timestamp | 更新时间 |  | YES |  |
 | deleted_at | timestamp | 删除时间 |  | YES |  |
 

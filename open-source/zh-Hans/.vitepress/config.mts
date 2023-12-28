@@ -149,11 +149,11 @@ function sidebarDatabase() {
     },
     {
       text: '系统',
-      collapsed: true,
+      collapsed: false,
       items: [
         { text: 'configs 全局配置表', link: '/database/systems/configs.md' },
-        { text: 'code_messages 全局状态码信息表', link: '/database/systems/code-messages.md' },
-        { text: 'languages 全局语言内容表', link: '/database/systems/languages.md' },
+        { text: 'code_messages 状态码信息表', link: '/database/systems/code-messages.md' },
+        { text: 'language_packs 语言内容表', link: '/database/systems/language-packs.md' },
         { text: 'session_keys 交互密钥表', link: '/database/systems/session-keys.md' },
         { text: 'session_tokens 交互凭证表', link: '/database/systems/session-tokens.md' },
         { text: 'session_logs 交互日志表', link: '/database/systems/session-logs.md' },
@@ -165,7 +165,7 @@ function sidebarDatabase() {
     },
     {
       text: '应用',
-      collapsed: true,
+      collapsed: false,
       items: [
         { text: 'apps 应用表', link: '/database/apps/apps.md' },
         { text: 'app_callbacks 应用回调表', link: '/database/apps/app-callbacks.md' },
@@ -175,7 +175,7 @@ function sidebarDatabase() {
     },
     {
       text: '账号',
-      collapsed: true,
+      collapsed: false,
       items: [
         { text: 'accounts 账号主表', link: '/database/accounts/accounts.md' },
         { text: 'account_connects 账号互联凭证表', link: '/database/accounts/account-connects.md' },
@@ -185,7 +185,7 @@ function sidebarDatabase() {
     },
     {
       text: '用户',
-      collapsed: true,
+      collapsed: false,
       items: [
         { text: 'roles 角色表', link: '/database/users/roles.md' },
         { text: 'users 用户主表', link: '/database/users/users.md' },
@@ -199,7 +199,7 @@ function sidebarDatabase() {
     },
     {
       text: '互动',
-      collapsed: true,
+      collapsed: false,
       items: [
         { text: 'mentions 艾特记录表', link: '/database/interactions/mentions.md' },
         { text: 'notifications 通知表', link: '/database/interactions/notifications.md' },
@@ -209,7 +209,7 @@ function sidebarDatabase() {
     },
     {
       text: '内容信息',
-      collapsed: true,
+      collapsed: false,
       items: [
         { text: 'posts 帖子主表', link: '/database/contents/posts.md' },
         { text: 'post_appends 帖子-附属表', link: '/database/contents/post-appends.md' },
@@ -223,7 +223,7 @@ function sidebarDatabase() {
     },
     {
       text: '内容归类',
-      collapsed: true,
+      collapsed: false,
       items: [
         { text: 'groups 小组表', link: '/database/contents/groups.md' },
         { text: 'group_admins 小组管理员表', link: '/database/contents/group-admins.md' },
@@ -236,7 +236,7 @@ function sidebarDatabase() {
     },
     {
       text: '内容配置',
-      collapsed: true,
+      collapsed: false,
       items: [
         { text: 'archives 扩展参数表', link: '/database/extends/archives.md' },
         { text: 'archive_usages 扩展参数使用表', link: '/database/extends/archive-usages.md' },

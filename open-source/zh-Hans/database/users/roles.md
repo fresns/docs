@@ -19,7 +19,7 @@ aside: false
 | rank_state | tinyint *UNSIGNED* | 等级状态 | 1 | NO | 1.未设置 |
 | sort_order | smallint *UNSIGNED* | 排列顺序 | 9 | NO | 升序排序 |
 | is_enabled | tinyint *UNSIGNED* | 是否启用 | 1 | NO | 0.停用 / 1.启用 |
-| created_at | timestamp | 创建时间 | CURRENT_TIMESTAMP | NO |  |
+| created_at | timestamp | 创建时间 | useCurrent | NO | 比如 MySQL 默认值为 CURRENT_TIMESTAMP |
 | updated_at | timestamp | 更新时间 |  | YES |  |
 | deleted_at | timestamp | 删除时间 |  | YES |  |
 

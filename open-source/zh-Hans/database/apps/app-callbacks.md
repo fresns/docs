@@ -15,7 +15,7 @@ aside: false
 | content | json | 返参内容 |  | YES |  |
 | is_used | tinyint *UNSIGNED* | 状态 | 0 | NO | 0.未调<br>1.已调（已使用） |
 | used_app_fskey | varchar(64) | 数据使用者插件名称 |  | YES | 关联字段 [apps->fskey](../apps/apps.md) |
-| created_at | timestamp | 创建时间 | CURRENT_TIMESTAMP | NO |  |
+| created_at | timestamp | 创建时间 | useCurrent | NO | 比如 MySQL 默认值为 CURRENT_TIMESTAMP |
 | updated_at | timestamp | 更新时间 |  | YES |  |
 | deleted_at | timestamp | 删除时间 |  | YES |  |
 

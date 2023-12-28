@@ -49,6 +49,6 @@ aside: false
 | extcredits3 | int *UNSIGNED* | Extension 3 | 0 | NO | As above, leaving blank means not defining a name or unit |
 | extcredits4 | int *UNSIGNED* | Extension 4 | 0 | NO | As above, leaving blank means not defining a name or unit |
 | extcredits5 | int *UNSIGNED* | Extension 5 | 0 | NO | As above, leaving blank means not defining a name or unit |
-| created_at | timestamp | Create Time | CURRENT_TIMESTAMP | NO |  |
+| created_at | timestamp | Create Time | useCurrent | NO | For example, MySQL defaults to `CURRENT_TIMESTAMP` |
 | updated_at | timestamp | Update Time |  | YES |  |
 | deleted_at | timestamp | Delete Time |  | YES |  |

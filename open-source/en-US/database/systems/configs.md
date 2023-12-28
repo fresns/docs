@@ -11,9 +11,9 @@ aside: false
 | item_value | longtext | Key Value | | YES |  |
 | item_type | varchar(16) | Key Type | string | NO |  |
 | is_multilingual | tinyint *UNSIGNED* | Is Multilingual | 0 | NO | 0. No / 1. Yes |
-| is_custom | tinyint *UNSIGNED* | Is Custom | 1 | NO | 0. No / 1. Yes<br>0 means system-built, 1 means added by plugin |
+| is_custom | tinyint *UNSIGNED* | Is Custom | 1 | NO | 0. No / 1. Yes<br>0 means system-built, 1 means added by app |
 | is_api | tinyint *UNSIGNED* | Is API Output | 0 | NO | 0. Forbidden / 1. Allowed |
-| created_at | timestamp | Create Time | CURRENT_TIMESTAMP | NO |  |
+| created_at | timestamp | Create Time | useCurrent | NO | For example, MySQL defaults to `CURRENT_TIMESTAMP` |
 | updated_at | timestamp | Update Time |  | YES |  |
 | deleted_at | timestamp | Delete Time |  | YES |  |
 

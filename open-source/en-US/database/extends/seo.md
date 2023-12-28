@@ -13,6 +13,6 @@ aside: false
 | title | varchar(255) | SEO Title |  | YES |  |
 | keywords | varchar(255) | SEO Keywords |  | YES |  |
 | description | varchar(255) | SEO Description |  | YES |  |
-| created_at | timestamp | Create Time | CURRENT_TIMESTAMP | NO |  |
+| created_at | timestamp | Create Time | useCurrent | NO | For example, MySQL defaults to `CURRENT_TIMESTAMP` |
 | updated_at | timestamp | Update Time |  | YES |  |
 | deleted_at | timestamp | Delete Time |  | YES |  |

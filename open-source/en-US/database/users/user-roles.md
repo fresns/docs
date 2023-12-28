@@ -12,6 +12,6 @@ aside: false
 | is_main | tinyint *UNSIGNED* | Is Main Role | 0 | NO | 0.Ordinary / 1.Main Role |
 | expired_at | timestamp | Role Validity Period |  | YES | Expiration Time |
 | restore_role_id | int *UNSIGNED* | Inherit Role ID |  | YES | If the main role, who will inherit the main role after expiration |
-| created_at | timestamp | Create Time | CURRENT_TIMESTAMP | NO |  |
+| created_at | timestamp | Create Time | useCurrent | NO | For example, MySQL defaults to `CURRENT_TIMESTAMP` |
 | updated_at | timestamp | Update Time |  | YES |  |
 | deleted_at | timestamp | Delete Time |  | YES |  |

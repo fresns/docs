@@ -22,7 +22,7 @@ aside: false
 | sort_order | smallint *UNSIGNED* | Sorting order | 9 | NO | Ascending order |
 | can_delete | tinyint *UNSIGNED* | Can be deleted | 1 | NO | 0. Cannot delete / 1. Can delete |
 | is_enabled | tinyint *UNSIGNED* | Is enabled | 1 | NO | 0. Disabled / 1. Enabled |
-| created_at | timestamp | Create Time | CURRENT_TIMESTAMP | NO |  |
+| created_at | timestamp | Create Time | useCurrent | NO | For example, MySQL defaults to `CURRENT_TIMESTAMP` |
 | updated_at | timestamp | Update Time |  | YES |  |
 | deleted_at | timestamp | Delete Time |  | YES |  |
 

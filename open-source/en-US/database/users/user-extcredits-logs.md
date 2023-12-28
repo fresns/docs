@@ -15,6 +15,6 @@ aside: false
 | closing_amount | int *UNSIGNED* | Closing Amount |  | NO |  |
 | app_fskey | varchar(64) | Related Plugin |  | NO | Related field [apps->fskey](../apps/apps.md) |
 | remark | text | Remark |  | YES |  |
-| created_at | timestamp | Create Time | CURRENT_TIMESTAMP | NO |  |
+| created_at | timestamp | Create Time | useCurrent | NO | For example, MySQL defaults to `CURRENT_TIMESTAMP` |
 | updated_at | timestamp | Update Time |  | YES |  |
 | deleted_at | timestamp | Delete Time |  | YES |  |

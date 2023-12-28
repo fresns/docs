@@ -16,7 +16,7 @@ aside: false
 | is_read_only | tinyint *UNSIGNED* | Is read-only | 0 | NO | 0.No / 1.Yes |
 | is_enabled | tinyint *UNSIGNED* | Is Enabled | 1 | NO | 0. Disabled / 1. Enabled |
 | remark | text | Remark |  | YES |  |
-| created_at | timestamp | Create Time | CURRENT_TIMESTAMP | NO |  |
+| created_at | timestamp | Create Time | useCurrent | NO | For example, MySQL defaults to `CURRENT_TIMESTAMP` |
 | updated_at | timestamp | Update Time |  | YES |  |
 | deleted_at | timestamp | Delete Time |  | YES |  |
 

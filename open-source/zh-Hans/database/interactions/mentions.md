@@ -11,6 +11,6 @@ aside: false
 | mention_type | tinyint *UNSIGNED* | 关联目标类型 | 1 | NO | [内容类型编号](../numbered-description.md#内容类型编号) |
 | mention_id | bigint *UNSIGNED* | 关联目标主键 ID |  | NO |  |
 | mention_user_id | bigint *UNSIGNED* | 被艾特用户 ID |  | NO | 关联字段 [users->id](../users/users.md) |
-| created_at | timestamp | 创建时间 | CURRENT_TIMESTAMP | NO |  |
+| created_at | timestamp | 创建时间 | useCurrent | NO | 比如 MySQL 默认值为 CURRENT_TIMESTAMP |
 | updated_at | timestamp | 更新时间 |  | YES |  |
 | deleted_at | timestamp | 删除时间 |  | YES |  |

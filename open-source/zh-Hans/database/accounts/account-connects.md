@@ -19,6 +19,6 @@ aside: false
 | app_fskey | varchar(64) | 插件名 |  | NO | 关联字段 [apps->fskey](../apps/apps.md)<br>是由哪个插件创建的  |
 | is_enabled | tinyint *UNSIGNED* | 是否有效 | 1 | NO | 0.无效 / 1.有效 |
 | more_json | json | 备用字段 |  | YES |  |
-| created_at | timestamp | 创建时间 | CURRENT_TIMESTAMP | NO |  |
+| created_at | timestamp | 创建时间 | useCurrent | NO | 比如 MySQL 默认值为 CURRENT_TIMESTAMP |
 | updated_at | timestamp | 更新时间 |  | YES |  |
 | deleted_at | timestamp | 删除时间 |  | YES |  |

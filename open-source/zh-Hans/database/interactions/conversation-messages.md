@@ -17,6 +17,6 @@ aside: false
 | receive_read_at | timestamp | 收信者-阅读时间 |  | YES | 为空代表未读 |
 | receive_deleted_at | timestamp | 收信者-删除时间 |  | YES | 为空代表没有删除 |
 | is_enabled | tinyint *UNSIGNED* | 是否有效 | 1 | NO | 0.无效 / 1.有效 |
-| created_at | timestamp | 创建时间 | CURRENT_TIMESTAMP | NO |  |
+| created_at | timestamp | 创建时间 | useCurrent | NO | 比如 MySQL 默认值为 CURRENT_TIMESTAMP |
 | updated_at | timestamp | 更新时间 |  | YES |  |
 | deleted_at | timestamp | 删除时间 |  | YES |  |

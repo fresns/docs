@@ -15,7 +15,7 @@ aside: false
 | content | json | Return parameter content |  | YES |  |
 | is_used | tinyint *UNSIGNED* | Status | 0 | NO | 0. Not called<br>1. Called (used) |
 | used_app_fskey | varchar(64) | Data use plugin fskey |  | YES | Related field [apps->fskey](../apps/apps.md) |
-| created_at | timestamp | Create Time | CURRENT_TIMESTAMP | NO |  |
+| created_at | timestamp | Create Time | useCurrent | NO | For example, MySQL defaults to `CURRENT_TIMESTAMP` |
 | updated_at | timestamp | Update Time |  | YES |  |
 | deleted_at | timestamp | Delete Time |  | YES |  |
 

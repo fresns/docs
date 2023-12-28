@@ -13,6 +13,6 @@ aside: false
 | post_count | int *UNSIGNED* | Number of Posts | 0 | NO | Number of posts containing this link |
 | comment_count | int *UNSIGNED* | Number of Comments | 0 | NO | Number of comments containing this link |
 | is_enabled | tinyint *UNSIGNED* | Is Enabled | 1 | NO | 0.Disabled / 1.Enabled<br>Disabled means the link URL cannot be parsed into a hyperlink and is displayed as plain text only |
-| created_at | timestamp | Create Time | CURRENT_TIMESTAMP | NO |  |
+| created_at | timestamp | Create Time | useCurrent | NO | For example, MySQL defaults to `CURRENT_TIMESTAMP` |
 | updated_at | timestamp | Update Time |  | YES |  |
 | deleted_at | timestamp | Delete Time |  | YES |  |

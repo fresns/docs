@@ -13,7 +13,7 @@ aside: false
 | archive_value | text | Parameter value | | YES |  |
 | is_private | tinyint *UNSIGNED* | Is private | 0 | NO | 0.No / 1.Yes |
 | app_fskey | varchar(64) | Related plugin |  | YES | Related field [apps->fskey](../apps/apps.md)<br>Which plugin is associated with |
-| created_at | timestamp | Create Time | CURRENT_TIMESTAMP | NO |  |
+| created_at | timestamp | Create Time | useCurrent | NO | For example, MySQL defaults to `CURRENT_TIMESTAMP` |
 | updated_at | timestamp | Update Time |  | YES |  |
 | deleted_at | timestamp | Delete Time |  | YES |  |
 

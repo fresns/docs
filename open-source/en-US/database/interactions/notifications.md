@@ -22,7 +22,7 @@ aside: false
 | action_id | bigint *UNSIGNED* | Triggering target ID |  | YES | Origin of this notification<br>1.Related field [users->id](../users/users.md)<br>2.Related field [groups->id](../contents/groups.md)<br>3.Related field [hashtags->id](../contents/hashtags.md)<br>4.Related field [posts->id](../contents/posts.md)<br>5.Related field [comments->id](../contents/comments.md) |
 | action_content_id | bigint *UNSIGNED* | Post or Comment ID |  | YES | Related field [posts->id](../contents/posts.md) or [comments->id](../contents/comments.md) |
 | is_read | tinyint *UNSIGNED* | Read status | 0 | NO | 0.Unread / 1.Read |
-| created_at | timestamp | Create Time | CURRENT_TIMESTAMP | NO |  |
+| created_at | timestamp | Create Time | useCurrent | NO | For example, MySQL defaults to `CURRENT_TIMESTAMP` |
 | updated_at | timestamp | Update Time |  | YES |  |
 | deleted_at | timestamp | Delete Time |  | YES |  |
 
