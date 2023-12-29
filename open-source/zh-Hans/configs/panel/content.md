@@ -19,9 +19,11 @@
 | 栏目标题 | 键名 | 默认键值 | 键值类型 | 说明 |
 | --- | --- | --- | --- | --- |
 | 艾特功能 | mention_status | true | boolean |  |
+| 艾特个数 | mention_number | 0 | number | 每篇内容支持艾特用户的数量，`0` 表示不限制 |
 | 话题功能 | hashtag_status | true | boolean |  |
 | 话题格式 | hashtag_format | 2 | number | `#话题` 和 `#话题#` 的区别 |
 | 话题长度 | hashtag_length | 20 | number |  |
+| 话题个数 | hashtag_number | 0 | number | 每篇内容支持话题的数量，`0` 表示不限制 |
 | 话题正则表达式 | hashtag_regexp | `{"space":"","hash":""}` | object |  |
 
 - 话题正则表达式-默认键值

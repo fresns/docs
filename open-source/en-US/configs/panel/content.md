@@ -19,9 +19,11 @@
 | Menu Title | Key Name | Default Key Value | Value Type | Description |
 | --- | --- | --- | --- | --- |
 | Mention Status | mention_status | true | boolean |  |
+| Number of Mention | mention_number | 0 | number | The number of user mentions per piece of content, `0` means no limitation. |
 | Hashtag Status | hashtag_status | true | boolean |  |
 | Hashtag Format | hashtag_format | 2 | number | The difference between `#Hashtag` and `#Hashtag#` |
 | Hashtag Length | hashtag_length | 20 | number |  |
+| Number of Hashtag | hashtag_number | 0 | number | The number of hashtags supported per piece of content, `0` means unlimited. |
 | Hashtag Regular Expression | hashtag_regexp | `{"space":"","hash":""}` | object |  |
 
 - Hashtag Regular Expression - Default
