@@ -65,10 +65,7 @@ aside: false
             "textContent": "String / Text box specific - content",
             "textIsMarkdown": "Boolean / Text box specific - Is content MD format",
             "position": "Number / Display position 1.Top 2.Bottom",
-            "appUrl": "String / App Access URL",
-            "moreInfo": {
-                // Custom information
-            },
+            "appUrl": "String / App Access URL"
         }
     ],
     "infos": [
@@ -86,10 +83,7 @@ aside: false
             "buttonName": "String / Button name",
             "buttonColor": "String / Button name color",
             "position": "Number / Display position 1.Top 2.Bottom",
-            "appUrl": "String / App Access URL",
-            "moreInfo": {
-                // Custom information
-            },
+            "appUrl": "String / App Access URL"
         }
     ],
     "actions": [
@@ -97,6 +91,7 @@ aside: false
             "eid": "String / Extension content ID",
             "type": "Number / Type number",
             "typeString": "String / Type string",
+            "status": "Boolean / false Indicates that the end time has passed",
             "endDateTime": "String / end date time",
             "items": [
                 {
@@ -106,10 +101,7 @@ aside: false
                     "visible": "Boolean / Whether to display the key value",
                     "status": "Boolean / Interaction Status",
                 }
-            ],
-            "moreInfo": {
-                // Custom information
-            },
+            ]
         }
     ],
 }

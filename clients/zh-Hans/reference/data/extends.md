@@ -65,10 +65,7 @@ aside: false
             "textContent": "String / 文本框专用-内容",
             "textIsMarkdown": "Boolean / 文本框专用-内容是否为 MD 格式",
             "position": "Number / 显示位置 1.上方 2.下方",
-            "appUrl": "String / 应用访问地址",
-            "moreInfo": {
-                // 自定义信息
-            },
+            "appUrl": "String / 应用访问地址"
         }
     ],
     "infos": [
@@ -86,10 +83,7 @@ aside: false
             "buttonName": "String / 按钮名称",
             "buttonColor": "String / 按钮名称颜色",
             "position": "Number / 显示位置 1.上方 2.下方",
-            "appUrl": "String / 应用访问地址",
-            "moreInfo": {
-                // 自定义信息
-            },
+            "appUrl": "String / 应用访问地址"
         }
     ],
     "actions": [
@@ -97,6 +91,7 @@ aside: false
             "eid": "String / 扩展内容 ID",
             "type": "Number / 类型编号",
             "typeString": "String / 类型字符串",
+            "status": "Boolean / false 表示已过结束时间",
             "endDateTime": "String / 结束时间",
             "items": [
                 {
@@ -106,10 +101,7 @@ aside: false
                     "visible": "Boolean / 是否显示键值",
                     "status": "Boolean / 是否可以交互状态"
                 }
-            ],
-            "moreInfo": {
-                // 自定义信息
-            },
+            ]
         }
     ],
 }
