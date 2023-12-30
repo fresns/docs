@@ -77,7 +77,6 @@ ValidationUtility::bio('bio');
 ```json
 {
     "length": true,  // 长度验证
-    "banWord": true,  // 禁用词验证
 }
 ```
 :::
@@ -86,22 +85,4 @@ ValidationUtility::bio('bio');
 
 ```php
 ValidationUtility::userMarkOwn($userId, $markType, $markId);
-```
-
-## 验证内容禁用词
-
-```php
-ValidationUtility::contentBanWords($content);
-```
-
-## 验证内容审核词
-
-```php
-ValidationUtility::contentReviewWords($content);
-```
-
-## 验证消息禁用词
-
-```php
-ValidationUtility::messageBanWords($message);
 ```

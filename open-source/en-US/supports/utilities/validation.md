@@ -77,7 +77,6 @@ ValidationUtility::bio('bio');
 ```json
 {
     "length": true,  // Length validation
-    "banWord": true,  // Banned word validation
 }
 ```
 :::
@@ -86,22 +85,4 @@ ValidationUtility::bio('bio');
 
 ```php
 ValidationUtility::userMarkOwn($userId, $markType, $markId);
-```
-
-## Validate Content Ban Words
-
-```php
-ValidationUtility::contentBanWords($content);
-```
-
-## Validate Content Review Words
-
-```php
-ValidationUtility::contentReviewWords($content);
-```
-
-## Validate Message Ban Words
-
-```php
-ValidationUtility::messageBanWords($message);
 ```
