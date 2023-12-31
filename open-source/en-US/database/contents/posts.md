@@ -38,7 +38,7 @@ aside: false
 | latest_comment_at | timestamp | Comment time |  | YES | Time of the latest comment |
 | rank_state | tinyint *UNSIGNED* | Rank Status | 1 | NO | 1.Not set |
 | is_enabled | tinyint *UNSIGNED* | Is Valid | 1 | NO | 0.Invalid (visible only to yourself) / 1.Valid |
-| created_at | timestamp | Create Time | CURRENT_TIMESTAMP | NO | Publish time |
+| created_at | timestamp | Create Time | useCurrent | NO | For example, MySQL defaults to `CURRENT_TIMESTAMP` |
 | updated_at | timestamp | Update Time |  | YES |  |
 | deleted_at | timestamp | Delete Time |  | YES |  |
 

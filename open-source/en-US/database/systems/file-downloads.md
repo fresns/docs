@@ -14,6 +14,6 @@ aside: false
 | app_fskey | varchar(64) | Downloader Plugin |  | YES | Related field [apps->fskey](../apps/apps.md)<br>If downloaded in a plugin, then it is that plugin's fskey |
 | object_type | tinyint *UNSIGNED* | Download Source Type | 1 | NO | [Content Type](../numbered-description.md#content-type) |
 | object_id | bigint *UNSIGNED* | Source Target Primary Key ID |  | NO |  |
-| created_at | timestamp | Usage Time | CURRENT_TIMESTAMP | NO | Download Time |
+| created_at | timestamp | Download Time | useCurrent | NO | For example, MySQL defaults to `CURRENT_TIMESTAMP` |
 | updated_at | timestamp | Update Time |  | YES |  |
 | deleted_at | timestamp | Delete Time |  | YES |  |

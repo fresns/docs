@@ -38,7 +38,7 @@ aside: false
 | latest_comment_at | timestamp | 评论时间 |  | YES | 最新一条评论的时间 |
 | rank_state | tinyint *UNSIGNED* | 等级状态 | 1 | NO | 1.未设置 |
 | is_enabled | tinyint *UNSIGNED* | 是否有效 | 1 | NO | 0.无效（仅自己可见） / 1.有效 |
-| created_at | timestamp | 创建时间 | CURRENT_TIMESTAMP | NO | 发表时间 |
+| created_at | timestamp | 发表时间 | useCurrent | NO | 比如 MySQL 默认值为 CURRENT_TIMESTAMP |
 | updated_at | timestamp | 更新时间 |  | YES |  |
 | deleted_at | timestamp | 删除时间 |  | YES |  |
 

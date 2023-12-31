@@ -11,6 +11,6 @@ aside: false
 | mark_type | tinyint *UNSIGNED* | 操作类型 | 1 | NO | 1.正向（赞） / 2.反向（踩） |
 | like_type | tinyint *UNSIGNED* | 目标类型 | 1 | NO | [内容类型编号](../numbered-description.md#内容类型编号) |
 | like_id | bigint *UNSIGNED* | 目标 ID |  | NO |  |
-| created_at | timestamp | 赞时间 | CURRENT_TIMESTAMP | NO |  |
+| created_at | timestamp | 赞时间 | useCurrent | NO | 比如 MySQL 默认值为 CURRENT_TIMESTAMP |
 | updated_at | timestamp | 更新时间 |  | YES |  |
 | deleted_at | timestamp | 删除时间 |  | YES |  |

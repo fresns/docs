@@ -27,7 +27,7 @@ aside: false
 | state | tinyint *UNSIGNED* | Status | 1 | NO | 1.Unpublished (draft)<br>2.Published (under review)<br>3.Published (approved and archived)<br>4.Published (not approved, draft status again) |
 | reason | varchar(255) | Review rejection reason |  | YES | Used when review is rejected |
 | submit_at | timestamp | Submit review time |  | YES |  |
-| created_at | timestamp | Create Time | CURRENT_TIMESTAMP | NO | As draft Create Time |
+| created_at | timestamp | Create Time | useCurrent | NO | For example, MySQL defaults to `CURRENT_TIMESTAMP` |
 | updated_at | timestamp | Update Time |  | YES |  |
 | deleted_at | timestamp | Delete Time |  | YES |  |
 

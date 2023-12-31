@@ -22,7 +22,7 @@ aside: false
 | upgrade_version | varchar(16) | 新版本号 |  | YES |  |
 | upgrade_code | varchar(32) | 升级码 |  | YES | 官方应用市场升级凭证 |
 | is_enabled | tinyint *UNSIGNED* | 是否启用 | 1 | NO | 0.停用 / 1.启用 |
-| created_at | timestamp | 创建时间 | CURRENT_TIMESTAMP | NO  |  |
+| created_at | timestamp | 创建时间 | useCurrent | NO  | 比如 MySQL 默认值为 CURRENT_TIMESTAMP |
 | updated_at | timestamp | 更新时间 |  | NO  |  |
 | deleted_at | timestamp | 删除时间 |  | YES |  |
 

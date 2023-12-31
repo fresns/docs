@@ -22,7 +22,7 @@ aside: false
 | upgrade_version | varchar(16) | New version number |  | YES |  |
 | upgrade_code | varchar(32) | Upgrade code |  | YES | Official application market upgrade certificate |
 | is_enabled | tinyint *UNSIGNED* | Is it enabled | 1 | NO | 0.Disabled / 1.Enabled |
-| created_at | timestamp | Create Time | CURRENT_TIMESTAMP | NO  |  |
+| created_at | timestamp | Create Time | useCurrent | NO | For example, MySQL defaults to `CURRENT_TIMESTAMP` |
 | updated_at | timestamp | Update Time |  | NO  |  |
 | deleted_at | timestamp | Delete Time |  | YES |  |
 

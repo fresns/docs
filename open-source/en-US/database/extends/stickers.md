@@ -15,6 +15,6 @@ aside: false
 | parent_id | int *UNSIGNED* | Parent sticker ID |  | YES |  |
 | sort_order | smallint *UNSIGNED* | Display order | 99 | YES | Ascending order |
 | is_enabled | tinyint *UNSIGNED* | Is enabled | 1 | YES | 0.Disabled / 1.Enabled |
-| created_at | timestamp | Create Time | CURRENT_TIMESTAMP | YES |  |
+| created_at | timestamp | Create Time | useCurrent | YES | For example, MySQL defaults to `CURRENT_TIMESTAMP` |
 | updated_at | timestamp | Update Time |  | YES |  |
 | deleted_at | timestamp | Delete Time |  | YES |  |

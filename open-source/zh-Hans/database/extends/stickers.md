@@ -15,6 +15,6 @@ aside: false
 | parent_id | int *UNSIGNED* | 父级表情 ID |  | YES |  |
 | sort_order | smallint *UNSIGNED* | 排列顺序 | 99 | YES | 升序排序 |
 | is_enabled | tinyint *UNSIGNED* | 是否启用 | 1 | YES | 0.停用 / 1.启用 |
-| created_at | timestamp | 创建时间 | CURRENT_TIMESTAMP | YES |  |
+| created_at | timestamp | 创建时间 | useCurrent | YES | 比如 MySQL 默认值为 CURRENT_TIMESTAMP |
 | updated_at | timestamp | 更新时间 |  | YES |  |
 | deleted_at | timestamp | 删除时间 |  | YES |  |

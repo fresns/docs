@@ -14,6 +14,6 @@ aside: false
 | app_fskey | varchar(64) | 下载者插件 |  | YES | 关联字段 [apps->fskey](../apps/apps.md)<br>如果在插件中下载，则是该插件 fskey |
 | object_type | tinyint *UNSIGNED* | 下载来源类型 | 1 | NO | [内容类型编号](../numbered-description.md#内容类型编号) |
 | object_id | bigint *UNSIGNED* | 来源目标主键 ID |  | NO |  |
-| created_at | timestamp | 使用时间 | CURRENT_TIMESTAMP | NO | 下载时间 |
+| created_at | timestamp | 下载时间 | useCurrent | NO | 比如 MySQL 默认值为 CURRENT_TIMESTAMP |
 | updated_at | timestamp | 更新时间 |  | YES |  |
 | deleted_at | timestamp | 删除时间 |  | YES |  |
