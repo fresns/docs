@@ -91,5 +91,6 @@
 | **operation_usages** | Extended operation info usage table |
 | **extends** | Extended content table |
 | **extend_usages** | Extended content usage table |
+| **extend_users** | Extended operated users table |
 | **stickers** | Sticker table |
 | **seo** | Search engine optimization information table |

@@ -9,25 +9,77 @@ aside: false
 | id | bigint *UNSIGNED* | Primary Key ID | | NO | Auto Increment |
 | eid | varchar(32) | Public ID |  | NO | **Unique** |
 | user_id | bigint *UNSIGNED* | Creator ID |  | NO | Related field [users->id](../users/users.md) |
+| type | tinyint *UNSIGNED* | Type | 1 | NO | 1. Text / 2. Info / 3. Interactive |
+| view_type | tinyint *UNSIGNED* | View Type | 1 | NO |  |
 | app_fskey | varchar(64) | Creator plugin |  | NO | Related field [apps->fskey](../apps/apps.md) |
-| type | tinyint *UNSIGNED* | Type | 1 |  NO| 1. Text box / 2. Info box / 3. Interactive box |
-| text_content | text | Text box specific - content |  | YES | Valid only when frame is "text box" extension type, supports Morkdown format |
-| text_is_markdown | tinyint *UNSIGNED* | Text box specific - content in MD format | 0 | NO | 0. No / 1. Yes |
-| info_box_type | tinyint *UNSIGNED* | Info box specific - type |  | YES | 1. Square info frame<br>2. Large square info frame<br>3. Vertical image info frame<br>4. Horizontal image info frame |
-| cover_file_id | bigint *UNSIGNED* | Cover image ID |  | YES | Related field [files->id](../systems/files.md) |
-| cover_file_url | varchar(255) | Cover image URL |  | YES |  |
-| title | varchar(255) | Title |  | YES | **Multilingual**  |
-| title_color | char(6) | Title - text color |  | YES |  |
-| desc_primary | varchar(255) | Primary description |  | YES | **Multilingual** |
-| desc_primary_color | char(6) | Primary description - text color |  | YES |  |
-| desc_secondary | varchar(255) | Secondary description |  | YES | **Multilingual** |
-| desc_secondary_color | char(6) | Secondary description - text color |  | YES |  |
-| button_name | varchar(64) | Button name |  | YES | **Multilingual** |
-| button_color | char(6) | Button color |  | YES |  |
+| url_parameter | varchar(128) | Custom parameter |  | YES | Logic refers to [plugin description](../apps/apps.md#url-concatenation-description) |
+| image_file_id | bigint *UNSIGNED* | Image ID |  | YES | Related field [files->id](../systems/files.md) |
+| image_file_url | varchar(255) | Image URL |  | YES |  |
+| content | json | Content |  | YES |  |
+| action_items | json | Action Items |  | YES |  |
 | position | tinyint *UNSIGNED* | Display position | 2 | NO | 1. Top / 2. Bottom |
-| parameter | varchar(128) | Custom parameter |  | YES | Logic refers to [plugin description](../apps/apps.md#url-concatenation-description) |
-| more_json | json | Extended configuration |  | YES | Custom information, how to use requires client cooperation |
 | is_enabled | tinyint *UNSIGNED* | Is Valid | 1 | NO | 0.Invalid / 1.Valid |
-| created_at | timestamp | Upload time | CURRENT_TIMESTAMP | NO |  |
+| ended_at | timestamp | 结束时间 |  | YES |  |
+| created_at | timestamp | Upload time | useCurrent | NO | For example, MySQL defaults to `CURRENT_TIMESTAMP` |
 | updated_at | timestamp | Update Time |  | YES |  |
 | deleted_at | timestamp | Delete Time |  | YES | Empty means not deleted |
+
+## View Type
+
+- Text
+    - 1. Basic
+- Info
+    - 1. Square info frame
+    - 2. Large square info frame
+    - 3. Vertical image info frame
+    - 4. Horizontal image info frame
+- Interactive
+    - 1. Poll
+
+## Content
+
+**Text**
+
+```json
+{
+    "content": "String / Text Content",
+    "isMarkdown": "Boolean / Whether it is in MD format"
+}
+```
+
+**Info**
+
+```json
+{
+    "title": "object / Title (Multilingual)",
+    "titleColor": "String / Title color",
+    "descPrimary": "object / Primary sub-information (Multilingual)",
+    "descPrimaryColor": "String / Primary sub-information color",
+    "descSecondary": "object / Secondary sub-information (Multilingual)",
+    "descSecondaryColor": "String / Secondary sub-information color",
+    "buttonName": "object / Button nam (Multilingual)e",
+    "buttonColor": "String / Button name color"
+}
+```
+
+**Interactive**
+
+```json
+{
+    "title": "object / Title (Multilingual)",
+    "titleColor": "String / Title color"
+}
+```
+
+## Action Items
+
+```json
+[
+    {
+        "name": "object / Name (Multilingual)",
+        "key": "String / Key",
+        "value": "String / Value",
+        "hasOperated": "Boolean / Whether the current user has operated"
+    }
+]
+```

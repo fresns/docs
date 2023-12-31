@@ -91,5 +91,6 @@
 | **operation_usages** | 扩展资料使用表 |
 | **extends** | 扩展内容表 |
 | **extend_usages** | 扩展内容使用表 |
+| **extend_users** | 扩展使用用户表 |
 | **stickers** | 表情表 |
 | **seo** | 搜索引擎优化信息表 |

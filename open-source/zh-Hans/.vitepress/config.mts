@@ -244,6 +244,7 @@ function sidebarDatabase() {
         { text: 'operation_usages 扩展资料使用表', link: '/database/extends/operation-usages.md' },
         { text: 'extends 扩展内容表', link: '/database/extends/extends.md' },
         { text: 'extend_usages 扩展内容使用表', link: '/database/extends/extend-usages.md' },
+        { text: 'extend_users 扩展参与用户表', link: '/database/extends/extend-users.md' },
         { text: 'stickers 表情表', link: '/database/extends/stickers.md' },
         { text: 'seo 搜索引擎优化信息表', link: '/database/extends/seo.md' },
       ]

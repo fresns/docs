@@ -232,8 +232,9 @@ function sidebarDatabase() {
           { text: 'operation_usages', link: '/database/extends/operation-usages.md' },
           { text: 'extends', link: '/database/extends/extends.md' },
           { text: 'extend_usages', link: '/database/extends/extend-usages.md' },
-            { text: 'stickers', link: '/database/extends/stickers.md' },
-            { text: 'seo', link: '/database/extends/seo.md' },
+          { text: 'extend_users', link: '/database/extends/extend-users.md' },
+          { text: 'stickers', link: '/database/extends/stickers.md' },
+          { text: 'seo', link: '/database/extends/seo.md' },
         ]
       }
   ]
