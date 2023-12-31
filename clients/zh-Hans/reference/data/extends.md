@@ -62,8 +62,8 @@ aside: false
             "eid": "String / 扩展内容 ID",
             "type": "Number / 类型编号",
             "typeString": "String / 类型字符串",
-            "textContent": "String / 文本框专用-内容",
-            "textIsMarkdown": "Boolean / 文本框专用-内容是否为 MD 格式",
+            "content": "String / 内容",
+            "isMarkdown": "Boolean / 内容是否为 MD 格式",
             "position": "Number / 显示位置 1.上方 2.下方",
             "appUrl": "String / 应用访问地址"
         }
@@ -91,6 +91,9 @@ aside: false
             "eid": "String / 扩展内容 ID",
             "type": "Number / 类型编号",
             "typeString": "String / 类型字符串",
+            "title": "String / 标题",
+            "titleColor": "String / 标题颜色",
+            "hasOperated": "Boolean / 当前用户是否已操作",
             "status": "Boolean / false 表示已过结束时间",
             "endDateTime": "String / 结束时间",
             "items": [
@@ -98,8 +101,7 @@ aside: false
                     "name": "String / 名称",
                     "key": "String / 键名",
                     "value": "String / 键值",
-                    "visible": "Boolean / 是否显示键值",
-                    "status": "Boolean / 是否可以交互状态"
+                    "hasOperated": "Boolean / 当前用户是否已操作"
                 }
             ]
         }

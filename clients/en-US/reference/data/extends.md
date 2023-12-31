@@ -62,8 +62,8 @@ aside: false
             "eid": "String / Extension content ID",
             "type": "Number / Type number",
             "typeString": "String / Type string",
-            "textContent": "String / Text box specific - content",
-            "textIsMarkdown": "Boolean / Text box specific - Is content MD format",
+            "content": "String / Content",
+            "isMarkdown": "Boolean / Is content MD format",
             "position": "Number / Display position 1.Top 2.Bottom",
             "appUrl": "String / App Access URL"
         }
@@ -91,6 +91,9 @@ aside: false
             "eid": "String / Extension content ID",
             "type": "Number / Type number",
             "typeString": "String / Type string",
+            "title": "String / Title",
+            "titleColor": "String / Title color",
+            "hasOperated": "Boolean / Whether the current user has operated",
             "status": "Boolean / false Indicates that the end time has passed",
             "endDateTime": "String / end date time",
             "items": [
@@ -98,8 +101,7 @@ aside: false
                     "name": "String / Name",
                     "key": "String / Key Name",
                     "value": "String / Key Value",
-                    "visible": "Boolean / Whether to display the key value",
-                    "status": "Boolean / Interaction Status",
+                    "hasOperated": "Boolean / Whether the current user has operated"
                 }
             ]
         }
