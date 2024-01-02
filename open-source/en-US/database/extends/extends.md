@@ -19,7 +19,7 @@ aside: false
 | action_items | json | Action Items |  | YES |  |
 | position | tinyint *UNSIGNED* | Display position | 2 | NO | 1. Top / 2. Bottom |
 | is_enabled | tinyint *UNSIGNED* | Is Valid | 1 | NO | 0.Invalid / 1.Valid |
-| ended_at | timestamp | 结束时间 |  | YES |  |
+| ended_at | timestamp | Ended time |  | YES |  |
 | created_at | timestamp | Upload time | useCurrent | NO | For example, MySQL defaults to `CURRENT_TIMESTAMP` |
 | updated_at | timestamp | Update Time |  | YES |  |
 | deleted_at | timestamp | Delete Time |  | YES | Empty means not deleted |

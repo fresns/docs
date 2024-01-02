@@ -11,7 +11,7 @@ aside: false
 | uid | bigint *UNSIGNED* | User ID |  | NO | **Unique**<br>Initialized with 8-digit random number, 9 digits if not enough, and so on.<br>Randomly generated without starting with 0 |
 | username | varchar(64) | Username |  | NO | **Unique**, can only contain letters, numbers, and single hyphens |
 | nickname | varchar(64) | Nickname |  | NO | Cannot contain punctuation or special symbols<br>Single space allowed but not at the beginning or end |
-| password | char(64) | Password |  | YES | Encrypted storage<br>Empty means no password, switching users without verification<br>Passwords can only be numbers, English letters, or combinations, starting from four digits |
+| pin | char(64) | PIN |  | YES | Personal identification number |
 | avatar_file_id | bigint *UNSIGNED* | Avatar Image ID |  | YES | Related field [files->id](../systems/files.md) |
 | avatar_file_url | varchar(255) | Avatar Image Full URL |  | YES |  |
 | banner_file_id | bigint *UNSIGNED* | Background Banner Image ID |  | YES | Related field [files->id](../systems/files.md) |
