@@ -93,9 +93,10 @@ aside: false
             "typeString": "String / Type string",
             "title": "String / Title",
             "titleColor": "String / Title color",
-            "hasOperated": "Boolean / Whether the current user has operated",
-            "status": "Boolean / false Indicates that the end time has passed",
+            "position": "Number / Display position 1.Top 2.Bottom",
             "endDateTime": "String / end date time",
+            "status": "Boolean / false Indicates that the end time has passed",
+            "hasOperated": "Boolean / Whether the current user has operated",
             "items": [
                 {
                     "name": "String / Name",

@@ -93,9 +93,10 @@ aside: false
             "typeString": "String / 类型字符串",
             "title": "String / 标题",
             "titleColor": "String / 标题颜色",
-            "hasOperated": "Boolean / 当前用户是否已操作",
-            "status": "Boolean / false 表示已过结束时间",
+            "position": "Number / 显示位置 1.上方 2.下方",
             "endDateTime": "String / 结束时间",
+            "status": "Boolean / false 表示已过结束时间",
+            "hasOperated": "Boolean / 当前用户是否已操作",
             "items": [
                 {
                     "name": "String / 名称",
