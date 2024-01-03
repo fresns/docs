@@ -28,6 +28,7 @@ aside: false
 | block_hashtag_count | int *UNSIGNED* | Hashtag Block Count | 0 | NO | Total number of hashtags I blocked (not interested) |
 | block_post_count | int *UNSIGNED* | Post Block Count | 0 | NO | Total number of posts I blocked (not interested) |
 | block_comment_count | int *UNSIGNED* | Comment Block Count | 0 | NO | Total number of comments I blocked (not interested) |
+| view_me_count | int *UNSIGNED* | View By Others Count | 0 | NO |  |
 | like_me_count | int *UNSIGNED* | Liked By Others Count | 0 | NO | Number of people who liked me |
 | dislike_me_count | int *UNSIGNED* | Disliked By Others Count | 0 | NO | Number of people who disliked me |
 | follow_me_count | int *UNSIGNED* | Followed By Others Count | 0 | NO | Number of people who follow me (fans count) |

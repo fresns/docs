@@ -28,6 +28,7 @@ aside: false
 | block_hashtag_count | int *UNSIGNED* | 话题屏蔽数 | 0 | NO | 我屏蔽的（不感兴趣）话题总数 |
 | block_post_count | int *UNSIGNED* | 帖子屏蔽数 | 0 | NO | 我屏蔽的（不感兴趣）帖子总数 |
 | block_comment_count | int *UNSIGNED* | 评论屏蔽数 | 0 | NO | 我屏蔽的（不感兴趣）评论总数 |
+| view_me_count | int *UNSIGNED* | 浏览数 | 0 | NO |  |
 | like_me_count | int *UNSIGNED* | 被赞数 | 0 | NO | 别人赞我的人数 |
 | dislike_me_count | int *UNSIGNED* | 被踩数 | 0 | NO | 别人踩我的人数 |
 | follow_me_count | int *UNSIGNED* | 被关注数 | 0 | NO | 别人关注我的人数（粉丝数） |

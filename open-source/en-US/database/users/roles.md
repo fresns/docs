@@ -15,7 +15,7 @@ aside: false
 | is_display_icon | tinyint *UNSIGNED* | Display Icon Identifier | 0 | NO | 0.No Display / 1.Display |
 | nickname_color | char(7) | User Nickname Color Value |  | YES |  |
 | permissions | json | Permission Parameters |  | NO |  |
-| more_info | json | Spare Field |  | YES |  |
+| more_info | json | More Info |  | YES |  |
 | rank_state | tinyint *UNSIGNED* | Rank Status | 1 | NO | 1.Not Set |
 | sort_order | smallint *UNSIGNED* | Sorting Order | 9 | NO | Ascending order |
 | is_enabled | tinyint *UNSIGNED* | Is Enabled | 1 | NO | 0.Disabled / 1.Enabled |

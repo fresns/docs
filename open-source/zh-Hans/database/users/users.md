@@ -16,7 +16,9 @@ aside: false
 | avatar_file_url | varchar(255) | 头像图片完整 URL |  | YES |  |
 | banner_file_id | bigint *UNSIGNED* | 背景条幅图 ID |  | YES | 关联字段 [files->id](../systems/files.md) |
 | banner_file_url | varchar(255) | 背景条幅图 URL |  | YES |  |
-| gender | tinyint *UNSIGNED* | 性别 | 1 | NO | 1.未知 / 2.男 / 3.女 |
+| gender | tinyint *UNSIGNED* | 性别 | 1 | NO | 1.未知 2.男 3.女 4.自定义 |
+| gender_pronoun | tinyint *UNSIGNED* | 性别代称 |  | YES | 1.She / 2.He / 3.They |
+| gender_custom | varchar(64) | 性别自定义 |  | YES |  |
 | birthday | timestamp | 生日 |  | YES |  |
 | bio | text | 简介 |  | YES |  |
 | location | varchar(128) | 地点 |  | YES |  |
@@ -25,6 +27,8 @@ aside: false
 | verified_at | timestamp | 用户认证时间 |  | YES |  |
 | conversation_limit | tinyint *UNSIGNED* | 对话设置 | 1 | NO | 1.允许所有用户<br>2.仅允许我关注的用户<br>3.我关注的用户和已认证的用户（verified_status）<br>4.不允许所有用户 |
 | comment_limit | tinyint *UNSIGNED* | 评论设置 | 1 | NO | 1.允许所有用户<br>2.仅允许我关注的用户<br>3.我关注的用户和已认证的用户（verified_status）<br>4.不允许所有用户 |
+| content_limit | tinyint *UNSIGNED* | 内容设置 | 1 | NO |  |
+| more_info | json | 更多信息 |  | YES |  |
 | expired_at | timestamp | 失效时间 |  | YES | 私有模式专用字段，为空代表永久有效 |
 | last_activity_at | timestamp | 最后活跃时间 |  | YES |  |
 | last_post_at | timestamp | 最后发表帖子时间 |  | YES |  |

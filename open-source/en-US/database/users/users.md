@@ -16,7 +16,9 @@ aside: false
 | avatar_file_url | varchar(255) | Avatar Image Full URL |  | YES |  |
 | banner_file_id | bigint *UNSIGNED* | Background Banner Image ID |  | YES | Related field [files->id](../systems/files.md) |
 | banner_file_url | varchar(255) | Background Banner Image URL |  | YES |  |
-| gender | tinyint *UNSIGNED* | Gender | 1 | NO | 1.Unknown / 2.Male / 3.Female |
+| gender | tinyint *UNSIGNED* | Gender | 1 | NO | 1.Unknown / 2.Male / 3.Female / 4.Custom |
+| gender_pronoun | tinyint *UNSIGNED* | Gender Pronoun |  | YES | 1.She / 2.He / 3.They |
+| gender_custom | varchar(64) | Gender Custom |  | YES |  |
 | birthday | timestamp | Birthday |  | YES |  |
 | bio | text | Bio |  | YES |  |
 | location | varchar(128) | Location |  | YES |  |
@@ -25,6 +27,8 @@ aside: false
 | verified_at | timestamp | User Verification Time |  | YES |  |
 | conversation_limit | tinyint *UNSIGNED* | Conversation Settings | 1 | NO | 1.Allow all users<br>2.Only allow users I follow<br>3.Allow users I follow and verified users (verified_status)<br>4.Disallow all users |
 | comment_limit | tinyint *UNSIGNED* | Comment Settings | 1 | NO | 1.Allow all users<br>2.Only allow users I follow<br>3.Allow users I follow and verified users (verified_status)<br>4.Disallow all users |
+| content_limit | tinyint *UNSIGNED* | Content Settings | 1 | NO |  |
+| more_info | json | More Info |  | YES |  |
 | expired_at | timestamp | Expiration Time |  | YES | Private mode dedicated field, empty means permanently valid |
 | last_activity_at | timestamp | Last Activity Time |  | YES |  |
 | last_post_at | timestamp | Last Post Published Time |  | YES |  |
