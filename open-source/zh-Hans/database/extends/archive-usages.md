@@ -27,6 +27,7 @@ aside: false
             "name": "String / 名称",
             "description": "String / 描述",
             "value": "String / 参数值",
+            "isPrivate": "Boolean / 是否为私有数据"
         }
     ]
 }

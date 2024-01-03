@@ -12,6 +12,7 @@ aside: false
     "name": "String / Name",
     "description": "String / Description",
     "value": "String / Parameter value",
+    "isPrivate": "Boolean / Private value"
 }
 ```
 
@@ -30,7 +31,7 @@ aside: false
             "image": "String / Image URL",
             "activeImage": "String / Active Image URL",
             "displayType": "Number / Display type 1.Basic 2.Function (plugin or app)",
-            "appUrl": "String / Dedicated for display type 2, app access URL",
+            "appUrl": "String / Dedicated for display type 2, app access URL"
         }
     ],
     "buttonIcons": [
@@ -121,7 +122,7 @@ aside: false
     "name": "String / Name",
     "appUrl": "String / App Access URL",
     "badgeType": "Number / Extension prompt type null.None 1.Red dot 2.Text 3.Number",
-    "badgeValue": "String / Extension prompt value, text or number",
+    "badgeValue": "String / Extension prompt value, text or number"
 }
 ```
 

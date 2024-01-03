@@ -12,6 +12,7 @@ aside: false
     "name": "String / 名称",
     "description": "String / 描述",
     "value": "String / 参数值",
+    "isPrivate": "Boolean / 是否为私有数据"
 }
 ```
 
@@ -30,7 +31,7 @@ aside: false
             "image": "String / 图片 URL",
             "activeImage": "String / 二态图片 URL",
             "displayType": "Number / 展示类型 1.基础 2.功能（应用）",
-            "appUrl": "String / 展示类型 2 专用，应用访问地址",
+            "appUrl": "String / 展示类型 2 专用，应用访问地址"
         }
     ],
     "buttonIcons": [
@@ -121,7 +122,7 @@ aside: false
     "name": "String / 扩展名称",
     "appUrl": "String / 应用访问地址",
     "badgeType": "Number / 扩展提示类型 null.无 1.红点 2.文字 3.数字",
-    "badgeValue": "String / 扩展提示值，文字或数字",
+    "badgeValue": "String / 扩展提示值，文字或数字"
 }
 ```
 

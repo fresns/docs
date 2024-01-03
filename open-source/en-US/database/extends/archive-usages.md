@@ -27,6 +27,7 @@ aside: false
             "name": "String / Name",
             "description": "String / Description",
             "value": "String / Parameter value",
+            "isPrivate": "Boolean / Private value"
         }
     ]
 }
