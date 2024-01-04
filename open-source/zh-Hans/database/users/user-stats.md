@@ -9,23 +9,27 @@ aside: false
 | id | bigint *UNSIGNED* | 主键 ID |  | NO | 自动递增 |
 | user_id | bigint *UNSIGNED* | 用户主键 ID |  | NO | 关联字段 [users->id](users.md) |
 | like_user_count | int *UNSIGNED* | 用户赞数 | 0 | NO | 我赞的用户总数 |
-| like_group_count | int *UNSIGNED* | 小组赞数 | 0 | NO | 我赞的小组总数 |
-| like_hashtag_count | int *UNSIGNED* | 话题赞数 | 0 | NO | 我赞的话题总数 |
-| like_post_count | int *UNSIGNED* | 帖子赞数 | 0 | NO | 我赞的帖子总数 |
-| like_comment_count | int *UNSIGNED* | 评论赞数 | 0 | NO | 我赞的评论总数 |
+| like_group_count | int *UNSIGNED* | 小组赞数 | 0 | NO |  |
+| like_hashtag_count | int *UNSIGNED* | 话题赞数 | 0 | NO |  |
+| like_geotag_count | int *UNSIGNED* | 地理赞数 | 0 | NO |  |
+| like_post_count | int *UNSIGNED* | 帖子赞数 | 0 | NO |  |
+| like_comment_count | int *UNSIGNED* | 评论赞数 | 0 | NO |  |
 | dislike_user_count | int *UNSIGNED* | 用户踩数 | 0 | NO | 我踩的用户总数 |
-| dislike_group_count | int *UNSIGNED* | 小组踩数 | 0 | NO | 我踩的小组总数 |
-| dislike_hashtag_count | int *UNSIGNED* | 话题踩数 | 0 | NO | 我踩的话题总数 |
-| dislike_post_count | int *UNSIGNED* | 帖子踩数 | 0 | NO | 我踩的帖子总数 |
-| dislike_comment_count | int *UNSIGNED* | 评论踩数 | 0 | NO | 我踩的评论总数 |
+| dislike_group_count | int *UNSIGNED* | 小组踩数 | 0 | NO |  |
+| dislike_hashtag_count | int *UNSIGNED* | 话题踩数 | 0 | NO |  |
+| dislike_geotag_count | int *UNSIGNED* | 地理踩数 | 0 | NO |  |
+| dislike_post_count | int *UNSIGNED* | 帖子踩数 | 0 | NO |  |
+| dislike_comment_count | int *UNSIGNED* | 评论踩数 | 0 | NO |  |
 | follow_user_count | int *UNSIGNED* | 用户关注数 | 0 | NO | 我关注的用户总数 |
 | follow_group_count | int *UNSIGNED* | 小组关注数 | 0 | NO | 我关注的小组总数 |
 | follow_hashtag_count | int *UNSIGNED* | 话题关注数 | 0 | NO | 我关注的（收藏）话题总数 |
+| follow_geotag_count | int *UNSIGNED* | 地理关注数 | 0 | NO | 我关注的（收藏）地理总数 |
 | follow_post_count | int *UNSIGNED* | 帖子关注数 | 0 | NO | 我关注的（收藏）帖子总数 |
 | follow_comment_count | int *UNSIGNED* | 评论关注数 | 0 | NO | 我关注的（收藏）评论总数 |
 | block_user_count | int *UNSIGNED* | 用户屏蔽数 | 0 | NO | 我一共屏蔽（拉黑）了多少用户 |
 | block_group_count | int *UNSIGNED* | 小组屏蔽数 | 0 | NO | 我屏蔽的（不感兴趣）小组总数 |
 | block_hashtag_count | int *UNSIGNED* | 话题屏蔽数 | 0 | NO | 我屏蔽的（不感兴趣）话题总数 |
+| block_geotag_count | int *UNSIGNED* | 地理屏蔽数 | 0 | NO | 我屏蔽的（不感兴趣）地理总数 |
 | block_post_count | int *UNSIGNED* | 帖子屏蔽数 | 0 | NO | 我屏蔽的（不感兴趣）帖子总数 |
 | block_comment_count | int *UNSIGNED* | 评论屏蔽数 | 0 | NO | 我屏蔽的（不感兴趣）评论总数 |
 | view_me_count | int *UNSIGNED* | 浏览数 | 0 | NO |  |

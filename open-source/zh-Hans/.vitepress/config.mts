@@ -194,7 +194,6 @@ function sidebarDatabase() {
         { text: 'user_roles 用户角色关联表', link: '/database/users/user-roles.md' },
         { text: 'user_likes 用户赞记录表', link: '/database/users/user-likes.md' },
         { text: 'user_follows 用户关注表', link: '/database/users/user-follows.md' },
-        { text: 'user_blocks 用户屏蔽表', link: '/database/users/user-blocks.md' },
       ]
     },
     {

@@ -182,7 +182,6 @@ function sidebarDatabase() {
           { text: 'user_roles', link: '/database/users/user-roles.md' },
           { text: 'user_likes', link: '/database/users/user-likes.md' },
           { text: 'user_follows', link: '/database/users/user-follows.md' },
-          { text: 'user_blocks', link: '/database/users/user-blocks.md' },
         ]
       },
       {

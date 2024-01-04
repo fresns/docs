@@ -11,21 +11,25 @@ aside: false
 | like_user_count | int *UNSIGNED* | User Like Count | 0 | NO | Total number of users I liked |
 | like_group_count | int *UNSIGNED* | Group Like Count | 0 | NO | Total number of groups I liked |
 | like_hashtag_count | int *UNSIGNED* | Hashtag Like Count | 0 | NO | Total number of hashtags I liked |
+| like_geotag_count | int *UNSIGNED* | Geotag Like Count | 0 | NO | Total number of geotags I liked |
 | like_post_count | int *UNSIGNED* | Post Like Count | 0 | NO | Total number of posts I liked |
 | like_comment_count | int *UNSIGNED* | Comment Like Count | 0 | NO | Total number of comments I liked |
 | dislike_user_count | int *UNSIGNED* | User Dislike Count | 0 | NO | Total number of users I disliked |
 | dislike_group_count | int *UNSIGNED* | Group Dislike Count | 0 | NO | Total number of groups I disliked |
 | dislike_hashtag_count | int *UNSIGNED* | Hashtag Dislike Count | 0 | NO | Total number of hashtags I disliked |
+| dislike_geotag_count | int *UNSIGNED* | Geotag Dislike Count | 0 | NO | Total number of geotags I disliked |
 | dislike_post_count | int *UNSIGNED* | Post Dislike Count | 0 | NO | Total number of posts I disliked |
 | dislike_comment_count | int *UNSIGNED* | Comment Dislike Count | 0 | NO | Total number of comments I disliked |
 | follow_user_count | int *UNSIGNED* | User Follow Count | 0 | NO | Total number of users I follow |
 | follow_group_count | int *UNSIGNED* | Group Follow Count | 0 | NO | Total number of groups I follow |
 | follow_hashtag_count | int *UNSIGNED* | Hashtag Follow Count | 0 | NO | Total number of hashtags I follow (collected) |
+| follow_geotag_count | int *UNSIGNED* | Geotag Follow Count | 0 | NO | Total number of geotags I follow (collected) |
 | follow_post_count | int *UNSIGNED* | Post Follow Count | 0 | NO | Total number of posts I follow (collected) |
 | follow_comment_count | int *UNSIGNED* | Comment Follow Count | 0 | NO | Total number of comments I follow (collected) |
 | block_user_count | int *UNSIGNED* | User Block Count | 0 | NO | Total number of users I blocked (blacklisted) |
 | block_group_count | int *UNSIGNED* | Group Block Count | 0 | NO | Total number of groups I blocked (not interested) |
 | block_hashtag_count | int *UNSIGNED* | Hashtag Block Count | 0 | NO | Total number of hashtags I blocked (not interested) |
+| block_geotag_count | int *UNSIGNED* | Geotag Block Count | 0 | NO | Total number of geotags I blocked (not interested) |
 | block_post_count | int *UNSIGNED* | Post Block Count | 0 | NO | Total number of posts I blocked (not interested) |
 | block_comment_count | int *UNSIGNED* | Comment Block Count | 0 | NO | Total number of comments I blocked (not interested) |
 | view_me_count | int *UNSIGNED* | View By Others Count | 0 | NO |  |
