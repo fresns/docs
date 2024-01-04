@@ -53,7 +53,7 @@ aside: false
         // Common Data Structure -> Extend Content Info
     },
     "nicknameColor": "String / Main role - Nickname color",
-    "rid": "String / Main role - Role ID",
+    "roleRid": "String / Main role - Role ID",
     "roleName": "String / Main role - Role name",
     "roleNameDisplay": "Boolean / Main role - Display role name",
     "roleIcon": "String / Main role - Role icon URL",

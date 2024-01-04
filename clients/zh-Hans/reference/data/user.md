@@ -53,7 +53,7 @@ aside: false
         // 通用数据结构->扩展内容信息
     },
     "nicknameColor": "String / 主角色-昵称颜色",
-    "rid": "String / 主角色-角色 ID",
+    "roleRid": "String / 主角色-角色 ID",
     "roleName": "String / 主角色-角色名",
     "roleNameDisplay": "Boolean / 主角色-是否显示角色名",
     "roleIcon": "String / 主角色-角色图标地址",
