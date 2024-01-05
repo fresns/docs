@@ -11,6 +11,7 @@ aside: false
 | place_id | varchar(64) | Place ID |  | YES | **唯一值**<br>地图服务商专属 ID |
 | place_type | varchar(64) | Place Type |  | YES | 地图服务商地点位置 |
 | name | json | 地理名 |  | YES | **多语言** |
+| description | json | 地理描述 |  | YES | **多语言** |
 | map_id | tinyint *UNSIGNED* | 服务商编号 | 1 | NO | 来源[地图服务商](../../configs/dictionary/maps.md)键值字典 |
 | map_longitude | decimal(12,8) | 地图-经度 |  | NO | 浮点数，范围为 -180~180，负数表示西经 |
 | map_latitude | decimal(12,8) | 地图-纬度 |  | NO | 浮点数，范围为 -90~90，负数表示南纬 |
@@ -44,6 +45,7 @@ aside: false
 ```json [en]
 {
     "name": "Cupertino Library",
+    "description": "",
     "placeId": "TRDucfBPkhuzzR9a7",
     "placeType": "building",
     "mapId": 2,
@@ -67,6 +69,7 @@ aside: false
 ```json [zh-Hans]
 {
     "name": "东方之门",
+    "description": "",
     "placeId": "B020017GRH",
     "placeType": "building",
     "mapId": 4,

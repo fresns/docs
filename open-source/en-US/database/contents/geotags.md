@@ -11,6 +11,7 @@ aside: false
 | place_id | varchar(64) | Place ID |  | YES | **Unique** |
 | place_type | varchar(64) | Place Type |  | YES |  |
 | name | json | Name |  | YES | **Multilingual** |
+| description | json | Description |  | YES | **Multilingual** |
 | map_id | tinyint *UNSIGNED* | Maps | 1 | NO | [Maps](../../configs/dictionary/maps.md) |
 | map_longitude | decimal(12,8) | Map - Longitude |  | NO | Decimal, range -180~180, negative for west longitude |
 | map_latitude | decimal(12,8) | Map - Latitude|  | NO | Decimal, range -90~90, negative for south latitude |
@@ -43,6 +44,7 @@ aside: false
 ```json
 {
     "name": "Cupertino Library",
+    "description": "",
     "placeId": "TRDucfBPkhuzzR9a7",
     "placeType": "building",
     "mapId": 2,
