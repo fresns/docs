@@ -82,6 +82,7 @@ aside: false
         "blockHashtagCount": "Number / 他屏蔽的（不感兴趣）话题总数",
         "blockPostCount": "Number / 他屏蔽的（不感兴趣）帖子总数",
         "blockCommentCount": "Number / 他屏蔽的（不感兴趣）评论总数",
+        "viewCount": "Number / 查看总数",
         "likerCount": "Number / 别人点赞他的人数",
         "dislikerCount": "Number / 别人点踩他的人数",
         "followerCount": "Number / 别人关注他的人数（粉丝数）",

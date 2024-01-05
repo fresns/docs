@@ -82,6 +82,7 @@ aside: false
         "blockHashtagCount": "Number / Total hashtags they blocked (not interested)",
         "blockPostCount": "Number / Total posts they blocked (not interested)",
         "blockCommentCount": "Number / Total comments they blocked (not interested)",
+        "viewCount": "Number / View Count",
         "likerCount": "Number / Total people who liked them",
         "dislikerCount": "Number / Total people who disliked them",
         "followerCount": "Number / Total people who followed them (follower count)",

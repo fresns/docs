@@ -11,6 +11,7 @@ aside: false
     "name": "String / Hashtag Name",
     "cover": "String / Hashtag Cover Image",
     "description": "String / Hashtag Description",
+    "viewCount": "Number / View Count",
     "likeCount": "Number / Total Like Count",
     "dislikeCount": "Number / Total Dislike Count",
     "followCount": "Number / Total Follow Count",

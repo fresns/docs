@@ -11,6 +11,7 @@ aside: false
     "name": "String / 话题名",
     "cover": "String / 话题封面图",
     "description": "String / 话题介绍",
+    "viewCount": "Number / 查看总数",
     "likeCount": "Number / 被点赞总数",
     "dislikeCount": "Number / 被点踩总数",
     "followCount": "Number / 被关注总数",

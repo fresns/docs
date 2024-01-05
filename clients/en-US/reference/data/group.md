@@ -25,6 +25,7 @@ aside: false
         "banner": "String / Parent group banner image"
     },
     "subgroupCount": "Number / Total number of subgroup",
+    "viewCount": "Number / View Count",
     "likeCount": "Number / Total number of likes",
     "dislikeCount": "Number / Total number of dislikes",
     "followCount": "Number / Total number of follows",
