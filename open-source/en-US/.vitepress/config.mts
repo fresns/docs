@@ -216,6 +216,8 @@ function sidebarDatabase() {
           { text: 'group_admins', link: '/database/contents/group-admins.md' },
           { text: 'hashtags', link: '/database/contents/hashtags.md' },
           { text: 'hashtag_usages', link: '/database/contents/hashtag-usages.md' },
+          { text: 'geotags', link: '/database/contents/geotags.md' },
+          { text: 'geotag_usages', link: '/database/contents/geotag-usages.md' },
           { text: 'domains', link: '/database/contents/domains.md' },
           { text: 'domain_links', link: '/database/contents/domain-links.md' },
           { text: 'domain_link_usages', link: '/database/contents/domain-link-usages.md' },

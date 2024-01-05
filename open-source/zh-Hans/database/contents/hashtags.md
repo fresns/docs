@@ -9,10 +9,12 @@ aside: false
 | id | bigint *UNSIGNED* | 主键 ID | | NO | 自动递增 |
 | name | varchar(64) | 话题名 |  | NO |  |
 | slug | varchar(255) | 话题名 URL Encode 转码 |  | NO | **唯一值** |
-| description | json | 描述 |  | YES | **多语言**  |
+| description | json | 描述 |  | YES | **多语言** |
 | type | smallint *UNSIGNED* | 类型 |  | NO | 用于自定义用途，比如分类或过滤 |
 | cover_file_id | bigint *UNSIGNED* | 封面图 ID |  | YES | 关联字段 [files->id](../systems/files.md) |
 | cover_file_url | varchar(255) | 封面图 URL |  | YES |  |
+| more_info | json | 更多信息字段 |  | YES |  |
+| view_count | int *UNSIGNED* | 查看数 | 0 | NO | 由插件记录 |
 | like_count | int *UNSIGNED* | 赞数 | 0 | NO | 有多少用户赞了该话题 |
 | dislike_count | int *UNSIGNED* | 踩数 | 0 | NO | 有多少用户踩了该话题 |
 | follow_count | int *UNSIGNED* | 关注数 | 0 | NO | 有多少用户关注了（收藏）该话题 |

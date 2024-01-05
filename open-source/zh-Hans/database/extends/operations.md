@@ -10,7 +10,7 @@ aside: false
 | type | tinyint *UNSIGNED* | 类型 | 1 | NO | 1.自定义 / 2.互动按钮图 / 3.勋章图标 / 4.提示文案 |
 | code | varchar(32) | 代码 |  | NO | 纯小写英文 |
 | style | varchar(32) | 风格 |  | NO | primary / secondary / success / danger / warning / info |
-| name | json | 名称 |  | YES | **多语言**  |
+| name | json | 名称 |  | YES | **多语言** |
 | description | json | 描述 |  | YES | **多语言** |
 | image_file_id | bigint *UNSIGNED* | 图片文件 ID |  | YES | 关联字段 [files->id](../systems/files.md) |
 | image_file_url | varchar(255) | 图片文件 URL |  | YES |  |

@@ -32,11 +32,11 @@ aside: false
 | block_geotag_count | int *UNSIGNED* | 地理屏蔽数 | 0 | NO | 我屏蔽的（不感兴趣）地理总数 |
 | block_post_count | int *UNSIGNED* | 帖子屏蔽数 | 0 | NO | 我屏蔽的（不感兴趣）帖子总数 |
 | block_comment_count | int *UNSIGNED* | 评论屏蔽数 | 0 | NO | 我屏蔽的（不感兴趣）评论总数 |
-| view_me_count | int *UNSIGNED* | 浏览数 | 0 | NO |  |
-| like_me_count | int *UNSIGNED* | 被赞数 | 0 | NO | 别人赞我的人数 |
-| dislike_me_count | int *UNSIGNED* | 被踩数 | 0 | NO | 别人踩我的人数 |
-| follow_me_count | int *UNSIGNED* | 被关注数 | 0 | NO | 别人关注我的人数（粉丝数） |
-| block_me_count | int *UNSIGNED* | 被屏蔽数 | 0 | NO | 别人屏蔽（拉黑）我的人数 |
+| view_count | int *UNSIGNED* | 浏览数 | 0 | NO | 由插件记录 |
+| liker_count | int *UNSIGNED* | 被赞数 | 0 | NO | 别人赞我的人数 |
+| disliker_count | int *UNSIGNED* | 被踩数 | 0 | NO | 别人踩我的人数 |
+| follower_count | int *UNSIGNED* | 被关注数 | 0 | NO | 别人关注我的人数（粉丝数） |
+| blocker_count | int *UNSIGNED* | 被屏蔽数 | 0 | NO | 别人屏蔽（拉黑）我的人数 |
 | post_publish_count | int *UNSIGNED* | 帖子发表总数 | 0 | NO | 我发表的帖子总数 |
 | post_digest_count | int *UNSIGNED* | 帖子精华总数 | 0 | NO | 我的帖子精华总数 |
 | post_like_count | int *UNSIGNED* | 帖子被赞总数 | 0 | NO | 别人赞了我的帖子总数 |

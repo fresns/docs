@@ -10,7 +10,7 @@ aside: false
 | gid | varchar(32) | Public ID |  | NO | **Unique** |
 | parent_id | int *UNSIGNED* | Parent Group ID |  | YES |  |
 | user_id | bigint *UNSIGNED* | Creator ID |  | YES | Related field [users->id](../users/users.md) |
-| name | json | Group Name |  | NO | **Multilingual**  |
+| name | json | Group Name |  | NO | **Multilingual** |
 | description | json | Group Description |  | YES | **Multilingual** |
 | type | smallint *UNSIGNED* | Group Category | 1 | NO |  |
 | privacy | tinyint *UNSIGNED* | Group Mode | 1 | NO | 1.Public (Anyone can see who's in the group and what they post.)<br>2.Private (Only members can see who's in the group and what they post.) |
@@ -28,6 +28,7 @@ aside: false
 | permissions | json | Permission Parameters |  | NO |  |
 | more_info | json | More Info |  | YES |  |
 | subgroup_count | int *UNSIGNED* | Number of Subgroup | 0 | NO |  |
+| view_count | int *UNSIGNED* | Number of View | 0 | NO | Count by plugin |
 | like_count | int *UNSIGNED* | Number of Likes | 0 | NO | Number of users who liked this group |
 | dislike_count | int *UNSIGNED* | Number of Dislikes | 0 | NO | Number of users who disliked this group |
 | follow_count | int *UNSIGNED* | Number of Followers | 0 | NO | Number of users who followed (bookmarked) this group |

@@ -10,7 +10,7 @@ aside: false
 | gid | varchar(32) | 对外公开 ID |  | NO | **唯一值** |
 | parent_id | int *UNSIGNED* | 父级小组 ID |  | YES |  |
 | user_id | bigint *UNSIGNED* | 创建者 ID |  | YES | 关联字段 [users->id](../users/users.md) |
-| name | json | 小组名称 |  | NO | **多语言**  |
+| name | json | 小组名称 |  | NO | **多语言** |
 | description | json | 小组描述 |  | YES | **多语言** |
 | type | smallint *UNSIGNED* | 类型 |  | NO | 用于自定义用途，比如分类或过滤 |
 | privacy | tinyint *UNSIGNED* | 小组模式 | 1 | NO | 1.公开（任何人都能查看小组内帖子）<br>2.非公开（只有成员才能查看小组内帖子） |
@@ -28,6 +28,7 @@ aside: false
 | permissions | json | 权限参数 |  | NO |  |
 | more_info | json | 更多信息字段 |  | YES |  |
 | subgroup_count | int *UNSIGNED* | 子小组数 | 0 | NO | 有多少子小组 |
+| view_count | int *UNSIGNED* | 查看数 | 0 | NO | 由插件记录 |
 | like_count | int *UNSIGNED* | 赞数 | 0 | NO | 有多少用户赞了该小组 |
 | dislike_count | int *UNSIGNED* | 踩数 | 0 | NO | 有多少用户踩了该小组 |
 | follow_count | int *UNSIGNED* | 关注数 | 0 | NO | 有多少用户关注了（收藏）该小组 |

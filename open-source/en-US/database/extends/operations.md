@@ -10,7 +10,7 @@ aside: false
 | type | tinyint *UNSIGNED* | Type | 1 | NO | 1. Custom / 2. Interactive button image / 3. Badge icon / 4. Prompt copy |
 | code | varchar(32) | Code |  | NO | Lowercase English only |
 | style | varchar(32) | Style |  | NO | primary / secondary / success / danger / warning / info |
-| name | json | Name |  | YES | **Multilingual**  |
+| name | json | Name |  | YES | **Multilingual** |
 | description | json | Description |  | YES | **Multilingual** |
 | image_file_id | bigint *UNSIGNED* | Image file ID |  | YES | Related field [files->id](../systems/files.md) |
 | image_file_url | varchar(255) | Image file URL |  | YES |  |

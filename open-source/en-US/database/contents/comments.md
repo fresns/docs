@@ -22,7 +22,7 @@ aside: false
 | is_sticky | tinyint *UNSIGNED* | Is Sticky | 0 | NO |  0.No / 1.Yes |
 | digest_state | tinyint *UNSIGNED* | Digest Status | 1 | NO |  1.No / 2.General Digest / 3.Premium Digest |
 | digested_at | timestamp | Digest Time |  | YES | Time set to Digest |
-| view_count | int *UNSIGNED* | Number of View | 0 | NO |  |
+| view_count | int *UNSIGNED* | Number of View | 0 | NO | Count by plugin |
 | like_count | int *UNSIGNED* | Number of Likes | 0 | NO | Number of users who liked this comment |
 | dislike_count | int *UNSIGNED* | Number of Dislikes | 0 | NO | Number of users who disliked this comment |
 | follow_count | int *UNSIGNED* | Number of Follows | 0 | NO | Number of users who followed (collected) this comment |

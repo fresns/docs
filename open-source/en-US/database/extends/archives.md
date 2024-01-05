@@ -8,7 +8,7 @@ aside: false
 | --- | --- | --- | --- | --- | --- |
 | id | int *UNSIGNED* | Primary Key ID |  | NO | Auto Increment |
 | app_fskey | varchar(64) | Related Plugin |  | NO | Related field [apps->fskey](../apps/apps.md)<br>Which plugin created it |
-| name | json | Name |  | YES | **Multilingual**  |
+| name | json | Name |  | YES | **Multilingual** |
 | description | json | Description |  | YES | **Multilingual** |
 | code | varchar(32) | Code |  | NO | **Unique**，English letters only, no symbols or spaces supported |
 | usage_type | tinyint *UNSIGNED* | Usage Type |  | NO | [Content Type](../numbered-description.md#content-type) |

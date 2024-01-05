@@ -8,7 +8,7 @@ aside: false
 | --- | --- | --- | --- | --- | --- |
 | id | int *UNSIGNED* | 主键 ID |  | NO | 自动递增 |
 | app_fskey | varchar(64) | 关联插件 |  | NO | 关联字段 [apps->fskey](../apps/apps.md)<br>哪个插件创建的 |
-| name | json | 名称 |  | YES | **多语言**  |
+| name | json | 名称 |  | YES | **多语言** |
 | description | json | 介绍 |  | YES | **多语言** |
 | code | varchar(32) | 代码 |  | NO | **唯一值**，纯英文字母，不支持任何符号或空格 |
 | usage_type | tinyint *UNSIGNED* | 用途类型 |  | NO | [内容类型编号](../numbered-description.md#内容类型编号) |

@@ -228,6 +228,8 @@ function sidebarDatabase() {
         { text: 'group_admins 小组管理员表', link: '/database/contents/group-admins.md' },
         { text: 'hashtags 话题表', link: '/database/contents/hashtags.md' },
         { text: 'hashtag_usages 话题使用记录表', link: '/database/contents/hashtag-usages.md' },
+        { text: 'geotags 地理表', link: '/database/contents/geotags.md' },
+        { text: 'geotag_usages 地理使用记录表', link: '/database/contents/geotag-usages.md' },
         { text: 'domains 域名表', link: '/database/contents/domains.md' },
         { text: 'domain_links 域名链接表', link: '/database/contents/domain-links.md' },
         { text: 'domain_link_usages 链接使用记录表', link: '/database/contents/domain-link-usages.md' },

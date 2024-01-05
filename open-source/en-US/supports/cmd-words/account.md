@@ -121,10 +121,10 @@
 ```
 | Parameter Name | Type | Required | Description |
 | --- | --- | --- | --- |
-| fskey | String | **required**  | `account_connects->app_fskey` |
-| aid | Number | **required**  | `accounts->aid` |
-| connectPlatformId | Number | **required**  | `account_connects->connect_platform_id` |
-| connectAccountId | String | **required**  | `account_connects->connect_account_id` |
+| fskey | String | **required** | `account_connects->app_fskey` |
+| aid | Number | **required** | `accounts->aid` |
+| connectPlatformId | Number | **required** | `account_connects->connect_platform_id` |
+| connectAccountId | String | **required** | `account_connects->connect_account_id` |
 | connectToken | String | *optional*  | `account_connects->connect_token` |
 | connectRefreshToken | String | *optional* | `account_connects->connect_refresh_token` |
 | refreshTokenExpiredDatetime | String | *optional* | `Y-m-d H:i:s` `account_connects->refresh_token_expired_at` |
@@ -143,8 +143,8 @@
 ```
 | Parameter Name | Type | Required | Description |
 | --- | --- | --- | --- |
-| aid | Number | **required**  | `accounts->aid` |
-| connectPlatformId | Number | **required**  | `account_connects->connect_platform_id` |
+| aid | Number | **required** | `accounts->aid` |
+| connectPlatformId | Number | **required** | `account_connects->connect_platform_id` |
 
 ## createAccountToken
 

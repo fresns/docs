@@ -32,11 +32,11 @@ aside: false
 | block_geotag_count | int *UNSIGNED* | Geotag Block Count | 0 | NO | Total number of geotags I blocked (not interested) |
 | block_post_count | int *UNSIGNED* | Post Block Count | 0 | NO | Total number of posts I blocked (not interested) |
 | block_comment_count | int *UNSIGNED* | Comment Block Count | 0 | NO | Total number of comments I blocked (not interested) |
-| view_me_count | int *UNSIGNED* | View By Others Count | 0 | NO |  |
-| like_me_count | int *UNSIGNED* | Liked By Others Count | 0 | NO | Number of people who liked me |
-| dislike_me_count | int *UNSIGNED* | Disliked By Others Count | 0 | NO | Number of people who disliked me |
-| follow_me_count | int *UNSIGNED* | Followed By Others Count | 0 | NO | Number of people who follow me (fans count) |
-| block_me_count | int *UNSIGNED* | Blocked By Others Count | 0 | NO | Number of people who blocked (blacklisted) me |
+| view_count | int *UNSIGNED* | View Count | 0 | NO | Count by plugin |
+| liker_count | int *UNSIGNED* | Liked By Others Count | 0 | NO | Number of people who liked me |
+| disliker_count | int *UNSIGNED* | Disliked By Others Count | 0 | NO | Number of people who disliked me |
+| follower_count | int *UNSIGNED* | Followed By Others Count | 0 | NO | Number of people who follow me (fans count) |
+| blocker_count | int *UNSIGNED* | Blocked By Others Count | 0 | NO | Number of people who blocked (blacklisted) me |
 | post_publish_count | int *UNSIGNED* | Post Publish Count | 0 | NO | Total number of posts I published |
 | post_digest_count | int *UNSIGNED* | Post Digest Count | 0 | NO | Total number of my featured posts |
 | post_like_count | int *UNSIGNED* | Post Like Count | 0 | NO | Total number of my posts liked by others |
