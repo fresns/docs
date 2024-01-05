@@ -9,12 +9,13 @@ aside: false
 | id | bigint *UNSIGNED* | 主键 ID | | NO | 自动递增 |
 | gtid | varchar(32) | 对外公开 ID |  | NO | **唯一值** |
 | place_id | varchar(64) | Place ID |  | YES | **唯一值**<br>地图服务商专属 ID |
-| place_type | varchar(64) | Place Type |  | YES | 地图服务商地点位置 |
+| place_type | varchar(64) | Place Type | unknown | NO | 地图服务商地点位置 |
 | name | json | 地理名 |  | YES | **多语言** |
 | description | json | 地理描述 |  | YES | **多语言** |
 | map_id | tinyint *UNSIGNED* | 服务商编号 | 1 | NO | 来源[地图服务商](../../configs/dictionary/maps.md)键值字典 |
 | map_longitude | decimal(12,8) | 地图-经度 |  | NO | 浮点数，范围为 -180~180，负数表示西经 |
 | map_latitude | decimal(12,8) | 地图-纬度 |  | NO | 浮点数，范围为 -90~90，负数表示南纬 |
+| map_location | point | 地图-经纬度  |  | NO | longitude, latitude |
 | map_info | json | 完整地图信息字段 |  | YES |  |
 | type | smallint *UNSIGNED* | 类型 |  | NO | 用于自定义用途，比如分类或过滤 |
 | cover_file_id | bigint *UNSIGNED* | 封面图 ID |  | YES | 关联字段 [files->id](../systems/files.md) |
