@@ -111,8 +111,6 @@ aside: false
     ],
     "geotag": {
         // Common Data Structure -> Geotag Info
-        "distance": "Number / Distance between the post location and me",
-        "unit": "String / Unit of distance from me, km or mi"
     },
     "author": {
         // Post author

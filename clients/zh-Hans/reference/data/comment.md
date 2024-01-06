@@ -90,8 +90,6 @@ aside: false
     ],
     "geotag": {
         // 通用数据结构->地理信息
-        "distance": "Number / 帖子发表位置与我的距离",
-        "unit": "String / 与我距离的单位 km 或 mi"
     },
     "author": {
         // 评论作者

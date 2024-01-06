@@ -38,6 +38,8 @@ aside: false
     "commentCount": "Number / 评论总数",
     "commentDigestCount": "Number / 精华评论总数",
     "createdDatetime": "String / 地理创建日期",
+    "distance": "Number / 地理位置与我的距离",
+    "unit": "String / 与我距离的单位 km 或 mi",
     "moreInfo": {
         // 更多信息 geotags->more_info
     },
