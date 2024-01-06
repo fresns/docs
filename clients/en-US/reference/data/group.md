@@ -16,9 +16,9 @@ aside: false
     "privacy": "String / public (Anyone can see who's in the group and what they post.) or private (Only members can see who's in the group and what they post.)",
     "privateEndAfter": "Number / After private mode expires 1.No restrictions 2.All group content is invisible 3.Content before expiration is visible, new content is not visible",
     "visibility": "String / visible (Anyone can find this group.) or hidden (Only members can find this group.)",
-    "parentGid": "String / Parent group ID",
     "parentInfo": {
         "gid": "String / Parent group ID",
+        "url": "String / Parent group detail page URL",
         "name": "String / Parent group name",
         "description": "String / Parent group introduction",
         "cover": "String / Parent group cover image",
@@ -35,6 +35,9 @@ aside: false
     "commentCount": "Number / Total number of comments",
     "commentDigestCount": "Number / Total number of digest comments",
     "createdDatetime": "String / Group creation datetime",
+    "moreInfo": {
+        // Data Table groups->more_info
+    },
     "canViewContent": "Boolean / Whether the user has permission to view content",
     "publishRule": {
         "canPublish": "Boolean / Open for publication, no means no one has the right to publish",
@@ -42,13 +45,6 @@ aside: false
         "reviewPost": "Boolean / Whether posts need to be reviewed",
         "allowComment": "Boolean / Whether the user has permission to comment",
         "reviewComment": "Boolean / Whether comments need to be reviewed"
-    },
-    "permissions": {
-        // Custom group configuration parameters
-        // Data Table: groups->permissions
-    },
-    "moreInfo": {
-        // Data Table groups->more_info
     },
     "archives": [
         // Common Data Structure -> Extend Archive Info
