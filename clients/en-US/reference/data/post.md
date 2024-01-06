@@ -59,7 +59,7 @@ aside: false
             "hasActionButton": "Boolean / Is there a button for comments",
             "buttonName": "String / Button text",
             "buttonStyle": "String / Button style",
-            "appUrl": "String / Configuration app URL"
+            "buttonUrl": "String / Button app URL"
         }
     },
     "moreInfo": {

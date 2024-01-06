@@ -59,7 +59,7 @@ aside: false
             "hasActionButton": "Boolean / 评论是否有按钮",
             "buttonName": "String / 按钮名称",
             "buttonStyle": "String / 按钮风格 primary secondary success danger warning info",
-            "appUrl": "String / 配置应用地址"
+            "buttonUrl": "String / 按钮应用地址"
         }
     },
     "moreInfo": {
