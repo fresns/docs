@@ -59,12 +59,10 @@
 | 表名 | 描述 |
 | --- | --- |
 | **posts** | 帖子主表 |
-| **post_appends** | 帖子-附属表 |
 | **post_auths** | 帖子-授权记录表 |
 | **post_users** | 帖子-特定用户表 |
 | **post_logs** | 帖子日志表 |
 | **comments** | 评论主表 |
-| **comment_appends** | 评论-附属表 |
 | **comment_logs** | 评论日志表 |
 
 ## 内容归类

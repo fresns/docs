@@ -199,12 +199,10 @@ function sidebarDatabase() {
         collapsed: false,
         items: [
           { text: 'posts', link: '/database/contents/posts.md' },
-          { text: 'post_appends', link: '/database/contents/post-appends.md' },
           { text: 'post_auths', link: '/database/contents/post-auths.md' },
           { text: 'post_users', link: '/database/contents/post-users.md' },
           { text: 'post_logs', link: '/database/contents/post-logs.md' },
           { text: 'comments', link: '/database/contents/comments.md' },
-          { text: 'comment_appends', link: '/database/contents/comment-appends.md' },
           { text: 'comment_logs', link: '/database/contents/comment-logs.md' },
         ]
       },

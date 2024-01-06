@@ -211,12 +211,10 @@ function sidebarDatabase() {
       collapsed: false,
       items: [
         { text: 'posts 帖子主表', link: '/database/contents/posts.md' },
-        { text: 'post_appends 帖子-附属表', link: '/database/contents/post-appends.md' },
         { text: 'post_auths 帖子-授权记录表', link: '/database/contents/post-auths.md' },
         { text: 'post_users 帖子-特定用户表', link: '/database/contents/post-users.md' },
         { text: 'post_logs 帖子-日志表', link: '/database/contents/post-logs.md' },
         { text: 'comments 评论主表', link: '/database/contents/comments.md' },
-        { text: 'comment_appends 评论-附属表', link: '/database/contents/comment-appends.md' },
         { text: 'comment_logs 评论-日志表', link: '/database/contents/comment-logs.md' },
       ]
     },
