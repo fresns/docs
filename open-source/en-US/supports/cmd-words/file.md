@@ -44,7 +44,7 @@
 | aid | String | *optional* | Account parameter `file_usages->account_id`<br>Stored as `aid` converted to `accounts->id` |
 | uid | Number | *optional* | User parameter `file_usages->user_id`<br>Stored as `uid` converted to `users->id` |
 | type | Number | **required** | 1.Image / 2.Video / 3.Audio / 4.Document |
-| moreJson | String | *optional* | Custom |
+| moreInfo | String | *optional* | Custom |
 | file | File | **required** | File |
 
 - Either `tableId` or `tableKey` must be passed.
@@ -105,8 +105,8 @@
         "videoPosterPath": "Video specific, store to files->video_poster_path",
         "audioTime": "Audio specific, store to files->audio_time",
         "transcodingState": "Audio and video specific, Store to files->transcoding_state",
-        "moreJson": {
-            // Extended information, store to files->more_json
+        "moreInfo": {
+            // Extended information, store to files->more_info
         },
         "originalPath": "Store to files->original_path",
         "rating": "Store to file_usages->rating",

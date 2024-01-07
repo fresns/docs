@@ -116,7 +116,7 @@
 | objectOrderId | String | NO | 例如发表行为，则代表发表内容的 ID<br>插件行为，凭此 ID 可查询对应插件那边记录的关联信息 |
 | deviceInfo | Object | NO | 交互设备信息 |
 | deviceToken | String | NO | 交互设备 Token<br>例如 iOS Device Token 或 Android Device Token<br>可应用于推送消息 |
-| moreJson | Object | NO | 其他自定义信息 |
+| moreInfo | Object | NO | 其他自定义信息 |
 
 ## 发送验证码
 

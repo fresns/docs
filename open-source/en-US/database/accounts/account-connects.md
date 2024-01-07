@@ -18,7 +18,7 @@ aside: false
 | connect_avatar | varchar(255) | Connect Avatar |  | YES | Platform avatar URL, leave empty if not available |
 | app_fskey | varchar(64) | Plugin Fskey |  | NO | Related field [apps->fskey](../apps/apps.md)<br>Created by which plugin  |
 | is_enabled | tinyint *UNSIGNED* | Is Valid | 1 | NO | 0.Invalid / 1.Valid |
-| more_json | json | Backup Field |  | YES |  |
+| more_info | json | Backup Field |  | YES |  |
 | created_at | timestamp | Create Time | useCurrent | NO | For example, MySQL defaults to `CURRENT_TIMESTAMP` |
 | updated_at | timestamp | Update Time |  | YES |  |
 | deleted_at | timestamp | Delete Time |  | YES |  |

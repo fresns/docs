@@ -10,7 +10,7 @@ aside: false
 | post_id | bigint *UNSIGNED* | 帖子 ID |  | NO | 关联字段 [posts->id](posts.md) |
 | user_id | bigint *UNSIGNED* | 用户 ID |  | NO | 关联字段 [users->id](../users/users.md) |
 | app_fskey | varchar(64) | 录入的插件 |  | NO | 哪个插件触发的记录<br>关联字段 [apps->fskey](../apps/apps.md) |
-| more_json | json | 扩展字段 |  | YES |  |
+| more_info | json | 扩展字段 |  | YES |  |
 | created_at | timestamp | 创建时间 | useCurrent | NO | 比如 MySQL 默认值为 CURRENT_TIMESTAMP |
 | updated_at | timestamp | 更新时间 |  | YES |  |
 | deleted_at | timestamp | 删除时间 |  | YES |  |

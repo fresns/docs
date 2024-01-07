@@ -44,7 +44,7 @@
 | aid | String | NO | 账号参数 `file_usages->account_id`<br>存储时由 `aid` 转换成 `accounts->id` |
 | uid | Number | NO | 用户参数 `file_usages->user_id`<br>存储时由 `uid` 转换成 `users->id` |
 | type | Number | YES | 1.图片 / 2.视频 / 3.音频 / 4.文档 |
-| moreJson | String | NO | 自定义 |
+| moreInfo | String | NO | 自定义 |
 | file | File | YES | 文件 |
 
 - `tableId` 和 `tableKey` 二选一必传一个。
@@ -105,8 +105,8 @@
         "videoPosterPath": "视频专用，存储到 files->video_poster_path",
         "audioTime": "音频专用，存储到 files->audio_time",
         "transcodingState": "音视频专用，存储到 files->transcoding_state",
-        "moreJson": {
-            // 扩展信息，存储到 files->more_json
+        "moreInfo": {
+            // 扩展信息，存储到 files->more_info
         },
         "originalPath": "存储到 files->original_path",
         "rating": "存储到 file_usages->rating",

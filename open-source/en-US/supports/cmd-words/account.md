@@ -49,7 +49,7 @@
         "connectNickname": "Nickname", //Store to account_connects->connect_nickname
         "connectAvatar": "Avatar URL", //Store to account_connects->connect_avatar
         "pluginFskey": "Requester's fskey", //Store to account_connects->app_fskey
-        "moreJson": {}, //Store to account_connects->more_json
+        "moreInfo": {}, //Store to account_connects->more_info
     },
     {
         "connectPlatformId": 9,
@@ -61,7 +61,7 @@
         "connectNickname": "Nickname",
         "connectAvatar": "Avatar URL",
         "pluginFskey": "Requester's fskey",
-        "moreJson": {},
+        "moreInfo": {},
     }
 ]
 ```
@@ -131,7 +131,7 @@
 | connectUsername | String | *optional* | `account_connects->connect_username` |
 | connectNickname | String | *optional*  | `account_connects->connect_nickname` |
 | connectAvatar | String | *optional* | `account_connects->connect_avatar` |
-| moreJson | String | *optional* | `account_connects->more_json` |
+| moreInfo | String | *optional* | `account_connects->more_info` |
 | connectEmail | String | *optional* | Platform email (will be stored when the account table email is empty, ignored if there is a value) |
 | connectPhone | Number | *optional* | Platform phone number (will be stored when the account table phone number is empty, ignored if there is a value) |
 | connectCountryCode | Number | *optional* | International area code for platform phone number (will be stored when the account table phone number is empty, ignored if there is a value) |

@@ -105,8 +105,8 @@ $file->getFileInfo();
     "md5": "files->md5",
     "sha": "files->sha",
     "shaType": "files->sha_type",
-    "moreJson": {
-        // files->more_json
+    "moreInfo": {
+        // files->more_info
     },
     // Image Parameters
     "imageWidth": "files->image_width",

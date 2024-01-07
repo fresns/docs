@@ -25,7 +25,7 @@
 | transactionId | Number | *optional* | Transaction record voucher ID |
 | transactionCode | String | *optional* | Transaction record voucher Code |
 | remark | String | *optional* | Transaction remark (string) |
-| moreJson | Json | *optional* | Transaction remark (Json) |
+| moreInfo | Json | *optional* | Transaction remark (Json) |
 | immediate | Boolean | *optional* | Whether to take effect immediately, `false` if not passed<br>Effective immediately means that the transaction will be executed immediately, otherwise it will just create a pending transaction log. |
 
 ## walletWithdraw
@@ -44,7 +44,7 @@
 | transactionId | Number | *optional* | Transaction record voucher ID |
 | transactionCode | String | *optional* | Transaction record voucher Code |
 | remark | String | *optional* | Transaction remark (string) |
-| moreJson | Json | *optional* | Transaction remark (Json) |
+| moreInfo | Json | *optional* | Transaction remark (Json) |
 | immediate | Boolean | *optional* | Whether to take effect immediately, `false` if not passed<br>Effective immediately means that the transaction will be executed immediately, otherwise it will just create a pending transaction log. |
 
 ## walletUpdateState
@@ -79,7 +79,7 @@
 | transactionId | Number | *optional* | Transaction record voucher ID |
 | transactionCode | String | *optional* | Transaction record voucher Code |
 | remark | String | *optional* | Transaction remark (string) |
-| moreJson | Json | *optional* | Transaction remark (Json) |
+| moreInfo | Json | *optional* | Transaction remark (Json) |
 
 ## walletUnfreeze
 
@@ -95,7 +95,7 @@
 | transactionId | Number | *optional* | Transaction record voucher ID |
 | transactionCode | String | *optional* | Transaction record voucher Code |
 | remark | String | *optional* | Transaction remark (string) |
-| moreJson | Json | *optional* | Transaction remark (Json) |
+| moreInfo | Json | *optional* | Transaction remark (Json) |
 
 ## walletIncrease
 
@@ -114,7 +114,7 @@
 | transactionId | Number | *optional* | Transaction record voucher ID |
 | transactionCode | String | *optional* | Transaction record voucher Code |
 | remark | String | *optional* | Transaction remark (string) |
-| moreJson | Json | *optional* | Transaction remark (Json) |
+| moreInfo | Json | *optional* | Transaction remark (Json) |
 
 ## walletDecrease
 
@@ -134,7 +134,7 @@
 | transactionId | Number | *optional* | Transaction record voucher ID |
 | transactionCode | String | *optional* | Transaction record voucher Code |
 | remark | String | *optional* | Transaction remark (string) |
-| moreJson | Json | *optional* | Transaction remark (Json) |
+| moreInfo | Json | *optional* | Transaction remark (Json) |
 
 ## walletReversal
 

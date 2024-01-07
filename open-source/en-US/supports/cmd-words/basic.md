@@ -107,7 +107,7 @@
 | objectOrderId | String | *optional* | For example, if it is a publishing action, it represents the ID of the published content<br>Plugin behavior, this ID can query the corresponding plugin-side related information |
 | deviceInfo | Object | *optional* | Interaction device information |
 | deviceToken | String | *optional* | Interaction device Token<br>For example, iOS Device Token or Android Device Token<br>Can be used for push notifications |
-| moreJson | Object | *optional* | Other custom information |
+| moreInfo | Object | *optional* | Other custom information |
 
 ## sendCode
 

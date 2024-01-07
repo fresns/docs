@@ -29,7 +29,7 @@ $bodyInfo = [
     'videoPosterPath' => '',
     'audioTime' => '',
     'transcodingState' => '',
-    'moreJson' => $dtoWordBody->moreJson,
+    'moreInfo' => $dtoWordBody->moreInfo,
 ];
 
 $uploadFile = FileUtility::uploadFile($bodyInfo, $dtoWordBody->file);
@@ -81,8 +81,8 @@ $uploadFileInfo = FileUtility::uploadFileInfo($bodyInfo);
         "videoPosterPath": "视频专用，存储到 files->video_poster_path",
         "audioTime": "音频专用，存储到 files->audio_time",
         "transcodingState": "音视频专用，存储到 files->transcoding_state",
-        "moreJson": {
-            // 扩展信息，存储到 files->more_json
+        "moreInfo": {
+            // 扩展信息，存储到 files->more_info
         },
         "originalPath": "存储到 files->original_path",
         "rating": "存储到 file_usages->rating",
@@ -118,7 +118,7 @@ $bodyInfo = [
     'videoPosterPath' => '',
     'audioTime' => '',
     'transcodingState' => '',
-    'moreJson' => $dtoWordBody->moreJson,
+    'moreInfo' => $dtoWordBody->moreInfo,
 ];
 
 $uploadFile = FileUtility::saveFileInfoToDatabase($bodyInfo, $diskPath, $file);

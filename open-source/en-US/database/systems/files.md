@@ -25,7 +25,7 @@ aside: false
 | audio_time | smallint *UNSIGNED* | Audio Duration |  | YES | Unit: seconds, audio file specific |
 | video_time | smallint *UNSIGNED* | Video Duration |  | YES | Unit: seconds, video file specific |
 | video_poster_path | varchar(255) | Video Cover Image |  | YES | Video cover image path |
-| more_json | json | Spare Field |  | YES | For example, some clients or editors can publish content with tagged images like Xiaohongshu, so the information stored here is tag information |
+| more_info | json | Spare Field |  | YES | For example, some clients or editors can publish content with tagged images like Xiaohongshu, so the information stored here is tag information |
 | transcoding_state | tinyint *UNSIGNED* | Audio and Video Attachment Transcoding Status | 1 | YES | Transcoding status: 1.Pending 2.Transcoding 3.Transcoding Completed 4.Transcoding Failed |
 | transcoding_reason | varchar(255) | Audio and Video Attachment Transcoding Failure Reason |  | YES | Transcoding failure reason |
 | original_path | varchar(255) | Original File Path |  | YES | **Relative path**<br>If the file involves transcoding, the storage path of the file before transcoding<br>If not, leave empty |

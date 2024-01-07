@@ -49,7 +49,7 @@
         "connectNickname": "昵称", //存储到 account_connects->connect_nickname
         "connectAvatar": "头像 URL", //存储到 account_connects->connect_avatar
         "pluginFskey": "请求者 fskey ", //存储到 account_connects->app_fskey
-        "moreJson": {}, //存储到 account_connects->more_json
+        "moreInfo": {}, //存储到 account_connects->more_info
     },
     {
         "connectPlatformId": 9,
@@ -61,7 +61,7 @@
         "connectNickname": "昵称",
         "connectAvatar": "头像 URL",
         "pluginFskey": "请求者 fskey ",
-        "moreJson": {},
+        "moreInfo": {},
     }
 ]
 ```
@@ -131,7 +131,7 @@
 | connectUsername | String | NO | `account_connects->connect_username` |
 | connectNickname | String | NO | `account_connects->connect_nickname` |
 | connectAvatar | String | NO | `account_connects->connect_avatar` |
-| moreJson | String | NO | `account_connects->more_json` |
+| moreInfo | String | NO | `account_connects->more_info` |
 | connectEmail | String | NO | 平台邮箱（账号表邮箱为空时将存入，有值则忽略） |
 | connectPhone | Number | NO | 平台手机号码（账号表手机号为空时将存入，有值则忽略） |
 | connectCountryCode | Number | NO | 平台手机号码国际区号（账号表手机号为空时将存入，有值则忽略） |

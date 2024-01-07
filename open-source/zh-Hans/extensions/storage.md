@@ -105,8 +105,8 @@ $file->getFileInfo();
     "md5": "files->md5",
     "sha": "files->sha",
     "shaType": "files->sha_type",
-    "moreJson": {
-        // 扩展信息 files->more_json
+    "moreInfo": {
+        // 扩展信息 files->more_info
     },
     // 图片专用参数
     "imageWidth": "files->image_width",

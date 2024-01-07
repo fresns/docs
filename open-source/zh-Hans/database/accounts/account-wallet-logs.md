@@ -23,7 +23,7 @@ aside: false
 | object_wallet_log_id | bigint *UNSIGNED* | 关联交易日志 ID |  | YES | 关联字段 account_wallet_logs->id |
 | state | tinyint *UNSIGNED* | 交易状态 | 1 | NO | 1.待处理<br>2.处理中<br>3.成功<br>4.失败<br>5.撤回 |
 | remark | text | 备注 |  | YES |  |
-| more_json | json | 备用字段 |  | YES |  |
+| more_info | json | 备用字段 |  | YES |  |
 | success_at | timestamp | 交易成功时间 |  | YES |  |
 | created_at | timestamp | 创建时间 | useCurrent | NO | 比如 MySQL 默认值为 CURRENT_TIMESTAMP |
 | updated_at | timestamp | 更新时间 |  | YES |  |

@@ -244,7 +244,7 @@ $wordBody = [
 | type | String | YES | 类型 `add` 或 `remove` |
 | uid | Number | YES | 指定用户 |
 | fskey | String | YES | 插件 Fskey |
-| moreJson | Json | NO | 额外记录信息（Json） |
+| moreInfo | Json | NO | 额外记录信息（Json） |
 
 ## 设置评论扩展按钮
 

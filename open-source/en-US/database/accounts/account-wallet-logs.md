@@ -23,7 +23,7 @@ aside: false
 | object_wallet_log_id | bigint *UNSIGNED* | Related Transaction Log ID |  | YES | Related field account_wallet_logs->id |
 | state | tinyint *UNSIGNED* | Transaction State | 1 | NO | 1.Pending<br>2.Processing<br>3.Success<br>4.Failed<br>5.Reversed |
 | remark | text | Remark |  | YES |  |
-| more_json | json | Backup Field |  | YES |  |
+| more_info | json | Backup Field |  | YES |  |
 | success_at | timestamp | Transaction Success Time |  | YES |  |
 | created_at | timestamp | Create Time | useCurrent | NO | For example, MySQL defaults to `CURRENT_TIMESTAMP` |
 | updated_at | timestamp | Update Time |  | YES |  |

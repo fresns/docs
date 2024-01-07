@@ -25,7 +25,7 @@ aside: false
 | audio_time | smallint *UNSIGNED* | 音频时长 |  | YES | 单位：秒，音频文件专用 |
 | video_time | smallint *UNSIGNED* | 视频时长 |  | YES | 单位：秒，视频文件专用 |
 | video_poster_path | varchar(255) | 视频封面图 |  | YES | 视频封面图路径 |
-| more_json | json | 备用字段 |  | YES | 比如某种客户端或编辑器，可以发表像小红书那样图片带标签的内容，这样这里存储的是标签信息 |
+| more_info | json | 备用字段 |  | YES | 比如某种客户端或编辑器，可以发表像小红书那样图片带标签的内容，这样这里存储的是标签信息 |
 | transcoding_state | tinyint *UNSIGNED* | 音视频附件转码状态 | 1 | YES | 转码状态：1.待转码 2.转码中 3.转码完成 4.转码失败 |
 | transcoding_reason | varchar(255) | 音视频附件转码失败原因 |  | YES | 转码失败原因 |
 | original_path | varchar(255) | 原始文件路径 |  | YES | **相对路径**<br>如果文件涉及转码，转码前的文件存储路径<br>没有则留空 |

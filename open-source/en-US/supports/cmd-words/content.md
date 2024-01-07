@@ -165,8 +165,8 @@
 | --- | --- | --- | --- |
 | type | Number | **required** | 1.Post 2.Comment |
 | fsid | String | **required** | `pid` or `cid` |
-| key | String | **required** | moreJson key |
-| value | String/Number/Array | **required** | moreJson value |
+| key | String | **required** | moreInfo key |
+| value | String/Number/Array | **required** | moreInfo value |
 
 ::: details View Examples
 ```php
@@ -244,7 +244,7 @@ $wordBody = [
 | type | String | **required** | `add` or `remove` |
 | uid | Number | **required** | Specify user |
 | fskey | String | **required** | Plugin Fskey |
-| moreJson | Json | *optional* | Additional record information (Json) |
+| moreInfo | Json | *optional* | Additional record information (Json) |
 
 ## setCommentExtendButton
 

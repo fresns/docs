@@ -25,7 +25,7 @@
 | transactionId | Number | NO | 交易记录凭证 ID |
 | transactionCode | String | NO | 交易记录凭证 Code |
 | remark | String | NO | 交易备注（字符串） |
-| moreJson | Json | NO | 交易备注（Json） |
+| moreInfo | Json | NO | 交易备注（Json） |
 | immediate | Boolean | NO | 是否立即生效，不传则为 `false`<br>立即生效则表示立马执行交易，否则只是创建一条待处理的交易日志 |
 
 ## 提现
@@ -44,7 +44,7 @@
 | transactionId | Number | NO | 交易记录凭证 ID |
 | transactionCode | String | NO | 交易记录凭证 Code |
 | remark | String | NO | 交易备注（字符串） |
-| moreJson | Json | NO | 交易备注（Json） |
+| moreInfo | Json | NO | 交易备注（Json） |
 | immediate | Boolean | NO | 是否立即生效，不传则为 `false`<br>立即生效则表示立马执行交易，否则只是创建一条待处理的交易日志 |
 
 ## 变更充值或提现状态
@@ -79,7 +79,7 @@
 | transactionId | Number | NO | 交易记录凭证 ID |
 | transactionCode | String | NO | 交易记录凭证 Code |
 | remark | String | NO | 交易备注（字符串） |
-| moreJson | Json | NO | 交易备注（Json） |
+| moreInfo | Json | NO | 交易备注（Json） |
 
 ## 解冻
 
@@ -95,7 +95,7 @@
 | transactionId | Number | NO | 交易记录凭证 ID |
 | transactionCode | String | NO | 交易记录凭证 Code |
 | remark | String | NO | 交易备注（字符串） |
-| moreJson | Json | NO | 交易备注（Json） |
+| moreInfo | Json | NO | 交易备注（Json） |
 
 ## 收入交易
 
@@ -114,7 +114,7 @@
 | transactionId | Number | NO | 交易记录凭证 ID |
 | transactionCode | String | NO | 交易记录凭证 Code |
 | remark | String | NO | 交易备注（字符串） |
-| moreJson | Json | NO | 交易备注（Json） |
+| moreInfo | Json | NO | 交易备注（Json） |
 
 ## 支出交易
 
@@ -134,7 +134,7 @@
 | transactionId | Number | NO | 交易记录凭证 ID |
 | transactionCode | String | NO | 交易记录凭证 Code |
 | remark | String | NO | 交易备注（字符串） |
-| moreJson | Json | NO | 交易备注（Json） |
+| moreInfo | Json | NO | 交易备注（Json） |
 
 ## 撤销交易
 
