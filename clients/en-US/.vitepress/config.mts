@@ -191,6 +191,8 @@ function sidebarApi() {
         { text: 'Group Tree List', link: '/api/group/tree.md' },
         { text: 'Group List', link: '/api/group/list.md' },
         { text: 'Group Detail', link: '/api/group/detail.md' },
+        { text: 'Group Creator', link: '/api/group/creator.md' },
+        { text: 'Group Admins', link: '/api/group/admins.md' },
         { text: 'Group Interaction Users', link: '/api/group/interaction.md' },
       ]
     },

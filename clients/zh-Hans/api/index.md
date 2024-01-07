@@ -96,6 +96,8 @@
 | `GET` | /api/fresns/v1/group/tree | 获取树结构小组列表 |
 | `GET` | /api/fresns/v1/group/list | 获取小组列表 |
 | `GET` | /api/fresns/v1/group/`{gid}`/detail | 获取小组详情 |
+| `GET` | /api/fresns/v1/group/`{gid}`/creator | 获取小组创建者 |
+| `GET` | /api/fresns/v1/group/`{gid}`/admins | 获取小组管理员 |
 | `GET` | /api/fresns/v1/group/`{gid}`/interaction/`{type}` | 获取小组互动的用户列表 |
 
 ## 话题

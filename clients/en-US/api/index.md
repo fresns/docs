@@ -96,6 +96,8 @@
 | `GET` | /api/fresns/v1/group/tree | Group Tree List |
 | `GET` | /api/fresns/v1/group/list | Group List |
 | `GET` | /api/fresns/v1/group/`{gid}`/detail | Group Detail |
+| `GET` | /api/fresns/v1/group/`{gid}`/creator | Group Creator |
+| `GET` | /api/fresns/v1/group/`{gid}`/admins | Group Admins |
 | `GET` | /api/fresns/v1/group/`{gid}`/interaction/`{type}` | Group Interaction Users |
 
 ## Hashtag

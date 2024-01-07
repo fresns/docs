@@ -55,16 +55,6 @@ aside: false
     "extends": {
         // 通用数据结构->扩展内容信息
     },
-    "creator": {
-        // 小组创建者
-        // 通用数据结构->用户信息
-    },
-    "admins": [
-        {
-            // 小组管理员列表
-            // 通用数据结构->用户信息
-        }
-    ],
     "interaction": {
         "likeEnabled": "Boolean / 是否允许 like",
         "likeName": "String / like 行为自定义名称",

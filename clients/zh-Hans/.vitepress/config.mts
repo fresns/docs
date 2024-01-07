@@ -203,6 +203,8 @@ function sidebarApi() {
         { text: '获取小组[列表] 树结构', link: '/api/group/tree.md' },
         { text: '获取小组[列表]', link: '/api/group/list.md' },
         { text: '获取小组[详情]', link: '/api/group/detail.md' },
+        { text: '获取小组[详情] 创建者', link: '/api/group/creator.md' },
+        { text: '获取小组[详情] 管理员', link: '/api/group/admins.md' },
         { text: '获取小组[详情] 互动列表', link: '/api/group/interaction.md' },
       ]
     },

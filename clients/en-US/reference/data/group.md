@@ -55,15 +55,6 @@ aside: false
     "extends": {
         // Common Data Structure -> Extend Content Info
     },
-    "creator": {
-        // Common Data Structure -> User Info
-    },
-    "admins": [
-        {
-            // Group admin list
-            // Common Data Structure -> User Info
-        }
-    ],
     "interaction": {
         "likeEnabled": "Boolean / Whether like is allowed",
         "likeName": "String / Custom Like Action Name",

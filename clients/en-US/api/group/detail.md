@@ -2,7 +2,7 @@
 
 - Endpoint Path: `/api/fresns/v1/group/{gid}/detail`
 - Method: `GET`
-- Request: `Rest`
+- Request: `Rest` + `Query`
 
 ## Headers Optional Parameter
 

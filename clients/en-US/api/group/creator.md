@@ -1,8 +1,8 @@
-# Group Tree List
+# Group Creator
 
-- Endpoint Path: `/api/fresns/v1/group/tree`
+- Endpoint Path: `/api/fresns/v1/group/{gid}/creator`
 - Method: `GET`
-- Request: `Query`
+- Request: `Rest` + `Query`
 
 ## Headers Optional Parameter
 
@@ -13,6 +13,12 @@
 | X-Fresns-Uid | *optional* | **required** |
 | X-Fresns-Uid-Token | *optional* | **required** |
 
+## Path Variables
+
+| Key | Type | Required | Description |
+| --- | --- | --- | --- |
+| gid | String | **required** | Group GID |
+
 ## Query Params
 
 | Key | Type | Required | Description |
@@ -22,9 +28,7 @@
 
 **Request Description**
 
-- This interface will fetch all groups and then assemble them into a tree structure for output.
-- This interface is not available if the total number of groups exceeds 100.
-- The use case of this interface is similar to traditional BBS sections, where all groups (sections) are displayed in a tree structure.
+- null if no creator
 
 ## Return
 
@@ -32,17 +36,10 @@
 {
     "code": 0,
     "message": "ok",
-    "data": [
-        {
-            // Common Data Structure -> Group Info
-            "groups": [
-                {
-                    // Common Data Structure -> Group Info
-                }
-            ]
-        }
-    ]
+    "data": {
+        // Common Data Structure -> User Info
+    }
 }
 ```
 
-- [Common Data Structure -> Group Info](../../reference/data/group.md)
+- [Common Data Structure -> User Info](../../reference/data/user.md)

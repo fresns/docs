@@ -41,10 +41,6 @@
 | orderDirection | String | *optional* | Sort by direction `asc`,`desc`, Default: `asc` |
 | whitelistKeys | String | *optional* | Whitelist key names, only returns key-value pairs for the given key names<br>Multiple separated by English commas, supports "dot notation" for multi-dimensional arrays |
 | blacklistKeys | String | *optional* | Blacklist key names, removes specified key-value pairs from the returned data<br>Multiple separated by English commas, supports "dot notation" for multi-dimensional arrays |
-| whitelistCreatorKeys | String | NO | For the `creator` parameter in the group information |
-| blacklistCreatorKeys | String | NO | For the `creator` parameter in the group information |
-| whitelistAdminKeys | String | NO | For the `admins` parameter in the group information |
-| blacklistAdminKeys | String | NO | For the `admins` parameter in the group information |
 | pageSize | Number | *optional* | Number of items per page (default 15 items) |
 | page | Number | *optional* | Page number (default 1) |
 
