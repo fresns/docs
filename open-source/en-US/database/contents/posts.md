@@ -14,7 +14,6 @@ aside: false
 | title | varchar(255) | Title |  | YES |  |
 | content | longtext | Content |  | YES |  |
 | lang_tag | varchar(16) | Language Tag |  | YES |  |
-| writing_direction | char(3) | Writing Direction |  | YES |  |
 | is_markdown | tinyint *UNSIGNED* | Is content in MD format | 0 | NO | 0.No / 1.Yes |
 | is_anonymous | tinyint *UNSIGNED* | Is anonymous | 0 | NO | 0.No / 1.Yes |
 | map_longitude | decimal(12,8) | Map - Longitude |  | YES | Decimal, range -180~180, negative for west longitude |
@@ -34,8 +33,11 @@ aside: false
 | comment_follow_count | int *UNSIGNED* | Comment follow count | 0 | NO | Total number of follows on all comments |
 | comment_block_count | int *UNSIGNED* | Comment block count | 0 | NO | Total number of blocks on all comments |
 | post_count | int *UNSIGNED* | Sub-level post count | 0 | NO | Total number of posts referencing it |
+| edit_count | smallint *UNSIGNED* | Number of edits | 0 | NO | Total number of edits |
 | latest_edit_at | timestamp | Edit time |  | YES | If editable after publish, record edit time here |
 | latest_comment_at | timestamp | Comment time |  | YES | Time of the latest comment |
+| more_info | json | More Info |  | YES | E.g. publisher IP location name, device name, etc. |
+| permissions | json | Permissions |  | YES |  |
 | rank_state | tinyint *UNSIGNED* | Rank Status | 1 | NO | 1.Not set |
 | is_enabled | tinyint *UNSIGNED* | Is Valid | 1 | NO | 0.Invalid (visible only to yourself) / 1.Valid |
 | created_at | timestamp | Create Time | useCurrent | NO | For example, MySQL defaults to `CURRENT_TIMESTAMP` |
@@ -52,3 +54,51 @@ aside: false
 
 **Premium Digest**
 - Appears on all users' timeline
+
+## Introduction to Permission Parameters
+
+```json
+{
+    "editor": {
+        "isAppEditor": "Boolean / Is it edited only in the app?",
+        "editorFskey": "String / editor fskey"
+    },
+    "contentWritingDirection": "String / Writing Direction", // ltr or rtl
+    "canDelete": "Boolean / Does the author have the right to delete?",
+    "readConfig": {
+        "isReadLocked": "Boolean / Is a reading auth required",
+        "previewPercentage": "Number / content display ratio when unauthorized",
+        "whitelist": {
+            "users": "Array / whitelist user ID",
+            "roles": "Array / whitelist role ID"
+        },
+        "buttonName": {
+            "Language Tag": "String / Button Name",
+            "en": "Name"
+        },
+        "appFskey": "String / auth app fskey"
+    },
+    "associatedUserListConfig": {
+        "hasUserList": "Boolean / Is there a special user list?",
+        "userListName": {
+            "Language Tag": "String / User List Name",
+            "en": "Name"
+        },
+        "appFskey": "String / user list app fskey"
+    },
+    "commentConfig": {
+        "hidden": "Boolean / Hide all comments",
+        "disabled": "Boolean / Are comments disabled?",
+        "private": "Boolean / Are comments private?",
+        "action": {
+            "hasActionButton": "Boolean / Does the comment have an action button?",
+            "buttonName": {
+                "Language Tag": "String / Button Name",
+                "en": "Name"
+            },
+            "buttonStyle": "String / Button Style: primary secondary success danger warning info",
+            "appFskey": "String / App fskey"
+        }
+    },
+}
+```

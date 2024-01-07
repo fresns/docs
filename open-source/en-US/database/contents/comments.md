@@ -14,7 +14,6 @@ aside: false
 | user_id | bigint *UNSIGNED* | Publisher ID |  | NO | Related field [users->id](../users/users.md) |
 | content | longtext | Content |  | YES |  |
 | lang_tag | varchar(16) | Language Tag |  | YES |  |
-| writing_direction | char(3) | Writing Direction |  | YES |  |
 | is_markdown | tinyint *UNSIGNED* | Is the content in MD format | 0 | NO | 0.No / 1.Yes |
 | is_anonymous | tinyint *UNSIGNED* | Is Anonymous | 0 | NO | 0.No / 1.Yes |
 | map_longitude | decimal(12,8) | Map-Longitude |  | YES | Float, range -180~180, negative numbers represent west longitude |
@@ -33,10 +32,36 @@ aside: false
 | comment_dislike_count | int *UNSIGNED* | Number of Dislikes for Sub-Comments | 0 | NO | Total number of dislikes for all comments in response to this comment |
 | comment_follow_count | int *UNSIGNED* | Number of Follows for Sub-Comments | 0 | NO | Total number of follows for all comments in response to this comment |
 | comment_block_count | int *UNSIGNED* | Number of Blocks for Sub-Comments | 0 | NO | Total number of blocks for all comments in response to this comment |
+| edit_count | smallint *UNSIGNED* | Number of edits | 0 | NO | Total number of edits |
 | latest_edit_at | timestamp | Edit Time |  | YES | If editable after publish, record edit time here |
 | latest_comment_at | timestamp | Comment Time |  | YES | Time of the latest comment<br>When a user replies to this comment |
+| more_info | json | More Info |  | YES | E.g. publisher IP location name, device name, etc. |
+| permissions | json | Permissions |  | YES |  |
 | rank_state | tinyint *UNSIGNED* | Rank Status | 1 | NO | 1.Not set |
 | is_enabled | tinyint *UNSIGNED* | Is Valid | 1 | NO | 0.Invalid (visible only to yourself) / 1.Valid |
 | created_at | timestamp | Publish Time | useCurrent | NO | For example, MySQL defaults to `CURRENT_TIMESTAMP` |
 | updated_at | timestamp | Update Time |  | YES |  |
 | deleted_at | timestamp | Delete Time |  | YES |  |
+
+## Introduction to Permission Parameters
+
+```json
+{
+    "editor": {
+        "isAppEditor": "Boolean / Is it edited only in the app?",
+        "editorFskey": "String / editor fskey"
+    },
+    "contentWritingDirection": "String / Writing Direction", // ltr or rtl
+    "canDelete": "Boolean / Does the author have the right to delete?",
+    "activeButton": {
+        // Link with post commentConfig.action, replace this configuration
+        "hasActiveButton": "Boolean / Whether there is an active button or not",
+        "buttonName": {
+            "Language Tag": "String / Button Name",
+            "en": "Name"
+        },
+        "buttonStyle": "String / Button Style primary secondary success danger warning info",
+        "appFskey": "String / App fskey"
+    },
+}
+```

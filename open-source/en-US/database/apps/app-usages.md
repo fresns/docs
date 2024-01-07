@@ -9,7 +9,7 @@ aside: false
 | id | int *UNSIGNED* | Primary Key ID |  | NO | Auto Increment |
 | usage_type | tinyint *UNSIGNED* | Type |  | NO | 1.Wallet recharge<br>2.Wallet withdrawal<br>3.Editor extensions<br>4.Content type extensions<br>5.Management extensions<br>6.Group extensions<br>7.User feature extensions<br>8.User profile extensions<br>9.Channel extensions |
 | app_fskey | varchar(64) | Associated Plugin Fskey |  | NO | Related field [apps->fskey](../apps/apps.md) |
-| name | varchar(128) | Name |  | NO | **Multilingual** |
+| name | json | Name |  | NO | **Multilingual** |
 | icon_file_id | bigint *UNSIGNED* | Icon file ID |  | YES | Related field [files->id](../systems/files.md) |
 | icon_file_url | varchar(255) | Icon file URL |  | YES |  |
 | scene | varchar(16) | For type 3,4,5: Usage scene |  | YES | 1. Post / 2. Comment / 3. User<br>Multiple separated by commas |

@@ -14,7 +14,6 @@ aside: false
 | title | varchar(255) | 标题 |  | YES |  |
 | content | longtext | 内容 |  | YES |  |
 | lang_tag | varchar(16) | 语言标签 |  | YES |  |
-| writing_direction | char(3) | 语言写作方向 |  | YES |  |
 | is_markdown | tinyint *UNSIGNED* | 内容是否为 MD 格式 | 0 | NO | 0.否 / 1.是 |
 | is_anonymous | tinyint *UNSIGNED* | 是否匿名 | 0 | NO | 0.否 / 1.是 |
 | map_longitude | decimal(12,8) | 地图-经度 |  | YES | 浮点数，范围为 -180~180，负数表示西经 |
@@ -34,8 +33,11 @@ aside: false
 | comment_follow_count | int *UNSIGNED* | 评论关注数 | 0 | NO | 所有评论被关注总数 |
 | comment_block_count | int *UNSIGNED* | 评论屏蔽数 | 0 | NO | 所有评论被屏蔽总数 |
 | post_count | int *UNSIGNED* | 子级帖子数 | 0 | NO | 引用它的帖子总数 |
+| edit_count | smallint *UNSIGNED* | 编辑次数 | 0 | NO | 共编辑了几次 |
 | latest_edit_at | timestamp | 编辑时间 |  | YES | 如果发表后可以编辑，此处记录编辑时间 |
 | latest_comment_at | timestamp | 评论时间 |  | YES | 最新一条评论的时间 |
+| more_info | json | 更多信息字段 |  | YES |  |
+| permissions | json | 权限参数 |  | YES |  |
 | rank_state | tinyint *UNSIGNED* | 等级状态 | 1 | NO | 1.未设置 |
 | is_enabled | tinyint *UNSIGNED* | 是否有效 | 1 | NO | 0.无效（仅自己可见） / 1.有效 |
 | created_at | timestamp | 发表时间 | useCurrent | NO | 比如 MySQL 默认值为 CURRENT_TIMESTAMP |
@@ -53,3 +55,51 @@ aside: false
 **高级精华**
 - 常规曝光
 - 出现在所有用户时间线里
+
+## 权限参数介绍
+
+```json
+{
+    "editor": {
+        "isAppEditor": "Boolean / 是否仅在应用中编辑",
+        "editorFskey": "String / 编辑器 fskey"
+    },
+    "contentWritingDirection": "String / 内容写作方向", // ltr or rtl
+    "canDelete": "Boolean / 作者是否有权删除",
+    "readConfig": {
+        "isReadLocked": "Boolean / 是否需要阅读授权",
+        "previewPercentage": "Number / 无权时内容显示比例",
+        "whitelist": {
+            "users": "Array / 白名单用户 ID",
+            "roles": "Array / 白名单角色 ID"
+        },
+        "buttonName": {
+            "语言标签": "String / 无权时按钮文字",
+            "en": "Name"
+        },
+        "appFskey": "String / 授权应用 fskey"
+    },
+    "associatedUserListConfig": {
+        "hasUserList": "Boolean / 是否有关联用户列表",
+        "userListName": {
+            "语言标签": "String / 用户列表名称",
+            "en": "Name"
+        },
+        "appFskey": "String / 用户列表应用 fskey"
+    },
+    "commentConfig": {
+        "hidden": "Boolean / 是否隐藏全部评论",
+        "disabled": "Boolean / 是否禁止评论",
+        "private": "Boolean / 是否私有评论（私有则仅评论作者和帖子作者可见）",
+        "action": {
+            "hasActionButton": "Boolean / 评论是否有按钮",
+            "buttonName": {
+                "语言标签": "String / 按钮名称",
+                "en": "Name"
+            },
+            "buttonStyle": "String / 按钮风格 primary secondary success danger warning info",
+            "appFskey": "String / 配置应用 fskey"
+        }
+    },
+}
+```

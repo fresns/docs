@@ -14,7 +14,6 @@ aside: false
 | user_id | bigint *UNSIGNED* | 发表者 ID |  | NO | 关联字段 [users->id](../users/users.md) |
 | content | longtext | 内容 |  | YES |  |
 | lang_tag | varchar(16) | 语言标签 |  | YES |  |
-| writing_direction | char(3) | 语言写作方向 |  | YES |  |
 | is_markdown | tinyint *UNSIGNED* | 内容是否为 MD 格式 | 0 | NO | 0.否 / 1.是 |
 | is_anonymous | tinyint *UNSIGNED* | 是否匿名 | 0 | NO | 0.否 / 1.是 |
 | map_longitude | decimal(12,8) | 地图-经度 |  | YES | 浮点数，范围为 -180~180，负数表示西经 |
@@ -33,10 +32,36 @@ aside: false
 | comment_dislike_count | int *UNSIGNED* | 子级评论踩数 | 0 | NO | 回复这条评论的所有评论踩总数 |
 | comment_follow_count | int *UNSIGNED* | 子级评论关注数 | 0 | NO | 回复这条评论的所有评论关注总数 |
 | comment_block_count | int *UNSIGNED* | 子级评论屏蔽数 | 0 | NO | 回复这条评论的所有评论屏蔽总数 |
+| edit_count | smallint *UNSIGNED* | 编辑次数 | 0 | NO | 共编辑了几次 |
 | latest_edit_at | timestamp | 编辑时间 |  | YES | 如果发表后可以编辑，此处记录编辑时间 |
 | latest_comment_at | timestamp | 评论时间 |  | YES | 最新一条评论的时间<br>有用户回复了该条评论 |
+| more_info | json | 更多信息字段 |  | YES | 比如发布者 IP 位置名、设备名等 |
+| permissions | json | 权限参数 |  | YES |  |
 | rank_state | tinyint *UNSIGNED* | 等级状态 | 1 | NO | 1.未设置 |
 | is_enabled | tinyint *UNSIGNED* | 是否有效 | 1 | NO | 0.无效（仅自己可见） / 1.有效 |
 | created_at | timestamp | 发表时间 | useCurrent | NO | 比如 MySQL 默认值为 CURRENT_TIMESTAMP |
 | updated_at | timestamp | 更新时间 |  | YES |  |
 | deleted_at | timestamp | 删除时间 |  | YES |  |
+
+## 权限参数介绍
+
+```json
+{
+    "editor": {
+        "isAppEditor": "Boolean / 是否仅在应用中编辑",
+        "editorFskey": "String / 编辑器 fskey"
+    },
+    "contentWritingDirection": "String / 内容写作方向", // ltr or rtl
+    "canDelete": "Boolean / 作者是否有权删除",
+    "activeButton": {
+        // 与帖子 commentConfig.action 联动，替换该配置
+        "hasActiveButton": "Boolean / 是否有 active 按钮",
+        "buttonName": {
+            "语言标签": "String / 按钮名称",
+            "en": "Name"
+        },
+        "buttonStyle": "String / 按钮风格 primary secondary success danger warning info",
+        "appFskey": "String / 配置应用 fskey"
+    },
+}
+```
