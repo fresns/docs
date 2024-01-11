@@ -29,7 +29,7 @@ aside: false
 | transcoding_state | tinyint *UNSIGNED* | 音视频附件转码状态 | 1 | YES | 转码状态：1.待转码 2.转码中 3.转码完成 4.转码失败 |
 | transcoding_reason | varchar(255) | 音视频附件转码失败原因 |  | YES | 转码失败原因 |
 | original_path | varchar(255) | 原始文件路径 |  | YES | **相对路径**<br>如果文件涉及转码，转码前的文件存储路径<br>没有则留空 |
-| is_sensitive | tinyint *UNSIGNED* | 是否敏感 | 0 | NO | 0.否 / 1.是 |
+| warning_type | tinyint *UNSIGNED* | 警告类型 | 1 | NO | 1.无 2.Nudity 3.Violence 4.Sensitive |
 | is_enabled | tinyint *UNSIGNED* | 是否有效 | 1 | NO | 0.无效 / 1.有效 |
 | physical_deletion | tinyint *UNSIGNED* | 物理删除状态 | 0 | NO | 0.否 / 1.是（已物理删除文件） |
 | created_at | timestamp | 创建时间 | useCurrent | NO | 比如 MySQL 默认值为 CURRENT_TIMESTAMP |

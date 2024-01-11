@@ -29,7 +29,7 @@ aside: false
 | transcoding_state | tinyint *UNSIGNED* | Audio and Video Attachment Transcoding Status | 1 | YES | Transcoding status: 1.Pending 2.Transcoding 3.Transcoding Completed 4.Transcoding Failed |
 | transcoding_reason | varchar(255) | Audio and Video Attachment Transcoding Failure Reason |  | YES | Transcoding failure reason |
 | original_path | varchar(255) | Original File Path |  | YES | **Relative path**<br>If the file involves transcoding, the storage path of the file before transcoding<br>If not, leave empty |
-| is_sensitive | tinyint *UNSIGNED* | Is Sensitive | 0 | NO | 0.No / 1.Yes |
+| warning_type | tinyint *UNSIGNED* | Warning Type | 1 | NO | 1.No 2.Nudity 3.Violence 4.Sensitive |
 | is_enabled | tinyint *UNSIGNED* | Is Valid | 1 | NO | 0.Invalid / 1.Valid |
 | physical_deletion | tinyint *UNSIGNED* | Physical Deletion Status | 0 | NO | 0.No / 1.Yes (File physically deleted) |
 | created_at | timestamp | Create Time | useCurrent | NO | For example, MySQL defaults to `CURRENT_TIMESTAMP` |
