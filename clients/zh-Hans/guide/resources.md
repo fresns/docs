@@ -1,5 +1,9 @@
 # 开发资源
 
+## API Collection
+
+- [API Collection by Bruno](https://github.com/fresns/api-collection-by-bruno)
+
 ## Web 客户端
 
 ### 集成运行（主题）
@@ -9,12 +13,13 @@
 
 ### 独立运行
 
-- [based on Vue](https://github.com/fresns/client-website-vue)
+- based on Vue
+- [based on React](https://github.com/fresns/client-website-react)
 
 ## App 客户端
 
-- [based on React Native](https://github.com/fresns/client-app-react-native)
-- [based on Flutter](https://github.com/fresns/client-app-flutter)
+- based on Flutter
+- based on React Native
 - [based on WeChat Mini Program](https://github.com/fresns/client-wechat)
 
 ## 公共密钥

@@ -1,5 +1,9 @@
 # Resources
 
+## API Collection
+
+- [API Collection by Bruno](https://github.com/fresns/api-collection-by-bruno)
+
 ## Web Client
 
 ### Run in Fresns (Theme)
@@ -9,12 +13,13 @@
 
 ### Standalone Deploy
 
-- [based on Vue](https://github.com/fresns/client-website-vue)
+- based on Vue
+- [based on React](https://github.com/fresns/client-website-react)
 
 ## App Client
 
-- [based on React Native](https://github.com/fresns/client-app-react-native)
-- [based on Flutter](https://github.com/fresns/client-app-flutter)
+- based on Flutter
+- based on React Native
 - [based on WeChat Mini Program](https://github.com/fresns/client-wechat)
 
 ## API Key
