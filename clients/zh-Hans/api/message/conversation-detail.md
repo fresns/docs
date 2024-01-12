@@ -1,6 +1,6 @@
 # [对话]获取对话详情
 
-- 接口地址：`/api/fresns/v1/conversation/{cvid}/detail`
+- 接口地址：`/api/fresns/v1/conversation/{uidOrUsername}/detail`
 - 请求方式：`GET`
 - 传参方式：`Rest` + `Query`
 
@@ -17,7 +17,7 @@
 
 | 变量名 | 类型 | 是否必传 | 说明 |
 | --- | --- | --- | --- |
-| cvid | String | YES | 对话 ID |
+| uidOrUsername | Number / String | YES | 用户 `uid` 或者 `username` |
 
 ## Query 参数
 
@@ -80,7 +80,6 @@
             }
         },
         "detail": {
-            "cvid": "String / 对话 ID",
             "user": {
                 // 与我对话的用户信息，为空表示用户已注销
                 // 通用数据结构->用户信息

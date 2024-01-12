@@ -19,7 +19,7 @@
 | --- | --- | --- | --- |
 | type | String | YES | `all` 或 `choose` |
 | notificationType | Number | NO | `0` 全部类型设为已读（1~9)<br>`1` 系统通知 `2` 推荐内容 `3` 点赞 `4` 踩 `5` 关注 `6` 屏蔽 `7` 提及 `8` 评论 `9` 引用 |
-| notificationIds | String | NO | 消息 `nid`，多个以英文逗号隔开 |
+| notificationIds | String | NO | 消息 `nmid`，多个以英文逗号隔开 |
 
 **接口使用说明**
 

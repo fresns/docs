@@ -1,6 +1,6 @@
 # [Conversation] Messages
 
-- Endpoint Path: `/api/fresns/v1/conversation/{cvid}/messages`
+- Endpoint Path: `/api/fresns/v1/conversation/{uidOrUsername}/messages`
 - Method: `GET`
 - Request: `Rest` + `Query`
 
@@ -17,7 +17,7 @@
 
 | Key | Type | Required | Description |
 | --- | --- | --- | --- |
-| cvid | String | **required** | Conversation ID |
+| uidOrUsername | Number / String | **required** | User `uid` or `username` |
 
 ## Query Params
 

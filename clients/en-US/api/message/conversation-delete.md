@@ -1,6 +1,6 @@
 # [Conversation] Delete Conversation
 
-- Endpoint Path: `/api/fresns/v1/conversation/{cvid}`
+- Endpoint Path: `/api/fresns/v1/conversation/{uidOrUsername}`
 - Method: `DELETE`
 - Request: `Rest`
 
@@ -17,7 +17,7 @@
 
 | Key | Type | Required | Description |
 | --- | --- | --- | --- |
-| cvid | String | **required** | Conversation ID |
+| uidOrUsername | Number / String | **required** | User `uid` or `username` |
 
 ## Return
 

@@ -18,7 +18,7 @@
 | 参数名 | 类型 | 是否必传 | 说明 |
 | --- | --- | --- | --- |
 | usageType | String | YES | 文件用途类型<br>`userAvatar`<br>`userBanner`<br>`conversationMessage`<br>`post`<br>`comment`<br>`postDraft`<br>`commentDraft` |
-| usageFsid | String | YES | 文件用途 fsid<br>`userAvatar` 传参 `uidOrUsername`<br>`userBanner` 传参 `uidOrUsername`<br>`conversationMessage` 传参 `cvid`<br>`post` 传参 `pid`<br>`comment` 传参 `cid`<br>`postDraft` 传参 `did`<br>`commentDraft` 传参 `did` |
+| usageFsid | String | YES | 文件用途 fsid<br>`userAvatar` 传参 `uidOrUsername`<br>`userBanner` 传参 `uidOrUsername`<br>`conversationMessage` 传参 `uidOrUsername`<br>`post` 传参 `pid`<br>`comment` 传参 `cid`<br>`postDraft` 传参 `did`<br>`commentDraft` 传参 `did` |
 | type | String | YES | 四选一 `image`,`video`,`audio`,`document` |
 | uploadMode | String | YES | 二选一<br>`file` 上传文件<br>`fileInfo` 上传文件信息 |
 | file | File | NO | `uploadMode=file` 专用，上传文件 |

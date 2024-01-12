@@ -38,7 +38,6 @@
         },
         "list": [
             {
-                "cvid": "String / Conversation ID",
                 "user": {
                     // User information for the conversation with me, empty if the user has been deactivated.
                     // Common Data Structure -> User Info

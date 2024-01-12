@@ -43,8 +43,7 @@ The Fresns API is based on the `RESTful` standard and returns results in the fol
 | hcid | History Comment ID |
 | fid | File ID |
 | eid | Extend Content ID |
-| nid | Notification ID |
-| cvid | Conversation ID |
+| nmid | Notification Message ID |
 | cmid | Conversation Message ID |
 | did | Draft ID |
 

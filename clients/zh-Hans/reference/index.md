@@ -43,8 +43,7 @@ Fresns API 遵循 `RESTful` 标准，返回结果的格式如下：
 | hcid | 历史评论 ID |
 | fid | 文件 ID |
 | eid | 扩展内容 ID |
-| nid | 通知 ID |
-| cvid | 对话 ID |
+| nmid | 通知消息 ID |
 | cmid | 对话消息 ID |
 | did | 草稿 ID |
 

@@ -1,6 +1,6 @@
 # [对话]获取消息列表
 
-- 接口地址：`/api/fresns/v1/conversation/{cvid}/messages`
+- 接口地址：`/api/fresns/v1/conversation/{uidOrUsername}/messages`
 - 请求方式：`GET`
 - 传参方式：`Rest` + `Query`
 
@@ -17,7 +17,7 @@
 
 | 变量名 | 类型 | 是否必传 | 说明 |
 | --- | --- | --- | --- |
-| cvid | String | YES | 对话 ID |
+| uidOrUsername | Number / String | YES | 用户 `uid` 或者 `username` |
 
 ## Query 参数
 

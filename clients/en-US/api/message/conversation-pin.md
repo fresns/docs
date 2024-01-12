@@ -1,6 +1,6 @@
 # [Conversation] Pin
 
-- Endpoint Path: `/api/fresns/v1/conversation/{cvid}/pin`
+- Endpoint Path: `/api/fresns/v1/conversation/{uidOrUsername}/pin`
 - Method: `PATCH`
 - Request: `Rest`
 
@@ -17,7 +17,7 @@
 
 | Key | Type | Required | Description |
 | --- | --- | --- | --- |
-| cvid | String | **required** | Conversation ID |
+| uidOrUsername | Number / String | **required** | User `uid` or `username` |
 
 **Request Description**
 

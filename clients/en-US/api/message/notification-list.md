@@ -81,7 +81,7 @@
         },
         "list": [
             {
-                "nid": "String / Notification ID",
+                "nmid": "String / Notification Message ID",
                 "type": "Number / Notification type",
                 "content": "String / Notification content",
                 "isMarkdown": "Boolean / Whether the content is in Markdown format",

@@ -1,6 +1,6 @@
 # [Conversation] Detail
 
-- Endpoint Path: `/api/fresns/v1/conversation/{cvid}/detail`
+- Endpoint Path: `/api/fresns/v1/conversation/{uidOrUsername}/detail`
 - Method: `GET`
 - Request: `Rest` + `Query`
 
@@ -17,7 +17,7 @@
 
 | Key | Type | Required | Description |
 | --- | --- | --- | --- |
-| cvid | String | **required** | Conversation ID |
+| uidOrUsername | Number / String | **required** | User `uid` or `username` |
 
 ## Query Params
 
@@ -80,7 +80,6 @@
             }
         },
         "detail": {
-            "cvid": "String / Conversation ID",
             "user": {
                 // User information for the conversation with me, empty if the user has been deactivated.
                 // Common Data Structure -> User Info

@@ -81,12 +81,12 @@
 | Method | Endpoint Path | Description |
 | --- | --- | --- |
 | `GET` | /api/fresns/v1/conversation/list | List |
-| `GET` | /api/fresns/v1/conversation/`{cvid}`/detail | Detail |
-| `GET` | /api/fresns/v1/conversation/`{cvid}`/messages | Messages |
-| `PATCH` | /api/fresns/v1/conversation/`{cvid}`/pin | Pin Conversation |
-| `PATCH` | /api/fresns/v1/conversation/`{cvid}`/read-status | Mark As Read |
-| `DELETE` | /api/fresns/v1/conversation/`{cvid}`/messages | Delete Messages |
-| `DELETE` | /api/fresns/v1/conversation/`{cvid}` | Delete Conversation |
+| `GET` | /api/fresns/v1/conversation/`{uidOrUsername}`/detail | Detail |
+| `GET` | /api/fresns/v1/conversation/`{uidOrUsername}`/messages | Messages |
+| `PATCH` | /api/fresns/v1/conversation/`{uidOrUsername}`/pin | Pin Conversation |
+| `PATCH` | /api/fresns/v1/conversation/`{uidOrUsername}`/read-status | Mark As Read |
+| `DELETE` | /api/fresns/v1/conversation/`{uidOrUsername}`/messages | Delete Messages |
+| `DELETE` | /api/fresns/v1/conversation/`{uidOrUsername}` | Delete Conversation |
 | `POST` | /api/fresns/v1/conversation/message | Send Message |
 
 ## Group

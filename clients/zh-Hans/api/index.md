@@ -81,12 +81,12 @@
 | 请求方式 | 接口路径 | 描述 |
 | --- | --- | --- |
 | `GET` | /api/fresns/v1/conversation/list | 获取对话列表 |
-| `GET` | /api/fresns/v1/conversation/`{cvid}`/detail | 获取对话详情 |
-| `GET` | /api/fresns/v1/conversation/`{cvid}`/messages | 获取消息列表 |
-| `PATCH` | /api/fresns/v1/conversation/`{cvid}`/pin | 置顶对话 |
-| `PATCH` | /api/fresns/v1/conversation/`{cvid}`/read-status | 更新阅读状态 |
-| `DELETE` | /api/fresns/v1/conversation/`{cvid}`/messages | 删除消息 |
-| `DELETE` | /api/fresns/v1/conversation/`{cvid}` | 删除对话 |
+| `GET` | /api/fresns/v1/conversation/`{uidOrUsername}`/detail | 获取对话详情 |
+| `GET` | /api/fresns/v1/conversation/`{uidOrUsername}`/messages | 获取消息列表 |
+| `PATCH` | /api/fresns/v1/conversation/`{uidOrUsername}`/pin | 置顶对话 |
+| `PATCH` | /api/fresns/v1/conversation/`{uidOrUsername}`/read-status | 更新阅读状态 |
+| `DELETE` | /api/fresns/v1/conversation/`{uidOrUsername}`/messages | 删除消息 |
+| `DELETE` | /api/fresns/v1/conversation/`{uidOrUsername}` | 删除对话 |
 | `POST` | /api/fresns/v1/conversation/message | 发送消息 |
 
 ## 小组

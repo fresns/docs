@@ -1,6 +1,6 @@
 # [Conversation] Mark As Read
 
-- Endpoint Path: `/api/fresns/v1/conversation/{cvid}/read-status`
+- Endpoint Path: `/api/fresns/v1/conversation/{uidOrUsername}/read-status`
 - Method: `PATCH`
 - Request: `Rest` + `application/json`
 
@@ -17,7 +17,7 @@
 
 | Key | Type | Required | Description |
 | --- | --- | --- | --- |
-| cvid | String | **required** | Conversation ID |
+| uidOrUsername | Number / String | **required** | User `uid` or `username` |
 
 ## Body Params
 

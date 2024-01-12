@@ -1,6 +1,6 @@
 # [对话]删除对话
 
-- 接口地址：`/api/fresns/v1/conversation/{cvid}`
+- 接口地址：`/api/fresns/v1/conversation/{uidOrUsername}`
 - 请求方式：`DELETE`
 - 传参方式：`Rest`
 
@@ -17,7 +17,7 @@
 
 | 参数名 | 类型 | 是否必传 | 说明 |
 | --- | --- | --- | --- |
-| cvid | String | YES | 对话 ID |
+| uidOrUsername | Number / String | YES | 用户 `uid` 或者 `username` |
 
 ## 返回结果
 

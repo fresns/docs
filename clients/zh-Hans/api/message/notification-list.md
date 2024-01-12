@@ -81,7 +81,7 @@
         },
         "list": [
             {
-                "nid": "String / 通知 ID",
+                "nmid": "String / 通知消息 ID",
                 "type": "Number / 通知类型",
                 "content": "String / 通知内容",
                 "isMarkdown": "Boolean / 内容是否为 Markdown 格式",

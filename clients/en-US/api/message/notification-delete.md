@@ -19,7 +19,7 @@
 | --- | --- | --- | --- |
 | type | String | **required** | `all` or `choose` |
 | notificationType | Number | *optional* | `1` System `2` Recommend `3` Like `4` Dislike `5` Follow `6` Block `7` Mention `8` Comment (reply) |
-| notificationIds | String | *optional* | `nid` separated by English commas for multiple id |
+| notificationIds | String | *optional* | `nmid` separated by English commas for multiple id |
 
 **Request Description**
 

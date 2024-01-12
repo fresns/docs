@@ -18,7 +18,7 @@
 | Key | Type | Required | Description |
 | --- | --- | --- | --- |
 | usageType | String | **required** | File usage type<br>`userAvatar`<br>`userBanner`<br>`conversationMessage`<br>`post`<br>`comment`<br>`postDraft`<br>`commentDraft` |
-| usageFsid | String | **required** | File usage fsid<br>`userAvatar` parameter `uidOrUsername`<br>`userBanner` parameter `uidOrUsername`<br>`conversationMessage` parameter `cvid`<br>`post` parameter `pid`<br>`comment` parameter `cid`<br>`postDraft` parameter `did`<br>`commentDraft` parameter `did` |
+| usageFsid | String | **required** | File usage fsid<br>`userAvatar` parameter `uidOrUsername`<br>`userBanner` parameter `uidOrUsername`<br>`conversationMessage` parameter `uidOrUsername`<br>`post` parameter `pid`<br>`comment` parameter `cid`<br>`postDraft` parameter `did`<br>`commentDraft` parameter `did` |
 | type | String | **required** | Choose one from `image`, `video`, `audio`, `document` |
 | uploadMode | String | **required** | Choose one from<br>`file` Upload file<br>`fileInfo` Upload file information |
 | file | File | *optional* | For `uploadMode=file` only, upload file |
