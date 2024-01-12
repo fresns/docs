@@ -1,6 +1,6 @@
-# 扩展交互请求
+# 操作扩展交互
 
-- 接口地址：`/api/fresns/v1/common/extend-action`
+- 接口地址：`/api/fresns/v1/user/extend-action`
 - 请求方式：`POST`
 - 传参方式：`application/json`
 

@@ -1,7 +1,7 @@
-# Update Device Token
+# Extend Action
 
-- Endpoint Path: `/api/fresns/v1/common/device-token`
-- Method: `PATCH`
+- Endpoint Path: `/api/fresns/v1/user/extend-action`
+- Method: `POST`
 - Request: `application/json`
 
 ## Headers Optional Parameter
@@ -17,7 +17,8 @@
 
 | Key | Type | Required | Description |
 | --- | --- | --- | --- |
-| deviceToken | String | **required** | iOS or Android device Token |
+| eid | String | **required** | Extend Content ID |
+| key | String | **required** | actions->items->key |
 
 ## Return
 
@@ -25,6 +26,10 @@
 {
     "code": 0,
     "message": "ok",
-    "data": null
+    "data": {
+        // Common Data Structure -> Extend Content Info -> actions
+    }
 }
 ```
+
+- [Common Data Structure -> Extends -> Extend Content Info -> actions](../../reference/data/extends.md#extend-content-info)

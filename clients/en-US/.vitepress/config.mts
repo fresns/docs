@@ -104,9 +104,7 @@ function sidebarApi() {
         { text: 'IP Information', link: '/api/common/ip-info.md' },
         { text: 'Input Tips', link: '/api/common/input-tips.md' },
         { text: 'App or Plugin Callback', link: '/api/common/callback.md' },
-        { text: 'Update Device Token', link: '/api/common/device-token.md' },
         { text: 'Command Word Request', link: '/api/common/cmd-word.md' },
-        { text: 'Extend Action Request', link: '/api/common/extend-action.md' },
       ]
     },
     {
@@ -141,8 +139,10 @@ function sidebarApi() {
             { text: 'Overview', link: '/api/user/overview.md' },
             { text: 'Extcredits Records', link: '/api/user/extcredits-records.md' },
             { text: 'Edit', link: '/api/user/edit.md' },
+            { text: 'Update Device Token', link: '/api/user/device-token.md' },
             { text: 'Mark', link: '/api/user/mark.md' },
             { text: 'Mark Note', link: '/api/user/mark-note.md' },
+            { text: 'Extend Action', link: '/api/user/extend-action.md' },
           ]
         },
         {

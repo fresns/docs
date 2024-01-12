@@ -116,9 +116,7 @@ function sidebarApi() {
         { text: 'IP 信息', link: '/api/common/ip-info.md' },
         { text: '输入提示信息', link: '/api/common/input-tips.md' },
         { text: '回调返参查询', link: '/api/common/callback.md' },
-        { text: '更新设备凭证', link: '/api/common/device-token.md' },
         { text: '命令字请求', link: '/api/common/cmd-word.md' },
-        { text: '扩展交互请求', link: '/api/common/extend-action.md' },
       ]
     },
     {
@@ -153,8 +151,10 @@ function sidebarApi() {
             { text: '用户概览', link: '/api/user/overview.md' },
             { text: '用户扩展分值记录', link: '/api/user/extcredits-records.md' },
             { text: '修改用户资料', link: '/api/user/edit.md' },
+            { text: '更新设备凭证', link: '/api/user/device-token.md' },
             { text: '操作标记', link: '/api/user/mark.md' },
             { text: '标记备注', link: '/api/user/mark-note.md' },
+            { text: '操作扩展交互', link: '/api/user/extend-action.md' },
           ]
         },
         {

@@ -20,9 +20,7 @@
 | `GET` | /api/fresns/v1/common/ip-info | IP Information |
 | `GET` | /api/fresns/v1/common/input-tips | Input Tips |
 | `GET` | /api/fresns/v1/common/callback | App or Plugin Callback |
-| `PATCH` | /api/fresns/v1/common/device-token | Update Device Token |
 | `POST` | /api/fresns/v1/common/cmd-word | Command Word Request |
-| `POST` | /api/fresns/v1/common/extend-action | Extend Action Request |
 
 ## File
 
@@ -53,8 +51,10 @@
 | `GET` | /api/fresns/v1/user/overview | Overview |
 | `GET` | /api/fresns/v1/user/extcredits-records | Extcredits Records |
 | `PATCH` | /api/fresns/v1/user/profile | Edit Profile |
+| `PATCH` | /api/fresns/v1/user/device-token | Update Device Token |
 | `POST` | /api/fresns/v1/user/mark | Mark |
 | `PATCH` | /api/fresns/v1/user/mark-note | Mark Note |
+| `POST` | /api/fresns/v1/user/extend-action | Extend Action |
 
 **Interactive**
 

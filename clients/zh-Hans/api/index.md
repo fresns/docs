@@ -20,9 +20,7 @@
 | `GET` | /api/fresns/v1/common/ip-info | IP 信息 |
 | `GET` | /api/fresns/v1/common/input-tips | 输入提示信息 |
 | `GET` | /api/fresns/v1/common/callback | 回调返参查询 |
-| `PATCH` | /api/fresns/v1/common/device-token | 更新设备凭证 |
 | `POST` | /api/fresns/v1/common/cmd-word | 命令字请求 |
-| `POST` | /api/fresns/v1/common/extend-action | 扩展交互请求 |
 
 ## 文件
 
@@ -53,8 +51,10 @@
 | `GET` | /api/fresns/v1/user/overview | 用户概览 |
 | `GET` | /api/fresns/v1/user/extcredits-records | 用户扩展分值记录 |
 | `PATCH` | /api/fresns/v1/user/profile | 修改用户资料 |
+| `PATCH` | /api/fresns/v1/user/device-token | 更新设备凭证 |
 | `POST` | /api/fresns/v1/user/mark | 操作标记 |
 | `PATCH` | /api/fresns/v1/user/mark-note | 标记备注 |
+| `POST` | /api/fresns/v1/user/extend-action | 操作扩展交互 |
 
 **互动**
 
