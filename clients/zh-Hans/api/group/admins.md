@@ -1,6 +1,6 @@
 # 获取小组[详情] 管理员
 
-- 接口地址：`/api/fresns/v1/group/{gid}/detail`
+- 接口地址：`/api/fresns/v1/group/{gid}/admins`
 - 请求方式：`GET`
 - 传参方式：`Rest` + `Query`
 
