@@ -261,10 +261,10 @@ function sidebarApi() {
       collapsed: false,
       items: [
         { text: '编辑器配置信息', link: '/api/editor/configs.md' },
-        { text: '快速发表', link: '/api/editor/publications.md' },
+        { text: '直接发表', link: '/api/editor/publish.md' },
+        { text: '编辑帖子或评论', link: '/api/editor/edit.md' },
+        { text: '创建空草稿', link: '/api/editor/draft.md' },
         { text: '获取草稿列表', link: '/api/editor/drafts.md' },
-        { text: '创建草稿', link: '/api/editor/draft.md' },
-        { text: '生成编辑草稿', link: '/api/editor/edit.md' },
         { text: '获取草稿详情', link: '/api/editor/draft-detail.md' },
         { text: '更新草稿内容', link: '/api/editor/draft-update.md' },
         { text: '提交发表（或审核）', link: '/api/editor/draft-publish.md' },

@@ -27,7 +27,7 @@
 | Method | Endpoint Path | Description |
 | --- | --- | --- |
 | `GET` | /api/fresns/v1/file/storage-token | Storage Token |
-| `POST` | /api/fresns/v1/file/uploads | Uploads |
+| `POST` | /api/fresns/v1/file/uploads | Upload File or File Info |
 | `PATCH` | /api/fresns/v1/file/`{fid}`/warning | Update Warning |
 | `GET` | /api/fresns/v1/file/`{fid}`/link | Download Link |
 | `GET` | /api/fresns/v1/file/`{fid}`/users | Download Users |
@@ -149,15 +149,15 @@
 | Method | Endpoint Path | Description |
 | --- | --- | --- |
 | `GET` | /api/fresns/v1/editor/`{type}`/configs | Editor Configs |
-| `POST` | /api/fresns/v1/editor/`{type}`/publications | Quick Publish |
-| `GET` | /api/fresns/v1/editor/`{type}`/drafts | Draft List |
+| `POST` | /api/fresns/v1/editor/`{type}`/publish | Quick Publish |
+| `POST` | /api/fresns/v1/editor/`{type}`/edit/`{fsid}` | Edit Post or Comment |
 | `POST` | /api/fresns/v1/editor/`{type}`/draft | Create Draft |
-| `POST` | /api/fresns/v1/editor/`{type}`/edit/`{fsid}` | Edit post or comment |
+| `GET` | /api/fresns/v1/editor/`{type}`/drafts | Draft List |
 | `GET` | /api/fresns/v1/editor/`{type}`/draft/`{did}` | Draft Detail |
-| `PATCH` | /api/fresns/v1/editor/`{type}`/draft/`{did}` | Draft Update |
-| `POST` | /api/fresns/v1/editor/`{type}`/draft/`{did}` | Draft Publish |
-| `PUT` | /api/fresns/v1/editor/`{type}`/draft/`{did}` | Draft Recall (Draft under review) |
-| `DELETE` | /api/fresns/v1/editor/`{type}`/draft/`{did}` | Draft Delete |
+| `PATCH` | /api/fresns/v1/editor/`{type}`/draft/`{did}` | Update Draft |
+| `POST` | /api/fresns/v1/editor/`{type}`/draft/`{did}` | Publish Draft |
+| `PUT` | /api/fresns/v1/editor/`{type}`/draft/`{did}` | Recall Draft (Draft under review) |
+| `DELETE` | /api/fresns/v1/editor/`{type}`/draft/`{did}` | Delete Draft |
 
 ## Search
 

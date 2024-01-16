@@ -52,9 +52,9 @@ aside: false
         "userListUrl": "String / URL to View User List",
     },
     "commentConfig": {
-        "hidden": "Boolean / Whether to hide all comments",
-        "disabled": "Boolean / Whether comments are disabled",
-        "private": "Boolean / Whether the comment is private (visible only to the comment author and post author)",
+        "visible": "Boolean / Whether comments are visible (invisible is hidden from everyone, including the author)",
+        "enabled": "Boolean / Comments enabled or not",
+        "privacy": "String / public or private (visible only to the author of the comment and the author of the post)",
         "action": {
             "hasActionButton": "Boolean / Is there a button for comments",
             "buttonName": "String / Button text",

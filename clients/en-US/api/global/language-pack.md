@@ -2,7 +2,6 @@
 
 - Endpoint Path: `/api/fresns/v1/global/language-pack`
 - Method: `GET`
-- Request: `Query`
 
 ## Headers Optional Parameter
 
@@ -13,15 +12,9 @@
 | X-Fresns-Uid | *optional* | *optional* |
 | X-Fresns-Uid-Token | *optional* | *optional* |
 
-## Query Params
-
-| Key | Type | Required | Description |
-| --- | --- | --- | --- |
-| langTag | String | *optional* | Language tag to get the language pack for which language<br>Null to output the default language |
-
 **Request Description**
 
-- For language status and labels, see [languages](../../reference/configs.md#languages) settings.
+- Language Tag Use Request Header `X-Fresns-Client-Lang-Tag`
 - [Language Pack Contents](../../reference/language-pack.md)
 
 ## Return

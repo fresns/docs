@@ -249,10 +249,10 @@ function sidebarApi() {
       collapsed: false,
       items: [
         { text: 'Editor Configs', link: '/api/editor/configs.md' },
-        { text: 'Quick Publish', link: '/api/editor/publications.md' },
-        { text: 'Draft List', link: '/api/editor/drafts.md' },
+        { text: 'Quick Publish', link: '/api/editor/publish.md' },
+        { text: 'Edit Post or Comment', link: '/api/editor/edit.md' },
         { text: 'Create Draft', link: '/api/editor/draft.md' },
-        { text: 'Generate Draft', link: '/api/editor/edit.md' },
+        { text: 'Draft List', link: '/api/editor/drafts.md' },
         { text: 'Draft Detail', link: '/api/editor/draft-detail.md' },
         { text: 'Update Draft', link: '/api/editor/draft-update.md' },
         { text: 'Submit Publish', link: '/api/editor/draft-publish.md' },

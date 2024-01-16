@@ -4,7 +4,7 @@
 
 | Key | Type | Required | Description |
 | --- | --- | --- | --- |
-| X-Fresns-Sid | String | *optional* | Space ID, leave blank to indicate open source version |
+| X-Fresns-Space-Id | String | *optional* | Space ID, leave blank to indicate open source version |
 | X-Fresns-App-Id | String | **required** | Key App ID |
 | X-Fresns-Client-Platform-Id | Number | **required** | [Platform ID](dictionary/platforms.md), matching the "platform" of the key |
 | X-Fresns-Client-Version | String | **required** | Your client version, semantic version is recommended |
@@ -47,7 +47,7 @@
 ```php
 // Parameters participating in the singing process in headers
 const SIGN_PARAM_ARR = [
-    'X-Fresns-Sid',
+    'X-Fresns-Space-Id',
     'X-Fresns-App-Id',
     'X-Fresns-Client-Platform-Id',
     'X-Fresns-Client-Version',

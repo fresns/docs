@@ -52,9 +52,9 @@ aside: false
         "userListUrl": "String / 查看用户列表的地址"
     },
     "commentConfig": {
-        "hidden": "Boolean / 是否隐藏全部评论",
-        "disabled": "Boolean / 是否禁止评论",
-        "private": "Boolean / 是否私有评论（私有则仅评论作者和帖子作者可见）",
+        "visible": "Boolean / 评论是否可见（不可见对所有人隐藏，包括作者）",
+        "enabled": "Boolean / 评论功能是否启用",
+        "privacy": "String / public (公开) 或 private（私有则仅评论作者和帖子作者可见）",
         "action": {
             "hasActionButton": "Boolean / 评论是否有按钮",
             "buttonName": "String / 按钮名称",

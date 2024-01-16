@@ -149,10 +149,10 @@
 | 请求方式 | 接口路径 | 描述 |
 | --- | --- | --- |
 | `GET` | /api/fresns/v1/editor/`{type}`/configs | 编辑器配置信息 |
-| `POST` | /api/fresns/v1/editor/`{type}`/publications | 快速发表 |
+| `POST` | /api/fresns/v1/editor/`{type}`/publish | 直接发表 |
+| `POST` | /api/fresns/v1/editor/`{type}`/edit/`{fsid}` | 编辑帖子或评论 |
 | `GET` | /api/fresns/v1/editor/`{type}`/drafts | 获取草稿列表 |
 | `POST` | /api/fresns/v1/editor/`{type}`/draft | 创建空草稿 |
-| `POST` | /api/fresns/v1/editor/`{type}`/edit/`{fsid}` | 编辑帖子或评论 |
 | `GET` | /api/fresns/v1/editor/`{type}`/draft/`{did}` | 获取草稿详情 |
 | `PATCH` | /api/fresns/v1/editor/`{type}`/draft/`{did}` | 更新草稿内容 |
 | `POST` | /api/fresns/v1/editor/`{type}`/draft/`{did}` | 提交发表（或审核） |
