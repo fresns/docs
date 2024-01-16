@@ -7,7 +7,7 @@
   "author": "Jevan Tang",
   "license": "Apache-2.0",
   "devDependencies": {
-    "vitepress": "^1.0.0-rc.36"
+    "vitepress": "^1.0.0-rc.38"
   },
   "scripts": {
     "docs:dev": "vitepress dev pages",
