@@ -36,7 +36,7 @@
 
 ::: details Check `connectInfo` parameter introduction
 - Supports multiple, for example, the WeChat platform will have both UnionID and OpenID parameters.
-- Required parameters: `connectPlatformId`, `connectAccountId`, `pluginFskey`
+- Required parameters: `connectPlatformId`, `connectAccountId`, `appFskey`
 ```json
 [
     {
@@ -48,7 +48,7 @@
         "connectUsername": "Account name", //Store to account_connects->connect_username
         "connectNickname": "Nickname", //Store to account_connects->connect_nickname
         "connectAvatar": "Avatar URL", //Store to account_connects->connect_avatar
-        "pluginFskey": "Requester's fskey", //Store to account_connects->app_fskey
+        "appFskey": "Requester's fskey", //Store to account_connects->app_fskey
         "moreInfo": {}, //Store to account_connects->more_info
     },
     {
@@ -60,7 +60,7 @@
         "connectUsername": "Account name",
         "connectNickname": "Nickname",
         "connectAvatar": "Avatar URL",
-        "pluginFskey": "Requester's fskey",
+        "appFskey": "Requester's fskey",
         "moreInfo": {},
     }
 ]

@@ -87,9 +87,9 @@ aside: false
         "appFskey": "String / user list app fskey"
     },
     "commentConfig": {
-        "hidden": "Boolean / Hide all comments",
-        "disabled": "Boolean / Are comments disabled?",
-        "private": "Boolean / Are comments private?",
+        "visible": "Boolean / Whether comments are visible (invisible is hidden from everyone, including the author)",
+        "enabled": "Boolean / Comments enabled or not",
+        "privacy": "String / public or private (visible only to the author of the comment and the author of the post)",
         "action": {
             "hasActionButton": "Boolean / Does the comment have an action button?",
             "buttonName": {

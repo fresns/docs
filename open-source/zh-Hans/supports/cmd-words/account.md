@@ -36,7 +36,7 @@
 
 ::: details 查看 connectInfo 参数介绍
 - 支持多个，例如微信平台会同时有 UnionID 和 OpenID 两个参数。
-- 必传参数 `connectPlatformId` `connectAccountId` `pluginFskey`
+- 必传参数 `connectPlatformId` `connectAccountId` `appFskey`
 ```json
 [
     {
@@ -48,7 +48,7 @@
         "connectUsername": "账号名", //存储到 account_connects->connect_username
         "connectNickname": "昵称", //存储到 account_connects->connect_nickname
         "connectAvatar": "头像 URL", //存储到 account_connects->connect_avatar
-        "pluginFskey": "请求者 fskey ", //存储到 account_connects->app_fskey
+        "appFskey": "请求者 fskey ", //存储到 account_connects->app_fskey
         "moreInfo": {}, //存储到 account_connects->more_info
     },
     {
@@ -60,7 +60,7 @@
         "connectUsername": "账号名",
         "connectNickname": "昵称",
         "connectAvatar": "头像 URL",
-        "pluginFskey": "请求者 fskey ",
+        "appFskey": "请求者 fskey ",
         "moreInfo": {},
     }
 ]
