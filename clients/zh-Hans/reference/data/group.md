@@ -16,6 +16,7 @@ aside: false
     "privacy": "String / public (任何人都能查看小组内帖子) 或 private (只有成员才能查看小组内帖子)",
     "privateEndAfter": "Number / private 模式到期后 1.不限制 2.小组内容全部不可见 3.到期前内容可见，新内容不可见",
     "visibility": "String / visible (任何人都能找到这个小组) 或 hidden (只有成员能找到这个小组)",
+    "parentGid": "String / 父级小组 ID",
     "parentInfo": {
         "gid": "String / 父级小组 ID",
         "url": "String / 父级小组详情页地址",

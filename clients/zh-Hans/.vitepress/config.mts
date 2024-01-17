@@ -103,7 +103,7 @@ function sidebarApi() {
         { text: '配置信息', link: '/api/global/configs.md' },
         { text: '语言包信息', link: '/api/global/language-pack.md' },
         { text: '扩展频道', link: '/api/global/channels.md' },
-        { text: '扩展档案配置', link: '/api/global/archives.md' },
+        { text: '扩展档案', link: '/api/global/archives.md' },
         { text: '内容类型', link: '/api/global/content-types.md' },
         { text: '用户角色', link: '/api/global/roles.md' },
         { text: '表情图', link: '/api/global/stickers.md' },

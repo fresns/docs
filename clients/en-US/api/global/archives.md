@@ -17,7 +17,7 @@
 
 | Key | Type | Required | Description |
 | --- | --- | --- | --- |
-| type | String | **required** | `user`,`group`,`hashtag`,`post`,`comment` |
+| type | String | **required** | `user`,`group`,`hashtag`,`geotag`,`post`,`comment` |
 
 ## Query Params
 

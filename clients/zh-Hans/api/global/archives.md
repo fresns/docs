@@ -1,4 +1,4 @@
-# 扩展档案配置
+# 扩展档案
 
 - 接口地址：`/api/fresns/v1/global/{type}/archives`
 - 请求方式：`GET`
@@ -17,7 +17,7 @@
 
 | 变量名 | 类型 | 是否必传 | 说明 |
 | --- | --- | --- | --- |
-| type | String | YES | `user`,`group`,`hashtag`,`post`,`comment` |
+| type | String | YES | `user`,`group`,`hashtag`,`geotag`,`post`,`comment` |
 
 ## Query 参数
 

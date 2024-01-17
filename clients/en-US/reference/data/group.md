@@ -16,6 +16,7 @@ aside: false
     "privacy": "String / public (Anyone can see who's in the group and what they post.) or private (Only members can see who's in the group and what they post.)",
     "privateEndAfter": "Number / After private mode expires 1.No restrictions 2.All group content is invisible 3.Content before expiration is visible, new content is not visible",
     "visibility": "String / visible (Anyone can find this group.) or hidden (Only members can find this group.)",
+    "parentGid": "String / Parent group ID",
     "parentInfo": {
         "gid": "String / Parent group ID",
         "url": "String / Parent group detail page URL",
