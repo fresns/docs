@@ -37,6 +37,8 @@ aside: false
 | comment_count | int *UNSIGNED* | Number of Comments | 0 | NO | Number of comments published in this group |
 | post_digest_count | int *UNSIGNED* | Number of digest Posts | 0 | NO | Plugin operation to digest posts, plugin adds and subtracts count |
 | comment_digest_count | int *UNSIGNED* | Number of digest Comments | 0 | NO | Plugin operation to digest comments, plugin adds and subtracts count |
+| last_post_at | timestamp | Last Post Published Time |  | YES |  |
+| last_comment_at | timestamp | Last Comment Published Time |  | YES |  |
 | is_enabled | tinyint *UNSIGNED* | Is Enabled | 1 | NO | 0.Not enabled / 1.Enabled |
 | created_at | timestamp | Create Time | useCurrent | NO | For example, MySQL defaults to `CURRENT_TIMESTAMP` |
 | updated_at | timestamp | Update Time |  | YES |  |

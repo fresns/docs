@@ -37,6 +37,8 @@ aside: false
 | comment_count | int *UNSIGNED* | 评论数 | 0 | NO | 有多少评论发表在该小组 |
 | post_digest_count | int *UNSIGNED* | 精华数 | 0 | NO | 插件操作加精，插件加减统计数 |
 | comment_digest_count | int *UNSIGNED* | 精华数 | 0 | NO | 插件操作加精，插件加减统计数 |
+| last_post_at | timestamp | 最后发表帖子时间 |  | YES |  |
+| last_comment_at | timestamp | 最后发表评论时间 |  | YES |  |
 | is_enabled | tinyint *UNSIGNED* | 是否启用 | 1 | NO | 0.不启用 / 1.启用 |
 | created_at | timestamp | 创建时间 | useCurrent | NO | 比如 MySQL 默认值为 CURRENT_TIMESTAMP |
 | updated_at | timestamp | 更新时间 |  | YES |  |
