@@ -32,16 +32,6 @@ ConfigHelper::fresnsConfigByItemKeys($itemKeys, $langTag);
 ```
 :::
 
-## 根据 key 获取配置 api 值
-
-```php
-ConfigHelper::fresnsConfigApiByItemKey($itemKey, $langTag);
-```
-| 参数名 | 类型 | 是否必传 | 说明 |
-| --- | --- | --- | --- |
-| itemKey | String | YES | [configs->item_key](../../database/systems/configs.md) |
-| langTag | String | NO | 语言标签，可不传，仅对多语言配置有效。<br>如果是多语言配置，不传则输出默认语言值。 |
-
 ## 根据 key 判断文件配置类型
 
 ```php
