@@ -294,6 +294,7 @@ function sidebarConfigs() {
           collapsed: false,
           items: [
             { text: 'Content Handler', link: '/configs/panel/content-handler.md' },
+            { text: 'Command Words', link: '/configs/panel/command-word.md' },
           ]
         },
         {

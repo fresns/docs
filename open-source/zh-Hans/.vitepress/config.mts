@@ -306,6 +306,7 @@ function sidebarConfigs() {
           collapsed: false,
           items: [
             { text: '内容处理扩展', link: '/configs/panel/content-handler.md' },
+            { text: '接口命令字扩展', link: '/configs/panel/command-word.md' },
           ]
         },
         {
