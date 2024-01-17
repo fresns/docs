@@ -8,6 +8,7 @@ aside: false
 {
     "cid": "String / 评论 ID",
     "url": "String / 评论详情页地址",
+    "privacy": "String / public (公开) 或 private（私有则仅评论作者和帖子作者可见）",
     "content": "String / 评论内容或简述",
     "contentLength": "Number / 内容总长度",
     "langTag": "String / 内容语言标签",
@@ -15,7 +16,6 @@ aside: false
     "isBrief": "Boolean / 是否为简述",
     "isMarkdown": "Boolean / 是否为 MD 格式",
     "isAnonymous": "Boolean / 是否匿名",
-    "isPrivate": "Boolean / 是否私有评论（私有仅评论作者和帖子作者可见）",
     "isSticky": "Boolean / 是否置顶",
     "digestState": "Number / 精华状态 1.否 2.普级精华 3.高级精华",
     "viewCount": "Number / 查看总数",

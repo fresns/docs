@@ -8,6 +8,7 @@ aside: false
 {
     "cid": "String / Comment ID",
     "url": "String / Comment details page URL",
+    "privacy": "String / public or private (visible only to the author of the comment and the author of the post)",
     "content": "String / Comment content or summary",
     "contentLength": "Number / Total content length",
     "langTag": "String / Content language tag",
@@ -15,7 +16,6 @@ aside: false
     "isBrief": "Boolean / Whether it's a summary",
     "isMarkdown": "Boolean / Whether it's in MD format",
     "isAnonymous": "Boolean / Whether it's anonymous",
-    "isPrivate": "Boolean / Whether the comment is private (visible only to the comment author and post author)",
     "isSticky": "Boolean / Whether it's sticky",
     "digestState": "Number / Digest state 1: No, 2: General Digest, 3: Premium Digest",
     "viewCount": "Number / Total View Count",
