@@ -715,6 +715,7 @@ function sidebarGuideForZh() {
                 { text: '提交反馈', link: '/zh-Hans/guide/feedback.md' },
                 { text: '更新记录', link: '/zh-Hans/guide/changelog.md' },
                 { text: '常见问题', link: '/zh-Hans/guide/faq.md' },
+                { text: 'Upgrade to v3 修改记录', link: '/zh-Hans/guide/changelog-to-v3.md' },
             ]
         }
     ]
