@@ -89,7 +89,8 @@
 - `/user/auth` 接口地址修改为 `/user/auth-token`
 - `/user/panel` 接口地址修改为 `/user/overview`
 - `/notification/mark-as-read` 接口地址修改为 `/notification/read-status`
-- `/conversation/mark-as-read` 接口地址修改为 `/notification/read-status`
+- `/conversation/pin` 接口地址修改为 `/conversation/{uidOrUsername}/pin`
+- `/conversation/mark-as-read` 接口地址修改为 `/conversation/{uidOrUsername}/read-status`
 - `/post/follow` 接口地址修改为 `/post/timelines`
 - `/post/{pid}/logs` 接口地址修改为 `/post/{pid}/histories`
 - `/post/{pid}/log/{logId}` 接口地址修改为 `/post/history/{hpid}/detail`
@@ -110,28 +111,12 @@
 - `/global/roles`
     - 参数名 `ids` 修改为 `rids`
     - 移除参数 `type`
-- `/common/file/{fid}/link`
-    - 返回结果，参数名 `originalUrl` 修改为 `link`
-- `/common/file/{fid}/users`
-    - 参数名 `whitelistKeys` 修改为 `whitelistUserKeys`
-    - 参数名 `blacklistKeys` 修改为 `blacklistUserKeys`
-- `/account/login`
-    - 移除所有参数
-    - 采用参数 `loginToken`
-    - 返回结果，参数名 `sessionToken` 修改为 `authToken`
-- `/user/auth`
-    - 参数名 `password` 修改为 `pin`
-    - 移除参数 `deviceToken`
-    - 返回结果，参数名 `sessionToken` 修改为 `authToken`
 - `/user/mark`
     - 参数名 `interactionType` 修改为 `markType`
     - 参数名 `markType` 修改为 `type`
 - `/user/mark-note`
     - 参数名 `markType` 修改为 `type`
     - 移除参数 `interactionType`
-- `/user/overview`
-    - 移除参数 `multiUser`
-    - 移除参数 `fileAccept`
 - `/notification/list`
     - 参数名 `userWhitelistKeys` 修改为 `whitelistUserKeys`
     - 参数名 `userBlacklistKeys` 修改为 `blacklistUserKeys`
@@ -144,23 +129,20 @@
     - 参数名 `whitelistKeys` 修改为 `whitelistUserKeys`
     - 参数名 `blacklistKeys` 修改为 `blacklistUserKeys`
     - 返回结果，参数名 `latestMessage.id` 修改为 `cmid`
-- `/conversation/{cvid}/detail`
+- `/conversation/{uidOrUsername}/detail`
     - 参数名 `whitelistKeys` 修改为 `whitelistUserKeys`
     - 参数名 `blacklistKeys` 修改为 `blacklistUserKeys`
-- `/conversation/{cvid}/messages`
+- `/conversation/{uidOrUsername}/messages`
     - 参数名 `whitelistKeys` 修改为 `whitelistUserKeys`
     - 参数名 `blacklistKeys` 修改为 `blacklistUserKeys`
     - 返回结果，参数名 `id` 修改为 `cmid`
-- `/conversation/pin`
-    - 参数名 `conversationId` 修改为 `uidOrUsername`
 - `/conversation/send-message`
     - 返回结果，参数名 `id` 修改为 `cmid`
 - `/conversation/delete`
     - 参数名 `messageIds` 修改为 `cmids`
-- `/conversation/mark-as-read`
-    - 参数名 `conversationId` 修改为 `cvid`
 - `/post/list`
-    - 新增参数 `lastPid`
+    - 新增参数 `sincePid`
+    - 新增参数 `beforePid`
     - 新增参数 `whitelistGroupKeys`
     - 新增参数 `blacklistGroupKeys`
     - 新增参数 `whitelistHashtagKeys`
