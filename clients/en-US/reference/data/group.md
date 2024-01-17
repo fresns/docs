@@ -36,6 +36,11 @@ aside: false
     "commentCount": "Number / Total number of comments",
     "commentDigestCount": "Number / Total number of digest comments",
     "createdDatetime": "String / Group creation datetime",
+    "createdTimeAgo": "String / Human-readable Time",
+    "lastPublishPostDateTime": "String / Last post publishing time",
+    "lastPublishPostTimeAgo": "String / Human-readable Time",
+    "lastPublishCommentDateTime": "String / Last comment time",
+    "lastPublishCommentTimeAgo": "String / Human-readable Time",
     "moreInfo": {
         // Data Table groups->more_info
     },

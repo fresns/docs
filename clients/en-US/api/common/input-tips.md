@@ -31,7 +31,13 @@
             "fsid": "String / username or hid",
             "name": "String / nickname or hashtag name",
             "image": "String / user avatar or hashtag cover",
-            "followStatus": "Boolean / follow status"
+            "interaction": {
+                "likeStatus": "Boolean / Like status",
+                "dislikeStatus": "Boolean / Dislike status",
+                "followStatus": "Boolean / Follow status",
+                "blockStatus": "Boolean / Block status",
+                "note": "String / My interaction note (follow or block)"
+            }
         }
     ]
 }

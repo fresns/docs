@@ -21,6 +21,11 @@ aside: false
     "commentCount": "Number / Total Comment Count",
     "commentDigestCount": "Number / Total Digest Comment Count",
     "createdDatetime": "String / Hashtag Creation Datetime",
+    "createdTimeAgo": "String / Human-readable Time",
+    "lastPublishPostDateTime": "String / Last post publishing time",
+    "lastPublishPostTimeAgo": "String / Human-readable Time",
+    "lastPublishCommentDateTime": "String / Last comment time",
+    "lastPublishCommentTimeAgo": "String / Human-readable Time",
     "moreInfo": {
         // Data Table hashtags->more_info
     },

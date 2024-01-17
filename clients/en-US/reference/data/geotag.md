@@ -38,6 +38,11 @@ aside: false
     "commentCount": "Number / Total Comment Count",
     "commentDigestCount": "Number / Total Digest Comment Count",
     "createdDatetime": "String / Geotag Creation Datetime",
+    "createdTimeAgo": "String / Human-readable Time",
+    "lastPublishPostDateTime": "String / Last post publishing time",
+    "lastPublishPostTimeAgo": "String / Human-readable Time",
+    "lastPublishCommentDateTime": "String / Last comment time",
+    "lastPublishCommentTimeAgo": "String / Human-readable Time",
     "distance": "Number / Distance between the geotag location and me",
     "unit": "String / Unit of distance from me, km or mi",
     "moreInfo": {

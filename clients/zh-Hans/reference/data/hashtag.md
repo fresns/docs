@@ -21,6 +21,11 @@ aside: false
     "commentCount": "Number / 评论总数",
     "commentDigestCount": "Number / 精华评论总数",
     "createdDatetime": "String / 话题创建日期",
+    "createdTimeAgo": "String / 人性化时间",
+    "lastPublishPostDateTime": "String / 最后发帖时间",
+    "lastPublishPostTimeAgo": "String / 人性化时间",
+    "lastPublishCommentDateTime": "String / 最后评论时间",
+    "lastPublishCommentTimeAgo": "String / 人性化时间",
     "moreInfo": {
         // 更多信息 hashtags->more_info
     },

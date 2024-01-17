@@ -31,7 +31,13 @@
             "fsid": "String / username 或 hid",
             "name": "String / 用户昵称或话题名",
             "image": "String / 用户头像或话题封面",
-            "followStatus": "Boolean / 关注状态"
+            "interaction": {
+                "likeStatus": "Boolean / 点赞状态",
+                "dislikeStatus": "Boolean / 点踩状态",
+                "followStatus": "Boolean / 关注状态",
+                "blockStatus": "Boolean / 屏蔽状态",
+                "note": "String / 我的互动备注（关注或屏蔽）",
+            }
         }
     ]
 }
