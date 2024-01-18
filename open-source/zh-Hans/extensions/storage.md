@@ -1,7 +1,7 @@
 # 存储服务开发
 
 - 存储服务商配置位置 `控制面板 > 系统设置 > 存储设置`
-- [查看插件配置信息](../../database/keyname/storage.md)
+- [查看插件配置信息](../configs/panel/storage.md)
 
 ## 路径规则
 
@@ -9,8 +9,8 @@
 FileHelper::fresnsFileStoragePath($fileType, $usageType);
 ```
 
-- [查看 fileType 文件类型](../../database/number.md#文件类型)
-- [查看 usageType 文件用途类型](../../database/number.md#文件用途类型)
+- [查看 fileType 文件类型](../database/numbered-description.md#文件类型)
+- [查看 usageType 文件用途类型](../database/numbered-description.md#文件用途类型)
 
 ## 命令字
 
@@ -18,16 +18,14 @@ FileHelper::fresnsFileStoragePath($fileType, $usageType);
 
 | 命令字 | 说明 |
 | --- | --- |
-| getUploadToken | 获取上传凭证 |
+| getStorageToken | 获取存储桶令牌 |
 | uploadFile | 上传文件 |
-| uploadFileInfo | 上传文件信息 |
 | getAntiLinkFileInfo | 获取防盗链文件信息[单个] |
 | getAntiLinkFileInfoList | 获取防盗链文件信息[多个] |
 | getAntiLinkFileOriginalUrl | 获取源文件防盗链链接 |
-| logicalDeletionFiles | 逻辑删除文件 |
 | physicalDeletionFiles | 物理删除文件 |
 
-文件相关命令字功能和参数说明，[参见开发支持](../../supports/cmd-word/file.md)。
+文件相关命令字功能和参数说明，[参见开发支持](../supports/cmd-words/file.md)。
 
 ## 上传页面
 

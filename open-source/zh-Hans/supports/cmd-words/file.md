@@ -1,18 +1,15 @@
 # 文件功能
 
-## 获取上传凭证
+## 获取存储桶令牌
 
 ```php
-\FresnsCmdWord::plugin('Fresns')->getUploadToken($wordBody);
+\FresnsCmdWord::plugin('Fresns')->getStorageToken($wordBody);
 ```
 | 参数名 | 类型 | 是否必传 | 说明 |
 | --- | --- | --- | --- |
 | type | Number | YES | 1.图片 / 2.视频 / 3.音频 / 4.文档 |
-| name | String | YES | 本次上传的文件名 |
-| expireTime | Number | YES | 有效期，单位：秒 |
 
-- 客户端凭 Token 可以通过 SDK 直接上传到云服务商。
-- [存储服务商编号](../../database/dictionary/storages.md)
+- 客户端凭 Token 可以通过 S3 SDK 直接上传到云服务商。
 
 ::: details 结果示例
 ```json
@@ -20,9 +17,11 @@
     "code": 0,
     "message": "ok",
     "data": {
-        "storageId": "存储服务商编号，见字典键值",
-        "token": "上传 token",
-        "expireTime": "有效期，单位：秒" //没有则输出 null
+        "endpointUrl": "String / 服务 URL",
+        "authToken": "String / 临时上传凭证 STS",
+        "bucketName": "String / 存储桶名称",
+        "region": "String / 存储桶区域",
+        "expireTime": "Number / 有效期，单位：秒", //没有则输出 null
     }
 }
 ```
@@ -36,7 +35,7 @@
 | 参数名 | 类型 | 是否必传 | 说明 |
 | --- | --- | --- | --- |
 | platformId | Number | YES | 平台编号（配置表 [platforms](../../database/dictionary/platforms.md) 键名的键值） |
-| usageType | Number | YES | [文件用途类型](../../database/number.md#文件用途类型) |
+| usageType | Number | YES | [文件用途类型](../../database/numbered-description.md#文件用途类型) |
 | tableName | String | YES | 来源表名（哪个张使用） |
 | tableColumn | String | YES | 来源字段名（哪个字段使用） |
 | tableId | Number | NO | 来源表主键 ID |
@@ -44,8 +43,9 @@
 | aid | String | NO | 账号参数 `file_usages->account_id`<br>存储时由 `aid` 转换成 `accounts->id` |
 | uid | Number | NO | 用户参数 `file_usages->user_id`<br>存储时由 `uid` 转换成 `users->id` |
 | type | Number | YES | 1.图片 / 2.视频 / 3.音频 / 4.文档 |
-| moreInfo | String | NO | 自定义 |
 | file | File | YES | 文件 |
+| warningType | Number | NO | 文件警告 1.无 2.Nudity 3.Violence 4.Sensitive |
+| moreInfo | Object | NO | 自定义 |
 
 - `tableId` 和 `tableKey` 二选一必传一个。
 
@@ -75,7 +75,7 @@
 | 参数名 | 类型 | 是否必传 | 说明 |
 | --- | --- | --- | --- |
 | platformId | Number | YES | 平台编号（配置表 [platforms](../../database/dictionary/platforms.md) 键名的键值） |
-| usageType | Number | YES | [文件用途类型](../../database/number.md#文件用途类型) |
+| usageType | Number | YES | [文件用途类型](../../database/numbered-description.md#文件用途类型) |
 | tableName | String | YES | 来源表名 |
 | tableColumn | String | YES | 来源字段名 |
 | tableId | Number | NO | 来源表主键 ID |
@@ -83,35 +83,32 @@
 | aid | String | NO | 账号参数 `file_usages->account_id`<br>存储时由 `aid` 转换成 `accounts->id` |
 | uid | Number | NO | 用户参数 `file_usages->user_id`<br>存储时由 `uid` 转换成 `users->id` |
 | type | Number | YES | 1.图片 / 2.视频 / 3.音频 / 4.文档 |
-| fileInfo | Array | YES | 文件信息数组 |
+| fileInfo | Object | YES | 文件信息数组 |
+| warningType | Number | NO | 文件警告 1.无 2.Nudity 3.Violence 4.Sensitive |
+| moreInfo | Object | NO | 自定义 |
 
 - `tableId` 和 `tableKey` 二选一必传一个。
 
-::: details fileInfo 数组示例
+::: details fileInfo 示例
 ```json
-[
-    {
-        "name": "存储到 files->name",
-        "mime": "存储到 files->mime",
-        "extension": "存储到 files->extension",
-        "size": "存储到 files->size", // 单位 Byte
-        "md5": "存储到 files->md5",
-        "sha": "存储到 files->sha",
-        "shaType": "存储到 files->sha_type",
-        "path": "存储到 files->path",
-        "imageWidth": "图片专用，存储到 files->image_width",
-        "imageHeight": "图片专用，存储到 files->image_height",
-        "videoTime": "视频专用，存储到 files->video_time",
-        "videoPosterPath": "视频专用，存储到 files->video_poster_path",
-        "audioTime": "音频专用，存储到 files->audio_time",
-        "transcodingState": "音视频专用，存储到 files->transcoding_state",
-        "moreInfo": {
-            // 扩展信息，存储到 files->more_info
-        },
-        "originalPath": "存储到 files->original_path",
-        "rating": "存储到 file_usages->rating",
-    }
-]
+{
+    "name": "存储到 files->name",
+    "mime": "存储到 files->mime",
+    "extension": "存储到 files->extension",
+    "size": "存储到 files->size", // 单位 Byte
+    "md5": "存储到 files->md5",
+    "sha": "存储到 files->sha",
+    "shaType": "存储到 files->sha_type",
+    "path": "存储到 files->path",
+    "imageWidth": "图片专用，存储到 files->image_width",
+    "imageHeight": "图片专用，存储到 files->image_height",
+    "videoTime": "视频专用，存储到 files->video_time",
+    "videoPosterPath": "视频专用，存储到 files->video_poster_path",
+    "audioTime": "音频专用，存储到 files->audio_time",
+    "transcodingState": "音视频专用，存储到 files->transcoding_state",
+    "originalPath": "存储到 files->original_path",
+    "sortOrder": "存储到 file_usages->sort_order",
+}
 ```
 :::
 

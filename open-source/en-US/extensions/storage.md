@@ -1,7 +1,7 @@
 # Storage Plugin Development
 
 - Storage Service Provider Configuration `Panel > Systems > Storage`
-- [View plugin configuration information](../../database/keyname/storage.md)
+- [View plugin configuration information](../configs/panel/storage.md)
 
 ## Path Rules
 
@@ -9,8 +9,8 @@
 FileHelper::fresnsFileStoragePath($fileType, $usageType);
 ```
 
-- [View fileType](../../database/number.md#file-type)
-- [View usageType](../../database/number.md#type-of-file-usage)
+- [View fileType](../database/numbered-description.md#file-type)
+- [View usageType](../database/numbered-description.md#type-of-file-usage)
 
 ## Command Word
 
@@ -18,16 +18,14 @@ The main program interacts with the storage plug-in through command words, so th
 
 | Command Word | Description |
 | --- | --- |
-| getUploadToken | Get Upload Token |
+| getStorageToken | Get S3 Storage Token |
 | uploadFile | upload File |
-| uploadFileInfo | Upload File Information |
 | getAntiLinkFileInfo | Get information about anti-theft link file [one] |
 | getAntiLinkFileInfoList | Get information about anti-theft link file[Multiple] |
 | getAntiLinkFileOriginalUrl | Get the source file anti-theft link |
-| logicalDeletionFiles | Logical Deletion Files |
 | physicalDeletionFiles | Physical Deletion Files |
 
-As for the function of file-related command words and parameter instructions, please refer to [development support](../../supports/cmd-word/file.md).
+As for the function of file-related command words and parameter instructions, please refer to [development support](../supports/cmd-words/file.md).
 
 ## Upload Page
 

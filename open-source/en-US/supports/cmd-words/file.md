@@ -1,18 +1,15 @@
 # File Command Word
 
-## getUploadToken
+## getStorageToken
 
 ```php
-\FresnsCmdWord::plugin('Fresns')->getUploadToken($wordBody);
+\FresnsCmdWord::plugin('Fresns')->getStorageToken($wordBody);
 ```
 | Parameter Name | Type | Required | Description |
 | --- | --- | --- | --- |
 | type | Number | **required** | 1.Image / 2.Video / 3.Audio / 4.Document |
-| name | String | **required** | The filename of this upload |
-| expireTime | Number | **required** | Expiration time, in seconds |
 
-- Clients can upload directly to the cloud service provider with a Token using the SDK.
-- [Storage Service Provider Number](../../database/dictionary/storages.md)
+- Clients can upload directly to the cloud service provider with a Token using the S3 SDK.
 
 ::: details Return Example
 ```json
@@ -20,8 +17,10 @@
     "code": 0,
     "message": "ok",
     "data": {
-        "storageId": "Number / Storage service provider ID, see dictionary key-value",
-        "token": "String / SDK upload token requested from the plugin",
+        "endpointUrl": "String / Endpoint URL",
+        "authToken": "String / Authentication Token (STS)",
+        "bucketName": "String / Bucket Name",
+        "region": "String / Bucket Region",
         "expireTime": "Number / Expiration time, in seconds" // If not available, output null
     }
 }
@@ -36,7 +35,7 @@
 | Parameter Name | Type | Required | Description |
 | --- | --- | --- | --- |
 | platformId | Number | **required** | Platform number (key value from the configuration table [platforms](../../database/dictionary/platforms.md)) |
-| usageType | Number | **required** | [File usage type](../../database/number.md#type-of-file-usage) |
+| usageType | Number | **required** | [File usage type](../../database/numbered-description.md#type-of-file-usage) |
 | tableName | String | **required** | Source table name (which table is using) |
 | tableColumn | String | **required** | Source field name (which field is using) |
 | tableId | Number | *optional* | Source table primary id |
@@ -44,8 +43,9 @@
 | aid | String | *optional* | Account parameter `file_usages->account_id`<br>Stored as `aid` converted to `accounts->id` |
 | uid | Number | *optional* | User parameter `file_usages->user_id`<br>Stored as `uid` converted to `users->id` |
 | type | Number | **required** | 1.Image / 2.Video / 3.Audio / 4.Document |
-| moreInfo | String | *optional* | Custom |
 | file | File | **required** | File |
+| warningType | Number | NO | 1.No 2.Nudity 3.Violence 4.Sensitive |
+| moreInfo | Object | *optional* | Custom |
 
 - Either `tableId` or `tableKey` must be passed.
 
@@ -75,7 +75,7 @@
 | Parameter Name | Type | Required | Description |
 | --- | --- | --- | --- |
 | platformId | Number | **required** | Platform number (key value from the configuration table [platforms](../../database/dictionary/platforms.md)) |
-| usageType | Number | **required** | [File usage type](../../database/number.md#type-of-file-usage) |
+| usageType | Number | **required** | [File usage type](../../database/numbered-description.md#type-of-file-usage) |
 | tableName | String | **required** | Source table name |
 | tableColumn | String | **required** | Source field name |
 | tableId | Number | *optional* | Source table primary id |
@@ -83,35 +83,32 @@
 | aid | String | *optional* | Account parameter `file_usages->account_id`<br>Stored as `aid` converted to `accounts->id` |
 | uid | Number | *optional* | User parameter `file_usages->user_id`<br>Stored as `uid` converted to `users->id` |
 | type | Number | **required** | 1.Image / 2.Video / 3.Audio / 4.Document |
-| fileInfo | Array | **required** | File information array |
+| fileInfo | Object | **required** | File information array |
+| warningType | Number | NO | 1.No 2.Nudity 3.Violence 4.Sensitive |
+| moreInfo | Object | *optional* | Custom |
 
 - Either `tableId` or `tableKey` must be passed.
 
 ::: details fileInfo Example
 ```json
-[
-    {
-        "name": "Store to files->name",
-        "mime": "Store to files->mime",
-        "extension": "Store to files->extension",
-        "size": "Store to files->size", // Unit Byte
-        "md5": "Store to files->md5",
-        "sha": "Store to files->sha",
-        "shaType": "Store to files->sha_type",
-        "path": "Store to files->path",
-        "imageWidth": "Image specific, store to files->image_width",
-        "imageHeight": "Image specific, store to files->image_height",
-        "videoTime": "Video specific, store to files->video_time",
-        "videoPosterPath": "Video specific, store to files->video_poster_path",
-        "audioTime": "Audio specific, store to files->audio_time",
-        "transcodingState": "Audio and video specific, Store to files->transcoding_state",
-        "moreInfo": {
-            // Extended information, store to files->more_info
-        },
-        "originalPath": "Store to files->original_path",
-        "rating": "Store to file_usages->rating",
-    }
-]
+{
+    "name": "Store to files->name",
+    "mime": "Store to files->mime",
+    "extension": "Store to files->extension",
+    "size": "Store to files->size", // Unit Byte
+    "md5": "Store to files->md5",
+    "sha": "Store to files->sha",
+    "shaType": "Store to files->sha_type",
+    "path": "Store to files->path",
+    "imageWidth": "Image specific, store to files->image_width",
+    "imageHeight": "Image specific, store to files->image_height",
+    "videoTime": "Video specific, store to files->video_time",
+    "videoPosterPath": "Video specific, store to files->video_poster_path",
+    "audioTime": "Audio specific, store to files->audio_time",
+    "transcodingState": "Audio and video specific, Store to files->transcoding_state",
+    "originalPath": "Store to files->original_path",
+    "sortOrder": "Store to file_usages->sort_order",
+}
 ```
 :::
 

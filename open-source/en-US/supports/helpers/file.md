@@ -9,7 +9,7 @@ FileHelper::fresnsFileStorageConfigByType($type);
 ```
 | Parameter Name | Type | Required | Description |
 | --- | --- | --- | --- |
-| type | Number | **required** | [File Type Number](../../database/number.md#file-type) |
+| type | Number | **required** | [File Type Number](../../database/numbered-description.md#file-type) |
 
 ::: details Return Example
 ```json
@@ -38,7 +38,7 @@ FileHelper::fresnsFileStoragePath($fileType, $usageType);
 | Parameter Name | Type | Required | Description |
 | --- | --- | --- | --- |
 | fileType | Number | **required** | 1.Image / 2.Video / 3.Audio / 4.Document |
-| usageType | Number | **required** | [Type of File Usage](../../database/number.md#type-of-file-usage) |
+| usageType | Number | **required** | [Type of File Usage](../../database/numbered-description.md#type-of-file-usage) |
 
 ## Get Supported File Formats
 

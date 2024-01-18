@@ -14,18 +14,6 @@ PrimaryHelper::fresnsModelById($modelName, $id);
 | modelName | String | **required** | Model name |
 | fsid | Number / String | **required** | Field value, e.g. aid value |
 
-**Model Name**
-
-- `account`
-- `user`
-- `group`
-- `hashtag`
-- `post`
-- `comment`
-- `file`
-- `extend`
-- `archive`
-
 ## Get Primary ID
 
 ```php
@@ -35,15 +23,6 @@ PrimaryHelper::fresnsPrimaryId($tableName, $tableKey);
 | --- | --- | --- | --- |
 | tableName | String | **required** | Table Name |
 | tableKey | String | **required** | Primary Key Name<br>For example, the aid value |
-
-- `configs`->`item_key`
-- `accounts`->`aid`
-- `users`->`uid` or `username`
-- `posts`->`pid`
-- `comments`->`cid`
-- `extends`->`eid`
-- `groups`->`gid`
-- `hashtags`->`slug`
 
 ## Get Account Primary ID
 

@@ -345,7 +345,6 @@ function sidebarSupports() {
         { text: '钱包功能', link: '/supports/cmd-words/wallet.md' },
         { text: '文件功能', link: '/supports/cmd-words/file.md' },
         { text: '内容功能', link: '/supports/cmd-words/content.md' },
-        { text: '详情功能', link: '/supports/cmd-words/detail.md' },
         { text: '管理功能', link: '/supports/cmd-words/manage.md' },
         { text: '定时任务', link: '/supports/cmd-words/crontab.md' },
       ]
@@ -371,7 +370,6 @@ function sidebarSupports() {
         { text: '通用工具 GeneralUtility', link: '/supports/utilities/general.md' },
         { text: '配置工具 ConfigUtility', link: '/supports/utilities/config.md' },
         { text: '数组工具 ArrUtility', link: '/supports/utilities/arr.md' },
-        { text: '扩展工具 ExtendUtility', link: '/supports/utilities/extend.md' },
         { text: '文件工具 FileUtility', link: '/supports/utilities/file.md' },
         { text: '互动工具 InteractionUtility', link: '/supports/utilities/interaction.md' },
         { text: '鉴权工具 PermissionUtility', link: '/supports/utilities/permission.md' },

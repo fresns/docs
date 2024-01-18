@@ -14,18 +14,6 @@ PrimaryHelper::fresnsModelById($modelName, $id);
 | modelName | String | YES | 模型名 |
 | fsid | Number / String | YES | 字段值，比如 aid 值 |
 
-**模型名**
-
-- `account`
-- `user`
-- `group`
-- `hashtag`
-- `post`
-- `comment`
-- `file`
-- `extend`
-- `archive`
-
 ## 获取主键 ID
 
 ```php
@@ -35,15 +23,6 @@ PrimaryHelper::fresnsPrimaryId($tableName, $tableKey);
 | --- | --- | --- | --- |
 | tableName | String | YES | 表名 |
 | tableKey | String | YES | 字段值，比如 aid 值 |
-
-- `configs`->`item_key`
-- `accounts`->`aid`
-- `users`->`uid`或者`username`
-- `posts`->`pid`
-- `comments`->`cid`
-- `extends`->`eid`
-- `groups`->`gid`
-- `hashtags`->`slug`
 
 ## 获取账号主键 ID
 

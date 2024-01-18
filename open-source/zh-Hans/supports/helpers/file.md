@@ -9,7 +9,7 @@ FileHelper::fresnsFileStorageConfigByType($type);
 ```
 | 参数名 | 类型 | 是否必传 | 说明 |
 | --- | --- | --- | --- |
-| type | Number | YES | [文件类型编号](../../database/number.md#文件类型) |
+| type | Number | YES | [文件类型编号](../../database/numbered-description.md#文件类型) |
 
 ::: details 查看输出示例
 ```json
@@ -38,7 +38,7 @@ FileHelper::fresnsFileStoragePath($fileType, $usageType);
 | 参数名 | 类型 | 是否必传 | 说明 |
 | --- | --- | --- | --- |
 | fileType | Number | YES | 1.图片 / 2.视频 / 3.音频 / 4.文档 |
-| usageType | Number | YES | [见编号说明](../../database/number.md#文件用途类型) |
+| usageType | Number | YES | [见编号说明](../../database/numbered-description.md#文件用途类型) |
 
 ## 获取文件支持的格式
 

@@ -333,7 +333,6 @@ function sidebarSupports() {
         { text: 'Wallet', link: '/supports/cmd-words/wallet.md' },
         { text: 'File', link: '/supports/cmd-words/file.md' },
         { text: 'Content', link: '/supports/cmd-words/content.md' },
-        { text: 'Detail', link: '/supports/cmd-words/detail.md' },
         { text: 'Manage', link: '/supports/cmd-words/manage.md' },
         { text: 'Crontab', link: '/supports/cmd-words/crontab.md' },
       ]
@@ -359,7 +358,6 @@ function sidebarSupports() {
         { text: 'General', link: '/supports/utilities/general.md' },
         { text: 'Config', link: '/supports/utilities/config.md' },
         { text: 'Array', link: '/supports/utilities/arr.md' },
-        { text: 'Extend', link: '/supports/utilities/extend.md' },
         { text: 'File', link: '/supports/utilities/file.md' },
         { text: 'Interaction', link: '/supports/utilities/interaction.md' },
         { text: 'Permission', link: '/supports/utilities/permission.md' },

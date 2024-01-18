@@ -30,14 +30,13 @@
 | --- | --- | --- |
 | 1 | Other / Unknown uses |  |
 | 2 | System Configuration | Pictures of the various configurations of the control panel |
-| 3 | Operation Configuration | Pictures configured in operation<br>Decorate, icons, copywriting |
-| 4 | Stickers |  |
-| 5 | User Profile | User avatar, banner, decorate |
-| 6 | Conversations | Files sent in conversation messages |
-| 7 | Posts |  |
-| 8 | Comments |  |
-| 9 | Extend Content |  |
-| 10 | Apps | Plugin, Theme, App |
+| 3 | Stickers |  |
+| 4 | User Profile | User avatar, banner, decorate |
+| 5 | Conversations | Files sent in conversation messages |
+| 6 | Posts |  |
+| 7 | Comments |  |
+| 8 | Extend Content |  |
+| 9 | Apps | Plugin, Theme, App |
 
 **Data table name and column**
 
