@@ -112,7 +112,7 @@ function sidebarApi() {
       collapsed: false,
       items: [
         { text: 'Storage Token', link: '/api/file/storage-token.md' },
-        { text: 'Uploads', link: '/api/file/uploads.md' },
+        { text: 'Upload File', link: '/api/file/uploads.md' },
         { text: 'Update Warning', link: '/api/file/warning.md' },
         { text: 'Download Link', link: '/api/file/link.md' },
         { text: 'Download Users', link: '/api/file/users.md' },
