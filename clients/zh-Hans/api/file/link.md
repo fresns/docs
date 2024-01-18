@@ -23,8 +23,8 @@
 
 | 参数名 | 类型 | 是否必传 | 说明 |
 | --- | --- | --- | --- |
-| type | String | YES | 三选一 `post`,`comment`,`extend`,`conversation` |
-| fsid | String | YES | type 参数对应的数据表简写 ID `pid`, `cid`, `eid`, `cmid` |
+| type | String | YES | `post`, `comment`, `conversation` |
+| fsid | String | YES | type 参数对应的数据表简写 ID `pid`, `cid`, `cmid` |
 
 ## 返回结果
 

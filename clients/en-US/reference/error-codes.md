@@ -255,6 +255,7 @@
 | **File** |  |
 | 37600 | Wrong file or record not exist |
 | 37601 | File has been banned |
+| 37602 | You are not authorized to edit this file. |
 | **Extend** |  |
 | 37700 | Wrong extend content or record not exist |
 | 37701 | Extend has been banned |
