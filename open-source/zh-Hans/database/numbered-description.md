@@ -12,8 +12,7 @@
 | 6 | 评论 | comments | `TYPE_COMMENT` |
 | 7 | 帖子日志 | post_logs | `TYPE_POST_LOG` |
 | 8 | 评论日志 | comment_logs | `TYPE_COMMENT_LOG` |
-| 9 | 扩展内容 | extends | `TYPE_EXTEND` |
-| 10 | 对话 | conversations | `TYPE_CONVERSATION` |
+| 9 | 对话 | conversations | `TYPE_CONVERSATION` |
 
 ## 文件类型编号
 

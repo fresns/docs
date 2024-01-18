@@ -12,8 +12,7 @@
 | 6 | Comment | comments | `TYPE_COMMENT` |
 | 7 | Post Log | post_logs | `TYPE_POST_LOG` |
 | 8 | Comment Log | comment_logs | `TYPE_COMMENT_LOG` |
-| 9 | Extend Content | extends | `TYPE_EXTEND` |
-| 10 | Conversation | conversations | `TYPE_CONVERSATION` |
+| 9 | Conversation | conversations | `TYPE_CONVERSATION` |
 
 ## File Type
 
