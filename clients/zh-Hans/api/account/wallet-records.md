@@ -19,8 +19,8 @@
 | --- | --- | --- | --- |
 | type | String | NO | 交易类型（留空输出全部），多个以英文逗号隔开<br>1.收入(充值) / 2.收入(解冻) / 3.收入(交易) / 4.收入(撤回之前交易的支出)<br>5.支出(提现) / 6.支出(冻结) / 7.支出(交易) / 8.支出(撤回之前交易的收入) |
 | state | Number | NO | 交易状态<br>1.待处理 / 2.处理中 / 3.成功 / 4.失败 / 5.撤回 |
-| whitelistKeys | String | NO | 白名单键名，只返回给定键名的键值对<br>多个以英文逗号隔开，支持「点表示法」表示多维数组<br>仅对 `user` 参数有效 |
-| blacklistKeys | String | NO | 黑名单键名，从返回数据中删除指定的键值对<br>多个以英文逗号隔开，支持「点表示法」表示多维数组<br>仅对 `user` 参数有效 |
+| filterUserType | String | NO | `whitelist` 只返回给定键名的键值对<br>`blacklist` 从返回数据中删除指定的键值对<br>仅对返回结果中 `user` 参数有效 |
+| filterUserKeys | String | NO | 多个以英文逗号隔开，支持「点表示法」表示多维数组 |
 | pageSize | Number | NO | 每页显示条数（默认 15 条） |
 | page | Number | NO | 页码（默认 1） |
 

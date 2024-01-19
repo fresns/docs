@@ -19,8 +19,8 @@
 | --- | --- | --- | --- |
 | type | String | *optional* | Transaction type (Null to output all), multiple types separated by English commas<br>1.Income (Recharge) / 2.Income (Unfreeze) / 3.Income (Transaction) 4.Income (Revoke) <br> 5.Expense (Withdrawal) / 6.Expense (Freeze) / 7.Expense (Transaction) / 8.Expense (Revoke) |
 | state | Number | *optional* | Transaction status<br>1.Pending / 2.Processing / 3.Success / 4.Failed / 5.Reversed |
-| whitelistKeys | String | *optional* | Whitelist key names, only returns key-value pairs for the given key names<br>Multiple separated by English commas, supports "dot notation" for multi-dimensional arrays<br>Valid only for the `user` parameter |
-| blacklistKeys | String | *optional* | Blacklist key names, removes specified key-value pairs from the returned data<br>Multiple separated by English commas, supports "dot notation" for multi-dimensional arrays<br>Valid only for the `user` parameter |
+| filterUserType | String | *optional* | `whitelist` only returns key-value pairs for the given key names<br>`blacklist` removes specified key-value pairs from the returned data<br>Applies only to the `user` parameter in the returned result |
+| filterUserKeys | String | *optional* | Multiple separated by English commas, supports "dot notation" for multi-dimensional arrays |
 | pageSize | Number | *optional* | Number of items per page (default 15 items) |
 | page | Number | *optional* | Page number (default 1) |
 

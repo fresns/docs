@@ -37,6 +37,8 @@
 | 31503 | Lost login token, Please login again `(Token is empty)` |
 | 31504 | Login token is no longer valid, please login again `(Token not enabled or expired)` |
 | 31505 | Account login token are incorrect or do not exist `(Account Token is incorrect)` |
+| 31506 | Login token is incorrect or does not exist, please login again. |
+| 31507 | Login token has expired, please login again. |
 | 31601 | User not logged in, Unable to use `(UID is empty)` |
 | 31602 | Wrong user or record not exist |
 | 31603 | User login token are incorrect or do not exist `(User Token is incorrect)` |

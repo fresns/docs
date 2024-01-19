@@ -12,13 +12,6 @@
 | X-Fresns-Uid | NO | NO |
 | X-Fresns-Uid-Token | NO | NO |
 
-## Query 参数
-
-| 参数名 | 类型 | 是否必传 | 说明 |
-| --- | --- | --- | --- |
-| whitelistUserKeys | String | NO | 针对账号信息中的 `users` 参数 |
-| blacklistUserKeys | String | NO | 针对账号信息中的 `users` 参数 |
-
 **接口使用说明**
 
 - 本接口不会输出 token 参数，该参数仅限注册和登录接口才会创建并输出。

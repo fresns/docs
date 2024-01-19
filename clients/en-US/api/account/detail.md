@@ -12,13 +12,6 @@
 | X-Fresns-Uid | *optional* | *optional* |
 | X-Fresns-Uid-Token | *optional* | *optional* |
 
-## Query Params
-
-| Key | Type | Required | Description |
-| --- | --- | --- | --- |
-| whitelistUserKeys | String | *optional* | For the `users` parameter in the account information |
-| blacklistUserKeys | String | *optional* | For the `users` parameter in the account information |
-
 **Request Description**
 
 - This interface will not output the token parameter, which will only be created and output by registered and logged-in interfaces.
