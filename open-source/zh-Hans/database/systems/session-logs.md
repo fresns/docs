@@ -13,14 +13,15 @@ aside: false
 | version | varchar(16) | 版本号 |  | NO | 语义化版本号 |
 | app_id | char(8) | App ID |  | YES | [session_keys->app_id](session-keys.md) |
 | lang_tag | char(16) | 客户端语言 |  | YES | 产生日志的语言，未开启多语言则留空 |
-| object_name | varchar(128) | 记录目标名称 |  | NO | 功能模型名或者接口路径<br>例如模型名 App\Models\Post<br>例如接口路径：/api/v2/account/login |
-| object_action | varchar(128) | 记录目标行为 |  | YES | 行为描述，自定义输入内容 |
-| object_result | tinyint *UNSIGNED* | 记录行为结果 |  | NO | 1.未知或执行中 / 2.成功 / 3.失败 |
-| object_order_id | bigint *UNSIGNED* | 记录目标 ID |  | YES | 例如发表行为，则代表发表内容的 ID<br>插件行为，凭此 ID 可查询对应插件那边记录的关联信息 |
-| device_info | json | 设备信息 |  | YES |  |
-| device_token | varchar(128) | 设备 Token |  | YES | 例如 iOS Device Token 或 Android Device Token<br>可应用于推送消息 |
+| action_name | varchar(128) | 记录目标名称 |  | NO | 功能模型名或者接口路径<br>例如模型名 App\Models\Post<br>例如接口路径：/api/v2/account/login |
+| action_desc | varchar(128) | 记录目标行为 |  | YES | 行为描述，自定义输入内容 |
+| action_result | tinyint *UNSIGNED* | 记录行为结果 |  | NO | 1.未知或执行中 / 2.成功 / 3.失败 |
+| action_id | bigint *UNSIGNED* | 记录目标 ID |  | YES | 例如发表行为，则代表发表内容的 ID<br>插件行为，凭此 ID 可查询对应插件那边记录的关联信息 |
 | account_id | bigint *UNSIGNED* | 账号 ID |  | YES | 关联字段 [accounts->id](../accounts/accounts.md) |
 | user_id | bigint *UNSIGNED* | 用户 ID |  | YES | 关联字段 [users->id](../users/users.md) |
+| device_info | json | 设备信息 |  | YES |  |
+| device_token | varchar(128) | 设备 Token |  | YES | 例如 iOS Device Token 或 Android Device Token<br>可应用于推送消息 |
+| login_token | varchar(64) | 登录令牌 |  | YES |  |
 | more_info | json | 备用字段 |  | YES | 例如存储操作行为快照 |
 | created_at | timestamp | 创建时间 | useCurrent | NO | 比如 MySQL 默认值为 CURRENT_TIMESTAMP |
 | updated_at | timestamp | 更新时间 |  | YES |  |
@@ -32,12 +33,12 @@ aside: false
 - `2` 插件业务
 - `3` 登录控制面板
 - `4` 账号-注册
-- `5` 账号-登录 `object_order_id = session_tokens->id`
+- `5` 账号-登录 `action_id = session_tokens->id`
 - `6` 账号-修改资料
 - `7` 账号-设置或重置密码
 - `8` 账号-注销(删除)
 - `9` 用户-新增
-- `10` 用户-登录 `object_order_id = session_tokens->id`
+- `10` 用户-登录 `action_id = session_tokens->id`
 - `11` 用户-修改资料
 - `12` 用户-设置或重置密码
 - `13` 用户-删除

@@ -86,10 +86,10 @@
 ```
 :::
 
-## uploadSessionLog
+## createSessionLog
 
 ```php
-\FresnsCmdWord::plugin('Fresns')->uploadSessionLog($wordBody);
+\FresnsCmdWord::plugin('Fresns')->createSessionLog($wordBody);
 ```
 | Parameter Name | Type | Required | Description |
 | --- | --- | --- | --- |
@@ -99,14 +99,15 @@
 | appId | String | *optional* | Secret App ID |
 | langTag | String | *optional* | Language Tag |
 | fskey | String | *optional* | Plugin Fskey |
+| actionName | String | **required** | Function model name or interface path<br>For example, model name App\Models\Post<br>For example, interface path: /api/v2/account/login |
+| actionDesc | String | **required** | Action description, custom input content |
+| actionResult | Number | **required** | 1. Unknown or in progress / 2. Success / 3. Failure |
+| actionId | String | *optional* | For example, if it is a publishing action, it represents the ID of the published content<br>Plugin behavior, this ID can query the corresponding plugin-side related information |
 | aid | String | *optional* | Account |
 | uid | Number | *optional* | User |
-| objectName | String | **required** | Function model name or interface path<br>For example, model name App\Models\Post<br>For example, interface path: /api/v2/account/login |
-| objectAction | String | **required** | Action description, custom input content |
-| objectResult | Number | **required** | 1. Unknown or in progress / 2. Success / 3. Failure |
-| objectOrderId | String | *optional* | For example, if it is a publishing action, it represents the ID of the published content<br>Plugin behavior, this ID can query the corresponding plugin-side related information |
 | deviceInfo | Object | *optional* | Interaction device information |
 | deviceToken | String | *optional* | Interaction device Token<br>For example, iOS Device Token or Android Device Token<br>Can be used for push notifications |
+| loginToken | String | *optional* | Login Token |
 | moreInfo | Object | *optional* | Other custom information |
 
 ## sendCode

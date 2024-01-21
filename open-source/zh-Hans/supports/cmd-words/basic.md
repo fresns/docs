@@ -95,10 +95,10 @@
 ```
 :::
 
-## 上传交互日志
+## 创建交互日志
 
 ```php
-\FresnsCmdWord::plugin('Fresns')->uploadSessionLog($wordBody);
+\FresnsCmdWord::plugin('Fresns')->createSessionLog($wordBody);
 ```
 | 参数名 | 类型 | 是否必传 | 说明 |
 | --- | --- | --- | --- |
@@ -108,14 +108,15 @@
 | appId | String | NO | 密钥 App ID |
 | langTag | String | NO | 语言标签 |
 | fskey | String | NO | 插件 Fskey |
+| actionName | String | YES | 功能模型名或者接口路径<br>例如模型名 App\Models\Post<br>例如接口路径：/api/v2/account/login |
+| actionDesc | String | YES | 行为描述，自定义输入内容 |
+| actionResult | Number | YES | 1.未知或执行中 / 2.成功 / 3.失败 |
+| actionId | String | NO | 例如发表行为，则代表发表内容的 ID<br>插件行为，凭此 ID 可查询对应插件那边记录的关联信息 |
 | aid | String | NO | 账号 |
 | uid | Number | NO | 用户 |
-| objectName | String | YES | 功能模型名或者接口路径<br>例如模型名 App\Models\Post<br>例如接口路径：/api/v2/account/login |
-| objectAction | String | YES | 行为描述，自定义输入内容 |
-| objectResult | Number | YES | 1.未知或执行中 / 2.成功 / 3.失败 |
-| objectOrderId | String | NO | 例如发表行为，则代表发表内容的 ID<br>插件行为，凭此 ID 可查询对应插件那边记录的关联信息 |
 | deviceInfo | Object | NO | 交互设备信息 |
 | deviceToken | String | NO | 交互设备 Token<br>例如 iOS Device Token 或 Android Device Token<br>可应用于推送消息 |
+| loginToken | String | NO | 登录令牌 |
 | moreInfo | Object | NO | 其他自定义信息 |
 
 ## 发送验证码

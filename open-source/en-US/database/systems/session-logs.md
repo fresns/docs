@@ -13,14 +13,15 @@ aside: false
 | version | varchar(16) | Version Number |  | NO | Semantic versioning |
 | app_id | char(8) | App ID |  | YES | [session_keys->app_id](session-keys.md) |
 | lang_tag | char(16) | Client Language |  | YES | The language of the generated log, leave empty if multilingual is not enabled |
-| object_name | varchar(128) | Record Target Name |  | NO | Function model name or interface path<br>For example, model name App\Models\Post<br>For example, interface path: /api/v2/account/login |
-| object_action | varchar(128) | Record Target Action |  | YES | Action description, custom input content |
-| object_result | tinyint *UNSIGNED* | Record Action Result |  | NO | 1. Unknown or in progress / 2. Success / 3. Failure |
-| object_order_id | bigint *UNSIGNED* | Record Target ID |  | YES | For example, in case of a publish action, it represents the ID of the posted content<br>For plugin actions, this ID can be used to query the associated information recorded on the plugin side |
-| device_info | json | Device Information |  | YES |  |
-| device_token | varchar(128) | Device Token |  | YES | For example, iOS Device Token or Android Device Token<br>Can be used for push notifications |
+| action_name | varchar(128) | Record Target Name |  | NO | Function model name or interface path<br>For example, model name App\Models\Post<br>For example, interface path: /api/v2/account/login |
+| action_desc | varchar(128) | Record Target Action |  | YES | Action description, custom input content |
+| action_result | tinyint *UNSIGNED* | Record Action Result |  | NO | 1. Unknown or in progress / 2. Success / 3. Failure |
+| action_id | bigint *UNSIGNED* | Record Target ID |  | YES | For example, in case of a publish action, it represents the ID of the posted content<br>For plugin actions, this ID can be used to query the associated information recorded on the plugin side |
 | account_id | bigint *UNSIGNED* | Account ID |  | YES | Related field [accounts->id](../accounts/accounts.md) |
 | user_id | bigint *UNSIGNED* | User ID |  | YES | Related field [users->id](../users/users.md) |
+| device_info | json | Device Information |  | YES |  |
+| device_token | varchar(128) | Device Token |  | YES | For example, iOS Device Token or Android Device Token<br>Can be used for push notifications |
+| login_token | varchar(64) | Login Token |  | YES |  |
 | more_info | json | Backup Field |  | YES | For example, storing operation action snapshots |
 | created_at | timestamp | Create Time | useCurrent | NO | For example, MySQL defaults to `CURRENT_TIMESTAMP` |
 | updated_at | timestamp | Update Time |  | YES |  |
@@ -32,12 +33,12 @@ aside: false
 - `2` Plugin Business
 - `3` Login Control Panel
 - `4` Account - Register
-- `5` Account - Login `object_order_id = session_tokens->id`
+- `5` Account - Login `action_id = session_tokens->id`
 - `6` Account - Update Profile
 - `7` Account - Set or Reset Password
 - `8` Account - Delete Account
 - `9` User - Create
-- `10` User - Login `object_order_id = session_tokens->id`
+- `10` User - Login `action_id = session_tokens->id`
 - `11` User - Update Profile
 - `12` User - Set or Reset Password
 - `13` User - Delete

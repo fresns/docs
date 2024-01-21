@@ -179,7 +179,6 @@ function sidebarDatabase() {
       items: [
         { text: 'accounts 账号主表', link: '/database/accounts/accounts.md' },
         { text: 'account_connects 账号互联凭证表', link: '/database/accounts/account-connects.md' },
-        { text: 'account_login_tokens 账号登录令牌表', link: '/database/accounts/account-login-tokens.md' },
         { text: 'account_wallets 账号钱包表', link: '/database/accounts/account-wallets.md' },
         { text: 'account_wallet_logs 账号钱包交易日志表', link: '/database/accounts/account-wallet-logs.md' },
       ]
