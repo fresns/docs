@@ -73,6 +73,7 @@ fresns/             //主程序根目录
 | wechatNotifications | 微信通知服务商 | 系统->发信设置 |
 | accountCenter | 账号中心 | 系统->账号设置 |
 | accountRegister | 账号注册支持 | 系统->账号设置 |
+| accountLogin | 账号登录支持 | 系统->账号设置 |
 | accountConnect | 第三方互联支持 | 系统->账号设置 |
 | accountKyc | 实名认证支持 | 系统->账号设置 |
 | walletRecharge | 充值服务商 | 系统->钱包设置 |

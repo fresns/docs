@@ -4,7 +4,7 @@
 
 ## 命令字
 
-插件获取 URL 中参数传给命令字 [verifyAccessToken](../supports/cmd-words/basic.md#校验-url-凭证) 校验即可。
+插件获取 URL 中参数传给命令字 [verifyAccessToken](../supports/cmd-words/basic.md#验证访问令牌) 校验即可。
 
 ```php
 \FresnsCmdWord::plugin('Fresns')->verifyAccessToken($wordBody);

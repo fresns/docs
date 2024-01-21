@@ -74,6 +74,7 @@ When the plugin is installed and published, static resources are distributed to 
 | wechatNotifications | WeChat Notification Service Provider | Panel->Systems->Send |
 | accountCenter | Account Center Support | Panel->Systems->Account |
 | accountRegister | Account Register Support | Panel->Systems->Account |
+| accountLogin | Account Register Support | Panel->Systems->Account |
 | accountConnect | Account Connect Support | Panel->Systems->Account |
 | accountKyc | Real Name Authentication Support | Panel->Systems->Account |
 | walletRecharge | Wallet Recharge Service Provider | Panel->Systems->Wallet |

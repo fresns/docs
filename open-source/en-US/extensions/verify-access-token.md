@@ -4,7 +4,7 @@ If the plug-in page needs to verify the user's login identity, you can add the a
 
 ## Cmd Word
 
-Get the parameters in the plug-in URL and send them to the command word [verifyAccessToken](../supports/cmd-words/basic.md#verifyAccessToken) for verification.
+Get the parameters in the plug-in URL and send them to the command word [verifyAccessToken](../supports/cmd-words/basic.md#verifyaccesstoken) for verification.
 
 ```php
 \FresnsCmdWord::plugin('Fresns')->verifyAccessToken($wordBody);

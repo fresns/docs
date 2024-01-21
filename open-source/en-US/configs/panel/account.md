@@ -5,15 +5,13 @@
 | Menu Title | Key Name | Default Key Value | Value Type | Description |
 | --- | --- | --- | --- | --- |
 | Account Center Service | account_center_service |  | **plugin** | panelUsages `accountCenter` |
-| Account Center Path | account_center_path | account | string |  |
 | CAPTCHA Program | account_center_captcha |  | string | `turnstile`<br>`reCAPTCHA`<br>`hCaptcha` |
 | CAPTCHA Configuration | account_center_captcha_configs |  | object |  |
-| Register Path | account_register_path | sign-up | string |  |
-| Register Status | account_register_status | true | boolean |  |
 | Register Service | account_register_service |  | **plugin** | panelUsages `accountRegister` |
+| Register Status | account_register_status | true | boolean |  |
 | Register Support: Email | account_email_register | true | boolean |  |
 | Register Support: Phone Number | account_phone_register | false | boolean |  |
-| Login Path | account_login_path | login | string |  |
+| Login Service | account_login_service |  | **plugin** | panelUsages `accountLogin` |
 | Login Support: Email | account_email_login | true | boolean |  |
 | Login Support: Phone Number | account_phone_login | false | boolean |  |
 | Login using the Verify code | account_login_with_code | false | boolean |  |
