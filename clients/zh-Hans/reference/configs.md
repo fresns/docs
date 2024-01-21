@@ -104,14 +104,9 @@
 | 键名 | 键值类型 | 描述 |
 | --- | --- | --- |
 | account_center_service | String | 账号中心 `URL` |
-| account_center_path | string | 账户中心路径 |
-| account_register_path | String | 注册入口 |
-| account_login_path | String | 登录入口 |
+| account_register_service | String | 账号注册 `URL` |
+| account_login_service | String | 账号登录 `URL` |
 | account_kyc_service | String | 实名认证 `URL` |
-
-- 账户中心 `{account_center_service}`/`{account_center_path}`
-- 注册 `{account_center_service}`/`{account_center_path}`/`{account_register_path}`
-- 登录 `{account_center_service}`/`{account_center_path}`/`{account_login_path}`
 
 ## 钱包设置
 

@@ -104,14 +104,9 @@
 | Key Name | Value Type | Description |
 | --- | --- | --- |
 | account_center_service | String | Account Center `URL` |
-| account_center_path | string | Account Center Path |
-| account_register_path | String | Register Path |
-| account_login_path | String | Login Path |
+| account_register_service | String | Account Register `URL` |
+| account_login_service | String | Account Login `URL` |
 | account_kyc_service | String | Real Name Verification Support `URL` |
-
-- Account Center `{account_center_service}`/`{account_center_path}`
-- Register `{account_center_service}`/`{account_center_path}`/`{account_register_path}`
-- Login `{account_center_service}`/`{account_center_path}`/`{account_login_path}`
 
 ## Wallet
 
