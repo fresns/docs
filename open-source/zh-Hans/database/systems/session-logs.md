@@ -7,7 +7,7 @@ aside: false
 | 字段名 | 字段类型 | 字段注释 | 默认值 | 可空 | 备注 |
 | --- | --- | --- | --- | --- | --- |
 | id | bigint *UNSIGNED* | 主键 ID |  | NO | 自动递增 |
-| app_fskey | varchar(64) | 关联插件名称 | Fresns | NO | 关联字段 [apps->fskey](../apps/apps.md)<br>Fresns 代表是主程序的日志 |
+| app_fskey | varchar(64) | 关联应用 | Fresns | NO | 关联字段 [apps->fskey](../apps/apps.md)<br>Fresns 代表是主程序的日志 |
 | type | tinyint *UNSIGNED* | 日志类型 | 1 | NO | 见下方描述 |
 | platform_id | tinyint *UNSIGNED* | 平台编号 |  | NO | [platforms](../../configs/dictionary/platforms.md) |
 | version | varchar(16) | 版本号 |  | NO | 语义化版本号 |

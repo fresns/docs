@@ -14,7 +14,7 @@ aside: false
 | is_multilingual | tinyint *UNSIGNED* | 内容是否为多语言 | 0 | NO | 0.否 / 1.是 |
 | is_mention | tinyint *UNSIGNED* | 是否为提及通知 | 0 | NO | 0.否 / 1.是<br>别人内容里提及了我，然后互动通知的我 |
 | is_access_app | varchar(64) | 是否访问应用页 | 0 | NO | 将输出 app_fskey 的访问地址 |
-| app_fskey | varchar(64) | 关联插件名称 |  | YES | 关联字段 [apps->fskey](../apps/apps.md)<br>由哪个插件生成的通知消息 |
+| app_fskey | varchar(64) | 关联应用 |  | YES | 关联字段 [apps->fskey](../apps/apps.md)<br>由哪个插件生成的通知消息 |
 | action_user_id | bigint *UNSIGNED* | 触发的用户 ID |  | YES | 关联字段 [users->id](../users/users.md) |
 | action_is_anonymous | tinyint *UNSIGNED* | 是否匿名触发 | 0 | NO | 0.否 / 1.是 |
 | action_type | smallint *UNSIGNED* | 触发行为类型 |  | YES | 1.赞 2.踩 3.关注 4.屏蔽 5.发表 6.编辑 7.删除 8.置顶 9.设精 10.管理 |
