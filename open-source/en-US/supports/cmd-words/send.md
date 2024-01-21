@@ -75,7 +75,7 @@ If the `isMultilingual` parameter is for multiple languages, the `content` param
 | Parameter Name | Type | Required | Description |
 | --- | --- | --- | --- |
 | uid | Number | **required** | User parameter (main user table `users->uid` field) |
-| channel | Number | **required** | Channel 1.iOS / 2.Android |
+| channel | Number | **required** | Channel 1.iOS / 2.Android / 3.Desktop |
 | template | String | *optional* | Template parameter |
 | coverUrl | String | *optional* | Cover image URL |
 | title | String | *optional* | Title |
@@ -89,21 +89,3 @@ If the `isMultilingual` parameter is for multiple languages, the `content` param
 - Get notification configuration apps `send_ios_service`, `send_android_service` based on `channel`
 - Leaving it blank means both need to be pushed, requesting apps for both configurations separately.
 :::
-
-## sendWechatMessage
-
-```php
-\FresnsCmdWord::plugin('Fresns')->sendWechatMessage($wordBody);
-```
-| Parameter Name | Type | Required | Description |
-| --- | --- | --- | --- |
-| uid | Number | **required** | User parameter (main user table `users->uid` field) |
-| channel | Number | **required** | Channel 1.Official Account / 2.Mini Programs |
-| template | String | *optional* | Template parameter |
-| coverUrl | String | *optional* | Cover image URL |
-| title | String | *optional* | Title |
-| content | String | *optional* | Content |
-| time | String | *optional* | Time, format Y-m-d H:i:s |
-| linkType | Number | *optional* | Link type: 1.User / 2.Group / 3.Hashtag / 4.Post / 5.Comment |
-| linkFsid | Number / String | *optional* | After passing the link type parameter, this parameter is required, the fsid of the type |
-| linkUrl | String | *optional* | Link URL |
