@@ -67,11 +67,20 @@ PrimaryHelper::fresnsGroupIdByContentFsid($type, $fsid);
 ## Get Hashtag Primary ID
 
 ```php
-PrimaryHelper::fresnsHashtagIdByHid($hid);
+PrimaryHelper::fresnsHashtagIdByHtid($htid);
 ```
 | Parameter Name | Type | Required | Description |
 | --- | --- | --- | --- |
-| hid | String | *optional* | `hashtags->slug` |
+| htid | String | *optional* | `hashtags->slug` |
+
+## Get Geotag Primary ID
+
+```php
+PrimaryHelper::fresnsGeotagIdByGtid($gtid);
+```
+| Parameter Name | Type | Required | Description |
+| --- | --- | --- | --- |
+| gtid | String | *optional* | `geotags->gtid` |
 
 ## Get Post Primary ID
 

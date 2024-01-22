@@ -11,7 +11,7 @@ aside: false
 | uid | bigint *UNSIGNED* | 用户 ID |  | NO | **唯一值**<br>初始化 8 位数随机生成，8 位数不够再 9 位数，以此类推。<br>随机生成时，不以 0 开头 |
 | username | varchar(64) | 用户名 |  | NO | **唯一值**，只能是包含字母、数字和单个连字符 |
 | nickname | varchar(64) | 用户昵称 |  | NO | 不能带标点符号或特殊符号<br>允许有单个空格，但空格不能在开头或结尾 |
-| pin | char(64) | PIN |  | YES | Personal identification number |
+| pin | varchar(64) | PIN |  | YES | Personal identification number |
 | avatar_file_id | bigint *UNSIGNED* | 头像图片 ID |  | YES | 关联字段 [files->id](../systems/files.md) |
 | avatar_file_url | varchar(255) | 头像图片完整 URL |  | YES |  |
 | banner_file_id | bigint *UNSIGNED* | 背景条幅图 ID |  | YES | 关联字段 [files->id](../systems/files.md) |
@@ -20,6 +20,7 @@ aside: false
 | gender_pronoun | tinyint *UNSIGNED* | 性别代称 |  | YES | 1.She / 2.He / 3.They |
 | gender_custom | varchar(64) | 性别自定义 |  | YES |  |
 | birthday | timestamp | 生日 |  | YES |  |
+| birthday_display_type | tinyint *UNSIGNED* | 生日显示方式 | 1 | NO | 1.完整显示 / 2.显示年份 / 3.显示月和日 / 4.不显示 |
 | bio | text | 简介 |  | YES |  |
 | location | varchar(128) | 地点 |  | YES |  |
 | verified_status | tinyint *UNSIGNED* | 用户认证状态 | 0 | NO | 0.未认证 / 1.已认证 |

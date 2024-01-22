@@ -67,11 +67,20 @@ PrimaryHelper::fresnsGroupIdByContentFsid($type, $fsid);
 ## 获取话题主键 ID
 
 ```php
-PrimaryHelper::fresnsHashtagIdByHid($hid);
+PrimaryHelper::fresnsHashtagIdByHtid($htid);
 ```
 | 参数名 | 类型 | 是否必传 | 说明 |
 | --- | --- | --- | --- |
-| hid | String | NO | `hashtags->slug` |
+| htid | String | NO | `hashtags->slug` |
+
+## 获取地理主键 ID
+
+```php
+PrimaryHelper::fresnsGeotagIdByGtid($gtid);
+```
+| 参数名 | 类型 | 是否必传 | 说明 |
+| --- | --- | --- | --- |
+| gtid | String | NO | `geotags->gtid` |
 
 ## 获取帖子主键 ID
 

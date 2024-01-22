@@ -11,7 +11,7 @@ aside: false
 | uid | bigint *UNSIGNED* | User ID |  | NO | **Unique**<br>Initialized with 8-digit random number, 9 digits if not enough, and so on.<br>Randomly generated without starting with 0 |
 | username | varchar(64) | Username |  | NO | **Unique**, can only contain letters, numbers, and single hyphens |
 | nickname | varchar(64) | Nickname |  | NO | Cannot contain punctuation or special symbols<br>Single space allowed but not at the beginning or end |
-| pin | char(64) | PIN |  | YES | Personal identification number |
+| pin | varchar(64) | PIN |  | YES | Personal identification number |
 | avatar_file_id | bigint *UNSIGNED* | Avatar Image ID |  | YES | Related field [files->id](../systems/files.md) |
 | avatar_file_url | varchar(255) | Avatar Image Full URL |  | YES |  |
 | banner_file_id | bigint *UNSIGNED* | Background Banner Image ID |  | YES | Related field [files->id](../systems/files.md) |
@@ -20,6 +20,7 @@ aside: false
 | gender_pronoun | tinyint *UNSIGNED* | Gender Pronoun |  | YES | 1.She / 2.He / 3.They |
 | gender_custom | varchar(64) | Gender Custom |  | YES |  |
 | birthday | timestamp | Birthday |  | YES |  |
+| birthday_display_type | tinyint *UNSIGNED* | Birthday Display Type | 1 | NO | 1.Y-m-d / 2.Y / 3.m-d / 4.Hidden |
 | bio | text | Bio |  | YES |  |
 | location | varchar(128) | Location |  | YES |  |
 | verified_status | tinyint *UNSIGNED* | User Verification Status | 0 | NO | 0.Unverified / 1.Verified |
