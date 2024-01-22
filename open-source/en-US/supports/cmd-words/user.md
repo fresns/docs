@@ -59,7 +59,7 @@
 | aid | String | **required** | Account AID `accounts->aid` |
 | aidToken | String | **required** | Account Token |
 | uid | Number | **required** | User UID `users->uid` |
-| password | String | *optional* | Password `users->password` |
+| pin | String | *optional* | Personal Identification Number `users->pin` |
 
 ::: details Return Example
 ```json

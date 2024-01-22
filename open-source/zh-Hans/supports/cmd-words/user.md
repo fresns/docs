@@ -59,7 +59,7 @@
 | aid | String | YES | 账号 AID `accounts->aid` |
 | aidToken | String | YES | 账号 Token |
 | uid | Number | YES | 用户 UID `users->uid` |
-| password | String | NO | 密码 `users->password` |
+| pin | String | NO | 密码 `users->pin` |
 
 ::: details 结果示例
 ```json
