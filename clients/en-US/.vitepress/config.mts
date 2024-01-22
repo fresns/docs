@@ -141,7 +141,7 @@ function sidebarApi() {
             { text: 'Edit', link: '/api/user/edit.md' },
             { text: 'Update Device Token', link: '/api/user/device-token.md' },
             { text: 'Mark', link: '/api/user/mark.md' },
-            { text: 'Mark Note', link: '/api/user/mark-note.md' },
+            { text: 'Update Mark Note', link: '/api/user/mark-note.md' },
             { text: 'Extend Action', link: '/api/user/extend-action.md' },
           ]
         },

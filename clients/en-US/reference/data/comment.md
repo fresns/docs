@@ -57,9 +57,6 @@ aside: false
     "operations": {
         // Common Data Structure -> Extend Operation Info
     },
-    "extends": {
-        // Common Data Structure -> Extend Content Info
-    },
     "files": {
         "images": [
             {
@@ -79,6 +76,23 @@ aside: false
         "documents": [
             {
                 // Common Data Structure -> File Info
+            }
+        ]
+    },
+    "extends": {
+        "texts": [
+            {
+                // Common Data Structure -> Extend Content Info -> texts
+            }
+        ],
+        "infos": [
+            {
+                // Common Data Structure -> Extend Content Info -> infos
+            }
+        ],
+        "actions": [
+            {
+                // Common Data Structure -> Extend Content Info -> actions
             }
         ]
     },

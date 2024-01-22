@@ -153,7 +153,7 @@ function sidebarApi() {
             { text: '修改用户资料', link: '/api/user/edit.md' },
             { text: '更新设备凭证', link: '/api/user/device-token.md' },
             { text: '操作标记', link: '/api/user/mark.md' },
-            { text: '标记备注', link: '/api/user/mark-note.md' },
+            { text: '更新标记备注', link: '/api/user/mark-note.md' },
             { text: '操作扩展交互', link: '/api/user/extend-action.md' },
           ]
         },

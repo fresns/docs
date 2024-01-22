@@ -58,9 +58,6 @@ aside: false
     "operations": {
         // Common Data Structure -> Extend Operation Info
     },
-    "extends": {
-        // Common Data Structure -> Extend Content Info
-    },
     "interaction": {
         "likeEnabled": "Boolean / Whether like is allowed",
         "likeName": "String / Custom Like Action Name",

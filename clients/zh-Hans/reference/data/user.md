@@ -51,9 +51,6 @@ aside: false
     "operations": {
         // 通用数据结构->扩展运营信息
     },
-    "extends": {
-        // 通用数据结构->扩展内容信息
-    },
     "nicknameColor": "String / 主角色-昵称颜色",
     "roleRid": "String / 主角色-角色 ID",
     "roleName": "String / 主角色-角色名",

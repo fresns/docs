@@ -1,4 +1,4 @@
-# 标记备注
+# 更新标记备注
 
 - 接口地址：`/api/fresns/v1/user/mark-note`
 - 请求方式：`PATCH`
@@ -19,7 +19,7 @@
 | --- | --- | --- | --- |
 | type | String | YES | 标记类型 `user`,`group`,`hashtag`,`geotag`,`post`,`comment` |
 | fsid | Number / String | YES | 目标 `FsID`<br>user 传参 uid 或 username<br>group 传参 gid<br>hashtag 传参 htid<br>geotag 传参 gtid<br>post 传参 pid<br>comment 传参 cid |
-| note | String | NO | 备注内容，留空表示清空备注 |
+| note | String | NO | 备注内容，仅对 `follow` 或 `block` 有效 |
 
 **接口使用说明**
 

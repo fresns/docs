@@ -58,9 +58,6 @@ aside: false
     "operations": {
         // 通用数据结构->扩展运营信息
     },
-    "extends": {
-        // 通用数据结构->扩展内容信息
-    },
     "interaction": {
         "likeEnabled": "Boolean / 是否允许 like",
         "likeName": "String / like 行为自定义名称",

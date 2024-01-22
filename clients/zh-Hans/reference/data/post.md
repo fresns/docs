@@ -74,9 +74,6 @@ aside: false
     "operations": {
         // 通用数据结构->扩展运营信息
     },
-    "extends": {
-        // 通用数据结构->扩展内容信息
-    },
     "files": {
         "images": [
             {
@@ -96,6 +93,23 @@ aside: false
         "documents": [
             {
                 // 通用数据结构->文件信息
+            }
+        ]
+    },
+    "extends": {
+        "texts": [
+            {
+                // 通用数据结构->扩展内容信息->texts
+            }
+        ],
+        "infos": [
+            {
+                // 通用数据结构->扩展内容信息->infos
+            }
+        ],
+        "actions": [
+            {
+                // 通用数据结构->扩展内容信息->actions
             }
         ]
     },

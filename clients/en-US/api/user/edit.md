@@ -27,12 +27,13 @@
 | genderCustom | String | *optional* | Gender Custom |
 | genderPronoun | Number | *optional* | Preferred Pronoun: 1.She / 2.He / 3.They |
 | birthday | String | *optional* | Birthday (format: Y-m-d) |
-| birthdayDisplayType | Number | *optional* | Birthday: 1.No display / 2.Y / 3.m-d / 4.Y-m-d |
+| birthdayDisplayType | Number | *optional* | Birthday: 1.Y-m-d / 2.Y / 3.m-d / 4.Hidden |
 | bio | String | *optional* | Bio |
 | location | String | *optional* | Location |
 | conversationLimit | Number | *optional* | Conversation setting |
 | commentLimit | Number | *optional* | Comment setting |
 | contentLimit | Number | *optional* | Content setting |
+| moreInfo | Object | *optional* | more info |
 | archives | Array | *optional* | Extended information |
 
 **Request Description**

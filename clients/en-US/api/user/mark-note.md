@@ -1,4 +1,4 @@
-# User Mark Note
+# Update Mark Note
 
 - Endpoint Path: `/api/fresns/v1/user/mark-note`
 - Method: `PATCH`
@@ -19,7 +19,7 @@
 | --- | --- | --- | --- |
 | type | String | **required** | Mark type `user`,`group`,`hashtag`,`geotag`,`post`,`comment` |
 | fsid | Number / String | **required** | Target `FsID`<br>For user, param `uid` or `username`<br>For group, param `gid`<br>For hashtag, param `htid`<br>For geotag, param `gtid`<br>For post, param `pid`<br>For comment, param `cid` |
-| note | String | *optional* | Note content, Empty to clear the note |
+| note | String | *optional* | Note Content, Only valid for `follow` or `block` |
 
 **Request Description**
 

@@ -51,9 +51,6 @@ aside: false
     "operations": {
         // Common Data Structure -> Extend Operation Info
     },
-    "extends": {
-        // Common Data Structure -> Extend Content Info
-    },
     "nicknameColor": "String / Main role - Nickname color",
     "roleRid": "String / Main role - Role ID",
     "roleName": "String / Main role - Role name",
