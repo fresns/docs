@@ -1,4 +1,4 @@
-# User Auth
+# User Login
 
 - Endpoint Path: `/api/fresns/v1/user/auth-token`
 - Method: `POST`
