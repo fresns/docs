@@ -33,8 +33,8 @@ aside: false
 | comment_follow_count | int *UNSIGNED* | 子级评论关注数 | 0 | NO | 回复这条评论的所有评论关注总数 |
 | comment_block_count | int *UNSIGNED* | 子级评论屏蔽数 | 0 | NO | 回复这条评论的所有评论屏蔽总数 |
 | edit_count | smallint *UNSIGNED* | 编辑次数 | 0 | NO | 共编辑了几次 |
-| latest_edit_at | timestamp | 编辑时间 |  | YES | 如果发表后可以编辑，此处记录编辑时间 |
-| latest_comment_at | timestamp | 评论时间 |  | YES | 最新一条评论的时间<br>有用户回复了该条评论 |
+| last_edit_at | timestamp | 编辑时间 |  | YES | 如果发表后可以编辑，此处记录编辑时间 |
+| last_comment_at | timestamp | 评论时间 |  | YES | 最新一条评论的时间<br>有用户回复了该条评论 |
 | more_info | json | 更多信息字段 |  | YES | 比如发布者 IP 位置名、设备名等 |
 | permissions | json | 权限参数 |  | YES |  |
 | rank_state | tinyint *UNSIGNED* | 等级状态 | 1 | NO | 1.未设置 |

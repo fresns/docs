@@ -78,8 +78,7 @@ aside: false
     {
         "name": "object / 名称（多语言）",
         "key": "String / 键名",
-        "value": "String / 键值",
-        "hasOperated": "Boolean / 当前用户是否已操作"
+        "value": "String / 键值"
     }
 ]
 ```

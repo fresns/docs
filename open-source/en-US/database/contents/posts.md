@@ -34,8 +34,8 @@ aside: false
 | comment_block_count | int *UNSIGNED* | Comment block count | 0 | NO | Total number of blocks on all comments |
 | post_count | int *UNSIGNED* | Sub-level post count | 0 | NO | Total number of posts referencing it |
 | edit_count | smallint *UNSIGNED* | Number of edits | 0 | NO | Total number of edits |
-| latest_edit_at | timestamp | Edit time |  | YES | If editable after publish, record edit time here |
-| latest_comment_at | timestamp | Comment time |  | YES | Time of the latest comment |
+| last_edit_at | timestamp | Edit time |  | YES | If editable after publish, record edit time here |
+| last_comment_at | timestamp | Comment time |  | YES | Time of the latest comment |
 | more_info | json | More Info |  | YES | E.g. publisher IP location name, device name, etc. |
 | permissions | json | Permissions |  | YES |  |
 | rank_state | tinyint *UNSIGNED* | Rank Status | 1 | NO | 1.Not set |

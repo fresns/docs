@@ -34,8 +34,8 @@ aside: false
 | comment_block_count | int *UNSIGNED* | 评论屏蔽数 | 0 | NO | 所有评论被屏蔽总数 |
 | post_count | int *UNSIGNED* | 子级帖子数 | 0 | NO | 引用它的帖子总数 |
 | edit_count | smallint *UNSIGNED* | 编辑次数 | 0 | NO | 共编辑了几次 |
-| latest_edit_at | timestamp | 编辑时间 |  | YES | 如果发表后可以编辑，此处记录编辑时间 |
-| latest_comment_at | timestamp | 评论时间 |  | YES | 最新一条评论的时间 |
+| last_edit_at | timestamp | 编辑时间 |  | YES | 如果发表后可以编辑，此处记录编辑时间 |
+| last_comment_at | timestamp | 评论时间 |  | YES | 最新一条评论的时间 |
 | more_info | json | 更多信息字段 |  | YES |  |
 | permissions | json | 权限参数 |  | YES |  |
 | rank_state | tinyint *UNSIGNED* | 等级状态 | 1 | NO | 1.未设置 |

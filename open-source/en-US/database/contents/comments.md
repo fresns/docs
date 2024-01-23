@@ -33,8 +33,8 @@ aside: false
 | comment_follow_count | int *UNSIGNED* | Number of Follows for Sub-Comments | 0 | NO | Total number of follows for all comments in response to this comment |
 | comment_block_count | int *UNSIGNED* | Number of Blocks for Sub-Comments | 0 | NO | Total number of blocks for all comments in response to this comment |
 | edit_count | smallint *UNSIGNED* | Number of edits | 0 | NO | Total number of edits |
-| latest_edit_at | timestamp | Edit Time |  | YES | If editable after publish, record edit time here |
-| latest_comment_at | timestamp | Comment Time |  | YES | Time of the latest comment<br>When a user replies to this comment |
+| last_edit_at | timestamp | Edit Time |  | YES | If editable after publish, record edit time here |
+| last_comment_at | timestamp | Comment Time |  | YES | Time of the latest comment<br>When a user replies to this comment |
 | more_info | json | More Info |  | YES | E.g. publisher IP location name, device name, etc. |
 | permissions | json | Permissions |  | YES |  |
 | rank_state | tinyint *UNSIGNED* | Rank Status | 1 | NO | 1.Not set |

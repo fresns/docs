@@ -78,8 +78,7 @@ aside: false
     {
         "name": "object / Name (Multilingual)",
         "key": "String / Key",
-        "value": "String / Value",
-        "hasOperated": "Boolean / Whether the current user has operated"
+        "value": "String / Value"
     }
 ]
 ```
