@@ -34,8 +34,8 @@ aside: false
     "editedDatetime": "String / Comment last edit time",
     "editedTimeAgo": "String / Human-friendly time",
     "editedCount": "Number / Number of edits",
-    "latestCommentDatetime": "String / Latest child comment time",
-    "latestCommentTimeAgo": "String / Human-friendly time",
+    "lastCommentDatetime": "String / Last child comment time",
+    "lastCommentTimeAgo": "String / Human-friendly time",
     "rankState": "Number / Rank State",
     "status": "Boolean / Comment Status",
     "moreInfo": {

@@ -138,7 +138,7 @@ function sidebarApi() {
             { text: 'Login', link: '/api/user/login.md' },
             { text: 'Overview', link: '/api/user/overview.md' },
             { text: 'Extcredits Records', link: '/api/user/extcredits-records.md' },
-            { text: 'Edit', link: '/api/user/edit.md' },
+            { text: 'Edit Profile', link: '/api/user/edit.md' },
             { text: 'Update Device Token', link: '/api/user/device-token.md' },
             { text: 'Mark', link: '/api/user/mark.md' },
             { text: 'Update Mark Note', link: '/api/user/mark-note.md' },

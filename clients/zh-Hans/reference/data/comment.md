@@ -34,8 +34,8 @@ aside: false
     "editedDatetime": "String / 评论最后编辑时间",
     "editedTimeAgo": "String / 人性化时间",
     "editedCount": "Number / 编辑次数",
-    "latestCommentDatetime": "String / 最新子级评论的时间",
-    "latestCommentTimeAgo": "String / 人性化时间",
+    "lastCommentDatetime": "String / 最新子级评论的时间",
+    "lastCommentTimeAgo": "String / 人性化时间",
     "rankState": "Number / 等级状态",
     "status": "Boolean / 评论状态",
     "moreInfo": {

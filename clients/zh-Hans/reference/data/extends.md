@@ -99,12 +99,14 @@ aside: false
             "position": "Number / 显示位置 1.上方 2.下方",
             "endDateTime": "String / 结束时间",
             "status": "Boolean / false 表示已过结束时间",
+            "actionUserCount": "Number / 参与交互的用户总数",
             "hasOperated": "Boolean / 当前用户是否已操作",
             "items": [
                 {
                     "name": "String / 名称",
                     "key": "String / 键名",
                     "value": "String / 键值",
+                    "actionUserCount": "Number / 参与交互的用户总数",
                     "hasOperated": "Boolean / 当前用户是否已操作"
                 }
             ]

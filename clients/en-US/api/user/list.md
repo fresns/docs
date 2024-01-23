@@ -19,21 +19,21 @@
 | --- | --- | --- | --- |
 | roles | String | *optional* | Specify main role `rid`, separated by commas for multiple values |
 | verified | Boolean | *optional* | Verification status |
-| gender | Number | *optional* | `gender` field<br>`1` Not set / `2` Male / `3` Female |
+| gender | Number | *optional* | `gender` field<br>1.Null 2.Female / 3.Male / 4.Custom |
 | createdDays | Number | *optional* | Days register: User register in the specified number of days |
 | createdDate | String | *optional* | Date register: `today`,`yesterday`,`week`,`lastWeek`,`month`,`lastMonth`,`year`,`lastYear` |
 | createdDateGt | String | *optional* | Register date greater than `Y-m-d` |
 | createdDateLt | String | *optional* | Register date less than `Y-m-d` |
 | viewCountGt | Number | *optional* | View count greater than |
 | viewCountLt | Number | *optional* | View count less than |
-| likeCountGt | Number | *optional* | Likes count greater than |
-| likeCountLt | Number | *optional* | Likes count less than |
-| dislikeCountGt | Number | *optional* | Dislikes count greater than |
-| dislikeCountLt | Number | *optional* | Dislikes count less than |
-| followCountGt | Number | *optional* | Follows count greater than |
-| followCountLt | Number | *optional* | Follows count less than |
-| blockCountGt | Number | *optional* | Block count greater than |
-| blockCountLt | Number | *optional* | Block count less than |
+| likerCountGt | Number | *optional* | Liker count greater than |
+| likerCountLt | Number | *optional* | Liker count less than |
+| dislikerCountGt | Number | *optional* | Disliker count greater than |
+| dislikerCountLt | Number | *optional* | Disliker count less than |
+| followerCountGt | Number | *optional* | Follower count greater than |
+| followerCountLt | Number | *optional* | Follower count less than |
+| blockerCountGt | Number | *optional* | Blocker count greater than |
+| blockerCountLt | Number | *optional* | Blocker count less than |
 | postCountGt | Number | *optional* | Total number of posts greater than |
 | postCountLt | Number | *optional* | Total number of posts less than |
 | commentCountGt | Number | *optional* | Total number of comments greater than |
@@ -52,10 +52,10 @@
 | extcredits4CountLt | Number | *optional* | extcredits4 less than |
 | extcredits5CountGt | Number | *optional* | extcredits5 greater than |
 | extcredits5CountLt | Number | *optional* | extcredits5 less than |
-| orderType | String | *optional* | Sort by type: `createdTime`,`random`,`view`,`like`,`dislike`,`follow`,`block`<br>`post`,`comment`,`postDigest`,`commentDigest`<br>`extcredits1`,`extcredits2`,`extcredits3`,`extcredits4`,`extcredits5`<br>Default `createdTime` |
+| orderType | String | *optional* | Sort by type: `createdTime`,`random`,`view`,`liker`,`disliker`,`follower`,`blocker`<br>`post`,`comment`,`postDigest`,`commentDigest`<br>`extcredits1`,`extcredits2`,`extcredits3`,`extcredits4`,`extcredits5`<br>Default `createdTime` |
 | orderDirection | String | *optional* | Sort by direction, default `desc`<br>`asc`,`desc` |
-| whitelistKeys | String | *optional* | Whitelist key names, only returns key-value pairs for the given key names<br>Multiple separated by English commas, supports "dot notation" for multi-dimensional arrays |
-| blacklistKeys | String | *optional* | Blacklist key names, removes specified key-value pairs from the returned data<br>Multiple separated by English commas, supports "dot notation" for multi-dimensional arrays |
+| filterType | String | *optional* | `whitelist` only returns key-value pairs for the given key names<br>`blacklist` removes specified key-value pairs from the returned data |
+| filterKeys | String | *optional* | Multiple separated by English commas, supports "dot notation" for multi-dimensional arrays |
 | pageSize | Number | *optional* | Number of items per page (default 15 items) |
 | page | Number | *optional* | Page number (default 1) |
 

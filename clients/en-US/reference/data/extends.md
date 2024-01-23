@@ -99,12 +99,14 @@ aside: false
             "position": "Number / Display position 1.Top 2.Bottom",
             "endDateTime": "String / end date time",
             "status": "Boolean / false Indicates that the end time has passed",
+            "actionUserCount": "Number / Action user count",
             "hasOperated": "Boolean / Whether the current user has operated",
             "items": [
                 {
                     "name": "String / Name",
                     "key": "String / Key Name",
                     "value": "String / Key Value",
+                    "actionUserCount": "Number / Action user count",
                     "hasOperated": "Boolean / Whether the current user has operated"
                 }
             ]

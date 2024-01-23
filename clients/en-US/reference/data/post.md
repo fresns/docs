@@ -35,8 +35,8 @@ aside: false
     "editedDatetime": "String / Post Last Edit Time",
     "editedTimeAgo": "String / Human-readable Post Last Edit Time",
     "editedCount": "Number / Edit Count",
-    "latestCommentDatetime": "String / Latest Comment Time",
-    "latestCommentTimeAgo": "String / Human-readable Latest Comment Time",
+    "lastCommentDatetime": "String / Last Comment Time",
+    "lastCommentTimeAgo": "String / Human-readable last Comment Time",
     "rankState": "Number / Rank State",
     "status": "Boolean / Post Status",
     "readConfig": {

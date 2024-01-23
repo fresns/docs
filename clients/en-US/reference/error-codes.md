@@ -261,6 +261,7 @@
 | **Extend** |  |
 | 37700 | Wrong extend content or record not exist |
 | 37701 | Extend has been banned |
+| 37702 | Extend key does not exist |
 
 ## Editor
 
