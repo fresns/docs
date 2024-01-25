@@ -19,10 +19,10 @@
 | --- | --- | --- | --- |
 | types | String | NO | `1` 系统通知 `2` 推荐内容 `3` 点赞 `4` 踩 `5` 关注 `6` 屏蔽 `7` 提及（艾特） `8` 评论（回复） `9` 引用（转发） |
 | status | Boolean | NO | `0` 未读<br>`1` 已读<br>留空输出全部 |
-| whitelistUserKeys | String | NO | 白名单键名，只返回给定键名的键值对<br>多个以英文逗号隔开，支持「点表示法」表示多维数组<br>仅对 `actionUser` 参数有效 |
-| blacklistUserKeys | String | NO | 黑名单键名，从返回数据中删除指定的键值对<br>多个以英文逗号隔开，支持「点表示法」表示多维数组<br>仅对 `actionUser` 参数有效 |
-| whitelistInfoKeys | String | NO | 白名单键名，只返回给定键名的键值对<br>多个以英文逗号隔开，支持「点表示法」表示多维数组<br>仅对 `actionInfo` 参数有效 |
-| blacklistInfoKeys | String | NO | 黑名单键名，从返回数据中删除指定的键值对<br>多个以英文逗号隔开，支持「点表示法」表示多维数组<br>仅对 `actionInfo` 参数有效 |
+| filterUserType | String | NO | `whitelist` 只返回给定键名的键值对<br>`blacklist` 从返回数据中删除指定的键值对<br>仅对返回结果中 `actionUser` 参数有效 |
+| filterUserKeys | String | NO | 多个以英文逗号隔开，支持「点表示法」表示多维数组 |
+| filterInfoType | String | NO | `whitelist` 只返回给定键名的键值对<br>`blacklist` 从返回数据中删除指定的键值对<br>仅对返回结果中 `actionInfo` 参数有效 |
+| filterInfoKeys | String | NO | 多个以英文逗号隔开，支持「点表示法」表示多维数组 |
 | pageSize | Number | NO | 每页显示条数（默认 15 条） |
 | page | Number | NO | 页码（默认 1） |
 
@@ -32,13 +32,13 @@
 - 按时间倒序排列，最新的在前面。
 - **系统消息解读：**
     - `types=1` 代表系统给你发了一条 `content` 消息内容
-        - `isAccessPlugin` 是否访问插件页
+        - `isAccessApp` 是否访问插件页
         - `actionUser` 是否有触发用户
         - `actionObject + actionInfo` 是否有附带内容
 - **推荐消息解读：**
     - `types=2` 代表系统给你推荐了内容
         - `content` 推荐语
-        - `isAccessPlugin` 是否访问插件页
+        - `isAccessApp` 是否访问插件页
         - `actionUser` 是否有触发用户
         - `actionObject + actionInfo` 推荐的内容
 - **互动消息解读：**
@@ -100,8 +100,9 @@
                     // actionObject=1  用户信息
                     // actionObject=2  小组信息
                     // actionObject=3  话题信息
-                    // actionObject=4  帖子信息
-                    // actionObject=5  评论信息
+                    // actionObject=4  地理信息
+                    // actionObject=5  帖子信息
+                    // actionObject=6  评论信息
                 },
                 "contentFsid": "String / 内容事件的 pid 或 cid",
                 "datetime": "String / 通知时间",

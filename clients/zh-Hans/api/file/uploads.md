@@ -22,9 +22,9 @@
 | type | String | YES | 四选一 `image`,`video`,`audio`,`document` |
 | uploadMode | String | YES | 二选一<br>`file` 上传文件<br>`fileInfo` 上传文件信息 |
 | file | File | NO | `uploadMode=file` 专用，上传文件 |
-| fileInfo | Object | NO | `uploadMode=fileInfo` 专用，上传文件信息数组 |
+| fileInfo | String | NO | `uploadMode=fileInfo` 专用，上传文件信息对象，转换为字符串传参 (Object to String) |
 | warning | String | NO | 文件警告 `nudity`, `violence`, `sensitive` |
-| moreInfo | Object | NO | 文件自定义信息 |
+| moreInfo | String | NO | 文件自定义信息，转换为字符串传参 (Object to String) |
 
 **接口使用说明**
 

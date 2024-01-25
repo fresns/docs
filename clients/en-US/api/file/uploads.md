@@ -22,9 +22,9 @@
 | type | String | **required** | Choose one from `image`, `video`, `audio`, `document` |
 | uploadMode | String | **required** | Choose one from<br>`file` Upload file<br>`fileInfo` Upload file information |
 | file | File | *optional* | For `uploadMode=file` only, upload file |
-| fileInfo | Object | *optional* | For `uploadMode=fileInfo` only, upload file information array |
+| fileInfo | String | *optional* | For `uploadMode=fileInfo` only, upload file information (Object to String) |
 | warning | String | *optional* | File Warning `nudity`, `violence`, `sensitive` |
-| moreInfo | Object | *optional* | File custom information |
+| moreInfo | String | *optional* | File custom information (Object to String) |
 
 **Request Description**
 

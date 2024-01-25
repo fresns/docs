@@ -148,11 +148,11 @@ function sidebarApi() {
         {
           text: 'Interactive',
           items: [
-            { text: 'User List', link: '/api/user/list.md' },
-            { text: 'User Detail', link: '/api/user/detail.md' },
+            { text: 'List', link: '/api/user/list.md' },
+            { text: 'Detail', link: '/api/user/detail.md' },
             { text: 'Followers You Know', link: '/api/user/followers-you-follow.md' },
-            { text: 'User Interaction Users', link: '/api/user/interaction.md' },
-            { text: 'User Mark List', link: '/api/user/mark-list.md' },
+            { text: 'Interaction Users', link: '/api/user/interaction.md' },
+            { text: 'Mark List', link: '/api/user/mark-list.md' },
           ]
         },
       ]
@@ -188,45 +188,45 @@ function sidebarApi() {
       text: 'Group',
       collapsed: false,
       items: [
-        { text: 'Group Tree List', link: '/api/group/tree.md' },
-        { text: 'Group List', link: '/api/group/list.md' },
-        { text: 'Group Detail', link: '/api/group/detail.md' },
-        { text: 'Group Creator', link: '/api/group/creator.md' },
-        { text: 'Group Admins', link: '/api/group/admins.md' },
-        { text: 'Group Interaction Users', link: '/api/group/interaction.md' },
+        { text: 'Tree List', link: '/api/group/tree.md' },
+        { text: 'List', link: '/api/group/list.md' },
+        { text: 'Detail', link: '/api/group/detail.md' },
+        { text: 'Creator', link: '/api/group/creator.md' },
+        { text: 'Admins', link: '/api/group/admins.md' },
+        { text: 'Interaction Users', link: '/api/group/interaction.md' },
       ]
     },
     {
       text: 'Hashtag',
       collapsed: false,
       items: [
-        { text: 'Hashtag List', link: '/api/hashtag/list.md' },
-        { text: 'Hashtag Detail', link: '/api/hashtag/detail.md' },
-        { text: 'Hashtag Interaction Users', link: '/api/hashtag/interaction.md' },
+        { text: 'List', link: '/api/hashtag/list.md' },
+        { text: 'Detail', link: '/api/hashtag/detail.md' },
+        { text: 'Interaction Users', link: '/api/hashtag/interaction.md' },
       ]
     },
     {
       text: 'Geotag',
       collapsed: false,
       items: [
-        { text: 'Geotag List', link: '/api/geotag/list.md' },
-        { text: 'Geotag Detail', link: '/api/geotag/detail.md' },
-        { text: 'Geotag Interaction Users', link: '/api/geotag/interaction.md' },
+        { text: 'List', link: '/api/geotag/list.md' },
+        { text: 'Detail', link: '/api/geotag/detail.md' },
+        { text: 'Interaction Users', link: '/api/geotag/interaction.md' },
       ]
     },
     {
       text: 'Post',
       collapsed: false,
       items: [
-        { text: 'Post List', link: '/api/post/list.md' },
-        { text: 'Post List by Timelines', link: '/api/post/timelines.md' },
-        { text: 'Post List by Nearby', link: '/api/post/nearby.md' },
-        { text: 'Post Detail', link: '/api/post/detail.md' },
-        { text: 'Post Interaction Users', link: '/api/post/interaction.md' },
-        { text: 'Post Affiliated Users', link: '/api/post/users.md' },
-        { text: 'Post Quote It List', link: '/api/post/quotes.md' },
-        { text: 'Post Histories', link: '/api/post/histories.md' },
-        { text: 'Post History Detail', link: '/api/post/history-detail.md' },
+        { text: 'List', link: '/api/post/list.md' },
+        { text: 'List by Timelines', link: '/api/post/timelines.md' },
+        { text: 'List by Nearby', link: '/api/post/nearby.md' },
+        { text: 'Detail', link: '/api/post/detail.md' },
+        { text: 'Interaction Users', link: '/api/post/interaction.md' },
+        { text: 'Affiliated Users', link: '/api/post/users.md' },
+        { text: 'Quote It List', link: '/api/post/quotes.md' },
+        { text: 'Histories', link: '/api/post/histories.md' },
+        { text: 'History Detail', link: '/api/post/history-detail.md' },
         { text: 'Delete', link: '/api/post/delete.md' },
       ]
     },
@@ -234,13 +234,13 @@ function sidebarApi() {
       text: 'Comment',
       collapsed: false,
       items: [
-        { text: 'Comment List', link: '/api/comment/list.md' },
-        { text: 'Comment List by Timelines', link: '/api/comment/timelines.md' },
-        { text: 'Comment List by Nearby', link: '/api/comment/nearby.md' },
-        { text: 'Comment Detail', link: '/api/comment/detail.md' },
-        { text: 'Comment Interaction Users', link: '/api/comment/interaction.md' },
-        { text: 'Comment Histories', link: '/api/comment/histories.md' },
-        { text: 'Comment History Detail', link: '/api/comment/history-detail.md' },
+        { text: 'List', link: '/api/comment/list.md' },
+        { text: 'List by Timelines', link: '/api/comment/timelines.md' },
+        { text: 'List by Nearby', link: '/api/comment/nearby.md' },
+        { text: 'Detail', link: '/api/comment/detail.md' },
+        { text: 'Interaction Users', link: '/api/comment/interaction.md' },
+        { text: 'Histories', link: '/api/comment/histories.md' },
+        { text: 'History Detail', link: '/api/comment/history-detail.md' },
         { text: 'Delete', link: '/api/comment/delete.md' },
       ]
     },

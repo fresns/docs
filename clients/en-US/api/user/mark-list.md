@@ -18,7 +18,7 @@
 | Key | Type | Required | Description |
 | --- | --- | --- | --- |
 | uidOrUsername | Number / String | **required** | User `uid` or `username` |
-| markType | String | **required** | `like`,`dislike`,`follow`,`block` |
+| markType | String |  **required** | `like`,`dislike`,`follow`,`block` |
 | listType | String | **required** | `users`,`groups`,`hashtags`,`posts`,`comments` |
 
 ## Query Params

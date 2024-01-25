@@ -19,10 +19,10 @@
 | --- | --- | --- | --- |
 | types | String | *optional* | `1` System `2` Recommend `3` Like `4` Dislike `5` Follow `6` Block `7` Mention `8` Comment `9` Quote |
 | status | Boolean | *optional* | `0` Unread<br>`1` Read<br>Null to output all |
-| whitelistUserKeys | String | *optional* | Whitelist key names, only returns key-value pairs for the given key names<br>Multiple separated by English commas, supports "dot notation" for multi-dimensional arrays<br>Valid only for the `actionUser` parameter |
-| blacklistUserKeys | String | *optional* | Blacklist key names, removes specified key-value pairs from the returned data<br>Multiple separated by English commas, supports "dot notation" for multi-dimensional arrays<br>Valid only for the `actionUser` parameter |
-| whitelistInfoKeys | String | *optional* | Whitelist key names, only returns key-value pairs for the given key names<br>Multiple separated by English commas, supports "dot notation" for multi-dimensional arrays<br>Valid only for the `actionInfo` parameter |
-| blacklistInfoKeys | String | *optional* | Blacklist key names, removes specified key-value pairs from the returned data<br>Multiple separated by English commas, supports "dot notation" for multi-dimensional arrays<br>Valid only for the `actionInfo` parameter |
+| filterUserType | String | *optional* | `whitelist` only returns key-value pairs for the given key names<br>`blacklist` removes specified key-value pairs from the returned data<br>Applies only to the `actionUser` parameter in the returned result |
+| filterUserKeys | String | *optional* | Multiple separated by English commas, supports "dot notation" for multi-dimensional arrays |
+| filterInfoType | String | *optional* | `whitelist` only returns key-value pairs for the given key names<br>`blacklist` removes specified key-value pairs from the returned data<br>Applies only to the `actionInfo` parameter in the returned result |
+| filterInfoKeys | String | *optional* | Multiple separated by English commas, supports "dot notation" for multi-dimensional arrays |
 | pageSize | Number | *optional* | Number of items per page (default 15 items) |
 | page | Number | *optional* | Page number (default 1) |
 
@@ -32,13 +32,13 @@
 - Sorted in descending order by time, with the latest ones at the top.
 - **System message interpretation:**
     - `types=1` means the system sent you a `content` message.
-        - `isAccessPlugin`: Whether to visit the plugin page.
+        - `isAccessApp`: Whether to visit the plugin page.
         - `actionUser`: Whether there is a triggering user.
         - `actionObject + actionInfo`: Whether there is additional content.
 - **Recommended message interpretation:**
     - `types=2` means the system recommended content for you.
         - `content`: Recommendation text.
-        - `isAccessPlugin`: Whether to visit the plugin page.
+        - `isAccessApp`: Whether to visit the plugin page.
         - `actionUser`: Whether there is a triggering user.
         - `actionObject + actionInfo`: Recommended content.
 - **Interaction message interpretation:**
@@ -100,8 +100,9 @@
                     // actionObject=1  User information
                     // actionObject=2  Group information
                     // actionObject=3  Hashtag information
-                    // actionObject=4  Post information
-                    // actionObject=5  Comment information
+                    // actionObject=4  Geotag information
+                    // actionObject=5  Post information
+                    // actionObject=6  Comment information
                 },
                 "contentFsid": "String / Content event pid or cid",
                 "datetime": "String / Notification time",

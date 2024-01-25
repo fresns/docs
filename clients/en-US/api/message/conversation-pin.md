@@ -1,4 +1,4 @@
-# [Conversation] Pin
+# [Conversation] Pin Conversation
 
 - Endpoint Path: `/api/fresns/v1/conversation/{uidOrUsername}/pin`
 - Method: `PATCH`
