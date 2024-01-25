@@ -7,6 +7,7 @@ aside: false
 | Column Name | Type | Comment | Default | Null | Remark |
 | --- | --- | --- | --- | --- | --- |
 | id | bigint *UNSIGNED* | Primary Key ID |  | NO | Auto Increment |
+| cmid | varchar(32) | Public ID |  | NO | **Unique** |
 | conversation_id | bigint *UNSIGNED* | Conversation ID |  | NO | Related field [conversations->id](conversations.md) |
 | send_user_id | bigint *UNSIGNED* | Sender ID |  | NO | Related field [users->id](../users/users.md) |
 | send_deleted_at | timestamp | Sender-Delete Time |  | YES | Empty means not deleted |

@@ -7,6 +7,7 @@ aside: false
 | 字段名 | 字段类型 | 字段注释 | 默认值 | 可空 | 备注 |
 | --- | --- | --- | --- | --- | --- |
 | id | bigint *UNSIGNED* | 主键 ID |  | NO | 自动递增 |
+| cmid | varchar(32) | 对外公开 ID |  | NO | **唯一值** |
 | conversation_id | bigint *UNSIGNED* | 对话 ID |  | NO | 关联字段 [conversations->id](conversations.md) |
 | send_user_id | bigint *UNSIGNED* | 发信者 ID |  | NO | 关联字段 [users->id](../users/users.md) |
 | send_deleted_at | timestamp | 发信者-删除时间 |  | YES | 为空代表没有删除 |
