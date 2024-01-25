@@ -3,6 +3,7 @@
 ## API Collection
 
 - [API Collection by Bruno](https://github.com/fresns/api-collection-by-bruno)
+- [API Collection by Postman](https://www.postman.com/fresns/workspace/fresns-public-workspace/collection/18055757-966209aa-c1f8-49e6-8a7d-61b6c4a07570)
 
 ## Web Client
 
