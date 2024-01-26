@@ -165,7 +165,7 @@ function sidebarApi() {
           text: 'Notification',
           items: [
             { text: 'List', link: '/api/message/notification-list.md' },
-            { text: 'Mark As Read', link: '/api/message/notification-read.md' },
+            { text: 'Read', link: '/api/message/notification-read.md' },
             { text: 'Delete', link: '/api/message/notification-delete.md' },
           ]
         },
@@ -176,9 +176,8 @@ function sidebarApi() {
             { text: 'Detail', link: '/api/message/conversation-detail.md' },
             { text: 'Messages', link: '/api/message/conversation-messages.md' },
             { text: 'Pin Conversation', link: '/api/message/conversation-pin.md' },
-            { text: 'Mark As Read', link: '/api/message/conversation-read.md' },
-            { text: 'Delete Messages', link: '/api/message/conversation-messages-delete.md' },
-            { text: 'Delete Conversation', link: '/api/message/conversation-delete.md' },
+            { text: 'Read', link: '/api/message/conversation-read.md' },
+            { text: 'Delete', link: '/api/message/conversation-delete.md' },
             { text: 'Send Message', link: '/api/message/conversation-send.md' },
           ]
         },

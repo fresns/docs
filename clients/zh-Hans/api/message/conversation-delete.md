@@ -2,7 +2,7 @@
 
 - 接口地址：`/api/fresns/v1/conversation/{uidOrUsername}`
 - 请求方式：`DELETE`
-- 传参方式：`Rest`
+- 传参方式：`Rest` + `application/json`
 
 ## Headers 可选参数
 
@@ -18,6 +18,13 @@
 | 参数名 | 类型 | 是否必传 | 说明 |
 | --- | --- | --- | --- |
 | uidOrUsername | Number / String | YES | 用户 `uid` 或者 `username` |
+
+## Body 参数
+
+| 参数名 | 类型 | 是否必传 | 说明 |
+| --- | --- | --- | --- |
+| type | String | YES | `conversation` 或者 `messages` |
+| cmids | String | NO | `messages` 选项专用。多个 `cmid` 以英文逗号隔开 |
 
 ## 返回结果
 

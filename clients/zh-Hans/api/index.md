@@ -85,8 +85,7 @@
 | `GET` | /api/fresns/v1/conversation/`{uidOrUsername}`/messages | 获取消息列表 |
 | `PATCH` | /api/fresns/v1/conversation/`{uidOrUsername}`/pin | 置顶对话 |
 | `PATCH` | /api/fresns/v1/conversation/`{uidOrUsername}`/read-status | 更新阅读状态 |
-| `DELETE` | /api/fresns/v1/conversation/`{uidOrUsername}`/messages | 删除消息 |
-| `DELETE` | /api/fresns/v1/conversation/`{uidOrUsername}` | 删除对话 |
+| `DELETE` | /api/fresns/v1/conversation/`{uidOrUsername}` | 删除对话或消息 |
 | `POST` | /api/fresns/v1/conversation/message | 发送消息 |
 
 ## 小组

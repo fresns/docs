@@ -18,8 +18,8 @@
 | Key | Type | Required | Description |
 | --- | --- | --- | --- |
 | pinned | Boolean | *optional* | Pin or not (Null to output all) |
-| whitelistUserKeys | String | *optional* | Whitelist key names, only returns key-value pairs for the given key names<br>Multiple separated by English commas, supports "dot notation" for multi-dimensional arrays<br>Valid only for the `user` parameter |
-| blacklistUserKeys | String | *optional* | Blacklist key names, removes specified key-value pairs from the returned data<br>Multiple separated by English commas, supports "dot notation" for multi-dimensional arrays<br>Valid only for the `user` parameter |
+| filterUserType | String | *optional* | `whitelist` only returns key-value pairs for the given key names<br>`blacklist` removes specified key-value pairs from the returned data<br>Applies only to the `user` parameter in the returned result |
+| filterUserKeys | String | *optional* | Multiple separated by English commas, supports "dot notation" for multi-dimensional arrays |
 | pageSize | Number | *optional* | Number of items per page (default 15 items) |
 | page | Number | *optional* | Page number (default 1) |
 
@@ -44,7 +44,7 @@
                 },
                 "latestMessage": {
                     "cmid": "String / Latest message ID",
-                    "type": "Number / 1. Text message 2. File message",
+                    "type": "String / text or file",
                     "message": "String / Latest message content",
                     "datetime": "String / Time of the latest message",
                     "datetimeFormat": "String / Formatted time of the latest message",

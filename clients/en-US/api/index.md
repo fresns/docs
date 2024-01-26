@@ -85,8 +85,7 @@
 | `GET` | /api/fresns/v1/conversation/`{uidOrUsername}`/messages | Messages |
 | `PATCH` | /api/fresns/v1/conversation/`{uidOrUsername}`/pin | Pin Conversation |
 | `PATCH` | /api/fresns/v1/conversation/`{uidOrUsername}`/read-status | Mark As Read |
-| `DELETE` | /api/fresns/v1/conversation/`{uidOrUsername}`/messages | Delete Messages |
-| `DELETE` | /api/fresns/v1/conversation/`{uidOrUsername}` | Delete Conversation |
+| `DELETE` | /api/fresns/v1/conversation/`{uidOrUsername}` | Delete Conversation or Messages |
 | `POST` | /api/fresns/v1/conversation/message | Send Message |
 
 ## Group

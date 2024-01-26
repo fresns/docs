@@ -39,7 +39,7 @@
             // Common Data Structure -> User Info
         },
         "isMe": "Boolean / Whether sent by myself",
-        "type": "Number / 1. Text message 2. File message",
+        "type": "String / text or file",
         "content": "String / Message content",
         "file": {
             // File message specific

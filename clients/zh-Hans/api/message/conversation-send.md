@@ -39,7 +39,7 @@
             // 通用数据结构->用户信息
         },
         "isMe": "Boolean / 是否为自己发的",
-        "type": "Number / 1.文本消息 2.文件消息",
+        "type": "String / text 或 file",
         "content": "String / 消息内容",
         "file": {
             // 文件消息专用

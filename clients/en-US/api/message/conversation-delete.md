@@ -1,8 +1,8 @@
-# [Conversation] Delete Conversation
+# [Conversation] Delete Conversation or Messages
 
 - Endpoint Path: `/api/fresns/v1/conversation/{uidOrUsername}`
 - Method: `DELETE`
-- Request: `Rest`
+- Request: `Rest` + `application/json`
 
 ## Headers Optional Parameter
 
@@ -18,6 +18,13 @@
 | Key | Type | Required | Description |
 | --- | --- | --- | --- |
 | uidOrUsername | Number / String | **required** | User `uid` or `username` |
+
+## Body Params
+
+| Key | Type | Required | Description |
+| --- | --- | --- | --- |
+| type | String | **required** | `conversation` or `messages` |
+| cmids | String | *optional* | The `messages` option is specialized.<br>separated by English commas for multiple cmid |
 
 ## Return
 

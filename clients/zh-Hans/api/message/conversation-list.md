@@ -18,8 +18,8 @@
 | 参数名 | 类型 | 是否必传 | 说明 |
 | --- | --- | --- | --- |
 | pinned | Boolean | NO | 是否 Pin （留空输出全部） |
-| whitelistUserKeys | String | NO | 白名单键名，只返回给定键名的键值对<br>多个以英文逗号隔开，支持「点表示法」表示多维数组<br>仅对 `user` 参数有效 |
-| blacklistUserKeys | String | NO | 黑名单键名，从返回数据中删除指定的键值对<br>多个以英文逗号隔开，支持「点表示法」表示多维数组<br>仅对 `user` 参数有效 |
+| filterUserType | String | NO | `whitelist` 只返回给定键名的键值对<br>`blacklist` 从返回数据中删除指定的键值对<br>仅对返回结果中 `user` 参数有效 |
+| filterUserKeys | String | NO | 多个以英文逗号隔开，支持「点表示法」表示多维数组 |
 | pageSize | Number | NO | 每页显示条数（默认 15 条） |
 | page | Number | NO | 页码（默认 1） |
 
@@ -44,7 +44,7 @@
                 },
                 "latestMessage": {
                     "cmid": "String / 最新一条消息 ID",
-                    "type": "Number / 1.文本消息 2.文件消息",
+                    "type": "String / text 或 file",
                     "message": "String / 最新一条消息内容",
                     "datetime": "String / 最新一条消息的时间",
                     "datetimeFormat": "String / 最新一条消息的时间格式化",

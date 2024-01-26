@@ -25,8 +25,8 @@
 | --- | --- | --- | --- |
 | orderDirection | String | *optional* | Sort by direction, default `desc`<br>`asc`,`desc` |
 | pageListDirection | String | *optional* | Direction of array sorting in each page list, default `latest`<br>`latest`,`oldest` |
-| whitelistUserKeys | String | *optional* | Whitelist key names, only returns key-value pairs for the given key names<br>Multiple separated by English commas, supports "dot notation" for multi-dimensional arrays<br>Valid only for the `user` parameter |
-| blacklistUserKeys | String | *optional* | Blacklist key names, removes specified key-value pairs from the returned data<br>Multiple separated by English commas, supports "dot notation" for multi-dimensional arrays<br>Valid only for the `user` parameter |
+| filterUserType | String | *optional* | `whitelist` only returns key-value pairs for the given key names<br>`blacklist` removes specified key-value pairs from the returned data<br>Applies only to the `user` parameter in the returned result |
+| filterUserKeys | String | *optional* | Multiple separated by English commas, supports "dot notation" for multi-dimensional arrays |
 | pageSize | Number | *optional* | Number of items per page (default 15 items) |
 | page | Number | *optional* | Page number (default 1) |
 
@@ -51,7 +51,7 @@
                     // Common Data Structure -> User Info
                 },
                 "isMe": "Boolean / Whether sent by myself",
-                "type": "Number / 1. Text message 2. File message",
+                "type": "String / text or file",
                 "content": "String / Message content",
                 "file": {
                     // File message specific
