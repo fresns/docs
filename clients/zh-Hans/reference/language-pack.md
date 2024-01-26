@@ -8,8 +8,8 @@
 | --- | --- |
 | language | 语言 |
 | darkMode | 深色模式 |
-| optionLanguage | 切换语言 |
-| optionUser | 切换用户 |
+| switchLanguage | 切换语言 |
+| switchUser | 切换用户 |
 | admin | 管理员 |
 | checkVersion | 检查更新 |
 | isLatestVersion | 当前已是最新版本 |
@@ -243,6 +243,12 @@
 | passwordInfoLowercaseLetters | 小写字母 |
 | passwordInfoUppercaseLetters | 大写字母 |
 | passwordInfoSymbols | 字符(除空格) |
+| deviceManagement | 设备管理 |
+| deviceType | 设备类型 |
+| deviceInfo | 设备信息 |
+| deviceDesc | 删除设备后，该设备登录的账号将自动退出登录 |
+| currentDevice | 当前设备 |
+| lastLoginTime | 最近登录 |
 
 ## 钱包
 

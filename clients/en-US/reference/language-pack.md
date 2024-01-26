@@ -8,8 +8,8 @@
 | --- | --- |
 | language | Language |
 | darkMode | Dark Mode |
-| optionLanguage | Switch Language |
-| optionUser | Switch User |
+| switchLanguage | Switch Language |
+| switchUser | Switch User |
 | admin | Administrator |
 | checkVersion | Check for Update |
 | isLatestVersion | Currently the latest version |
@@ -241,6 +241,12 @@
 | passwordInfoLowercaseLetters | Lowercase Letters |
 | passwordInfoUppercaseLetters | Uppercase Letters |
 | passwordInfoSymbols | Symbols(Except space) |
+| deviceManagement | Device Management |
+| deviceType | Device Type |
+| deviceInfo | Device Information |
+| deviceDesc | When a device is deleted, the account logged on to that device is automatically logged off. |
+| currentDevice | Current Device |
+| lastLoginTime | Last Login Time |
 
 ## Wallets
 
