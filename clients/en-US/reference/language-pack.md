@@ -32,7 +32,7 @@
 | errorTimeout | Timeout |
 | errorRejection | Service Rejected |
 | errorUnavailable | Temporarily Unavailable |
-| errorIp | The IP location is unknown |
+| errorIpLocation | The IP location is unknown |
 | errorGetLocation | Your device does not support location or refuses authorization |
 
 ## Operating Tips
@@ -205,6 +205,7 @@
 | accountLoginByPassword | Password Login |
 | accountLoginByCode | Code Login |
 | accountLoginByConnects | Quick Login |
+| accountRegisterCloseDesc | This registration channel has been closed and account registration through this function is prohibited |
 | accountResetPassword | Forgot Password |
 | accountConnectEmpty | No account linkage information found |
 | accountConnectLinked | I have an account linked to a community |
@@ -349,6 +350,8 @@
 | userFollowersYouKnow | and others are also following they |
 | userFollowersYouFollow | The person you are following is also following they |
 | userDeactivated | User Deactivated |
+| userInterdiction | User Interdiction |
+| userDisabled | User is disabled |
 | userExtcredits | User Credits |
 | userExtcreditsLogs | Extcredits Record |
 | userExtcreditsLogName | Extcredits |
@@ -359,6 +362,7 @@
 | userExtcreditsLogApp | App |
 | userExtcreditsLogRemark | Remark |
 | userExtcreditsLogTime | Time |
+| userConversationCloseDesc | Conversation function is not enabled and cannot be used |
 | private | Introduction to the private model |
 | privateRenewal | Renewal |
 | privateContentHide | Membership has expired, all site content is no longer visible. |
@@ -445,7 +449,10 @@
 | --- | --- |
 | contentReviewPending | Content review in progress |
 | contentReviewRejected | Content review rejected |
-| contentLoginError | Login is required to view |
+| contentEditReviewTip | The content is being reviewed and can not be edited |
+| contentEditPublishedTip | The content has been published and can not be edited |
+| contentLoginTip | Login is required to view |
+| contentGroupTip | Only members can see who's in the group and what they post. |
 | contentWarning | Content Warning |
 | contentWarningTip | The author flagged this file as showing sensitive content. |
 | contentAllList | All |

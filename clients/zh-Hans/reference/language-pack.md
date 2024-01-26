@@ -32,7 +32,7 @@
 | errorTimeout | 服务超时 |
 | errorRejection | 服务被拒绝 |
 | errorUnavailable | 暂时无法使用 |
-| errorIp | IP 属地未知 |
+| errorIpLocation | IP 属地未知 |
 | errorGetLocation | 您的设备不支持定位或者拒绝授权 |
 
 ## 操作提示
@@ -207,6 +207,7 @@
 | accountLoginByPassword | 密码登录 |
 | accountLoginByCode | 验证码登录 |
 | accountLoginByConnects | 快速登录 |
+| accountRegisterCloseDesc | 该注册通道已关闭，禁止通过此功能注册账号 |
 | accountResetPassword | 忘记密码 |
 | accountConnectEmpty | 未查询到账号关联信息 |
 | accountConnectLinked | 我有账号，绑定关联 |
@@ -351,6 +352,8 @@
 | userFollowersYouKnow | 等人也关注了他 |
 | userFollowersYouFollow | 你关注的人也在关注他 |
 | userDeactivate | 用户已停用 |
+| userInterdiction | 用户正在被禁言 |
+| userDisabled | 用户已被禁用 |
 | userExtcredits | 用户积分 |
 | userExtcreditsLogs | 用户扩展分值记录 |
 | userExtcreditsLogName | 分值名称 |
@@ -361,6 +364,7 @@
 | userExtcreditsLogApp | 应用 |
 | userExtcreditsLogRemark | 备注 |
 | userExtcreditsLogTime | 时间 |
+| userConversationCloseDesc | 对话功能未启用，无法使用 |
 | private | 私有模式介绍 |
 | privateRenewal | 续期 |
 | privateContentHide | 会员已到期，站点内容全部不可见 |
@@ -447,7 +451,10 @@
 | --- | --- |
 | contentReviewPending | 内容审核中 |
 | contentReviewRejected | 内容审核拒绝 |
-| contentLoginError | 需要登录后才能查看 |
+| contentEditReviewTip | 内容审核中不可编辑 |
+| contentEditPublishedTip | 内容已正式发表不可编辑 |
+| contentLoginTip | 需要登录后才能查看 |
+| contentGroupTip | 只有小组成员才能查看小组内帖子 |
 | contentWarning | 内容警告 |
 | contentWarningTip | 作者将此文件标记为显示敏感内容。 |
 | contentAllList | 所有 |
