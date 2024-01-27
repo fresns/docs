@@ -74,7 +74,6 @@ $uploadFileInfo = FileUtility::uploadFileInfo($bodyInfo);
         "shaType": "存储到 files->sha_type",
         "disk": "存储到 files->disk", // local 或 remote
         "path": "存储到 files->path",
-        "imageHandlePosition": "存储到 files->image_handle_position", // 生成物理图片专用，支持 path-start, path-end, name-start, name-end
         "imageWidth": "图片专用，存储到 files->image_width",
         "imageHeight": "图片专用，存储到 files->image_height",
         "videoTime": "视频专用，存储到 files->video_time",

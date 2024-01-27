@@ -18,7 +18,6 @@ aside: false
 | sha_type | varchar(16) | File sha Type |  | YES | For example, SHA1 or SHA-256 |
 | disk | varchar(32) | File Disk | remote | NO | `local` or `remote` |
 | path | varchar(255) | File Path |  | NO | **Relative path** |
-| image_handle_position | varchar(16) | Image Processing Position |  | YES | Applicable to scenarios where physical thumbnails are generated<br>Manage physical files based on this configuration |
 | image_width | smallint *UNSIGNED* | Image Width |  | YES | Image file specific: pixels px |
 | image_height | smallint *UNSIGNED* | Image Height |  | YES | Image file specific: pixels px |
 | image_is_long | tinyint *UNSIGNED* | Is Long Image | 0 | NO | Image file specific<br>0.No / 1.Yes |
