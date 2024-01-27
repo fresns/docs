@@ -28,20 +28,19 @@
 
 **接口使用说明**
 
-- 参数 `fileInfo` 示例如下，参数类型可查看 [files](../../database/systems/files.md) 表结构。
+- 参数 `fileInfo` 示例如下
 
 ```json
 {
-    "name": "存储到 files->name",
+    "name": "存储到 files->name", // 必须
     "mime": "存储到 files->mime",
-    "extension": "存储到 files->extension",
-    "size": "存储到 files->size", // 单位 Byte
+    "extension": "存储到 files->extension", // 必须
+    "size": "存储到 files->size", // 必须，单位 Byte
     "md5": "存储到 files->md5",
     "sha": "存储到 files->sha",
     "shaType": "存储到 files->sha_type",
     "disk": "存储到 files->disk",
-    "path": "存储到 files->path",
-    "imageHandlePosition": "存储到 files->image_handle_position",
+    "path": "存储到 files->path", // 必须
     "imageWidth": "图片专用，存储到 files->image_width",
     "imageHeight": "图片专用，存储到 files->image_height",
     "videoTime": "视频专用，存储到 files->video_time",

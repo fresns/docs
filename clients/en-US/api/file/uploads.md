@@ -28,20 +28,19 @@
 
 **Request Description**
 
-- The `fileInfo` parameter example is shown below. The parameter types can be found in the [files](../../database/systems/files.md) table structure.
+- The `fileInfo` parameter example is shown below.
 
 ```json
 {
-    "name": "Store to files->name",
+    "name": "Store to files->name", // required
     "mime": "Store to files->mime",
-    "extension": "Store to files->extension",
-    "size": "Store to files->size", // Unit Byte
+    "extension": "Store to files->extension", // required
+    "size": "Store to files->size", // required, Unit Byte
     "md5": "Store to files->md5",
     "sha": "Store to files->sha",
     "shaType": "Store to files->sha_type",
     "disk": "Store to files->disk",
-    "path": "Store to files->path",
-    "imageHandlePosition": "Store to files->image_handle_position",
+    "path": "Store to files->path", // required
     "imageWidth": "Image specific, store to files->image_width",
     "imageHeight": "Image specific, store to files->image_height",
     "videoTime": "Video specific, store to files->video_time",
