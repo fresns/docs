@@ -11,6 +11,8 @@
 | switchLanguage | 切换语言 |
 | switchUser | 切换用户 |
 | admin | 管理员 |
+| sitePrivate | 站点私有模式 |
+| sitePrivateDesc | 私有模式介绍 |
 | checkVersion | 检查更新 |
 | isLatestVersion | 当前已是最新版本 |
 | useApp | 使用 App |
@@ -59,6 +61,8 @@
 | showMoreComments | 显示更多评论 |
 | listEmpty | 列表为空，暂无内容 |
 | listWithoutPage | 没有了 |
+| whoSeesThis | 谁可以看到？ |
+| whoCanReply | 谁可以回复？ |
 
 ## 操作反馈
 
@@ -98,6 +102,7 @@
 | activate | 启用 |
 | deactivate | 停用 |
 | status | 状态 |
+| download | 下载 |
 | install | 安装 |
 | uninstall | 卸载 |
 | check | 验证 |
@@ -119,6 +124,7 @@
 | know | 知道了 |
 | send | 发送 |
 | sortOrder | 排序 |
+| displayType | 显示方式 |
 | type | 类型 |
 | view | 查看 |
 | show | 显示 |
@@ -158,6 +164,7 @@
 | modifierDay | 日 |
 | modifierDays | 天 |
 | modifierLength | 长度 |
+| modifierCanReply | can reply |
 | unitSecond | 秒 |
 | unitMinute | 分钟 |
 | unitWithinMinute | 分钟以内 |
@@ -170,6 +177,16 @@
 | warningNudity | 裸体 |
 | warningViolence | 暴力 |
 | warningSensitive | 敏感内容 |
+| optionPublic | 公开 |
+| optionPrivate | 私有 |
+| optionYourFollowers | 你的关注者 |
+| optionPeopleYouFollow | 你关注的人 |
+| optionPeopleYouFollowOrVerified | 你关注的人和已认证的人 |
+| optionYouFollowEachOther | 你们互相关注 |
+| optionEveryone | 所有人 |
+| optionOnlyYou | 仅对你自己 |
+| optionNoOne | 没有人 |
+| optionNoOneIsAllowed | 不允许所有人 |
 | ipLocation | IP 属地 |
 | groupAdmin | 小组管理员 |
 
@@ -179,15 +196,15 @@
 | --- | --- |
 | account | 账号 |
 | email | 邮箱 |
-| currentEmail | 当前邮箱 |
-| newEmail | 新邮箱 |
 | phone | 手机号 |
-| currentPhone | 当前手机号 |
+| newEmail | 新邮箱 |
 | newPhone | 新手机号 |
+| currentEmail | 当前邮箱 |
+| currentPhone | 当前手机号 |
 | countryCode | 国际区号 |
 | currentEmailDesc | 账户现在绑定的邮箱 |
 | currentPhoneDesc | 账户现在绑定的手机号 |
-| emailEditDesc | 换绑新邮箱之后，可以用新的手机号及当前密码登录 |
+| emailEditDesc | 换绑新邮箱之后，可以用新的邮箱及当前密码登录 |
 | phoneEditDesc | 换绑新手机号之后，可以用新的手机号及当前密码登录 |
 | verifyCode | 验证码 |
 | emailVerifyCode | 邮件验证码 |
@@ -229,7 +246,7 @@
 | accountPoliciesError | 请确认已经阅读并同意服务条款和隐私政策 |
 | accountPoliciesTerms | 服务条款 |
 | accountPoliciesPrivacy | 隐私政策 |
-| accountPoliciesCookies | Cookies 使用条款 |
+| accountPoliciesCookie | Cookie 使用条款 |
 | accountPoliciesDelete | 注销说明 |
 | accountKyc | 实名认证 |
 | password | 密码 |
@@ -301,16 +318,8 @@
 | settingType | 修改方式 |
 | settingAlready | 已设置 |
 | settingNot | 未设置 |
-| settingWarning | 为了保护你的帐号安全，请验证身份，验证成功后进行下一步操作 |
+| settingWarning | 为了保护你的账号安全，请验证身份，验证成功后进行下一步操作 |
 | settingCheckError | 操作验证失败，请先通过验证再操作 |
-| settingAllowAll | 允许所有用户 |
-| settingAllowMyFollow | 仅允许我关注的用户 |
-| settingAllowMyFollowAndVerified | 我关注的用户和已认证的用户 |
-| settingAllowNotAll | 不允许所有用户 |
-| settingContentPublic | 对所有人公开 |
-| settingContentAllowFollower | 仅对关注我的用户公开 |
-| settingContentAllowMyFollowing | 仅对我关注的用户公开 |
-| settingContentPrivate | 不公开 |
 | settingIntervalDays | 修改间隔天数 |
 | settingLastTime | 上次修改时间 |
 | settingNameWarning | 仅支持英文字母和数字，可以纯字母或者与数字混合，但不能纯数字 |
@@ -337,8 +346,8 @@
 | 键名 | 键值 |
 | --- | --- |
 | userCurrent | 当前用户 |
-| userPin | 密码登录 |
-| userAuthPin | 用户密码 |
+| userPin | 用户密码 |
+| userPinLogin | 密码登录 |
 | userEnter | 进入社区 |
 | userProfile | 个人信息 |
 | userAvatar | 头像 |
@@ -347,13 +356,12 @@
 | userFollowing | 正在关注 |
 | userUnfollow | 取消关注 |
 | userFollowMutual | 互相关注 |
-| userFollowMe | 关注了你 |
-| userBlockMe | 拉黑了你 |
+| userFollowedYou | 关注了你 |
+| userBlockedYou | 拉黑了你 |
 | userFollowersYouKnow | 等人也关注了他 |
 | userFollowersYouFollow | 你关注的人也在关注他 |
-| userDeactivate | 用户已停用 |
+| userDeactivated | 用户已停用 |
 | userInterdiction | 用户正在被禁言 |
-| userDisabled | 用户已被禁用 |
 | userExtcredits | 用户积分 |
 | userExtcreditsLogs | 用户扩展分值记录 |
 | userExtcreditsLogName | 分值名称 |
@@ -365,7 +373,6 @@
 | userExtcreditsLogRemark | 备注 |
 | userExtcreditsLogTime | 时间 |
 | userConversationCloseDesc | 对话功能未启用，无法使用 |
-| private | 私有模式介绍 |
 | privateRenewal | 续期 |
 | privateContentHide | 会员已到期，站点内容全部不可见 |
 | privateContentShowOld | 会员已到期，仅能浏览到期前内容，不再显示新内容 |
@@ -411,15 +418,15 @@
 | editorCommentDisable | 禁止评论 |
 | editorCommentPrivate | 仅帖子作者可见 |
 | editorUpload | 上传 |
-| editorUploadInfo | 请选择上传资源 |
-| editorUploadExtensions | 支持的扩展名 |
-| editorUploadMaxSize | 支持的最大尺寸 |
-| editorUploadMaxTime | 支持的最长时间 |
-| editorUploadNumber | 支持上传的数量 |
 | editorUploadButton | 确认上传 |
+| editorUploadTip | 请选择上传资源 |
+| editorUploadTipExtensions | 支持的扩展名 |
+| editorUploadTipMaxSize | 支持的最大尺寸 |
+| editorUploadTipMaxTime | 支持的最长时间 |
+| editorUploadTipNumber | 支持上传的数量 |
 | editorVideoPlayTip | 上传成功，发表后可播放 |
 | editorFileWarning | 内容警告 |
-| editorFileWarningInfo | 给文件添加警告 |
+| editorFileWarningDesc | 给文件添加警告 |
 | editorFileWarningTip | 选择一个类别，我们就会在文件上加上警告。这可以帮助人们避开他们不想看到的内容。 |
 | editorLimitTitle | 发表限制提醒 |
 | editorLimitTypeName | 限制类型 |
@@ -473,13 +480,12 @@
 | contentPublishTime | 发布时间 |
 | contentCommentTime | 评论时间 |
 | contentDigestTime | 精华时间 |
-| contentLatestCommentTime | 最新评论时间 |
+| contentLastCommentTime | 最新评论时间 |
 | contentPublishedOn | 发表于 |
 | contentEditedOn | 编辑于 |
 | contentFileUploader | 上传者 |
 | contentFileDownloader | 用户下载记录 |
 | contentFileDownloaderDesc | 仅展示 30 名用户头像 |
-| contentFileDownload | 下载 |
 | contentImageLong | 长图 |
 | contentVideoPlay | 播放 |
 | contentDocumentDetail | 文件详情 |

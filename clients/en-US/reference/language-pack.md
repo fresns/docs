@@ -18,6 +18,8 @@
 | openApp | Open the app |
 | reviewApp | Review App |
 | upgradeApp | Upgrade Now |
+| sitePrivate | Site Private |
+| sitePrivateDesc | Introduction to the private model |
 
 ## Error Tips
 
@@ -59,6 +61,8 @@
 | showMoreComments | Show more comments |
 | listEmpty | The list is empty, no content at the moment. |
 | listWithoutPage | No More |
+| whoSeesThis | Who sees this? |
+| whoCanReply | Who can reply? |
 
 ## Operating Feedback
 
@@ -98,6 +102,7 @@
 | activate | Activate |
 | deactivate | Deactivate |
 | status | Status |
+| download | Download |
 | install | Install |
 | uninstall | Uninstall |
 | check | Check |
@@ -105,8 +110,8 @@
 | search | Search |
 | location | Location |
 | select | Choose |
-| required | required |
-| optional | optional |
+| required | Required |
+| optional | Optional |
 | update | Update |
 | recall | Recall |
 | submit | Submit |
@@ -119,6 +124,7 @@
 | know | Got it |
 | send | Send |
 | sortOrder | Sort Order |
+| displayType | Display Type |
 | type | Type |
 | view | View |
 | show | Show |
@@ -170,6 +176,16 @@
 | warningNudity | Nudity |
 | warningViolence | Violence |
 | warningSensitive | Sensitive |
+| optionPublic | Public |
+| optionPrivate | Private |
+| optionYourFollowers | Your followers |
+| optionPeopleYouFollow | People you follow |
+| optionPeopleYouFollowOrVerified | People you follow or verified |
+| optionYouFollowEachOther | You follow each other |
+| optionEveryone | Everyone |
+| optionOnlyYou | Only you |
+| optionNoOne | No one |
+| optionNoOneIsAllowed | No one is allowed |
 | ipLocation | IP Location |
 | groupAdmin | Administrator |
 
@@ -178,15 +194,17 @@
 | Key | Value |
 | --- | --- |
 | account | Account |
-| email | E-Mail |
-| currentEmail | Current E-mail |
-| newEmail | New E-Mail |
-| currentPhone | Current Phone Number |
+| email | Email |
 | phone | Phone Number |
+| newEmail | New Email |
 | newPhone | New Phone |
+| currentEmail | Current Email |
+| currentPhone | Current Phone Number |
 | countryCode | Country Code |
 | currentEmailDesc | The email address currently used for the account |
 | currentPhoneDesc | Phone number currently used for the account |
+| emailEditDesc | Once you have switched to a new email address, you can log in with your new email address and current password. |
+| phoneEditDesc | After you change your mobile number, you can sign in with your new mobile number and current password. |
 | verifyCode | Verify Code |
 | emailVerifyCode | Email Code |
 | emailVerifyCodeTip | Verify code has been sent via Email to |
@@ -211,7 +229,7 @@
 | accountConnectLinked | I have an account linked to a community |
 | accountConnectLinkedTip | Please use "Password" or "Verify Code" to log in to your account first, and then operate linked in your account settings after logging in. |
 | accountConnectCreateNew | No account, create a new account |
-| accountLogout | Logout Account |
+| accountLogout | Logout |
 | accountDelete | Delete Account |
 | accountDeleteDesc | Deleting an account requires an account verification code that must be associated with an email address or mobile phone number to work. |
 | accountApplyDelete | Apply Delete Account |
@@ -227,7 +245,7 @@
 | accountPoliciesError | Please confirm that you have read and agree to the Terms and Data Policy. |
 | accountPoliciesTerms | Terms of Service |
 | accountPoliciesPrivacy | Privacy Policy |
-| accountPoliciesCookies | Cookies Policy |
+| accountPoliciesCookie | Cookie Policy |
 | accountPoliciesDelete | Delete Account Description |
 | accountKyc | Account KYC |
 | password | Password |
@@ -296,7 +314,7 @@
 | settingConversationLimit | Conversation |
 | settingCommentLimit | Comment |
 | settingContentLimit | Content |
-| settingType | Edit Type |
+| settingType | Setting Type |
 | settingAlready | Already set |
 | settingNot | Not set |
 | settingWarning | To protect the security of your account, please verify your identity and proceed to the next step after successful verification |
@@ -314,6 +332,7 @@
 | settingNameWarning | Alphabet and numbers only, can be pure letters or mixed with numbers, but not pure numbers |
 | settingNicknameWarning | No punctuation or special symbols |
 | settingBirthdayTip | Providing your birthday helps make sure you get the right Fresns experience for your age. |
+| settingBirthdayDisplayType | Display Type |
 | settingBirthdayDisplayType1 | Non-Public |
 | settingBirthdayDisplayType2 | Show Year |
 | settingBirthdayDisplayType3 | Show Month and Day |
@@ -335,8 +354,8 @@
 | Key | Value |
 | --- | --- |
 | userCurrent | Current User |
-| userPin | PIN Login |
-| userAuthPin | Auth PIN |
+| userPin | Auth PIN |
+| userPinLogin | PIN Login |
 | userEnter | Enter |
 | userProfile | Profile |
 | userAvatar | Avatar |
@@ -345,15 +364,14 @@
 | userFollowing | Following |
 | userUnfollow | Unfollow |
 | userFollowMutual | Mutual follow |
-| userFollowMe | Followed you |
-| userBlockMe | Blocked you |
+| userFollowedYou | Followed you |
+| userBlockedYou | Blocked you |
 | userFollowersYouKnow | and others are also following they |
 | userFollowersYouFollow | The person you are following is also following they |
 | userDeactivated | User Deactivated |
 | userInterdiction | User Interdiction |
-| userDisabled | User is disabled |
 | userExtcredits | User Credits |
-| userExtcreditsLogs | Extcredits Record |
+| userExtcreditsLogs | Extcredits Records |
 | userExtcreditsLogName | Extcredits |
 | userExtcreditsLogType | Type |
 | userExtcreditsLogAmount | Amount |
@@ -363,7 +381,6 @@
 | userExtcreditsLogRemark | Remark |
 | userExtcreditsLogTime | Time |
 | userConversationCloseDesc | Conversation function is not enabled and cannot be used |
-| private | Introduction to the private model |
 | privateRenewal | Renewal |
 | privateContentHide | Membership has expired, all site content is no longer visible. |
 | privateContentShowOld | Membership has expired, you can only browse content from before the expiration date and no longer have access to new content. |
@@ -409,23 +426,23 @@
 | editorCommentDisable | Disable Comment |
 | editorCommentPrivate | Only visible to post author |
 | editorUpload | Upload |
-| editorUploadInfo | Please select upload resources |
-| editorUploadExtensions | Extensions |
-| editorUploadMaxSize | Max size |
-| editorUploadMaxTime | Max time |
-| editorUploadNumber | Max number |
 | editorUploadButton | Confirm |
+| editorUploadTip | Please select upload resources |
+| editorUploadTipExtensions | Extensions |
+| editorUploadTipMaxSize | Max size |
+| editorUploadTipMaxTime | Max time |
+| editorUploadTipNumber | Max number |
 | editorVideoPlayTip | Upload successfully and playable after publication |
 | editorFileWarning | File Warning |
-| editorFileWarningInfo | Put a content warning on this file |
+| editorFileWarningDesc | Put a content warning on this file |
 | editorFileWarningTip | Select a category, and we’ll put a content warning on this file. This helps people avoid content they don’t want to see. |
-| editorLimitTitle | Publish restriction reminder |
-| editorLimitTypeName | Restriction type |
-| editorLimitType1Desc | Specify date range restrictions |
+| editorLimitTitle | Publish Interdiction Tip |
+| editorLimitTypeName | Interdiction Type |
+| editorLimitType1Desc | Specify date range interdiction |
 | editorLimitType2Desc | Cycle limits within the time range of each day |
 | editorLimitDateName | Date range |
 | editorLimitCycleName | Time range |
-| editorLimitRuleName | Restriction rules |
+| editorLimitRuleName | Interdiction rules |
 | editorLimitRule1Desc | It can be published, but it needs to be reviewed |
 | editorLimitRule2Desc | Prohibited to publish |
 | editorLimitPromptName | Restrictions |
@@ -440,8 +457,8 @@
 | editorReadConfigButtonName | Get read permission button text |
 | editorCommentButtonTitle | Comment Button Information |
 | editorCommentButtonName | Button Name |
-| editorUserListTitle | Affiliate Member Configuration |
-| editorUserListName | Affiliate Member Name |
+| editorUserListTitle | Associated Member Configuration |
+| editorUserListName | Associated Member Name |
 
 ## Contents
 
@@ -471,13 +488,12 @@
 | contentPublishTime | Publish Time |
 | contentCommentTime | Comment Time |
 | contentDigestTime | Digest Time |
-| contentLatestCommentTime | Latest Comment Time |
+| contentLastCommentTime | Last Comment Time |
 | contentPublishedOn | Published on |
 | contentEditedOn | Edited on |
 | contentFileUploader | Uploader |
 | contentFileDownloader | Downloader |
 | contentFileDownloaderDesc | Only 30 user avatars are displayed |
-| contentFileDownload | Download |
 | contentImageLong | Long Image |
 | contentVideoPlay | Play |
 | contentDocumentDetail | Detail |
