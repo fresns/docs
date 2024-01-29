@@ -105,17 +105,11 @@ function sidebarApi() {
         { text: 'Input Tips', link: '/api/common/input-tips.md' },
         { text: 'App or Plugin Callback', link: '/api/common/callback.md' },
         { text: 'Command Word Request', link: '/api/common/cmd-word.md' },
-      ]
-    },
-    {
-      text: 'File',
-      collapsed: false,
-      items: [
-        { text: 'Storage Token', link: '/api/file/storage-token.md' },
-        { text: 'Upload File', link: '/api/file/uploads.md' },
-        { text: 'Update Warning', link: '/api/file/warning.md' },
-        { text: 'Download Link', link: '/api/file/link.md' },
-        { text: 'Download Users', link: '/api/file/users.md' },
+        { text: 'File Storage Token', link: '/api/common/file-storage-token.md' },
+        { text: 'File Uploads', link: '/api/common/file-uploads.md' },
+        { text: 'File Update Warning', link: '/api/common/file-warning.md' },
+        { text: 'File Download Link', link: '/api/common/file-link.md' },
+        { text: 'File Download Users', link: '/api/common/file-users.md' },
       ]
     },
     {

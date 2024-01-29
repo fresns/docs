@@ -1,6 +1,6 @@
 # 上传文件
 
-- 接口地址：`/api/fresns/v1/file/uploads`
+- 接口地址：`/api/fresns/v1/common/file/uploads`
 - 请求方式：`POST`
 - 传参方式：`multipart/form-data`
 

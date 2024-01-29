@@ -21,16 +21,11 @@
 | `GET` | /api/fresns/v1/common/input-tips | Input Tips |
 | `GET` | /api/fresns/v1/common/callback | App or Plugin Callback |
 | `POST` | /api/fresns/v1/common/cmd-word | Command Word Request |
-
-## File
-
-| Method | Endpoint Path | Description |
-| --- | --- | --- |
-| `GET` | /api/fresns/v1/file/storage-token | Storage Token |
-| `POST` | /api/fresns/v1/file/uploads | Upload File or File Info |
-| `PATCH` | /api/fresns/v1/file/`{fid}`/warning | Update Warning |
-| `GET` | /api/fresns/v1/file/`{fid}`/link | Download Link |
-| `GET` | /api/fresns/v1/file/`{fid}`/users | Download Users |
+| `GET` | /api/fresns/v1/common/file/storage-token | File: Storage Token |
+| `POST` | /api/fresns/v1/common/file/uploads | File: Uploads |
+| `PATCH` | /api/fresns/v1/common/file/`{fid}`/warning | File: Update Warning |
+| `GET` | /api/fresns/v1/common/file/`{fid}`/link | File: Download Link |
+| `GET` | /api/fresns/v1/common/file/`{fid}`/users | File: Download Users |
 
 ## Account
 

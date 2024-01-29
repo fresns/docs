@@ -21,16 +21,11 @@
 | `GET` | /api/fresns/v1/common/input-tips | 输入提示信息 |
 | `GET` | /api/fresns/v1/common/callback | 回调返参查询 |
 | `POST` | /api/fresns/v1/common/cmd-word | 命令字请求 |
-
-## 文件
-
-| 请求方式 | 接口路径 | 描述 |
-| --- | --- | --- |
-| `GET` | /api/fresns/v1/file/storage-token | 存储桶令牌 |
-| `POST` | /api/fresns/v1/file/uploads | 上传文件 |
-| `PATCH` | /api/fresns/v1/file/`{fid}`/warning | 更新文件警告 |
-| `GET` | /api/fresns/v1/file/`{fid}`/link | 文件下载链接 |
-| `GET` | /api/fresns/v1/file/`{fid}`/users | 下载过文件的用户 |
+| `GET` | /api/fresns/v1/common/file/storage-token | 文件: 存储桶令牌 |
+| `POST` | /api/fresns/v1/common/file/uploads | 文件: 上传文件 |
+| `PATCH` | /api/fresns/v1/common/file/`{fid}`/warning | 文件: 更新文件警告 |
+| `GET` | /api/fresns/v1/common/file/`{fid}`/link | 文件: 下载链接 |
+| `GET` | /api/fresns/v1/common/file/`{fid}`/users | 文件: 下载过文件的用户 |
 
 ## 账号
 

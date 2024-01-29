@@ -1,6 +1,6 @@
 # File Update Warning
 
-- Endpoint Path: `/api/fresns/v1/file/{fid}/warning`
+- Endpoint Path: `/api/fresns/common/v1/file/{fid}/warning`
 - Method: `PATCH`
 - Request: `application/json`
 
