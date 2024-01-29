@@ -39,7 +39,7 @@
 | postCountLt | Number | *optional* | Total number of posts less than |
 | postDigestCountGt | Number | *optional* | Total number of digest posts greater than |
 | postDigestCountLt | Number | *optional* | Total number of digest posts less than |
-| orderType | String | *optional* | Sort by type: `createdTime`,`random`,`view`,`like`,`dislike`,`follow`,`block`,`post`,`postDigest`<br>Default `createdTime` |
+| orderType | String | *optional* | Sort by type: `createdTime`,`lastPostTime`,`lastCommentTime`,`random`,`view`,`like`,`dislike`,`follow`,`block`,`post`,`postDigest`<br>Default `createdTime` |
 | orderDirection | String | *optional* | Sort by direction, default `desc`<br>`asc`,`desc` |
 | filterType | String | *optional* | `whitelist` only returns key-value pairs for the given key names<br>`blacklist` removes specified key-value pairs from the returned data |
 | filterKeys | String | *optional* | Multiple separated by English commas, supports "dot notation" for multi-dimensional arrays |

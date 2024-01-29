@@ -39,7 +39,7 @@
 | postCountLt | Number | NO | 帖子数小于 |
 | postDigestCountGt | Number | NO | 精华数大于 |
 | postDigestCountLt | Number | NO | 精华数小于 |
-| orderType | String | NO | 排序类型 `createdTime`,`random`,`view`,`like`,`dislike`,`follow`,`block`,`post`,`postDigest`<br>默认 `createdTime` |
+| orderType | String | NO | 排序类型 `createdTime`,`lastPostTime`,`lastCommentTime`,`random`,`view`,`like`,`dislike`,`follow`,`block`,`post`,`postDigest`<br>默认 `createdTime` |
 | orderDirection | String | NO | 排序方向，默认 `desc`<br>`asc`,`desc` |
 | filterType | String | NO | `whitelist` 只返回给定键名的键值对<br>`blacklist` 从返回数据中删除指定的键值对 |
 | filterKeys | String | NO | 多个以英文逗号隔开，支持「点表示法」表示多维数组 |
