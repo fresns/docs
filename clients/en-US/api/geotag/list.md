@@ -17,6 +17,7 @@
 
 | Key | Type | Required | Description |
 | --- | --- | --- | --- |
+| type | Number | *optional* | Specify custom type |
 | mapId | Number | *optional* | [Map Service Provider](../../reference/dictionary/maps.md) |
 | mapLng | String | *optional* | Map Longitude (For querying nearby geotags) |
 | mapLat | String | *optional* | Map Latitude (For querying nearby geotags) |
@@ -40,8 +41,8 @@
 | postDigestCountLt | Number | *optional* | Total number of digest posts less than |
 | orderType | String | *optional* | Sort by type: `createdTime`,`random`,`view`,`like`,`dislike`,`follow`,`block`,`post`,`postDigest`<br>Default `createdTime` |
 | orderDirection | String | *optional* | Sort by direction, default `desc`<br>`asc`,`desc` |
-| whitelistKeys | String | *optional* | Whitelist key names, only returns key-value pairs for the given key names<br>Multiple separated by English commas, supports "dot notation" for multi-dimensional arrays |
-| blacklistKeys | String | *optional* | Blacklist key names, removes specified key-value pairs from the returned data<br>Multiple separated by English commas, supports "dot notation" for multi-dimensional arrays |
+| filterType | String | *optional* | `whitelist` only returns key-value pairs for the given key names<br>`blacklist` removes specified key-value pairs from the returned data |
+| filterKeys | String | *optional* | Multiple separated by English commas, supports "dot notation" for multi-dimensional arrays |
 | pageSize | Number | *optional* | Number of items per page (default 15 items) |
 | page | Number | *optional* | Page number (default 1) |
 

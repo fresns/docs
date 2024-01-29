@@ -17,6 +17,7 @@
 
 | 参数名 | 类型 | 是否必传 | 说明 |
 | --- | --- | --- | --- |
+| type | Number | NO | 指定自定义类型 |
 | gid | String | NO | 获取该 gid 下小组 |
 | recommend | Boolean | NO | 推荐状态 0.不推荐 / 1.推荐 |
 | createdDays | Number | NO | 创建天数：指定天数内创建的小组 |
@@ -39,8 +40,8 @@
 | postDigestCountLt | Number | NO | 精华数小于 |
 | orderType | String | NO | 排序类型 `view`,`like`,`dislike`,`follow`,`block`,`post`,`postDigest`,`createdTime`,`random`,`sortOrder`<br>默认 `sortOrder` |
 | orderDirection | String | NO | 排序方向 `asc`,`desc`，默认 `asc` |
-| whitelistKeys | String | NO | 白名单键名，只返回给定键名的键值对<br>多个以英文逗号隔开，支持「点表示法」表示多维数组 |
-| blacklistKeys | String | NO | 黑名单键名，从返回数据中删除指定的键值对<br>多个以英文逗号隔开，支持「点表示法」表示多维数组 |
+| filterType | String | NO | `whitelist` 只返回给定键名的键值对<br>`blacklist` 从返回数据中删除指定的键值对 |
+| filterKeys | String | NO | 多个以英文逗号隔开，支持「点表示法」表示多维数组 |
 | pageSize | Number | NO | 每页显示条数（默认 15 条） |
 | page | Number | NO | 页码（默认 1） |
 

@@ -26,14 +26,14 @@
 | createdDateLt | String | NO | 注册时间小于 `Y-m-d` |
 | viewCountGt | Number | NO | 查看数大于 |
 | viewCountLt | Number | NO | 查看数小于 |
-| likerCountGt | Number | NO | 点赞数大于 |
-| likerCountLt | Number | NO | 点赞数小于 |
-| dislikerCountGt | Number | NO | 点踩数大于 |
-| dislikerCountLt | Number | NO | 点踩数小于 |
-| followerCountGt | Number | NO | 关注数大于 |
-| followerCountLt | Number | NO | 关注数小于 |
-| blockerCountGt | Number | NO | 屏蔽数大于 |
-| blockerCountLt | Number | NO | 屏蔽数小于 |
+| likeCountGt | Number | NO | 点赞数大于 |
+| likeCountLt | Number | NO | 点赞数小于 |
+| dislikeCountGt | Number | NO | 点踩数大于 |
+| dislikeCountLt | Number | NO | 点踩数小于 |
+| followCountGt | Number | NO | 关注数大于 |
+| followCountLt | Number | NO | 关注数小于 |
+| blockCountGt | Number | NO | 屏蔽数大于 |
+| blockCountLt | Number | NO | 屏蔽数小于 |
 | postCountGt | Number | NO | 发帖数大于 |
 | postCountLt | Number | NO | 发帖数小于 |
 | commentCountGt | Number | NO | 发评论数大于 |
@@ -52,7 +52,7 @@
 | extcredits4CountLt | Number | NO | extcredits4 小于 |
 | extcredits5CountGt | Number | NO | extcredits5 大于 |
 | extcredits5CountLt | Number | NO | extcredits5 小于 |
-| orderType | String | NO | 排序类型 `createdTime`,`random`,`view`,`liker`,`disliker`,`follower`,`blocker`<br>`post`,`comment`,`postDigest`,`commentDigest`<br>`extcredits1`,`extcredits2`,`extcredits3`,`extcredits4`,`extcredits5`<br>默认 `createdTime` |
+| orderType | String | NO | 排序类型 `createdTime`,`random`,`view`,`like`,`dislike`,`follow`,`block`<br>`post`,`comment`,`postDigest`,`commentDigest`<br>`extcredits1`,`extcredits2`,`extcredits3`,`extcredits4`,`extcredits5`<br>默认 `createdTime` |
 | orderDirection | String | NO | 排序方向，默认 `desc`<br>`asc`,`desc` |
 | filterType | String | NO | `whitelist` 只返回给定键名的键值对<br>`blacklist` 从返回数据中删除指定的键值对 |
 | filterKeys | String | NO | 多个以英文逗号隔开，支持「点表示法」表示多维数组 |
