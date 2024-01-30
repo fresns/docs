@@ -17,18 +17,15 @@
 
 | Key | Type | Required | Description |
 | --- | --- | --- | --- |
-| mapId | Number | *optional* | [Map Service Provider](../../reference/dictionary/maps.md) |
-| mapLng | String | *optional* | Map Longitude (For distance calculation) |
-| mapLat | String | *optional* | Map Latitude (For distance calculation) |
 | uidOrUsername | Number / String | *optional* | Specify scope: User |
 | htid | String | *optional* | Specify scope: Hashtag |
 | gtid | String | *optional* | Specify scope: Geotag |
 | gid | String | *optional* | Specify scope: Group |
 | includeSubgroups | Boolean | *optional* | Used with `gid` configuration to include or exclude sublevel groups.<br>Default is `false` |
+| contentType | String | *optional* | Filter content by type |
 | allDigest | Boolean | *optional* | Specify scope: All digest, general and premium digest<br>When passed, the `digestState` parameter will be ignored |
 | digestState | Number | *optional* | Specify scope: Digest (Null to output all)<br>digest_state field `1` No `2` general digest `3` premium digest |
 | stickyState | Number | *optional* | Specify scope: Sticky (Null to output all)<br>sticky_state field `1` No `2` group sticky `3` global sticky |
-| contentType | String | *optional* | Filter content by type |
 | createdDays | Number | *optional* | Publish days: Content created in the specified number of days |
 | createdDate | String | *optional* | Publish date: `today`,`yesterday`,`week`,`lastWeek`,`month`,`lastMonth`,`year`,`lastYear` |
 | createdDateGt | String | *optional* | Publish date greater than `Y-m-d` |
@@ -43,28 +40,34 @@
 | blockCountLt | Number | *optional* | Block count less than |
 | commentCountGt | Number | *optional* | Total number of comments greater than |
 | commentCountLt | Number | *optional* | Total number of comments less than |
+| blockUsers | String | *optional* | Filter users, `uidOrUsername` multiple separated by commas |
+| blockGroups | String | *optional* | Filter groups, `gid` multiple separated by commas |
+| blockHashtags | String | *optional* | Filter hashtags, `htid` multiple separated by commas |
+| blockGeotags | String | *optional* | Filter geotags, `gtid` multiple separated by commas |
+| blockPosts | String | *optional* | Filter posts, `pid` multiple separated by commas |
 | sincePid | String | *optional* | query new content after this post |
 | beforePid | String | *optional* | query old content before this post |
 | orderType | String | *optional* | Sort by type: `createdTime`,`random`,`view`,`like`,`dislike`,`follow`,`block`,`comment`<br>Default `createdTime` |
 | orderDirection | String | *optional* | Sort by direction, default `desc`<br>`asc`,`desc` |
-| blockGroups | String | *optional* | Filter groups, `gid` multiple separated by commas |
-| blockHashtags | String | *optional* | Filter hashtags, `htid` multiple separated by commas |
-| whitelistKeys | String | *optional* | Whitelist key names, only returns key-value pairs for the given key names<br>Multiple separated by English commas, supports "dot notation" for multi-dimensional arrays |
-| blacklistKeys | String | *optional* | Blacklist key names, removes specified key-value pairs from the returned data<br>Multiple separated by English commas, supports "dot notation" for multi-dimensional arrays |
-| whitelistGroupKeys | String | *optional* | For the `group` parameter in the post information |
-| blacklistGroupKeys | String | *optional* | For the `group` parameter in the post information |
-| whitelistHashtagKeys | String | *optional* | For the `hashtags` parameter in the post information |
-| blacklistHashtagKeys | String | *optional* | For the `hashtags` parameter in the post information |
-| whitelistGeotagKeys | String | *optional* | For the `geotag` parameter in the post information |
-| blacklistGeotagKeys | String | *optional* | For the `geotag` parameter in the post information |
-| whitelistAuthorKeys | String | *optional* | For the `author` parameter in the post information |
-| blacklistAuthorKeys | String | *optional* | For the `author` parameter in the post information |
-| whitelistQuotedPostKeys | String | *optional* | For the `quotedPost` parameter in the post information |
-| blacklistQuotedPostKeys | String | *optional* | For the `quotedPost` parameter in the post information |
-| whitelistPreviewLikeUserKeys | String | *optional* | For the `previewLikeUsers` parameter in the post information |
-| blacklistPreviewLikeUserKeys | String | *optional* | For the `previewLikeUsers` parameter in the post information |
-| whitelistPreviewCommentKeys | String | *optional* | For the `previewComments` parameter in the post information |
-| blacklistPreviewCommentKeys | String | *optional* | For the `previewComments` parameter in the post information |
+| mapId | Number | *optional* | [Map Service Provider](../../reference/dictionary/maps.md) |
+| mapLng | String | *optional* | Map Longitude (For distance calculation) |
+| mapLat | String | *optional* | Map Latitude (For distance calculation) |
+| filterType | String | *optional* | `whitelist` only returns key-value pairs for the given key names<br>`blacklist` removes specified key-value pairs from the returned data |
+| filterKeys | String | *optional* | Multiple separated by English commas, supports "dot notation" for multi-dimensional arrays |
+| filterGroupType | String | *optional* | `whitelist` only returns key-value pairs for the given key names<br>`blacklist` removes specified key-value pairs from the returned data<br>Applies only to the `group` parameter in the returned result |
+| filterGroupKeys | String | *optional* | Multiple separated by English commas, supports "dot notation" for multi-dimensional arrays |
+| filterHashtagType | String | *optional* | `whitelist` only returns key-value pairs for the given key names<br>`blacklist` removes specified key-value pairs from the returned data<br>Applies only to the `hashtags` parameter in the returned result |
+| filterHashtagKeys | String | *optional* | Multiple separated by English commas, supports "dot notation" for multi-dimensional arrays |
+| filterGeotagType | String | *optional* | `whitelist` only returns key-value pairs for the given key names<br>`blacklist` removes specified key-value pairs from the returned data<br>Applies only to the `geotag` parameter in the returned result |
+| filterGeotagKeys | String | *optional* | Multiple separated by English commas, supports "dot notation" for multi-dimensional arrays |
+| filterAuthorType | String | *optional* | `whitelist` only returns key-value pairs for the given key names<br>`blacklist` removes specified key-value pairs from the returned data<br>Applies only to the `author` parameter in the returned result |
+| filterAuthorKeys | String | *optional* | Multiple separated by English commas, supports "dot notation" for multi-dimensional arrays |
+| filterQuotedPostType | String | *optional* | `whitelist` only returns key-value pairs for the given key names<br>`blacklist` removes specified key-value pairs from the returned data<br>Applies only to the `quotedPost` parameter in the returned result |
+| filterQuotedPostKeys | String | *optional* | Multiple separated by English commas, supports "dot notation" for multi-dimensional arrays |
+| filterPreviewLikeUserType | String | *optional* | `whitelist` only returns key-value pairs for the given key names<br>`blacklist` removes specified key-value pairs from the returned data<br>Applies only to the `previewLikeUsers` parameter in the returned result |
+| filterPreviewLikeUserKeys | String | *optional* | Multiple separated by English commas, supports "dot notation" for multi-dimensional arrays |
+| filterPreviewCommentType | String | *optional* | `whitelist` only returns key-value pairs for the given key names<br>`blacklist` removes specified key-value pairs from the returned data<br>Applies only to the `previewComments` parameter in the returned result |
+| filterPreviewCommentKeys | String | *optional* | Multiple separated by English commas, supports "dot notation" for multi-dimensional arrays |
 | pageSize | Number | *optional* | Number of items per page (default 15 items) |
 | page | Number | *optional* | Page number (default 1) |
 
