@@ -11,7 +11,7 @@ aside: false
 | create_type | tinyint *UNSIGNED* | 创建类型 | 1 | NO | 1.快捷创建 / 2.编辑器创建 / 3.由帖子复原创建 |
 | user_id | bigint *UNSIGNED* | 创建者 ID |  | NO | 关联字段 [users->id](../users/users.md) |
 | post_id | bigint *UNSIGNED* | 帖子 ID |  | YES | 关联字段 [posts->id](posts.md) |
-| parent_post_id | bigint *UNSIGNED* | 父级帖子 ID |  | YES | 关联字段 [posts->id](posts.md)<br>为空代表无引用帖子 |
+| quoted_post_id | bigint *UNSIGNED* | 引用帖子 ID |  | YES | 关联字段 [posts->id](posts.md)<br>为空代表无引用帖子 |
 | group_id | int *UNSIGNED* | 小组 ID |  | YES | 关联字段 groups->id |
 | geotag_id | bigint *UNSIGNED* | 地理 ID |  | YES | 关联字段 geotags->id |
 | title | varchar(255) | 标题 |  | YES |  |

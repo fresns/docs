@@ -11,7 +11,7 @@ aside: false
 | create_type | tinyint *UNSIGNED* | Creation type | 1 | NO | 1.Quick create / 2.Editor create / 3.Restore from post |
 | user_id | bigint *UNSIGNED* | Author ID |  | NO | Related field [users->id](../users/users.md) |
 | post_id | bigint *UNSIGNED* | Post ID |  | YES | Related field [posts->id](posts.md) |
-| parent_post_id | bigint *UNSIGNED* | Parent post ID |  | YES | Related field [posts->id](posts.md)<br>Empty means no referenced post |
+| quoted_post_id | bigint *UNSIGNED* | Quoted post ID |  | YES | Related field [posts->id](posts.md) |
 | group_id | int *UNSIGNED* | Group ID |  | YES | Related field `groups->id` |
 | geotag_id | bigint *UNSIGNED* | Topic ID |  | YES | Related field `geotags->id` |
 | title | varchar(255) | Title |  | YES |  |

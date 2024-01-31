@@ -8,8 +8,8 @@ aside: false
 | --- | --- | --- | --- | --- | --- |
 | id | bigint *UNSIGNED* | Post ID | | NO | Auto Increment |
 | pid | varchar(32) | Public ID |  | NO | **Unique** |
-| parent_id | bigint *UNSIGNED* | Parent Post ID | 0 | NO | 0 means no parent |
 | user_id | bigint *UNSIGNED* | Publisher ID |  | NO | Related field [users->id](../users/users.md) |
+| quoted_post_id | bigint *UNSIGNED* | Quoted Post ID | 0 | NO | 0 means no quote |
 | group_id | int *UNSIGNED* | Group ID | 0 | NO | Related field [groups->id](groups.md) |
 | title | varchar(255) | Title |  | YES |  |
 | content | longtext | Content |  | YES |  |
@@ -32,7 +32,7 @@ aside: false
 | comment_dislike_count | int *UNSIGNED* | Comment dislike count | 0 | NO | Total number of dislikes on all comments |
 | comment_follow_count | int *UNSIGNED* | Comment follow count | 0 | NO | Total number of follows on all comments |
 | comment_block_count | int *UNSIGNED* | Comment block count | 0 | NO | Total number of blocks on all comments |
-| post_count | int *UNSIGNED* | Sub-level post count | 0 | NO | Total number of posts referencing it |
+| quote_count | int *UNSIGNED* | Quoted count | 0 | NO | Total number of posts quoted it |
 | edit_count | smallint *UNSIGNED* | Number of edits | 0 | NO | Total number of edits |
 | last_edit_at | timestamp | Edit time |  | YES | If editable after publish, record edit time here |
 | last_comment_at | timestamp | Comment time |  | YES | Time of the latest comment |

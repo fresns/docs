@@ -8,8 +8,8 @@ aside: false
 | --- | --- | --- | --- | --- | --- |
 | id | bigint *UNSIGNED* | 帖子 ID | | NO | 自动递增 |
 | pid | varchar(32) | 对外公开 ID |  | NO | **唯一值** |
-| parent_id | bigint *UNSIGNED* | 父级帖子 ID | 0 | NO | 0 代表无父级 |
 | user_id | bigint *UNSIGNED* | 发布者 ID |  | NO | 关联字段 [users->id](../users/users.md) |
+| quoted_post_id | bigint *UNSIGNED* | 引用的帖子 ID | 0 | NO | 0 代表无 |
 | group_id | int *UNSIGNED* | 小组 ID | 0 | NO | 关联字段 [groups->id](groups.md) |
 | title | varchar(255) | 标题 |  | YES |  |
 | content | longtext | 内容 |  | YES |  |
@@ -32,7 +32,7 @@ aside: false
 | comment_dislike_count | int *UNSIGNED* | 评论踩数 | 0 | NO | 所有评论被踩总数 |
 | comment_follow_count | int *UNSIGNED* | 评论关注数 | 0 | NO | 所有评论被关注总数 |
 | comment_block_count | int *UNSIGNED* | 评论屏蔽数 | 0 | NO | 所有评论被屏蔽总数 |
-| post_count | int *UNSIGNED* | 子级帖子数 | 0 | NO | 引用它的帖子总数 |
+| quote_count | int *UNSIGNED* | 帖子引用数 | 0 | NO | 引用它的帖子总数 |
 | edit_count | smallint *UNSIGNED* | 编辑次数 | 0 | NO | 共编辑了几次 |
 | last_edit_at | timestamp | 编辑时间 |  | YES | 如果发表后可以编辑，此处记录编辑时间 |
 | last_comment_at | timestamp | 评论时间 |  | YES | 最新一条评论的时间 |
