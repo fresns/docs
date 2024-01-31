@@ -247,13 +247,15 @@
 | 37400 | Wrong post or record not exist |
 | 37401 | Post has been banned |
 | 37402 | Wrong post log or record not exist |
-| 37403 | The content could not be accessed without authorization |
+| 37403 | Post log suspended |
+| 37404 | The content could not be accessed without authorization |
 | **Comment** |  |
 | 37500 | Wrong comment or record not exist |
 | 37501 | Comment has been banned |
 | 37502 | Wrong comment log or record not exist |
-| 37503 | Comments are only visible to the author of the post |
-| 37504 | The post has timed out and no longer shows comments |
+| 37503 | Comment log suspended |
+| 37504 | Comments are only visible to the author of the post |
+| 37505 | The post has timed out and no longer shows comments |
 | **File** |  |
 | 37600 | Wrong file or record not exist |
 | 37601 | File has been banned |
