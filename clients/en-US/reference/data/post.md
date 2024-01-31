@@ -29,7 +29,7 @@ aside: false
     "commentDislikeCount": "Number / Total Comment Dislike Count",
     "commentFollowCount": "Number / Total Comment Follow Count",
     "commentBlockCount": "Number / Total Comment Block Count",
-    "postCount": "Number / Total Related Posts Count, the number of other people quoting it",
+    "quoteCount": "Number / Total Post Quoted Count",
     "createdDatetime": "String / Post Publish Time",
     "createdTimeAgo": "String / Human-readable Post Publish Time",
     "editedDatetime": "String / Post Last Edit Time",
@@ -255,19 +255,6 @@ aside: false
                 // Common Data Structure -> Extend Content Info -> actions
             }
         ]
-    },
-    "group": {
-        // The group to which the item belongs can be null.
-        // Common Data Structure -> Group Info
-    },
-    "hashtags": [
-        {
-            // Post Related Hashtags
-            // Common Data Structure -> Hashtag Info
-        }
-    ],
-    "geotag": {
-        // Common Data Structure -> Geotag Info
     },
     "author": {
         // Post author

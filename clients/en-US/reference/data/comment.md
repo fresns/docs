@@ -242,15 +242,6 @@ aside: false
             }
         ]
     },
-    "hashtags": [
-        {
-            // Comment Related Hashtags
-            // Common Data Structure -> Hashtag Info
-        }
-    ],
-    "geotag": {
-        // Common Data Structure -> Geotag Info
-    },
     "author": {
         // Comment author
         // Common Data Structure -> User Info

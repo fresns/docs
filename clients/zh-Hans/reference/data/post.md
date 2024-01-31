@@ -29,7 +29,7 @@ aside: false
     "commentDislikeCount": "Number / 评论被点赞总数",
     "commentFollowCount": "Number / 评论被关注总数",
     "commentBlockCount": "Number / 评论被屏蔽总数",
-    "postCount": "Number / 关联帖子总数，别人引用它的数量",
+    "quoteCount": "Number / 关联帖子总数，别人引用它的数量",
     "createdDatetime": "String / 帖子发表时间",
     "createdTimeAgo": "String / 人性化时间",
     "editedDatetime": "String / 帖子最后编辑时间",
@@ -251,19 +251,6 @@ aside: false
                 // 通用数据结构->扩展内容信息->actions
             }
         ]
-    },
-    "group": {
-        // 帖子所属小组，可为 null
-        // 通用数据结构->小组信息
-    },
-    "hashtags": [
-        {
-            // 帖子关联话题
-            // 通用数据结构->话题信息
-        }
-    ],
-    "geotag": {
-        // 通用数据结构->地理信息
     },
     "author": {
         // 通用数据结构->用户信息
