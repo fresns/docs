@@ -16,7 +16,7 @@ aside: false
 | map_longitude | decimal(12,8) | Map - Longitude |  | NO | Decimal, range -180~180, negative for west longitude |
 | map_latitude | decimal(12,8) | Map - Latitude |  | NO | Decimal, range -90~90, negative for south latitude |
 | map_location | point | Map - longitude, latitude |  | NO |  |
-| map_info | json | Map Complete Information |  | YES |  |
+| location_info | json | Location Information |  | YES |  |
 | type | smallint *UNSIGNED* | Type |  | NO | For custom use, such as sorting or filtering |
 | cover_file_id | bigint *UNSIGNED* | Cover Image ID |  | YES | Related field [files->id](../systems/files.md) |
 | cover_file_url | varchar(255) | Cover Image URL |  | YES |  |
@@ -41,29 +41,3 @@ aside: false
 | created_at | timestamp | Create Time | useCurrent | NO | For example, MySQL defaults to `CURRENT_TIMESTAMP` |
 | updated_at | timestamp | Update Time |  | YES |  |
 | deleted_at | timestamp | Delete Time |  | YES |  |
-
-## `map_info` Complete Information
-
-```json
-{
-    "name": "Cupertino Library",
-    "description": "",
-    "placeId": "TRDucfBPkhuzzR9a7",
-    "placeType": "building",
-    "mapId": 2,
-    "latitude": 37.3185039,
-    "longitude": -122.0288017,
-    "scale": 14,
-    "continent": "North America",
-    "continentCode": "NA",
-    "country": "United States",
-    "countryCode": "US",
-    "region": "California",
-    "regionCode": "CA",
-    "city": "Santa Clara",
-    "cityCode": "SC",
-    "district": "Cupertino",
-    "address": "10800 Torre Ave, Cupertino, CA 95014",
-    "zip": "95014"
-}
-```

@@ -16,7 +16,7 @@ aside: false
 | map_longitude | decimal(12,8) | 地图-经度 |  | NO | 浮点数，范围为 -180~180，负数表示西经 |
 | map_latitude | decimal(12,8) | 地图-纬度 |  | NO | 浮点数，范围为 -90~90，负数表示南纬 |
 | map_location | point | 地图-经纬度  |  | NO | longitude, latitude |
-| map_info | json | 完整地图信息字段 |  | YES |  |
+| location_info | json | 位置信息字段 |  | YES |  |
 | type | smallint *UNSIGNED* | 类型 |  | NO | 用于自定义用途，比如分类或过滤 |
 | cover_file_id | bigint *UNSIGNED* | 封面图 ID |  | YES | 关联字段 [files->id](../systems/files.md) |
 | cover_file_url | varchar(255) | 封面图 URL |  | YES |  |
@@ -41,55 +41,3 @@ aside: false
 | created_at | timestamp | 创建时间 | useCurrent | NO | 比如 MySQL 默认值为 CURRENT_TIMESTAMP |
 | updated_at | timestamp | 更新时间 |  | YES |  |
 | deleted_at | timestamp | 删除时间 |  | YES |  |
-
-## map_info 完整信息
-
-::: code-group
-```json [en]
-{
-    "name": "Cupertino Library",
-    "description": "",
-    "placeId": "TRDucfBPkhuzzR9a7",
-    "placeType": "building",
-    "mapId": 2,
-    "latitude": 37.3185039,
-    "longitude": -122.0288017,
-    "scale": 14,
-    "continent": "North America",
-    "continentCode": "NA",
-    "country": "United States",
-    "countryCode": "US",
-    "region": "California",
-    "regionCode": "CA",
-    "city": "Santa Clara",
-    "cityCode": "SC",
-    "district": "Cupertino",
-    "address": "10800 Torre Ave, Cupertino, CA 95014",
-    "zip": "95014"
-}
-```
-
-```json [zh-Hans]
-{
-    "name": "东方之门",
-    "description": "",
-    "placeId": "B020017GRH",
-    "placeType": "building",
-    "mapId": 4,
-    "latitude": 31.299,
-    "longitude": 120.585,
-    "scale": 6,
-    "continent": "亚洲",
-    "continentCode": "AS",
-    "country": "中国",
-    "countryCode": "CN",
-    "region": "江苏",
-    "regionCode": "JS",
-    "city": "苏州",
-    "cityCode": "SZ",
-    "district": "工业园区",
-    "address": "苏州工业园区星港街199号",
-    "zip": "215000"
-}
-```
-:::
