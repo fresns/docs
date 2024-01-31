@@ -130,6 +130,7 @@
 | show | 显示 |
 | more | 更多 |
 | learnMore | 了解详情 |
+| repost | 转发 |
 | quote | 引用 |
 | share | 分享 |
 | shareMessage | 发送给朋友 |
@@ -360,7 +361,8 @@
 | userBlockedYou | 拉黑了你 |
 | userFollowersYouKnow | 等人也关注了他 |
 | userFollowersYouFollow | 你关注的人也在关注他 |
-| userDeactivated | 用户已停用 |
+| userDeactivated | 用户已注销 |
+| userSuspended | 用户被停用 |
 | userInterdiction | 用户正在被禁言 |
 | userExtcredits | 用户积分 |
 | userExtcreditsLogs | 用户扩展分值记录 |

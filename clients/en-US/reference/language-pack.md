@@ -130,6 +130,7 @@
 | show | Show |
 | more | More |
 | learnMore | Learn More |
+| repost | Repost |
 | quote | Quote |
 | share | Share |
 | shareMessage | Share with a friend |
@@ -369,6 +370,7 @@
 | userFollowersYouKnow | and others are also following they |
 | userFollowersYouFollow | The person you are following is also following they |
 | userDeactivated | User Deactivated |
+| userSuspended | User Suspended |
 | userInterdiction | User Interdiction |
 | userExtcredits | User Credits |
 | userExtcreditsLogs | Extcredits Records |
