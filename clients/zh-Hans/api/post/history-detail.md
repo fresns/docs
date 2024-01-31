@@ -19,6 +19,15 @@
 | --- | --- | --- | --- |
 | hpid | String | YES | 历史帖子 ID |
 
+## Query 参数
+
+| 参数名 | 类型 | 是否必传 | 说明 |
+| --- | --- | --- | --- |
+| filterType | String | NO | `whitelist` 只返回给定键名的键值对<br>`blacklist` 从返回数据中删除指定的键值对 |
+| filterKeys | String | NO | 多个以英文逗号隔开，支持「点表示法」表示多维数组 |
+| filterAuthorType | String | NO | `whitelist` 只返回给定键名的键值对<br>`blacklist` 从返回数据中删除指定的键值对<br>仅对返回结果中 `author` 参数有效 |
+| filterAuthorKeys | String | NO | 多个以英文逗号隔开，支持「点表示法」表示多维数组 |
+
 ## 返回结果
 
 ```json
