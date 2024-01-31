@@ -14,8 +14,8 @@ aside: false
 | title | varchar(255) | Title |  | YES |  |
 | content | longtext | Content |  | YES |  |
 | lang_tag | varchar(16) | Language Tag |  | YES |  |
-| is_markdown | tinyint *UNSIGNED* | Is content in MD format | 0 | NO | 0.No / 1.Yes |
-| is_anonymous | tinyint *UNSIGNED* | Is anonymous | 0 | NO | 0.No / 1.Yes |
+| is_markdown | tinyint *UNSIGNED* | Content in MD format | 0 | NO | 0.No / 1.Yes |
+| is_anonymous | tinyint *UNSIGNED* | Anonymous | 0 | NO | 0.No / 1.Yes |
 | map_longitude | decimal(12,8) | Map - Longitude |  | YES | Decimal, range -180~180, negative for west longitude |
 | map_latitude | decimal(12,8) | Map - Latitude |  | YES | Decimal, range -90~90, negative for south latitude |
 | sticky_state | tinyint *UNSIGNED* | Sticky state | 1 | NO | 1.No / 2.Group Sticky / 3.Global Sticky |

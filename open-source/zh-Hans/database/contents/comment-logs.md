@@ -7,17 +7,21 @@ aside: false
 | 字段名 | 字段类型 | 字段注释 | 默认值 | 可空 | 备注 |
 | --- | --- | --- | --- | --- | --- |
 | id | bigint *UNSIGNED* | 主键 ID | | NO | 自动递增 |
-| user_id | bigint *UNSIGNED* | 创建者 ID |  | NO | 关联字段 [users->id](../users/users.md) |
-| comment_id | bigint *UNSIGNED* | 评论 ID |  | YES | 关联字段 [comments->id](comments.md) |
-| post_id | bigint *UNSIGNED* | 帖子 ID |  | NO | 关联字段 [posts->id](posts.md) |
-| parent_comment_id | bigint *UNSIGNED* | 父级评论 ID |  | YES | 关联字段 [comments->id](comments.md)<br>为空代表一级评论 |
+| hcid | varchar(32) | 对外公开 ID |  | NO | **唯一值** |
 | create_type | tinyint *UNSIGNED* | 创建类型 | 1 | NO | 1.快捷创建 / 2.编辑器创建 / 3.由帖子复原创建 |
-| is_plugin_editor | tinyint *UNSIGNED* | 是否仅在插件中编辑 | 0 | NO | 0.否 / 1.是 |
-| editor_fskey | varchar(64) | 内容编辑插件 |  | YES | 关联字段 [apps->fskey](../apps/apps.md) |
+| user_id | bigint *UNSIGNED* | 创建者 ID |  | NO | 关联字段 [users->id](../users/users.md) |
+| post_id | bigint *UNSIGNED* | 帖子 ID |  | NO | 关联字段 [posts->id](posts.md) |
+| comment_id | bigint *UNSIGNED* | 评论 ID |  | YES | 关联字段 [comments->id](comments.md) |
+| parent_comment_id | bigint *UNSIGNED* | 父级评论 ID |  | YES | 关联字段 [comments->id](comments.md)<br>为空代表一级评论 |
+| geotag_id | bigint *UNSIGNED* | 地理 ID |  | YES | 关联字段 geotags->id |
 | content | longtext | 内容 |  | YES | 完整内容 |
+| lang_tag | varchar(16) | 语言标签 |  | YES |  |
 | is_markdown | tinyint *UNSIGNED* | 内容是否为 MD 格式 | 0 | NO | 0.否 / 1.是 |
 | is_anonymous | tinyint *UNSIGNED* | 是否匿名 | 0 | NO |  0.否 / 1.是 |
-| map_json | json | 位置信息 |  | YES | 为空值，代表不创建或者修改时清空 |
+| location_info | json | 位置信息 |  | YES |  |
+| more_info | json | 更多信息字段 |  | YES |  |
+| permissions | json | 权限参数 |  | YES |  |
+| is_enabled | tinyint *UNSIGNED* | 是否有效 | 1 | NO | 0.无效（仅自己可见） / 1.有效 |
 | state | tinyint *UNSIGNED* | 状态 | 1 | NO |  1.未发表（草稿）<br>2.已发表（审核中）<br>3.已发表（审核通过并封存）<br>4.已发表（审核未通过，又为草稿状态） |
 | reason | varchar(255) | 审核拒绝原因 |  | YES | 审核拒绝时使用 |
 | submit_at | timestamp | 提交审核时间 |  | YES |  |
@@ -39,34 +43,15 @@ aside: false
 - state=1、2、4 代表未发表的评论，此时不能再创建该帖子的评论草稿。相当于同一篇帖子只能产生一条评论草稿。
 - state=3，此时 comment_id 被补齐，表示该 comment_id 的历史版本。
 
-## 字段: 位置信息 map_json
+## location_info 完整信息
 
 ::: code-group
-```json [字段说明]
-// 未注明字段的参数，不单独存字段，与完整 json 存入 comment_appends->map_json
+```json [en]
 {
-    "mapId": "comment_appends->map_id",
-    "latitude": "comments->map_latitude",
-    "longitude": "comments->map_longitude",
-    "scale": "comment_appends->map_scale",
-    "continent": "",
-    "continentCode": "comment_appends->map_continent_code",
-    "country": "",
-    "countryCode": "comment_appends->map_country_code",
-    "region": "",
-    "regionCode": "comment_appends->map_region_code",
-    "city": "",
-    "cityCode": "comment_appends->map_city_code",
-    "district": "",
-    "address": "",
-    "zip": "comment_appends->map_zip",
-    "poi": "",
-    "poiId": "comment_appends->map_poi_id",
-}
-```
-
-```json [参数示例: en]
-{
+    "name": "Cupertino Library",
+    "description": "",
+    "placeId": "TRDucfBPkhuzzR9a7",
+    "placeType": "building",
     "mapId": 2,
     "latitude": 37.3185039,
     "longitude": -122.0288017,
@@ -81,14 +66,16 @@ aside: false
     "cityCode": "SC",
     "district": "Cupertino",
     "address": "10800 Torre Ave, Cupertino, CA 95014",
-    "zip": "95014",
-    "poi": "Cupertino Library",
-    "poiId": "TRDucfBPkhuzzR9a7",
+    "zip": "95014"
 }
 ```
 
-```json [参数示例: zh-Hans]
+```json [zh-Hans]
 {
+    "name": "东方之门",
+    "description": "",
+    "placeId": "B020017GRH",
+    "placeType": "building",
     "mapId": 4,
     "latitude": 31.299,
     "longitude": 120.585,
@@ -103,9 +90,7 @@ aside: false
     "cityCode": "SZ",
     "district": "工业园区",
     "address": "苏州工业园区星港街199号",
-    "zip": "215000",
-    "poi": "东方之门",
-    "poiId": "B020017GRH",
+    "zip": "215000"
 }
 ```
 :::
