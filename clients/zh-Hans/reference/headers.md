@@ -22,7 +22,7 @@
 ## 登录流程
 
 1. 开始
-    - 获取[全局配置](configs.md)里账号中心链接 [account_center_service](configs.md#路径配置)
+    - 获取[全局配置](configs.md)里账号中心链接 [account_center_service](configs.md#账户设置)
     - 使用 `WebView` 访问账号登录(或注册)页面，登录完成后获取回调 `postMessage` 信息里的 `loginToken` 参数。
     - 凭 `loginToken` 参数请求登录接口 [/api/fresns/v1/account/auth-token](../api/account/login.md)
     - 登录成功后，获取账号凭证
