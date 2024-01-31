@@ -300,6 +300,7 @@ function sidebarReference() {
             { text: 'Geotag', link: '/reference/data/geotag.md' },
             { text: 'Post', link: '/reference/data/post.md' },
             { text: 'Comment', link: '/reference/data/comment.md' },
+            { text: 'Draft', link: '/reference/data/draft.md' },
             { text: 'File', link: '/reference/data/file.md' },
             { text: 'Extends', link: '/reference/data/extends.md' },
           ]

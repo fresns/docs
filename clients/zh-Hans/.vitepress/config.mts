@@ -312,6 +312,7 @@ function sidebarReference() {
             { text: '地理', link: '/reference/data/geotag.md' },
             { text: '帖子', link: '/reference/data/post.md' },
             { text: '评论', link: '/reference/data/comment.md' },
+            { text: '草稿', link: '/reference/data/draft.md' },
             { text: '文件', link: '/reference/data/file.md' },
             { text: '扩展', link: '/reference/data/extends.md' },
           ]
