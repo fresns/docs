@@ -23,22 +23,22 @@
 
 | 参数名 | 类型 | 是否必传 | 说明 |
 | --- | --- | --- | --- |
-| whitelistKeys | String | NO | 白名单键名，只返回给定键名的键值对<br>多个以英文逗号隔开，支持「点表示法」表示多维数组 |
-| blacklistKeys | String | NO | 黑名单键名，从返回数据中删除指定的键值对<br>多个以英文逗号隔开，支持「点表示法」表示多维数组 |
-| whitelistGroupKeys | String | NO | 针对帖子信息中的 `group` 参数 |
-| blacklistGroupKeys | String | NO | 针对帖子信息中的 `group` 参数 |
-| whitelistHashtagKeys | String | NO | 针对帖子信息中的 `hashtags` 参数 |
-| blacklistHahtagKeyss | String | NO | 针对帖子信息中的 `hashtags` 参数 |
-| whitelistGeotagKeys | String | NO | 针对帖子信息中的 `geotag` 参数 |
-| blacklistGeotagKeys | String | NO | 针对帖子信息中的 `geotag` 参数 |
-| whitelistAuthorKeys | String | NO | 针对帖子信息中的 `author` 参数 |
-| blacklistAuthorKeys | String | NO | 针对帖子信息中的 `author` 参数 |
-| whitelistQuotedPostKeys | String | NO | 针对帖子信息中的 `quotedPost` 参数 |
-| blacklistQuotedPostKeys | String | NO | 针对帖子信息中的 `quotedPost` 参数 |
-| whitelistPreviewLikeUserKeys | String | NO | 针对帖子信息中的 `previewLikeUsers` 参数 |
-| blacklistPreviewLikeUserKeys | String | NO | 针对帖子信息中的 `previewLikeUsers` 参数 |
-| whitelistPreviewCommentKeys | String | NO | 针对帖子信息中的 `previewComments` 参数 |
-| blacklistPreviewCommentKeys | String | NO | 针对帖子信息中的 `previewComments` 参数 |
+| filterType | String | NO | `whitelist` 只返回给定键名的键值对<br>`blacklist` 从返回数据中删除指定的键值对 |
+| filterKeys | String | NO | 多个以英文逗号隔开，支持「点表示法」表示多维数组 |
+| filterGroupType | String | NO | `whitelist` 只返回给定键名的键值对<br>`blacklist` 从返回数据中删除指定的键值对<br>仅对返回结果中 `group` 参数有效 |
+| filterGroupKeys | String | NO | 多个以英文逗号隔开，支持「点表示法」表示多维数组 |
+| filterHashtagType | String | NO | `whitelist` 只返回给定键名的键值对<br>`blacklist` 从返回数据中删除指定的键值对<br>仅对返回结果中 `hashtags` 参数有效 |
+| filterHashtagKeys | String | NO | 多个以英文逗号隔开，支持「点表示法」表示多维数组 |
+| filterGeotagType | String | NO | `whitelist` 只返回给定键名的键值对<br>`blacklist` 从返回数据中删除指定的键值对<br>仅对返回结果中 `geotag` 参数有效 |
+| filterGeotagKeys | String | NO | 多个以英文逗号隔开，支持「点表示法」表示多维数组 |
+| filterAuthorType | String | NO | `whitelist` 只返回给定键名的键值对<br>`blacklist` 从返回数据中删除指定的键值对<br>仅对返回结果中 `author` 参数有效 |
+| filterAuthorKeys | String | NO | 多个以英文逗号隔开，支持「点表示法」表示多维数组 |
+| filterQuotedPostType | String | NO | `whitelist` 只返回给定键名的键值对<br>`blacklist` 从返回数据中删除指定的键值对<br>仅对返回结果中 `quotedPost` 参数有效 |
+| filterQuotedPostKeys | String | NO | 多个以英文逗号隔开，支持「点表示法」表示多维数组 |
+| filterPreviewLikeUserType | String | NO | `whitelist` 只返回给定键名的键值对<br>`blacklist` 从返回数据中删除指定的键值对<br>仅对返回结果中 `previewLikeUsers` 参数有效 |
+| filterPreviewLikeUserKeys | String | NO | 多个以英文逗号隔开，支持「点表示法」表示多维数组 |
+| filterPreviewCommentType | String | NO | `whitelist` 只返回给定键名的键值对<br>`blacklist` 从返回数据中删除指定的键值对<br>仅对返回结果中 `previewComments` 参数有效 |
+| filterPreviewCommentKeys | String | NO | 多个以英文逗号隔开，支持「点表示法」表示多维数组 |
 | pageSize | Number | NO | 每页显示条数（默认 15 条） |
 | page | Number | NO | 页码（默认 1） |
 
