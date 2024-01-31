@@ -52,7 +52,7 @@
     "message": "ok",
     "data": {
         "detail": {
-            // 通用数据结构->历史帖子信息 或者 历史评论信息
+            // 通用数据结构->草稿信息
         },
         "editControls": {
             "isEditDraft": "Boolean / 是否为编辑草稿",
@@ -64,5 +64,4 @@
 }
 ```
 
-- [通用数据结构->帖子->历史帖子信息](../../reference/data/post.md#历史帖子信息)
-- [通用数据结构->评论->历史评论信息](../../reference/data/comment.md#历史评论信息)
+- [通用数据结构->草稿信息](../../reference/data/draft.md)
