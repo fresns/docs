@@ -176,44 +176,28 @@ aside: false
 
 ```json
 {
-    "did": "String / 草稿 ID", // 如果作为草稿使用时
-    "pcid": "Number / 历史评论 ID",
+    "hcid": "String / 历史评论 ID",
     "cid": "String / 所属评论 ID",
-    "pid": "String / 评论的帖子 ID",
-    "parentCid": "String / 回复评论的 ID",
-    "isAppEditor": "Boolean / 是否应用编辑器",
-    "editorFskey": "String / 编辑器应用 Fskey",
-    "editorUrl": "String / 编辑器访问地址",
-    "content": "String / 帖子内容或简述",
+    "privacy": "String / public (公开) 或 private（私有则仅评论作者和帖子作者可见）",
+    "content": "String / 评论内容或简述",
     "contentLength": "Number / 内容总长度",
+    "langTag": "String / 内容语言标签",
+    "writingDirection": "String / 内容撰写方向",
     "isBrief": "Boolean / 是否为简述",
     "isMarkdown": "Boolean / 是否为 MD 格式",
     "isAnonymous": "Boolean / 是否匿名",
-    "state": "Number / 状态",
-    "reason": "String / 审核拒绝原因",
-    "mapInfo": {
-        "mapId": "Number / 经纬度地图编号",
-        "latitude": "String / 纬度",
-        "longitude": "String / 经度",
-        "scale": "String / 定位地图比例",
-        "continent": "String / 洲名",
-        "continentCode": "String / 洲名代码",
-        "country": "String / 国家名",
-        "countryCode": "String / 国家代码",
-        "region": "String / 省名",
-        "regionCode": "String / 省代码",
-        "city": "String / 城市名",
-        "cityCode": "String / 城市代码",
-        "district": "String / 城区名",
-        "address": "String / 地址",
-        "zip": "String / 邮编",
-        "poi": "String / POI 信息",
-        "poiId": "String / POI ID"
+    "createdDatetime": "String / 评论发表时间",
+    "createdTimeAgo": "String / 人性化时间",
+    "status": "Boolean / 状态",
+    "locationInfo": {
+        // 初始位置信息
     },
-    "author": {
-        // 作者
-        // 通用数据结构->用户信息
+    "moreInfo": {
+        // 更多信息
     },
+    "archives": [
+        // 通用数据结构->扩展资料信息
+    ],
     "files": {
         "images": [
             {
@@ -236,14 +220,35 @@ aside: false
             }
         ]
     },
-    "archives": [
-        // 通用数据结构->扩展资料信息
-    ],
-    "operations": {
-        // 通用数据结构->扩展运营信息
-    },
     "extends": {
-        // 通用数据结构->扩展内容信息
+        "texts": [
+            {
+                // 通用数据结构->扩展内容信息->texts
+            }
+        ],
+        "infos": [
+            {
+                // 通用数据结构->扩展内容信息->infos
+            }
+        ],
+        "actions": [
+            {
+                // 通用数据结构->扩展内容信息->actions
+            }
+        ]
+    },
+    "hashtags": [
+        {
+            // 评论关联话题
+            // 通用数据结构->话题信息
+        }
+    ],
+    "geotag": {
+        // 通用数据结构->地理信息
+    },
+    "author": {
+        // 评论作者
+        // 通用数据结构->用户信息
     }
 }
 ```

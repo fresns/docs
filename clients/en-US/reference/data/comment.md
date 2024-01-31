@@ -177,47 +177,32 @@ aside: false
 }
 ```
 
-# History Comment Info
+## History Comment Info
 
 ```json
 {
-    "did": "String / Draft ID", // When used as a draft
-    "pcid": "Number / History Comment ID",
+    "hcid": "String / History Comment ID",
     "cid": "String / Belongs to comment ID",
-    "pid": "String / Commented post ID",
-    "parentCid": "String / Replied comment ID",
-    "isAppEditor": "Boolean / Is app editor",
-    "editorFskey": "String / Editor app Fskey",
-    "editorUrl": "String / Editor access URL",
-    "content": "String / Post content or brief",
+    "privacy": "String / public or private (visible only to the author of the comment and the author of the post)",
+    "content": "String / Comment content or summary",
     "contentLength": "Number / Total content length",
-    "isBrief": "Boolean / Is brief",
-    "isMarkdown": "Boolean / Is MD format",
-    "isAnonymous": "Boolean / Is anonymous",
-    "state": "Number / Status",
-    "reason": "String / Rejection reason during review",
-    "mapInfo": {
-        "mapId": "Number / Latitude and longitude map number",
-        "latitude": "String / Latitude",
-        "longitude": "String / Longitude",
-        "scale": "String / Map scale",
-        "continent": "String / Continent name",
-        "continentCode": "String / Continent code",
-        "country": "String / Country name",
-        "countryCode": "String / Country code",
-        "region": "String / Region name",
-        "regionCode": "String / Region code",
-        "city": "String / City name",
-        "cityCode": "String / City code",
-        "district": "String / District name",
-        "address": "String / Address",
-        "zip": "String / Zip code",
-        "poi": "String / POI information",
-        "poiId": "String / POI ID"
+    "langTag": "String / Content language tag",
+    "writingDirection": "String / Content writing direction",
+    "isBrief": "Boolean / Whether it's a summary",
+    "isMarkdown": "Boolean / Whether it's in MD format",
+    "isAnonymous": "Boolean / Whether it's anonymous",
+    "createdDatetime": "String / Comment creation time",
+    "createdTimeAgo": "String / Human-friendly time",
+    "status": "Boolean / Comment Status",
+    "locationInfo": {
+        // Location Info
     },
-    "author": {
-        // Common Data Structure -> User Info
+    "moreInfo": {
+        // Data Table: comments->more_info
     },
+    "archives": [
+        // Common Data Structure -> Extend Archive Info
+    ],
     "files": {
         "images": [
             {
@@ -240,14 +225,35 @@ aside: false
             }
         ]
     },
-    "archives": [
-        // Common Data Structure -> Extend Archive Info
-    ],
-    "operations": {
-        // Common Data Structure -> Extend Operation Info
-    },
     "extends": {
-        // Common Data Structure -> Extend Content Info
+        "texts": [
+            {
+                // Common Data Structure -> Extend Content Info -> texts
+            }
+        ],
+        "infos": [
+            {
+                // Common Data Structure -> Extend Content Info -> infos
+            }
+        ],
+        "actions": [
+            {
+                // Common Data Structure -> Extend Content Info -> actions
+            }
+        ]
+    },
+    "hashtags": [
+        {
+            // Comment Related Hashtags
+            // Common Data Structure -> Hashtag Info
+        }
+    ],
+    "geotag": {
+        // Common Data Structure -> Geotag Info
+    },
+    "author": {
+        // Comment author
+        // Common Data Structure -> User Info
     }
 }
 ```

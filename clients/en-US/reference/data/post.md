@@ -191,101 +191,32 @@ aside: false
 }
 ```
 
-# History Post Info
+## History Post Info
 
 ```json
 {
-    "did": "String / Draft ID", // When used as a draft
     "hpid": "String / History Post ID",
     "pid": "String / Belongs to post ID",
-    "quotedPid": "String / Quoted post ID",
-    "isAppEditor": "Boolean / Is app editor",
-    "editorFskey": "String / Editor app Fskey",
-    "editorUrl": "String / Editor access URL",
-    "group": {
-        // Belongs to group
-        // Common Data Structure -> Group Info
+    "title": "String / Post Title",
+    "content": "String / Post Content or Summary",
+    "contentLength": "Number / Total Content Length",
+    "langTag": "String / Content Language Tag",
+    "writingDirection": "String / Content Writing Direction",
+    "isBrief": "Boolean / Whether it is a summary",
+    "isMarkdown": "Boolean / Whether it is in MD format",
+    "isAnonymous": "Boolean / Whether anonymous",
+    "createdDatetime": "String / Post Publish Time",
+    "createdTimeAgo": "String / Human-readable Post Publish Time",
+    "status": "Boolean / Post Status",
+    "locationInfo": {
+        // Location Info
     },
-    "title": "String / Post title",
-    "content": "String / Post content or brief",
-    "contentLength": "Number / Total content length",
-    "isBrief": "Boolean / Is brief",
-    "isMarkdown": "Boolean / Is MD format",
-    "isAnonymous": "Boolean / Is anonymous",
-    "state": "Number / Status",
-    "reason": "String / Rejection reason during review",
-    "mapInfo": {
-        "mapId": "Number / Latitude and longitude map number",
-        "latitude": "String / Latitude",
-        "longitude": "String / Longitude",
-        "scale": "String / Map scale",
-        "continent": "String / Continent name",
-        "continentCode": "String / Continent code",
-        "country": "String / Country name",
-        "countryCode": "String / Country code",
-        "region": "String / Region name",
-        "regionCode": "String / Region code",
-        "city": "String / City name",
-        "cityCode": "String / City code",
-        "district": "String / District name",
-        "address": "String / Address",
-        "zip": "String / Zip code",
-        "poi": "String / POI information",
-        "poiId": "String / POI ID"
+    "moreInfo": {
+        // The following keys are known
     },
-    "readConfig": {
-        "isReadLocked": "Boolean / Is permission configuration restricted",
-        "previewPercentage": "Number / Pre-read percentage when unauthorized",
-        "buttonName": {
-            "langTag": "name" // Button text when unauthorized, multilingual configuration
-        },
-        "appUrl": "String / Configuration app URL",
-        "appFskey": "String / Configuration app fskey",
-        "permissions": {
-            "users": [
-                {
-                    // Pre-authorized users
-                    // Common Data Structure -> User Info
-                }
-            ],
-            "roles": [
-                // Pre-authorized roles
-                {
-                    "rid": "Number / Role ID",
-                    "nicknameColor": "String / Nickname color",
-                    "name": "String / Role name",
-                    "nameDisplay": "Boolean / Is role name displayed",
-                    "icon": "String / Role icon URL",
-                    "iconDisplay": "Boolean / Is role icon displayed",
-                    "status": "Boolean / Is role valid"
-                }
-            ]
-        },
-    },
-    "affiliatedUserConfig": {
-        "hasUserList": "Boolean / Is there a related user list",
-        "userListName": {
-            "langTag": "name" // User list name, multilingual configuration
-        },
-        "appFskey": "String / Configuration app fskey",
-        "appUrl": "String / Configuration app URL"
-    },
-    "commentConfig": {
-        "disabled": "Boolean / Whether comments are disabled",
-        "private": "Boolean / Whether the comment is private (visible only to the comment author and post author)",
-        "action": {
-            "hasActionButton": "Boolean / Is there a button for comments",
-            "buttonName": {
-                "langTag": "name" // Button text, multilingual configuration
-            },
-            "buttonStyle": "String / Button style",
-            "appFskey": "String / Configuration app fskey",
-            "appUrl": "String / Configuration app URL"
-        }
-    },
-    "author": {
-        // Common Data Structure -> User Info
-    },
+    "archives": [
+        // Common Data Structure -> Extend Archive Info
+    ],
     "files": {
         "images": [
             {
@@ -308,14 +239,39 @@ aside: false
             }
         ]
     },
-    "archives": [
-        // Common Data Structure -> Extend Archive Info
-    ],
-    "operations": {
-        // Common Data Structure -> Extend Operation Info
-    },
     "extends": {
-        // Common Data Structure -> Extend Content Info
+        "texts": [
+            {
+                // Common Data Structure -> Extend Content Info -> texts
+            }
+        ],
+        "infos": [
+            {
+                // Common Data Structure -> Extend Content Info -> infos
+            }
+        ],
+        "actions": [
+            {
+                // Common Data Structure -> Extend Content Info -> actions
+            }
+        ]
+    },
+    "group": {
+        // The group to which the item belongs can be null.
+        // Common Data Structure -> Group Info
+    },
+    "hashtags": [
+        {
+            // Post Related Hashtags
+            // Common Data Structure -> Hashtag Info
+        }
+    ],
+    "geotag": {
+        // Common Data Structure -> Geotag Info
+    },
+    "author": {
+        // Post author
+        // Common Data Structure -> User Info
     }
 }
 ```
