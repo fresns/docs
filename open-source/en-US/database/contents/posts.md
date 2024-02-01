@@ -11,6 +11,7 @@ aside: false
 | user_id | bigint *UNSIGNED* | Publisher ID |  | NO | Related field [users->id](../users/users.md) |
 | quoted_post_id | bigint *UNSIGNED* | Quoted Post ID | 0 | NO | 0 means no quote |
 | group_id | int *UNSIGNED* | Group ID | 0 | NO | Related field [groups->id](groups.md) |
+| geotag_id | int *UNSIGNED* | Geotag ID | 0 | NO | Related field [geotags->id](geotags.md) |
 | title | varchar(255) | Title |  | YES |  |
 | content | longtext | Content |  | YES |  |
 | lang_tag | varchar(16) | Language Tag |  | YES |  |

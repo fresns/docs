@@ -6,7 +6,7 @@ aside: false
 
 | 字段名 | 字段类型 | 字段注释 | 默认值 | 可空 | 备注 |
 | --- | --- | --- | --- | --- | --- |
-| id | bigint *UNSIGNED* | 主键 ID | | NO | 自动递增 |
+| id | int *UNSIGNED* | 主键 ID | | NO | 自动递增 |
 | gtid | varchar(32) | 对外公开 ID |  | NO | **唯一值** |
 | place_id | varchar(64) | Place ID |  | YES | **唯一值**<br>地图服务商专属 ID |
 | place_type | varchar(64) | Place Type | unknown | NO | 地图服务商地点位置 |

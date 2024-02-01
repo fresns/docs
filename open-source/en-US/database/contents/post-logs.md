@@ -12,8 +12,8 @@ aside: false
 | user_id | bigint *UNSIGNED* | Author ID |  | NO | Related field [users->id](../users/users.md) |
 | post_id | bigint *UNSIGNED* | Post ID |  | YES | Related field [posts->id](posts.md) |
 | quoted_post_id | bigint *UNSIGNED* | Quoted post ID |  | YES | Related field [posts->id](posts.md) |
-| group_id | int *UNSIGNED* | Group ID |  | YES | Related field `groups->id` |
-| geotag_id | bigint *UNSIGNED* | Topic ID |  | YES | Related field `geotags->id` |
+| group_id | int *UNSIGNED* | Group ID |  | YES | Related field [groups->id](groups.md) |
+| geotag_id | int *UNSIGNED* | Geotag ID |  | YES | Related field [geotags->id](geotags.md) |
 | title | varchar(255) | Title |  | YES |  |
 | content | longtext | Content |  | YES | Full content |
 | lang_tag | varchar(16) | Language Tag |  | YES |  |

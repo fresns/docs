@@ -13,7 +13,7 @@ aside: false
 | post_id | bigint *UNSIGNED* | Post ID |  | NO | Related field [posts->id](posts.md) |
 | comment_id | bigint *UNSIGNED* | Comment ID |  | YES | Related field [comments->id](comments.md) |
 | parent_comment_id | bigint *UNSIGNED* | Parent Comment ID |  | YES | Related field [comments->id](comments.md)<br>Empty means a top-level comment |
-| geotag_id | bigint *UNSIGNED* | Topic ID |  | YES | Related field `geotags->id` |
+| geotag_id | int *UNSIGNED* | Geotag ID |  | YES | Related field [geotags->id](geotags.md) |
 | content | longtext | Content |  | YES | Full content |
 | lang_tag | varchar(16) | Language Tag |  | YES |  |
 | is_markdown | tinyint *UNSIGNED* | Content in MD format | 0 | NO | 0.No / 1.Yes |

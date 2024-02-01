@@ -12,6 +12,7 @@ aside: false
 | top_parent_id | bigint *UNSIGNED* | Top-level Comment ID | 0 | NO | Belongs to which comment, 0 means not belonging to any comment |
 | parent_id | bigint *UNSIGNED* | Parent Comment ID | 0 | NO | 0 means a first-level comment |
 | user_id | bigint *UNSIGNED* | Publisher ID |  | NO | Related field [users->id](../users/users.md) |
+| geotag_id | int *UNSIGNED* | Geotag ID | 0 | NO | Related field [geotags->id](geotags.md) |
 | content | longtext | Content |  | YES |  |
 | lang_tag | varchar(16) | Language Tag |  | YES |  |
 | is_markdown | tinyint *UNSIGNED* | Content in MD format | 0 | NO | 0.No / 1.Yes |

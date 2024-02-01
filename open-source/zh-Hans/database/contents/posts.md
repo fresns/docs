@@ -11,6 +11,7 @@ aside: false
 | user_id | bigint *UNSIGNED* | 发布者 ID |  | NO | 关联字段 [users->id](../users/users.md) |
 | quoted_post_id | bigint *UNSIGNED* | 引用的帖子 ID | 0 | NO | 0 代表无 |
 | group_id | int *UNSIGNED* | 小组 ID | 0 | NO | 关联字段 [groups->id](groups.md) |
+| geotag_id | int *UNSIGNED* | 地理 ID | 0 | NO | 关联字段 [geotags->id](geotags.md) |
 | title | varchar(255) | 标题 |  | YES |  |
 | content | longtext | 内容 |  | YES |  |
 | lang_tag | varchar(16) | 语言标签 |  | YES |  |

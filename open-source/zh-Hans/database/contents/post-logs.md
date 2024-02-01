@@ -12,8 +12,8 @@ aside: false
 | user_id | bigint *UNSIGNED* | 创建者 ID |  | NO | 关联字段 [users->id](../users/users.md) |
 | post_id | bigint *UNSIGNED* | 帖子 ID |  | YES | 关联字段 [posts->id](posts.md) |
 | quoted_post_id | bigint *UNSIGNED* | 引用帖子 ID |  | YES | 关联字段 [posts->id](posts.md)<br>为空代表无引用帖子 |
-| group_id | int *UNSIGNED* | 小组 ID |  | YES | 关联字段 groups->id |
-| geotag_id | bigint *UNSIGNED* | 地理 ID |  | YES | 关联字段 geotags->id |
+| group_id | int *UNSIGNED* | 小组 ID |  | YES | 关联字段 [groups->id](groups.md) |
+| geotag_id | int *UNSIGNED* | 地理 ID |  | YES | 关联字段 [geotags->id](geotags.md) |
 | title | varchar(255) | 标题 |  | YES |  |
 | content | longtext | 内容 |  | YES | 完整内容 |
 | lang_tag | varchar(16) | 语言标签 |  | YES |  |

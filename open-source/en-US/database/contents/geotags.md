@@ -6,7 +6,7 @@ aside: false
 
 | Column Name | Type | Comment | Default | Null | Remark |
 | --- | --- | --- | --- | --- | --- |
-| id | bigint *UNSIGNED* | Primary Key ID | | NO | Auto Increment |
+| id | int *UNSIGNED* | Primary Key ID | | NO | Auto Increment |
 | gtid | varchar(32) | Public ID |  | NO | **Unique** |
 | place_id | varchar(64) | Place ID |  | YES | **Unique** |
 | place_type | varchar(64) | Place Type | unknown | NO |  |

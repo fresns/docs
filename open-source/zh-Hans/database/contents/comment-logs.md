@@ -13,7 +13,7 @@ aside: false
 | post_id | bigint *UNSIGNED* | 帖子 ID |  | NO | 关联字段 [posts->id](posts.md) |
 | comment_id | bigint *UNSIGNED* | 评论 ID |  | YES | 关联字段 [comments->id](comments.md) |
 | parent_comment_id | bigint *UNSIGNED* | 父级评论 ID |  | YES | 关联字段 [comments->id](comments.md)<br>为空代表一级评论 |
-| geotag_id | bigint *UNSIGNED* | 地理 ID |  | YES | 关联字段 geotags->id |
+| geotag_id | int *UNSIGNED* | 地理 ID |  | YES | 关联字段 [geotags->id](geotags.md) |
 | content | longtext | 内容 |  | YES | 完整内容 |
 | lang_tag | varchar(16) | 语言标签 |  | YES |  |
 | is_markdown | tinyint *UNSIGNED* | 内容是否为 MD 格式 | 0 | NO | 0.否 / 1.是 |
