@@ -22,6 +22,7 @@
 | gtid | String | *optional* | Specify scope: Geotag |
 | gid | String | *optional* | Specify scope: Group |
 | includeSubgroups | Boolean | *optional* | Used with `gid` configuration to include or exclude sublevel groups.<br>Default is `false` |
+| langTag | String | *optional* | Filter content by lang |
 | contentType | String | *optional* | Filter content by type |
 | allDigest | Boolean | *optional* | Specify scope: All digest, general and premium digest<br>When passed, the `digestState` parameter will be ignored |
 | digestState | Number | *optional* | Specify scope: Digest (Null to output all)<br>digest_state field `1` No `2` general digest `3` premium digest |

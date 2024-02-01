@@ -22,7 +22,8 @@
 | gtid | String | NO | 指定范围：地理 |
 | gid | String | NO | 指定范围：小组 |
 | includeSubgroups | Boolean | NO | 与 `gid` 配置使用，是否包含子级小组的内容<br>默认为 `false` |
-| contentType | String | NO | 内容类型（内容类型扩展配置的参数） |
+| langTag | String | NO | 指定范围：语言标签 |
+| contentType | String | NO | 指定范围：内容类型（内容类型扩展配置的参数） |
 | allDigest | Boolean | NO | 指定范围：全部精华，一级精华和二级精华<br>传参后，将忽略 `digestState` 参数 |
 | digestState | Number | NO | 指定范围：精华（留空输出全部）<br>digest_state 字段 1.否 2.一级精华 3.二级精华 |
 | stickyState | Number | NO | 指定范围：置顶（留空输出全部）<br>sticky_state 字段 1.否 2.小组页置顶 3.全局置顶 |
