@@ -9,7 +9,7 @@ aside: false
 | id | bigint *UNSIGNED* | 主键 ID |  | NO | 自动递增 |
 | file_id | bigint *UNSIGNED* | 文件 ID |  | NO | 关联字段 [files->id](../systems/files.md)<br>不是唯一值，一个文件支持关联多个附属信息 |
 | file_type | tinyint *UNSIGNED* | 文件类型 | 1 | NO | 1.图片 / 2.视频 / 3.音频 / 4.文档 |
-| usage_type | tinyint *UNSIGNED* | 用途类型 | 1 | NO | [见编号说明](../numbered-description.md#文件用途类型) |
+| usage_type | tinyint *UNSIGNED* | 用途类型 | 1 | NO | [见编号说明](../numbered-description.md#文件用途编号) |
 | platform_id | tinyint *UNSIGNED* | 平台 ID |  | NO | [字典健值->平台编号](../dictionary/platforms.md)<br>在哪个平台上操作的使用 |
 | table_name | varchar(64) | 来源表名 |  | NO | 哪个表 |
 | table_column | varchar(64) | 来源字段名 |  | NO | 哪个字段是文件值 |

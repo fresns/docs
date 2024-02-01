@@ -15,7 +15,7 @@ aside: false
 | map_id | tinyint *UNSIGNED* | Maps | 1 | NO | [Maps](../../configs/dictionary/maps.md) |
 | map_longitude | decimal(12,8) | Map - Longitude |  | NO | Decimal, range -180~180, negative for west longitude |
 | map_latitude | decimal(12,8) | Map - Latitude |  | NO | Decimal, range -90~90, negative for south latitude |
-| map_location | point | Map - longitude, latitude |  | NO |  |
+| map_location | point<br>geography | Map - Location |  | NO | longitude, latitude |
 | location_info | json | Location Information |  | YES |  |
 | type | smallint *UNSIGNED* | Type |  | NO | For custom use, such as sorting or filtering |
 | cover_file_id | bigint *UNSIGNED* | Cover Image ID |  | YES | Related field [files->id](../systems/files.md) |
