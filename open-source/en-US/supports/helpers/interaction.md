@@ -15,7 +15,7 @@ InteractionHelper::fresnsRoleInfo($roleId, $langTag);
 ```
 | Parameter Name | Type | Required | Description |
 | --- | --- | --- | --- |
-| roleId | Number | Yes | Role ID |
+| roleId | Number | **required** | Role ID |
 | langTag | String | *optional* | Language tag, if not provided, the default language will be used |
 
 ## Get User Interaction Configuration
