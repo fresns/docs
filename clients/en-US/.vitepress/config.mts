@@ -216,7 +216,7 @@ function sidebarApi() {
         { text: 'List by Nearby', link: '/api/post/nearby.md' },
         { text: 'Detail', link: '/api/post/detail.md' },
         { text: 'Interaction Users', link: '/api/post/interaction.md' },
-        { text: 'Affiliated Users', link: '/api/post/users.md' },
+        { text: 'Associated Users', link: '/api/post/users.md' },
         { text: 'Quote It List', link: '/api/post/quotes.md' },
         { text: 'Histories', link: '/api/post/histories.md' },
         { text: 'History Detail', link: '/api/post/history-detail.md' },

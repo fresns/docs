@@ -22,23 +22,24 @@
 | mapLat | String | **required** | Map Latitude |
 | unit | String | *optional* | Range unit `km` or `mi` |
 | length | Number | *optional* | Range length |
+| langTag | String | *optional* | Filter content by lang |
 | contentType | String | *optional* | Filter content by type |
-| whitelistKeys | String | *optional* | Whitelist key names, only returns key-value pairs for the given key names<br>Multiple separated by English commas, supports "dot notation" for multi-dimensional arrays |
-| blacklistKeys | String | *optional* | Blacklist key names, removes specified key-value pairs from the returned data<br>Multiple separated by English commas, supports "dot notation" for multi-dimensional arrays |
-| whitelistHashtagKeys | String | *optional* | For the `hashtags` parameter in the comment information |
-| blacklistHashtagKeys | String | *optional* | For the `hashtags` parameter in the comment information |
-| whitelistGeotagKeys | String | *optional* | For the `geotag` parameter in the comment information |
-| blacklistGeotagKeys | String | *optional* | For the `geotag` parameter in the comment information |
-| whitelistAuthorKeys | String | *optional* | For the `author` parameter in the comment information |
-| blacklistAuthorKeys | String | *optional* | For the `author` parameter in the comment information |
-| whitelistPreviewLikeUserKeys | String | *optional* | For the `previewLikeUsers` parameter in the comment information |
-| blacklistPreviewLikeUserKeys | String | *optional* | For the `previewLikeUsers` parameter in the comment information |
-| whitelistPreviewCommentKeys | String | *optional* | For the `previewComments` parameter in the comment information |
-| blacklistPreviewCommentKeys | String | *optional* | For the `previewComments` parameter in the comment information |
-| whitelistReplyToPostKeys | String | *optional* | For the `replyToPost` parameter in the comment information |
-| blacklistReplyToPostKeys | String | *optional* | For the `replyToPost` parameter in the comment information |
-| whitelistReplyToCommentKeys | String | *optional* | For the `replyToComment` parameter in the comment information |
-| blacklistReplyToCommentKeys | String | *optional* | For the `replyToComment` parameter in the comment information |
+| filterType | String | *optional* | `whitelist` only returns key-value pairs for the given key names<br>`blacklist` removes specified key-value pairs from the returned data |
+| filterKeys | String | *optional* | Multiple separated by English commas, supports "dot notation" for multi-dimensional arrays |
+| filterHashtagType | String | *optional* | `whitelist` only returns key-value pairs for the given key names<br>`blacklist` removes specified key-value pairs from the returned data<br>Applies only to the `hashtags` parameter in the returned result |
+| filterHashtagKeys | String | *optional* | Multiple separated by English commas, supports "dot notation" for multi-dimensional arrays |
+| filterGeotagType | String | *optional* | `whitelist` only returns key-value pairs for the given key names<br>`blacklist` removes specified key-value pairs from the returned data<br>Applies only to the `geotag` parameter in the returned result |
+| filterGeotagKeys | String | *optional* | Multiple separated by English commas, supports "dot notation" for multi-dimensional arrays |
+| filterAuthorType | String | *optional* | `whitelist` only returns key-value pairs for the given key names<br>`blacklist` removes specified key-value pairs from the returned data<br>Applies only to the `author` parameter in the returned result |
+| filterAuthorKeys | String | *optional* | Multiple separated by English commas, supports "dot notation" for multi-dimensional arrays |
+| filterPreviewLikeUserType | String | *optional* | `whitelist` only returns key-value pairs for the given key names<br>`blacklist` removes specified key-value pairs from the returned data<br>Applies only to the `previewLikeUsers` parameter in the returned result |
+| filterPreviewLikeUserKeys | String | *optional* | Multiple separated by English commas, supports "dot notation" for multi-dimensional arrays |
+| filterPreviewCommentType | String | *optional* | `whitelist` only returns key-value pairs for the given key names<br>`blacklist` removes specified key-value pairs from the returned data<br>Applies only to the `previewComments` parameter in the returned result |
+| filterPreviewCommentKeys | String | *optional* | Multiple separated by English commas, supports "dot notation" for multi-dimensional arrays |
+| filterReplyToPostType | String | *optional* | `whitelist` only returns key-value pairs for the given key names<br>`blacklist` removes specified key-value pairs from the returned data<br>Applies only to the `replyToPost` parameter in the returned result |
+| filterReplyToPostKeys | String | *optional* | Multiple separated by English commas, supports "dot notation" for multi-dimensional arrays |
+| filterReplyToCommentType | String | *optional* | `whitelist` only returns key-value pairs for the given key names<br>`blacklist` removes specified key-value pairs from the returned data<br>Applies only to the `replyToComment` parameter in the returned result |
+| filterReplyToCommentKeys | String | *optional* | Multiple separated by English commas, supports "dot notation" for multi-dimensional arrays |
 | pageSize | Number | *optional* | Number of items per page (default 30 items) |
 | page | Number | *optional* | Page number (default 1) |
 

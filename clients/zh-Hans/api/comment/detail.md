@@ -26,22 +26,22 @@
 | mapId | Number | NO | [地图服务商编号](../../reference/dictionary/maps.md) |
 | mapLng | String | NO | 地图经度（用于计算距离） |
 | mapLat | String | NO | 地图纬度（用于计算距离） |
-| whitelistKeys | String | NO | 白名单键名，只返回给定键名的键值对<br>多个以英文逗号隔开，支持「点表示法」表示多维数组 |
-| blacklistKeys | String | NO | 黑名单键名，从返回数据中删除指定的键值对<br>多个以英文逗号隔开，支持「点表示法」表示多维数组 |
-| whitelistHashtagKeys | String | NO | 针对评论信息中的 `hashtags` 参数 |
-| blacklistHashtagKeys | String | NO | 针对评论信息中的 `hashtags` 参数 |
-| whitelistGeotagKeys | String | NO | 针对评论信息中的 `geotag` 参数 |
-| blacklistGeotagKeys | String | NO | 针对评论信息中的 `geotag` 参数 |
-| whitelistAuthorKeys | String | NO | 针对评论信息中的 `author` 参数 |
-| blacklistAuthorKeys | String | NO | 针对评论信息中的 `author` 参数 |
-| whitelistPreviewLikeUserKeys | String | NO | 针对评论信息中的 `previewLikeUsers` 参数 |
-| blacklistPreviewLikeUserKeys | String | NO | 针对评论信息中的 `previewLikeUsers` 参数 |
-| whitelistPreviewCommentKeys | String | NO | 针对评论信息中的 `previewComments` 参数 |
-| blacklistPreviewCommentKeys | String | NO | 针对评论信息中的 `previewComments` 参数 |
-| whitelistReplyToPostKeys | String | NO | 针对评论信息中的 `replyToPost` 参数 |
-| blacklistReplyToPostKeys | String | NO | 针对评论信息中的 `replyToPost` 参数 |
-| whitelistReplyToCommentKeys | String | NO | 针对评论信息中的 `replyToComment` 参数 |
-| blacklistReplyToCommentKeys | String | NO | 针对评论信息中的 `replyToComment` 参数 |
+| filterType | String | NO | `whitelist` 只返回给定键名的键值对<br>`blacklist` 从返回数据中删除指定的键值对 |
+| filterKeys | String | NO | 多个以英文逗号隔开，支持「点表示法」表示多维数组 |
+| filterHashtagType | String | NO | `whitelist` 只返回给定键名的键值对<br>`blacklist` 从返回数据中删除指定的键值对<br>仅对返回结果中 `hashtags` 参数有效 |
+| filterHashtagKeys | String | NO | 多个以英文逗号隔开，支持「点表示法」表示多维数组 |
+| filterGeotagType | String | NO | `whitelist` 只返回给定键名的键值对<br>`blacklist` 从返回数据中删除指定的键值对<br>仅对返回结果中 `geotag` 参数有效 |
+| filterGeotagKeys | String | NO | 多个以英文逗号隔开，支持「点表示法」表示多维数组 |
+| filterAuthorType | String | NO | `whitelist` 只返回给定键名的键值对<br>`blacklist` 从返回数据中删除指定的键值对<br>仅对返回结果中 `author` 参数有效 |
+| filterAuthorKeys | String | NO | 多个以英文逗号隔开，支持「点表示法」表示多维数组 |
+| filterPreviewLikeUserType | String | NO | `whitelist` 只返回给定键名的键值对<br>`blacklist` 从返回数据中删除指定的键值对<br>仅对返回结果中 `previewLikeUsers` 参数有效 |
+| filterPreviewLikeUserKeys | String | NO | 多个以英文逗号隔开，支持「点表示法」表示多维数组 |
+| filterPreviewCommentType | String | NO | `whitelist` 只返回给定键名的键值对<br>`blacklist` 从返回数据中删除指定的键值对<br>仅对返回结果中 `previewComments` 参数有效 |
+| filterPreviewCommentKeys | String | NO | 多个以英文逗号隔开，支持「点表示法」表示多维数组 |
+| filterReplyToPostType | String | NO | `whitelist` 只返回给定键名的键值对<br>`blacklist` 从返回数据中删除指定的键值对<br>仅对返回结果中 `replyToPost` 参数有效 |
+| filterReplyToPostKeys | String | NO | 多个以英文逗号隔开，支持「点表示法」表示多维数组 |
+| filterReplyToCommentType | String | NO | `whitelist` 只返回给定键名的键值对<br>`blacklist` 从返回数据中删除指定的键值对<br>仅对返回结果中 `replyToComment` 参数有效 |
+| filterReplyToCommentKeys | String | NO | 多个以英文逗号隔开，支持「点表示法」表示多维数组 |
 
 ## 返回结果
 

@@ -17,7 +17,8 @@
 
 | 参数名 | 类型 | 是否必传 | 说明 |
 | --- | --- | --- | --- |
-| type | String | NO | `user`,`group` 留空输出全部<br>使用插件可以支持 `hashtag` `geotag` |
+| type | String | NO | `user`, `group`, `hashtag` `geotag`<br>留空则使用全部 |
+| langTag | String | NO | 指定范围：语言标签 |
 | contentType | String | NO | 筛选过滤内容类型 |
 | sincePid | String | NO | 查询该帖子之后的新内容 |
 | beforePid | String | NO | 查询该帖子之前的旧内容 |

@@ -17,9 +17,6 @@
 
 | 参数名 | 类型 | 是否必传 | 说明 |
 | --- | --- | --- | --- |
-| mapId | Number | NO | [地图服务商编号](../../reference/dictionary/maps.md) |
-| mapLng | String | NO | 地图经度（用于计算距离） |
-| mapLat | String | NO | 地图纬度（用于计算距离） |
 | uidOrUsername | Number / String | NO | 指定范围：用户 |
 | pid | String | NO | 指定范围：帖子 |
 | cid | String | NO | 指定范围：评论（获取该评论的子孙级评论） |
@@ -27,10 +24,11 @@
 | gtid | String | NO | 指定范围：地理 |
 | gid | String | NO | 指定范围：小组 |
 | includeSubgroups | Boolean | NO | 与 `gid` 配置使用，是否包含子级小组的内容<br>默认为 `false` |
-| sticky | Boolean | NO | 是否置顶（留空输出全部） |
+| langTag | String | NO | 指定范围：语言标签 |
+| contentType | String | NO | 指定范围：内容类型（内容类型扩展配置的参数） |
 | allDigest | Boolean | NO | 指定范围：全部精华，一级精华和二级精华<br>传参后，将忽略 `digestState` 参数 |
 | digestState | Number | NO | 指定范围：精华（留空输出全部）<br>digest_state 字段 1.否 2.一级精华 3.二级精华 |
-| contentType | String | NO | 内容类型（内容类型扩展配置的参数） |
+| sticky | Boolean | NO | 是否置顶（留空输出全部） |
 | createdDays | Number | NO | 发表天数：指定天数内创建的内容 |
 | createdDate | String | NO | 发表日期：`today`,`yesterday`,`week`,`lastWeek`,`month`,`lastMonth`,`year`,`lastYear` |
 | createdDateGt | String | NO | 发表时间大于 `Y-m-d` |
@@ -47,26 +45,35 @@
 | blockCountLt | Number | NO | 屏蔽数小于 |
 | commentCountGt | Number | NO | 子级评论总数大于 |
 | commentCountLt | Number | NO | 子级评论总数小于 |
+| blockUsers | String | NO | 过滤用户，`uidOrUsername` 多个以英文逗号隔开 |
+| blockGroups | String | NO | 过滤小组，`gid` 多个以英文逗号隔开 |
+| blockHashtags | String | NO | 过滤话题，`htid` 多个以英文逗号隔开 |
+| blockGeotags | String | NO | 过滤地理，`gtid` 多个以英文逗号隔开 |
+| blockPosts | String | NO | 过滤帖子，`pid` 多个以英文逗号隔开 |
+| blockComments | String | NO | 过滤评论，`cid` 多个以英文逗号隔开 |
 | sinceCid | String | NO | 查询该评论之后的新内容 |
 | beforeCid | String | NO | 查询该评论之前的旧内容 |
 | orderType | String | NO | 排序类型 `createdTime`,`commentTime`,`random`,`view`,`like`,`dislike`,`follow`,`block`,`comment`<br>默认 `createdTime` |
 | orderDirection | String | NO | 排序方向，默认 `desc`<br>`asc`,`desc` |
-| whitelistKeys | String | NO | 白名单键名，只返回给定键名的键值对<br>多个以英文逗号隔开，支持「点表示法」表示多维数组 |
-| blacklistKeys | String | NO | 黑名单键名，从返回数据中删除指定的键值对<br>多个以英文逗号隔开，支持「点表示法」表示多维数组 |
-| whitelistHashtagKeys | String | NO | 针对评论信息中的 `hashtags` 参数 |
-| blacklistHashtagKeys | String | NO | 针对评论信息中的 `hashtags` 参数 |
-| whitelistGeotagKeys | String | NO | 针对评论信息中的 `geotag` 参数 |
-| blacklistGeotagKeys | String | NO | 针对评论信息中的 `geotag` 参数 |
-| whitelistAuthorKeys | String | NO | 针对评论信息中的 `author` 参数 |
-| blacklistAuthorKeys | String | NO | 针对评论信息中的 `author` 参数 |
-| whitelistPreviewLikeUserKeys | String | NO | 针对评论信息中的 `previewLikeUsers` 参数 |
-| blacklistPreviewLikeUserKeys | String | NO | 针对评论信息中的 `previewLikeUsers` 参数 |
-| whitelistPreviewCommentKeys | String | NO | 针对评论信息中的 `previewComments` 参数 |
-| blacklistPreviewCommentKeys | String | NO | 针对评论信息中的 `previewComments` 参数 |
-| whitelistReplyToPostKeys | String | NO | 针对评论信息中的 `replyToPost` 参数 |
-| blacklistReplyToPostKeys | String | NO | 针对评论信息中的 `replyToPost` 参数 |
-| whitelistReplyToCommentKeys | String | NO | 针对评论信息中的 `replyToComment` 参数 |
-| blacklistReplyToCommentKeys | String | NO | 针对评论信息中的 `replyToComment` 参数 |
+| mapId | Number | NO | [地图服务商编号](../../reference/dictionary/maps.md) |
+| mapLng | String | NO | 地图经度（用于计算距离） |
+| mapLat | String | NO | 地图纬度（用于计算距离） |
+| filterType | String | NO | `whitelist` 只返回给定键名的键值对<br>`blacklist` 从返回数据中删除指定的键值对 |
+| filterKeys | String | NO | 多个以英文逗号隔开，支持「点表示法」表示多维数组 |
+| filterHashtagType | String | NO | `whitelist` 只返回给定键名的键值对<br>`blacklist` 从返回数据中删除指定的键值对<br>仅对返回结果中 `hashtags` 参数有效 |
+| filterHashtagKeys | String | NO | 多个以英文逗号隔开，支持「点表示法」表示多维数组 |
+| filterGeotagType | String | NO | `whitelist` 只返回给定键名的键值对<br>`blacklist` 从返回数据中删除指定的键值对<br>仅对返回结果中 `geotag` 参数有效 |
+| filterGeotagKeys | String | NO | 多个以英文逗号隔开，支持「点表示法」表示多维数组 |
+| filterAuthorType | String | NO | `whitelist` 只返回给定键名的键值对<br>`blacklist` 从返回数据中删除指定的键值对<br>仅对返回结果中 `author` 参数有效 |
+| filterAuthorKeys | String | NO | 多个以英文逗号隔开，支持「点表示法」表示多维数组 |
+| filterPreviewLikeUserType | String | NO | `whitelist` 只返回给定键名的键值对<br>`blacklist` 从返回数据中删除指定的键值对<br>仅对返回结果中 `previewLikeUsers` 参数有效 |
+| filterPreviewLikeUserKeys | String | NO | 多个以英文逗号隔开，支持「点表示法」表示多维数组 |
+| filterPreviewCommentType | String | NO | `whitelist` 只返回给定键名的键值对<br>`blacklist` 从返回数据中删除指定的键值对<br>仅对返回结果中 `previewComments` 参数有效 |
+| filterPreviewCommentKeys | String | NO | 多个以英文逗号隔开，支持「点表示法」表示多维数组 |
+| filterReplyToPostType | String | NO | `whitelist` 只返回给定键名的键值对<br>`blacklist` 从返回数据中删除指定的键值对<br>仅对返回结果中 `replyToPost` 参数有效 |
+| filterReplyToPostKeys | String | NO | 多个以英文逗号隔开，支持「点表示法」表示多维数组 |
+| filterReplyToCommentType | String | NO | `whitelist` 只返回给定键名的键值对<br>`blacklist` 从返回数据中删除指定的键值对<br>仅对返回结果中 `replyToComment` 参数有效 |
+| filterReplyToCommentKeys | String | NO | 多个以英文逗号隔开，支持「点表示法」表示多维数组 |
 | pageSize | Number | NO | 每页显示条数（默认 15 条） |
 | page | Number | NO | 页码（默认 1） |
 

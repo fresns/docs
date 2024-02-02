@@ -17,7 +17,8 @@
 
 | Key | Type | Required | Description |
 | --- | --- | --- | --- |
-| type | String | *optional* | `user`,`group`, Null to output all<br>Use the plugin to support `hashtag` `geotag` |
+| type | String | *optional* | `user`, `group`, `hashtag`, `geotag`<br>Leave blank to use all |
+| langTag | String | *optional* | Filter content by lang |
 | contentType | String | *optional* | Filter content by type |
 | sincePid | String | *optional* | query new content after this post |
 | beforePid | String | *optional* | query old content before this post |
