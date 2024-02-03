@@ -88,7 +88,7 @@ aside: false
     },
     "commentConfig": {
         "visible": "Boolean / Whether comments are visible (invisible is hidden from everyone, including the author)",
-        "enabled": "Boolean / Comments enabled or not",
+        "policy": "Number / Who can reply? 1. Everyone 2. People you follow 3. People you follow or verified 4. No one is allowed",
         "privacy": "String / public or private (visible only to the author of the comment and the author of the post)",
         "action": {
             "hasActionButton": "Boolean / Does the comment have an action button?",

@@ -26,8 +26,8 @@ aside: false
 | verified_status | tinyint *UNSIGNED* | 用户认证状态 | 0 | NO | 0.未认证 / 1.已认证 |
 | verified_desc | varchar(255) | 用户认证描述 |  | YES |  |
 | verified_at | timestamp | 用户认证时间 |  | YES |  |
-| conversation_limit | tinyint *UNSIGNED* | 对话设置 | 1 | NO | `1` 所有人<br>`2` 你关注的人<br>`3` 你关注的人和已认证的人<br>`4` 不允许所有人 |
-| comment_limit | tinyint *UNSIGNED* | 评论设置 | 1 | NO | `1` 所有人<br>`2` 你关注的人<br>`3` 你关注的人和已认证的人<br>`4` 不允许所有人 |
+| conversation_policy | tinyint *UNSIGNED* | 对话设置 | 1 | NO | `1` 所有人<br>`2` 你关注的人<br>`3` 你关注的人和已认证的人<br>`4` 不允许所有人 |
+| comment_policy | tinyint *UNSIGNED* | 评论设置 | 1 | NO | `1` 所有人<br>`2` 你关注的人<br>`3` 你关注的人和已认证的人<br>`4` 不允许所有人 |
 | more_info | json | 更多信息 |  | YES |  |
 | expired_at | timestamp | 失效时间 |  | YES | 私有模式专用字段，为空代表永久有效 |
 | last_activity_at | timestamp | 最后活跃时间 |  | YES |  |
