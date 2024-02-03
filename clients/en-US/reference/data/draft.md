@@ -15,7 +15,7 @@ aside: false
     "contentLength": "Number / Total Content Length",
     "isMarkdown": "Boolean / Whether it is in MD format",
     "isAnonymous": "Boolean / Whether anonymous",
-    "isPrivate": "Boolean /  Whether private", // Comment Only
+    "isPrivate": "Boolean / Comment whether private",
     "locationInfo": {
         // Location Info
     },
