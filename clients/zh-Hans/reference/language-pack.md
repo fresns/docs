@@ -165,7 +165,6 @@
 | modifierDay | 日 |
 | modifierDays | 天 |
 | modifierLength | 长度 |
-| modifierCanReply | can reply |
 | unitSecond | 秒 |
 | unitMinute | 分钟 |
 | unitWithinMinute | 分钟以内 |
@@ -362,7 +361,7 @@
 | userFollowersYouKnow | 等人也关注了他 |
 | userFollowersYouFollow | 你关注的人也在关注他 |
 | userDeactivated | 用户已注销 |
-| userSuspended | 用户被停用 |
+| userSuspended | 用户已被冻结 |
 | userInterdiction | 用户正在被禁言 |
 | userExtcredits | 用户积分 |
 | userExtcreditsLogs | 用户扩展分值记录 |
