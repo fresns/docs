@@ -22,6 +22,7 @@
 | followGroups | Boolean | NO | 指定范围：我关注的小组里 |
 | followHashtags | Boolean | NO | 指定范围：我关注的话题里 |
 | followGeotags | Boolean | NO | 指定范围：我关注的地理里 |
+| followPosts | Boolean | NO | 指定范围：我关注的帖子 |
 | followComments | Boolean | NO | 指定范围：我关注的评论 |
 | ... |  | NO | 可选[评论列表](../comment/list.md#query-参数)接口所有参数 |
 

@@ -22,6 +22,7 @@
 | followGroups | Boolean | *optional* | Specified range: In the groups I follow |
 | followHashtags | Boolean | *optional* | Specified range: In the hashtags I follow |
 | followGeotags | Boolean | *optional* | Specified range: In the geotags I follow |
+| followPosts | Boolean | *optional* | Specified range: In the posts I follow |
 | followComments | Boolean | *optional* | Specified range: In the comments I follow |
 | ... |  | *optional* | Optional [comment list](../comment/list.md#query-params) api all parameters |
 
