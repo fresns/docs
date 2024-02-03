@@ -17,7 +17,7 @@ aside: false
 | lang_tag | varchar(16) | Language Tag |  | YES |  |
 | is_markdown | tinyint *UNSIGNED* | Content in MD format | 0 | NO | 0.No / 1.Yes |
 | is_anonymous | tinyint *UNSIGNED* | Anonymous | 0 | NO | 0.No / 1.Yes |
-| map_location | point<br>geography | Map Location |  | YES | longitude, latitude |
+| map_location | point<br>geography | Map Location |  | YES | `longitude`, `latitude`<br>`SRID 4326` |
 | sticky_state | tinyint *UNSIGNED* | Sticky state | 1 | NO | 1.No / 2.Group Sticky / 3.Global Sticky |
 | digest_state | tinyint *UNSIGNED* | Digest state | 1 | NO | 1.No / 2.General Digest / 3.Premium Digest |
 | digested_at | timestamp | Digest Time |  | YES | Time set to Digest |

@@ -17,7 +17,8 @@ aside: false
 | lang_tag | varchar(16) | 语言标签 |  | YES |  |
 | is_markdown | tinyint *UNSIGNED* | 内容是否为 MD 格式 | 0 | NO | 0.否 / 1.是 |
 | is_anonymous | tinyint *UNSIGNED* | 是否匿名 | 0 | NO | 0.否 / 1.是 |
-| map_location | point<br>geography | 地图-经纬度 |  | YES | longitude, latitude |
+| privacy_state | tinyint *UNSIGNED* | 隐私状态 | 1 | NO | `1` 公开<br>`2` 私有<br>`3` 由帖子配置的私有<br>私有则仅评论作者和帖子作者可见 |
+| map_location | point<br>geography | 地图-经纬度 |  | YES | `longitude`, `latitude`<br>`SRID 4326` |
 | is_sticky | tinyint *UNSIGNED* | 是否置顶 | 0 | NO |  0.否 / 1.是 |
 | digest_state | tinyint *UNSIGNED* | 精华状态 | 1 | NO |  1.否 / 2.普级精华 / 3.高级精华 |
 | digested_at | timestamp | 精华时间 |  | YES | 设为精华的时间 |

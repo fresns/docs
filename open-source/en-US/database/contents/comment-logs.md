@@ -18,6 +18,7 @@ aside: false
 | lang_tag | varchar(16) | Language Tag |  | YES |  |
 | is_markdown | tinyint *UNSIGNED* | Content in MD format | 0 | NO | 0.No / 1.Yes |
 | is_anonymous | tinyint *UNSIGNED* | Anonymous | 0 | NO | 0.No / 1.Yes |
+| is_private | tinyint *UNSIGNED* | Private | 0 | NO | 0.No / 1.Yes |
 | location_info | json | Location information |  | YES | Empty means not creating or clearing when modifying |
 | more_info | json | More Info |  | YES | E.g. publisher IP location name, device name, etc. |
 | permissions | json | Permissions |  | YES |  |

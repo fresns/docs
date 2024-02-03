@@ -18,6 +18,7 @@ aside: false
 | lang_tag | varchar(16) | 语言标签 |  | YES |  |
 | is_markdown | tinyint *UNSIGNED* | 内容是否为 MD 格式 | 0 | NO | 0.否 / 1.是 |
 | is_anonymous | tinyint *UNSIGNED* | 是否匿名 | 0 | NO |  0.否 / 1.是 |
+| is_private | tinyint *UNSIGNED* | 是否私有 | 0 | NO |  0.否 / 1.是 |
 | location_info | json | 位置信息 |  | YES |  |
 | more_info | json | 更多信息字段 |  | YES |  |
 | permissions | json | 权限参数 |  | YES |  |
