@@ -26,9 +26,8 @@ aside: false
 | verified_status | tinyint *UNSIGNED* | User Verification Status | 0 | NO | 0.Unverified / 1.Verified |
 | verified_desc | varchar(255) | User Verification Description |  | YES |  |
 | verified_at | timestamp | User Verification Time |  | YES |  |
-| conversation_limit | tinyint *UNSIGNED* | Conversation Settings | 1 | NO | 1.Allow all users<br>2.Only allow users I follow<br>3.Allow users I follow and verified users (verified_status)<br>4.Disallow all users |
-| comment_limit | tinyint *UNSIGNED* | Comment Settings | 1 | NO | 1.Allow all users<br>2.Only allow users I follow<br>3.Allow users I follow and verified users (verified_status)<br>4.Disallow all users |
-| content_limit | tinyint *UNSIGNED* | Content Settings | 1 | NO |  |
+| conversation_limit | tinyint *UNSIGNED* | Conversation Settings | 1 | NO | `1` Everyone<br>`2` People you follow<br>`3` People you follow or verified<br>`4` No one is allowed |
+| comment_limit | tinyint *UNSIGNED* | Comment Settings | 1 | NO | `1` Everyone<br>`2` People you follow<br>`3` People you follow or verified<br>`4` No one is allowed |
 | more_info | json | More Info |  | YES |  |
 | expired_at | timestamp | Expiration Time |  | YES | Private mode dedicated field, empty means permanently valid |
 | last_activity_at | timestamp | Last Activity Time |  | YES |  |
