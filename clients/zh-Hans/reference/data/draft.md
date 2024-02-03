@@ -15,6 +15,7 @@ aside: false
     "contentLength": "Number / 内容总长度",
     "isMarkdown": "Boolean / 是否为 MD 格式",
     "isAnonymous": "Boolean / 是否匿名",
+    "isPrivate": "Boolean / 是否私有", // 评论专用
     "locationInfo": {
         // 位置信息
     },
