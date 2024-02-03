@@ -2,7 +2,7 @@
 
 - Endpoint Path: `/api/fresns/v1/editor/{type}/draft/{did}`
 - Method: `GET`
-- Request: `Rest`
+- Request: `Rest` + `Query`
 
 ## Headers Optional Parameter
 
@@ -19,6 +19,15 @@
 | --- | --- | --- | --- |
 | type | String | **required** | `post` or `comment` |
 | did | String | **required** | Draft ID |
+
+## Query Params
+
+| Key | Type | Required | Description |
+| --- | --- | --- | --- |
+| filterGroupType | String | *optional* | `whitelist` only returns key-value pairs for the given key names<br>`blacklist` removes specified key-value pairs from the returned data<br>Applies only to the `detail.group` parameter in the returned result |
+| filterGroupKeys | String | *optional* | Multiple separated by English commas, supports "dot notation" for multi-dimensional arrays |
+| filterGeotagType | String | *optional* | `whitelist` only returns key-value pairs for the given key names<br>`blacklist` removes specified key-value pairs from the returned data<br>Applies only to the `detail.geotag` parameter in the returned result |
+| filterGeotagKeys | String | *optional* | Multiple separated by English commas, supports "dot notation" for multi-dimensional arrays |
 
 ## Return
 

@@ -32,7 +32,6 @@
 | location | String | NO | 位置 |
 | conversationLimit | Number | NO | 对话设置 |
 | commentLimit | Number | NO | 评论设置 |
-| contentLimit | Number | NO | 内容设置 |
 | moreInfo | Object | NO | 自定义信息 |
 | archives | Array | NO | 扩展资料 |
 

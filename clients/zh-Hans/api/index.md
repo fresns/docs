@@ -145,13 +145,13 @@
 | `GET` | /api/fresns/v1/editor/`{type}`/configs | 编辑器配置信息 |
 | `POST` | /api/fresns/v1/editor/`{type}`/publish | 直接发表 |
 | `POST` | /api/fresns/v1/editor/`{type}`/edit/`{fsid}` | 编辑帖子或评论 |
-| `GET` | /api/fresns/v1/editor/`{type}`/drafts | 获取草稿列表 |
-| `POST` | /api/fresns/v1/editor/`{type}`/draft | 创建空草稿 |
-| `GET` | /api/fresns/v1/editor/`{type}`/draft/`{did}` | 获取草稿详情 |
-| `PATCH` | /api/fresns/v1/editor/`{type}`/draft/`{did}` | 更新草稿内容 |
-| `POST` | /api/fresns/v1/editor/`{type}`/draft/`{did}` | 提交发表（或审核） |
-| `PUT` | /api/fresns/v1/editor/`{type}`/draft/`{did}` | 撤回审核中草稿 |
-| `DELETE` | /api/fresns/v1/editor/`{type}`/draft/`{did}` | 删除草稿 |
+| `GET` | /api/fresns/v1/editor/`{type}`/drafts | 草稿: 列表 |
+| `POST` | /api/fresns/v1/editor/`{type}`/draft | 草稿: 创建 |
+| `GET` | /api/fresns/v1/editor/`{type}`/draft/`{did}` | 草稿: 详情 |
+| `PATCH` | /api/fresns/v1/editor/`{type}`/draft/`{did}` | 草稿: 更新 |
+| `POST` | /api/fresns/v1/editor/`{type}`/draft/`{did}` | 草稿: 提交发表（或审核） |
+| `PUT` | /api/fresns/v1/editor/`{type}`/draft/`{did}` | 草稿: 撤回审核中草稿 |
+| `DELETE` | /api/fresns/v1/editor/`{type}`/draft/`{did}` | 草稿: 删除 |
 
 ## 搜索
 

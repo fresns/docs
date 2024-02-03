@@ -32,7 +32,6 @@
 | location | String | *optional* | Location |
 | conversationLimit | Number | *optional* | Conversation setting |
 | commentLimit | Number | *optional* | Comment setting |
-| contentLimit | Number | *optional* | Content setting |
 | moreInfo | Object | *optional* | more info |
 | archives | Array | *optional* | Extended information |
 

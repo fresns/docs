@@ -1,4 +1,4 @@
-# Edit post or comment
+# Edit Post or Comment
 
 - Endpoint Path: `/api/fresns/v1/editor/{type}/edit/{fsid}`
 - Method: `POST`

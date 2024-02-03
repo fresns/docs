@@ -145,13 +145,13 @@
 | `GET` | /api/fresns/v1/editor/`{type}`/configs | Editor Configs |
 | `POST` | /api/fresns/v1/editor/`{type}`/publish | Quick Publish |
 | `POST` | /api/fresns/v1/editor/`{type}`/edit/`{fsid}` | Edit Post or Comment |
-| `POST` | /api/fresns/v1/editor/`{type}`/draft | Create Draft |
-| `GET` | /api/fresns/v1/editor/`{type}`/drafts | Draft List |
-| `GET` | /api/fresns/v1/editor/`{type}`/draft/`{did}` | Draft Detail |
-| `PATCH` | /api/fresns/v1/editor/`{type}`/draft/`{did}` | Update Draft |
-| `POST` | /api/fresns/v1/editor/`{type}`/draft/`{did}` | Publish Draft |
-| `PUT` | /api/fresns/v1/editor/`{type}`/draft/`{did}` | Recall Draft (Draft under review) |
-| `DELETE` | /api/fresns/v1/editor/`{type}`/draft/`{did}` | Delete Draft |
+| `POST` | /api/fresns/v1/editor/`{type}`/draft | Draft: Create |
+| `GET` | /api/fresns/v1/editor/`{type}`/drafts | Draft: List |
+| `GET` | /api/fresns/v1/editor/`{type}`/draft/`{did}` | Draft: Detail |
+| `PATCH` | /api/fresns/v1/editor/`{type}`/draft/`{did}` | Draft: Update |
+| `POST` | /api/fresns/v1/editor/`{type}`/draft/`{did}` | Draft: Publish |
+| `PUT` | /api/fresns/v1/editor/`{type}`/draft/`{did}` | Draft: Recall (Draft under review) |
+| `DELETE` | /api/fresns/v1/editor/`{type}`/draft/`{did}` | Draft: Delete |
 
 ## Search
 
