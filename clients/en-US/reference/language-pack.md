@@ -312,9 +312,9 @@
 | settingInteraction | Interaction |
 | settingAccount | Account |
 | settingConnects | Connects |
-| settingConversationLimit | Conversation |
-| settingCommentLimit | Comment |
-| settingContentLimit | Content |
+| settingConversationPolicy | Conversation |
+| settingCommentPolicy | Comment |
+| settingContentPolicy | Content |
 | settingType | Setting Type |
 | settingAlready | Already set |
 | settingNot | Not set |

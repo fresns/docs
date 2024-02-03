@@ -312,9 +312,9 @@
 | settingInteraction | 互动设置 |
 | settingAccount | 账号设置 |
 | settingConnects | 互联信息 |
-| settingConversationLimit | 对话设置 |
-| settingCommentLimit | 评论设置 |
-| settingContentLimit | 内容设置 |
+| settingConversationPolicy | 对话设置 |
+| settingCommentPolicy | 评论设置 |
+| settingContentPolicy | 内容设置 |
 | settingType | 修改方式 |
 | settingAlready | 已设置 |
 | settingNot | 未设置 |
