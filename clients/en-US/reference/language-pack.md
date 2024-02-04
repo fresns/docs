@@ -183,6 +183,7 @@
 | optionPeopleYouFollow | People you follow |
 | optionPeopleYouFollowOrVerified | People you follow or verified |
 | optionYouFollowEachOther | You follow each other |
+| optionOnlyUsersYouMention | Only users you mention |
 | optionEveryone | Everyone |
 | optionOnlyYou | Only you |
 | optionNoOne | No one |

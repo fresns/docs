@@ -183,6 +183,7 @@
 | optionPeopleYouFollow | 你关注的人 |
 | optionPeopleYouFollowOrVerified | 你关注的人和已认证的人 |
 | optionYouFollowEachOther | 你们互相关注 |
+| optionOnlyUsersYouMention | 仅限你提及到的用户 |
 | optionEveryone | 所有人 |
 | optionOnlyYou | 仅对你自己 |
 | optionNoOne | 没有人 |

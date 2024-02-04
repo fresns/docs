@@ -279,6 +279,7 @@
 | 38106 | Draft creation failed, draft box is full, please organize and create again |
 | 38107 | Comment failed, belongs to the post or has been deleted |
 | 38108 | Comment failed, the post belongs to the comment function has been closed |
+| 38109 | The author of the post has made the comment private, do not support separate reconfiguration of comments |
 | **Check Parameter** |  |
 | 38200 | Content has been submitted, pending review and approval before official publication |
 | 38201 | The existence of content to be audited, the system does not allow the simultaneous submission of two pieces of content for review, to be submitted after the end of the audit |
@@ -292,3 +293,4 @@
 | 38209 | The author has set only the users he follows to comment |
 | 38210 | The author has set only the users he follows and the verified users can comment |
 | 38211 | The author has turned off the comment function |
+| 38212 | Only users mentioned by the author can comment |

@@ -89,7 +89,7 @@ aside: false
     },
     "commentConfig": {
         "visible": "Boolean / 评论是否可见（不可见对所有人隐藏，包括作者）",
-        "policy": "Number / 谁可以评论 1.所有人 2.你关注的人 3.你关注的人和已认证的人 4.不允许所有人",
+        "policy": "Number / 谁可以评论 1.所有人 2.你关注的人 3.你关注的人和已认证的人 4.不允许所有人 5.仅限你提及到的用户",
         "privacy": "String / public (公开) 或 private（私有则仅评论作者和帖子作者可见）",
         "action": {
             "hasActionButton": "Boolean / 评论是否有按钮",
