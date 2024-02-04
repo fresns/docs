@@ -21,42 +21,30 @@
 
 ## Body Params
 
-### Publish Post
-
 | Key | Type | Required | Description |
 | --- | --- | --- | --- |
-| quotePid | String | *optional* | Quoted Post ID<br>Not required |
-| gid | String | *optional* | Group<br>`editor.features.group.required`<br>If required by configuration, this parameter must also be provided |
-| title | String | *optional* | Title<br>`editor.toolbar.title.required`<br>If required by configuration, this parameter must also be provided |
-| content | String | *optional* | Content<br>Insert the file in the content in the format `[file:{fid}]` |  |
-| isMarkdown | Boolean | *optional* | Is content in MD format |  |
-| isAnonymous | Boolean | *optional* | Is it anonymous |  |
-| commentDisabled | Boolean | NO | Whether comments are disabled |
-| commentPrivate  | Boolean | NO | Whether the comment is private<br>Visible only to the comment author and post author |
-| location | String | *optional* | Location information: compress Object information into a string parameter |  |
-| archives | String | *optional* | Extended parameters: compress Array information into a string parameter |  |
-| extends | String | *optional* | Extended content: compress Array information into a string parameter |  |
-| image | File | *optional* | Image file |
-
-### Publish Comment
-
-| Key | Type | Required | Description |
-| --- | --- | --- | --- |
-| commentPid | String | **required** | Comment on which post, required |
-| commentCid | String | *optional* | Empty means comment on post<br>Value means reply to this comment |
+| commentPid | String | *optional* | Comment-Only: Comment on which post, required |
+| commentCid | String | *optional* | Comment-Only: Empty means comment on post<br>Value means reply to this comment |
+| quotePid | String | *optional* | Post-Only: Quoted Post ID |
+| gid | String | *optional* | Post-Only: Group |
+| title | String | *optional* | Post-Only: Title |
 | content | String | *optional* | Content<br>Insert the file in the content in the format `[file:{fid}]` |
-| isMarkdown | Boolean | *optional* | Is content in MD format |
-| isAnonymous | Boolean | *optional* | Is it anonymous |
-| location | String | *optional* | Location information: compress Object information into a string parameter |
-| archives | String | *optional* | Extended parameters: compress Array information into a string parameter |
-| extends | String | *optional* | Extended content: compress Array information into a string parameter |
+| isMarkdown | Boolean | *optional* | Content in MD format |
+| isAnonymous | Boolean | *optional* | Anonymous |
+| commentPolicy | Number | *optional* | Post-Only: Who can comment?<br>`1` Everyone `2` People you follow `3` People you follow or verified `4` No one is allowed `5` Only users you mention |
+| commentPrivate | Boolean | *optional* | `Post` Are all comments private<br>`Comment` Is this comment private<br>Private is only visible to the author of the comment and the author of the post. |
+| gtid | String | *optional* | Geotag ID |
+| locationInfo | String | *optional* | Location Info `Object to String` |
+| archives | String | *optional* | Archive Parameter `Array to String` |
+| extends | String | *optional* | Extend Content `Array to String` |
 | image | File | *optional* | Image file |
 
 **Request Description**
 
 - Skip the draft logic and publish content directly. Published content does not save drafts (histories).
 - Support direct upload of a single image file through the interface.
-- `map`, `extends`, `archives` Reference [update draft API](draft-update.md)
+- When published, the location information `locationInfo` is not used, even if it has a `gtid` value.
+- `locationInfo`, `archives`, `extends` Reference [update draft API](draft-update.md)
 
 ## Return
 

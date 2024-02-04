@@ -21,42 +21,30 @@
 
 ## Body 参数
 
-### 发表帖子
-
 | 参数名 | 类型 | 是否必传 | 说明 |
 | --- | --- | --- | --- |
-| quotePid | String | NO | 引用的帖子 PID |
-| gid | String | NO | 小组<br>`editor.features.group.required`<br>如果配置必填，则此处传参也必填 |
-| title | String | NO | 标题<br>`editor.toolbar.title.required`<br>如果配置必填，则此处传参也必填 |
+| commentPid | String | NO | 评论专用: 评论哪个帖子，必传 |
+| commentCid | String | NO | 评论专用: 回复哪条评论<br>留空表示评论帖子 |
+| quotePid | String | NO | 帖子专用: 引用的帖子 PID |
+| gid | String | NO | 帖子专用: 小组 |
+| title | String | NO | 帖子专用: 标题 |
 | content | String | NO | 正文内容<br>内容中插入文件，格式为 `[file:{fid}]` |
 | isMarkdown | Boolean | NO | 内容是否为 MD 格式 |
 | isAnonymous | Boolean | NO | 是否匿名 |
-| commentDisabled | Boolean | NO | 是否禁止评论 |
-| commentPrivate | Boolean | NO | 是否私有评论<br>私有则仅评论作者和帖子作者可见 |
-| location | String | NO | 位置信息: 压缩 Object 信息为字符串传参 |
+| commentPolicy | Number | NO | 帖子专用: 谁可以评论<br>`1` 所有人 `2` 你关注的人 `3` 你关注的人和已认证的人 `4` 不允许所有人 `5` 仅限你提及到的用户 |
+| commentPrivate | Boolean | NO | `帖子使用` 所有评论是否为私有<br>`评论使用` 本条评论是否为私有<br>私有则仅评论作者和帖子作者可见 |
+| gtid | String | NO | 地理位置 ID |
+| locationInfo | String | NO | 位置信息: 压缩 Object 信息为字符串传参 |
 | archives | String | NO | 扩展参数: 压缩 Array 信息为字符串传参 |
 | extends | String | NO | 扩展内容: 压缩 Array 信息为字符串传参 |
-| image | File | NO | 图片文件 |
-
-### 发表评论
-
-| 参数名 | 类型 | 是否必传 | 说明 |
-| --- | --- | --- | --- |
-| commentPid | String | YES | 评论哪个帖子 |
-| commentCid | String | NO | 留空表示评论帖子<br>有值表示回复这条评论 |
-| content | String | NO | 正文内容<br>内容中插入文件，格式为 `[file:{fid}]` |
-| isMarkdown | Boolean | NO | 内容是否为 MD 格式 |
-| isAnonymous | Boolean | NO | 是否匿名 |
-| location | String | NO | 位置信息: 压缩 Object 信息为字符串传参 |
-| archives | String | NO | 扩展参数: 压缩 Array 信息为字符串传参 |
-| extends | String | NO | 扩展内容: 压缩 Array 信息为字符串传参 |
-| image | File | NO | 图片文件 |
+| image | File | NO | 单个图片文件 |
 
 **接口使用说明**
 
 - 跳过草稿逻辑，直接发表内容。发表内容不存草稿（历史）。
 - 支持接口直传单个图片文件。
-- `location`, `extends`, `archives` 参见[更新草稿接口](draft-update.md)
+- 发表时，如果有 `gtid` 值，位置信息 `locationInfo` 有值也不被使用。
+- `locationInfo`, `archives`, `extends` 参见[更新草稿接口](draft-update.md)
 
 ## 返回结果
 

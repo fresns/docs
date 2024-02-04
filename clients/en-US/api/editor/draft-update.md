@@ -22,32 +22,30 @@
 
 ## Body Params
 
-| Key | Type | Required | **Post** Description | **Comment** Description |
-| --- | --- | --- | --- | --- |
-| editorFskey | String | *optional* | Is it an editor plugin<br>Passing `Fresns` will reset to the default editor |  |
-| postQuotePid | String | *optional* | Quoted Post ID<br>Not required | *Post-specific* |
-| postGid | String | *optional* | Group | *Post-specific* |
-| postTitle | String | *optional* | Title | *Post-specific* |
-| postCommentDisabled | Boolean | NO | Whether comments are disabled | *Post-specific* |
-| postCommentPrivate  | Boolean | NO | Whether the comment is private<br>Visible only to the comment author and post author | *Post-specific* |
-| content | String | *optional* | Content<br>Insert the file in the content in the format `[file:{fid}]` |  |
-| isMarkdown | Boolean | *optional* | Is content in MD format |  |
-| isAnonymous | Boolean | *optional* | Is it anonymous |  |
-| map | Object | *optional* | Location information |  |
-| archives | Array | *optional* | Extended parameters |
-| extends | Array | *optional* | Extended content |  |
-| deleteMap | Boolean | *optional* | Delete location information |  |
-| deleteFile | String | *optional* | Delete file, pass `fid` as parameter |  |
-| deleteArchive | String | *optional* | Delete extended parameters, pass `code` as parameter |  |
-| deleteExtend | String | *optional* | Delete extended content, pass `eid` as parameter |  |
+| Key | Type | Required | Description |
+| --- | --- | --- | --- |
+| editorFskey | String | *optional* | Is it a plugin editor, empty means no |
+| quotePid | String | *optional* | Post-Only: Quoted Post ID |
+| gid | String | *optional* | Post-Only: Group |
+| title | String | *optional* | Post-Only: Title |
+| content | String | *optional* | Content<br>Insert the file in the content in the format `[file:{fid}]` |
+| isMarkdown | Boolean | *optional* | Content in MD format |
+| isAnonymous | Boolean | *optional* | Anonymous |
+| commentPolicy | Number | *optional* | Post-Only: Who can comment?<br>`1` Everyone `2` People you follow `3` People you follow or verified `4` No one is allowed `5` Only users you mention |
+| commentPrivate | Boolean | *optional* | `Post` Are all comments private<br>`Comment` Is this comment private<br>Private is only visible to the author of the comment and the author of the post. |
+| gtid | String | *optional* | Geotag ID |
+| locationInfo | Object | *optional* | Location Info |
+| archives | Array | *optional* | Archive Parameter |
+| extends | Array | *optional* | Extend Content |
+| deleteLocation | Boolean | *optional* | Delete `locationInfo` |
+| deleteArchive | String | *optional* | Delete archive parameter, pass `code` as parameter |
+| deleteExtend | String | *optional* | Delete extend content, pass `eid` as parameter |
+| deleteFile | String | *optional* | Delete file, pass `fid` as parameter |
 
 **Request Description**
 
 - For file functionality, use the [File Upload Interface](../file/uploads.md) to upload files.
-- Location information `map` parameter example:
-    - Location information `mapId`, `latitude`, `longitude`, `poi` are required, others are optional
-    - `mapId` is from the data dictionary, [Map Service Provider Number](../../reference//dictionary/maps.md)
-    - To delete (clear) location information, use the `deleteMap` parameter.
+- When published, the location information `locationInfo` is not used, even if it has a `gtid` value.
 
 **Example Parameters**
 

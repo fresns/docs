@@ -21,23 +21,24 @@
 
 ## Body Params
 
-| Key | Type | Required | **Post** Description | **Comment** Description |
-| --- | --- | --- | --- | --- |
-| createType | Number | **required** | Creation type 1. Quick create 2. Editor create |  |
-| postQuotePid | String | *optional* | Quoted Post ID<br>Not required | *Post-specific* |
-| editorFskey | String | *optional* | Is it a plugin editor, empty means no |  |
-| postGid | String | *optional* | Group, default selected group | *Post-specific* |
-| postTitle | String | *optional* | Title, default with title | *Post-specific* |
-| postCommentDisabled | Boolean | NO | Whether comments are disabled | *Post-specific* |
-| postCommentPrivate  | Boolean | NO | Whether the comment is private<br>Visible only to the comment author and post author | *Post-specific* |
-| commentPid | String | *optional* | *Comment-specific* | Comment on which post, required |
-| commentCid | String | *optional* | *Comment-specific* | Empty means comment on post<br>Value means reply to this comment |
-| content | String | *optional* | Main content, default with content |  |
-| isMarkdown | Boolean | *optional* | is content in MD format |  |
-| isAnonymous | Boolean | *optional* | is it anonymous |  |
-| map | Object | *optional* | location information |  |
-| extends | Array | *optional* | extended content |  |
-| archives | Array | *optional* | extended parameters |
+| Key | Type | Required | Description |
+| --- | --- | --- | --- |
+| createType | Number | **required** | Creation type 1. Quick create 2. Editor create |
+| editorFskey | String | *optional* | Is it a plugin editor, empty means no |
+| commentPid | String | *optional* | Comment-Only: Comment on which post, required |
+| commentCid | String | *optional* | Comment-Only: Empty means comment on post<br>Value means reply to this comment |
+| quotePid | String | *optional* | Post-Only: Quoted Post ID |
+| gid | String | *optional* | Post-Only: Group |
+| title | String | *optional* | Post-Only: Title |
+| content | String | *optional* | Content<br>Insert the file in the content in the format `[file:{fid}]` |
+| isMarkdown | Boolean | *optional* | Content in MD format |
+| isAnonymous | Boolean | *optional* | Anonymous |
+| commentPolicy | Number | *optional* | Post-Only: Who can comment?<br>`1` Everyone `2` People you follow `3` People you follow or verified `4` No one is allowed `5` Only users you mention |
+| commentPrivate | Boolean | *optional* | `Post` Are all comments private<br>`Comment` Is this comment private<br>Private is only visible to the author of the comment and the author of the post. |
+| gtid | String | *optional* | Geotag ID |
+| locationInfo | Object | *optional* | Location Info |
+| archives | Array | *optional* | Archive Parameter |
+| extends | Array | *optional* | Extend Content |
 
 **Request Description**
 

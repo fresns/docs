@@ -22,38 +22,40 @@
 
 ## Body 参数
 
-| 参数名 | 类型 | 是否必传 | **帖子**说明 | **评论**说明 |
-| --- | --- | --- | --- | --- |
-| editorFskey | String | NO | 是否为编辑器插件<br>传参 `Fresns` 则重置为默认编辑器 |  |
-| postQuotePid | String | NO | 引用的帖子 PID<br>非必填 | *帖子专用* |
-| postGid | String | NO | 小组 | *帖子专用* |
-| postTitle | String | NO | 标题 | *帖子专用* |
-| postCommentDisabled | Boolean | NO | 是否禁止评论 | *帖子专用* |
-| postCommentPrivate | Boolean | NO | 是否私有评论<br>私有则仅评论作者和帖子作者可见 | *帖子专用* |
-| content | String | NO | 正文内容<br>内容中插入文件，格式为 `[file:{fid}]` |  |
-| isMarkdown | Boolean | NO | 内容是否为 MD 格式 |  |
-| isAnonymous | Boolean | NO | 是否匿名 |  |
-| map | Object | NO | 位置信息 |  |
-| archives | Array | NO | 扩展参数 |  |
-| extends | Array | NO | 扩展内容 |  |
-| deleteMap | Boolean | NO | 删除位置信息 |  |
-| deleteFile | String | NO | 删除文件，传参 `fid` |  |
-| deleteArchive | String | NO | 删除扩展参数，传参 `code` |  |
-| deleteExtend | String | NO | 删除扩展内容，传参 `eid` |  |
+| 参数名 | 类型 | 是否必传 | 说明 |
+| --- | --- | --- | --- |
+| editorFskey | String | NO | 是否为编辑器插件<br>传参 `Fresns` 则重置为默认编辑器 |
+| quotePid | String | NO | 帖子专用: 引用的帖子 PID |
+| gid | String | NO | 帖子专用: 小组 |
+| title | String | NO | 帖子专用: 标题 |
+| content | String | NO | 正文内容<br>内容中插入文件，格式为 `[file:{fid}]` |
+| isMarkdown | Boolean | NO | 内容是否为 MD 格式 |
+| isAnonymous | Boolean | NO | 是否匿名 |
+| commentPolicy | Number | NO | 帖子专用: 谁可以评论<br>`1` 所有人 `2` 你关注的人 `3` 你关注的人和已认证的人 `4` 不允许所有人 `5` 仅限你提及到的用户 |
+| commentPrivate | Boolean | NO | `帖子使用` 所有评论是否为私有<br>`评论使用` 本条评论是否为私有<br>私有则仅评论作者和帖子作者可见 |
+| gtid | String | NO | 地理位置 ID |
+| locationInfo | Object | NO | 地理位置信息 |
+| archives | Array | NO | 扩展参数 |
+| extends | Array | NO | 扩展内容 |
+| deleteLocation | Boolean | NO | 删除位置信息 |
+| deleteArchive | String | NO | 删除扩展参数，传参 `code` |
+| deleteExtend | String | NO | 删除扩展内容，传参 `eid` |
+| deleteFile | String | NO | 删除文件，传参 `fid` |
 
 **接口使用说明**
 
 - 文件功能，使用[文件上传接口](../file/uploads.md)上传文件。
-- 位置信息 `map` 参数示例：
-    - 位置信息 `mapId`,`latitude`,`longitude`,`poi` 这四个信息必传，其余可选
-    - `mapId` 来自数据字典，[地图服务商编号](../../reference/dictionary/maps.md)
-    - 位置信息删除（清空）需使用 `deleteMap` 参数。
+- 发表时，如果有 `gtid` 值，位置信息 `locationInfo` 有值也不被使用。
 
 **参数示例**
 
 ::: code-group
 ```json [位置信息示例: en]
 {
+    "name": "Cupertino Library",
+    "description": "",
+    "placeId": "TRDucfBPkhuzzR9a7", // 参考 Google Map
+    "placeType": "building", // 参考 Google Map
     "mapId": 2,
     "latitude": 37.3185039,
     "longitude": -122.0288017,
@@ -68,14 +70,16 @@
     "cityCode": "SC",
     "district": "Cupertino",
     "address": "10800 Torre Ave, Cupertino, CA 95014",
-    "zip": "95014",
-    "poi": "Cupertino Library",
-    "poiId": "TRDucfBPkhuzzR9a7",
+    "zip": "95014"
 }
 ```
 
 ```json [位置信息示例: zh-Hans]
 {
+    "name": "东方之门",
+    "description": "",
+    "placeId": "B020017GRH", // 参考 Google Map
+    "placeType": "building", // 参考 Google Map
     "mapId": 4,
     "latitude": 31.299,
     "longitude": 120.585,
@@ -90,9 +94,7 @@
     "cityCode": "SZ",
     "district": "工业园区",
     "address": "苏州工业园区星港街199号",
-    "zip": "215000",
-    "poi": "东方之门",
-    "poiId": "B020017GRH",
+    "zip": "215000"
 }
 ```
 
