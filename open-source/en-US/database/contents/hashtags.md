@@ -10,7 +10,7 @@ aside: false
 | name | varchar(64) | Topic Name |  | NO |  |
 | slug | varchar(255) | Topic Name URL Encode |  | NO | **Unique** |
 | description | json | Description |  | YES | **Multilingual** |
-| type | smallint *UNSIGNED* | Type |  | NO | For custom use, such as sorting or filtering |
+| type | smallint *UNSIGNED* | Type | 1 | NO | For custom use, such as sorting or filtering |
 | cover_file_id | bigint *UNSIGNED* | Cover Image ID |  | YES | Related field [files->id](../systems/files.md) |
 | cover_file_url | varchar(255) | Cover Image URL |  | YES |  |
 | more_info | json | More Info |  | YES |  |

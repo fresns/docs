@@ -10,7 +10,7 @@ aside: false
 | name | varchar(64) | 话题名 |  | NO |  |
 | slug | varchar(255) | 话题名 URL Encode 转码 |  | NO | **唯一值** |
 | description | json | 描述 |  | YES | **多语言** |
-| type | smallint *UNSIGNED* | 类型 |  | NO | 用于自定义用途，比如分类或过滤 |
+| type | smallint *UNSIGNED* | 类型 | 1 | NO | 用于自定义用途，比如分类或过滤 |
 | cover_file_id | bigint *UNSIGNED* | 封面图 ID |  | YES | 关联字段 [files->id](../systems/files.md) |
 | cover_file_url | varchar(255) | 封面图 URL |  | YES |  |
 | more_info | json | 更多信息字段 |  | YES |  |

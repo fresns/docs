@@ -18,7 +18,7 @@ aside: false
 | action_user_id | bigint *UNSIGNED* | Triggering user ID |  | YES | Related field [users->id](../users/users.md) |
 | action_is_anonymous | tinyint *UNSIGNED* | User is anonymous | 0 | NO | 0.No / 1.Yes |
 | action_type | smallint *UNSIGNED* | Triggering action type |  | YES | 1.Like 2.Dislike 3.Follow 4.Block 5.Publish 6.Edit 7.Delete 8.Pin 9.Highlight 10.Manage |
-| action_object | tinyint *UNSIGNED* | Triggering target |  | YES | [Content Type](../numbered-description.md#content-type) |
+| action_target | tinyint *UNSIGNED* | Triggering target |  | YES | [Content Type](../numbered-description.md#content-type) |
 | action_id | bigint *UNSIGNED* | Triggering target ID |  | YES | Origin of this notification |
 | action_content_id | bigint *UNSIGNED* | Post or Comment ID |  | YES | Related field [posts->id](../contents/posts.md) or [comments->id](../contents/comments.md) |
 | is_read | tinyint *UNSIGNED* | Read status | 0 | NO | 0.Unread / 1.Read |
@@ -43,7 +43,7 @@ aside: false
 - `type=1` represents a `content` message sent to you by the system
     - `is_access_app` Whether to access the plugin page
     - `action_user_id` Whether there is a triggering user
-    - `action_object + action_id` Whether there is a triggering source content
+    - `action_target + action_id` Whether there is a triggering source content
 
 ## Recommendation Message Interpretation
 
@@ -51,19 +51,19 @@ aside: false
     - `content` Recommendation language
     - `is_access_app` Whether to access the plugin page
     - `action_user_id` Whether there is a triggering user
-    - `action_object + action_id` Recommended content
+    - `action_target + action_id` Recommended content
 
 ## Interaction Message Interpretation
 
-- `type=3` represents `action_user_id` liked your `action_object + action_id`
-- `type=4` represents `action_user_id` disliked your `action_object + action_id`
-- `type=5` represents `action_user_id` followed your `action_object + action_id`
-- `type=6` represents `action_user_id` blocked your `action_object + action_id`
-- `type=7` represents `action_user_id` mentioned you in `action_object + action_id`
+- `type=3` represents `action_user_id` liked your `action_target + action_id`
+- `type=4` represents `action_user_id` disliked your `action_target + action_id`
+- `type=5` represents `action_user_id` followed your `action_target + action_id`
+- `type=6` represents `action_user_id` blocked your `action_target + action_id`
+- `type=7` represents `action_user_id` mentioned you in `action_target + action_id`
     - `content` Summary of the mention content
-- `type=8` represents `action_user_id` commented on your `action_object + action_id` content
+- `type=8` represents `action_user_id` commented on your `action_target + action_id` content
     - `content` Summary of the comment content
     - `action_content_id` Their comment ID
-- `type=9` represents `action_user_id` quoted on your `action_object=4 + action_id` content
+- `type=9` represents `action_user_id` quoted on your `action_target=4 + action_id` content
     - `content` Summary of the post content
     - `action_content_id` Their post ID

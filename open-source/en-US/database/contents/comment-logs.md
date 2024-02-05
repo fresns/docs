@@ -66,6 +66,7 @@ aside: false
     "cityCode": "SC",
     "district": "Cupertino",
     "address": "10800 Torre Ave, Cupertino, CA 95014",
-    "zip": "95014"
+    "zip": "95014",
+    "moreInfo": {}
 }
 ```

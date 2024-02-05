@@ -18,7 +18,7 @@ aside: false
 | action_user_id | bigint *UNSIGNED* | 触发的用户 ID |  | YES | 关联字段 [users->id](../users/users.md) |
 | action_is_anonymous | tinyint *UNSIGNED* | 是否匿名触发 | 0 | NO | 0.否 / 1.是 |
 | action_type | smallint *UNSIGNED* | 触发行为类型 |  | YES | 1.赞 2.踩 3.关注 4.屏蔽 5.发表 6.编辑 7.删除 8.置顶 9.设精 10.管理 |
-| action_object | tinyint *UNSIGNED* | 触发目标 |  | YES | [内容类型编号](../numbered-description.md#内容类型编号) |
+| action_target | tinyint *UNSIGNED* | 触发目标 |  | YES | [内容类型编号](../numbered-description.md#内容类型编号) |
 | action_id | bigint *UNSIGNED* | 触发目标 ID |  | YES | 这条通知来源由哪个内容 |
 | action_content_id | bigint *UNSIGNED* | 帖子或评论 ID |  | YES | 关联字段 [posts->id](../contents/posts.md) 或者 [comments->id](../contents/comments.md) |
 | is_read | tinyint *UNSIGNED* | 阅读状态 | 0 | NO | 0.未读 / 1.已读 |
@@ -43,7 +43,7 @@ aside: false
 - `type=1` 代表系统给你发了一条 `content` 消息内容
     - `is_access_plugin` 是否访问插件页
     - `action_user_id` 是否有触发用户
-    - `action_object + action_id` 是否有触发来源内容
+    - `action_target + action_id` 是否有触发来源内容
 
 ## 推荐消息解读
 
@@ -51,19 +51,19 @@ aside: false
     - `content` 推荐语
     - `is_access_plugin` 是否访问插件页
     - `action_user_id` 是否有触发用户
-    - `action_object + action_id` 推荐的内容
+    - `action_target + action_id` 推荐的内容
 
 ## 互动消息解读
 
-- `type=3` 代表 `action_user_id` 赞了你的 `action_object + action_id`
-- `type=4` 代表 `action_user_id` 踩了你的 `action_object + action_id`
-- `type=5` 代表 `action_user_id` 关注了你的 `action_object + action_id`
-- `type=6` 代表 `action_user_id` 屏蔽了你的 `action_object + action_id`
-- `type=7` 代表 `action_user_id` 在 `action_object + action_id` 中提及了你
+- `type=3` 代表 `action_user_id` 赞了你的 `action_target + action_id`
+- `type=4` 代表 `action_user_id` 踩了你的 `action_target + action_id`
+- `type=5` 代表 `action_user_id` 关注了你的 `action_target + action_id`
+- `type=6` 代表 `action_user_id` 屏蔽了你的 `action_target + action_id`
+- `type=7` 代表 `action_user_id` 在 `action_target + action_id` 中提及了你
     - `content` 提及内容的摘要
-- `type=8` 代表 `action_user_id` 评论了你的 `action_object + action_id` 内容
+- `type=8` 代表 `action_user_id` 评论了你的 `action_target + action_id` 内容
     - `content` 评论内容的摘要
     - `action_content_id` 他的评论 ID
-- `type=9` 代表 `action_user_id` 引用了你的 `action_object=4 + action_id` 帖子
+- `type=9` 代表 `action_user_id` 引用了你的 `action_target=4 + action_id` 帖子
     - `content` 他的内容摘要
     - `action_post_id` 他的帖子 ID

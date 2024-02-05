@@ -60,7 +60,8 @@ aside: false
     "cityCode": "SC",
     "district": "Cupertino",
     "address": "10800 Torre Ave, Cupertino, CA 95014",
-    "zip": "95014"
+    "zip": "95014",
+    "moreInfo": {}
 }
 ```
 
@@ -84,7 +85,8 @@ aside: false
     "cityCode": "SZ",
     "district": "工业园区",
     "address": "苏州工业园区星港街199号",
-    "zip": "215000"
+    "zip": "215000",
+    "moreInfo": {}
 }
 ```
 :::

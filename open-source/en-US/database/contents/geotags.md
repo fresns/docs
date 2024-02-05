@@ -8,23 +8,19 @@ aside: false
 | --- | --- | --- | --- | --- | --- |
 | id | int *UNSIGNED* | Primary Key ID | | NO | Auto Increment |
 | gtid | varchar(32) | Public ID |  | NO | **Unique** |
+| type | smallint *UNSIGNED* | Type | 1 | NO | For custom use, such as sorting or filtering |
+| cover_file_id | bigint *UNSIGNED* | Cover Image ID |  | YES | Related field [files->id](../systems/files.md) |
+| cover_file_url | varchar(255) | Cover Image URL |  | YES |  |
 | place_id | varchar(64) | Place ID |  | YES | **Unique** |
 | place_type | varchar(64) | Place Type | unknown | NO |  |
 | name | json | Name |  | YES | **Multilingual** |
 | description | json | Description |  | YES | **Multilingual** |
+| city_id | int *UNSIGNED* | City ID |  | YES |  |
 | map_id | tinyint *UNSIGNED* | Maps | 1 | NO | [Maps](../../configs/dictionary/maps.md) |
 | map_longitude | decimal(12,8) | Map - Longitude |  | NO | Decimal, range -180~180, negative for west longitude |
 | map_latitude | decimal(12,8) | Map - Latitude |  | NO | Decimal, range -90~90, negative for south latitude |
 | map_location | point<br>geography | Map - Location |  | NO | longitude, latitude |
 | location_info | json | Location Information |  | YES |  |
-| type | smallint *UNSIGNED* | Type |  | NO | For custom use, such as sorting or filtering |
-| cover_file_id | bigint *UNSIGNED* | Cover Image ID |  | YES | Related field [files->id](../systems/files.md) |
-| cover_file_url | varchar(255) | Cover Image URL |  | YES |  |
-| continent_code | varchar(8) | Continent Code |  | YES | North America `NA` |
-| country_code | varchar(8) | Country Code |  | YES | United States `US` |
-| region_code | varchar(8) | Region Code |  | YES | California `CA` |
-| city_code | varchar(8) | City Code |  | YES | Santa Clara `SC` |
-| zip | varchar(32) | Zip |  | YES | 215000 |
 | more_info | json | More Info |  | YES |  |
 | view_count | int *UNSIGNED* | Number of View | 0 | NO | Count by plugin |
 | like_count | int *UNSIGNED* | Like Count | 0 | NO | Number of users who liked the topic |

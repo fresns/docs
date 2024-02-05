@@ -12,8 +12,8 @@ aside: false
 | account_id | bigint *UNSIGNED* | 下载者账号 ID |  | NO | 关联字段 [accounts->id](../accounts/accounts.md) |
 | user_id | bigint *UNSIGNED* | 下载者用户 ID |  | YES | 关联字段 [users->id](../users/users.md) |
 | app_fskey | varchar(64) | 下载者插件 |  | YES | 关联字段 [apps->fskey](../apps/apps.md)<br>如果在插件中下载，则是该插件 fskey |
-| object_type | tinyint *UNSIGNED* | 下载来源类型 | 1 | NO | [内容类型编号](../numbered-description.md#内容类型编号) |
-| object_id | bigint *UNSIGNED* | 来源目标主键 ID |  | NO |  |
+| target_type | tinyint *UNSIGNED* | 下载来源类型 | 1 | NO | [内容类型编号](../numbered-description.md#内容类型编号) |
+| target_id | bigint *UNSIGNED* | 来源目标主键 ID |  | NO |  |
 | created_at | timestamp | 下载时间 | useCurrent | NO | 比如 MySQL 默认值为 CURRENT_TIMESTAMP |
 | updated_at | timestamp | 更新时间 |  | YES |  |
 | deleted_at | timestamp | 删除时间 |  | YES |  |

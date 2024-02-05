@@ -12,7 +12,7 @@ aside: false
 | user_id | bigint *UNSIGNED* | 创建者 ID |  | YES | 关联字段 [users->id](../users/users.md) |
 | name | json | 小组名称 |  | NO | **多语言** |
 | description | json | 小组描述 |  | YES | **多语言** |
-| type | smallint *UNSIGNED* | 类型 |  | NO | 用于自定义用途，比如分类或过滤 |
+| type | smallint *UNSIGNED* | 类型 | 1 | NO | 用于自定义用途，比如分类或过滤 |
 | privacy | tinyint *UNSIGNED* | 小组模式 | 1 | NO | 1.公开（任何人都能查看小组内帖子）<br>2.非公开（只有成员才能查看小组内帖子） |
 | private_end_after | tinyint *UNSIGNED* | 非公开小组配置 | 1 | NO | 1.不限制<br>2.小组内容全部不可见<br>3.到期前内容可见，新内容不可见 |
 | visibility | tinyint *UNSIGNED* | 是否可发现<br>也可理解为是否显示 | 1 | NO | 1.可发现（任何人都能找到这个小组）<br>2.不可发现（只有成员能找到这个小组） |

@@ -234,6 +234,7 @@ function sidebarDatabase() {
           { text: 'extend_users', link: '/database/extends/extend-users.md' },
           { text: 'stickers', link: '/database/extends/stickers.md' },
           { text: 'seo', link: '/database/extends/seo.md' },
+          { text: 'citys', link: '/database/extends/citys.md' },
         ]
       }
   ]

@@ -246,6 +246,7 @@ function sidebarDatabase() {
         { text: 'extend_users 扩展参与用户表', link: '/database/extends/extend-users.md' },
         { text: 'stickers 表情表', link: '/database/extends/stickers.md' },
         { text: 'seo 搜索引擎优化信息表', link: '/database/extends/seo.md' },
+        { text: 'citys 城市字典', link: '/database/extends/citys.md' },
       ]
     },
   ]

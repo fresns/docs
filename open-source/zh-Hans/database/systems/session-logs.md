@@ -15,7 +15,7 @@ aside: false
 | lang_tag | char(16) | 客户端语言 |  | YES | 产生日志的语言，未开启多语言则留空 |
 | action_name | varchar(128) | 记录目标名称 |  | NO | 功能模型名或者接口路径<br>例如模型名 App\Models\Post<br>例如接口路径：/api/v2/account/login |
 | action_desc | varchar(128) | 记录目标行为 |  | YES | 行为描述，自定义输入内容 |
-| action_result | tinyint *UNSIGNED* | 记录行为结果 |  | NO | 1.未知或执行中 / 2.成功 / 3.失败 |
+| action_state | tinyint *UNSIGNED* | 记录行为结果 |  | NO | 1.未知或执行中 / 2.成功 / 3.失败 |
 | action_id | bigint *UNSIGNED* | 记录目标 ID |  | YES | 例如发表行为，则代表发表内容的 ID<br>插件行为，凭此 ID 可查询对应插件那边记录的关联信息 |
 | account_id | bigint *UNSIGNED* | 账号 ID |  | YES | 关联字段 [accounts->id](../accounts/accounts.md) |
 | user_id | bigint *UNSIGNED* | 用户 ID |  | YES | 关联字段 [users->id](../users/users.md) |

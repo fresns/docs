@@ -15,7 +15,7 @@ aside: false
 | lang_tag | char(16) | Client Language |  | YES | The language of the generated log, leave empty if multilingual is not enabled |
 | action_name | varchar(128) | Record Target Name |  | NO | Function model name or interface path<br>For example, model name App\Models\Post<br>For example, interface path: /api/v2/account/login |
 | action_desc | varchar(128) | Record Target Action |  | YES | Action description, custom input content |
-| action_result | tinyint *UNSIGNED* | Record Action Result |  | NO | 1. Unknown or in progress / 2. Success / 3. Failure |
+| action_state | tinyint *UNSIGNED* | Record Action State |  | NO | 1. Unknown or in progress / 2. Success / 3. Failure |
 | action_id | bigint *UNSIGNED* | Record Target ID |  | YES | For example, in case of a publish action, it represents the ID of the posted content<br>For plugin actions, this ID can be used to query the associated information recorded on the plugin side |
 | account_id | bigint *UNSIGNED* | Account ID |  | YES | Related field [accounts->id](../accounts/accounts.md) |
 | user_id | bigint *UNSIGNED* | User ID |  | YES | Related field [users->id](../users/users.md) |
