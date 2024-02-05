@@ -56,18 +56,6 @@ PermissionUtility::checkUserAffiliation($userId, $accountId);
 | userId | Number | **required** | `users->id` |
 | accountId | Number | **required** | `accounts->id` |
 
-## Determine User Permissions
-
-```php
-PermissionUtility::checkUserPerm($userId, $permUserIds);
-```
-| Parameter Name | Type | Required | Description |
-| --- | --- | --- | --- |
-| userId | Number | **required** | `users->id` |
-| permUserIds | Array | *optional* | ID array of authorised users `["1","2"]` |
-
-*Pass the user IDs with permissions and the user IDs to be confirmed as parameters. This function will check if the user IDs are included in the authorized IDs.*
-
 ## Determine User Role Permissions
 
 ```php

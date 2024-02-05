@@ -56,18 +56,6 @@ PermissionUtility::checkUserAffiliation($userId, $accountId);
 | userId | Number | YES | `users->id` |
 | accountId | Number | YES | `accounts->id` |
 
-## 判断用户权限
-
-```php
-PermissionUtility::checkUserPerm($userId, $permUserIds);
-```
-| 参数名 | 类型 | 是否必传 | 说明 |
-| --- | --- | --- | --- |
-| userId | Number | YES | `users->id` |
-| permUserIds | Array | YES | 有权用户的 ID 数组 `["1","2"]` |
-
-*将拥有权限的用户 ID 和需要确认的用户 ID 传参，该功能会判断用户 ID 是否包括在授权 IDs 当中。*
-
 ## 判断用户角色权限
 
 ```php

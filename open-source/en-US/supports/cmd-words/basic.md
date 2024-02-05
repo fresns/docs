@@ -101,7 +101,7 @@
 | fskey | String | *optional* | Plugin Fskey |
 | actionName | String | **required** | Function model name or interface path<br>For example, model name App\Models\Post<br>For example, interface path: /api/v2/account/login |
 | actionDesc | String | **required** | Action description, custom input content |
-| actionResult | Number | **required** | 1. Unknown or in progress / 2. Success / 3. Failure |
+| actionState | Number | **required** | 1. Unknown or in progress / 2. Success / 3. Failure |
 | actionId | String | *optional* | For example, if it is a publishing action, it represents the ID of the published content<br>Plugin behavior, this ID can query the corresponding plugin-side related information |
 | aid | String | *optional* | Account |
 | uid | Number | *optional* | User |

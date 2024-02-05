@@ -51,7 +51,7 @@
 | actionUid | Number | *optional* | Trigger initiator |
 | actionIsAnonymous | Boolean | *optional* | Is anonymous |
 | actionType | Number | *optional* | Trigger action type 1.Like 2.Dislike 3.Follow 4.Block 5.Publish 6.Edit 7.Delete 8.Sticky 9.Digest 10.Manage |
-| actionObject | Number | *optional* | Trigger target 1.User / 2.Group / 3.Hashtag / 4.Post / 5.Comment 6.Post Log 7.Comment Log 8.Extend Content |
+| actionTarget | Number | *optional* | Trigger target 1.User / 2.Group / 3.Hashtag / 4.Post / 5.Comment 6.Post Log 7.Comment Log 8.Extend Content |
 | actionFsid | Number / String | *optional* | Trigger target Fsid |
 | contentFsid | String | *optional* | Content event pid or cid<br>The published content itself, the action that it triggers |
 
