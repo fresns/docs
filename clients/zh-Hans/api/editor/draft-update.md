@@ -52,14 +52,14 @@
 ::: code-group
 ```json [位置信息示例: en]
 {
-    "name": "Cupertino Library",
+    "langTag": "", // 以下信息文字是什么语言，留空则使用 X-Fresns-Client-Lang-Tag
+    "name": "Cupertino Library", // 必须
     "description": "",
     "placeId": "TRDucfBPkhuzzR9a7", // 参考 Google Map
     "placeType": "building", // 参考 Google Map
-    "mapId": 2,
-    "latitude": 37.3185039,
-    "longitude": -122.0288017,
-    "scale": 14,
+    "mapId": 2, // 必须
+    "latitude": 37.3185039, // 必须
+    "longitude": -122.0288017, // 必须
     "continent": "North America",
     "continentCode": "NA",
     "country": "United States",
@@ -70,12 +70,14 @@
     "cityCode": "SC",
     "district": "Cupertino",
     "address": "10800 Torre Ave, Cupertino, CA 95014",
-    "zip": "95014"
+    "zip": "95014",
+    "moreInfo": {}
 }
 ```
 
 ```json [位置信息示例: zh-Hans]
 {
+    "langTag": "", // 以下信息文字是什么语言，留空则使用 X-Fresns-Client-Lang-Tag
     "name": "东方之门",
     "description": "",
     "placeId": "B020017GRH", // 参考 Google Map
@@ -83,7 +85,6 @@
     "mapId": 4,
     "latitude": 31.299,
     "longitude": 120.585,
-    "scale": 6,
     "continent": "亚洲",
     "continentCode": "AS",
     "country": "中国",
@@ -94,7 +95,8 @@
     "cityCode": "SZ",
     "district": "工业园区",
     "address": "苏州工业园区星港街199号",
-    "zip": "215000"
+    "zip": "215000",
+    "moreInfo": {}
 }
 ```
 

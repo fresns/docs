@@ -5,25 +5,26 @@
 ```php
 \FresnsCmdWord::plugin('Fresns')->createDraft($wordBody);
 ```
-| Parameter Name | Type | Required | **Post** Description | **Comment** Description |
-| --- | --- | --- | --- | --- |
-| uid | Number | **required** | User UID |  |
-| type | Number | **required** | `1` Post | `2` Comment |
-| createType | Number | **required** | Creation Type 1. Quick Create 2. Editor Create |  |
-| editorFskey | String | *optional* | Is it a plugin editor? Empty means no |  |
-| postGid | String | *optional* | Group, default selected group | *Post specific* |
-| postTitle | String | *optional* | Title, default with title | *Post specific* |
-| postIsCommentDisabled | Boolean | NO | Whether comments are disabled | *Post-specific* |
-| postIsCommentPrivate  | Boolean | NO | Whether the comment is private<br>Visible only to the comment author and post author | *Post-specific* |
-| postQuotePid | String | *optional* | Quoted post PID<br>Not required | *Post specific* |
-| commentPid | String | *optional* | *Comment specific* | Which post to comment, required |
-| commentCid | String | *optional* | *Comment specific* | Leave empty to comment on the post<br>If there is a value, it means to reply to this comment |
-| content | String | *optional* | Main content, default with content |  |
-| isMarkdown | Boolean | *optional* | Is the content in MD format? |  |
-| isAnonymous | Boolean | *optional* | Is it anonymous? |  |
-| map | Object | *optional* | Location information |  |
-| extends | Array | *optional* | Extended content |  |
-| archives | Array | *optional* | Extended parameters |  |
+| Parameter Name | Type | Required | Description |
+| --- | --- | --- | --- |
+| uid | Number | **required** | User UID |
+| type | Number | **required** | `1` Post `2` Comment |
+| createType | Number | **required** | Creation type `1` Quick create `2` Editor create |
+| editorFskey | String | *optional* | Is it a plugin editor, empty means no |
+| commentPid | String | *optional* | Comment-Only: Comment on which post, required |
+| commentCid | String | *optional* | Comment-Only: Empty means comment on post<br>Value means reply to this comment |
+| quotePid | String | *optional* | Post-Only: Quoted Post ID |
+| gid | String | *optional* | Post-Only: Group |
+| title | String | *optional* | Post-Only: Title |
+| content | String | *optional* | Content<br>Insert the file in the content in the format `[file:{fid}]` |
+| isMarkdown | Boolean | *optional* | Content in MD format |
+| isAnonymous | Boolean | *optional* | Anonymous |
+| commentPolicy | Number | *optional* | Post-Only: Who can comment?<br>`1` Everyone `2` People you follow `3` People you follow or verified `4` No one is allowed `5` Only users you mention |
+| commentPrivate | Boolean | *optional* | `Post` Are all comments private<br>`Comment` Is this comment private<br>Private is only visible to the author of the comment and the author of the post. |
+| gtid | String | *optional* | Geotag ID |
+| locationInfo | Object | *optional* | Location Info |
+| archives | Array | *optional* | Archive Parameter |
+| extends | Array | *optional* | Extend Content |
 
 ::: details Return Example
 ```json
@@ -96,24 +97,25 @@
 ```php
 \FresnsCmdWord::plugin('Fresns')->contentQuickPublish($wordBody);
 ```
-| Parameter Name | Type | Required | **Post** Description | **Comment** Description |
-| --- | --- | --- | --- | --- |
-| uid | Number | **required** | User UID |  |
-| type | Number | **required** | `1` Post | `2` Comment |
-| postGid | String | *optional* | Group, default selected group | *Post specific* |
-| postTitle | String | *optional* | Title, default with title | *Post specific* |
-| postIsCommentDisabled | Boolean | NO | Whether comments are disabled | *Post-specific* |
-| postIsCommentPrivate  | Boolean | NO | Whether the comment is private<br>Visible only to the comment author and post author | *Post-specific* |
-| postQuotePid | String | *optional* | Quoted post PID<br>Not required | *Post specific* |
-| commentPid | String | *optional* | *Comment specific* | Which post to comment, required |
-| commentCid | String | *optional* | *Comment specific* | Leave empty to comment on the post<br>If there is a value, it means to reply to this comment |
-| content | String | *optional* | Main content, default with content |  |
-| isMarkdown | Boolean | *optional* | Is the content in MD format? |  |
-| isAnonymous | Boolean | *optional* | Is it anonymous? |  |
-| map | Object | *optional* | Location information |  |
-| extends | Array | *optional* | Extended content |  |
-| archives | Array | *optional* | Extended parameters |  |
-| requireReview | Boolean | optional | Whether review is required<br>Default to `false`, meaning no review is needed | Whether review is required<br>Default to `false`, meaning no review is needed |
+| Parameter Name | Type | Required | Description |
+| --- | --- | --- | --- |
+| uid | Number | **required** | User UID |
+| type | Number | **required** | `1` Post `2` Comment |
+| commentPid | String | *optional* | Comment-Only: Comment on which post, required |
+| commentCid | String | *optional* | Comment-Only: Empty means comment on post<br>Value means reply to this comment |
+| quotePid | String | *optional* | Post-Only: Quoted Post ID |
+| gid | String | *optional* | Post-Only: Group |
+| title | String | *optional* | Post-Only: Title |
+| content | String | *optional* | Content<br>Insert the file in the content in the format `[file:{fid}]` |
+| isMarkdown | Boolean | *optional* | Content in MD format |
+| isAnonymous | Boolean | *optional* | Anonymous |
+| commentPolicy | Number | *optional* | Post-Only: Who can comment?<br>`1` Everyone `2` People you follow `3` People you follow or verified `4` No one is allowed `5` Only users you mention |
+| commentPrivate | Boolean | *optional* | `Post` Are all comments private<br>`Comment` Is this comment private<br>Private is only visible to the author of the comment and the author of the post. |
+| gtid | String | *optional* | Geotag ID |
+| locationInfo | String | *optional* | Location Info `Object to String` |
+| archives | String | *optional* | Archive Parameter `Array to String` |
+| extends | String | *optional* | Extend Content `Array to String` |
+| requireReview | Boolean | *optional* | Whether review is required<br>Default to `false`, meaning no review is needed |
 
 ::: details Return Example
 ```json
@@ -245,18 +247,3 @@ $wordBody = [
 | uid | Number | **required** | Specify user |
 | fskey | String | **required** | Plugin Fskey |
 | moreInfo | Json | *optional* | Additional record information (Json) |
-
-## setCommentExtendButton
-
-```php
-\FresnsCmdWord::plugin('Fresns')->setCommentExtendButton($wordBody);
-```
-| Parameter Name | Type | Required | Description |
-| --- | --- | --- | --- |
-| cid | String | **required** |  |
-| close | Boolean | *optional* | `false` disables extension button<br>`true` enables extension button |
-| change | String | *optional* | `default` Default<br>`active` Two-state |
-| activeNameKey | String | *optional* | For change=active only, leave blank for no change<br>Passing configuration table [configs->item_key](../../database/systems/configs.md) can adapt to multiple languages |
-| activeStyle | String | *optional* | For change=active only, leave blank for no change<br>`primary`, `secondary`, `success`, `danger`, `warning`, `info` |
-
-- Choose one between `close` and `change` to pass as a parameter

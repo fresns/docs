@@ -52,10 +52,14 @@
 ::: code-group
 ```json [Location Info]
 {
-    "mapId": 2,
-    "latitude": 37.3185039,
-    "longitude": -122.0288017,
-    "scale": 14,
+    "langTag": "", // What language this location text is in, if no value then use X-Fresns-Client-Lang-Tag
+    "name": "Cupertino Library", // required
+    "description": "",
+    "placeId": "TRDucfBPkhuzzR9a7", // Reference: Google Map
+    "placeType": "building", // Reference: Google Map
+    "mapId": 2, // required 
+    "latitude": 37.3185039, // required 
+    "longitude": -122.0288017, // required
     "continent": "North America",
     "continentCode": "NA",
     "country": "United States",
@@ -67,8 +71,7 @@
     "district": "Cupertino",
     "address": "10800 Torre Ave, Cupertino, CA 95014",
     "zip": "95014",
-    "poi": "Cupertino Library",
-    "poiId": "TRDucfBPkhuzzR9a7",
+    "moreInfo": {}
 }
 ```
 

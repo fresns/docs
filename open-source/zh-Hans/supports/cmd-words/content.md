@@ -5,25 +5,26 @@
 ```php
 \FresnsCmdWord::plugin('Fresns')->createDraft($wordBody);
 ```
-| 参数名 | 类型 | 是否必传 | **帖子**说明 | **评论**说明 |
-| --- | --- | --- | --- | --- |
-| uid | Number | YES | 用户 UID |  |
-| type | Number | YES | `1` 帖子 | `2` 评论 |
-| createType | Number | YES | 创建类型 1.快捷创建 2.编辑器创建 |  |
-| editorFskey | String | NO | 是否插件编辑器，留空为否 |  |
-| postGid | String | NO | 小组，默认选中了小组 | *帖子专用* |
-| postTitle | String | NO | 标题，默认自带标题 | *帖子专用* |
-| postIsCommentDisabled | Boolean | NO | 是否禁止评论 | *帖子专用* |
-| postIsCommentPrivate | Boolean | NO | 是否私有评论<br>私有则仅评论作者和帖子作者可见 | *帖子专用* |
-| postQuotePid | String | NO | 引用的帖子 PID<br>非必填 | *帖子专用* |
-| commentPid | String | NO | *评论专用* | 评论哪个帖子，必传 |
-| commentCid | String | NO | *评论专用* | 留空表示评论帖子<br>有值表示回复这条评论 |
-| content | String | NO | 正文内容，默认自带内容 |  |
-| isMarkdown | Boolean | NO | 内容是否为 MD 格式 |  |
-| isAnonymous | Boolean | NO | 是否匿名 |  |
-| map | Object | NO | 位置信息 |  |
-| extends | Array | NO | 扩展内容 |  |
-| archives | Array | NO | 扩展参数 |  |
+| 参数名 | 类型 | 是否必传 | 说明 |
+| --- | --- | --- | --- |
+| uid | Number | YES | 用户 UID |
+| type | Number | YES | `1` 帖子 `2` 评论 |
+| createType | Number | YES | 创建类型 `1` 快捷创建 `2` 编辑器创建 |
+| editorFskey | String | NO | 是否为编辑器插件<br>传参 `Fresns` 则重置为默认编辑器 |
+| commentPid | String | NO | 评论专用: 评论哪个帖子，必传 |
+| commentCid | String | NO | 评论专用: 回复哪条评论<br>留空表示评论帖子 |
+| quotePid | String | NO | 帖子专用: 引用的帖子 PID |
+| gid | String | NO | 帖子专用: 小组 |
+| title | String | NO | 帖子专用: 标题 |
+| content | String | NO | 正文内容<br>内容中插入文件，格式为 `[file:{fid}]` |
+| isMarkdown | Boolean | NO | 内容是否为 MD 格式 |
+| isAnonymous | Boolean | NO | 是否匿名 |
+| commentPolicy | Number | NO | 帖子专用: 谁可以评论<br>`1` 所有人 `2` 你关注的人 `3` 你关注的人和已认证的人 `4` 不允许所有人 `5` 仅限你提及到的用户 |
+| commentPrivate | Boolean | NO | `帖子使用` 所有评论是否为私有<br>`评论使用` 本条评论是否为私有<br>私有则仅评论作者和帖子作者可见 |
+| gtid | String | NO | 地理位置 ID |
+| locationInfo | Object | NO | 地理位置信息 |
+| archives | Array | NO | 扩展参数 |
+| extends | Array | NO | 扩展内容 |
 
 ::: details 结果示例
 ```json
@@ -97,24 +98,25 @@
 ```php
 \FresnsCmdWord::plugin('Fresns')->contentQuickPublish($wordBody);
 ```
-| 参数名 | 类型 | 是否必传 | **帖子**说明 | **评论**说明 |
-| --- | --- | --- | --- | --- |
-| uid | Number | YES | 用户 UID |  |
-| type | Number | YES | `1` 帖子 | `2` 评论 |
-| postGid | String | NO | 小组，默认选中了小组 | *帖子专用* |
-| postTitle | String | NO | 标题，默认自带标题 | *帖子专用* |
-| postIsCommentDisabled | Boolean | NO | 是否禁止评论 | *帖子专用* |
-| postIsCommentPrivate | Boolean | NO | 是否私有评论<br>私有则仅评论作者和帖子作者可见 | *帖子专用* |
-| postQuotePid | String | NO | 引用的帖子 PID<br>非必填 | *帖子专用* |
-| commentPid | String | NO | *评论专用* | 评论哪个帖子，必传 |
-| commentCid | String | NO | *评论专用* | 留空表示评论帖子<br>有值表示回复这条评论 |
-| content | String | NO | 正文内容，默认自带内容 |  |
-| isMarkdown | Boolean | NO | 内容是否为 MD 格式 |  |
-| isAnonymous | Boolean | NO | 是否匿名 |  |
-| map | Object | NO | 位置信息 |  |
-| extends | Array | NO | 扩展内容 |  |
-| archives | Array | NO | 扩展参数 |  |
-| requireReview | Boolean | NO | 是否需要审核<br>默认为 `false` 不需要审核 | 是否需要审核<br>默认为 `false` 不需要审核 |
+| 参数名 | 类型 | 是否必传 | 说明 |
+| --- | --- | --- | --- |
+| uid | Number | YES | 用户 UID |
+| type | Number | YES | `1` 帖子 `2` 评论 |
+| commentPid | String | NO | 评论专用: 评论哪个帖子，必传 |
+| commentCid | String | NO | 评论专用: 回复哪条评论<br>留空表示评论帖子 |
+| quotePid | String | NO | 帖子专用: 引用的帖子 PID |
+| gid | String | NO | 帖子专用: 小组 |
+| title | String | NO | 帖子专用: 标题 |
+| content | String | NO | 正文内容<br>内容中插入文件，格式为 `[file:{fid}]` |
+| isMarkdown | Boolean | NO | 内容是否为 MD 格式 |
+| isAnonymous | Boolean | NO | 是否匿名 |
+| commentPolicy | Number | NO | 帖子专用: 谁可以评论<br>`1` 所有人 `2` 你关注的人 `3` 你关注的人和已认证的人 `4` 不允许所有人 `5` 仅限你提及到的用户 |
+| commentPrivate | Boolean | NO | `帖子使用` 所有评论是否为私有<br>`评论使用` 本条评论是否为私有<br>私有则仅评论作者和帖子作者可见 |
+| gtid | String | NO | 地理位置 ID |
+| locationInfo | String | NO | 位置信息: 压缩 Object 信息为字符串传参 |
+| archives | String | NO | 扩展参数: 压缩 Array 信息为字符串传参 |
+| extends | String | NO | 扩展内容: 压缩 Array 信息为字符串传参 |
+| requireReview | Boolean | NO | 是否需要审核<br>默认为 `false` 不需要审核 |
 
 ::: details 结果示例
 ```json
@@ -245,18 +247,3 @@ $wordBody = [
 | uid | Number | YES | 指定用户 |
 | fskey | String | YES | 插件 Fskey |
 | moreInfo | Json | NO | 额外记录信息（Json） |
-
-## 设置评论扩展按钮
-
-```php
-\FresnsCmdWord::plugin('Fresns')->setCommentExtendButton($wordBody);
-```
-| 参数名 | 类型 | 是否必传 | 说明 |
-| --- | --- | --- | --- |
-| cid | String | YES |  |
-| close | Boolean | NO | `false` 关闭扩展按钮<br>`true`开启扩展按钮 |
-| change | String | NO | `default` 默认<br>`active`二态状态 |
-| activeNameKey | String | NO | change=active 专用，留空则不修改<br>传参配置表 [configs->item_key](../../database/systems/configs.md) 可适配多语言 |
-| activeStyle | String | NO | change=active 专用，留空则不修改<br>`primary`, `secondary`, `success`, `danger`, `warning`, `info` |
-
-- `close` 和 `change` 二选一传参
