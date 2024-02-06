@@ -48,7 +48,6 @@ aside: false
     "mapId": 2,
     "latitude": 37.3185039,
     "longitude": -122.0288017,
-    "scale": 14,
     "continent": "North America",
     "continentCode": "NA",
     "country": "United States",

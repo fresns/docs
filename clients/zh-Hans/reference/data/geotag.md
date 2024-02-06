@@ -16,7 +16,6 @@ aside: false
     "mapId": "Number / 地图编号",
     "latitude": "String / 纬度",
     "longitude": "String / 经度",
-    "scale": "String / 定位地图比例",
     "continent": "String / 洲名",
     "continentCode": "String / 洲名代码",
     "country": "String / 国家名",

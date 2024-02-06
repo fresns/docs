@@ -16,7 +16,6 @@ aside: false
     "mapId": "Number / Latitude and Longitude Map ID",
     "latitude": "String / Latitude",
     "longitude": "String / Longitude",
-    "scale": "String / Map Scale",
     "continent": "String / Continent Name",
     "continentCode": "String / Continent Code",
     "country": "String / Country Name",

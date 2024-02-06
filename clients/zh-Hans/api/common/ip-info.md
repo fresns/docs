@@ -42,7 +42,6 @@
         "mapId": 2, // 字典数据: 地图服务商编号
         "latitude": 1.29758,
         "longitude": 103.773,
-        "scale": null,
         "continent": "Asia",
         "continentCode": "AS",
         "country": "Singapore",

@@ -167,7 +167,6 @@ X-Fresns-Aid=wIfu6jaF&X-Fresns-Aid-Token=uoX1hk6SHUgB2MFGJwNx38dem9DA7Vsz&X-Fres
     "mapId": 2, // 字典数据: 地图服务商编号
     "latitude": 1.29758,
     "longitude": 103.773,
-    "scale": null,
     "continent": "Asia",
     "continentCode": "AS",
     "country": "Singapore",

@@ -42,7 +42,6 @@
         "mapId": 2, // Dictionary data: Map service provider number
         "latitude": 1.29758,
         "longitude": 103.773,
-        "scale": null,
         "continent": "Asia",
         "continentCode": "AS",
         "country": "Singapore",
