@@ -20,7 +20,8 @@ aside: false
 | map_longitude | decimal(12,8) | 地图-经度 |  | NO | 浮点数，范围为 -180~180，负数表示西经 |
 | map_latitude | decimal(12,8) | 地图-纬度 |  | NO | 浮点数，范围为 -90~90，负数表示南纬 |
 | map_location | point<br>geography | 地图-经纬度  |  | NO | longitude, latitude |
-| location_info | json | 位置信息字段 |  | YES |  |
+| district | json | 地区 |  | YES | **多语言** |
+| address | json | 地址 |  | YES | **多语言** |
 | more_info | json | 更多信息字段 |  | YES |  |
 | view_count | int *UNSIGNED* | 浏览数 | 0 | NO | 由插件记录 |
 | like_count | int *UNSIGNED* | 赞数 | 0 | NO | 有多少用户赞了该地理 |

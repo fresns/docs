@@ -20,7 +20,8 @@ aside: false
 | map_longitude | decimal(12,8) | Map - Longitude |  | NO | Decimal, range -180~180, negative for west longitude |
 | map_latitude | decimal(12,8) | Map - Latitude |  | NO | Decimal, range -90~90, negative for south latitude |
 | map_location | point<br>geography | Map - Location |  | NO | longitude, latitude |
-| location_info | json | Location Information |  | YES |  |
+| district | json | District |  | YES | **Multilingual** |
+| address | json | Address |  | YES | **Multilingual** |
 | more_info | json | More Info |  | YES |  |
 | view_count | int *UNSIGNED* | Number of View | 0 | NO | Count by plugin |
 | like_count | int *UNSIGNED* | Like Count | 0 | NO | Number of users who liked the topic |
