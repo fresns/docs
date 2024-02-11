@@ -161,8 +161,8 @@
 
 | Menu Title | Key Name | Default Key Value | Value Type | Description |
 | --- | --- | --- | --- | --- |
-| Users who liked them | profile_likes_name |  | object | **Multilingual** |
-| Users who disliked them | profile_dislikes_name |  | object | **Multilingual** |
+| Users who liked them | profile_likers_name |  | object | **Multilingual** |
+| Users who disliked them | profile_dislikers_name |  | object | **Multilingual** |
 | Users who followed them | profile_followers_name |  | object | **Multilingual** |
 | Users who blocked them | profile_blockers_name |  | object | **Multilingual** |
 | Followers You Know | profile_followers_you_follow_enabled | true | boolean |  |

@@ -161,8 +161,8 @@
 
 | 栏目标题 | 键名 | 默认键值 | 键值类型 | 说明 |
 | --- | --- | --- | --- | --- |
-| 赞他的用户 | profile_likes_name |  | object | `被喜欢` **多语言** |
-| 踩他的用户 | profile_dislikes_name |  | object | **多语言** |
+| 赞他的用户 | profile_likers_name |  | object | `被喜欢` **多语言** |
+| 踩他的用户 | profile_dislikers_name |  | object | **多语言** |
 | 关注他的用户 | profile_followers_name |  | object | `粉丝` **多语言** |
 | 屏蔽他的用户 | profile_blockers_name |  | object | `被拉黑` **多语言** |
 | 你认识的关注者 | profile_followers_you_follow_enabled | true | boolean |  |
