@@ -510,9 +510,9 @@
 | 键名 | 键值类型 | 描述 |
 | --- | --- | --- |
 | user_like_public_record | Number | 赞他的用户 |
-| profile_likes_name | String |  |
+| profile_likers_name | String |  |
 | user_dislike_public_record | Number | 踩他的用户 |
-| profile_dislikes_name | String |  |
+| profile_dislikers_name | String |  |
 | user_follow_public_record | Number | 关注他的用户 |
 | profile_followers_name | String |  |
 | user_block_public_record | Number | 屏蔽他的用户 |

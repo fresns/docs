@@ -503,9 +503,9 @@
 | Key Name | Value Type | Description |
 | --- | --- | --- |
 | user_like_public_record | Number | Users who liked them |
-| profile_likes_name | String |  |
+| profile_likers_name | String |  |
 | user_dislike_public_record | Number | Users who disliked them |
-| profile_dislikes_name | String |  |
+| profile_dislikers_name | String |  |
 | user_follow_public_record | Number | Users who followed them |
 | profile_followers_name | String |  |
 | user_block_public_record | Number | Users who blocked them |
