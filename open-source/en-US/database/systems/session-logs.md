@@ -13,7 +13,7 @@ aside: false
 | version | varchar(16) | Version Number |  | NO | Semantic versioning |
 | app_id | char(8) | App ID |  | YES | [session_keys->app_id](session-keys.md) |
 | lang_tag | char(16) | Client Language |  | YES | The language of the generated log, leave empty if multilingual is not enabled |
-| action_name | varchar(128) | Record Target Name |  | NO | Function model name or interface path<br>For example, model name App\Models\Post<br>For example, interface path: /api/v2/account/login |
+| action_name | varchar(128) | Record Target Name |  | NO | Function model name or interface path<br>For example, model name App\Models\Post<br>For example, interface path: `/api/fresns/v1/account/auth-token` |
 | action_desc | varchar(128) | Record Target Action |  | YES | Action description, custom input content |
 | action_state | tinyint *UNSIGNED* | Record Action State |  | NO | 1. Unknown or in progress / 2. Success / 3. Failure |
 | action_id | bigint *UNSIGNED* | Record Target ID |  | YES | For example, in case of a publish action, it represents the ID of the posted content<br>For plugin actions, this ID can be used to query the associated information recorded on the plugin side |

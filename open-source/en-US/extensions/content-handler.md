@@ -9,19 +9,19 @@
 
 | Endpoint Path | Description | Command Word |
 | --- | --- | --- |
-| [/api/fresns/v1/post/list](../../api/post/list.md) | Get post all list | `getPosts` |
-| [/api/fresns/v1/post/timelines](../../api/post/timelines.md) | Get post list by timelines | `getPostsByTimelines` |
-| [/api/fresns/v1/post/nearby](../../api/post/nearby.md) | Get post list by nearby | `getPostsByNearby` |
-| [/api/fresns/v1/comment/list](../../api/comment/list.md) | Get comment all list | `getComments` |
-| [/api/fresns/v1/comment/timelines](../../api/comment/timelines.md) | Get comment list by timelines | `getCommentsByTimelines` |
-| [/api/fresns/v1/comment/nearby](../../api/comment/nearby.md) | Get comment list by nearby | `getCommentsByNearby` |
+| [/api/fresns/v1/post/list](https://docs.fresns.com/clients/api/post/list.html) | Get post all list | `getPosts` |
+| [/api/fresns/v1/post/timelines](https://docs.fresns.com/clients/api/post/timelines.html) | Get post list by timelines | `getPostsByTimelines` |
+| [/api/fresns/v1/post/nearby](https://docs.fresns.com/clients/api/post/nearby.html) | Get post list by nearby | `getPostsByNearby` |
+| [/api/fresns/v1/comment/list](https://docs.fresns.com/clients/api/comment/list.html) | Get comment all list | `getComments` |
+| [/api/fresns/v1/comment/timelines](https://docs.fresns.com/clients/api/comment/timelines.html) | Get comment list by timelines | `getCommentsByTimelines` |
+| [/api/fresns/v1/comment/nearby](https://docs.fresns.com/clients/api/comment/nearby.html) | Get comment list by nearby | `getCommentsByNearby` |
 
 ### Post Detail
 
 | Endpoint Path | Description | Command Word |
 | --- | --- | --- |
-| [/api/fresns/v1/post/detail](../../api/post/detail.md) | Get post detail | `getPostDetail` |
-| [/api/fresns/v1/comment/detail](../../api/comment/detail.md) | Get comment detail | `getCommentDetail` |
+| [/api/fresns/v1/post/detail](https://docs.fresns.com/clients/api/post/detail.html) | Get post detail | `getPostDetail` |
+| [/api/fresns/v1/comment/detail](https://docs.fresns.com/clients/api/comment/detail.html) | Get comment detail | `getCommentDetail` |
 
 ### Search
 

@@ -34,7 +34,7 @@
 ```
 | 参数名 | 类型 | 是否必传 | 说明 |
 | --- | --- | --- | --- |
-| platformId | Number | YES | 平台编号（配置表 [platforms](../../database/dictionary/platforms.md) 键名的键值） |
+| platformId | Number | YES | 平台编号（配置表 [platforms](../../configs/dictionary/platforms.md) 键名的键值） |
 | usageType | Number | YES | [文件用途类型](../../database/numbered-description.md#文件用途类型) |
 | tableName | String | YES | 来源表名（哪个张使用） |
 | tableColumn | String | YES | 来源字段名（哪个字段使用） |
@@ -64,7 +64,7 @@
 ::: details 逻辑说明
 - 入库方法可以调用主程序封装功能 [FileUtility::saveFileInfoToDatabase($bodyInfo, $diskPath, $file)](../utilities/file.md#保存文件信息到数据库)
 - 如果文件类型为视频 `type=2`，还需处理视频封面图，对应字段为 `file->video_poster_path`。
-- 查看返回结果[文件信息结构](../../extensions/plugin/storage.md#文件信息结构)
+- 查看返回结果[文件信息结构](../../extensions/storage.md#文件信息结构)
 :::
 
 ## 上传文件信息
@@ -74,7 +74,7 @@
 ```
 | 参数名 | 类型 | 是否必传 | 说明 |
 | --- | --- | --- | --- |
-| platformId | Number | YES | 平台编号（配置表 [platforms](../../database/dictionary/platforms.md) 键名的键值） |
+| platformId | Number | YES | 平台编号（配置表 [platforms](../../configs/dictionary/platforms.md) 键名的键值） |
 | usageType | Number | YES | [文件用途类型](../../database/numbered-description.md#文件用途类型) |
 | tableName | String | YES | 来源表名 |
 | tableColumn | String | YES | 来源字段名 |
@@ -132,7 +132,7 @@
 ::: details 逻辑说明
 - 入库方法可以调用主程序封装功能 [FileUtility::uploadFileInfo($bodyInfo)](../utilities/file.md#上传文件信息)
 - 如果文件类型为视频 `type=2`，还需处理视频封面图，对应字段为 `file->videoPosterPath`。
-- 查看返回结果[文件信息结构](../../extensions/plugin/storage.md#文件信息结构)
+- 查看返回结果[文件信息结构](../../extensions/storage.md#文件信息结构)
 :::
 
 ## 获取防盗链文件信息[单个]

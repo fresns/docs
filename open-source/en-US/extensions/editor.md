@@ -47,16 +47,16 @@ ConfigUtility::getPublishConfigByType($userId, $type, $langTag, $timezone);
 
 ## Editor Function Flow
 
-- 1. Obtain configuration parameter `GET` `/api/v2/editor/{type}/config` to identify permission and render the editor
+- 1. Obtain configuration parameter `GET` `/api/fresns/v1/editor/{type}/configs` to identify permission and render the editor
     - `editor` parameter rendering editor
     - `publish` parameter identifying and publishing permission
     - `editPerm` parameter identifying and editing permission
-- 2. Request for `GET` `/api/v2/editor/{type}/drafts` interface to obtain the draft list
-    - 2.1 When the draft list is empty, request for `POST` `/api/v2/editor/{type}/create` to create the draft automatically
+- 2. Request for `GET` `/api/fresns/v1/editor/{type}/drafts` interface to obtain the draft list
+    - 2.1 When the draft list is empty, request for `POST` `/api/fresns/v1/editor/{type}/draft` to create the draft automatically
     - 2.2 If there is a draft, pop up the selection layer.
-        - `Select draft` request for `GET` `/api/v2/editor/{type}/{draftId}` to load the content of the draft
-        - `Create a draft` request for `POST` `/api/v2/editor/{type}/create` to create a new draft
-- 3. The editor updates the logic with `PUT` `/api/v2/editor/{type}/{draftId}` interface in a real-time manner
+        - `Select draft` request for `GET` `/api/fresns/v1/editor/{type}/draft/{did}` to load the content of the draft
+        - `Create a draft` request for `POST` `/api/fresns/v1/editor/{type}/draft` to create a new draft
+- 3. The editor updates the logic with `PATCH` `/api/fresns/v1/editor/{type}/draft/{did}` interface in a real-time manner
     - 3.1 When a group is selected (or changed), trigger update;
     - 3.2 When images are uploaded (or deleted), trigger update;
     - 3.3 When videos are uploaded (or deleted), trigger update;
@@ -76,5 +76,5 @@ ConfigUtility::getPublishConfigByType($userId, $type, $langTag, $timezone);
 ## Content Rules
 
 - **Mention(At)**: preceded by `@` and ended with a space.
-- **Hashtag(Topic)**: based on the configured [editor.toolbar.hashtag.format](../../api/editor/config.md). If the value is 1, the topic should be preceded by `#` and ended with a space; if the value is 2, the topic should be preceded by `#` and ended with `#`. there could be a single space.
+- **Hashtag(Topic)**: based on the configured [editor.toolbar.hashtag.format](https://docs.fresns.com/clients/api/editor/configs.html). If the value is 1, the topic should be preceded by `#` and ended with a space; if the value is 2, the topic should be preceded by `#` and ended with `#`. there could be a single space.
 - **Sticker(Emoji)**: preceded by `[` and ended with `]`, with no space between `[` and `]`.

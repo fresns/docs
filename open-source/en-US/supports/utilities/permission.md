@@ -81,7 +81,7 @@ PermissionUtility::checkUserConversationPerm($receiveUserId, $authUserId, $langT
 
 ::: details View Result
 - If authorized, the output will be `0`
-- If unauthorized, output the corresponding [Error Code](../../api/error-code.md)
+- If unauthorized, output the corresponding [Error Code](https://docs.fresns.com/clients/reference/error-codes.html)
 :::
 
 ## Determine if User is Group Administrator

@@ -62,7 +62,7 @@ FileHelper::fresnsFileInfoById($fileIdOrFid);
 | fileIdOrFid | String | YES | `files->id` 或者 `files->fid` |
 
 - 输出结果会判断防盗链配置，如果开启则输出防盗链文件信息。
-- [查看文件信息格式](../../extensions/plugin/storage.md#文件信息结构)
+- [查看文件信息格式](../../extensions/storage.md#文件信息结构)
 
 ## 根据文件 ID 或 FID 获取多个信息
 

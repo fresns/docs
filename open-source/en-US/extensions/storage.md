@@ -34,7 +34,7 @@ The access path to the plugin upload page is configured in the `accessPath` para
 > Since the Fresns API and editor use the basic form upload mode, there is a risk of timeout interruptions for large files. The storage plugin can provide an upload page that integrates JS-SDK on the plugin page to implement slicing and breakpoint uploads for large files.
 
 - Path Reference `/qiniu/upload?sign={sign}&config={uploadInfo}&postMessageKey={postMessageKey}`
-- [Introduction of variable names in paths](../callback/variables.md)
+- [Introduction of variable names in paths](https://docs.fresns.com/clients/reference/callback/variables.html)
 
 ## Audio and video functions
 

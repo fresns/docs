@@ -6,7 +6,7 @@
 \FresnsCmdWord::plugin('Fresns')->checkHeaders();
 ```
 
-- 参数值见 [API 请求标头](../../api/headers.md)
+- 参数值见 [API 请求标头](https://docs.fresns.com/zh-Hans/clients/reference/headers.html)
 
 ::: details 结果示例
 ```json
@@ -39,7 +39,7 @@
 ```
 | 参数名 | 类型 | 是否必传 | 说明 |
 | --- | --- | --- | --- |
-| platformId | Number | YES | 平台编号（配置表 [platforms](../../database/dictionary/platforms.md) 键名的键值） |
+| platformId | Number | YES | 平台编号（配置表 [platforms](../../configs/dictionary/platforms.md) 键名的键值） |
 | version | String | YES | 语义化版本号 |
 | appId | String | YES | App ID |
 | timestamp | Number | YES | 签名生成时间（当前 Unix 时间戳，精确到秒或毫秒都支持） |
@@ -58,7 +58,7 @@
 ```
 | 参数名 | 类型 | 是否必传 | 说明 |
 | --- | --- | --- | --- |
-| accessToken | String | YES | 参见：[为插件生成路径凭证](../../extensions/callback/url-authorization.md) |
+| accessToken | String | YES | 参见：[为插件生成访问令牌](https://docs.fresns.com/zh-Hans/clients/reference/callback/access-token.html) |
 | accountLogin | Boolean | NO | 是否要求必须登录账号，留空则不要求 |
 | userLogin | Boolean | NO | 是否要求必须登录用户，留空则不要求 |
 
@@ -103,12 +103,12 @@
 | 参数名 | 类型 | 是否必传 | 说明 |
 | --- | --- | --- | --- |
 | type | Number | YES | [记录类型](../../database/systems/session-logs.md#日志类型-type) |
-| platformId | Number | YES | 平台编号（配置表 [platforms](../../database/dictionary/platforms.md) 键名的键值） |
+| platformId | Number | YES | 平台编号（配置表 [platforms](../../configs/dictionary/platforms.md) 键名的键值） |
 | version | String | YES | 语义化版本号，例如: `2.0.0` |
 | appId | String | NO | 密钥 App ID |
 | langTag | String | NO | 语言标签 |
 | fskey | String | NO | 插件 Fskey |
-| actionName | String | YES | 功能模型名或者接口路径<br>例如模型名 App\Models\Post<br>例如接口路径：/api/v2/account/login |
+| actionName | String | YES | 功能模型名或者接口路径<br>例如模型名 App\Models\Post<br>例如接口路径：`/api/fresns/v1/account/auth-token` |
 | actionDesc | String | YES | 行为描述，自定义输入内容 |
 | actionState | Number | YES | 1.未知或执行中 / 2.成功 / 3.失败 |
 | actionId | String | NO | 例如发表行为，则代表发表内容的 ID<br>插件行为，凭此 ID 可查询对应插件那边记录的关联信息 |
@@ -129,7 +129,7 @@
 | type | Number | YES | 类型：1.邮件验证码 / 2.短信验证码 |
 | account | String | YES | 账号（邮箱或手机号） |
 | countryCode | Number | NO | 国际区号（手机号专用） |
-| templateId | Number | YES | [验证码模板 ID](../../database/keyname/send.md#验证码模板设置) |
+| templateId | Number | YES | [验证码模板 ID](../../configs/panel/send.md#验证码模板设置) |
 | langTag | String | YES | 语言标签 |
 
 ## 核对验证码
@@ -143,7 +143,7 @@
 | account | String | YES | 账号（邮箱或手机号） |
 | countryCode | Number | NO | 国际区号（手机号专用） |
 | verifyCode | String | YES | 验证码 |
-| templateId | Number | YES | [验证码模板 ID](../../database/keyname/send.md#验证码模板设置) |
+| templateId | Number | YES | [验证码模板 ID](../../configs/panel/send.md#验证码模板设置) |
 
 ## 获取 IP 信息
 
@@ -154,4 +154,4 @@
 | --- | --- | --- | --- |
 | ip | String | YES | 支持 IPv4 和 IPv6 |
 
-- 输出结果同 [IP 信息接口](../../api/common/ip-info.md)
+- 输出结果同 [IP 信息接口](https://docs.fresns.com/zh-Hans/clients/api/common/ip-info.html)

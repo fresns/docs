@@ -47,16 +47,16 @@ ConfigUtility::getPublishConfigByType($userId, $type, $langTag, $timezone);
 
 ## 编辑器功能流程
 
-- 1、获取配置参数 `GET` `/api/v2/editor/{type}/config`，判断权限并渲染编辑器
+- 1、获取配置参数 `GET` `/api/fresns/v1/editor/{type}/configs`，判断权限并渲染编辑器
     - `editor` 参数渲染编辑器
     - `publish` 参数判断发表权限
     - `editPerm` 参数判断编辑权限
-- 2、请求 `GET` `/api/v2/editor/{type}/drafts` 接口，获取草稿列表
-    - 2.1、草稿列表为空，自动请求 `POST` `/api/v2/editor/{type}/create` 创建草稿
+- 2、请求 `GET` `/api/fresns/v1/editor/{type}/drafts` 接口，获取草稿列表
+    - 2.1、草稿列表为空，自动请求 `POST` `/api/fresns/v1/editor/{type}/draft` 创建草稿
     - 2.2、有草稿，弹出选择层。
-        - `选择草稿` 请求 `GET` `/api/v2/editor/{type}/{draftId}` 加载草稿内容
-        - `创建草稿` 请求 `POST` `/api/v2/editor/{type}/create` 创建新的草稿
-- 3、编辑器实时更新逻辑，使用 `PUT` `/api/v2/editor/{type}/{draftId}` 接口
+        - `选择草稿` 请求 `GET` `/api/fresns/v1/editor/{type}/draft/{did}` 加载草稿内容
+        - `创建草稿` 请求 `POST` `/api/fresns/v1/editor/{type}/draft` 创建新的草稿
+- 3、编辑器实时更新逻辑，使用 `PATCH` `/api/fresns/v1/editor/{type}/draft/{did}` 接口
     - 3.1、当选择了小组（或更换了小组），触发更新；
     - 3.2、当上传了图片（或者删除了图片），触发更新；
     - 3.3、当上传了视频（或者删除了视频），触发更新；
@@ -76,5 +76,5 @@ ConfigUtility::getPublishConfigByType($userId, $type, $langTag, $timezone);
 ## 内容规律
 
 - **艾特**：以 @ 符号开头，空格结尾。
-- **话题**：根据配置 [editor.toolbar.hashtag.format](../../api/editor/config.md)，值为 1 则是 # 符号开头，空格结尾；值为 2，则是 # 符号开头，# 符号结尾，双 # 号中间可以有单个空格（不能连续空格），但是符号后面或前面不支持有空格。
+- **话题**：根据配置 [editor.toolbar.hashtag.format](https://docs.fresns.com/zh-Hans/clients/api/editor/configs.html)，值为 1 则是 # 符号开头，空格结尾；值为 2，则是 # 符号开头，# 符号结尾，双 # 号中间可以有单个空格（不能连续空格），但是符号后面或前面不支持有空格。
 - **表情符**：以 [ 符号开头，] 符号结尾，中间不能有空格。

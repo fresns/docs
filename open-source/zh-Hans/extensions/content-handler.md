@@ -9,19 +9,19 @@
 
 | 接口路径 | 描述 | 命令字 |
 | --- | --- | --- |
-| [/api/fresns/v1/post/list](../../api/post/list.md) | 获取帖子列表 | `getPosts` |
-| [/api/fresns/v1/post/timelines](../../api/post/timelines.md) | 获取时间线的帖子列表 | `getPostsByTimelines` |
-| [/api/fresns/v1/post/nearby](../../api/post/nearby.md) | 获取附近的帖子列表 | `getPostsByNearby` |
-| [/api/fresns/v1/comment/list](../../api/comment/list.md) | 获取评论列表 | `getComments` |
-| [/api/fresns/v1/comment/timelines](../../api/comment/timelines.md) | 获取时间线的评论列表 | `getCommentsByTimelines` |
-| [/api/fresns/v1/comment/nearby](../../api/comment/nearby.md) | 获取附近的评论列表 | `getCommentsByNearby` |
+| [/api/fresns/v1/post/list](https://docs.fresns.com/zh-Hans/clients/api/post/list.html) | 获取帖子列表 | `getPosts` |
+| [/api/fresns/v1/post/timelines](https://docs.fresns.com/zh-Hans/clients/api/post/timelines.html) | 获取时间线的帖子列表 | `getPostsByTimelines` |
+| [/api/fresns/v1/post/nearby](https://docs.fresns.com/zh-Hans/clients/api/post/nearby.html) | 获取附近的帖子列表 | `getPostsByNearby` |
+| [/api/fresns/v1/comment/list](https://docs.fresns.com/zh-Hans/clients/api/comment/list.html) | 获取评论列表 | `getComments` |
+| [/api/fresns/v1/comment/timelines](https://docs.fresns.com/zh-Hans/clients/api/comment/timelines.html) | 获取时间线的评论列表 | `getCommentsByTimelines` |
+| [/api/fresns/v1/comment/nearby](https://docs.fresns.com/zh-Hans/clients/api/comment/nearby.html) | 获取附近的评论列表 | `getCommentsByNearby` |
 
 ### 帖子详情
 
 | 接口路径 | 描述 | 命令字 |
 | --- | --- | --- |
-| [/api/fresns/v1/post/detail](../../api/post/detail.md) | 获取帖子详情 | `getPostDetail` |
-| [/api/fresns/v1/comment/detail](../../api/comment/detail.md) | 获取评论详情 | `getCommentDetail` |
+| [/api/fresns/v1/post/detail](https://docs.fresns.com/zh-Hans/clients/api/post/detail.html) | 获取帖子详情 | `getPostDetail` |
+| [/api/fresns/v1/comment/detail](https://docs.fresns.com/zh-Hans/clients/api/comment/detail.html) | 获取评论详情 | `getCommentDetail` |
 
 ### 搜索
 

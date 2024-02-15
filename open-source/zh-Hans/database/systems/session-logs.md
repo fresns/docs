@@ -13,7 +13,7 @@ aside: false
 | version | varchar(16) | 版本号 |  | NO | 语义化版本号 |
 | app_id | char(8) | App ID |  | YES | [session_keys->app_id](session-keys.md) |
 | lang_tag | char(16) | 客户端语言 |  | YES | 产生日志的语言，未开启多语言则留空 |
-| action_name | varchar(128) | 记录目标名称 |  | NO | 功能模型名或者接口路径<br>例如模型名 App\Models\Post<br>例如接口路径：/api/v2/account/login |
+| action_name | varchar(128) | 记录目标名称 |  | NO | 功能模型名或者接口路径<br>例如模型名 App\Models\Post<br>例如接口路径：`/api/fresns/v1/account/auth-token` |
 | action_desc | varchar(128) | 记录目标行为 |  | YES | 行为描述，自定义输入内容 |
 | action_state | tinyint *UNSIGNED* | 记录行为结果 |  | NO | 1.未知或执行中 / 2.成功 / 3.失败 |
 | action_id | bigint *UNSIGNED* | 记录目标 ID |  | YES | 例如发表行为，则代表发表内容的 ID<br>插件行为，凭此 ID 可查询对应插件那边记录的关联信息 |

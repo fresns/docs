@@ -26,5 +26,5 @@ ExtendUtility::distanceOfLocation($langTag, $long, $lat, $userLong, $userLat, $m
 | lat | String | **required** | Latitude `latitude` |
 | userLong | String | **required** | User's longitude |
 | userLat | String | **required** | User's latitude |
-| mapId | String | *optional* | Longitude and latitude from which [map](../../database//dictionary/maps.md) |
-| userMapId | String | *optional* | User's longitude and latitude from which [map](../../database//dictionary/maps.md) |
+| mapId | String | *optional* | Longitude and latitude from which [map](../../configs//dictionary/maps.md) |
+| userMapId | String | *optional* | User's longitude and latitude from which [map](../../configs//dictionary/maps.md) |

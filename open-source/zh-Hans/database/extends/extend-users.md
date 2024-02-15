@@ -8,7 +8,7 @@ aside: false
 | --- | --- | --- | --- | --- | --- |
 | id | bigint *UNSIGNED* | 主键 ID | | NO | 自动递增 |
 | extend_id | bigint *UNSIGNED* | 扩展内容 ID |  | NO | 关联字段 extends->id |
-| user_id | bigint *UNSIGNED* | 用户主键 ID |  | NO | 关联字段 [users->id](users.md) |
+| user_id | bigint *UNSIGNED* | 用户主键 ID |  | NO | 关联字段 [users->id](../users/users.md) |
 | action_key | varchar(64) | 参与的键名 |  | YES |  |
 | created_at | timestamp | 创建时间 | useCurrent | NO | 比如 MySQL 默认值为 CURRENT_TIMESTAMP |
 | updated_at | timestamp | 更新时间 |  | YES |  |

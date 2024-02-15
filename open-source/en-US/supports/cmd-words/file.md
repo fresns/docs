@@ -34,7 +34,7 @@
 ```
 | Parameter Name | Type | Required | Description |
 | --- | --- | --- | --- |
-| platformId | Number | **required** | Platform number (key value from the configuration table [platforms](../../database/dictionary/platforms.md)) |
+| platformId | Number | **required** | Platform number (key value from the configuration table [platforms](../../configs/dictionary/platforms.md)) |
 | usageType | Number | **required** | [File usage type](../../database/numbered-description.md#type-of-file-usage) |
 | tableName | String | **required** | Source table name (which table is using) |
 | tableColumn | String | **required** | Source field name (which field is using) |
@@ -64,7 +64,7 @@
 ::: details Logic Notes
 - The storage method can call the main program's encapsulated function [FileUtility::saveFileInfoToDatabase($bodyInfo, $diskPath, $file)](../utilities/file.md#save-file-information-to-database)
 - If the file type is video `type=2`, the video cover image also needs to be processed, corresponding to the field `file->video_poster_path`.
-- View the returned result [File Information Structure](../../extensions/plugin/storage.md#file-information-structure)
+- View the returned result [File Information Structure](../../extensions/storage.md#file-information-structure)
 :::
 
 ## uploadFileInfo
@@ -74,7 +74,7 @@
 ```
 | Parameter Name | Type | Required | Description |
 | --- | --- | --- | --- |
-| platformId | Number | **required** | Platform number (key value from the configuration table [platforms](../../database/dictionary/platforms.md)) |
+| platformId | Number | **required** | Platform number (key value from the configuration table [platforms](../../configs/dictionary/platforms.md)) |
 | usageType | Number | **required** | [File usage type](../../database/numbered-description.md#type-of-file-usage) |
 | tableName | String | **required** | Source table name |
 | tableColumn | String | **required** | Source field name |
@@ -132,7 +132,7 @@
 ::: details Logic Notes
 - The storage method can call the main program's encapsulated function [FileUtility::uploadFileInfo($bodyInfo)](../utilities/file.md#upload-file-information)
 - If the file type is video `type=2`, the video cover image also needs to be processed, corresponding to the field `file->video_poster_path`.
-- View the returned result [File Information Structure](../../extensions/plugin/storage.md#file-information-structure)
+- View the returned result [File Information Structure](../../extensions/storage.md#file-information-structure)
 :::
 
 ## getAntiLinkFileInfo (One)

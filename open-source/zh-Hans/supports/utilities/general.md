@@ -26,5 +26,5 @@ ExtendUtility::distanceOfLocation($langTag, $long, $lat, $userLong, $userLat, $m
 | lat | String | YES | 纬度 `latitude` |
 | userLong | String | YES | 用户的经度 |
 | userLat | String | YES | 用户的纬度 |
-| mapId | String | NO | 经纬度来自哪个[地图](../../database//dictionary/maps.md) |
-| userMapId | String | NO | 用户的经纬度来自哪个[地图](../../database//dictionary/maps.md) |
+| mapId | String | NO | 经纬度来自哪个[地图](../../configs//dictionary/maps.md) |
+| userMapId | String | NO | 用户的经纬度来自哪个[地图](../../configs//dictionary/maps.md) |

@@ -8,7 +8,7 @@ aside: false
 | --- | --- | --- | --- | --- | --- |
 | id | bigint *UNSIGNED* | 主键 ID |  | NO | 自动递增 |
 | account_id | bigint *UNSIGNED* | 账号主键 ID |  | NO | 关联字段 [accounts->id](accounts.md) |
-| connect_platform_id | tinyint *UNSIGNED* | 互联平台编号 |  | NO | 关联配置表 [connects](../../database/dictionary/connects.md) 键值 |
+| connect_platform_id | tinyint *UNSIGNED* | 互联平台编号 |  | NO | 关联配置表 [connects](../../configs/dictionary/connects.md) 键值 |
 | connect_account_id | varchar(128) | 关联账号 ID |  | NO | **唯一值**<br>例如：微信 openid 或 GitHub ID |
 | connect_token | varchar(128) | 授权 Token |  | YES |  |
 | connect_refresh_token | varchar(128) | 授权 Refresh Token |  | YES |  |

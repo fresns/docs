@@ -70,7 +70,7 @@
 ::: details Check `userInfo` parameter introduction
 | Parameter Name | Type | Required | Description |
 | --- | --- | --- | --- |
-| username | String | *optional* | Username, related field `users->username`<br>If not passed, a random 6-8 character string will be generated, avoiding the use of banned names (key name [ban_names](../../database/dictionary/ban-names.md) banned values) |
+| username | String | *optional* | Username, related field `users->username`<br>If not passed, a random 6-8 character string will be generated, avoiding the use of banned names (key name `user_ban_names` banned values) |
 | nickname | String | *optional* | Nickname, related field `users->nickname` |
 | password | String | *optional* | Login password, related field `users->password` |
 | avatarFid | String | *optional* | Avatar file fid, converted to `files->id` when stored<br>Related field `users->avatar_file_id` |
@@ -153,7 +153,7 @@
 ```
 | Parameter Name | Type | Required | Description |
 | --- | --- | --- | --- |
-| platformId | Number | **required** | Platform ID (Key value of the [platforms](../../database/dictionary/platforms.md) key name in the configuration table) |
+| platformId | Number | **required** | Platform ID (Key value of the [platforms](../../configs/dictionary/platforms.md) key name in the configuration table) |
 | version | String | **required** | Semantic version number |
 | appId | String | **required** | App ID |
 | aid | String | **required** | Account parameter `session_tokens->account_id`<br>Stored as `accounts->id` after converting from `aid` |
@@ -184,7 +184,7 @@
 ```
 | Parameter Name | Type | Required | Description |
 | --- | --- | --- | --- |
-| platformId | Number | **required** | Platform ID (Key value of the [platforms](../../database/dictionary/platforms.md) key name in the configuration table) |
+| platformId | Number | **required** | Platform ID (Key value of the [platforms](../../configs/dictionary/platforms.md) key name in the configuration table) |
 | aid | String | **required** | Account parameter `session_tokens->account_id`<br>Checked by converting `aid` to `accounts->id` |
 | aidToken | String | **required** | Identity credential (Credential table `session_tokens->token` field) |
 
@@ -196,7 +196,7 @@
 | Parameter Name | Type | Required | Description |
 | --- | --- | --- | --- |
 | aid | String | **required** |  |
-| platformId | Number | *optional* | Platform ID (Key value of the [platforms](../../database/dictionary/platforms.md) key name in the configuration table)<br>No value then output all |
+| platformId | Number | *optional* | Platform ID (Key value of the [platforms](../../configs/dictionary/platforms.md) key name in the configuration table)<br>No value then output all |
 
 - The result is an array sorted in reverse chronological order by creation time, with the most recent creation on top.
 
@@ -235,4 +235,4 @@
 | --- | --- | --- | --- |
 | aid | Number | **required** | `accounts->aid` |
 
-- Physical deletion involves a lot of content, so the deletion function is performed using a queue, so configure [the Fresns queues](../../guide/install.md#queues).
+- Physical deletion involves a lot of content, so the deletion function is performed using a queue, so configure [the Fresns queues](https://fresns.org/guide/configuration.html#queues).

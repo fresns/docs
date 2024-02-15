@@ -10,7 +10,7 @@ aside: false
 | file_id | bigint *UNSIGNED* | File ID |  | NO | Related field [files->id](../systems/files.md)<br>Not a unique value, one file can be associated with multiple additional information |
 | file_type | tinyint *UNSIGNED* | File Type | 1 | NO | 1.Image / 2.Video / 3.Audio / 4.Document |
 | usage_type | tinyint *UNSIGNED* | Usage Type | 1 | NO | [See Number Description](../numbered-description.md#type-of-file-usage) |
-| platform_id | tinyint *UNSIGNED* | Platform ID |  | NO | [Dictionary Key Value -> Platform Number](../dictionary/platforms.md)<br>Platform where the operation takes place |
+| platform_id | tinyint *UNSIGNED* | Platform ID |  | NO | [Dictionary Key Value -> Platform Number](../../configs/dictionary/platforms.md)<br>Platform where the operation takes place |
 | table_name | varchar(64) | Source Table Name |  | NO | Which table |
 | table_column | varchar(64) | Source Column Name |  | NO | Which column is the file value |
 | table_id | bigint *UNSIGNED* | Source Table Primary Key ID |  | YES | Which data record's file, the `Primary Key ID` of that record |

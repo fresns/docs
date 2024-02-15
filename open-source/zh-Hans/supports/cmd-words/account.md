@@ -70,7 +70,7 @@
 ::: details 查看 userInfo 参数介绍
 | 参数名 | 类型 | 是否必传 | 说明 |
 | --- | --- | --- | --- |
-| username | String | NO | 用户名，关联字段 `users->username`<br>不传则随机生成一个 6~8 位字符，需要避免使用禁用名（键名 [ban_names](../../database/dictionary/ban-names.md) 禁用值） |
+| username | String | NO | 用户名，关联字段 `users->username`<br>不传则随机生成一个 6~8 位字符，需要避免使用禁用名（键名 `user_ban_names` 禁用值） |
 | nickname | String | NO | 昵称，关联字段 `users->nickname` |
 | password | String | NO | 登录密码，关联字段 `users->password` |
 | avatarFid | String | NO | 头像 fid，存储时转换成 `files->id`<br>关联字段 `users->avatar_file_id` |
@@ -153,7 +153,7 @@
 ```
 | 参数名 | 类型 | 是否必传 | 说明 |
 | --- | --- | --- | --- |
-| platformId | Number | YES | 平台编号（配置表 [platforms](../../database/dictionary/platforms.md) 键名的键值） |
+| platformId | Number | YES | 平台编号（配置表 [platforms](../../configs/dictionary/platforms.md) 键名的键值） |
 | version | String | YES | 语义化版本号 |
 | appId | String | YES | App ID |
 | aid | String | YES | 账号参数 `session_tokens->account_id`<br>存储时由 `aid` 转换成 `accounts->id` |
@@ -184,7 +184,7 @@
 ```
 | 参数名 | 类型 | 是否必传 | 说明 |
 | --- | --- | --- | --- |
-| platformId | Number | YES | 平台编号（配置表 [platforms](../../database/dictionary/platforms.md) 键名的键值） |
+| platformId | Number | YES | 平台编号（配置表 [platforms](../../configs/dictionary/platforms.md) 键名的键值） |
 | aid | String | YES | 账号参数 `session_tokens->account_id`<br>查验时由 `aid` 转换成 `accounts->id` |
 | aidToken | String | YES | 身份凭证（凭证表 `session_tokens->token` 字段） |
 
@@ -196,7 +196,7 @@
 | 参数名 | 类型 | 是否必传 | 说明 |
 | --- | --- | --- | --- |
 | aid | String | YES |  |
-| platformId | Number | NO | 平台编号（配置表 [platforms](../../database/dictionary/platforms.md) 键名的键值）<br>留空则输出全部 |
+| platformId | Number | NO | 平台编号（配置表 [platforms](../../configs/dictionary/platforms.md) 键名的键值）<br>留空则输出全部 |
 
 - 结果为数组列表，根据创建时间倒序排列，最新创建的在前面。
 
@@ -235,4 +235,4 @@
 | --- | --- | --- | --- |
 | aid | Number | YES | `accounts->aid` |
 
-- 物理删除涉及内容很多，所以删除功能使用队列执行，请配置 [Fresns 队列](../../guide/install.md#队列)。
+- 物理删除涉及内容很多，所以删除功能使用队列执行，请配置 [Fresns 队列](https://fresns.org/zh-Hans/guide/configuration.html#%E9%98%9F%E5%88%97)。

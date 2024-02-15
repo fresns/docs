@@ -7,7 +7,7 @@
 ```
 | Parameter Name | Type | Required | Description |
 | --- | --- | --- | --- |
-| platformId | Number | **required** | Platform ID (Key value of the [platforms](../../database/dictionary/platforms.md) key name in the configuration table) |
+| platformId | Number | **required** | Platform ID (Key value of the [platforms](../../configs/dictionary/platforms.md) key name in the configuration table) |
 | langTag | String | *optional* | Language tag, if not provided, the default language will be used |
 
 ## updatePortalContent
@@ -17,7 +17,7 @@
 ```
 | Parameter Name | Type | Required | Description |
 | --- | --- | --- | --- |
-| platformId | Number | **required** | Platform ID (Key value of the [platforms](../../database/dictionary/platforms.md) key name in the configuration table) |
+| platformId | Number | **required** | Platform ID (Key value of the [platforms](../../configs/dictionary/platforms.md) key name in the configuration table) |
 | langTag | String | *optional* | Language tag, if not provided, the default language will be used |
 | content | String | *optional* | Leave blank to update to null |
 

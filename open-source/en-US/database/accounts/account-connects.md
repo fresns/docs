@@ -8,7 +8,7 @@ aside: false
 | --- | --- | --- | --- | --- | --- |
 | id | bigint *UNSIGNED* | Primary Key ID |  | NO | Auto Increment |
 | account_id | bigint *UNSIGNED* | Account ID |  | NO | Related field [accounts->id](accounts.md) |
-| connect_platform_id | tinyint *UNSIGNED* | Platform Number |  | NO | Related configuration [connects](../../database/dictionary/connects.md) key value |
+| connect_platform_id | tinyint *UNSIGNED* | Platform Number |  | NO | Related configuration [connects](../../configs/dictionary/connects.md) key value |
 | connect_account_id | varchar(128) | Connect Token |  | NO | **Unique**<br>For example: WeChat openid or GitHub ID |
 | connect_token | varchar(128) | Auth Token |  | YES |  |
 | connect_refresh_token | varchar(128) | Auth Refresh Token |  | YES |  |

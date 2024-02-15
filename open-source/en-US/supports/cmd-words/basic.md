@@ -6,7 +6,7 @@
 \FresnsCmdWord::plugin('Fresns')->checkHeaders();
 ```
 
-- Parameter Value [API Request Headers](../../api/headers.md)
+- Parameter Value [API Request Headers](https://docs.fresns.com/clients/reference/headers.html)
 
 ::: details Return Example
 ```json
@@ -39,7 +39,7 @@
 ```
 | Parameter Name | Type | Required | Description |
 | --- | --- | --- | --- |
-| platformId | Number | **required** | Platform ID (Key value of the [platforms](../../database/dictionary/platforms.md) key name in the configuration table) |
+| platformId | Number | **required** | Platform ID (Key value of the [platforms](../../configs/dictionary/platforms.md) key name in the configuration table) |
 | version | String | **required** | Semantic version number |
 | appId | String | **required** | App ID |
 | timestamp | Number | **required** | Signature generation time (current Unix timestamp, accurate to seconds or milliseconds) |
@@ -58,7 +58,7 @@
 ```
 | Parameter Name | Type | Required | Description |
 | --- | --- | --- | --- |
-| accessToken | String | **required** | Reference: [Make URL Authorization](../../extensions/callback/url-authorization.md) |
+| accessToken | String | **required** | Reference: [Make Access Token](https://docs.fresns.com/clients/reference/callback/access-token.html) |
 | accountLogin | Boolean | *optional* | Whether a login is required, if left empty, no login is required |
 | userLogin | Boolean | *optional* | Whether a user login is required, if left empty, no login is required |
 
@@ -94,12 +94,12 @@
 | Parameter Name | Type | Required | Description |
 | --- | --- | --- | --- |
 | type | Number | **required** | [Log Type](../../database/systems/session-logs.md#log-type) |
-| platformId | Number | **required** | Platform ID (Key value of the [platforms](../../database/dictionary/platforms.md) key name in the configuration table) |
+| platformId | Number | **required** | Platform ID (Key value of the [platforms](../../configs/dictionary/platforms.md) key name in the configuration table) |
 | version | String | **required** | Semantic version number, e.g., `2.0.0` |
 | appId | String | *optional* | Secret App ID |
 | langTag | String | *optional* | Language Tag |
 | fskey | String | *optional* | Plugin Fskey |
-| actionName | String | **required** | Function model name or interface path<br>For example, model name App\Models\Post<br>For example, interface path: /api/v2/account/login |
+| actionName | String | **required** | Function model name or interface path<br>For example, model name App\Models\Post<br>For example, interface path: `/api/fresns/v1/account/auth-token` |
 | actionDesc | String | **required** | Action description, custom input content |
 | actionState | Number | **required** | 1. Unknown or in progress / 2. Success / 3. Failure |
 | actionId | String | *optional* | For example, if it is a publishing action, it represents the ID of the published content<br>Plugin behavior, this ID can query the corresponding plugin-side related information |
@@ -120,7 +120,7 @@
 | type | Number | **required** | Type: 1. Email verification code / 2. SMS verification code |
 | account | String | **required** | Account (email or phone number) |
 | countryCode | Number | *optional* | International area code (phone number specific) |
-| templateId | Number | **required** | [Code Template ID](../../database/keyname/send.md#verify-code-templates) |
+| templateId | Number | **required** | [Code Template ID](../../configs/panel/send.md#verify-code-templates) |
 | langTag | String | **required** | Language Tag |
 
 ## checkCode
@@ -134,7 +134,7 @@
 | account | String | **required** | Account (email or phone number) |
 | countryCode | Number | *optional* | International area code (phone number specific) |
 | verifyCode | String | **required** | Verify Code |
-| templateId | Number | **required** | [Code Template ID](../../database/keyname/send.md#verify-code-templates) |
+| templateId | Number | **required** | [Code Template ID](../../configs/panel/send.md#verify-code-templates) |
 
 ## ipInfo
 
@@ -145,4 +145,4 @@
 | --- | --- | --- | --- |
 | ipv4 | String | **required** | IPv4 and IPv6 support |
 
-- The output result is the same as the [IP Info Interface](../../api/common/ip-info.md)
+- The output result is the same as the [IP Info Interface](https://docs.fresns.com/clients/api/common/ip-info.html)

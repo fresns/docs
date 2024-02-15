@@ -62,7 +62,7 @@ FileHelper::fresnsFileInfoById($fileIdOrFid);
 | fileIdOrFid | String | **required** | `files->id` or `files->fid` |
 
 - The output result will check the anti-leech configuration, and if enabled, output the anti-leech file information.
-- [File Information Structure](../../extensions/plugin/storage.md#file-information-structure)
+- [File Information Structure](../../extensions/storage.md#file-information-structure)
 
 ## Get Multiple Information by File ID or FID
 
