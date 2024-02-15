@@ -11,16 +11,16 @@ export default defineComponent({
 
     const baseLinks = {
       '/': [
-        { text: 'OAuth', href: '/oauth/' },
-        { text: 'Cloud', href: '/cloud/' },
-        { text: 'Open Source', href: '/open-source/' },
-        { text: 'Clients', href: '/clients/' },
+        { text: 'OAuth', href: 'https://docs.fresns.com/oauth/' },
+        { text: 'Cloud', href: 'https://docs.fresns.com/cloud/' },
+        { text: 'Open Source', href: 'https://docs.fresns.com/open-source/' },
+        { text: 'Clients', href: 'https://docs.fresns.com/clients/' },
       ],
       'zh-Hans': [
-        { text: 'OAuth 应用', href: '/zh-Hans/oauth/' },
-        { text: '云服务应用', href: '/zh-Hans/cloud/' },
-        { text: '开源扩展', href: '/zh-Hans/open-source/' },
-        { text: '客户端', href: '/zh-Hans/clients/' },
+        { text: 'OAuth 应用', href: 'https://docs.fresns.com/zh-Hans/oauth/' },
+        { text: '云服务应用', href: 'https://docs.fresns.com/zh-Hans/cloud/' },
+        { text: '开源扩展', href: 'https://docs.fresns.com/zh-Hans/open-source/' },
+        { text: '客户端', href: 'https://docs.fresns.com/zh-Hans/clients/' },
       ],
     };
 
@@ -61,7 +61,7 @@ export default defineComponent({
       <div class="menus">
         <div class="FsMenu">
           <div class="FsMenuLink" v-for="link in links" :key="link.href">
-            <a class="link" :href="link.href">{{ link.text }}</a>
+            <a class="link" :href="link.href" target="_blank">{{ link.text }}</a>
           </div>
         </div>
       </div>

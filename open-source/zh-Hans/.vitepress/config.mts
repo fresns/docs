@@ -28,7 +28,7 @@ export default defineConfig({
     en: {
       label: 'English',
       lang: 'en-US',
-      link: 'https://docs.fresns.com/open-source'
+      link: 'https://docs.fresns.com/open-source/'
     }
   },
 

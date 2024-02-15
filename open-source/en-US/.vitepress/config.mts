@@ -28,7 +28,7 @@ export default defineConfig({
     'zh-Hans': {
       label: '简体中文',
       lang: 'zh-Hans',
-      link: 'https://docs.fresns.com/zh-Hans/open-source'
+      link: 'https://docs.fresns.com/zh-Hans/open-source/'
     }
   },
 
