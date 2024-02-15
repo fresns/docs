@@ -4,7 +4,7 @@
 
 Fresns 产品结构的设计理念来自「**算法+数据结构=程序**」这个公式，基于该公式的软件思想，我们将 Fresns 划分成了如下图的产品结构。
 
-![Fresns 产品结构图](https://files.fresns.org/docs/images/idea-zh-hans.png)
+![Fresns 产品结构图](https://images.fresns.com/docs/reference/idea-zh-hans.png)
 
 用户通过交互行为对内容产生结果，结果可以通过某种分类形式进行归档；算法将归档的果进行特定条件的输出，最终客户端产品解析并渲染出界面供用户浏览和再次交互行为。
 

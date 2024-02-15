@@ -9,18 +9,18 @@ export default defineConfig({
     lastUpdated: true,
 
     head: [
-        ['link', { rel: 'icon', type: 'image/png', href: 'https://files.fresns.org/wiki/icons/fresns.png' }],
+        ['link', { rel: 'icon', type: 'image/png', href: 'https://images.fresns.com/icon-2021.png' }],
         ['meta', { property: 'og:type', content: 'website' }],
         ['meta', { property: 'og:title', content: 'Fresns' }],
         ['meta', { property: 'og:description', content: 'Cross-platform general-purpose multiple content forms social network service software' }],
-        ['meta', { property: 'og:image', content: 'https://files.fresns.org/wiki/images/og-image.jpg' }],
-        ['meta', { property: 'og:url', content: 'https://fresns.org' }],
+        ['meta', { property: 'og:url', content: 'https://v2.fresns.org' }],
+        ['meta', { property: 'og:image', content: 'https://images.fresns.com/docs/open-graph/open-source.jpg' }],
     ],
 
     cleanUrls: false,
 
     themeConfig:{
-        logo: 'https://files.fresns.org/wiki/icons/fresns.png',
+        logo: 'https://images.fresns.com/icon-2021.png',
         nav: navbar(),
 
         search: {
@@ -81,6 +81,16 @@ export default defineConfig({
             lang: 'zh-Hans',
             title: 'Fresns 开源版',
             description: 'Fresns 是一款免费开源的社交网络服务软件，专为跨平台而打造的通用型社区产品，支持灵活多样的内容形态，可以满足多种运营场景，符合时代潮流，更开放且更易于二次开发。',
+
+            head: [
+                ['link', { rel: 'icon', type: 'image/png', href: 'https://images.fresns.com/icon-2021.png' }],
+                ['meta', { property: 'og:type', content: 'website' }],
+                ['meta', { property: 'og:title', content: 'Fresns' }],
+                ['meta', { property: 'og:description', content: '一款免费开源的社交网络服务软件' }],
+                ['meta', { property: 'og:url', content: 'https://v2.fresns.org/zh-Hans/' }],
+                ['meta', { property: 'og:image', content: 'https://images.fresns.com/docs/open-graph/open-source-zh-hans.jpg' }],
+            ],
+
             themeConfig: {
                 nav: navbarForZh(),
 

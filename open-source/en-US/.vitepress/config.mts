@@ -12,12 +12,12 @@ export default defineConfig({
   cleanUrls: false,
 
   head: [
-    ['link', { rel: 'icon', type: 'image/png', href: 'https://files.fresns.org/wiki/icons/fresns.png' }],
+    ['link', { rel: 'icon', type: 'image/png', href: 'https://images.fresns.com/icon-2021.png' }],
     ['meta', { property: 'og:type', content: 'website' }],
     ['meta', { property: 'og:title', content: 'Fresns' }],
     ['meta', { property: 'og:description', content: 'Cross-platform general-purpose multiple content forms social network service software' }],
-    ['meta', { property: 'og:image', content: 'https://files.fresns.org/docs/images/og-image.jpg' }],
     ['meta', { property: 'og:url', content: 'https://docs.fresns.com/open-source/' }],
+    ['meta', { property: 'og:image', content: 'https://images.fresns.com/docs/open-graph/open-source.jpg' }],
   ],
 
   locales: {
@@ -34,7 +34,7 @@ export default defineConfig({
 
   themeConfig: {
     siteTitle: 'Fresns Docs',
-    logo: 'https://files.fresns.org/wiki/icons/fresns.png',
+    logo: 'https://images.fresns.com/icon-2021.png',
     nav: [
       { text: 'Guide', link: '/guide/', activeMatch: '/guide/' },
       { text: 'Extensions', link: '/extensions/', activeMatch: '/extensions/' },

@@ -9,7 +9,7 @@ hero:
   text: Social Network Service Software
   tagline: General-purpose community product designed for cross-platform, and supports flexible and diverse content forms. It conforms to the trend of the times, satisfies a variety of operating scenarios, is more open and easier to re-development.
   image:
-      src: https://files.fresns.org/wiki/images/social.svg
+      src: https://images.fresns.com/docs/features/social.svg
       alt: Fresns
   actions:
     - theme: brand

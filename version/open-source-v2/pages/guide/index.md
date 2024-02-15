@@ -1,6 +1,6 @@
 # Introduction
 
-<p align="center"><img src="https://files.fresns.org/wiki/images/logo.png" width="300"></p>
+<p align="center"><img src="https://images.fresns.com/logo-2021.png" width="300"></p>
 
 <p align="center">
 <img src="https://img.shields.io/packagist/dependency-v/fresns/fresns/php" alt="PHP" style="display:inline;">
@@ -26,8 +26,8 @@ Fresns is a free and open source social network service software, a general-purp
 
 | Social Network | Forum |
 | :---: | :---: |
-| ![Moments](https://files.fresns.org/wiki/previews/Moments.png) | ![ForumX](https://files.fresns.org/wiki/previews/ForumX.png) |
-| ![ForumQ](https://files.fresns.org/wiki/previews/ForumQ.png) | ![WebFrame](https://files.fresns.org/wiki/previews/WebFrame.png) |
+| ![Moments](https://images.fresns.com/docs/previews/Moments.png) | ![ForumX](https://images.fresns.com/docs/previews/ForumX.png) |
+| ![ForumQ](https://images.fresns.com/docs/previews/ForumQ.png) | ![WebFrame](https://images.fresns.com/docs/previews/WebFrame.png) |
 
 - Get more: [https://marketplace.fresns.com/clients](https://marketplace.fresns.com/clients)
 

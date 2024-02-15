@@ -48,7 +48,7 @@ const customInfo = computed(() => linkInfo[currentLanguagePrefix.value] || linkI
 
 <template>
   <a class="fresnsAside" :href="customLink">
-    <img width="22" height="22" src="https://files.fresns.org/wiki/icons/fresns.png" />
+    <img width="22" height="22" src="https://images.fresns.com/icon-2021.png" />
     <span>
       <p class="extra-info">{{ customInfo['extra-info-top'] }}</p>
       <p class="heading">{{ customInfo['heading'] }}</p>

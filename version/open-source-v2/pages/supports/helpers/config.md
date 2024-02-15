@@ -47,8 +47,8 @@ ConfigHelper::fresnsConfigByItemTag($itemTag, $langTag);
 {
     "site_name": "Fresns",
     "site_desc": "Fresns is a free and open source social network service software, a general-purpose community product designed for cross-platform, and supports flexible and diverse content forms. It conforms to the trend of the times, satisfies a variety of operating scenarios, is more open and easier to re-development.",
-    "site_icon": "https://files.fresns.org/images/icon.png",
-    "site_logo": "https://files.fresns.org/images/logo.png",
+    "site_icon": "https://images.fresns.com/icon.png",
+    "site_logo": "https://images.fresns.com/logo.png",
     "site_copyright": "Fresns",
     "site_copyright_years": "2021-Present",
     "default_timezone": "+8",

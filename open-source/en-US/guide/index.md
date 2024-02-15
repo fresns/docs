@@ -1,6 +1,6 @@
 # Introduction
 
-<p align="center"><img src="https://files.fresns.org/wiki/images/logo.png" width="300"></p>
+<p align="center"><img src="https://images.fresns.com/logo-2021.png" width="300"></p>
 
 <p align="center">
 <img src="https://img.shields.io/badge/Laravel-10.x-blue" alt="Laravel" style="display:inline;">

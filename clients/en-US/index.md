@@ -6,7 +6,7 @@ hero:
   text: Clients Development Documentation
   tagline: Develop client applications with Fresns unified and standardized APIs. Craft applications suited for various environments with a single development effort, ensuring compatibility and developer efficiency.
   image:
-    src: https://files.fresns.org/docs/images/hero-clients.png
+    src: https://images.fresns.com/docs/hero/client.png
     alt: Fresns Clients
   actions:
     - theme: brand

@@ -7,14 +7,19 @@ export default defineConfig({
   description: 'Fresns Developer Documentation. Help for wherever you are on your Fresns journey.',
 
   head: [
-    ['link', { rel: 'icon', type: 'image/png', href: 'https://files.fresns.org/wiki/icons/fresns.png' }],
+    ['link', { rel: 'icon', type: 'image/png', href: 'https://images.fresns.com/icon-2021.png' }],
+    ['meta', { property: 'og:type', content: 'website' }],
+    ['meta', { property: 'og:title', content: 'Fresns' }],
+    ['meta', { property: 'og:description', content: 'Cross-platform general-purpose multiple content forms social network service software' }],
+    ['meta', { property: 'og:url', content: 'https://docs.fresns.com' }],
+    ['meta', { property: 'og:image', content: 'https://images.fresns.com/docs/open-graph/open-source.jpg' }],
   ],
 
   cleanUrls: false,
 
   themeConfig: {
     siteTitle: 'Fresns Docs',
-    logo: 'https://files.fresns.org/wiki/icons/fresns.png',
+    logo: 'https://images.fresns.com/icon-2021.png',
 
     nav: [
       {
@@ -48,6 +53,15 @@ export default defineConfig({
       title: 'Fresns 文档',
       titleTemplate: false,
       description: 'Fresns 开发者文档，在 Fresns 旅程中随时为你提供帮助。',
+
+      head: [
+        ['link', { rel: 'icon', type: 'image/png', href: 'https://images.fresns.com/icon-2021.png' }],
+        ['meta', { property: 'og:type', content: 'website' }],
+        ['meta', { property: 'og:title', content: 'Fresns' }],
+        ['meta', { property: 'og:description', content: '一款免费开源的社交网络服务软件' }],
+        ['meta', { property: 'og:url', content: 'https://docs.fresns.com' }],
+        ['meta', { property: 'og:image', content: 'https://images.fresns.com/docs/open-graph/open-source-zh-hans.jpg' }],
+      ],
 
       themeConfig: {
         siteTitle: 'Fresns 文档',

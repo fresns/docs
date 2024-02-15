@@ -12,7 +12,12 @@ export default defineConfig({
   cleanUrls: false,
 
   head: [
-    ['link', { rel: 'icon', type: 'image/png', href: 'https://files.fresns.org/wiki/icons/fresns.png' }],
+    ['link', { rel: 'icon', type: 'image/png', href: 'https://images.fresns.com/icon-2021.png' }],
+    ['meta', { property: 'og:type', content: 'website' }],
+    ['meta', { property: 'og:title', content: 'Fresns' }],
+    ['meta', { property: 'og:description', content: '一款免费开源的社交网络服务软件' }],
+    ['meta', { property: 'og:url', content: 'https://docs.fresns.com/zh-hans/clients/' }],
+    ['meta', { property: 'og:image', content: 'https://images.fresns.com/docs/open-graph/open-source-zh-hans.jpg' }],
   ],
 
   locales: {
@@ -23,13 +28,13 @@ export default defineConfig({
     en: {
       label: 'English',
       lang: 'en-US',
-      link: 'https://docs.fresns.com/clients'
+      link: 'https://docs.fresns.com/clients/'
     }
   },
 
   themeConfig: {
     siteTitle: 'Fresns 文档',
-    logo: 'https://files.fresns.org/wiki/icons/fresns.png',
+    logo: 'https://images.fresns.com/icon-2021.png',
     nav: [
         { text: '指南', link: '/guide/', activeMatch: '/guide/' },
         { text: 'API', link: '/api/', activeMatch: '/api/' },

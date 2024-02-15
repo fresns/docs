@@ -8,7 +8,7 @@ import { VPTeamMembers } from 'vitepress/theme'
 
 const members = [
     {
-        avatar: 'https://files.fresns.org/docs/avatars/jevan-tang.jpg',
+        avatar: 'https://images.fresns.com/docs/avatars/jevan-tang.jpg',
         name: '唐杰',
         title: 'Creator',
         links: [
@@ -24,7 +24,7 @@ const members = [
         ]
     },
     {
-        avatar: 'https://files.fresns.org/docs/avatars/mouyong.jpg',
+        avatar: 'https://images.fresns.com/docs/avatars/mouyong.jpg',
         name: '牟勇',
         title: 'Developer',
         links: [
@@ -32,7 +32,7 @@ const members = [
         ]
     },
     {
-        avatar: 'https://files.fresns.org/docs/avatars/tracy-yuan.jpg',
+        avatar: 'https://images.fresns.com/docs/avatars/tracy-yuan.jpg',
         name: 'Tracy Yuan',
         title: 'Tester',
         links: [

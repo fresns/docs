@@ -9,7 +9,7 @@ hero:
   text: 一款免费开源的社交网络服务软件
   tagline: 专为跨平台而打造的通用型社区产品，支持灵活多样的内容形态，可以满足多种运营场景，符合时代潮流，更开放且更易于二次开发。
   image:
-      src: https://files.fresns.org/docs/images/social.svg
+      src: https://images.fresns.com/docs/features/social.svg
       alt: Fresns
   actions:
     - theme: brand
