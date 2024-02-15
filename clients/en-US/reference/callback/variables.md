@@ -4,32 +4,32 @@ Whether it is website or mobile application, the use of plug-ins is embedded in 
 
 ## Path Config
 
-- Path of plug-in is configured in `accessPath` parameter of [plugin.json](../plugin/index.md#pluginjson-config-file) file.
-- After the plug-in is installed, it will be read and stored in the [plugins->access_path](../../database/plugins/plugins.md) data table field.
+- Path of plug-in is configured in `accessPath` parameter of [plugin.json](https://docs.fresns.com/open-source/extensions/index.md#pluginjson-config-file) file.
+- After the plug-in is installed, it will be read and stored in the [apps->access_path](https://docs.fresns.com/open-source/database/apps/apps.md) data table field.
 
 ## Variable List
 
-| Variable Name | Description | Associated Field |
-| --- | --- | --- |
-| `{accessToken}` | Access Token and quick login<br>[Generate accessToken](access-token.md) / [Verify Authorization](../plugin/url-authorization.md) |  |
-| `{type}` | Type of access source (client channel) |  |
-| `{scene}` | Scene of the source |  |
-| `{postMessageKey}` | Callback identification name<br>Client receiving callback message as `postMessage` |  |
-| `{callbackUlid}` | Callback identification name<br>Client receiving callback message as `API` | plugin_callbacks->ulid |
-| `{aid}` | Account ID | accounts->aid |
-| `{uid}` | User ID | users->uid |
-| `{rid}` | Role ID | roles->id |
-| `{gid}` | Group ID | groups->gid |
-| `{pid}` | Post ID | posts->pid |
-| `{cid}` | Comment ID | comments->cid |
-| `{fid}` | File ID | files->fid |
-| `{eid}` | Content Extend ID | extends->eid |
-| `{plid}` | Post Log ID | post_logs->id |
-| `{clid}` | Comment Log ID | comment_logs->id |
-| `{connectPlatformId}` | Connect ID | [Connect List](../../database/dictionary/connects.md) |
-| `{uploadInfo}` | Upload Parameters | [See Upload File API](../../api/common/upload-file.md) |
-| `{locationInfo}` | Location Parameters | `mapId,latitude,longitude` Separated by commas<br>[Map ID](../../database/dictionary/maps.md)<br>e.g. `2,1.2803074,103.8610191` |
-| `{parameter}` | Custom Parameter | plugin_usages->parameter |
+| Variable Name | Description |
+| --- | --- |
+| `{accessToken}` | Access Token and quick login<br>[Generate accessToken](access-token.md) |
+| `{type}` | Type of access source (client channel) |
+| `{scene}` | Scene of the source |
+| `{postMessageKey}` | Callback identification name<br>Client receiving callback message as `postMessage` |
+| `{callbackUlid}` | Callback identification name<br>Client receiving callback message as `API` |
+| `{aid}` | Account ID |
+| `{uid}` | User ID |
+| `{rid}` | Role ID |
+| `{gid}` | Group ID |
+| `{pid}` | Post ID |
+| `{cid}` | Comment ID |
+| `{fid}` | File ID |
+| `{eid}` | Content Extend ID |
+| `{hpid}` | History Post ID |
+| `{hcid}` | History Comment ID |
+| `{connectPlatformId}` | [Connect ID](../dictionary/connects.md) |
+| `{uploadInfo}` | Upload Parameters: [See Upload File API](../../api/common/file-uploads.md) |
+| `{locationInfo}` | Location Parameters `mapId,latitude,longitude` Separated by commas<br>[Map ID](../dictionary/maps.md)<br>e.g. `2,1.2803074,103.8610191` |
+| `{parameter}` | Custom Parameter |
 
 ## {type} Access source type
 

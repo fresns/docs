@@ -26,9 +26,9 @@
     - Get the form configuration for extra `post` or `comment` parameters.
     - If a group is selected, get the type of the `group` and append the query parameter to get the extra parameters for posting or commenting in the group.
 - Upload Files `uploadType`
-    - `api` Using the upload interface [/api/fresns/v1/file/upload](../file/upload.md) `uploadMode=file`
+    - `api` Using the upload interface [/api/fresns/v1/common/file-uploads](../common/file-uploads.md) `uploadMode=file`
     - `page` Use WebView to access the address of the uploadUrl parameter to upload, see [callback](../../reference/callback/index.md) for rules.
-    - `sdk` Use [the s3 client SDK to upload](../file/storage-token.md), after uploading pass the data to the interface in the [/api/fresns/v1/file/upload](../file/upload.md) library. `uploadMode=fileInfo`
+    - `sdk` Use [the s3 client SDK to upload](../common/file-storage-token.md), after uploading pass the data to the interface in the [/api/fresns/v1/common/file-uploads](../common/file-uploads.md) library. `uploadMode=fileInfo`
 
 ## Return
 

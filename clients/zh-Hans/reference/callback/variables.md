@@ -4,14 +4,14 @@
 
 ## 路径配置
 
-- 插件路径配置在 [plugin.json](../plugin/index.md#plugin-json-配置信息) 文件 `accessPath` 参数中。
-- 插件安装后，会读取并存入 [plugins->access_path](../../database/plugins/plugins.md) 数据表字段中。
+- 插件路径配置在 [plugin.json](https://docs.fresns.com/zh-hans/open-source/extensions/index.md#plugin-json-配置信息) 文件 `accessPath` 参数中。
+- 插件安装后，会读取并存入 [apps->access_path](https://docs.fresns.com/zh-hans/open-source/database/apps/apps.md) 数据表字段中。
 
 ## 变量列表
 
 | 变量名 | 说明 |
 | --- | --- |
-| `{accessToken}` | 访问令牌，并且实现一键登录<br>[生成信息](access-token.md) / [验证信息](../plugin/url-authorization.md) |
+| `{accessToken}` | 访问令牌，并且实现一键登录<br>[生成信息](access-token.md) |
 | `{type}` | 访问来源类型（客户端频道） |
 | `{scene}` | 入口场景 |
 | `{postMessageKey}` | 回调标识名<br>客户端以 `postMessage` 方式接收回调通知 |
@@ -24,11 +24,11 @@
 | `{cid}` | 评论 ID |
 | `{fid}` | 文件 ID |
 | `{eid}` | 内容扩展 ID |
-| `{plid}` | 帖子日志 ID |
-| `{clid}` | 评论日志 ID |
-| `{connectPlatformId}` | [互联平台 ID](../../database/dictionary/connects.md) |
-| `{uploadInfo}` | 上传参数，[同上传接口](../../api/common/upload-file.md) |
-| `{locationInfo}` | 位置参数，`地图 ID,纬度,经度,比例` 以英文逗号隔开<br>[地图 ID 信息](../../database/dictionary/maps.md)，例如 `2,1.2803074,103.8610191,16` |
+| `{hpid}` | 历史帖子 ID |
+| `{hcid}` | 历史评论 ID |
+| `{connectPlatformId}` | [互联平台 ID](../dictionary/connects.md) |
+| `{uploadInfo}` | 上传参数，[同上传接口](../../api/common/file-uploads.md) |
+| `{locationInfo}` | 位置参数，`地图 ID,纬度,经度` 以英文逗号隔开<br>[地图 ID 信息](../dictionary/maps.md)，例如 `2,1.2803074,103.8610191` |
 | `{parameter}` | 自定义参数 |
 
 ## {type} 访问来源类型

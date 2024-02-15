@@ -16,7 +16,7 @@ aside: false
 }
 ```
 
-- Reference: [archives](../database/extends/archives.md)
+- Reference: [archives](https://docs.fresns.com/open-source/database/extends/archives.md)
 
 ## Extend Operation Info
 
@@ -52,7 +52,7 @@ aside: false
 }
 ```
 
-- Reference: [operations](../database/extends/operations.md#use-code)
+- Reference: [operations](https://docs.fresns.com/extends/operations.md#use-code)
 
 ## Extend Content Info
 
@@ -115,7 +115,7 @@ aside: false
 }
 ```
 
-- Reference: [extends](../database/extends/extends.md)
+- Reference: [extends](https://docs.fresns.com/open-source/database/extends/extends.md)
 
 ## Extend Function Info
 
@@ -130,4 +130,4 @@ aside: false
 }
 ```
 
-- Reference: [plugin_usages](../database/extends/plugin_usages.md)
+- Reference: [app_usages](https://docs.fresns.com/open-source/database/extends/app_usages.md)

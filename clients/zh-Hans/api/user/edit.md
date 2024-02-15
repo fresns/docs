@@ -40,7 +40,7 @@
 - 留空代表不修改。
 - `avatarFid` 和 `avatarUrl` 两者留空表示不修改，传参时二选一。
 - `bannerFid` 和 `bannerUrl` 两者留空表示不修改，传参时二选一。
-- 头像和背景条幅图如果使用 `fid`，先使用[文件上传接口](../file/uploads.md)，上传后获得 `fid` 传参。
+- 头像和背景条幅图如果使用 `fid`，先使用[文件上传接口](../common/file-uploads.md)，上传后获得 `fid` 传参。
 - 扩展资料示例：
 
 ```json

@@ -1,6 +1,6 @@
 # Callback
 
-In order to realize the cross-platform plug-in mechanism, Fresns adopts "inline framework" as the operation logic, allowing plug-ins to run as independent modules (or deploy independently). Plug-ins communicate with each other using "[command words](../../supports/cmd-word/basic.md)", and clients use callback and feedback to deal with the feedback in inline framework, so as to determine the subsequent operation.
+In order to realize the cross-platform plug-in mechanism, Fresns adopts "inline framework" as the operation logic, allowing plug-ins to run as independent modules (or deploy independently). Plug-ins communicate with each other using `command words`, and clients use callback and feedback to deal with the feedback in inline framework, so as to determine the subsequent operation.
 
 ## Usage Scenarios
 

@@ -44,7 +44,7 @@
 
 **Request Description**
 
-- For file functionality, use the [File Upload Interface](../file/uploads.md) to upload files.
+- For file functionality, use the [File Upload Interface](../common/file-uploads.md) to upload files.
 - When published, the location information `locationInfo` is not used, even if it has a `gtid` value.
 
 **Example Parameters**

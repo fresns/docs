@@ -13,36 +13,19 @@
 
 ## Config Items
 
-### Get API values
-
-Get configuration values from API [global configuration information](../../api/global/configs.md)
+Get configuration values from API [global configuration information](../api/global/configs.md)
 
 ```php
 {{ fs_api_config('item_key') }}
 ```
 
-### Get database values
-
-Get configuration values from the database [configs](../../database/systems/configs.md) table
-
-```php
-{{ fs_db_config('item_key') }}
-```
-
 ## Language Packs
 
-- [Language Pack Information](../../database/dictionary/language-pack.md)
+- [Language Pack Information](../reference/language-pack.md)
 - Configuration Path `Panel > Clients > Language Packs`
 
 ```php
 {{ fs_lang('KeyName') }}
-```
-
-- [Code Message](../../api/error-code.md)
-- Configuration Path `Panel > Clients > Code Messages`
-
-```php
-{{ fs_code_message('code') }}
 ```
 
 ## Account and User
@@ -66,8 +49,8 @@ fs_user('key')
 ```
 
 - The parameter key comes from the API `data` parameter.
-- [Account Detail API](../../api/account/detail.md)
-- [User Detail API](../../api/user/detail.md)
+- [Account Detail API](../api/account/detail.md)
+- [User Detail API](../api/user/detail.md)
 
 ## Channel Extends
 
@@ -77,7 +60,7 @@ fs_channels()
 
 ## Global Data
 
-### User Panel
+### User Overview
 
 ```php
 fs_user_panel('key')
@@ -85,7 +68,7 @@ fs_user_panel('key')
 fs_user_panel('key.key')
 ```
 
-From [the user panel](../../api/user/panel.md) interface `data` parameters
+From [the user overview](../api/user/overview.md) interface `data` parameters
 
 ### Groups
 
@@ -200,8 +183,3 @@ fs_stickers()
     <p>Bots are identified too :)</p>
 @endbrowser
 ```
-
-## List and Detail
-
-The parameter names are detailed in the API data and [common data structures](../../api/data-structure.md) of the corresponding interfaces.
- No newline at end of file

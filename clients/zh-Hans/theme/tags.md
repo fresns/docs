@@ -13,36 +13,19 @@
 
 ## 配置值
 
-### 接口配置
-
-从 API [全局配置信息](../../api/global/configs.md)获取配置值
+从 API [全局配置信息](../api/global/configs.md)获取配置值
 
 ```php
 {{ fs_api_config('配置键名') }}
 ```
 
-### 数据库配置
-
-从本地数据库 [configs](../../database/systems/configs.md) 表获取配置值
-
-```php
-{{ fs_db_config('配置键名') }}
-```
-
 ## 语言配置
 
-- [语言包信息](../../database/dictionary/language-pack.md)
+- [语言包信息](../reference/language-pack.md)
 - 配置位置 `控制面板 > 客户端 > 语言包配置`
 
 ```php
 {{ fs_lang('语言键名') }}
-```
-
-- [状态码信息](../../api/error-code.md)
-- 配置位置 `控制面板 > 客户端 > 状态码配置`
-
-```php
-{{ fs_code_message('编号') }}
 ```
 
 ## 账号和用户参数
@@ -66,8 +49,8 @@ fs_user('参数名')
 ```
 
 - 参数名来自 API `data` 参数。
-- [账号 API](../../api/account/detail.md)
-- [用户 API](../../api/user/detail.md)
+- [账号 API](../api/account/detail.md)
+- [用户 API](../api/user/detail.md)
 
 ## 频道扩展
 
@@ -85,7 +68,7 @@ fs_user_panel('key')
 fs_user_panel('key.key')
 ```
 
-- 参数来自[用户面板](../../api/user/panel.md)接口 `data`
+- 参数来自[用户面板](../api/user/overview.md)接口 `data`
 
 ### 小组
 
@@ -200,7 +183,3 @@ fs_stickers()
     <p>Bots are identified too :)</p>
 @endbrowser
 ```
-
-## 列表和详情页
-
-参数名详见对应接口的 API 数据和[通用数据结构](../../api/data-structure.md)。

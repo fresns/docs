@@ -1,6 +1,6 @@
 # Make Access Token
 
-The URL Authorization parameter is the complete [API Headers](../../api/headers.md) information, and the `X-Fresns-Signature` parameter of Headers is consistent with the API generation rules.
+The URL Authorization parameter is the complete [API Headers](../../reference/headers.md) information, and the `X-Fresns-Signature` parameter of Headers is consistent with the API generation rules.
 
 ## URL Authorization Data
 
