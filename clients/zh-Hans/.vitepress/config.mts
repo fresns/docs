@@ -44,8 +44,8 @@ export default defineConfig({
           text: '生态系统',
           items: [
             { text: '交流社区', link: 'https://space.fresns.com/developers/zh-Hans/' },
-            { text: '开发者中心', link: 'https://developers.fresns.com/zh-Hans/' },
             { text: '应用市场', link: 'https://marketplace.fresns.com/zh-Hans/' },
+            { text: '开发者中心', link: 'https://developer.fresns.com/zh-Hans/' },
           ],
         }
     ],

@@ -13,11 +13,11 @@ hero:
       text: Community ↗
       link: https://space.fresns.com/developers
     - theme: alt
-      text: Developer ↗
-      link: https://developer.fresns.com/
-    - theme: alt
       text: Marketplace ↗
       link: https://marketplace.fresns.com/
+    - theme: alt
+      text: Developer Platform ↗
+      link: https://developer.fresns.com/
 
 features:
   - icon: 

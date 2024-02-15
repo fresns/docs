@@ -54,8 +54,8 @@ export default defineConfig({
         text: 'Ecosystem',
         items: [
           { text: 'Community', link: 'https://space.fresns.com/developers' },
-          { text: 'Developers', link: 'https://developers.fresns.com/' },
           { text: 'Marketplace', link: 'https://marketplace.fresns.com/' },
+          { text: 'Developer Platform', link: 'https://developer.fresns.com/' },
         ],
       }
     ],

@@ -13,11 +13,11 @@ hero:
       text: 交流社区 ↗
       link: https://space.fresns.com/developers
     - theme: alt
-      text: 开发者中心 ↗
-      link: https://developer.fresns.com/
-    - theme: alt
       text: 应用市场 ↗
       link: https://marketplace.fresns.com/
+    - theme: alt
+      text: 开发者中心 ↗
+      link: https://developer.fresns.com/
 
 features:
   - icon: 
