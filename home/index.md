@@ -6,7 +6,7 @@ hero:
   text: Developer Documentation
   tagline: Help for wherever you are on your Fresns journey.
   image:
-    src: https://images.fresns.com/docs/features/social.svg
+    src: https://images.fresns.com/hero/social.svg
     alt: Fresns
   actions:
     - theme: brand
