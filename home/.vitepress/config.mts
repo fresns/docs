@@ -6,6 +6,10 @@ export default defineConfig({
   titleTemplate: false,
   description: 'Fresns Developer Documentation. Help for wherever you are on your Fresns journey.',
 
+  head: [
+    ['link', { rel: 'icon', type: 'image/png', href: 'https://files.fresns.org/wiki/icons/fresns.png' }],
+  ],
+
   cleanUrls: false,
 
   themeConfig: {
@@ -17,7 +21,7 @@ export default defineConfig({
         text: 'Ecosystem',
         items: [
           { text: 'Community', link: 'https://space.fresns.com/developers' },
-          { text: 'Developers', link: 'https://developers.fresns.com/' },
+          { text: 'Developer', link: 'https://developer.fresns.com/' },
           { text: 'Marketplace', link: 'https://marketplace.fresns.com/' },
         ],
       }
@@ -53,7 +57,7 @@ export default defineConfig({
             text: '生态系统',
             items: [
               { text: '交流社区', link: 'https://space.fresns.com/developers/zh-Hans/' },
-              { text: '开发者中心', link: 'https://developers.fresns.com/zh-Hans/' },
+              { text: '开发者中心', link: 'https://developer.fresns.com/zh-Hans/' },
               { text: '应用市场', link: 'https://marketplace.fresns.com/zh-Hans/' },
             ],
           }

@@ -14,7 +14,7 @@ hero:
       link: https://space.fresns.com/developers
     - theme: alt
       text: 开发者中心 ↗
-      link: https://developers.fresns.com/
+      link: https://developer.fresns.com/
     - theme: alt
       text: 应用市场 ↗
       link: https://marketplace.fresns.com/

@@ -13,8 +13,8 @@ hero:
       text: Community ↗
       link: https://space.fresns.com/developers
     - theme: alt
-      text: Developers ↗
-      link: https://developers.fresns.com/
+      text: Developer ↗
+      link: https://developer.fresns.com/
     - theme: alt
       text: Marketplace ↗
       link: https://marketplace.fresns.com/
@@ -33,7 +33,7 @@ features:
   - icon: 
       src: /images/open-source.png
     title: Extensions for Open Source
-    details: Utilize the open-source potential of Fresns to extend and fortify its core capabilities. Our framework offers developers the flexibility to enhance the community experience and add personalized functionality.
+    details: Utilize the open-source potential of Fresns to extend and fortify its core capabilities. Our framework offers developer the flexibility to enhance the community experience and add personalized functionality.
     link: /open-source/
   - icon: 
       src: /images/clients.png
