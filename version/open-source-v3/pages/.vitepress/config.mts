@@ -17,6 +17,10 @@ export default defineConfig({
 
   cleanUrls: false,
 
+  sitemap: {
+    hostname: 'https://fresns.org',
+  },
+
   themeConfig:{
     logo: 'https://images.fresns.com/icon-2021.png',
     nav: navbar(),

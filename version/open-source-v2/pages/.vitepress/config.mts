@@ -8,6 +8,10 @@ export default defineConfig({
 
     lastUpdated: true,
 
+    sitemap: {
+        hostname: 'https://v2.fresns.org',
+    },
+
     head: [
         ['link', { rel: 'icon', type: 'image/png', href: 'https://images.fresns.com/icon-2021.png' }],
         ['meta', { property: 'og:type', content: 'website' }],
