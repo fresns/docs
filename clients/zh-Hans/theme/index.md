@@ -41,7 +41,6 @@ ThemeDemo/          // 主题模板文件夹（以 fskey 命名）
 | /themes/`{fskey}`/assets/ | /public/assets/`{fskey}`/ |
 | 其余文件 | 不分发 |
 
-
 ## theme.json 配置文件
 
 - 由于主题模板也是入库管理的模式，所以「安装」使用了插件的配置文件来处理主题模板的信息入库。
@@ -59,35 +58,18 @@ ThemeDemo/          // 主题模板文件夹（以 fskey 命名）
         // 设置功能的配置键名，与 functions.blade.php 配合使用。
         {
             "itemKey": "theme_menu_name",
-            "itemType": "string",
-            "itemTag": "themes",
-            "isMultilingual": true,
+            "itemType": "object", // 多语言必须为 object 类型
+            "isMultilingual": true
         },
         {
             "itemKey": "themeSet",
             "itemType": "string",
-            "itemTag": "themes",
-            "isMultilingual": false,
+            "isMultilingual": false
         },
         {
             "itemKey": "themeSelect",
             "itemType": "string",
-            "itemTag": "themes",
-            "isMultilingual": false,
-            "options": [
-                {
-                    "label": "option1",
-                    "value": "1"
-                },
-                {
-                    "label": "option2",
-                    "value": "2"
-                },
-                {
-                    "label": "option3",
-                    "value": "3"
-                }
-            ]
+            "isMultilingual": false
         }
     ]
 }

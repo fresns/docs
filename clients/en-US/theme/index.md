@@ -41,7 +41,6 @@ When the theme is installed, the static resources are published to the `public` 
 | /themes/`{fskey}`/assets/ | /public/assets/`{fskey}`/ |
 | Other File | No Publish |
 
-
 ## theme.json Config File
 
 - As the theme template is also the mode of warehousing management, the "installation" uses the configuration file of the plug-in to process the warehousing of the theme template information.
@@ -59,35 +58,18 @@ When the theme is installed, the static resources are published to the `public` 
         // Configuration key name of the set function, used in conjunction with functions.blade.php
         {
             "itemKey": "theme_menu_name",
-            "itemType": "string",
-            "itemTag": "themes",
-            "isMultilingual": true,
+            "itemType": "object",
+            "isMultilingual": true
         },
         {
             "itemKey": "themeSet",
             "itemType": "string",
-            "itemTag": "themes",
-            "isMultilingual": false,
+            "isMultilingual": false
         },
         {
             "itemKey": "themeSelect",
             "itemType": "string",
-            "itemTag": "themes",
-            "isMultilingual": false,
-            "options": [
-                {
-                    "label": "option1",
-                    "value": "1"
-                },
-                {
-                    "label": "option2",
-                    "value": "2"
-                },
-                {
-                    "label": "option3",
-                    "value": "3"
-                }
-            ]
+            "isMultilingual": false
         }
     ]
 }
