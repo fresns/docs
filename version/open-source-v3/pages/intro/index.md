@@ -13,7 +13,7 @@ Fresns is a free and open source social network service software, a general-purp
 ::: tip
 - Users should read the [installation](../guide/install.md) and [operating](operating.md) documentation.
 - Extensions developers should read the [extension documentation](https://docs.fresns.com/open-source/extensions/) and [database structure](https://docs.fresns.com/open-source/database/).
-- For client developers (web or app), please read the [API](https://docs.fresns.com/zh-Hans/clients/api/) documentation.
+- For client developers (web or app), please read the [API](https://docs.fresns.com/clients/api/) documentation.
 :::
 
 ## Program Structure
