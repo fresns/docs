@@ -3,20 +3,26 @@
 ## Route
 
 ```php
-{{ fs_route(route('route name')) }}
+fs_route(route('route name'))
 
-{{ fs_route(route('fresns.user.index')) }}
+fs_route(route('fresns.user.index'))
 ```
 
 - `route` Real routing in the system
 - `fs_route` Handling route as multilingual route
 
-## Config Items
-
-Get configuration values from API [global configuration information](../api/global/configs.md)
+## Theme Info
 
 ```php
-{{ fs_api_config('item_key') }}
+fs_theme('') // fskey or version
+```
+
+## Config Items
+
+Get configuration values from API [global configuration information](../reference/configs.md)
+
+```php
+fs_config('item_key')
 ```
 
 ## Language Packs
@@ -25,7 +31,31 @@ Get configuration values from API [global configuration information](../api/glob
 - Configuration Path `Panel > Clients > Language Packs`
 
 ```php
-{{ fs_lang('KeyName') }}
+fs_lang('KeyName')
+```
+
+## Channel Extends
+
+- [Channel Information](../api/global/channels.md)
+
+```php
+fs_channels()
+```
+
+## Content Types
+
+- [Content Types Array](../api/global/content-types.md)
+
+```php
+fs_content_types('') // post or comment
+```
+
+## Stickers
+
+- [Stickers Array](../api/global/stickers.md)
+
+```php
+fs_stickers()
 ```
 
 ## Account and User
@@ -51,12 +81,6 @@ fs_user('key')
 - The parameter key comes from the API `data` parameter.
 - [Account Detail API](../api/account/detail.md)
 - [User Detail API](../api/user/detail.md)
-
-## Channel Extends
-
-```php
-fs_channels()
-```
 
 ## Global Data
 
@@ -147,18 +171,6 @@ fs_sticky_posts($gid)
 
 ```php
 fs_sticky_comments($pid)
-```
-
-### Content Types
-
-```php
-fs_content_types($type) // post or comment
-```
-
-### Stickers
-
-```php
-fs_stickers()
 ```
 
 ## Client Options

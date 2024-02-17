@@ -3,20 +3,26 @@
 ## 路由
 
 ```php
-{{ fs_route(route('路由名')) }}
+fs_route(route('路由名'))
 
-{{ fs_route(route('fresns.user.index')) }}
+fs_route(route('fresns.user.index'))
 ```
 
 - `route` 系统中实际的路由
 - `fs_route` 处理路由为多语言路由
 
-## 配置值
-
-从 API [全局配置信息](../api/global/configs.md)获取配置值
+## 主题信息
 
 ```php
-{{ fs_api_config('配置键名') }}
+fs_theme('') // fskey 或 version
+```
+
+## 配置值
+
+从 API [全局配置信息](../reference/configs.md)获取配置值
+
+```php
+fs_config('配置键名')
 ```
 
 ## 语言配置
@@ -25,7 +31,31 @@
 - 配置位置 `控制面板 > 客户端 > 语言包配置`
 
 ```php
-{{ fs_lang('语言键名') }}
+fs_lang('语言键名')
+```
+
+## 频道扩展
+
+- [频道扩展信息](../api/global/channels.md)
+
+```php
+fs_channels()
+```
+
+## 内容类型
+
+- [内容类型列表信息](../api/global/content-types.md)
+
+```php
+fs_content_types('') // post or comment
+```
+
+## 表情
+
+- [表情列表](../api/global/stickers.md)
+
+```php
+fs_stickers()
 ```
 
 ## 账号和用户参数
@@ -51,12 +81,6 @@ fs_user('参数名')
 - 参数名来自 API `data` 参数。
 - [账号 API](../api/account/detail.md)
 - [用户 API](../api/user/detail.md)
-
-## 频道扩展
-
-```php
-fs_channels()
-```
 
 ## 全局数据
 
@@ -147,18 +171,6 @@ fs_sticky_posts($gid)
 
 ```php
 fs_sticky_comments($pid)
-```
-
-### 内容类型
-
-```php
-fs_content_types($type) // post or comment
-```
-
-### 表情
-
-```php
-fs_stickers()
 ```
 
 ## 客户端判断
