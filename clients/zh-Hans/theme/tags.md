@@ -17,6 +17,21 @@ fs_route(route('fresns.user.index'))
 fs_theme('') // fskey 或 version
 ```
 
+## 辅助功能
+
+```php
+fs_helpers('辅助函数', '可用方法', $data, $options)
+```
+
+- 返回并清理指定值（从数组中返回指定键的值并删除此键值对）
+    - 辅助函数: `Arr`
+    - 可用方法: `pull`
+    - 数组数据: `$data`
+    - 功能选项: `$options`
+        - `key` 数组列表键名
+        - `values` 符合条件的键值，单个字符串或者多个数组
+        - `asArray` 布尔值，结果仅剩一条时，是否保持为数组格式
+
 ## 配置值
 
 从 API [全局配置信息](../reference/configs.md)获取配置值

@@ -17,6 +17,21 @@ fs_route(route('fresns.user.index'))
 fs_theme('') // fskey or version
 ```
 
+## Helpers
+
+```php
+fs_helpers('Helper', 'Method', $data, $options)
+```
+
+- Return and Clear Specified Value (Returns the value of the specified key from the array and removes this key-value pair.)
+    - Helper: `Arr`
+    - Method: `pull`
+    - Arr Data: `$data`
+    - Options: `$options`
+        - `key` Arr List Key Name
+        - `values` The key value that matches the condition, a single string or multiple arrays
+        - `asArray` Boolean value, whether to keep it in array format when there is only one entry left in the result
+
 ## Config Items
 
 Get configuration values from API [global configuration information](../reference/configs.md)
