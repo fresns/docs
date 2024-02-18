@@ -24,20 +24,20 @@ features:
       src: https://images.fresns.com/docs/features/oauth.png
     title: OAuth App
     details: Harness the power of Fresns with OAuth functionality to enhance your applications. Enable Fresns account logins to streamline authentication and fortify cross-platform connectivity for users.
-    link: https://docs.fresns.com/oauth/
+    link: /oauth/
   - icon: 
       src: https://images.fresns.com/docs/features/cloud.png
     title: Extensions for Cloud
     details: Empower cloud community with our extensions designed to augment cloud service capabilities. These tools provide a robust foundation for users to innovate and expand upon cloud functionalities.
-    link: https://docs.fresns.com/cloud/
+    link: /cloud/
   - icon: 
       src: https://images.fresns.com/docs/features/open-source.png
     title: Extensions for Open Source
     details: Utilize the open-source potential of Fresns to extend and fortify its core capabilities. Our framework offers developer the flexibility to enhance the community experience and add personalized functionality.
-    link: https://docs.fresns.com/open-source/
+    link: /open-source/
   - icon: 
       src: https://images.fresns.com/docs/features/clients.png
     title: Clients
     details: Develop client applications with Fresns unified and standardized APIs. Craft applications suited for various environments with a single development effort, ensuring compatibility and developer efficiency.
-    link: https://docs.fresns.com/clients/
+    link: /clients/
 ---

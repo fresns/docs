@@ -3,8 +3,10 @@ import { defineConfig } from 'vitepress'
 export default defineConfig({
   lang: 'en-US',
   title: 'Fresns Docs',
-  titleTemplate: false,
   description: 'Fresns Developer Documentation. Help for wherever you are on your Fresns journey.',
+
+  titleTemplate: false,
+  cleanUrls: false,
 
   head: [
     ['link', { rel: 'icon', type: 'image/png', href: 'https://images.fresns.com/icon-2021.png' }],
@@ -14,8 +16,6 @@ export default defineConfig({
     ['meta', { property: 'og:url', content: 'https://docs.fresns.com' }],
     ['meta', { property: 'og:image', content: 'https://images.fresns.com/docs/open-graph/open-source.jpg' }],
   ],
-
-  cleanUrls: false,
 
   themeConfig: {
     siteTitle: 'Fresns Docs',
@@ -51,8 +51,9 @@ export default defineConfig({
       label: '简体中文',
       lang: 'zh-Hans',
       title: 'Fresns 文档',
-      titleTemplate: false,
       description: 'Fresns 开发者文档，在 Fresns 旅程中随时为你提供帮助。',
+
+      titleTemplate: false,
 
       head: [
         ['link', { rel: 'icon', type: 'image/png', href: 'https://images.fresns.com/icon-2021.png' }],

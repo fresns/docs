@@ -5,34 +5,53 @@ import { useRoute } from 'vitepress'
 export default defineComponent({
   setup() {
     const menuNames = {
-      '/': 'Get Started',
-      'zh-Hans': '开始',
+      '/': '🚀 Get Started',
+      '/oauth/': 'OAuth',
+      '/cloud/': 'Cloud',
+      '/open-source/': 'Open Source',
+      '/clients/': 'Clients',
+
+      '/zh-Hans/': '🚀 开始',
+      '/zh-Hans/oauth/': 'OAuth 应用',
+      '/zh-Hans/cloud/': '云服务应用',
+      '/zh-Hans/open-source/': '开源扩展',
+      '/zh-Hans/clients/': '客户端',
     };
 
     const baseLinks = {
       '/': [
-        { text: 'OAuth', href: 'https://docs.fresns.com/oauth/' },
-        { text: 'Cloud', href: 'https://docs.fresns.com/cloud/' },
-        { text: 'Open Source', href: 'https://docs.fresns.com/open-source/' },
-        { text: 'Clients', href: 'https://docs.fresns.com/clients/' },
+        { text: 'OAuth', href: '/oauth/' },
+        { text: 'Cloud', href: '/cloud/' },
+        { text: 'Open Source', href: '/open-source/' },
+        { text: 'Clients', href: '/clients/' },
       ],
-      'zh-Hans': [
-        { text: 'OAuth 应用', href: 'https://docs.fresns.com/zh-Hans/oauth/' },
-        { text: '云服务应用', href: 'https://docs.fresns.com/zh-Hans/cloud/' },
-        { text: '开源扩展', href: 'https://docs.fresns.com/zh-Hans/open-source/' },
-        { text: '客户端', href: 'https://docs.fresns.com/zh-Hans/clients/' },
+      '/zh-Hans/': [
+        { text: 'OAuth 应用', href: '/zh-Hans/oauth/' },
+        { text: '云服务应用', href: '/zh-Hans/cloud/' },
+        { text: '开源扩展', href: '/zh-Hans/open-source/' },
+        { text: '客户端', href: '/zh-Hans/clients/' },
       ],
     };
 
     const route = useRoute();
+
     const currentLanguagePrefix = computed(() => {
-      return route.path.startsWith('/zh-Hans/') ? 'zh-Hans' : '/';
+      return route.path.startsWith('/zh-Hans/') ? '/zh-Hans/' : '/';
     });
 
-    const menuName = computed(() => menuNames[currentLanguagePrefix.value]);
-    const links = computed(() => baseLinks[currentLanguagePrefix.value]);
+    const currentPathPrefix = computed(() => {
+      const pathWithoutLangPrefix = route.path.replace(currentLanguagePrefix.value, '');
 
-    return { menuName, links };
+      const firstSection = pathWithoutLangPrefix ? `${pathWithoutLangPrefix.split('/')[0]}/` : '/';
+
+      return currentLanguagePrefix.value + firstSection;
+    });
+
+    const menuName = computed(() => menuNames[currentPathPrefix.value] || menuNames[currentLanguagePrefix.value]);
+    const links = computed(() => baseLinks[currentLanguagePrefix.value] || baseLinks['/']);
+    const pathPrefix = currentPathPrefix.value;
+
+    return { menuName, links, pathPrefix };
   },
 
   data() {
@@ -52,7 +71,7 @@ export default defineComponent({
   <div class="FsFlyout" @mouseover="isMenuOpen = true" @mouseleave="isMenuOpen = false">
       <button type="button" class="button" aria-haspopup="true" :aria-expanded="isMenuOpen.toString()" @click="toggleMenu($event)">
         <span class="text">
-          <span>🚀 {{ menuName }}</span>
+          <span>{{ menuName }}</span>
           <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" viewBox="0 0 24 24" class="text-icon">
             <path d="M12,16c-0.3,0-0.5-0.1-0.7-0.3l-6-6c-0.4-0.4-0.4-1,0-1.4s1-0.4,1.4,0l5.3,5.3l5.3-5.3c0.4-0.4,1-0.4,1.4,0s0.4,1,0,1.4l-6,6C12.5,15.9,12.3,16,12,16z"></path>
           </svg>
@@ -61,7 +80,7 @@ export default defineComponent({
       <div class="menus">
         <div class="FsMenu">
           <div class="FsMenuLink" v-for="link in links" :key="link.href">
-            <a class="link" :href="link.href" target="_blank">{{ link.text }}</a>
+            <a class="link" :class="{ active: link.href === pathPrefix }" :href="link.href">{{ link.text }}</a>
           </div>
         </div>
       </div>
