@@ -23,14 +23,41 @@ fs_theme('') // fskey or version
 fs_helpers('Helper', 'Method', $data, $options)
 ```
 
-- Return and Clear Specified Value (Returns the value of the specified key from the array and removes this key-value pair.)
-    - Helper: `Arr`
-    - Method: `pull`
-    - Arr Data: `$data`
-    - Options: `$options`
-        - `key` Arr List Key Name
-        - `values` The key value that matches the condition, a single string or multiple arrays
-        - `asArray` Boolean value, whether to keep it in array format when there is only one entry left in the result
+::: details Get Specified Value `Arr::get`
+From an array, get the array with the specified key name for the specified key value.
+
+- Helper: `Arr`
+- Method: `get`
+- Arr Data: `$data`
+- Options: `$options`
+    - `key` Arr List Key Name
+    - `values` The key value that matches the condition, a single string or multiple arrays
+    - `asArray` Boolean value, whether to keep it in array format when there is only one entry left in the result
+:::
+
+::: details Remove Specified Value `Arr::forget`
+From an array, removes the array with the specified key name for the specified key value.
+
+- Helper: `Arr`
+- Method: `forget`
+- Arr Data: `$data`
+- Options: `$options`
+    - `key` Arr List Key Name
+    - `values` The key value that matches the condition, a single string or multiple arrays
+    - `asArray` Boolean value, whether to keep it in array format when there is only one entry left in the result
+:::
+
+::: details Return and Clear Specified Value `Arr::pull`
+Returns the value of the specified key from the array and removes this key-value pair.
+
+- Helper: `Arr`
+- Method: `pull`
+- Arr Data: `$data`
+- Options: `$options`
+    - `key` Arr List Key Name
+    - `values` The key value that matches the condition, a single string or multiple arrays
+    - `asArray` Boolean value, whether to keep it in array format when there is only one entry left in the result
+:::
 
 ## Config Items
 

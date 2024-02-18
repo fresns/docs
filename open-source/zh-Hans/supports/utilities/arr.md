@@ -48,6 +48,19 @@ ArrUtility::pull($array, $key, $values, $asArray);
 - 返回 `{"name":"language","canDelete":false}`
 - 传参的数组只剩下 `[{"name":"errorUnknown","canDelete":false}]`
 
+## 编辑对象键名
+
+```php
+ArrUtility::editKey($object, $key, $newKey);
+```
+| 参数名 | 类型 | 说明 |
+| --- | --- | --- |
+| object | Object | 示例 `{"language":"Language","errorUnknown":"Unknown error"}` |
+| key | String | 示例 `language` |
+| newKey | String | 示例 `lang` |
+
+- 修改之后示例 `{"lang":"Language","errorUnknown":"Unknown error"}`
+
 ## 编辑数组值
 
 ```php
@@ -61,16 +74,3 @@ ArrUtility::editValue($array, $key, $value, $newValue);
 | newValue | String | 示例 `lang` |
 
 - 修改之后示例 `[{"name":"lang","canDelete":false},{"name":"errorUnknown","canDelete":false}]`
-
-## 编辑对象键名
-
-```php
-ArrUtility::editKey($object, $key, $newKey);
-```
-| 参数名 | 类型 | 说明 |
-| --- | --- | --- |
-| object | Object | 示例 `{"language":"Language","errorUnknown":"Unknown error"}` |
-| key | String | 示例 `language` |
-| newKey | String | 示例 `lang` |
-
-- 修改之后示例 `{"lang":"Language","errorUnknown":"Unknown error"}`

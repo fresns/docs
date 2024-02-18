@@ -48,6 +48,19 @@ ArrUtility::pull($array, $key, $values, $asArray);
 - Return `{"name":"language","canDelete":false}`
 - The passed array only contains `[{"name":"errorUnknown","canDelete":false}]`
 
+## Edit Object Key Name
+
+```php
+ArrUtility::editKey($object, $key, $newKey);
+```
+| Parameter Name | Type | Description |
+| --- | --- | --- |
+| object | Object | Example `{"language":"Language","errorUnknown":"Unknown error"}` |
+| key | String | Example `language` |
+| newKey | String | Example `lang` |
+
+- Example after modification `{"lang":"Language","errorUnknown":"Unknown error"}`
+
 ## Edit Array Value
 
 ```php
@@ -61,16 +74,3 @@ ArrUtility::editValue($array, $key, $value, $newValue);
 | newValue | String | Example `lang` |
 
 - Example after modification `[{"name":"lang","canDelete":false},{"name":"errorUnknown","canDelete":false}]`
-
-## Edit Object Key Name
-
-```php
-ArrUtility::editKey($object, $key, $newKey);
-```
-| Parameter Name | Type | Description |
-| --- | --- | --- |
-| object | Object | Example `{"language":"Language","errorUnknown":"Unknown error"}` |
-| key | String | Example `language` |
-| newKey | String | Example `lang` |
-
-- Example after modification `{"lang":"Language","errorUnknown":"Unknown error"}`
