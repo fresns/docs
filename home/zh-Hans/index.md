@@ -25,19 +25,23 @@ features:
     title: OAuth 应用
     details: 利用 Fresns 的 OAuth 功能赋能您的应用程序。允许您使用 Fresns 账户登录，简化认证流程，加强跨平台连通性。
     link: /zh-Hans/oauth/
+    target: _top
   - icon: 
       src: https://images.fresns.com/docs/features/cloud.png
     title: 云服务应用
     details: 使用扩展功能为用户的云社区增添动力。这些扩展专为增强和丰富云服务功能而设计，让您可以在此基础上自由的发挥心中所想。
     link: /zh-Hans/cloud/
+    target: _top
   - icon: 
       src: https://images.fresns.com/docs/features/open-source.png
     title: 开源扩展
     details: 利用 Fresns 的开源潜力，扩展并强化其核心功能。我们的框架为开发人员提供了增强社区体验和添加个性化功能的灵活性。
     link: /zh-Hans/open-source/
+    target: _top
   - icon: 
       src: https://images.fresns.com/docs/features/clients.png
     title: 客户端
     details: 使用 Fresns 统一和标准化的 API 开发客户端，创建可以服务于三种环境的应用程序，只需一次开发努力，确保兼容性和效率。
     link: /zh-Hans/clients/
+    target: _top
 ---

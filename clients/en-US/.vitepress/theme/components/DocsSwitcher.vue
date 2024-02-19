@@ -12,16 +12,16 @@
         <div class="FsMenu">
           <!-- items -->
           <div class="FsMenuLink">
-            <a class="link" href="https://docs.fresns.com/oauth/">OAuth</a>
+            <a class="link" href="https://docs.fresns.com/oauth/" target="_top">OAuth</a>
           </div>
           <div class="FsMenuLink">
-            <a class="link" href="https://docs.fresns.com/cloud/">Cloud</a>
+            <a class="link" href="https://docs.fresns.com/cloud/" target="_top">Cloud</a>
           </div>
           <div class="FsMenuLink">
-            <a class="link" href="https://docs.fresns.com/open-source/">Open Source</a>
+            <a class="link" href="https://docs.fresns.com/open-source/" target="_top">Open Source</a>
           </div>
           <div class="FsMenuLink">
-            <a class="link active" href="https://docs.fresns.com/clients/">Clients</a>
+            <a class="link active" href="https://docs.fresns.com/clients/" target="_top">Clients</a>
           </div>
           <!-- items end -->
         </div>
