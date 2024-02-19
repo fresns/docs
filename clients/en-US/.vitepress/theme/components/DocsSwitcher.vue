@@ -12,13 +12,13 @@
         <div class="FsMenu">
           <!-- items -->
           <div class="FsMenuLink">
-            <a class="link" href="https://docs.fresns.com/oauth/" target="_blank">OAuth</a>
+            <a class="link" href="https://docs.fresns.com/oauth/">OAuth</a>
           </div>
           <div class="FsMenuLink">
-            <a class="link" href="https://docs.fresns.com/cloud/" target="_blank">Cloud</a>
+            <a class="link" href="https://docs.fresns.com/cloud/">Cloud</a>
           </div>
           <div class="FsMenuLink">
-            <a class="link" href="https://docs.fresns.com/open-source/" target="_blank">Open Source</a>
+            <a class="link" href="https://docs.fresns.com/open-source/">Open Source</a>
           </div>
           <div class="FsMenuLink">
             <a class="link active" href="https://docs.fresns.com/clients/">Clients</a>
