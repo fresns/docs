@@ -24,19 +24,19 @@
 
 - PHP 扩展安装了 `fileinfo`
 
-![PHP 扩展](https://cdn.fresns.cn/guide/baota-php-extensions.png)
+![PHP 扩展](https://assets.fresns.com/images/wikis/guides/baota-php-extensions.png)
 
 ### PHP 函数
 
 - PHP 函数启用了 `symlink`, `putenv`, `proc_open`, `shell_exec`, `pcntl_signal`, `pcntl_alarm`, `pcntl_async_signals`, `passthru`
 
-![PHP 函数](https://cdn.fresns.cn/guide/baota-php-functions.png)
+![PHP 函数](https://assets.fresns.com/images/wikis/guides/baota-php-functions.png)
 
 ### PHP 超时限制
 
 - 为了避免插件依赖下载超时，或者前端大文件上传等使用场景，需加大 PHP 超时限制。
 
-![PHP 超时限制](https://cdn.fresns.cn/guide/baota-php-timeout.png)
+![PHP 超时限制](https://assets.fresns.com/images/wikis/guides/baota-php-timeout.png)
 
 ## 网站配置
 
@@ -48,32 +48,32 @@
 - 运行目录指定为 `/public`
 - 不要开启：防跨站攻击(open_basedir)
 
-![public](https://cdn.fresns.cn/guide/baota-website-directory.png)
+![public](https://assets.fresns.com/images/wikis/guides/baota-website-directory.png)
 
 ### URL 重写
 
 - 在宝塔中叫「伪静态」
 - [查看 Fresns URL 重写介绍](../guide/install.md#url-重写)
 
-![URL](https://cdn.fresns.cn/guide/baota-url-rewriting.png)
+![URL](https://assets.fresns.com/images/wikis/guides/baota-url-rewriting.png)
 
 ### PHP 版本
 
 - 不低于 PHP 8.2
 
-![PHP](https://cdn.fresns.cn/guide/baota-php-version.png)
+![PHP](https://assets.fresns.com/images/wikis/guides/baota-php-version.png)
 
 ### Composer 版本
 
 - 不低于 Composer 2.5
 
-![Composer](https://cdn.fresns.cn/guide/baota-composer-version.png)
+![Composer](https://assets.fresns.com/images/wikis/guides/baota-composer-version.png)
 
 ### PHP 命令行版本
 
 - 选择 `PHP-81` 或者 `PHP-82`
 
-![PHP Cli](https://cdn.fresns.cn/guide/baota-php-cli.png)
+![PHP Cli](https://assets.fresns.com/images/wikis/guides/baota-php-cli.png)
 
 ## 数据库配置
 
@@ -81,7 +81,7 @@
 
 - 必须为 `utf8mb4`
 
-![MySQL Character Set](https://cdn.fresns.cn/guide/baota-mysql-character-set.png)
+![MySQL Character Set](https://assets.fresns.com/images/wikis/guides/baota-mysql-character-set.png)
 
 ### 排序规则
 
@@ -97,7 +97,7 @@
 DB_COLLATION=utf8mb4_0900_ai_ci
 ```
 
-![MySQL Collation](https://cdn.fresns.cn/guide/mysql-collation.png)
+![MySQL Collation](https://assets.fresns.com/images/wikis/guides/mysql-collation.png)
 
 ## 目录权限
 
@@ -107,13 +107,13 @@ DB_COLLATION=utf8mb4_0900_ai_ci
 - 确认所有子目录权限所有者均是 `www` 权限
 - 如果你不确定，或者一个一个目录的查看比较费时，那么可以选择**批量重置权限**
 
-![Folder Ownership](https://cdn.fresns.cn/guide/baota-folder-ownership.png)
+![Folder Ownership](https://assets.fresns.com/images/wikis/guides/baota-folder-ownership.png)
 
 ## 定时任务
 
 > 宝塔面板 -> 计划任务
 
-![Crontab](https://cdn.fresns.cn/guide/baota-crontab.png)
+![Crontab](https://assets.fresns.com/images/wikis/guides/baota-crontab.png)
 
 - 如果想了解任务用途，请[点击这里](../guide/configuration.md#任务调度)阅读介绍
 
@@ -158,17 +158,17 @@ REDIS_QUEUE=fresns
 
 推荐 `redis` 或 `database`，不配置则默认为 `sync`
 
-![env](https://cdn.fresns.cn/guide/baota-queue-env.png)
+![env](https://assets.fresns.com/images/wikis/guides/baota-queue-env.png)
 
-![redis](https://cdn.fresns.cn/guide/baota-queue-redis.png)
+![redis](https://assets.fresns.com/images/wikis/guides/baota-queue-redis.png)
 
 ### 2、安装队列管理工具 Supervisor
 
-![Supervisor](https://cdn.fresns.cn/guide/baota-supervisor.png)
+![Supervisor](https://assets.fresns.com/images/wikis/guides/baota-supervisor.png)
 
 ### 3、配置队列进程
 
-![Supervisor](https://cdn.fresns.cn/guide/baota-queue-process.png)
+![Supervisor](https://assets.fresns.com/images/wikis/guides/baota-queue-process.png)
 
 ```sh
 # 进程启动命令

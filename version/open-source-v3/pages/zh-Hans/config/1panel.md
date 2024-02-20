@@ -30,14 +30,14 @@
 
 - PHP 扩展选择 `opcache`, `redis`, `mysqli`, `pdo_mysql`, `gd`, `imagick`, `zip`
 
-![PHP 扩展](https://cdn.fresns.cn/guide/1panel-php-extensions.png)
+![PHP 扩展](https://assets.fresns.com/images/wikis/guides/1panel-php-extensions.png)
 
 ### PHP 超时限制
 
 - 为了避免插件依赖下载超时，或者前端大文件上传等使用场景，需加大 PHP 超时限制。
 - 创建网站后配置
 
-![PHP 超时限制](https://cdn.fresns.cn/guide/1panel-php-timeout.png)
+![PHP 超时限制](https://assets.fresns.com/images/wikis/guides/1panel-php-timeout.png)
 
 ## 网站配置
 
@@ -47,20 +47,20 @@
 
 - 选择「运行环境」创建网站
 
-![public](https://cdn.fresns.cn/guide/1panel-create-website.png)
+![public](https://assets.fresns.com/images/wikis/guides/1panel-create-website.png)
 
 ### 网站目录
 
 - 运行目录指定为 `/public`
 
-![public](https://cdn.fresns.cn/guide/1panel-website-directory.png)
+![public](https://assets.fresns.com/images/wikis/guides/1panel-website-directory.png)
 
 ### URL 重写
 
 - 在 1Panel 中叫「伪静态」
 - [查看 Fresns URL 重写介绍](../guide/install.md#url-重写)
 
-![URL](https://cdn.fresns.cn/guide/1panel-url-rewriting.png)
+![URL](https://assets.fresns.com/images/wikis/guides/1panel-url-rewriting.png)
 
 ## 数据库配置
 
@@ -68,7 +68,7 @@
 
 - 必须为 `utf8mb4`
 
-![MySQL Character Set](https://cdn.fresns.cn/guide/1panel-mysql-character-set.png)
+![MySQL Character Set](https://assets.fresns.com/images/wikis/guides/1panel-mysql-character-set.png)
 
 ### 排序规则
 
@@ -84,7 +84,7 @@
 DB_COLLATION=utf8mb4_0900_ai_ci
 ```
 
-![MySQL Collation](https://cdn.fresns.cn/guide/mysql-collation.png)
+![MySQL Collation](https://assets.fresns.com/images/wikis/guides/mysql-collation.png)
 
 ## 目录权限
 
@@ -94,13 +94,13 @@ DB_COLLATION=utf8mb4_0900_ai_ci
 - 如果你不确定，或者一个一个目录的查看比较费时，那么可以选择**批量修改用户**
 - 1Panel 面板中 `1000` 用户和用户组不是固定的，取决于你的服务器环境，比如我的服务器是 `ecs-user`，常见的是 `root`
 
-![Folder Ownership](https://cdn.fresns.cn/guide/1panel-folder-ownership.png)
+![Folder Ownership](https://assets.fresns.com/images/wikis/guides/1panel-folder-ownership.png)
 
 ## 定时任务
 
 > 1Panel -> 计划任务
 
-![Crontab](https://cdn.fresns.cn/guide/1panel-crontab.png)
+![Crontab](https://assets.fresns.com/images/wikis/guides/1panel-crontab.png)
 
 - 如果想了解任务用途，请[点击这里](../guide/configuration.md#任务调度)阅读介绍
 
