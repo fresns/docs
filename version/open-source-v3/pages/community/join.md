@@ -36,7 +36,7 @@ After that, you'll be ready to contribute to Fresns core repositories:
 
 - [Fresns](https://github.com/fresns/fresns): the core library
 - [Plugins](https://github.com/fresns/plugins): officially developed extension plugins
-- [Website](https://github.com/fresns/website): officially developed website repository
+- [Themes](https://github.com/fresns/client-website-themes): officially developed website themes repository
 
 ...as well as many smaller official [companion libraries](https://github.com/fresns).
 

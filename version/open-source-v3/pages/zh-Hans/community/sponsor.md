@@ -17,11 +17,11 @@ Fresns 是采用 `Apache-2.0` 许可的开源项目，使用完全免费。
 
 | 微信赞赏码 |
 | :---: |
-| ![微信赞赏码](https://cdn.fresns.cn/images/qr-wechatpay-reward.jpg) |
+| ![微信赞赏码](https://assets.fresns.cn/wikis/qr-wechatpay-reward.jpg) |
 
 | 微信 | 支付宝 |
 | :---: | :---: |
-| ![微信](https://cdn.fresns.cn/images/qr-wechatpay.png) | ![支付宝](https://cdn.fresns.cn/images/qr-alipay.png) |
+| ![微信](https://assets.fresns.cn/wikis/qr-wechatpay.png) | ![支付宝](https://assets.fresns.cn/wikis/qr-alipay.png) |
 
 > 企业赞助者如需对公转账或者需要发票，请通过下方[联系方式](#联系方式)联系我。
 
@@ -56,5 +56,3 @@ Fresns 是采用 `Apache-2.0` 许可的开源项目，使用完全免费。
 ## 联系方式
 
 - 邮箱：[tangjie@fresns.cn](mailto:tangjie@fresns.cn)
-- 微信：*扫描下方二维码*
-    <img src="https://cdn.fresns.cn/wiki/images/wechat-tangjie.jpg" width="200">
