@@ -14,8 +14,13 @@ fs_route(route('fresns.user.index'))
 ## 主题信息
 
 ```php
-fs_theme('') // fskey 或 version
+fs_theme('')
 ```
+
+- fskey
+- version
+- lang
+- assets
 
 ## 辅助功能
 

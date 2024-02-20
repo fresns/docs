@@ -14,8 +14,13 @@ fs_route(route('fresns.user.index'))
 ## Theme Info
 
 ```php
-fs_theme('') // fskey or version
+fs_theme('')
 ```
+
+- fskey
+- version
+- lang
+- assets
 
 ## Helpers
 
