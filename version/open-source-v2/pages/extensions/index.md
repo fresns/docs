@@ -1,6 +1,6 @@
 # Extending Fresns
 
-<p align="center"><img src="https://images.fresns.com/logo-2021.png" width="300"></p>
+<p align="center"><img src="https://assets.fresns.com/images/logos/fresns.png" width="300"></p>
 
 <p align="center">
 <img src="https://img.shields.io/badge/Laravel-10.x-blue" alt="Laravel" style="display:inline;">

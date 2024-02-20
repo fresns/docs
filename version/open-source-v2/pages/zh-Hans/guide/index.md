@@ -1,6 +1,6 @@
 # 介绍
 
-<p align="center"><img src="https://images.fresns.com/logo-2021.png" width="300"></p>
+<p align="center"><img src="https://assets.fresns.com/images/logos/fresns.png" width="300"></p>
 
 <p align="center">
 <img src="https://img.shields.io/packagist/dependency-v/fresns/fresns/php" alt="PHP" style="display:inline;">
@@ -26,9 +26,9 @@ Fresns 是一款免费开源的社交网络服务软件，专为跨平台而打�
 
 | 信息流 | 论坛 |
 | :---: | :---: |
-| ![Moments](https://images.fresns.com/docs/previews/Moments.png) | ![ForumX](https://images.fresns.com/docs/previews/ForumX.png) |
-| ![ForumQ](https://images.fresns.com/docs/previews/ForumQ.png) | ![WebFrame](https://images.fresns.com/docs/previews/WebFrame.png) |
-| ![MomentsWeChat](https://images.fresns.com/docs/previews/MomentsWeChat-square.png) | ![WeChat](https://images.fresns.com/docs/previews/WeChat-square.png) |
+| ![Moments](https://assets.fresns.com/images/wikis/previews/Moments.png) | ![ForumX](https://assets.fresns.com/images/wikis/previews/ForumX.png) |
+| ![ForumQ](https://assets.fresns.com/images/wikis/previews/ForumQ.png) | ![ThemeFrame](https://assets.fresns.com/images/wikis/previews/ThemeFrame.png) |
+| ![MomentsWeChat](https://assets.fresns.com/images/wikis/previews/MomentsWeChat-square.png) | ![WeChat](https://assets.fresns.com/images/wikis/previews/WeChat-square.png) |
 
 - 查看更多: [https://marketplace.fresns.com/clients](https://marketplace.fresns.com/zh-Hans/clients)
 

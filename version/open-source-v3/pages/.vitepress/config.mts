@@ -7,12 +7,12 @@ export default defineConfig({
   description: 'Fresns is a free and open source social network service software, a general-purpose community product designed for cross-platform, and supports flexible and diverse content forms. It conforms to the trend of the times, satisfies a variety of operating scenarios, is more open and easier to re-development.',
 
   head: [
-    ['link', { rel: 'icon', type: 'image/png', href: 'https://images.fresns.com/icon-2021.png' }],
+    ['link', { rel: 'icon', type: 'image/png', href: 'https://assets.fresns.com/images/icons/fresns.png' }],
     ['meta', { property: 'og:type', content: 'website' }],
     ['meta', { property: 'og:title', content: 'Fresns' }],
     ['meta', { property: 'og:description', content: 'Cross-platform general-purpose multiple content forms social network service software' }],
     ['meta', { property: 'og:url', content: 'https://fresns.org' }],
-    ['meta', { property: 'og:image', content: 'https://images.fresns.com/docs/open-graph/open-source.jpg' }],
+    ['meta', { property: 'og:image', content: 'https://assets.fresns.com/images/wikis/open-graph/open-source.jpg' }],
   ],
 
   cleanUrls: false,
@@ -22,7 +22,7 @@ export default defineConfig({
   },
 
   themeConfig:{
-    logo: 'https://images.fresns.com/icon-2021.png',
+    logo: 'https://assets.fresns.com/images/icons/fresns.png',
     nav: navbar(),
 
     search: {
@@ -83,12 +83,12 @@ export default defineConfig({
       description: 'Fresns 是一款免费开源的社交网络服务软件，专为跨平台而打造的通用型社区产品，支持灵活多样的内容形态，可以满足多种运营场景，符合时代潮流，更开放且更易于二次开发。',
 
       head: [
-        ['link', { rel: 'icon', type: 'image/png', href: 'https://images.fresns.com/icon-2021.png' }],
+        ['link', { rel: 'icon', type: 'image/png', href: 'https://assets.fresns.com/images/icons/fresns.png' }],
         ['meta', { property: 'og:type', content: 'website' }],
         ['meta', { property: 'og:title', content: 'Fresns' }],
         ['meta', { property: 'og:description', content: '一款免费开源的社交网络服务软件' }],
         ['meta', { property: 'og:url', content: 'https://fresns.org/zh-Hans/' }],
-        ['meta', { property: 'og:image', content: 'https://images.fresns.com/docs/open-graph/open-source-zh-hans.jpg' }],
+        ['meta', { property: 'og:image', content: 'https://assets.fresns.com/images/wikis/open-graph/open-source-zh-hans.jpg' }],
       ],
 
       themeConfig: {

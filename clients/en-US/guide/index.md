@@ -1,6 +1,6 @@
 # Introduction
 
-<p align="center"><img src="https://images.fresns.com/logo-2021.png" width="300"></p>
+<p align="center"><img src="https://assets.fresns.com/images/logos/fresns.png" width="300"></p>
 
 Fresns is a comprehensive social networking service solution, meticulously crafted for cross-platform use as a universal community product. It supports a diverse array of content forms and is adept at catering to various operational scenarios, aligning seamlessly with contemporary trends. It stands out for its openness and ease of customization for further development.
 

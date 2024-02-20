@@ -1,6 +1,6 @@
 # 介绍
 
-<p align="center"><img src="https://images.fresns.com/logo-2021.png" width="300"></p>
+<p align="center"><img src="https://assets.fresns.com/images/logos/fresns.png" width="300"></p>
 
 Fresns 是一套社交网络服务产品解决方案，专为跨平台而打造的通用型社区产品，支持灵活多样的内容形态，可以满足多种运营场景，符合时代潮流，更开放且更易于二次开发。
 
