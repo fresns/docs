@@ -106,6 +106,7 @@
 | account_center_service | String | 账号中心 `URL` |
 | account_register_service | String | 账号注册 `URL` |
 | account_login_service | String | 账号登录 `URL` |
+| account_register_status | Boolean | 注册状态 |
 | account_kyc_service | String | 实名认证 `URL` |
 
 ## 钱包设置
@@ -197,6 +198,37 @@
 | view_comments_by_timelines | Boolean | 查看时间线的评论 |
 | view_posts_by_nearby | Boolean | 查看附近的帖子 |
 | view_comments_by_nearby | Boolean | 查看附近的评论 |
+
+## 互动配置
+
+> 控制面板 > 运营 > 互动配置
+
+| 键名 | 键值类型 | 描述 |
+| --- | --- | --- |
+| user_like_enabled | Boolean | 用户-赞 |
+| user_dislike_enabled | Boolean | 用户-踩 |
+| user_follow_enabled | Boolean | 用户-关注 |
+| user_block_enabled | Boolean | 用户-屏蔽 |
+| group_like_enabled | Boolean | 小组-赞 |
+| group_dislike_enabled | Boolean | 小组-踩 |
+| group_follow_enabled | Boolean | 小组-关注 |
+| group_block_enabled | Boolean | 小组-屏蔽 |
+| hashtag_like_enabled | Boolean | 话题-赞 |
+| hashtag_dislike_enabled | Boolean | 话题-踩 |
+| hashtag_follow_enabled | Boolean | 话题-关注 |
+| hashtag_block_enabled | Boolean | 话题-屏蔽 |
+| geotag_like_enabled | Boolean | 地理-赞 |
+| geotag_dislike_enabled | Boolean | 地理-踩 |
+| geotag_follow_enabled | Boolean | 地理-关注 |
+| geotag_block_enabled | Boolean | 地理-屏蔽 |
+| post_like_enabled | Boolean | 帖子-赞 |
+| post_dislike_enabled | Boolean | 帖子-踩 |
+| post_follow_enabled | Boolean | 帖子-关注 |
+| post_block_enabled | Boolean | 帖子-屏蔽 |
+| comment_like_enabled | Boolean | 评论-赞 |
+| comment_dislike_enabled | Boolean | 评论-踩 |
+| comment_follow_enabled | Boolean | 评论-关注 |
+| comment_block_enabled | Boolean | 评论-屏蔽 |
 
 ## 频道配置
 

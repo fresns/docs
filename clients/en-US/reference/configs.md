@@ -106,6 +106,7 @@
 | account_center_service | String | Account Center `URL` |
 | account_register_service | String | Account Register `URL` |
 | account_login_service | String | Account Login `URL` |
+| account_register_status | Boolean | Register Status |
 | account_kyc_service | String | Real Name Verification Support `URL` |
 
 ## Wallet
@@ -197,6 +198,37 @@
 | view_comments_by_timelines | Boolean | View Comments by Timelines |
 | view_posts_by_nearby | Boolean | View Posts by Nearby |
 | view_comments_by_nearby | Boolean | View Comments by Nearby |
+
+## Interaction
+
+> Panel > Operations > Interaction
+
+| Key Name | Value Type | Description |
+| --- | --- | --- |
+| user_like_enabled | Boolean | User - Like |
+| user_dislike_enabled | Boolean | User - Dislike |
+| user_follow_enabled | Boolean | User - Follow |
+| user_block_enabled | Boolean | User - Block |
+| group_like_enabled | Boolean | Group - Like |
+| group_dislike_enabled | Boolean | Group - Dislike |
+| group_follow_enabled | Boolean | Group - Follow |
+| group_block_enabled | Boolean | Group - Block |
+| hashtag_like_enabled | Boolean | Hashtag - Like |
+| hashtag_dislike_enabled | Boolean | Hashtag - Dislike |
+| hashtag_follow_enabled | Boolean | Hashtag - Follow |
+| hashtag_block_enabled | Boolean | Hashtag - Block |
+| geotag_like_enabled | Boolean | Geotag - Like |
+| geotag_dislike_enabled | Boolean | Geotag - Dislike |
+| geotag_follow_enabled | Boolean | Geotag - Follow |
+| geotag_block_enabled | Boolean | Geotag - Block |
+| post_like_enabled | Boolean | Post - Like |
+| post_dislike_enabled | Boolean | Post - Dislike |
+| post_follow_enabled | Boolean | Post - Follow |
+| post_block_enabled | Boolean | Post - Block |
+| comment_like_enabled | Boolean | Comment - Like |
+| comment_dislike_enabled | Boolean | Comment - Dislike |
+| comment_follow_enabled | Boolean | Comment - Follow |
+| comment_block_enabled | Boolean | Comment - Block |
 
 ## Channels
 
