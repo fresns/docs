@@ -41,10 +41,6 @@
 
 | Menu Title | Key Name | Default Key Value | Value Type | Description |
 | --- | --- | --- | --- | --- |
-| View Posts by Timelines | view_posts_by_timelines | true | boolean |  |
-| View Comments by Timelines | view_comments_by_timelines | false | boolean |  |
-| View Posts by Nearby | view_posts_by_nearby | true | boolean |  |
-| View Comments by Nearby | view_comments_by_nearby | false | boolean |  |
 | Post Brief Word Limit | post_brief_length | 280 | number |  |
 | Comment Brief Word Limit | comment_brief_length | 280 | number |  |
 | Comment visibility rule | comment_visibility_rule | 0 | number | Unit: days<br>0 means no restrictions, 7 means 7 days of visibility.<br><br>Based on the post's publishing time, if it exceeds the visibility rule in days, the post's comments will no longer be shown and cannot be commented on. |

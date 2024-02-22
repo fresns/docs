@@ -190,15 +190,6 @@
 | hashtag_format | Number | Hashtag Format<br>1 `#hashtag`<br>2 `#hashtag#` |
 | hashtag_length | Number | Hashtag Length |
 
-**List Config**
-
-| Key Name | Value Type | Description |
-| --- | --- | --- |
-| view_posts_by_timelines | Boolean | View Posts by Timelines |
-| view_comments_by_timelines | Boolean | View Comments by Timelines |
-| view_posts_by_nearby | Boolean | View Posts by Nearby |
-| view_comments_by_nearby | Boolean | View Comments by Nearby |
-
 ## Interaction
 
 > Panel > Operations > Interaction
@@ -240,6 +231,7 @@
 | --- | --- | --- |
 | channel_portal_name | String | Portal Name |
 | channel_portal_seo | Object | SEO Config |
+| channel_portal_status | Boolean | Status |
 
 ### User
 
@@ -249,10 +241,12 @@
 | channel_user_seo | Object | SEO Config |
 | channel_user_query_state | Number | List State Config |
 | channel_user_query_config | String | List Query Config |
+| channel_user_status | Boolean | Status |
 | channel_user_list_name | String | User List - Name |
 | channel_user_list_seo | Object | User List - SEO Config |
 | channel_user_list_query_state | Number | User List - List State Config |
 | channel_user_list_query_config | String | User List - List Query Config |
+| channel_user_list_status | Boolean | User List - Status |
 | channel_likes_users_name | String | My Liked Users - Name |
 | channel_dislikes_users_name | String | My Disliked Users - Name |
 | channel_following_users_name | String | My Followed Users - Name |
@@ -267,10 +261,12 @@
 | channel_group_type | String | Default type of group homepage<br>`tree` or `list` |
 | channel_group_query_state | Number | List State Config |
 | channel_group_query_config | String | List Query Config |
+| channel_group_status | Boolean | Status |
 | channel_group_list_name | String | Group List - Name  |
 | channel_group_list_seo | Object | Group List - SEO Config |
 | channel_group_list_query_state | Number | Group List - List State Config |
 | channel_group_list_query_config | String | Group List - List Query Config |
+| channel_group_list_status | Boolean | Group List - Status |
 | channel_group_detail_type | String | Default list of detail page<br>`posts` or `comments` |
 | channel_likes_groups_name | String | My Liked Groups - Name |
 | channel_dislikes_groups_name | String | My Disliked Groups - Name |
@@ -285,10 +281,12 @@
 | channel_hashtag_seo | Object | SEO Config |
 | channel_hashtag_query_state | Number | List State Config |
 | channel_hashtag_query_config | String | List Query Config |
+| channel_hashtag_status | Boolean | Status |
 | channel_hashtag_list_name | String | Hashtag List - Name  |
 | channel_hashtag_list_seo | Object | Hashtag List - SEO Config |
 | channel_hashtag_list_query_state | Number | Hashtag List - List State Config |
 | channel_hashtag_list_query_config | String | Hashtag List - List Query Config |
+| channel_hashtag_list_status | Boolean | Hashtag List - Status |
 | channel_hashtag_detail_type | String | Default list of detail page<br>`posts` or `comments` |
 | channel_likes_hashtags_name | String | My Liked Hashtags - Name |
 | channel_dislikes_hashtags_name | String | My Disliked Hashtags - Name |
@@ -303,10 +301,12 @@
 | channel_geotag_seo | Object | SEO Config |
 | channel_geotag_query_state | Number | List State Config |
 | channel_geotag_query_config | String | List Query Config |
+| channel_geotag_status | Boolean | Status |
 | channel_geotag_list_name | String | Geotag List - Name  |
 | channel_geotag_list_seo | Object | Geotag List - SEO Config |
 | channel_geotag_list_query_state | Number | Geotag List - List State Config |
 | channel_geotag_list_query_config | String | Geotag List - List Query Config |
+| channel_geotag_list_status | Boolean | Geotag List - Status |
 | channel_geotag_detail_type | String | Default list of detail page<br>`posts` or `comments` |
 | channel_likes_geotags_name | String | My Liked Geotags - Name |
 | channel_dislikes_geotags_name | String | My Disliked Geotags - Name |
@@ -321,10 +321,12 @@
 | channel_post_seo | Object | SEO Config |
 | channel_post_query_state | Number | List State Config |
 | channel_post_query_config | String | List Query Config |
+| channel_post_status | Boolean | Status |
 | channel_post_list_name | String | Post List - Name  |
 | channel_post_list_seo | Object | Post List - SEO Config |
 | channel_post_list_query_state | Number | Post List - List State Config |
 | channel_post_list_query_config | String | Post List - List Query Config |
+| channel_post_list_status | Boolean | Post List - Status |
 | channel_likes_posts_name | String | My Liked Posts - Name |
 | channel_dislikes_posts_name | String | My Disliked Posts - Name |
 | channel_following_posts_name | String | My Followed Posts - Name |
@@ -338,10 +340,12 @@
 | channel_comment_seo | Object | SEO Config |
 | channel_comment_query_state | Number | List State Config |
 | channel_comment_query_config | String | List Query Config |
+| channel_comment_status | Boolean | Status |
 | channel_comment_list_name | String | Comment List - Name  |
 | channel_comment_list_seo | Object | Comment List - SEO Config |
 | channel_comment_list_query_state | Number | Comment List - List State Config |
 | channel_comment_list_query_config | String | Comment List - List Query Config |
+| channel_comment_list_status | Boolean | Comment List - Status |
 | channel_likes_comments_name | String | My Liked Comments - Name |
 | channel_dislikes_comments_name | String | My Disliked Comments - Name |
 | channel_following_comments_name | String | My Followed Comments - Name |
@@ -353,10 +357,12 @@
 | --- | --- | --- |
 | channel_timeline_name | String | Timeline Name |
 | channel_timeline_type | String | Default list<br>`posts` or `comments` |
+| channel_timeline_posts_status | Boolean | Followed Posts - Status |
 | channel_timeline_posts_name | String | All Followed Posts - Name |
 | channel_timeline_user_posts_name | String | I follow users posts - Name |
 | channel_timeline_group_posts_name | String | I follow groups posts - Name |
-| channel_timeline_comments_name | String | All followed comments - Name |
+| channel_timeline_comments_status | Boolean | Followed Comments - Status |
+| channel_timeline_comments_name | String | All Followed Comments - Name |
 | channel_timeline_user_comments_name | String | I follow users comments - Name |
 | channel_timeline_group_comments_name | String | I follow groups comments - Name |
 
@@ -367,7 +373,9 @@
 | channel_nearby_name | String | Nearby Name |
 | channel_nearby_type | String | Default list<br>`posts` or `comments` |
 | channel_nearby_posts_name | String | Post List by Nearby - Name |
+| channel_nearby_posts_status | Boolean | Post List by Nearby - Status |
 | channel_nearby_comments_name | String | Comment List by Nearby - Name |
+| channel_nearby_comments_status | Boolean | Comment List by Nearby - Status |
 
 ### Personal Center
 
@@ -608,7 +616,7 @@
 | profile_blocking_users_enabled | Boolean | They block the users |
 | profile_blocking_users_name | String |  |
 | profile_blocking_groups_enabled | Boolean | They block the groups |
-| profile_blocking_groups__name | String |  |
+| profile_blocking_groups_name | String |  |
 | profile_blocking_hashtags_enabled | Boolean | They block the hashtags |
 | profile_blocking_hashtags_name | String |  |
 | profile_blocking_geotags_enabled | Boolean | They block the geotags |

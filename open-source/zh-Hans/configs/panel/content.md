@@ -41,10 +41,6 @@
 
 | 栏目标题 | 键名 | 默认键值 | 键值类型 | 说明 |
 | --- | --- | --- | --- | --- |
-| 查看时间线的帖子 | view_posts_by_timelines | true | boolean |  |
-| 查看时间线的评论 | view_comments_by_timelines | false | boolean |  |
-| 查看附近的帖子 | view_posts_by_nearby | true | boolean |  |
-| 查看附近的评论 | view_comments_by_nearby | false | boolean |  |
 | 帖子摘要字数 | post_brief_length | 280 | number |  |
 | 评论摘要字数 | comment_brief_length | 280 | number |  |
 | 评论可见度规则 | comment_visibility_rule | 0 | number | 单位：天<br>0 代表不限制，7 代表显示 7 天内可见<br>以帖子发表时间为计算值，大于可见度规则天数，该帖子的评论不再显示，也不可再评论。 |

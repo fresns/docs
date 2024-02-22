@@ -30,6 +30,7 @@
 | --- | --- | --- | --- | --- |
 | 名称 | channel_portal_name |  | object | `门户` **多语言** |
 | SEO 配置 | channel_portal_seo |  | object | **多语言** |
+| 状态 | channel_portal_status | true | boolean |  |
 
 ## 用户
 
@@ -41,6 +42,7 @@
 | SEO 配置 | channel_user_seo |  | object | **多语言** |
 | 配置状态 | channel_user_query_state | 2 | number |  |
 | 配置内容 | channel_user_query_config |  | string |  |
+| 状态 | channel_user_status | true | boolean |  |
 
 **列表页**
 
@@ -50,6 +52,7 @@
 | SEO 配置 | channel_user_list_seo |  | object | **多语言** |
 | 配置状态 | channel_user_list_query_state | 2 | number |  |
 | 配置内容 | channel_user_list_query_config |  | string |  |
+| 状态 | channel_user_list_status | true | boolean |  |
 
 **互动页**
 
@@ -71,6 +74,7 @@
 | 列表类型 | channel_group_type | tree | string | `tree` 树结构<br>`list` 列表 |
 | 配置状态 | channel_group_query_state | 2 | number |  |
 | 配置内容 | channel_group_query_config |  | string |  |
+| 状态 | channel_group_status | true | boolean |  |
 
 **列表页**
 
@@ -80,6 +84,7 @@
 | SEO 配置 | channel_group_list_seo |  | object | **多语言** |
 | 配置状态 | channel_group_list_query_state | 2 | number |  |
 | 配置内容 | channel_group_list_query_config |  | string |  |
+| 状态 | channel_group_list_status | true | boolean |  |
 
 **详情页**
 
@@ -106,6 +111,7 @@
 | SEO 配置 | channel_hashtag_seo |  | object | **多语言** |
 | 配置状态 | channel_hashtag_query_state | 2 | number |  |
 | 配置内容 | channel_hashtag_query_config |  | string |  |
+| 状态 | channel_hashtag_status | true | boolean |  |
 
 **列表页**
 
@@ -115,6 +121,7 @@
 | SEO 配置 | channel_hashtag_list_seo |  | object | **多语言** |
 | 配置状态 | channel_hashtag_list_query_state | 2 | number |  |
 | 配置内容 | channel_hashtag_list_query_config |  | string |  |
+| 状态 | channel_hashtag_list_status | true | boolean |  |
 
 **详情页**
 
@@ -141,6 +148,7 @@
 | SEO 配置 | channel_geotag_seo |  | object | **多语言** |
 | 配置状态 | channel_geotag_query_state | 2 | number |  |
 | 配置内容 | channel_geotag_query_config |  | string |  |
+| 状态 | channel_geotag_status | true | boolean |  |
 
 **列表页**
 
@@ -150,6 +158,7 @@
 | SEO 配置 | channel_geotag_list_seo |  | object | **多语言** |
 | 配置状态 | channel_geotag_list_query_state | 2 | number |  |
 | 配置内容 | channel_geotag_list_query_config |  | string |  |
+| 状态 | channel_geotag_list_status | true | boolean |  |
 
 **详情页**
 
@@ -176,6 +185,7 @@
 | SEO 配置 | channel_post_seo |  | object | **多语言** |
 | 配置状态 | channel_post_query_state | 2 | number |  |
 | 配置内容 | channel_post_query_config |  | string |  |
+| 状态 | channel_post_status | true | boolean |  |
 
 **列表页**
 
@@ -185,6 +195,7 @@
 | SEO 配置 | channel_post_list_seo |  | object | **多语言** |
 | 配置状态 | channel_post_list_query_state | 2 | number |  |
 | 配置内容 | channel_post_list_query_config |  | string |  |
+| 状态 | channel_post_list_status | true | boolean |  |
 
 **互动页**
 
@@ -205,6 +216,7 @@
 | SEO 配置 | channel_comment_seo |  | object | **多语言** |
 | 配置状态 | channel_comment_query_state | 2 | number |  |
 | 配置内容 | channel_comment_query_config |  | string |  |
+| 状态 | channel_comment_status | true | boolean |  |
 
 **列表页**
 
@@ -214,6 +226,7 @@
 | SEO 配置 | channel_comment_list_seo |  | object | **多语言** |
 | 配置状态 | channel_comment_list_query_state | 2 | number |  |
 | 配置内容 | channel_comment_list_query_config |  | string |  |
+| 状态 | channel_comment_list_status | true | boolean |  |
 
 **互动页**
 
@@ -237,9 +250,11 @@
 
 | 栏目标题 | 键名 | 默认键值 | 键值类型 | 说明 |
 | --- | --- | --- | --- | --- |
+| 关注的帖子-状态 | channel_timeline_posts_status | true | boolean |  |
 | 全部关注的帖子 | channel_timeline_posts_name |  | object | `正在关注` **多语言** |
 | 关注用户的帖子 | channel_timeline_user_posts_name |  | object | `关注用户的帖子` **多语言** |
 | 关注小组的帖子 | channel_timeline_group_posts_name |  | object | `关注小组的帖子` **多语言** |
+| 关注的评论-状态 | channel_timeline_comments_status | true | boolean |  |
 | 全部关注的评论 | channel_timeline_comments_name |  | object | `正在关注` **多语言** |
 | 关注用户的评论 | channel_timeline_user_comments_name |  | object | `关注用户的评论` **多语言** |
 | 关注小组的评论 | channel_timeline_group_comments_name |  | object | `关注小组的评论` **多语言** |
@@ -258,7 +273,9 @@
 | 栏目标题 | 键名 | 默认键值 | 键值类型 | 说明 |
 | --- | --- | --- | --- | --- |
 | 附近的帖子 | channel_nearby_posts_name |  | object | `附近` **多语言** |
+| 附近的帖子-状态 | channel_nearby_posts_status | true | boolean |  |
 | 附近的评论 | channel_nearby_comments_name |  | object | `附近` **多语言** |
+| 附近的评论-状态 | channel_nearby_comments_status | true | boolean |  |
 
 ## 个人中心
 

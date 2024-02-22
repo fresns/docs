@@ -190,15 +190,6 @@
 | hashtag_format | Number | 话题格式<br>1.`#话题`<br>2.`#话题#` |
 | hashtag_length | Number | 话题字符长度 |
 
-**列表**
-
-| 键名 | 键值类型 | 描述 |
-| --- | --- | --- |
-| view_posts_by_timelines | Boolean | 查看时间线的帖子 |
-| view_comments_by_timelines | Boolean | 查看时间线的评论 |
-| view_posts_by_nearby | Boolean | 查看附近的帖子 |
-| view_comments_by_nearby | Boolean | 查看附近的评论 |
-
 ## 互动配置
 
 > 控制面板 > 运营 > 互动配置
@@ -240,6 +231,7 @@
 | --- | --- | --- |
 | channel_portal_name | String | 门户名称 |
 | channel_portal_seo | Object | SEO 配置 |
+| channel_portal_status | Boolean | 状态 |
 
 ### 用户
 
@@ -249,10 +241,12 @@
 | channel_user_seo | Object | SEO 配置 |
 | channel_user_query_state | Number | 配置状态 |
 | channel_user_query_config | String | 配置内容 |
+| channel_user_status | Boolean | 状态 |
 | channel_user_list_name | String | 用户列表-名称 |
 | channel_user_list_seo | Object | 用户列表-SEO 配置 |
 | channel_user_list_query_state | Number | 用户列表-配置状态 |
 | channel_user_list_query_config | String | 用户列表-配置内容 |
+| channel_user_list_status | Boolean | 用户列表-状态 |
 | channel_likes_users_name | String | 赞的用户-名称 |
 | channel_dislikes_users_name | String | 踩的用户-名称 |
 | channel_following_users_name | String | 关注的用户-名称 |
@@ -267,10 +261,12 @@
 | channel_group_type | String | 小组主页默认类型<br>`tree` 树结构<br>`list` 列表 |
 | channel_group_query_state | Number | 配置状态 |
 | channel_group_query_config | String | 配置内容 |
+| channel_group_status | Boolean | 状态 |
 | channel_group_list_name | String | 小组列表-名称  |
 | channel_group_list_seo | Object | 小组列表-SEO 配置 |
 | channel_group_list_query_state | Number | 小组列表-配置状态 |
 | channel_group_list_query_config | String | 小组列表-配置内容 |
+| channel_group_list_status | Boolean | 小组列表-状态 |
 | channel_group_detail_type | String | 详情页默认列表 `posts` 或者 `comments` |
 | channel_likes_groups_name | String | 赞的小组-名称 |
 | channel_dislikes_groups_name | String | 踩的小组-名称 |
@@ -285,10 +281,12 @@
 | channel_hashtag_seo | Object | SEO 配置 |
 | channel_hashtag_query_state | Number | 配置状态 |
 | channel_hashtag_query_config | String | 配置内容 |
+| channel_hashtag_status | Boolean | 状态 |
 | channel_hashtag_list_name | String | 话题列表-名称  |
 | channel_hashtag_list_seo | Object | 话题列表-SEO 配置 |
 | channel_hashtag_list_query_state | Number | 话题列表-配置状态 |
 | channel_hashtag_list_query_config | String | 话题列表-配置内容 |
+| channel_hashtag_list_status | Boolean | 话题列表-状态 |
 | channel_hashtag_detail_type | String | 详情页默认列表 `posts` 或者 `comments` |
 | channel_likes_hashtags_name | String | 赞的话题-名称 |
 | channel_dislikes_hashtags_name | String | 踩的话题-名称 |
@@ -303,10 +301,12 @@
 | channel_geotag_seo | Object | SEO 配置 |
 | channel_geotag_query_state | Number | 配置状态 |
 | channel_geotag_query_config | String | 配置内容 |
+| channel_geotag_status | Boolean | 状态 |
 | channel_geotag_list_name | String | 地理列表-名称  |
 | channel_geotag_list_seo | Object | 地理列表-SEO 配置 |
 | channel_geotag_list_query_state | Number | 地理列表-配置状态 |
 | channel_geotag_list_query_config | String | 地理列表-配置内容 |
+| channel_geotag_list_status | Boolean | 地理列表-状态 |
 | channel_geotag_detail_type | String | 详情页默认列表 `posts` 或者 `comments` |
 | channel_likes_geotags_name | String | 赞的地理-名称 |
 | channel_dislikes_geotags_name | String | 踩的地理-名称 |
@@ -321,10 +321,12 @@
 | channel_post_seo | Object | SEO 配置 |
 | channel_post_query_state | Number | 配置状态 |
 | channel_post_query_config | String | 配置内容 |
+| channel_post_status | Boolean | 状态 |
 | channel_post_list_name | String | 帖子列表-名称  |
 | channel_post_list_seo | Object | 帖子列表-SEO 配置 |
 | channel_post_list_query_state | Number | 帖子列表-配置状态 |
 | channel_post_list_query_config | String | 帖子列表-配置内容 |
+| channel_post_list_status | Boolean | 帖子列表-状态 |
 | channel_likes_posts_name | String | 赞的帖子-名称 |
 | channel_dislikes_posts_name | String | 踩的帖子-名称 |
 | channel_following_posts_name | String | 关注的帖子-名称 |
@@ -338,10 +340,12 @@
 | channel_comment_seo | Object | SEO 配置 |
 | channel_comment_query_state | Number | 配置状态 |
 | channel_comment_query_config | String | 配置内容 |
+| channel_comment_status | Boolean | 状态 |
 | channel_comment_list_name | String | 评论列表-名称  |
 | channel_comment_list_seo | Object | 评论列表-SEO 配置 |
 | channel_comment_list_query_state | Number | 评论列表-配置状态 |
 | channel_comment_list_query_config | String | 评论列表-配置内容 |
+| channel_comment_list_status | Boolean | 评论列表-状态 |
 | channel_likes_comments_name | String | 赞的评论-名称 |
 | channel_dislikes_comments_name | String | 踩的评论-名称 |
 | channel_following_comments_name | String | 关注的评论-名称 |
@@ -353,9 +357,11 @@
 | --- | --- | --- |
 | channel_timeline_name | String | 时间线名称 |
 | channel_timeline_type | String | 默认列表 `posts` 或者 `comments` |
+| channel_timeline_posts_status | Boolean | 关注的帖子-状态 |
 | channel_timeline_posts_name | String | 全部关注的帖子-名称 |
 | channel_timeline_user_posts_name | String | 关注用户的帖子-名称 |
 | channel_timeline_group_posts_name | String | 关注小组的帖子-名称 |
+| channel_timeline_comments_status | Boolean | 关注的评论-状态 |
 | channel_timeline_comments_name | String | 全部关注的评论-名称 |
 | channel_timeline_user_comments_name | String | 关注用户的评论-名称 |
 | channel_timeline_group_comments_name | String | 关注小组的评论-名称 |
@@ -367,7 +373,9 @@
 | channel_nearby_name | String | 附近名称 |
 | channel_nearby_type | String | 默认列表 `posts` 或者 `comments` |
 | channel_nearby_posts_name | String | 附近的帖子 |
+| channel_nearby_posts_status | Boolean | 附近的帖子-状态 |
 | channel_nearby_comments_name | String | 附近的评论 |
+| channel_nearby_comments_status | Boolean | 附近的评论-状态 |
 
 ### 个人中心
 
@@ -615,7 +623,7 @@
 | profile_blocking_users_enabled | Boolean | 他屏蔽的用户 |
 | profile_blocking_users_name | String |  |
 | profile_blocking_groups_enabled | Boolean | 他屏蔽的小组 |
-| profile_blocking_groups__name | String |  |
+| profile_blocking_groups_name | String |  |
 | profile_blocking_hashtags_enabled | Boolean | 他屏蔽的话题 |
 | profile_blocking_hashtags_name | String |  |
 | profile_blocking_geotags_enabled | Boolean | 他屏蔽的地理 |

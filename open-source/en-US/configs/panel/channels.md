@@ -30,6 +30,7 @@
 | --- | --- | --- | --- | --- |
 | Name | channel_portal_name |  | object | **Multilingual** |
 | SEO Config | channel_portal_seo |  | object | **Multilingual** |
+| Status | channel_portal_status | true | boolean |  |
 
 ## User
 
@@ -41,6 +42,7 @@
 | SEO Config | channel_user_seo |  | object | **Multilingual** |
 | List State Config | channel_user_query_state | 2 | number |  |
 | List Query Config | channel_user_query_config |  | string |  |
+| Status | channel_user_status | true | boolean |  |
 
 **List**
 
@@ -50,6 +52,7 @@
 | SEO Config | channel_user_list_seo |  | object | **Multilingual** |
 | List State Config | channel_user_list_query_state | 2 | number |  |
 | List Query Config | channel_user_list_query_config |  | string |  |
+| Status | channel_user_list_status | true | boolean |  |
 
 **Interaction**
 
@@ -71,6 +74,7 @@
 | List Type | channel_group_type | tree | string | `tree` or `list` |
 | List State Config | channel_group_query_state | 2 | number |  |
 | List Query Config | channel_group_query_config |  | string |  |
+| Status | channel_group_status | true | boolean |  |
 
 **List**
 
@@ -80,6 +84,7 @@
 | SEO Config | channel_group_list_seo |  | object | **Multilingual** |
 | List State Config | channel_group_list_query_state | 2 | number |  |
 | List Query Config | channel_group_list_query_config |  | string |  |
+| Status | channel_group_list_status | true | boolean |  |
 
 **Detail**
 
@@ -106,6 +111,7 @@
 | SEO Config | channel_hashtag_seo |  | object | **Multilingual** |
 | List State Config | channel_hashtag_query_state | 2 | number |  |
 | List Query Config | channel_hashtag_query_config |  | string |  |
+| Status | channel_hashtag_status | true | boolean |  |
 
 **List**
 
@@ -115,6 +121,7 @@
 | SEO Config | channel_hashtag_list_seo |  | object | **Multilingual** |
 | List State Config | channel_hashtag_list_query_state | 2 | number |  |
 | List Query Config | channel_hashtag_list_query_config |  | string |  |
+| Status | channel_hashtag_list_status | true | boolean |  |
 
 **Detail**
 
@@ -141,6 +148,7 @@
 | SEO Config | channel_geotag_seo |  | object | **Multilingual** |
 | List State Config | channel_geotag_query_state | 2 | number |  |
 | List Query Config | channel_geotag_query_config |  | string |  |
+| Status | channel_geotag_status | true | boolean |  |
 
 **List**
 
@@ -150,6 +158,7 @@
 | SEO Config | channel_geotag_list_seo |  | object | **Multilingual** |
 | List State Config | channel_geotag_list_query_state | 2 | number |  |
 | List Query Config | channel_geotag_list_query_config |  | string |  |
+| Status | channel_geotag_list_status | true | boolean |  |
 
 **Detail**
 
@@ -176,6 +185,7 @@
 | SEO Config | channel_post_seo |  | object | **Multilingual** |
 | List State Config | channel_post_query_state | 2 | number |  |
 | List Query Config | channel_post_query_config |  | string |  |
+| Status | channel_post_status | true | boolean |  |
 
 **List**
 
@@ -185,6 +195,7 @@
 | SEO Config | channel_post_list_seo |  | object | **Multilingual** |
 | List State Config | channel_post_list_query_state | 2 | number |  |
 | List Query Config | channel_post_list_query_config |  | string |  |
+| Status | channel_post_list_status | true | boolean |  |
 
 **Interaction**
 
@@ -205,6 +216,7 @@
 | SEO Config | channel_comment_seo |  | object | **Multilingual** |
 | List State Config | channel_comment_query_state | 2 | number |  |
 | List Query Config | channel_comment_query_config |  | string |  |
+| Status | channel_comment_status | true | boolean |  |
 
 **List**
 
@@ -214,6 +226,7 @@
 | SEO Config | channel_comment_list_seo |  | object | **Multilingual** |
 | List State Config | channel_comment_list_query_state | 2 | number |  |
 | List Query Config | channel_comment_list_query_config |  | string |  |
+| Status | channel_comment_list_status | true | boolean |  |
 
 **Interaction**
 
@@ -237,10 +250,12 @@
 
 | Menu Title | Key Name | Default Key Value | Value Type | Description |
 | --- | --- | --- | --- | --- |
+| Followed Posts - Status | channel_timeline_posts_status | true | boolean |  |
 | All Followed Posts | channel_timeline_posts_name |  | object | `Following` **Multilingual** |
 | I follow users posts | channel_timeline_user_posts_name |  | object | `Following Users Posts` **Multilingual** |
 | I follow groups posts | channel_timeline_group_posts_name |  | object | `Following Groups Posts` **Multilingual** |
-| All followed comments | channel_timeline_comments_name |  | object | `Following` **Multilingual** |
+| Followed Comments - Status | channel_timeline_comments_status | true | boolean |  |
+| All Followed Comments | channel_timeline_comments_name |  | object | `Following` **Multilingual** |
 | I follow users comments | channel_timeline_user_comments_name |  | object | `Following Users Comments` **Multilingual** |
 | I follow groups comments | channel_timeline_group_comments_name |  | object | `Following Groups Comments` **Multilingual** |
 
@@ -258,7 +273,9 @@
 | Menu Title | Key Name | Default Key Value | Value Type | Description |
 | --- | --- | --- | --- | --- |
 | Post List by Nearby | channel_nearby_posts_name |  | object | `Nearby` **Multilingual** |
+| Post List by Nearby - Status | channel_nearby_posts_status | true | boolean |  |
 | Comment List by Nearby | channel_nearby_comments_name |  | object | `Nearby` **Multilingual** |
+| Comment List by Nearby - Status | channel_nearby_comments_status | true | boolean |  |
 
 ## Personal Center
 
