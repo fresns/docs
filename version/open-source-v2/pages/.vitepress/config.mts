@@ -3,7 +3,7 @@ import { defineConfig } from 'vitepress'
 export default defineConfig({
     lang: 'en-US',
 
-    title: 'Fresns Open Source',
+    title: 'Fresns 2.x',
     description: 'Fresns is a free and open source social network service software, a general-purpose community product designed for cross-platform, and supports flexible and diverse content forms. It conforms to the trend of the times, satisfies a variety of operating scenarios, is more open and easier to re-development.',
 
     lastUpdated: true,
@@ -83,7 +83,7 @@ export default defineConfig({
         'zh-Hans': {
             label: '简体中文',
             lang: 'zh-Hans',
-            title: 'Fresns 开源版',
+            title: 'Fresns 2.x',
             description: 'Fresns 是一款免费开源的社交网络服务软件，专为跨平台而打造的通用型社区产品，支持灵活多样的内容形态，可以满足多种运营场景，符合时代潮流，更开放且更易于二次开发。',
 
             head: [
