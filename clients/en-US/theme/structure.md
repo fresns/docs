@@ -131,7 +131,7 @@
 
 | Route Name | View File | Description |
 | --- | --- | --- |
-| fresns.me.index | /me/index.blade.php | Me |
+| fresns.me.index | /me/index.blade.php | User Center |
 | fresns.me.extcredits | /me/extcredits.blade.php | Extcredits |
 | fresns.me.wallet | /me/wallet.blade.php | Wallet |
 | fresns.me.drafts | /me/drafts.blade.php | Drafts |
