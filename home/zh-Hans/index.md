@@ -6,7 +6,7 @@ hero:
   text: 开发者文档
   tagline: 在 Fresns 旅程中随时为你提供帮助。
   image:
-    src: https://assets.fresns.com/images//heroes/social.svg
+    src: https://assets.fresns.com/images/heroes/social.svg
     alt: Fresns
   actions:
     - theme: brand
