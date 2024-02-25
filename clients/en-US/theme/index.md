@@ -54,7 +54,7 @@ When the theme is installed, the static resources are published to the `public` 
     "authorLink": "https://github.com/jevantang",
     "version": "1.0.0",
     "functions": true, // Availability of setting function
-    "functionKeys": [
+    "functionItems": [
         // Configuration key name of the set function, used in conjunction with functions.blade.php
         {
             "itemKey": "theme_menu_name",
@@ -71,15 +71,20 @@ When the theme is installed, the static resources are published to the `public` 
             "itemType": "string",
             "isMultilingual": false
         }
-    ]
+    ],
+    "functionLang": {
+        "en": {
+            "name": "Fresns Theme Frame",
+            "description": "Fresns theme framework to showcase web-side functionality and interaction flow."
+        },
+        "zh-Hans": {
+            "name": "Fresns 主题框架",
+            "description": "Fresns 官方开发的主题框架，展示网站端功能和交互流程。"
+        }
+    }
 }
 ```
 
 ## functions.blade.php Settings
 
 [Theme template settings](functions.md) file is responsible for defining the theme template's own configuration items. There are four configuration types.
-
-1. General form tag: Type is input, textarea, select
-2. Upload file html tag: Type is input type="file"
-3. Multilingual html tag: Type is input or textarea
-4. associated plugin html tag: Type is select or select multiple

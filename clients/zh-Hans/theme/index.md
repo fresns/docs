@@ -54,7 +54,7 @@ ThemeDemo/          // 主题模板文件夹（以 fskey 命名）
     "authorLink": "https://tangjie.me",
     "version": "1.0.0",
     "functions": true, // 是否有设置功能
-    "functionKeys": [
+    "functionItems": [
         // 设置功能的配置键名，与 functions.blade.php 配合使用。
         {
             "itemKey": "theme_menu_name",
@@ -71,15 +71,20 @@ ThemeDemo/          // 主题模板文件夹（以 fskey 命名）
             "itemType": "string",
             "isMultilingual": false
         }
-    ]
+    ],
+    "functionLang": {
+        "en": {
+            "name": "Fresns Theme Frame",
+            "description": "Fresns theme framework to showcase web-side functionality and interaction flow."
+        },
+        "zh-Hans": {
+            "name": "Fresns 主题框架",
+            "description": "Fresns 官方开发的主题框架，展示网站端功能和交互流程。"
+        }
+    }
 }
 ```
 
 ## functions.blade.php 设置功能
 
 [主题模板设置](functions.md)文件，负责定义主题模板自己的配置项，共有四种配置类型。
-
-- 1、常规表单组件：组件为 input、textarea、select
-- 2、上传文件组件：组件为 input type="file"
-- 3、多语言组件：组件为 input 或 textarea
-- 4、关联插件组件：组件为 select 或 select multiple

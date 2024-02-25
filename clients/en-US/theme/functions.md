@@ -2,140 +2,78 @@
 
 Theme template settings file is responsible for defining the theme template's own configuration items. There are four configuration types.
 
-1. General form tag: Type is input, textarea, select
-2. Upload file html tag: Type is input type="file"
-3. Multilingual html tag: Type is input or textarea
-4. associated plugin html tag: Type is select or select multiple
-
 | View File | Description |
 | --- | --- |
 | functions.blade.php | Theme Function View Template |
 
-## form
+## Variables
+
+| Variable | Description |
+| --- | --- |
+| `$params` | From `theme.json` configuration file `functionItems` |
+| `$fileUrls` | The `$params` file type configuration item, processed as a URL value. |
+| `$lang` | From `theme.json` configuration file `functionLang` |
+| `$apps` | From the list of installed applications (plugins and apps) |
+| `$languageStatus` | System language on status `language_status` |
+| `$languageMenus` | System language menu list `language_menus` |
+| `$defaultLanguage` | System default language tag `default_language` |
+
+## Interface
+
+| Method | Endpoint Path | Route Name | Description |
+| --- | --- | --- | --- |
+| `PUT` | /api/theme/`{fskey}`/functions | fresns.api.functions | Update [Config Item](https://docs.fresns.com/open-source/database/systems/configs.html) Values |
+
+- Request: `multipart/form-data`
+- Submit: `ajax` or `form submit`
+
+```php
+route('fresns.api.functions', [
+    'fskey' => '' // theme fskey
+])
+```
+
+## Form
 
 ```html
-<form action="{{ route('panel.theme.functions.update', ['theme' => 'ThemeFrame']) }}" method="post" enctype="multipart/form-data">
+<form action="{{ route('fresns.api.functions', ['fskey' => 'ThemeFrame']) }}" method="post" enctype="multipart/form-data">
     @csrf
     @method('put')
 
     <!-- input: item_key=fs_theme_name -->
-    <input type="text" name="fs_theme_name" value="{{ $params['fs_theme_name']['value'] ?? '' }}">
+    <input type="text" name="fs_theme_name" value="{{ $params['fs_theme_name'] }}">
 
     <!-- textarea: item_key=fs_theme_intro -->
-    <textarea name="fs_theme_intro">{{ $params['fs_theme_intro']['value'] ?? '' }}</textarea>
+    <textarea name="fs_theme_intro">{{ $params['fs_theme_intro'] }}</textarea>
 
     <!-- input file: item_key=fs_theme_logo -->
-    <input type="hidden" name="fs_theme_logo" value="{{ $params['fs_theme_logo']['value'] }}">
-    <input type="file" name="fs_theme_logo_file">
-    <input type="url" name="fs_theme_logo_url">
+    <input type="file" name="fs_theme_logo" value="{{ $params['fs_theme_logo'] }}">
+    <!-- or -->
+    <input type="url" name="fs_theme_logo" value="{{ $params['fs_theme_logo'] }}">
 
     <!-- select: item_key=fs_theme_type -->
     <select name="fs_theme_type">
-        <option value="">Null</option>
-        <option value="1">One</option>
-        <option value="2">Two</option>
+        <option value="" {{ $params['fs_theme_type'] == '' ? 'selected' : '' }}>Null</option>
+        <option value="1" {{ $params['fs_theme_type'] == '1' ? 'selected' : '' }}>One</option>
+        <option value="2" {{ $params['fs_theme_type'] == '2' ? 'selected' : '' }}>Two</option>
     </select>
 
     <!-- select multiple: item_key=fs_theme_types -->
     <select name="fs_theme_types" multiple>
-        <option value="">Null</option>
-        <option value="1">One</option>
-        <option value="2">Two</option>
+        <option value="" {{ $params['fs_theme_type'] == '' ? 'selected' : '' }}>Null</option>
+        <option value="1" {{ $params['fs_theme_type'] == '' ? 'selected' : '' }}>One</option>
+        <option value="2" {{ $params['fs_theme_type'] == '' ? 'selected' : '' }}>Two</option>
     </select>
 
     <!-- plugin select multiple: item_key=fs_theme_plugins -->
-    @foreach($params['fs_theme_plugins']['value'] ?? [] as $key => $item)
-        <input type="text" name="fs_theme_plugins[{{$key}}][code]">
-        <select name="fs_theme_plugins[{{$key}}][plugin]">
-            <option value="">Null</option>
-            <option value="1">One</option>
-            <option value="2">Two</option>
+    @foreach($params['fs_theme_plugins'] as $plugin)
+        <input type="text" name="fs_theme_plugins[{{ $plugin['code'] }}][code]">
+        <select name="fs_theme_plugins[{{ $plugin['fskey'] }}][fskey]">
+            @foreach($apps as $app)
+                <option value="{{ $app->fskey }}" {{ $app->fskey == $plugin['fskey'] ? 'selected' : '' }}>{{ $app->name }}</option>
+            @endforeach
         </select>
-        <input type="number" name="fs_theme_plugins[{{$key}}][order]">
-    @endforeach
-
-    <button type="submit">Save</button>
-</form>
-
-<!-- plugin select multiple: template -->
-<template id="pluginTemplate">
-    <input type="text" class="plugin-code" name="">
-    <select class="plugin-fskey" name="">
-        <option selected disabled>Please select the plugin</option>
-        <option value="">Null</option>
-        <option value="1">One</option>
-        <option value="2">Two</option>
-    </select>
-    <input type="number" class="plugin-order" name="">
-</template>
-```
-
-## Multilingual form: input
-
-```html
-<!-- Get multilingual data -->
-{{ json_encode($params['fs_theme_title']['languages'] ?? []) }}
-
-<!-- Value of the default language -->
-{{ $params['fs_theme_title']['defaultLanguage'] ?? '' }}
-```
-
-```html
-<!-- model(multi-language input): item_key=fs_theme_title -->
-<form action="{{ route('panel.theme.functions.update.languages') }}" method="post">
-    @csrf
-    @method('put')
-
-    <input type="hidden" name="theme" value="ThemeFrame">
-    <input type="hidden" name="key" value="fs_theme_title">
-
-    @foreach ($optionalLanguages as $lang)
-        {{ $lang['langTag'] }}
-        {{ $lang['langName'] }}
-
-        @if ($lang['areaName'])
-            {{ '('.$lang['areaName'].')' }}
-        @endif
-
-        @if ($lang['langTag'] == $defaultLanguage) Default Language @endif
-
-        <input type="text" name="languages[{{ $lang['langTag'] }}]" value="">
-    @endforeach
-
-    <button type="submit">Save</button>
-</form>
-```
-
-## Multilingual form: textarea
-
-```html
-<!-- Get multilingual data -->
-{{ json_encode($params['fs_theme_desc']['languages'] ?? []) }}
-
-<!-- Value of the default language -->
-{{ $params['fs_theme_desc']['defaultLanguage'] ?? '' }}
-```
-
-```html
-<!-- model(multi-language textarea): item_key=fs_theme_desc -->
-<form action="{{ route('panel.theme.functions.update.languages') }}" method="post">
-    @csrf
-    @method('put')
-
-    <input type="hidden" name="theme" value="ThemeFrame">
-    <input type="hidden" name="key" value="fs_theme_desc">
-
-    @foreach ($optionalLanguages as $lang)
-        {{ $lang['langTag'] }}
-        {{ $lang['langName'] }}
-
-        @if ($lang['areaName'])
-            {{ '('.$lang['areaName'].')' }}
-        @endif
-
-        @if ($lang['langTag'] == $defaultLanguage) Default Language @endif
-
-        <textarea name="languages[{{ $lang['langTag'] }}]"></textarea>
+        <input type="number" name="fs_theme_plugins[{{ $plugin['order'] }}][order]">
     @endforeach
 
     <button type="submit">Save</button>

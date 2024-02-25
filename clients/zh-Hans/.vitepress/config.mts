@@ -345,6 +345,7 @@ function sidebarTheme() {
         { text: '介绍', link: '/theme/' },
         { text: '路径结构', link: '/theme/structure.md' },
         { text: '模板标签', link: '/theme/tags.md' },
+        { text: '主题接口', link: '/theme/interfaces.md' },
         { text: '主题功能', link: '/theme/functions.md' },
       ]
     }

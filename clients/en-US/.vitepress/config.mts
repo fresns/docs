@@ -332,7 +332,8 @@ function sidebarTheme() {
       items: [
         { text: 'Introduction', link: '/theme/' },
         { text: 'Structure', link: '/theme/structure.md' },
-        { text: 'Template Tags', link: '/theme/tags.md' },
+        { text: 'Theme Tags', link: '/theme/tags.md' },
+        { text: 'Theme Interfaces', link: '/theme/interfaces.md' },
         { text: 'Theme Functions', link: '/theme/functions.md' },
       ]
     }
