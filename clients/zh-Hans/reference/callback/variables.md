@@ -26,6 +26,7 @@
 | `{eid}` | 内容扩展 ID |
 | `{hpid}` | 历史帖子 ID |
 | `{hcid}` | 历史评论 ID |
+| `{did}` | 草稿 ID |
 | `{connectPlatformId}` | [互联平台 ID](../dictionary/connects.md) |
 | `{uploadInfo}` | 上传参数，[同上传接口](../../api/common/file-uploads.md) |
 | `{locationInfo}` | 位置参数，`地图 ID,纬度,经度` 以英文逗号隔开<br>[地图 ID 信息](../dictionary/maps.md)，例如 `2,1.2803074,103.8610191` |

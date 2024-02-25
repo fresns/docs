@@ -13,7 +13,8 @@
 | fresns.portal | /portal/index.blade.php | Portal Home |
 | fresns.about | /portal/about.blade.php | About Info Page |
 | fresns.policies | /portal/policies.blade.php | Policies Info Page |
-|  | /portal/private.blade.php | Private Mode Tip Page |
+| fresns.login | /portal/login.blade.php | Login Tip Page |
+| fresns.private | /portal/private.blade.php | Private Mode Tip Page |
 | fresns.custom.page<br>`['name' => 'fileName']` | /portal/`{fileName}`.blade.php | Custom Page |
 
 ## User

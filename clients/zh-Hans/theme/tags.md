@@ -11,21 +11,12 @@ fs_route(route('fresns.user.index'))
 - `route` 系统中实际的路由
 - `fs_route` 处理路由为多语言路由
 
-## 主题信息
-
-```php
-fs_theme('')
-```
-
-- fskey
-- version
-- lang
-- assets
-
 ## 辅助功能
 
 ```php
 fs_helpers('辅助函数', '可用方法', $data, $options)
+
+fs_helpers('Arr', 'get', $data, $options)
 ```
 
 ::: details 获取指定数值 `Arr::get`
@@ -64,6 +55,17 @@ fs_helpers('辅助函数', '可用方法', $data, $options)
     - `asArray` 布尔值，结果仅剩一条时，是否保持为数组格式
 :::
 
+## 主题信息
+
+```php
+fs_theme('fskey')
+```
+
+- `fskey`
+- `version`
+- `lang`
+- `assets`
+
 ## 配置值
 
 从 API [全局配置信息](../reference/configs.md)获取配置值
@@ -89,14 +91,6 @@ fs_lang('语言键名')
 fs_channels()
 ```
 
-## 内容类型
-
-- [内容类型列表信息](../api/global/content-types.md)
-
-```php
-fs_content_types('') // post or comment
-```
-
 ## 表情
 
 - [表情列表](../api/global/stickers.md)
@@ -105,104 +99,38 @@ fs_content_types('') // post or comment
 fs_stickers()
 ```
 
-## 账号和用户参数
+## 内容类型
+
+- [内容类型列表信息](../api/global/content-types.md)
 
 ```php
-# 是否登录账号
-fs_account()->check()
-fs_account()->guest()
-
-# 是否登录用户
-fs_user()->check()
-fs_user()->guest()
+fs_content_types('post') // post or comment
 ```
+
+## 内容数据
+
+### 树小组
 
 ```php
-# 账号参数
-fs_account('参数名')
-
-# 用户参数
-fs_user('参数名')
+fs_group_tree()
 ```
 
-- 参数名来自 API `data` 参数。
-- [账号 API](../api/account/detail.md)
-- [用户 API](../api/user/detail.md)
-
-## 全局数据
-
-### 用户面板
+### 内容列表
 
 ```php
-fs_user_panel('key')
-// 或者
-fs_user_panel('key.key')
+fs_content_list('频道', '类型')
 ```
 
-- 参数来自[用户面板](../api/user/overview.md)接口 `data`
-
-### 小组
-
-```php
-fs_groups('categories') // 小组分类
-fs_groups('tree') // 树结构全部小组
-```
-
-### 首页列表
-
-```php
-fs_index_list('users') // 用户首页列表
-fs_index_list('groups') // 小组首页列表
-fs_index_list('hashtags') // 话题首页列表
-fs_index_list('posts') // 帖子首页列表
-fs_index_list('comments') // 评论首页列表
-```
-
-以上封装函数仅获取第一页内容，如需翻页，则使用以下接口。
-
-```php
-// 1.路由方式
-route('fresns.api.index.list', [$type => 'users', 'page' => 2]) // 用户首页列表
-route('fresns.api.index.list', [$type => 'groups', 'page' => 2]) // 小组首页列表
-route('fresns.api.index.list', [$type => 'hashtags', 'page' => 2]) // 话题首页列表
-route('fresns.api.index.list', [$type => 'posts', 'page' => 2]) // 帖子首页列表
-route('fresns.api.index.list', [$type => 'comments', 'page' => 2]) // 评论首页列表
-
-// 2.路径方式
-/api/engine/index-list/users?page=2
-/api/engine/index-list/groups?page=2
-/api/engine/index-list/hashtags?page=2
-/api/engine/index-list/posts?page=2
-/api/engine/index-list/comments?page=2
-```
-
-### 列表
-
-```php
-fs_list('users') // 用户列表
-fs_list('groups') // 小组列表
-fs_list('hashtags') // 话题列表
-fs_list('posts') // 帖子列表
-fs_list('comments') // 评论列表
-```
-
-以上封装函数仅获取第一页内容，如需翻页，则使用以下接口。
-
-```php
-// 1.路由方式
-route('fresns.api.list', [$type => 'users', 'page' => 2]) // 用户首页列表
-route('fresns.api.list', [$type => 'groups', 'page' => 2]) // 小组首页列表
-route('fresns.api.list', [$type => 'hashtags', 'page' => 2]) // 话题首页列表
-route('fresns.api.list', [$type => 'posts', 'page' => 2]) // 帖子首页列表
-route('fresns.api.list', [$type => 'comments', 'page' => 2]) // 评论首页列表
-
-// 2.路径方式
-/api/engine/list/users?page=2
-/api/engine/list/groups?page=2
-/api/engine/list/hashtags?page=2
-/api/engine/list/posts?page=2
-/api/engine/list/comments?page=2
-```
+- 频道
+    - `user`
+    - `group`
+    - `hashtag`
+    - `geotag`
+    - `post`
+    - `comment`
+- 类型
+    - `home`
+    - `list`
 
 ### 置顶帖子
 
@@ -220,7 +148,37 @@ fs_sticky_posts($gid)
 fs_sticky_comments($pid)
 ```
 
+## 账号和用户参数
+
+```php
+# 是否登录账号
+fs_account()->check()
+fs_account()->guest()
+
+# 是否登录用户
+fs_user()->check()
+fs_user()->guest()
+```
+
+```php
+# 账号参数
+fs_account('参数名') // 支持「点表示法」表示多维数组
+
+# 用户参数
+fs_user('参数名') // 支持「点表示法」表示多维数组
+
+# 用户概览参数
+fs_user_overview('key') // 支持「点表示法」表示多维数组
+```
+
+- 参数名来自 API `data` 参数。
+- [账号 API](../api/account/detail.md)
+- [用户 API](../api/user/detail.md)
+- [用户概览 API](../api/user/overview.md)
+
 ## 客户端判断
+
+参考: [https://github.com/hisorange/browser-detect](https://github.com/hisorange/browser-detect)
 
 ```html
 @mobile

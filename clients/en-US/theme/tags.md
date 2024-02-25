@@ -11,21 +11,12 @@ fs_route(route('fresns.user.index'))
 - `route` Real routing in the system
 - `fs_route` Handling route as multilingual route
 
-## Theme Info
-
-```php
-fs_theme('')
-```
-
-- fskey
-- version
-- lang
-- assets
-
 ## Helpers
 
 ```php
 fs_helpers('Helper', 'Method', $data, $options)
+
+fs_helpers('Arr', 'get', $data, $options)
 ```
 
 ::: details Get Specified Value `Arr::get`
@@ -64,6 +55,17 @@ Returns the value of the specified key from the array and removes this key-value
     - `asArray` Boolean value, whether to keep it in array format when there is only one entry left in the result
 :::
 
+## Theme Info
+
+```php
+fs_theme('fskey')
+```
+
+- `fskey`
+- `version`
+- `lang`
+- `assets`
+
 ## Config Items
 
 Get configuration values from API [global configuration information](../reference/configs.md)
@@ -89,14 +91,6 @@ fs_lang('KeyName')
 fs_channels()
 ```
 
-## Content Types
-
-- [Content Types Array](../api/global/content-types.md)
-
-```php
-fs_content_types('') // post or comment
-```
-
 ## Stickers
 
 - [Stickers Array](../api/global/stickers.md)
@@ -105,104 +99,38 @@ fs_content_types('') // post or comment
 fs_stickers()
 ```
 
-## Account and User
+## Content Types
+
+- [Content Types Array](../api/global/content-types.md)
 
 ```php
-# Is the account logged in
-fs_account()->check()
-fs_account()->guest()
-
-# Is the user logged in
-fs_user()->check()
-fs_user()->guest()
+fs_content_types('post') // post or comment
 ```
+
+## Content Data
+
+### Group Tree
 
 ```php
-# Account Parameter
-fs_account('key')
-
-# User Parameter
-fs_user('key')
+fs_group_tree()
 ```
 
-- The parameter key comes from the API `data` parameter.
-- [Account Detail API](../api/account/detail.md)
-- [User Detail API](../api/user/detail.md)
-
-## Global Data
-
-### User Overview
+### Content List
 
 ```php
-fs_user_panel('key')
-// or
-fs_user_panel('key.key')
+fs_content_list('Channel', 'Type')
 ```
 
-From [the user overview](../api/user/overview.md) interface `data` parameters
-
-### Groups
-
-```php
-fs_groups('categories') // Group categories
-fs_groups('tree') // Tree all group
-```
-
-### Home List
-
-```php
-fs_index_list('users') // User home list
-fs_index_list('groups') // Group home list
-fs_index_list('hashtags') // Hashtag home list
-fs_index_list('posts') // Post home list
-fs_index_list('comments') // Comment home list
-```
-
-The above wrapper function only gets the first page content, if you need to turn the page, then use the following interface.
-
-```php
-// 1.Route method
-route('fresns.api.index.list', [$type => 'users', 'page' => 2]) // User home list
-route('fresns.api.index.list', [$type => 'groups', 'page' => 2]) // Group home list
-route('fresns.api.index.list', [$type => 'hashtags', 'page' => 2]) // Hashtag home list
-route('fresns.api.index.list', [$type => 'posts', 'page' => 2]) // Post home list
-route('fresns.api.index.list', [$type => 'comments', 'page' => 2]) // Comment home list
-
-// 2.Path method
-/api/engine/index-list/users?page=2
-/api/engine/index-list/groups?page=2
-/api/engine/index-list/hashtags?page=2
-/api/engine/index-list/posts?page=2
-/api/engine/index-list/comments?page=2
-```
-
-### List
-
-```php
-fs_list('users') // User list
-fs_list('groups') // Group list
-fs_list('hashtags') // Hashtag list
-fs_list('posts') // Post list
-fs_list('comments') // Comment list
-```
-
-The above wrapper function only gets the first page content, if you need to turn the page, then use the following interface.
-
-```php
-// 1.Route method
-route('fresns.api.list', [$type => 'users', 'page' => 2]) // User list
-route('fresns.api.list', [$type => 'groups', 'page' => 2]) // Group list
-route('fresns.api.list', [$type => 'hashtags', 'page' => 2]) // Hashtag list
-route('fresns.api.list', [$type => 'posts', 'page' => 2]) // Post list
-route('fresns.api.list', [$type => 'comments', 'page' => 2]) // Comment list
-
-// 2.Path method
-/api/engine/list/users?page=2
-/api/engine/list/groups?page=2
-/api/engine/list/hashtags?page=2
-/api/engine/list/posts?page=2
-/api/engine/list/comments?page=2
-```
+- Channel
+    - `user`
+    - `group`
+    - `hashtag`
+    - `geotag`
+    - `post`
+    - `comment`
+- Type
+    - `home`
+    - `list`
 
 ### Sticky Post List
 
@@ -220,7 +148,37 @@ fs_sticky_posts($gid)
 fs_sticky_comments($pid)
 ```
 
+## Account and User
+
+```php
+# Is the account logged in
+fs_account()->check()
+fs_account()->guest()
+
+# Is the user logged in
+fs_user()->check()
+fs_user()->guest()
+```
+
+```php
+# Account Parameters
+fs_account('key') // supports "dot notation" for multi-dimensional arrays
+
+# User Parameters
+fs_user('key') // supports "dot notation" for multi-dimensional arrays
+
+# User Overview Parameters
+fs_user_overview('key') // supports "dot notation" for multi-dimensional arrays
+```
+
+- The parameter key comes from the API `data` parameter.
+- [Account Detail API](../api/account/detail.md)
+- [User Detail API](../api/user/detail.md)
+- [User Overview API](../api/user/overview.md)
+
 ## Client Options
+
+Reference: [https://github.com/hisorange/browser-detect](https://github.com/hisorange/browser-detect)
 
 ```html
 @mobile
