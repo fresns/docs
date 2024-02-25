@@ -180,7 +180,7 @@ fs_user_overview('key') // 支持「点表示法」表示多维数组
 
 参考: [https://github.com/hisorange/browser-detect](https://github.com/hisorange/browser-detect)
 
-```html
+```blade
 @mobile
     <p>This is the MOBILE template!</p>
     @include('your-mobile-template')

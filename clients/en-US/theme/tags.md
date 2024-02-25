@@ -180,7 +180,7 @@ fs_user_overview('key') // supports "dot notation" for multi-dimensional arrays
 
 Reference: [https://github.com/hisorange/browser-detect](https://github.com/hisorange/browser-detect)
 
-```html
+```blade
 @mobile
     <p>This is the MOBILE template!</p>
     @include('your-mobile-template')

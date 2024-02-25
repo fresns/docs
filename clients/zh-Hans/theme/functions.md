@@ -79,3 +79,21 @@ route('fresns.api.functions', [
     <button type="submit">Save</button>
 </form>
 ```
+
+## 视图框架
+
+```blade
+@extends('FsTheme::layout')
+
+@section('body')
+    {{-- form --}}
+@endsection
+
+@push('style')
+    {{-- css --}}
+@endpush
+
+@push('script')
+    {{-- js --}}
+@endpush
+```
