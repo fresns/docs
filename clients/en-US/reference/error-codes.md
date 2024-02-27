@@ -54,7 +54,8 @@
 | 32101 | The service provider not exist |
 | 32102 | The service provider not enabled |
 | 32103 | Service provider config parameter is empty |
-| 32104 | Storage service provider configuration exception, temporarily unable to upload file |
+| 32104 | S3 uploads are not supported by the storage provider |
+| 32105 | Storage service provider configuration exception, temporarily unable to upload file |
 | 32201 | Wrong ID or record not exist |
 | 32202 | Abnormal data: failed to be queried or data duplicated. |
 | 32203 | Record expired and invalid. Please try again. |

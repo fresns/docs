@@ -4,12 +4,17 @@ To avoid confusion and potential conflict risks, Fresns status codes prohibit th
 
 - `0` Request successful
 
-## Plugin
+## App
 
-- `1****` Plugin Usage
-    - `11***` Plugin Manager
-    - `12***` Marketplace
-    - `13***` Plugin business functions
+- `1****` App Usage
+    - `11***` Fresns OAuth
+    - `12***` Fresns Cloud
+    - `13***` Fresns Distributed
+    - `14***` Fresns Client
+    - `15***` Developer
+    - `16***` Marketplace
+    - `17***` Plugin Manager
+    - `18***` App business functions
 
 ## Cmd Word
 
