@@ -1,6 +1,6 @@
 # Theme Functions
 
-Theme template settings file is responsible for defining the theme template's own configuration items. There are four configuration types.
+Theme template settings file is responsible for defining the theme template's own configuration items.
 
 | View File | Description |
 | --- | --- |

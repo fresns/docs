@@ -84,7 +84,3 @@ ThemeDemo/          // 主题模板文件夹（以 fskey 命名）
     }
 }
 ```
-
-## functions.blade.php 设置功能
-
-[主题模板设置](functions.md)文件，负责定义主题模板自己的配置项，共有四种配置类型。

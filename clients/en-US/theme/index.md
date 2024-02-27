@@ -84,7 +84,3 @@ When the theme is installed, the static resources are published to the `public` 
     }
 }
 ```
-
-## functions.blade.php Settings
-
-[Theme template settings](functions.md) file is responsible for defining the theme template's own configuration items. There are four configuration types.
