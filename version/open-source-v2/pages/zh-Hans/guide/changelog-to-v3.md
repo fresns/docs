@@ -9,11 +9,16 @@
 - 所有 `more_json` 字段名修改为 `more_info`
 - 数据表 `groups`
     - 删除字段 `type`
-- 新增数据表 `themes`
-- 新增数据表 `geotags`
-- 移除数据表 `user_blocks`
-- 移除数据表 `block_words`
-- 移除数据表 `placements`
+- 新增数据表
+    - `geotags`
+    - `citys`
+- 移除数据表
+    - `block_words`
+    - `placements`
+    - `languages`
+    - `user_blocks`
+    - `post_appends`
+    - `comment_appends`
 
 **配置键名**
 
