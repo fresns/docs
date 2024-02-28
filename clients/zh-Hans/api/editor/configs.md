@@ -125,9 +125,9 @@
                 "draft": "Boolean / 是否可以创建新草稿",
                 "publish": "Boolean / 是否有权限发表",
                 "review": "Boolean / 发表是否需要审核",
-                "emailRequired": "Boolean / 邮箱要求是否通过",
-                "phoneRequired": "Boolean / 手机要求是否通过",
-                "realNameRequired": "Boolean / 实名制要求是否通过",
+                "requiredEmail": "Boolean / 账号必须已填写邮箱",
+                "requiredPhone": "Boolean / 账号必须已填写手机号",
+                "requiredKyc": "Boolean / 账号必须已通过 KYC 认证",
                 "tips": [
                     "String / 无要求的请求语 1",
                     "String / 无要求的请求语 2"

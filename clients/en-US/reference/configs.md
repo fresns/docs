@@ -57,6 +57,14 @@
 ```
 :::
 
+## Language Pack
+
+> Panel > Clients > Language Packs
+
+| Key Name | Value Type | Description |
+| --- | --- | --- |
+| language_pack_version| String | Language Pack Version |
+
 ## General
 
 > Panel > Systems > General
@@ -108,6 +116,7 @@
 | account_login_service | String | Account Login `URL` |
 | account_register_status | Boolean | Register Status |
 | account_kyc_service | String | Real Name Verification Support `URL` |
+| account_users_service | String | Multi-User Manage Services `URL` |
 
 ## Wallet
 
@@ -164,6 +173,15 @@
 | Key Name | Value Type | Description |
 | --- | --- | --- |
 | conversation_status | Boolean | Conversation Feature |
+
+## Publish
+
+> Panel > Operations > Publish
+
+| Key Name | Value Type | Description |
+| --- | --- | --- |
+| post_editor_service | String | Post Editor `URL` |
+| comment_editor_service | String | Comment Editor `URL` |
 
 ## Content
 
@@ -372,10 +390,10 @@
 | --- | --- | --- |
 | channel_nearby_name | String | Nearby Name |
 | channel_nearby_type | String | Default list<br>`posts` or `comments` |
-| channel_nearby_posts_name | String | Post List by Nearby - Name |
 | channel_nearby_posts_status | Boolean | Post List by Nearby - Status |
-| channel_nearby_comments_name | String | Comment List by Nearby - Name |
+| channel_nearby_posts_name | String | Post List by Nearby - Name |
 | channel_nearby_comments_status | Boolean | Comment List by Nearby - Status |
+| channel_nearby_comments_name | String | Comment List by Nearby - Name |
 
 ### Personal Center
 
@@ -448,14 +466,6 @@
 | website_comment_detail_path | String | Comment |
 
 - Example of a post, full URL format `{site_url}`/`{website_user_detail_path}`/`{pid}`
-
-## Language Pack
-
-> Panel > Clients > Language Packs
-
-| Key Name | Value Type | Description |
-| --- | --- | --- |
-| language_pack_version| String | Language Pack Version |
 
 ## Basic
 
@@ -625,3 +635,34 @@
 | profile_blocking_posts_name | String |  |
 | profile_blocking_comments_enabled | Boolean | They block the comments |
 | profile_blocking_comments_name | String |  |
+
+## System Bulletin
+
+| Key Name | Value Type | Description |
+| --- | --- | --- |
+| bulletin_name | String | System bulletin name |
+| bulletin_contents | Array | System bulletin content |
+
+::: details Example
+```json
+[
+    {
+        "date": "10/18/2022",
+        "title": "[Must Read] Guide to give feedback to Fresns official questions",
+        "titleColor": "#f40",
+        "description": "Guide to give feedback to Fresns official questions",
+        "descriptionColor": null,
+        "buttonName": "Learn more",
+        "buttonLink": "https://fresns.org/guide/feedback.html",
+    }
+]
+```
+:::
+
+## Extends
+
+> Panel > Extends > Content Handler
+
+| Key Name | Value Type | Description |
+| --- | --- | --- |
+| map_service | String | Map Service `URL` |

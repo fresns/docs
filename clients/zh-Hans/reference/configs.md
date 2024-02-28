@@ -57,6 +57,14 @@
 ```
 :::
 
+## 语言包配置
+
+> 控制面板 > 客户端 > 语言包配置
+
+| 键名 | 键值类型 | 描述 |
+| --- | --- | --- |
+| language_pack_version| String | 语言包版本 |
+
 ## 站点设置
 
 > 控制面板 > 系统 > 站点设置
@@ -108,6 +116,7 @@
 | account_login_service | String | 账号登录 `URL` |
 | account_register_status | Boolean | 注册状态 |
 | account_kyc_service | String | 实名认证 `URL` |
+| account_users_service | String | 多用户管理服务 `URL` |
 
 ## 钱包设置
 
@@ -164,6 +173,15 @@
 | 键名 | 键值类型 | 描述 |
 | --- | --- | --- |
 | conversation_status | Boolean | 对话功能 |
+
+## 发表配置
+
+> 控制面板 > 运营 > 发表配置
+
+| 键名 | 键值类型 | 描述 |
+| --- | --- | --- |
+| post_editor_service | String | 发帖编辑器 `URL` |
+| comment_editor_service | String | 评论编辑器 `URL` |
 
 ## 内容配置
 
@@ -372,10 +390,10 @@
 | --- | --- | --- |
 | channel_nearby_name | String | 附近名称 |
 | channel_nearby_type | String | 默认列表 `posts` 或者 `comments` |
-| channel_nearby_posts_name | String | 附近的帖子 |
 | channel_nearby_posts_status | Boolean | 附近的帖子-状态 |
-| channel_nearby_comments_name | String | 附近的评论 |
+| channel_nearby_posts_name | String | 附近的帖子-名称 |
 | channel_nearby_comments_status | Boolean | 附近的评论-状态 |
+| channel_nearby_comments_name | String | 附近的评论-名称 |
 
 ### 个人中心
 
@@ -448,14 +466,6 @@
 | website_comment_detail_path | String | 评论 |
 
 - 以帖子举例，完整 URL 格式 `{site_url}`/`{website_user_detail_path}`/`{pid}`
-
-## 语言包配置
-
-> 控制面板 > 客户端 > 语言包配置
-
-| 键名 | 键值类型 | 描述 |
-| --- | --- | --- |
-| language_pack_version| String | 语言包版本 |
 
 ## 客户端基础
 
@@ -632,3 +642,34 @@
 | profile_blocking_posts_name | String |  |
 | profile_blocking_comments_enabled | Boolean | 他屏蔽的评论 |
 | profile_blocking_comments_name | String |  |
+
+## 系统公告
+
+| 键名 | 键值类型 | 描述 |
+| --- | --- | --- |
+| bulletin_name | String | 名称 |
+| bulletin_contents | Array | 公告列表 |
+
+::: details 公告列表格式
+```json
+[
+    {
+        "date": "10/18/2022",
+        "title": "[Must Read] Guide to give feedback to Fresns official questions",
+        "titleColor": "#f40",
+        "description": "Guide to give feedback to Fresns official questions",
+        "descriptionColor": null,
+        "buttonName": "Learn more",
+        "buttonLink": "https://fresns.org/guide/feedback.html",
+    }
+]
+```
+:::
+
+## 扩展
+
+> 控制面板 > 扩展 > 内容处理扩展
+
+| 键名 | 键值类型 | 描述 |
+| --- | --- | --- |
+| map_service | String | 地图服务 `URL` |

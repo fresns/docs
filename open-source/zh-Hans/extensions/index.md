@@ -76,6 +76,7 @@ fresns/             //主程序根目录
 | accountLogin | 账号登录支持 | 系统->账号设置 |
 | accountConnect | 第三方互联支持 | 系统->账号设置 |
 | accountKyc | 实名认证支持 | 系统->账号设置 |
+| accountUsers | 多用户管理 | 系统->账号设置 |
 | walletRecharge | 充值服务商 | 系统->钱包设置 |
 | walletWithdraw | 提现服务商 | 系统->钱包设置 |
 | editor | 编辑器插件 | 运营->发表配置 |

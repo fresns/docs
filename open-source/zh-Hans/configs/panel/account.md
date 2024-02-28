@@ -5,8 +5,7 @@
 | 栏目标题 | 键名 | 默认键值 | 键值类型 | 说明 |
 | --- | --- | --- | --- | --- |
 | 账户中心 | account_center_service |  | **plugin** | 用途场景 `accountCenter` |
-| 验证码方案 | account_center_captcha |  | string | `turnstile`<br>`reCAPTCHA`<br>`hCaptcha` |
-| 验证码方案配置 | account_center_captcha_configs |  | object |  |
+| 验证码方案 | account_center_captcha |  | object |  |
 | 注册服务 | account_register_service |  | **plugin** | 用途场景 `accountRegister` |
 | 注册状态 | account_register_status | true | boolean |  |
 | 使用邮箱注册 | account_email_register | true | boolean |  |
@@ -16,8 +15,10 @@
 | 使用手机号登录 | account_phone_login | false | boolean |  |
 | 使用验证码登录 | account_login_with_code | false | boolean |  |
 | 登录时同步注册 | account_login_or_register | false | boolean | 验证码登录时，无账号则自动注册 |
+| 多用户管理服务 | account_users_service |  | **plugin** | 用途场景 `accountUsers` |
 
-- 验证码方案配置 `{"siteKey":"","secretKey":""}`
+- 验证码方案配置 `{"type":"","siteKey":"","secretKey":""}`
+- 验证码方案类型 `turnstile`, `reCAPTCHA`, `hCaptcha`
 
 ## 密码
 

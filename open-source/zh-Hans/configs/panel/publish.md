@@ -8,9 +8,9 @@
 
 | 栏目标题 | 键名 | 默认键值 | 键值类型 | 说明 |
 | --- | --- | --- | --- | --- |
-| 发表帖子要求-邮箱 | post_email_verify | false | boolean |  |
-| 发表帖子要求-手机号 | post_phone_verify | false | boolean |  |
-| 发表帖子要求-实名制 | post_kyc_verify | false | boolean |  |
+| 发表帖子要求-邮箱 | post_required_email | false | boolean |  |
+| 发表帖子要求-手机号 | post_required_phone | false | boolean |  |
+| 发表帖子要求-实名制 | post_required_kyc | false | boolean |  |
 
 **特殊规则**
 
@@ -65,9 +65,9 @@
 
 | 栏目标题 | 键名 | 默认键值 | 键值类型 | 说明 |
 | --- | --- | --- | --- | --- |
-| 发表评论要求-邮箱 | comment_email_verify | false | boolean |  |
-| 发表评论要求-手机号 | comment_phone_verify | false | boolean |  |
-| 发表评论要求-实名制 | comment_kyc_verify | false | boolean |  |
+| 发表评论要求-邮箱 | comment_required_email | false | boolean |  |
+| 发表评论要求-手机号 | comment_required_phone | false | boolean |  |
+| 发表评论要求-实名制 | comment_required_kyc | false | boolean |  |
 
 **特殊规则**
 

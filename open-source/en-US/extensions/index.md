@@ -77,6 +77,7 @@ When the plugin is installed and published, static resources are distributed to 
 | accountLogin | Account Register Support | Panel->Systems->Account |
 | accountConnect | Account Connect Support | Panel->Systems->Account |
 | accountKyc | Real Name Authentication Support | Panel->Systems->Account |
+| accountUsers | Multi-User Manage Services | Panel->Systems->Account |
 | walletRecharge | Wallet Recharge Service Provider | Panel->Systems->Wallet |
 | walletWithdraw | Wallet Withdrawal Service Provider | Panel->Systems->Wallet |
 | editor | Editor Plugin | Panel->Operations->Publish |

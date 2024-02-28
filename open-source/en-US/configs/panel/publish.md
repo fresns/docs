@@ -8,9 +8,9 @@
 
 | Menu Title | Key Name | Default Key Value | Value Type | Description |
 | --- | --- | --- | --- | --- |
-| Email Required | post_email_verify | false | boolean |  |
-| Phone Required | post_phone_verify | false | boolean |  |
-| KYC Required | post_kyc_verify | false | boolean |  |
+| Email Required | post_required_email | false | boolean |  |
+| Phone Required | post_required_phone | false | boolean |  |
+| KYC Required | post_required_kyc | false | boolean |  |
 
 **Publish Rules**
 
@@ -65,9 +65,9 @@
 
 | Menu Title | Key Name | Default Key Value | Value Type | Description |
 | --- | --- | --- | --- | --- |
-| Email Required | comment_email_verify | false | boolean |  |
-| Phone Required | comment_phone_verify | false | boolean |  |
-| KYC Required | comment_kyc_verify | false | boolean |  |
+| Email Required | comment_required_email | false | boolean |  |
+| Phone Required | comment_required_phone | false | boolean |  |
+| KYC Required | comment_required_kyc | false | boolean |  |
 
 **Publish Rules**
 

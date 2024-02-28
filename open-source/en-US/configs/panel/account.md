@@ -5,8 +5,7 @@
 | Menu Title | Key Name | Default Key Value | Value Type | Description |
 | --- | --- | --- | --- | --- |
 | Account Center Service | account_center_service |  | **plugin** | panelUsages `accountCenter` |
-| CAPTCHA Program | account_center_captcha |  | string | `turnstile`<br>`reCAPTCHA`<br>`hCaptcha` |
-| CAPTCHA Configuration | account_center_captcha_configs |  | object |  |
+| Account CAPTCHA | account_center_captcha |  | object |  |
 | Register Service | account_register_service |  | **plugin** | panelUsages `accountRegister` |
 | Register Status | account_register_status | true | boolean |  |
 | Register Support: Email | account_email_register | true | boolean |  |
@@ -16,8 +15,10 @@
 | Login Support: Phone Number | account_phone_login | false | boolean |  |
 | Login using the Verify code | account_login_with_code | false | boolean |  |
 | Login Sync Register | account_login_or_register | false | boolean | Auto-registration if no account is available for Verify Code login |
+| Multi-User Manage Services | account_users_service |  | **plugin** | panelUsages `accountUsers` |
 
-- CAPTCHA Configuration `{"siteKey":"","secretKey":""}`
+- CAPTCHA Configuration `{"type":"","siteKey":"","secretKey":""}`
+- CAPTCHA Type: `turnstile`, `reCAPTCHA`, `hCaptcha`
 
 ## Password
 

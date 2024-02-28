@@ -125,9 +125,9 @@
                 "draft": "Boolean / Can create new drafts",
                 "publish": "Boolean / Has permission to publish",
                 "review": "Boolean / Publishing requires review",
-                "emailRequired": "Boolean / Email requirement met",
-                "phoneRequired": "Boolean / Phone requirement met",
-                "realNameRequired": "Boolean / Real name requirement met",
+                "requiredEmail": "Boolean / The account must have been filled in with an email address",
+                "requiredPhone": "Boolean / The account must be filled with a mobile phone number",
+                "requiredKyc": "Boolean / The account must be KYC certified",
                 "tips": [
                     "String / Request language without requirements 1",
                     "String / Request language without requirements 2"
