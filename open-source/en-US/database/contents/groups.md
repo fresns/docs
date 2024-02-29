@@ -8,7 +8,7 @@ aside: false
 | --- | --- | --- | --- | --- | --- |
 | id | int *UNSIGNED* | Group ID | | NO | Auto Increment |
 | gid | varchar(32) | Public ID |  | NO | **Unique** |
-| parent_id | int *UNSIGNED* | Parent Group ID |  | YES |  |
+| parent_id | int *UNSIGNED* | Parent Group ID | 0 | YES |  |
 | user_id | bigint *UNSIGNED* | Creator ID |  | YES | Related field [users->id](../users/users.md) |
 | name | json | Group Name |  | NO | **Multilingual** |
 | description | json | Group Description |  | YES | **Multilingual** |

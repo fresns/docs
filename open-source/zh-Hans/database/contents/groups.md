@@ -8,7 +8,7 @@ aside: false
 | --- | --- | --- | --- | --- | --- |
 | id | int *UNSIGNED* | 小组 ID | | NO | 自动递增 |
 | gid | varchar(32) | 对外公开 ID |  | NO | **唯一值** |
-| parent_id | int *UNSIGNED* | 父级小组 ID |  | YES |  |
+| parent_id | int *UNSIGNED* | 父级小组 ID | 0 | YES |  |
 | user_id | bigint *UNSIGNED* | 创建者 ID |  | YES | 关联字段 [users->id](../users/users.md) |
 | name | json | 小组名称 |  | NO | **多语言** |
 | description | json | 小组描述 |  | YES | **多语言** |
