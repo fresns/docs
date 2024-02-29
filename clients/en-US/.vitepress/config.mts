@@ -286,15 +286,6 @@ function sidebarReference() {
         { text: 'Language Pack', link: '/reference/language-pack.md' },
         { text: 'Global Configs', link: '/reference/configs.md' },
         {
-          text: 'Dictionary Data',
-          collapsed: false,
-          items: [
-            { text: 'Platforms', link: '/reference/dictionary/platforms.md' },
-            { text: 'Connects', link: '/reference/dictionary/connects.md' },
-            { text: 'Maps', link: '/reference/dictionary/maps.md' },
-          ]
-        },
-        {
           text: 'Common Data Structure',
           collapsed: false,
           items: [
@@ -317,6 +308,15 @@ function sidebarReference() {
             { text: 'Usage', link: '/reference/callback/' },
             { text: 'Path Variables', link: '/reference/callback/variables.md' },
             { text: 'Make Access Token', link: '/reference/callback/access-token.md' },
+          ]
+        },
+        {
+          text: 'Dictionary Data',
+          collapsed: false,
+          items: [
+            { text: 'Platforms', link: '/reference/dictionary/platforms.md' },
+            { text: 'Connects', link: '/reference/dictionary/connects.md' },
+            { text: 'Maps', link: '/reference/dictionary/maps.md' },
           ]
         },
       ]

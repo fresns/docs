@@ -4,9 +4,6 @@ aside: false
 
 # Connects
 
-- Endpoint Path: [/api/fresns/v1/global/configs](/api/global/configs.md)
-- Key Name: `connects`
-
 ```json
 [
     {"id":1,"name":"Other"},

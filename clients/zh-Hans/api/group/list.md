@@ -19,6 +19,7 @@
 | --- | --- | --- | --- |
 | type | Number | NO | 指定自定义类型 |
 | gid | String | NO | 获取该 gid 下小组 |
+| topGroups | Boolean | NO | 获取顶级小组 0.否 / 1.是 |
 | recommend | Boolean | NO | 推荐状态 0.不推荐 / 1.推荐 |
 | createdDays | Number | NO | 创建天数：指定天数内创建的小组 |
 | createdDate | String | NO | 创建日期：`today`,`yesterday`,`week`,`lastWeek`,`month`,`lastMonth`,`year`,`lastYear` |

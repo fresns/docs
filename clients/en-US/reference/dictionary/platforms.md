@@ -4,9 +4,6 @@ aside: false
 
 # Platforms
 
-- Endpoint Path: [/api/fresns/v1/global/configs](/api/global/configs.md)
-- Key Name: `platforms`
-
 ```json
 [
     {"id":1,"name":"Other"},

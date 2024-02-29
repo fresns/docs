@@ -19,6 +19,7 @@
 | --- | --- | --- | --- |
 | type | Number | *optional* | Specify custom type |
 | gid | String | *optional* | Get groups under this gid |
+| topGroups | Boolean | *optional* | Get top groups 0.No / 1.Yes |
 | recommend | Boolean | *optional* | Recommendation status 0. Not recommended / 1. Recommended |
 | createdDays | Number | *optional* | Days created: Group created in the specified number of days |
 | createdDate | String | *optional* | Date created: `today`,`yesterday`,`week`,`lastWeek`,`month`,`lastMonth`,`year`,`lastYear` |

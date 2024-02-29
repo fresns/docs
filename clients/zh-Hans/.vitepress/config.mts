@@ -298,15 +298,6 @@ function sidebarReference() {
         { text: '语言包', link: '/reference/language-pack.md' },
         { text: '全局配置', link: '/reference/configs.md' },
         {
-          text: '字典数据',
-          collapsed: false,
-          items: [
-            { text: '终端平台编号', link: '/reference/dictionary/platforms.md' },
-            { text: '互联平台编号', link: '/reference/dictionary/connects.md' },
-            { text: '地图服务商编号', link: '/reference/dictionary/maps.md' },
-          ]
-        },
-        {
           text: '通用数据结构',
           collapsed: false,
           items: [
@@ -329,6 +320,15 @@ function sidebarReference() {
             { text: '使用流程', link: '/reference/callback/' },
             { text: '路径变量名', link: '/reference/callback/variables.md' },
             { text: '生成访问令牌', link: '/reference/callback/access-token.md' },
+          ]
+        },
+        {
+          text: '字典数据',
+          collapsed: false,
+          items: [
+            { text: '终端平台编号', link: '/reference/dictionary/platforms.md' },
+            { text: '互联平台编号', link: '/reference/dictionary/connects.md' },
+            { text: '地图服务商编号', link: '/reference/dictionary/maps.md' },
           ]
         },
       ]

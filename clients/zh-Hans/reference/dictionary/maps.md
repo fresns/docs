@@ -4,9 +4,6 @@ aside: false
 
 # 地图服务商编号
 
-- 接口地址：[/api/fresns/v1/global/configs](/api/global/configs.md)
-- 键名：`maps`
-
 ```json
 [
     {"id":1,"name":"Unknown"},

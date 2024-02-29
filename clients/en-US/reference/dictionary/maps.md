@@ -4,9 +4,6 @@ aside: false
 
 # Maps
 
-- Endpoint Path: [/api/fresns/v1/global/configs](/api/global/configs.md)
-- Key Name: `maps`
-
 ```json
 [
     {"id":1,"name":"Unknown"},

@@ -4,9 +4,6 @@ aside: false
 
 # 终端平台编号
 
-- 接口地址：[/api/fresns/v1/global/configs](/api/global/configs.md)
-- 键名：`platforms`
-
 ```json
 [
     {"id":1,"name":"Other"},
