@@ -173,6 +173,7 @@
 | Key Name | Value Type | Description |
 | --- | --- | --- |
 | conversation_status | Boolean | Conversation Feature |
+| conversation_files | Array | File types supported by the conversation |
 
 ## Publish
 

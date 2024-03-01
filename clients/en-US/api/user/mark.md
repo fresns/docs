@@ -17,8 +17,8 @@
 
 | Key | Type | Required | Description |
 | --- | --- | --- | --- |
-| markType | String | **required** | Mark action `like`,`dislike`,`follow`,`block` |
-| type | String | **required** | Mark type `user`,`group`,`hashtag`,`geotag`,`post`,`comment` |
+| markType | String | **required** | Mark type `like`,`dislike`,`follow`,`block` |
+| type | String | **required** | Content type `user`,`group`,`hashtag`,`geotag`,`post`,`comment` |
 | fsid | Number / String | **required** | Target `FsID`<br>For user, param `uid` or `username`<br>For group, param `gid`<br>For hashtag, param `htid`<br>For geotag, param `gtid`<br>For geotag, param `gtid`<br>For post, param `pid`<br>For comment, param `cid` |
 | note | String | *optional* | Note Content, Only valid for `follow` or `block` |
 

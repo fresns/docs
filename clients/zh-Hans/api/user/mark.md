@@ -17,9 +17,9 @@
 
 | 参数名 | 类型 | 是否必传 | 说明 |
 | --- | --- | --- | --- |
-| markType | String | YES | 标记行为 `like`,`dislike`,`follow`,`block` |
-| type | String | YES | 标记类型 `user`,`group`,`hashtag`,`geotag`,`post`,`comment` |
-| fsid | Number / String | YES | 目标 `FsID`<br>user 传参 uid 或 username<br>group 传参 gid<br>hashtag 传参 htid<br>geotag 传参 gtid<br>post 传参 pid<br>comment 传参 cid |
+| markType | String | YES | 标记类型 `like`,`dislike`,`follow`,`block` |
+| type | String | YES | 内容类型 `user`,`group`,`hashtag`,`geotag`,`post`,`comment` |
+| fsid | Number / String | YES | 内容 `FsID`<br>user 传参 uid 或 username<br>group 传参 gid<br>hashtag 传参 htid<br>geotag 传参 gtid<br>post 传参 pid<br>comment 传参 cid |
 | note | String | NO | 备注内容，仅对 `follow` 或 `block` 有效 |
 
 **接口使用说明**

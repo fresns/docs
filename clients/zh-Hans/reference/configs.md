@@ -173,6 +173,7 @@
 | 键名 | 键值类型 | 描述 |
 | --- | --- | --- |
 | conversation_status | Boolean | 对话功能 |
+| conversation_files | Array | 对话支持的文件类型 |
 
 ## 发表配置
 

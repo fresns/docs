@@ -398,6 +398,7 @@
 
 | 键名 | 键值 |
 | --- | --- |
+| editor | 编辑器 |
 | editorGoTo | 进入编辑器 |
 | editorDraftSelect | 从草稿箱中选择一篇草稿 |
 | editorDraftCreate | 创建新草稿 |

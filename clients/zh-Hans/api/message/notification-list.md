@@ -34,24 +34,24 @@
     - `types=1` 代表系统给你发了一条 `content` 消息内容
         - `isAccessApp` 是否访问插件页
         - `actionUser` 是否有触发用户
-        - `actionObject + actionInfo` 是否有附带内容
+        - `actionTarget + actionInfo` 是否有附带内容
 - **推荐消息解读：**
     - `types=2` 代表系统给你推荐了内容
         - `content` 推荐语
         - `isAccessApp` 是否访问插件页
         - `actionUser` 是否有触发用户
-        - `actionObject + actionInfo` 推荐的内容
+        - `actionTarget + actionInfo` 推荐的内容
 - **互动消息解读：**
-    - `types=3` 代表 `actionUser` 点赞了你的 `actionObject + actionInfo`
-    - `types=4` 代表 `actionUser` 踩了你的 `actionObject + actionInfo`
-    - `types=5` 代表 `actionUser` 关注了你的 `actionObject + actionInfo`
-    - `types=6` 代表 `actionUser` 屏蔽了你的 `actionObject + actionInfo`
-    - `types=7` 代表 `actionUser` 在 `actionObject + actionInfo` 中提及了你
+    - `types=3` 代表 `actionUser` 点赞了你的 `actionTarget + actionInfo`
+    - `types=4` 代表 `actionUser` 踩了你的 `actionTarget + actionInfo`
+    - `types=5` 代表 `actionUser` 关注了你的 `actionTarget + actionInfo`
+    - `types=6` 代表 `actionUser` 屏蔽了你的 `actionTarget + actionInfo`
+    - `types=7` 代表 `actionUser` 在 `actionTarget + actionInfo` 中提及了你
         - `content` 提及内容的摘要
-    - `types=8` 代表 `actionUser` 评论了你的 `actionObject + actionInfo`
+    - `types=8` 代表 `actionUser` 评论了你的 `actionTarget + actionInfo`
         - `content` 评论内容的摘要
         - `contentFsid` 他的评论 cid
-    - `types=9` 代表 `actionUser` 引用了你的帖子 `actionObject=4 + actionInfo`
+    - `types=9` 代表 `actionUser` 引用了你的帖子 `actionTarget=4 + actionInfo`
         - `content` 他的内容摘要
         - `contentFsid` 他的帖子 pid
 - **触发行为 actionType 类型介绍：**
@@ -94,15 +94,15 @@
                 },
                 "actionUserIsAnonymous": "Boolean / 是否匿名",
                 "actionType": "Number / 触发行为类型",
-                "actionObject": "Number / 触发目标",
+                "actionTarget": "Number / 触发目标",
                 "actionInfo": {
                     // 触发关联内容（通用数据结构）
-                    // actionObject=1  用户信息
-                    // actionObject=2  小组信息
-                    // actionObject=3  话题信息
-                    // actionObject=4  地理信息
-                    // actionObject=5  帖子信息
-                    // actionObject=6  评论信息
+                    // actionTarget=1  用户信息
+                    // actionTarget=2  小组信息
+                    // actionTarget=3  话题信息
+                    // actionTarget=4  地理信息
+                    // actionTarget=5  帖子信息
+                    // actionTarget=6  评论信息
                 },
                 "contentFsid": "String / 内容事件的 pid 或 cid",
                 "datetime": "String / 通知时间",

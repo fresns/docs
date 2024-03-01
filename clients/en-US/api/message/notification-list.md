@@ -34,24 +34,24 @@
     - `types=1` means the system sent you a `content` message.
         - `isAccessApp`: Whether to visit the plugin page.
         - `actionUser`: Whether there is a triggering user.
-        - `actionObject + actionInfo`: Whether there is additional content.
+        - `actionTarget + actionInfo`: Whether there is additional content.
 - **Recommended message interpretation:**
     - `types=2` means the system recommended content for you.
         - `content`: Recommendation text.
         - `isAccessApp`: Whether to visit the plugin page.
         - `actionUser`: Whether there is a triggering user.
-        - `actionObject + actionInfo`: Recommended content.
+        - `actionTarget + actionInfo`: Recommended content.
 - **Interaction message interpretation:**
-    - `types=3` means `actionUser` liked your `actionObject + actionInfo`.
-    - `types=4` means `actionUser` disliked your `actionObject + actionInfo`.
-    - `types=5` means `actionUser` followed your `actionObject + actionInfo`.
-    - `types=6` means `actionUser` blocked your `actionObject + actionInfo`.
-    - `types=7` means `actionUser` mentioned you in `actionObject + actionInfo`.
+    - `types=3` means `actionUser` liked your `actionTarget + actionInfo`.
+    - `types=4` means `actionUser` disliked your `actionTarget + actionInfo`.
+    - `types=5` means `actionUser` followed your `actionTarget + actionInfo`.
+    - `types=6` means `actionUser` blocked your `actionTarget + actionInfo`.
+    - `types=7` means `actionUser` mentioned you in `actionTarget + actionInfo`.
         - `content`: Summary of the mentioned content.
-    - `types=8` means `actionUser` commented on your `actionObject + actionInfo`.
+    - `types=8` means `actionUser` commented on your `actionTarget + actionInfo`.
         - `content`: Summary of the comment content.
         - `contentFsid`: Their comment cid.
-    - `types=9` means `actionUser` quoted on your `actionObject=4 + actionInfo`.
+    - `types=9` means `actionUser` quoted on your `actionTarget=4 + actionInfo`.
         - `content`: Summary of the post content.
         - `contentFsid`: Their post pid.
 - **Trigger action `actionType` type introduction:**
@@ -94,15 +94,15 @@
                 },
                 "actionUserIsAnonymous": "Boolean / Whether anonymous",
                 "actionType": "Number / Trigger action type",
-                "actionObject": "Number / Trigger target",
+                "actionTarget": "Number / Trigger target",
                 "actionInfo": {
                     // Trigger-related content (Common Data Structure)
-                    // actionObject=1  User information
-                    // actionObject=2  Group information
-                    // actionObject=3  Hashtag information
-                    // actionObject=4  Geotag information
-                    // actionObject=5  Post information
-                    // actionObject=6  Comment information
+                    // actionTarget=1  User information
+                    // actionTarget=2  Group information
+                    // actionTarget=3  Hashtag information
+                    // actionTarget=4  Geotag information
+                    // actionTarget=5  Post information
+                    // actionTarget=6  Comment information
                 },
                 "contentFsid": "String / Content event pid or cid",
                 "datetime": "String / Notification time",

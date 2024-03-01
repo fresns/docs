@@ -407,6 +407,7 @@
 
 | Key | Value |
 | --- | --- |
+| editor | Editor |
 | editorGoTo | Go to Editor |
 | editorDraftSelect | Select a draft from the draft box |
 | editorDraftCreate | Create a new draft |
