@@ -91,6 +91,16 @@ fs_lang('KeyName')
 fs_channels()
 ```
 
+## Editor Configs
+
+- [Editor Configs](../api/editor/configs.md)
+
+```php
+fs_post_editor('key') // supports "dot notation" for multi-dimensional arrays
+
+fs_comment_editor('key') // supports "dot notation" for multi-dimensional arrays
+```
+
 ## Stickers
 
 - [Stickers Array](../api/global/stickers.md)
@@ -108,12 +118,6 @@ fs_content_types('post') // post or comment
 ```
 
 ## Content Data
-
-### Group Tree
-
-```php
-fs_group_tree()
-```
 
 ### Content List
 

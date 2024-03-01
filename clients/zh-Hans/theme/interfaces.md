@@ -4,7 +4,7 @@
 
 | 请求方式 | 接口路径 | 路由名 | 介绍 |
 | --- | --- | --- | --- |
-| `GET` | /api/theme/access-token | fresns.api.access-token | [获取扩展访问令牌](../reference/callback/access-token.md) |
+| `POST` | /api/theme/access-token | fresns.api.access-token | [生成扩展访问令牌](../reference/callback/access-token.md) |
 
 ## Fresns API
 

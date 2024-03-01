@@ -4,7 +4,7 @@
 
 | Method | Endpoint Path | Route Name | Description |
 | --- | --- | --- | --- |
-| `GET` | /api/theme/access-token | fresns.api.access-token | [Get Access Token](../reference/callback/access-token.md) |
+| `POST` | /api/theme/access-token | fresns.api.access-token | [Make Access Token](../reference/callback/access-token.md) |
 
 ## Fresns API
 

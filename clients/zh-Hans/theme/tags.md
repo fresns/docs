@@ -91,6 +91,16 @@ fs_lang('语言键名')
 fs_channels()
 ```
 
+## 编辑器配置
+
+- [编辑器配置信息](../api/editor/configs.md)
+
+```php
+fs_post_editor('参数') // 支持「点表示法」表示多维数组
+
+fs_comment_editor('参数') // 支持「点表示法」表示多维数组
+```
+
 ## 表情
 
 - [表情列表](../api/global/stickers.md)
@@ -108,12 +118,6 @@ fs_content_types('post') // post or comment
 ```
 
 ## 内容数据
-
-### 树小组
-
-```php
-fs_group_tree()
-```
 
 ### 内容列表
 
@@ -168,7 +172,7 @@ fs_account('参数名') // 支持「点表示法」表示多维数组
 fs_user('参数名') // 支持「点表示法」表示多维数组
 
 # 用户概览参数
-fs_user_overview('key') // 支持「点表示法」表示多维数组
+fs_user_overview('参数名') // 支持「点表示法」表示多维数组
 ```
 
 - 参数名来自 API `data` 参数。
