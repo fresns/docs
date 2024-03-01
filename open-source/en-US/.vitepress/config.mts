@@ -285,9 +285,9 @@ function sidebarConfigs() {
           collapsed: false,
           items: [
             { text: 'User', link: '/configs/panel/user.md' },
+            { text: 'Publish', link: '/configs/panel/publish.md' },
             { text: 'Content', link: '/configs/panel/content.md' },
             { text: 'Interaction', link: '/configs/panel/interaction.md' },
-            { text: 'Publish', link: '/configs/panel/publish.md' },
           ]
         },
         {

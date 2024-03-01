@@ -673,3 +673,12 @@
 | 键名 | 键值类型 | 描述 |
 | --- | --- | --- |
 | map_service | String | 地图服务 `URL` |
+
+## 门户内容
+
+| 键名 | 键值类型 | 描述 |
+| --- | --- | --- |
+| portal_`{platformId}` | String | 门户内容 |
+
+- 例如 Desktop Web 平台的门户键名为 `portal_2`
+- 资料: [Platforms](dictionary/platforms.md)

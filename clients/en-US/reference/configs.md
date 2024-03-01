@@ -467,7 +467,7 @@
 
 - Example of a post, full URL format `{site_url}`/`{website_user_detail_path}`/`{pid}`
 
-## Basic
+## Website Basic
 
 > Panel > Clients > Basic
 
@@ -666,3 +666,12 @@
 | Key Name | Value Type | Description |
 | --- | --- | --- |
 | map_service | String | Map Service `URL` |
+
+## Portal Content
+
+| Key Name | Value Type | Description |
+| --- | --- | --- |
+| portal_`{platformId}` | String | Portal Content |
+
+- For example, the portal key name for the Desktop Web platform is `portal_2`
+- Reference: [Platforms](dictionary/platforms.md)

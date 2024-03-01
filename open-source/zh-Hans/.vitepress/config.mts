@@ -297,9 +297,9 @@ function sidebarConfigs() {
           collapsed: false,
           items: [
             { text: '用户配置', link: '/configs/panel/user.md' },
+            { text: '发表配置', link: '/configs/panel/publish.md' },
             { text: '内容配置', link: '/configs/panel/content.md' },
             { text: '互动配置', link: '/configs/panel/interaction.md' },
-            { text: '发表配置', link: '/configs/panel/publish.md' },
           ]
         },
         {
