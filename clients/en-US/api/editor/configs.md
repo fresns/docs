@@ -38,87 +38,83 @@
     "message": "ok",
     "data": {
         "editor": {
-            "toolbar": {
-                "sticker": "Boolean / Enable stickers",
-                "image": {
-                    "status": "Boolean / Enable images",
-                    "extensions": "String / Supported extensions, e.g., png,gif,jpg,jpeg,bmp,heic",
-                    "inputAccept": "String / Supported extensions, e.g., image/png,image/gif,image/jpeg,image/jpeg,image/bmp",
-                    "maxSize": "Number / Maximum file size, in MB",
-                    "uploadType": "String / Upload type: api, page, sdk",
-                    "uploadUrl": "String / Address for page upload type",
-                    "uploadNumber": "Number / Number of allowed uploads"
-                },
-                "video": {
-                    "status": "Boolean / Enable videos",
-                    "extensions": "String / Supported extensions, e.g., wmv,rm,mov,mpeg,mp4,3gp,flv,avi,rmvb",
-                    "inputAccept": "String / Supported extensions, e.g., video/x-ms-wmv,application/vnd.rn-realmedia,video/quicktime,video/mpeg,video/mp4,video/3gpp,video/x-flv,video/x-msvideo,application/vnd.rn-realmedia-vbr",
-                    "maxSize": "Number / Maximum file size, in MB",
-                    "maxTime": "Number / Maximum file duration, in seconds",
-                    "uploadType": "String / Upload type: api, page, sdk",
-                    "uploadUrl": "String / Address for page upload type",
-                    "uploadNumber": "Number / Number of allowed uploads"
-                },
-                "audio": {
-                    "status": "Boolean / Enable audios",
-                    "extensions": "String / Supported extensions, e.g., mp3,wav,m4a",
-                    "inputAccept": "String / Supported extensions, e.g., audio/mpeg,audio/x-wav,audio/mp4",
-                    "maxSize": "Number / Maximum file size, in MB",
-                    "maxTime": "Number / Maximum file duration, in seconds",
-                    "uploadType": "String / Upload type: api, page, sdk",
-                    "uploadUrl": "String / Address for page upload type",
-                    "uploadNumber": "Number / Number of allowed uploads"
-                },
-                "document": {
-                    "status": "Boolean / Enable documents",
-                    "extensions": "String / Supported extensions, e.g., doc,docx,xls,xlsx,csv,ppt,pptx,pps,ppts,pdf,txt,md,markdown,rar,zip,7z,epub,mobi",
-                    "inputAccept": "String / Supported extensions, e.g., application/msword,application/vnd.openxmlformats-officedocument.wordprocessingml.document,application/vnd.ms-excel",
-                    "maxSize": "Number / Maximum file size, in MB",
-                    "uploadType": "String / Upload type: api, page, sdk",
-                    "uploadUrl": "String / Address for page upload type",
-                    "uploadNumber": "Number / Number of allowed uploads"
-                },
-                "title": {
-                    "status": "Boolean / Enable titles",
-                    "required": "Boolean / Is required",
-                    "show": "Boolean / Whether to display input by default",
-                    "length": "Number / Maximum length"
-                },
-                "mention": {
-                    "status": "Boolean / Enable mentions",
-                    "display": "Boolean / Toolbar displays mention operation button"
-                },
-                "hashtag": {
-                    "status": "Boolean / Enable hashtags",
-                    "display": "Boolean / Toolbar displays hashtag operation button",
-                    "format": "Number / Hashtag format 1. Single # 2. Double"
-                },
-                "extend": {
-                    "status": "Boolean / Enable extends",
-                    "list": [
-                        {
-                            "fskey": "String / App Fskey",
-                            "icon": "String / Icon URL",
-                            "name": "String / Name",
-                            "appUrl": "String / App Access URL",
-                            "editorToolbar": "Boolean / Editor specific, whether to display in toolbar",
-                            "editorNumber": "Number / Editor specific, available number",
-                        }
-                    ]
-                }
+            "sticker": "Boolean / Enable stickers",
+            "image": {
+                "status": "Boolean / Enable images",
+                "extensions": "String / Supported extensions, e.g., png,gif,jpg,jpeg,bmp,heic",
+                "inputAccept": "String / Supported extensions, e.g., image/png,image/gif,image/jpeg,image/jpeg,image/bmp",
+                "maxSize": "Number / Maximum file size, in MB",
+                "uploadType": "String / Upload type: api, page, sdk",
+                "uploadUrl": "String / Address for page upload type",
+                "uploadNumber": "Number / Number of allowed uploads"
             },
-            "features": {
-                "group": {
-                    "status": "Boolean / Enable groups",
-                    "required": "Boolean / Is required"
-                },
-                "location": {
-                    "status": "Boolean / Enable locations",
-                    "mapUrl": "String / Map Web page"
-                },
-                "anonymous": "Boolean / Support anonymous",
-                "contentLength": "Number / Maximum content length"
-            }
+            "video": {
+                "status": "Boolean / Enable videos",
+                "extensions": "String / Supported extensions, e.g., wmv,rm,mov,mpeg,mp4,3gp,flv,avi,rmvb",
+                "inputAccept": "String / Supported extensions, e.g., video/x-ms-wmv,application/vnd.rn-realmedia,video/quicktime,video/mpeg,video/mp4,video/3gpp,video/x-flv,video/x-msvideo,application/vnd.rn-realmedia-vbr",
+                "maxSize": "Number / Maximum file size, in MB",
+                "maxTime": "Number / Maximum file duration, in seconds",
+                "uploadType": "String / Upload type: api, page, sdk",
+                "uploadUrl": "String / Address for page upload type",
+                "uploadNumber": "Number / Number of allowed uploads"
+            },
+            "audio": {
+                "status": "Boolean / Enable audios",
+                "extensions": "String / Supported extensions, e.g., mp3,wav,m4a",
+                "inputAccept": "String / Supported extensions, e.g., audio/mpeg,audio/x-wav,audio/mp4",
+                "maxSize": "Number / Maximum file size, in MB",
+                "maxTime": "Number / Maximum file duration, in seconds",
+                "uploadType": "String / Upload type: api, page, sdk",
+                "uploadUrl": "String / Address for page upload type",
+                "uploadNumber": "Number / Number of allowed uploads"
+            },
+            "document": {
+                "status": "Boolean / Enable documents",
+                "extensions": "String / Supported extensions, e.g., doc,docx,xls,xlsx,csv,ppt,pptx,pps,ppts,pdf,txt,md,markdown,rar,zip,7z,epub,mobi",
+                "inputAccept": "String / Supported extensions, e.g., application/msword,application/vnd.openxmlformats-officedocument.wordprocessingml.document,application/vnd.ms-excel",
+                "maxSize": "Number / Maximum file size, in MB",
+                "uploadType": "String / Upload type: api, page, sdk",
+                "uploadUrl": "String / Address for page upload type",
+                "uploadNumber": "Number / Number of allowed uploads"
+            },
+            "title": {
+                "status": "Boolean / Enable titles",
+                "required": "Boolean / Is required",
+                "show": "Boolean / Whether to display input by default",
+                "length": "Number / Maximum length"
+            },
+            "mention": {
+                "status": "Boolean / Enable mentions",
+                "display": "Boolean / Toolbar displays mention operation button"
+            },
+            "hashtag": {
+                "status": "Boolean / Enable hashtags",
+                "display": "Boolean / Toolbar displays hashtag operation button",
+                "format": "Number / Hashtag format 1. Single # 2. Double"
+            },
+            "extend": {
+                "status": "Boolean / Enable extends",
+                "list": [
+                    {
+                        "fskey": "String / App Fskey",
+                        "icon": "String / Icon URL",
+                        "name": "String / Name",
+                        "appUrl": "String / App Access URL",
+                        "editorToolbar": "Boolean / Editor specific, whether to display in toolbar",
+                        "editorNumber": "Number / Editor specific, available number",
+                    }
+                ]
+            },
+            "group": {
+                "status": "Boolean / Enable groups",
+                "required": "Boolean / Is required"
+            },
+            "location": {
+                "status": "Boolean / Enable locations",
+                "mapUrl": "String / Map Web page"
+            },
+            "anonymous": "Boolean / Support anonymous",
+            "contentLength": "Number / Maximum content length"
         },
         "publish": {
             "perm": {

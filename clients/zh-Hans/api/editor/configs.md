@@ -38,87 +38,83 @@
     "message": "ok",
     "data": {
         "editor": {
-            "toolbar": {
-                "sticker": "Boolean / 是否启用表情",
-                "image": {
-                    "status": "Boolean / 是否启用图片",
-                    "extensions": "String / 支持的扩展名，示例 png,gif,jpg,jpeg,bmp,heic",
-                    "inputAccept": "String / 支持的扩展名，示例 image/png,image/gif,image/jpeg,image/jpeg,image/bmp",
-                    "maxSize": "Number / 最大文件尺寸，单位 MB",
-                    "uploadType": "String / 上传类型: api, page, sdk",
-                    "uploadUrl": "String / page 上传类型的地址",
-                    "uploadNumber": "Number / 允许上传个数"
-                },
-                "video": {
-                    "status": "Boolean / 是否启用视频",
-                    "extensions": "String / 支持的扩展名，示例 wmv,rm,mov,mpeg,mp4,3gp,flv,avi,rmvb",
-                    "inputAccept": "String / 支持的扩展名，示例 video/x-ms-wmv,application/vnd.rn-realmedia,video/quicktime,video/mpeg,video/mp4,video/3gpp,video/x-flv,video/x-msvideo,application/vnd.rn-realmedia-vbr",
-                    "maxSize": "Number / 最大文件尺寸，单位 MB",
-                    "maxTime": "Number / 最大文件时长，单位 秒",
-                    "uploadType": "String / 上传类型: api, page, sdk",
-                    "uploadUrl": "String / page 上传类型的地址",
-                    "uploadNumber": "Number / 允许上传个数"
-                },
-                "audio": {
-                    "status": "Boolean / 是否启用音频",
-                    "extensions": "String / 支持的扩展名，示例 mp3,wav,m4a",
-                    "inputAccept": "String / 支持的扩展名，示例 audio/mpeg,audio/x-wav,audio/mp4",
-                    "maxSize": "Number / 最大文件尺寸，单位 MB",
-                    "maxTime": "Number / 最大文件时长，单位 秒",
-                    "uploadType": "String / 上传类型: api, page, sdk",
-                    "uploadUrl": "String / page 上传类型的地址",
-                    "uploadNumber": "Number / 允许上传个数"
-                },
-                "document": {
-                    "status": "Boolean / 是否启用文档",
-                    "extensions": "String / 支持的扩展名，示例 doc,docx,xls,xlsx,csv,ppt,pptx,pps,ppts,pdf,txt,md,markdown,rar,zip,7z,epub,mobi",
-                    "inputAccept": "String / 支持的扩展名，示例 application/msword,application/vnd.openxmlformats-officedocument.wordprocessingml.document,application/vnd.ms-excel",
-                    "maxSize": "Number / 最大文件尺寸，单位 MB",
-                    "uploadType": "String / 上传类型: api, page, sdk",
-                    "uploadUrl": "String / page 上传类型的地址",
-                    "uploadNumber": "Number / 允许上传个数"
-                },
-                "title": {
-                    "status": "Boolean / 是否启用标题",
-                    "required": "Boolean / 是否必填",
-                    "show": "Boolean / 是否默认显示 input",
-                    "length": "Number / 最大长度"
-                },
-                "mention": {
-                    "status": "Boolean / 是否启用艾特",
-                    "display": "Boolean / 工具栏是否显示艾特操作按钮"
-                },
-                "hashtag": {
-                    "status": "Boolean / 是否启用话题",
-                    "display": "Boolean / 工具栏是否显示话题操作按钮",
-                    "format": "Number / 话题格式 1.单 # 2.双 #"
-                },
-                "extend": {
-                    "status": "Boolean / 是否启用扩展",
-                    "list": [
-                        {
-                            "fskey": "String / 应用 Fskey",
-                            "icon": "String / 图标地址",
-                            "name": "String / 名称",
-                            "appUrl": "String / 应用访问地址",
-                            "editorToolbar": "Boolean / 编辑器专用，是否在 toolbar 显示",
-                            "editorNumber": "Number / 编辑器专用，可使用数量",
-                        }
-                    ]
-                }
+            "sticker": "Boolean / 是否启用表情",
+            "image": {
+                "status": "Boolean / 是否启用图片",
+                "extensions": "String / 支持的扩展名，示例 png,gif,jpg,jpeg,bmp,heic",
+                "inputAccept": "String / 支持的扩展名，示例 image/png,image/gif,image/jpeg,image/jpeg,image/bmp",
+                "maxSize": "Number / 最大文件尺寸，单位 MB",
+                "uploadType": "String / 上传类型: api, page, sdk",
+                "uploadUrl": "String / page 上传类型的地址",
+                "uploadNumber": "Number / 允许上传个数"
             },
-            "features": {
-                "group": {
-                    "status": "Boolean / 是否启用小组",
-                    "required": "Boolean / 是否必选"
-                },
-                "location": {
-                    "status": "Boolean / 是否启用位置",
-                    "mapUrl": "String / 地图 Web 页面"
-                },
-                "anonymous": "Boolean / 是否支持匿名",
-                "contentLength": "Number / 内容最大长度"
-            }
+            "video": {
+                "status": "Boolean / 是否启用视频",
+                "extensions": "String / 支持的扩展名，示例 wmv,rm,mov,mpeg,mp4,3gp,flv,avi,rmvb",
+                "inputAccept": "String / 支持的扩展名，示例 video/x-ms-wmv,application/vnd.rn-realmedia,video/quicktime,video/mpeg,video/mp4,video/3gpp,video/x-flv,video/x-msvideo,application/vnd.rn-realmedia-vbr",
+                "maxSize": "Number / 最大文件尺寸，单位 MB",
+                "maxTime": "Number / 最大文件时长，单位 秒",
+                "uploadType": "String / 上传类型: api, page, sdk",
+                "uploadUrl": "String / page 上传类型的地址",
+                "uploadNumber": "Number / 允许上传个数"
+            },
+            "audio": {
+                "status": "Boolean / 是否启用音频",
+                "extensions": "String / 支持的扩展名，示例 mp3,wav,m4a",
+                "inputAccept": "String / 支持的扩展名，示例 audio/mpeg,audio/x-wav,audio/mp4",
+                "maxSize": "Number / 最大文件尺寸，单位 MB",
+                "maxTime": "Number / 最大文件时长，单位 秒",
+                "uploadType": "String / 上传类型: api, page, sdk",
+                "uploadUrl": "String / page 上传类型的地址",
+                "uploadNumber": "Number / 允许上传个数"
+            },
+            "document": {
+                "status": "Boolean / 是否启用文档",
+                "extensions": "String / 支持的扩展名，示例 doc,docx,xls,xlsx,csv,ppt,pptx,pps,ppts,pdf,txt,md,markdown,rar,zip,7z,epub,mobi",
+                "inputAccept": "String / 支持的扩展名，示例 application/msword,application/vnd.openxmlformats-officedocument.wordprocessingml.document,application/vnd.ms-excel",
+                "maxSize": "Number / 最大文件尺寸，单位 MB",
+                "uploadType": "String / 上传类型: api, page, sdk",
+                "uploadUrl": "String / page 上传类型的地址",
+                "uploadNumber": "Number / 允许上传个数"
+            },
+            "title": {
+                "status": "Boolean / 是否启用标题",
+                "required": "Boolean / 是否必填",
+                "show": "Boolean / 是否默认显示 input",
+                "length": "Number / 最大长度"
+            },
+            "mention": {
+                "status": "Boolean / 是否启用艾特",
+                "display": "Boolean / 工具栏是否显示艾特操作按钮"
+            },
+            "hashtag": {
+                "status": "Boolean / 是否启用话题",
+                "display": "Boolean / 工具栏是否显示话题操作按钮",
+                "format": "Number / 话题格式 1.单 # 2.双 #"
+            },
+            "extend": {
+                "status": "Boolean / 是否启用扩展",
+                "list": [
+                    {
+                        "fskey": "String / 应用 Fskey",
+                        "icon": "String / 图标地址",
+                        "name": "String / 名称",
+                        "appUrl": "String / 应用访问地址",
+                        "editorToolbar": "Boolean / 编辑器专用，是否在 toolbar 显示",
+                        "editorNumber": "Number / 编辑器专用，可使用数量",
+                    }
+                ]
+            },
+            "group": {
+                "status": "Boolean / 是否启用小组",
+                "required": "Boolean / 是否必选"
+            },
+            "location": {
+                "status": "Boolean / 是否启用位置",
+                "mapUrl": "String / 地图 Web 页面"
+            },
+            "anonymous": "Boolean / 是否支持匿名",
+            "contentLength": "Number / 内容最大长度"
         },
         "publish": {
             "perm": {
