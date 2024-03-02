@@ -7,6 +7,7 @@ aside: false
 ```json
 {
     "did": "String / Draft ID",
+    "fsid": "String / Published content pid or cid",
     "quotedPid": "String / Quoted Post ID", // Post Only
     "replyToPid": "String / Reply to post id", // Comment Only
     "replyToCid": "String / Reply to comment id", // Comment Only

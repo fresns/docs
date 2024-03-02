@@ -7,6 +7,7 @@ aside: false
 ```json
 {
     "did": "String / 草稿 ID",
+    "fsid": "String / 已发表正式内容 pid 或者 cid",
     "quotedPid": "String / 引用哪个帖子", // 帖子专用
     "replyToPid": "String / 回复哪个帖子", // 评论专用
     "replyToCid": "String / 回复哪个评论", // 评论专用

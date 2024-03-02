@@ -202,3 +202,12 @@
 | --- | --- | --- |
 | fresns.editor.post | /editor/post.blade.php | Post Editor |
 | fresns.editor.comment | /editor/comment.blade.php | Comment Editor |
+
+- Post Editor
+    - New Post: `fs_route(route('fresns.editor.post'))`
+    - Edit Draft: `fs_route(route('fresns.editor.post', ['did' => '']))`
+    - Edit Published Post: `fs_route(route('fresns.editor.post', ['pid' => '']))`
+- Comment Editor
+    - New Comment: `fs_route(route('fresns.editor.comment', ['pid' => '']))`
+    - Edit Draft: `fs_route(route('fresns.editor.comment', ['did' => '']))`
+    - Edit Published Comment: `fs_route(route('fresns.editor.comment', ['cid' => '']))`

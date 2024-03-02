@@ -195,6 +195,7 @@
 
 | Key | Value |
 | --- | --- |
+| accountCenter | Account Center |
 | account | Account |
 | email | Email |
 | phone | Phone Number |

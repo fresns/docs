@@ -195,6 +195,7 @@
 
 | 键名 | 键值 |
 | --- | --- |
+| accountCenter | 账户中心 |
 | account | 账号 |
 | email | 邮箱 |
 | phone | 手机号 |

@@ -10,7 +10,8 @@
 | --- | --- | --- |
 | language_status | Boolean | 是否开启多语言 |
 | language_menus | Array | 多语言配置列表 |
-| default_language | String | 默认语言标签 `langTag` |
+| default_language | String | 默认语言标签 `langTag` 
+| current_language_menu | Object | 当前语言菜单 |
 
 ::: details 多语言配置列表
 ```json

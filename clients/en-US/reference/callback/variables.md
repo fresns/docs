@@ -62,7 +62,7 @@ Whether it is website or mobile application, the use of plug-ins is embedded in 
 | `manage` | Management Functions | *Ibid* |
 | `sign` | Register or Login | Register or Login Account |
 | `renewal` | Member Renewal | Private mode user renewal |
-| `realName` | Real-name authentication | Real-name authentication for management accounts |
+| `kyc` | Real-name authentication | Real-name authentication for management accounts |
 | `connect` | Connect Management | Manage account connect bindings |
 | `walletRecharge` | Recharge Extension |  |
 | `walletWithdraw` | Withdrawal Extension |  |

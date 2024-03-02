@@ -11,6 +11,7 @@
 | language_status | Boolean | Enable Multilingual |
 | language_menus | Array | Language configuration list |
 | default_language | String | Default Language Tag `langTag` |
+| current_language_menu | Object | Current Language Menu |
 
 ::: details Language list JSON data
 ```json

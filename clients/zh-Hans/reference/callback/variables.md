@@ -62,7 +62,7 @@
 | `manage` | 管理扩展 | *同上* |
 | `sign` | 注册/登录 | 注册或登录账号 |
 | `renewal` | 会员续期 | 私有模式用户续期 |
-| `realName` | 实名认证 | 管理账号实名认证 |
+| `kyc` | 实名认证 | 管理账号实名认证 |
 | `connect` | 互联管理 | 管理互联绑定 |
 | `walletRecharge` | 充值扩展 |  |
 | `walletWithdraw` | 提现扩展 |  |
