@@ -38,7 +38,7 @@ aside: false
 | last_comment_at | timestamp | Comment Time |  | YES | Time of the latest comment<br>When a user replies to this comment |
 | more_info | json | More Info |  | YES | E.g. publisher IP location name, device name, etc. |
 | permissions | json | Permissions |  | YES |  |
-| rank_state | tinyint *UNSIGNED* | Rank Status | 1 | NO | 1.Not set |
+| rank_state | tinyint *UNSIGNED* | Rank Status | 1 | NO | `1` Not set |
 | is_enabled | tinyint *UNSIGNED* | Is Valid | 1 | NO | 0.Invalid (visible only to yourself) / 1.Valid |
 | created_at | timestamp | Publish Time | useCurrent | NO | For example, MySQL defaults to `CURRENT_TIMESTAMP` |
 | updated_at | timestamp | Update Time |  | YES |  |
