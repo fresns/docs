@@ -200,14 +200,18 @@
 
 | Route Name | View File | Description |
 | --- | --- | --- |
-| fresns.editor.post | /editor/post.blade.php | Post Editor |
-| fresns.editor.comment | /editor/comment.blade.php | Comment Editor |
+|  | /editor/index.blade.php | Post Draft Selection |
+| fresns.editor.post<br>fresns.editor.edit | /editor/edit.blade.php | Post Editor |
+| fresns.editor.comment<br>fresns.editor.edit | /editor/edit.blade.php | Comment Editor |
 
 - Post Editor
-    - New Post: `fs_route(route('fresns.editor.post'))`
+    - New Draft: `fs_route(route('fresns.editor.post'))`
     - Edit Draft: `fs_route(route('fresns.editor.post', ['did' => '']))`
     - Edit Published Post: `fs_route(route('fresns.editor.post', ['pid' => '']))`
 - Comment Editor
-    - New Comment: `fs_route(route('fresns.editor.comment', ['pid' => '']))`
+    - New Draft: `fs_route(route('fresns.editor.comment', ['pid' => '']))`
     - Edit Draft: `fs_route(route('fresns.editor.comment', ['did' => '']))`
     - Edit Published Comment: `fs_route(route('fresns.editor.comment', ['cid' => '']))`
+- Edit Draft
+    - `fs_route(route('fresns.editor.edit', ['type' => '', 'did' => '']))`
+    - Type: `post` or `comment`
