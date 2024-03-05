@@ -31,20 +31,18 @@ The API host for all of the following keys is `https://discuss.fresns.org`
 
 **Website**
 
+- Platform ID: `4`
 - API ID: `MP0Ro0cX`
-- API Secret: `qIDqHLb8aAcy2cNBqymrYLLCUQ6pm4B4`
+- API Key: `qIDqHLb8aAcy2cNBqymrYLLCUQ6pm4B4`
 
 **iOS App**
 
+- Platform ID: `5`
 - API ID: `xDx3ogWu`
-- API Secret: `2U8d8E0Xd4h4Y3EP5ebaJU0Y8IzPBgbl`
+- API Key: `2U8d8E0Xd4h4Y3EP5ebaJU0Y8IzPBgbl`
 
 **Android App**
 
+- Platform ID: `6`
 - API ID: `bBXn8lI1`
-- API Secret: `V2NnWy1hy47WaCCUZQ78WfbgotLQlObw`
-
-**WeChat Mini Program**
-
-- API ID: `lDQSbZ2Z`
-- API Secret: `Rhfq8xDMthQKoP9f65hj4hVOWuJtXfhy`
+- API Key: `V2NnWy1hy47WaCCUZQ78WfbgotLQlObw`
