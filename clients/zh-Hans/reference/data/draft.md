@@ -81,3 +81,74 @@ aside: false
     "reason": "String / 审核拒绝原因"
 }
 ```
+
+## 帖子 `permissions` 权限参数介绍
+
+```json
+{
+    "editor": {
+        "isAppEditor": "Boolean / 是否仅在应用中编辑",
+        "editorFskey": "String / 编辑器 fskey"
+    },
+    "contentWritingDirection": "String / 内容写作方向", // ltr or rtl
+    "canDelete": "Boolean / 作者是否有权删除",
+    "readConfig": {
+        "isReadLocked": "Boolean / 是否需要阅读授权",
+        "previewPercentage": "Number / 无权时内容显示比例",
+        "whitelist": {
+            "users": "Array / 白名单用户 ID",
+            "roles": "Array / 白名单角色 ID"
+        },
+        "buttonName": {
+            "语言标签": "String / 无权时按钮文字",
+            "en": "Name"
+        },
+        "appFskey": "String / 授权应用 fskey"
+    },
+    "associatedUserListConfig": {
+        "hasUserList": "Boolean / 是否有关联用户列表",
+        "userListName": {
+            "语言标签": "String / 用户列表名称",
+            "en": "Name"
+        },
+        "appFskey": "String / 用户列表应用 fskey"
+    },
+    "commentConfig": {
+        "visible": "Boolean / 评论是否可见（不可见对所有人隐藏，包括作者）",
+        "policy": "Number / 谁可以评论 1.所有人 2.你关注的人 3.你关注的人和已认证的人 4.不允许所有人 5.仅限你提及到的用户",
+        "privacy": "String / public (公开) 或 private（私有则仅评论作者和帖子作者可见）",
+        "action": {
+            "hasActionButton": "Boolean / 评论是否有按钮",
+            "buttonName": {
+                "语言标签": "String / 按钮名称",
+                "en": "Name"
+            },
+            "buttonStyle": "String / 按钮风格 primary secondary success danger warning info",
+            "appFskey": "String / 配置应用 fskey"
+        }
+    },
+}
+```
+
+## 评论 `permissions` 权限参数介绍
+
+```json
+{
+    "editor": {
+        "isAppEditor": "Boolean / 是否仅在应用中编辑",
+        "editorFskey": "String / 编辑器 fskey"
+    },
+    "contentWritingDirection": "String / 内容写作方向", // ltr or rtl
+    "canDelete": "Boolean / 作者是否有权删除",
+    "activeButton": {
+        // 与帖子 commentConfig.action 联动，替换该配置
+        "hasActiveButton": "Boolean / 是否有 active 按钮",
+        "buttonName": {
+            "语言标签": "String / 按钮名称",
+            "en": "Name"
+        },
+        "buttonStyle": "String / 按钮风格 primary secondary success danger warning info",
+        "appFskey": "String / 配置应用 fskey"
+    },
+}
+```
