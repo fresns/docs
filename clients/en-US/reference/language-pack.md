@@ -359,6 +359,7 @@
 | userCurrent | Current User |
 | userPin | Auth PIN |
 | userPinLogin | PIN Login |
+| userPinReset | Forgot PIN |
 | userEnter | Enter |
 | userProfile | Profile |
 | userAvatar | Avatar |

@@ -350,6 +350,7 @@
 | userCurrent | 当前用户 |
 | userPin | 用户密码 |
 | userPinLogin | 密码登录 |
+| userPinReset | 忘记密码 |
 | userEnter | 进入社区 |
 | userProfile | 个人信息 |
 | userAvatar | 头像 |
