@@ -50,7 +50,7 @@
 - `type null`
     - I made the post myself.
     - Users I follow whose posts will be output (but not posts in private groups).
-    - Posts from groups I follow that are set to digest will be output.
+    - Posts from groups, hashtags, geotags I follow that are set to digest will be output.
     - Premium digests will be output regardless of whether I follow the poster (but not posts in private groups).
     - Filter out users, groups, hashtags, geotags and posts that I have blocked.
 - `type=user`
@@ -60,6 +60,8 @@
 - `type=group`
     - All posts in the groups I follow will be output, whether they are in digest or not.
     - Filter out users, groups, hashtags and posts that I have blocked.
+- `type=hashtag` Same as `group`
+- `type=geotag` Same as `group`
 
 ## Return
 
