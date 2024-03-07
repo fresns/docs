@@ -4,7 +4,6 @@
 
 | Menu Title | Key Name | Default Key Value | Value Type | Description |
 | --- | --- | --- | --- | --- |
-| Engine Installed Status | webengine_installed | false | boolean |  |
 | Engine Enabled Status | webengine_status | true | boolean |  |
 | Engine API Type | webengine_api_type | local | string | `local` or `remote` |
 | API Host | webengine_api_host |  | string |  |
