@@ -198,8 +198,9 @@
 | 36309 | Editable time expired |
 | 36310 | This type of file can not be uploaded |
 | 36311 | Current user does not have the post permission of the group |
-| 36312 | Current user does not have the comment permission of the group. |
-| 36313 | This comment type does not allow editing |
+| 36312 | Current user does not have the comment permission of the group |
+| 36313 | The current group is closed for publication |
+| 36314 | This comment type does not allow editing |
 | **Delete** |  |
 | 36400 | Failed to delete. Content error or not exist |
 | 36401 | The content can not be deleted |
