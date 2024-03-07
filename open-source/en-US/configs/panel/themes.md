@@ -4,11 +4,11 @@
 
 | Menu Title | Key Name | Default Key Value | Value Type | Description |
 | --- | --- | --- | --- | --- |
-| Engine Enabled Status | webengine_status | true | boolean |  |
-| Engine API Type | webengine_api_type | local | string | `local` or `remote` |
-| API Host | webengine_api_host |  | string |  |
-| API ID | webengine_api_app_id |  | string |  |
-| API Key | webengine_api_app_key |  | string |  |
-| Key ID | webengine_key_id |  | number |  |
-| Desktop View | webengine_view_desktop |  | string |  |
-| Mobile View | webengine_view_mobile |  | string |  |
+| Engine Enabled Status | website_engine_status | true | boolean |  |
+| Engine API Type | website_engine_api_type | local | string | `local` or `remote` |
+| API Host | website_engine_api_host |  | string |  |
+| API ID | website_engine_api_app_id |  | string |  |
+| API Key | website_engine_api_app_key |  | string |  |
+| Key ID | website_engine_key_id |  | number |  |
+| Desktop View | website_engine_view_desktop |  | string |  |
+| Mobile View | website_engine_view_mobile |  | string |  |
