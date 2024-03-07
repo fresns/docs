@@ -116,9 +116,13 @@
 | fresns.timeline.posts | /timelines/posts.blade.php | 全部关注的帖子 |
 | fresns.timeline.user.posts | /timelines/user-posts.blade.php | 关注用户的帖子 |
 | fresns.timeline.group.posts | /timelines/group-posts.blade.php | 关注小组的帖子 |
+| fresns.timeline.hashtag.posts | /timelines/hashtag-posts.blade.php | 关注话题的帖子 |
+| fresns.timeline.geotag.posts | /timelines/geotag-posts.blade.php | 关注地理的帖子 |
 | fresns.timeline.comments | /timelines/comments.blade.php | 全部关注的评论 |
 | fresns.timeline.user.comments | /timelines/user-comments.blade.php | 关注用户的评论 |
 | fresns.timeline.group.comments | /timelines/group-comments.blade.php | 关注小组的评论 |
+| fresns.timeline.hashtag.comments | /timelines/hashtag-comments.blade.php | 关注话题的评论 |
+| fresns.timeline.geotag.comments | /timelines/geotag-comments.blade.php | 关注地理的评论 |
 
 ## 附近
 

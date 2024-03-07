@@ -116,9 +116,13 @@
 | fresns.timeline.posts | /timelines/posts.blade.php | All followed posts |
 | fresns.timeline.user.posts | /timelines/user-posts.blade.php | I follow users posts |
 | fresns.timeline.group.posts | /timelines/group-posts.blade.php | I follow groups posts |
+| fresns.timeline.hashtag.posts | /timelines/hashtag-posts.blade.php | I follow hashtags posts |
+| fresns.timeline.geotag.posts | /timelines/geotag-posts.blade.php | I follow geotags posts |
 | fresns.timeline.comments | /timelines/comments.blade.php | All followed comments |
 | fresns.timeline.user.comments | /timelines/user-comments.blade.php | I follow users comments |
 | fresns.timeline.group.comments | /timelines/group-comments.blade.php | I follow groups comments |
+| fresns.timeline.hashtag.comments | /timelines/hashtag-comments.blade.php | I follow hashtags comments |
+| fresns.timeline.geotag.comments | /timelines/geotag-comments.blade.php | I follow geotags comments |
 
 ## Nearby
 
