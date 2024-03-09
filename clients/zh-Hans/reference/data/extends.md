@@ -16,7 +16,7 @@ aside: false
 }
 ```
 
-- 参考资料: [archives](https://docs.fresns.com/zh-hans/open-source/database/extends/archives.md)
+- 参考资料: [archives](https://docs.fresns.com/zh-Hans/open-source/database/extends/archives.html)
 
 ## 扩展运营信息
 
@@ -52,7 +52,7 @@ aside: false
 }
 ```
 
-- 参考资料: [operations](https://docs.fresns.com/zh-hans/open-source/database/extends/operations.md#code-用途编码)
+- 参考资料: [operations](https://docs.fresns.com/zh-Hans/open-source/database/extends/operations.html#code-用途编码)
 
 ## 扩展内容信息
 
@@ -115,7 +115,7 @@ aside: false
 }
 ```
 
-- 参考资料: [extends](https://docs.fresns.com/zh-hans/open-source/database/extends/extends.md)
+- 参考资料: [extends](https://docs.fresns.com/zh-Hans/open-source/database/extends/extends.html)
 
 ## 扩展功能信息
 
@@ -130,4 +130,4 @@ aside: false
 }
 ```
 
-- 参考资料: [app_usages](https://docs.fresns.com/zh-hans/open-source/database/extends/app_usages.md)
+- 参考资料: [app_usages](https://docs.fresns.com/zh-Hans/open-source/database/extends/app_usages.html)

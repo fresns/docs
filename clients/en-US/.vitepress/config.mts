@@ -315,7 +315,6 @@ function sidebarReference() {
           collapsed: false,
           items: [
             { text: 'Platforms', link: '/reference/dictionary/platforms.md' },
-            { text: 'Connects', link: '/reference/dictionary/connects.md' },
             { text: 'Maps', link: '/reference/dictionary/maps.md' },
           ]
         },

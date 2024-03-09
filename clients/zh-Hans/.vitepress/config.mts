@@ -327,7 +327,6 @@ function sidebarReference() {
           collapsed: false,
           items: [
             { text: '终端平台编号', link: '/reference/dictionary/platforms.md' },
-            { text: '互联平台编号', link: '/reference/dictionary/connects.md' },
             { text: '地图服务商编号', link: '/reference/dictionary/maps.md' },
           ]
         },
