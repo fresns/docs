@@ -1,6 +1,6 @@
 # 主题开发
 
-集成在 Fresns 中运行的 Web 客户端采用 [Laravel Blade](https://laravel.com/docs/10.x/blade) 模板引擎，遵循 Blade 功能和视图文件。
+集成在 Fresns 中运行的 Web 客户端采用 [Laravel Blade](https://laravel.com/docs/11.x/blade) 模板引擎，遵循 Blade 功能和视图文件。
 
 ## 文件目录结构
 

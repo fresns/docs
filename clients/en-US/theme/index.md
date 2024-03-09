@@ -1,6 +1,6 @@
 # Theme Development
 
-The integrated web client that runs in Fresns uses the [Laravel Blade](https://laravel.com/docs/10.x/blade) template engine and follows the Blade feature and view files.
+The integrated web client that runs in Fresns uses the [Laravel Blade](https://laravel.com/docs/11.x/blade) template engine and follows the Blade feature and view files.
 
 ## Directory Structure
 

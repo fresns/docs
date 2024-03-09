@@ -17,7 +17,7 @@ Fresns 支持云服务、私有化部署、分布式部署，三种使用方式�
 ## Web 客户端
 
 - **独立运行**: 你可以使用任何技术语言开发 Web 客户端，比如 Vue, React, Flutter 等技术方案，或者其他编程语言。
-- **集成运行（主题）**: 集成在 Fresns 中运行的 Web 客户端采用 [Laravel Blade](https://laravel.com/docs/10.x/blade) 模板引擎，遵循 Blade 功能和视图文件。
+- **集成运行（主题）**: 集成在 Fresns 中运行的 Web 客户端采用 [Laravel Blade](https://laravel.com/docs/11.x/blade) 模板引擎，遵循 Blade 功能和视图文件。
 
 ## App 客户端
 

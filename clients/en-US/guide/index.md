@@ -17,7 +17,7 @@ Applications developed using the [Fresns API](/api/) can take various forms, suc
 ## Web Client
 
 - **Standalone Deploy**: If your client is a standalone deployment such as Vue, React, Flutter or other technical solutions, it is just as easy to read the [API documentation](/api/) as it is for an app.
-- **Run in Fresns(theme)**: The integrated web client that runs in Fresns uses the [Laravel Blade](https://laravel.com/docs/10.x/blade) template engine and follows the Blade feature and view files.
+- **Run in Fresns(theme)**: The integrated web client that runs in Fresns uses the [Laravel Blade](https://laravel.com/docs/11.x/blade) template engine and follows the Blade feature and view files.
 
 ## App Client
 
