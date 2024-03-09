@@ -13,8 +13,8 @@ APP_FOUNDER=1             #创始人账号 ID (accounts->id)
 ```
 
 ::: code-group
-```sh [MySQL/MariaDB]
-DB_CONNECTION=mysql               #数据库类型  sqlite, mysql, pgsql, sqlsrv
+```sh [MySQL]
+DB_CONNECTION=mysql               #数据库类型  sqlite, mysql, mariadb, pgsql, sqlsrv
 DB_HOST=127.0.0.1                 #数据库主机  默认为 127.0.0.1
 DB_PORT=3306                      #数据库主机端口 默认为 3306
 DB_DATABASE=fresns                #数据库名
@@ -24,6 +24,19 @@ DB_TIMEZONE=Asia/Shanghai         #数据库时区
 DB_PREFIX=fs_                     #表前缀 默认为 fs_
 
 DB_COLLATION=utf8mb4_0900_ai_ci   #默认为 utf8mb4_unicode_520_ci
+```
+
+```sh [MariaDB]
+DB_CONNECTION=mariadb
+DB_HOST=127.0.0.1
+DB_PORT=3306
+DB_DATABASE=fresns
+DB_USERNAME=fresns
+DB_PASSWORD=123456
+DB_TIMEZONE=Asia/Shanghai
+DB_PREFIX=fs_
+
+DB_COLLATION=utf8mb4_uca1400_ai_ci   #默认为 utf8mb4_uca1400_ai_ci
 ```
 
 ```sh [PostgreSQL]

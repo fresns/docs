@@ -13,8 +13,8 @@ APP_FOUNDER=1                 #Founder Account ID (accounts->id)
 ```
 
 ::: code-group
-```sh [MySQL/MariaDB]
-DB_CONNECTION=mysql               #Database Type: sqlite, mysql, pgsql, sqlsrv
+```sh [MySQL]
+DB_CONNECTION=mysql               #Database Type: sqlite, mysql, mariadb, pgsql, sqlsrv
 DB_HOST=127.0.0.1                 #Default is 127.0.0.1
 DB_PORT=3306                      #Default is 3306
 DB_DATABASE=fresns                #Database
@@ -24,6 +24,19 @@ DB_TIMEZONE=Asia/Singapore        #Database Timezone
 DB_PREFIX=fs_                     #Default is fs_
 
 DB_COLLATION=utf8mb4_0900_ai_ci   #Default is utf8mb4_unicode_520_ci
+```
+
+```sh [MariaDB]
+DB_CONNECTION=mariadb
+DB_HOST=127.0.0.1
+DB_PORT=3306
+DB_DATABASE=fresns
+DB_USERNAME=fresns
+DB_PASSWORD=123456
+DB_TIMEZONE=Asia/Singapore
+DB_PREFIX=fs_
+
+DB_COLLATION=utf8mb4_uca1400_ai_ci   #Default is utf8mb4_uca1400_ai_ci
 ```
 
 ```sh [PostgreSQL]
