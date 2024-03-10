@@ -14,13 +14,14 @@
 | appId | String | NO | App ID，传 `aidToken` 时必传 |
 | username | String | NO | 用户名，关联字段 `users->username`<br>不传则随机生成一个 6~8 位字符，需要避免使用禁用名（键名 `user_ban_names` 禁用值） |
 | nickname | String | NO | 昵称，关联字段 `users->nickname`<br>不传则随机生成一个 8 位字符 |
-| password | String | NO | 登录密码，关联字段 `users->password` |
+| pin | String | NO | 登录密码，关联字段 `users->pin` |
 | avatarFid | String | NO | 头像 fid，存储时转换成 `files->id`<br>关联字段 `users->avatar_file_id` |
 | avatarUrl | String | NO | 头像 URL，关联字段 `users->avatar_file_url` |
 | bannerFid | String | NO | 条幅图 fid，存储时转换成 `files->id`<br>关联字段 `users->banner_file_id` |
 | bannerUrl | String | NO | 条幅图 URL，关联字段 `users->banner_file_url` |
 | gender | Number | NO | 性别，关联字段 `users->gender` |
-| birthday | String | NO | 生日，关联字段 `users->birthday`，格式为 Y-m-d H:i:s |
+| genderPronoun | Number | NO | 性别代称，关联字段 `users->gender_pronoun` |
+| genderCustom | String | NO | 性别自定义，关联字段 `users->gender_custom` |
 
 ::: details 结果示例
 ```json

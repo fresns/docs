@@ -29,6 +29,7 @@ aside: false
 | comment_policy | tinyint *UNSIGNED* | Comment Settings | 1 | NO | `1` Everyone<br>`2` People you follow<br>`3` People you follow or verified<br>`4` No one is allowed |
 | more_info | json | More Info |  | YES |  |
 | expired_at | timestamp | Expiration Time |  | YES | Private mode dedicated field, empty means permanently valid |
+| last_login_at | timestamp | Last Login Time |  | NO |  |
 | last_activity_at | timestamp | Last Activity Time |  | YES |  |
 | last_post_at | timestamp | Last Post Published Time |  | YES |  |
 | last_comment_at | timestamp | Last Comment Published Time |  | YES |  |

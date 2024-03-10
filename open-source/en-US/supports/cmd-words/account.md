@@ -7,14 +7,15 @@
 ```
 | Parameter Name | Type | Required | Description |
 | --- | --- | --- | --- |
-| type | Number | **required** | Account type: 1. Email / 2. Phone number / 3. Connect platform |
-| account | String | *optional* | Email or phone number specific: Email address / Phone number (required when `type=1 or 2`) |
-| countryCode | Number | *optional* | Phone number specific: International area code (required when `type=2`) |
-| connectInfo | Array | *optional* | Connect platform specific: Platform information (required when `type=3`) |
-| connectEmail | String | *optional* | Connect platform specific: platform email (optional when `type=3`) |
-| connectPhone | Number | *optional* | Connect platform specific: platform phone number (optional when `type=3`) |
-| connectCountryCode | Number | *optional* | Connect platform specific: phone international area code (optional when `type=3`) |
+| type | Number | **required** | Account type: 1.AID / 2.Email / 3.Phone number / 4.Connect platform |
+| account | String | *optional* | Email or phone number specific: Email address / Phone number (required when `type=2 or 3`) |
+| countryCode | Number | *optional* | Phone number specific: International area code (required when `type=3`) |
+| connectInfo | Array | *optional* | Connect platform specific: Platform information (required when `type=4`) |
+| connectEmail | String | *optional* | Connect platform specific: platform email (optional when `type=4`) |
+| connectPhone | Number | *optional* | Connect platform specific: platform phone number (optional when `type=4`) |
+| connectCountryCode | Number | *optional* | Connect platform specific: phone international area code (optional when `type=4`) |
 | password | String | *optional* | Login password |
+| birthday | String | *optional* | Birthday, format is Y-m-d |
 | createUser | Boolean | *optional* | Whether to create a user synchronously |
 | userInfo | Array | *optional* | Synchronisation of initial information at user creation |
 
@@ -72,11 +73,12 @@
 | --- | --- | --- | --- |
 | username | String | *optional* | Username, related field `users->username`<br>If not passed, a random 6-8 character string will be generated, avoiding the use of banned names (key name `user_ban_names` banned values) |
 | nickname | String | *optional* | Nickname, related field `users->nickname` |
-| password | String | *optional* | Login password, related field `users->password` |
+| pin | String | *optional* | Login pin, related field `users->pin` |
 | avatarFid | String | *optional* | Avatar file fid, converted to `files->id` when stored<br>Related field `users->avatar_file_id` |
 | avatarUrl | String | *optional* | Avatar file URL, related field `users->avatar_file_url`<br>If left empty, check if `avatarFid` is also empty, if not, store the url obtained by fid in the database (ignoring anti-leech, only stitching the address) |
 | gender | Number | *optional* | Gender, related field `users->gender` |
-| birthday | String | *optional* | Birthday, related field `users->birthday`, format is Y-m-d H:i:s |
+| genderPronoun | Number | *optional* | Gender Pronoun, related field `users->gender_pronoun` |
+| genderCustom | String | *optional* | Gender Custom, related field `users->gender_custom` |
 :::
 
 ::: details Check registration logic
@@ -93,9 +95,9 @@
 ```
 | Parameter Name | Type | Required | Description |
 | --- | --- | --- | --- |
-| type | Number | **required** | Account type: 1. Email / 2. Phone number / 3. Connect platform |
-| account | String | *optional* | Email address or Phone number |
-| countryCode | Number | *optional* | Phone number specific: International area code (required when `type=2`) |
+| type | Number | **required** | Account type: 1.AID / 2.Email / 3.Phone number / 4.Connect platform |
+| account | String | *optional* | AID / Email address / Phone number |
+| countryCode | Number | *optional* | Phone number specific: International area code (required when `type=3`) |
 | password | String | *optional* | For password verification specific |
 | verifyCode | String | *optional* | For verification code specific (check using [checkCode](basic.md#checkcode) command) |
 | connectPlatformId | Number | *optional* | For connect platform specific |

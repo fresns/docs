@@ -29,6 +29,7 @@ aside: false
 | comment_policy | tinyint *UNSIGNED* | 评论设置 | 1 | NO | `1` 所有人<br>`2` 你关注的人<br>`3` 你关注的人和已认证的人<br>`4` 不允许所有人 |
 | more_info | json | 更多信息 |  | YES |  |
 | expired_at | timestamp | 失效时间 |  | YES | 私有模式专用字段，为空代表永久有效 |
+| last_login_at | timestamp | Last Login Time |  | NO |  |
 | last_activity_at | timestamp | 最后活跃时间 |  | YES |  |
 | last_post_at | timestamp | 最后发表帖子时间 |  | YES |  |
 | last_comment_at | timestamp | 最后发表评论时间 |  | YES |  |

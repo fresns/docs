@@ -14,13 +14,14 @@
 | appId | String | *optional* | App ID, required when passing `aidToken` |
 | username | String | *optional* | Username, related field `users->username`<br>If not passed, a random 6-8 character string will be generated, avoiding the use of banned names (key name `user_ban_names` banned values) |
 | nickname | String | *optional* | Nickname, related field `users->nickname`<br>If not passed, a random 8 character string |
-| password | String | *optional* | Login password, related field `users->password` |
+| pin | String | *optional* | Login pin, related field `users->pin` |
 | avatarFid | String | *optional* | Avatar file fid, converted to `files->id` when stored<br>Related field `users->avatar_file_id` |
 | avatarUrl | String | *optional* | Avatar file URL, related field `users->avatar_file_url` |
 | bannerFid | String | *optional* | Banner file fid, converted to `files->id` when stored<br>Related field `users->banner_file_id` |
 | bannerUrl | String | *optional* | Banner file URL, related field `users->banner_file_url` |
 | gender | Number | *optional* | Gender, related field `users->gender` |
-| birthday | String | *optional* | Birthday, related field `users->birthday`, format is Y-m-d H:i:s |
+| genderPronoun | Number | *optional* | Gender Pronoun, related field `users->gender_pronoun` |
+| genderCustom | String | *optional* | Gender Custom, related field `users->gender_custom` |
 
 ::: details Return Example
 ```json

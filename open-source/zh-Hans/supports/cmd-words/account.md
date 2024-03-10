@@ -7,14 +7,15 @@
 ```
 | 参数名 | 类型 | 是否必传 | 说明 |
 | --- | --- | --- | --- |
-| type | Number | YES | 账号类型：1.邮箱 / 2.手机号 / 3.互联平台 |
-| account | String | NO/YES | 邮箱或手机号专用：邮箱地址 / 手机号码（`type=1 或 2` 时必填） |
-| countryCode | Number | NO/YES | 手机号专用：国际区号（`type=2` 时必填） |
-| connectInfo | Array | NO/YES | 互联平台专用：平台信息（`type=3` 时必填） |
-| connectEmail | String | NO | 互联平台专用：平台邮箱（`type=3` 时选填） |
-| connectPhone | Number | NO | 互联平台专用：平台手机号码（`type=3` 时选填） |
-| connectCountryCode | Number | NO | 互联平台专用：平台手机号码国际区号（`type=3` 时选填） |
+| type | Number | YES | 账号类型：1.AID / 1.邮箱 / 2.手机号 / 3.互联平台 |
+| account | String | NO/YES | 邮箱或手机号专用：邮箱地址 / 手机号码（`type=2 或 3` 时必填） |
+| countryCode | Number | NO/YES | 手机号专用：国际区号（`type=3` 时必填） |
+| connectInfo | Array | NO/YES | 互联平台专用：平台信息（`type=4` 时必填） |
+| connectEmail | String | NO | 互联平台专用：平台邮箱（`type=4` 时选填） |
+| connectPhone | Number | NO | 互联平台专用：平台手机号码（`type=4` 时选填） |
+| connectCountryCode | Number | NO | 互联平台专用：平台手机号码国际区号（`type=4` 时选填） |
 | password | String | NO | 登录密码 |
+| birthday | String | NO | 生日，格式为 Y-m-d |
 | createUser | Boolean | NO | 是否同步创建一个用户 |
 | userInfo | Array | NO | 同步创建用户时的初始信息 |
 
@@ -72,11 +73,12 @@
 | --- | --- | --- | --- |
 | username | String | NO | 用户名，关联字段 `users->username`<br>不传则随机生成一个 6~8 位字符，需要避免使用禁用名（键名 `user_ban_names` 禁用值） |
 | nickname | String | NO | 昵称，关联字段 `users->nickname` |
-| password | String | NO | 登录密码，关联字段 `users->password` |
+| pin | String | NO | 登录密码，关联字段 `users->pin` |
 | avatarFid | String | NO | 头像 fid，存储时转换成 `files->id`<br>关联字段 `users->avatar_file_id` |
 | avatarUrl | String | NO | 头像 URL，关联字段 `users->avatar_file_url`<br>如果留空，则判断 `avatarFid` 是否也留空，如果有值，则凭 fid 获取 url 入库（忽略防盗链，仅拼接地址） |
 | gender | Number | NO | 性别，关联字段 `users->gender` |
-| birthday | String | NO | 生日，关联字段 `users->birthday`，格式为 Y-m-d H:i:s |
+| genderPronoun | Number | NO | 性别代称，关联字段 `users->gender_pronoun` |
+| genderCustom | String | NO | 性别自定义，关联字段 `users->gender_custom` |
 :::
 
 ::: details 查看注册逻辑
@@ -93,9 +95,9 @@
 ```
 | 参数名 | 类型 | 是否必传 | 说明 |
 | --- | --- | --- | --- |
-| type | Number | YES | 账号类型：1.邮箱 / 2.手机号 / 3.互联平台 |
-| account | String | NO/YES | 邮箱或手机号专用：邮箱地址 / 手机号码（`type=1 或 2` 时必填） |
-| countryCode | Number | NO/YES | 手机号专用：国际区号（`type=2` 时必填） |
+| type | Number | YES | 账号类型：1.AID / 2.邮箱 / 3.手机号 / 4.互联平台 |
+| account | String | NO/YES | AID / 邮箱地址 / 手机号码（`type=1, 2, 3` 时必填） |
+| countryCode | Number | NO/YES | 手机号专用：国际区号（`type=3` 时必填） |
 | password | String | NO | 以密码校验专用 |
 | verifyCode | String | NO | 以验证码校验专用（命令字 [checkCode](basic.md#核对验证码) 查验） |
 | connectPlatformId | Number | NO | 以互联平台校验专用 |
