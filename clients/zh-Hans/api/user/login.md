@@ -29,6 +29,8 @@
     "message": "ok",
     "data": {
         "authToken": {
+            "aid": "String / 账号 ID",
+            "aidToken": "String / 账号登录凭证",
             "uid": "String / 用户 UID",
             "uidToken": "String / 用户登录凭证",
             "expiredHours": "Number / 有效期小时数，null 代表永久有效",

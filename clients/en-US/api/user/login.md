@@ -29,6 +29,8 @@
     "message": "ok",
     "data": {
         "authToken": {
+            "aid": "String / Account ID",
+            "aidToken": "String / Account Token",
             "uid": "String / User ID",
             "uidToken": "String / User Token",
             "expiredHours": "Number / Validity period in hours, null for permanent validity",
