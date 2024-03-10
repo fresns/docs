@@ -19,7 +19,6 @@ aside: false
 | gender | tinyint *UNSIGNED* | Gender | 1 | NO | 1.Unknown / 2.Male / 3.Female / 4.Custom |
 | gender_pronoun | tinyint *UNSIGNED* | Gender Pronoun |  | YES | 1.She / 2.He / 3.They |
 | gender_custom | varchar(64) | Gender Custom |  | YES |  |
-| birthday | timestamp | Birthday |  | YES |  |
 | birthday_display_type | tinyint *UNSIGNED* | Birthday Display Type | 1 | NO | 1.Y-m-d / 2.Y / 3.m-d / 4.Hidden |
 | bio | text | Bio |  | YES |  |
 | location | varchar(128) | Location |  | YES |  |

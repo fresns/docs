@@ -14,6 +14,7 @@ aside: false
 | phone | varchar(128) | Phone Number with Area Code |  | YES | **Unique** With international area code (no plus sign in the area code) |
 | email | varchar(128) | Email |  | YES | **Unique** |
 | password | varchar(64) | Password |  | YES | Encrypted storage |
+| birthday | date | Birthday |  | YES |  |
 | last_login_at | timestamp | Last Login Time |  | NO |  |
 | is_verify | tinyint *UNSIGNED* | Real Name Verification Status | 0 | NO | 0.Unverified / 1.Verified |
 | verify_app_fskey | varchar(64) | Real Name Auth Plugin Fskey |  | YES | Which plugin handled the authentication, Related field [apps->fskey](../apps/apps.md) |

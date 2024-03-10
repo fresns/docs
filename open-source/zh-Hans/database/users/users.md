@@ -19,7 +19,6 @@ aside: false
 | gender | tinyint *UNSIGNED* | 性别 | 1 | NO | 1.未知 2.男 3.女 4.自定义 |
 | gender_pronoun | tinyint *UNSIGNED* | 性别代称 |  | YES | 1.She / 2.He / 3.They |
 | gender_custom | varchar(64) | 性别自定义 |  | YES |  |
-| birthday | timestamp | 生日 |  | YES |  |
 | birthday_display_type | tinyint *UNSIGNED* | 生日显示方式 | 1 | NO | 1.完整显示 / 2.显示年份 / 3.显示月和日 / 4.不显示 |
 | bio | text | 简介 |  | YES |  |
 | location | varchar(128) | 地点 |  | YES |  |
