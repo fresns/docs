@@ -190,6 +190,7 @@ function sidebarDatabase() {
         { text: 'roles 角色表', link: '/database/users/roles.md' },
         { text: 'users 用户主表', link: '/database/users/users.md' },
         { text: 'user_stats 用户数据统计表', link: '/database/users/user-stats.md' },
+        { text: 'user_logs 用户日志表', link: '/database/users/user-logs.md' },
         { text: 'user_extcredits_logs 用户扩展分值日志表', link: '/database/users/user-extcredits-logs.md' },
         { text: 'user_roles 用户角色关联表', link: '/database/users/user-roles.md' },
         { text: 'user_likes 用户赞记录表', link: '/database/users/user-likes.md' },
@@ -246,7 +247,7 @@ function sidebarDatabase() {
         { text: 'extend_users 扩展参与用户表', link: '/database/extends/extend-users.md' },
         { text: 'stickers 表情表', link: '/database/extends/stickers.md' },
         { text: 'seo 搜索引擎优化信息表', link: '/database/extends/seo.md' },
-        { text: 'citys 城市字典', link: '/database/extends/citys.md' },
+        { text: 'cities 城市字典', link: '/database/extends/cities.md' },
       ]
     },
   ]

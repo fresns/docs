@@ -2,7 +2,7 @@
 aside: false
 ---
 
-# citys
+# cities
 
 | Column Name | Type | Comment | Default | Null | Remark |
 | --- | --- | --- | --- | --- | --- |

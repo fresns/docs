@@ -178,6 +178,7 @@ function sidebarDatabase() {
           { text: 'roles', link: '/database/users/roles.md' },
           { text: 'users', link: '/database/users/users.md' },
           { text: 'user_stats', link: '/database/users/user-stats.md' },
+          { text: 'user_logs', link: '/database/users/user-logs.md' },
           { text: 'user_extcredits_logs', link: '/database/users/user-extcredits-logs.md' },
           { text: 'user_roles', link: '/database/users/user-roles.md' },
           { text: 'user_likes', link: '/database/users/user-likes.md' },
@@ -234,7 +235,7 @@ function sidebarDatabase() {
           { text: 'extend_users', link: '/database/extends/extend-users.md' },
           { text: 'stickers', link: '/database/extends/stickers.md' },
           { text: 'seo', link: '/database/extends/seo.md' },
-          { text: 'citys', link: '/database/extends/citys.md' },
+          { text: 'cities', link: '/database/extends/cities.md' },
         ]
       }
   ]
