@@ -21,26 +21,22 @@
 
 ## Login Process
 
-1. Start
-    - Get the account centre link in the [global configuration](configs.md#account). account_center_service
-    - Access the account login (or registration) page using the `WebView` and get the `loginToken` parameter in the callback `postMessage` message after login is complete.
-    - Request the login interface [/api/fresns/v1/account/auth-token](../api/account/login.md) with the loginToken parameter.
-    - After successful login, get the account token
-        - **aid**: `data.authToken.aid`
-        - **aidToken**: `data.authToken.token`
-2. Judge the number of users of the account `data.detail.users`
-    - `1`
-    - `2 or more` `Presenting the "Select User" view`
-3. Determine if there is a pin `data.detail.users[x].hasPin`
-    - No pin
-    - With pin `Presenting the "Pin Entry Box" view`
-4. Login User
-    - [/api/fresns/v1/user/auth-token](../api/user/login.md)
-    - After the user login successfully, obtain the user credential.
-        - **uid**: `data.authToken.uid`
-        - **uidToken**: `data.authToken.token`
-5. End
-    - > When the account has only 1 user and no pin, it is recommended to let the user login directly without perception.
+- 1. Get the account centre link in the [global configuration](configs.md#account) `account_center_service`
+- 2. Access the account login (or registration) page using the `WebView` and get the `loginToken` parameter in the callback `postMessage` message after login is complete.
+- 3. Request the login interface [/api/fresns/v1/account/auth-token](../api/account/login.md) with the loginToken parameter.
+- 4. After successful login, get the account token
+    - **aid**: `data.authToken.aid`
+    - **aidToken**: `data.authToken.aidToken`
+    - **uid**: `data.authToken.uid`
+    - **uidToken**: `data.authToken.uidToken`
+
+## Switch Users
+
+- 1. If the [account detail](data/account.md) have more than one user, you can switch logins using the user detail.
+- 2. Request login interface by `uidOrUsername` [/api/fresns/v1/user/auth-token](../api/user/login.md)
+- 3. After successful login, replace the user token
+    - **uid**: `data.authToken.uid`
+    - **uidToken**: `data.authToken.uidToken`
 
 ## Signature generation rules
 

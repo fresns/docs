@@ -26,7 +26,6 @@
 | gender | Number | *optional* | Gender: 1.Null 2.Female / 3.Male / 4.Custom |
 | genderCustom | String | *optional* | Gender Custom |
 | genderPronoun | Number | *optional* | Preferred Pronoun: 1.She / 2.He / 3.They |
-| birthday | String | *optional* | Birthday (format: Y-m-d) |
 | birthdayDisplayType | Number | *optional* | Birthday: 1.Y-m-d / 2.Y / 3.m-d / 4.Hidden |
 | bio | String | *optional* | Bio |
 | location | String | *optional* | Location |
