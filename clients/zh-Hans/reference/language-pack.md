@@ -327,10 +327,11 @@
 | settingNameWarning | 仅支持英文字母和数字，可以纯字母或者与数字混合，但不能纯数字 |
 | settingNicknameWarning | 不能带标点符号或特殊符号 |
 | settingBirthdayTip | 提供你的出生日期将确保 Fresns 提供与你年龄相符的使用体验。 |
-| settingBirthdayDisplayType1 | 不公开 |
+| settingBirthdayDisplayType | 生日显示方式 |
+| settingBirthdayDisplayType1 | 完整显示 |
 | settingBirthdayDisplayType2 | 显示年份 |
 | settingBirthdayDisplayType3 | 显示月和日 |
-| settingBirthdayDisplayType4 | 完整显示 |
+| settingBirthdayDisplayType4 | 不公开 |
 | settingGenderNull | 保密 |
 | settingGenderMale | 男 |
 | settingGenderFemale | 女 |

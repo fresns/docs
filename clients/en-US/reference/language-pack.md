@@ -335,11 +335,11 @@
 | settingNameWarning | Alphabet and numbers only, can be pure letters or mixed with numbers, but not pure numbers |
 | settingNicknameWarning | No punctuation or special symbols |
 | settingBirthdayTip | Providing your birthday helps make sure you get the right Fresns experience for your age. |
-| settingBirthdayDisplayType | Display Type |
-| settingBirthdayDisplayType1 | Non-Public |
-| settingBirthdayDisplayType2 | Show Year |
-| settingBirthdayDisplayType3 | Show Month and Day |
-| settingBirthdayDisplayType4 | Full Display |
+| settingBirthdayDisplayType | Birthday Display Type |
+| settingBirthdayDisplayType1 | Full Display |
+| settingBirthdayDisplayType2 | Display Year |
+| settingBirthdayDisplayType3 | Display Month and Day |
+| settingBirthdayDisplayType4 | Non-Public |
 | settingGenderNull | Confidential |
 | settingGenderMale | Male |
 | settingGenderFemale | Female |
