@@ -104,10 +104,10 @@ REDIS_HOST=127.0.0.1
 REDIS_PASSWORD=null
 REDIS_PORT=6379
 
-CACHE_DRIVER=redis
+CACHE_STORE=redis
 SESSION_DRIVER=redis
-BROADCAST_DRIVER=redis
 QUEUE_CONNECTION=redis
+BROADCAST_CONNECTION=redis
 ```
 
 ```sh [Memcached]
@@ -116,7 +116,7 @@ MEMCACHED_PORT=11211
 MEMCACHED_USERNAME=null
 MEMCACHED_PASSWORD=null
 
-CACHE_DRIVER=memcached
+CACHE_STORE=memcached
 SESSION_DRIVER=memcached
 ```
 :::
@@ -129,7 +129,7 @@ SESSION_DRIVER=memcached
 
 ```sh
 REDIS_DB=2                          #Default is 0, only 2-15 can be selected
-REDIS_CACHE_DB=3                    #Default is 1, only 2-15 can be selected
+REDIS_CACHE_DB=3                    #Default is 1, only 2-15 can be selected, Must be different from REDIS_DB
 REDIS_QUEUE=fresns2                 #The default is fresns. Just enter another one.
 REDIS_PREFIX=fresns2_database_      #The default is fresns_database_. Just enter another one.
 CACHE_PREFIX=fresns2_cache_         #The default is fresns_cache_. Just enter another one.

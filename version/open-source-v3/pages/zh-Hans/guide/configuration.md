@@ -110,14 +110,14 @@ TRUSTED_PROXIES=173.245.48.0/20,103.21.244.0/22,103.22.200.0/22,103.31.4.0/22,14
 
 ::: code-group
 ```sh [Redis]
-REDIS_HOST=127.0.0.1      #Host
-REDIS_PASSWORD=null       #密码
-REDIS_PORT=6379           #端口
+REDIS_HOST=127.0.0.1        #Host
+REDIS_PASSWORD=null         #密码
+REDIS_PORT=6379             #端口
 
-CACHE_DRIVER=redis        #缓存驱动
-SESSION_DRIVER=redis      #会话驱动
-BROADCAST_DRIVER=redis    #广播驱动
-QUEUE_CONNECTION=redis    #队列驱动
+CACHE_STORE=redis           #缓存驱动
+SESSION_DRIVER=redis        #会话驱动
+QUEUE_CONNECTION=redis      #队列驱动
+BROADCAST_CONNECTION=redis  #广播驱动
 ```
 
 ```sh [Memcached]
@@ -126,7 +126,7 @@ MEMCACHED_PORT=11211        #端口
 MEMCACHED_USERNAME=null     #用户名
 MEMCACHED_PASSWORD=null     #密码
 
-CACHE_DRIVER=memcached      #缓存驱动
+CACHE_STORE=memcached       #缓存驱动
 SESSION_DRIVER=redis        #会话驱动
 ```
 :::
@@ -139,7 +139,7 @@ SESSION_DRIVER=redis        #会话驱动
 
 ```sh
 REDIS_DB=2                          #默认是 0，只可选 2-15
-REDIS_CACHE_DB=3                    #默认是 1，只可选 2-15
+REDIS_CACHE_DB=3                    #默认是 1，只可选 2-15，需要与 REDIS_DB 不同
 REDIS_QUEUE=fresns2                 #默认是 fresns 填写一个不一样的即可
 REDIS_PREFIX=fresns2_database_      #默认是 fresns_database_ 填写一个不一样的即可
 CACHE_PREFIX=fresns2_cache_         #默认是 fresns_cache_ 填写一个不一样的即可
