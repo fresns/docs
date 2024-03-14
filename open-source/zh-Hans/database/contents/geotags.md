@@ -19,7 +19,7 @@ aside: false
 | map_id | tinyint *UNSIGNED* | 服务商编号 | 1 | NO | 来源[地图服务商](../../configs/dictionary/maps.md)键值字典 |
 | map_longitude | decimal(12,8) | 地图-经度 |  | NO | 浮点数，范围为 -180~180，负数表示西经 |
 | map_latitude | decimal(12,8) | 地图-纬度 |  | NO | 浮点数，范围为 -90~90，负数表示南纬 |
-| map_location | point<br>geography | 地图-经纬度  |  | NO | longitude, latitude |
+| map_location | geometry | 地图-经纬度 |  | NO | `longitude`, `latitude`<br>`SRID 4326` |
 | district | json | 地区 |  | YES | **多语言** |
 | address | json | 地址 |  | YES | **多语言** |
 | more_info | json | 更多信息字段 |  | YES |  |

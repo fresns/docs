@@ -10,7 +10,7 @@ aside: false
 | app_fskey | varchar(64) | Generate data for plugin fskey |  | NO | Related field [apps->fskey](../apps/apps.md) |
 | account_id | bigint *UNSIGNED* | Account that generated the data |  | YES | Related field [accounts->id](../accounts/accounts.md) |
 | user_id | bigint *UNSIGNED* | User that generated the data |  | YES | Related field [users->id](../users/users.md) |
-| ulid | varchar(64) | Callback query key |  | NO | **Unique value**<br>Universally Unique Lexicographically Sortable Identifier<br>Example: 01GQBMS8BBTCKTT7B0T3EER8XR |
+| ulid | ulid | Callback query key |  | NO | **Unique value**<br>Universally Unique Lexicographically Sortable Identifier<br>Example: 01GQBMS8BBTCKTT7B0T3EER8XR |
 | type | smallint *UNSIGNED* | Type | 1 | NO | See description below |
 | content | json | Return parameter content |  | YES |  |
 | is_used | tinyint *UNSIGNED* | Status | 0 | NO | 0. Not called<br>1. Called (used) |
