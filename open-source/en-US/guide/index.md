@@ -28,23 +28,21 @@ Fresns main program is a social network service software based on PHP Laravel fr
 fresns/         // Main Program Root Directory
 ├── app/
 │   ├── Console/
-│   ├── Exceptions/
-│   ├── Http/
 │   ├── Models/
 │   ├── Helpers/
 │   ├── Utilities/
 │   ├── Providers/
 │   └── Fresns/
 │       ├── Install/
-│       ├── Panel/
 │       ├── Words/
+│       ├── Panel/
 │       ├── Account/
-│       ├── Api/
-│       └── Web/
+│       └── Api/
 ├── bootstrap/
 ├── config/
 ├── database/
 ├── plugins/
+├── themes/
 ├── public/
 │   ├── assets/
 │   ├── static/
@@ -53,20 +51,15 @@ fresns/         // Main Program Root Directory
 │   ├── favicon.ico
 │   └── robots.txt
 ├── resources/
-│   ├── css/
-│   ├── js/
-│   ├── lang/
-│   └── views/
 ├── storage/
-├── tests/
 ├── .env.example
 ├── artisan
 ├── compose.json
+├── compose.lock
 ├── fresns.json
 ├── install.lock
 ├── package.json
 ├── vite.config.js
-├── phpunit.xml
 └── LICENSE
 ```
 

@@ -28,23 +28,21 @@ Fresns 主程序是基于 PHP Laravel 框架和关系型数据库而开发的社
 fresns/         // 主程序根目录
 ├── app/            // 核心代码目录
 │   ├── Console/        // 控制类
-│   ├── Exceptions/     // 异常类
-│   ├── Http/           // 业务类
 │   ├── Models/         // 模型类
 │   ├── Helpers/        // 辅助类
 │   ├── Utilities/      // 工具类
 │   ├── Providers/      // 公共服务者
 │   └── Fresns/         // 业务功能
 │       ├── Install/        // 初始化安装
-│       ├── Panel/          // 控制面板
 │       ├── Words/          // 命令字
+│       ├── Panel/          // 控制面板
 │       ├── Account/        // 账号中心
-│       ├── Api/            // 社区 API
-│       └── Web/            // 社区 Web
+│       └── Api/            // 社区 API
 ├── bootstrap/      // 引导程序目录
 ├── config/         // 配置文件目录
 ├── database/       // 数据文件目录
 ├── plugins/        // 插件目录
+├── themes/         // 主题目录
 ├── public/         // 网站根目录
 │   ├── assets/         // 插件资源目录
 │   ├── static/         // 内置静态文件
@@ -53,12 +51,7 @@ fresns/         // 主程序根目录
 │   ├── favicon.ico     // 站点 ico 图标
 │   └── robots.txt      // Robots 协议
 ├── resources/      // 框架资源目录
-│   ├── css/            // 样式资源
-│   ├── js/             // JS 资源
-│   ├── lang/           // 共用语言
-│   └── views/          // 共用视图
 ├── storage/        // 框架存储目录
-├── tests/          // 框架测试目录
 ├── .env.example    // 配置参数文件模板
 ├── artisan         // 框架命令行接口
 ├── compose.json    // 依赖项配置信息
@@ -67,7 +60,6 @@ fresns/         // 主程序根目录
 ├── install.lock    // 安装锁定文件（有该文件后，禁止再执行安装）
 ├── package.json    // 前端编译用途文件
 ├── vite.config.js  // 前端编译用途文件
-├── phpunit.xml     // 单元测试用途文件
 └── LICENSE         // 版权文件
 ```
 
