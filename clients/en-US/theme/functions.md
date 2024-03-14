@@ -83,7 +83,7 @@ route('fresns.api.functions', [
 ## View
 
 ```blade
-@extends('FsTheme::layout')
+@extends('ThemeFunctions::layout')
 
 @section('body')
     {{-- form --}}

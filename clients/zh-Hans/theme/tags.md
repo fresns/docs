@@ -58,13 +58,13 @@ fs_helpers('Arr', 'get', $data, $options)
 ## 主题信息
 
 ```php
-fs_theme('fskey')
+fs_theme('fskey', '')
 ```
 
 - `fskey`
 - `version`
+- `assets`, `{file/path}`
 - `lang`
-- `assets`
 
 ## 配置值
 

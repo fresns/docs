@@ -58,13 +58,13 @@ Returns the value of the specified key from the array and removes this key-value
 ## Theme Info
 
 ```php
-fs_theme('fskey')
+fs_theme('fskey', '')
 ```
 
 - `fskey`
 - `version`
+- `assets`, `{file/path}`
 - `lang`
-- `assets`
 
 ## Config Items
 
