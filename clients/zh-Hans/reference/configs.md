@@ -116,7 +116,6 @@
 | account_register_service | String | 账号注册 `URL` |
 | account_login_service | String | 账号登录 `URL` |
 | account_register_status | Boolean | 注册状态 |
-| account_kyc_service | String | 实名认证 `URL` |
 | account_users_service | String | 多用户管理服务 `URL` |
 
 ## 钱包设置

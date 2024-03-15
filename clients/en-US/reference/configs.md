@@ -116,7 +116,6 @@
 | account_register_service | String | Account Register `URL` |
 | account_login_service | String | Account Login `URL` |
 | account_register_status | Boolean | Register Status |
-| account_kyc_service | String | Real Name Verification Support `URL` |
 | account_users_service | String | Multi-User Manage Services `URL` |
 
 ## Wallet
