@@ -36,7 +36,7 @@ DB_PASSWORD=123456
 DB_TIMEZONE=Asia/Singapore
 DB_PREFIX=fs_
 
-DB_COLLATION=utf8mb4_uca1400_ai_ci   #Default is utf8mb4_uca1400_ai_ci
+DB_COLLATION=utf8mb4_unicode_520_ci   #Default is utf8mb4_unicode_520_ci
 ```
 
 ```sh [PostgreSQL]
