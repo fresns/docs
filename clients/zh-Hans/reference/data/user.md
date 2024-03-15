@@ -19,6 +19,7 @@ aside: false
     "genderPronoun": "Number / 性别代称: 1.She / 2.He / 3.They",
     "genderCustom": "String / 性别自定义",
     "birthday": "String / 生日",
+    "birthdayDisplayType": "Number / 生日显示方式",
     "bio": "String / 简介",
     "bioHtml": "String / 简介 HTML 格式",
     "location": "String / 位置",

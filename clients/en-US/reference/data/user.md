@@ -19,6 +19,7 @@ aside: false
     "genderPronoun": "Number / Gender Pronoun: 1.She / 2.He / 3.They",
     "genderCustom": "String / Gender Custom",
     "birthday": "String / Birthday",
+    "birthdayDisplayType": "Number / Birthday Display Type",
     "bio": "String / Bio",
     "bioHtml": "String / Bio in HTML format",
     "location": "String / Location",

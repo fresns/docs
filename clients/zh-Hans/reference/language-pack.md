@@ -196,6 +196,8 @@
 | 键名 | 键值 |
 | --- | --- |
 | accountCenter | 账户中心 |
+| accountCenterDesc | 在账户中心管理你的资料和密码等配置信息。 |
+| accountCenterSeeMore | 在账户中心查看更多 |
 | account | 账号 |
 | email | 邮箱 |
 | phone | 手机号 |
