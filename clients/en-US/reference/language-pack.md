@@ -78,6 +78,7 @@
 | tip | Tip |
 | setting | Setting |
 | config | Configuration |
+| manage | Manage |
 | reset | Reset |
 | refresh | Refresh |
 | reload | Reload |

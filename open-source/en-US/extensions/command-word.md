@@ -90,7 +90,7 @@ $fresnsResp = \FresnsCmdWord::plugin('FresnsEmail')->sendEmail($wordBody);
 **Handling abnormal situations**
 ```php
 if ($fresnsResp->isErrorResponse()) {
-    return $fresnsResp->errorResponse(); // When an error is reported, the full amount of parameters is output(code+message+data)
+    return $fresnsResp->getErrorResponse(); // When an error is reported, the full amount of parameters is output(code+message+data)
 }
 ```
 

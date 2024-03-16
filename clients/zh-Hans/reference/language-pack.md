@@ -78,6 +78,7 @@
 | tip | 提示 |
 | setting | 设置 |
 | config | 配置 |
+| manage | 管理 |
 | reset | 重置 |
 | refresh | 刷新 |
 | reload | 重新载入 |

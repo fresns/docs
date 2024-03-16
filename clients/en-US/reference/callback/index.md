@@ -94,8 +94,8 @@ switch (true) {
 
 ### Message Event
 
-- [https://github.com/fresns/website/blob/3.x/Moments/resources/views/account/login.blade.php#L24-L32](https://github.com/fresns/website/blob/3.x/Moments/resources/views/account/login.blade.php#L24-L32)
-- [https://github.com/fresns/website/blob/3.x/Moments/resources/assets/js/fresns.js#L1707-L1731](https://github.com/fresns/website/blob/3.x/Moments/resources/assets/js/fresns.js#L1707-L1731)
+- [https://github.com/fresns/client-website-themes/blob/3.x/ThemeFrame/portal/login.blade.php#L15-L20](https://github.com/fresns/client-website-themes/blob/3.x/ThemeFrame/portal/login.blade.php#L15-L20)
+- [https://github.com/fresns/client-website-themes/blob/3.x/ThemeFrame/assets/js/fresns-extensions.js#L64-L159](https://github.com/fresns/client-website-themes/blob/3.x/ThemeFrame/assets/js/fresns-extensions.js#L64-L159)
 - The `postMessageKey` is defined by the client developer, so the client knows the location and usage scenario of each `key`, and the client knows the subsequent processing logic.
 
 ```js
@@ -126,7 +126,7 @@ window.onmessage = function (event) {
 
         case 'fresnsConnect':
             if (fresnsCallback.action.reloadData) {
-                window.location.href = `/account/settings#account-tab`;
+                window.location.href = `/me/settings`;
             }
             break;
 

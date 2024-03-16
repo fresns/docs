@@ -123,7 +123,7 @@ $fresnsResp = \FresnsCmdWord::plugin('FresnsEmail')->sendEmail($wordBody);
 **处理异常情况**
 ```php
 if ($fresnsResp->isErrorResponse()) {
-    return $fresnsResp->errorResponse(); //报错时，输出全量参数(code+message+data)
+    return $fresnsResp->getErrorResponse(); //报错时，输出全量参数(code+message+data)
 }
 ```
 

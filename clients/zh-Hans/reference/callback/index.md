@@ -94,8 +94,8 @@ switch (true) {
 
 ### 接收消息
 
-- [https://github.com/fresns/website/blob/3.x/Moments/resources/views/account/login.blade.php#L24-L32](https://github.com/fresns/website/blob/3.x/Moments/resources/views/account/login.blade.php#L24-L32)
-- [https://github.com/fresns/website/blob/3.x/Moments/resources/assets/js/fresns.js#L1707-L1731](https://github.com/fresns/website/blob/3.x/Moments/resources/assets/js/fresns.js#L1707-L1731)
+- [https://github.com/fresns/client-website-themes/blob/3.x/ThemeFrame/commons/header.blade.php#L222-L227](https://github.com/fresns/client-website-themes/blob/3.x/ThemeFrame/commons/header.blade.php#L222-L227)
+- [https://github.com/fresns/client-website-themes/blob/3.x/ThemeFrame/assets/js/fresns-extensions.js#L64-L159](https://github.com/fresns/client-website-themes/blob/3.x/ThemeFrame/assets/js/fresns-extensions.js#L64-L159)
 - `postMessageKey` 由客户端开发者自己定义，所以客户端知道每一个 `key` 的位置和用途场景，客户端也就知道后续处理逻辑。
 
 ```js
@@ -126,7 +126,7 @@ window.onmessage = function (event) {
 
         case 'fresnsConnect':
             if (fresnsCallback.action.reloadData) {
-                window.location.href = `/account/settings#account-tab`;
+                window.location.href = `/me/settings`;
             }
             break;
 
