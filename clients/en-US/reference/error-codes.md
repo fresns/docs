@@ -100,7 +100,8 @@
 | 34108 | Password should contain uppercase letters |
 | 34109 | Password should contain symbols |
 | 34110 | Email that do not support the domain |
-| 34111 | Account password or verification code cannot be empty |
+| 34111 | Password cannot be empty |
+| 34112 | Password or verify code cannot be empty |
 | 34201 | This registration channel has been closed and account registration through this function is prohibited |
 | 34202 | Registration with Email not supported |
 | 34203 | Registration with mobile phone number not supported |
@@ -168,7 +169,7 @@
 | 36105 | There is a time limit for the current role to publish content. Please try again within specific time |
 | 36106 | Current role has to have an email bound before publishing content |
 | 36107 | Current role has to have a mobile phone number bound before publishing content |
-| 36108 | Real-name verification is required for current role to publish content |
+| 36108 | KYC verify is required for current role to publish content |
 | 36109 | Current role has no right to upload images |
 | 36110 | Current role has no right to upload videos |
 | 36111 | Current role has no right to upload audios |
@@ -189,7 +190,7 @@
 | 36300 | Only the specified method of publication is supported, and this interface prohibits requests |
 | 36301 | Please have your email bound before publishing content |
 | 36302 | Please have your mobile phone number bound before publishing content |
-| 36303 | Please go through the real-name verification process before publishing content |
+| 36303 | Please go through the KYC verify process before publishing content |
 | 36304 | The system has time limit for content publishing. Please try again within specified time |
 | 36305 | Post cannot be edited after publication |
 | 36306 | Comment can not be edited after publish |

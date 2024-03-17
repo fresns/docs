@@ -70,7 +70,6 @@ fresns/             //主程序根目录
 | sendEmail | 邮件服务商 | 系统->发信设置 |
 | sendSms | 短信服务商 | 系统->发信设置 |
 | appNotifications | 移动通知服务商 | 系统->发信设置 |
-| wechatNotifications | 微信通知服务商 | 系统->发信设置 |
 | accountCenter | 账号中心 | 系统->账号设置 |
 | accountRegister | 账号注册支持 | 系统->账号设置 |
 | accountLogin | 账号登录支持 | 系统->账号设置 |

@@ -240,7 +240,7 @@
 | accountDeleteDesc | 注销申请需要账号验证码，必须绑定了邮箱或手机号才可操作 |
 | accountApplyDelete | 申请注销 |
 | accountWaitDelete | 账号注销等待执行中 |
-| accountRecallDelete | 撤销注销 |
+| accountRevokeDelete | 撤销注销 |
 | accountReset | 重置密码 |
 | accountError | 账号错误 |
 | accountInfo | 注册即表示同意本站条款 |

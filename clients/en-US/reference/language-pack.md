@@ -240,7 +240,7 @@
 | accountDeleteDesc | Deleting an account requires an account verification code that must be associated with an email address or mobile phone number to work. |
 | accountApplyDelete | Apply Delete Account |
 | accountWaitDelete | Delete account wait execution |
-| accountRecallDelete | Recall Delete Account |
+| accountRevokeDelete | Revoke Delete Account |
 | accountReset | Reset Password |
 | accountError | Account Error |
 | accountInfo | By registering, you agree to the terms and conditions of this site |

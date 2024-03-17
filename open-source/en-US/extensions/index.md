@@ -71,7 +71,6 @@ When the plugin is installed and published, static resources are distributed to 
 | sendEmail | Email Service Provider | Panel->Systems->Send |
 | sendSms | SMS Service Provider | Panel->Systems->Send |
 | appNotifications | Mobile Notification Service Provider | Panel->Systems->Send |
-| wechatNotifications | WeChat Notification Service Provider | Panel->Systems->Send |
 | accountCenter | Account Center Support | Panel->Systems->Account |
 | accountRegister | Account Register Support | Panel->Systems->Account |
 | accountLogin | Account Register Support | Panel->Systems->Account |
