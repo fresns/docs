@@ -95,9 +95,9 @@
 ```
 | 参数名 | 类型 | 是否必传 | 说明 |
 | --- | --- | --- | --- |
-| type | Number | YES | 账号类型：1.AID / 2.邮箱 / 3.手机号 / 4.互联平台 |
-| account | String | NO/YES | AID / 邮箱地址 / 手机号码（`type=1, 2, 3` 时必填） |
-| countryCode | Number | NO/YES | 手机号专用：国际区号（`type=3` 时必填） |
+| type | Number | YES | 账号类型：1.自动识别 / 2.AID / 3.邮箱 / 4.手机号 / 5.互联平台 |
+| account | String | NO/YES | AID / 邮箱地址 / 手机号码（`type=1, 2, 3, 4` 时必填） |
+| countryCode | Number | NO/YES | 手机号专用：国际区号（`type=4` 时必填） |
 | password | String | NO | 以密码校验专用 |
 | verifyCode | String | NO | 以验证码校验专用（命令字 [checkCode](basic.md#核对验证码) 查验） |
 | connectPlatformId | Number | NO | 以互联平台校验专用 |

@@ -95,9 +95,9 @@
 ```
 | Parameter Name | Type | Required | Description |
 | --- | --- | --- | --- |
-| type | Number | **required** | Account type: 1.AID / 2.Email / 3.Phone number / 4.Connect platform |
+| type | Number | **required** | Account type: 1.Auto 2.AID / 3.Email / 4.Phone number / 5.Connect platform |
 | account | String | *optional* | AID / Email address / Phone number |
-| countryCode | Number | *optional* | Phone number specific: International area code (required when `type=3`) |
+| countryCode | Number | *optional* | Phone number specific: International area code (required when `type=4`) |
 | password | String | *optional* | For password verification specific |
 | verifyCode | String | *optional* | For verification code specific (check using [checkCode](basic.md#checkcode) command) |
 | connectPlatformId | Number | *optional* | For connect platform specific |

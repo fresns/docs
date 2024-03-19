@@ -202,6 +202,7 @@
 | account | Account |
 | email | Email |
 | phone | Phone Number |
+| emailOrPhone | Email or Phone Number |
 | newEmail | New Email |
 | newPhone | New Phone |
 | currentEmail | Current Email |

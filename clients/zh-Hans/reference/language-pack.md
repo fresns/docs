@@ -202,6 +202,7 @@
 | account | 账号 |
 | email | 邮箱 |
 | phone | 手机号 |
+| emailOrPhone | 邮箱或手机号 |
 | newEmail | 新邮箱 |
 | newPhone | 新手机号 |
 | currentEmail | 当前邮箱 |
