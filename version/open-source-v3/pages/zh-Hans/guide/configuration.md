@@ -127,7 +127,7 @@ MEMCACHED_USERNAME=null     #用户名
 MEMCACHED_PASSWORD=null     #密码
 
 CACHE_STORE=memcached       #缓存驱动
-SESSION_DRIVER=redis        #会话驱动
+SESSION_DRIVER=memcached    #会话驱动
 ```
 :::
 

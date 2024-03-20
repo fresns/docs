@@ -5,7 +5,7 @@
 | 参数名 | 类型 | 是否必传 | 说明 |
 | --- | --- | --- | --- |
 | X-Fresns-Space-Id | String | NO | 云空间 ID，留空则表示为开源版 |
-| X-Fresns-App-Id | String | YES | 密钥 App ID<br>密钥位置：`控制面板->应用中心->应用密钥` |
+| X-Fresns-App-Id | String | YES | 密钥 App ID<br>密钥位置：`控制面板->客户端->应用密钥` |
 | X-Fresns-Client-Platform-Id | Number | YES | [平台编号](dictionary/platforms.md)，与密钥的「平台」匹配 |
 | X-Fresns-Client-Version | String | YES | 你的客户端版本号，推荐使用语义化版本号 |
 | X-Fresns-Client-Device-Info | String | YES | [交互设备信息](#设备信息) <br>先压缩 Object 信息并转换为字符串，再将字符串以 Base64 编码 |

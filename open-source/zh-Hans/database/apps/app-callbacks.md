@@ -37,4 +37,4 @@ aside: false
 | 12 | TYPE_EXTEND | 扩展内容信息 |
 | 13 | TYPE_OPERATION | 扩展功能信息 |
 | 14 | TYPE_FILE | 文件 |
-| 15 | TYPE_MAP | 地图 |
+| 15 | TYPE_LOCATION_INFO | 位置信息 |

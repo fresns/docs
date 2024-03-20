@@ -31,9 +31,13 @@ aside: false
 // plugins 格式
 [
     {
-        "order": 1,
         "code": "code",
-        "fskey": "fskey"
+        "name": {
+            "en": "",
+            "zh-Hans": ""
+        },
+        "fskey": "fskey",
+        "order": 1
     }
 ]
 ```

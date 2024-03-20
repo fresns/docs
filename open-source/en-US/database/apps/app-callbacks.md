@@ -37,4 +37,4 @@ aside: false
 | 12 | TYPE_EXTEND | Extended content information |
 | 13 | TYPE_OPERATION | Extended function information |
 | 14 | TYPE_FILE | File |
-| 15 | TYPE_MAP | Map Info |
+| 15 | TYPE_LOCATION_INFO | Location Info |

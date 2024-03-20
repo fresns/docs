@@ -31,6 +31,7 @@ Whether it is website or mobile application, the use of plug-ins is embedded in 
 | `{draftType}` | Draft Type `post` or `comment` |
 | `{uploadInfo}` | Upload Parameters: [See Upload File API](../../api/common/file-uploads.md) |
 | `{locationInfo}` | Location Parameters `mapId,latitude,longitude` Separated by commas<br>[Map ID](../dictionary/maps.md)<br>e.g. `2,1.2803074,103.8610191` |
+| `{connectPlatformId}` | [Connect Platform ID](https://docs.fresns.com/open-source/configs/dictionary/connects.html) |
 | `{parameter}` | Custom Parameter |
 
 ## {uploadInfo} Upload parameters

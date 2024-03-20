@@ -31,6 +31,7 @@
 | `{draftType}` | 草稿类型 `post` 或 `comment` |
 | `{uploadInfo}` | 上传参数，[同上传接口](../../api/common/file-uploads.md) |
 | `{locationInfo}` | 位置参数，`地图 ID,纬度,经度` 以英文逗号隔开<br>[地图 ID 信息](../dictionary/maps.md)，例如 `2,1.2803074,103.8610191` |
+| `{connectPlatformId}` | [互联平台 ID](https://docs.fresns.com/zh-Hans/open-source/configs/dictionary/connects.html) |
 | `{parameter}` | 自定义参数 |
 
 ## {uploadInfo} 上传参数

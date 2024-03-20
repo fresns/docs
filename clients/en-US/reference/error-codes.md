@@ -90,6 +90,7 @@
 
 | Code | Message |
 | --- | --- |
+| 34100 | Account cannot be empty |
 | 34101 | Email incorrect |
 | 34102 | Phone number incorrect |
 | 34103 | Country calling code error |
