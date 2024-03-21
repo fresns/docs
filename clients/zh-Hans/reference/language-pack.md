@@ -329,7 +329,7 @@
 | settingIntervalDays | 修改间隔天数 |
 | settingLastTime | 上次修改时间 |
 | settingNameWarning | 仅支持英文字母和数字，可以纯字母或者与数字混合，但不能纯数字 |
-| settingNicknameWarning | 不能带标点符号或特殊符号 |
+| settingNicknameWarning | 昵称不能带标点符号或特殊符号 |
 | settingBirthdayTip | 提供你的出生日期将确保 Fresns 提供与你年龄相符的使用体验。 |
 | settingBirthdayDisplayType | 生日显示方式 |
 | settingBirthdayDisplayType1 | 完整显示 |

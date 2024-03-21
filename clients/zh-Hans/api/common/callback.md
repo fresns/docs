@@ -17,8 +17,8 @@
 
 | 参数名 | 类型 | 是否必传 | 说明 |
 | --- | --- | --- | --- |
-| fskey | String | YES | 数据使用者 fskey |
 | ulid | String | YES | 回调查询键 |
+| fskey | String | NO | 数据使用者 fskey |
 
 ## 返回结果
 
@@ -27,9 +27,7 @@
     "code": 0,
     "message": "ok",
     "data": {
-        "ulid": "String / ULID",
-        "type": "Number / Data Type",
-        "content": "Object or Array / Data",
+        // Object or Array / app_callbacks->content
     }
 }
 ```

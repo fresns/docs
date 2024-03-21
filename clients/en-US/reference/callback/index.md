@@ -7,14 +7,29 @@ In order to realize the cross-platform plug-in mechanism, Fresns adopts "inline 
 - On the current page of the browser, the `iframe` access plug-in page of the inline framework layer pops up in Modal mode.
 - In the browser's new tab (new window), visit the plug-in page.
 - In the App, visit the plug-in page with the view component `WebView`.
-- In the WeChat mini program, access the plug-in page with the container component `web-view`.
 
 ## Usage Process
 
-- Step 1, the client defines the name to bury the extension operation (the access address of the extension plug-in in API);
-- Step 2, after the user clicks the Bury button, the client processes the [variable name](variables.md) in the URL path in real time and replaces it with the variable value;
-- Step 3, the user performs the corresponding operation on the plug-in page, and after the operation, the plug-in sends the [postMessage](https://developer.mozilla.org/zh-CN/docs/Web/API/Window/postMessage) message to the parent by the `postMessageKey` identification parameter;
-- Step 4, the client receives the `postMessage` message of the plug-in page and processes the subsequent business functions.
+### Step 1
+
+The client sets the extensions access portal in the client's various interaction locations based on the extension `appUrl` parameter in the api, taking into account the specific experience scenarios.
+
+### Step 2
+
+After the user clicks the advanced interaction button, the client processes the [variable name]((variables.md)) in the URL path and replaces it with the live variable value.
+
+The application page is accessed using the `appUrl` after the variable value has been replaced.
+
+### Step 3
+
+The user performs the appropriate action on the application page, and after the action, the application sends a feedback message with callback details.
+
+- The `postMessageKey` parameter sends a message to the parent via [postMessage](https://developer.mozilla.org/docs/Web/API/Window/postMessage).
+- The `callbackUlid` parameter stores the data in the database and the client retrieves the data via the callback interface [/api/fresns/v1/common/callback](../../api/common/callback.md).
+
+### Step 4
+
+The client receives the `postMessage` message from the application page or `callback` api to get the feedback message and handle the subsequent business functions.
 
 ## postMessage Intro
 
@@ -37,7 +52,7 @@ After the operation is completed on the plug-in page, it will return the data in
 }
 ```
 
-## Code Example
+## postMessage Example
 
 ### Post Message
 

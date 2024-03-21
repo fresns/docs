@@ -337,7 +337,7 @@
 | settingIntervalDays | Edit interval |
 | settingLastTime | Last edit time |
 | settingNameWarning | Alphabet and numbers only, can be pure letters or mixed with numbers, but not pure numbers |
-| settingNicknameWarning | No punctuation or special symbols |
+| settingNicknameWarning | No punctuation or special symbols in nickname |
 | settingBirthdayTip | Providing your birthday helps make sure you get the right Fresns experience for your age. |
 | settingBirthdayDisplayType | Birthday Display Type |
 | settingBirthdayDisplayType1 | Full Display |

@@ -7,7 +7,7 @@
 ```
 | 参数名 | 类型 | 是否必传 | 说明 |
 | --- | --- | --- | --- |
-| type | Number | YES | 账号类型：1.AID / 1.邮箱 / 2.手机号 / 3.互联平台 |
+| type | Number | YES | 账号类型：1.AID / 2.邮箱 / 3.手机号 / 4.互联平台 |
 | account | String | NO/YES | 邮箱或手机号专用：邮箱地址 / 手机号码（`type=2 或 3` 时必填） |
 | countryCode | Number | NO/YES | 手机号专用：国际区号（`type=3` 时必填） |
 | connectInfo | Array | NO/YES | 互联平台专用：平台信息（`type=4` 时必填） |

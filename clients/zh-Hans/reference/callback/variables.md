@@ -15,6 +15,7 @@
 | `{postMessageKey}` | 回调标识名<br>客户端以 `postMessage` 方式接收回调通知 |
 | `{callbackUlid}` | 回调标识名<br>客户端以 `API` 方式接收回调通知 |
 | `{redirectUrl}` | 重定向网址 |
+| `{connectPlatformId}` | [互联平台 ID](https://docs.fresns.com/zh-Hans/open-source/configs/dictionary/connects.html) |
 | `{aid}` | 账号 ID |
 | `{uid}` | 用户 ID |
 | `{rid}` | 角色 ID |
@@ -30,8 +31,7 @@
 | `{did}` | 草稿 ID |
 | `{draftType}` | 草稿类型 `post` 或 `comment` |
 | `{uploadInfo}` | 上传参数，[同上传接口](../../api/common/file-uploads.md) |
-| `{locationInfo}` | 位置参数，`地图 ID,纬度,经度` 以英文逗号隔开<br>[地图 ID 信息](../dictionary/maps.md)，例如 `2,1.2803074,103.8610191` |
-| `{connectPlatformId}` | [互联平台 ID](https://docs.fresns.com/zh-Hans/open-source/configs/dictionary/connects.html) |
+| `{mapInfo}` | 地图参数，`地图 ID,纬度,经度` 以英文逗号隔开<br>[地图 ID 信息](../dictionary/maps.md)，例如 `2,1.2803074,103.8610191` |
 | `{parameter}` | 自定义参数 |
 
 ## {uploadInfo} 上传参数

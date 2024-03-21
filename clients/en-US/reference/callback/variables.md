@@ -15,6 +15,7 @@ Whether it is website or mobile application, the use of plug-ins is embedded in 
 | `{postMessageKey}` | Callback identification name<br>Client receiving callback message as `postMessage` |
 | `{callbackUlid}` | Callback identification name<br>Client receiving callback message as `API` |
 | `{redirectUrl}` | Redirect URL |
+| `{connectPlatformId}` | [Connect Platform ID](https://docs.fresns.com/open-source/configs/dictionary/connects.html) |
 | `{aid}` | Account ID |
 | `{uid}` | User ID |
 | `{rid}` | Role ID |
@@ -30,8 +31,7 @@ Whether it is website or mobile application, the use of plug-ins is embedded in 
 | `{did}` | Draft ID |
 | `{draftType}` | Draft Type `post` or `comment` |
 | `{uploadInfo}` | Upload Parameters: [See Upload File API](../../api/common/file-uploads.md) |
-| `{locationInfo}` | Location Parameters `mapId,latitude,longitude` Separated by commas<br>[Map ID](../dictionary/maps.md)<br>e.g. `2,1.2803074,103.8610191` |
-| `{connectPlatformId}` | [Connect Platform ID](https://docs.fresns.com/open-source/configs/dictionary/connects.html) |
+| `{mapInfo}` | Map Parameters `mapId,latitude,longitude` Separated by commas<br>[Map ID](../dictionary/maps.md)<br>e.g. `2,1.2803074,103.8610191` |
 | `{parameter}` | Custom Parameter |
 
 ## {uploadInfo} Upload parameters

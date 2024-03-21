@@ -17,8 +17,8 @@
 
 | Key | Type | Required | Description |
 | --- | --- | --- | --- |
-| fskey | String | **required** | Data usage plug-in fskey |
 | ulid | String | **required** | Callback query key |
+| fskey | String | *optional* | Data usage plug-in fskey |
 
 ## Return
 
@@ -27,9 +27,7 @@
     "code": 0,
     "message": "ok",
     "data": {
-        "ulid": "String / ULID",
-        "type": "Number / Data Type",
-        "content": "Object or Array / Data",
+        // Object or Array / app_callbacks->content
     }
 }
 ```

@@ -103,6 +103,7 @@
 | 34110 | Email that do not support the domain |
 | 34111 | Password cannot be empty |
 | 34112 | Password or verify code cannot be empty |
+| 34113 | Birthday cannot be empty |
 | 34201 | This registration channel has been closed and account registration through this function is prohibited |
 | 34202 | Registration with Email not supported |
 | 34203 | Registration with mobile phone number not supported |

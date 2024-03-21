@@ -4,21 +4,37 @@
 
 ## 使用场景
 
-- 在浏览器当前页面，以 Modal 方式弹出内联框架层 `iframe` 访问插件页面。
-- 在浏览器新标签页（新窗口），访问插件页面。
-- 在 App 里，以视图组件 `WebView` 访问插件页面。
-- 在微信小程序，以容器组件 `web-view` 访问插件页面。
+- 在浏览器当前页面，以 Modal 方式弹出内联框架层 `iframe` 访问应用页面。
+- 在浏览器新标签页（新窗口），访问应用页面。
+- 在 App 里，以视图组件 `WebView` 访问应用页面。
+- 在微信小程序，以容器组件 `web-view` 访问应用页面。
 
 ## 使用流程
 
-- 第 1 步、客户端自定义命名对扩展操作进行埋点（API 中扩展插件的访问地址）；
-- 第 2 步、用户点击埋点按钮后，客户端实时处理 URL 路径中的[变量名](variables.md)，替换为变量值；
-- 第 3 步、用户在插件页进行相应操作，操作后插件凭 `postMessageKey` 标识参数，向父级发送 [postMessage](https://developer.mozilla.org/zh-CN/docs/Web/API/Window/postMessage) 消息；
-- 第 4 步、客户端接收插件页的 `postMessage` 消息并处理后续业务功能。
+### 第 1 步
+
+客户端凭接口里的扩展 `appUrl` 参数，结合具体的体验场景，将扩展应用的访问入口设置在客户端的各个交互位置。
+
+### 第 2 步
+
+用户点击扩展的交互按钮后，客户端处理 URL 路径中的[变量名](variables.md)，替换为实时变量值。
+
+使用替换变量值之后的 `appUrl` 访问应用页面。
+
+### 第 3 步
+
+用户在应用页进行相应操作，操作后应用以回调凭证发送反馈消息。
+
+- 有 `postMessageKey` 参数，则通过 [postMessage](https://developer.mozilla.org/zh-CN/docs/Web/API/Window/postMessage) 向父级发送消息。
+- 有 `callbackUlid` 参数，则将数据存储在数据库，客户端通过回调接口 [/api/fresns/v1/common/callback](../../api/common/callback.md) 获取数据。
+
+### 第 4 步
+
+客户端接收应用页的 `postMessage` 消息，或者 `callback` 接口获取反馈消息，并处理后续业务功能。
 
 ## postMessage 说明
 
-插件页完成操作后，会通过 `postMessage` 通讯向客户端返回如下 Object 格式的数据，客户端凭定义的 `postMessageKey` 标识名定位后续业务功能。
+应用页完成操作后，会通过 `postMessage` 通讯向客户端返回如下 Object 格式的数据，客户端凭定义的 `postMessageKey` 标识名定位后续业务功能。
 
 ```json
 {
@@ -37,7 +53,7 @@
 }
 ```
 
-## 代码示例
+## postMessage 代码示例
 
 ### 发送消息
 
