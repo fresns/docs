@@ -67,13 +67,17 @@ route('fresns.api.functions', [
 
     <!-- plugin select multiple: item_key=fs_theme_plugins -->
     @foreach($params['fs_theme_plugins'] as $plugin)
-        <input type="text" name="fs_theme_plugins[{{ $plugin['code'] }}][code]">
-        <select name="fs_theme_plugins[{{ $plugin['fskey'] }}][fskey]">
+        <input type="text" name="fs_theme_plugins[code][]" value="{{ $plugin['code'] }}">
+
+        <input type="text" name="fs_theme_plugins[name][]" value="{{ json_encode($plugin['name']) }}">
+
+        <select name="fs_theme_plugins[fskey][]">
             @foreach($apps as $app)
                 <option value="{{ $app->fskey }}" {{ $app->fskey == $plugin['fskey'] ? 'selected' : '' }}>{{ $app->name }}</option>
             @endforeach
         </select>
-        <input type="number" name="fs_theme_plugins[{{ $plugin['order'] }}][order]">
+
+        <input type="number" name="fs_theme_plugins[order][]">
     @endforeach
 
     <button type="submit">Save</button>
