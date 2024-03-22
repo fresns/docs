@@ -17,11 +17,11 @@
 
 | Key | Type | Required | Description |
 | --- | --- | --- | --- |
-| uidOrUsername | Number / String | *optional* | Specify scope: User |
-| htid | String | *optional* | Specify scope: Hashtag |
-| gtid | String | *optional* | Specify scope: Geotag |
-| gid | String | *optional* | Specify scope: Group |
-| includeSubgroups | Boolean | *optional* | Used with `gid` configuration to include or exclude sublevel groups.<br>Default is `false` |
+| users | String | *optional* | Specify scope: User, `uidOrUsername` multiple separated by commas |
+| hashtags | String | *optional* | Specify scope: Hashtag, `htid` multiple separated by commas |
+| geotags | String | *optional* | Specify scope: Geotag, `gtid` multiple separated by commas |
+| groups | String | *optional* | Specify scope: Group, `gid` multiple separated by commas |
+| includeSubgroups | Boolean | *optional* | Used with `groups` configuration to include or exclude sublevel groups.<br>Default is `false` |
 | langTag | String | *optional* | Filter content by lang |
 | contentType | String | *optional* | Filter content by type |
 | allDigest | Boolean | *optional* | Specify scope: All digest, general and premium digest<br>When passed, the `digestState` parameter will be ignored |

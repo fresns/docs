@@ -17,16 +17,13 @@
 
 | Key | Type | Required | Description |
 | --- | --- | --- | --- |
-| mapId | Number | *optional* | [Map Service Provider](../../reference/dictionary/maps.md) |
-| mapLng | String | *optional* | Map Longitude (For distance calculation) |
-| mapLat | String | *optional* | Map Latitude (For distance calculation) |
-| uidOrUsername | Number / String | *optional* | Specify scope: User |
 | pid | String | *optional* | Specify scope: Post |
 | cid | String | *optional* | Specify scope: Comment (retrieve descendant comments of this comment) |
-| htid | String | *optional* | Specify scope: Hashtag |
-| gtid | String | *optional* | Specify scope: Geotag |
-| gid | String | *optional* | Specify scope: Group |
-| includeSubgroups | Boolean | *optional* | Used with `gid` configuration, whether to include contents of subgroups<br>Default is `false` |
+| users | String | *optional* | Specify scope: User, `uidOrUsername` multiple separated by commas |
+| hashtags | String | *optional* | Specify scope: Hashtag, `htid` multiple separated by commas |
+| geotags | String | *optional* | Specify scope: Geotag, `gtid` multiple separated by commas |
+| groups | String | *optional* | Specify scope: Group, `gid` multiple separated by commas |
+| includeSubgroups | Boolean | *optional* | Used with `groups` configuration, whether to include contents of subgroups<br>Default is `false` |
 | allDigest | Boolean | *optional* | Specify scope: All digest, general and premium digest<br>When passed, the `digestState` parameter will be ignored |
 | digestState | Number | *optional* | Specify scope: Digest (leave empty to output all)<br>digest_state field `1` No `2` general digest `3` premium digest |
 | sticky | Boolean | *optional* | Whether it's sticky (leave empty to output all) |
@@ -58,6 +55,9 @@
 | beforeCid | String | *optional* | query old content before this comment |
 | orderType | String | *optional* | Sort by type: `createdTime`,`random`,`view`,`like`,`dislike`,`follow`,`block`,`comment`<br>Default `createdTime` |
 | orderDirection | String | *optional* | Sort by direction, default `desc`<br>`asc`,`desc` |
+| mapId | Number | *optional* | [Map Service Provider](../../reference/dictionary/maps.md) |
+| mapLng | String | *optional* | Map Longitude (For distance calculation) |
+| mapLat | String | *optional* | Map Latitude (For distance calculation) |
 | filterType | String | *optional* | `whitelist` only returns key-value pairs for the given key names<br>`blacklist` removes specified key-value pairs from the returned data |
 | filterKeys | String | *optional* | Multiple separated by English commas, supports "dot notation" for multi-dimensional arrays |
 | filterHashtagType | String | *optional* | `whitelist` only returns key-value pairs for the given key names<br>`blacklist` removes specified key-value pairs from the returned data<br>Applies only to the `hashtags` parameter in the returned result |

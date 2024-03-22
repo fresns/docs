@@ -17,11 +17,11 @@
 
 | 参数名 | 类型 | 是否必传 | 说明 |
 | --- | --- | --- | --- |
-| uidOrUsername | Number / String | NO | 指定范围：用户 |
-| htid | String | NO | 指定范围：话题 |
-| gtid | String | NO | 指定范围：地理 |
-| gid | String | NO | 指定范围：小组 |
-| includeSubgroups | Boolean | NO | 与 `gid` 配置使用，是否包含子级小组的内容<br>默认为 `false` |
+| users | String | NO | 指定范围：用户，`uidOrUsername` 多个以英文逗号隔开 |
+| hashtags | String | NO | 指定范围：话题，`htid` 多个以英文逗号隔开 |
+| geotags | String | NO | 指定范围：地理，`gtid` 多个以英文逗号隔开 |
+| groups | String | NO | 指定范围：小组，`gid` 多个以英文括号隔开 |
+| includeSubgroups | Boolean | NO | 与 `groups` 配置使用，是否包含子级小组的内容<br>默认为 `false` |
 | langTag | String | NO | 指定范围：语言标签 |
 | contentType | String | NO | 指定范围：内容类型（内容类型扩展配置的参数） |
 | allDigest | Boolean | NO | 指定范围：全部精华，一级精华和二级精华<br>传参后，将忽略 `digestState` 参数 |
