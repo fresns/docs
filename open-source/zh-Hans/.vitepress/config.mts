@@ -46,7 +46,6 @@ export default defineConfig({
           { text: '功能命令字', link: '/supports/cmd-words/basic.md' },
           { text: '辅助函数', link: '/supports/helpers/config.md' },
           { text: '实用程序', link: '/supports/utilities/config.md' },
-          { text: '数据模型', link: '/supports/models/' },
         ],
         activeMatch: '/supports/',
       },
@@ -376,14 +375,6 @@ function sidebarSupports() {
         { text: '互动工具 InteractionUtility', link: '/supports/utilities/interaction.md' },
         { text: '鉴权工具 PermissionUtility', link: '/supports/utilities/permission.md' },
         { text: '验证工具 ValidationUtility', link: '/supports/utilities/validation.md' },
-      ]
-    },
-    {
-      text: '数据模型',
-      collapsed: false,
-      items: [
-        { text: '数据集模型', link: '/supports/models/' },
-        { text: '缓存键名和标签', link: '/supports/models/cache.md' },
       ]
     },
   ]

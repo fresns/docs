@@ -46,7 +46,6 @@ export default defineConfig({
           { text: 'Cmd Words', link: '/supports/cmd-words/basic.md' },
           { text: 'Helpers', link: '/supports/helpers/config.md' },
           { text: 'Utilities', link: '/supports/utilities/config.md' },
-          { text: 'Models', link: '/supports/models/' },
         ],
         activeMatch: '/supports/',
       },
@@ -364,14 +363,6 @@ function sidebarSupports() {
         { text: 'Interaction', link: '/supports/utilities/interaction.md' },
         { text: 'Permission', link: '/supports/utilities/permission.md' },
         { text: 'Validation', link: '/supports/utilities/validation.md' },
-      ]
-    },
-    {
-      text: 'Models',
-      collapsed: false,
-      items: [
-        { text: 'Dataset', link: '/supports/models/' },
-        { text: 'Cache Key and Tag', link: '/supports/models/cache.md' },
       ]
     },
   ]
