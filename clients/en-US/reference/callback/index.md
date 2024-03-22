@@ -16,7 +16,7 @@ The client sets the extensions access portal in the client's various interaction
 
 ### Step 2
 
-After the user clicks the advanced interaction button, the client processes the [variable name]((variables.md)) in the URL path and replaces it with the live variable value.
+After the user clicks the advanced interaction button, the client processes the [variable name](variables.md) in the URL path and replaces it with the live variable value.
 
 The application page is accessed using the `appUrl` after the variable value has been replaced.
 
