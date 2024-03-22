@@ -39,9 +39,11 @@
 | 31505 | Account login token are incorrect or do not exist `(Account Token is incorrect)` |
 | 31506 | Login token is incorrect or does not exist, please login again. |
 | 31507 | Login token has expired, please login again. |
+| 31508 | There are multiple users for the current account, please select a user |
 | 31601 | User not logged in, Unable to use `(UID is empty)` |
 | 31602 | Wrong user or record not exist |
 | 31603 | User login token are incorrect or do not exist `(User Token is incorrect)` |
+| 31604 | The current user has set a PIN, please enter the PIN to log in |
 | 31701 | Device information is not available `(Device info is empty)` |
 | 31702 | Wrong format of device information |
 | 31703 | Missing IP information in device information |
@@ -106,10 +108,12 @@
 | 34113 | Birthday cannot be empty |
 | 34201 | This registration channel has been closed and account registration through this function is prohibited |
 | 34202 | Registration with Email not supported |
-| 34203 | Registration with mobile phone number not supported |
+| 34203 | Registration with Phone number not supported |
 | 34204 | The account has registered |
 | 34205 | Email has been used |
 | 34206 | Phone number has been used |
+| 34207 | Login with Email not supported |
+| 34208 | Login with Phone number not supported |
 | 34301 | Account not exist |
 | 34302 | Email not exist |
 | 34303 | Phone number not exist |
@@ -150,7 +154,7 @@
 | 35201 | Current user not exist or not belong to the current account |
 | 35202 | Current user has been banned |
 | 35203 | The user has been logged out |
-| 35204 | Incorrect password |
+| 35204 | Incorrect User PIN |
 | 35301 | Current user has no right to request |
 | 35302 | The user has expired and has no right to use the function |
 | 35303 | User has expired and is not entitled to view current content |

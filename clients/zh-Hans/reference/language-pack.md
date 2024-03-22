@@ -353,9 +353,9 @@
 | 键名 | 键值 |
 | --- | --- |
 | userCurrent | 当前用户 |
-| userPin | 用户密码 |
-| userPinLogin | 密码登录 |
-| userPinReset | 忘记密码 |
+| userPin | 用户 PIN |
+| userPinLogin | PIN 登录 |
+| userPinReset | 忘记 PIN |
 | userEnter | 进入社区 |
 | userProfile | 个人信息 |
 | userAvatar | 头像 |
