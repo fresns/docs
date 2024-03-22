@@ -140,6 +140,7 @@
 
 | Code | Message |
 | --- | --- |
+| 35100 | User UID or username cannot be empty |
 | 35101 | Could only be modified once within the specified number of days |
 | 35102 | Your username can only contain letters, numbers and single hyphens |
 | 35103 | Username length incorrect |
@@ -161,6 +162,7 @@
 | 35304 | The content belongs to the new content after the expiration date, the current user has expired and does not have the right to view |
 | 35305 | You cannot specify a user to view the content |
 | 35306 | The system has been opened in private mode, the current user has no authorization information |
+| 35400 | None of the selected users are eligible, the content is empty |
 
 ## Interactions
 
@@ -241,17 +243,20 @@
 | **Group** |  |
 | 37100 | Wrong group or record not exist |
 | 37101 | Group has been banned |
-| 37102 | Only members can view this group. |
-| 37103 | Only members can see who's in the group and what they post. |
-| 37104 | The current user has been banned from viewing the content of this group |
-| 37105 | The service has expired and cannot be viewed and interacted with in this group |
-| 37106 | Service has expired, can't view new content |
+| 37102 | None of the selected groups are eligible, the content is empty |
+| 37103 | Only members can view this group. |
+| 37104 | Only members can see who's in the group and what they post. |
+| 37105 | The current user has been banned from viewing the content of this group |
+| 37106 | The service has expired and cannot be viewed and interacted with in this group |
+| 37107 | Service has expired, can't view new content |
 | **Hashtag** |  |
 | 37200 | Wrong hashtag or record not exist |
 | 37201 | Hashtag has been banned |
+| 37202 | None of the selected hashtags are eligible, the content is empty |
 | **Geotag** |  |
 | 37300 | Wrong geotag or record not exist |
 | 37301 | Geotag has been banned |
+| 37302 | None of the selected geotags are eligible, the content is empty |
 | **Post** |  |
 | 37400 | Wrong post or record not exist |
 | 37401 | Post has been banned |
