@@ -30,22 +30,6 @@ Whether it is website or mobile application, the use of plug-ins is embedded in 
 | `{hcid}` | History Comment ID |
 | `{did}` | Draft ID |
 | `{draftType}` | Draft Type `post` or `comment` |
-| `{uploadInfo}` | Upload Parameters: [See Upload File API](../../api/common/file-uploads.md) |
+| `{uploadInfo}` | Upload Parameters `usageType,usageFsid,type` Separated by commas<br>[See Upload File API](../../api/common/file-uploads.md)<br>e.g. `postDraft,did,image` |
 | `{mapInfo}` | Map Parameters `mapId,latitude,longitude` Separated by commas<br>[Map ID](../dictionary/maps.md)<br>e.g. `2,1.2803074,103.8610191` |
 | `{parameter}` | Custom Parameter |
-
-## {uploadInfo} Upload parameters
-
-- Same as signature:
-    - Compressing json data
-    - Encode the compressed data in Base64
-    - Base64-encoded data is then encoded as a URL
-- Parameters
-
-```json
-{
-    "usageType": "String / Type of file usage: userAvatar, userBanner, conversationMessage, post, comment, postDraft, commentDraft",
-    "usageFsid": "String / File usage fsid",
-    "type": "String / File Type: image,video,audio,document"
-}
-```

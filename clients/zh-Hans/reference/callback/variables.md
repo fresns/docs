@@ -30,19 +30,6 @@
 | `{hcid}` | 历史评论 ID |
 | `{did}` | 草稿 ID |
 | `{draftType}` | 草稿类型 `post` 或 `comment` |
-| `{uploadInfo}` | 上传参数，[同上传接口](../../api/common/file-uploads.md) |
+| `{uploadInfo}` | 上传参数，`用途类型,用途fsid,文件类型` 以英文逗号隔开<br>[同上传接口](../../api/common/file-uploads.md)，例如 `postDraft,did,image` |
 | `{mapInfo}` | 地图参数，`地图 ID,纬度,经度` 以英文逗号隔开<br>[地图 ID 信息](../dictionary/maps.md)，例如 `2,1.2803074,103.8610191` |
 | `{parameter}` | 自定义参数 |
-
-## {uploadInfo} 上传参数
-
-- 同签名一样，先压缩并转为字符串，再以 Base64 编码，然后转为 URL 编码
-- 参数如下
-
-```json
-{
-    "usageType": "String / 文件用途类型: userAvatar, userBanner, conversationMessage, post, comment, postDraft, commentDraft",
-    "usageFsid": "String / 文件用途 fsid",
-    "type": "String / 四选一文件类型: image,video,audio,document"
-}
-```
