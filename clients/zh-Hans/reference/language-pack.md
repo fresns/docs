@@ -230,6 +230,7 @@
 | accountLoginByPassword | 密码登录 |
 | accountLoginByCode | 验证码登录 |
 | accountLoginByConnects | 快速登录 |
+| accountLoggingIn | 登录中... |
 | accountRegisterCloseDesc | 该注册通道已关闭，禁止通过此功能注册账号 |
 | accountResetPassword | 忘记密码 |
 | accountConnectEmpty | 未查询到账号关联信息 |

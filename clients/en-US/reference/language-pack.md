@@ -230,6 +230,7 @@
 | accountLoginByPassword | Password Login |
 | accountLoginByCode | Code Login |
 | accountLoginByConnects | Quick Login |
+| accountLoggingIn | Logging in... |
 | accountRegisterCloseDesc | This registration channel has been closed and account registration through this function is prohibited |
 | accountResetPassword | Forgot Password |
 | accountConnectEmpty | No account linkage information found |
