@@ -9,6 +9,8 @@ APP_ENV=production            #Operating environment, local for test use, produc
 APP_KEY=                      #Data encryption key, which can be regenerated with the command php artisan key:generate
 APP_DEBUG=false               #Whether to output detailed error messages
 APP_URL=                      #example https://discuss.fresns.org
+
+APP_TIMEZONE=Asia/Singapore   #Database Timezone
 APP_FOUNDER=1                 #Founder Account ID (accounts->id)
 ```
 
@@ -20,7 +22,6 @@ DB_PORT=3306                      #Default is 3306
 DB_DATABASE=fresns                #Database
 DB_USERNAME=fresns                #Username
 DB_PASSWORD=123456                #Password
-DB_TIMEZONE=Asia/Singapore        #Database Timezone
 DB_PREFIX=fs_                     #Default is fs_
 
 DB_COLLATION=utf8mb4_0900_ai_ci   #Default is utf8mb4_unicode_520_ci
@@ -33,7 +34,6 @@ DB_PORT=3306
 DB_DATABASE=fresns
 DB_USERNAME=fresns
 DB_PASSWORD=123456
-DB_TIMEZONE=Asia/Singapore
 DB_PREFIX=fs_
 
 DB_COLLATION=utf8mb4_unicode_520_ci   #Default is utf8mb4_unicode_520_ci
@@ -46,7 +46,6 @@ DB_PORT=54321
 DB_DATABASE=fresns
 DB_USERNAME=fresns
 DB_PASSWORD=123456
-DB_TIMEZONE=Asia/Singapore
 DB_PREFIX=fs_
 ```
 
@@ -57,14 +56,12 @@ DB_PORT=1433
 DB_DATABASE=fresns
 DB_USERNAME=fresns
 DB_PASSWORD=123456
-DB_TIMEZONE=Asia/Singapore
 DB_PREFIX=fs_
 ```
 
 ```sh [SQLite]
 DB_CONNECTION=sqlite
 DB_DATABASE=/www/wwwroot/fresns/database/fresns.sqlite
-DB_TIMEZONE=Asia/Singapore
 DB_PREFIX=fs_
 ```
 :::
@@ -198,8 +195,8 @@ Fresns is a software that supports cross-time zone service. To ensure the consis
 
 **Input time**
 
-- Considering the reason of the framework, the time zone option in the configuration file `.env DB_TIMEZONE` can only be based on [PHP time zone function](https://docs.fresns.com/open-source/reference/timezone.md#timezone-identifiers-to-utc), which is named after the region.
-- The time entered the database from the framework will be processed into the time zone time configured by `.env DB_TIMEZONE`, that bypasses the framework will be processed into the database time zone by the database (the database time zone is usually the system time zone of the server where the database is located). Therefore, the time zone in the configuration file must be consistent with that in the database in order to ensure the accuracy of time.
+- Considering the reason of the framework, the time zone option in the configuration file `.env APP_TIMEZONE` can only be based on [PHP time zone function](https://docs.fresns.com/open-source/reference/timezone.md#timezone-identifiers-to-utc), which is named after the region.
+- The time entered the database from the framework will be processed into the time zone time configured by `.env APP_TIMEZONE`, that bypasses the framework will be processed into the database time zone by the database (the database time zone is usually the system time zone of the server where the database is located). Therefore, the time zone in the configuration file must be consistent with that in the database in order to ensure the accuracy of time.
 - The installation function of Fresns will randomly pair a PHP time zone function according to the UTC time zone you selected. If it does not conform to your region, please modify it in the `.env` file yourself. For example, Beijing, Shanghai, Singapore and Western Australia are all UTC+8 time zones, and any one of them can meet the standard.
 - In the background, you can check the UTC time zone of your database in the “Dashboard” system information.
 

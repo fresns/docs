@@ -5,11 +5,13 @@
 安装成功后，主程序根目录会有一个 `.env` 文件，该文件用于存储 Fresns 所有配置信息，具体介绍如下：
 
 ```sh
-APP_ENV=production        #运营环境，测试使用为 local，正式运营为 production
-APP_KEY=                  #数据加密 key，可重新生成，指令为 php artisan key:generate
-APP_DEBUG=false           #是否输出详细报错信息，调试时改为 true
-APP_URL=                  #你的系统网址，例如 https://discuss.fresns.org
-APP_FOUNDER=1             #创始人账号 ID (accounts->id)
+APP_ENV=production          #运营环境，测试使用为 local，正式运营为 production
+APP_KEY=                    #数据加密 key，可重新生成，指令为 php artisan key:generate
+APP_DEBUG=false             #是否输出详细报错信息，调试时改为 true
+APP_URL=                    #你的系统网址，例如 https://discuss.fresns.org
+
+APP_TIMEZONE=Asia/Shanghai  #数据库时区
+APP_FOUNDER=1               #创始人账号 ID (accounts->id)
 ```
 
 ::: code-group
@@ -20,7 +22,6 @@ DB_PORT=3306                      #数据库主机端口 默认为 3306
 DB_DATABASE=fresns                #数据库名
 DB_USERNAME=fresns                #数据库用户名
 DB_PASSWORD=123456                #数据库密码
-DB_TIMEZONE=Asia/Shanghai         #数据库时区
 DB_PREFIX=fs_                     #表前缀 默认为 fs_
 
 DB_COLLATION=utf8mb4_0900_ai_ci   #默认为 utf8mb4_unicode_520_ci
@@ -33,7 +34,6 @@ DB_PORT=3306
 DB_DATABASE=fresns
 DB_USERNAME=fresns
 DB_PASSWORD=123456
-DB_TIMEZONE=Asia/Shanghai
 DB_PREFIX=fs_
 
 DB_COLLATION=utf8mb4_unicode_520_ci   #默认为 utf8mb4_unicode_520_ci
@@ -46,7 +46,6 @@ DB_PORT=54321
 DB_DATABASE=fresns
 DB_USERNAME=fresns
 DB_PASSWORD=123456
-DB_TIMEZONE=Asia/Shanghai
 DB_PREFIX=fs_
 ```
 
@@ -57,14 +56,12 @@ DB_PORT=1433
 DB_DATABASE=fresns
 DB_USERNAME=fresns
 DB_PASSWORD=123456
-DB_TIMEZONE=Asia/Shanghai
 DB_PREFIX=fs_
 ```
 
 ```sh [SQLite]
 DB_CONNECTION=sqlite
 DB_DATABASE=/www/wwwroot/fresns/database/fresns.sqlite
-DB_TIMEZONE=Asia/Shanghai
 DB_PREFIX=fs_
 ```
 :::
@@ -208,8 +205,8 @@ Fresns 是一款支持跨时区服务的软件，为了保证时间值的一致�
 
 ### 录入时间
 
-- 由于框架的原因，配置文件 `.env DB_TIMEZONE` 时区选项只能以 [PHP 时区函数](https://docs.fresns.com/zh-Hans/open-source/reference/timezone.md#时区地名-utc-映射关系) 为准，时区函数是地区命名。
-- 由框架入库的时间，会处理成 `.env DB_TIMEZONE` 配置的时区时间；绕过框架入库的时间，会由数据库处理成数据库时区时间（数据库时区通常是数据库所在服务器的系统时区）；所以为了保证时间的准确性，配置文件中时区一定要和数据库保持一致。
+- 由于框架的原因，配置文件 `.env APP_TIMEZONE` 时区选项只能以 [PHP 时区函数](https://docs.fresns.com/zh-Hans/open-source/reference/timezone.md#时区地名-utc-映射关系) 为准，时区函数是地区命名。
+- 由框架入库的时间，会处理成 `.env APP_TIMEZONE` 配置的时区时间；绕过框架入库的时间，会由数据库处理成数据库时区时间（数据库时区通常是数据库所在服务器的系统时区）；所以为了保证时间的准确性，配置文件中时区一定要和数据库保持一致。
 - Fresns 安装功能会根据你选择的 UTC 时区随机配对一个 PHP 时区函数，如果不符合你所在地区，请自行在 `.env` 文件中修改。比如北京、上海、新加坡、西澳大利亚，都是 UTC+8 时区，配置其中随意一个地区都符合标准。
 - 登录后台，可以在「仪表盘」系统信息中查看你的数据库所属 UTC 时区。
 
