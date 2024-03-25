@@ -13,6 +13,7 @@
 | Storage Name | image_bucket_name |  | string |  |
 | Storage Region | image_bucket_region |  | string |  |
 | Storage Domain | image_bucket_domain |  | string | Starts with `http://` or `https://`, without trailing `/` |
+| Filesystem Disk | image_filesystem_disk |  | string | `local` or `remote` |
 | Supported Extensions | image_extension_names |  | string | Separated by English commas `,` |
 | Supported Maximum Size | image_max_size | 5 | number | Unit: MB |
 | Anti-leech Function | image_url_status | false | boolean | Use status |
@@ -37,6 +38,7 @@
 | Storage Name | video_bucket_name |  | string |  |
 | Storage Region | video_bucket_region |  | string |  |
 | Storage Domain | video_bucket_domain |  | string | Starts with `http://` or `https://`, without trailing `/` |
+| Filesystem Disk | video_filesystem_disk |  | string | `local` or `remote` |
 | Supported Extensions | video_extension_names |  | string | Separated by English commas `,` |
 | Supported Maximum Size | video_max_size | 50 | number | Unit: MB |
 | Supported Maximum Video Length | video_max_time | 60 | number | Unit: seconds |
@@ -61,6 +63,7 @@
 | Storage Name | audio_bucket_name |  | string |  |
 | Storage Region | audio_bucket_region |  | string |  |
 | Storage Domain | audio_bucket_domain |  | string | Starts with `http://` or `https://`, without trailing `/` |
+| Filesystem Disk | audio_filesystem_disk |  | string | `local` or `remote` |
 | Supported Extensions | audio_extension_names |  | string | Separated by English commas `,` |
 | Supported Maximum Size | audio_max_size | 50 | number | Unit: MB |
 | Supported Maximum Audio Length | audio_max_time | 60 | number | Unit: seconds |
@@ -83,6 +86,7 @@
 | Storage Name | document_bucket_name |  | string |  |
 | Storage Region | document_bucket_region |  | string |  |
 | Storage Domain | document_bucket_domain |  | string | Starts with `http://` or `https://`, without trailing `/` |
+| Filesystem Disk | document_filesystem_disk |  | string | `local` or `remote` |
 | Supported Extensions | document_extension_names |  | string | Separated by English commas `,` |
 | Supported Maximum Size | document_max_size | 10 | number | Unit: MB |
 | Anti-leech Function | document_url_status | false | boolean | Use status |

@@ -16,7 +16,6 @@ aside: false
 | md5 | varchar(128) | File md5 |  | YES | File md5 encoding |
 | sha | varchar(128) | File sha |  | YES | File sha encoding |
 | sha_type | varchar(16) | File sha Type |  | YES | For example, SHA1 or SHA-256 |
-| disk | varchar(32) | File Disk | remote | NO | `local` or `remote` |
 | path | varchar(255) | File Path |  | NO | **Relative path** |
 | image_width | smallint *UNSIGNED* | Image Width |  | YES | Image file specific: pixels px |
 | image_height | smallint *UNSIGNED* | Image Height |  | YES | Image file specific: pixels px |

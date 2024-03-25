@@ -39,7 +39,6 @@
     "md5": "Store to files->md5",
     "sha": "Store to files->sha",
     "shaType": "Store to files->sha_type",
-    "disk": "Store to files->disk",
     "path": "Store to files->path", // required
     "imageWidth": "Image specific, store to files->image_width",
     "imageHeight": "Image specific, store to files->image_height",

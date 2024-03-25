@@ -13,6 +13,7 @@
 | 存储配置名称 | image_bucket_name |  | string | 举例又拍云：服务名(空间名) |
 | 存储配置地域 | image_bucket_region |  | string | 举例又拍云：用不到，留空 |
 | 存储配置域名 | image_bucket_domain |  | string | http:// 或 https:// 开头，结尾不带 / |
+| 文件系统磁盘 | image_filesystem_disk |  | string | `local` 或 `remote` |
 | 支持的扩展名 | image_extension_names |  | string | 以英文逗号 , 隔开 |
 | 支持的最大尺寸 | image_max_size | 5 | number | 单位：MB |
 | 防盗链功能 | image_url_status | false | boolean | 使用状态 |
@@ -37,6 +38,7 @@
 | 存储配置名称 | video_bucket_name |  | string |  |
 | 存储配置地域 | video_bucket_region |  | string |  |
 | 存储配置域名 | video_bucket_domain |  | string | http:// 或 https:// 开头，结尾不带 / |
+| 文件系统磁盘 | video_filesystem_disk |  | string | `local` 或 `remote` |
 | 视频支持的扩展名 | video_extension_names |  | string | 以英文逗号 , 隔开 |
 | 支持的最大尺寸 | video_max_size | 50 | number | 单位：MB |
 | 视频支持的最大时长 | video_max_time | 60 | number | 单位：秒 |
@@ -61,6 +63,7 @@
 | 存储配置名称 | audio_bucket_name |  | string |  |
 | 存储配置地域 | audio_bucket_region |  | string |  |
 | 存储配置域名 | audio_bucket_domain |  | string | http:// 或 https:// 开头，结尾不带 / |
+| 文件系统磁盘 | audio_filesystem_disk |  | string | `local` 或 `remote` |
 | 音频支持的扩展名 | audio_extension_names |  | string | 以英文逗号 , 隔开 |
 | 支持的最大尺寸 | audio_max_size | 50 | number | 单位：MB |
 | 音频支持的最大时长 | audio_max_time | 60 | number | 单位：秒 |
@@ -83,6 +86,7 @@
 | 存储配置名称 | document_bucket_name |  | string |  |
 | 存储配置地域 | document_bucket_region |  | string |  |
 | 存储配置域名 | document_bucket_domain |  | string | http:// 或 https:// 开头，结尾不带 / |
+| 文件系统磁盘 | document_filesystem_disk |  | string | `local` 或 `remote` |
 | 支持的扩展名 | document_extension_names |  | string | 以英文逗号 , 隔开 |
 | 支持的最大尺寸 | document_max_size | 10 | number | 单位：MB |
 | 防盗链功能 | document_url_status | false | boolean | 使用状态 |

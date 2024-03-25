@@ -16,7 +16,6 @@ aside: false
 | md5 | varchar(128) | 文件 md5 |  | YES | 文件 md5 编码 |
 | sha | varchar(128) | 文件 sha |  | YES | 文件 sha 编码 |
 | sha_type | varchar(16) | 文件 sha 类型 |  | YES | 比如 SHA1 或 SHA-256 |
-| disk | varchar(32) | 文件磁盘 | remote | NO | `local` 或 `remote` |
 | path | varchar(255) | 文件路径 |  | NO | **相对路径** |
 | image_width | smallint *UNSIGNED* | 图片宽度 |  | YES | 图片文件专用：像素 px |
 | image_height | smallint *UNSIGNED* | 图片高度 |  | YES | 图片文件专用：像素 px |

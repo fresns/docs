@@ -23,7 +23,6 @@ $bodyInfo = [
     'md5' => $md5,
     'sha' => $sha,
     'shaType' => $shaType,
-    'disk' => $disk, // local or remote
     'imageHandlePosition' => $imageHandlePosition, // Physical image files only, Support: path-start, path-end, name-start, name-end
     'videoTime' => '',
     'videoPosterPath' => '',
@@ -72,7 +71,6 @@ $uploadFileInfo = FileUtility::uploadFileInfo($bodyInfo);
         "md5": "Store to files->md5",
         "sha": "Store to files->sha",
         "shaType": "Store to files->sha_type",
-        "disk": "Store to files->disk", // local or remote
         "path": "Store to files->path",
         "imageWidth": "Image specific, store to files->image_width",
         "imageHeight": "Image specific, store to files->image_height",
@@ -111,7 +109,6 @@ $bodyInfo = [
     'md5' => $md5,
     'sha' => $sha,
     'shaType' => $shaType,
-    'disk' => $disk, // local or remote
     'imageHandlePosition' => $imageHandlePosition, // Physical image files only, Support: path-start, path-end, name-start, name-end
     'videoTime' => '',
     'videoPosterPath' => '',

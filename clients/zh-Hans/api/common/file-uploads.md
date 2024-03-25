@@ -39,7 +39,6 @@
     "md5": "存储到 files->md5",
     "sha": "存储到 files->sha",
     "shaType": "存储到 files->sha_type",
-    "disk": "存储到 files->disk",
     "path": "存储到 files->path", // 必须
     "imageWidth": "图片专用，存储到 files->image_width",
     "imageHeight": "图片专用，存储到 files->image_height",

@@ -23,7 +23,6 @@ $bodyInfo = [
     'md5' => $md5,
     'sha' => $sha,
     'shaType' => $shaType,
-    'disk' => $disk, // local 或 remote
     'imageHandlePosition' => $imageHandlePosition, // 生成物理图片专用，支持 path-start, path-end, name-start, name-end
     'videoTime' => '',
     'videoPosterPath' => '',
@@ -72,7 +71,6 @@ $uploadFileInfo = FileUtility::uploadFileInfo($bodyInfo);
         "md5": "存储到 files->md5",
         "sha": "存储到 files->sha",
         "shaType": "存储到 files->sha_type",
-        "disk": "存储到 files->disk", // local 或 remote
         "path": "存储到 files->path",
         "imageWidth": "图片专用，存储到 files->image_width",
         "imageHeight": "图片专用，存储到 files->image_height",
@@ -111,7 +109,6 @@ $bodyInfo = [
     'md5' => $md5,
     'sha' => $sha,
     'shaType' => $shaType,
-    'disk' => $disk, // local 或 remote
     'imageHandlePosition' => $imageHandlePosition, // 生成物理图片专用，支持 path-start, path-end, name-start, name-end
     'videoTime' => '',
     'videoPosterPath' => '',
