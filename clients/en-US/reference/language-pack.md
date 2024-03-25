@@ -146,6 +146,7 @@
 | --- | --- |
 | home | Home |
 | discover | Discover |
+| me | Me |
 | about | About |
 
 ## Helpers
