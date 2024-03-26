@@ -28,31 +28,36 @@
 | 使用验证码注销账号 | verifycode_template8 | 8 | 键值 JSON 格式见下方 |
 
 ```json
-[
-    {
-        "type": "email",
-        "isEnabled": true,
-        "templates":[
-            {
-                "langTag": "zh-Hans",
+{
+    "email": {
+        "status": true,
+        "templates": {
+            "en": {
+                "title": "Title (HTML supported)",
+                "content": "Content (HTML support)"
+            },
+            "zh-Hans": {
                 "title": "标题（支持 HTML）",
                 "content": "内容（支持 HTML）"
             }
-        ]
+        }
     },
-    {
-        "type": "sms",
-        "isEnabled": false,
-        "templates":[
-            {
-                "langTag": "zh-Hans",
+    "sms": {
+        "status": true,
+        "templates": {
+            "en": {
+                "signName": "Text Message Signature Name",
+                "templateCode": "Template ID",
+                "codeParam": "Verify code variable name"
+            },
+            "zh-Hans": {
                 "signName": "短信签名名称",
                 "templateCode": "模板 ID",
                 "codeParam": "验证码变量名"
             }
-        ]
+        }
     }
-]
+}
 ```
 
 邮件可用变量（插件解析）：
