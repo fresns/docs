@@ -43,9 +43,8 @@
 | --- | --- | --- | --- |
 | uid | Number | YES | 用户参数（用户主表 `users->uid` 字段） |
 | type | Number | YES | 1.系统 / 2.推荐 / 3.赞 / 4.踩 / 5.关注 / 6.屏蔽 / 7.提及 / 8.评论 / 9.引用 |
-| content | String | NO | 通知内容 |
+| content | Array | NO | 通知内容 |
 | isMarkdown | Boolean | NO | 内容是否为 MD 格式 |
-| isMultilingual | Boolean | NO | 内容是否为多语言 |
 | isAccessApp | Boolean | NO | 是否访问应用页 |
 | appFskey | String | NO | 关联应用 |
 | actionUid | Number | NO | 触发者 |
@@ -56,13 +55,10 @@
 | contentFsid | String | NO | 内容事件 pid 或 cid<br>发表的内容本身，由该内容触发的目标 |
 
 ::: details content 内容参数说明
-如果 `isMultilingual` 参数为多语言，则 `content` 参数的内容是以字符串传参的 json 内容。
-```json
+```php
 [
-    {
-        "langTag": "语言标签",
-        "content": "内容"
-    }
+    '语言标签' => '内容',
+    'en' => '通知内容',
 ]
 ```
 :::

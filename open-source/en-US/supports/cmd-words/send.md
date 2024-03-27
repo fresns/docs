@@ -43,9 +43,8 @@
 | --- | --- | --- | --- |
 | uid | Number | **required** | User parameter (main user table `users->uid` field) |
 | type | Number | **required** | 1. System / 2. Recommend / 3. Like / 4. Dislike / 5. Follow / 6. Block / 7. Mention / 8. Comment / 9. Quote |
-| content | String | *optional* | Notification content |
+| content | Array | *optional* | Notification content |
 | isMarkdown | Boolean | *optional* | Is the content in MD format? |
-| isMultilingual | Boolean | *optional* | Is the content multilingual? |
 | isAccessApp | Boolean | *optional* | Access app page? |
 | appFskey | String | *optional* | Associated app |
 | actionUid | Number | *optional* | Trigger initiator |
@@ -56,13 +55,10 @@
 | contentFsid | String | *optional* | Content event pid or cid<br>The published content itself, the action that it triggers |
 
 ::: details `content` Description
-If the `isMultilingual` parameter is for multiple languages, the `content` parameter is a JSON content passed as a string.
-```json
+```php
 [
-    {
-        "langTag": "en",
-        "content": "Content of notice"
-    }
+    'langTag' => 'Content',
+    'en' => 'Content of notice',
 ]
 ```
 :::

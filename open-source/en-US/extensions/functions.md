@@ -121,22 +121,17 @@ $wordBody = [
         'accountId' =>  'Account Primary ID',
         'userId' => 'User Primary ID',
     ],
-    'accountToken' => [
+    'authToken' => [
         "aid": "String / Account ID",
-        'token' => 'String / Account Token',
-        'expiredHours' => 'Number / Expiration hours, null for permanent',
-        'expiredDays' => 'Number / Expiration days, null for permanent',
-        'expiredDateTime' => 'String / The token expiration date, null for permanent, in the format Y-m-d H:i:s'
+        "aidToken": "String / Account Token",
+        "uid": "String / User ID",
+        "uidToken": "String / User Token",
+        "expiredHours": "Number / Expiration hours, null indicates permanent validity",
+        "expiredDays": "Number / Expiration days, null indicates permanent validity",
+        "expiredDateTime": "String / Token expiration time, null indicates permanent validity, format is Y-m-d H:i:s",
     ],
     'accountDetail' => [
         // Common Data Structure -> Account Info
-    ],
-    'userToken' => [
-        "uid": "String / User ID",
-        'token' => 'String / User Token',
-        'expiredHours' => 'Number / Expiration hours, null for permanent',
-        'expiredDays' => 'Number / Expiration days, null for permanent',
-        'expiredDateTime' => 'String / The token expiration date, null for permanent, in the format Y-m-d H:i:s'
     ],
     'userDetail' => [
         // Common Data Structure -> User Info
