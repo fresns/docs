@@ -61,20 +61,18 @@ aside: false
     "texts": [
         {
             "eid": "String / Extension content ID",
-            "type": "Number / Type number",
-            "typeString": "String / Type string",
             "image": "String / Image URL",
             "content": "String / Content",
             "isMarkdown": "Boolean / Is content MD format",
-            "position": "Number / Display position 1.Top 2.Bottom",
+            "viewPosition": "String / Display position: top or bottom",
+            "viewType": "Number / Display type number",
+            "viewTypeString": "String / Display type string",
             "appUrl": "String / App Access URL"
         }
     ],
     "infos": [
         {
             "eid": "String / Extension content ID",
-            "type": "Number / Type number",
-            "typeString": "String / Type string",
             "image": "String / Image URL",
             "title": "String / Title",
             "titleColor": "String / Title color",
@@ -84,19 +82,21 @@ aside: false
             "descSecondaryColor": "String / Secondary sub-information color",
             "buttonName": "String / Button name",
             "buttonColor": "String / Button name color",
-            "position": "Number / Display position 1.Top 2.Bottom",
+            "viewPosition": "String / Display position: top or bottom",
+            "viewType": "Number / Display type number",
+            "viewTypeString": "String / Display type string", // 1.basic, 2.big, 3.portrait, 4.landscape
             "appUrl": "String / App Access URL"
         }
     ],
     "actions": [
         {
             "eid": "String / Extension content ID",
-            "type": "Number / Type number",
-            "typeString": "String / Type string",
             "image": "String / Image URL",
             "title": "String / Title",
             "titleColor": "String / Title color",
-            "position": "Number / Display position 1.Top 2.Bottom",
+            "viewPosition": "String / Display position: top or bottom",
+            "viewType": "Number / Display type number",
+            "viewTypeString": "String / Display type string",
             "endDateTime": "String / end date time",
             "status": "Boolean / false Indicates that the end time has passed",
             "actionUserCount": "Number / Action user count",

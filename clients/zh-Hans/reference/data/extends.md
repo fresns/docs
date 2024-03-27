@@ -61,20 +61,18 @@ aside: false
     "texts": [
         {
             "eid": "String / 扩展内容 ID",
-            "type": "Number / 类型编号",
-            "typeString": "String / 类型字符串",
             "image": "String / 图片 URL",
             "content": "String / 内容",
             "isMarkdown": "Boolean / 内容是否为 MD 格式",
-            "position": "Number / 显示位置 1.上方 2.下方",
+            "viewPosition": "String / 显示位置: top / bottom",
+            "viewType": "Number / 显示类型编号",
+            "viewTypeString": "String / 显示类型字符串",
             "appUrl": "String / 应用访问地址"
         }
     ],
     "infos": [
         {
             "eid": "String / 扩展内容 ID",
-            "type": "Number / 类型编号",
-            "typeString": "String / 类型字符串",
             "image": "String / 图片 URL",
             "title": "String / 标题",
             "titleColor": "String / 标题颜色",
@@ -84,19 +82,21 @@ aside: false
             "descSecondaryColor": "String / 次要副信息颜色",
             "buttonName": "String / 按钮名称",
             "buttonColor": "String / 按钮名称颜色",
-            "position": "Number / 显示位置 1.上方 2.下方",
+            "viewPosition": "String / 显示位置: top / bottom",
+            "viewType": "Number / 显示类型编号",
+            "viewTypeString": "String / 显示类型字符串", // 1.basic, 2.big, 3.portrait, 4.landscape
             "appUrl": "String / 应用访问地址"
         }
     ],
     "actions": [
         {
             "eid": "String / 扩展内容 ID",
-            "type": "Number / 类型编号",
-            "typeString": "String / 类型字符串",
             "image": "String / 图片 URL",
             "title": "String / 标题",
             "titleColor": "String / 标题颜色",
-            "position": "Number / 显示位置 1.上方 2.下方",
+            "viewPosition": "String / 显示位置: top / bottom",
+            "viewType": "Number / 显示类型编号",
+            "viewTypeString": "String / 显示类型字符串",
             "endDateTime": "String / 结束时间",
             "status": "Boolean / false 表示已过结束时间",
             "actionUserCount": "Number / 参与交互的用户总数",
