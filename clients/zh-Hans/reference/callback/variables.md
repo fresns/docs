@@ -28,6 +28,7 @@
 | `{eid}` | 内容扩展 ID |
 | `{hpid}` | 历史帖子 ID |
 | `{hcid}` | 历史评论 ID |
+| `{viewType}` | 视图类型 `list`, `detail`, `quoted` |
 | `{did}` | 草稿 ID |
 | `{draftType}` | 草稿类型 `post` 或 `comment` |
 | `{uploadInfo}` | 上传参数，`用途类型,用途fsid,文件类型` 以英文逗号隔开<br>[同上传接口](../../api/common/file-uploads.md)，例如 `postDraft,did,image` |

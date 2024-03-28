@@ -28,6 +28,7 @@ Whether it is website or mobile application, the use of plug-ins is embedded in 
 | `{eid}` | Content Extend ID |
 | `{hpid}` | History Post ID |
 | `{hcid}` | History Comment ID |
+| `{viewType}` | View Type `list`, `detail`, `quoted` |
 | `{did}` | Draft ID |
 | `{draftType}` | Draft Type `post` or `comment` |
 | `{uploadInfo}` | Upload Parameters `usageType,usageFsid,type` Separated by commas<br>[See Upload File API](../../api/common/file-uploads.md)<br>e.g. `postDraft,did,image` |
