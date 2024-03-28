@@ -26,6 +26,7 @@ If you need to confirm the executed command during the upgrade, enter `yes` to c
 ```php
 fresns/         // Main Program Root Directory
 ├── plugins/        // Plugin Directory
+├── themes/         // Theme Directory
 ├── storage/        // Storage Directory
 │   └── app
 │       └── public

@@ -26,6 +26,7 @@ php artisan fresns:upgrade
 ```php
 fresns/         // 主程序根目录
 ├── plugins/        // 插件目录
+├── themes/         // 主题目录
 ├── storage/        // 存储目录
 │   └── app
 │       └── public
