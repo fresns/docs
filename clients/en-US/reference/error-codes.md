@@ -14,6 +14,8 @@
 | 30003 | The parameter value is not in a valid Json array format |
 | 30004 | The parameter value is not in a valid Json object format |
 | 30005 | The two-choice parameter value cannot be passed to both parameters |
+| 30006 | Same old and new value, no change |
+| 30007 | Can't be empty |
 
 ## Headers
 

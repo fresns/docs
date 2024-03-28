@@ -69,6 +69,8 @@
 | 键名 | 键值 |
 | --- | --- |
 | ok | 好 |
+| yes | 是 |
+| no | 否 |
 | allow | 允许 |
 | notAllow | 不允许 |
 | success | 成功 |
@@ -495,6 +497,10 @@
 | contentLastCommentTime | 最新评论时间 |
 | contentPublishedOn | 发表于 |
 | contentEditedOn | 编辑于 |
+| contentDigestGeneral | 普通精华 |
+| contentDigestPremium | 高级精华 |
+| contentStickyGroup | 小组置顶 |
+| contentStickyGlobal | 全局置顶 |
 | contentFileUploader | 上传者 |
 | contentFileDownloader | 用户下载记录 |
 | contentFileDownloaderDesc | 仅展示 30 名用户头像 |

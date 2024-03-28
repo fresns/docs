@@ -69,6 +69,8 @@
 | Key | Value |
 | --- | --- |
 | ok | Ok |
+| yes | Yes |
+| no | No |
 | allow | Allow |
 | notAllow | Don't Allow |
 | success | Success |
@@ -503,6 +505,10 @@
 | contentLastCommentTime | Last Comment Time |
 | contentPublishedOn | Published on |
 | contentEditedOn | Edited on |
+| contentDigestGeneral | General Digest |
+| contentDigestPremium | Premium Digest |
+| contentStickyGroup | Group Sticky |
+| contentStickyGlobal | Global Sticky |
 | contentFileUploader | Uploader |
 | contentFileDownloader | Downloader |
 | contentFileDownloaderDesc | Only 30 user avatars are displayed |

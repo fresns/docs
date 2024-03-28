@@ -11,8 +11,8 @@
 | type | Number | **required** | `1` Post `2` Comment |
 | createType | Number | **required** | Creation type `1` Quick create `2` Editor create |
 | editorFskey | String | *optional* | Is it a plugin editor, empty means no |
-| commentPid | String | *optional* | Comment-Only: Comment on which post, required |
-| commentCid | String | *optional* | Comment-Only: Empty means comment on post<br>Value means reply to this comment |
+| commentPid | String | *optional* | Comment-Only: Comment on this post |
+| commentCid | String | *optional* | Comment-Only: Reply to this comment |
 | quotePid | String | *optional* | Post-Only: Quoted Post ID |
 | gid | String | *optional* | Post-Only: Group |
 | title | String | *optional* | Post-Only: Title |
@@ -101,8 +101,8 @@
 | --- | --- | --- | --- |
 | uid | Number | **required** | User UID |
 | type | Number | **required** | `1` Post `2` Comment |
-| commentPid | String | *optional* | Comment-Only: Comment on which post, required |
-| commentCid | String | *optional* | Comment-Only: Empty means comment on post<br>Value means reply to this comment |
+| commentPid | String | *optional* | Comment-Only: Comment on this post |
+| commentCid | String | *optional* | Comment-Only: Reply to this comment |
 | quotePid | String | *optional* | Post-Only: Quoted Post ID |
 | gid | String | *optional* | Post-Only: Group |
 | title | String | *optional* | Post-Only: Title |
