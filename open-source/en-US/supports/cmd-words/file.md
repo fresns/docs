@@ -1,5 +1,33 @@
 # File Command Word
 
+## checkUploadPerm
+
+```php
+\FresnsCmdWord::plugin('Fresns')->checkUploadPerm($wordBody);
+```
+| Parameter Name | Type | Required | Description |
+| --- | --- | --- | --- |
+| type | Number | **required** | 1.Image / 2.Video / 3.Audio / 4.Document |
+| uid | Number | **required** | Uploader UID |
+| usageType | String | **required** | File usage type<br>`userAvatar`<br>`userBanner`<br>`conversation`<br>`post`<br>`comment`<br>`postDraft`<br>`commentDraft` |
+| usageFsid | String | **required** | File usage fsid<br>`userAvatar` parameter `uidOrUsername`<br>`userBanner` parameter `uidOrUsername`<br>`conversation` parameter `uidOrUsername`<br>`post` parameter `pid`<br>`comment` parameter `cid`<br>`postDraft` parameter `did`<br>`commentDraft` parameter `did` |
+
+::: details Return Example
+```json
+{
+    "code": 0,
+    "message": "ok",
+    "data": {
+        "usageType": "Number / Type of File Usage",
+        "tableName": "String / Table Name",
+        "tableColumn": "String / Column Name",
+        "tableId": "Number / Primary ID",
+        "tableKey": "String / FSID"
+    }
+}
+```
+:::
+
 ## getUploadToken
 
 ```php

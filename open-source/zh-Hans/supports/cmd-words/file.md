@@ -1,5 +1,33 @@
 # 文件功能
 
+## 判断上传权限
+
+```php
+\FresnsCmdWord::plugin('Fresns')->checkUploadPerm($wordBody);
+```
+| 参数名 | 类型 | 是否必传 | 说明 |
+| --- | --- | --- | --- |
+| type | Number | YES | 1.图片 / 2.视频 / 3.音频 / 4.文档 |
+| uid | Number | YES | 上传者 UID |
+| usageType | String | YES | 文件用途类型<br>`userAvatar`<br>`userBanner`<br>`conversation`<br>`post`<br>`comment`<br>`postDraft`<br>`commentDraft` |
+| usageFsid | String | YES | 文件用途 fsid<br>`userAvatar` 传参 `uidOrUsername`<br>`userBanner` 传参 `uidOrUsername`<br>`conversation` 传参 `uidOrUsername`<br>`post` 传参 `pid`<br>`comment` 传参 `cid`<br>`postDraft` 传参 `did`<br>`commentDraft` 传参 `did` |
+
+::: details 结果示例
+```json
+{
+    "code": 0,
+    "message": "ok",
+    "data": {
+        "usageType": "Number / 用途类型编号",
+        "tableName": "String / 表名",
+        "tableColumn": "String / 字段名",
+        "tableId": "Number / 主键 ID",
+        "tableKey": "String / FSID"
+    }
+}
+```
+:::
+
 ## 获取 S3 上传令牌
 
 ```php

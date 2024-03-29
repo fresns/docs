@@ -17,9 +17,9 @@
 
 | Key | Type | Required | Description |
 | --- | --- | --- | --- |
+| type | String | **required** | Choose one from `image`, `video`, `audio`, `document` |
 | usageType | String | **required** | File usage type<br>`userAvatar`<br>`userBanner`<br>`conversation`<br>`post`<br>`comment`<br>`postDraft`<br>`commentDraft` |
 | usageFsid | String | **required** | File usage fsid<br>`userAvatar` parameter `uidOrUsername`<br>`userBanner` parameter `uidOrUsername`<br>`conversation` parameter `uidOrUsername`<br>`post` parameter `pid`<br>`comment` parameter `cid`<br>`postDraft` parameter `did`<br>`commentDraft` parameter `did` |
-| type | String | **required** | Choose one from `image`, `video`, `audio`, `document` |
 | uploadMode | String | **required** | Choose one from<br>`file` Upload file<br>`fileInfo` Upload file information |
 | file | File | *optional* | For `uploadMode=file` only, upload file |
 | fileInfo | String | *optional* | For `uploadMode=fileInfo` only, upload file information (Object to String) |
