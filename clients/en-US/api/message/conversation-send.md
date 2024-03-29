@@ -24,7 +24,7 @@
 **Request Description**
 
 - Choose either `message` or `fid` to pass as a parameter, but not both or neither.
-- To send a file, first use the [file upload API](../common/file-uploads.md) to upload and obtain the `fid` as a parameter.
+- To send a file, first use the [file upload API](../common/file-upload.md) to upload and obtain the `fid` as a parameter.
 
 ## Return
 

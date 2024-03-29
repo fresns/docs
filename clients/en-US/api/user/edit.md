@@ -39,7 +39,7 @@
 - Null to not modify.
 - Leaving both `avatarFid` and `avatarUrl` empty means not changing them, choose one when passing parameters.
 - Leaving both `bannerFid` and `bannerUrl` empty means not changing them, choose one when passing parameters.
-- If using `fid` for avatar and background banner images, first use the [file upload interface](../common/file-uploads.md), then pass the obtained `fid` as a parameter.
+- If using `fid` for avatar and background banner images, first use the [file upload interface](../common/file-upload.md), then pass the obtained `fid` as a parameter.
 - Example of extended information:
 
 ```json

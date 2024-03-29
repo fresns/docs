@@ -29,9 +29,9 @@
 **Request Description**
 
 - Upload Files `uploadType`
-    - `api` Using the upload interface [/api/fresns/v1/common/file-uploads](../common/file-uploads.md) `uploadMode=file`
+    - `api` Using the upload interface [/api/fresns/v1/common/file-upload](../common/file-upload.md)
     - `page` Use WebView to access the address of the uploadUrl parameter to upload, see [callback](../../reference/callback/index.md) for rules.
-    - `sdk` Use [the s3 client SDK to upload](../common/file-upload-token.md), after uploading pass the data to the interface in the [/api/fresns/v1/common/file-uploads](../common/file-uploads.md) library. `uploadMode=fileInfo`
+    - `sdk` Use [S3 SDK to upload](../common/file-upload-token.md), after upload, update the file information as successfully uploaded [/api/fresns/v1/common/file-info](../common/file-info.md)
 
 ## Return
 

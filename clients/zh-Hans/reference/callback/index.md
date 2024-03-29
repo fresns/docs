@@ -48,7 +48,7 @@
     },
     "data": {
         // 如果功能同 API 一样，则返回与 API 一致的数据格式
-        // 例如上传文件，返回内容同 /api/fresns/v1/common/file-uploads data 一致
+        // 例如上传文件，返回内容同 /api/fresns/v1/common/file-upload data 一致
     }
 }
 ```

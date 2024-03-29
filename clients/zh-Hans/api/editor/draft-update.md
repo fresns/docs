@@ -44,7 +44,7 @@
 
 **接口使用说明**
 
-- 文件功能，使用[文件上传接口](../common/file-uploads.md)上传文件。
+- 文件功能，使用[文件上传接口](../common/file-upload.md)上传文件。
 - 发表时，如果有 `gtid` 值，位置信息 `locationInfo` 有值也不被使用。
 
 **参数示例**
