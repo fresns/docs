@@ -18,7 +18,7 @@ FileHelper::fresnsFileStoragePath($fileType, $usageType);
 
 | 命令字 | 说明 |
 | --- | --- |
-| getStorageToken | 获取存储桶令牌 |
+| getUploadToken | 获取 S3 上传令牌 |
 | uploadFile | 上传文件 |
 | getAntiLinkFileInfo | 获取防盗链文件信息[单个] |
 | getAntiLinkFileInfoList | 获取防盗链文件信息[多个] |

@@ -1,9 +1,9 @@
 # 文件功能
 
-## 获取存储桶令牌
+## 获取 S3 上传令牌
 
 ```php
-\FresnsCmdWord::plugin('Fresns')->getStorageToken($wordBody);
+\FresnsCmdWord::plugin('Fresns')->getUploadToken($wordBody);
 ```
 | 参数名 | 类型 | 是否必传 | 说明 |
 | --- | --- | --- | --- |

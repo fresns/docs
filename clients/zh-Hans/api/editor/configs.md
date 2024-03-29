@@ -28,7 +28,7 @@
 - 上传文件 `uploadType`
     - `api` 使用上传接口 [/api/fresns/v1/common/file-uploads](../common/file-uploads.md) `uploadMode=file`
     - `page` 使用 WebView 访问 `uploadUrl` 参数的地址上传，规则见[回调返参](../../reference/callback/index.md)
-    - `sdk` 使用 [s3 客户端 SDK 上传](../common/file-storage-token.md)，上传完成后将数据传递给接口入库 [/api/fresns/v1/common/file-uploads](../common/file-uploads.md) `uploadMode=fileInfo`
+    - `sdk` 使用 [s3 客户端 SDK 上传](../common/file-upload-token.md)，上传完成后将数据传递给接口入库 [/api/fresns/v1/common/file-uploads](../common/file-uploads.md) `uploadMode=fileInfo`
 
 ## 返回结果
 

@@ -1,9 +1,9 @@
 # File Command Word
 
-## getStorageToken
+## getUploadToken
 
 ```php
-\FresnsCmdWord::plugin('Fresns')->getStorageToken($wordBody);
+\FresnsCmdWord::plugin('Fresns')->getUploadToken($wordBody);
 ```
 | Parameter Name | Type | Required | Description |
 | --- | --- | --- | --- |

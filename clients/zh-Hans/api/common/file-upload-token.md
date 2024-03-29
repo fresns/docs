@@ -1,6 +1,6 @@
-# 存储桶令牌
+# 文件 S3 上传令牌
 
-- 接口地址：`/api/fresns/v1/common/file/storage-token`
+- 接口地址：`/api/fresns/v1/common/file/upload-token`
 - 请求方式：`GET`
 - 传参方式：`Query`
 

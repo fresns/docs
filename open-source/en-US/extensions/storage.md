@@ -18,7 +18,7 @@ The main program interacts with the storage plug-in through command words, so th
 
 | Command Word | Description |
 | --- | --- |
-| getStorageToken | Get S3 Storage Token |
+| getUploadToken | Get S3 Upload Token |
 | uploadFile | upload File |
 | getAntiLinkFileInfo | Get information about anti-theft link file [one] |
 | getAntiLinkFileInfoList | Get information about anti-theft link file[Multiple] |

@@ -1,6 +1,6 @@
-# File Storage Token
+# File S3 Upload Token
 
-- Endpoint Path: `/api/fresns/common/v1/file/storage-token`
+- Endpoint Path: `/api/fresns/common/v1/file/upload-token`
 - Method: `GET`
 - Request: `Query`
 

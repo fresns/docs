@@ -110,7 +110,7 @@ function sidebarApi() {
         { text: 'Input Tips', link: '/api/common/input-tips.md' },
         { text: 'App or Plugin Callback', link: '/api/common/callback.md' },
         { text: 'Command Word Request', link: '/api/common/cmd-word.md' },
-        { text: 'File: Storage Token', link: '/api/common/file-storage-token.md' },
+        { text: 'File: S3 Upload Token', link: '/api/common/file-upload-token.md' },
         { text: 'File: Uploads', link: '/api/common/file-uploads.md' },
         { text: 'File: Update Warning', link: '/api/common/file-warning.md' },
         { text: 'File: Download Link', link: '/api/common/file-link.md' },
