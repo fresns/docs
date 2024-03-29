@@ -1,5 +1,26 @@
 # Upgrade to v3 修改记录
 
+## 升级流程
+
+1. 备份数据库，避免升级失败导致数据丢失。
+2. 后台->仪表盘->设置->版本类型
+    - 选择「测试版」
+3. 删除网站客户端插件，避免冲突。直接删除文件夹。
+    - `/plugins/Moments`
+    - `/plugins/ThemeFrame`
+    - `/plugins/WebFrame`
+    - `/plugins/ForumQ`
+    - `/plugins/ForumX`
+    - `/plugins/ZhijieWeb`
+4. 移除旧的依赖
+    - `composer remove fresns/web-engine`
+5. 执行升级指令
+    - `php artisan fresns:upgrade`
+
+**注意事项：**
+
+- 后台登录入口，配置项变化，所以重置为默认路径了 `/fresns/admin`
+
 ## 数据库
 
 **表和字段**
