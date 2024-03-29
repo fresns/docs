@@ -111,8 +111,8 @@ function sidebarApi() {
         { text: 'App or Plugin Callback', link: '/api/common/callback.md' },
         { text: 'Command Word Request', link: '/api/common/cmd-word.md' },
         { text: 'File: S3 Upload Token', link: '/api/common/file-upload-token.md' },
-        { text: 'File: Uploads', link: '/api/common/file-uploads.md' },
-        { text: 'File: Update Warning', link: '/api/common/file-warning.md' },
+        { text: 'File: Upload', link: '/api/common/file-upload.md' },
+        { text: 'File: Update Info', link: '/api/common/file-info.md' },
         { text: 'File: Download Link', link: '/api/common/file-link.md' },
         { text: 'File: Download Users', link: '/api/common/file-users.md' },
       ]

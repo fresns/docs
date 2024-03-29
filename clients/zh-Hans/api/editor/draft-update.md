@@ -25,13 +25,13 @@
 | 参数名 | 类型 | 是否必传 | 说明 |
 | --- | --- | --- | --- |
 | editorFskey | String | NO | 是否为编辑器插件<br>传参 `Fresns` 则重置为默认编辑器 |
-| quotePid | String | NO | 帖子专用: 引用的帖子 PID |
-| gid | String | NO | 帖子专用: 小组 |
-| title | String | NO | 帖子专用: 标题 |
+| quotePid | String | NO | `帖子专用`: 引用的帖子 PID |
+| gid | String | NO | `帖子专用`: 小组 |
+| title | String | NO | `帖子专用`: 标题 |
 | content | String | NO | 正文内容<br>内容中插入文件，格式为 `[file:{fid}]` |
 | isMarkdown | Boolean | NO | 内容是否为 MD 格式 |
 | isAnonymous | Boolean | NO | 是否匿名 |
-| commentPolicy | Number | NO | 帖子专用: 谁可以评论<br>`1` 所有人 `2` 你关注的人 `3` 你关注的人和已认证的人 `4` 不允许所有人 `5` 仅限你提及到的用户 |
+| commentPolicy | Number | NO | `帖子专用`: 谁可以评论<br>`1` 所有人 `2` 你关注的人 `3` 你关注的人和已认证的人 `4` 不允许所有人 `5` 仅限你提及到的用户 |
 | commentPrivate | Boolean | NO | `帖子使用` 所有评论是否为私有<br>`评论使用` 本条评论是否为私有<br>私有则仅评论作者和帖子作者可见 |
 | gtid | String | NO | 地理位置 ID |
 | locationInfo | Object | NO | 地理位置信息 |

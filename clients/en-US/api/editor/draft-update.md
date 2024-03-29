@@ -25,13 +25,13 @@
 | Key | Type | Required | Description |
 | --- | --- | --- | --- |
 | editorFskey | String | *optional* | Is it a plugin editor, empty means no |
-| quotePid | String | *optional* | Post-Only: Quoted Post ID |
-| gid | String | *optional* | Post-Only: Group |
-| title | String | *optional* | Post-Only: Title |
+| quotePid | String | *optional* | `Post-Only`: Quoted Post ID |
+| gid | String | *optional* | `Post-Only`: Group |
+| title | String | *optional* | `Post-Only`: Title |
 | content | String | *optional* | Content<br>Insert the file in the content in the format `[file:{fid}]` |
 | isMarkdown | Boolean | *optional* | Content in MD format |
 | isAnonymous | Boolean | *optional* | Anonymous |
-| commentPolicy | Number | *optional* | Post-Only: Who can comment?<br>`1` Everyone `2` People you follow `3` People you follow or verified `4` No one is allowed `5` Only users you mention |
+| commentPolicy | Number | *optional* | `Post-Only`: Who can comment?<br>`1` Everyone `2` People you follow `3` People you follow or verified `4` No one is allowed `5` Only users you mention |
 | commentPrivate | Boolean | *optional* | `Post` Are all comments private<br>`Comment` Is this comment private<br>Private is only visible to the author of the comment and the author of the post. |
 | gtid | String | *optional* | Geotag ID |
 | locationInfo | Object | *optional* | Location Info |

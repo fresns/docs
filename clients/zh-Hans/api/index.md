@@ -22,8 +22,8 @@
 | `GET` | /api/fresns/v1/common/callback | 回调返参查询 |
 | `POST` | /api/fresns/v1/common/cmd-word | 命令字请求 |
 | `GET` | /api/fresns/v1/common/file/upload-token | 文件: S3 上传令牌 |
-| `POST` | /api/fresns/v1/common/file/uploads | 文件: 上传文件 |
-| `PATCH` | /api/fresns/v1/common/file/`{fid}`/warning | 文件: 更新文件警告 |
+| `POST` | /api/fresns/v1/common/file/upload | 文件: 上传文件 |
+| `PATCH` | /api/fresns/v1/common/file/`{fid}`/info | 文件: 更新文件信息 |
 | `GET` | /api/fresns/v1/common/file/`{fid}`/link | 文件: 下载链接 |
 | `GET` | /api/fresns/v1/common/file/`{fid}`/users | 文件: 下载过文件的用户 |
 
