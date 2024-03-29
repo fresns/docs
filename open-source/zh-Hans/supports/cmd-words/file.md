@@ -36,8 +36,10 @@
 | 参数名 | 类型 | 是否必传 | 说明 |
 | --- | --- | --- | --- |
 | type | Number | YES | 1.图片 / 2.视频 / 3.音频 / 4.文档 |
+| path | String | YES | 文件路径 |
+| minutes | Number | YES | 有效分钟数 |
 
-- 客户端凭 Token 可以通过 S3 SDK 直接上传到云服务商。
+- 获取 S3 预签名 URL
 
 ::: details 结果示例
 ```json
@@ -45,11 +47,11 @@
     "code": 0,
     "message": "ok",
     "data": {
-        "endpointUrl": "String / 服务 URL",
-        "authToken": "String / 临时上传凭证 STS",
-        "bucketName": "String / 存储桶名称",
-        "region": "String / 存储桶区域",
-        "expireTime": "Number / 有效期，单位：秒", //没有则输出 null
+        "method": "String / 请求方式",
+        "url": "String / 请求地址",
+        "headers": "Object / 请求标头",
+        "activeMinutes": "Number / 有效期分钟数",
+        "expiration": "String / 到期时间 Y-m-d H:i:s"
     }
 }
 ```

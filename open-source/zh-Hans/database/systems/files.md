@@ -10,7 +10,7 @@ aside: false
 | fid | varchar(32) | 对外公开 ID |  | NO | **唯一值** |
 | type | tinyint *UNSIGNED* | 文件类型 | 1 | NO | 1.图片 / 2.视频 / 3.音频 / 4.文档 |
 | name | varchar(128) | 文件名称 |  | NO | 完整原始名称，上传时的文件名，包含后缀名 |
-| mime | varchar(255) | 文件 Mime 类型 |  | YES | 比如：image/jpeg 或 video/mp4 |
+| mime | varchar(255) | 文件 Mime 类型 |  | NO | 比如：image/jpeg 或 video/mp4 |
 | extension | varchar(32) | 文件扩展名 |  | NO | 比如：jpg 或 jpeg |
 | size | int *UNSIGNED* | 文件大小 |  | NO | 单位 Byte |
 | md5 | varchar(128) | 文件 md5 |  | YES | 文件 md5 编码 |
@@ -28,6 +28,7 @@ aside: false
 | transcoding_reason | varchar(255) | 音视频附件转码失败原因 |  | YES | 转码失败原因 |
 | original_path | varchar(255) | 原始文件路径 |  | YES | **相对路径**<br>如果文件涉及转码，转码前的文件存储路径<br>没有则留空 |
 | warning_type | tinyint *UNSIGNED* | 警告类型 | 1 | NO | 1.无 2.Nudity 3.Violence 4.Sensitive |
+| is_uploaded | tinyint *UNSIGNED* | 是否上传 | 1 | NO | 0.否 / 1.是 |
 | is_enabled | tinyint *UNSIGNED* | 是否有效 | 1 | NO | 0.无效 / 1.有效 |
 | physical_deletion | tinyint *UNSIGNED* | 物理删除状态 | 0 | NO | 0.否 / 1.是（已物理删除文件） |
 | created_at | timestamp | 创建时间 | useCurrent | NO | 比如 MySQL 默认值为 CURRENT_TIMESTAMP |

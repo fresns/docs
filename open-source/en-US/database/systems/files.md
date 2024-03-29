@@ -10,7 +10,7 @@ aside: false
 | fid | varchar(32) | Publicly available ID |  | NO | **Unique** |
 | type | tinyint *UNSIGNED* | File Type | 1 | NO | 1.Image / 2.Video / 3.Audio / 4.Document |
 | name | varchar(128) | File Name |  | NO | Full original name, filename when uploading, including extension |
-| mime | varchar(255) | File Mime Type |  | YES | For example: image/jpeg or video/mp4 |
+| mime | varchar(255) | File Mime Type |  | NO | For example: image/jpeg or video/mp4 |
 | extension | varchar(32) | File Extension Name |  | NO | For example: jpg or jpeg |
 | size | int *UNSIGNED* | File Size |  | NO | Unit Byte |
 | md5 | varchar(128) | File md5 |  | YES | File md5 encoding |
@@ -28,6 +28,7 @@ aside: false
 | transcoding_reason | varchar(255) | Audio and Video Attachment Transcoding Failure Reason |  | YES | Transcoding failure reason |
 | original_path | varchar(255) | Original File Path |  | YES | **Relative path**<br>If the file involves transcoding, the storage path of the file before transcoding<br>If not, leave empty |
 | warning_type | tinyint *UNSIGNED* | Warning Type | 1 | NO | 1.No 2.Nudity 3.Violence 4.Sensitive |
+| is_uploaded | tinyint *UNSIGNED* | Is Uploaded | 1 | NO | 0.No / 1.Yes |
 | is_enabled | tinyint *UNSIGNED* | Is Valid | 1 | NO | 0.Invalid / 1.Valid |
 | physical_deletion | tinyint *UNSIGNED* | Physical Deletion Status | 0 | NO | 0.No / 1.Yes (File physically deleted) |
 | created_at | timestamp | Create Time | useCurrent | NO | For example, MySQL defaults to `CURRENT_TIMESTAMP` |

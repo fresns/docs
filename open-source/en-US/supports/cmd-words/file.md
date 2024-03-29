@@ -36,8 +36,10 @@
 | Parameter Name | Type | Required | Description |
 | --- | --- | --- | --- |
 | type | Number | **required** | 1.Image / 2.Video / 3.Audio / 4.Document |
+| path | String | **required** | File Path |
+| minutes | Number | **required** | Active Minutes |
 
-- Clients can upload directly to the cloud service provider with a Token using the S3 SDK.
+- Get S3 presigned url
 
 ::: details Return Example
 ```json
@@ -45,11 +47,11 @@
     "code": 0,
     "message": "ok",
     "data": {
-        "endpointUrl": "String / Endpoint URL",
-        "authToken": "String / Authentication Token (STS)",
-        "bucketName": "String / Bucket Name",
-        "region": "String / Bucket Region",
-        "expireTime": "Number / Expiration time, in seconds" // If not available, output null
+        "method": "String / Method",
+        "url": "String / Endpoint URL",
+        "headers": "Object / Headers",
+        "activeMinutes": "Number / Active Minutes",
+        "expiration": "String / Expiration Datetime Y-m-d H:i:s"
     }
 }
 ```
