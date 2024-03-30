@@ -29,11 +29,11 @@ aside: false
     "imageSquareUrl": "String / 正方形缩略图地址",
     "imageBigUrl": "String / 原图压缩图地址",
     // 视频专用参数
-    "videoTime": "Number / 视频时长",
+    "videoDuration": "Number / 视频时长",
     "videoPosterUrl": "String / 视频封面图链接",
     "videoUrl": "String / 视频链接",
     // 音频专用参数
-    "audioTime": "Number / 音频时长",
+    "audioDuration": "Number / 音频时长",
     "audioUrl": "String / 音频链接",
     // 文档专用参数
     "documentPreviewUrl": "String / 文件预览链接",

@@ -29,15 +29,15 @@ aside: false
     "imageSquareUrl": "String / Square thumbnail URL",
     "imageBigUrl": "String / Compressed original image URL",
     // Video Parameters
-    "videoTime": "Number / Video duration",
+    "videoDuration": "Number / Video duration",
     "videoPosterUrl": "String / Video cover image URL",
     "videoUrl": "String / Video URL",
     // Audio Parameters
-    "audioTime": "Number / Audio duration",
+    "audioDuration": "Number / Audio duration",
     "audioUrl": "String / Audio URL",
     // Document Parameters
     "documentPreviewUrl": "String / Document preview URL",
-    // Audio and Video Parameter
-    "transcodingState": "Number / Audio and video transcoding status 1.Pending 2.Transcoding 3.Transcoding complete 4.Transcoding failed"
+    // Audio or Video Parameter
+    "transcodingState": "Number / Audio or video transcoding status 1.Pending 2.Transcoding 3.Transcoding complete 4.Transcoding failed"
 }
 ```
