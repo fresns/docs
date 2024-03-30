@@ -20,6 +20,7 @@
 **注意事项：**
 
 - 后台登录入口，配置项变化，所以重置为默认路径了 `/fresns/admin`
+- `.env` 配置中 `DB_TIMEZONE` 修改为 `APP_TIMEZONE`
 
 ## 数据库
 
