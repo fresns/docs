@@ -77,7 +77,7 @@
 | uid | Number | *optional* | User parameter `file_usages->user_id`<br>Stored as `uid` converted to `users->id` |
 | type | Number | **required** | 1.Image / 2.Video / 3.Audio / 4.Document |
 | file | File | **required** | File |
-| warningType | Number | NO | 1.No 2.Nudity 3.Violence 4.Sensitive |
+| warningType | Number | *optional* | 1.No 2.Nudity 3.Violence 4.Sensitive |
 | moreInfo | Object | *optional* | Custom |
 
 - Either `tableId` or `tableKey` must be passed.
@@ -92,80 +92,6 @@
     }
 }
 ```
-:::
-
-::: details Logic Notes
-- The storage method can call the main program's encapsulated function [FileUtility::saveFileInfoToDatabase($bodyInfo, $diskPath, $file)](../utilities/file.md#save-file-information-to-database)
-- If the file type is video `type=2`, the video cover image also needs to be processed, corresponding to the field `file->video_poster_path`.
-- View the returned result [File Information Structure](../../extensions/storage.md#file-information-structure)
-:::
-
-## uploadFileInfo
-
-```php
-\FresnsCmdWord::plugin('Fresns')->uploadFileInfo($wordBody);
-```
-| Parameter Name | Type | Required | Description |
-| --- | --- | --- | --- |
-| platformId | Number | **required** | Platform number (key value from the configuration table [platforms](../../configs/dictionary/platforms.md)) |
-| usageType | Number | **required** | [File usage type](../../database/numbered-description.md#type-of-file-usage) |
-| tableName | String | **required** | Source table name |
-| tableColumn | String | **required** | Source field name |
-| tableId | Number | *optional* | Source table primary id |
-| tableKey | String | *optional* | Source table key name `PrimaryHelper::fresnsPrimaryId()` |
-| aid | String | *optional* | Account parameter `file_usages->account_id`<br>Stored as `aid` converted to `accounts->id` |
-| uid | Number | *optional* | User parameter `file_usages->user_id`<br>Stored as `uid` converted to `users->id` |
-| type | Number | **required** | 1.Image / 2.Video / 3.Audio / 4.Document |
-| fileInfo | Object | **required** | File information array |
-| warningType | Number | NO | 1.No 2.Nudity 3.Violence 4.Sensitive |
-| moreInfo | Object | *optional* | Custom |
-
-- Either `tableId` or `tableKey` must be passed.
-
-::: details fileInfo Example
-```json
-{
-    "name": "Store to files->name",
-    "mime": "Store to files->mime",
-    "extension": "Store to files->extension",
-    "size": "Store to files->size", // Unit Byte
-    "md5": "Store to files->md5",
-    "sha": "Store to files->sha",
-    "shaType": "Store to files->sha_type",
-    "path": "Store to files->path",
-    "imageWidth": "Image specific, store to files->image_width",
-    "imageHeight": "Image specific, store to files->image_height",
-    "videoDuration": "Video specific, store to files->video_duration",
-    "videoPosterPath": "Video specific, store to files->video_poster_path",
-    "audioDuration": "Audio specific, store to files->audio_duration",
-    "transcodingState": "Audio or video specific, Store to files->transcoding_state",
-    "originalPath": "Store to files->original_path",
-    "sortOrder": "Store to file_usages->sort_order",
-}
-```
-:::
-
-::: details Return Example
-```json
-{
-    "code": 0,
-    "message": "ok",
-    "data": [
-        {
-            // Common Data Structure -> File Info
-        },
-        {
-            // Common Data Structure -> File Info
-        }
-    ]
-}
-```
-:::
-
-::: details Logic Notes
-- The storage method can call the main program's encapsulated function [FileUtility::uploadFileInfo($bodyInfo)](../utilities/file.md#upload-file-information)
-- If the file type is video `type=2`, the video cover image also needs to be processed, corresponding to the field `file->video_poster_path`.
-- View the returned result [File Information Structure](../../extensions/storage.md#file-information-structure)
 :::
 
 ## getAntiLinkFileInfo (One)
