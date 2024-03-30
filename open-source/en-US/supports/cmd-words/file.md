@@ -7,10 +7,13 @@
 ```
 | Parameter Name | Type | Required | Description |
 | --- | --- | --- | --- |
-| type | Number | **required** | 1.Image / 2.Video / 3.Audio / 4.Document |
 | uid | Number | **required** | Uploader UID |
 | usageType | String | **required** | File usage type<br>`userAvatar`<br>`userBanner`<br>`conversation`<br>`post`<br>`comment`<br>`postDraft`<br>`commentDraft` |
 | usageFsid | String | **required** | File usage fsid<br>`userAvatar` parameter `uidOrUsername`<br>`userBanner` parameter `uidOrUsername`<br>`conversation` parameter `uidOrUsername`<br>`post` parameter `pid`<br>`comment` parameter `cid`<br>`postDraft` parameter `did`<br>`commentDraft` parameter `did` |
+| type | Number | **required** | 1.Image / 2.Video / 3.Audio / 4.Document |
+| extension | String | *optional* | File Extension Name |
+| size | Number | *optional* | in `Byte` |
+| duration | Number | *optional* | Audio or video duration in `seconds` |
 
 ::: details Return Example
 ```json
@@ -132,10 +135,10 @@
     "path": "Store to files->path",
     "imageWidth": "Image specific, store to files->image_width",
     "imageHeight": "Image specific, store to files->image_height",
-    "videoTime": "Video specific, store to files->video_time",
+    "videoDuration": "Video specific, store to files->video_duration",
     "videoPosterPath": "Video specific, store to files->video_poster_path",
-    "audioTime": "Audio specific, store to files->audio_time",
-    "transcodingState": "Audio and video specific, Store to files->transcoding_state",
+    "audioDuration": "Audio specific, store to files->audio_duration",
+    "transcodingState": "Audio or video specific, Store to files->transcoding_state",
     "originalPath": "Store to files->original_path",
     "sortOrder": "Store to file_usages->sort_order",
 }

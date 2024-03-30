@@ -115,11 +115,11 @@ $file->getFileInfo();
     "imageSquareUrl": "image_bucket_domain + 文件 path 字段 + image_thumb_square",
     "imageBigUrl": "image_bucket_domain + 文件 path 字段 + image_thumb_big",
     // 视频专用参数
-    "videoTime": "files->video_time",
+    "videoDuration": "files->video_duration",
     "videoPosterUrl": "video_bucket_domain + 文件 video_poster_path 字段",
     "videoUrl": "video_bucket_domain + 文件 path 字段",
     // 音频专用参数
-    "audioTime": "files->audio_time",
+    "audioDuration": "files->audio_duration",
     "audioUrl": "audio_bucket_domain + 文件 path 字段",
     // 文档专用参数
     "documentPreviewUrl": "按规则替换后的链接",

@@ -24,9 +24,9 @@ $bodyInfo = [
     'sha' => $sha,
     'shaType' => $shaType,
     'imageHandlePosition' => $imageHandlePosition, // 生成物理图片专用，支持 path-start, path-end, name-start, name-end
-    'videoTime' => '',
+    'videoDuration' => '',
     'videoPosterPath' => '',
-    'audioTime' => '',
+    'audioDuration' => '',
     'transcodingState' => '',
     'moreInfo' => $dtoWordBody->moreInfo,
 ];
@@ -74,9 +74,9 @@ $uploadFileInfo = FileUtility::uploadFileInfo($bodyInfo);
         "path": "存储到 files->path",
         "imageWidth": "图片专用，存储到 files->image_width",
         "imageHeight": "图片专用，存储到 files->image_height",
-        "videoTime": "视频专用，存储到 files->video_time",
+        "videoDuration": "视频专用，存储到 files->video_duration",
         "videoPosterPath": "视频专用，存储到 files->video_poster_path",
-        "audioTime": "音频专用，存储到 files->audio_time",
+        "audioDuration": "音频专用，存储到 files->audio_duration",
         "transcodingState": "音视频专用，存储到 files->transcoding_state",
         "moreInfo": {
             // 扩展信息，存储到 files->more_info
@@ -110,9 +110,9 @@ $bodyInfo = [
     'sha' => $sha,
     'shaType' => $shaType,
     'imageHandlePosition' => $imageHandlePosition, // 生成物理图片专用，支持 path-start, path-end, name-start, name-end
-    'videoTime' => '',
+    'videoDuration' => '',
     'videoPosterPath' => '',
-    'audioTime' => '',
+    'audioDuration' => '',
     'transcodingState' => '',
     'moreInfo' => $dtoWordBody->moreInfo,
 ];

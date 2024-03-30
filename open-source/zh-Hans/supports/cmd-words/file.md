@@ -7,10 +7,13 @@
 ```
 | 参数名 | 类型 | 是否必传 | 说明 |
 | --- | --- | --- | --- |
-| type | Number | YES | 1.图片 / 2.视频 / 3.音频 / 4.文档 |
 | uid | Number | YES | 上传者 UID |
 | usageType | String | YES | 文件用途类型<br>`userAvatar`<br>`userBanner`<br>`conversation`<br>`post`<br>`comment`<br>`postDraft`<br>`commentDraft` |
 | usageFsid | String | YES | 文件用途 fsid<br>`userAvatar` 传参 `uidOrUsername`<br>`userBanner` 传参 `uidOrUsername`<br>`conversation` 传参 `uidOrUsername`<br>`post` 传参 `pid`<br>`comment` 传参 `cid`<br>`postDraft` 传参 `did`<br>`commentDraft` 传参 `did` |
+| type | Number | YES | 1.图片 / 2.视频 / 3.音频 / 4.文档 |
+| extension | String | NO | 文件扩展名 |
+| size | Number | NO | 单位 `Byte` |
+| duration | Number | NO | 音视频时长，单位 `秒` |
 
 ::: details 结果示例
 ```json
@@ -132,9 +135,9 @@
     "path": "存储到 files->path",
     "imageWidth": "图片专用，存储到 files->image_width",
     "imageHeight": "图片专用，存储到 files->image_height",
-    "videoTime": "视频专用，存储到 files->video_time",
+    "videoDuration": "视频专用，存储到 files->video_duration",
     "videoPosterPath": "视频专用，存储到 files->video_poster_path",
-    "audioTime": "音频专用，存储到 files->audio_time",
+    "audioDuration": "音频专用，存储到 files->audio_duration",
     "transcodingState": "音视频专用，存储到 files->transcoding_state",
     "originalPath": "存储到 files->original_path",
     "sortOrder": "存储到 file_usages->sort_order",

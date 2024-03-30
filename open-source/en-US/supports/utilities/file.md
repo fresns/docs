@@ -24,9 +24,9 @@ $bodyInfo = [
     'sha' => $sha,
     'shaType' => $shaType,
     'imageHandlePosition' => $imageHandlePosition, // Physical image files only, Support: path-start, path-end, name-start, name-end
-    'videoTime' => '',
+    'videoDuration' => '',
     'videoPosterPath' => '',
-    'audioTime' => '',
+    'audioDuration' => '',
     'transcodingState' => '',
     'moreInfo' => $dtoWordBody->moreInfo,
 ];
@@ -74,10 +74,10 @@ $uploadFileInfo = FileUtility::uploadFileInfo($bodyInfo);
         "path": "Store to files->path",
         "imageWidth": "Image specific, store to files->image_width",
         "imageHeight": "Image specific, store to files->image_height",
-        "videoTime": "Video specific, store to files->video_time",
+        "videoDuration": "Video specific, store to files->video_duration",
         "videoPosterPath": "Video specific, store to files->video_poster_path",
-        "audioTime": "Audio specific, store to files->audio_time",
-        "transcodingState": "Audio and video specific, store to files->transcoding_state",
+        "audioDuration": "Audio specific, store to files->audio_duration",
+        "transcodingState": "Audio or video specific, store to files->transcoding_state",
         "moreInfo": {
             // Extended information, store to files->more_info
         },
@@ -110,9 +110,9 @@ $bodyInfo = [
     'sha' => $sha,
     'shaType' => $shaType,
     'imageHandlePosition' => $imageHandlePosition, // Physical image files only, Support: path-start, path-end, name-start, name-end
-    'videoTime' => '',
+    'videoDuration' => '',
     'videoPosterPath' => '',
-    'audioTime' => '',
+    'audioDuration' => '',
     'transcodingState' => '',
     'moreInfo' => $dtoWordBody->moreInfo,
 ];

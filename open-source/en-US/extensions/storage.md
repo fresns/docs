@@ -36,7 +36,7 @@ The access path to the plugin upload page is configured in the `accessPath` para
 - Path Reference `/qiniu/upload?sign={sign}&config={uploadInfo}&postMessageKey={postMessageKey}`
 - [Introduction of variable names in paths](https://docs.fresns.com/clients/reference/callback/variables.html)
 
-## Audio and video functions
+## Audio or video functions
 
 - Transcoding command word triggered reactively.
 - Such three tables as `posts`, `comments`, and `conversation_messages` shall be [subscribed](functions.md) to when installing the plug-in. When there are any newly-added contents, trigger the transcoding command word and scan whether there are any audio/video files.
@@ -115,15 +115,15 @@ $file->getFileInfo();
     "imageSquareUrl": "image_bucket_domain + files->path + image_thumb_square",
     "imageBigUrl": "image_bucket_domain + files->path + image_thumb_big",
     // Video Parameters
-    "videoTime": "files->video_time",
+    "videoDuration": "files->video_duration",
     "videoPosterUrl": "video_bucket_domain + file->video_poster_path",
     "videoUrl": "video_bucket_domain + files->path",
     // Audio Parameters
-    "audioTime": "files->audio_time",
+    "audioDuration": "files->audio_duration",
     "audioUrl": "audio_bucket_domain + files->path",
     // Document Parameters
     "documentPreviewUrl": "Links after replacement by rule",
-    // Audio and Video Parameter
+    // Audio or Video Parameter
     "transcodingState": "files->transcoding_state"
 }
 ```
