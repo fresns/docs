@@ -37,6 +37,7 @@
 | locationInfo | Object | NO | 地理位置信息 |
 | archives | Array | NO | 扩展参数 |
 | extends | Array | NO | 扩展内容 |
+| fileOrder | Array | NO | 文件排列编号 |
 | deleteLocation | Boolean | NO | 删除位置信息 |
 | deleteArchive | String | NO | 删除扩展参数，传参 `code` |
 | deleteExtend | String | NO | 删除扩展内容，传参 `eid` |
@@ -118,6 +119,15 @@
         "canDelete": true, // 用户是否可以直接删除
         "sortOrder": 9, // 排序
         "fskey": null
+    }
+]
+```
+
+```json [文件排序]
+[
+    {
+        "fid": "fid",
+        "sortOrder": 9
     }
 ]
 ```
