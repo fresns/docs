@@ -10,7 +10,7 @@ aside: false
     "type": "Number / 文件类型编号 1.图片 2.视频 3.音频 4.文档",
     "status": "Boolean / 是否有效",
     "substitutionImageUrl": "String / 文件无效提示图",
-    "warningType": "Number / 警告类型 1.无 2.Nudity 3.Violence 4.Sensitive",
+    "warning": "String / 警告: none/nudity/violence/sensitive",
     "name": "String / 完整原始名称",
     "mime": "String / 文件扩展名",
     "extension": "String / 文件后缀名",

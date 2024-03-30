@@ -10,7 +10,7 @@ aside: false
     "type": "Number / File type number 1.Image 2.Video 3.Audio 4.Document",
     "status": "Boolean / Is valid",
     "substitutionImageUrl": "String / Invalid file prompt image",
-    "warningType": "Number / Warning Type 1.No 2.Nudity 3.Violence 4.Sensitive",
+    "warning": "String / Warning: none/nudity/violence/sensitive",
     "name": "String / Complete original name",
     "mime": "String / File MIME type",
     "extension": "String / File extension",
