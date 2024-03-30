@@ -1,6 +1,6 @@
-# File Update Warning
+# File Update Info
 
-- Endpoint Path: `/api/fresns/common/v1/file/{fid}/warning`
+- Endpoint Path: `/api/fresns/common/v1/file/{fid}/info`
 - Method: `PATCH`
 - Request: `application/json`
 
@@ -17,11 +17,13 @@
 
 | Key | Type | Required | Description |
 | --- | --- | --- | --- |
-| warning | String | *optional* | File Warning `nudity`, `violence`, `sensitive` |
+| uploaded | Boolean | *optional* | [S3 uploaded successfully](file-upload-token.md) |
+| warning | String | *optional* | File Warning `none`, `nudity`, `violence`, `sensitive` |
+| moreInfo | String | *optional* | File custom information (Object to String) |
 
 **Request Description**
 
-- `warning` parameter null this parameter blank to clear the existing warning configuration.
+- Null to not modify.
 
 ## Return
 

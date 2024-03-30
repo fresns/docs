@@ -1,8 +1,8 @@
-# File S3 Upload Token
+# File Upload
 
-- Endpoint Path: `/api/fresns/common/v1/file/upload-token`
-- Method: `GET`
-- Request: `Query`
+- Endpoint Path: `/api/fresns/common/v1/file/upload`
+- Method: `POST`
+- Request: `multipart/form-data`
 
 ## Headers Optional Parameter
 
@@ -13,28 +13,16 @@
 | X-Fresns-Uid | **required** | **required** |
 | X-Fresns-Uid-Token | **required** | **required** |
 
-## Query Params
+## Form-data Params
 
 | Key | Type | Required | Description |
 | --- | --- | --- | --- |
 | usageType | String | **required** | File usage type<br>`userAvatar`<br>`userBanner`<br>`conversation`<br>`post`<br>`comment`<br>`postDraft`<br>`commentDraft` |
 | usageFsid | String | **required** | File usage fsid<br>`userAvatar` parameter `uidOrUsername`<br>`userBanner` parameter `uidOrUsername`<br>`conversation` parameter `uidOrUsername`<br>`post` parameter `pid`<br>`comment` parameter `cid`<br>`postDraft` parameter `did`<br>`commentDraft` parameter `did` |
 | type | String | **required** | Choose one from `image`, `video`, `audio`, `document` |
-| name | String | **required** | File Name |
-| mime | String | **required** | File Mime Type |
-| extension | String | **required** | File Extension Name |
-| size | Number | **required** | in `Byte` |
-| md5 | String | *optional* | File MD5 |
-| sha | String | *optional* | File SHA |
-| shaType | String | *optional* | File SHA Type |
-| width | Number | *optional* | `Image-Only`, in `px` |
-| height | Number | *optional* | `Image-Only`, in `px` |
-| duration | Number | *optional* | `Audio or Video-Only`, in `Seconds` |
+| file | File | **required** |  |
 | warning | String | *optional* | File Warning `none`, `nudity`, `violence`, `sensitive` |
 | moreInfo | String | *optional* | File custom information (Object to String) |
-
-- Get S3 presigned url
-- [Working with presigned URLs](https://docs.aws.amazon.com/AmazonS3/latest/userguide/using-presigned-url.html)
 
 ## Return
 
@@ -43,12 +31,9 @@
     "code": 0,
     "message": "ok",
     "data": {
-        "fid": "String / File ID",
-        "method": "String / Method",
-        "url": "String / Endpoint URL",
-        "headers": "Object / Headers",
-        "activeMinutes": "Number / Active Minutes",
-        "expiration": "String / Expiration Datetime Y-m-d H:i:s"
+        // Common Data Structure -> File Info
     }
 }
 ```
+
+- [Common Data Structure -> File Info](../../reference/data/file.md)
