@@ -436,7 +436,7 @@
 | editorUploadTip | 请选择上传资源 |
 | editorUploadTipExtensions | 支持的扩展名 |
 | editorUploadTipMaxSize | 支持的最大尺寸 |
-| editorUploadTipMaxTime | 支持的最长时间 |
+| editorUploadTipMaxDuration | 支持的最长时间 |
 | editorUploadTipNumber | 支持上传的数量 |
 | editorVideoPlayTip | 上传成功，发表后可播放 |
 | editorFileWarning | 内容警告 |

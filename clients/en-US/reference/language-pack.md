@@ -444,7 +444,7 @@
 | editorUploadTip | Please select upload resources |
 | editorUploadTipExtensions | Extensions |
 | editorUploadTipMaxSize | Max size |
-| editorUploadTipMaxTime | Max time |
+| editorUploadTipMaxDuration | Max time |
 | editorUploadTipNumber | Max number |
 | editorVideoPlayTip | Upload successfully and playable after publication |
 | editorFileWarning | File Warning |

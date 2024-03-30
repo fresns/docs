@@ -53,7 +53,7 @@
                 "extensions": "String / Supported extensions, e.g., wmv,rm,mov,mpeg,mp4,3gp,flv,avi,rmvb",
                 "inputAccept": "String / Supported extensions, e.g., video/x-ms-wmv,application/vnd.rn-realmedia,video/quicktime,video/mpeg,video/mp4,video/3gpp,video/x-flv,video/x-msvideo,application/vnd.rn-realmedia-vbr",
                 "maxSize": "Number / Maximum file size, in MB",
-                "maxTime": "Number / Maximum file duration, in seconds",
+                "maxDuration": "Number / Maximum file duration, in seconds",
                 "uploadType": "String / Upload type: api, page, sdk",
                 "uploadUrl": "String / Address for page upload type",
                 "uploadNumber": "Number / Number of allowed uploads"
@@ -63,7 +63,7 @@
                 "extensions": "String / Supported extensions, e.g., mp3,wav,m4a",
                 "inputAccept": "String / Supported extensions, e.g., audio/mpeg,audio/x-wav,audio/mp4",
                 "maxSize": "Number / Maximum file size, in MB",
-                "maxTime": "Number / Maximum file duration, in seconds",
+                "maxDuration": "Number / Maximum file duration, in seconds",
                 "uploadType": "String / Upload type: api, page, sdk",
                 "uploadUrl": "String / Address for page upload type",
                 "uploadNumber": "Number / Number of allowed uploads"
