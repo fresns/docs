@@ -5,117 +5,158 @@
 ## Upload File
 
 ```php
-FileUtility::uploadFile($bodyInfo, $file);
+FileUtility::uploadFile($bodyInfo, $diskConfig, $file);
 ```
 
 ::: details Example
 ```php
 $bodyInfo = [
-    'usageType' => $dtoWordBody->usageType,
-    'platformId' => $dtoWordBody->platformId,
-    'tableName' => $dtoWordBody->tableName,
-    'tableColumn' => $dtoWordBody->tableColumn,
-    'tableId' => $dtoWordBody->tableId,
-    'tableKey' => $dtoWordBody->tableKey,
-    'aid' => $dtoWordBody->aid,
-    'uid' => $dtoWordBody->uid,
-    'type' => $dtoWordBody->type,
-    'md5' => $md5,
-    'sha' => $sha,
-    'shaType' => $shaType,
-    'videoDuration' => '',
-    'videoPosterPath' => '',
-    'audioDuration' => '',
-    'transcodingState' => '',
-    'moreInfo' => $dtoWordBody->moreInfo,
+    'platformId' => 'file_usages->platform_id',
+    'usageType' => 'file_usages->usage_type',
+    'tableName' => 'file_usages->table_name',
+    'tableColumn' => 'file_usages->table_column',
+    'tableId' => 'file_usages->table_id',
+    'tableKey' => 'file_usages->table_key',
+    'aid' => 'file_usages->account_id',
+    'uid' => 'file_usages->user_id',
+    'type' => 'files->type',
+    'md5' => 'files->md5',
+    'sha' => 'files->sha',
+    'shaType' => 'files->sha_type',
+    'warningType' => 'files->warning_type',
+    'moreInfo' => 'files->more_info',
 ];
 
-$uploadFile = FileUtility::uploadFile($bodyInfo, $dtoWordBody->file);
+$diskConfig = [
+    'driver' => 's3',
+    'key' => env('AWS_ACCESS_KEY_ID'),
+    'secret' => env('AWS_SECRET_ACCESS_KEY'),
+    'region' => env('AWS_DEFAULT_REGION'),
+    'bucket' => env('AWS_BUCKET'),
+    'url' => env('AWS_URL'),
+    'endpoint' => env('AWS_ENDPOINT'),
+    'use_path_style_endpoint' => env('AWS_USE_PATH_STYLE_ENDPOINT', false),
+    'throw' => false,
+];
+
+$fileModel = FileUtility::uploadFile($bodyInfo, $diskConfig, $dtoWordBody->file);
 ```
 :::
 
-## Upload File Information
+## Upload File Info
 
 ```php
-FileUtility::uploadFileInfo($bodyInfo);
+FileUtility::uploadFileInfo($file, $fileInfo, $usageInfo);
 ```
 
 ::: details Example
 ```php
-$bodyInfo = [
-    'usageType' => $dtoWordBody->usageType,
-    'platformId' => $dtoWordBody->platformId,
-    'tableName' => $dtoWordBody->tableName,
-    'tableColumn' => $dtoWordBody->tableColumn,
-    'tableId' => $dtoWordBody->tableId,
-    'tableKey' => $dtoWordBody->tableKey,
-    'aid' => $dtoWordBody->aid,
-    'uid' => $dtoWordBody->uid,
-    'type' => $dtoWordBody->type,
-    'fileInfo' => $dtoWordBody->fileInfo,
+$fileInfo = [
+    'type' => 'files->type',
+    'md5' => 'files->md5',
+    'sha' => 'files->sha',
+    'shaType' => 'files->sha_type',
+    'path' => 'files->path',
+    'audioDuration' => 'Audio Only: files->audio_duration',
+    'videoDuration' => 'Video Only: files->video_duration',
+    'videoPosterPath' => 'Video Only: files->video_poster_path',
+    'moreInfo' => [
+        // files->more_info
+    ],
+    'transcodingState' => 'files->transcoding_state', // audio or video Only
+    'originalPath' => 'files->original_path',
+    'warningType' => 'files->warning_type',
+    'uploaded' => 'files->is_uploaded',
 ];
 
-$uploadFileInfo = FileUtility::uploadFileInfo($bodyInfo);
+$usageInfo = [
+    'usageType' => 'file_usages->usage_type',
+    'platformId' => 'file_usages->platform_id',
+    'tableName' => 'file_usages->table_name',
+    'tableColumn' => 'file_usages->table_column',
+    'tableId' => 'file_usages->table_id',
+    'tableKey' => 'file_usages->table_key',
+    'sortOrder' => 'file_usages->sort_order',
+    'aid' => 'file_usages->account_id',
+    'uid' => 'file_usages->user_id',
+    'remark' => 'file_usages->remark',
+];
+
+$fileModel = FileUtility::uploadFileInfo($file, $fileInfo, $usageInfo);
 ```
 :::
 
-::: details View `fileInfo` information structure
-```json
-[
-    {
-        "name": "Store to files->name",
-        "mime": "Store to files->mime",
-        "extension": "Store to files->extension",
-        "size": "Store to files->size", // Unit Byte
-        "md5": "Store to files->md5",
-        "sha": "Store to files->sha",
-        "shaType": "Store to files->sha_type",
-        "path": "Store to files->path",
-        "imageWidth": "Image specific, store to files->image_width",
-        "imageHeight": "Image specific, store to files->image_height",
-        "videoDuration": "Video specific, store to files->video_duration",
-        "videoPosterPath": "Video specific, store to files->video_poster_path",
-        "audioDuration": "Audio specific, store to files->audio_duration",
-        "transcodingState": "Audio or video specific, store to files->transcoding_state",
-        "moreInfo": {
-            // Extended information, store to files->more_info
-        },
-        "originalPath": "Store to files->original_path",
-        "rating": "Store to file_usages->rating",
-    }
-]
-```
-:::
-
-## Save File Information to Database
+## Save File Info
 
 ```php
-FileUtility::saveFileInfoToDatabase($bodyInfo, $diskPath, $file);
+FileUtility::saveFileInfo($fileInfo, $usageInfo);
 ```
 
 ::: details Example
 ```php
-$bodyInfo = [
-    'usageType' => $dtoWordBody->usageType,
-    'platformId' => $dtoWordBody->platformId,
-    'tableName' => $dtoWordBody->tableName,
-    'tableColumn' => $dtoWordBody->tableColumn,
-    'tableId' => $dtoWordBody->tableId,
-    'tableKey' => $dtoWordBody->tableKey,
-    'aid' => $dtoWordBody->aid,
-    'uid' => $dtoWordBody->uid,
-    'type' => $dtoWordBody->type,
-    'md5' => $md5,
-    'sha' => $sha,
-    'shaType' => $shaType,
-    'videoDuration' => '',
-    'videoPosterPath' => '',
-    'audioDuration' => '',
-    'transcodingState' => '',
-    'moreInfo' => $dtoWordBody->moreInfo,
+$fileInfo = [
+    'type' => 'files->type', // required
+    'name' => 'files->name', // required
+    'mime' => 'files->mime',
+    'extension' => 'files->extension', // required
+    'size' => 'files->size', // required, unit: Byte
+    'md5' => 'files->md5',
+    'sha' => 'files->sha',
+    'shaType' => 'files->sha_type',
+    'path' => 'files->path', // required
+    'imageWidth' => 'Image Only: files->image_width',
+    'imageHeight' => 'Image Only: files->image_height',
+    'audioDuration' => 'Audio Only: files->audio_duration',
+    'videoDuration' => 'Video Only: files->video_duration',
+    'videoPosterPath' => 'Video Only: files->video_poster_path',
+    'moreInfo' => [
+        // files->more_info
+    ],
+    'transcodingState' => 'files->transcoding_state', // audio or video Only
+    'originalPath' => 'files->original_path',
+    'warningType' => 'files->warning_type',
+    'uploaded' => 'files->is_uploaded',
 ];
 
-$uploadFile = FileUtility::saveFileInfoToDatabase($bodyInfo, $diskPath, $file);
+$usageInfo = [
+    'usageType' => 'file_usages->usage_type',
+    'platformId' => 'file_usages->platform_id',
+    'tableName' => 'file_usages->table_name',
+    'tableColumn' => 'file_usages->table_column',
+    'tableId' => 'file_usages->table_id',
+    'tableKey' => 'file_usages->table_key',
+    'sortOrder' => 'file_usages->sort_order',
+    'aid' => 'file_usages->account_id',
+    'uid' => 'file_usages->user_id',
+    'remark' => 'file_usages->remark',
+];
+
+$fileModel = FileUtility::saveFileInfo($fileInfo, $usageInfo);
+```
+:::
+
+## Save File Usage Info
+
+```php
+FileUtility::saveFileUsageInfo($fileType, $fileId, $usageInfo);
+```
+
+::: details Example
+```php
+$usageInfo = [
+    'usageType' => 'file_usages->usage_type',
+    'platformId' => 'file_usages->platform_id',
+    'tableName' => 'file_usages->table_name',
+    'tableColumn' => 'file_usages->table_column',
+    'tableId' => 'file_usages->table_id',
+    'tableKey' => 'file_usages->table_key',
+    'sortOrder' => 'file_usages->sort_order',
+    'aid' => 'file_usages->account_id',
+    'uid' => 'file_usages->user_id',
+    'remark' => 'file_usages->remark',
+];
+
+$fileUsageModel = FileUtility::saveFileUsageInfo($fileType, $fileId, $usageInfo);
 ```
 :::
 

@@ -5,117 +5,158 @@
 ## 上传文件
 
 ```php
-FileUtility::uploadFile($bodyInfo, $file);
+FileUtility::uploadFile($bodyInfo, $diskConfig, $file);
 ```
 
 ::: details 查看示例
 ```php
 $bodyInfo = [
-    'usageType' => $dtoWordBody->usageType,
-    'platformId' => $dtoWordBody->platformId,
-    'tableName' => $dtoWordBody->tableName,
-    'tableColumn' => $dtoWordBody->tableColumn,
-    'tableId' => $dtoWordBody->tableId,
-    'tableKey' => $dtoWordBody->tableKey,
-    'aid' => $dtoWordBody->aid,
-    'uid' => $dtoWordBody->uid,
-    'type' => $dtoWordBody->type,
-    'md5' => $md5,
-    'sha' => $sha,
-    'shaType' => $shaType,
-    'videoDuration' => '',
-    'videoPosterPath' => '',
-    'audioDuration' => '',
-    'transcodingState' => '',
-    'moreInfo' => $dtoWordBody->moreInfo,
+    'platformId' => 'file_usages->platform_id',
+    'usageType' => 'file_usages->usage_type',
+    'tableName' => 'file_usages->table_name',
+    'tableColumn' => 'file_usages->table_column',
+    'tableId' => 'file_usages->table_id',
+    'tableKey' => 'file_usages->table_key',
+    'aid' => 'file_usages->account_id',
+    'uid' => 'file_usages->user_id',
+    'type' => 'files->type',
+    'md5' => 'files->md5',
+    'sha' => 'files->sha',
+    'shaType' => 'files->sha_type',
+    'warningType' => 'files->warning_type',
+    'moreInfo' => 'files->more_info',
 ];
 
-$uploadFile = FileUtility::uploadFile($bodyInfo, $dtoWordBody->file);
+$diskConfig = [
+    'driver' => 's3',
+    'key' => env('AWS_ACCESS_KEY_ID'),
+    'secret' => env('AWS_SECRET_ACCESS_KEY'),
+    'region' => env('AWS_DEFAULT_REGION'),
+    'bucket' => env('AWS_BUCKET'),
+    'url' => env('AWS_URL'),
+    'endpoint' => env('AWS_ENDPOINT'),
+    'use_path_style_endpoint' => env('AWS_USE_PATH_STYLE_ENDPOINT', false),
+    'throw' => false,
+];
+
+$fileModel = FileUtility::uploadFile($bodyInfo, $diskConfig, $dtoWordBody->file);
 ```
 :::
 
 ## 上传文件信息
 
 ```php
-FileUtility::uploadFileInfo($bodyInfo);
+FileUtility::uploadFileInfo($file, $fileInfo, $usageInfo);
 ```
 
 ::: details 查看示例
 ```php
-$bodyInfo = [
-    'usageType' => $dtoWordBody->usageType,
-    'platformId' => $dtoWordBody->platformId,
-    'tableName' => $dtoWordBody->tableName,
-    'tableColumn' => $dtoWordBody->tableColumn,
-    'tableId' => $dtoWordBody->tableId,
-    'tableKey' => $dtoWordBody->tableKey,
-    'aid' => $dtoWordBody->aid,
-    'uid' => $dtoWordBody->uid,
-    'type' => $dtoWordBody->type,
-    'fileInfo' => $dtoWordBody->fileInfo,
+$fileInfo = [
+    'type' => 'files->type',
+    'md5' => 'files->md5',
+    'sha' => 'files->sha',
+    'shaType' => 'files->sha_type',
+    'path' => 'files->path',
+    'audioDuration' => 'Audio Only: files->audio_duration',
+    'videoDuration' => 'Video Only: files->video_duration',
+    'videoPosterPath' => 'Video Only: files->video_poster_path',
+    'moreInfo' => [
+        // files->more_info
+    ],
+    'transcodingState' => 'files->transcoding_state', // audio or video Only
+    'originalPath' => 'files->original_path',
+    'warningType' => 'files->warning_type',
+    'uploaded' => 'files->is_uploaded',
 ];
 
-$uploadFileInfo = FileUtility::uploadFileInfo($bodyInfo);
+$usageInfo = [
+    'usageType' => 'file_usages->usage_type',
+    'platformId' => 'file_usages->platform_id',
+    'tableName' => 'file_usages->table_name',
+    'tableColumn' => 'file_usages->table_column',
+    'tableId' => 'file_usages->table_id',
+    'tableKey' => 'file_usages->table_key',
+    'sortOrder' => 'file_usages->sort_order',
+    'aid' => 'file_usages->account_id',
+    'uid' => 'file_usages->user_id',
+    'remark' => 'file_usages->remark',
+];
+
+$fileModel = FileUtility::uploadFileInfo($file, $fileInfo, $usageInfo);
 ```
 :::
 
-::: details 查看 fileInfo 信息结构
-```json
-[
-    {
-        "name": "存储到 files->name",
-        "mime": "存储到 files->mime",
-        "extension": "存储到 files->extension",
-        "size": "存储到 files->size", // 单位 Byte
-        "md5": "存储到 files->md5",
-        "sha": "存储到 files->sha",
-        "shaType": "存储到 files->sha_type",
-        "path": "存储到 files->path",
-        "imageWidth": "图片专用，存储到 files->image_width",
-        "imageHeight": "图片专用，存储到 files->image_height",
-        "videoDuration": "视频专用，存储到 files->video_duration",
-        "videoPosterPath": "视频专用，存储到 files->video_poster_path",
-        "audioDuration": "音频专用，存储到 files->audio_duration",
-        "transcodingState": "音视频专用，存储到 files->transcoding_state",
-        "moreInfo": {
-            // 扩展信息，存储到 files->more_info
-        },
-        "originalPath": "存储到 files->original_path",
-        "rating": "存储到 file_usages->rating",
-    }
-]
-```
-:::
-
-## 保存文件信息到数据库
+## 保存文件信息
 
 ```php
-FileUtility::saveFileInfoToDatabase($bodyInfo, $diskPath, $file);
+FileUtility::saveFileInfo($fileInfo, $usageInfo);
 ```
 
 ::: details 查看示例
 ```php
-$bodyInfo = [
-    'usageType' => $dtoWordBody->usageType,
-    'platformId' => $dtoWordBody->platformId,
-    'tableName' => $dtoWordBody->tableName,
-    'tableColumn' => $dtoWordBody->tableColumn,
-    'tableId' => $dtoWordBody->tableId,
-    'tableKey' => $dtoWordBody->tableKey,
-    'aid' => $dtoWordBody->aid,
-    'uid' => $dtoWordBody->uid,
-    'type' => $dtoWordBody->type,
-    'md5' => $md5,
-    'sha' => $sha,
-    'shaType' => $shaType,
-    'videoDuration' => '',
-    'videoPosterPath' => '',
-    'audioDuration' => '',
-    'transcodingState' => '',
-    'moreInfo' => $dtoWordBody->moreInfo,
+$fileInfo = [
+    'type' => 'files->type', // required
+    'name' => 'files->name', // required
+    'mime' => 'files->mime',
+    'extension' => 'files->extension', // required
+    'size' => 'files->size', // required, unit: Byte
+    'md5' => 'files->md5',
+    'sha' => 'files->sha',
+    'shaType' => 'files->sha_type',
+    'path' => 'files->path', // required
+    'imageWidth' => 'Image Only: files->image_width',
+    'imageHeight' => 'Image Only: files->image_height',
+    'audioDuration' => 'Audio Only: files->audio_duration',
+    'videoDuration' => 'Video Only: files->video_duration',
+    'videoPosterPath' => 'Video Only: files->video_poster_path',
+    'moreInfo' => [
+        // files->more_info
+    ],
+    'transcodingState' => 'files->transcoding_state', // audio or video Only
+    'originalPath' => 'files->original_path',
+    'warningType' => 'files->warning_type',
+    'uploaded' => 'files->is_uploaded',
 ];
 
-$uploadFile = FileUtility::saveFileInfoToDatabase($bodyInfo, $diskPath, $file);
+$usageInfo = [
+    'usageType' => 'file_usages->usage_type',
+    'platformId' => 'file_usages->platform_id',
+    'tableName' => 'file_usages->table_name',
+    'tableColumn' => 'file_usages->table_column',
+    'tableId' => 'file_usages->table_id',
+    'tableKey' => 'file_usages->table_key',
+    'sortOrder' => 'file_usages->sort_order',
+    'aid' => 'file_usages->account_id',
+    'uid' => 'file_usages->user_id',
+    'remark' => 'file_usages->remark',
+];
+
+$fileModel = FileUtility::saveFileInfo($fileInfo, $usageInfo);
+```
+:::
+
+## 保存文件使用信息
+
+```php
+FileUtility::saveFileUsageInfo($fileType, $fileId, $usageInfo);
+```
+
+::: details 查看示例
+```php
+$usageInfo = [
+    'usageType' => 'file_usages->usage_type',
+    'platformId' => 'file_usages->platform_id',
+    'tableName' => 'file_usages->table_name',
+    'tableColumn' => 'file_usages->table_column',
+    'tableId' => 'file_usages->table_id',
+    'tableKey' => 'file_usages->table_key',
+    'sortOrder' => 'file_usages->sort_order',
+    'aid' => 'file_usages->account_id',
+    'uid' => 'file_usages->user_id',
+    'remark' => 'file_usages->remark',
+];
+
+$fileUsageModel = FileUtility::saveFileUsageInfo($fileType, $fileId, $usageInfo);
 ```
 :::
 
