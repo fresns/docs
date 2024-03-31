@@ -31,6 +31,10 @@
 {
     "code": 0,
     "message": "ok",
-    "data": null
+    "data": {
+        // 通用数据结构->文件信息
+    }
 }
 ```
+
+- [通用数据结构->文件信息](../../reference/data/file.md)

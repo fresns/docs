@@ -31,6 +31,10 @@
 {
     "code": 0,
     "message": "ok",
-    "data": null
+    "data": {
+        // Common Data Structure -> File Info
+    }
 }
 ```
+
+- [Common Data Structure -> File Info](../../reference/data/file.md)
