@@ -49,6 +49,6 @@
 
 **微信小程序**
 
-- Platform ID: `7`
+- Platform ID: `11`
 - API ID: `lDQSbZ2Z`
 - API Key: `Rhfq8xDMthQKoP9f65hj4hVOWuJtXfhy`
