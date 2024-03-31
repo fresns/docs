@@ -45,7 +45,7 @@
     "data": {
         "fid": "String / File ID",
         "method": "String / Method",
-        "url": "String / Endpoint URL",
+        "url": "String / Upload Endpoint URL",
         "headers": "Object / Headers",
         "activeMinutes": "Number / Active Minutes",
         "expiration": "String / Expiration Datetime Y-m-d H:i:s"
