@@ -2,6 +2,7 @@
 
 - 存储服务商配置位置 `控制面板 > 系统设置 > 存储设置`
 - [查看插件配置信息](../configs/panel/storage.md)
+- 参考插件 [S3 Storage](https://github.com/fresns/plugins/tree/3.x/S3Storage)
 
 ## 路径规则
 
@@ -33,7 +34,7 @@ FileHelper::fresnsFileStoragePath($fileType, $usageType);
 
 > 由于 Fresns API 和编辑器采用的是基础表单上传模式，对于大文件会产生超时中断的风险，存储插件可以提供上传页面，在插件页集成 JS-SDK 实现大文件的分片和断点上传。
 
-- 路径参考 `/qiniu/upload?sign={sign}&config={uploadInfo}&postMessageKey={postMessageKey}`
+- 路径参考 `/s3-storage/upload?accessToken={accessToken}&uploadInfo={uploadInfo}&postMessageKey={postMessageKey}`
 - [路径中变量名介绍](https://docs.fresns.com/zh-Hans/clients/reference/callback/variables.html)
 
 ## 音视频被动功能
@@ -70,7 +71,6 @@ FileHelper::fresnsFileStoragePath($fileType, $usageType);
             - `files->mime`
             - `files->extension`
             - `files->size`
-            - `files->md5`
             - `files->sha`
             - `files->sha_type`
         - 5.1.4、修改转码状态 `files->transcoding_state = 3`
@@ -87,47 +87,6 @@ use App\Models\File;
 
 $file->getFileInfo();
 ```
-
-::: details 信息示例
-```json
-{
-    "fid": "files->fid",
-    "type": "files->type",
-    "status": "files->is_enabled",
-    "substitutionImageUrl": "文件无效提示图",
-    "sensitive": "files->is_sensitive",
-    "name": "files->name",
-    "mime": "files->mime",
-    "extension": "files->extension",
-    "size": "files->size",
-    "md5": "files->md5",
-    "sha": "files->sha",
-    "shaType": "files->sha_type",
-    "moreInfo": {
-        // 扩展信息 files->more_info
-    },
-    // 图片专用参数
-    "imageWidth": "files->image_width",
-    "imageHeight": "files->image_height",
-    "imageLong": "files->image_is_long",
-    "imageConfigUrl": "image_bucket_domain + 文件 path 字段 + image_thumb_config",
-    "imageRatioUrl": "image_bucket_domain + 文件 path 字段 + image_thumb_ratio",
-    "imageSquareUrl": "image_bucket_domain + 文件 path 字段 + image_thumb_square",
-    "imageBigUrl": "image_bucket_domain + 文件 path 字段 + image_thumb_big",
-    // 视频专用参数
-    "videoDuration": "files->video_duration",
-    "videoPosterUrl": "video_bucket_domain + 文件 video_poster_path 字段",
-    "videoUrl": "video_bucket_domain + 文件 path 字段",
-    // 音频专用参数
-    "audioDuration": "files->audio_duration",
-    "audioUrl": "audio_bucket_domain + 文件 path 字段",
-    // 文档专用参数
-    "documentPreviewUrl": "按规则替换后的链接",
-    // 音视频共有参数
-    "transcodingState": "files->transcoding_state"
-}
-```
-:::
 
 **源文件链接**
 

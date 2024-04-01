@@ -2,6 +2,7 @@
 
 - Storage Service Provider Configuration `Panel > Systems > Storage`
 - [View plugin configuration information](../configs/panel/storage.md)
+- Reference Plugin: [S3 Storage](https://github.com/fresns/plugins/tree/3.x/S3Storage)
 
 ## Path Rules
 
@@ -33,7 +34,7 @@ The access path to the plugin upload page is configured in the `accessPath` para
 
 > Since the Fresns API and editor use the basic form upload mode, there is a risk of timeout interruptions for large files. The storage plugin can provide an upload page that integrates JS-SDK on the plugin page to implement slicing and breakpoint uploads for large files.
 
-- Path Reference `/qiniu/upload?sign={sign}&config={uploadInfo}&postMessageKey={postMessageKey}`
+- Path Reference `/s3-storage/upload?accessToken={accessToken}&uploadInfo={uploadInfo}&postMessageKey={postMessageKey}`
 - [Introduction of variable names in paths](https://docs.fresns.com/clients/reference/callback/variables.html)
 
 ## Audio or video functions
@@ -70,7 +71,6 @@ The access path to the plugin upload page is configured in the `accessPath` para
             - `files->mime`
             - `files->extension`
             - `files->size`
-            - `files->md5`
             - `files->sha`
             - `files->sha_type`
         - 5.1.4 Modify the transcoding state as `files->transcoding_state = 3`
@@ -87,47 +87,6 @@ use App\Models\File;
 
 $file->getFileInfo();
 ```
-
-::: details Example of information
-```json
-{
-    "fid": "files->fid",
-    "type": "files->type",
-    "status": "files->is_enabled",
-    "substitutionImageUrl": "File expiration alert image",
-    "sensitive": "files->is_sensitive",
-    "name": "files->name",
-    "mime": "files->mime",
-    "extension": "files->extension",
-    "size": "files->size",
-    "md5": "files->md5",
-    "sha": "files->sha",
-    "shaType": "files->sha_type",
-    "moreInfo": {
-        // files->more_info
-    },
-    // Image Parameters
-    "imageWidth": "files->image_width",
-    "imageHeight": "files->image_height",
-    "imageLong": "files->image_is_long",
-    "imageConfigUrl": "image_bucket_domain + files->path + image_thumb_config",
-    "imageRatioUrl": "image_bucket_domain + files->path + image_thumb_ratio",
-    "imageSquareUrl": "image_bucket_domain + files->path + image_thumb_square",
-    "imageBigUrl": "image_bucket_domain + files->path + image_thumb_big",
-    // Video Parameters
-    "videoDuration": "files->video_duration",
-    "videoPosterUrl": "video_bucket_domain + file->video_poster_path",
-    "videoUrl": "video_bucket_domain + files->path",
-    // Audio Parameters
-    "audioDuration": "files->audio_duration",
-    "audioUrl": "audio_bucket_domain + files->path",
-    // Document Parameters
-    "documentPreviewUrl": "Links after replacement by rule",
-    // Audio or Video Parameter
-    "transcodingState": "files->transcoding_state"
-}
-```
-:::
 
 **Link to Original File**
 
