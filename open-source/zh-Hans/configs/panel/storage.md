@@ -92,7 +92,7 @@
 | 防盗链功能 | document_url_status | false | boolean | 使用状态 |
 | 防盗链 Key | document_url_key |  | string |  |
 | 防盗链签名有效期 | document_url_expire | 10 | number | 单位：分钟 |
-| 预览地址规则 | document_online_preview |  | string | 支持变量名 {docurl} 或 {fid} |
+| 文档预览插件 | document_preview_service |  | **plugin** | 用途场景 `documentPreview` |
 | 支持预览的扩展名 | document_preview_extension_names |  | string |  |
 
 - 支持的扩展名示例: `doc,docx,xls,xlsx,csv,<br>ppt,pptx,pps,ppts,<br>pdf,<br>txt,md,markdown,<br>rar,zip,7z,<br>epub,mobi`

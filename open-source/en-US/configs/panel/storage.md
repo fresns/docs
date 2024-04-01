@@ -92,7 +92,7 @@
 | Anti-leech Function | document_url_status | false | boolean | Use status |
 | Anti-leech Key | document_url_key |  | string |  |
 | Anti-leech Signature Expiration | document_url_expire | 10 | number | Unit: minutes |
-| Preview URL Rule | document_online_preview |  | string | Supports variable names `{docurl}` or `{fid}` |
+| Preview Plugin | document_preview_service |  | **plugin** | panelUsages `documentPreview` |
 | Supported Preview Extensions | document_preview_extension_names |  | string |  |
 
 - Supported Extensions: `doc,docx,xls,xlsx,csv,<br>ppt,pptx,pps,ppts,<br>pdf,<br>txt,md,markdown,<br>rar,zip,7z,<br>epub,mobi`

@@ -67,6 +67,7 @@ When the plugin is installed and published, static resources are distributed to 
 | Usage Key | Description | Control Panel Location |
 | --- | --- | ---|
 | storage | Storage Service Provider | Panel->Systems->Storage |
+| documentPreview | Document Preview Service | Panel->Systems->Storage->Document |
 | join | Configuration of the "private mode" registration function | Panel->Systems->General |
 | sendEmail | Email Service Provider | Panel->Systems->Send |
 | sendSms | SMS Service Provider | Panel->Systems->Send |
