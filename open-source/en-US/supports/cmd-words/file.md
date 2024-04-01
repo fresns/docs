@@ -25,7 +25,8 @@
         "tableName": "String / Table Name",
         "tableColumn": "String / Column Name",
         "tableId": "Number / Primary ID",
-        "tableKey": "String / FSID"
+        "tableKey": "String / FSID",
+        "maxUploadNumber": "Number / Max Upload Number"
     }
 }
 ```

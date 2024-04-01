@@ -44,9 +44,9 @@
                 "extensions": "String / Supported extensions, e.g., png,gif,jpg,jpeg,bmp,heic",
                 "inputAccept": "String / Supported extensions, e.g., image/png,image/gif,image/jpeg,image/jpeg,image/bmp",
                 "maxSize": "Number / Maximum file size, in MB",
+                "maxUploadNumber": "Number / Number of allowed uploads",
                 "uploadType": "String / Upload type: api, page, sdk",
-                "uploadUrl": "String / Address for page upload type",
-                "uploadNumber": "Number / Number of allowed uploads"
+                "uploadUrl": "String / Address for page upload type"
             },
             "video": {
                 "status": "Boolean / Enable videos",
@@ -54,9 +54,9 @@
                 "inputAccept": "String / Supported extensions, e.g., video/x-ms-wmv,application/vnd.rn-realmedia,video/quicktime,video/mpeg,video/mp4,video/3gpp,video/x-flv,video/x-msvideo,application/vnd.rn-realmedia-vbr",
                 "maxSize": "Number / Maximum file size, in MB",
                 "maxDuration": "Number / Maximum file duration, in seconds",
+                "maxUploadNumber": "Number / Number of allowed uploads",
                 "uploadType": "String / Upload type: api, page, sdk",
-                "uploadUrl": "String / Address for page upload type",
-                "uploadNumber": "Number / Number of allowed uploads"
+                "uploadUrl": "String / Address for page upload type"
             },
             "audio": {
                 "status": "Boolean / Enable audios",
@@ -64,18 +64,18 @@
                 "inputAccept": "String / Supported extensions, e.g., audio/mpeg,audio/x-wav,audio/mp4",
                 "maxSize": "Number / Maximum file size, in MB",
                 "maxDuration": "Number / Maximum file duration, in seconds",
+                "maxUploadNumber": "Number / Number of allowed uploads",
                 "uploadType": "String / Upload type: api, page, sdk",
                 "uploadUrl": "String / Address for page upload type",
-                "uploadNumber": "Number / Number of allowed uploads"
             },
             "document": {
                 "status": "Boolean / Enable documents",
                 "extensions": "String / Supported extensions, e.g., doc,docx,xls,xlsx,csv,ppt,pptx,pps,ppts,pdf,txt,md,markdown,rar,zip,7z,epub,mobi",
                 "inputAccept": "String / Supported extensions, e.g., application/msword,application/vnd.openxmlformats-officedocument.wordprocessingml.document,application/vnd.ms-excel",
                 "maxSize": "Number / Maximum file size, in MB",
+                "maxUploadNumber": "Number / Number of allowed uploads",
                 "uploadType": "String / Upload type: api, page, sdk",
-                "uploadUrl": "String / Address for page upload type",
-                "uploadNumber": "Number / Number of allowed uploads"
+                "uploadUrl": "String / Address for page upload type"
             },
             "title": {
                 "status": "Boolean / Enable titles",

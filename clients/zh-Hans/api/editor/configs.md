@@ -44,9 +44,9 @@
                 "extensions": "String / 支持的扩展名，示例 png,gif,jpg,jpeg,bmp,heic",
                 "inputAccept": "String / 支持的扩展名，示例 image/png,image/gif,image/jpeg,image/jpeg,image/bmp",
                 "maxSize": "Number / 最大文件尺寸，单位 MB",
+                "maxUploadNumber": "Number / 允许上传个数",
                 "uploadType": "String / 上传类型: api, page, sdk",
-                "uploadUrl": "String / page 上传类型的地址",
-                "uploadNumber": "Number / 允许上传个数"
+                "uploadUrl": "String / page 上传类型的地址"
             },
             "video": {
                 "status": "Boolean / 是否启用视频",
@@ -54,9 +54,9 @@
                 "inputAccept": "String / 支持的扩展名，示例 video/x-ms-wmv,application/vnd.rn-realmedia,video/quicktime,video/mpeg,video/mp4,video/3gpp,video/x-flv,video/x-msvideo,application/vnd.rn-realmedia-vbr",
                 "maxSize": "Number / 最大文件尺寸，单位 MB",
                 "maxDuration": "Number / 最大文件时长，单位 秒",
+                "maxUploadNumber": "Number / 允许上传个数",
                 "uploadType": "String / 上传类型: api, page, sdk",
-                "uploadUrl": "String / page 上传类型的地址",
-                "uploadNumber": "Number / 允许上传个数"
+                "uploadUrl": "String / page 上传类型的地址"
             },
             "audio": {
                 "status": "Boolean / 是否启用音频",
@@ -64,18 +64,18 @@
                 "inputAccept": "String / 支持的扩展名，示例 audio/mpeg,audio/x-wav,audio/mp4",
                 "maxSize": "Number / 最大文件尺寸，单位 MB",
                 "maxDuration": "Number / 最大文件时长，单位 秒",
+                "maxUploadNumber": "Number / 允许上传个数",
                 "uploadType": "String / 上传类型: api, page, sdk",
-                "uploadUrl": "String / page 上传类型的地址",
-                "uploadNumber": "Number / 允许上传个数"
+                "uploadUrl": "String / page 上传类型的地址"
             },
             "document": {
                 "status": "Boolean / 是否启用文档",
                 "extensions": "String / 支持的扩展名，示例 doc,docx,xls,xlsx,csv,ppt,pptx,pps,ppts,pdf,txt,md,markdown,rar,zip,7z,epub,mobi",
                 "inputAccept": "String / 支持的扩展名，示例 application/msword,application/vnd.openxmlformats-officedocument.wordprocessingml.document,application/vnd.ms-excel",
                 "maxSize": "Number / 最大文件尺寸，单位 MB",
+                "maxUploadNumber": "Number / 允许上传个数",
                 "uploadType": "String / 上传类型: api, page, sdk",
-                "uploadUrl": "String / page 上传类型的地址",
-                "uploadNumber": "Number / 允许上传个数"
+                "uploadUrl": "String / page 上传类型的地址"
             },
             "title": {
                 "status": "Boolean / 是否启用标题",

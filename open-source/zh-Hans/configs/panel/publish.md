@@ -46,13 +46,13 @@
 | 匿名 | post_editor_anonymous | false | boolean |  |
 | <hr> |  |  |  |  |
 | 图片上传方式 | post_editor_image_upload_type | api | string | `api` 接口<br>`page` 插件页<br>`sdk` s3 客户端 |
-| 图片上传个数 | post_editor_image_upload_number | 9 | number |  |
+| 图片上传个数 | post_editor_image_max_upload_number | 9 | number |  |
 | 视频上传方式 | post_editor_video_upload_type | api | string | `api` 接口<br>`page` 插件页<br>`sdk` s3 客户端 |
-| 视频上传个数 | post_editor_video_upload_number | 1 | number |  |
+| 视频上传个数 | post_editor_video_max_upload_number | 1 | number |  |
 | 音频上传方式 | post_editor_audio_upload_type | api | string | `api` 接口<br>`page` 插件页<br>`sdk` s3 客户端 |
-| 音频上传个数 | post_editor_audio_upload_number | 1 | number |  |
+| 音频上传个数 | post_editor_audio_max_upload_number | 1 | number |  |
 | 文档上传方式 | post_editor_document_upload_type | api | string | `api` 接口<br>`page` 插件页<br>`sdk` s3 客户端 |
-| 文档上传个数 | post_editor_document_upload_number | 10 | number |  |
+| 文档上传个数 | post_editor_document_max_upload_number | 10 | number |  |
 | 小组是否必选 | post_editor_group_required | false | boolean |  |
 | 标题输入框是否强显示 | post_editor_title_view | 1 | number | 1.默认显示<br>2.默认隐藏 |
 | 标题是否必填 | post_editor_title_required | false | boolean |  |
@@ -101,11 +101,11 @@
 | 匿名 | comment_editor_anonymous | false | boolean |  |
 | <hr> |  |  |  |  |
 | 图片上传方式 | comment_editor_image_upload_type | api | string | `api` 接口<br>`page` 插件页<br>`sdk` s3 客户端 |
-| 图片上传个数 | comment_editor_image_upload_number | 9 | number |  |
+| 图片上传个数 | comment_editor_image_max_upload_number | 9 | number |  |
 | 视频上传方式 | comment_editor_video_upload_type | api | string | `api` 接口<br>`page` 插件页<br>`sdk` s3 客户端 |
-| 视频上传个数 | comment_editor_video_upload_number | 1 | number |  |
+| 视频上传个数 | comment_editor_video_max_upload_number | 1 | number |  |
 | 音频上传方式 | comment_editor_audio_upload_type | api | string | `api` 接口<br>`page` 插件页<br>`sdk` s3 客户端 |
-| 音频上传个数 | comment_editor_audio_upload_number | 1 | number |  |
+| 音频上传个数 | comment_editor_audio_max_upload_number | 1 | number |  |
 | 文档上传方式 | comment_editor_document_upload_type | api | string | `api` 接口<br>`page` 插件页<br>`sdk` s3 客户端 |
-| 文档上传个数 | comment_editor_document_upload_number | 10 | number |  |
+| 文档上传个数 | comment_editor_document_max_upload_number | 10 | number |  |
 | 评论字数限制 | comment_editor_content_length | 1000 | number |  |

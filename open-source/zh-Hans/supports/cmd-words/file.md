@@ -25,7 +25,8 @@
         "tableName": "String / 表名",
         "tableColumn": "String / 字段名",
         "tableId": "Number / 主键 ID",
-        "tableKey": "String / FSID"
+        "tableKey": "String / FSID",
+        "maxUploadNumber": "Number / 剩下可上传数量"
     }
 }
 ```
