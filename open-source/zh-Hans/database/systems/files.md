@@ -13,9 +13,8 @@ aside: false
 | mime | varchar(255) | 文件 Mime 类型 |  | NO | 比如：image/jpeg 或 video/mp4 |
 | extension | varchar(32) | 文件扩展名 |  | NO | 比如：jpg 或 jpeg |
 | size | int *UNSIGNED* | 文件大小 |  | NO | 单位 Byte |
-| md5 | varchar(128) | 文件 md5 |  | YES | 文件 md5 编码 |
 | sha | varchar(128) | 文件 sha |  | YES | 文件 sha 编码 |
-| sha_type | varchar(16) | 文件 sha 类型 |  | YES | 比如 SHA1 或 SHA-256 |
+| sha_type | varchar(16) | 文件 sha 类型 |  | YES | 比如 `sha1` 或 `sha256` |
 | path | varchar(255) | 文件路径 |  | NO | **相对路径** |
 | image_width | smallint *UNSIGNED* | 图片宽度 |  | YES | 图片文件专用：像素 px |
 | image_height | smallint *UNSIGNED* | 图片高度 |  | YES | 图片文件专用：像素 px |
@@ -23,7 +22,6 @@ aside: false
 | audio_duration | smallint *UNSIGNED* | 音频时长 |  | YES | 单位：秒，音频文件专用 |
 | video_duration | smallint *UNSIGNED* | 视频时长 |  | YES | 单位：秒，视频文件专用 |
 | video_poster_path | varchar(255) | 视频封面图 |  | YES | 视频封面图路径 |
-| more_info | json | 备用字段 |  | YES | 比如某种客户端或编辑器，可以发表像小红书那样图片带标签的内容，这样这里存储的是标签信息 |
 | transcoding_state | tinyint *UNSIGNED* | 音视频附件转码状态 | 1 | YES | 转码状态：1.待转码 2.转码中 3.转码完成 4.转码失败 |
 | transcoding_reason | varchar(255) | 音视频附件转码失败原因 |  | YES | 转码失败原因 |
 | original_path | varchar(255) | 原始文件路径 |  | YES | **相对路径**<br>如果文件涉及转码，转码前的文件存储路径<br>没有则留空 |
