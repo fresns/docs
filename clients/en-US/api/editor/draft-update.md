@@ -35,9 +35,9 @@
 | commentPrivate | Boolean | *optional* | `Post` Are all comments private<br>`Comment` Is this comment private<br>Private is only visible to the author of the comment and the author of the post. |
 | gtid | String | *optional* | Geotag ID |
 | locationInfo | Object | *optional* | Location Info |
+| fileInfo | Array | *optional* | File Info |
 | archives | Array | *optional* | Archive Parameter |
 | extends | Array | *optional* | Extend Content |
-| fileOrder | Array | *optional* | File Sort Order |
 | deleteLocation | Boolean | *optional* | Delete `locationInfo` |
 | deleteArchive | String | *optional* | Delete archive parameter, pass `code` as parameter |
 | deleteExtend | String | *optional* | Delete extend content, pass `eid` as parameter |
@@ -76,6 +76,16 @@
 }
 ```
 
+```json [File Info]
+[
+    {
+        "fid": "fid",
+        "sortOrder": 9,
+        "moreInfo": {} // Replace with parameter (null value are replaced with null), no parameter are changed
+    }
+]
+```
+
 ```json [Extend Archive Info]
 [
     {
@@ -94,15 +104,6 @@
         "canDelete": true, // Can user delete
         "sortOrder": 9,
         "fskey": null
-    }
-]
-```
-
-```json [File Sort Order]
-[
-    {
-        "fid": "fid",
-        "sortOrder": 9
     }
 ]
 ```

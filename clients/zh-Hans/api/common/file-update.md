@@ -19,7 +19,6 @@
 | --- | --- | --- | --- |
 | uploaded | Boolean | NO | [S3 上传成功](file-upload-token.md) |
 | warning | String | NO | 文件警告 `none`, `nudity`, `violence`, `sensitive` |
-| moreInfo | String | NO | 文件自定义信息，转换为字符串传参 (Object to String) |
 
 **接口使用说明**
 

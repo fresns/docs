@@ -35,9 +35,9 @@
 | commentPrivate | Boolean | NO | `帖子使用` 所有评论是否为私有<br>`评论使用` 本条评论是否为私有<br>私有则仅评论作者和帖子作者可见 |
 | gtid | String | NO | 地理位置 ID |
 | locationInfo | Object | NO | 地理位置信息 |
+| fileInfo | Array | NO | 文件信息 |
 | archives | Array | NO | 扩展参数 |
 | extends | Array | NO | 扩展内容 |
-| fileOrder | Array | NO | 文件排列编号 |
 | deleteLocation | Boolean | NO | 删除位置信息 |
 | deleteArchive | String | NO | 删除扩展参数，传参 `code` |
 | deleteExtend | String | NO | 删除扩展内容，传参 `eid` |
@@ -101,6 +101,17 @@
 }
 ```
 
+```json [文件信息]
+[
+    {
+        "fid": "fid",
+        "warning": "", // 文件警告: none, nudity, violence, sensitive
+        "sortOrder": 9, // 排序
+        "moreInfo": {} // 有参数则替换（空值则替换为空），无参数则不修改
+    }
+]
+```
+
 ```json [扩展参数示例]
 [
     {
@@ -119,15 +130,6 @@
         "canDelete": true, // 用户是否可以直接删除
         "sortOrder": 9, // 排序
         "fskey": null
-    }
-]
-```
-
-```json [文件排序]
-[
-    {
-        "fid": "fid",
-        "sortOrder": 9
     }
 ]
 ```

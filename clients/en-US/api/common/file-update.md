@@ -19,7 +19,6 @@
 | --- | --- | --- | --- |
 | uploaded | Boolean | *optional* | [S3 uploaded successfully](file-upload-token.md) |
 | warning | String | *optional* | File Warning `none`, `nudity`, `violence`, `sensitive` |
-| moreInfo | String | *optional* | File custom information (Object to String) |
 
 **Request Description**
 

@@ -15,12 +15,8 @@ aside: false
     "mime": "String / 文件扩展名",
     "extension": "String / 文件后缀名",
     "size": "String / 大小",
-    "md5": "String / 文件 md5 编码",
     "sha": "String / 文件 sha 编码",
     "shaType": "String / 文件 sha 类型",
-    "moreInfo": {
-        // 扩展信息 files->more_info
-    },
     // 图片专用参数
     "imageWidth": "Number / 图片宽度",
     "imageHeight": "Number / 图片高度",
@@ -38,6 +34,11 @@ aside: false
     // 文档专用参数
     "documentPreviewUrl": "String / 文件预览链接",
     // 音视频共有参数
-    "transcodingState": "Number / 音视频转码状态 1.待转码 2.转码中 3.转码完成 4.转码失败"
+    "transcodingState": "Number / 音视频转码状态 1.待转码 2.转码中 3.转码完成 4.转码失败",
+    // 帖子和评论专用
+    "sortOrder": "Number / 排序",
+    "moreInfo": {
+        // 更多信息
+    }
 }
 ```

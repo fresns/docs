@@ -15,12 +15,8 @@ aside: false
     "mime": "String / File MIME type",
     "extension": "String / File extension",
     "size": "String / Size",
-    "md5": "String / File md5 encoding",
     "sha": "String / File sha encoding",
     "shaType": "String / File sha type",
-    "moreInfo": {
-        // files->more_info
-    },
     // Image Parameters
     "imageWidth": "Number / Image width",
     "imageHeight": "Number / Image height",
@@ -38,6 +34,11 @@ aside: false
     // Document Parameters
     "documentPreviewUrl": "String / Document preview URL",
     // Audio or Video Parameter
-    "transcodingState": "Number / Audio or video transcoding status 1.Pending 2.Transcoding 3.Transcoding complete 4.Transcoding failed"
+    "transcodingState": "Number / Audio or video transcoding status 1.Pending 2.Transcoding 3.Transcoding complete 4.Transcoding failed",
+    // Post And Comment
+    "sortOrder": "Number / Sort Order",
+    "moreInfo": {
+        // More Info
+    }
 }
 ```

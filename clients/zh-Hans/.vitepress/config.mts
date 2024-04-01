@@ -124,7 +124,7 @@ function sidebarApi() {
         { text: '命令字请求', link: '/api/common/cmd-word.md' },
         { text: '文件: S3 上传令牌', link: '/api/common/file-upload-token.md' },
         { text: '文件: 上传文件', link: '/api/common/file-upload.md' },
-        { text: '文件: 更新文件信息', link: '/api/common/file-info.md' },
+        { text: '文件: 更新文件信息', link: '/api/common/file-update.md' },
         { text: '文件: 文件下载链接', link: '/api/common/file-link.md' },
         { text: '文件: 下载过文件的用户', link: '/api/common/file-users.md' },
       ]
