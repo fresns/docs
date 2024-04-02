@@ -41,7 +41,7 @@
 | 文件系统磁盘 | video_filesystem_disk |  | string | `local` 或 `remote` |
 | 视频支持的扩展名 | video_extension_names |  | string | 以英文逗号 , 隔开 |
 | 支持的最大尺寸 | video_max_size | 50 | number | 单位：MB |
-| 视频支持的最大时长 | video_max_time | 60 | number | 单位：秒 |
+| 视频支持的最大时长 | video_max_duration | 60 | number | 单位：秒 |
 | 防盗链功能 | video_url_status | false | boolean | 使用状态 |
 | 防盗链 Key | video_url_key |  | string |  |
 | 防盗链签名有效期 | video_url_expire | 10 | number | 单位：分钟 |
@@ -66,7 +66,7 @@
 | 文件系统磁盘 | audio_filesystem_disk |  | string | `local` 或 `remote` |
 | 音频支持的扩展名 | audio_extension_names |  | string | 以英文逗号 , 隔开 |
 | 支持的最大尺寸 | audio_max_size | 50 | number | 单位：MB |
-| 音频支持的最大时长 | audio_max_time | 60 | number | 单位：秒 |
+| 音频支持的最大时长 | audio_max_duration | 60 | number | 单位：秒 |
 | 防盗链功能 | audio_url_status | false | boolean | 使用状态 |
 | 防盗链 Key | audio_url_key |  | string |  |
 | 防盗链签名有效期 | audio_url_expire | 10 | number | 单位：分钟 |

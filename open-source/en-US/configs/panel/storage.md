@@ -41,7 +41,7 @@
 | Filesystem Disk | video_filesystem_disk |  | string | `local` or `remote` |
 | Supported Extensions | video_extension_names |  | string | Separated by English commas `,` |
 | Supported Maximum Size | video_max_size | 50 | number | Unit: MB |
-| Supported Maximum Video Length | video_max_time | 60 | number | Unit: seconds |
+| Supported Maximum Video Length | video_max_duration | 60 | number | Unit: seconds |
 | Anti-leech Function | video_url_status | false | boolean | Use status |
 | Anti-leech Key | video_url_key |  | string |  |
 | Anti-leech Signature Expiration | video_url_expire | 10 | number | Unit: minutes |
@@ -66,7 +66,7 @@
 | Filesystem Disk | audio_filesystem_disk |  | string | `local` or `remote` |
 | Supported Extensions | audio_extension_names |  | string | Separated by English commas `,` |
 | Supported Maximum Size | audio_max_size | 50 | number | Unit: MB |
-| Supported Maximum Audio Length | audio_max_time | 60 | number | Unit: seconds |
+| Supported Maximum Audio Length | audio_max_duration | 60 | number | Unit: seconds |
 | Anti-leech Function | audio_url_status | false | boolean | Use status |
 | Anti-leech Key | audio_url_key |  | string |  |
 | Anti-leech Signature Expiration | audio_url_expire | 10 | number | Unit: minutes |
