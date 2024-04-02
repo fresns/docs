@@ -445,7 +445,7 @@
 | editorUploadTipExtensions | Extensions |
 | editorUploadTipMaxSize | Max size |
 | editorUploadTipMaxDuration | Max time |
-| editorUploadTipNumber | Max number |
+| editorUploadTipMaxNumber | Max number |
 | editorVideoPlayTip | Upload successfully and playable after publication |
 | editorFileWarning | File Warning |
 | editorFileWarningDesc | Put a content warning on this file |
