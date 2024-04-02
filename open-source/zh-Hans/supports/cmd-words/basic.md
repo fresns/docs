@@ -66,7 +66,7 @@
 用户将通过 URL 访问插件页面，URL 中会传参凭证信息，用于一键登录。
 
 - 1、先使用 URL Encode 解码 `{accessToken}` 变量名的值，得到 base64 加密字符串
-- 2、再使用 base64 解密字符串，得到 json object 格式的 `headers` 数据（包括 MD5 签名）
+- 2、再使用 base64 解密字符串，得到 json object 格式的 `headers` 数据
 - 3、获取 headers 中生成签名的信息，校验签名是否正确，正确则 `code` 为 `0`
 - 4、无论是否正确，都输出 headers 信息，格式见下方结果示例。
 :::

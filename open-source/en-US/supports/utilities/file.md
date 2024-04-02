@@ -20,7 +20,6 @@ $bodyInfo = [
     'aid' => 'file_usages->account_id',
     'uid' => 'file_usages->user_id',
     'type' => 'files->type',
-    'md5' => 'files->md5',
     'sha' => 'files->sha',
     'shaType' => 'files->sha_type',
     'warningType' => 'files->warning_type',
@@ -53,7 +52,6 @@ FileUtility::uploadFileInfo($file, $fileInfo, $usageInfo);
 ```php
 $fileInfo = [
     'type' => 'files->type',
-    'md5' => 'files->md5',
     'sha' => 'files->sha',
     'shaType' => 'files->sha_type',
     'path' => 'files->path',
@@ -100,7 +98,6 @@ $fileInfo = [
     'mime' => 'files->mime',
     'extension' => 'files->extension', // required
     'size' => 'files->size', // required, unit: Byte
-    'md5' => 'files->md5',
     'sha' => 'files->sha',
     'shaType' => 'files->sha_type',
     'path' => 'files->path', // required

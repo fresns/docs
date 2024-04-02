@@ -24,7 +24,6 @@
 | mime | String | **required** | File Mime Type |
 | extension | String | **required** | File Extension Name |
 | size | Number | **required** | in `Byte` |
-| md5 | String | *optional* | File MD5 |
 | sha | String | *optional* | File SHA |
 | shaType | String | *optional* | File SHA Type |
 | width | Number | *optional* | `Image-Only`, in `px` |

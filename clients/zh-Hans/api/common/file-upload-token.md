@@ -24,7 +24,6 @@
 | mime | String | YES | 文件 Mime 类型 |
 | extension | String | YES | 文件扩展名 |
 | size | Number | YES | 单位 `Byte` |
-| md5 | String | NO | 文件 MD5 |
 | sha | String | NO | 文件 SHA |
 | shaType | String | NO | 文件 SHA 类型 |
 | width | Number | NO | 图片专用，单位 `px` |
