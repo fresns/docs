@@ -28,7 +28,7 @@
 - 上传文件 `uploadType`
     - `api` 使用上传接口 [/api/fresns/v1/common/file-upload](../common/file-upload.md)
     - `page` 使用 WebView 访问 `uploadUrl` 参数的地址上传，规则见[回调返参](../../reference/callback/index.md)
-    - `sdk` 使用 [S3 SDK 上传](../common/file-upload-token.md)，上传完成后，更新文件信息为上传成功 [/api/fresns/v1/common/file-info](../common/file-info.md)
+    - `sdk` 使用 [S3 SDK 上传](../common/file-upload-token.md)，上传完成后，更新文件信息为上传成功 [/api/fresns/v1/common/file-info](../common/file-update.md)
 
 ## 返回结果
 
