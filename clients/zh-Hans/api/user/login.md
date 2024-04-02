@@ -35,7 +35,7 @@
             "uidToken": "String / 用户登录凭证",
             "expiredHours": "Number / 有效期小时数，null 代表永久有效",
             "expiredDays": "Number / 有效期天数，null 代表永久有效",
-            "expiredDateTime": "String / 凭证有效时间，null 代表永久有效，格式为 Y-m-d H:i:s"
+            "expiredDateTime": "String / 凭证有效时间，null 代表永久有效，格式为 Y-m-d H:i:s" // UTC+0
         },
         "detail": {
             // 通用数据结构->用户信息

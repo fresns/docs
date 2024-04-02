@@ -35,7 +35,7 @@
             "uidToken": "String / User Token",
             "expiredHours": "Number / Validity period in hours, null for permanent validity",
             "expiredDays": "Number / Validity period in days, null for permanent validity",
-            "expiredDateTime": "String / token validity time, null for permanent validity, format: Y-m-d H:i:s"
+            "expiredDateTime": "String / token validity time, null for permanent validity, format: Y-m-d H:i:s" // UTC+0
         },
         "detail": {
             // Common Data Structure -> User Info

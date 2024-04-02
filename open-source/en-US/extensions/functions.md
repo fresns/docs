@@ -128,7 +128,7 @@ $wordBody = [
         "uidToken": "String / User Token",
         "expiredHours": "Number / Expiration hours, null indicates permanent validity",
         "expiredDays": "Number / Expiration days, null indicates permanent validity",
-        "expiredDateTime": "String / Token expiration time, null indicates permanent validity, format is Y-m-d H:i:s",
+        "expiredDateTime": "String / Token expiration time, null indicates permanent validity, format is Y-m-d H:i:s", // UTC+0
     ],
     'accountDetail' => [
         // Common Data Structure -> Account Info

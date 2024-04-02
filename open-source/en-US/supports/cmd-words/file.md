@@ -55,7 +55,7 @@
         "url": "String / Endpoint URL",
         "headers": "Object / Headers",
         "activeMinutes": "Number / Active Minutes",
-        "expiration": "String / Expiration Datetime Y-m-d H:i:s"
+        "expiration": "String / Expiration Datetime Y-m-d H:i:s" // UTC+0
     }
 }
 ```

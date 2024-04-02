@@ -55,7 +55,7 @@
         "url": "String / 请求地址",
         "headers": "Object / 请求标头",
         "activeMinutes": "Number / 有效期分钟数",
-        "expiration": "String / 到期时间 Y-m-d H:i:s"
+        "expiration": "String / 到期时间 Y-m-d H:i:s" // UTC+0
     }
 }
 ```
