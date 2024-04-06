@@ -56,7 +56,6 @@
                     "extensions": "String / 支持的扩展名，示例 wmv,rm,mov,mpeg,mp4,3gp,flv,avi,rmvb",
                     "inputAccept": "String / 支持的扩展名，示例 video/x-ms-wmv,application/vnd.rn-realmedia,video/quicktime,video/mpeg,video/mp4,video/3gpp,video/x-flv,video/x-msvideo,application/vnd.rn-realmedia-vbr",
                     "maxSize": "Number / 最大文件尺寸，单位 MB",
-                    "maxDuration": "Number / 最大文件时长，单位 秒",
                     "uploadType": "String / 上传类型: api, page, sdk",
                     "uploadUrl": "String / page 上传类型的地址"
                 },
@@ -65,7 +64,6 @@
                     "extensions": "String / 支持的扩展名，示例 mp3,wav,m4a",
                     "inputAccept": "String / 支持的扩展名，示例 audio/mpeg,audio/x-wav,audio/mp4",
                     "maxSize": "Number / 最大文件尺寸，单位 MB",
-                    "maxDuration": "Number / 最大文件时长，单位 秒",
                     "uploadType": "String / 上传类型: api, page, sdk",
                     "uploadUrl": "String / page 上传类型的地址"
                 },
