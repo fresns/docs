@@ -53,7 +53,7 @@
 ::: code-group
 ```json [位置信息示例: en]
 {
-    "langTag": "", // 以下信息文字是什么语言，留空则使用 X-Fresns-Client-Lang-Tag
+    "langTag": "en", // 以下信息文字是什么语言，留空则使用 X-Fresns-Client-Lang-Tag
     "name": "Cupertino Library", // 必须
     "description": "",
     "placeId": "TRDucfBPkhuzzR9a7", // 参考 Google Map
@@ -78,14 +78,14 @@
 
 ```json [位置信息示例: zh-Hans]
 {
-    "langTag": "", // 以下信息文字是什么语言，留空则使用 X-Fresns-Client-Lang-Tag
-    "name": "东方之门",
+    "langTag": "zh-Hans", // 以下信息文字是什么语言，留空则使用 X-Fresns-Client-Lang-Tag
+    "name": "东方之门", // 必须
     "description": "",
     "placeId": "B020017GRH", // 参考 Google Map
     "placeType": "building", // 参考 Google Map
-    "mapId": 4,
-    "latitude": 31.299,
-    "longitude": 120.585,
+    "mapId": 4, // 必须
+    "latitude": 31.299, // 必须
+    "longitude": 120.585, // 必须
     "continent": "亚洲",
     "continentCode": "AS",
     "country": "中国",

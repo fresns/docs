@@ -53,7 +53,7 @@
 ::: code-group
 ```json [Location Info]
 {
-    "langTag": "", // What language this location text is in, if no value then use X-Fresns-Client-Lang-Tag
+    "langTag": "en", // What language this location text is in, if no value then use X-Fresns-Client-Lang-Tag
     "name": "Cupertino Library", // required
     "description": "",
     "placeId": "TRDucfBPkhuzzR9a7", // Reference: Google Map
