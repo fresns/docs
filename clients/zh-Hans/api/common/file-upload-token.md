@@ -1,8 +1,8 @@
-# 文件 S3 上传令牌
+# 生成 S3 上传文件令牌
 
 - 接口地址：`/api/fresns/v1/common/file/upload-token`
-- 请求方式：`GET`
-- 传参方式：`Query`
+- 请求方式：`POST`
+- 传参方式：`application/json`
 
 ## Headers 可选参数
 
@@ -13,7 +13,7 @@
 | X-Fresns-Uid | YES | YES |
 | X-Fresns-Uid-Token | YES | YES |
 
-## Query 参数
+## Body 参数
 
 | 参数名 | 类型 | 是否必传 | 说明 |
 | --- | --- | --- | --- |

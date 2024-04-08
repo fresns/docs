@@ -1,8 +1,8 @@
-# File S3 Upload Token
+# Make S3 Upload File Token
 
 - Endpoint Path: `/api/fresns/common/v1/file/upload-token`
-- Method: `GET`
-- Request: `Query`
+- Method: `POST`
+- Request: `application/json`
 
 ## Headers Optional Parameter
 
@@ -13,7 +13,7 @@
 | X-Fresns-Uid | **required** | **required** |
 | X-Fresns-Uid-Token | **required** | **required** |
 
-## Query Params
+## Body Params
 
 | Key | Type | Required | Description |
 | --- | --- | --- | --- |

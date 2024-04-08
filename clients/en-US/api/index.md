@@ -21,7 +21,7 @@
 | `GET` | /api/fresns/v1/common/input-tips | Input Tips |
 | `GET` | /api/fresns/v1/common/callback | App or Plugin Callback |
 | `POST` | /api/fresns/v1/common/cmd-word | Command Word Request |
-| `GET` | /api/fresns/v1/common/file/upload-token | File: S3 Upload Token |
+| `POST` | /api/fresns/v1/common/file/upload-token | File: Make S3 Upload Token |
 | `POST` | /api/fresns/v1/common/file/upload | File: Upload |
 | `PATCH` | /api/fresns/v1/common/file/`{fid}`/info | File: Update Info |
 | `GET` | /api/fresns/v1/common/file/`{fid}`/link | File: Download Link |

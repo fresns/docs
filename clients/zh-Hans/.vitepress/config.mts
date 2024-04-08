@@ -122,7 +122,7 @@ function sidebarApi() {
         { text: '输入提示信息', link: '/api/common/input-tips.md' },
         { text: '回调返参查询', link: '/api/common/callback.md' },
         { text: '命令字请求', link: '/api/common/cmd-word.md' },
-        { text: '文件: S3 上传令牌', link: '/api/common/file-upload-token.md' },
+        { text: '文件: 生成 S3 上传令牌', link: '/api/common/file-upload-token.md' },
         { text: '文件: 上传文件', link: '/api/common/file-upload.md' },
         { text: '文件: 更新文件信息', link: '/api/common/file-update.md' },
         { text: '文件: 文件下载链接', link: '/api/common/file-link.md' },
