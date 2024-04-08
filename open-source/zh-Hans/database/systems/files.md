@@ -13,7 +13,6 @@ aside: false
 | mime | varchar(255) | 文件 Mime 类型 |  | NO | 比如：image/jpeg 或 video/mp4 |
 | extension | varchar(32) | 文件扩展名 |  | NO | 比如：jpg 或 jpeg |
 | size | int *UNSIGNED* | 文件大小 |  | NO | 单位 Byte |
-| is_long_image | tinyint *UNSIGNED* | 是否长图 | 0 | NO | 图片文件专用<br>0.否 / 1.是 |
 | width | smallint *UNSIGNED* | 宽度 |  | YES | 图片和视频文件专用：像素 px |
 | height | smallint *UNSIGNED* | 高度 |  | YES | 图片和视频文件专用：像素 px |
 | duration | smallint *UNSIGNED* | 音视频时长 |  | YES | 单位：秒，音视频文件专用 |
@@ -25,6 +24,7 @@ aside: false
 | transcoding_reason | varchar(255) | 音视频附件转码失败原因 |  | YES | 转码失败原因 |
 | video_poster_path | varchar(255) | 视频封面图 |  | YES | 视频封面图路径 |
 | original_path | varchar(255) | 原始文件路径 |  | YES | **相对路径**<br>如果文件涉及转码，转码前的文件存储路径<br>没有则留空 |
+| is_long_image | tinyint *UNSIGNED* | 是否长图 | 0 | NO | 图片文件专用<br>0.否 / 1.是 |
 | is_uploaded | tinyint *UNSIGNED* | 是否上传 | 1 | NO | 0.否 / 1.是 |
 | is_enabled | tinyint *UNSIGNED* | 是否有效 | 1 | NO | 0.无效 / 1.有效 |
 | physical_deletion | tinyint *UNSIGNED* | 物理删除状态 | 0 | NO | 0.否 / 1.是（已物理删除文件） |

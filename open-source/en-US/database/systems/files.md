@@ -13,7 +13,6 @@ aside: false
 | mime | varchar(255) | File Mime Type |  | NO | For example: image/jpeg or video/mp4 |
 | extension | varchar(32) | File Extension Name |  | NO | For example: jpg or jpeg |
 | size | int *UNSIGNED* | File Size |  | NO | Unit Byte |
-| is_long_image | tinyint *UNSIGNED* | Is Long Image | 0 | NO | Image file specific<br>0.No / 1.Yes |
 | width | smallint *UNSIGNED* | Image Width |  | YES | Image file specific: pixels px |
 | height | smallint *UNSIGNED* | Image Height |  | YES | Image file specific: pixels px |
 | duration | smallint *UNSIGNED* | Audio and Video Duration |  | YES | Unit: seconds |
@@ -25,6 +24,7 @@ aside: false
 | transcoding_reason | varchar(255) | Audio or Video Attachment Transcoding Failure Reason |  | YES | Transcoding failure reason |
 | video_poster_path | varchar(255) | Video Cover Image |  | YES | Video cover image path |
 | original_path | varchar(255) | Original File Path |  | YES | **Relative path**<br>If the file involves transcoding, the storage path of the file before transcoding<br>If not, leave empty |
+| is_long_image | tinyint *UNSIGNED* | Is Long Image | 0 | NO | Image file specific<br>0.No / 1.Yes |
 | is_uploaded | tinyint *UNSIGNED* | Is Uploaded | 1 | NO | 0.No / 1.Yes |
 | is_enabled | tinyint *UNSIGNED* | Is Valid | 1 | NO | 0.Invalid / 1.Valid |
 | physical_deletion | tinyint *UNSIGNED* | Physical Deletion Status | 0 | NO | 0.No / 1.Yes (File physically deleted) |
