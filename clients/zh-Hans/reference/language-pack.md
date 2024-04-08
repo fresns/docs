@@ -405,6 +405,25 @@
 | notificationQuoted | 引用了你 |
 | notificationFromContentMentionYou | 一条提及你的内容 |
 
+## 文件
+
+| 键名 | 键值 |
+| --- | --- |
+| upload | 上传 |
+| uploadButton | 确认上传 |
+| uploadTip | 请选择上传资源 |
+| uploadTipExtensions | 支持的扩展名 |
+| uploadTipMaxSize | 支持的最大尺寸 |
+| uploadTipMaxDuration | 支持的最长时间 |
+| uploadTipMaxNumber | 支持上传的数量 |
+| uploadWarningExtension | 该文件类型不在允许上传的范围内 |
+| uploadWarningMaxSize | 文件尺寸超出设置的限制 |
+| uploadWarningMaxDuration | 文件时长超出设置的限制 |
+| uploadWarningMaxNumber | 文件数量超出设置的限制 |
+| fileWarning | 内容警告 |
+| fileWarningDesc | 给文件添加警告 |
+| fileWarningTip | 选择一个类别，我们就会在文件上加上警告。这可以帮助人们避开他们不想看到的内容。 |
+
 ## 编辑器
 
 | 键名 | 键值 |
@@ -431,17 +450,7 @@
 | editorAnonymous | 是否匿名 |
 | editorCommentDisable | 禁止评论 |
 | editorCommentPrivate | 仅帖子作者可见 |
-| editorUpload | 上传 |
-| editorUploadButton | 确认上传 |
-| editorUploadTip | 请选择上传资源 |
-| editorUploadTipExtensions | 支持的扩展名 |
-| editorUploadTipMaxSize | 支持的最大尺寸 |
-| editorUploadTipMaxDuration | 支持的最长时间 |
-| editorUploadTipMaxNumber | 支持上传的数量 |
 | editorVideoPlayTip | 上传成功，发表后可播放 |
-| editorFileWarning | 内容警告 |
-| editorFileWarningDesc | 给文件添加警告 |
-| editorFileWarningTip | 选择一个类别，我们就会在文件上加上警告。这可以帮助人们避开他们不想看到的内容。 |
 | editorLimitTitle | 发表限制提醒 |
 | editorLimitTypeName | 限制类型 |
 | editorLimitType1Desc | 指定日期范围内限制 |

@@ -413,6 +413,25 @@
 | notificationQuoted | Quoted you |
 | notificationFromContentMentionYou | a content that mention you |
 
+## File
+
+| Key | Value |
+| --- | --- |
+| upload | Upload |
+| uploadButton | Confirm |
+| uploadTip | Please select upload resources |
+| uploadTipExtensions | Extensions |
+| uploadTipMaxSize | Max size |
+| uploadTipMaxDuration | Max time |
+| uploadTipMaxNumber | Max number |
+| uploadWarningExtension | This extension of file can not be uploaded |
+| uploadWarningMaxSize | File size exceeds the set limit |
+| uploadWarningMaxDuration | File time length exceeds the set limit |
+| uploadWarningMaxNumber | The number of files exceeds the set limit |
+| fileWarning | File Warning |
+| fileWarningDesc | Put a content warning on this file |
+| fileWarningTip | Select a category, and we’ll put a content warning on this file. This helps people avoid content they don’t want to see. |
+
 ## Editor
 
 | Key | Value |
@@ -439,17 +458,7 @@
 | editorAnonymous | Anonymous |
 | editorCommentDisable | Disable Comment |
 | editorCommentPrivate | Only visible to post author |
-| editorUpload | Upload |
-| editorUploadButton | Confirm |
-| editorUploadTip | Please select upload resources |
-| editorUploadTipExtensions | Extensions |
-| editorUploadTipMaxSize | Max size |
-| editorUploadTipMaxDuration | Max time |
-| editorUploadTipMaxNumber | Max number |
 | editorVideoPlayTip | Upload successfully and playable after publication |
-| editorFileWarning | File Warning |
-| editorFileWarningDesc | Put a content warning on this file |
-| editorFileWarningTip | Select a category, and we’ll put a content warning on this file. This helps people avoid content they don’t want to see. |
 | editorLimitTitle | Publish Interdiction Tip |
 | editorLimitTypeName | Interdiction Type |
 | editorLimitType1Desc | Specify date range interdiction |

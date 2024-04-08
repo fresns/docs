@@ -208,7 +208,7 @@
 | 36307 | Editing not allowed for top contents |
 | 36308 | Editing not allowed for highlighted contents |
 | 36309 | Editable time expired |
-| 36310 | This type of file can not be uploaded |
+| 36310 | This extension of file can not be uploaded |
 | 36311 | Current user does not have the post permission of the group |
 | 36312 | Current user does not have the comment permission of the group |
 | 36313 | The current group is closed for publication |
