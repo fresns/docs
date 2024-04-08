@@ -30,7 +30,7 @@
 | height | Number | NO | 图片专用，单位 `px` |
 | duration | Number | NO | 音视频专用，单位 `秒` |
 | warning | String | NO | 文件警告 `none`, `nudity`, `violence`, `sensitive` |
-| moreInfo | String | NO | 文件自定义信息，转换为字符串传参 (Object to String) |
+| moreInfo | Object | NO | 文件自定义信息 |
 
 - 获取 S3 预签名 URL
 - [使用预签名 URL](https://docs.aws.amazon.com/AmazonS3/latest/userguide/using-presigned-url.html)

@@ -17,19 +17,19 @@ aside: false
     "size": "String / 大小",
     "sha": "String / 文件 sha 编码",
     "shaType": "String / 文件 sha 类型",
+    // 公共参数
+    "width": "Number / 宽度",
+    "height": "Number / 高度",
+    "duration": "Number / 音视频时长",
     // 图片专用参数
-    "imageWidth": "Number / 图片宽度",
-    "imageHeight": "Number / 图片高度",
     "imageLong": "Boolean / 是否长图",
     "imageRatioUrl": "String / 等比例缩略图地址",
     "imageSquareUrl": "String / 正方形缩略图地址",
     "imageBigUrl": "String / 原图压缩图地址",
     // 视频专用参数
-    "videoDuration": "Number / 视频时长",
     "videoPosterUrl": "String / 视频封面图链接",
     "videoUrl": "String / 视频链接",
     // 音频专用参数
-    "audioDuration": "Number / 音频时长",
     "audioUrl": "String / 音频链接",
     // 文档专用参数
     "documentPreviewUrl": "String / 文件预览链接",

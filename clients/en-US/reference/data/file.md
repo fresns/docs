@@ -17,19 +17,19 @@ aside: false
     "size": "String / Size",
     "sha": "String / File sha encoding",
     "shaType": "String / File sha type",
+    // Common Parameters
+    "width": "Number / Width",
+    "height": "Number / Height",
+    "duration": "Number / Audio and Video Duration",
     // Image Parameters
-    "imageWidth": "Number / Image width",
-    "imageHeight": "Number / Image height",
     "imageLong": "Boolean / Is long image",
     "imageRatioUrl": "String / Proportional thumbnail URL",
     "imageSquareUrl": "String / Square thumbnail URL",
     "imageBigUrl": "String / Compressed original image URL",
     // Video Parameters
-    "videoDuration": "Number / Video duration",
     "videoPosterUrl": "String / Video cover image URL",
     "videoUrl": "String / Video URL",
     // Audio Parameters
-    "audioDuration": "Number / Audio duration",
     "audioUrl": "String / Audio URL",
     // Document Parameters
     "documentPreviewUrl": "String / Document preview URL",

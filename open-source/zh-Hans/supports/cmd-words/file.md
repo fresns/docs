@@ -68,18 +68,18 @@
 ```
 | 参数名 | 类型 | 是否必传 | 说明 |
 | --- | --- | --- | --- |
-| platformId | Number | YES | 平台编号（配置表 [platforms](../../configs/dictionary/platforms.md) 键名的键值） |
+| file | File | YES | 文件 |
+| type | Number | YES | 1.图片 / 2.视频 / 3.音频 / 4.文档 |
+| warningType | Number | NO | 文件警告 1.无 2.Nudity 3.Violence 4.Sensitive |
 | usageType | Number | YES | [文件用途类型](../../database/numbered-description.md#文件用途类型) |
+| platformId | Number | YES | 平台编号（配置表 [platforms](../../configs/dictionary/platforms.md) 键名的键值） |
 | tableName | String | YES | 来源表名（哪个张使用） |
 | tableColumn | String | YES | 来源字段名（哪个字段使用） |
 | tableId | Number | NO | 来源表主键 ID |
 | tableKey | String | NO | 来源表键名 `PrimaryHelper::fresnsPrimaryId()` |
+| moreInfo | Object | NO | 自定义内容 |
 | aid | String | NO | 账号参数 `file_usages->account_id`<br>存储时由 `aid` 转换成 `accounts->id` |
 | uid | Number | NO | 用户参数 `file_usages->user_id`<br>存储时由 `uid` 转换成 `users->id` |
-| type | Number | YES | 1.图片 / 2.视频 / 3.音频 / 4.文档 |
-| file | File | YES | 文件 |
-| warningType | Number | NO | 文件警告 1.无 2.Nudity 3.Violence 4.Sensitive |
-| moreInfo | Object | NO | 自定义 |
 
 - `tableId` 和 `tableKey` 二选一必传一个。
 

@@ -30,7 +30,7 @@
 | height | Number | *optional* | `Image-Only`, in `px` |
 | duration | Number | *optional* | `Audio or Video-Only`, in `Seconds` |
 | warning | String | *optional* | File Warning `none`, `nudity`, `violence`, `sensitive` |
-| moreInfo | String | *optional* | File custom information (Object to String) |
+| moreInfo | Object | *optional* |  |
 
 - Get S3 presigned url
 - [Working with presigned URLs](https://docs.aws.amazon.com/AmazonS3/latest/userguide/using-presigned-url.html)

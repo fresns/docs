@@ -11,19 +11,24 @@ FileUtility::uploadFile($bodyInfo, $diskConfig, $file);
 ::: details 查看示例
 ```php
 $bodyInfo = [
-    'platformId' => 'file_usages->platform_id',
+    'type' => 'files->type',
+    'width' => 'files->width', // image and video Only
+    'height' => 'files->height', // image and video Only
+    'duration' => 'files->duration', // audio and video Only
+    'warningType' => 'files->warning_type',
+
     'usageType' => 'file_usages->usage_type',
+    'platformId' => 'file_usages->platform_id',
     'tableName' => 'file_usages->table_name',
     'tableColumn' => 'file_usages->table_column',
     'tableId' => 'file_usages->table_id',
     'tableKey' => 'file_usages->table_key',
+    'sortOrder' => 'file_usages->sort_order',
+    'moreInfo' => [
+        // file_usages->more_info
+    ],
     'aid' => 'file_usages->account_id',
     'uid' => 'file_usages->user_id',
-    'type' => 'files->type',
-    'sha' => 'files->sha',
-    'shaType' => 'files->sha_type',
-    'warningType' => 'files->warning_type',
-    'moreInfo' => 'files->more_info',
 ];
 
 $diskConfig = [
@@ -52,18 +57,16 @@ FileUtility::uploadFileInfo($file, $fileInfo, $usageInfo);
 ```php
 $fileInfo = [
     'type' => 'files->type',
+    'width' => 'files->width', // image and video Only
+    'height' => 'files->height', // image and video Only
+    'duration' => 'files->duration', // audio and video Only
     'sha' => 'files->sha',
     'shaType' => 'files->sha_type',
-    'path' => 'files->path',
-    'audioDuration' => 'Audio Only: files->audio_duration',
-    'videoDuration' => 'Video Only: files->video_duration',
-    'videoPosterPath' => 'Video Only: files->video_poster_path',
-    'moreInfo' => [
-        // files->more_info
-    ],
-    'transcodingState' => 'files->transcoding_state', // audio or video Only
-    'originalPath' => 'files->original_path',
     'warningType' => 'files->warning_type',
+    'path' => 'files->path',
+    'transcodingState' => 'files->transcoding_state', // audio and video only
+    'videoPosterPath' => 'files->video_poster_path', // video only
+    'originalPath' => 'files->original_path',
     'uploaded' => 'files->is_uploaded',
 ];
 
@@ -75,6 +78,9 @@ $usageInfo = [
     'tableId' => 'file_usages->table_id',
     'tableKey' => 'file_usages->table_key',
     'sortOrder' => 'file_usages->sort_order',
+    'moreInfo' => [
+        // file_usages->more_info
+    ],
     'aid' => 'file_usages->account_id',
     'uid' => 'file_usages->user_id',
     'remark' => 'file_usages->remark',
@@ -98,20 +104,16 @@ $fileInfo = [
     'mime' => 'files->mime',
     'extension' => 'files->extension', // required
     'size' => 'files->size', // required, unit: Byte
+    'width' => 'files->width', // image and video Only
+    'height' => 'files->height', // image and video Only
+    'duration' => 'files->duration', // audio and video Only
     'sha' => 'files->sha',
     'shaType' => 'files->sha_type',
-    'path' => 'files->path', // required
-    'imageWidth' => 'Image Only: files->image_width',
-    'imageHeight' => 'Image Only: files->image_height',
-    'audioDuration' => 'Audio Only: files->audio_duration',
-    'videoDuration' => 'Video Only: files->video_duration',
-    'videoPosterPath' => 'Video Only: files->video_poster_path',
-    'moreInfo' => [
-        // files->more_info
-    ],
-    'transcodingState' => 'files->transcoding_state', // audio or video Only
-    'originalPath' => 'files->original_path',
     'warningType' => 'files->warning_type',
+    'path' => 'files->path', // required
+    'transcodingState' => 'files->transcoding_state', // audio and video only
+    'videoPosterPath' => 'files->video_poster_path', // video only
+    'originalPath' => 'files->original_path',
     'uploaded' => 'files->is_uploaded',
 ];
 
@@ -123,6 +125,9 @@ $usageInfo = [
     'tableId' => 'file_usages->table_id',
     'tableKey' => 'file_usages->table_key',
     'sortOrder' => 'file_usages->sort_order',
+    'moreInfo' => [
+        // file_usages->more_info
+    ],
     'aid' => 'file_usages->account_id',
     'uid' => 'file_usages->user_id',
     'remark' => 'file_usages->remark',
@@ -148,6 +153,9 @@ $usageInfo = [
     'tableId' => 'file_usages->table_id',
     'tableKey' => 'file_usages->table_key',
     'sortOrder' => 'file_usages->sort_order',
+    'moreInfo' => [
+        // file_usages->more_info
+    ],
     'aid' => 'file_usages->account_id',
     'uid' => 'file_usages->user_id',
     'remark' => 'file_usages->remark',

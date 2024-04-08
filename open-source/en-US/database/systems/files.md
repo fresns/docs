@@ -13,19 +13,18 @@ aside: false
 | mime | varchar(255) | File Mime Type |  | NO | For example: image/jpeg or video/mp4 |
 | extension | varchar(32) | File Extension Name |  | NO | For example: jpg or jpeg |
 | size | int *UNSIGNED* | File Size |  | NO | Unit Byte |
+| is_long_image | tinyint *UNSIGNED* | Is Long Image | 0 | NO | Image file specific<br>0.No / 1.Yes |
+| width | smallint *UNSIGNED* | Image Width |  | YES | Image file specific: pixels px |
+| height | smallint *UNSIGNED* | Image Height |  | YES | Image file specific: pixels px |
+| duration | smallint *UNSIGNED* | Audio and Video Duration |  | YES | Unit: seconds |
 | sha | varchar(128) | File sha |  | YES | File sha encoding |
 | sha_type | varchar(16) | File sha Type |  | YES | For example, `sha1` or `sha256` |
+| warning_type | tinyint *UNSIGNED* | Warning Type | 1 | NO | 1.No 2.Nudity 3.Violence 4.Sensitive |
 | path | varchar(255) | File Path |  | NO | **Relative path** |
-| image_width | smallint *UNSIGNED* | Image Width |  | YES | Image file specific: pixels px |
-| image_height | smallint *UNSIGNED* | Image Height |  | YES | Image file specific: pixels px |
-| image_is_long | tinyint *UNSIGNED* | Is Long Image | 0 | NO | Image file specific<br>0.No / 1.Yes |
-| audio_duration | smallint *UNSIGNED* | Audio Duration |  | YES | Unit: seconds, audio file specific |
-| video_duration | smallint *UNSIGNED* | Video Duration |  | YES | Unit: seconds, video file specific |
-| video_poster_path | varchar(255) | Video Cover Image |  | YES | Video cover image path |
 | transcoding_state | tinyint *UNSIGNED* | Audio or Video Attachment Transcoding Status | 1 | YES | Transcoding status: 1.Pending 2.Transcoding 3.Transcoding Completed 4.Transcoding Failed |
 | transcoding_reason | varchar(255) | Audio or Video Attachment Transcoding Failure Reason |  | YES | Transcoding failure reason |
+| video_poster_path | varchar(255) | Video Cover Image |  | YES | Video cover image path |
 | original_path | varchar(255) | Original File Path |  | YES | **Relative path**<br>If the file involves transcoding, the storage path of the file before transcoding<br>If not, leave empty |
-| warning_type | tinyint *UNSIGNED* | Warning Type | 1 | NO | 1.No 2.Nudity 3.Violence 4.Sensitive |
 | is_uploaded | tinyint *UNSIGNED* | Is Uploaded | 1 | NO | 0.No / 1.Yes |
 | is_enabled | tinyint *UNSIGNED* | Is Valid | 1 | NO | 0.Invalid / 1.Valid |
 | physical_deletion | tinyint *UNSIGNED* | Physical Deletion Status | 0 | NO | 0.No / 1.Yes (File physically deleted) |

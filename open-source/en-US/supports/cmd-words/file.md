@@ -68,18 +68,18 @@
 ```
 | Parameter Name | Type | Required | Description |
 | --- | --- | --- | --- |
-| platformId | Number | **required** | Platform number (key value from the configuration table [platforms](../../configs/dictionary/platforms.md)) |
+| file | File | **required** | File |
+| type | Number | **required** | 1.Image / 2.Video / 3.Audio / 4.Document |
+| warningType | Number | *optional* | 1.No 2.Nudity 3.Violence 4.Sensitive |
 | usageType | Number | **required** | [File usage type](../../database/numbered-description.md#type-of-file-usage) |
+| platformId | Number | **required** | Platform number (key value from the configuration table [platforms](../../configs/dictionary/platforms.md)) |
 | tableName | String | **required** | Source table name (which table is using) |
 | tableColumn | String | **required** | Source field name (which field is using) |
 | tableId | Number | *optional* | Source table primary id |
 | tableKey | String | *optional* | Source table key name `PrimaryHelper::fresnsPrimaryId()` |
+| moreInfo | Object | *optional* | Custom Info |
 | aid | String | *optional* | Account parameter `file_usages->account_id`<br>Stored as `aid` converted to `accounts->id` |
 | uid | Number | *optional* | User parameter `file_usages->user_id`<br>Stored as `uid` converted to `users->id` |
-| type | Number | **required** | 1.Image / 2.Video / 3.Audio / 4.Document |
-| file | File | **required** | File |
-| warningType | Number | *optional* | 1.No 2.Nudity 3.Violence 4.Sensitive |
-| moreInfo | Object | *optional* | Custom |
 
 - Either `tableId` or `tableKey` must be passed.
 
