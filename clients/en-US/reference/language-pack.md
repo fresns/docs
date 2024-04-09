@@ -238,7 +238,7 @@
 | accountResetPassword | Forgot Password |
 | accountConnectEmpty | No account linkage information found |
 | accountConnectLinked | I have an account linked to a community |
-| accountConnectLinkedTip | Please use "Password" or "Verify Code" to log in to your account first, and then operate linked in your account settings after logging in. |
+| accountConnectLinkedTip | Please log in to your account first using your "Password" or "Verify Code" and then go to the Account Centre on the Setup screen to operate connect after logging in. |
 | accountConnectCreateNew | No account, create a new account |
 | accountLogout | Logout |
 | accountDelete | Delete Account |

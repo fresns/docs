@@ -238,7 +238,7 @@
 | accountResetPassword | 忘记密码 |
 | accountConnectEmpty | 未查询到账号关联信息 |
 | accountConnectLinked | 我有账号，绑定关联 |
-| accountConnectLinkedTip | 请先使用「密码」或者「验证码」登录账号，登录后在账号设置中绑定关联。 |
+| accountConnectLinkedTip | 请先使用「密码」或者「验证码」登录账号，登录后在设置页进入账户中心绑定关联。 |
 | accountConnectCreateNew | 没有账号，创建新账号 |
 | accountLogout | 退出登录 |
 | accountDelete | 注销账号 |

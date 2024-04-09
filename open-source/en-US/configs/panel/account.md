@@ -37,14 +37,22 @@
 ```json
 [
     {
-        "order": "Sort Order",
         "code": "Connect platform number",
-        "fskey": "Plugin Fskey"
+        "name": {
+            "en": "",
+            "zh-Hans": ""
+        },
+        "fskey": "Plugin Fskey",
+        "order": "Sort Order"
     },
     {
-        "order": 2,
         "code": "2",
-        "fskey": "Placeholder"
+        "name": {
+            "en": "",
+            "zh-Hans": ""
+        },
+        "fskey": "Placeholder",
+        "order": 2
     }
 ]
 ```

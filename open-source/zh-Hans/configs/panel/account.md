@@ -37,14 +37,22 @@
 ```json
 [
     {
-        "order": "顺序",
         "code": "互联平台编号",
-        "fskey": "插件 Fskey"
+        "name": {
+            "en": "",
+            "zh-Hans": ""
+        },
+        "fskey": "插件 Fskey",
+        "order": "顺序"
     },
     {
-        "order": 2,
         "code": "2",
-        "fskey": "Placeholder"
+        "name": {
+            "en": "",
+            "zh-Hans": ""
+        },
+        "fskey": "Placeholder",
+        "order": 2
     }
 ]
 ```
