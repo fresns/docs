@@ -120,7 +120,6 @@ function sidebarApi() {
       items: [
         { text: 'IP 信息', link: '/api/common/ip-info.md' },
         { text: '输入提示信息', link: '/api/common/input-tips.md' },
-        { text: '回调返参查询', link: '/api/common/callback.md' },
         { text: '命令字请求', link: '/api/common/cmd-word.md' },
         { text: '文件: 生成 S3 上传令牌', link: '/api/common/file-upload-token.md' },
         { text: '文件: 上传文件', link: '/api/common/file-upload.md' },

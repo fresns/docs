@@ -167,7 +167,6 @@ function sidebarDatabase() {
       collapsed: false,
       items: [
         { text: 'apps 应用表', link: '/database/apps/apps.md' },
-        { text: 'app_callbacks 应用回调表', link: '/database/apps/app-callbacks.md' },
         { text: 'app_usages 应用关联使用表', link: '/database/apps/app-usages.md' },
         { text: 'app_badges 应用徽标数据表', link: '/database/apps/app-badges.md' },
       ]

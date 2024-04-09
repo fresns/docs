@@ -24,12 +24,11 @@ The application page is accessed using the `appUrl` after the variable value has
 
 The user performs the appropriate action on the application page, and after the action, the application sends a feedback message with callback details.
 
-- The `postMessageKey` parameter sends a message to the parent via [postMessage](https://developer.mozilla.org/docs/Web/API/Window/postMessage).
-- The `callbackUlid` parameter stores the data in the database and the client retrieves the data via the callback interface [/api/fresns/v1/common/callback](../../api/common/callback.md).
+- Send a message to the parent using [postMessage](https://developer.mozilla.org/docs/Web/API/Window/postMessage).
 
 ### Step 4
 
-The client receives the `postMessage` message from the application page or `callback` api to get the feedback message and handle the subsequent business functions.
+The client receives the `postMessage` message from the application side and handles the subsequent business functions.
 
 ## postMessage Intro
 
@@ -79,7 +78,7 @@ FresnsCallback.send(callbackAction, apiData, apiCode, apiMessage);
 ### Message Event
 
 - [https://github.com/fresns/client-website-themes/blob/3.x/ThemeFrame/portal/login.blade.php#L15-L20](https://github.com/fresns/client-website-themes/blob/3.x/ThemeFrame/portal/login.blade.php#L15-L20)
-- [https://github.com/fresns/client-website-themes/blob/3.x/ThemeFrame/assets/js/fresns-extensions.js#L75-L118](https://github.com/fresns/client-website-themes/blob/3.x/ThemeFrame/assets/js/fresns-extensions.js#L75-L118)
+- [https://github.com/fresns/client-website-themes/blob/3.x/ThemeFrame/assets/js/fresns-extensions.js#L80-L123](https://github.com/fresns/client-website-themes/blob/3.x/ThemeFrame/assets/js/fresns-extensions.js#L80-L123)
 - The `postMessageKey` is defined by the client developer, so the client knows the location and usage scenario of each `key`, and the client knows the subsequent processing logic.
 
 ```js
@@ -111,6 +110,18 @@ window.onmessage = function (event) {
 
     if (callbackData.action.redirectUrl) {
         window.location.href = callbackData.action.redirectUrl;
+    }
+
+    switch (callbackData.action.dataHandler) {
+        case 'add':
+            break;
+
+        case 'remove':
+            break;
+
+        case 'reload':
+            window.location.reload();
+            break;
     }
 };
 ```

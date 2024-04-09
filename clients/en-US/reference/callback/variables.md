@@ -13,7 +13,6 @@ Whether it is website or mobile application, the use of plug-ins is embedded in 
 | --- | --- |
 | `{accessToken}` | Access Token and quick login<br>[Generate accessToken](access-token.md) |
 | `{postMessageKey}` | Callback identification name<br>Client receiving callback message as `postMessage` |
-| `{callbackUlid}` | Callback identification name<br>Client receiving callback message as `API` |
 | `{redirectUrl}` | Redirect URL |
 | `{connectPlatformId}` | [Connect Platform ID](https://docs.fresns.com/open-source/configs/dictionary/connects.html) |
 | `{aid}` | Account ID |

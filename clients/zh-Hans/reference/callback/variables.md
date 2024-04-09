@@ -13,7 +13,6 @@
 | --- | --- |
 | `{accessToken}` | 访问令牌，并且实现一键登录<br>[生成信息](access-token.md) |
 | `{postMessageKey}` | 回调标识名<br>客户端以 `postMessage` 方式接收回调通知 |
-| `{callbackUlid}` | 回调标识名<br>客户端以 `API` 方式接收回调通知 |
 | `{redirectUrl}` | 重定向网址 |
 | `{connectPlatformId}` | [互联平台 ID](https://docs.fresns.com/zh-Hans/open-source/configs/dictionary/connects.html) |
 | `{aid}` | 账号 ID |

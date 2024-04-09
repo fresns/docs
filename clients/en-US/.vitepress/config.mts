@@ -108,7 +108,6 @@ function sidebarApi() {
       items: [
         { text: 'IP Information', link: '/api/common/ip-info.md' },
         { text: 'Input Tips', link: '/api/common/input-tips.md' },
-        { text: 'App or Plugin Callback', link: '/api/common/callback.md' },
         { text: 'Command Word Request', link: '/api/common/cmd-word.md' },
         { text: 'File: Make S3 Upload Token', link: '/api/common/file-upload-token.md' },
         { text: 'File: Upload', link: '/api/common/file-upload.md' },

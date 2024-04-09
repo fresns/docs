@@ -19,7 +19,6 @@
 | --- | --- | --- |
 | `GET` | /api/fresns/v1/common/ip-info | IP 信息 |
 | `GET` | /api/fresns/v1/common/input-tips | 输入提示信息 |
-| `GET` | /api/fresns/v1/common/callback | 回调返参查询 |
 | `POST` | /api/fresns/v1/common/cmd-word | 命令字请求 |
 | `POST` | /api/fresns/v1/common/file/upload-token | 文件: 生成 S3 上传令牌 |
 | `POST` | /api/fresns/v1/common/file/upload | 文件: 上传文件 |

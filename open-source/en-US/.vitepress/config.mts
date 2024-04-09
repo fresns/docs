@@ -155,7 +155,6 @@ function sidebarDatabase() {
         collapsed: false,
         items: [
           { text: 'apps', link: '/database/apps/apps.md' },
-          { text: 'app_callbacks', link: '/database/apps/app-callbacks.md' },
           { text: 'app_usages', link: '/database/apps/app-usages.md' },
           { text: 'app_badges', link: '/database/apps/app-badges.md' },
         ]

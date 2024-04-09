@@ -20,7 +20,6 @@
 | Table Name | Description |
 | --- | --- |
 | **apps** | App main table |
-| **app_callbacks** | App: callback usage table |
 | **app_usages** | App: associated usage table |
 | **app_badges** | App: badge data table |
 

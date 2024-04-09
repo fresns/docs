@@ -25,12 +25,11 @@
 
 用户在应用页进行相应操作，操作后应用以回调凭证发送反馈消息。
 
-- 有 `postMessageKey` 参数，则通过 [postMessage](https://developer.mozilla.org/zh-CN/docs/Web/API/Window/postMessage) 向父级发送消息。
-- 有 `callbackUlid` 参数，则将数据存储在数据库，客户端通过回调接口 [/api/fresns/v1/common/callback](../../api/common/callback.md) 获取数据。
+- 通过 [postMessage](https://developer.mozilla.org/zh-CN/docs/Web/API/Window/postMessage) 向父级发送消息。
 
 ### 第 4 步
 
-客户端接收应用页的 `postMessage` 消息，或者 `callback` 接口获取反馈消息，并处理后续业务功能。
+客户端接收应用页的 `postMessage` 消息，并处理后续业务功能。
 
 ## postMessage 说明
 
@@ -80,7 +79,7 @@ FresnsCallback.send(callbackAction, apiData, apiCode, apiMessage);
 ### 接收消息
 
 - [https://github.com/fresns/client-website-themes/blob/3.x/ThemeFrame/commons/header.blade.php#L222-L227](https://github.com/fresns/client-website-themes/blob/3.x/ThemeFrame/commons/header.blade.php#L222-L227)
-- [https://github.com/fresns/client-website-themes/blob/3.x/ThemeFrame/assets/js/fresns-extensions.js#L75-L118](https://github.com/fresns/client-website-themes/blob/3.x/ThemeFrame/assets/js/fresns-extensions.js#L75-L118)
+- [https://github.com/fresns/client-website-themes/blob/3.x/ThemeFrame/assets/js/fresns-extensions.js#L80-L123](https://github.com/fresns/client-website-themes/blob/3.x/ThemeFrame/assets/js/fresns-extensions.js#L80-L123)
 - `postMessageKey` 由客户端开发者自己定义，所以客户端知道每一个 `key` 的位置和用途场景，客户端也就知道后续处理逻辑。
 
 ```js
@@ -93,10 +92,6 @@ window.onmessage = function (event) {
     }
 
     switch (callbackData.action.postMessageKey) {
-        case 'reload':
-            window.location.reload();
-            break;
-
         case 'fresnsConnect':
             if (callbackData.action.reloadData) {
                 window.location.href = `/me/settings`;
@@ -112,6 +107,18 @@ window.onmessage = function (event) {
 
     if (callbackData.action.redirectUrl) {
         window.location.href = callbackData.action.redirectUrl;
+    }
+
+    switch (callbackData.action.dataHandler) {
+        case 'add':
+            break;
+
+        case 'remove':
+            break;
+
+        case 'reload':
+            window.location.reload();
+            break;
     }
 };
 ```
