@@ -43,7 +43,7 @@ aside: false
 
 ## Long Image Description
 
-Field: `image_is_long`
+Field: `is_long_image`
 
 When the image width is greater than 700, if the height is equal to or greater than 3.5 times the width, it is considered a long image.
 

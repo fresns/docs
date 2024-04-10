@@ -43,7 +43,7 @@ aside: false
 
 ## 长图说明
 
-字段: `image_is_long`
+字段: `is_long_image`
 
 当图片宽度大于 700 时，计算高度等于或大于宽度的 3.5 倍时，则为长图。
 
