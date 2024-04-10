@@ -5,6 +5,7 @@
 1. 备份数据库，避免升级失败导致数据丢失。
 2. 后台->仪表盘->设置->版本类型
     - 选择「测试版」
+    - 由于本次跨框架版本的升级，只能在终端里执行升级，为确定您已经准备好，所以需在后台选择「测试版」，但是升级后是正式版。
 3. 删除网站客户端插件，避免冲突。直接删除文件夹。
     - `/plugins/Moments`
     - `/plugins/ThemeFrame`
@@ -13,14 +14,18 @@
     - `/plugins/ForumX`
     - `/plugins/ZhijieWeb`
 4. 移除旧的依赖
-    - `composer remove fresns/web-engine`
+    - 终端里执行 `composer remove fresns/web-engine`
 5. 执行升级指令
-    - `php artisan fresns:upgrade`
+    - 终端里执行 `php artisan fresns:upgrade`
+    - 如遇报错，再次执行升级指令，因框架变化，需要执行 2～3 次升级。
 
 **注意事项：**
 
 - 后台登录入口，配置项变化，所以重置为默认路径了 `/fresns/admin`
 - `.env` 配置中 `DB_TIMEZONE` 修改为 `APP_TIMEZONE`
+- 发信设置，邮件模板的变量名 `{sitename}` 修改为 `{name}`
+
+**以下内容为开发者阅读，使用者忽略**
 
 ## 数据库
 
