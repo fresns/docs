@@ -162,7 +162,7 @@
 | document | 文档 |
 | list | 列表 |
 | modifierCount | 共 |
-| modifierOr | 或 |
+| modifierOr | 或者 |
 | modifierCompleted | 已 |
 | modifierYear | 年 |
 | modifierMonth | 月 |
