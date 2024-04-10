@@ -86,6 +86,17 @@
 ```
 :::
 
+## ipInfo
+
+```php
+\FresnsCmdWord::plugin('Fresns')->ipInfo($wordBody);
+```
+| Parameter Name | Type | Required | Description |
+| --- | --- | --- | --- |
+| ipv4 | String | **required** | IPv4 and IPv6 support |
+
+- The output result is the same as the [IP Info Interface](https://docs.fresns.com/clients/api/common/ip-info.html)
+
 ## createSessionLog
 
 ```php
@@ -136,13 +147,27 @@
 | verifyCode | String | **required** | Verify Code |
 | templateId | Number | **required** | [Code Template ID](../../configs/panel/send.md#verify-code-templates) |
 
-## ipInfo
+## updateOrCreateCallbackContent
 
 ```php
-\FresnsCmdWord::plugin('Fresns')->ipInfo($wordBody);
+\FresnsCmdWord::plugin('Fresns')->updateOrCreateCallbackContent($wordBody);
 ```
 | Parameter Name | Type | Required | Description |
 | --- | --- | --- | --- |
-| ipv4 | String | **required** | IPv4 and IPv6 support |
+| fskey | String | YES | Plugin Fskey |
+| ulid | String | YES | ULID |
+| type | Number | NO | [Reference](../../database/temporary/callback-contents.md#type) |
+| content | Array | NO |  |
+| retentionDays | Number | NO | default `1` |
 
-- The output result is the same as the [IP Info Interface](https://docs.fresns.com/clients/api/common/ip-info.html)
+## getCallbackContent
+
+```php
+\FresnsCmdWord::plugin('Fresns')->getCallbackContent($wordBody);
+```
+| Parameter Name | Type | Required | Description |
+| --- | --- | --- | --- |
+| fskey | String | YES | Plugin Fskey |
+| ulid | String | YES | ULID |
+| timeout | Number | NO | Unit: minutes<br>Get data in how many minutes |
+| markAsUsed | Boolean | NO | default `false` |

@@ -156,7 +156,6 @@ function sidebarDatabase() {
         { text: 'session_keys 交互密钥表', link: '/database/systems/session-keys.md' },
         { text: 'session_tokens 交互凭证表', link: '/database/systems/session-tokens.md' },
         { text: 'session_logs 交互日志表', link: '/database/systems/session-logs.md' },
-        { text: 'verify_codes 验证码表', link: '/database/systems/verify-codes.md' },
         { text: 'files 文件表', link: '/database/systems/files.md' },
         { text: 'file_usages 文件使用记录表', link: '/database/systems/file-usages.md' },
         { text: 'file_downloads 文件下载记录表', link: '/database/systems/file-downloads.md' },
@@ -246,6 +245,14 @@ function sidebarDatabase() {
         { text: 'stickers 表情表', link: '/database/extends/stickers.md' },
         { text: 'seo 搜索引擎优化信息表', link: '/database/extends/seo.md' },
         { text: 'cities 城市字典', link: '/database/extends/cities.md' },
+      ]
+    },
+    {
+      text: '临时数据',
+      collapsed: false,
+      items: [
+        { text: 'temp_verify_codes 验证码表', link: '/database/temporary/verify-codes.md' },
+        { text: 'temp_callback_contents 回调内容表', link: '/database/temporary/callback-contents.md' },
       ]
     },
   ]

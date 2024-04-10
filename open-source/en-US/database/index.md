@@ -10,7 +10,6 @@
 | **session_keys** | Interaction key table |
 | **session_tokens** | Interaction token table |
 | **session_logs** | Interaction log table |
-| **verify_codes** | Verification code table |
 | **files** | File main table |
 | **file_usages** | File: usage log table |
 | **file_downloads** | File: download log table |
@@ -91,3 +90,10 @@
 | **extend_users** | Extended operated users table |
 | **stickers** | Sticker table |
 | **seo** | Search engine optimization information table |
+
+## Temporary
+
+| Table Name | Description |
+| --- | --- |
+| **temp_verify_codes** | Verify code table |
+| **temp_callback_contents** | Callback content table |

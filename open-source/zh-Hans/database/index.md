@@ -10,7 +10,6 @@
 | **session_keys** | 交互密钥表 |
 | **session_tokens** | 交互凭证表 |
 | **session_logs** | 交互日志表 |
-| **verify_codes** | 验证码表 |
 | **files** | 文件主表 |
 | **file_usages** | 文件-使用记录表 |
 | **file_downloads** | 文件-下载记录表 |
@@ -91,3 +90,10 @@
 | **extend_users** | 扩展使用用户表 |
 | **stickers** | 表情表 |
 | **seo** | 搜索引擎优化信息表 |
+
+## 临时数据
+
+| 表名 | 描述 |
+| --- | --- |
+| **temp_verify_codes** | 验证码表 |
+| **temp_callback_contents** | 回调内容表 |

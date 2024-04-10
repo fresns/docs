@@ -1,5 +1,10 @@
 # Send Command Word
 
+## Verify Code
+
+- [Send Code](basic.md#sendcode)
+- [Check Code](basic.md#checkcode)
+
 ## sendEmail
 
 ```php

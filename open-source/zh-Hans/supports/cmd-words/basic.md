@@ -95,6 +95,17 @@
 ```
 :::
 
+## 获取 IP 信息
+
+```php
+\FresnsCmdWord::plugin('Fresns')->ipInfo($wordBody);
+```
+| 参数名 | 类型 | 是否必传 | 说明 |
+| --- | --- | --- | --- |
+| ip | String | YES | 支持 IPv4 和 IPv6 |
+
+- 输出结果同 [IP 信息接口](https://docs.fresns.com/zh-Hans/clients/api/common/ip-info.html)
+
 ## 创建交互日志
 
 ```php
@@ -145,13 +156,27 @@
 | verifyCode | String | YES | 验证码 |
 | templateId | Number | YES | [验证码模板 ID](../../configs/panel/send.md#验证码模板设置) |
 
-## 获取 IP 信息
+## 更新或创建回调数据
 
 ```php
-\FresnsCmdWord::plugin('Fresns')->ipInfo($wordBody);
+\FresnsCmdWord::plugin('Fresns')->updateOrCreateCallbackContent($wordBody);
 ```
 | 参数名 | 类型 | 是否必传 | 说明 |
 | --- | --- | --- | --- |
-| ip | String | YES | 支持 IPv4 和 IPv6 |
+| fskey | String | YES | 插件 Fskey |
+| ulid | String | YES | ULID |
+| type | Number | NO | [参考](../../database/temporary/callback-contents.md#type) |
+| content | Array | NO |  |
+| retentionDays | Number | NO | 默认 `1` |
 
-- 输出结果同 [IP 信息接口](https://docs.fresns.com/zh-Hans/clients/api/common/ip-info.html)
+## 获取回调数据
+
+```php
+\FresnsCmdWord::plugin('Fresns')->getCallbackContent($wordBody);
+```
+| 参数名 | 类型 | 是否必传 | 说明 |
+| --- | --- | --- | --- |
+| fskey | String | YES | 插件 Fskey |
+| ulid | String | YES | ULID |
+| timeout | Number | NO | 单位：分钟<br>获取多少分钟内的数据 |
+| markAsUsed | Boolean | NO | 默认 `false` |

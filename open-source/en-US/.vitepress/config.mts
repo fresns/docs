@@ -144,7 +144,6 @@ function sidebarDatabase() {
           { text: 'session_keys', link: '/database/systems/session-keys.md' },
           { text: 'session_tokens', link: '/database/systems/session-tokens.md' },
           { text: 'session_logs', link: '/database/systems/session-logs.md' },
-          { text: 'verify_codes', link: '/database/systems/verify-codes.md' },
           { text: 'files', link: '/database/systems/files.md' },
           { text: 'file_usages', link: '/database/systems/file-usages.md' },
           { text: 'file_downloads', link: '/database/systems/file-downloads.md' },
@@ -235,7 +234,15 @@ function sidebarDatabase() {
           { text: 'seo', link: '/database/extends/seo.md' },
           { text: 'cities', link: '/database/extends/cities.md' },
         ]
-      }
+      },
+      {
+        text: 'Temporary Data',
+        collapsed: false,
+        items: [
+          { text: 'temp_verify_codes', link: '/database/temporary/verify-codes.md' },
+          { text: 'temp_callback_contents', link: '/database/temporary/callback-contents.md' },
+        ]
+      },
   ]
 }
 
