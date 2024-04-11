@@ -9,9 +9,9 @@
 | --- | --- | --- | --- |
 | aid | String | **required** | Related field `accounts->aid` |
 | aidToken | String | *optional* | If not passed, the account identity will not be verified, and users will be added directly to the account |
+| appId | String | *optional* | App ID, required when passing `aidToken` |
 | platformId | Number | *optional* | Platform ID, required when passing `aidToken` |
 | version | String | *optional* | Semantic version number, required when passing `aidToken` |
-| appId | String | *optional* | App ID, required when passing `aidToken` |
 | username | String | *optional* | Username, related field `users->username`<br>If not passed, a random 6-8 character string will be generated, avoiding the use of banned names (key name `user_ban_names` banned values) |
 | nickname | String | *optional* | Nickname, related field `users->nickname`<br>If not passed, a random 8 character string |
 | pin | String | *optional* | Login pin, related field `users->pin` |
@@ -54,9 +54,9 @@
 ```
 | Parameter Name | Type | Required | Description |
 | --- | --- | --- | --- |
+| appId | String | **required** | App ID |
 | platformId | Number | **required** | Platform ID (key value of the key name in the configuration table [platforms](../../configs/dictionary/platforms.md)) |
 | version | String | **required** | Semantic version number |
-| appId | String | **required** | App ID |
 | aid | String | **required** | Account AID `accounts->aid` |
 | aidToken | String | **required** | Account Token |
 | uid | Number | **required** | User UID `users->uid` |
@@ -83,9 +83,9 @@
 ```
 | Parameter Name | Type | Required | Description |
 | --- | --- | --- | --- |
+| appId | String | **required** | App ID |
 | platformId | Number | **required** | Platform ID (key value of the key name in the configuration table [platforms](../../configs/dictionary/platforms.md)) |
 | version | String | **required** | Semantic version number |
-| appId | String | **required** | App ID |
 | aid | String | **required** | Account parameter `session_tokens->account_id`<br>Stored as `accounts->id` when converted from `aid` |
 | aidToken | String | **required** | Account identity credential (credential table `session_tokens->token` field) |
 | uid | Number | **required** | User parameter `session_tokens->user_id`<br>Stored as `users->id` when converted from `uid` |

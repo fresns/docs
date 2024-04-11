@@ -39,9 +39,9 @@
 ```
 | Parameter Name | Type | Required | Description |
 | --- | --- | --- | --- |
+| appId | String | **required** | App ID |
 | platformId | Number | **required** | Platform ID (Key value of the [platforms](../../configs/dictionary/platforms.md) key name in the configuration table) |
 | version | String | **required** | Semantic version number |
-| appId | String | **required** | App ID |
 | timestamp | Number | **required** | Signature generation time (current Unix timestamp, accurate to seconds or milliseconds) |
 | signature | String | **required** | Request signature |
 | aid | String | **optional** | Account parameter (Account main table `accounts->aid` field) |
@@ -105,21 +105,64 @@
 | Parameter Name | Type | Required | Description |
 | --- | --- | --- | --- |
 | type | Number | **required** | [Log Type](../../database/systems/session-logs.md#log-type) |
+| appId | String | *optional* | Key App ID |
 | platformId | Number | **required** | Platform ID (Key value of the [platforms](../../configs/dictionary/platforms.md) key name in the configuration table) |
 | version | String | **required** | Semantic version number, e.g., `2.0.0` |
-| appId | String | *optional* | Secret App ID |
 | langTag | String | *optional* | Language Tag |
 | fskey | String | *optional* | Plugin Fskey |
 | actionName | String | **required** | Function model name or interface path<br>For example, model name App\Models\Post<br>For example, interface path: `/api/fresns/v1/account/auth-token` |
 | actionDesc | String | **required** | Action description, custom input content |
 | actionState | Number | **required** | 1. Unknown or in progress / 2. Success / 3. Failure |
 | actionId | String | *optional* | For example, if it is a publishing action, it represents the ID of the published content<br>Plugin behavior, this ID can query the corresponding plugin-side related information |
-| aid | String | *optional* | Account |
-| uid | Number | *optional* | User |
+| aid | String | *optional* | Account ID |
+| uid | Number | *optional* | User ID |
 | deviceInfo | Object | *optional* | Interaction device information |
 | deviceToken | String | *optional* | Interaction device Token<br>For example, iOS Device Token or Android Device Token<br>Can be used for push notifications |
 | loginToken | String | *optional* | Login Token |
 | moreInfo | Object | *optional* | Other custom information |
+
+## checkLoginToken
+
+```php
+\FresnsCmdWord::plugin('Fresns')->checkLoginToken($wordBody);
+```
+| Parameter Name | Type | Required | Description |
+| --- | --- | --- | --- |
+| appId | String | **required** | App ID |
+| platformId | Number | **required** | Platform ID (Key value of the [platforms](../../configs/dictionary/platforms.md) key name in the configuration table) |
+| version | String | **required** | Semantic version number |
+| loginToken | String | **required** | Login Token |
+
+- The login token is created by the `createSessionLog` command.
+
+::: details Return Example
+- If the result is `31604` or `31508`, the output data is `aid`.
+```json
+{
+    "code": 31604,
+    "message": "The current user has set a PIN, please enter the PIN to log in.",
+    "data": {
+        "aid": "accounts->aid",
+    }
+}
+```
+:::
+
+## updateLoginToken
+
+```php
+\FresnsCmdWord::plugin('Fresns')->updateLoginToken($wordBody);
+```
+| Parameter Name | Type | Required | Description |
+| --- | --- | --- | --- |
+| loginToken | String | **required** | Login Token |
+| uid | Number | **required** | User ID |
+| pin | String | *optional* | User PIN<br>Personal Identification Number |
+
+- If the result status of the `checkLoginToken` command is `31604` or `31508`, use
+    - `31604` Users must enter a PIN
+    - `31508` There are multiple users under account, you need to select one.
+- If you do not use this command word to update the token information, the token will not be effective.
 
 ## sendCode
 

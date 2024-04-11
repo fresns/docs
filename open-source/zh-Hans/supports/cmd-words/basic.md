@@ -39,9 +39,9 @@
 ```
 | 参数名 | 类型 | 是否必传 | 说明 |
 | --- | --- | --- | --- |
+| appId | String | YES | App ID |
 | platformId | Number | YES | 平台编号（配置表 [platforms](../../configs/dictionary/platforms.md) 键名的键值） |
 | version | String | YES | 语义化版本号 |
-| appId | String | YES | App ID |
 | timestamp | Number | YES | 签名生成时间（当前 Unix 时间戳，精确到秒或毫秒都支持） |
 | signature | String | YES | 请求签名 |
 | aid | String | NO/YES | 账号参数（账号主表 `accounts->aid` 字段） |
@@ -114,21 +114,64 @@
 | 参数名 | 类型 | 是否必传 | 说明 |
 | --- | --- | --- | --- |
 | type | Number | YES | [记录类型](../../database/systems/session-logs.md#日志类型-type) |
+| appId | String | NO | 密钥 App ID |
 | platformId | Number | YES | 平台编号（配置表 [platforms](../../configs/dictionary/platforms.md) 键名的键值） |
 | version | String | YES | 语义化版本号，例如: `2.0.0` |
-| appId | String | NO | 密钥 App ID |
 | langTag | String | NO | 语言标签 |
 | fskey | String | NO | 插件 Fskey |
 | actionName | String | YES | 功能模型名或者接口路径<br>例如模型名 App\Models\Post<br>例如接口路径：`/api/fresns/v1/account/auth-token` |
 | actionDesc | String | YES | 行为描述，自定义输入内容 |
 | actionState | Number | YES | 1.未知或执行中 / 2.成功 / 3.失败 |
 | actionId | String | NO | 例如发表行为，则代表发表内容的 ID<br>插件行为，凭此 ID 可查询对应插件那边记录的关联信息 |
-| aid | String | NO | 账号 |
-| uid | Number | NO | 用户 |
+| aid | String | NO | 账号 ID |
+| uid | Number | NO | 用户 ID |
 | deviceInfo | Object | NO | 交互设备信息 |
 | deviceToken | String | NO | 交互设备 Token<br>例如 iOS Device Token 或 Android Device Token<br>可应用于推送消息 |
 | loginToken | String | NO | 登录令牌 |
 | moreInfo | Object | NO | 其他自定义信息 |
+
+## 检测登录令牌 loginToken
+
+```php
+\FresnsCmdWord::plugin('Fresns')->checkLoginToken($wordBody);
+```
+| 参数名 | 类型 | 是否必传 | 说明 |
+| --- | --- | --- | --- |
+| appId | String | YES | App ID |
+| platformId | Number | YES | 平台编号（配置表 [platforms](../../configs/dictionary/platforms.md) 键名的键值） |
+| version | String | YES | 语义化版本号，例如: `2.0.0` |
+| loginToken | String | YES | 登录令牌 |
+
+- 登录令牌由 `createSessionLog` 命令字创建。
+
+::: details 结果示例
+- 结果为 `31604` 或 `31508` 输出数据有 `aid`
+```json
+{
+    "code": 31604,
+    "message": "当前用户设置了 PIN，请输入 PIN 登录",
+    "data": {
+        "aid": "accounts->aid",
+    }
+}
+```
+:::
+
+## 更新登录令牌 loginToken
+
+```php
+\FresnsCmdWord::plugin('Fresns')->updateLoginToken($wordBody);
+```
+| 参数名 | 类型 | 是否必传 | 说明 |
+| --- | --- | --- | --- |
+| loginToken | String | YES | 登录令牌 |
+| uid | Number | YES | 用户 ID |
+| pin | String | NO | 用户 PIN<br>Personal Identification Number |
+
+- 当 `checkLoginToken` 命令字结果状态为 `31604` 或 `31508` 使用
+    - `31604` 用户需输入 PIN
+    - `31508` 账户下有多个用户，需选择一个
+- 如果不使用该命令字更新令牌信息，则该令牌不生效。
 
 ## 发送验证码
 
