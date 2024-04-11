@@ -1,4 +1,4 @@
-# Error Code
+# Error Codes
 
 | Code | Message |
 | --- | --- |

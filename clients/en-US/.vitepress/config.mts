@@ -279,11 +279,18 @@ function sidebarReference() {
       text: 'Reference',
       items: [
         { text: 'Introduction', link: '/reference/' },
-        { text: 'Headers', link: '/reference/headers.md' },
-        { text: 'Cache', link: '/reference/cache.md' },
         { text: 'Error Codes', link: '/reference/error-codes.md' },
-        { text: 'Language Pack', link: '/reference/language-pack.md' },
-        { text: 'Global Configs', link: '/reference/configs.md' },
+        { text: 'Headers', link: '/reference/headers.md' },
+        { text: 'Login', link: '/reference/login.md' },
+        {
+          text: 'Global Configs',
+          collapsed: false,
+          items: [
+            { text: 'Config Items', link: '/reference/configs.md' },
+            { text: 'Language Pack', link: '/reference/language-pack.md' },
+            { text: 'Cache', link: '/reference/cache.md' },
+          ]
+        },
         {
           text: 'Common Data Structure',
           collapsed: false,

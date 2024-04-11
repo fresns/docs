@@ -65,6 +65,7 @@ fs_theme('fskey', '')
 - `version`
 - `assets`, `{file/path}`
 - `lang`
+- `login`, `redirect`
 
 ## Config Items
 

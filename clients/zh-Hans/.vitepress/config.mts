@@ -291,11 +291,18 @@ function sidebarReference() {
       text: '参考',
       items: [
         { text: '介绍', link: '/reference/' },
-        { text: '请求标头', link: '/reference/headers.md' },
-        { text: '缓存', link: '/reference/cache.md' },
         { text: '状态码', link: '/reference/error-codes.md' },
-        { text: '语言包', link: '/reference/language-pack.md' },
-        { text: '全局配置', link: '/reference/configs.md' },
+        { text: '请求标头', link: '/reference/headers.md' },
+        { text: '登录流程', link: '/reference/login.md' },
+        {
+          text: '全局配置',
+          collapsed: false,
+          items: [
+            { text: '配置项', link: '/reference/configs.md' },
+            { text: '语言包', link: '/reference/language-pack.md' },
+            { text: '缓存', link: '/reference/cache.md' },
+          ]
+        },
         {
           text: '通用数据结构',
           collapsed: false,

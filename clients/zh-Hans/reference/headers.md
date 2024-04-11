@@ -19,25 +19,6 @@
 | X-Fresns-Signature | String | YES | [查看签名生成规则](#签名生成规则) |
 | X-Fresns-Signature-Timestamp | String | YES | 签名生成时间<br>当前 UTC+0 Unix 时间戳，秒或者毫秒 |
 
-## 登录流程
-
-- 1. 获取[全局配置](configs.md)里账号中心链接 [account_center_service](configs.md#账户设置)
-- 2. 使用 `WebView` 访问账号登录(或注册)页面，登录完成后获取回调 `postMessage` 信息里的 `loginToken` 参数。
-- 3. 凭 `loginToken` 参数请求登录接口 [/api/fresns/v1/account/auth-token](../api/account/login.md)
-- 4. 登录成功后，获取账号凭证
-    - **aid**: `data.authToken.aid`
-    - **aidToken**: `data.authToken.aidToken`
-    - **uid**: `data.authToken.uid`
-    - **uidToken**: `data.authToken.uidToken`
-
-## 切换用户
-
-- 1. 如果[账号信息](data/account.md)有多个用户，凭用户信息可以切换登录。
-- 2. 凭 `uidOrUsername` 请求登录接口 [/api/fresns/v1/user/auth-token](../api/user/login.md)
-- 3. 登录成功后，替换用户凭证
-    - **uid**: `data.authToken.uid`
-    - **uidToken**: `data.authToken.uidToken`
-
 ## 签名生成规则
 
 ```php

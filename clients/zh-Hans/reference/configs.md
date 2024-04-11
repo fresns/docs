@@ -1,4 +1,4 @@
-# 全局配置
+# 配置项
 
 - 接口地址：[/api/fresns/v1/global/configs](/api/global/configs.md)
 

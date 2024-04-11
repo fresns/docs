@@ -12,8 +12,8 @@
 | 变量名 | 说明 |
 | --- | --- |
 | `{accessToken}` | 访问令牌，并且实现一键登录<br>[生成信息](access-token.md) |
-| `{postMessageKey}` | 回调标识名<br>客户端以 `postMessage` 方式接收回调通知 |
-| `{redirectUrl}` | 重定向网址 |
+| `{postMessageKey}` | `postMessage` 回调消息标识名 |
+| `{redirectUrl}` | 重定向网址，参数值 `urlencode()`<br>网址中支持 `{loginToken}` 变量名，用于 URL 方式接收登录凭证信息 |
 | `{connectPlatformId}` | [互联平台 ID](https://docs.fresns.com/zh-Hans/open-source/configs/dictionary/connects.html) |
 | `{aid}` | 账号 ID |
 | `{uid}` | 用户 ID |

@@ -1,12 +1,11 @@
 # Cache
 
-- [Error Codes](error-codes.md)
-- [Language Pack](language-pack.md)
 - [Global Configs](configs.md)
+- [Language Pack](language-pack.md)
 
-The foundational information of these three clients might be utilized on every page. To prevent frequent API requests from slowing down the loading speed, we recommend implementing caching on the client side.
+The basic information from these clients can be used on any page. To prevent frequent API requests from slowing down the load speed, we recommend implementing caching on the client side.
 
-> Similarly, caching is advised for the currently logged-in account and user profiles, perhaps with a duration of one minute. This strategy can help avoid excessive requests to the user information interface. Following user interactions, such as like, publish, or modify profiles, the user data should be retrieved and cached anew.
+> We also recommend caching the currently logged in account and user profile for, say, 1 minute to avoid frequent requests to the UI. When the user performs an interactive function, such as liking, posting, changing the profile, etc., it can be cached again.
 
 ## Cache Time
 

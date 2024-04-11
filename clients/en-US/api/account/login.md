@@ -22,7 +22,7 @@
 
 **Request Description**
 
-- See [Login Process](../../reference/headers.md#login-process)
+- See [Login Process](../../reference/login.md)
 
 ## Return
 

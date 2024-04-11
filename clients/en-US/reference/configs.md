@@ -1,4 +1,4 @@
-# Global Configs
+# Config Items
 
 - Endpoint Path: [/api/fresns/v1/global/configs](/api/global/configs.md)
 

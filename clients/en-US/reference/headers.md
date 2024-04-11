@@ -19,25 +19,6 @@
 | X-Fresns-Signature | String | **required** | [Signature generation rules](#signature-generation-rules) |
 | X-Fresns-Signature-Timestamp | String | **required** | Signature generation time (Current UTC+0 Unix timestamp, in seconds or milliseconds) |
 
-## Login Process
-
-- 1. Get the account centre link in the [global configuration](configs.md#account) `account_center_service`
-- 2. Access the account login (or registration) page using the `WebView` and get the `loginToken` parameter in the callback `postMessage` message after login is complete.
-- 3. Request the login interface [/api/fresns/v1/account/auth-token](../api/account/login.md) with the loginToken parameter.
-- 4. After successful login, get the account token
-    - **aid**: `data.authToken.aid`
-    - **aidToken**: `data.authToken.aidToken`
-    - **uid**: `data.authToken.uid`
-    - **uidToken**: `data.authToken.uidToken`
-
-## Switch Users
-
-- 1. If the [account detail](data/account.md) have more than one user, you can switch logins using the user detail.
-- 2. Request login interface by `uidOrUsername` [/api/fresns/v1/user/auth-token](../api/user/login.md)
-- 3. After successful login, replace the user token
-    - **uid**: `data.authToken.uid`
-    - **uidToken**: `data.authToken.uidToken`
-
 ## Signature generation rules
 
 ```php
