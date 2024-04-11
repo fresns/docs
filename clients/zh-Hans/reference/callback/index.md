@@ -72,8 +72,9 @@ let apiData = {
 };
 let apiCode = 0;
 let apiMessage = 'ok';
+let timeout = 0; // JS send setTimeout
 
-FresnsCallback.send(callbackAction, apiData, apiCode, apiMessage);
+FresnsCallback.send(callbackAction, apiData, apiCode, apiMessage, timeout);
 ```
 
 ### 接收消息
