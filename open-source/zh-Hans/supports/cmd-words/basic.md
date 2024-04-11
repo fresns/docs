@@ -144,19 +144,6 @@
 
 - 登录令牌由 `createSessionLog` 命令字创建。
 
-::: details 结果示例
-- 结果为 `31604` 或 `31508` 输出数据有 `aid`
-```json
-{
-    "code": 31604,
-    "message": "当前用户设置了 PIN，请输入 PIN 登录",
-    "data": {
-        "aid": "accounts->aid",
-    }
-}
-```
-:::
-
 ## 更新登录令牌 loginToken
 
 ```php

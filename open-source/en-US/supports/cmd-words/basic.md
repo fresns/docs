@@ -135,19 +135,6 @@
 
 - The login token is created by the `createSessionLog` command.
 
-::: details Return Example
-- If the result is `31604` or `31508`, the output data is `aid`.
-```json
-{
-    "code": 31604,
-    "message": "The current user has set a PIN, please enter the PIN to log in.",
-    "data": {
-        "aid": "accounts->aid",
-    }
-}
-```
-:::
-
 ## updateLoginToken
 
 ```php
