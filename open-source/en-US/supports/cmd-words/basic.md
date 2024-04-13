@@ -184,11 +184,11 @@
 ```
 | Parameter Name | Type | Required | Description |
 | --- | --- | --- | --- |
-| fskey | String | YES | Plugin Fskey |
-| ulid | String | YES | ULID |
-| type | Number | NO | [Reference](../../database/temporary/callback-contents.md#type) |
-| content | Array | NO |  |
-| retentionDays | Number | NO | default `1` |
+| fskey | String | **required** | Plugin Fskey |
+| callbackKey | String | **required** | ULID |
+| callbackType | Number | *optional* | [Reference](../../database/temporary/callback-contents.md#type) |
+| callbackContent | Array | *optional* |  |
+| retentionDays | Number | *optional* | default `1` |
 
 ## getCallbackContent
 
@@ -197,7 +197,8 @@
 ```
 | Parameter Name | Type | Required | Description |
 | --- | --- | --- | --- |
-| fskey | String | YES | Plugin Fskey |
-| ulid | String | YES | ULID |
-| timeout | Number | NO | Unit: minutes<br>Get data in how many minutes |
-| markAsUsed | Boolean | NO | default `false` |
+| fskey | String | **required** | Plugin Fskey |
+| callbackKey | String | **required** | Callback Key |
+| callbackType | Number | *optional* | Callback Type |
+| timeout | Number | *optional* | Unit: minutes<br>Get data in how many minutes |
+| markAsUsed | Boolean | *optional* | default `false` |

@@ -123,7 +123,7 @@
 | 34304 | Incorrect account password |
 | 34305 | Incorrect account or wrong password |
 | 34306 | The error has exceeded the system limit. Please log in again 1 hour later |
-| 34307 | Current account has been banned |
+| 34307 | Current account disabled |
 | 34308 | The account has been logged out |
 | 34401 | Email bound |
 | 34402 | Phone bound |
@@ -131,9 +131,9 @@
 | 34404 | Connect token is disabled |
 | 34405 | You have already connected an account and cannot connect it again. |
 | 34406 | Your account is not set up with an email and phone number, so after you are disconnected your account will be empty, and you will not be able to log in, so disconnect is disabled. |
-| 34501 | Account wallet not exist or has been banned |
+| 34501 | Account wallet not exist or disabled |
 | 34502 | Account wallet password is incorrect |
-| 34503 | The counterparty wallet not exist or has been banned |
+| 34503 | The counterparty wallet not exist or disabled |
 | 34504 | Wallet balance is not allowed to make payment |
 | 34505 | The counterparty wallet balance is not allowed to make payment |
 | 34506 | The closing balance not match with the wallet limit |
@@ -156,7 +156,7 @@
 | 35110 | The nickname contains block words |
 | 35111 | That nickname has been taken. Please choose another. |
 | 35201 | Current user not exist or not belong to the current account |
-| 35202 | Current user has been banned |
+| 35202 | Current user disabled |
 | 35203 | The user has been logged out |
 | 35204 | Incorrect User PIN |
 | 35301 | Current user has no right to request |
@@ -245,42 +245,46 @@
 | --- | --- |
 | **Group** |  |
 | 37100 | Wrong group or record not exist |
-| 37101 | Group has been banned |
+| 37101 | Group disabled |
 | 37102 | None of the selected groups are eligible, the content is empty |
 | 37103 | Only members can view this group. |
 | 37104 | Only members can see who's in the group and what they post. |
-| 37105 | The current user has been banned from viewing the content of this group |
+| 37105 | The current user disabled from viewing the content of this group |
 | 37106 | The service has expired and cannot be viewed and interacted with in this group |
 | 37107 | Service has expired, can't view new content |
 | **Hashtag** |  |
 | 37200 | Wrong hashtag or record not exist |
-| 37201 | Hashtag has been banned |
+| 37201 | Hashtag disabled |
 | 37202 | None of the selected hashtags are eligible, the content is empty |
 | **Geotag** |  |
 | 37300 | Wrong geotag or record not exist |
-| 37301 | Geotag has been banned |
+| 37301 | Geotag disabled |
 | 37302 | None of the selected geotags are eligible, the content is empty |
 | **Post** |  |
 | 37400 | Wrong post or record not exist |
-| 37401 | Post has been banned |
+| 37401 | Post disabled |
 | 37402 | Wrong post log or record not exist |
 | 37403 | Post log suspended |
 | 37404 | The content could not be accessed without authorization |
 | **Comment** |  |
 | 37500 | Wrong comment or record not exist |
-| 37501 | Comment has been banned |
+| 37501 | Comment disabled |
 | 37502 | Wrong comment log or record not exist |
 | 37503 | Comment log suspended |
 | 37504 | Comments are only visible to the author of the post |
 | 37505 | The post has timed out and no longer shows comments |
 | **File** |  |
 | 37600 | Wrong file or record not exist |
-| 37601 | File has been banned |
+| 37601 | File disabled |
 | 37602 | You are not authorized to edit this file. |
 | **Extend** |  |
 | 37700 | Wrong extend content or record not exist |
-| 37701 | Extend has been banned |
+| 37701 | Extend Disabled |
 | 37702 | Extend key does not exist |
+| **Archive** |  |
+| 37800 | Wrong archive content or record not exist |
+| 37801 | Archive configuration disabled |
+| 37802 | Archive configuration mismatch |
 
 ## Editor
 
