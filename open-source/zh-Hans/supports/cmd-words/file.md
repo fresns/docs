@@ -8,12 +8,28 @@
 | 参数名 | 类型 | 是否必传 | 说明 |
 | --- | --- | --- | --- |
 | uid | Number | YES | 上传者 UID |
-| usageType | String | YES | 文件用途类型<br>`userAvatar`<br>`userBanner`<br>`conversation`<br>`post`<br>`comment`<br>`postDraft`<br>`commentDraft` |
-| usageFsid | String | YES | 文件用途 fsid<br>`userAvatar` 传参 `uidOrUsername`<br>`userBanner` 传参 `uidOrUsername`<br>`conversation` 传参 `uidOrUsername`<br>`post` 传参 `pid`<br>`comment` 传参 `cid`<br>`postDraft` 传参 `did`<br>`commentDraft` 传参 `did` |
+| usageType | String | YES | 文件用途类型 |
+| usageFsid | String | YES | 用途目标 fsid |
+| archiveCode | String | NO | `elementType` 文件类扩展档案 |
 | type | Number | YES | 1.图片 / 2.视频 / 3.音频 / 4.文档 |
 | extension | String | NO | 文件扩展名 |
 | size | Number | NO | 单位 `Byte` |
 | duration | Number | NO | 音视频时长，单位 `秒` |
+
+::: details 参数说明
+| usageType | usageFsid | archiveCode |
+| --- | --- | --- |
+| `userAvatar` | 用户的 `uidOrUsername` |  |
+| `userBanner` | 用户的 `uidOrUsername` |  |
+| `userArchive` | 用户的 `uidOrUsername` | 扩展档案 `code` |
+| `conversation` | 接收用户的 `uidOrUsername` |  |
+| `post` | 帖子 ID `pid` |  |
+| `comment` | 评论 ID `comment` |  |
+| `postDraft` | 帖子草稿 ID `did` |  |
+| `postDraftArchive` | 帖子草稿 ID `did` | 扩展档案 `code` |
+| `commentDraft` | 评论草稿 ID `did` |  |
+| `commentDraftArchive` | 评论草稿 ID `did` | 扩展档案 `code` |
+:::
 
 ::: details 结果示例
 ```json

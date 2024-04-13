@@ -17,12 +17,28 @@
 
 | Key | Type | Required | Description |
 | --- | --- | --- | --- |
-| usageType | String | **required** | File usage type<br>`userAvatar`<br>`userBanner`<br>`conversation`<br>`post`<br>`comment`<br>`postDraft`<br>`commentDraft` |
-| usageFsid | String | **required** | File usage fsid<br>`userAvatar` parameter `uidOrUsername`<br>`userBanner` parameter `uidOrUsername`<br>`conversation` parameter `uidOrUsername`<br>`post` parameter `pid`<br>`comment` parameter `cid`<br>`postDraft` parameter `did`<br>`commentDraft` parameter `did` |
+| usageType | String | **required** | File usage type |
+| usageFsid | String | **required** | Usage target fsid |
+| archiveCode | String | *optional* | `elementType` File [Archive](../global/archives.md) |
 | type | String | **required** | Choose one from `image`, `video`, `audio`, `document` |
 | file | File | **required** |  |
 | warning | String | *optional* | File Warning `none`, `nudity`, `violence`, `sensitive` |
 | moreInfo | String | *optional* | File custom information (Object to String) |
+
+**Request Description**
+
+| usageType | usageFsid | archiveCode |
+| --- | --- | --- |
+| `userAvatar` | User `uidOrUsername` |  |
+| `userBanner` | User `uidOrUsername` |  |
+| `userArchive` | User `uidOrUsername` | [Archive](../global/archives.md) `code` |
+| `conversation` | Receives the user `uidOrUsername` |  |
+| `post` | Post ID `pid` |  |
+| `comment` | Comment ID `comment` |  |
+| `postDraft` | Post Draft ID `did` |  |
+| `postDraftArchive` | Post Draft ID `did` | [Archive](../global/archives.md) `code` |
+| `commentDraft` | Comment Draft ID `did` |  |
+| `commentDraftArchive` | Comment Draft ID `did` | [Archive](../global/archives.md) `code` |
 
 ## Return
 

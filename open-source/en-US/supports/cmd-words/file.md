@@ -8,12 +8,28 @@
 | Parameter Name | Type | Required | Description |
 | --- | --- | --- | --- |
 | uid | Number | **required** | Uploader UID |
-| usageType | String | **required** | File usage type<br>`userAvatar`<br>`userBanner`<br>`conversation`<br>`post`<br>`comment`<br>`postDraft`<br>`commentDraft` |
-| usageFsid | String | **required** | File usage fsid<br>`userAvatar` parameter `uidOrUsername`<br>`userBanner` parameter `uidOrUsername`<br>`conversation` parameter `uidOrUsername`<br>`post` parameter `pid`<br>`comment` parameter `cid`<br>`postDraft` parameter `did`<br>`commentDraft` parameter `did` |
+| usageType | String | **required** | File usage type |
+| usageFsid | String | **required** | Usage target fsid |
+| archiveCode | String | *optional* | `elementType` File Archive |
 | type | Number | **required** | 1.Image / 2.Video / 3.Audio / 4.Document |
 | extension | String | *optional* | File Extension Name |
 | size | Number | *optional* | in `Byte` |
 | duration | Number | *optional* | Audio or video duration in `seconds` |
+
+::: details Usage Type and Fsid
+| usageType | usageFsid | archiveCode |
+| --- | --- | --- |
+| `userAvatar` | User `uidOrUsername` |  |
+| `userBanner` | User `uidOrUsername` |  |
+| `userArchive` | User `uidOrUsername` | Archive `code` |
+| `conversation` | Receives the user `uidOrUsername` |  |
+| `post` | Post ID `pid` |  |
+| `comment` | Comment ID `comment` |  |
+| `postDraft` | Post Draft ID `did` |  |
+| `postDraftArchive` | Post Draft ID `did` | Archive `code` |
+| `commentDraft` | Comment Draft ID `did` |  |
+| `commentDraftArchive` | Comment Draft ID `did` | Archive `code` |
+:::
 
 ::: details Return Example
 ```json

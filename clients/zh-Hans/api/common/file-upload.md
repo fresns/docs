@@ -17,12 +17,28 @@
 
 | 参数名 | 类型 | 是否必传 | 说明 |
 | --- | --- | --- | --- |
-| usageType | String | YES | 文件用途类型<br>`userAvatar`<br>`userBanner`<br>`conversation`<br>`post`<br>`comment`<br>`postDraft`<br>`commentDraft` |
-| usageFsid | String | YES | 文件用途 fsid<br>`userAvatar` 传参 `uidOrUsername`<br>`userBanner` 传参 `uidOrUsername`<br>`conversation` 传参 `uidOrUsername`<br>`post` 传参 `pid`<br>`comment` 传参 `cid`<br>`postDraft` 传参 `did`<br>`commentDraft` 传参 `did` |
+| usageType | String | YES | 文件用途类型 |
+| usageFsid | String | YES | 用途目标 fsid |
+| archiveCode | String | NO | `elementType` 文件类[扩展档案](../global/archives.md) |
 | type | String | YES | 四选一 `image`,`video`,`audio`,`document` |
 | file | File | YES |  |
 | warning | String | NO | 文件警告 `none`, `nudity`, `violence`, `sensitive` |
 | moreInfo | String | NO | 文件自定义信息，转换为字符串传参 (Object to String) |
+
+**接口使用说明**
+
+| usageType | usageFsid | archiveCode |
+| --- | --- | --- |
+| `userAvatar` | 用户的 `uidOrUsername` |  |
+| `userBanner` | 用户的 `uidOrUsername` |  |
+| `userArchive` | 用户的 `uidOrUsername` | [扩展档案](../global/archives.md) `code` |
+| `conversation` | 接收用户的 `uidOrUsername` |  |
+| `post` | 帖子 ID `pid` |  |
+| `comment` | 评论 ID `comment` |  |
+| `postDraft` | 帖子草稿 ID `did` |  |
+| `postDraftArchive` | 帖子草稿 ID `did` | [扩展档案](../global/archives.md) `code` |
+| `commentDraft` | 评论草稿 ID `did` |  |
+| `commentDraftArchive` | 评论草稿 ID `did` | [扩展档案](../global/archives.md) `code` |
 
 ## 返回结果
 
