@@ -12,13 +12,12 @@ aside: false
 | description | json | 介绍 |  | YES | **多语言** |
 | code | varchar(32) | 代码 |  | NO | **唯一值**，纯英文字母，不支持任何符号或空格 |
 | usage_type | tinyint *UNSIGNED* | 用途类型 |  | NO | [内容类型编号](../numbered-description.md#内容类型编号) |
-| usage_group_id | int *UNSIGNED* | 用途是小组内容专用时使用 | 0 | NO | 关联字段 [groups->id](../contents/groups.md)<br>关联插件所属小组，`0` 表示否 |
-| usage_group_content_type | tinyint *UNSIGNED* | 用途为小组哪种内容使用 |  | YES | 1.帖子 / 2.评论 |
+| usage_group_id | int *UNSIGNED* | 用途是小组内容专用时使用 | 0 | NO | 关联字段 [groups->id](../contents/groups.md)<br>配合 `post` 或 `comment` 使用 |
 | form_element | varchar(16) | 表单元素 |  | NO | HTML form 元素 |
 | element_type | varchar(16) | 表单元素类型 |  | YES | 与 form_element 对应的类型 |
 | element_options | json | 选项类型配置值 |  | YES | **多语言**<br>数组格式，为 select,checkbox,radio 等类型提供选项值 |
 | file_type | tinyint *UNSIGNED* | 文件类型 |  | YES | `form_element=input` + `element_type=file`<br>仅以上两个配置匹配时才使用，用于声明上传文件类型<br>1.图片 / 2.视频 / 3.音频 / 4.文档 |
-| is_multiple | tinyint *UNSIGNED* | 是否多选 | 0 | NO | 0.否 / 1.是<br>对 select,email,file 等元素有效  |
+| is_multiple | tinyint *UNSIGNED* | 是否多选 | 0 | NO | 0.否 / 1.是<br>对 select,file 等元素有效  |
 | is_required | tinyint *UNSIGNED* | 是否必填 | 0 | NO | 0.否 / 1.是 |
 | input_pattern | varchar(128) | 自定义正则表达式 |  | YES |  |
 | input_max | smallint *UNSIGNED* | 最大值 |  | YES |  |
