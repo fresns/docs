@@ -26,7 +26,7 @@ aside: false
     "commentCount": "Number / 子评论总数",
     "commentDigestCount": "Number / 子评论中精华总数",
     "commentLikeCount": "Number / 子评论被点赞总数",
-    "commentDislikeCount": "Number / 子评论被点赞总数",
+    "commentDislikeCount": "Number / 子评论被点踩总数",
     "commentFollowCount": "Number / 子评论被关注总数",
     "commentBlockCount": "Number / 子评论被屏蔽总数",
     "createdDatetime": "String / 评论发表时间",

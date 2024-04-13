@@ -26,7 +26,7 @@ aside: false
     "commentCount": "Number / 评论总数",
     "commentDigestCount": "Number / 评论中精华总数",
     "commentLikeCount": "Number / 评论被点赞总数",
-    "commentDislikeCount": "Number / 评论被点赞总数",
+    "commentDislikeCount": "Number / 评论被点踩总数",
     "commentFollowCount": "Number / 评论被关注总数",
     "commentBlockCount": "Number / 评论被屏蔽总数",
     "quoteCount": "Number / 关联帖子总数，别人引用它的数量",

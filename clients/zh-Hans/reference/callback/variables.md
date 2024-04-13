@@ -30,6 +30,6 @@
 | `{viewType}` | 视图类型 `list`, `detail`, `quoted` |
 | `{did}` | 草稿 ID |
 | `{draftType}` | 草稿类型 `post` 或 `comment` |
-| `{uploadInfo}` | 上传参数，`用途类型,用途fsid,文件类型` 以英文逗号隔开<br>[同上传接口](../../api/common/file-upload.md)，例如 `postDraft,did,image` |
+| `{uploadInfo}` | 上传参数，`用途类型,用途fsid,文件类型,扩展档案代码` 以英文逗号隔开<br>[同上传接口](../../api/common/file-upload.md)，例如 `postDraft,did,image,code` |
 | `{mapInfo}` | 地图参数，`地图 ID,纬度,经度` 以英文逗号隔开<br>[地图 ID 信息](../dictionary/maps.md)，例如 `2,1.2803074,103.8610191` |
 | `{parameter}` | 自定义参数 |
