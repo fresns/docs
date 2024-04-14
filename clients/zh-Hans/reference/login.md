@@ -8,7 +8,9 @@
 
 - 1. 获取「全局配置项」里账户设置项 [account_login_service](configs.md#账户设置)
 - 2. 使用[扩展回调](callback/variables.md)的逻辑替换路径变量值，得到最终登录页 URL。
-- 3. 使用 `iframe` 访问 URL 页面，用户在登录页面操作登录。
+- 3. 访问登录页
+    - 方法 1: 使用 `iframe` 访问登录页面。
+    - 方法 2: 直接跳转到登录页（当前窗口或者新窗口）。
 - 4. 监听回调（需要同时支持两种方法）
     - 方法 1: 监听 [postMessage](callback/index.md#postmessage-说明) 消息，获取 `loginToken` 参数。
     - 方法 2: 使用 `URL` 获取 `loginToken` 参数。
@@ -33,7 +35,7 @@
 - 3. 使用 `WebView` 访问 URL 页面，用户在登录页面操作登录。
 - 4. 监听 [postMessage](callback/index.md#postmessage-说明) 消息，获取 `loginToken` 参数。
 - 5. 凭 `loginToken` 参数请求登录接口 [/api/fresns/v1/account/auth-token](../api/account/login.md)
-- 6. 登录成功后，获取账号凭证
+- 6. 登录成功后，获得账号授权凭证
     - **aid**: `data.authToken.aid`
     - **aidToken**: `data.authToken.aidToken`
     - **uid**: `data.authToken.uid`

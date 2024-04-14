@@ -8,7 +8,7 @@ aside: false
 | --- | --- | --- | --- | --- | --- |
 | id | bigint *UNSIGNED* | 主键 ID |  | NO | 自动递增 |
 | app_fskey | varchar(64) | 生成数据的插件名称 |  | NO | 关联字段 [apps->fskey](../apps/apps.md) |
-| ulid | ulid | 回调查询键 |  | NO | **唯一值**<br>Universally Unique Lexicographically Sortable Identifier<br>示例 01GQBMS8BBTCKTT7B0T3EER8XR |
+| key | varchar(64) | 回调查询键 |  | NO | **唯一值** |
 | type | smallint *UNSIGNED* | 类型 | 1 | NO | 见下方描述 |
 | content | json | 返参内容 |  | YES |  |
 | retention_days | tinyint *UNSIGNED* | 保留天数 | 1 | NO | 数据可保留天数，超时后可以被删除 |

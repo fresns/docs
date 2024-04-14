@@ -9,6 +9,9 @@
 - 1. Get the account settings from the [account_login_service](configs.md#account) global configuration item.
 - 2. Replace the path variable with the [extension callback](callback/variables.md) logic to get the final login page URL.
 - 3. Use an `iframe` to access the URL page and the user will login on the login page.
+- 3. Access to the login page
+    - Method 1: Use `iframe` to access the login page.
+    - Method 2: Go directly to the login page (current window or new window).
 - 4. Listening callbacks (both methods must be supported)
     - Method 1: Listen for the [postMessage](callback/index.md#postmessage-intro) message and get the `loginToken` parameter.
     - Method 2: Use `URL` to get the `loginToken` parameter.

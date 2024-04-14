@@ -8,7 +8,7 @@ aside: false
 | --- | --- | --- | --- | --- | --- |
 | id | bigint *UNSIGNED* | Primary Key ID |  | NO | Auto Increment |
 | app_fskey | varchar(64) | Generate data for plugin fskey |  | NO | Related field [apps->fskey](../apps/apps.md) |
-| ulid | ulid | Callback query key |  | NO | **Unique value**<br>Universally Unique Lexicographically Sortable Identifier<br>Example: 01GQBMS8BBTCKTT7B0T3EER8XR |
+| key | varchar(64) | Callback query key |  | NO | **Unique value** |
 | type | smallint *UNSIGNED* | Type | 1 | NO | See description below |
 | content | json | Return parameter content |  | YES |  |
 | retention_days | tinyint *UNSIGNED* | Retention Days | 1 | NO | Data can be retained for a number of days, after which it can be deleted. |
