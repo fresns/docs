@@ -194,7 +194,7 @@
 | 参数名 | 类型 | 是否必传 | 说明 |
 | --- | --- | --- | --- |
 | fskey | String | YES | 插件 Fskey |
-| callbackKey | String | YES | 长度限制 128 字符 |
+| callbackKey | String | YES | 长度限制 64 字符 |
 | callbackType | Number | NO | [参考](../../database/temporary/callback-contents.md#type) |
 | callbackContent | Array | NO |  |
 | retentionDays | Number | NO | 默认 `1` |
@@ -207,6 +207,6 @@
 | 参数名 | 类型 | 是否必传 | 说明 |
 | --- | --- | --- | --- |
 | fskey | String | YES | 插件 Fskey |
-| callbackKey | String | YES | 长度限制 128 字符 |
+| callbackKey | String | YES | 长度限制 64 字符 |
 | timeout | Number | NO | 单位：分钟<br>获取多少分钟内的数据 |
 | markAsUsed | Boolean | NO | 默认 `false` |

@@ -185,7 +185,7 @@
 | Parameter Name | Type | Required | Description |
 | --- | --- | --- | --- |
 | fskey | String | **required** | Plugin Fskey |
-| callbackKey | String | **required** | ULID |
+| callbackKey | String | **required** | Callback Key |
 | callbackType | Number | *optional* | [Reference](../../database/temporary/callback-contents.md#type) |
 | callbackContent | Array | *optional* |  |
 | retentionDays | Number | *optional* | default `1` |
