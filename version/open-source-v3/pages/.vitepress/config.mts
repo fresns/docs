@@ -284,8 +284,8 @@ function sidebarGuideForZh() {
     {
       text: '环境配置教程',
       items: [
-        { text: '1Panel', link: '/zh-Hans/config/1panel.md' },
         { text: '宝塔面板', link: '/zh-Hans/config/baota.md' },
+        { text: '1Panel', link: '/zh-Hans/config/1panel.md' },
       ]
     }
   ]
