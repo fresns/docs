@@ -1,6 +1,6 @@
-# 更新设备凭证
+# 更新设置信息
 
-- 接口地址：`/api/fresns/v1/user/device-token`
+- 接口地址：`/api/fresns/v1/user/settings`
 - 请求方式：`PATCH`
 - 传参方式：`application/json`
 
@@ -17,7 +17,9 @@
 
 | 参数名 | 类型 | 是否必传 | 说明 |
 | --- | --- | --- | --- |
-| deviceToken | String | YES | iOS 或 Android 设备 Token |
+| conversationPolicy | Number | NO | 对话设置 |
+| commentPolicy | Number | NO | 评论设置 |
+| deviceToken | String | NO | iOS 或 Android 设备 Token |
 
 ## 返回结果
 

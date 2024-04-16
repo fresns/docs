@@ -1,4 +1,4 @@
-# Edit Profile
+# Update Profile
 
 - Endpoint Path: `/api/fresns/v1/user/profile`
 - Method: `PATCH`
@@ -29,8 +29,6 @@
 | birthdayDisplayType | Number | *optional* | Birthday: 1.Y-m-d / 2.Y / 3.m-d / 4.Hidden |
 | bio | String | *optional* | Bio |
 | location | String | *optional* | Location |
-| conversationPolicy | Number | *optional* | Conversation setting |
-| commentPolicy | Number | *optional* | Comment setting |
 | moreInfo | Object | *optional* | more info |
 | archives | Array | *optional* | Extended information |
 

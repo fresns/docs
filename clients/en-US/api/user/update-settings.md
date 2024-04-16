@@ -1,6 +1,6 @@
-# Update Device Token
+# Update Settings
 
-- Endpoint Path: `/api/fresns/v1/user/device-token`
+- Endpoint Path: `/api/fresns/v1/user/settings`
 - Method: `PATCH`
 - Request: `application/json`
 
@@ -17,7 +17,9 @@
 
 | Key | Type | Required | Description |
 | --- | --- | --- | --- |
-| deviceToken | String | **required** | iOS or Android device Token |
+| conversationPolicy | Number | *optional* | Conversation setting |
+| commentPolicy | Number | *optional* | Comment setting |
+| deviceToken | String | *optional* | iOS or Android device Token |
 
 ## Return
 

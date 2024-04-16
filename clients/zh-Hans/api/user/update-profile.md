@@ -29,8 +29,6 @@
 | birthdayDisplayType | Number | NO | 生日: 1.完整显示 / 2.显示年份 / 3.显示月和日 / 4.不显示 |
 | bio | String | NO | 简介 |
 | location | String | NO | 位置 |
-| conversationPolicy | Number | NO | 对话设置 |
-| commentPolicy | Number | NO | 评论设置 |
 | moreInfo | Object | NO | 自定义信息 |
 | archives | Array | NO | 扩展资料 |
 
