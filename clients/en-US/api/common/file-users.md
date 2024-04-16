@@ -17,7 +17,7 @@
 
 | Key | Type | Required | Description |
 | --- | --- | --- | --- |
-| fid | String | **required** | File to download |
+| fid | String | **required** | File FID |
 
 ## Query Params
 

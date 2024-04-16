@@ -17,7 +17,7 @@
 
 | 变量名 | 类型 | 是否必传 | 说明 |
 | --- | --- | --- | --- |
-| fid | String | YES | 要下载的文件 FID |
+| fid | String | YES | 文件 FID |
 
 ## Query 参数
 

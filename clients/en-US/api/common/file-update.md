@@ -13,6 +13,12 @@
 | X-Fresns-Uid | **required** | **required** |
 | X-Fresns-Uid-Token | **required** | **required** |
 
+## Path Variables
+
+| Key | Type | Required | Description |
+| --- | --- | --- | --- |
+| fid | String | **required** | File FID |
+
 ## Body Params
 
 | Key | Type | Required | Description |

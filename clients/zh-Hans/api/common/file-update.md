@@ -13,6 +13,12 @@
 | X-Fresns-Uid | YES | YES |
 | X-Fresns-Uid-Token | YES | YES |
 
+## Path 变量
+
+| 变量名 | 类型 | 是否必传 | 说明 |
+| --- | --- | --- | --- |
+| fid | String | YES | 文件 FID |
+
 ## Body 参数
 
 | 参数名 | 类型 | 是否必传 | 说明 |
