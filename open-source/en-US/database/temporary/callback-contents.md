@@ -25,14 +25,15 @@ aside: false
 | 2 | TYPE_AUTHORIZATION | Authorization |
 | 3 | TYPE_TOKEN | Token |
 | 4 | TYPE_ACCOUNT | Account |
-| 5 | TYPE_USER | User |
-| 6 | TYPE_GROUP | Group |
-| 7 | TYPE_HASHTAG | Hashtag |
-| 8 | TYPE_GEOTAG | Geotag |
-| 9 | TYPE_POST | Post |
-| 10 | TYPE_COMMENT | Comment |
-| 11 | TYPE_ARCHIVE | Extended profile information |
-| 12 | TYPE_EXTEND | Extended content information |
-| 13 | TYPE_OPERATION | Extended function information |
-| 14 | TYPE_FILE | File |
-| 15 | TYPE_LOCATION_INFO | Location Info |
+| 5 | TYPE_WALLET | Wallet |
+| 6 | TYPE_USER | User |
+| 7 | TYPE_GROUP | Group |
+| 8 | TYPE_HASHTAG | Hashtag |
+| 9 | TYPE_GEOTAG | Geotag |
+| 10 | TYPE_POST | Post |
+| 11 | TYPE_COMMENT | Comment |
+| 12 | TYPE_ARCHIVE | Extended profile information |
+| 13 | TYPE_EXTEND | Extended content information |
+| 14 | TYPE_OPERATION | Extended function information |
+| 15 | TYPE_FILE | File |
+| 16 | TYPE_LOCATION_INFO | Location Info |
