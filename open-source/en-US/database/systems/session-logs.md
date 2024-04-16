@@ -29,38 +29,41 @@ aside: false
 
 ## Log Type
 
-- `1` Custom
-- `2` Plugin Business
-- `3` Login Control Panel
-- `4` Account - Register
-- `5` Account - Login `action_id = session_tokens->id`
-- `6` Account - Update Profile
-- `7` Account - Set or Reset Password
-- `8` Account - Delete Account
-- `9` User - Create
-- `10` User - Login `action_id = session_tokens->id`
-- `11` User - Update Profile
-- `12` User - Set or Reset Password
-- `13` User - Delete
-- `14` Wallet - Transaction Income
-- `15` Wallet - Transaction Expense
-- `16` Wallet - Set or Reset Password
-- `17` Post - Create Draft
-- `18` Post - Submit for Review
-- `19` Post - Publish
-- `20` Post - Delete
-- `21` Post Log - Delete
-- `22` Comment - Create Draft
-- `23` Comment - Submit for Review
-- `24` Comment - Publish
-- `25` Comment - Delete
-- `26` Comment Log - Delete
-- `27` Action Like
-- `28` Action Dislike
-- `29` Action Follow
-- `30` Action Block
-- `31` Upload File
-- `32` Conversation Message
+| Number | Const Name | Description |
+| --- | --- | --- |
+| 1 | TYPE_UNKNOWN | Unknown |
+| 2 | TYPE_PLUGIN | Plugin |
+| 3 | TYPE_LOGIN_PANEL | Login Admin Panel |
+| 4 | TYPE_ACCOUNT_REGISTER | Account - Register |
+| 5 | TYPE_ACCOUNT_LOGIN | Account - Login `action_id = session_tokens->id` |
+| 6 | TYPE_ACCOUNT_UPDATE_DATA | Account - Update Profile |
+| 7 | TYPE_ACCOUNT_UPDATE_PASSWORD | Account - Set or Reset Password |
+| 8 | TYPE_ACCOUNT_DELETE | Account - Delete Account |
+| 9 | TYPE_USER_ADD | User - Create |
+| 10 | TYPE_USER_LOGIN | User - Login `action_id = session_tokens->id` |
+| 11 | TYPE_USER_UPDATE_PROFILE | User - Update Profile |
+| 12 | TYPE_USER_UPDATE_SETTING | User - Update Setting |
+| 13 | TYPE_USER_UPDATE_PIN | User - Set or Reset PIN |
+| 14 | TYPE_USER_DELETE | User - Delete User |
+| 15 | TYPE_WALLET_INCREASE | Wallet - Transaction Income |
+| 16 | TYPE_WALLET_DECREASE | Wallet - Transaction Expense |
+| 17 | TYPE_WALLET_UPDATE_PASSWORD | Wallet - Set or Reset Password |
+| 18 | TYPE_POST_CREATE_DRAFT | Post - Create Draft |
+| 19 | TYPE_POST_REVIEW | Post - Submit for Review |
+| 20 | TYPE_POST_PUBLISH | Post - Publish |
+| 21 | TYPE_POST_DELETE | Post - Delete |
+| 22 | TYPE_POST_LOG_DELETE | Post Log - Delete |
+| 23 | TYPE_COMMENT_CREATE_DRAFT | Comment - Create Draft |
+| 24 | TYPE_COMMENT_REVIEW | Comment - Submit for Review |
+| 25 | TYPE_COMMENT_PUBLISH | Comment - Publish |
+| 26 | TYPE_COMMENT_DELETE | Comment - Delete |
+| 27 | TYPE_COMMENT_LOG_DELETE | Comment Log-Delete |
+| 28 | TYPE_MARK_LIKE | Action Like |
+| 29 | TYPE_MARK_DISLIKE | Action Dislike |
+| 30 | TYPE_MARK_FOLLOW | Action Follow |
+| 31 | TYPE_MARK_BLOCK | Action Block |
+| 32 | TYPE_UPLOAD_FILE | Upload File |
+| 33 | TYPE_CONVERSATION_MESSAGE | Conversation Message |
 
 ## Device Information JSON
 

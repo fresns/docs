@@ -29,38 +29,41 @@ aside: false
 
 ## 日志类型 type
 
-- `1` 自定义
-- `2` 插件业务
-- `3` 登录控制面板
-- `4` 账号-注册
-- `5` 账号-登录 `action_id = session_tokens->id`
-- `6` 账号-修改资料
-- `7` 账号-设置或重置密码
-- `8` 账号-注销(删除)
-- `9` 用户-新增
-- `10` 用户-登录 `action_id = session_tokens->id`
-- `11` 用户-修改资料
-- `12` 用户-设置或重置密码
-- `13` 用户-删除
-- `14` 钱包-交易收入
-- `15` 钱包-交易支出
-- `16` 钱包-设置或重置密码
-- `17` 帖子-创建草稿
-- `18` 帖子-提交审核
-- `19` 帖子-发表
-- `20` 帖子-删除
-- `21` 帖子日志-删除
-- `22` 评论-创建草稿
-- `23` 评论-提交审核
-- `24` 评论-发表
-- `25` 评论-删除
-- `26` 评论日志-删除
-- `27` 操作喜欢
-- `28` 操作不喜欢
-- `29` 操作关注
-- `30` 操作屏蔽
-- `31` 上传文件
-- `32` 对话消息
+| 类型编号 | 常量名 | 描述 |
+| --- | --- | --- |
+| 1 | TYPE_UNKNOWN | 未知 |
+| 2 | TYPE_PLUGIN | 插件业务 |
+| 3 | TYPE_LOGIN_PANEL | 登录控制面板 |
+| 4 | TYPE_ACCOUNT_REGISTER | 账号-注册 |
+| 5 | TYPE_ACCOUNT_LOGIN | 账号-登录 `action_id = session_tokens->id` |
+| 6 | TYPE_ACCOUNT_UPDATE_DATA | 账号-修改资料 |
+| 7 | TYPE_ACCOUNT_UPDATE_PASSWORD | 账号-设置或重置密码 |
+| 8 | TYPE_ACCOUNT_DELETE | 账号-注销(删除) |
+| 9 | TYPE_USER_ADD | 用户-新增 |
+| 10 | TYPE_USER_LOGIN | 用户-登录 `action_id = session_tokens->id` |
+| 11 | TYPE_USER_UPDATE_PROFILE | 用户-修改资料 |
+| 12 | TYPE_USER_UPDATE_SETTING | 用户-更新设置 |
+| 13 | TYPE_USER_UPDATE_PIN | 用户-设置或重置密码 |
+| 14 | TYPE_USER_DELETE | 用户-删除 |
+| 15 | TYPE_WALLET_INCREASE | 钱包-交易收入 |
+| 16 | TYPE_WALLET_DECREASE | 钱包-交易支出 |
+| 17 | TYPE_WALLET_UPDATE_PASSWORD | 钱包-设置或重置密码 |
+| 18 | TYPE_POST_CREATE_DRAFT | 帖子-创建草稿 |
+| 19 | TYPE_POST_REVIEW | 帖子-提交审核 |
+| 20 | TYPE_POST_PUBLISH | 帖子-发表 |
+| 21 | TYPE_POST_DELETE | 帖子-删除 |
+| 22 | TYPE_POST_LOG_DELETE | 帖子日志-删除 |
+| 23 | TYPE_COMMENT_CREATE_DRAFT | 评论-创建草稿 |
+| 24 | TYPE_COMMENT_REVIEW | 评论-提交审核 |
+| 25 | TYPE_COMMENT_PUBLISH | 评论-发表 |
+| 26 | TYPE_COMMENT_DELETE | 评论-删除 |
+| 27 | TYPE_COMMENT_LOG_DELETE | 评论日志-删除 |
+| 28 | TYPE_MARK_LIKE | 操作喜欢 |
+| 29 | TYPE_MARK_DISLIKE | 操作不喜欢 |
+| 30 | TYPE_MARK_FOLLOW | 操作关注 |
+| 31 | TYPE_MARK_BLOCK | 操作屏蔽 |
+| 32 | TYPE_UPLOAD_FILE | 上传文件 |
+| 33 | TYPE_CONVERSATION_MESSAGE | 对话消息 |
 
 ## 设备信息 JSON
 
