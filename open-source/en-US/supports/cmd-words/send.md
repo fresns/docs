@@ -15,6 +15,7 @@
 | email | String | **required** | email |
 | title | String | **required** | title |
 | content | String | **required** | content (HTML code support) |
+| langTag | String | *optional* | Language tag, empty to use the default language tag<br>Used to handle variable values such as site name and time formats. |
 
 ## sendSms
 

@@ -162,7 +162,7 @@
 | account | String | **required** | Account (email or phone number) |
 | countryCode | Number | *optional* | International area code (phone number specific) |
 | templateId | Number | **required** | [Code Template ID](../../configs/panel/send.md#verify-code-templates) |
-| langTag | String | **required** | Language Tag |
+| langTag | String | *optional* | Language tag, empty to use the default language tag |
 
 ## checkCode
 

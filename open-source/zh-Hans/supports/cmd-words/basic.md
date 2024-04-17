@@ -171,7 +171,7 @@
 | account | String | YES | 账号（邮箱或手机号） |
 | countryCode | Number | NO | 国际区号（手机号专用） |
 | templateId | Number | YES | [验证码模板 ID](../../configs/panel/send.md#验证码模板设置) |
-| langTag | String | YES | 语言标签 |
+| langTag | String | NO | 语言标签，留空则使用默认语言标签 |
 
 ## 核对验证码
 

@@ -15,6 +15,7 @@
 | email | String | YES | 邮箱地址 |
 | title | String | YES | 标题 |
 | content | String | YES | 内容（支持 HTML 代码） |
+| langTag | String | NO | 语言标签，留空则使用默认语言标签<br>用于处理站点名称和时间格式等变量值 |
 
 ## 发信-短信
 
