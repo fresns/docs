@@ -19,7 +19,7 @@
 | --- | --- | --- | --- |
 | uidOrUsername | Number / String | YES | 用户 `uid` 或者 `username` |
 | markType | String | YES | 标记类型 `like`,`dislike`,`follow`,`block` |
-| listType | String | YES | 列表类型 `users`,`groups`,`hashtags`,`posts`,`comments` |
+| listType | String | YES | 列表类型 `users`,`groups`,`hashtags`,`geotags`,`posts`,`comments` |
 
 ## Query 参数
 

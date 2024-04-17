@@ -19,7 +19,7 @@
 | --- | --- | --- | --- |
 | uidOrUsername | Number / String | **required** | User `uid` or `username` |
 | markType | String |  **required** | `like`,`dislike`,`follow`,`block` |
-| listType | String | **required** | `users`,`groups`,`hashtags`,`posts`,`comments` |
+| listType | String | **required** | `users`,`groups`,`hashtags`,`geotags`,`posts`,`comments` |
 
 ## Query Params
 
