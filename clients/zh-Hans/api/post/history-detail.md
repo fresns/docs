@@ -1,4 +1,4 @@
-# 获取帖子[详情] 历史详情
+# 获取历史帖子[详情]
 
 - 接口地址：`/api/fresns/v1/post/history/{hpid}/detail`
 - 请求方式：`GET`

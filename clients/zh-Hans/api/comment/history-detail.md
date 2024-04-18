@@ -1,4 +1,4 @@
-# 获取评论[详情] 历史详情
+# 获取历史评论[详情]
 
 - 接口地址：`/api/fresns/v1/comment/history/{hcid}/detail`
 - 请求方式：`GET`
