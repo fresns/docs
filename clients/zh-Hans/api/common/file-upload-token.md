@@ -59,6 +59,7 @@
     "message": "ok",
     "data": {
         "fid": "String / 文件 ID",
+        "type": "presignedUrl",
         "method": "String / 请求方式",
         "url": "String / 上传地址",
         "headers": "Object / 请求标头",

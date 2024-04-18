@@ -59,6 +59,7 @@
     "message": "ok",
     "data": {
         "fid": "String / File ID",
+        "type": "presignedUrl",
         "method": "String / Method",
         "url": "String / Upload Endpoint URL",
         "headers": "Object / Headers",
