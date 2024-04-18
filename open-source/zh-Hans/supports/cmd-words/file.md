@@ -62,16 +62,30 @@
 - 获取 S3 预签名 URL
 
 ::: details 结果示例
-```json
+
+::: code-group
+```json [Presigned URL]
 {
     "code": 0,
     "message": "ok",
     "data": {
+        "type": "presignedUrl",
         "method": "String / 请求方式",
         "url": "String / 请求地址",
         "headers": "Object / 请求标头",
         "activeMinutes": "Number / 有效期分钟数",
         "expiration": "String / 到期时间 Y-m-d H:i:s" // UTC+0
+    }
+}
+```
+
+```json [STS]
+{
+    "code": 0,
+    "message": "ok",
+    "data": {
+        "type": "sts",
+        // 待完善
     }
 }
 ```

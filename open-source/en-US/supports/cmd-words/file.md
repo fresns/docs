@@ -67,6 +67,7 @@
     "code": 0,
     "message": "ok",
     "data": {
+        "type": "presignedUrl",
         "method": "String / Method",
         "url": "String / Endpoint URL",
         "headers": "Object / Headers",
