@@ -1,4 +1,4 @@
-# Theme Tags
+# Functions
 
 ## Route
 
@@ -69,7 +69,7 @@ fs_theme('fskey', '')
 
 ## Config Items
 
-Get configuration values from API [global configuration information](../reference/configs.md)
+Get configuration values from API [global configuration information](../../reference/configs.md)
 
 ```php
 fs_config('item_key')
@@ -77,7 +77,7 @@ fs_config('item_key')
 
 ## Language Packs
 
-- [Language Pack Information](../reference/language-pack.md)
+- [Language Pack Information](../../reference/language-pack.md)
 - Configuration Path `Panel > Clients > Language Packs`
 
 ```php
@@ -86,7 +86,7 @@ fs_lang('KeyName')
 
 ## Channel Extends
 
-- [Channel Information](../api/global/channels.md)
+- [Channel Information](../../api/global/channels.md)
 
 ```php
 fs_channels()
@@ -94,25 +94,20 @@ fs_channels()
 
 ## Editor Configs
 
-- [Editor Configs](../api/editor/configs.md)
+- [Editor Configs](../../api/editor/configs.md)
+- [Stickers Array](../../api/global/stickers.md)
 
 ```php
-fs_post_editor('key') // supports "dot notation" for multi-dimensional arrays
+fs_editor_post('key') // supports "dot notation" for multi-dimensional arrays
 
-fs_comment_editor('key') // supports "dot notation" for multi-dimensional arrays
-```
+fs_editor_comment('key') // supports "dot notation" for multi-dimensional arrays
 
-## Stickers
-
-- [Stickers Array](../api/global/stickers.md)
-
-```php
-fs_stickers()
+fs_editor_stickers()
 ```
 
 ## Content Types
 
-- [Content Types Array](../api/global/content-types.md)
+- [Content Types Array](../../api/global/content-types.md)
 
 ```php
 fs_content_types('post') // post or comment
@@ -177,9 +172,9 @@ fs_user_overview('key') // supports "dot notation" for multi-dimensional arrays
 ```
 
 - The parameter key comes from the API `data` parameter.
-- [Account Detail API](../api/account/detail.md)
-- [User Detail API](../api/user/detail.md)
-- [User Overview API](../api/user/overview.md)
+- [Account Detail API](../../api/account/detail.md)
+- [User Detail API](../../api/user/detail.md)
+- [User Overview API](../../api/user/overview.md)
 
 ## Client Options
 

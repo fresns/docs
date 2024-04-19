@@ -2,6 +2,10 @@
 
 集成在 Fresns 中运行的 Web 客户端采用 [Laravel Blade](https://laravel.com/docs/11.x/blade) 模板引擎，遵循 Blade 功能和视图文件。
 
+## 代码仓库
+
+- [https://github.com/fresns/client-website-themes](https://github.com/fresns/client-website-themes)
+
 ## 文件目录结构
 
 ```php

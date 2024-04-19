@@ -1,4 +1,4 @@
-# 模板标签
+# 功能函数
 
 ## 路由
 
@@ -69,7 +69,7 @@ fs_theme('fskey', '')
 
 ## 配置值
 
-从 API [全局配置信息](../reference/configs.md)获取配置值
+从 API [全局配置信息](../../reference/configs.md)获取配置值
 
 ```php
 fs_config('配置键名')
@@ -77,7 +77,7 @@ fs_config('配置键名')
 
 ## 语言配置
 
-- [语言包信息](../reference/language-pack.md)
+- [语言包信息](../../reference/language-pack.md)
 - 配置位置 `控制面板 > 客户端 > 语言包配置`
 
 ```php
@@ -86,7 +86,7 @@ fs_lang('语言键名')
 
 ## 频道扩展
 
-- [频道扩展信息](../api/global/channels.md)
+- [频道扩展信息](../../api/global/channels.md)
 
 ```php
 fs_channels()
@@ -94,25 +94,20 @@ fs_channels()
 
 ## 编辑器配置
 
-- [编辑器配置信息](../api/editor/configs.md)
+- [编辑器配置信息](../../api/editor/configs.md)
+- [表情列表](../../api/global/stickers.md)
 
 ```php
-fs_post_editor('参数') // 支持「点表示法」表示多维数组
+fs_editor_post('参数') // 支持「点表示法」表示多维数组
 
-fs_comment_editor('参数') // 支持「点表示法」表示多维数组
-```
+fs_editor_comment('参数') // 支持「点表示法」表示多维数组
 
-## 表情
-
-- [表情列表](../api/global/stickers.md)
-
-```php
-fs_stickers()
+fs_editor_stickers()
 ```
 
 ## 内容类型
 
-- [内容类型列表信息](../api/global/content-types.md)
+- [内容类型列表信息](../../api/global/content-types.md)
 
 ```php
 fs_content_types('post') // post or comment
@@ -177,9 +172,9 @@ fs_user_overview('参数名') // 支持「点表示法」表示多维数组
 ```
 
 - 参数名来自 API `data` 参数。
-- [账号 API](../api/account/detail.md)
-- [用户 API](../api/user/detail.md)
-- [用户概览 API](../api/user/overview.md)
+- [账号 API](../../api/account/detail.md)
+- [用户 API](../../api/user/detail.md)
+- [用户概览 API](../../api/user/overview.md)
 
 ## 客户端判断
 

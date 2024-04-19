@@ -39,7 +39,7 @@ export default defineConfig({
         { text: '指南', link: '/guide/', activeMatch: '/guide/' },
         { text: 'API', link: '/api/', activeMatch: '/api/' },
         { text: '参考', link: '/reference/', activeMatch: '/reference/' },
-        { text: '主题', link: '/theme/', activeMatch: '/theme/' },
+        { text: 'SDK', link: '/sdk/', activeMatch: '/sdk/' },
         {
           text: '生态系统',
           items: [
@@ -54,7 +54,7 @@ export default defineConfig({
       '/guide/': sidebarGuide(),
       '/api/': sidebarApi(),
       '/reference/': sidebarReference(),
-      '/theme/': sidebarTheme(),
+      '/sdk/': sidebarSdk(),
     },
 
     socialLinks: [
@@ -341,17 +341,29 @@ function sidebarReference() {
   ]
 }
 
-// sidebarTheme
-function sidebarTheme() {
+// sidebarSdk
+function sidebarSdk() {
   return [
+    { text: '开发资源', link: '/sdk/' },
     {
       text: '主题',
       items: [
-        { text: '介绍', link: '/theme/' },
-        { text: '路径结构', link: '/theme/structure.md' },
-        { text: '模板标签', link: '/theme/tags.md' },
-        { text: '主题接口', link: '/theme/interfaces.md' },
-        { text: '主题功能', link: '/theme/functions.md' },
+        { text: '介绍', link: '/sdk/theme/' },
+        { text: '结构', link: '/sdk/theme/structure.md' },
+        { text: 'API', link: '/sdk/theme/api.md' },
+        { text: '功能函数', link: '/sdk/theme/functions.md' },
+        { text: '插件扩展', link: '/sdk/theme/extensions.md' },
+        { text: '设置功能', link: '/sdk/theme/settings.md' },
+      ]
+    },
+    {
+      text: '微信小程序',
+      items: [
+        { text: '介绍', link: '/sdk/wechat/' },
+        { text: 'API', link: '/sdk/wechat/api.md' },
+        { text: '功能函数', link: '/sdk/wechat/functions.md' },
+        { text: '插件扩展', link: '/sdk/wechat/extensions.md' },
+        { text: '工具包', link: '/sdk/wechat/toolkit.md' },
       ]
     }
   ]

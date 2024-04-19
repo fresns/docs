@@ -39,7 +39,7 @@ export default defineConfig({
         { text: 'Guide', link: '/guide/', activeMatch: '/guide/' },
         { text: 'API', link: '/api/', activeMatch: '/api/' },
         { text: 'Reference', link: '/reference/', activeMatch: '/reference/' },
-        { text: 'Theme', link: '/theme/', activeMatch: '/theme/' },
+        { text: 'SDK', link: '/sdk/', activeMatch: '/sdk/' },
         {
           text: 'Ecosystem',
           items: [
@@ -54,7 +54,7 @@ export default defineConfig({
       '/guide/': sidebarGuide(),
       '/api/': sidebarApi(),
       '/reference/': sidebarReference(),
-      '/theme/': sidebarTheme(),
+      '/sdk/': sidebarSdk(),
     },
 
     socialLinks: [
@@ -329,17 +329,19 @@ function sidebarReference() {
   ]
 }
 
-// sidebarTheme
-function sidebarTheme() {
+// sidebarSdk
+function sidebarSdk() {
   return [
+    { text: 'Resources', link: '/sdk/' },
     {
       text: 'Theme',
       items: [
-        { text: 'Introduction', link: '/theme/' },
-        { text: 'Structure', link: '/theme/structure.md' },
-        { text: 'Theme Tags', link: '/theme/tags.md' },
-        { text: 'Theme Interfaces', link: '/theme/interfaces.md' },
-        { text: 'Theme Functions', link: '/theme/functions.md' },
+        { text: 'Introduction', link: '/sdk/theme/' },
+        { text: 'Structure', link: '/sdk/theme/structure.md' },
+        { text: 'API', link: '/sdk/theme/api.md' },
+        { text: 'Functions', link: '/sdk/theme/functions.md' },
+        { text: 'App Extensions', link: '/sdk/theme/extensions.md' },
+        { text: 'Theme Settings', link: '/sdk/theme/settings.md' },
       ]
     }
   ]

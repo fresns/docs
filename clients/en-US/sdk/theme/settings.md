@@ -1,4 +1,4 @@
-# Theme Functions
+# Theme Settings
 
 Theme template settings file is responsible for defining the theme template's own configuration items.
 

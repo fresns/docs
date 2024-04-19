@@ -2,6 +2,10 @@
 
 The integrated web client that runs in Fresns uses the [Laravel Blade](https://laravel.com/docs/11.x/blade) template engine and follows the Blade feature and view files.
 
+## Repository
+
+- [https://github.com/fresns/client-website-themes](https://github.com/fresns/client-website-themes)
+
 ## Directory Structure
 
 ```php

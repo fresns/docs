@@ -1,12 +1,4 @@
-# Theme Interfaces
-
-## Extensions Access Token
-
-| Method | Endpoint Path | Route Name | Description |
-| --- | --- | --- | --- |
-| `POST` | /api/theme/access-token | fresns.api.access-token | [Make Access Token](../reference/callback/access-token.md) |
-
-## Fresns API
+# Fresns API
 
 | Method | Endpoint Path | Route Name |
 | --- | --- | --- | 
@@ -22,7 +14,7 @@ route('fresns.api.get', [
 ])
 ```
 
-- `path` value is the [API Endpoint Path](../api/index.md)
+- `path` value is the [API Endpoint Path](../../api/index.md)
 - These `GET` request interfaces are not supported.:
     - `/api/fresns/v1/common/ip-info`
     - `/api/fresns/v1/group/{gid}/interaction/{type}`

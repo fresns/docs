@@ -80,7 +80,7 @@ FresnsCallback.send(callbackAction, apiData, apiCode, apiMessage, timeout);
 ### 接收消息
 
 - [https://github.com/fresns/client-website-themes/blob/3.x/ThemeFrame/commons/header.blade.php#L222-L227](https://github.com/fresns/client-website-themes/blob/3.x/ThemeFrame/commons/header.blade.php#L222-L227)
-- [https://github.com/fresns/client-website-themes/blob/3.x/ThemeFrame/assets/js/fresns-extensions.js#L80-L123](https://github.com/fresns/client-website-themes/blob/3.x/ThemeFrame/assets/js/fresns-extensions.js#L80-L123)
+- [https://github.com/fresns/client-website-themes/blob/3.x/ThemeFrame/assets/js/fresns-extensions.js#L90-L133](https://github.com/fresns/client-website-themes/blob/3.x/ThemeFrame/assets/js/fresns-extensions.js#L90-L133)
 - `postMessageKey` 由客户端开发者自己定义，所以客户端知道每一个 `key` 的位置和用途场景，客户端也就知道后续处理逻辑。
 
 ```js

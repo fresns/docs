@@ -79,7 +79,7 @@ FresnsCallback.send(callbackAction, apiData, apiCode, apiMessage, timeout);
 ### Message Event
 
 - [https://github.com/fresns/client-website-themes/blob/3.x/ThemeFrame/portal/login.blade.php#L15-L20](https://github.com/fresns/client-website-themes/blob/3.x/ThemeFrame/portal/login.blade.php#L15-L20)
-- [https://github.com/fresns/client-website-themes/blob/3.x/ThemeFrame/assets/js/fresns-extensions.js#L80-L123](https://github.com/fresns/client-website-themes/blob/3.x/ThemeFrame/assets/js/fresns-extensions.js#L80-L123)
+- [https://github.com/fresns/client-website-themes/blob/3.x/ThemeFrame/assets/js/fresns-extensions.js#L90-L133](https://github.com/fresns/client-website-themes/blob/3.x/ThemeFrame/assets/js/fresns-extensions.js#L90-L133)
 - The `postMessageKey` is defined by the client developer, so the client knows the location and usage scenario of each `key`, and the client knows the subsequent processing logic.
 
 ```js

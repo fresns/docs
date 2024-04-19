@@ -1,15 +1,15 @@
-# 主题接口
+# Theme Interfaces
 
-## 扩展访问令牌
+## Extensions Access Token
 
-| 请求方式 | 接口路径 | 路由名 | 介绍 |
+| Method | Endpoint Path | Route Name | Description |
 | --- | --- | --- | --- |
-| `POST` | /api/theme/access-token | fresns.api.access-token | [生成扩展访问令牌](../reference/callback/access-token.md) |
+| `POST` | /api/theme/access-token | fresns.api.access-token | [Make Access Token](../../reference/callback/access-token.md) |
 
 ## Fresns API
 
-| 请求方式 | 接口路径 | 路由名 | 介绍 |
-| --- | --- | --- | --- |
+| Method | Endpoint Path | Route Name |
+| --- | --- | --- | 
 | `GET` | /api/theme/actions/`{path}` | fresns.api.get |
 | `POST` | /api/theme/actions/`{path}` | fresns.api.post |
 | `PUT` | /api/theme/actions/`{path}` | fresns.api.put |
@@ -22,8 +22,8 @@ route('fresns.api.get', [
 ])
 ```
 
-- `path` 值为 [API 接口路径](../api/index.md)
-- 以下 `GET` 请求接口不支持:
+- `path` value is the [API Endpoint Path](../../api/index.md)
+- These `GET` request interfaces are not supported.:
     - `/api/fresns/v1/common/ip-info`
     - `/api/fresns/v1/group/{gid}/interaction/{type}`
     - `/api/fresns/v1/user/*`
