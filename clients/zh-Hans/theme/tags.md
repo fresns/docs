@@ -97,8 +97,9 @@ fs_channels()
 - [编辑器配置信息](../api/editor/configs.md)
 
 ```php
-// 类型 post 或 comment
-fs_editor('类型', '参数') // 参数支持「点表示法」表示多维数组
+fs_post_editor('参数') // 支持「点表示法」表示多维数组
+
+fs_comment_editor('参数') // 支持「点表示法」表示多维数组
 ```
 
 ## 表情
@@ -114,7 +115,7 @@ fs_stickers()
 - [内容类型列表信息](../api/global/content-types.md)
 
 ```php
-fs_content_types('post') // post 或 comment
+fs_content_types('post') // post or comment
 ```
 
 ## 内容数据

@@ -97,8 +97,9 @@ fs_channels()
 - [Editor Configs](../api/editor/configs.md)
 
 ```php
-// type: post or comment
-fs_editor('type', 'key') // supports "dot notation" for multi-dimensional arrays
+fs_post_editor('key') // supports "dot notation" for multi-dimensional arrays
+
+fs_comment_editor('key') // supports "dot notation" for multi-dimensional arrays
 ```
 
 ## Stickers
