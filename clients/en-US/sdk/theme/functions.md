@@ -1,60 +1,5 @@
 # Functions
 
-## Route
-
-```php
-fs_route(route('route name'))
-
-fs_route(route('fresns.user.index'))
-```
-
-- `route` Real routing in the system
-- `fs_route` Handling route as multilingual route
-
-## Helpers
-
-```php
-fs_helpers('Helper', 'Method', $data, $options)
-
-fs_helpers('Arr', 'get', $data, $options)
-```
-
-::: details Get Specified Value `Arr::get`
-From an array, get the array with the specified key name for the specified key value.
-
-- Helper: `Arr`
-- Method: `get`
-- Arr Data: `$data`
-- Options: `$options`
-    - `key` Arr List Key Name
-    - `values` The key value that matches the condition, a single string or multiple arrays
-    - `asArray` Boolean value, whether to keep it in array format when there is only one entry left in the result
-:::
-
-::: details Remove Specified Value `Arr::forget`
-From an array, removes the array with the specified key name for the specified key value.
-
-- Helper: `Arr`
-- Method: `forget`
-- Arr Data: `$data`
-- Options: `$options`
-    - `key` Arr List Key Name
-    - `values` The key value that matches the condition, a single string or multiple arrays
-    - `asArray` Boolean value, whether to keep it in array format when there is only one entry left in the result
-:::
-
-::: details Return and Clear Specified Value `Arr::pull`
-Returns the value of the specified key from the array and removes this key-value pair.
-
-- Helper: `Arr`
-- Method: `pull`
-- Arr Data: `$data`
-- Options: `$options`
-    - `key` Arr List Key Name
-    - `values` The key value that matches the condition, a single string or multiple arrays
-    - `asArray` Boolean value, whether to keep it in array format when there is only one entry left in the result
-:::
-
 ## Theme Info
 
 ```php
@@ -65,7 +10,7 @@ fs_theme('fskey', '')
 - `version`
 - `assets`, `{file/path}`
 - `lang`
-- `login`, `redirect`
+- `login`, `redirectURL`
 
 ## Config Items
 
@@ -75,7 +20,7 @@ Get configuration values from API [global configuration information](../../refer
 fs_config('item_key')
 ```
 
-## Language Packs
+## Language Pack
 
 - [Language Pack Information](../../reference/language-pack.md)
 - Configuration Path `Panel > Clients > Language Packs`
@@ -90,19 +35,6 @@ fs_lang('KeyName')
 
 ```php
 fs_channels()
-```
-
-## Editor Configs
-
-- [Editor Configs](../../api/editor/configs.md)
-- [Stickers Array](../../api/global/stickers.md)
-
-```php
-fs_editor_post('key') // supports "dot notation" for multi-dimensional arrays
-
-fs_editor_comment('key') // supports "dot notation" for multi-dimensional arrays
-
-fs_editor_stickers()
 ```
 
 ## Content Types
@@ -168,13 +100,71 @@ fs_account('key') // supports "dot notation" for multi-dimensional arrays
 fs_user('key') // supports "dot notation" for multi-dimensional arrays
 
 # User Overview Parameters
-fs_user_overview('key') // supports "dot notation" for multi-dimensional arrays
+fs_user_overview('key', 'uidOrUsername') // supports "dot notation" for multi-dimensional arrays
+// uidOrUsername If empty, uses the currently logged in user
 ```
 
 - The parameter key comes from the API `data` parameter.
 - [Account Detail API](../../api/account/detail.md)
 - [User Detail API](../../api/user/detail.md)
 - [User Overview API](../../api/user/overview.md)
+
+## Editor Configs
+
+- [Editor Configs](../../api/editor/configs.md)
+- [Stickers Array](../../api/global/stickers.md)
+
+```php
+fs_editor_post('key') // supports "dot notation" for multi-dimensional arrays
+
+fs_editor_comment('key') // supports "dot notation" for multi-dimensional arrays
+
+fs_editor_stickers()
+```
+
+## Helpers
+
+```php
+fs_helpers('Helper', 'Method', $data, $options)
+
+fs_helpers('Arr', 'get', $data, $options)
+```
+
+::: details Get Specified Value `Arr::get`
+From an array, get the array with the specified key name for the specified key value.
+
+- Helper: `Arr`
+- Method: `get`
+- Arr Data: `$data`
+- Options: `$options`
+    - `key` Arr List Key Name
+    - `values` The key value that matches the condition, a single string or multiple arrays
+    - `asArray` Boolean value, whether to keep it in array format when there is only one entry left in the result
+:::
+
+::: details Remove Specified Value `Arr::forget`
+From an array, removes the array with the specified key name for the specified key value.
+
+- Helper: `Arr`
+- Method: `forget`
+- Arr Data: `$data`
+- Options: `$options`
+    - `key` Arr List Key Name
+    - `values` The key value that matches the condition, a single string or multiple arrays
+    - `asArray` Boolean value, whether to keep it in array format when there is only one entry left in the result
+:::
+
+::: details Return and Clear Specified Value `Arr::pull`
+Returns the value of the specified key from the array and removes this key-value pair.
+
+- Helper: `Arr`
+- Method: `pull`
+- Arr Data: `$data`
+- Options: `$options`
+    - `key` Arr List Key Name
+    - `values` The key value that matches the condition, a single string or multiple arrays
+    - `asArray` Boolean value, whether to keep it in array format when there is only one entry left in the result
+:::
 
 ## Client Options
 

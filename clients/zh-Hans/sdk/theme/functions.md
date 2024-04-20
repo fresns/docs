@@ -1,60 +1,5 @@
 # 功能函数
 
-## 路由
-
-```php
-fs_route(route('路由名'))
-
-fs_route(route('fresns.user.index'))
-```
-
-- `route` 系统中实际的路由
-- `fs_route` 处理路由为多语言路由
-
-## 辅助功能
-
-```php
-fs_helpers('辅助函数', '可用方法', $data, $options)
-
-fs_helpers('Arr', 'get', $data, $options)
-```
-
-::: details 获取指定数值 `Arr::get`
-从数组中，获取指定键名为指定键值的数组
-
-- 辅助函数: `Arr`
-- 可用方法: `get`
-- 数组数据: `$data`
-- 功能选项: `$options`
-    - `key` 数组列表键名
-    - `values` 符合条件的键值，单个字符串或者多个数组
-    - `asArray` 布尔值，结果仅剩一条时，是否保持为数组格式
-:::
-
-::: details 移除指定数值 `Arr::forget`
-从数组中，移除指定键名为指定键值的数组
-
-- 辅助函数: `Arr`
-- 可用方法: `forget`
-- 数组数据: `$data`
-- 功能选项: `$options`
-    - `key` 数组列表键名
-    - `values` 符合条件的键值，单个字符串或者多个数组
-    - `asArray` 布尔值，结果仅剩一条时，是否保持为数组格式
-:::
-
-::: details 返回并清理指定值 `Arr::pull`
-从数组中返回指定键的值并删除此键值对
-
-- 辅助函数: `Arr`
-- 可用方法: `pull`
-- 数组数据: `$data`
-- 功能选项: `$options`
-    - `key` 数组列表键名
-    - `values` 符合条件的键值，单个字符串或者多个数组
-    - `asArray` 布尔值，结果仅剩一条时，是否保持为数组格式
-:::
-
 ## 主题信息
 
 ```php
@@ -65,9 +10,9 @@ fs_theme('fskey', '')
 - `version`
 - `assets`, `{file/path}`
 - `lang`
-- `login`, `redirect`
+- `login`, `redirectURL`
 
-## 配置值
+## 配置项
 
 从 API [全局配置信息](../../reference/configs.md)获取配置值
 
@@ -75,7 +20,7 @@ fs_theme('fskey', '')
 fs_config('配置键名')
 ```
 
-## 语言配置
+## 语言包
 
 - [语言包信息](../../reference/language-pack.md)
 - 配置位置 `控制面板 > 客户端 > 语言包配置`
@@ -90,19 +35,6 @@ fs_lang('语言键名')
 
 ```php
 fs_channels()
-```
-
-## 编辑器配置
-
-- [编辑器配置信息](../../api/editor/configs.md)
-- [表情列表](../../api/global/stickers.md)
-
-```php
-fs_editor_post('参数') // 支持「点表示法」表示多维数组
-
-fs_editor_comment('参数') // 支持「点表示法」表示多维数组
-
-fs_editor_stickers()
 ```
 
 ## 内容类型
@@ -148,7 +80,7 @@ fs_sticky_posts($gid)
 fs_sticky_comments($pid)
 ```
 
-## 账号和用户参数
+## 账号和用户
 
 ```php
 # 是否登录账号
@@ -168,13 +100,71 @@ fs_account('参数名') // 支持「点表示法」表示多维数组
 fs_user('参数名') // 支持「点表示法」表示多维数组
 
 # 用户概览参数
-fs_user_overview('参数名') // 支持「点表示法」表示多维数组
+fs_user_overview('参数名', 'uidOrUsername') // 支持「点表示法」表示多维数组
+// uidOrUsername 为空则使用当前登录用户
 ```
 
 - 参数名来自 API `data` 参数。
 - [账号 API](../../api/account/detail.md)
 - [用户 API](../../api/user/detail.md)
 - [用户概览 API](../../api/user/overview.md)
+
+## 编辑器配置
+
+- [编辑器配置信息](../../api/editor/configs.md)
+- [表情列表](../../api/global/stickers.md)
+
+```php
+fs_editor_post('参数') // 支持「点表示法」表示多维数组
+
+fs_editor_comment('参数') // 支持「点表示法」表示多维数组
+
+fs_editor_stickers()
+```
+
+## 辅助功能
+
+```php
+fs_helpers('辅助函数', '可用方法', $data, $options)
+
+fs_helpers('Arr', 'get', $data, $options)
+```
+
+::: details 获取指定数值 `Arr::get`
+从数组中，获取指定键名为指定键值的数组
+
+- 辅助函数: `Arr`
+- 可用方法: `get`
+- 数组数据: `$data`
+- 功能选项: `$options`
+    - `key` 数组列表键名
+    - `values` 符合条件的键值，单个字符串或者多个数组
+    - `asArray` 布尔值，结果仅剩一条时，是否保持为数组格式
+:::
+
+::: details 移除指定数值 `Arr::forget`
+从数组中，移除指定键名为指定键值的数组
+
+- 辅助函数: `Arr`
+- 可用方法: `forget`
+- 数组数据: `$data`
+- 功能选项: `$options`
+    - `key` 数组列表键名
+    - `values` 符合条件的键值，单个字符串或者多个数组
+    - `asArray` 布尔值，结果仅剩一条时，是否保持为数组格式
+:::
+
+::: details 返回并清理指定值 `Arr::pull`
+从数组中返回指定键的值并删除此键值对
+
+- 辅助函数: `Arr`
+- 可用方法: `pull`
+- 数组数据: `$data`
+- 功能选项: `$options`
+    - `key` 数组列表键名
+    - `values` 符合条件的键值，单个字符串或者多个数组
+    - `asArray` 布尔值，结果仅剩一条时，是否保持为数组格式
+:::
 
 ## 客户端判断
 

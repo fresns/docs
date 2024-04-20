@@ -209,13 +209,13 @@
 | fresns.editor.comment<br>fresns.editor.edit | /editor/edit.blade.php | 评论编辑器 |
 
 - 帖子编辑器
-    - 新草稿: `fs_route(route('fresns.editor.post'))`
-    - 编辑草稿: `fs_route(route('fresns.editor.post', ['did' => '']))`
-    - 编辑已发表帖子: `fs_route(route('fresns.editor.post', ['pid' => '']))`
+    - 新草稿: `route('fresns.editor.post')`
+    - 编辑草稿: `route('fresns.editor.post', ['did' => ''])`
+    - 编辑已发表帖子: `route('fresns.editor.post', ['pid' => ''])`
 - 评论编辑器
-    - 新草稿: `fs_route(route('fresns.editor.comment', ['pid' => '']))`
-    - 编辑草稿: `fs_route(route('fresns.editor.comment', ['did' => '']))`
-    - 编辑已发表评论: `fs_route(route('fresns.editor.comment', ['cid' => '']))`
+    - 新草稿: `route('fresns.editor.comment', ['pid' => ''])`
+    - 编辑草稿: `route('fresns.editor.comment', ['did' => ''])`
+    - 编辑已发表评论: `route('fresns.editor.comment', ['cid' => ''])`
 - 编辑草稿
-    - `fs_route(route('fresns.editor.edit', ['type' => '', 'did' => '']))`
+    - `route('fresns.editor.edit', ['type' => '', 'did' => ''])`
     - Type: `post` or `comment`

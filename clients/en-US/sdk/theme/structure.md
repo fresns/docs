@@ -209,13 +209,13 @@
 | fresns.editor.comment<br>fresns.editor.edit | /editor/edit.blade.php | Comment Editor |
 
 - Post Editor
-    - New Draft: `fs_route(route('fresns.editor.post'))`
-    - Edit Draft: `fs_route(route('fresns.editor.post', ['did' => '']))`
-    - Edit Published Post: `fs_route(route('fresns.editor.post', ['pid' => '']))`
+    - New Draft: `route('fresns.editor.post')`
+    - Edit Draft: `route('fresns.editor.post', ['did' => ''])`
+    - Edit Published Post: `route('fresns.editor.post', ['pid' => ''])`
 - Comment Editor
-    - New Draft: `fs_route(route('fresns.editor.comment', ['pid' => '']))`
-    - Edit Draft: `fs_route(route('fresns.editor.comment', ['did' => '']))`
-    - Edit Published Comment: `fs_route(route('fresns.editor.comment', ['cid' => '']))`
+    - New Draft: `route('fresns.editor.comment', ['pid' => ''])`
+    - Edit Draft: `route('fresns.editor.comment', ['did' => ''])`
+    - Edit Published Comment: `route('fresns.editor.comment', ['cid' => ''])`
 - Edit Draft
-    - `fs_route(route('fresns.editor.edit', ['type' => '', 'did' => '']))`
+    - `route('fresns.editor.edit', ['type' => '', 'did' => ''])`
     - Type: `post` or `comment`
