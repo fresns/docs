@@ -137,7 +137,7 @@ function sidebarApi() {
             { text: 'Overview', link: '/api/user/overview.md' },
             { text: 'Extcredits Records', link: '/api/user/extcredits-records.md' },
             { text: 'Update Profile', link: '/api/user/update-profile.md' },
-            { text: 'Update Settings', link: '/api/user/update-settings.md' },
+            { text: 'Update Setting', link: '/api/user/update-setting.md' },
             { text: 'Mark', link: '/api/user/mark.md' },
             { text: 'Update Mark Note', link: '/api/user/mark-note.md' },
             { text: 'Extend Action', link: '/api/user/extend-action.md' },

@@ -1,6 +1,6 @@
-# Update Settings
+# Update Setting
 
-- Endpoint Path: `/api/fresns/v1/user/settings`
+- Endpoint Path: `/api/fresns/v1/user/setting`
 - Method: `PATCH`
 - Request: `application/json`
 
@@ -20,6 +20,14 @@
 | conversationPolicy | Number | *optional* | Conversation setting |
 | commentPolicy | Number | *optional* | Comment setting |
 | deviceToken | String | *optional* | iOS or Android device Token |
+
+**Request Description**
+
+- `conversationPolicy` and `commentPolicy`
+    - `1` Everyone
+    - `2` People you follow
+    - `3` People you follow or verified
+    - `4` No one is allowed
 
 ## Return
 

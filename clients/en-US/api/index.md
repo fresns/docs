@@ -45,7 +45,7 @@
 | `GET` | /api/fresns/v1/user/overview | Overview |
 | `GET` | /api/fresns/v1/user/extcredits-records | Extcredits Records |
 | `PATCH` | /api/fresns/v1/user/profile | Update Profile |
-| `PATCH` | /api/fresns/v1/user/settings | Update Settings |
+| `PATCH` | /api/fresns/v1/user/setting | Update Setting |
 | `POST` | /api/fresns/v1/user/mark | Mark |
 | `PATCH` | /api/fresns/v1/user/mark-note | Mark Note |
 | `POST` | /api/fresns/v1/user/extend-action | Extend Action |

@@ -45,7 +45,7 @@
 | `GET` | /api/fresns/v1/user/overview | 用户概览 |
 | `GET` | /api/fresns/v1/user/extcredits-records | 用户扩展分值记录 |
 | `PATCH` | /api/fresns/v1/user/profile | 修改用户资料 |
-| `PATCH` | /api/fresns/v1/user/settings | 更新设置信息 |
+| `PATCH` | /api/fresns/v1/user/setting | 更新设置信息 |
 | `POST` | /api/fresns/v1/user/mark | 操作标记 |
 | `PATCH` | /api/fresns/v1/user/mark-note | 标记备注 |
 | `POST` | /api/fresns/v1/user/extend-action | 操作扩展交互 |

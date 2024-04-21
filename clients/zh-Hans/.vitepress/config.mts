@@ -149,7 +149,7 @@ function sidebarApi() {
             { text: '用户概览', link: '/api/user/overview.md' },
             { text: '用户扩展分值记录', link: '/api/user/extcredits-records.md' },
             { text: '修改用户资料', link: '/api/user/update-profile.md' },
-            { text: '更新设置信息', link: '/api/user/update-settings.md' },
+            { text: '更新设置信息', link: '/api/user/update-setting.md' },
             { text: '操作标记', link: '/api/user/mark.md' },
             { text: '更新标记备注', link: '/api/user/mark-note.md' },
             { text: '操作扩展交互', link: '/api/user/extend-action.md' },
