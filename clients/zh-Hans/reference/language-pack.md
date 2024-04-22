@@ -7,7 +7,7 @@
 | 键名 | 键值 |
 | --- | --- |
 | language | 语言 |
-| darkMode | 深色模式 |
+| appearance | 外观 |
 | switchLanguage | 切换语言 |
 | switchUser | 切换用户 |
 | admin | 管理员 |
@@ -78,6 +78,8 @@
 | warning | 警告 |
 | danger | 危险 |
 | tip | 提示 |
+| light | 浅色 |
+| dark | 深色 |
 | setting | 设置 |
 | config | 配置 |
 | manage | 管理 |

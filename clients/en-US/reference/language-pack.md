@@ -7,7 +7,7 @@
 | Key | Value |
 | --- | --- |
 | language | Language |
-| darkMode | Dark Mode |
+| appearance | Appearance |
 | switchLanguage | Switch Language |
 | switchUser | Switch User |
 | admin | Administrator |
@@ -78,6 +78,8 @@
 | warning | Warning |
 | danger | Danger |
 | tip | Tip |
+| light | Light |
+| dark | Dark |
 | setting | Setting |
 | config | Configuration |
 | manage | Manage |
