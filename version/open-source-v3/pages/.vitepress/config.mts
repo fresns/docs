@@ -145,12 +145,6 @@ function navbar() {
         { text: 'Command Word Manager', link: 'https://pm.fresns.org/command-word/' },
       ],
     },
-    {
-      text: 'Version',
-      items: [
-        { text: 'Fresns v2', link: 'https://v2.fresns.org/' },
-      ],
-    },
   ]
 }
 
@@ -240,12 +234,6 @@ function navbarForZh() {
         { text: '开发客户端', link: 'https://docs.fresns.com/zh-Hans/clients/' },
         { text: '插件管理器', link: 'https://pm.fresns.org/zh-Hans/' },
         { text: '命令字管理器', link: 'https://pm.fresns.org/zh-Hans/command-word/' },
-      ],
-    },
-    {
-      text: 'Version',
-      items: [
-        { text: 'Fresns v2', link: 'https://v2.fresns.org/zh-Hans/' },
       ],
     },
   ]
