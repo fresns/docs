@@ -109,6 +109,7 @@
 | 34111 | Password cannot be empty |
 | 34112 | Password or verify code cannot be empty |
 | 34113 | Birthday cannot be empty |
+| 34114 | We are sorry, but according to our Terms of Use, you are not of legal age to use our services. This is to ensure that we comply with applicable laws and to protect the safety of all our users. |
 | 34201 | This registration channel has been closed and account registration through this function is prohibited |
 | 34202 | Registration with Email not supported |
 | 34203 | Registration with Phone number not supported |

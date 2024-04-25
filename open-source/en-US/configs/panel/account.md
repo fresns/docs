@@ -27,6 +27,13 @@
 | Password Minimum Length | password_length | 8 | number | Minimum password length for new user registration, `0` or `empty` for no restriction |
 | Password Character Types | password_strength | ["number","lowercase"] | array | Password must contain selected character types, no restriction if not selected<br>`number` Digits<br>`lowercase` Lowercase letters<br>`uppercase` Uppercase letters<br>`symbols` Symbols (excluding space) |
 
+## Child Safety
+
+| Menu Title | Key Name | Default Key Value | Value Type | Description |
+| --- | --- | --- | --- | --- |
+| Age Verification | account_age_verification | true | boolean |  |
+| Age Min Required | account_age_min_required | 13 | number |  |
+
 ## Connect
 
 | Menu Title | Key Name | Default Key Value | Value Type | Description |

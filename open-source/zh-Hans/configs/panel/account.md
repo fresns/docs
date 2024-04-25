@@ -27,6 +27,13 @@
 | 密码最小长度 | password_length | 8 | number | 密码最小长度，0 或不填为不限制 |
 | 密码字符类型 | password_strength | ["number","lowercase"] | array | 密码中必须存在所选字符类型，不选则为无限制<br>`number` 数字<br>`lowercase` 小写字母<br>`uppercase` 大写字母<br>`symbols` 符号(除空格) |
 
+## 儿童保护
+
+| 栏目标题 | 键名 | 默认键值 | 键值类型 | 说明 |
+| --- | --- | --- | --- | --- |
+| 年龄验证 | account_age_verification | true | boolean |  |
+| 最小年龄 | account_age_min_required | 13 | number |  |
+
 ## 互联
 
 | 栏目标题 | 键名 | 默认键值 | 键值类型 | 说明 |
