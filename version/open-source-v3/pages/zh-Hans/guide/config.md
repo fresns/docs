@@ -4,7 +4,7 @@
 
 安装成功后，主程序根目录会有一个 `.env` 文件，该文件用于存储 Fresns 所有配置信息，具体介绍如下：
 
-```sh
+```ini
 APP_ENV=production          #运营环境，测试使用为 local，正式运营为 production
 APP_KEY=                    #数据加密 key，可重新生成，指令为 php artisan key:generate
 APP_DEBUG=false             #是否输出详细报错信息，调试时改为 true
@@ -15,7 +15,7 @@ APP_FOUNDER=1               #创始人账号 ID (accounts->id)
 ```
 
 ::: code-group
-```sh [MySQL]
+```ini [MySQL]
 DB_CONNECTION=mysql               #数据库类型  sqlite, mysql, mariadb, pgsql, sqlsrv
 DB_HOST=127.0.0.1                 #数据库主机  默认为 127.0.0.1
 DB_PORT=3306                      #数据库主机端口 默认为 3306
@@ -27,7 +27,7 @@ DB_PREFIX=fs_                     #表前缀 默认为 fs_
 DB_COLLATION=utf8mb4_0900_ai_ci   #默认为 utf8mb4_unicode_520_ci
 ```
 
-```sh [MariaDB]
+```ini [MariaDB]
 DB_CONNECTION=mariadb
 DB_HOST=127.0.0.1
 DB_PORT=3306
@@ -39,7 +39,7 @@ DB_PREFIX=fs_
 DB_COLLATION=utf8mb4_unicode_520_ci   #默认为 utf8mb4_unicode_520_ci
 ```
 
-```sh [PostgreSQL]
+```ini [PostgreSQL]
 DB_CONNECTION=pgsql
 DB_HOST=127.0.0.1
 DB_PORT=54321
@@ -49,7 +49,7 @@ DB_PASSWORD=123456
 DB_PREFIX=fs_
 ```
 
-```sh [SQL Server]
+```ini [SQL Server]
 DB_CONNECTION=sqlsrv
 DB_HOST=127.0.0.1
 DB_PORT=1433
@@ -59,7 +59,7 @@ DB_PASSWORD=123456
 DB_PREFIX=fs_
 ```
 
-```sh [SQLite]
+```ini [SQLite]
 DB_CONNECTION=sqlite
 DB_DATABASE=/www/wwwroot/fresns/database/fresns.sqlite
 DB_PREFIX=fs_
@@ -72,7 +72,7 @@ DB_PREFIX=fs_
 
 如果你的服务器在中国境内，可以在 `.env` 配置里添加代理加速，为你升级或安装扩展依赖提速。如果服务器在中国境外，无需额外配置。
 
-```sh
+```ini
 HTTP_PROXY=http://market.fresns.cn:1024
 ```
 
@@ -85,15 +85,15 @@ HTTP_PROXY=http://market.fresns.cn:1024
 我们以 Cloudflare 代理环境为例，配置 [IPv4](https://www.cloudflare.com/ips-v4) 和 [IPv6](https://www.cloudflare.com/ips-v6)
 
 ::: code-group
-```sh [IPv4]
+```ini [IPv4]
 TRUSTED_PROXIES=173.245.48.0/20,103.21.244.0/22,103.22.200.0/22,103.31.4.0/22,141.101.64.0/18,108.162.192.0/18,190.93.240.0/20,188.114.96.0/20,197.234.240.0/22,198.41.128.0/17,162.158.0.0/15,104.16.0.0/13,104.24.0.0/14,172.64.0.0/13,131.0.72.0/22
 ```
 
-```sh [IPv6]
+```ini [IPv6]
 TRUSTED_PROXIES=2400:cb00::/32,2606:4700::/32,2803:f800::/32,2405:b500::/32,2405:8100::/32,2a06:98c0::/29,2c0f:f248::/32
 ```
 
-```sh [全部]
+```ini [全部]
 TRUSTED_PROXIES=173.245.48.0/20,103.21.244.0/22,103.22.200.0/22,103.31.4.0/22,141.101.64.0/18,108.162.192.0/18,190.93.240.0/20,188.114.96.0/20,197.234.240.0/22,198.41.128.0/17,162.158.0.0/15,104.16.0.0/13,104.24.0.0/14,172.64.0.0/13,131.0.72.0/22,2400:cb00::/32,2606:4700::/32,2803:f800::/32,2405:b500::/32,2405:8100::/32,2a06:98c0::/29,2c0f:f248::/32
 ```
 :::
@@ -106,7 +106,7 @@ TRUSTED_PROXIES=173.245.48.0/20,103.21.244.0/22,103.22.200.0/22,103.31.4.0/22,14
 - 修改缓存配置前，你需要安装对应的 PHP 扩展，然后修改 `.env` 文件，加上缓存配置。
 
 ::: code-group
-```sh [Redis]
+```ini [Redis]
 REDIS_HOST=127.0.0.1        #Host
 REDIS_PASSWORD=null         #密码
 REDIS_PORT=6379             #端口
@@ -117,7 +117,7 @@ QUEUE_CONNECTION=redis      #队列驱动
 BROADCAST_CONNECTION=redis  #广播驱动
 ```
 
-```sh [Memcached]
+```ini [Memcached]
 MEMCACHED_HOST=127.0.0.1    #Host
 MEMCACHED_PORT=11211        #端口
 MEMCACHED_USERNAME=null     #用户名
@@ -134,7 +134,7 @@ SESSION_DRIVER=memcached    #会话驱动
 ::: details 同一台服务器部署多个 Fresns 项目时配置
 - Redis
 
-```sh
+```ini
 REDIS_DB=2                          #默认是 0，只可选 2-15
 REDIS_CACHE_DB=3                    #默认是 1，只可选 2-15，需要与 REDIS_DB 不同
 REDIS_QUEUE=fresns2                 #默认是 fresns 填写一个不一样的即可
@@ -144,7 +144,7 @@ CACHE_PREFIX=fresns2_cache_         #默认是 fresns_cache_ 填写一个不一�
 
 - Memcached
 
-```sh
+```ini
 MEMCACHED_PERSISTENT_ID=fresns2     #默认是 fresns 填写一个不一样的即可
 CACHE_PREFIX=fresns2_cache_         #默认是 fresns_cache_ 填写一个不一样的即可
 ```
@@ -185,7 +185,7 @@ su -c "cd /www/wwwroot/fresns && php artisan schedule:run >> /dev/null 2>&1" -s 
 
 推荐 `redis` 或 `database`，不配置则默认为 `sync`
 
-```sh
+```ini
 REDIS_HOST=127.0.0.1      #Host
 REDIS_PASSWORD=null       #密码
 REDIS_PORT=6379           #端口

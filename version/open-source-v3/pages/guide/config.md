@@ -4,7 +4,7 @@
 
 After successful installation, there will be an `.env` file in the root directory of the main program, which is used to store all the configuration information of Fresns. The details are as follows:
 
-```sh
+```ini
 APP_ENV=production            #Operating environment, local for test use, production for official operation
 APP_KEY=                      #Data encryption key, which can be regenerated with the command php artisan key:generate
 APP_DEBUG=false               #Whether to output detailed error messages
@@ -15,7 +15,7 @@ APP_FOUNDER=1                 #Founder Account ID (accounts->id)
 ```
 
 ::: code-group
-```sh [MySQL]
+```ini [MySQL]
 DB_CONNECTION=mysql               #Database Type: sqlite, mysql, mariadb, pgsql, sqlsrv
 DB_HOST=127.0.0.1                 #Default is 127.0.0.1
 DB_PORT=3306                      #Default is 3306
@@ -27,7 +27,7 @@ DB_PREFIX=fs_                     #Default is fs_
 DB_COLLATION=utf8mb4_0900_ai_ci   #Default is utf8mb4_unicode_520_ci
 ```
 
-```sh [MariaDB]
+```ini [MariaDB]
 DB_CONNECTION=mariadb
 DB_HOST=127.0.0.1
 DB_PORT=3306
@@ -39,7 +39,7 @@ DB_PREFIX=fs_
 DB_COLLATION=utf8mb4_unicode_520_ci   #Default is utf8mb4_unicode_520_ci
 ```
 
-```sh [PostgreSQL]
+```ini [PostgreSQL]
 DB_CONNECTION=pgsql
 DB_HOST=127.0.0.1
 DB_PORT=54321
@@ -49,7 +49,7 @@ DB_PASSWORD=123456
 DB_PREFIX=fs_
 ```
 
-```sh [SQL Server]
+```ini [SQL Server]
 DB_CONNECTION=sqlsrv
 DB_HOST=127.0.0.1
 DB_PORT=1433
@@ -59,7 +59,7 @@ DB_PASSWORD=123456
 DB_PREFIX=fs_
 ```
 
-```sh [SQLite]
+```ini [SQLite]
 DB_CONNECTION=sqlite
 DB_DATABASE=/www/wwwroot/fresns/database/fresns.sqlite
 DB_PREFIX=fs_
@@ -75,15 +75,15 @@ If you are running as a proxy, you need to configure `.env` trusted IP informati
 Let's take the Cloudflare proxy environment as an example and configure [IPv4](https://www.cloudflare.com/ips-v4) and [IPv6](https://www.cloudflare.com/ips-v6)
 
 ::: code-group
-```sh [IPv4]
+```ini [IPv4]
 TRUSTED_PROXIES=173.245.48.0/20,103.21.244.0/22,103.22.200.0/22,103.31.4.0/22,141.101.64.0/18,108.162.192.0/18,190.93.240.0/20,188.114.96.0/20,197.234.240.0/22,198.41.128.0/17,162.158.0.0/15,104.16.0.0/13,104.24.0.0/14,172.64.0.0/13,131.0.72.0/22
 ```
 
-```sh [IPv6]
+```ini [IPv6]
 TRUSTED_PROXIES=2400:cb00::/32,2606:4700::/32,2803:f800::/32,2405:b500::/32,2405:8100::/32,2a06:98c0::/29,2c0f:f248::/32
 ```
 
-```sh [All]
+```ini [All]
 TRUSTED_PROXIES=173.245.48.0/20,103.21.244.0/22,103.22.200.0/22,103.31.4.0/22,141.101.64.0/18,108.162.192.0/18,190.93.240.0/20,188.114.96.0/20,197.234.240.0/22,198.41.128.0/17,162.158.0.0/15,104.16.0.0/13,104.24.0.0/14,172.64.0.0/13,131.0.72.0/22,2400:cb00::/32,2606:4700::/32,2803:f800::/32,2405:b500::/32,2405:8100::/32,2a06:98c0::/29,2c0f:f248::/32
 ```
 :::
@@ -96,7 +96,7 @@ You may specify which cache driver you would like to be used by default througho
 - Before you can change the cache configuration, you must install the appropriate PHP extension and then modify the `.env' file to include the cache configuration.
 
 ::: code-group
-```sh [Redis]
+```ini [Redis]
 REDIS_HOST=127.0.0.1
 REDIS_PASSWORD=null
 REDIS_PORT=6379
@@ -107,7 +107,7 @@ QUEUE_CONNECTION=redis
 BROADCAST_CONNECTION=redis
 ```
 
-```sh [Memcached]
+```ini [Memcached]
 MEMCACHED_HOST=127.0.0.1
 MEMCACHED_PORT=11211
 MEMCACHED_USERNAME=null
@@ -124,7 +124,7 @@ SESSION_DRIVER=memcached
 ::: details Configuration when deploying multiple Fresns projects on the same server
 - Redis
 
-```sh
+```ini
 REDIS_DB=2                          #Default is 0, only 2-15 can be selected
 REDIS_CACHE_DB=3                    #Default is 1, only 2-15 can be selected, Must be different from REDIS_DB
 REDIS_QUEUE=fresns2                 #The default is fresns. Just enter another one.
@@ -134,7 +134,7 @@ CACHE_PREFIX=fresns2_cache_         #The default is fresns_cache_. Just enter an
 
 - Memcached
 
-```sh
+```ini
 MEMCACHED_PERSISTENT_ID=fresns2     #The default is fresns. Just enter another one.
 CACHE_PREFIX=fresns2_cache_         #The default is fresns_cache_. Just enter another one.
 ```
@@ -175,7 +175,7 @@ su -c "cd /www/wwwroot/fresns && php artisan schedule:run >> /dev/null 2>&1" -s 
 
 It is recommended to use `redis` or `database`. The default is `sync` if not configured.
 
-```sh
+```ini
 REDIS_HOST=127.0.0.1
 REDIS_PASSWORD=null
 REDIS_PORT=6379
