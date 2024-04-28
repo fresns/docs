@@ -12,7 +12,7 @@
 
 在主程序根目录，使用「终端」命令行执行 Fresns 升级指令。
 
-```php
+```sh
 php artisan fresns:upgrade
 ```
 

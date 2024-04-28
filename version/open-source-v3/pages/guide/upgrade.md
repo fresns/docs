@@ -12,7 +12,7 @@ When a new version is available, there will be a new version prompt on the dashb
 
 In the root directory of the main program, use the `terminal` command line to execute the Fresns upgrade command.
 
-```php
+```sh
 php artisan fresns:upgrade
 ```
 
