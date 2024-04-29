@@ -23,7 +23,7 @@ aside: false
 | --- | --- | --- |
 | 1 | TEMPLATE_GENERAL | General Verify Code |
 | 2 | TEMPLATE_REGISTER_ACCOUNT | Register New Account |
-| 3 | TEMPLATE_EDIT_PROFILE | Modify Information Verify |
+| 3 | TEMPLATE_UPDATE_PROFILE | Modify Information Verify |
 | 4 | TEMPLATE_CHANGE_EMAIL_OR_PHONE | Change New Binding |
 | 5 | TEMPLATE_RESET_LOGIN_PASSWORD | Reset Login Password |
 | 6 | TEMPLATE_RESET_WALLET_PASSWORD | Reset Payment Password |

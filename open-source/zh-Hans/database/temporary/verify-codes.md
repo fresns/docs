@@ -23,7 +23,7 @@ aside: false
 | --- | --- | --- |
 | 1 | TEMPLATE_GENERAL | 通用验证码 |
 | 2 | TEMPLATE_REGISTER_ACCOUNT | 注册新账号 |
-| 3 | TEMPLATE_EDIT_PROFILE | 修改资料验证 |
+| 3 | TEMPLATE_UPDATE_PROFILE | 更新资料验证 |
 | 4 | TEMPLATE_CHANGE_EMAIL_OR_PHONE | 更换新绑定 |
 | 5 | TEMPLATE_RESET_LOGIN_PASSWORD | 重置登录密码 |
 | 6 | TEMPLATE_RESET_WALLET_PASSWORD | 重置支付密码 |

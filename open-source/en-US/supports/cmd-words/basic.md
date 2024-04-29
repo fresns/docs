@@ -159,10 +159,10 @@
 | Parameter Name | Type | Required | Description |
 | --- | --- | --- | --- |
 | type | Number | **required** | Type: 1. Email verification code / 2. SMS verification code |
-| account | String | **required** | Account (email or phone number) |
-| countryCode | Number | *optional* | International area code (phone number specific) |
 | templateId | Number | **required** | [Code Template ID](../../configs/panel/send.md#verify-code-templates) |
 | langTag | String | *optional* | Language tag, empty to use the default language tag |
+| account | String | **required** | Account (email or phone number) |
+| countryCode | Number | *optional* | International area code (phone number specific) |
 
 ## checkCode
 
@@ -172,10 +172,10 @@
 | Parameter Name | Type | Required | Description |
 | --- | --- | --- | --- |
 | type | Number | **required** | Type: 1. Email verification code / 2. SMS verification code |
+| templateId | Number | **required** | [Code Template ID](../../configs/panel/send.md#verify-code-templates) |
 | account | String | **required** | Account (email or phone number) |
 | countryCode | Number | *optional* | International area code (phone number specific) |
 | verifyCode | String | **required** | Verify Code |
-| templateId | Number | **required** | [Code Template ID](../../configs/panel/send.md#verify-code-templates) |
 
 ## updateOrCreateCallbackContent
 
