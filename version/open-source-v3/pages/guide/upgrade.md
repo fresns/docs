@@ -20,20 +20,9 @@ If you need to confirm the executed command during the upgrade, enter `yes` to c
 
 ## Manual Upgrade
 
-- 1. If you download the new version of the installation package, all the other files except the “Plugin Directory” and “Configuration File” of the old version will be overwritten (before overwriting, please make a copy of the old version of the project to avoid the loss of the information of the old version due to improper overwriting).
-    - If you are using a local storage plugin, you should also keep the files located in the `storage` directory according to the plug-in documentation.
+> [Download upgrade files](https://app.fresns.org/upgrade.zip)
 
-```php
-fresns/         // Main Program Root Directory
-├── plugins/        // Plugin Directory
-├── themes/         // Theme Directory
-├── storage/        // Storage Directory
-│   └── app
-│       └── public
-├── .env            // Configuration File
-├── fresns.json     // Fresns Config
-└── install.lock    // Installation Lock File (after having this file, it is forbidden to execute the installation again)
-```
+- 1. Download the upgrade file, unzip it, and overwrite the files in the corresponding folder (before overwriting, please make a copy of the backup of the old version of the project to avoid losing the old version information due to improper overwriting).
 
 - 2. After overwriting, all plug-ins in `plugins` brackets in `fresns.json` file will be deactivated (`true` will be changed to `false`), with the remaining configuration items unchanged (after manual upgrade, the system will automatically correct to the latest version information and restore the previously enabled plug-ins).
 
@@ -59,6 +48,10 @@ fresns/         // Main Program Root Directory
 }
 ```
 
-- 3. Log in to the background (fresns panel) and click the `Manual Upgrade` button on the “Dashboard -> Update” page to confirm the upgrade.
-    - The system will automatically perform migration and installation of plugins.
-    - Upon completion, the version information in `fresns.json` file will be updated and the plug-in that was enabled before will be restored.
+- 3. Login to the admin panel and click the `Manual Upgrade` button on the `Dashboard -> Upgrades` page to confirm the upgrade.
+    - The system will automatically perform migration and installation of plugins. Upon completion, the version information in `fresns.json` file will be updated and the plug-in that was enabled before will be restored.
+    - If the admin panel is not accessible, run the upgrade command in the terminal.
+
+```sh
+php artisan fresns:manual-upgrade
+```
