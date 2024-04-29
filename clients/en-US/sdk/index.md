@@ -19,7 +19,6 @@
 
 ## App Client
 
-- [based on Flutter](https://github.com/fresns/client-flutter)
 - [based on React Native](https://github.com/fresns/client-react-native)
 - [based on WeChat Mini Program](https://github.com/fresns/client-wechat)
 
