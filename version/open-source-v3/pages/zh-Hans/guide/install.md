@@ -88,7 +88,7 @@ location / {
 </IfModule>
 ```
 
-```bash [IIS]
+```xml [IIS]
 <configuration>
   <system.webServer>
     <rewrite>

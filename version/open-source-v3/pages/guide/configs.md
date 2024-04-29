@@ -1,4 +1,4 @@
-# Configuration
+# Configurations
 
 ## .env Config File
 

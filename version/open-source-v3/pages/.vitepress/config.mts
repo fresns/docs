@@ -172,7 +172,7 @@ function sidebarGuide() {
       items: [
         { text: 'Download', link: '/guide/' },
         { text: 'Installation', link: '/guide/install.md' },
-        { text: 'Configuration', link: '/guide/config.md' },
+        { text: 'Configurations', link: '/guide/configs.md' },
         { text: 'Updating', link: '/guide/upgrade.md' },
         { text: 'FAQ', link: '/guide/faq.md' },
         { text: 'Reporting Bugs', link: '/guide/feedback.md' },
@@ -263,7 +263,7 @@ function sidebarGuideForZh() {
       items: [
         { text: '下载', link: '/zh-Hans/guide/' },
         { text: '安装', link: '/zh-Hans/guide/install.md' },
-        { text: '配置', link: '/zh-Hans/guide/config.md' },
+        { text: '配置', link: '/zh-Hans/guide/configs.md' },
         { text: '升级', link: '/zh-Hans/guide/upgrade.md' },
         { text: '常见问题', link: '/zh-Hans/guide/faq.md' },
         { text: '提交反馈', link: '/zh-Hans/guide/feedback.md' },
