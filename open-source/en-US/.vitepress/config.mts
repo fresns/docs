@@ -99,15 +99,20 @@ function sidebarExtensions() {
       text: 'Extensions',
       items: [
         { text: 'Introduction', link: '/extensions/' },
-        { text: 'Artisan', link: '/extensions/artisan.md' },
-        { text: 'Command Word', link: '/extensions/command-word.md' },
         { text: 'Error Code', link: '/extensions/error-code.md' },
         { text: 'Multilingual', link: '/extensions/multilingual.md' },
+        {
+          text: 'Document Reference',
+          items: [
+            { text: 'Plugin Dev Artisan', link: 'https://pm.fresns.org/artisan/started.html' },
+            { text: 'Cmd Word Dev', link: 'https://pm.fresns.org/command-word/development.html' },
+            { text: 'Cmd Word Usage', link: 'https://pm.fresns.org/command-word/usage.html' },
+          ]
+        },
         {
           text: 'Function Reference',
           items: [
             { text: 'Crontab and Subscribe', link: '/extensions/functions.md' },
-            { text: 'Command Word Dev', link: '/extensions/command-word-dev.md' },
             { text: 'Verify Access Token', link: '/extensions/verify-access-token.md' },
           ]
         },

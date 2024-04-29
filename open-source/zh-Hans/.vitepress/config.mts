@@ -111,15 +111,20 @@ function sidebarExtensions() {
       text: '扩展开发',
       items: [
         { text: '介绍', link: '/extensions/' },
-        { text: '插件指令', link: '/extensions/artisan.md' },
-        { text: '命令字使用', link: '/extensions/command-word.md' },
         { text: '状态码使用', link: '/extensions/error-code.md' },
         { text: '多语言说明', link: '/extensions/multilingual.md' },
+        {
+          text: '文档参考',
+          items: [
+            { text: '插件开发指令', link: 'https://pm.fresns.org/zh-Hans/artisan/started.html' },
+            { text: '命令字开发', link: 'https://pm.fresns.org/zh-Hans/command-word/development.html' },
+            { text: '命令字使用', link: 'https://pm.fresns.org/zh-Hans/command-word/usage.html' },
+          ]
+        },
         {
           text: '功能参考',
           items: [
             { text: '定时任务和订阅', link: '/extensions/functions.md' },
-            { text: '命令字功能开发', link: '/extensions/command-word-dev.md' },
             { text: '验证访问令牌', link: '/extensions/verify-access-token.md' },
           ]
         },
