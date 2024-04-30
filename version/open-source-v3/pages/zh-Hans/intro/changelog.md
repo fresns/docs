@@ -3,6 +3,18 @@
 Fresns 主程序所有版本更新日志都将记录在这个文件中。
 
 
+## 3.1.1 (2024-04-30)
+
+### Fixes
+- API: 通知消息列表，当帖子被删除后，评论信息报错
+- Account: 中间件获取语言标签顺序问题
+- Account: 验证码发送和验证的模板 ID 不匹配
+- Panel: 中间件类注册问题，导致路由缓存无法使用
+
+### Changed
+- Models: `TempVerifyCode::TEMPLATE_EDIT_PROFILE` 常量名修改为 `TempVerifyCode::TEMPLATE_UPDATE_PROFILE`
+
+
 ## 3.1.0 (2024-04-28)
 
 ### Added

@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 
 
+## 3.1.1 (04/30/2024)
+
+### Fixes
+- API: Fixed an issue where notification messages would cause errors when the post was deleted.
+- Account: Resolved the ordering issue with language tag retrieval middleware.
+- Account: Corrected the mismatch between template ID for sending verification codes and verification.
+- Panel: Addressed a registration issue with middleware classes, resolving route cache usage.
+
+### Changed
+- Models: Renamed constant `TempVerifyCode::TEMPLATE_EDIT_PROFILE` to `TempVerifyCode::TEMPLATE_UPDATE_PROFILE`.
+
+
 ## 3.1.0 (04/28/2024)
 
 ### Added
