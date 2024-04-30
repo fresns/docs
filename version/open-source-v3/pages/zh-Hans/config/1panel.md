@@ -102,7 +102,7 @@ DB_COLLATION=utf8mb4_0900_ai_ci
 
 ![Crontab](https://assets.fresns.com/images/wikis/guides/1panel-crontab.png)
 
-- 如果想了解任务用途，请[点击这里](../guide/configuration.md#任务调度)阅读介绍
+- 如果想了解任务用途，请[点击这里](../guide/configs.md#任务调度)阅读介绍
 
 ```sh
 # 任务配置
