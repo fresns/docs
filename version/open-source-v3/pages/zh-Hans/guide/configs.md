@@ -175,15 +175,14 @@ su -c "cd /www/wwwroot/fresns && php artisan schedule:run >> /dev/null 2>&1" -s 
 ## 队列
 
 - 如果修改了队列连接方式，比如 `QUEUE_CONNECTION=redis`，请配置进程守护。
-- `.env` 里没有配置，或者使用了 `sync` 默认配置，无需配置进程守护。
 - 队列连接方式：
-    - `sync` 同步执行队列，无需额外配置
+    - `sync` 同步执行队列，无需配置进程守护
     - `redis` 使用 PHP 扩展 redis 缓存器驱动队列
-    - `database` 使用数据库驱动队列，无需额外配置
+    - `database` 使用数据库驱动队列，框架的默认配置
     - `beanstalkd` 使用分布式内存队列系统，适用于大型项目
     - `sqs` 使用 AWS sqs 驱动队列，需配置 AWS 密钥，适用于大型项目
 
-推荐 `redis` 或 `database`，不配置则默认为 `sync`
+推荐 `redis`，不配置则默认为 `database`
 
 ```ini
 REDIS_HOST=127.0.0.1      #Host

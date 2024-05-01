@@ -165,15 +165,14 @@ su -c "cd /www/wwwroot/fresns && php artisan schedule:run >> /dev/null 2>&1" -s 
 ## Queues
 
 - If you have changed the queue connection method, e.g. `QUEUE_CONNECTION=redis`, please configure the Supervisor.
-- You do not need to configure the Supervisor if it is not configured in `.env`, or if the default `sync` is used.
 - Queue connection options:
     - `sync` Synchronously execute the queue, no additional configuration required
     - `redis` Use the PHP extension redis cache driver for the queue
-    - `database` Use the database driver for the queue, no additional configuration required
+    - `database` Use the database driver for the queue, default configuration of the framework
     - `beanstalkd` Use a distributed memory queue system, suitable for large projects
     - `sqs` Use AWS sqs for the queue, requires AWS key configuration, suitable for large projects
 
-It is recommended to use `redis` or `database`. The default is `sync` if not configured.
+It is recommended to use `redis`. The default is `database` if not configured.
 
 ```ini
 REDIS_HOST=127.0.0.1
