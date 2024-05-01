@@ -55,7 +55,7 @@ ThemeDemo/          // 主题模板文件夹（以 fskey 命名）
     "name": "演示主题",
     "description": "这是演示主题",
     "author": "唐杰",
-    "authorLink": "https://tangjie.me",
+    "website": "https://tangjie.me",
     "version": "1.0.0",
     "functions": true, // 是否有设置功能
     "functionItems": [

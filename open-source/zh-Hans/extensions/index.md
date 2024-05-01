@@ -42,13 +42,8 @@ fresns/             //主程序根目录
     "name": "演示插件", // 名字
     "description": "这是演示插件", // 描述
     "author": "唐杰", // 开发者
-    "authorLink": "https://tangjie.me", // 开发者主页
+    "website": "https://tangjie.me", // 开发者主页
     "version": "1.0.0", // 语义化版本号
-    "panelUsages": [
-        // 插件用途场景
-    ],
-    "accessPath": "/mall", // 前端访客路由
-    "settingsPath": "/mall/admin", // 后端设置页路由
     "providers": [
         "Plugins\\FresnsEmail\\Providers\\FresnsEmailServiceProvider",
         "Plugins\\FresnsEmail\\Providers\\CmdWordServiceProvider",
@@ -57,7 +52,12 @@ fresns/             //主程序根目录
     "autoloadFiles": [
         // autoload files
     ],
-    "aliases": {}
+    "aliases": {},
+    "panelUsages": [
+        // 插件用途场景
+    ],
+    "accessPath": "/mall", // 前端访客路由
+    "settingsPath": "/mall/admin" // 后端设置页路由
 }
 ```
 

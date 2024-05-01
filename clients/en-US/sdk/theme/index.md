@@ -55,7 +55,7 @@ When the theme is installed, the static resources are published to the `public` 
     "name": "Theme Demo",
     "description": "This is the demo theme",
     "author": "Jevan Tang",
-    "authorLink": "https://github.com/jevantang",
+    "website": "https://github.com/jevantang",
     "version": "1.0.0",
     "functions": true, // Availability of setting function
     "functionItems": [

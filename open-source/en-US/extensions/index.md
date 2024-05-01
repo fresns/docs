@@ -43,13 +43,8 @@ When the plugin is installed and published, static resources are distributed to 
     "name": "Demo Plugin",
     "description": "This is the demo plugin",
     "author": "Jevan Tang",
-    "authorLink": "https://github.com/jevantang",
+    "website": "https://github.com/jevantang",
     "version": "1.0.0",
-    "panelUsages": [
-        // Plugin usage scenarios
-    ],
-    "accessPath": "/mall", // Front-end visitor page path
-    "settingsPath": "/mall/admin", // Back-end settings page path
     "providers": [
         "Plugins\\FresnsEmail\\Providers\\FresnsEmailServiceProvider",
         "Plugins\\FresnsEmail\\Providers\\CmdWordServiceProvider",
@@ -58,7 +53,12 @@ When the plugin is installed and published, static resources are distributed to 
     "autoloadFiles": [
         // autoload files
     ],
-    "aliases": {}
+    "aliases": {},
+    "panelUsages": [
+        // Plugin usage scenarios
+    ],
+    "accessPath": "/mall", // Front-end visitor page path
+    "settingsPath": "/mall/admin" // Back-end settings page path
 }
 ```
 
