@@ -157,6 +157,9 @@
 
 | Key | Value |
 | --- | --- |
+| she | She |
+| he | He |
+| they | They |
 | file | File |
 | image | Image |
 | video | Video |
