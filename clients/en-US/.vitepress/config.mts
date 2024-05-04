@@ -77,7 +77,6 @@ function sidebarGuide() {
         { text: 'Introduction', link: '/guide/' },
         { text: 'Product Idea', link: '/guide/idea.md' },
         { text: 'Directions', link: '/guide/directions.md' },
-        { text: 'Resources', link: '/guide/resources.md' },
         { text: 'Release Notes', link: '/guide/changelog.md' },
       ]
     }

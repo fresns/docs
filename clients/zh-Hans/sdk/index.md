@@ -5,7 +5,7 @@
 - [API Collection by Postman](https://www.postman.com/fresns/workspace/fresns-api)
 - [API Collection by Bruno](https://github.com/fresns/api-collection-by-bruno)
 
-## Web 客户端
+## SDK Overview
 
 ### 集成运行（主题）
 
@@ -14,13 +14,8 @@
 
 ### 独立运行
 
-- based on Vue
-- based on React
-
-## App 客户端
-
-- [based on React Native](https://github.com/fresns/client-react-native)
-- [based on WeChat Mini Program](https://github.com/fresns/client-wechat)
+- [JavaScript](https://github.com/fresns/client-sdk-js) (React, Vue, React Native)
+- [WeChat Mini Program](https://github.com/fresns/client-wechat)
 
 ## 公共密钥
 

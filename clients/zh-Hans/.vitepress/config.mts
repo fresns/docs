@@ -89,7 +89,6 @@ function sidebarGuide() {
         { text: '介绍', link: '/guide/' },
         { text: '产品理念', link: '/guide/idea.md' },
         { text: '使用方向', link: '/guide/directions.md' },
-        { text: '开发资源', link: '/guide/resources.md' },
         { text: '更新日志', link: '/guide/changelog.md' },
       ]
     }
