@@ -14,7 +14,7 @@
 
 - Web 环境推荐 `Nginx`
 - PHP 推荐 `8.3`
-- MySQL 推荐 `8.3`
+- MySQL 推荐 `8.4`
 
 ## PHP 配置
 
