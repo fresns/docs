@@ -31,14 +31,6 @@ const members = [
             { icon: 'github', link: 'https://github.com/mouyong' },
         ]
     },
-    {
-        avatar: 'https://assets.fresns.com/images/wikis/avatars/tracy-yuan.jpg',
-        name: 'Tracy Yuan',
-        title: 'Tester',
-        links: [
-            { icon: 'github', link: 'https://github.com/tracy-yq' },
-        ]
-    },
 ]
 
 const oldMembers = [
