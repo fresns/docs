@@ -61,8 +61,12 @@ fresnsClient.enableWeChatAutoLogin;
 //   isApp = false,
 //   isWechat = true,
 //   platform = "devtools", // ios, android, wechat
+//   hasApp = false,
+//   appUrl = '', // App Store or Google Play
+//   downloadUrl = "", // 安装包下载链接
 //   hasNewVersion = false,
-//   newVersionUrl = "" // app 专用: 应用市场链接或安装包链接
+//   newVersion = "",
+//   newVersionDescribe = ""
 // }
 ```
 
