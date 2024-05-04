@@ -54,6 +54,16 @@ fresnsClient.appBaseInfo;
 fresnsClient.enableApiQuic;
 fresnsClient.enableWeChatLogin;
 fresnsClient.enableWeChatAutoLogin;
+
+// appBaseInfo
+// {
+//   isWeb: false,
+//   isApp = false,
+//   isWechat = true,
+//   platform = "devtools", // ios, android, wechat
+//   hasNewVersion = false,
+//   newVersionUrl = "" // app 专用: 应用市场链接或安装包链接
+// }
 ```
 
 ## 登录
@@ -103,6 +113,8 @@ await fresnsViewProfilePath('uidOrUsername'); // 完整的用户主页路径
 
 await fresnsViewProfileData('uidOrUsername'); // 当前用户主页详情（当用户主页有多个切换页面时，可以防止每次切换都请求一次接口）
 await fresnsViewProfileData('uidOrUsername', 'detail.key'); // 指定键值对
+
+// fresnsViewProfileData
 // {
 //     "items": {},
 //     "detail": {},

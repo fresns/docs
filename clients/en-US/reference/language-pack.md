@@ -207,6 +207,7 @@
 | accountCenter | Account Center |
 | accountCenterDesc | Manage your profile, password and other configuration information in the Account Center. |
 | accountCenterSeeMore | See more in Accounts Center |
+| accountCenterTip | Please go to the Account Center for this feature |
 | account | Account |
 | email | Email |
 | phone | Phone Number |
