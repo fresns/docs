@@ -3,6 +3,16 @@
 Fresns 主程序所有版本更新日志都将记录在这个文件中。
 
 
+## 3.1.2 (2024-05-06)
+
+### Fixes
+- API: 用户资料更新接口 `gender_custom` 和 `gender_pronoun` 参数错误
+- API: 评论草稿的 `hcid` 参数错误
+- API: 用户生日格式错误
+- Panel: 面板语言的 Cookie 更改为永久保存
+- Console: 修复 http proxy 配置错误
+
+
 ## 3.1.1 (2024-04-30)
 
 ### Fixes

@@ -3,6 +3,16 @@
 All notable changes to this project will be documented in this file.
 
 
+## 3.1.2 (05/06/2024)
+
+### Fixes
+- API: `gender_custom` and `gender_pronoun` parameter errors in user profile update interface.
+- API: `hcid` parameter error in draft comments.
+- API: User birthday format error.
+- Panel: Panel language cookie changed to persistent.
+- Console: Fixed http proxy configuration bug.
+
+
 ## 3.1.1 (04/30/2024)
 
 ### Fixes
