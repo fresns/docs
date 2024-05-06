@@ -11,7 +11,7 @@ hero:
   actions:
     - theme: brand
       text: Community ↗
-      link: https://space.fresns.com/developers
+      link: https://discuss.fresns.org/
     - theme: alt
       text: Marketplace ↗
       link: https://marketplace.fresns.com/

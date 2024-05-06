@@ -11,7 +11,7 @@ hero:
   actions:
     - theme: brand
       text: 交流社区 ↗
-      link: https://space.fresns.com/developers
+      link: https://discuss.fresns.org/
     - theme: alt
       text: 应用市场 ↗
       link: https://marketplace.fresns.com/
