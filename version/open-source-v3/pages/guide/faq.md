@@ -5,7 +5,7 @@
 
 ## Must Read
 
-- [Ways to share Fresns error messages](https://discuss.fresns.org/post/h2rSQEAm)
+- [Ways to share Fresns error messages](https://discuss.fresns.org/post/4IJjps9p)
 - [Path to Fresns administrator panel login page](https://discuss.fresns.org/post/Y7fyxKMs)
 - [Fresns Client (User Interface) Instructions for Use](https://discuss.fresns.org/post/V2VphDSx)
 

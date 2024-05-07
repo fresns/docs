@@ -5,7 +5,7 @@
 
 ## 必看
 
-- [一键分享 Fresns 报错信息的方法](https://discuss.fresns.org/post/h2rSQEAm)
+- [一键分享 Fresns 报错信息的方法](https://discuss.fresns.org/post/4IJjps9p)
 - [Fresns 管理面板的登录页面路径](https://discuss.fresns.org/post/Y7fyxKMs)
 - [Fresns 客户端（用户界面）使用说明](https://discuss.fresns.org/post/V2VphDSx)
 
