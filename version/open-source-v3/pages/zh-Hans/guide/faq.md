@@ -6,7 +6,13 @@
 ## 必看
 
 - [一键分享 Fresns 报错信息的方法](https://discuss.fresns.org/post/h2rSQEAm)
+- [Fresns 管理面板的登录页面路径](https://discuss.fresns.org/post/Y7fyxKMs)
+- [Fresns 客户端（用户界面）使用说明](https://discuss.fresns.org/post/V2VphDSx)
 
 ## 环境问题
 
 - [因夏令时导致的时区异常，可以忽略](https://discuss.fresns.org/post/h8ZIjVAZ)
+
+## 使用说明
+
+- [Fresns 客户端频道默认参数配置解说](https://discuss.fresns.org/post/NTBRTFwa)
