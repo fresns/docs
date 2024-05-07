@@ -10,8 +10,8 @@ aside: false
 | account_id | bigint *UNSIGNED* | 账号主键 ID |  | NO | 关联字段 [accounts->id](accounts.md) |
 | connect_platform_id | tinyint *UNSIGNED* | 互联平台编号 |  | NO | 关联配置表 [connects](../../configs/dictionary/connects.md) 键值 |
 | connect_account_id | varchar(128) | 关联账号 ID |  | NO | **唯一值**<br>例如：微信 openid 或 GitHub ID |
-| connect_token | varchar(128) | 授权 Token |  | YES |  |
-| connect_refresh_token | varchar(128) | 授权 Refresh Token |  | YES |  |
+| connect_token | text | 授权 Token |  | YES |  |
+| connect_refresh_token | text | 授权 Refresh Token |  | YES |  |
 | refresh_token_expired_at | timestamp | 授权 Refresh Token 有效期 |  | YES | connect_refresh_token |
 | connect_username | varchar(128) | 关联用户名 |  | YES | 互联平台的用户名，没有则留空 |
 | connect_nickname | varchar(128) | 关联昵称 |  | YES | 互联平台的昵称，没有则填写平台的名称 |

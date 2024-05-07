@@ -16,7 +16,7 @@ aside: false
 | author_link | varchar(128) | Developer link |  | YES |  |
 | panel_usages | json | Panel use scenarios |  | YES | Supported application scenario parameters<br>Format: `["apiKey","register"]` |
 | app_host | varchar(128) | custom domain |  | YES | Starts with `http://` or` https://`, without trailing / |
-| access_path | varchar(128) | access path |  | YES | Relative path, supports variable names<br>When the `app_host` field is empty, it is concatenated with the "backend domain" to form a complete URL |
+| access_path | varchar(255) | access path |  | YES | Relative path, supports variable names<br>When the `app_host` field is empty, it is concatenated with the "backend domain" to form a complete URL |
 | settings_path | varchar(128) | Settings page |  | YES | Relative path, empty means no settings page |
 | is_upgrade | tinyint *UNSIGNED* | Is there an upgrade package | 0 | NO | 0.No / 1.Yes |
 | upgrade_version | varchar(16) | New version number |  | YES |  |

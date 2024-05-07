@@ -16,7 +16,7 @@ aside: false
 | author_link | varchar(128) | 开发者链接 |  | YES |  |
 | panel_usages | json | 面板应用场景 |  | YES | 支持的应用场景参数<br>格式：`["apiKey","register"]` |
 | app_host | varchar(128) | 插件自定义域名 |  | YES | http:// 或 https:// 开头，结尾不带 / |
-| access_path | varchar(128) | 插件访问路径 |  | YES | 相对路径，支持变量名<br>当字段 `app_host` 为空时，与“后端域名”拼接成完整 URL |
+| access_path | varchar(255) | 插件访问路径 |  | YES | 相对路径，支持变量名<br>当字段 `app_host` 为空时，与“后端域名”拼接成完整 URL |
 | settings_path | varchar(128) | 设置页面 |  | YES | 相对路径，为空代表没有设置页面<br>主题如果有设置功能，则填入 fskey |
 | is_upgrade | tinyint *UNSIGNED* | 是否有升级包 | 0 | NO | 0.无 / 1.有 |
 | upgrade_version | varchar(16) | 新版本号 |  | YES |  |
