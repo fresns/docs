@@ -38,6 +38,7 @@
 | **roles** | Role table |
 | **users** | User main table |
 | **user_stats** | User: stat table |
+| **user_logs** | User: log table |
 | **user_extcredits_logs** | User: extcredits log table |
 | **user_roles** | User: role record table |
 | **user_likes** | User: like record table |
@@ -90,6 +91,7 @@
 | **extend_users** | Extended operated users table |
 | **stickers** | Sticker table |
 | **seo** | Search engine optimization information table |
+| **cities** | City table |
 
 ## Temporary
 

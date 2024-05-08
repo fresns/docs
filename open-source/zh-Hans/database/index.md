@@ -38,6 +38,7 @@
 | **roles** | 角色表 |
 | **users** | 用户主表 |
 | **user_stats** | 用户数据统计表 |
+| **user_logs** | 用户日志表 |
 | **user_extcredits_logs** | 用户扩展分值日志表 |
 | **user_roles** | 用户角色关联表 |
 | **user_likes** | 用户赞记录表 |
@@ -90,6 +91,7 @@
 | **extend_users** | 扩展使用用户表 |
 | **stickers** | 表情表 |
 | **seo** | 搜索引擎优化信息表 |
+| **cities** | 城市字典表 |
 
 ## 临时数据
 
