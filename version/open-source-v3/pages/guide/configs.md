@@ -11,7 +11,7 @@ APP_DEBUG=false               #Whether to output detailed error messages
 APP_URL=                      #example https://discuss.fresns.org
 
 APP_TIMEZONE=Asia/Singapore   #Database Timezone
-APP_FOUNDER=1                 #Founder Account ID (accounts->id)
+APP_FOUNDER=1                 #Founder Account ID (accounts->id or accounts->aid)
 ```
 
 ::: code-group

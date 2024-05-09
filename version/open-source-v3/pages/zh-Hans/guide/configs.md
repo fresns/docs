@@ -11,7 +11,7 @@ APP_DEBUG=false             #是否输出详细报错信息，调试时改为 tr
 APP_URL=                    #你的系统网址，例如 https://discuss.fresns.org
 
 APP_TIMEZONE=Asia/Shanghai  #数据库时区
-APP_FOUNDER=1               #创始人账号 ID (accounts->id)
+APP_FOUNDER=1               #创始人账号 ID (accounts->id 或者 accounts->aid)
 ```
 
 ::: code-group
