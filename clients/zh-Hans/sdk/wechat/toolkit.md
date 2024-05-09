@@ -76,6 +76,12 @@ truncateText('内容', '截断长度', '是否保留富文本格式');
 generateRandomString('位数');
 ```
 
+## 判断是否为空值（包括是否为空对象或空数组）
+
+```js
+isEmpty('value');
+```
+
 ## 比较两个语义化版本号
 
 ```js
