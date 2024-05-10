@@ -5,7 +5,7 @@ export default defineConfig({
   lang: 'zh-Hans',
   title: 'Fresns 扩展插件开发文档',
   titleTemplate: false,
-  description: '利用 Fresns 的开源潜力，增强和扩大 Fresns 的核心功能，提供一个强大的框架，以增强社区体验，在此基础上自由的发挥心中所想。',
+  description: '利用 Fresns 的开源潜力，增强和扩大 Fresns 的核心功能，提供一个强大的框架，以增强社区体验，在此基础上自由地发挥心中所想。',
 
   lastUpdated: true,
 
