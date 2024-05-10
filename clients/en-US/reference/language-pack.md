@@ -446,6 +446,7 @@
 | editorGoTo | Go to Editor |
 | editorDraftSelect | Select a draft from the draft box |
 | editorDraftCreate | Create a new draft |
+| editorSelectAudience | Choose audience |
 | editorNoSelectGroup | Not selected |
 | editorNoGroup | Do not send to any group |
 | editorMyFollowGroup | I follow |

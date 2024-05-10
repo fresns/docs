@@ -438,6 +438,7 @@
 | editorGoTo | 进入编辑器 |
 | editorDraftSelect | 从草稿箱中选择一篇草稿 |
 | editorDraftCreate | 创建新草稿 |
+| editorSelectAudience | 选择受众 |
 | editorNoSelectGroup | 未选择 |
 | editorNoGroup | 不发到任何小组 |
 | editorMyFollowGroup | 我关注的 |
