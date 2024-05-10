@@ -362,6 +362,7 @@ function sidebarSdk() {
         { text: 'API', link: '/sdk/wechat/api.md' },
         { text: '功能函数', link: '/sdk/wechat/functions.md' },
         { text: '插件扩展', link: '/sdk/wechat/extensions.md' },
+        { text: '编辑器', link: '/sdk/wechat/editor.md' },
         { text: '工具包', link: '/sdk/wechat/toolkit.md' },
       ]
     }
