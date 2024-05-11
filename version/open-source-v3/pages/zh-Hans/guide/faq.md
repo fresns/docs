@@ -12,6 +12,9 @@
 ## 环境问题
 
 - [因夏令时导致的时区异常，可以忽略](https://discuss.fresns.org/post/h8ZIjVAZ)
+- [404 Page Not Found](https://discuss.fresns.org/post/X3JF7qRf)
+- [500 Internal Server Error](https://discuss.fresns.org/post/Cp8JUfzQ)
+- [502 Bad Gateway](https://discuss.fresns.org/post/sh2EQ8I0)
 
 ## 使用说明
 

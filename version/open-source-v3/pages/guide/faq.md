@@ -12,6 +12,9 @@
 ## Environmental issues
 
 - [Timezone anomalies due to Daylight Saving Time can be ignored.](https://discuss.fresns.org/post/h8ZIjVAZ)
+- [404 Page Not Found](https://discuss.fresns.org/post/X3JF7qRf)
+- [500 Internal Server Error](https://discuss.fresns.org/post/Cp8JUfzQ)
+- [502 Bad Gateway](https://discuss.fresns.org/post/sh2EQ8I0)
 
 ## Instructions for use
 
