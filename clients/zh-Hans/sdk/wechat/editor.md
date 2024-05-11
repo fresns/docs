@@ -4,6 +4,7 @@
 
 - SDK 已经封装了一个完整的编辑器组件，你可以直接使用，或者修改重构。
 - 编辑器组件代码位于 `/sdk/editor/` 目录。
+- 编辑器组件基于 `Skyline` 渲染引擎和 [WeUI](https://github.com/Tencent/weui-wxss) 样式库开发。
 
 ## 页面
 
@@ -92,6 +93,8 @@ Page({
 ```
 
 ```css [index.wxss]
+@import '/style/weui.wxss';
+
 .scrollarea {
   flex: 1;
   overflow-y: hidden;

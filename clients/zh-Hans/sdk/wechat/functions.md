@@ -1,15 +1,5 @@
 # 功能函数
 
-## 初始化
-
-- 在小程序 `app.js` 中引用，放置在 `onShow` 用于初始化小程序配置。
-
-```js
-import { fresnsInit } from '/sdk/services';
-
-await fresnsInit();
-```
-
 ## 配置项
 
 - 以下配置功能将采用[缓存机制](/reference/cache.md)，避免每次访问页面都请求接口，导致服务端承担重复性负载。

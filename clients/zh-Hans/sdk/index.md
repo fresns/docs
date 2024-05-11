@@ -15,7 +15,7 @@
 ### 独立运行
 
 - [JavaScript](https://github.com/fresns/client-sdk-js) (React, Vue, React Native)
-- [WeChat Mini Program](https://github.com/fresns/client-wechat)
+- [WeChat Mini Program](https://github.com/fresns/client-sdk-wechat)
 
 ## 公共密钥
 
