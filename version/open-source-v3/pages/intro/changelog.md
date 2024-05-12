@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 
 
+## 3.1.3 (05/12/2024)
+
+### Fixes
+- Data: Modify the token field length in the account interconnection information table to accommodate longer character storage.
+- Panel: Theme upgrade did not automatically clear version number cache.
+- Panel: Incorrect 302 error in JS language pack link.
+- Framework: Optimize 404 and 500 error page views.
+
+
 ## 3.1.2 (05/06/2024)
 
 ### Fixes
