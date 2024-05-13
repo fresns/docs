@@ -23,4 +23,5 @@
 
 - Backend login portal, configuration items have changed, so reset to default path `/fresns/admin`
 - `DB_TIMEZONE` is changed to `APP_TIMEZONE` in the `.env` configuration.
+- `CACHE_DRIVER` is changed to `CACHE_STORE` in the `.env` configuration. If it is not in the configuration, you need to add a new one with a value of `CACHE_STORE=file`.
 - For email settings, change the email template variable name from `{sitename}` to `{name}`.

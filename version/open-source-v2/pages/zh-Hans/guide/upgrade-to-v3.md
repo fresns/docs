@@ -23,6 +23,7 @@
 
 - 后台登录入口，配置项变化，所以重置为默认路径了 `/fresns/admin`
 - `.env` 配置中 `DB_TIMEZONE` 修改为 `APP_TIMEZONE`
+- `.env` 配置中 `CACHE_DRIVER` 修改为 `CACHE_STORE`，如果配置中没有，则需要新增一个，值可以选为 `CACHE_STORE=file`
 - 发信设置，邮件模板的变量名 `{sitename}` 修改为 `{name}`
 
 **以下内容为开发者阅读，使用者忽略**
