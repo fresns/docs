@@ -43,13 +43,13 @@ callSpecificPageFunction('route', '功能函数名', '参数', '...');
 ## 回调上一个页面组件中的功能
 
 ```js
-callPrevPageComponentFunction('组件名', '功能函数名', '参数', '...');
+callPrevPageComponentMethod('组件名', '功能函数名', '参数', '...');
 ```
 
 ## 回调指定页面组件中的功能
 
 ```js
-callSpecificPageComponentFunction('route', '组件名', '功能函数名', '参数', '...');
+callSpecificPageComponentMethod('route', '组件名', '功能函数名', '参数', '...');
 ```
 
 ## 将 URL Query 参数转换为 Json 对象
