@@ -142,8 +142,8 @@
             }
         },
         "editPerm": {
-            "status": "Boolean / Has permission to edit",
-            "timeLimit": "Number / Editable within a certain time",
+            "status": "Boolean / Whether to enable editing",
+            "timeLimit": "Number / How long after publication can you edit",
             "editSticky": "Boolean / Editable after post is sticky",
             "editDigest": "Boolean / Editable after post is digest"
         }

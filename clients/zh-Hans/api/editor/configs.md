@@ -142,8 +142,8 @@
             }
         },
         "editPerm": {
-            "status": "Boolean / 是否有权编辑",
-            "timeLimit": "Number / 多长时间内可以编辑",
+            "status": "Boolean / 是否开启编辑功能",
+            "timeLimit": "Number / 发表后多长时间内可以编辑",
             "editSticky": "Boolean / 帖子置顶后是否可编辑",
             "editDigest": "Boolean / 帖子加精后是否可编辑"
         }
