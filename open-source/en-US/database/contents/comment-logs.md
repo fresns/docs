@@ -21,7 +21,7 @@ aside: false
 | is_private | tinyint *UNSIGNED* | Private | 0 | NO | 0.No / 1.Yes |
 | location_info | json | Location information |  | YES | Empty means not creating or clearing when modifying |
 | more_info | json | More Info |  | YES | E.g. publisher IP location name, device name, etc. |
-| permissions | json | Permissions |  | YES |  |
+| permissions | json | Permissions |  | YES | [Reference master table](comments.md#introduction-to-permission-parameters) |
 | is_enabled | tinyint *UNSIGNED* | Is Valid | 1 | NO | 0.Invalid (visible only to yourself) / 1.Valid |
 | state | tinyint *UNSIGNED* | Status | 1 | NO | 1.Unpublished (Draft)<br>2.Published (Under review)<br>3.Published (Approved and archived)<br>4.Published (Rejected, back to draft status) |
 | reason | varchar(255) | Review rejection reason |  | YES | Used when rejected in review |
@@ -48,6 +48,7 @@ aside: false
 
 ```json
 {
+    "langTag": "",
     "name": "Cupertino Library",
     "description": "",
     "placeId": "TRDucfBPkhuzzR9a7",

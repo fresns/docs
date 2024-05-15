@@ -21,7 +21,7 @@ aside: false
 | is_private | tinyint *UNSIGNED* | 是否私有 | 0 | NO |  0.否 / 1.是 |
 | location_info | json | 位置信息 |  | YES |  |
 | more_info | json | 更多信息字段 |  | YES |  |
-| permissions | json | 权限参数 |  | YES |  |
+| permissions | json | 权限参数 |  | YES | [参考主表同名字段](comments.md#权限参数介绍) |
 | is_enabled | tinyint *UNSIGNED* | 是否有效 | 1 | NO | 0.无效（仅自己可见） / 1.有效 |
 | state | tinyint *UNSIGNED* | 状态 | 1 | NO |  1.未发表（草稿）<br>2.已发表（审核中）<br>3.已发表（审核通过并封存）<br>4.已发表（审核未通过，又为草稿状态） |
 | reason | varchar(255) | 审核拒绝原因 |  | YES | 审核拒绝时使用 |
@@ -49,6 +49,7 @@ aside: false
 ::: code-group
 ```json [en]
 {
+    "langTag": "",
     "name": "Cupertino Library",
     "description": "",
     "placeId": "TRDucfBPkhuzzR9a7",
@@ -73,6 +74,7 @@ aside: false
 
 ```json [zh-Hans]
 {
+    "langTag": "",
     "name": "东方之门",
     "description": "",
     "placeId": "B020017GRH",
