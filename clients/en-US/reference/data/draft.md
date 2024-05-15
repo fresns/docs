@@ -82,9 +82,10 @@ aside: false
 }
 ```
 
-## Post: `permissions` Introduction
+## `permissions` Introduction
 
-```json
+::: code-group
+```json [Post]
 {
     "editor": {
         "isAppEditor": "Boolean / Is it edited only in the app?",
@@ -96,22 +97,31 @@ aside: false
         "isReadLocked": "Boolean / Is a reading auth required",
         "previewPercentage": "Number / content display ratio when unauthorized",
         "whitelist": {
-            "users": "Array / whitelist user ID",
-            "roles": "Array / whitelist role ID"
+            "users": [
+                {
+                    "fsid": "String / User identifier ID, uid or username",
+                    "uid": "Number / User ID",
+                    "url": "String / User homepage URL",
+                    "username": "String / Username",
+                    "nickname": "String / User nickname",
+                    "avatar": "String / Avatar image"
+                }
+            ],
+            "roles": [
+                {
+                    "rid": "String / Role ID",
+                    "name": "String / Role name",
+                    "icon": "String / Role icon URL"
+                }
+            ]
         },
-        "buttonName": {
-            "Language Tag": "String / Button Name",
-            "en": "Name"
-        },
-        "appFskey": "String / auth app fskey"
+        "buttonName": "String / Button Name",
+        "appUrl": "String / App Page URL"
     },
     "associatedUserListConfig": {
         "hasUserList": "Boolean / Is there a special user list?",
-        "userListName": {
-            "Language Tag": "String / User List Name",
-            "en": "Name"
-        },
-        "appFskey": "String / user list app fskey"
+        "userListName": "String / User List Name",
+        "appUrl": "String / App Page URL"
     },
     "commentConfig": {
         "visible": "Boolean / Whether comments are visible (invisible is hidden from everyone, including the author)",
@@ -119,20 +129,15 @@ aside: false
         "privacy": "String / public or private (visible only to the author of the comment and the author of the post)",
         "action": {
             "hasActionButton": "Boolean / Does the comment have an action button?",
-            "buttonName": {
-                "Language Tag": "String / Button Name",
-                "en": "Name"
-            },
+            "buttonName": "String / Button Name",
             "buttonStyle": "String / Button Style: primary secondary success danger warning info",
-            "appFskey": "String / App fskey"
+            "appUrl": "String / App Page URL"
         }
     },
 }
 ```
 
-## Comment: `permissions` Introduction
-
-```json
+```json [Comment]
 {
     "editor": {
         "isAppEditor": "Boolean / Is it edited only in the app?",
@@ -143,12 +148,10 @@ aside: false
     "activeButton": {
         // Link with post commentConfig.action, replace this configuration
         "hasActiveButton": "Boolean / Whether there is an active button or not",
-        "buttonName": {
-            "Language Tag": "String / Button Name",
-            "en": "Name"
-        },
+        "buttonName": "String / Button Name",
         "buttonStyle": "String / Button Style primary secondary success danger warning info",
-        "appFskey": "String / App fskey"
+        "appUrl": "String / App Page URL"
     },
 }
 ```
+:::

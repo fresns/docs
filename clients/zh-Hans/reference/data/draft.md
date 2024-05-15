@@ -82,9 +82,10 @@ aside: false
 }
 ```
 
-## 帖子 `permissions` 权限参数介绍
+## `permissions` 权限参数介绍
 
-```json
+::: code-group
+```json [帖子]
 {
     "editor": {
         "isAppEditor": "Boolean / 是否仅在应用中编辑",
@@ -96,22 +97,31 @@ aside: false
         "isReadLocked": "Boolean / 是否需要阅读授权",
         "previewPercentage": "Number / 无权时内容显示比例",
         "whitelist": {
-            "users": "Array / 白名单用户 ID",
-            "roles": "Array / 白名单角色 ID"
+            "users": [
+                {
+                    "fsid": "String / 用户标识 ID，uid 或 username",
+                    "uid": "Number / 用户 ID",
+                    "url": "String / 用户主页地址",
+                    "username": "String / 用户名",
+                    "nickname": "String / 用户昵称",
+                    "avatar": "String / 头像图"
+                }
+            ],
+            "roles": [
+                {
+                    "rid": "String / 角色 ID",
+                    "name": "String / 角色名",
+                    "icon": "String / 角色图标地址",
+                }
+            ]
         },
-        "buttonName": {
-            "语言标签": "String / 无权时按钮文字",
-            "en": "Name"
-        },
-        "appFskey": "String / 授权应用 fskey"
+        "buttonName": "String / 无权时按钮文字",
+        "appUrl": "String / 应用页面链接"
     },
     "associatedUserListConfig": {
         "hasUserList": "Boolean / 是否有关联用户列表",
-        "userListName": {
-            "语言标签": "String / 用户列表名称",
-            "en": "Name"
-        },
-        "appFskey": "String / 用户列表应用 fskey"
+        "userListName": "String / 用户列表名称",
+        "appUrl": "String / 应用页面链接"
     },
     "commentConfig": {
         "visible": "Boolean / 评论是否可见（不可见对所有人隐藏，包括作者）",
@@ -119,20 +129,15 @@ aside: false
         "privacy": "String / public (公开) 或 private（私有则仅评论作者和帖子作者可见）",
         "action": {
             "hasActionButton": "Boolean / 评论是否有按钮",
-            "buttonName": {
-                "语言标签": "String / 按钮名称",
-                "en": "Name"
-            },
+            "buttonName": "String / 按钮名称",
             "buttonStyle": "String / 按钮风格 primary secondary success danger warning info",
-            "appFskey": "String / 配置应用 fskey"
+            "appUrl": "String / 应用页面链接"
         }
     },
 }
 ```
 
-## 评论 `permissions` 权限参数介绍
-
-```json
+```json [评论]
 {
     "editor": {
         "isAppEditor": "Boolean / 是否仅在应用中编辑",
@@ -143,12 +148,10 @@ aside: false
     "activeButton": {
         // 与帖子 commentConfig.action 联动，替换该配置
         "hasActiveButton": "Boolean / 是否有 active 按钮",
-        "buttonName": {
-            "语言标签": "String / 按钮名称",
-            "en": "Name"
-        },
+        "buttonName": "String / 按钮名称",
         "buttonStyle": "String / 按钮风格 primary secondary success danger warning info",
-        "appFskey": "String / 配置应用 fskey"
+        "appUrl": "String / 应用页面链接"
     },
 }
 ```
+:::
