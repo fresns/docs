@@ -24,8 +24,6 @@ aside: false
 | input_min | smallint *UNSIGNED* | 最小值 |  | YES |  |
 | input_maxlength | smallint *UNSIGNED* | 最大长度 |  | YES |  |
 | input_minlength | smallint *UNSIGNED* | 最小长度 |  | YES |  |
-| input_size | smallint *UNSIGNED* | 大小 |  | YES |  |
-| input_step | smallint *UNSIGNED* | 步骤 |  | YES |  |
 | sort_order | smallint *UNSIGNED* | 排列顺序 | 9 | NO | 升序排序 |
 | value_type | varchar(16) | 数据值类型 | string | NO | 同[配置表](../systems/configs.md) `item_type` 字段逻辑一样，支持 file/plugin/plugins 等类型 |
 | is_enabled | tinyint *UNSIGNED* | 是否有效 | 1 | NO | 0.无效 / 1.有效<br>无效后，所有关联均无效 |

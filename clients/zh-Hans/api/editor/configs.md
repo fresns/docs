@@ -100,8 +100,7 @@
                         "icon": "String / 图标地址",
                         "name": "String / 名称",
                         "appUrl": "String / 应用访问地址",
-                        "editorToolbar": "Boolean / 编辑器专用，是否在 toolbar 显示",
-                        "editorNumber": "Number / 编辑器专用，可使用数量",
+                        "isInToolbar": "Boolean / 是否在 toolbar 显示"
                     }
                 ]
             },

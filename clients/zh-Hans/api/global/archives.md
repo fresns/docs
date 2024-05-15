@@ -50,8 +50,6 @@
             "inputMin": "Number / 最小值",
             "inputMaxlength": "Number / 最大长度",
             "inputMinlength": "Number / 最小长度",
-            "inputSize": "Number / 大小",
-            "inputStep": "Number / 步骤",
             "valueType": "String / 数据值类型"
         }
     ]

@@ -50,8 +50,6 @@
             "inputMin": "Number / Minimum Value",
             "inputMaxlength": "Number / Maximum Length",
             "inputMinlength": "Number / Minimum Length",
-            "inputSize": "Number / Size",
-            "inputStep": "Number / Step",
             "valueType": "String / Data Value Type"
         }
     ]

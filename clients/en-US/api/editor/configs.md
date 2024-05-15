@@ -100,8 +100,7 @@
                         "icon": "String / Icon URL",
                         "name": "String / Name",
                         "appUrl": "String / App Access URL",
-                        "editorToolbar": "Boolean / Editor specific, whether to display in toolbar",
-                        "editorNumber": "Number / Editor specific, available number",
+                        "isInToolbar": "Boolean / Whether to display in toolbar"
                     }
                 ]
             },

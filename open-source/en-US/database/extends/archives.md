@@ -24,8 +24,6 @@ aside: false
 | input_min | smallint *UNSIGNED* | Minimum Value |  | YES |  |
 | input_maxlength | smallint *UNSIGNED* | Maximum Length |  | YES |  |
 | input_minlength | smallint *UNSIGNED* | Minimum Length |  | YES |  |
-| input_size | smallint *UNSIGNED* | Size |  | YES |  |
-| input_step | smallint *UNSIGNED* | Step |  | YES |  |
 | sort_order | smallint *UNSIGNED* | Sorting Order | 9 | NO | Ascending order |
 | value_type | varchar(16) | Data Value Type | string | NO | Same logic as the [configuration table](../systems/configs.md) `item_type` field, supports file/plugin/plugins, etc. |
 | is_enabled | tinyint *UNSIGNED* | Is Valid | 1 | NO | 0.Invalid / 1.Valid<br>Invalid after, all related are invalid |
