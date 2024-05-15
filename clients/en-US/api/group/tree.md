@@ -17,6 +17,7 @@
 
 | Key | Type | Required | Description |
 | --- | --- | --- | --- |
+| type | Number | *optional* | Specify custom type |
 | filterType | String | *optional* | `whitelist` only returns key-value pairs for the given key names<br>`blacklist` removes specified key-value pairs from the returned data |
 | filterKeys | String | *optional* | Multiple separated by English commas, supports "dot notation" for multi-dimensional arrays |
 

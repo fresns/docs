@@ -17,6 +17,7 @@
 
 | 参数名 | 类型 | 是否必传 | 说明 |
 | --- | --- | --- | --- |
+| type | Number | NO | 指定自定义类型 |
 | filterType | String | NO | `whitelist` 只返回给定键名的键值对<br>`blacklist` 从返回数据中删除指定的键值对 |
 | filterKeys | String | NO | 多个以英文逗号隔开，支持「点表示法」表示多维数组 |
 
