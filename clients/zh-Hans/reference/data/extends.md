@@ -11,7 +11,8 @@ aside: false
     "code": "String / 标识码",
     "name": "String / 名称",
     "description": "String / 描述",
-    "value": "String / 参数值",
+    "value": "{valueType} / 参数值",
+    "valueType": "String / 参数值类型", // file(String), plugin(String), plugins(Array), string, number, boolean, array, object
     "isPrivate": "Boolean / 是否为私有数据"
 }
 ```

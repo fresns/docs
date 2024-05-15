@@ -16,19 +16,3 @@ aside: false
 | created_at | timestamp | Create Time | useCurrent | NO | For example, MySQL defaults to `CURRENT_TIMESTAMP` |
 | updated_at | timestamp | Update Time |  | YES |  |
 | deleted_at | timestamp | Delete Time |  | YES |  |
-
-## API output example
-
-```json
-{
-    "archives": [
-        {
-            "code": "String / Code",
-            "name": "String / Name",
-            "description": "String / Description",
-            "value": "String / Parameter value",
-            "isPrivate": "Boolean / Private value"
-        }
-    ]
-}
-```

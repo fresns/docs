@@ -17,7 +17,8 @@ aside: false
 | element_type | varchar(16) | 表单元素类型 |  | YES | 与 form_element 对应的类型 |
 | element_options | json | 选项类型配置值 |  | YES | **多语言**<br>数组格式，为 select,checkbox,radio 等类型提供选项值 |
 | file_type | tinyint *UNSIGNED* | 文件类型 |  | YES | `form_element=input` + `element_type=file`<br>仅以上两个配置匹配时才使用，用于声明上传文件类型<br>1.图片 / 2.视频 / 3.音频 / 4.文档 |
-| is_multiple | tinyint *UNSIGNED* | 是否多选 | 0 | NO | 0.否 / 1.是<br>对 select,file 等元素有效  |
+| is_tree_option | tinyint *UNSIGNED* | 是否树结构选项 | 0 | NO | 0.否 / 1.是 |
+| is_multiple | tinyint *UNSIGNED* | 是否多选 | 0 | NO | 0.否 / 1.是<br>对 select 元素有效 |
 | is_required | tinyint *UNSIGNED* | 是否必填 | 0 | NO | 0.否 / 1.是 |
 | input_pattern | varchar(128) | 自定义正则表达式 |  | YES |  |
 | input_max | smallint *UNSIGNED* | 最大值 |  | YES |  |
@@ -40,19 +41,23 @@ aside: false
 | select |  | 见下方 json 数组，可供 `select`,`multiple` 等类型使用 |
 | ... |  |  |
 
-## element_options 选项类型配置值
+## element_options 字段介绍
 
 ```json
-[
-    {"name": "IT", "value": 1},
-    {"name": "制造", "value": 2},
-    {"name": "医疗", "value": 3},
-    {"name": "金融", "value": 4},
-    {"name": "商业", "value": 5},
-    {"name": "文化", "value": 6},
-    {"name": "艺术", "value": 7},
-    {"name": "法律", "value": 8},
-    {"name": "教育", "value": 9},
-    {"name": "行政", "value": 10}
-]
+{
+    "语言标签": [
+        {"name": "IT", "value": 1, "options": [
+            {"name": "互联网", "value": 11, "options": []}
+        ]},
+        {"name": "制造", "value": 2, "options": []},
+        {"name": "医疗", "value": 3, "options": []},
+        {"name": "金融", "value": 4, "options": []},
+        {"name": "商业", "value": 5, "options": []},
+        {"name": "文化", "value": 6, "options": []},
+        {"name": "艺术", "value": 7, "options": []},
+        {"name": "法律", "value": 8, "options": []},
+        {"name": "教育", "value": 9, "options": []},
+        {"name": "行政", "value": 10, "options": []}
+    ]
+}
 ```

@@ -39,7 +39,6 @@
 | archives | Array | *optional* | Archive Parameter |
 | extends | Array | *optional* | Extend Content |
 | deleteLocation | Boolean | *optional* | Delete `locationInfo` |
-| deleteArchive | String | *optional* | Delete archive parameter, pass `code` as parameter |
 | deleteExtend | String | *optional* | Delete extend content, pass `eid` as parameter |
 | deleteFile | String | *optional* | Delete file, pass `fid` as parameter |
 
@@ -90,7 +89,7 @@
 [
     {
         "code": "code",
-        "value": "value",
+        "value": "value", // If json then convert to string
         "isPrivate": false, // Private or not (public display or not)
         "fskey": null
     }

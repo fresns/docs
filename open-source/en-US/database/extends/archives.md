@@ -17,6 +17,7 @@ aside: false
 | element_type | varchar(16) | Form Element Type |  | YES | Corresponding type to form_element |
 | element_options | json | Option Type Configuration Value |  | YES | **Multilingual**<br>Array format, Provides option values for select, checkbox, radio, etc. |
 | file_type | tinyint *UNSIGNED* | File Type |  | YES | `form_element=input` + `element_type=file`<br>Only used when the above two configurations match, used to declare the uploaded file type<br>1.Image / 2.Video / 3.Audio / 4.Document |
+| is_tree_option | tinyint *UNSIGNED* | Is tree option | 0 | NO | 0.No / 1.Yes |
 | is_multiple | tinyint *UNSIGNED* | Is Multiple | 0 | NO | 0.No / 1.Yes<br>Effective for select, file, etc. |
 | is_required | tinyint *UNSIGNED* | Is Required | 0 | NO | 0.No / 1.Yes |
 | input_pattern | varchar(128) | Custom Regular Expression |  | YES |  |
@@ -31,7 +32,6 @@ aside: false
 | updated_at | timestamp | Update Time |  | YES |  |
 | deleted_at | timestamp | Delete Time |  | YES |  |
 
-
 ## Form Introduction
 
 | form_element Form Element | element_type Element Type | element_options Option Type Configuration Value |
@@ -41,19 +41,23 @@ aside: false
 | select |  | See the json array below, available for `select`, `multiple`, etc. |
 | ... |  |  |
 
-## `element_options` Option Type Configuration Value
+## Introduction to the `element_options` field
 
 ```json
-[
-    {"name": "IT", "value": 1},
-    {"name": "Manufacturing", "value": 2},
-    {"name": "Medical", "value": 3},
-    {"name": "Finance", "value": 4},
-    {"name": "Business", "value": 5},
-    {"name": "Culture", "value": 6},
-    {"name": "Art", "value": 7},
-    {"name": "Law", "value": 8},
-    {"name": "Education", "value": 9},
-    {"name": "Administration", "value": 10}
-]
+{
+    "{langTag}": [
+        {"name": "IT", "value": 1, "options": [
+            {"name": "Internet", "value": 11, "options": []}
+        ]},
+        {"name": "Manufacturing", "value": 2, "options": []},
+        {"name": "Medical", "value": 3, "options": []},
+        {"name": "Finance", "value": 4, "options": []},
+        {"name": "Business", "value": 5, "options": []},
+        {"name": "Culture", "value": 6, "options": []},
+        {"name": "Art", "value": 7, "options": []},
+        {"name": "Law", "value": 8, "options": []},
+        {"name": "Education", "value": 9, "options": []},
+        {"name": "Administration", "value": 10, "options": []}
+    ]
+}
 ```

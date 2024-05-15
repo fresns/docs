@@ -39,7 +39,6 @@
 | archives | Array | NO | 扩展参数 |
 | extends | Array | NO | 扩展内容 |
 | deleteLocation | Boolean | NO | 删除位置信息 |
-| deleteArchive | String | NO | 删除扩展参数，传参 `code` |
 | deleteExtend | String | NO | 删除扩展内容，传参 `eid` |
 | deleteFile | String | NO | 删除文件，传参 `fid` |
 
@@ -116,7 +115,7 @@
 [
     {
         "code": "code",
-        "value": "value",
+        "value": "value", // 如果是 json 则转换为字符串
         "isPrivate": false, // 是否私有（是否对外公开展示）
         "fskey": null
     }

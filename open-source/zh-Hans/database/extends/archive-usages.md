@@ -16,19 +16,3 @@ aside: false
 | created_at | timestamp | 创建时间 | useCurrent | NO | 比如 MySQL 默认值为 CURRENT_TIMESTAMP |
 | updated_at | timestamp | 更新时间 |  | YES |  |
 | deleted_at | timestamp | 删除时间 |  | YES |  |
-
-## 接口输出示例
-
-```json
-{
-    "archives": [
-        {
-            "code": "String / 标识码",
-            "name": "String / 名称",
-            "description": "String / 描述",
-            "value": "String / 参数值",
-            "isPrivate": "Boolean / 是否为私有数据"
-        }
-    ]
-}
-```

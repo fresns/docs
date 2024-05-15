@@ -11,7 +11,8 @@ aside: false
     "code": "String / Identifier code",
     "name": "String / Name",
     "description": "String / Description",
-    "value": "String / Parameter value",
+    "value": "{valueType} / Parameter value",
+    "valueType": "String / Value type", // file(String), plugin(String), plugins(Array), string, number, boolean, array, object
     "isPrivate": "Boolean / Private value"
 }
 ```

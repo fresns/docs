@@ -40,6 +40,7 @@
             "formElement": "String / HTML Form Element",
             "elementType": "String / Form Element Type",
             "elementOptions": "Array / Option Type Configuration Values",
+            "isTreeOption": "Boolean / Whether the tree option",
             "isMultiple": "Boolean / Whether multiple selections are allowed, valid for select, file, etc.",
             "isRequired": "Boolean / Whether it is required",
             "fileType": "Number / 1. Image 2. Video 3. Audio 4. Document", // Used when elementType is file
@@ -50,7 +51,7 @@
             "inputMin": "Number / Minimum Value",
             "inputMaxlength": "Number / Maximum Length",
             "inputMinlength": "Number / Minimum Length",
-            "valueType": "String / Data Value Type"
+            "valueType": "String / Data Value Type" // file, plugin, plugins, string, number, boolean, array, object
         }
     ]
 }
