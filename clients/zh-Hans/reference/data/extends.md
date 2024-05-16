@@ -11,7 +11,7 @@ aside: false
     "code": "String / 标识码",
     "name": "String / 名称",
     "description": "String / 描述",
-    "value": "{valueType} / 参数值",
+    "value": "{valueType Json Type} / 参数值",
     "valueType": "String / 参数值类型",
     "isPrivate": "Boolean / 是否为私有数据"
 }
@@ -22,11 +22,11 @@ aside: false
 | `valueType` | `value` Json Type | Value Reference | Form Element |
 | --- | --- | --- | --- |
 | string | String |  |  |
-| file | Object | [文件信息](file.md) | `formElement=input` + `elementType=file` |
-| checkbox | Array | `[{"name":"","value":""}]` | `formElement=input` + `elementType=checkbox` |
-| radio | Object | `{"name":"","value":""}` | `formElement=input` + `elementType=radio` |
-| select | Array | `[{"name":"","value":""}]` | `formElement=select` |
-| tags | Array | `["value","value"]` | `formElement=tagInput` |
+| color | String | `#999999` |  |
+| file | Object | [文件信息](file.md) | `formElement: input` + `elementType: file` |
+| tags | Array | `["value","value"]` | `formElement: input` + `elementType: tags` |
+| option | Object | `{"name":"","value":""}` | `formElement: input` + `elementType: radio`<br>`formElement: select` + `elementType:` |
+| options | Array | `[{"name":"","value":""}]` | `formElement: select` + `elementType: multiple`<br>`formElement: input` + `elementType: checkbox` |
 
 ## 扩展运营信息
 

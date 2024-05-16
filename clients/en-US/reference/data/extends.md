@@ -11,7 +11,7 @@ aside: false
     "code": "String / Identifier code",
     "name": "String / Name",
     "description": "String / Description",
-    "value": "{valueType} / Parameter value",
+    "value": "{valueType Json Type} / Parameter value",
     "valueType": "String / Value type",
     "isPrivate": "Boolean / Private value"
 }
@@ -22,11 +22,11 @@ aside: false
 | `valueType` | `value` Json Type | Value Reference | Form Element |
 | --- | --- | --- | --- |
 | string | String |  |  |
+| color | String | `#999999` |  |
 | file | Object | [File Info](file.md) | `formElement=input` + `elementType=file` |
-| checkbox | Array | `[{"name":"","value":""}]` | `formElement=input` + `elementType=checkbox` |
-| radio | Object | `{"name":"","value":""}` | `formElement=input` + `elementType=radio` |
-| select | Array | `[{"name":"","value":""}]` | `formElement=select` |
-| tags | Array | `["value","value"]` | `formElement=tagInput` |
+| tags | Array | `["value","value"]` | `formElement: input` + `elementType: tags` |
+| option | Object | `{"name":"","value":""}` | `formElement: input` + `elementType: radio`<br>`formElement: select` + `elementType:` |
+| options | Array | `[{"name":"","value":""}]` | `formElement: select` + `elementType: multiple`<br>`formElement: input` + `elementType: checkbox` |
 
 ## Extend Operation Info
 

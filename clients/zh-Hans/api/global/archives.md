@@ -29,10 +29,9 @@
 
 | formElement | elementType |
 | --- | --- |
-| input | checkbox<br>color<br>date<br>datetime<br>datetime-local<br>email<br>file<br>number<br>radio<br>range<br>text<br>time |
+| input | checkbox<br>color<br>date<br>datetime<br>datetime-local<br>email<br>file<br>number<br>radio<br>range<br>text<br>time<br>tags |
 | textarea |  |
-| select |  |
-| tagInput |  |
+| select | multiple |
 
 ## 返回结果
 
@@ -50,7 +49,6 @@
             "elementType": "String / 表单元素类型",
             "elementOptions": "Array / 选项类型配置值",
             "isTreeOption": "Boolean / 是否树结构选项",
-            "isMultiple": "Boolean / 是否多选，对 select 元素有效",
             "isRequired": "Boolean / 是否必填",
             "fileType": "Number / 1.图片 2.视频 3.音频 4.文档", // elementType 为 file 时使用
             "fileExtensions": "String / 支持的文件后缀，例如 jpg,png", // elementType 为 file 时使用

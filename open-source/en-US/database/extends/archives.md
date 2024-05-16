@@ -31,15 +31,6 @@ aside: false
 | updated_at | timestamp | Update Time |  | YES |  |
 | deleted_at | timestamp | Delete Time |  | YES |  |
 
-## Form Introduction
-
-| form_element Form Element | element_type Element Type | element_options Option Type Configuration Value |
-| --- | --- | --- |
-| input | checkbox<br>color<br>date<br>datetime<br>datetime-local<br>email<br>file<br>number<br>password<br>radio<br>range<br>text<br>time | See the json array below, available for `checkbox`, `radio`, etc. |
-| textarea |  |  |
-| select |  | See the json array below, available for `select`, `multiple`, etc. |
-| tagInput |  |  |
-
 ## Introduction to the `element_options` field
 
 ```json

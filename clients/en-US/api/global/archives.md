@@ -29,10 +29,9 @@
 
 | formElement | elementType |
 | --- | --- |
-| input | checkbox<br>color<br>date<br>datetime<br>datetime-local<br>email<br>file<br>number<br>radio<br>range<br>text<br>time |
+| input | checkbox<br>color<br>date<br>datetime<br>datetime-local<br>email<br>file<br>number<br>radio<br>range<br>text<br>time<br>tags |
 | textarea |  |
-| select |  |
-| tagInput |  |
+| select | multiple |
 
 ## Return
 
@@ -50,7 +49,6 @@
             "elementType": "String / Form Element Type",
             "elementOptions": "Array / Option Type Configuration Values",
             "isTreeOption": "Boolean / Whether the tree option",
-            "isMultiple": "Boolean / Whether multiple selections are allowed, valid for select, file, etc.",
             "isRequired": "Boolean / Whether it is required",
             "fileType": "Number / 1. Image 2. Video 3. Audio 4. Document", // Used when elementType is file
             "fileExtensions": "String / Supported file extensions, e.g. jpg, png", // Used when elementType is file
