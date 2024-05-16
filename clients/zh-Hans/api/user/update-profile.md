@@ -44,15 +44,9 @@
 [
     {
         "code": "code",
-        "value": "value",
+        "value": "value", // 多选值以数组方式保存，传参时转换为字符串，格式 ["值","值"]
         "isPrivate": false, // 是否私有（是否对外公开展示）
-        "fskey": null
-    },
-    {
-        "code": "code",
-        "value": "value",
-        "isPrivate": true, // 是私有（0/1 或者布尔型）
-        "fskey": "可空"
+        "fskey": null // 客户端 fskey
     }
 ]
 ```

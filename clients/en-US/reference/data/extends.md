@@ -12,14 +12,21 @@ aside: false
     "name": "String / Name",
     "description": "String / Description",
     "value": "{valueType} / Parameter value",
-    "valueType": "String / Value type", // string, array(multiple select and checkbox), object(file)
+    "valueType": "String / Value type",
     "isPrivate": "Boolean / Private value"
 }
 ```
 
 - Reference: [archives](https://docs.fresns.com/open-source/database/extends/archives.md)
-- `array` Parameter value format is `[{"name":"", "value":""}]`
-- `object` Parameter value format is [File Info](file.md)
+
+| `valueType` | `value` Json Type | Value Reference | Form Element |
+| --- | --- | --- | --- |
+| string | String |  |  |
+| file | Object | [File Info](file.md) | `formElement=input` + `elementType=file` |
+| checkbox | Array | `[{"name":"","value":""}]` | `formElement=input` + `elementType=checkbox` |
+| radio | Object | `{"name":"","value":""}` | `formElement=input` + `elementType=radio` |
+| select | Array | `[{"name":"","value":""}]` | `formElement=select` |
+| tags | Array | `["value","value"]` | `formElement=tagInput` |
 
 ## Extend Operation Info
 

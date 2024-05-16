@@ -12,14 +12,21 @@ aside: false
     "name": "String / 名称",
     "description": "String / 描述",
     "value": "{valueType} / 参数值",
-    "valueType": "String / 参数值类型", // string, array(multiple select and checkbox), object(file)
+    "valueType": "String / 参数值类型",
     "isPrivate": "Boolean / 是否为私有数据"
 }
 ```
 
 - 参考资料: [archives](https://docs.fresns.com/zh-Hans/open-source/database/extends/archives.html)
-- `array` 参数值格式为 `[{"name":"","value":""}]`
-- `object` 参数值格式为[文件信息](file.md)
+
+| `valueType` | `value` Json Type | Value Reference | Form Element |
+| --- | --- | --- | --- |
+| string | String |  |  |
+| file | Object | [文件信息](file.md) | `formElement=input` + `elementType=file` |
+| checkbox | Array | `[{"name":"","value":""}]` | `formElement=input` + `elementType=checkbox` |
+| radio | Object | `{"name":"","value":""}` | `formElement=input` + `elementType=radio` |
+| select | Array | `[{"name":"","value":""}]` | `formElement=select` |
+| tags | Array | `["value","value"]` | `formElement=tagInput` |
 
 ## 扩展运营信息
 

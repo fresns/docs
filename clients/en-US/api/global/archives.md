@@ -27,9 +27,12 @@
 
 **Request Description**
 
-- `formElement=input` + `elementType=checkbox` Data value are array
-- `formElement=select` + `isMultiple=true` Data value are array
-- `formElement=input` + `elementType=file` Data value as file fid
+| formElement | elementType |
+| --- | --- |
+| input | checkbox<br>color<br>date<br>datetime<br>datetime-local<br>email<br>file<br>number<br>radio<br>range<br>text<br>time |
+| textarea |  |
+| select |  |
+| tagInput |  |
 
 ## Return
 

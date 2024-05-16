@@ -44,15 +44,9 @@
 [
     {
         "code": "code",
-        "value": "value",
+        "value": "value", // Multiple selection values are stored in array format and passed as a string in the format ["value", "value"]
         "isPrivate": false, // Private or not (public display or not)
-        "fskey": null
-    },
-    {
-        "code": "code",
-        "value": "value",
-        "isPrivate": true,
-        "fskey": "Fresns"
+        "fskey": null // client fskey
     }
 ]
 ```

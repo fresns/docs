@@ -35,10 +35,10 @@ aside: false
 
 | form_element 表单元素 | element_type 元素类型 | element_options 选项类型配置值 |
 | --- | --- | --- |
-| input | checkbox<br>color<br>file<br>... | 见下方 json 数组，可供 `checkbox`,`radio` 等类型使用 |
+| input | checkbox<br>color<br>date<br>datetime<br>datetime-local<br>email<br>file<br>number<br>password<br>radio<br>range<br>text<br>time | 见下方 json 数组，可供 `checkbox`,`radio` 等类型使用 |
 | textarea |  |  |
 | select |  | 见下方 json 数组，可供 `select`,`multiple` 等类型使用 |
-| ... |  |  |
+| tagInput |  |  |
 
 ## element_options 字段介绍
 

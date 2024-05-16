@@ -27,9 +27,12 @@
 
 **接口使用说明**
 
-- `formElement=input` + `elementType=checkbox` 数据值为数组
-- `formElement=select` + `isMultiple=true` 数据值为数组
-- `formElement=input` + `elementType=file` 数据值为文件 fid
+| formElement | elementType |
+| --- | --- |
+| input | checkbox<br>color<br>date<br>datetime<br>datetime-local<br>email<br>file<br>number<br>radio<br>range<br>text<br>time |
+| textarea |  |
+| select |  |
+| tagInput |  |
 
 ## 返回结果
 
