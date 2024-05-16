@@ -18,6 +18,8 @@ aside: false
 ```
 
 - 参考资料: [archives](https://docs.fresns.com/zh-Hans/open-source/database/extends/archives.html)
+- `array` 参数值格式为 `[{"name":"","value":""}]`
+- `object` 参数值格式为[文件信息](file.md)
 
 ## 扩展运营信息
 

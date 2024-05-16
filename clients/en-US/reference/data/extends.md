@@ -18,6 +18,8 @@ aside: false
 ```
 
 - Reference: [archives](https://docs.fresns.com/open-source/database/extends/archives.md)
+- `array` Parameter value format is `[{"name":"", "value":""}]`
+- `object` Parameter value format is [File Info](file.md)
 
 ## Extend Operation Info
 
