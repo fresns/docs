@@ -25,6 +25,12 @@
 | --- | --- | --- | --- |
 | gid | String | *optional* | Use with `post` or `comment` |
 
+**Request Description**
+
+- `formElement=input` + `elementType=checkbox` Data value are array
+- `formElement=select` + `isMultiple=true` Data value are array
+- `formElement=input` + `elementType=file` Data value as file fid
+
 ## Return
 
 ```json
@@ -50,8 +56,7 @@
             "inputMax": "Number / Maximum Value",
             "inputMin": "Number / Minimum Value",
             "inputMaxlength": "Number / Maximum Length",
-            "inputMinlength": "Number / Minimum Length",
-            "valueType": "String / Data Value Type" // file, plugin, plugins, string, number, boolean, array, object
+            "inputMinlength": "Number / Minimum Length"
         }
     ]
 }

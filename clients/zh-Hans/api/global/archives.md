@@ -25,6 +25,12 @@
 | --- | --- | --- | --- |
 | gid | String | NO | 配合 `post` 或 `comment` 使用，获取指定小组的内容配置 |
 
+**接口使用说明**
+
+- `formElement=input` + `elementType=checkbox` 数据值为数组
+- `formElement=select` + `isMultiple=true` 数据值为数组
+- `formElement=input` + `elementType=file` 数据值为文件 fid
+
 ## 返回结果
 
 ```json
@@ -50,8 +56,7 @@
             "inputMax": "Number / 最大值",
             "inputMin": "Number / 最小值",
             "inputMaxlength": "Number / 最大长度",
-            "inputMinlength": "Number / 最小长度",
-            "valueType": "String / 数据值类型" // file, plugin, plugins, string, number, boolean, array, object
+            "inputMinlength": "Number / 最小长度"
         }
     ]
 }

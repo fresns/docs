@@ -12,7 +12,7 @@ aside: false
     "name": "String / 名称",
     "description": "String / 描述",
     "value": "{valueType} / 参数值",
-    "valueType": "String / 参数值类型", // file(String), plugin(String), plugins(Array), string, number, boolean, array, object
+    "valueType": "String / 参数值类型", // string, array(multiple select and checkbox), object(file)
     "isPrivate": "Boolean / 是否为私有数据"
 }
 ```

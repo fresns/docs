@@ -115,9 +115,9 @@
 [
     {
         "code": "code",
-        "value": "value", // 如果是 json 则转换为字符串
+        "value": "value", // 多选值以数组方式保存，传参时转换为字符串，格式 ["值","值"]
         "isPrivate": false, // 是否私有（是否对外公开展示）
-        "fskey": null
+        "fskey": null // 如果是编辑器插件，则是编辑器的 fskey
     }
 ]
 ```

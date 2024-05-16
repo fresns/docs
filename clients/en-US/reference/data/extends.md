@@ -12,7 +12,7 @@ aside: false
     "name": "String / Name",
     "description": "String / Description",
     "value": "{valueType} / Parameter value",
-    "valueType": "String / Value type", // file(String), plugin(String), plugins(Array), string, number, boolean, array, object
+    "valueType": "String / Value type", // string, array(multiple select and checkbox), object(file)
     "isPrivate": "Boolean / Private value"
 }
 ```

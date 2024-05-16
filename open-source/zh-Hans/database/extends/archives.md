@@ -18,7 +18,7 @@ aside: false
 | element_options | json | 选项类型配置值 |  | YES | **多语言**<br>数组格式，为 select,checkbox,radio 等类型提供选项值 |
 | file_type | tinyint *UNSIGNED* | 文件类型 |  | YES | `form_element=input` + `element_type=file`<br>仅以上两个配置匹配时才使用，用于声明上传文件类型<br>1.图片 / 2.视频 / 3.音频 / 4.文档 |
 | is_tree_option | tinyint *UNSIGNED* | 是否树结构选项 | 0 | NO | 0.否 / 1.是 |
-| is_multiple | tinyint *UNSIGNED* | 是否多选 | 0 | NO | 0.否 / 1.是<br>对 select 元素有效 |
+| is_multiple | tinyint *UNSIGNED* | 是否多选 | 0 | NO | 0.否 / 1.是 `对 select 元素有效` |
 | is_required | tinyint *UNSIGNED* | 是否必填 | 0 | NO | 0.否 / 1.是 |
 | input_pattern | varchar(128) | 自定义正则表达式 |  | YES |  |
 | input_max | smallint *UNSIGNED* | 最大值 |  | YES |  |
@@ -26,7 +26,6 @@ aside: false
 | input_maxlength | smallint *UNSIGNED* | 最大长度 |  | YES |  |
 | input_minlength | smallint *UNSIGNED* | 最小长度 |  | YES |  |
 | sort_order | smallint *UNSIGNED* | 排列顺序 | 9 | NO | 升序排序 |
-| value_type | varchar(16) | 数据值类型 | string | NO | 同[配置表](../systems/configs.md) `item_type` 字段逻辑一样，支持 file/plugin/plugins 等类型 |
 | is_enabled | tinyint *UNSIGNED* | 是否有效 | 1 | NO | 0.无效 / 1.有效<br>无效后，所有关联均无效 |
 | created_at | timestamp | 创建时间 | useCurrent | NO | 比如 MySQL 默认值为 CURRENT_TIMESTAMP |
 | updated_at | timestamp | 更新时间 |  | YES |  |

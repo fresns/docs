@@ -18,7 +18,7 @@ aside: false
 | element_options | json | Option Type Configuration Value |  | YES | **Multilingual**<br>Array format, Provides option values for select, checkbox, radio, etc. |
 | file_type | tinyint *UNSIGNED* | File Type |  | YES | `form_element=input` + `element_type=file`<br>Only used when the above two configurations match, used to declare the uploaded file type<br>1.Image / 2.Video / 3.Audio / 4.Document |
 | is_tree_option | tinyint *UNSIGNED* | Is tree option | 0 | NO | 0.No / 1.Yes |
-| is_multiple | tinyint *UNSIGNED* | Is Multiple | 0 | NO | 0.No / 1.Yes<br>Effective for select, file, etc. |
+| is_multiple | tinyint *UNSIGNED* | Is Multiple | 0 | NO | 0.No / 1.Yes `Valid for select element` |
 | is_required | tinyint *UNSIGNED* | Is Required | 0 | NO | 0.No / 1.Yes |
 | input_pattern | varchar(128) | Custom Regular Expression |  | YES |  |
 | input_max | smallint *UNSIGNED* | Maximum Value |  | YES |  |
@@ -26,7 +26,6 @@ aside: false
 | input_maxlength | smallint *UNSIGNED* | Maximum Length |  | YES |  |
 | input_minlength | smallint *UNSIGNED* | Minimum Length |  | YES |  |
 | sort_order | smallint *UNSIGNED* | Sorting Order | 9 | NO | Ascending order |
-| value_type | varchar(16) | Data Value Type | string | NO | Same logic as the [configuration table](../systems/configs.md) `item_type` field, supports file/plugin/plugins, etc. |
 | is_enabled | tinyint *UNSIGNED* | Is Valid | 1 | NO | 0.Invalid / 1.Valid<br>Invalid after, all related are invalid |
 | created_at | timestamp | Create Time | useCurrent | NO | For example, MySQL defaults to `CURRENT_TIMESTAMP` |
 | updated_at | timestamp | Update Time |  | YES |  |

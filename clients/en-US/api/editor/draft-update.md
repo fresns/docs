@@ -89,9 +89,9 @@
 [
     {
         "code": "code",
-        "value": "value", // If json then convert to string
+        "value": "value", // Multiple selection values are stored in array format and passed as a string in the format ["value", "value"]
         "isPrivate": false, // Private or not (public display or not)
-        "fskey": null
+        "fskey": null // If it is an editor plug-in, it is the editor fskey
     }
 ]
 ```
