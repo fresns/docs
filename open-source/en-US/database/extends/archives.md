@@ -13,13 +13,12 @@ aside: false
 | code | varchar(32) | Code |  | NO | **Unique**，English letters only, no symbols or spaces supported |
 | usage_type | tinyint *UNSIGNED* | Usage Type |  | NO | [Content Type](../numbered-description.md#content-type) |
 | usage_group_id | int *UNSIGNED* | Used for group content | 0 | NO | Related field [groups->id](../contents/groups.md)<br>Use with `post` or `comment` |
-| form_element | varchar(16) | Form Element |  | NO | HTML form element |
-| element_type | varchar(16) | Form Element Type |  | YES | Corresponding type to form_element |
-| element_options | json | Option Type Configuration Value |  | YES | **Multilingual**<br>Array format, Provides option values for select, checkbox, radio, etc. |
-| file_type | tinyint *UNSIGNED* | File Type |  | YES | `form_element=input` + `element_type=file`<br>Only used when the above two configurations match, used to declare the uploaded file type<br>1.Image / 2.Video / 3.Audio / 4.Document |
+| form_type | varchar(16) | Form Element |  | NO |  |
+| form_options | json | Option Type Configuration Value |  | YES | **Multilingual**<br>Array format, Provides option values for select, checkbox, radio, etc. |
 | is_tree_option | tinyint *UNSIGNED* | Is tree option | 0 | NO | 0.No / 1.Yes |
 | is_multiple | tinyint *UNSIGNED* | Is Multiple | 0 | NO | 0.No / 1.Yes `Valid for select element` |
 | is_required | tinyint *UNSIGNED* | Is Required | 0 | NO | 0.No / 1.Yes |
+| file_type | tinyint *UNSIGNED* | File Type |  | YES | `form_type=file`<br>1.Image / 2.Video / 3.Audio / 4.Document |
 | input_pattern | varchar(128) | Custom Regular Expression |  | YES |  |
 | input_max | smallint *UNSIGNED* | Maximum Value |  | YES |  |
 | input_min | smallint *UNSIGNED* | Minimum Value |  | YES |  |
@@ -31,7 +30,27 @@ aside: false
 | updated_at | timestamp | Update Time |  | YES |  |
 | deleted_at | timestamp | Delete Time |  | YES |  |
 
-## Introduction to the `element_options` field
+## Introduction to the `form_type` field
+
+| `form_type` | HTML Code | Description |
+| --- | --- | --- |
+| input | `<input type="text">` | Single-line text |
+| textarea | `<textarea></textarea>` | Multi-line text |
+| select | `<select></select>` | Dropdown select |
+| radio | `<input type="radio">` | Radio |
+| checkbox | `<input type="checkbox">` | Checkbox |
+| color | `<input type="color">` | Color picker |
+| time | `<input type="time">` | Time picker |
+| date | `<input type="date">` | Date picker |
+| month | `<input type="month">` | Month picker |
+| datetime | `<input type="datetime-local">` | Date and time picker |
+| number | `<input type="number">` | Number input |
+| email | `<input type="email">` | Email input |
+| url | `<input type="url">` | URL input |
+| file | `<input type="file">` | Single file upload |
+| tags | `<input type="text">` | Tags input, format `["tag", "tag"]` |
+
+## Introduction to the `form_options` field
 
 ```json
 {

@@ -27,11 +27,23 @@
 
 **接口使用说明**
 
-| formElement | elementType |
-| --- | --- |
-| input | checkbox<br>color<br>date<br>datetime<br>datetime-local<br>email<br>file<br>number<br>radio<br>range<br>text<br>time<br>tags |
-| textarea |  |
-| select | multiple |
+| `formType` | HTML Code | 描述 |
+| --- | --- | --- |
+| input | `<input type="text">` | 单行文本域 |
+| textarea | `<textarea></textarea>` | 多行文本域 |
+| select | `<select></select>` | 下拉选项 |
+| radio | `<input type="radio">` | 单选按钮 |
+| checkbox | `<input type="checkbox">` | 多选复选框 |
+| color | `<input type="color">` | 颜色选择器 |
+| time | `<input type="time">` | 时间选择器 |
+| date | `<input type="date">` | 日期选择器 |
+| month | `<input type="month">` | 年月选择器 |
+| datetime | `<input type="datetime-local">` | 日期时间选择器 |
+| number | `<input type="number">` | 数字输入框 |
+| email | `<input type="email">` | 邮箱输入框 |
+| url | `<input type="url">` | 网址输入框 |
+| file | `<input type="file">` | 单个文件上传 |
+| tags | `<input type="text">` | 标签输入框，格式 `["tag", "tag"]` |
 
 ## 返回结果
 
@@ -45,10 +57,10 @@
             "name": "String / 名称",
             "description": "String / 描述",
             "code": "String / Code",
-            "formElement": "String / HTML 表单元素",
-            "elementType": "String / 表单元素类型",
-            "elementOptions": "Array / 选项类型配置值",
+            "formType": "String / 表单类型",
+            "formOptions": "Array / 选项类型配置值", // select, checkbox, radio
             "isTreeOption": "Boolean / 是否树结构选项",
+            "isMultiple": "Boolean / 是否多选", // select
             "isRequired": "Boolean / 是否必填",
             "fileType": "Number / 1.图片 2.视频 3.音频 4.文档", // elementType 为 file 时使用
             "fileExtensions": "String / 支持的文件后缀，例如 jpg,png", // elementType 为 file 时使用

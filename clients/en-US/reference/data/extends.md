@@ -19,14 +19,16 @@ aside: false
 
 - Reference: [archives](https://docs.fresns.com/open-source/database/extends/archives.md)
 
-| `valueType` | `value` Json Type | Value Reference | Form Element |
+| `valueType` | `value` Json Type | Value Reference | Form Type |
 | --- | --- | --- | --- |
-| string | String |  |  |
-| color | String | `#999999` |  |
-| file | Object | [File Info](file.md) | `formElement=input` + `elementType=file` |
-| tags | Array | `["value","value"]` | `formElement: input` + `elementType: tags` |
-| option | Object | `{"name":"","value":""}` | `formElement: input` + `elementType: radio`<br>`formElement: select` + `elementType:` |
-| options | Array | `[{"name":"","value":""}]` | `formElement: select` + `elementType: multiple`<br>`formElement: input` + `elementType: checkbox` |
+| string | String |  | input, textarea, time, date, month, datetime, number |
+| email | String |  | email |
+| url | String |  | url |
+| color | String | `#999999` | color |
+| file | Object | [File Info](file.md) | file |
+| tags | Array | `["value","value"]` | tags |
+| option | Object | `{"name":"","value":""}` | select, radio |
+| options | Array | `[{"name":"","value":""}]` | select, checkbox |
 
 ## Extend Operation Info
 

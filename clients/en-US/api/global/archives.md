@@ -27,11 +27,23 @@
 
 **Request Description**
 
-| formElement | elementType |
-| --- | --- |
-| input | checkbox<br>color<br>date<br>datetime<br>datetime-local<br>email<br>file<br>number<br>radio<br>range<br>text<br>time<br>tags |
-| textarea |  |
-| select | multiple |
+| `formType` | HTML Code | Description |
+| --- | --- | --- |
+| input | `<input type="text">` | Single-line text |
+| textarea | `<textarea></textarea>` | Multi-line text |
+| select | `<select></select>` | Dropdown select |
+| radio | `<input type="radio">` | Radio |
+| checkbox | `<input type="checkbox">` | Checkbox |
+| color | `<input type="color">` | Color picker |
+| time | `<input type="time">` | Time picker |
+| date | `<input type="date">` | Date picker |
+| month | `<input type="month">` | Month picker |
+| datetime | `<input type="datetime-local">` | Date and time picker |
+| number | `<input type="number">` | Number input |
+| email | `<input type="email">` | Email input |
+| url | `<input type="url">` | URL input |
+| file | `<input type="file">` | Single file upload |
+| tags | `<input type="text">` | Tags input, format `["tag", "tag"]` |
 
 ## Return
 
@@ -45,10 +57,10 @@
             "name": "String / Name",
             "description": "String / Description",
             "code": "String / Code",
-            "formElement": "String / HTML Form Element",
-            "elementType": "String / Form Element Type",
-            "elementOptions": "Array / Option Type Configuration Values",
+            "formType": "String / Form Type",
+            "formOptions": "Array / Option Type Configuration Values", // select, checkbox, radio
             "isTreeOption": "Boolean / Whether the tree option",
+            "isMultiple": "Boolean / Whether it is Multiple", // select
             "isRequired": "Boolean / Whether it is required",
             "fileType": "Number / 1. Image 2. Video 3. Audio 4. Document", // Used when elementType is file
             "fileExtensions": "String / Supported file extensions, e.g. jpg, png", // Used when elementType is file

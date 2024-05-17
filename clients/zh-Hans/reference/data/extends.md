@@ -19,14 +19,16 @@ aside: false
 
 - 参考资料: [archives](https://docs.fresns.com/zh-Hans/open-source/database/extends/archives.html)
 
-| `valueType` | `value` Json Type | Value Reference | Form Element |
+| `valueType` | `value` Json Type | Value Reference | Form Type |
 | --- | --- | --- | --- |
-| string | String |  |  |
-| color | String | `#999999` |  |
-| file | Object | [文件信息](file.md) | `formElement: input` + `elementType: file` |
-| tags | Array | `["value","value"]` | `formElement: input` + `elementType: tags` |
-| option | Object | `{"name":"","value":""}` | `formElement: input` + `elementType: radio`<br>`formElement: select` + `elementType:` |
-| options | Array | `[{"name":"","value":""}]` | `formElement: select` + `elementType: multiple`<br>`formElement: input` + `elementType: checkbox` |
+| string | String |  | input, textarea, time, date, month, datetime, number |
+| email | String |  | email |
+| url | String |  | url |
+| color | String | `#999999` | color |
+| file | Object | [文件信息](file.md) | file |
+| tags | Array | `["value","value"]` | tags |
+| option | Object | `{"name":"","value":""}` | select, radio |
+| options | Array | `[{"name":"","value":""}]` | select, checkbox |
 
 ## 扩展运营信息
 

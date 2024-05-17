@@ -13,13 +13,12 @@ aside: false
 | code | varchar(32) | 代码 |  | NO | **唯一值**，纯英文字母，不支持任何符号或空格 |
 | usage_type | tinyint *UNSIGNED* | 用途类型 |  | NO | [内容类型编号](../numbered-description.md#内容类型编号) |
 | usage_group_id | int *UNSIGNED* | 用途是小组内容专用时使用 | 0 | NO | 关联字段 [groups->id](../contents/groups.md)<br>配合 `post` 或 `comment` 使用 |
-| form_element | varchar(16) | 表单元素 |  | NO | HTML form 元素 |
-| element_type | varchar(16) | 表单元素类型 |  | YES | 与 form_element 对应的类型 |
-| element_options | json | 选项类型配置值 |  | YES | **多语言**<br>数组格式，为 select,checkbox,radio 等类型提供选项值 |
-| file_type | tinyint *UNSIGNED* | 文件类型 |  | YES | `form_element=input` + `element_type=file`<br>仅以上两个配置匹配时才使用，用于声明上传文件类型<br>1.图片 / 2.视频 / 3.音频 / 4.文档 |
+| form_type | varchar(16) | 表单元素 |  | NO |  |
+| form_options | json | 选项类型配置值 |  | YES | **多语言**<br>数组格式，为 select,checkbox,radio 等类型提供选项值 |
 | is_tree_option | tinyint *UNSIGNED* | 是否树结构选项 | 0 | NO | 0.否 / 1.是 |
 | is_multiple | tinyint *UNSIGNED* | 是否多选 | 0 | NO | 0.否 / 1.是 `对 select 元素有效` |
 | is_required | tinyint *UNSIGNED* | 是否必填 | 0 | NO | 0.否 / 1.是 |
+| file_type | tinyint *UNSIGNED* | 文件类型 |  | YES | `form_type=file` 1.图片 / 2.视频 / 3.音频 / 4.文档 |
 | input_pattern | varchar(128) | 自定义正则表达式 |  | YES |  |
 | input_max | smallint *UNSIGNED* | 最大值 |  | YES |  |
 | input_min | smallint *UNSIGNED* | 最小值 |  | YES |  |
@@ -31,7 +30,27 @@ aside: false
 | updated_at | timestamp | 更新时间 |  | YES |  |
 | deleted_at | timestamp | 删除时间 |  | YES |  |
 
-## element_options 字段介绍
+## form_type 字段介绍
+
+| `form_type` | HTML Code | 描述 |
+| --- | --- | --- |
+| input | `<input type="text">` | 单行文本域 |
+| textarea | `<textarea></textarea>` | 多行文本域 |
+| select | `<select></select>` | 下拉选项 |
+| radio | `<input type="radio">` | 单选按钮 |
+| checkbox | `<input type="checkbox">` | 多选复选框 |
+| color | `<input type="color">` | 颜色选择器 |
+| time | `<input type="time">` | 时间选择器 |
+| date | `<input type="date">` | 日期选择器 |
+| month | `<input type="month">` | 年月选择器 |
+| datetime | `<input type="datetime-local">` | 日期时间选择器 |
+| number | `<input type="number">` | 数字输入框 |
+| email | `<input type="email">` | 邮箱输入框 |
+| url | `<input type="url">` | 网址输入框 |
+| file | `<input type="file">` | 单个文件上传 |
+| tags | `<input type="text">` | 标签输入框，格式 `["tag", "tag"]` |
+
+## form_options 字段介绍
 
 ```json
 {
