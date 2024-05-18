@@ -3,7 +3,7 @@
 All notable changes to this project will be documented in this file.
 
 
-## 3.1.4 (05/18/2024)
+## 3.2.0 (05/18/2024)
 
 ### Added
 - API: Tree structure for group lists supports querying by type.
@@ -13,6 +13,9 @@ All notable changes to this project will be documented in this file.
 - API: Issue with group follow type parameter values.
 - Data: Corrected parameters for extend archives.
 - Panel: Configuration items lost when saving role permission settings.
+
+### Changed
+- API: Refactored extend archives interface. `/api/fresns/v1/global/{type}/archives`
 
 
 ## 3.1.3 (05/12/2024)
