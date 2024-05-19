@@ -4,7 +4,6 @@
 
 | 栏目标题 | 键名 | 默认键值 | 键值类型 | 说明 |
 | --- | --- | --- | --- | --- |
-| 网站 Cookie 前缀 | website_cookie_prefix | fresns_ | string |  |
 | 网站统计代码 | website_stat_code |  | string | 网页统计工具代码 |
 | 统计代码位置 | website_stat_position |  | string | `head` 或 `body`<br>统计代码载入到 HTML 的哪个位置 |
 | 中国大陆模式 | site_china_mode | false | boolean | `false` 或 `true`<br>是否显示备案信息，如果网站服务器不在中国大陆，则关闭 |

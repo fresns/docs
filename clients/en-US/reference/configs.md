@@ -474,7 +474,6 @@
 
 | Key Name | Value Type | Description |
 | --- | --- | --- |
-| website_cookie_prefix | String | Website Cookie Prefix	 |
 | website_stat_code | String | Stat Code |
 | website_stat_position | String | Stat Code Position `head` or `body`<br>Position to load the statistical code in HTML |
 

@@ -474,7 +474,6 @@
 
 | 键名 | 键值类型 | 描述 |
 | --- | --- | --- |
-| website_cookie_prefix | String | 网站 Cookie 前缀 |
 | website_stat_code | String | 网页统计工具代码 |
 | website_stat_position | String | 统计代码位置 `head` 或 `body`<br>统计代码载入到 HTML 的哪个位置 |
 | site_china_mode | Boolean | 中国大陆模式，站点服务器是否部署在中国大陆 |
