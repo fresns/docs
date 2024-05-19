@@ -17,15 +17,15 @@ FileHelper::fresnsFileStorageConfigByType($type);
     "service": "", // plugin fskey
     "secretId": "",
     "secretKey": "",
-    "secretApp": "",
     "bucketName": "",
-    "bucketArea": "",
-    "bucketDomain": "",
-    "antiLinkStatus": "",
-    "antiLinkKey": "",
-    "antiLinkExpire": "",
+    "bucketRegion": "",
+    "bucketEndpoint": "",
+    "filesystemDisk": "",
+    "accessDomain": "",
+    "temporaryUrlStatus": "",
+    "temporaryUrlKey": "",
+    "temporaryUrlExpiration": "",
     "storageConfigStatus": true, // true 存储已经配置完整
-    "antiLinkConfigStatus": false, // false 未开启防盗链
 }
 ```
 :::
@@ -61,7 +61,7 @@ FileHelper::fresnsFileInfoById($fileIdOrFid);
 | --- | --- | --- | --- |
 | fileIdOrFid | String | YES | `files->id` 或者 `files->fid` |
 
-- 输出结果会判断防盗链配置，如果开启则输出防盗链文件信息。
+- 输出结果会判断临时 URL 配置，如果开启则输出临时 URL 文件信息。
 - [查看文件信息格式](../../extensions/storage.md#文件信息结构)
 
 ## 根据文件 ID 或 FID 获取多个信息
@@ -73,7 +73,7 @@ FileHelper::fresnsFileInfoListByIds($fileIdsOrFids);
 | --- | --- | --- | --- |
 | fileIdsOrFids | Array | YES | `files->id` 或者 `files->fid` |
 
-- 输出结果会判断防盗链配置，如果开启则输出防盗链文件信息。
+- 输出结果会判断临时 URL 配置，如果开启则输出临时 URL 文件信息。
 
 ::: details 查看列表输出示例
 ```json
@@ -115,7 +115,7 @@ FileHelper::fresnsFileInfoListByTableColumn($tableName, $tableColumn, $tableId, 
 | tableKey | String | NO | 主键名 |
 
 - `tableId` 或 `tableKey` 二选一传参
-- 输出结果会判断防盗链配置，如果开启则输出防盗链文件信息。
+- 输出结果会判断临时 URL 配置，如果开启则输出临时 URL 文件信息。
 
 ::: details 查看列表输出示例
 ```json
@@ -175,4 +175,4 @@ FileHelper::fresnsFileOriginalUrlById($fileIdOrFid);
 | --- | --- | --- | --- |
 | fileIdOrFid | String | YES | `files->id` 或者 `files->fid` |
 
-- 输出结果会判断防盗链配置，如果开启则输出防盗链文件信息。
+- 输出结果会判断临时 URL 配置，如果开启则输出临时 URL 文件信息。

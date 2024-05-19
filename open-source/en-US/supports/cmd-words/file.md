@@ -112,10 +112,10 @@
 ```
 :::
 
-## getAntiLinkFileInfo (One)
+## getTemporaryUrlFileInfo (One)
 
 ```php
-\FresnsCmdWord::plugin('Fresns')->getAntiLinkFileInfo($wordBody);
+\FresnsCmdWord::plugin('Fresns')->getTemporaryUrlFileInfo($wordBody);
 ```
 | Parameter Name | Type | Required | Description |
 | --- | --- | --- | --- |
@@ -135,14 +135,14 @@
 :::
 
 ::: details Logic Notes
-- If hotlink protection is not enabled, the encapsulated function in the model can be used to output information.
+- If temporary url is not enabled, the encapsulated function in the model can be used to output information.
 - `$file->getFileInfo();`
 :::
 
-## getAntiLinkFileInfoList (Multiple)
+## getTemporaryUrlFileInfoList (Multiple)
 
 ```php
-\FresnsCmdWord::plugin('Fresns')->getAntiLinkFileInfoList($wordBody);
+\FresnsCmdWord::plugin('Fresns')->getTemporaryUrlFileInfoList($wordBody);
 ```
 | Parameter Name | Type | Required | Description |
 | --- | --- | --- | --- |
@@ -167,14 +167,14 @@
 :::
 
 ::: details Logic Notes
-- If hotlink protection is not enabled, the encapsulated function can be used to output information.
+- If temporary url is not enabled, the encapsulated function can be used to output information.
 - `FileHelper::fresnsFileInfoListByIds('fileIdsOrFids');`
 :::
 
-## getAntiLinkFileOriginalUrl
+## getTemporaryUrlOfOriginalFile
 
 ```php
-\FresnsCmdWord::plugin('Fresns')->getAntiLinkFileOriginalUrl($wordBody);
+\FresnsCmdWord::plugin('Fresns')->getTemporaryUrlOfOriginalFile($wordBody);
 ```
 | Parameter Name | Type | Required | Description |
 | --- | --- | --- | --- |
@@ -195,7 +195,7 @@
 :::
 
 ::: details Logic Notes
-- If hotlink protection is not enabled, the encapsulated function in the model can be used to output information.
+- If temporary url is not enabled, the encapsulated function in the model can be used to output information.
 - `$file->getFileOriginalUrl();`
 :::
 

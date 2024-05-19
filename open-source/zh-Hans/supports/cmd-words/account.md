@@ -75,7 +75,7 @@
 | nickname | String | NO | 昵称，关联字段 `users->nickname` |
 | pin | String | NO | 登录密码，关联字段 `users->pin` |
 | avatarFid | String | NO | 头像 fid，存储时转换成 `files->id`<br>关联字段 `users->avatar_file_id` |
-| avatarUrl | String | NO | 头像 URL，关联字段 `users->avatar_file_url`<br>如果留空，则判断 `avatarFid` 是否也留空，如果有值，则凭 fid 获取 url 入库（忽略防盗链，仅拼接地址） |
+| avatarUrl | String | NO | 头像 URL，关联字段 `users->avatar_file_url`<br>如果留空，则判断 `avatarFid` 是否也留空，如果有值，则凭 fid 获取 url 入库（忽略临时 URL，仅拼接地址） |
 | gender | Number | NO | 性别，关联字段 `users->gender` |
 | genderPronoun | Number | NO | 性别代称，关联字段 `users->gender_pronoun` |
 | genderCustom | String | NO | 性别自定义，关联字段 `users->gender_custom` |

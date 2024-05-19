@@ -75,7 +75,7 @@
 | nickname | String | *optional* | Nickname, related field `users->nickname` |
 | pin | String | *optional* | Login pin, related field `users->pin` |
 | avatarFid | String | *optional* | Avatar file fid, converted to `files->id` when stored<br>Related field `users->avatar_file_id` |
-| avatarUrl | String | *optional* | Avatar file URL, related field `users->avatar_file_url`<br>If left empty, check if `avatarFid` is also empty, if not, store the url obtained by fid in the database (ignoring anti-leech, only stitching the address) |
+| avatarUrl | String | *optional* | Avatar file URL, related field `users->avatar_file_url`<br>If left empty, check if `avatarFid` is also empty, if not, store the url obtained by fid in the database (ignoring temporary url, only stitching the address) |
 | gender | Number | *optional* | Gender, related field `users->gender` |
 | genderPronoun | Number | *optional* | Gender Pronoun, related field `users->gender_pronoun` |
 | genderCustom | String | *optional* | Gender Custom, related field `users->gender_custom` |

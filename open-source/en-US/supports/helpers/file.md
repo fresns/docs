@@ -17,15 +17,15 @@ FileHelper::fresnsFileStorageConfigByType($type);
     "service": "", // plugin fskey
     "secretId": "",
     "secretKey": "",
-    "secretApp": "",
     "bucketName": "",
-    "bucketArea": "",
-    "bucketDomain": "",
-    "antiLinkStatus": "",
-    "antiLinkKey": "",
-    "antiLinkExpire": "",
+    "bucketRegion": "",
+    "bucketEndpoint": "",
+    "filesystemDisk": "",
+    "accessDomain": "",
+    "temporaryUrlStatus": "",
+    "temporaryUrlKey": "",
+    "temporaryUrlExpiration": "",
     "storageConfigStatus": true, // true means that the storage is fully configured
-    "antiLinkConfigStatus": false, // false means that anti-theft links are not enabled
 }
 ```
 :::

@@ -125,10 +125,10 @@
 ```
 :::
 
-## 获取防盗链文件信息[单个]
+## 获取临时 URL 文件信息[单个]
 
 ```php
-\FresnsCmdWord::plugin('Fresns')->getAntiLinkFileInfo($wordBody);
+\FresnsCmdWord::plugin('Fresns')->getTemporaryUrlFileInfo($wordBody);
 ```
 | 参数名 | 类型 | 是否必传 | 说明 |
 | --- | --- | --- | --- |
@@ -148,14 +148,14 @@
 :::
 
 ::: details 逻辑说明
-- 如果未开启防盗链，可使用模型中封装功能输出信息。
+- 如果未开启临时 URL，可使用模型中封装功能输出信息。
 - `$file->getFileInfo();`
 :::
 
-## 获取防盗链文件信息[多个]
+## 获取临时 URL 文件信息[多个]
 
 ```php
-\FresnsCmdWord::plugin('Fresns')->getAntiLinkFileInfoList($wordBody);
+\FresnsCmdWord::plugin('Fresns')->getTemporaryUrlFileInfoList($wordBody);
 ```
 | 参数名 | 类型 | 是否必传 | 说明 |
 | --- | --- | --- | --- |
@@ -180,14 +180,14 @@
 :::
 
 ::: details 逻辑说明
-- 如果未开启防盗链，可请求封装功能输出信息。
+- 如果未开启临时 URL，可请求封装功能输出信息。
 - `FileHelper::fresnsFileInfoListByIds('fileIdsOrFids');`
 :::
 
-## 获取源文件防盗链链接
+## 获取源文件临时 URL
 
 ```php
-\FresnsCmdWord::plugin('Fresns')->getAntiLinkFileOriginalUrl($wordBody);
+\FresnsCmdWord::plugin('Fresns')->getTemporaryUrlOfOriginalFile($wordBody);
 ```
 | 参数名 | 类型 | 是否必传 | 说明 |
 | --- | --- | --- | --- |
@@ -208,7 +208,7 @@
 :::
 
 ::: details 逻辑说明
-- 如果未开启防盗链，可请求模型中封装功能输出信息。
+- 如果未开启临时 URL，可请求模型中封装功能输出信息。
 - `$file->getFileOriginalUrl();`
 :::
 

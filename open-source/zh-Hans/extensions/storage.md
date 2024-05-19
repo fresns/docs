@@ -21,9 +21,9 @@ FileHelper::fresnsFileStoragePath($fileType, $usageType);
 | --- | --- |
 | getUploadToken | 获取 S3 上传令牌 |
 | uploadFile | 上传文件 |
-| getAntiLinkFileInfo | 获取防盗链文件信息[单个] |
-| getAntiLinkFileInfoList | 获取防盗链文件信息[多个] |
-| getAntiLinkFileOriginalUrl | 获取源文件防盗链链接 |
+| getTemporaryUrlFileInfo | 获取临时 URL 文件信息[单个] |
+| getTemporaryUrlFileInfoList | 获取临时 URL 文件信息[多个] |
+| getTemporaryUrlOfOriginalFile | 获取源文件临时 URL |
 | physicalDeletionFiles | 物理删除文件 |
 
 文件相关命令字功能和参数说明，[参见开发支持](../supports/cmd-words/file.md)。

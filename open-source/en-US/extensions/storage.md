@@ -21,9 +21,9 @@ The main program interacts with the storage plug-in through command words, so th
 | --- | --- |
 | getUploadToken | Get S3 Upload Token |
 | uploadFile | upload File |
-| getAntiLinkFileInfo | Get information about anti-theft link file [one] |
-| getAntiLinkFileInfoList | Get information about anti-theft link file[Multiple] |
-| getAntiLinkFileOriginalUrl | Get the source file anti-theft link |
+| getTemporaryUrlFileInfo | Get information file temporary url [one] |
+| getTemporaryUrlFileInfoList | Get information file temporary url [Multiple] |
+| getTemporaryUrlOfOriginalFile | Get the temporary URL of the original file |
 | physicalDeletionFiles | Physical Deletion Files |
 
 As for the function of file-related command words and parameter instructions, please refer to [development support](../supports/cmd-words/file.md).
