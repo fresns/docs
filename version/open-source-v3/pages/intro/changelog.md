@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 
 
+## 3.2.1 (05/20/2024)
+
+### Fixes
+- Panel: Group editing does not prohibit specifying itself as the parent group.
+
+### Changed
+- Panel: Storage settings refactored. Please refer to the plugin introduction for reconfiguration.
+- Panel: Removed custom cookie prefix functionality.
+- Words: Renamed command for obtaining temporary file URLs.
+
+
 ## 3.2.0 (05/18/2024)
 
 ### Added
