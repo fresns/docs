@@ -19,3 +19,16 @@
 ## Instructions for use
 
 - [Introduction to Fresns Client Channel Default Parameter Configuration](https://discuss.fresns.org/post/NTBRTFwa)
+
+## Terminal Cache Clear
+
+- If you are unable to manage the cache through the administrator panel, you can clear the cache by executing the following commands in the terminal.
+
+```sh
+php artisan config:clear    # Clear framework configuration cache
+php artisan cache:clear     # Clear all data caches
+php artisan route:clear     # Clear route cache
+
+php artisan config:cache    # Clear and regenerate framework configuration cache
+php artisan route:cache     # Clear and regenerate route cache
+```

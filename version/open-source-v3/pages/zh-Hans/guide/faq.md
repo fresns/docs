@@ -19,3 +19,16 @@
 ## 使用说明
 
 - [Fresns 客户端频道默认参数配置解说](https://discuss.fresns.org/post/NTBRTFwa)
+
+## 终端清理缓存
+
+- 如果无法登录后台处理缓存，可以在终端中执行以下命令清理缓存。
+
+```sh
+php artisan config:clear    #清除框架配置缓存
+php artisan cache:clear     #清除全部数据缓存
+php artisan route:clear     #清除路由缓存
+
+php artisan config:cache    #清除并重新生成框架配置缓存
+php artisan route:cache     #清除并重新生成路由缓存
+```
