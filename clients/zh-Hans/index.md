@@ -19,6 +19,6 @@ hero:
       text: 参考
       link: /reference/
     - theme: alt
-      text: 主题
-      link: /themes/
+      text: SDK
+      link: /sdk/
 ---

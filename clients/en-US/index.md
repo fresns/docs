@@ -19,6 +19,6 @@ hero:
       text: Reference
       link: /reference/
     - theme: alt
-      text: Themes
-      link: /themes/
+      text: SDK
+      link: /sdk/
 ---
