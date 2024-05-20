@@ -37,6 +37,8 @@
         "list": [
             {
                 "extcreditsId": "Number / Extcredits number",
+                "name": "String / Name",
+                "unit": "String / Unit",
                 "type": "String / Operation type, increment or decrement",
                 "amount": "Number / Amount",
                 "openingAmount": "Number / Opening amount",

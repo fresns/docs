@@ -37,6 +37,8 @@
         "list": [
             {
                 "extcreditsId": "Number / 分值类型编号",
+                "name": "String / 名称",
+                "unit": "String / 单位",
                 "type": "String / 操作类型，increment 或 decrement",
                 "amount": "Number / 分值",
                 "openingAmount": "Number / 期初分值",
