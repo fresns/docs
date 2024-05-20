@@ -294,31 +294,31 @@
 | walletPassword | Pay Password |
 | walletRecharge | Top-up |
 | walletWithdraw | Withdraw |
-| walletLogs | Transaction Record |
-| walletLogType | Type |
-| walletLogAmountTotal | Amount Total |
-| walletLogAmount | Amount |
-| walletLogSystemFee | System Fee |
-| walletLogOpeningBalance | Opening Balance |
-| walletLogClosingBalance | Closing Balance |
-| walletLogTime | Time |
-| walletLogRemark | Remark |
-| walletLogUser | User |
-| walletLogCode | Transaction Code |
-| walletLogState | State |
-| walletLogType1 | Top-up |
-| walletLogType2 | Unfreeze |
-| walletLogType3 | Transaction Income |
-| walletLogType4 | Reversal Expense |
-| walletLogType5 | Withdraw |
-| walletLogType6 | Freeze |
-| walletLogType7 | Transaction Expense |
-| walletLogType8 | Reversal Income |
-| walletLogState1 | Pending |
-| walletLogState2 | Processing |
-| walletLogState3 | Success |
-| walletLogState4 | Failed |
-| walletLogState5 | Reversed |
+| walletRecords | Transaction Record |
+| walletRecordType | Type |
+| walletRecordAmountTotal | Amount Total |
+| walletRecordAmount | Amount |
+| walletRecordSystemFee | System Fee |
+| walletRecordOpeningBalance | Opening Balance |
+| walletRecordClosingBalance | Closing Balance |
+| walletRecordTime | Time |
+| walletRecordRemark | Remark |
+| walletRecordUser | User |
+| walletRecordCode | Transaction Code |
+| walletRecordState | State |
+| walletRecordType1 | Top-up |
+| walletRecordType2 | Unfreeze |
+| walletRecordType3 | Transaction Income |
+| walletRecordType4 | Reversal Expense |
+| walletRecordType5 | Withdraw |
+| walletRecordType6 | Freeze |
+| walletRecordType7 | Transaction Expense |
+| walletRecordType8 | Reversal Income |
+| walletRecordState1 | Pending |
+| walletRecordState2 | Processing |
+| walletRecordState3 | Success |
+| walletRecordState4 | Failed |
+| walletRecordState5 | Reversed |
 
 ## Settings
 
@@ -390,15 +390,15 @@
 | userSuspended | User Suspended |
 | userInterdiction | User Interdiction |
 | userExtcredits | User Credits |
-| userExtcreditsLogs | Extcredits Records |
-| userExtcreditsLogName | Extcredits |
-| userExtcreditsLogType | Type |
-| userExtcreditsLogAmount | Amount |
-| userExtcreditsLogOpeningAmount | Opening Amount |
-| userExtcreditsLogClosingAmount | Closing Amount |
-| userExtcreditsLogApp | App |
-| userExtcreditsLogRemark | Remark |
-| userExtcreditsLogTime | Time |
+| userExtcreditsRecords | Extcredits Records |
+| userExtcreditsRecordName | Extcredits |
+| userExtcreditsRecordType | Type |
+| userExtcreditsRecordAmount | Amount |
+| userExtcreditsRecordOpeningAmount | Opening Amount |
+| userExtcreditsRecordClosingAmount | Closing Amount |
+| userExtcreditsRecordApp | App |
+| userExtcreditsRecordRemark | Remark |
+| userExtcreditsRecordTime | Time |
 | userConversationCloseDesc | Conversation function is not enabled and cannot be used |
 | privateRenewal | Renewal |
 | privateContentHide | Membership has expired, all site content is no longer visible. |
