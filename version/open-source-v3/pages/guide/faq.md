@@ -25,8 +25,9 @@
 - If you are unable to manage the cache through the administrator panel, you can clear the cache by executing the following commands in the terminal.
 
 ```sh
+php artisan cache:clear     # Clear data cache
+
 php artisan config:clear    # Clear framework configuration cache
-php artisan cache:clear     # Clear all data caches
 php artisan route:clear     # Clear route cache
 
 php artisan config:cache    # Clear and regenerate framework configuration cache
