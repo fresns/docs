@@ -28,8 +28,9 @@ Whether it is website or mobile application, the use of plug-ins is embedded in 
 | `{hpid}` | History Post ID |
 | `{hcid}` | History Comment ID |
 | `{viewType}` | View Type `list`, `detail`, `quoted` |
-| `{did}` | Draft ID |
 | `{draftType}` | Draft Type `post` or `comment` |
+| `{draftOptions}` | Draft options, same as [creating a draft](../../api/editor/draft-create.md) Body parameters are the same, the object format is converted to a string. |
+| `{did}` | Draft ID |
 | `{uploadInfo}` | Upload Parameters `usageType,usageFsid,type,archiveCode` Separated by commas<br>[See Upload File API](../../api/common/file-upload.md)<br>e.g. `postDraft,did,image,archiveCode` |
 | `{mapInfo}` | Map Parameters `mapId,latitude,longitude` Separated by commas<br>[Map ID](../dictionary/maps.md)<br>e.g. `2,1.2803074,103.8610191` |
 | `{parameter}` | Custom Parameter |

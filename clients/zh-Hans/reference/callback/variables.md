@@ -28,8 +28,9 @@
 | `{hpid}` | 历史帖子 ID |
 | `{hcid}` | 历史评论 ID |
 | `{viewType}` | 视图类型 `list`, `detail`, `quoted` |
-| `{did}` | 草稿 ID |
 | `{draftType}` | 草稿类型 `post` 或 `comment` |
+| `{draftOptions}` | 草稿选项，同[创建草稿](../../api/editor/draft-create.md) Body 参数一致，对象格式转换为字符串 |
+| `{did}` | 草稿 ID |
 | `{uploadInfo}` | 上传参数，`用途类型,用途fsid,文件类型,扩展参数代码` 以英文逗号隔开<br>[同上传接口](../../api/common/file-upload.md)，例如 `postDraft,did,image,archiveCode` |
 | `{mapInfo}` | 地图参数，`地图 ID,纬度,经度` 以英文逗号隔开<br>[地图 ID 信息](../dictionary/maps.md)，例如 `2,1.2803074,103.8610191` |
 | `{parameter}` | 自定义参数 |
