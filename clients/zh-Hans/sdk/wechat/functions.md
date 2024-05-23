@@ -44,6 +44,7 @@ fresnsClient.appBaseInfo;
 fresnsClient.enableApiQuic;
 fresnsClient.enableWeChatLogin;
 fresnsClient.enableWeChatAutoLogin;
+fresnsClient.enableSharePoster;
 
 // appBaseInfo
 // {

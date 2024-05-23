@@ -1,5 +1,10 @@
 # 开发资源
 
+## 目录
+
+- [Theme](./theme/)
+- [小程序](./wechat/)
+
 ## API Collection
 
 - [API Collection by Postman](https://www.postman.com/fresns/workspace/fresns-api)
