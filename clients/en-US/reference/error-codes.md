@@ -293,15 +293,16 @@
 | --- | --- |
 | **Edit Validation** |  |
 | 38100 | Draft ID is incorrect or does not exist |
-| 38101 | The content is being reviewed and can not be edited |
-| 38102 | The content has been published and can not be edited |
-| 38103 | Content being reviewed can not be submitted again |
-| 38104 | Content being published can not be submitted again |
-| 38105 | Failed to create draft comment. Only first-level comment can create draft |
-| 38106 | Draft creation failed, draft box is full, please organize and create again |
-| 38107 | Comment failed, belongs to the post or has been deleted |
-| 38108 | Comment failed, the post belongs to the comment function has been closed |
-| 38109 | The author of the post has made the comment private, do not support separate reconfiguration of comments |
+| 38101 | You can only edit your own content |
+| 38102 | The content is being reviewed and can not be edited |
+| 38103 | The content has been published and can not be edited |
+| 38104 | Content being reviewed can not be submitted again |
+| 38105 | Content being published can not be submitted again |
+| 38106 | Failed to create draft comment. Only first-level comment can create draft |
+| 38107 | Draft creation failed, draft box is full, please organize and create again |
+| 38108 | Comment failed, belongs to the post or has been deleted |
+| 38109 | Comment failed, the post belongs to the comment function has been closed |
+| 38110 | The author of the post has made the comment private, do not support separate reconfiguration of comments |
 | **Check Parameter** |  |
 | 38200 | Content has been submitted, pending review and approval before official publication |
 | 38201 | The existence of content to be audited, the system does not allow the simultaneous submission of two pieces of content for review, to be submitted after the end of the audit |
