@@ -9,8 +9,8 @@
 | --- | --- | --- | --- |
 | uid | Number | YES | 用户 UID |
 | type | Number | YES | `1` 帖子 `2` 评论 |
-| createType | Number | YES | 创建类型 `1` 快捷创建 `2` 编辑器创建 |
-| editorFskey | String | NO | 是否为编辑器插件<br>传参 `Fresns` 则重置为默认编辑器 |
+| createType | Number | YES | 创建类型 `1` Fresns API 创建 `2` 编辑器插件创建 |
+| editorFskey | String | NO | 编辑器插件的 fskey |
 | commentPid | String | NO | 评论专用: 评论该帖子 |
 | commentCid | String | NO | 评论专用: 回复该评论 |
 | quotePid | String | NO | 帖子专用: 引用的帖子 PID |

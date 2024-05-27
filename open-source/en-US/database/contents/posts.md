@@ -59,7 +59,7 @@ aside: false
 ```json
 {
     "editor": {
-        "isAppEditor": "Boolean / Is it edited only in the app?",
+        "isAppEditor": "Boolean / Whether the editor plugin create",
         "editorFskey": "String / editor fskey"
     },
     "contentWritingDirection": "String / Writing Direction", // ltr or rtl

@@ -9,8 +9,8 @@
 | --- | --- | --- | --- |
 | uid | Number | **required** | User UID |
 | type | Number | **required** | `1` Post `2` Comment |
-| createType | Number | **required** | Creation type `1` Quick create `2` Editor create |
-| editorFskey | String | *optional* | Is it a plugin editor, empty means no |
+| createType | Number | **required** | Creation type `1` Fresns API create `2` Editor plugin create |
+| editorFskey | String | *optional* | Editor plugin for fskey |
 | commentPid | String | *optional* | Comment-Only: Comment on this post |
 | commentCid | String | *optional* | Comment-Only: Reply to this comment |
 | quotePid | String | *optional* | Post-Only: Quoted Post ID |

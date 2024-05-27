@@ -48,7 +48,7 @@ aside: false
 ```json
 {
     "editor": {
-        "isAppEditor": "Boolean / 是否仅在应用中编辑",
+        "isAppEditor": "Boolean / 是否编辑器插件创建",
         "editorFskey": "String / 编辑器 fskey"
     },
     "contentWritingDirection": "String / 内容写作方向", // ltr or rtl
