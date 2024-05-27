@@ -23,8 +23,6 @@
 
 | Key | Type | Required | Description |
 | --- | --- | --- | --- |
-| createType | Number | **required** | Creation type 1. Quick create 2. Editor create |
-| editorFskey | String | *optional* | Is it a plugin editor, empty means no |
 | commentPid | String | *optional* | `Comment-Only` Comment on this post |
 | commentCid | String | *optional* | `Comment-Only` Reply to this comment |
 | quotePid | String | *optional* | `Post-Only` Quoted Post ID |
@@ -39,11 +37,6 @@
 | locationInfo | Object | *optional* | Location Info |
 | archives | Array | *optional* | Archive Parameter |
 | extends | Array | *optional* | Extend Content |
-
-**Request Description**
-
-- When creating a draft, if there is already a draft with `createType=1` in the database and it is empty (no content, no files, no extended content), this creation will directly return that draft.
-- `createType=2` indicates a draft actively created by the user.
 
 ## Return
 

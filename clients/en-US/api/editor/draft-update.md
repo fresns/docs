@@ -24,7 +24,6 @@
 
 | Key | Type | Required | Description |
 | --- | --- | --- | --- |
-| editorFskey | String | *optional* | Is it a plugin editor, empty means no |
 | quotePid | String | *optional* | `Post-Only`: Quoted Post ID |
 | gid | String | *optional* | `Post-Only`: Group |
 | title | String | *optional* | `Post-Only`: Title |

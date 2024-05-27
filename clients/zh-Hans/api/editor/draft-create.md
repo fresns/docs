@@ -23,8 +23,6 @@
 
 | 参数名 | 类型 | 是否必传 | 说明 |
 | --- | --- | --- | --- |
-| createType | Number | YES | 创建类型 1.快捷创建 2.编辑器创建 |
-| editorFskey | String | NO | 是否为编辑器插件<br>传参 `Fresns` 则重置为默认编辑器 |
 | commentPid | String | NO | `评论专用` 评论该帖子 |
 | commentCid | String | NO | `评论专用` 回复该评论 |
 | quotePid | String | NO | `帖子专用` 引用的帖子 PID |
@@ -39,11 +37,6 @@
 | locationInfo | Object | NO | 地理位置信息 |
 | archives | Array | NO | 扩展参数 |
 | extends | Array | NO | 扩展内容 |
-
-**接口使用说明**
-
-- 创建草稿时，如果数据库已经有 `createType=1` 的草稿，并且为空时（无内容、无文件、无扩展内容），则本次创建将直接返回该草稿。
-- `createType=2` 表示为用户主动创建的草稿。
 
 ## 返回结果
 

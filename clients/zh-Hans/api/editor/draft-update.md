@@ -24,7 +24,6 @@
 
 | 参数名 | 类型 | 是否必传 | 说明 |
 | --- | --- | --- | --- |
-| editorFskey | String | NO | 是否为编辑器插件<br>传参 `Fresns` 则重置为默认编辑器 |
 | quotePid | String | NO | `帖子专用`: 引用的帖子 PID |
 | gid | String | NO | `帖子专用`: 小组 |
 | title | String | NO | `帖子专用`: 标题 |
