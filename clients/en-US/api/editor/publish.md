@@ -19,7 +19,7 @@
 | --- | --- | --- | --- |
 | type | String | **required** | `post` or `comment` |
 
-## Body Params
+## Form-data Params
 
 | Key | Type | Required | Description |
 | --- | --- | --- | --- |
