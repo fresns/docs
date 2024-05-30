@@ -376,14 +376,24 @@
 | --- | --- | --- |
 | channel_timeline_name | String | Timeline Name |
 | channel_timeline_type | String | Default list<br>`posts` or `comments` |
+
+| Key Name | Value Type | Description |
+| --- | --- | --- |
 | channel_timeline_posts_status | Boolean | Followed Posts - Status |
 | channel_timeline_posts_name | String | All Followed Posts - Name |
 | channel_timeline_user_posts_name | String | I follow users posts - Name |
 | channel_timeline_group_posts_name | String | I follow groups posts - Name |
+| channel_timeline_hashtag_posts_name | String | I follow hashtags posts - Name |
+| channel_timeline_geotag_posts_name | String | I follow geotags posts - Name |
+
+| Key Name | Value Type | Description |
+| --- | --- | --- |
 | channel_timeline_comments_status | Boolean | Followed Comments - Status |
 | channel_timeline_comments_name | String | All Followed Comments - Name |
 | channel_timeline_user_comments_name | String | I follow users comments - Name |
 | channel_timeline_group_comments_name | String | I follow groups comments - Name |
+| channel_timeline_hashtag_comments_name | String | I follow hashtags comments - Name |
+| channel_timeline_geotag_comments_name | String | I follow geotags comments - Name |
 
 ### Nearby
 

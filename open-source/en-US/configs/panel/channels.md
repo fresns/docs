@@ -254,10 +254,14 @@
 | All Followed Posts | channel_timeline_posts_name |  | object | `Following` **Multilingual** |
 | I follow users posts | channel_timeline_user_posts_name |  | object | `Following Users Posts` **Multilingual** |
 | I follow groups posts | channel_timeline_group_posts_name |  | object | `Following Groups Posts` **Multilingual** |
+| I follow hashtags posts | channel_timeline_hashtag_posts_name |  | object | `Following Hashtags Posts` **Multilingual** |
+| I follow geotags posts | channel_timeline_geotag_posts_name |  | object | `Following Geotags Posts` **Multilingual** |
 | Followed Comments - Status | channel_timeline_comments_status | true | boolean |  |
 | All Followed Comments | channel_timeline_comments_name |  | object | `Following` **Multilingual** |
 | I follow users comments | channel_timeline_user_comments_name |  | object | `Following Users Comments` **Multilingual** |
 | I follow groups comments | channel_timeline_group_comments_name |  | object | `Following Groups Comments` **Multilingual** |
+| I follow hashtags comments | channel_timeline_hashtag_comments_name |  | object | `Following Hashtags Comments` **Multilingual** |
+| I follow geotags comments | channel_timeline_geotag_comments_name |  | object | `Following Geotags Comments` **Multilingual** |
 
 ## Nearby
 

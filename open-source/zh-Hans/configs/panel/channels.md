@@ -254,10 +254,14 @@
 | 全部关注的帖子 | channel_timeline_posts_name |  | object | `正在关注` **多语言** |
 | 关注用户的帖子 | channel_timeline_user_posts_name |  | object | `关注用户的帖子` **多语言** |
 | 关注小组的帖子 | channel_timeline_group_posts_name |  | object | `关注小组的帖子` **多语言** |
+| 关注话题的帖子 | channel_timeline_hashtag_posts_name |  | object | `关注话题的帖子` **多语言** |
+| 关注地理的帖子 | channel_timeline_geotag_posts_name |  | object | `关注地理的帖子` **多语言** |
 | 关注的评论-状态 | channel_timeline_comments_status | true | boolean |  |
 | 全部关注的评论 | channel_timeline_comments_name |  | object | `正在关注` **多语言** |
 | 关注用户的评论 | channel_timeline_user_comments_name |  | object | `关注用户的评论` **多语言** |
 | 关注小组的评论 | channel_timeline_group_comments_name |  | object | `关注小组的评论` **多语言** |
+| 关注话题的评论 | channel_timeline_hashtag_comments_name |  | object | `关注话题的评论` **多语言** |
+| 关注地理的评论 | channel_timeline_geotag_comments_name |  | object | `关注地理的评论` **多语言** |
 
 ## 附近
 
