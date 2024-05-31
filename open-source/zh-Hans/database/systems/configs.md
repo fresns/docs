@@ -32,6 +32,7 @@ aside: false
 [
     {
         "code": "code",
+        "icon": "file id or file url",
         "name": {
             "en": "",
             "zh-Hans": ""

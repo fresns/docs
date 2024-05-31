@@ -32,6 +32,7 @@ Based on **JSON** data type, extended with three types: `file`, `plugin`, and `p
 [
     {
         "code": "code",
+        "icon": "file id or file url",
         "name": {
             "en": "",
             "zh-Hans": ""
