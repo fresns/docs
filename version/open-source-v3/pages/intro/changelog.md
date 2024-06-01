@@ -8,7 +8,7 @@ All notable changes to this project will be documented in this file.
 ### Added
 - API: Added name and unit parameters to the user extended score record list.
 - Models: For video file information, if there is a poster processing parameter but no poster path, the file path is used to generate the poster directly from the video file.
-- Account: Mutual configuration now supports uploading custom icons.
+- Account: Connect configuration now supports uploading custom icons.
 
 ### Fixes
 - API: Resolved cache key name conflict in post and comment list interfaces.
