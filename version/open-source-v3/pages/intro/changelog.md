@@ -3,6 +3,25 @@
 All notable changes to this project will be documented in this file.
 
 
+## 3.3.0 (06/01/2024)
+
+### Added
+- API: Added name and unit parameters to the user extended score record list.
+- Models: For video file information, if there is a poster processing parameter but no poster path, the file path is used to generate the poster directly from the video file.
+- Account: Mutual configuration now supports uploading custom icons.
+
+### Fixes
+- API: Resolved cache key name conflict in post and comment list interfaces.
+- API: Added visibility condition to the group list query criteria.
+- API: Fixed block failure in post and comment lists.
+- Words: Set user extended score, re-fetch final score from the database to avoid data inconsistency due to abnormal execution.
+- Utilities: Corrected model name error in city data creation.
+
+### Changed
+- Data: Modified language pack key naming for wallet and extended score, replacing the word "Log" with "Record".
+- Models: When the site_url configuration item is empty, the content URL is also empty.
+
+
 ## 3.2.1 (05/20/2024)
 
 ### Fixes
