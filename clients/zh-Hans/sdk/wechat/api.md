@@ -1,7 +1,7 @@
 # Fresns API
 
 ```js
-import { fresnsApi } from '/sdk/services';
+import { fresnsApi } from '/sdk/services/api';
 ```
 
 ## 全局配置
