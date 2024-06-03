@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 
 
+## 3.3.1 (06/03/2024)
+
+### Fixes
+- API: Follow user error
+
+
 ## 3.3.0 (06/01/2024)
 
 ### Added
