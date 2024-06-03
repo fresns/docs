@@ -30,7 +30,7 @@
         "detail": {
             // 通用数据结构->草稿信息
         },
-        "editControls": {
+        "controls": {
             "isEditDraft": "Boolean / 是否为编辑草稿",
             "editableStatus": "Boolean / 是否可编辑",
             "editableTime": "String / 剩余可编辑时长，例如 03:00 表示剩余 3 分钟",

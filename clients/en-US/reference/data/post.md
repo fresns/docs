@@ -149,12 +149,10 @@ aside: false
         // Post Management Extension
         // Common Data Structure -> Extend Function Info
     ],
-    "editControls": {
-        "isMe": "Boolean / Whether I am the author",
-        "canDelete": "Boolean / Whether deletion is allowed",
+    "controls": {
+        "isAuthor": "Boolean / Whether I am the author",
         "canEdit": "Boolean / Whether editing is allowed",
-        "isAppEditor": "Boolean / Whether it's a app editor",
-        "editorUrl": "String / App editor access URL"
+        "canDelete": "Boolean / Whether deletion is allowed"
     },
     "interaction": {
         "likeEnabled": "Boolean / Whether like is allowed",

@@ -125,12 +125,10 @@ aside: false
         // 评论管理扩展
         // 通用数据结构->扩展功能信息
     ],
-    "editControls": {
+    "controls": {
         "isAuthor": "Boolean / 我是否为作者",
-        "canDelete": "Boolean / 是否允许删除",
         "canEdit": "Boolean / 是否允许编辑",
-        "isAppEditor": "Boolean / 是否应用编辑器",
-        "editorUrl": "String / 应用编辑器访问地址"
+        "canDelete": "Boolean / 是否允许删除"
     },
     "interaction": {
         "likeEnabled": "Boolean / 是否允许 like",

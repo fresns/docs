@@ -48,7 +48,7 @@
         "detail": {
             // Common Data Structure -> Draft Info
         },
-        "editControls": {
+        "controls": {
             "isEditDraft": "Boolean / Whether it is an editable draft",
             "editableStatus": "Boolean / Whether it can be edited",
             "editableTime": "String / Remaining editable time, for example 03:00 means 3 minutes left",
