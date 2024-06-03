@@ -121,15 +121,6 @@ aside: false
             // 通用数据结构->评论信息
         }
     ],
-    "manages": [
-        // 评论管理扩展
-        // 通用数据结构->扩展功能信息
-    ],
-    "controls": {
-        "isAuthor": "Boolean / 我是否为作者",
-        "canEdit": "Boolean / 是否允许编辑",
-        "canDelete": "Boolean / 是否允许删除"
-    },
     "interaction": {
         "likeEnabled": "Boolean / 是否允许 like",
         "likeName": "String / like 行为自定义名称",
@@ -158,6 +149,7 @@ aside: false
         "note": "String / 我的互动备注（关注或屏蔽）",
         "postAuthorLikeStatus": "Boolean / 帖子作者是否点赞"
     },
+    "followType": "String / 时间线列表专用，表示来自哪种关注 null, user, group, hashtag, geotag, digest",
     "replyToPost": {
         // 评论所属的帖子信息，如果是子级评论列表仅有 pid 参数
         // 通用数据结构->帖子信息
@@ -166,7 +158,15 @@ aside: false
         // 当前评论的父级评论
         // 通用数据结构->评论信息
     },
-    "followType": "String / 来自哪种关注 null.无 user.我关注的用户 group.我关注的小组 digest.高级精华"
+    "controls": {
+        "isAuthor": "Boolean / 我是否为作者",
+        "canEdit": "Boolean / 是否允许编辑",
+        "canDelete": "Boolean / 是否允许删除"
+    },
+    "manages": [
+        // 评论管理扩展
+        // 通用数据结构->扩展功能信息
+    ]
 }
 ```
 

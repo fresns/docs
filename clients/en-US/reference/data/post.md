@@ -145,15 +145,6 @@ aside: false
             // Common Data Structure -> Comment Info
         }
     ],
-    "manages": [
-        // Post Management Extension
-        // Common Data Structure -> Extend Function Info
-    ],
-    "controls": {
-        "isAuthor": "Boolean / Whether I am the author",
-        "canEdit": "Boolean / Whether editing is allowed",
-        "canDelete": "Boolean / Whether deletion is allowed"
-    },
     "interaction": {
         "likeEnabled": "Boolean / Whether like is allowed",
         "likeName": "String / Custom name for the like action",
@@ -181,11 +172,16 @@ aside: false
         "blockStatus": "Boolean / Block Status",
         "note": "String / My interaction note (follow or block)"
     },
-    "followType": "String / From which type of follow"
-    // followType=null: none
-    // followType=user: followed users
-    // followType=group: followed groups
-    // followType==digest: premium digest
+    "followType": "String / For use in timeline list only, indicating from which follow: null, user, group, hashtag, geotag, digest",
+    "controls": {
+        "isAuthor": "Boolean / Whether I am the author",
+        "canEdit": "Boolean / Whether editing is allowed",
+        "canDelete": "Boolean / Whether deletion is allowed"
+    },
+    "manages": [
+        // Post Management Extension
+        // Common Data Structure -> Extend Function Info
+    ]
 }
 ```
 
