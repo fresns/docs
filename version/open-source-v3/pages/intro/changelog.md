@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 
 
+## 3.3.2 (06/04/2024)
+
+### Changed
+- API: Content data `editControls` parameter name changed to `controls`
+
+
 ## 3.3.1 (06/03/2024)
 
 ### Fixes
