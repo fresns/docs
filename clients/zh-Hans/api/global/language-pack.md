@@ -31,7 +31,10 @@
     "message": "ok",
     "data": {
         "键名": "键值",
-        "darkMode": "深色模式",
+        "language": "语言",
+        "appearance": "外观",
+        "switchLanguage": "切换语言",
+        "switchUser": "切换用户",
     }
 }
 ```

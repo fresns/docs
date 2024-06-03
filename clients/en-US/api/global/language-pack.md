@@ -31,7 +31,10 @@
     "message": "ok",
     "data": {
         "keyName": "keyValue",
-        "darkMode": "Dark Mode",
+        "language": "Language",
+        "appearance": "Appearance",
+        "switchLanguage": "Switch Language",
+        "switchUser": "Switch User",
     }
 }
 ```
