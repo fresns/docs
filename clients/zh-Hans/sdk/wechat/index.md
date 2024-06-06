@@ -6,6 +6,7 @@
 
 - SDK: [https://github.com/fresns/client-sdk-wechat](https://github.com/fresns/client-sdk-wechat)
 - Demo: [https://github.com/fresns/client-demo-wechat](https://github.com/fresns/client-demo-wechat)
+- 案例: [https://github.com/jevantang/zhijie-app](https://github.com/jevantang/zhijie-app)
 
 ## 使用说明
 
