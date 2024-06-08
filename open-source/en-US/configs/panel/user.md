@@ -101,6 +101,6 @@
 | --- | --- | --- | --- | --- |
 | Conversation Feature | conversation_status | false | boolean |  |
 | Conversation Files | conversation_files | `["image"]` | array | `image`<br>`video`<br>`audio`<br>`document` |
-| File Upload Type | conversation_file_upload_type |  | object | Options: `api`, `page`, `sdk` |
+| File Upload Method | conversation_file_upload_method |  | object | Options: `api`, `page`, `sdk` |
 
-- File Upload Type `{"image":"api","video":"sdk","audio":"sdk","document":"sdk"}`
+- File Upload Method `{"image":"api","video":"sdk","audio":"sdk","document":"sdk"}`

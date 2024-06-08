@@ -101,6 +101,6 @@
 | --- | --- | --- | --- | --- |
 | 对话功能 | conversation_status | false | boolean |  |
 | 对话附件 | conversation_files | `["image"]` | array | `image`<br>`video`<br>`audio`<br>`document` |
-| 附件上传方式 | conversation_file_upload_type |  | object | 选项: `api`, `page`, `sdk` |
+| 附件上传方式 | conversation_file_upload_method |  | object | 选项: `api`, `page`, `sdk` |
 
 - 附件上传方式 `{"image":"api","video":"sdk","audio":"sdk","document":"sdk"}`

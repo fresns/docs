@@ -45,13 +45,13 @@
 | Location | post_editor_location | false | boolean |  |
 | Anonymous | post_editor_anonymous | false | boolean |  |
 | <hr> |  |  |  |  |
-| Image Upload Type | post_editor_image_upload_type | api | string | `api`<br>`page`<br>`sdk` |
+| Image Upload Method | post_editor_image_upload_method | api | string | `api`<br>`page`<br>`sdk` |
 | Image Upload Quantity | post_editor_image_max_upload_number | 9 | number |  |
-| Video Upload Type | post_editor_video_upload_type | api | string | `api`<br>`page`<br>`sdk` |
+| Video Upload Method | post_editor_video_upload_method | api | string | `api`<br>`page`<br>`sdk` |
 | Video Upload Quantity | post_editor_video_max_upload_number | 1 | number |  |
-| Audio Upload Type | post_editor_audio_upload_type | api | string | `api`<br>`page`<br>`sdk` |
+| Audio Upload Method | post_editor_audio_upload_method | api | string | `api`<br>`page`<br>`sdk` |
 | Audio Upload Quantity | post_editor_audio_max_upload_number | 1 | number |  |
-| Document Upload Type | post_editor_document_upload_type | api | string | `api`<br>`page`<br>`sdk` |
+| Document Upload Method | post_editor_document_upload_method | api | string | `api`<br>`page`<br>`sdk` |
 | Document Upload Quantity | post_editor_document_max_upload_number | 10 | number |  |
 | Is Group Required | post_editor_group_required | false | boolean |  |
 | Title Input Box Force Display | post_editor_title_show | false | boolean |  |
@@ -100,12 +100,12 @@
 | Location | comment_editor_location | false | boolean |  |
 | Anonymous | comment_editor_anonymous | false | boolean |  |
 | <hr> |  |  |  |  |
-| Image Upload Type | comment_editor_image_upload_type | api | string | `api`<br>`page`<br>`sdk` |
+| Image Upload Method | comment_editor_image_upload_method | api | string | `api`<br>`page`<br>`sdk` |
 | Image Upload Quantity | comment_editor_image_max_upload_number | 9 | number |  |
-| Video Upload Type | comment_editor_video_upload_type | api | string | `api`<br>`page`<br>`sdk` |
+| Video Upload Method | comment_editor_video_upload_method | api | string | `api`<br>`page`<br>`sdk` |
 | Video Upload Quantity | comment_editor_video_max_upload_number | 1 | number |  |
-| Audio Upload Type | comment_editor_audio_upload_type | api | string | `api`<br>`page`<br>`sdk` |
+| Audio Upload Method | comment_editor_audio_upload_method | api | string | `api`<br>`page`<br>`sdk` |
 | Audio Upload Quantity | comment_editor_audio_max_upload_number | 1 | number |  |
-| Document Upload Type | comment_editor_document_upload_type | api | string | `api`<br>`page`<br>`sdk` |
+| Document Upload Method | comment_editor_document_upload_method | api | string | `api`<br>`page`<br>`sdk` |
 | Document Upload Quantity | comment_editor_document_max_upload_number | 10 | number |  |
 | Comment Word Limit | comment_editor_content_length | 1000 | number |  |
