@@ -149,7 +149,6 @@ aside: false
         "note": "String / 我的互动备注（关注或屏蔽）",
         "postAuthorLikeStatus": "Boolean / 帖子作者是否点赞"
     },
-    "followType": "String / 时间线列表专用，表示来自哪种关注 null, user, group, hashtag, geotag, digest",
     "replyToPost": {
         // 评论所属的帖子信息，如果是子级评论列表仅有 pid 参数
         // 通用数据结构->帖子信息

@@ -172,7 +172,6 @@ aside: false
         "blockStatus": "Boolean / 屏蔽状态",
         "note": "String / 我的互动备注（关注或屏蔽）"
     },
-    "followType": "String / 时间线列表专用，表示来自哪种关注 null, user, group, hashtag, geotag, digest",
     "controls": {
         "isAuthor": "Boolean / 我是否为作者",
         "canEdit": "Boolean / 是否允许编辑",

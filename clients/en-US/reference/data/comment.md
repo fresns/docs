@@ -149,7 +149,6 @@ aside: false
         "note": "String / My interaction note (follow or block)",
         "postAuthorLikeStatus": "Boolean / Whether the post author liked this comment"
     },
-    "followType": "String / For use in timeline list only, indicating from which follow: null, user, group, hashtag, geotag, digest",
     "replyToPost": {
         // Information about the post this comment belongs to,
         // if it's a sub-comment list, only the pid parameter is available

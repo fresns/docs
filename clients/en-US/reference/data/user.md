@@ -159,8 +159,8 @@ aside: false
         "note": "String / My interaction note (follow or block)",
         "followMeStatus": "Boolean / Whether he is following me",
         "blockMeStatus": "Boolean / Whether he has blocked me",
-        "followType": "Number / Follow method 1.Native method 2.App method 3.close",
-        "followUrl": "String / Follow method 2 specific, follow app page URL",
+        "followMethod": "String / Follow method: api, page",
+        "followAppUrl": "String / Follow method page specific, follow app page URL",
         "followExpired": "Boolean / Whether expired, always false for public",
         "followExpiryDateTime": "String / Expiry Date Time"
     },

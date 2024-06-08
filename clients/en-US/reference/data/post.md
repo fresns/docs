@@ -172,7 +172,6 @@ aside: false
         "blockStatus": "Boolean / Block Status",
         "note": "String / My interaction note (follow or block)"
     },
-    "followType": "String / For use in timeline list only, indicating from which follow: null, user, group, hashtag, geotag, digest",
     "controls": {
         "isAuthor": "Boolean / Whether I am the author",
         "canEdit": "Boolean / Whether editing is allowed",

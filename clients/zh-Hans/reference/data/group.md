@@ -84,8 +84,8 @@ aside: false
         "followStatus": "Boolean / 关注状态",
         "blockStatus": "Boolean / 屏蔽状态",
         "note": "String / 我的互动备注（关注或屏蔽）",
-        "followType": "Number / 关注方式 1.原生方式 2.应用方式 3.关闭",
-        "followUrl": "String / 关注方式 2 专用，操作关注应用页地址",
+        "followMethod": "String / 关注方式 api/page",
+        "followAppUrl": "String / 关注方式 page 专用，操作关注的应用页地址",
         "followExpired": "Boolean / 是否过期，公开小组模式始终为 false",
         "followExpiryDateTime": "String / 过期时间"
     }
