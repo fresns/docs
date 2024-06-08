@@ -16,7 +16,7 @@ aside: false
 | privacy | tinyint *UNSIGNED* | Group Mode | 1 | NO | 1.Public (Anyone can see who's in the group and what they post.)<br>2.Private (Only members can see who's in the group and what they post.) |
 | private_end_after | tinyint *UNSIGNED* | Private Group Configuration | 1 | NO | 1.No restrictions<br>2.All group content invisible<br>3.Content visible before expiration, new content not visible |
 | visibility | tinyint *UNSIGNED* | Is Discoverable<br>Also understood as whether to display | 1 | NO | 1.Discoverable (anyone can find this group)<br>2.Undiscoverable (only members can find this group) |
-| follow_type | tinyint *UNSIGNED* | Follow Method | 1 | NO | 1.Native / 2.Plugin / 3.Closed |
+| follow_method | tinyint *UNSIGNED* | Follow Method | 1 | NO | 1.Native / 2.Plugin / 3.Closed |
 | follow_app_fskey | varchar(64) | Related Plugin |  | YES | Used when follow_type=2<br>Related field [apps->fskey](../apps/apps.md) |
 | cover_file_id | bigint *UNSIGNED* | Group Cover Image ID |  | YES | Related field [files->id](../systems/files.md) |
 | cover_file_url | varchar(255) | Group Cover Image URL |  | YES |  |

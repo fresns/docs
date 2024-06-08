@@ -16,7 +16,7 @@ aside: false
 | privacy | tinyint *UNSIGNED* | 小组模式 | 1 | NO | 1.公开（任何人都能查看小组内帖子）<br>2.非公开（只有成员才能查看小组内帖子） |
 | private_end_after | tinyint *UNSIGNED* | 非公开小组配置 | 1 | NO | 1.不限制<br>2.小组内容全部不可见<br>3.到期前内容可见，新内容不可见 |
 | visibility | tinyint *UNSIGNED* | 是否可发现<br>也可理解为是否显示 | 1 | NO | 1.可发现（任何人都能找到这个小组）<br>2.不可发现（只有成员能找到这个小组） |
-| follow_type | tinyint *UNSIGNED* | 关注方式 | 1 | NO | 1.原生方式 / 2.插件方式 / 3.关闭 |
+| follow_method | tinyint *UNSIGNED* | 关注方式 | 1 | NO | 1.原生方式 / 2.插件方式 / 3.关闭 |
 | follow_app_fskey | varchar(64) | 关联插件 |  | YES | follow_type=2 时使用<br>关联字段 [apps->fskey](../apps/apps.md) |
 | cover_file_id | bigint *UNSIGNED* | 小组封面图 ID |  | YES | 关联字段 [files->id](../systems/files.md) |
 | cover_file_url | varchar(255) | 小组封面图 URL |  | YES |  |
