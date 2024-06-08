@@ -30,7 +30,7 @@
 
 - 上传文件 `uploadType`
     - `api` 使用上传接口 [/api/fresns/v1/common/file-upload](../common/file-upload.md)
-    - `page` 使用 WebView 访问 `uploadUrl` 参数的地址上传，规则见[回调返参](../../reference/callback/index.md)
+    - `page` 使用 WebView 访问 `uploadAppUrl` 参数的地址上传，规则见[回调返参](../../reference/callback/index.md)
     - `sdk` 使用 [S3 SDK 上传](../common/file-upload-token.md)，上传完成后，更新文件信息为上传成功 [/api/fresns/v1/common/file-info](../common/file-update.md)
 
 ## 返回结果
@@ -48,32 +48,32 @@
                     "extensions": "String / 支持的扩展名，示例 png,gif,jpg,jpeg,bmp,heic",
                     "inputAccept": "String / 支持的扩展名，示例 image/png,image/gif,image/jpeg,image/jpeg,image/bmp",
                     "maxSize": "Number / 最大文件尺寸，单位 MB",
-                    "uploadType": "String / 上传类型: api, page, sdk",
-                    "uploadUrl": "String / page 上传类型的地址"
+                    "uploadMethod": "String / 上传方式: api, page, sdk",
+                    "uploadAppUrl": "String / page 上传方式的地址"
                 },
                 "video": {
                     "status": "Boolean / 是否允许发送视频",
                     "extensions": "String / 支持的扩展名，示例 wmv,rm,mov,mpeg,mp4,3gp,flv,avi,rmvb",
                     "inputAccept": "String / 支持的扩展名，示例 video/x-ms-wmv,application/vnd.rn-realmedia,video/quicktime,video/mpeg,video/mp4,video/3gpp,video/x-flv,video/x-msvideo,application/vnd.rn-realmedia-vbr",
                     "maxSize": "Number / 最大文件尺寸，单位 MB",
-                    "uploadType": "String / 上传类型: api, page, sdk",
-                    "uploadUrl": "String / page 上传类型的地址"
+                    "uploadMethod": "String / 上传方式: api, page, sdk",
+                    "uploadAppUrl": "String / page 上传方式的地址"
                 },
                 "audio": {
                     "status": "Boolean / 是否允许发送音频",
                     "extensions": "String / 支持的扩展名，示例 mp3,wav,m4a",
                     "inputAccept": "String / 支持的扩展名，示例 audio/mpeg,audio/x-wav,audio/mp4",
                     "maxSize": "Number / 最大文件尺寸，单位 MB",
-                    "uploadType": "String / 上传类型: api, page, sdk",
-                    "uploadUrl": "String / page 上传类型的地址"
+                    "uploadMethod": "String / 上传方式: api, page, sdk",
+                    "uploadAppUrl": "String / page 上传方式的地址"
                 },
                 "document": {
                     "status": "Boolean / 是否允许发送文档",
                     "extensions": "String / 支持的扩展名，示例 doc,docx,xls,xlsx,csv,ppt,pptx,pps,ppts,pdf,txt,md,markdown,rar,zip,7z,epub,mobi",
                     "inputAccept": "String / 支持的扩展名，示例 application/msword,application/vnd.openxmlformats-officedocument.wordprocessingml.document,application/vnd.ms-excel",
                     "maxSize": "Number / 最大文件尺寸，单位 MB",
-                    "uploadType": "String / 上传类型: api, page, sdk",
-                    "uploadUrl": "String / page 上传类型的地址"
+                    "uploadMethod": "String / 上传方式: api, page, sdk",
+                    "uploadAppUrl": "String / page 上传方式的地址"
                 }
             }
         },

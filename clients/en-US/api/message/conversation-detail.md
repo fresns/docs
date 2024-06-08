@@ -30,7 +30,7 @@
 
 - Upload Files `uploadType`
     - `api` Using the upload interface [/api/fresns/v1/common/file-upload](../common/file-upload.md)
-    - `page` Use WebView to access the address of the uploadUrl parameter to upload, see [callback](../../reference/callback/index.md) for rules.
+    - `page` Use WebView to access the address of the `uploadAppUrl` parameter to upload, see [callback](../../reference/callback/index.md) for rules.
     - `sdk` Use [S3 SDK to upload](../common/file-upload-token.md), after upload, update the file information as successfully uploaded [/api/fresns/v1/common/file-info](../common/file-update.md)
 
 ## Return
@@ -48,32 +48,32 @@
                     "extensions": "String / Supported extensions, e.g., png,gif,jpg,jpeg,bmp,heic",
                     "inputAccept": "String / Supported extensions, e.g., image/png,image/gif,image/jpeg,image/jpeg,image/bmp",
                     "maxSize": "Number / Maximum file size, in MB",
-                    "uploadType": "String / Upload type: api, page, sdk",
-                    "uploadUrl": "String / Address for page upload type"
+                    "uploadMethod": "String / Upload method: api, page, sdk",
+                    "uploadAppUrl": "String / Page URL for page upload method"
                 },
                 "video": {
                     "status": "Boolean / Enable videos",
                     "extensions": "String / Supported extensions, e.g., wmv,rm,mov,mpeg,mp4,3gp,flv,avi,rmvb",
                     "inputAccept": "String / Supported extensions, e.g., video/x-ms-wmv,application/vnd.rn-realmedia,video/quicktime,video/mpeg,video/mp4,video/3gpp,video/x-flv,video/x-msvideo,application/vnd.rn-realmedia-vbr",
                     "maxSize": "Number / Maximum file size, in MB",
-                    "uploadType": "String / Upload type: api, page, sdk",
-                    "uploadUrl": "String / Address for page upload type"
+                    "uploadMethod": "String / Upload method: api, page, sdk",
+                    "uploadAppUrl": "String / Page URL for page upload method"
                 },
                 "audio": {
                     "status": "Boolean / Enable audios",
                     "extensions": "String / Supported extensions, e.g., mp3,wav,m4a",
                     "inputAccept": "String / Supported extensions, e.g., audio/mpeg,audio/x-wav,audio/mp4",
                     "maxSize": "Number / Maximum file size, in MB",
-                    "uploadType": "String / Upload type: api, page, sdk",
-                    "uploadUrl": "String / Address for page upload type"
+                    "uploadMethod": "String / Upload method: api, page, sdk",
+                    "uploadAppUrl": "String / Page URL for page upload method"
                 },
                 "document": {
                     "status": "Boolean / Enable documents",
                     "extensions": "String / Supported extensions, e.g., doc,docx,xls,xlsx,csv,ppt,pptx,pps,ppts,pdf,txt,md,markdown,rar,zip,7z,epub,mobi",
                     "inputAccept": "String / Supported extensions, e.g., application/msword,application/vnd.openxmlformats-officedocument.wordprocessingml.document,application/vnd.ms-excel",
                     "maxSize": "Number / Maximum file size, in MB",
-                    "uploadType": "String / Upload type: api, page, sdk",
-                    "uploadUrl": "String / Address for page upload type"
+                    "uploadMethod": "String / Upload method: api, page, sdk",
+                    "uploadAppUrl": "String / Page URL for page upload method"
                 }
             }
         },

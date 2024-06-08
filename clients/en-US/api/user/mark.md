@@ -26,7 +26,7 @@
 
 - The new creation (creation) and cancellation (deletion) of the mark use the same interface and the same parameters. If it is not marked, it is new; if it is marked, it is canceled.
 - Whether you have the right to operate, configure portal `operation > interaction configuration > interaction behavior settings`. The configuration values are in the `interaction` parameters of the corresponding content interface.
-- When operating the team attention tag, if the team parameter `followType=2`, attention cannot be established through this interface (it is taken over by the associated plug-in).
+- When operating the team attention tag, if the team parameter `followMethod=page`, attention cannot be established through this interface (it is taken over by the associated plug-in).
 - `like` and `dislike` are mutually exclusive. If you have already clicked `like` and then `dislike`, you will cancel the `like` and create a new `dislike`, and vice versa.
 - `follow` and `block` are mutually exclusive. If you have `followed` and then clicked the `block`, you will cancel the `follow` and create a new `block`, and vice versa.
 - You cannot operate the `follow` and `block` tags on yourself.

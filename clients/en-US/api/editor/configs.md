@@ -27,7 +27,7 @@
     - If a group is selected, get the type of the `group` and append the query parameter to get the extra parameters for posting or commenting in the group.
 - Upload Files `uploadType`
     - `api` Using the upload interface [/api/fresns/v1/common/file-upload](../common/file-upload.md)
-    - `page` Use WebView to access the address of the uploadUrl parameter to upload, see [callback](../../reference/callback/index.md) for rules.
+    - `page` Use WebView to access the address of the `uploadAppUrl` parameter to upload, see [callback](../../reference/callback/index.md) for rules.
     - `sdk` Use [S3 SDK to upload](../common/file-upload-token.md), after upload, update the file information as successfully uploaded [/api/fresns/v1/common/file-info](../common/file-update.md)
 
 ## Return
@@ -45,8 +45,8 @@
                 "inputAccept": "String / Supported extensions, e.g., image/png,image/gif,image/jpeg,image/jpeg,image/bmp",
                 "maxSize": "Number / Maximum file size, in MB",
                 "maxUploadNumber": "Number / Number of allowed uploads",
-                "uploadType": "String / Upload type: api, page, sdk",
-                "uploadUrl": "String / Address for page upload type"
+                "uploadMethod": "String / Upload method: api, page, sdk",
+                "uploadAppUrl": "String / Page URL for page upload method"
             },
             "video": {
                 "status": "Boolean / Enable videos",
@@ -55,8 +55,8 @@
                 "maxSize": "Number / Maximum file size, in MB",
                 "maxDuration": "Number / Maximum file duration, in seconds",
                 "maxUploadNumber": "Number / Number of allowed uploads",
-                "uploadType": "String / Upload type: api, page, sdk",
-                "uploadUrl": "String / Address for page upload type"
+                "uploadMethod": "String / Upload method: api, page, sdk",
+                "uploadAppUrl": "String / Page URL for page upload method"
             },
             "audio": {
                 "status": "Boolean / Enable audios",
@@ -65,8 +65,8 @@
                 "maxSize": "Number / Maximum file size, in MB",
                 "maxDuration": "Number / Maximum file duration, in seconds",
                 "maxUploadNumber": "Number / Number of allowed uploads",
-                "uploadType": "String / Upload type: api, page, sdk",
-                "uploadUrl": "String / Address for page upload type",
+                "uploadMethod": "String / Upload method: api, page, sdk",
+                "uploadAppUrl": "String / Page URL for page upload method",
             },
             "document": {
                 "status": "Boolean / Enable documents",
@@ -74,8 +74,8 @@
                 "inputAccept": "String / Supported extensions, e.g., application/msword,application/vnd.openxmlformats-officedocument.wordprocessingml.document,application/vnd.ms-excel",
                 "maxSize": "Number / Maximum file size, in MB",
                 "maxUploadNumber": "Number / Number of allowed uploads",
-                "uploadType": "String / Upload type: api, page, sdk",
-                "uploadUrl": "String / Address for page upload type"
+                "uploadMethod": "String / Upload method: api, page, sdk",
+                "uploadAppUrl": "String / Page URL for page upload method"
             },
             "title": {
                 "status": "Boolean / Enable titles",

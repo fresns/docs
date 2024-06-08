@@ -64,6 +64,7 @@
         "list": [
             {
                 // Common Data Structure -> Comment Info
+                "contentSource": "String / Indicates which follow is the source of the content: null, user, group, hashtag, geotag, digest"
             }
         ]
     }

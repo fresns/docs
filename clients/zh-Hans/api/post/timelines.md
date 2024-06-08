@@ -79,6 +79,7 @@
         "list": [
             {
                 // 通用数据结构->帖子信息
+                "contentSource": "String / 表示来自哪种关注 null, user, group, hashtag, geotag, digest"
             }
         ]
     }
