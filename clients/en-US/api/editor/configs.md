@@ -25,7 +25,7 @@
     - Use [/api/fresns/v1/global/{type}/archives](../global/archives.md) to get if the editor has extra forms.
     - Get the form configuration for extra `post` or `comment` parameters.
     - If a group is selected, get the type of the `group` and append the query parameter to get the extra parameters for posting or commenting in the group.
-- Upload Files `uploadType`
+- Upload Files `uploadMethod`
     - `api` Using the upload interface [/api/fresns/v1/common/file-upload](../common/file-upload.md)
     - `page` Use WebView to access the address of the `uploadAppUrl` parameter to upload, see [callback](../../reference/callback/index.md) for rules.
     - `sdk` Use [S3 SDK to upload](../common/file-upload-token.md), after upload, update the file information as successfully uploaded [/api/fresns/v1/common/file-info](../common/file-update.md)
