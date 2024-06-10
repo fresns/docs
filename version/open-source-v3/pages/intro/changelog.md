@@ -3,6 +3,25 @@
 All notable changes to this project will be documented in this file.
 
 
+## 3.4.0 (06/11/2024)
+
+### Added
+- Jobs: Subscription notifications are now implemented using Jobs.
+- Helpers: When clearing the schedule cache, failed_jobs records are also deleted synchronously.
+
+### Fixes
+- API: Only one role was effective when multiple roles were specified in the user list.
+- API: Error occurred when creating a comment draft due to the missing `commentPrivate` parameter.
+- API: Comment draft attached files error.
+
+### Changed
+- API: Renamed the `followType` parameter in user and group interaction data to `followMethod`.
+- API: Renamed the `followUrl` parameter in user and group interaction data to `followAppUrl`.
+- API: Changed the `followMethod` parameter value to a string type with values `api` or `page`.
+- API: Renamed the `uploadType` parameter in the editor upload configuration to `uploadMethod`.
+- API: Renamed the `uploadUrl` parameter in the editor upload configuration to `uploadAppUrl`.
+
+
 ## 3.3.2 (06/04/2024)
 
 ### Changed

@@ -3,6 +3,25 @@
 Fresns 主程序所有版本更新日志都将记录在这个文件中。
 
 
+## 3.4.0 (2024-06-11)
+
+### Added
+- Jobs: 订阅通知采用 Job 实现
+- Helpers: 清理 schedule 缓存时同步删除 failed_jobs 记录
+
+### Fixes
+- API: 用户列表指定多个角色时只生效一个角色
+- API: 创建评论草稿时，因缺少 commentPrivate 参数时报错
+- API: 评论草稿附属文件错误
+
+### Changed
+- API: 用户和小组的互动数据 `followType` 参数名修改为 `followMethod`
+- API: 用户和小组的互动数据 `followUrl` 参数名修改为 `followAppUrl`
+- API: `followMethod` 参数值修改为字符串类型，值为 `api` 或 `page`
+- API: 编辑器上传配置 `uploadType` 参数名修改为 `uploadMethod`
+- API: 编辑器上传配置 `uploadUrl` 参数名修改为 `uploadAppUrl`
+
+
 ## 3.3.2 (2024-06-04)
 
 ### Changed
