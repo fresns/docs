@@ -505,6 +505,7 @@
 - user
 - group
 - hashtag
+- geotag
 - post
 - comment
 :::
