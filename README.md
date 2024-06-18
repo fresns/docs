@@ -13,3 +13,7 @@ Fresns supports multiple languages at the data stream level, and various languag
 Although we support multiple languages, language packs still need to be translated. Feel free to use your language to support the development of Fresns ecosystem.
 
 - English Docs Writing Guide: [https://fresns.org/contributing/writing-guide.html](https://fresns.org/contributing/writing-guide.html)
+
+## Sponsors
+
+Fresns is an Apache-2.0-licensed open source project with its ongoing development made possible entirely by the support of these awesome backers. If you'd like to join them, please consider [sponsoring Fresns development](https://github.com/sponsors/fresns).
