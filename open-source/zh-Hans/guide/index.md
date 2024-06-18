@@ -31,6 +31,7 @@ fresns/         // 主程序根目录
 │   ├── Models/         // 模型类
 │   ├── Helpers/        // 辅助类
 │   ├── Utilities/      // 工具类
+│   ├── Jobs/           // 任务类
 │   ├── Providers/      // 公共服务者
 │   └── Fresns/         // 业务功能
 │       ├── Install/        // 初始化安装
