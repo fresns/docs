@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 
 
+## 3.4.1 (06/30/2024)
+
+### Fixes
+- Data: Fixed an error when the stickers table name is empty.
+- Words: Fixed an error when the action target for sending messages is empty.
+- API: Comment list cache key issue.
+- API: Fixed the prompt message when unable to send messages to oneself.
+
+
 ## 3.4.0 (06/11/2024)
 
 ### Added

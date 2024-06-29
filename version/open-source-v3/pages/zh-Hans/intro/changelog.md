@@ -3,6 +3,15 @@
 Fresns 主程序所有版本更新日志都将记录在这个文件中。
 
 
+## 3.4.1 (2024-06-30)
+
+### Fixes
+- Data: 修复 stickers 表名称为空时错误
+- Words: 修复发信的 action target 为空时的错误
+- API: 评论列表 cache key
+- API: 修复不能给自己会话时的提示文案
+
+
 ## 3.4.0 (2024-06-11)
 
 ### Added
