@@ -4,6 +4,10 @@ aside: false
 
 # Migration
 
+- [Download a new installation package](index.md)
+- Set up the web environment.
+- There is no need to perform installation; simply migrate the database and configuration files.
+
 ## Database
 
 - Backup the database and import it into a new environment.
