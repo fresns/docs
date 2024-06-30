@@ -19,6 +19,7 @@
 ## 使用说明
 
 - [Fresns 客户端频道默认参数配置解说](https://discuss.fresns.org/post/NTBRTFwa)
+- [使用 Octane 将 Fresns 的运行速度提高十倍以上](https://discuss.fresns.org/post/h1yPOkf1)
 
 ## 终端清理缓存
 

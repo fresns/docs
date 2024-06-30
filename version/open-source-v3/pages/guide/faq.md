@@ -19,6 +19,7 @@
 ## Instructions for use
 
 - [Introduction to Fresns Client Channel Default Parameter Configuration](https://discuss.fresns.org/post/NTBRTFwa)
+- [Utilize Octane to increase the running speed of Fresns by more than tenfold](https://discuss.fresns.org/post/h1yPOkf1)
 
 ## Terminal Cache Clear
 
