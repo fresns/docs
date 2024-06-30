@@ -5,31 +5,14 @@ lastUpdated: false
 
 # Become a Fresns Sponsor
 
-Fresns is an `Apache-2.0` licensed open source project and completely free to use. The tremendous amount of effort needed to maintain such a large ecosystem and develop new features for the project is only made sustainable thanks to the generous financial backing of our sponsors.
+Hello! I am `Jevan Tang`, a full-time independent open source developer. I am the creator and project lead of Fresns.
 
-## How to Sponsor
+Fresns is a social network service software, respectively open source, cloud services, distributed deployment scheme, designed for cross-platform and build a universal community products, support flexible and diverse content form, can meet a variety of operational scenarios, in line with the trend of the times, more open and easier to secondary development.
 
-*To be edited*
+The Fresns project adheres to the `Apache-2.0` open source licence, allowing free and open source use on the `Website`, `iOS` and `Android` platforms.
 
-## Tier Benefits
+In the process of maintaining a vast ecosystem and developing new features, sustainable growth can only be achieved through the generous financial support of sponsors.
 
-- **Special**
-    - Exclusive above the fold logo placement on the front page of [fresns.org](https://fresns.org/).
-    - Prominent logo placement in sidebar of all content pages.
-    - Most prominent logo placement in all locations from tiers below.
+[https://github.com/sponsors/fresns](https://github.com/sponsors/fresns)
 
-- **Platinum**
-    - Prominent logo placement on the front page of [fresns.org](https://fresns.org/).
-    - Prominent logo placement in sidebar of all content pages.
-
-- **Gold**
-    - Large logo placement on the front page of [fresns.org](https://fresns.org/).
-    - Logo placement in sidebar of all content pages.
-
-- **Generous Backer**
-    - Free to choose the amount you want to sponsor.
-
-## Contact Us
-
-- Founder: [Jevan Tang](https://github.com/jevantang)
-- Email: [jevan@fresns.org](mailto:jevan@fresns.org)
+Please consider sponsoring me to show your gratitude - like buying me the occasional cup of coffee. If you are concerned about committing to a monthly sponsorship, GitHub also supports one-time donations!
