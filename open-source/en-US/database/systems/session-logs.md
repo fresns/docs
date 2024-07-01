@@ -71,16 +71,18 @@ aside: false
 
 ```json
 {
-    "agent": "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/535.1 (KHTML, like Gecko) Chrome/14.0.835.202 Safari/535.1",
+    "agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36",
     "type": "Desktop", // Desktop, Mobile, Tablet, Bot
-    "mac": "2c:89:dc:71:b6:12",
-    "brand": "Apple",
-    "model": "Mac",
-    "platformName": "Mac",
+    "platformName": "Mac 10.15.7",
+    "platformFamily": "Mac",
     "platformVersion": "10.15.7",
-    "browserName": "Chrome",
-    "browserVersion": "100.0.4896",
+    "browserName": "Chrome 126",
+    "browserFamily": "Chrome",
+    "browserVersion": "126",
     "browserEngine": "Blink",
+    "deviceFamily": "Apple",
+    "deviceModel": "Mac",
+    "deviceMac": "2c:89:dc:71:b6:12",
     "appImei": null,
     "appAndroidId": null,
     "appOaid": null,
