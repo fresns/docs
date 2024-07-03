@@ -20,5 +20,5 @@ hero:
       link: /database/
     - theme: alt
       text: Reference
-      link: /reference/
+      link: /configs/
 ---
