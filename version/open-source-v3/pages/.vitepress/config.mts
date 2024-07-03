@@ -137,12 +137,19 @@ function navbar() {
       activeMatch: `^/(community|contributing)/`,
     },
     {
-      text: 'Developer Docs',
+      text: 'Documentation',
       items: [
-        { text: 'Development Extensions', link: 'https://docs.fresns.com/open-source/' },
-        { text: 'Development Clients', link: 'https://docs.fresns.com/clients/' },
+        { text: 'Client API', link: 'https://docs.fresns.com/clients/api/' },
+        { text: 'Database Directory', link: 'https://docs.fresns.com/open-source/database/' },
         { text: 'Plugin Manager', link: 'https://pm.fresns.org/' },
-        { text: 'Command Word Manager', link: 'https://pm.fresns.org/command-word/' },
+        { text: 'Cmd Word Manager', link: 'https://pm.fresns.org/command-word/' },
+      ],
+    },
+    {
+      text: 'Development',
+      items: [
+        { text: 'Extensions', link: 'https://docs.fresns.com/open-source/' },
+        { text: 'Clients', link: 'https://docs.fresns.com/clients/' },
       ],
     },
   ]
@@ -229,12 +236,19 @@ function navbarForZh() {
       activeMatch: `^/(zh-Hans/community|zh-Hans/contributing)/`,
     },
     {
-      text: '开发者文档',
+      text: '技术文档',
+      items: [
+        { text: '客户端 API', link: 'https://docs.fresns.com/zh-Hans/clients/api/' },
+        { text: '数据库结构', link: 'https://docs.fresns.com/zh-Hans/open-source/database/' },
+        { text: '插件管理器', link: 'https://pm.fresns.org/zh-Hans/' },
+        { text: '命令字管理器', link: 'https://pm.fresns.org/zh-Hans/command-word/' },
+      ],
+    },
+    {
+      text: '应用开发',
       items: [
         { text: '开发扩展插件', link: 'https://docs.fresns.com/zh-Hans/open-source/' },
         { text: '开发客户端', link: 'https://docs.fresns.com/zh-Hans/clients/' },
-        { text: '插件管理器', link: 'https://pm.fresns.org/zh-Hans/' },
-        { text: '命令字管理器', link: 'https://pm.fresns.org/zh-Hans/command-word/' },
       ],
     },
   ]
