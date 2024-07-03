@@ -11,9 +11,9 @@
 | Connects | [connects](./dictionary/connects.md) |
 | Maps | [maps](./dictionary/maps.md) |
 | Continents | [continents](./dictionary/continents.md) |
-| Area Codes | [area_codes](./dictionary/area_codes.md) |
-| Language Codes | [language_codes](./dictionary/language_codes.md) |
-| Currency Codes | [currency_codes](./dictionary/currency_codes.md) |
+| Area Codes | [area_codes](./dictionary/area-codes.md) |
+| Language Codes | [language_codes](./dictionary/language-codes.md) |
+| Currency Codes | [currency_codes](./dictionary/currency-codes.md) |
 | Timezone | [utc](./dictionary/timezone.md), [timezones](./dictionary/timezone.md#timezone-identifiers-to-utc), [timezone_abbreviations](./dictionary/timezone.md#timezone-abbreviations-to-utc) |
 
 ## Fresns Panel

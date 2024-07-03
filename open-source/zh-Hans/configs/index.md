@@ -11,9 +11,9 @@
 | 互联平台编号 | [connects](./dictionary/connects.md) |
 | 地图服务商编号 | [maps](./dictionary/maps.md) |
 | 七大洲编号 | [continents](./dictionary/continents.md) |
-| 地区代码 | [area_codes](./dictionary/area_codes.md) |
-| 语言代码 | [language_codes](./dictionary/language_codes.md) |
-| 货币代码 | [currency_codes](./dictionary/currency_codes.md) |
+| 地区代码 | [area_codes](./dictionary/area-codes.md) |
+| 语言代码 | [language_codes](./dictionary/language-codes.md) |
+| 货币代码 | [currency_codes](./dictionary/currency-codes.md) |
 | 时区选项 | [utc](./dictionary/timezone.md), [timezones](./dictionary/timezone.md#timezone-identifiers-to-utc), [timezone_abbreviations](./dictionary/timezone.md#timezone-abbreviations-to-utc) |
 
 ## 控制面板
