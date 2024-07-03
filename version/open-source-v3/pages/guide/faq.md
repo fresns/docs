@@ -21,6 +21,14 @@
 - [Introduction to Fresns Client Channel Default Parameter Configuration](https://discuss.fresns.org/post/NTBRTFwa)
 - [Utilize Octane to increase the running speed of Fresns by more than tenfold](https://discuss.fresns.org/post/h1yPOkf1)
 
+## Reset Admin Password
+
+- Enter the Fresns root directory in the terminal and execute the following command to reset the system administrator password.
+
+```sh
+php artisan fresns:reset-password
+```
+
 ## Terminal Cache Clear
 
 - If you are unable to manage the cache through the administrator panel, you can clear the cache by executing the following commands in the terminal.

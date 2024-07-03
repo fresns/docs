@@ -141,6 +141,7 @@ function navbar() {
       items: [
         { text: 'Client API', link: 'https://docs.fresns.com/clients/api/' },
         { text: 'Database Directory', link: 'https://docs.fresns.com/open-source/database/' },
+        { text: 'Configurations', link: 'https://docs.fresns.com/open-source/configs/' },
         { text: 'Plugin Manager', link: 'https://pm.fresns.org/' },
         { text: 'Cmd Word Manager', link: 'https://pm.fresns.org/command-word/' },
       ],
@@ -240,6 +241,7 @@ function navbarForZh() {
       items: [
         { text: '客户端 API', link: 'https://docs.fresns.com/zh-Hans/clients/api/' },
         { text: '数据库结构', link: 'https://docs.fresns.com/zh-Hans/open-source/database/' },
+        { text: '功能配置项', link: 'https://docs.fresns.com/zh-Hans/open-source/configs/' },
         { text: '插件管理器', link: 'https://pm.fresns.org/zh-Hans/' },
         { text: '命令字管理器', link: 'https://pm.fresns.org/zh-Hans/command-word/' },
       ],

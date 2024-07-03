@@ -21,6 +21,14 @@
 - [Fresns 客户端频道默认参数配置解说](https://discuss.fresns.org/post/NTBRTFwa)
 - [使用 Octane 将 Fresns 的运行速度提高十倍以上](https://discuss.fresns.org/post/h1yPOkf1)
 
+## 重置管理员密码
+
+- 在终端中进入 Fresns 根目录，执行以下指令重置系统管理员密码
+
+```sh
+php artisan fresns:reset-password
+```
+
 ## 终端清理缓存
 
 - 如果无法登录后台处理缓存，可以在终端中执行以下命令清理缓存。
