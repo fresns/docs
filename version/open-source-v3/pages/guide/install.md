@@ -8,7 +8,7 @@ Before you install Fresns, it's important to check that your server meets the re
 | --- | --- |
 | Web Server<br>`Choose any one` | Nginx<br>Apache<br>Caddy<br>IIS |
 | PHP Version | PHP 8.2 or greater |
-| PHP Extensions | `fileinfo`, `opcache` |
+| PHP Extensions | `mbstring`, `fileinfo`, `opcache` |
 | PHP Functions | `symlink`, `putenv`, `proc_open`, `shell_exec`, `passthru`<br>`pcntl_signal`, `pcntl_alarm`, `pcntl_async_signals` |
 | Package Manager | Composer 2.5 or greater |
 | Database and Version<br>`Choose any one` | MySQL `5.7 ~ latest`<br>MariaDB `10.3 ~ latest`<br>PostgreSQL `11.x ~ latest`<br>SQL Server `2016(13.x) ~ latest`<br>SQLite `3.35 ~ latest` |
