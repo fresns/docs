@@ -29,6 +29,11 @@
 php artisan fresns:reset-password
 ```
 
+## Viewing the Login Path for the Admin Panel
+
+- If you have forgotten the entry point for the admin panel, you can execute the `reset password` command in the terminal. Before entering a new password, the link to the admin panel will be displayed.
+- After viewing the link, you can close the terminal. As long as you do not enter a new password, the command will not reset the password.
+
 ## Terminal Cache Clear
 
 - If you are unable to manage the cache through the administrator panel, you can clear the cache by executing the following commands in the terminal.
