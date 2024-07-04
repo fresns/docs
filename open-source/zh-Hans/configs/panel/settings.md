@@ -6,7 +6,6 @@
 | --- | --- | --- | --- | --- |
 | 面板配置 | panel_configs `path` |  | object |  |
 | 版本类型 | build_type | 1 | number | 主程序升级版本类型 |
-| 开发者模式 | developer_mode |  | object |  |
 
 **面板配置**
 
@@ -21,14 +20,5 @@
         "phone": true,
         "aid": true
     }
-}
-```
-
-**开发者模式**
-
-```json
-{
-    "apiSignature": true, // API Signature
-    "cache": true // 缓存
 }
 ```

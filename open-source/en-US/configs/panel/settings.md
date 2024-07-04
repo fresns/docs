@@ -6,7 +6,6 @@
 | --- | --- | --- | --- | --- |
 | Panel Configs | panel_configs `path` |  | object |  |
 | Version Type | build_type | 1 | number | Main program upgrade version type |
-| Developer Mode | developer_mode |  | object |  |
 
 **Panel Configs**
 
@@ -21,14 +20,5 @@
         "phone": true,
         "aid": true
     }
-}
-```
-
-**Developer Mode**
-
-```json
-{
-    "apiSignature": true,
-    "cache": true
 }
 ```
