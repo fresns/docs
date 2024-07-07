@@ -73,6 +73,7 @@ DB_PREFIX=fs_
 如果你的服务器在中国境内，可以在 `.env` 配置里添加代理加速，为你升级或安装扩展依赖提速。如果服务器在中国境外，无需额外配置。
 
 ```ini
+MIRROR_CODE=CN
 HTTP_PROXY=http://market.fresns.cn:1024
 ```
 
