@@ -43,3 +43,12 @@ fresns/
 - 系统配置文件（必须）
     - `.env`
     - `install.lock`
+
+## 软链接
+
+- 本地存储的文件存放在 `/storage/app/public` 目录，这不是网站目录，所以站点无法访问资源，需要在 `/public` 目录生成软链接。
+- 在终端中进入 Fresns 根目录，执行以下指令生成存储软链接。
+
+```sh
+php artisan storage:link
+```

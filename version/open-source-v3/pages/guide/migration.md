@@ -43,3 +43,12 @@ fresns/
 - System configuration files (mandatory)
     - `.env`
     - `install.lock`
+
+## Symbolic Links
+
+- Files stored locally are placed in the `/storage/app/public` directory, which is not accessible via the website directory. Therefore, a symbolic link needs to be created in the `/public` directory to enable site access to these resources.
+- Enter the Fresns root directory in the terminal and execute the following command to create a storage symbolic link.
+
+```sh
+php artisan storage:link
+```
