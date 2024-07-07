@@ -3,6 +3,19 @@
 Fresns 主程序所有版本更新日志都将记录在这个文件中。
 
 
+## 3.5.0 (2024-07-07)
+
+### Added
+- Console: 新增重置密码指令 `php artisan fresns:reset-password`
+- Console: 新增面板信息查看指令 `php artisan fresns:panel`
+
+### Fixes
+- API: 修复对话消息中对方无法查看文件消息
+- API: 修复 S3 预签名 URL 上传文件类型问题
+- Utilities: 发表评论时，未更新帖子的最后评论时间
+- Utilities: 优化设备信息数据结构
+
+
 ## 3.4.1 (2024-06-30)
 
 ### Fixes

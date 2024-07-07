@@ -3,6 +3,19 @@
 All notable changes to this project will be documented in this file.
 
 
+## 3.5.0 (07/07/2024)
+
+### Added
+- Console: Added reset password command `php artisan fresns:reset-password`
+- Console: Added panel information view command `php artisan fresns:panel`
+
+### Fixes
+- API: Fixed an issue where the other party could not view file messages in conversation messages.
+- API: Fixed a file type issue with S3 pre-signed URL uploads.
+- Utilities: Fixed the issue where the last comment time of the post was not updated when posting a comment.
+- Utilities: Optimized the data structure of device information.
+
+
 ## 3.4.1 (06/30/2024)
 
 ### Fixes
