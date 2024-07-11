@@ -81,7 +81,7 @@
     - `it_posts` configuration, whether to output users who liked my posts
 - If `uidOrUsername` is the logged-in user themselves, the above configuration is invalid, and data is directly output, indicating that the switch is ignored when viewing their own content.
 - If it is a non-public group post and not a member of the group (not following the group), it will not be output.
-- Posts of blocked objects (users, groups, hashtags, posts) will not be output.
+- Posts of blocked objects (users, groups, hashtags, geotags, posts) will not be output.
 
 | `contentType` parameter (PascalCase) | Description |
 | --- | --- |

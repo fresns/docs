@@ -143,7 +143,7 @@ $wordBody = [
 
 ## Subscribe View
 
-Trigger subscription notifications when viewing users, groups, topics, posts, comments.
+Trigger subscription notifications when viewing users, groups, hashtags, geotags, posts, comments.
 
 ```php
 // Create
