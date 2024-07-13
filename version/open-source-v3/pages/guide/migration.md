@@ -40,6 +40,7 @@ fresns/
     - `public/apple-app-site-association`
 - Local storage files (mandatory, such as local attachments and plugin configuration upload files)
     - `storage/app/public`
+    - `storage/app/public/temp-files` The directory is for temporary files and does not need to be migrated; it can be deleted directly.
 - System configuration files (mandatory)
     - `.env`
     - `install.lock`

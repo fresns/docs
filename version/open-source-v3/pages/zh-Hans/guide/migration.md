@@ -40,6 +40,7 @@ fresns/
     - `public/apple-app-site-association`
 - 本地存储文件（必须，如本地附件和插件配置上传的文件）
     - `storage/app/public`
+    - `storage/app/public/temp-files` 该文件夹为临时文件，不必迁移，可直接删除
 - 系统配置文件（必须）
     - `.env`
     - `install.lock`
