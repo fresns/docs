@@ -9,11 +9,11 @@
 | --- | --- | --- | --- |
 | type | Number | YES | 账号类型：1.AID / 2.邮箱 / 3.手机号 / 4.互联平台 |
 | account | String | NO/YES | 邮箱或手机号专用：邮箱地址 / 手机号码（`type=2 或 3` 时必填） |
-| countryCode | Number | NO/YES | 手机号专用：国际区号（`type=3` 时必填） |
+| countryCallingCode | Number | NO/YES | 手机号专用：国际区号（`type=3` 时必填） |
 | connectInfo | Array | NO/YES | 互联平台专用：平台信息（`type=4` 时必填） |
 | connectEmail | String | NO | 互联平台专用：平台邮箱（`type=4` 时选填） |
 | connectPhone | Number | NO | 互联平台专用：平台手机号码（`type=4` 时选填） |
-| connectCountryCode | Number | NO | 互联平台专用：平台手机号码国际区号（`type=4` 时选填） |
+| connectCountryCallingCode | Number | NO | 互联平台专用：平台手机号码国际区号（`type=4` 时选填） |
 | password | String | NO | 登录密码 |
 | birthday | String | NO | 生日，格式为 Y-m-d |
 | createUser | Boolean | NO | 是否同步创建一个用户 |
@@ -97,7 +97,7 @@
 | --- | --- | --- | --- |
 | type | Number | YES | 账号类型：1.自动识别 / 2.AID / 3.邮箱 / 4.手机号 / 5.互联平台 |
 | account | String | NO/YES | AID / 邮箱地址 / 手机号码（`type=1, 2, 3, 4` 时必填） |
-| countryCode | Number | NO/YES | 手机号专用：国际区号（`type=4` 时必填） |
+| countryCallingCode | Number | NO/YES | 手机号专用：国际区号（`type=4` 时必填） |
 | password | String | NO | 以密码校验专用 |
 | verifyCode | String | NO | 以验证码校验专用（命令字 [checkCode](basic.md#核对验证码) 查验） |
 | connectPlatformId | Number | NO | 以互联平台校验专用 |
@@ -136,7 +136,7 @@
 | moreInfo | String | NO | `account_connects->more_info` |
 | connectEmail | String | NO | 平台邮箱（账号表邮箱为空时将存入，有值则忽略） |
 | connectPhone | Number | NO | 平台手机号码（账号表手机号为空时将存入，有值则忽略） |
-| connectCountryCode | Number | NO | 平台手机号码国际区号（账号表手机号为空时将存入，有值则忽略） |
+| connectCountryCallingCode | Number | NO | 平台手机号码国际区号（账号表手机号为空时将存入，有值则忽略） |
 
 ## 断开账号互联
 

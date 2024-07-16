@@ -171,7 +171,7 @@
 | templateId | Number | YES | [验证码模板 ID](../../configs/panel/send.md#验证码模板设置) |
 | langTag | String | NO | 语言标签，留空则使用默认语言标签 |
 | account | String | YES | 账号（邮箱或手机号） |
-| countryCode | Number | NO | 国际区号（手机号专用） |
+| countryCallingCode | Number | NO | 国际区号（手机号专用） |
 
 ## 核对验证码
 
@@ -183,7 +183,7 @@
 | type | Number | YES | 类型：1.邮件验证码 / 2.短信验证码 |
 | templateId | Number | YES | [验证码模板 ID](../../configs/panel/send.md#验证码模板设置) |
 | account | String | YES | 账号（邮箱或手机号） |
-| countryCode | Number | NO | 国际区号（手机号专用） |
+| countryCallingCode | Number | NO | 国际区号（手机号专用） |
 | verifyCode | String | YES | 验证码 |
 
 ## 更新或创建回调数据

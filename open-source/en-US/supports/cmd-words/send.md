@@ -24,7 +24,7 @@
 ```
 | Parameter Name | Type | Required | Description |
 | --- | --- | --- | --- |
-| countryCode | Number | **required** | International area code |
+| countryCallingCode | Number | **required** | International area code |
 | phoneNumber | Number | **required** | Phone number |
 | signName | String | *optional* | SMS signature name |
 | templateCode | String | **required** | Template parameter |

@@ -9,10 +9,9 @@ aside: false
 | id | bigint *UNSIGNED* | 账号主键 ID |  | NO | 自动递增 |
 | aid | varchar(32) | 账号 ID |  | NO | **唯一值** |
 | type | tinyint *UNSIGNED* | 类型 | 3 | NO | 1.超级管理员<br>2.普通管理员<br>3.普通用户 |
-| country_code | varchar(8) | 国际区号 |  | YES | 格式无加号，例如中国是 86，美国是 1 |
-| pure_phone | varchar(128) | 没有区号的手机号 |  | YES | 不带国际区号 |
-| phone | varchar(128) | 带区号的手机号 |  | YES | **唯一值** 带国际区号（区号无加号） |
 | email | varchar(128) | 邮箱 |  | YES | **唯一值** |
+| phone | varchar(128) | 带区号的手机号 |  | YES | **唯一值** 带国际区号（区号无加号） |
+| country_calling_code | varchar(8) | 国际区号 |  | YES | 格式无加号，例如中国是 86，美国是 1 |
 | password | varchar(64) | 密码 |  | YES | 加密存储 |
 | birthday | timestamp | 生日 |  | YES |  |
 | last_login_at | timestamp | 最后一次登录时间 |  | NO |  |

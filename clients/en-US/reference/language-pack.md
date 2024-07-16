@@ -216,7 +216,7 @@
 | newPhone | New Phone |
 | currentEmail | Current Email |
 | currentPhone | Current Phone Number |
-| countryCode | Country Code |
+| countryCallingCode | Country Calling Code |
 | currentEmailDesc | The email address currently used for the account |
 | currentPhoneDesc | Phone number currently used for the account |
 | emailEditDesc | Once you have switched to a new email address, you can log in with your new email address and current password. |

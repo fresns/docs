@@ -9,10 +9,9 @@ aside: false
 | id | bigint *UNSIGNED* | Account ID |  | NO | Auto Increment |
 | aid | varchar(32) | Account ID |  | NO | **Unique** |
 | type | tinyint *UNSIGNED* | Type | 3 | NO | 1.Super Administrator<br>2.Regular Administrator<br>3.Regular User |
-| country_code | varchar(8) | International Area Code |  | YES | Format without plus sign, e.g., Singapore is 65, USA is 1 |
-| pure_phone | varchar(128) | Phone Number without Area Code |  | YES | Without international area code |
-| phone | varchar(128) | Phone Number with Area Code |  | YES | **Unique** With international area code (no plus sign in the area code) |
 | email | varchar(128) | Email |  | YES | **Unique** |
+| phone | varchar(128) | Phone Number with Area Code |  | YES | **Unique** |
+| country_calling_code | varchar(8) | International Area Code |  | YES | Format without plus sign, e.g., Singapore is 65, USA is 1 |
 | password | varchar(64) | Password |  | YES | Encrypted storage |
 | birthday | date | Birthday |  | YES |  |
 | last_login_at | timestamp | Last Login Time |  | NO |  |

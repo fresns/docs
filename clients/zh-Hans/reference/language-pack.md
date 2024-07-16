@@ -216,7 +216,7 @@
 | newPhone | 新手机号 |
 | currentEmail | 当前邮箱 |
 | currentPhone | 当前手机号 |
-| countryCode | 国际区号 |
+| countryCallingCode | 国际区号 |
 | currentEmailDesc | 账户现在绑定的邮箱 |
 | currentPhoneDesc | 账户现在绑定的手机号 |
 | emailEditDesc | 换绑新邮箱之后，可以用新的邮箱及当前密码登录 |

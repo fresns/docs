@@ -9,11 +9,11 @@
 | --- | --- | --- | --- |
 | type | Number | **required** | Account type: 1.AID / 2.Email / 3.Phone number / 4.Connect platform |
 | account | String | *optional* | Email or phone number specific: Email address / Phone number (required when `type=2 or 3`) |
-| countryCode | Number | *optional* | Phone number specific: International area code (required when `type=3`) |
+| countryCallingCode | Number | *optional* | Phone number specific: International area code (required when `type=3`) |
 | connectInfo | Array | *optional* | Connect platform specific: Platform information (required when `type=4`) |
 | connectEmail | String | *optional* | Connect platform specific: platform email (optional when `type=4`) |
 | connectPhone | Number | *optional* | Connect platform specific: platform phone number (optional when `type=4`) |
-| connectCountryCode | Number | *optional* | Connect platform specific: phone international area code (optional when `type=4`) |
+| connectCountryCallingCode | Number | *optional* | Connect platform specific: phone international area code (optional when `type=4`) |
 | password | String | *optional* | Login password |
 | birthday | String | *optional* | Birthday, format is Y-m-d |
 | createUser | Boolean | *optional* | Whether to create a user synchronously |
@@ -97,7 +97,7 @@
 | --- | --- | --- | --- |
 | type | Number | **required** | Account type: 1.Auto 2.AID / 3.Email / 4.Phone number / 5.Connect platform |
 | account | String | *optional* | AID / Email address / Phone number |
-| countryCode | Number | *optional* | Phone number specific: International area code (required when `type=4`) |
+| countryCallingCode | Number | *optional* | Phone number specific: International area code (required when `type=4`) |
 | password | String | *optional* | For password verification specific |
 | verifyCode | String | *optional* | For verification code specific (check using [checkCode](basic.md#checkcode) command) |
 | connectPlatformId | Number | *optional* | For connect platform specific |
@@ -136,7 +136,7 @@
 | moreInfo | String | *optional* | `account_connects->more_info` |
 | connectEmail | String | *optional* | Platform email (will be stored when the account table email is empty, ignored if there is a value) |
 | connectPhone | Number | *optional* | Platform phone number (will be stored when the account table phone number is empty, ignored if there is a value) |
-| connectCountryCode | Number | *optional* | International area code for platform phone number (will be stored when the account table phone number is empty, ignored if there is a value) |
+| connectCountryCallingCode | Number | *optional* | International area code for platform phone number (will be stored when the account table phone number is empty, ignored if there is a value) |
 
 ## disconnectAccountConnect
 
