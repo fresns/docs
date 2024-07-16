@@ -7,8 +7,8 @@ aside: false
 ```json
 {
     "aid": "String / Account ID",
-    "hasPhone": "Boolean / Has Phone",
     "hasEmail": "Boolean / Has Email",
+    "hasPhone": "Boolean / Has Phone",
     "hasPassword": "Boolean / Has Password",
     "birthday": "String / Birthday",
     "kycVerified": "Boolean / KYC Verified",

@@ -7,8 +7,8 @@ aside: false
 ```json
 {
     "aid": "String / 账号 ID",
-    "hasPhone": "Boolean / 账号是否有手机号",
     "hasEmail": "Boolean / 账号是否有邮箱",
+    "hasPhone": "Boolean / 账号是否有手机号",
     "hasPassword": "Boolean / 账号是否有密码",
     "birthday": "String / 生日",
     "kycVerified": "Boolean / 实名认证状态",
