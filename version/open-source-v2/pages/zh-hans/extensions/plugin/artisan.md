@@ -184,7 +184,7 @@ fresns make:middleware CanReadPostsMiddleware
 
 ### 生成插件 DTO
 
-Generate a [DTO(data transfer object)](https://pm.fresns.org/zh-Hans/dto/) for specified plugin.
+Generate a [DTO(data transfer object)](https://pm.fresns.org/zh-hans/dto/) for specified plugin.
 
 ```php
 fresns make:dto VerifySignDTO
@@ -313,7 +313,7 @@ fresns make:sql-provider
 
 ### 生成插件命令字提供者
 
-Generate a [cmd word service provider](https://pm.fresns.org/zh-Hans/command-word/) for specified plugin.
+Generate a [cmd word service provider](https://pm.fresns.org/zh-hans/command-word/) for specified plugin.
 
 ```php
 fresns make:cmdword-provider

@@ -14,13 +14,13 @@ hero:
   actions:
     - theme: brand
       text: 开始使用
-      link: /zh-Hans/guide/install.md
+      link: /zh-hans/guide/install.md
     - theme: alt
       text: 官方社区 ↗
-      link: https://discuss.fresns.org/zh-Hans
+      link: https://discuss.fresns.org/
     - theme: alt
       text: 应用市场 ↗
-      link: https://marketplace.fresns.com/zh-Hans/open-source
+      link: https://marketplace.fresns.com/zh-hans/open-source
 
 features:
   - icon: 🎉
