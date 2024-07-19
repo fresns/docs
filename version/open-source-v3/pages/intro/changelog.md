@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 
 
+## 3.5.1 (07/20/2024)
+
+### Fixes
+- Data: Correct the spelling error in the international dialing code from `countryCode` to `countryCallingCode`.
+    - Affected commands `sendCode`, `checkCode`, `sendSms`, `createAccount`, `verifyAccount`
+    - Affected table `accounts`
+
+
 ## 3.5.0 (07/07/2024)
 
 ### Added

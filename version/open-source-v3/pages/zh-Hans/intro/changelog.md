@@ -3,6 +3,14 @@
 Fresns 主程序所有版本更新日志都将记录在这个文件中。
 
 
+## 3.5.1 (2024-07-20)
+
+### Fixes
+- Data: 修正国际电话区号的单词错误，由 `countryCode` 修改为 `countryCallingCode`
+    - 受影响的命令字 `sendCode`, `checkCode`, `sendSms`, `createAccount`, `verifyAccount`
+    - 受影响的数据表 `accounts`
+
+
 ## 3.5.0 (2024-07-07)
 
 ### Added
