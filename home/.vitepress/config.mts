@@ -49,7 +49,7 @@ export default defineConfig({
     },
     'zh-hans': {
       label: '简体中文',
-      lang: 'zh-hans',
+      lang: 'zh-Hans',
       title: 'Fresns 文档',
       description: 'Fresns 开发者文档，在 Fresns 旅程中随时为你提供帮助。',
 
