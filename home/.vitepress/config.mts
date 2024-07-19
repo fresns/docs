@@ -47,9 +47,9 @@ export default defineConfig({
       label: 'English',
       lang: 'en-US',
     },
-    'zh-Hans': {
+    'zh-hans': {
       label: '简体中文',
-      lang: 'zh-Hans',
+      lang: 'zh-hans',
       title: 'Fresns 文档',
       description: 'Fresns 开发者文档，在 Fresns 旅程中随时为你提供帮助。',
 
@@ -72,8 +72,8 @@ export default defineConfig({
             text: '生态系统',
             items: [
               { text: '交流社区', link: 'https://discuss.fresns.org/' },
-              { text: '应用市场', link: 'https://marketplace.fresns.com/zh-Hans/' },
-              { text: '开发者中心', link: 'https://developer.fresns.com/zh-Hans/' },
+              { text: '应用市场', link: 'https://marketplace.fresns.com/zh-hans/' },
+              { text: '开发者中心', link: 'https://developer.fresns.com/zh-hans/' },
             ],
           }
         ],

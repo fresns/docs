@@ -11,11 +11,11 @@ export default defineComponent({
       '/open-source/': 'Open Source',
       '/clients/': 'Clients',
 
-      '/zh-Hans/': '🚀 开始',
-      '/zh-Hans/oauth/': 'OAuth 应用',
-      '/zh-Hans/cloud/': '云服务应用',
-      '/zh-Hans/open-source/': '开源扩展',
-      '/zh-Hans/clients/': '客户端',
+      '/zh-hans/': '🚀 开始',
+      '/zh-hans/oauth/': 'OAuth 应用',
+      '/zh-hans/cloud/': '云服务应用',
+      '/zh-hans/open-source/': '开源扩展',
+      '/zh-hans/clients/': '客户端',
     };
 
     const baseLinks = {
@@ -25,18 +25,18 @@ export default defineComponent({
         { text: 'Open Source', href: '/open-source/' },
         { text: 'Clients', href: '/clients/' },
       ],
-      '/zh-Hans/': [
-        { text: 'OAuth 应用', href: '/zh-Hans/oauth/' },
-        { text: '云服务应用', href: '/zh-Hans/cloud/' },
-        { text: '开源扩展', href: '/zh-Hans/open-source/' },
-        { text: '客户端', href: '/zh-Hans/clients/' },
+      '/zh-hans/': [
+        { text: 'OAuth 应用', href: '/zh-hans/oauth/' },
+        { text: '云服务应用', href: '/zh-hans/cloud/' },
+        { text: '开源扩展', href: '/zh-hans/open-source/' },
+        { text: '客户端', href: '/zh-hans/clients/' },
       ],
     };
 
     const route = useRoute();
 
     const currentLanguagePrefix = computed(() => {
-      return route.path.startsWith('/zh-Hans/') ? '/zh-Hans/' : '/';
+      return route.path.startsWith('/zh-hans/') ? '/zh-hans/' : '/';
     });
 
     const currentPathPrefix = computed(() => {
