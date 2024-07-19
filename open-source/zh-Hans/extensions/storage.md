@@ -35,7 +35,7 @@ FileHelper::fresnsFileStoragePath($fileType, $usageType);
 > 由于 Fresns API 和编辑器采用的是基础表单上传模式，对于大文件会产生超时中断的风险，存储插件可以提供上传页面，在插件页集成 JS-SDK 实现大文件的分片和断点上传。
 
 - 路径参考 `/s3-storage/upload?accessToken={accessToken}&uploadInfo={uploadInfo}&postMessageKey={postMessageKey}`
-- [路径中变量名介绍](https://docs.fresns.com/zh-Hans/clients/reference/callback/variables.html)
+- [路径中变量名介绍](https://docs.fresns.com/zh-hans/clients/reference/callback/variables.html)
 
 ## 音视频被动功能
 

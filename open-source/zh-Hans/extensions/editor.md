@@ -76,5 +76,5 @@ ConfigUtility::getPublishConfigByType($userId, $type, $langTag, $timezone);
 ## 内容规律
 
 - **艾特**：以 @ 符号开头，空格结尾。
-- **话题**：根据配置 [editor.toolbar.hashtag.format](https://docs.fresns.com/zh-Hans/clients/api/editor/configs.html)，值为 1 则是 # 符号开头，空格结尾；值为 2，则是 # 符号开头，# 符号结尾，双 # 号中间可以有单个空格（不能连续空格），但是符号后面或前面不支持有空格。
+- **话题**：根据配置 [editor.toolbar.hashtag.format](https://docs.fresns.com/zh-hans/clients/api/editor/configs.html)，值为 1 则是 # 符号开头，空格结尾；值为 2，则是 # 符号开头，# 符号结尾，双 # 号中间可以有单个空格（不能连续空格），但是符号后面或前面不支持有空格。
 - **表情符**：以 [ 符号开头，] 符号结尾，中间不能有空格。

@@ -12,16 +12,16 @@
         <div class="FsMenu">
           <!-- items -->
           <div class="FsMenuLink">
-            <a class="link" href="https://docs.fresns.com/zh-Hans/oauth/" target="_top">OAuth 应用</a>
+            <a class="link" href="https://docs.fresns.com/zh-hans/oauth/" target="_top">OAuth 应用</a>
           </div>
           <div class="FsMenuLink">
-            <a class="link" href="https://docs.fresns.com/zh-Hans/cloud/" target="_top">云服务应用</a>
+            <a class="link" href="https://docs.fresns.com/zh-hans/cloud/" target="_top">云服务应用</a>
           </div>
           <div class="FsMenuLink">
-            <a class="link active" href="https://docs.fresns.com/zh-Hans/open-source/" target="_top">开源扩展</a>
+            <a class="link active" href="https://docs.fresns.com/zh-hans/open-source/" target="_top">开源扩展</a>
           </div>
           <div class="FsMenuLink">
-            <a class="link" href="https://docs.fresns.com/zh-Hans/clients/" target="_top">客户端</a>
+            <a class="link" href="https://docs.fresns.com/zh-hans/clients/" target="_top">客户端</a>
           </div>
           <!-- items end -->
         </div>

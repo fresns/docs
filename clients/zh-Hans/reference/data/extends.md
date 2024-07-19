@@ -17,7 +17,7 @@ aside: false
 }
 ```
 
-- 参考资料: [archives](https://docs.fresns.com/zh-Hans/open-source/database/extends/archives.html)
+- 参考资料: [archives](https://docs.fresns.com/zh-hans/open-source/database/extends/archives.html)
 
 | `valueType` | `value` Json Type | Value Reference | Form Type |
 | --- | --- | --- | --- |
@@ -64,7 +64,7 @@ aside: false
 }
 ```
 
-- 参考资料: [operations](https://docs.fresns.com/zh-Hans/open-source/database/extends/operations.html#code-用途编码)
+- 参考资料: [operations](https://docs.fresns.com/zh-hans/open-source/database/extends/operations.html#code-用途编码)
 
 ## 扩展内容信息
 
@@ -127,7 +127,7 @@ aside: false
 }
 ```
 
-- 参考资料: [extends](https://docs.fresns.com/zh-Hans/open-source/database/extends/extends.html)
+- 参考资料: [extends](https://docs.fresns.com/zh-hans/open-source/database/extends/extends.html)
 
 ## 扩展功能信息
 
@@ -142,4 +142,4 @@ aside: false
 }
 ```
 
-- 参考资料: [app_usages](https://docs.fresns.com/zh-Hans/open-source/database/extends/app_usages.html)
+- 参考资料: [app_usages](https://docs.fresns.com/zh-hans/open-source/database/extends/app_usages.html)

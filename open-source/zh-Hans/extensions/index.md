@@ -1,6 +1,6 @@
 # 扩展 Fresns
 
-Fresns 扩展是基于 [Plugin Manager](https://pm.fresns.org/zh-Hans/) 扩展包，以模块化插件的方式增强并丰富 Fresns 主程序功能。
+Fresns 扩展是基于 [Plugin Manager](https://pm.fresns.org/zh-hans/) 扩展包，以模块化插件的方式增强并丰富 Fresns 主程序功能。
 
 ## 目录结构
 

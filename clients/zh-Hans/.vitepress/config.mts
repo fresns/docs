@@ -1,7 +1,7 @@
 import { defineConfig } from 'vitepress'
 
 export default defineConfig({
-  base: '/zh-Hans/clients/',
+  base: '/zh-hans/clients/',
   lang: 'zh-Hans',
   title: 'Fresns 客户端开发文档',
   titleTemplate: false,
@@ -44,8 +44,8 @@ export default defineConfig({
           text: '生态系统',
           items: [
             { text: '交流社区', link: 'https://discuss.fresns.org/' },
-            { text: '应用市场', link: 'https://marketplace.fresns.com/zh-Hans/' },
-            { text: '开发者中心', link: 'https://developer.fresns.com/zh-Hans/' },
+            { text: '应用市场', link: 'https://marketplace.fresns.com/zh-hans/' },
+            { text: '开发者中心', link: 'https://developer.fresns.com/zh-hans/' },
           ],
         }
     ],

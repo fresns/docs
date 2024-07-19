@@ -237,4 +237,4 @@
 | --- | --- | --- | --- |
 | aid | Number | YES | `accounts->aid` |
 
-- 物理删除涉及内容很多，所以删除功能使用队列执行，请配置 [Fresns 队列](https://fresns.org/zh-Hans/guide/configuration.html#%E9%98%9F%E5%88%97)。
+- 物理删除涉及内容很多，所以删除功能使用队列执行，请配置 [Fresns 队列](https://fresns.org/zh-hans/guide/configuration.html#%E9%98%9F%E5%88%97)。

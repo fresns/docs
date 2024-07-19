@@ -4,8 +4,8 @@
 
 ## 路径配置
 
-- 插件路径配置在 [plugin.json](https://docs.fresns.com/zh-Hans/open-source/extensions/index.html#plugin-json-配置信息) 文件 `accessPath` 参数中。
-- 插件安装后，会读取并存入 [apps->access_path](https://docs.fresns.com/zh-Hans/open-source/database/apps/apps.html) 数据表字段中。
+- 插件路径配置在 [plugin.json](https://docs.fresns.com/zh-hans/open-source/extensions/index.html#plugin-json-配置信息) 文件 `accessPath` 参数中。
+- 插件安装后，会读取并存入 [apps->access_path](https://docs.fresns.com/zh-hans/open-source/database/apps/apps.html) 数据表字段中。
 
 ## 变量列表
 
@@ -14,7 +14,7 @@
 | `{accessToken}` | 访问令牌，并且实现一键登录<br>[生成信息](access-token.md) |
 | `{postMessageKey}` | `postMessage` 回调消息标识名 |
 | `{redirectUrl}` | 重定向网址，参数值 `urlencode()`<br>网址中支持 `{loginToken}` 变量名，用于 URL 方式接收登录凭证信息 |
-| `{connectPlatformId}` | [互联平台 ID](https://docs.fresns.com/zh-Hans/open-source/configs/dictionary/connects.html) |
+| `{connectPlatformId}` | [互联平台 ID](https://docs.fresns.com/zh-hans/open-source/configs/dictionary/connects.html) |
 | `{aid}` | 账号 ID |
 | `{uid}` | 用户 ID |
 | `{rid}` | 角色 ID |

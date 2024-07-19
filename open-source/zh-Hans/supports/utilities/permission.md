@@ -81,7 +81,7 @@ PermissionUtility::checkUserConversationPerm($receiveUserId, $authUserId, $langT
 
 ::: details 查看结果
 - 有权则输出为 `0`
-- 无权则输出对应的 [Error Code](https://docs.fresns.com/zh-Hans/clients/reference/error-codes.html)
+- 无权则输出对应的 [Error Code](https://docs.fresns.com/zh-hans/clients/reference/error-codes.html)
 :::
 
 ## 判断用户是否为小组管理员

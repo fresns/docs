@@ -6,7 +6,7 @@
 \FresnsCmdWord::plugin('Fresns')->checkHeaders();
 ```
 
-- 参数值见 [API 请求标头](https://docs.fresns.com/zh-Hans/clients/reference/headers.html)
+- 参数值见 [API 请求标头](https://docs.fresns.com/zh-hans/clients/reference/headers.html)
 
 ::: details 结果示例
 ```json
@@ -58,7 +58,7 @@
 ```
 | 参数名 | 类型 | 是否必传 | 说明 |
 | --- | --- | --- | --- |
-| accessToken | String | YES | 参见：[为插件生成访问令牌](https://docs.fresns.com/zh-Hans/clients/reference/callback/access-token.html) |
+| accessToken | String | YES | 参见：[为插件生成访问令牌](https://docs.fresns.com/zh-hans/clients/reference/callback/access-token.html) |
 | accountLogin | Boolean | NO | 是否要求必须登录账号，留空则不要求 |
 | userLogin | Boolean | NO | 是否要求必须登录用户，留空则不要求 |
 
@@ -104,7 +104,7 @@
 | --- | --- | --- | --- |
 | ip | String | YES | 支持 IPv4 和 IPv6 |
 
-- 输出结果同 [IP 信息接口](https://docs.fresns.com/zh-Hans/clients/api/common/ip-info.html)
+- 输出结果同 [IP 信息接口](https://docs.fresns.com/zh-hans/clients/api/common/ip-info.html)
 
 ## 创建交互日志
 

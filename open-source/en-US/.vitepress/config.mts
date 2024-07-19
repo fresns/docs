@@ -25,10 +25,10 @@ export default defineConfig({
       label: 'English',
       lang: 'en-US',
     },
-    'zh-Hans': {
+    'zh-hans': {
       label: '简体中文',
       lang: 'zh-Hans',
-      link: 'https://docs.fresns.com/zh-Hans/open-source/'
+      link: 'https://docs.fresns.com/zh-hans/open-source/'
     }
   },
 

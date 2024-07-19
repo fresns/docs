@@ -1,7 +1,7 @@
 import { defineConfig } from 'vitepress'
 
 export default defineConfig({
-  base: '/zh-Hans/open-source/',
+  base: '/zh-hans/open-source/',
   lang: 'zh-Hans',
   title: 'Fresns 扩展插件开发文档',
   titleTemplate: false,
@@ -16,7 +16,7 @@ export default defineConfig({
     ['meta', { property: 'og:type', content: 'website' }],
     ['meta', { property: 'og:title', content: 'Fresns' }],
     ['meta', { property: 'og:description', content: '一款免费开源的社交网络服务软件' }],
-    ['meta', { property: 'og:url', content: 'https://docs.fresns.com/zh-Hans/open-source/' }],
+    ['meta', { property: 'og:url', content: 'https://docs.fresns.com/zh-hans/open-source/' }],
     ['meta', { property: 'og:image', content: 'https://assets.fresns.com/images/wikis/open-graph/open-source-zh-hans.jpg' }],
   ],
 
@@ -53,8 +53,8 @@ export default defineConfig({
         text: '生态系统',
         items: [
           { text: '交流社区', link: 'https://discuss.fresns.org/' },
-          { text: '应用市场', link: 'https://marketplace.fresns.com/zh-Hans/' },
-          { text: '开发者中心', link: 'https://developer.fresns.com/zh-Hans/' },
+          { text: '应用市场', link: 'https://marketplace.fresns.com/zh-hans/' },
+          { text: '开发者中心', link: 'https://developer.fresns.com/zh-hans/' },
         ],
       }
     ],
@@ -116,9 +116,9 @@ function sidebarExtensions() {
         {
           text: '文档参考',
           items: [
-            { text: '插件开发指令', link: 'https://pm.fresns.org/zh-Hans/artisan/started.html' },
-            { text: '命令字开发', link: 'https://pm.fresns.org/zh-Hans/command-word/development.html' },
-            { text: '命令字使用', link: 'https://pm.fresns.org/zh-Hans/command-word/usage.html' },
+            { text: '插件开发指令', link: 'https://pm.fresns.org/zh-hans/artisan/started.html' },
+            { text: '命令字开发', link: 'https://pm.fresns.org/zh-hans/command-word/development.html' },
+            { text: '命令字使用', link: 'https://pm.fresns.org/zh-hans/command-word/usage.html' },
           ]
         },
         {

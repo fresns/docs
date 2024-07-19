@@ -18,7 +18,7 @@ Fresns 虽小，五脏俱全。事实上 Fresns 自带的大多数功能，都�
 
 **功能插件**：增强并丰富主程序功能的扩展，例如扩展一个频道、自定义注册流程或编辑器、增强管理功能、内容安全检查、控制面板等等。
 
-**客户端**：基于主程序 [API](https://docs.fresns.com/zh-Hans/clients/api/) 开发的应用程序，可以是独立网站、App、微信小程序、快应用等各类形式。如果主程序 API 不满足需求，可以安装或开发扩展插件来新增 API，或者管理客户端的相关配置。
+**客户端**：基于主程序 [API](https://docs.fresns.com/zh-hans/clients/api/) 开发的应用程序，可以是独立网站、App、微信小程序、快应用等各类形式。如果主程序 API 不满足需求，可以安装或开发扩展插件来新增 API，或者管理客户端的相关配置。
 
 ## 目录结构
 
@@ -70,6 +70,6 @@ Fresns 主程序 Composer 依赖库关系。
 
 | 名称 | 介绍 |
 | --- | --- |
-| [插件管理器](https://pm.fresns.org/zh-Hans/) | 插件的开发和运行：安装、启用、停用、卸载。 |
-| [命令字管理器](https://pm.fresns.org/zh-Hans/command-word/) | 帮助插件与插件之间通讯协作。 |
-| [DTO](https://pm.fresns.org/zh-Hans/dto/) | 数据传输对象扩展包，用于便捷的生成数据规则和检查传输数据。 |
+| [插件管理器](https://pm.fresns.org/zh-hans/) | 插件的开发和运行：安装、启用、停用、卸载。 |
+| [命令字管理器](https://pm.fresns.org/zh-hans/command-word/) | 帮助插件与插件之间通讯协作。 |
+| [DTO](https://pm.fresns.org/zh-hans/dto/) | 数据传输对象扩展包，用于便捷的生成数据规则和检查传输数据。 |

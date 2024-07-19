@@ -28,7 +28,7 @@ export default defineConfig({
     en: {
       label: '简体中文',
       lang: 'zh-Hans',
-      link: 'https://docs.fresns.com/zh-Hans/clients/'
+      link: 'https://docs.fresns.com/zh-hans/clients/'
     }
   },
 
