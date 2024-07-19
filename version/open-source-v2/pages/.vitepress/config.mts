@@ -141,7 +141,8 @@ function navbar() {
                 { text: 'Models', link: '/supports/models/' },
             ],
             activeMatch: '/supports/',
-        }
+        },
+        { text: 'Fresns 3.x', link: 'https://fresns.org/' }
     ]
 }
 
@@ -711,7 +712,8 @@ function navbarForZh() {
                 { text: '数据模型', link: '/zh-hans/supports/models/' },
             ],
             activeMatch: '/zh-hans/supports/',
-        }
+        },
+        { text: 'Fresns 3.x', link: 'https://fresns.org/' }
     ]
 }
 
