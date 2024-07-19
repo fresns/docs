@@ -20,7 +20,7 @@ All the pages you see at present fall into the category of official website. The
 - Code Repository: [https://github.com/fresns/docs/](https://github.com/fresns/docs/)
 - Language Files Directory: [/version/open-source-v3/](https://github.com/fresns/docs/tree/main/version/open-source-v3)
     - `en-US` [https://fresns.org](https://fresns.org)
-    - `zh-Hans` [https://fresns.org/zh-Hans/](https://fresns.org/zh-Hans/)
+    - `zh-Hans` [https://fresns.org/zh-hans/](https://fresns.org/zh-hans/)
 
 ## Control Panel
 

@@ -12,8 +12,8 @@ Fresns 是一款免费开源的社交网络服务软件，专为跨平台而打�
 
 ::: tip 说明：
 - 使用者请阅读[安装教程](../guide/install.md)和[运营文档](operating.md)；
-- 扩展插件开发者请阅读[扩展文档](https://docs.fresns.com/zh-Hans/open-source/extensions/)和[数据字典](https://docs.fresns.com/zh-Hans/open-source/database/)；
-- 客户端开发者（网站端、小程序、App）请阅读 [API 文档](https://docs.fresns.com/zh-Hans/clients/api/)。
+- 扩展插件开发者请阅读[扩展文档](https://docs.fresns.com/zh-hans/open-source/extensions/)和[数据字典](https://docs.fresns.com/zh-hans/open-source/database/)；
+- 客户端开发者（网站端、小程序、App）请阅读 [API 文档](https://docs.fresns.com/zh-hans/clients/api/)。
 :::
 
 ## 程序结构
@@ -30,7 +30,7 @@ Fresns 是一款免费开源的社交网络服务软件，专为跨平台而打�
 | ![ForumQ](https://assets.fresns.com/images/wikis/previews/ForumQ.png) | ![ThemeFrame](https://assets.fresns.com/images/wikis/previews/ThemeFrame.png) |
 | ![MomentsWeChat](https://assets.fresns.com/images/wikis/previews/MomentsWeChat-square.png) | ![WeChat](https://assets.fresns.com/images/wikis/previews/WeChat-square.png) |
 
-- 查看更多: [https://marketplace.fresns.com/clients](https://marketplace.fresns.com/zh-Hans/clients)
+- 查看更多: [https://marketplace.fresns.com/clients](https://marketplace.fresns.com/zh-hans/clients)
 
 ## 许可协议
 

@@ -51,7 +51,7 @@ php artisan fresns:install
 :::
 
 - 默认后台路径 `网址/fresns/admin`
-- Fresns 是前后端分离，主程序只是服务端，如需客户端，请至[应用市场](https://marketplace.fresns.com/zh-Hans/clients)挑选安装。
+- Fresns 是前后端分离，主程序只是服务端，如需客户端，请至[应用市场](https://marketplace.fresns.com/zh-hans/clients)挑选安装。
 
 ## URL 重写
 

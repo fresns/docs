@@ -20,7 +20,7 @@ Fresns 从数据流层面支持多语言，无需修改主程序、插件和客�
 - 代码仓库：[https://github.com/fresns/docs/](https://github.com/fresns/docs/)
 - 语言文件目录：[/version/open-source-v3/](https://github.com/fresns/docs/tree/main/version/open-source-v3)
     - `en-US` [https://fresns.org](https://fresns.org)
-    - `zh-Hans` [https://fresns.org/zh-Hans/](https://fresns.org/zh-Hans/)
+    - `zh-Hans` [https://fresns.org/zh-hans/](https://fresns.org/zh-hans/)
 
 ## 控制面板
 
@@ -31,7 +31,7 @@ Fresns 从数据流层面支持多语言，无需修改主程序、插件和客�
 
 ## 客户端
 
-以「语言标签」为键名，存储在数据库配置表当中的语言包，客户端通过接口获取后解析到客户本地使用（参见 [多语言设置](https://docs.fresns.com/zh-Hans/open-source/reference/panel/languages.html) 功能）。语言标识名参见配置表 [language_packs](https://docs.fresns.com/zh-Hans/clients/reference/language-pack.html) 键值，这是 Fresns 初始化基础语言标识名，运营者可以根据实际客户端情况进行新增自定义语言标识名。如果不理解语言标识名是什么意思，可以参考 `zh-Hans` 简体中文。
+以「语言标签」为键名，存储在数据库配置表当中的语言包，客户端通过接口获取后解析到客户本地使用（参见 [多语言设置](https://docs.fresns.com/zh-hans/open-source/reference/panel/languages.html) 功能）。语言标识名参见配置表 [language_packs](https://docs.fresns.com/zh-hans/clients/reference/language-pack.html) 键值，这是 Fresns 初始化基础语言标识名，运营者可以根据实际客户端情况进行新增自定义语言标识名。如果不理解语言标识名是什么意思，可以参考 `zh-Hans` 简体中文。
 
 | 语言代码 | 地区代码 | 语言名称 | 地区名称 | 语言标签 | 中文名 |
 | --- | --- | --- | --- | --- | --- |

@@ -29,7 +29,7 @@ export default defineConfig({
       provider: 'local',
       options: {
         locales: {
-          'zh-Hans': {
+          'zh-hans': {
             translations: {
               button: {
                 buttonText: '搜索文档',
@@ -76,7 +76,7 @@ export default defineConfig({
       label: 'English',
       lang: 'en-US'
     },
-    'zh-Hans': {
+    'zh-hans': {
       label: '简体中文',
       lang: 'zh-Hans',
       title: 'Fresns 开源程序',
@@ -87,7 +87,7 @@ export default defineConfig({
         ['meta', { property: 'og:type', content: 'website' }],
         ['meta', { property: 'og:title', content: 'Fresns' }],
         ['meta', { property: 'og:description', content: '一款免费开源的社交网络服务软件' }],
-        ['meta', { property: 'og:url', content: 'https://fresns.org/zh-Hans/' }],
+        ['meta', { property: 'og:url', content: 'https://fresns.org/zh-hans/' }],
         ['meta', { property: 'og:image', content: 'https://assets.fresns.com/images/wikis/open-graph/open-source-zh-hans.jpg' }],
       ],
 
@@ -95,11 +95,11 @@ export default defineConfig({
         nav: navbarForZh(),
 
         sidebar: {
-          '/zh-Hans/intro/': sidebarIntroForZh(),
-          '/zh-Hans/guide/': sidebarGuideForZh(),
-          '/zh-Hans/config/': sidebarGuideForZh(),
-          '/zh-Hans/community/': sidebarCommunityForZh(),
-          '/zh-Hans/contributing/': sidebarCommunityForZh(),
+          '/zh-hans/intro/': sidebarIntroForZh(),
+          '/zh-hans/guide/': sidebarGuideForZh(),
+          '/zh-hans/config/': sidebarGuideForZh(),
+          '/zh-hans/community/': sidebarCommunityForZh(),
+          '/zh-hans/contributing/': sidebarCommunityForZh(),
         },
 
         outlineTitle: '本页导览',
@@ -221,36 +221,36 @@ function sidebarCommunity() {
 // Navbar
 function navbarForZh() {
   return [
-    { text: '首页', link: '/zh-Hans/' },
-    { text: '介绍', link: '/zh-Hans/intro/', activeMatch: '/zh-Hans/intro/' },
-    { text: '使用指南', link: '/zh-Hans/guide/', activeMatch: `^/(zh-Hans/guide|zh-Hans/config)/` },
+    { text: '首页', link: '/zh-hans/' },
+    { text: '介绍', link: '/zh-hans/intro/', activeMatch: '/zh-hans/intro/' },
+    { text: '使用指南', link: '/zh-hans/guide/', activeMatch: `^/(zh-hans/guide|zh-hans/config)/` },
     {
       text: '生态系统',
       items: [
-        { text: '团队', link: '/zh-Hans/community/teams.md' },
-        { text: '加入我们', link: '/zh-Hans/community/join.md' },
-        { text: '赞助我们', link: '/zh-Hans/community/sponsor.md' },
-        { text: '贡献指南', link: '/zh-Hans/contributing/' },
-        { text: '互动交流', link: 'https://discuss.fresns.org/zh-Hans' },
-        { text: '应用市场', link: 'https://marketplace.fresns.com/zh-Hans/open-source' },
+        { text: '团队', link: '/zh-hans/community/teams.md' },
+        { text: '加入我们', link: '/zh-hans/community/join.md' },
+        { text: '赞助我们', link: '/zh-hans/community/sponsor.md' },
+        { text: '贡献指南', link: '/zh-hans/contributing/' },
+        { text: '互动交流', link: 'https://discuss.fresns.org/zh-hans' },
+        { text: '应用市场', link: 'https://marketplace.fresns.com/zh-hans/open-source' },
       ],
-      activeMatch: `^/(zh-Hans/community|zh-Hans/contributing)/`,
+      activeMatch: `^/(zh-hans/community|zh-hans/contributing)/`,
     },
     {
       text: '技术文档',
       items: [
-        { text: '客户端 API', link: 'https://docs.fresns.com/zh-Hans/clients/api/' },
-        { text: '数据库结构', link: 'https://docs.fresns.com/zh-Hans/open-source/database/' },
-        { text: '功能配置项', link: 'https://docs.fresns.com/zh-Hans/open-source/configs/' },
-        { text: '插件管理器', link: 'https://pm.fresns.org/zh-Hans/' },
-        { text: '命令字管理器', link: 'https://pm.fresns.org/zh-Hans/command-word/' },
+        { text: '客户端 API', link: 'https://docs.fresns.com/zh-hans/clients/api/' },
+        { text: '数据库结构', link: 'https://docs.fresns.com/zh-hans/open-source/database/' },
+        { text: '功能配置项', link: 'https://docs.fresns.com/zh-hans/open-source/configs/' },
+        { text: '插件管理器', link: 'https://pm.fresns.org/zh-hans/' },
+        { text: '命令字管理器', link: 'https://pm.fresns.org/zh-hans/command-word/' },
       ],
     },
     {
       text: '应用开发',
       items: [
-        { text: '开发扩展插件', link: 'https://docs.fresns.com/zh-Hans/open-source/' },
-        { text: '开发客户端', link: 'https://docs.fresns.com/zh-Hans/clients/' },
+        { text: '开发扩展插件', link: 'https://docs.fresns.com/zh-hans/open-source/' },
+        { text: '开发客户端', link: 'https://docs.fresns.com/zh-hans/clients/' },
       ],
     },
   ]
@@ -262,11 +262,11 @@ function sidebarIntroForZh() {
     {
       text: '介绍',
       items: [
-        { text: '关于 Fresns', link: '/zh-Hans/intro/' },
-        { text: '功能特征', link: '/zh-Hans/intro/features.md' },
-        { text: '运营方向', link: '/zh-Hans/intro/operating.md' },
-        { text: '目录结构', link: '/zh-Hans/intro/directory.md' },
-        { text: '更新记录', link: '/zh-Hans/intro/changelog.md' },
+        { text: '关于 Fresns', link: '/zh-hans/intro/' },
+        { text: '功能特征', link: '/zh-hans/intro/features.md' },
+        { text: '运营方向', link: '/zh-hans/intro/operating.md' },
+        { text: '目录结构', link: '/zh-hans/intro/directory.md' },
+        { text: '更新记录', link: '/zh-hans/intro/changelog.md' },
       ]
     }
   ]
@@ -278,20 +278,20 @@ function sidebarGuideForZh() {
     {
       text: '指南',
       items: [
-        { text: '下载', link: '/zh-Hans/guide/' },
-        { text: '安装', link: '/zh-Hans/guide/install.md' },
-        { text: '配置', link: '/zh-Hans/guide/configs.md' },
-        { text: '升级', link: '/zh-Hans/guide/upgrade.md' },
-        { text: '迁移', link: '/zh-Hans/guide/migration.md' },
-        { text: '常见问题', link: '/zh-Hans/guide/faq.md' },
-        { text: '提交反馈', link: '/zh-Hans/guide/feedback.md' },
+        { text: '下载', link: '/zh-hans/guide/' },
+        { text: '安装', link: '/zh-hans/guide/install.md' },
+        { text: '配置', link: '/zh-hans/guide/configs.md' },
+        { text: '升级', link: '/zh-hans/guide/upgrade.md' },
+        { text: '迁移', link: '/zh-hans/guide/migration.md' },
+        { text: '常见问题', link: '/zh-hans/guide/faq.md' },
+        { text: '提交反馈', link: '/zh-hans/guide/feedback.md' },
       ]
     },
     {
       text: '环境配置教程',
       items: [
-        { text: '宝塔面板', link: '/zh-Hans/config/baota.md' },
-        { text: '1Panel', link: '/zh-Hans/config/1panel.md' },
+        { text: '宝塔面板', link: '/zh-hans/config/baota.md' },
+        { text: '1Panel', link: '/zh-hans/config/1panel.md' },
       ]
     }
   ]
@@ -303,23 +303,23 @@ function sidebarCommunityForZh() {
     {
       text: '关于',
       items: [
-        { text: '团队', link: '/zh-Hans/community/teams.md' },
-        { text: '加入我们', link: '/zh-Hans/community/join.md' },
-        { text: '赞助我们', link: '/zh-Hans/community/sponsor.md' },
+        { text: '团队', link: '/zh-hans/community/teams.md' },
+        { text: '加入我们', link: '/zh-hans/community/join.md' },
+        { text: '赞助我们', link: '/zh-hans/community/sponsor.md' },
       ]
     },
     {
       text: '贡献',
       items: [
-        { text: '贡献指南', link: '/zh-Hans/contributing/' },
-        { text: '翻译文档', link: '/zh-Hans/contributing/translations.md' },
+        { text: '贡献指南', link: '/zh-hans/contributing/' },
+        { text: '翻译文档', link: '/zh-hans/contributing/translations.md' },
       ]
     },
     {
       text: '互动',
       items: [
-        { text: '互动交流', link: 'https://discuss.fresns.org/zh-Hans' },
-        { text: '应用市场', link: 'https://marketplace.fresns.com/zh-Hans/open-source' },
+        { text: '互动交流', link: 'https://discuss.fresns.org/zh-hans' },
+        { text: '应用市场', link: 'https://marketplace.fresns.com/zh-hans/open-source' },
       ]
     },
   ]

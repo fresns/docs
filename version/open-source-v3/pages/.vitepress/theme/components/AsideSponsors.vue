@@ -19,7 +19,7 @@ const sponsors = computed(() => {
 
 const link = {
   '/': '/community/sponsor.html',
-  'zh-Hans': '/zh-Hans/community/sponsor.html',
+  'zh-hans': '/zh-hans/community/sponsor.html',
 }
 
 const linkInfo = {
@@ -28,7 +28,7 @@ const linkInfo = {
     'extra-info-top': 'Support for development',
     'extra-info-bottom': 'Become a sponsor',
   },
-  'zh-Hans': {
+  'zh-hans': {
     'heading': '赞助 Fresns 发展',
     'extra-info-top': '助力生态可持续发展',
     'extra-info-bottom': '成为赞助者',
@@ -37,7 +37,7 @@ const linkInfo = {
 
 const route = useRoute();
 const currentLanguagePrefix = computed(() => {
-  return route.path.startsWith('/zh-Hans/') ? 'zh-Hans' : '/';
+  return route.path.startsWith('/zh-hans/') ? 'zh-hans' : '/';
 });
 
 console.log(currentLanguagePrefix);

@@ -5,7 +5,7 @@ lastUpdated: false
 
 # 加入 Fresns
 
-本文档是为想要加入 Fresns 开源组织的开发者提供的。如果你只是使用者，请阅读[指南](../guide/)文档；如果你是扩展插件的开发者，请阅读[扩展](https://docs.fresns.com/zh-Hans/open-source/extensions/)文档；如果你是移动应用开发者，请阅读 [API](https://docs.fresns.com/zh-Hans/clients/api/) 文档。
+本文档是为想要加入 Fresns 开源组织的开发者提供的。如果你只是使用者，请阅读[指南](../guide/)文档；如果你是扩展插件的开发者，请阅读[扩展](https://docs.fresns.com/zh-hans/open-source/extensions/)文档；如果你是移动应用开发者，请阅读 [API](https://docs.fresns.com/zh-hans/clients/api/) 文档。
 
 Fresns 的开源社区正在急速增长中，如果你认可我们的开源软件，有兴趣为 Fresns 的发展做贡献，竭诚欢迎加入我们一起开发完善。无论是[报告错误](../guide/feedback.md)或是 Pull Request 开发，那怕是修改一个错别字也是对我们莫大的帮助。
 

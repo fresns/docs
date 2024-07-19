@@ -201,15 +201,15 @@ php artisan queue:work
 
 ## 时区配置介绍
 
-Fresns 是一款支持跨时区服务的软件，为了保证时间值的一致性，软件中采用 [UTC](https://docs.fresns.com/zh-Hans/open-source/reference/timezone.md) 时区标准。
+Fresns 是一款支持跨时区服务的软件，为了保证时间值的一致性，软件中采用 [UTC](https://docs.fresns.com/zh-hans/open-source/reference/timezone.md) 时区标准。
 
 ### 录入时间
 
-- 由于框架的原因，配置文件 `.env APP_TIMEZONE` 时区选项只能以 [PHP 时区函数](https://docs.fresns.com/zh-Hans/open-source/reference/timezone.md#时区地名-utc-映射关系) 为准，时区函数是地区命名。
+- 由于框架的原因，配置文件 `.env APP_TIMEZONE` 时区选项只能以 [PHP 时区函数](https://docs.fresns.com/zh-hans/open-source/reference/timezone.md#时区地名-utc-映射关系) 为准，时区函数是地区命名。
 - 由框架入库的时间，会处理成 `.env APP_TIMEZONE` 配置的时区时间；绕过框架入库的时间，会由数据库处理成数据库时区时间（数据库时区通常是数据库所在服务器的系统时区）；所以为了保证时间的准确性，配置文件中时区一定要和数据库保持一致。
 - Fresns 安装功能会根据你选择的 UTC 时区随机配对一个 PHP 时区函数，如果不符合你所在地区，请自行在 `.env` 文件中修改。比如北京、上海、新加坡、西澳大利亚，都是 UTC+8 时区，配置其中随意一个地区都符合标准。
 - 登录后台，可以在「仪表盘」系统信息中查看你的数据库所属 UTC 时区。
 
 ### 输出时间
 
-- Fresns 会自动判断数据库的 [UTC](https://docs.fresns.com/zh-Hans/open-source/reference/timezone.md) 时区，然后根据客户端要求输出时间。
+- Fresns 会自动判断数据库的 [UTC](https://docs.fresns.com/zh-hans/open-source/reference/timezone.md) 时区，然后根据客户端要求输出时间。
