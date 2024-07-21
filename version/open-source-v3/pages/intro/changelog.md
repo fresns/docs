@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file.
 
 
+## 3.5.2 (07/21/2024)
+
+### Fixes
+- Account: After modifying the data, the user cache was not cleared.
+- API: Check the issue with the number of times a user downloads files.
+
+
 ## 3.5.1 (07/20/2024)
 
 ### Fixes
