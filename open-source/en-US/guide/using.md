@@ -8,5 +8,6 @@ Fresns open source program official website: [https://fresns.org](https://fresns
 - [Installation](https://fresns.org/guide/install.html)
 - [Configuration](https://fresns.org/guide/configuration.html)
 - [Updating](https://fresns.org/guide/upgrade.html)
+- [Migration](https://fresns.org/guide/migration.html)
 - [FAQ](https://fresns.org/guide/faq.html)
 - [Reporting Bugs](https://fresns.org/guide/feedback.html)
