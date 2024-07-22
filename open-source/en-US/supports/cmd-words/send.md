@@ -25,7 +25,7 @@
 | Parameter Name | Type | Required | Description |
 | --- | --- | --- | --- |
 | countryCallingCode | Number | **required** | International area code |
-| phoneNumber | Number | **required** | Phone number |
+| purePhone | Number | **required** | Pure Phone number |
 | signName | String | *optional* | SMS signature name |
 | templateCode | String | **required** | Template parameter |
 | templateParam | Object | *optional* | Variable parameters |

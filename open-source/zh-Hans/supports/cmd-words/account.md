@@ -12,7 +12,7 @@
 | countryCallingCode | Number | NO/YES | 手机号专用：国际区号（`type=3` 时必填） |
 | connectInfo | Array | NO/YES | 互联平台专用：平台信息（`type=4` 时必填） |
 | connectEmail | String | NO | 互联平台专用：平台邮箱（`type=4` 时选填） |
-| connectPhone | Number | NO | 互联平台专用：平台手机号码（`type=4` 时选填） |
+| connectPurePhone | Number | NO | 互联平台专用：平台手机号码（`type=4` 时选填） |
 | connectCountryCallingCode | Number | NO | 互联平台专用：平台手机号码国际区号（`type=4` 时选填） |
 | password | String | NO | 登录密码 |
 | birthday | String | NO | 生日，格式为 Y-m-d |
@@ -135,7 +135,7 @@
 | connectAvatar | String | NO | `account_connects->connect_avatar` |
 | moreInfo | String | NO | `account_connects->more_info` |
 | connectEmail | String | NO | 平台邮箱（账号表邮箱为空时将存入，有值则忽略） |
-| connectPhone | Number | NO | 平台手机号码（账号表手机号为空时将存入，有值则忽略） |
+| connectPurePhone | Number | NO | 平台手机号码（账号表手机号为空时将存入，有值则忽略） |
 | connectCountryCallingCode | Number | NO | 平台手机号码国际区号（账号表手机号为空时将存入，有值则忽略） |
 
 ## 断开账号互联

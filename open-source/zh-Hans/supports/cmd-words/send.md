@@ -25,7 +25,7 @@
 | 参数名 | 类型 | 是否必传 | 说明 |
 | --- | --- | --- | --- |
 | countryCallingCode | Number | YES | 国际区号 |
-| phoneNumber | Number | YES | 手机号 |
+| purePhone | Number | YES | 手机号 |
 | signName | String | NO | 短信签名名称 |
 | templateCode | String | YES | 模板参数 |
 | templateParam | Object | NO | 变量参数 |
