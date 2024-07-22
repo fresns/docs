@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 
 
+## 3.5.3 (07/22/2024)
+
+### Fixes
+- Account: Issue with recognizing pure phone numbers and country calling code.
+
+
 ## 3.5.2 (07/21/2024)
 
 ### Fixes
@@ -13,7 +19,7 @@ All notable changes to this project will be documented in this file.
 ## 3.5.1 (07/20/2024)
 
 ### Fixes
-- Data: Correct the spelling error in the international dialing code from `countryCode` to `countryCallingCode`.
+- Data: Correct the spelling error in the country calling code from `countryCode` to `countryCallingCode`.
     - Affected commands `sendCode`, `checkCode`, `sendSms`, `createAccount`, `verifyAccount`
     - Affected table `accounts`
 
