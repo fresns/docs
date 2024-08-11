@@ -504,7 +504,7 @@
 | contentWarningTip | The author flagged this file as showing sensitive content. |
 | contentAllList | All |
 | contentNewList | New |
-| contentHotList | Hot |
+| contentPopularList | Popular |
 | contentBrowse | Browse |
 | contentDigest | Digest |
 | contentSticky | Sticky |

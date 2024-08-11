@@ -496,7 +496,7 @@
 | contentWarningTip | 作者将此文件标记为显示敏感内容。 |
 | contentAllList | 所有 |
 | contentNewList | 最新 |
-| contentHotList | 热门 |
+| contentPopularList | 热门 |
 | contentBrowse | 浏览 |
 | contentDigest | 精华 |
 | contentSticky | 置顶 |
