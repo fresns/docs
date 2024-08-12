@@ -3,6 +3,19 @@
 All notable changes to this project will be documented in this file.
 
 
+## 3.6.0 (08/12/2024)
+
+### Added
+- Panel: Added asynchronous monitoring of plugin runtime status to the dashboard.
+
+### Fixes
+- API: Corrected an issue where the wrong user ID was used when viewing user interaction data.
+
+### Changed
+- Account: Refactored the User Auth functionality in the account login process.
+- Models: Renamed constants in the `AccountConnect` for the connected platforms.
+
+
 ## 3.5.3 (07/22/2024)
 
 ### Fixes

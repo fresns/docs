@@ -23,7 +23,7 @@ If you need to confirm the executed command during the upgrade, enter `yes` to c
 | Start Version | Latest Version | Upgrade Files | Description |
 | --- | --- | --- | --- |
 | `3.0.0` | `3.4.0` | [Download upgrade files](https://assets.fresns.com/packages/fresns-upgrade-3.4.0.zip) | Upgrade from any 3.0.0 version to 3.4.0 |
-| `3.4.0` | `3.5.3` | [Download upgrade files](https://assets.fresns.com/packages/fresns-upgrade-3.5.3.zip) | Upgrade from any 3.4.0 version to 3.5.3 |
+| `3.4.0` | `3.6.0` | [Download upgrade files](https://assets.fresns.com/packages/fresns-upgrade-3.6.0.zip) | Upgrade from any 3.4.0 version to 3.6.0 |
 
 - 1. Download the upgrade file, unzip it, and overwrite the files in the corresponding folder (before overwriting, please make a copy of the backup of the old version of the project to avoid losing the old version information due to improper overwriting).
 

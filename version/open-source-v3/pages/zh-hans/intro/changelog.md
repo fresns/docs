@@ -3,6 +3,19 @@
 Fresns 主程序所有版本更新日志都将记录在这个文件中。
 
 
+## 3.6.0 (2024-08-12)
+
+### Added
+- Panel: 仪表盘添加异步检测插件运行状态
+
+### Fixes
+- API: 查看用户互动数据时用户 ID 使用错误
+
+### Changed
+- Account: 重构账户登录的 User Auth 功能
+- Models: 变更 `AccountConnect` 互联平台的常量名
+
+
 ## 3.5.3 (2024-07-22)
 
 ### Fixes
