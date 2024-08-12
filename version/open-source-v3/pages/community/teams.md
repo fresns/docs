@@ -13,6 +13,7 @@ const members = [
         title: 'Creator',
         links: [
             { icon: 'github', link: 'https://github.com/jevantang' },
+            { icon: 'twitter', link: 'https://x.com/JevanTang' },
         ]
     },
     {
