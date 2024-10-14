@@ -19,7 +19,7 @@ aside: false
 | map_id | tinyint *UNSIGNED* | Maps | 1 | NO | [Maps](../../configs/dictionary/maps.md) |
 | map_longitude | decimal(12,8) | Map - Longitude |  | NO | Decimal, range -180~180, negative for west longitude |
 | map_latitude | decimal(12,8) | Map - Latitude |  | NO | Decimal, range -90~90, negative for south latitude |
-| map_location | geometry | Map Location |  | NO | `longitude`, `latitude`<br>`SRID 4326` |
+| map_location | geometry | Map Location |  | NO | `latitude`, `longitude`<br>`SRID 4326` |
 | district | json | District |  | YES | **Multilingual** |
 | address | json | Address |  | YES | **Multilingual** |
 | more_info | json | More Info |  | YES |  |
