@@ -11,7 +11,7 @@ Fresns 是一款基于 PHP 编程语言和关系型数据库开发的社交社�
 | PHP 扩展支持 | `mbstring`, `fileinfo`, `opcache` |
 | PHP 函数启用 | `symlink`, `putenv`, `proc_open`, `shell_exec`, `passthru`<br>`pcntl_signal`, `pcntl_alarm`, `pcntl_async_signals` |
 | 软件包管理器 | Composer 2.5 或更高版本 |
-| 数据库和版本<br>`任选一种` | MySQL `5.7 ~ latest`<br>MariaDB `10.3 ~ latest`<br>PostgreSQL `11.x ~ latest`<br>SQL Server `2016(13.x) ~ latest`<br>SQLite `3.35 ~ latest` |
+| 数据库和版本<br>`任选一种` | MySQL `5.7 ~ latest`<br>MariaDB `10.3 ~ latest`<br>PostgreSQL `11.x ~ latest`<br>SQL Server `2017(14.x) ~ latest`<br>SQLite `3.35 ~ latest` |
 
 ::: details PHP 函数用途介绍
 | 函数 | 用途 | 禁用操作 |
