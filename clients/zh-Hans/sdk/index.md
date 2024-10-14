@@ -7,7 +7,7 @@
 
 ## API Collection
 
-- [API Collection by Postman](https://www.postman.com/fresns/workspace/fresns-api)
+- [API Collection by Postman](https://www.postman.com/fresns/fresns-api/overview)
 - [API Collection by Bruno](https://github.com/fresns/api-collection-by-bruno)
 
 ## SDK Repository
