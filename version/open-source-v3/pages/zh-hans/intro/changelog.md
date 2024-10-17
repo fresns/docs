@@ -3,6 +3,17 @@
 Fresns 主程序所有版本更新日志都将记录在这个文件中。
 
 
+## 3.6.1 (2024-10-18)
+
+### Fixes
+- API: 下载对话附件错误
+- API: 修复 MySQL 经纬度字段问题
+- API: 修复写错的字段名
+- Account: 修复中件间顺序
+- Words: 修复钱包 update state
+- Task Scheduling: 修复框架引用
+
+
 ## 3.6.0 (2024-08-12)
 
 ### Added

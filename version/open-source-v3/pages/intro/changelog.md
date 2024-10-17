@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 
 
+## 3.6.1 (10/18/2024)
+
+### Fixes
+- API: Download conversation attachment error
+- API: Fix MySQL Latitude and Longitude Field Issue
+- API: Fix misspelled field names
+- Account: Fix middleware order
+- Words: Fix wallet update state
+- Task Scheduling: Fix framework references
+
+
 ## 3.6.0 (08/12/2024)
 
 ### Added
