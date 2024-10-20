@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 
 
+## 3.6.2 (10/21/2024)
+
+### Fixes
+- API: File download link
+
+
 ## 3.6.1 (10/18/2024)
 
 ### Fixes
