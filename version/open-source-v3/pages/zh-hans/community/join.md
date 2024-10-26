@@ -9,7 +9,7 @@ lastUpdated: false
 
 Fresns 的开源社区正在急速增长中，如果你认可我们的开源软件，有兴趣为 Fresns 的发展做贡献，竭诚欢迎加入我们一起开发完善。无论是[报告错误](../guide/feedback.md)或是 Pull Request 开发，那怕是修改一个错别字也是对我们莫大的帮助。
 
-- 项目发起人: [唐杰](https://tangjie.me/about)
+- 项目发起人: [唐杰](https://tangjie.me/mycard)
 - 唐杰邮箱: [jevan@fresns.org](mailto:jevan@fresns.org)
 - *如有意向，可通过邮件联系唐杰。加入我们之后，会与大家一起在内部开发者群中交流。*
 

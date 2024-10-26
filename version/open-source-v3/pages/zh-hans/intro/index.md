@@ -43,6 +43,6 @@ Fresns 遵循 [Apache-2.0](https://github.com/fresns/fresns/blob/main/LICENSE) �
 
 ## 联系我们
 
-- 项目发起人：[唐杰](https://tangjie.me/about)
+- 项目发起人：[唐杰](https://tangjie.me/mycard)
 - 联系邮箱：[support@fresns.org](mailto:support@fresns.org)
 - 官方社区：[https://discuss.fresns.org](https://discuss.fresns.org/)
