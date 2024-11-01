@@ -19,8 +19,8 @@ const members = [
                 link: 'https://tangjie.me'
             },
             { icon: 'github', link: 'https://github.com/jevantang' },
-            { icon: 'twitter', link: 'https://x.com/pmtangjie' },
-            { icon: 'youtube', link: 'https://www.youtube.com/@pmtangjie' },
+            { icon: 'twitter', link: 'https://x.com/TangJieSG' },
+            { icon: 'youtube', link: 'https://www.youtube.com/@TangJieSG' },
         ]
     },
     {
