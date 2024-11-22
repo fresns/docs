@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file.
 
 
+## 3.6.3 (11/22/2024)
+
+### Fixes
+- API: User profile cannot be updated empty bio
+- API: Function failed, use verification code to log in, automatically generate account when not registered
+
+
 ## 3.6.2 (10/21/2024)
 
 ### Fixes
