@@ -3,6 +3,17 @@
 Fresns 主程序所有版本更新日志都将记录在这个文件中。
 
 
+## 3.7.0 (2025-01-06)
+
+### Added
+- Panel: 视图添加 Persian 语言 by @ahmadreza1383 in #41 
+- Helpers: 为时区调整实现了十进制到小时：毫米的转换 by @ahmadreza1383 in #43 
+
+### Fixes
+- API: 配置键名不存在时报错
+- Words: 修改评论后，返回 `cid` 错误
+
+
 ## 3.6.3 (2024-11-22)
 
 ### Fixes

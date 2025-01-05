@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 
 
+## 3.7.0 (01/06/2025)
+
+### Added
+- Panel: Added `Persian` language by @ahmadreza1383 in #41 
+- Helpers: Implemented decimal-to-hh:mm conversion for timezone adjustments by @ahmadreza1383 in #43 
+
+### Fixes
+- API: Raise an error when the configuration key name does not exist.
+- Words: Return a `cid` error after modifying the comment.
+
+
 ## 3.6.3 (11/22/2024)
 
 ### Fixes
