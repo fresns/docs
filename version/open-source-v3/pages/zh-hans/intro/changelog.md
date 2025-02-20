@@ -3,6 +3,14 @@
 Fresns 主程序所有版本更新日志都将记录在这个文件中。
 
 
+## 3.7.1 (2025-02-20)
+
+### Fixes
+- Panel: 视图优化
+- Models: 话题和地理位置的 getCoverUrl 方法
+- Framework: Preserve X-Xsrf-Token header from .htaccess
+
+
 ## 3.7.0 (2025-01-06)
 
 ### Added

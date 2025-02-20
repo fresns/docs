@@ -24,6 +24,7 @@ php artisan fresns:upgrade
 | --- | --- | --- | --- |
 | `3.0.0` | `3.4.0` | [下载升级包 .zip](https://assets.fresns.com/packages/fresns-upgrade-3.4.0.zip) | 从 3.0.0 任意版本升级到 3.4.0 |
 | `3.4.0` | `3.7.0` | [下载升级包 .zip](https://assets.fresns.com/packages/fresns-upgrade-3.7.0.zip) | 从 3.4.0 任意版本升级到 3.7.0 |
+| `3.7.0` | `3.7.1` | [下载升级包 .zip](https://assets.fresns.com/packages/fresns-upgrade-3.7.1.zip) | 从 3.7.0 任意版本升级到 3.7.1 |
 
 - 1、下载升级包，解压并覆盖对应文件夹的文件（覆盖前，请先复制一份旧版项目的备份，避免覆盖不当导致旧版信息丢失）。
 

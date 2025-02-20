@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 
 
+## 3.7.1 (02/20/2025)
+
+### Fixes
+- Panel: Copyright year and view optimization
+- Models: Hashtag and Geotag `getCoverUrl` Method
+- Framework: Preserve X-Xsrf-Token header from .htaccess
+
+
 ## 3.7.0 (01/06/2025)
 
 ### Added
