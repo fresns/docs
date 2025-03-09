@@ -342,6 +342,17 @@ function sidebarSdk() {
         { text: 'App Extensions', link: '/sdk/theme/extensions.md' },
         { text: 'Theme Settings', link: '/sdk/theme/settings.md' },
       ]
+    },
+    {
+      text: 'WeChat Mini Program',
+      items: [
+        { text: 'Introduction', link: '/sdk/wechat/' },
+        { text: 'API', link: '/sdk/wechat/api.md' },
+        { text: 'Functions', link: '/sdk/wechat/functions.md' },
+        { text: 'App Extensions', link: '/sdk/wechat/extensions.md' },
+        { text: 'Editor', link: '/sdk/wechat/editor.md' },
+        { text: 'Toolkit', link: '/sdk/wechat/toolkit.md' },
+      ]
     }
   ]
 }

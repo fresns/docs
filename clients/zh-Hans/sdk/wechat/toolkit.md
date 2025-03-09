@@ -85,5 +85,5 @@ isEmpty('value');
 ## 比较两个语义化版本号
 
 ```js
-versionCompare('版本号', '版本号');
+versionCompare('版本号A', '版本号B');
 ```
