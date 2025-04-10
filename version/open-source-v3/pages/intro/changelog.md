@@ -16,7 +16,7 @@ All notable changes to this project will be documented in this file.
 
 ### BREAKING CHANGES
 
-- Upgrading to Laravel 12.x overwrites the `composer.json` file, causing previously installed extensions to be overwritten and necessitating the reinstallation of all plugins.
+- Upgrading to Laravel 12.x will overwrite the `composer.json` file, resulting in the removal of your `website engine` and `any manually installed` extension packages. You will need to reinstall these packages manually.
 
 
 ## 3.7.1 (02/20/2025)
