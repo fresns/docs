@@ -14,6 +14,10 @@ Fresns 主程序所有版本更新日志都将记录在这个文件中。
 - Framework: 升级到 Bootstrap v5.3.5
 - Framework: 升级到 Laravel 12.x
 
+### BREAKING CHANGES
+
+- 由于升级 Laravel 12.x 会覆盖 `composer.json` 文件，导致过去的扩展项被覆盖，需要将所有插件都重新安装一次。
+
 
 ## 3.7.1 (2025-02-20)
 

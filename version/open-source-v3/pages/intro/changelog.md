@@ -14,6 +14,10 @@ All notable changes to this project will be documented in this file.
 - Framework: Upgraded Bootstrap v5.3.5
 - Framework: Upgraded Laravel 12.x
 
+### BREAKING CHANGES
+
+- Upgrading to Laravel 12.x overwrites the `composer.json` file, causing previously installed extensions to be overwritten and necessitating the reinstallation of all plugins.
+
 
 ## 3.7.1 (02/20/2025)
 
