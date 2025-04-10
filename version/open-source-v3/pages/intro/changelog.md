@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 
 
+## 3.8.0 (04/10/2025)
+
+### Fixes
+- Account: Fixed the issue related to incorrect verification code types being sent.
+- API: Fixed the issue where the comments detail page did not display all comments correctly.
+- Utilities: Fixed the issue of the composer command having an empty program name.
+
+### Changed
+- Framework: Upgraded Bootstrap v5.3.5
+- Framework: Upgraded Laravel 12.x
+
+
 ## 3.7.1 (02/20/2025)
 
 ### Fixes

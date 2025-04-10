@@ -3,6 +3,18 @@
 Fresns 主程序所有版本更新日志都将记录在这个文件中。
 
 
+## 3.8.0 (2025-04-10)
+
+### Fixes
+- Account: 修复发送验证码类型问题
+- API: 修复评论详情页列表未输出全部评论内容的问题
+- Utilities: 修复 composer 指令程序名为空问题
+
+### Changed
+- Framework: 升级到 Bootstrap v5.3.5
+- Framework: 升级到 Laravel 12.x
+
+
 ## 3.7.1 (2025-02-20)
 
 ### Fixes
