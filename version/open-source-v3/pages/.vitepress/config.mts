@@ -231,7 +231,7 @@ function navbarForZh() {
         { text: '加入我们', link: '/zh-hans/community/join.md' },
         { text: '赞助我们', link: '/zh-hans/community/sponsor.md' },
         { text: '贡献指南', link: '/zh-hans/contributing/' },
-        { text: '互动交流', link: 'https://discuss.fresns.org/zh-hans' },
+        { text: '互动交流', link: 'https://discuss.fresns.org/' },
         { text: '应用市场', link: 'https://marketplace.fresns.com/zh-hans/open-source' },
         { text: '作者名片', link: 'https://tangjie.me/mycard' },
       ],
@@ -319,7 +319,7 @@ function sidebarCommunityForZh() {
     {
       text: '互动',
       items: [
-        { text: '互动交流', link: 'https://discuss.fresns.org/zh-hans' },
+        { text: '互动交流', link: 'https://discuss.fresns.org/' },
         { text: '应用市场', link: 'https://marketplace.fresns.com/zh-hans/open-source' },
         { text: '作者名片', link: 'https://tangjie.me/mycard' },
       ]
