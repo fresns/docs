@@ -3,6 +3,19 @@
 Fresns 主程序所有版本更新日志都将记录在这个文件中。
 
 
+## 3.8.1 (2025-09-02)
+
+### Fixes
+- API: 修复 archive usages
+- Utilities: 修复 php command
+
+### Changed
+- Framework: 升级到 Bootstrap v5.3.8
+- Framework: 升级到 Bootstrap Icons v1.13.1
+- Framework: 升级到 Laravel 12.x
+- Framework: 添加默认 Redis 重试配置
+
+
 ## 3.8.0 (2025-04-10)
 
 ### Fixes

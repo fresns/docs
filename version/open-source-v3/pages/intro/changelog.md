@@ -3,6 +3,19 @@
 All notable changes to this project will be documented in this file.
 
 
+## 3.8.1 (09/02/2025)
+
+### Fixes
+- API: Fix archive usages
+- Utilities: Fix php command
+
+### Changed
+- Framework: Upgraded Bootstrap v5.3.8
+- Framework: Upgraded Bootstrap Icons v1.13.1
+- Framework: Upgraded Laravel 12.x
+- Framework: Add default Redis retry configuration
+
+
 ## 3.8.0 (04/10/2025)
 
 ### Fixes
