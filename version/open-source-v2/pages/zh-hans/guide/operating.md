@@ -4,6 +4,12 @@
 
 ## 运营方向
 
+### 客户社区
+
+客户社区充当了关于产品和公司动态的资讯来源。通常，客户在对产品有疑问时，可以在社区论坛中找到答案，这意味着他们不必联系企业的客户支持。
+
+专题介绍: [https://hub.fresns.org/customer-community](https://hub.fresns.org/zh-hans/customer-community)
+
 ### 区域社区
 
 可以是一座城市，也可能是一个大型的小区；不局限于国内，海外也是一个很大的市场。

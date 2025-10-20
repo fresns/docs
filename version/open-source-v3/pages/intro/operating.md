@@ -2,6 +2,12 @@
 
 We collaborate in an open-source organization, and are committed to making Fresns a universal, stable and extensible flexible tool, so that users can freely materialize their ideas on this basis.
 
+## Customer Community
+
+Customer communities serve as a source of information about product and company updates. Typically, when customers have questions about a product, they can find answers in the community forum, meaning they do not need to contact the company’s customer support.
+
+Introduction: [https://hub.fresns.org/customer-community](https://hub.fresns.org/customer-community)
+
 ## Regional community
 
 It can be a city or a large residential area, which unfolds topic interactions around the life and work of a region.
