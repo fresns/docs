@@ -68,17 +68,6 @@ DB_PREFIX=fs_
 
 > 如果 `.env` 修改后不生效，因为配置值已经被系统缓存，`/bootstrap/cache/config.php` 请删除该缓存文件即可。
 
-## 中国加速配置
-
-如果你的服务器在中国境内，可以在 `.env` 配置里添加代理加速，为你升级或安装扩展依赖提速。如果服务器在中国境外，无需额外配置。
-
-```ini
-MIRROR_CODE=cn
-HTTP_PROXY=http://market.fresns.cn:1024
-```
-
-> 配置后，请勿使用 composer 镜像源，只能用 composer 官方源。
-
 ## 代理环境配置
 
 如果你的运行环境为代理，需要配置 `.env` 可信任的 IP 信息，多个以英文逗号隔开。
